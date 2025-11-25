@@ -55,7 +55,7 @@ export default function ChampionGrid({ champions, lang = 'fr_FR' }: ChampionGrid
                 <section
                     className="
             grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8
-            gap-6
+            gap-6 justify-center items-center
           "
                 >
                     {filteredChampions.map((champion) => (

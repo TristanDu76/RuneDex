@@ -32,6 +32,8 @@ export interface ChampionSpell {
     range: number[] | string;
     rangeBurn: string;
     image: ChampionImage;
+    resource?: string;
+    effectBurn?: (string | null)[];
 }
 
 export interface ChampionPassive {
@@ -65,4 +67,10 @@ export interface ChampionData {
     skins?: ChampionSkin[];
     spells?: ChampionSpell[];
     passive?: ChampionPassive;
+    faction?: string;
+    relatedChampions?: {
+        name: string;
+        slug: string;
+        image?: string; // Optional image for related champion
+    }[];
 }

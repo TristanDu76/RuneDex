@@ -8,6 +8,10 @@ const nextConfig = {
       },
     ],
   },
+  devIndicators: {
+    buildActivity: false,
+    appIsrStatus: false,
+  },
 };
 
-module.exports = nextConfig;
+export default nextConfig;

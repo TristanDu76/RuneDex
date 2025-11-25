@@ -7,9 +7,10 @@ interface SpellListProps {
     passive: ChampionPassive;
     version: string;
     lang?: string;
+    partype: string;
 }
 
-export default function SpellList({ spells, passive, version, lang = 'fr_FR' }: SpellListProps) {
+export default function SpellList({ spells, passive, version, lang = 'fr_FR', partype }: SpellListProps) {
     const t = getTranslation(lang);
 
     const getSpellImage = (imageId: string) =>
@@ -17,6 +18,57 @@ export default function SpellList({ spells, passive, version, lang = 'fr_FR' }: 
 
     const getPassiveImage = (imageId: string) =>
         `https://ddragon.leagueoflegends.com/cdn/${version}/img/passive/${imageId}`;
+
+    const formatCost = (spell: ChampionSpell) => {
+        if (spell.resource) {
+            let costText = spell.resource;
+
+            // Replace {{ cost }}
+            costText = costText.replace(/{{ cost }}/g, spell.costBurn);
+
+            // Replace {{ abilityresourcename }}
+            costText = costText.replace(/{{ abilityresourcename }}/g, partype);
+
+            // Replace {{ eX }} with effectBurn values
+            if (spell.effectBurn) {
+                costText = costText.replace(/{{ e(\d+) }}/g, (_, index) => {
+                    return spell.effectBurn?.[parseInt(index)] || '?';
+                });
+            }
+
+            // Remove patterns like ({{ variable }}) including the parentheses
+            costText = costText.replace(/\s*\(\{\{.*?\}\}\)/g, '');
+
+            // Remove any remaining {{ variable }} patterns
+            costText = costText.replace(/\{\{.*?\}\}/g, '');
+
+            // Clean up double spaces and trim
+            costText = costText.replace(/\s+/g, ' ').trim();
+
+            return costText;
+        }
+
+        // Fallback for standard mana/energy if resource field is missing or empty
+        if (spell.costBurn && spell.costBurn !== "0") {
+            return `${spell.costBurn} ${partype}`;
+        }
+
+        return null;
+    };
+
+    const formatRange = (spell: ChampionSpell) => {
+        if (spell.id === 'AatroxQ') {
+            return t.champion.rangeVariable;
+        }
+
+        // Check for global ranges (typically 10000, 20000, 25000, etc.)
+        const rangeValue = parseInt(spell.rangeBurn);
+        if (!isNaN(rangeValue) && rangeValue >= 10000) {
+            return t.champion.rangeUnlimited;
+        }
+
+        return spell.rangeBurn;
+    };
 
     return (
         <div className="space-y-8">
@@ -51,6 +103,9 @@ export default function SpellList({ spells, passive, version, lang = 'fr_FR' }: 
 
                 {spells.map((spell, index) => {
                     const keys = ['Q', 'W', 'E', 'R'];
+                    const costDisplay = formatCost(spell);
+                    const rangeDisplay = formatRange(spell);
+
                     return (
                         <div key={spell.id} className="bg-gray-800/30 p-6 rounded-xl border border-gray-700 hover:bg-gray-800/50 transition-colors">
                             <div className="flex flex-col sm:flex-row gap-4">
@@ -60,7 +115,7 @@ export default function SpellList({ spells, passive, version, lang = 'fr_FR' }: 
                                         alt={spell.name}
                                         className="w-16 h-16 rounded border border-gray-600"
                                     />
-                                    <span className="absolute -bottom-3 -right-3 bg-gray-900 text-yellow-500 w-8 h-8 flex items-center justify-center rounded-full border border-yellow-600 font-bold shadow-sm">
+                                    <span className="absolute -top-1.5 -right-2 bg-gray-900 text-yellow-500 text-xs font-bold w-6 h-6 flex items-center justify-center rounded-full border border-gray-700">
                                         {keys[index]}
                                     </span>
                                 </div>
@@ -76,14 +131,14 @@ export default function SpellList({ spells, passive, version, lang = 'fr_FR' }: 
                                                 {t.champion.cooldown} <span className="text-gray-300">{spell.cooldownBurn}s</span>
                                             </span>
                                         )}
-                                        {spell.costBurn && spell.costBurn !== "0" && (
+                                        {costDisplay && (
                                             <span className="bg-gray-900/50 px-2 py-1 rounded">
-                                                {t.champion.cost} <span className="text-gray-300">{spell.costBurn}</span>
+                                                {t.champion.cost} <span className="text-gray-300">{costDisplay}</span>
                                             </span>
                                         )}
-                                        {spell.rangeBurn && spell.rangeBurn !== "0" && (
+                                        {rangeDisplay && rangeDisplay !== "0" && (
                                             <span className="bg-gray-900/50 px-2 py-1 rounded">
-                                                {t.champion.range} <span className="text-gray-300">{spell.rangeBurn}</span>
+                                                {t.champion.range} <span className="text-gray-300">{rangeDisplay}</span>
                                             </span>
                                         )}
                                     </div>

@@ -48,10 +48,8 @@ export default function Navbar() {
                         </span>
                     </Link>
 
-                    {/* Search Bar (Hidden on very small screens, maybe?) */}
-                    <div className="hidden sm:block">
-                        <GlobalSearch />
-                    </div>
+                    {/* Search Bar */}
+                    <GlobalSearch />
                 </div>
 
                 {/* Right: Language Switcher */}
@@ -79,11 +77,6 @@ export default function Navbar() {
                         </Link>
                     </div>
                 </div>
-            </div>
-
-            {/* Mobile Search Bar (visible only on small screens) */}
-            <div className="sm:hidden px-4 pb-3">
-                <GlobalSearch />
             </div>
         </nav>
     );

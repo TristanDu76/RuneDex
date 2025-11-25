@@ -39,10 +39,6 @@ export default async function Home({ searchParams }: HomeProps) {
         </h1>
       </div>
 
-      <p className="text-xl text-gray-400 text-center mb-12">
-        {t.home.subtitle.replace('{count}', champions.length.toString())}
-      </p>
-
       {/* --- Grille des Champions avec Recherche --- */}
       <ChampionGrid champions={sortedChampions} lang={locale} />
 
