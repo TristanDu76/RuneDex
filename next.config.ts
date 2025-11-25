@@ -1,8 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  turbopack: {
-    root: '/home/zone01student/Desktop/projet-perso/runedex', 
-  },
   images: {
     remotePatterns: [
       {
