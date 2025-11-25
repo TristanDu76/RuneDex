@@ -1,26 +1,27 @@
 // src/components/ChampionCard.tsx
 import Image from 'next/image';
-import Link from 'next/link'; // <--- NOUVEL IMPORT
+import Link from 'next/link';
 import { ChampionData } from '@/types/champion';
 
 interface ChampionCardProps {
   champion: ChampionData;
+  lang?: string;
 }
 
 const getChampionImageURL = (version: string, imageId: string) => {
-    return `https://ddragon.leagueoflegends.com/cdn/${version}/img/champion/${imageId}.png`;
+  return `https://ddragon.leagueoflegends.com/cdn/${version}/img/champion/${imageId}.png`;
 };
 
-export default function ChampionCard({ champion }: ChampionCardProps) {
+export default function ChampionCard({ champion, lang }: ChampionCardProps) {
   const imageUrl = getChampionImageURL(champion.version, champion.id);
-  
-  // L'URL de la page détaillée : /champion/Aatrox
-  const href = `/champion/${champion.id}`; 
+
+  // L'URL de la page détaillée : /champion/Aatrox?lang=...
+  const href = lang ? `/champion/${champion.id}?lang=${lang}` : `/champion/${champion.id}`;
 
   return (
     // On enveloppe toute la carte dans le composant Link
-    <Link 
-      href={href} 
+    <Link
+      href={href}
       className="
         group relative w-40 h-40 overflow-hidden rounded-lg 
         shadow-lg transition-transform duration-300 hover:scale-[1.03]
@@ -35,9 +36,9 @@ export default function ChampionCard({ champion }: ChampionCardProps) {
         height={160}
         className="object-cover transition-opacity duration-500 group-hover:opacity-80"
       />
-      
+
       {/* Le nom du champion en bas de la carte (overlay) */}
-      <div 
+      <div
         className="
           absolute bottom-0 w-full p-2 text-center 
           bg-gradient-to-t from-gray-900 via-gray-900/80 to-transparent 

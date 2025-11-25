@@ -1,29 +1,31 @@
 import axios from 'axios';
 
-import { ChampionData } from '@/types/champion'; 
+
+
+import { ChampionData } from '@/types/champion';
 
 interface ChampionListResponse {
   data: { [key: string]: Omit<ChampionData, 'version'> };
 }
 
-export async function fetchAllChampions() {
+export async function fetchAllChampions(locale: string = 'fr_FR') {
   try {
     const versionResponse = await axios.get<string[]>('https://ddragon.leagueoflegends.com/api/versions.json');
     const latestVersion = versionResponse.data[0];
 
     console.log(`Version du jeu Data Dragon : ${latestVersion}`);
 
-    const championListUrl = `https://ddragon.leagueoflegends.com/cdn/${latestVersion}/data/fr_FR/champion.json`;
-    
+    const championListUrl = `https://ddragon.leagueoflegends.com/cdn/${latestVersion}/data/${locale}/champion.json`;
+
     const championsResponse = await axios.get<ChampionListResponse>(championListUrl);
 
     const championMap = championsResponse.data.data;
-    
+
     const championsArray: ChampionData[] = Object.values(championMap).map(champ => ({
       ...champ,
       version: latestVersion
     }));
-    
+
     return championsArray;
 
   } catch (error) {
@@ -33,21 +35,22 @@ export async function fetchAllChampions() {
 }
 
 interface DetailedChampionResponse {
-  data: { [key: string]: ChampionData & { lore: string; skins: any[] } };
+  data: { [key: string]: ChampionData };
 }
 
 /**
  * Récupère toutes les données détaillées d'un champion spécifique.
  * @param championId L'ID du champion (ex: 'Aatrox').
  * @param version La version du jeu (ex: '15.23.1').
+ * @param locale La langue des données (ex: 'fr_FR' ou 'en_US').
  * @returns Les données détaillées du champion, y compris le Lore complet.
  */
-export async function fetchChampionDetails(championId: string, version: string) {
+export async function fetchChampionDetails(championId: string, version: string, locale: string = 'fr_FR') {
   try {
-    const url = `https://ddragon.leagueoflegends.com/cdn/${version}/data/fr_FR/champion/${championId}.json`;
-    
+    const url = `https://ddragon.leagueoflegends.com/cdn/${version}/data/${locale}/champion/${championId}.json`;
+
     const response = await axios.get<DetailedChampionResponse>(url);
-    
+
     // Les données sont imbriquées dans 'data', puis par l'ID du champion (ex: response.data.data.Aatrox)
     const details = response.data.data[championId];
 

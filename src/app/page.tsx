@@ -1,42 +1,51 @@
 // src/app/page.tsx
 import { fetchAllChampions } from "@/lib/data";
-import ChampionCard from "@/components/ChampionCard"; // On importe notre composant
+import ChampionGrid from "@/components/ChampionGrid";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+import Image from "next/image";
+import { getTranslation } from "@/lib/translations";
 
-export default async function Home() {
+interface HomeProps {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}
+
+export default async function Home({ searchParams }: HomeProps) {
+  const params = await searchParams;
+  const locale = (params.lang as string) || 'fr_FR';
+  const t = getTranslation(locale);
+
   // 1. Récupération des données (s'exécute côté serveur)
-  const champions = await fetchAllChampions();
-  
+  const champions = await fetchAllChampions(locale);
+
   // Tri optionnel pour le fun, par ordre alphabétique du nom
   const sortedChampions = champions.sort((a, b) => a.name.localeCompare(b.name));
 
   return (
-    <main className="min-h-screen bg-gray-900 p-8">
-      
+    <main className="min-h-screen bg-gray-900 p-8 relative">
+      <LanguageSwitcher />
+
       {/* --- Header/Titre --- */}
-      <h1 className="text-6xl font-bold text-yellow-500 text-center mb-4">
-        RuneDex
-      </h1>
+      <div className="flex flex-col items-center mb-8 mt-8">
+        <Image
+          src="/LogoRuneDex.png"
+          alt="RuneDex Logo"
+          width={400}
+          height={150}
+          className="w-auto h-32 object-contain mb-4"
+          priority
+        />
+        <h1 className="text-6xl font-bold text-yellow-500 text-center tracking-tight" style={{ textShadow: '0 4px 20px rgba(234, 179, 8, 0.2)' }}>
+          RuneDex
+        </h1>
+      </div>
+
       <p className="text-xl text-gray-400 text-center mb-12">
-        Base de données complète de {champions.length} champions
+        {t.home.subtitle.replace('{count}', champions.length.toString())}
       </p>
 
-      {/* --- Grille des Champions --- */}
-      <section 
-        className="
-          grid grid-cols-3 xs:grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-7 
-          xl:grid-cols-9 2xl:grid-cols-10 
-          gap-4 max-w-7xl mx-auto
-        "
-      >
-        {/* 2. On itère sur le tableau des champions pour créer une carte par champion */}
-        {sortedChampions.map((champion) => (
-          <ChampionCard 
-            key={champion.id} 
-            champion={champion} 
-          />
-        ))}
-      </section>
-      
+      {/* --- Grille des Champions avec Recherche --- */}
+      <ChampionGrid champions={sortedChampions} lang={locale} />
+
       {/* Note : Le composant Image de Next.js gère la mise en cache des images de Riot */}
     </main>
   );
