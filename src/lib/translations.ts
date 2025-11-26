@@ -4,6 +4,7 @@ export const translations = {
             subtitle: "Base de données complète de {count} champions",
             searchPlaceholder: "Rechercher un champion...",
             noResults: "Aucun champion trouvé pour \"{query}\"",
+            allRegions: "Toutes les régions",
         },
         champion: {
             loreTitle: "Histoire",
@@ -27,12 +28,12 @@ export const translations = {
             "piltover": "Piltover",
             "shadow-isles": "Îles Obscures",
             "shurima": "Shurima",
-            "mount-targon": "Mont Targon",
             "targon": "Targon",
             "zaun": "Zaun",
             "void": "Néant",
             "runeterra": "Runeterra",
             "unaffiliated": "Non affilié",
+            "darkin": "Darkin",
         },
         relationTypes: {
             // Famille
@@ -46,19 +47,20 @@ export const translations = {
             // Romance & Amour
             lover: "Amant(e)",
             "ex-lover": "Ex-amant(e)",
-            "unrequited-love": "Amour non partagé",
+            "unrequited-love": "Amour non réciproque",
             // Amitié & Alliance
             friend: "Ami(e)",
             mentor: "Mentor",
             student: "Élève",
-            ally: "Allié",
+            ally: "Allié(e)",
             comrade: "Camarade",
+            "faction-member": "Membre de la faction",
             // Rivalité & Hostilité
             enemy: "Ennemi",
             rival: "Rival",
-            nemesis: "Némésis",
+            nemesis: "Ennemi juré",
             betrayed: "Trahi par",
-            betrayer: "A trahi",
+            betrayer: "Traître",
             victim: "Victime de",
             killer: "A tué",
             // Relations complexes
@@ -69,6 +71,8 @@ export const translations = {
             corrupted: "A corrompu",
             hunts: "Chasse",
             "hunted-by": "Chassé par",
+            related: "Lié",
+            faction: "Membres de la faction",
         },
         search: {
             placeholder: "Rechercher...",
@@ -80,6 +84,7 @@ export const translations = {
             subtitle: "Complete database of {count} champions",
             searchPlaceholder: "Search for a champion...",
             noResults: "No champion found for \"{query}\"",
+            allRegions: "All regions",
         },
         champion: {
             loreTitle: "Lore",
@@ -103,12 +108,12 @@ export const translations = {
             "piltover": "Piltover",
             "shadow-isles": "Shadow Isles",
             "shurima": "Shurima",
-            "mount-targon": "Mount Targon",
-            "targon": "Mount Targon",
+            "targon": "Targon",
             "zaun": "Zaun",
             "void": "The Void",
             "runeterra": "Runeterra",
             "unaffiliated": "Runeterra",
+            "darkin": "Darkin",
         },
         relationTypes: {
             // Family
@@ -129,6 +134,7 @@ export const translations = {
             student: "Student",
             ally: "Ally",
             comrade: "Comrade",
+            "faction-member": "Faction Member",
             // Rivalry & Hostility
             enemy: "Enemy",
             rival: "Rival",
@@ -145,6 +151,7 @@ export const translations = {
             corrupted: "Corrupted",
             hunts: "Hunts",
             "hunted-by": "Hunted by",
+            related: "Related",
         },
         search: {
             placeholder: "Search...",

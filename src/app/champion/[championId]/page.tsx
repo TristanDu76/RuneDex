@@ -5,7 +5,7 @@ import SkinCarousel from '@/components/SkinCarousel';
 import SpellList from '@/components/SpellList';
 import ChampionNavigation from '@/components/ChampionNavigation';
 import { getTranslation } from '@/lib/translations';
-import { championRelations } from '@/lib/championRelations';
+import ChampionRelations from '@/components/ChampionRelations';
 
 // Interface pour les props de la page
 interface ChampionPageProps {
@@ -43,6 +43,24 @@ export default async function ChampionPage({ params, searchParams }: ChampionPag
   // 2. Préparation des données pour l'affichage
   const { name, title, lore, blurb, skins, spells, passive, partype } = championDetails;
 
+  const regionColors: Record<string, string> = {
+    demacia: 'text-blue-300 border-blue-500/30 bg-blue-900/20',
+    noxus: 'text-red-400 border-red-500/30 bg-red-900/20',
+    ionia: 'text-pink-300 border-pink-500/30 bg-pink-900/20',
+    freljord: 'text-cyan-300 border-cyan-500/30 bg-cyan-900/20',
+    shurima: 'text-yellow-400 border-yellow-500/30 bg-yellow-900/20',
+    piltover: 'text-amber-300 border-amber-500/30 bg-amber-900/20',
+    zaun: 'text-green-400 border-green-500/30 bg-green-900/20',
+    bilgewater: 'text-orange-400 border-orange-500/30 bg-orange-900/20',
+    targon: 'text-purple-300 border-purple-500/30 bg-purple-900/20',
+    ixtal: 'text-emerald-400 border-emerald-500/30 bg-emerald-900/20',
+    'shadow-isles': 'text-teal-300 border-teal-500/30 bg-teal-900/20',
+    'bandle-city': 'text-lime-300 border-lime-500/30 bg-lime-900/20',
+    void: 'text-violet-400 border-violet-500/30 bg-violet-900/20',
+    runeterra: 'text-gray-300 border-gray-500/30 bg-gray-900/20',
+    darkin: 'text-red-500 border-red-600/30 bg-red-950/40',
+  };
+
   return (
     <main className="min-h-screen bg-gray-900 text-white pb-20 relative">
       <ChampionNavigation
@@ -69,7 +87,7 @@ export default async function ChampionPage({ params, searchParams }: ChampionPag
               <h2 className="text-2xl font-bold text-gray-200 mb-6 border-b border-gray-700 pb-2 flex justify-between items-center">
                 <span>{t.champion.loreTitle}</span>
                 {championDetails.faction && (
-                  <span className="text-sm font-normal text-yellow-500 bg-gray-900/50 px-3 py-1 rounded-full border border-yellow-500/30">
+                  <span className={`text-sm font-normal px-3 py-1 rounded-full border ${regionColors[championDetails.faction] || 'text-yellow-500 border-yellow-500/30 bg-gray-900/50'}`}>
                     {(t.factions as any)[championDetails.faction] || championDetails.faction.toUpperCase()}
                   </span>
                 )}
@@ -78,137 +96,15 @@ export default async function ChampionPage({ params, searchParams }: ChampionPag
                 {lore || blurb}
               </p>
 
-              {/* Relations typées depuis notre base de données */}
-              {(() => {
-                const relations = championRelations[name] || [];
-                const apiRelated = championDetails.relatedChampions || [];
-
-                // Couleurs et icônes par catégorie de type
-                const getTypeStyle = (type: string) => {
-                  // Famille
-                  if (['sibling', 'parent', 'child', 'spouse', 'ancestor', 'descendant', 'adoptive-family'].includes(type)) {
-                    return { bg: 'bg-blue-500/10', border: 'border-blue-500/30', text: 'text-blue-400', icon: '👨‍👩‍👧‍👦' };
-                  }
-                  // Romance
-                  if (['lover', 'ex-lover', 'unrequited-love'].includes(type)) {
-                    return { bg: 'bg-pink-500/10', border: 'border-pink-500/30', text: 'text-pink-400', icon: '💕' };
-                  }
-                  // Amitié & Alliance
-                  if (['friend', 'mentor', 'student', 'ally', 'comrade'].includes(type)) {
-                    return { bg: 'bg-green-500/10', border: 'border-green-500/30', text: 'text-green-400', icon: '🤝' };
-                  }
-                  // Hostilité
-                  if (['enemy', 'nemesis', 'betrayed', 'betrayer', 'victim', 'killer'].includes(type)) {
-                    return { bg: 'bg-red-500/10', border: 'border-red-500/30', text: 'text-red-400', icon: '⚔️' };
-                  }
-                  // Rivalité
-                  if (['rival'].includes(type)) {
-                    return { bg: 'bg-orange-500/10', border: 'border-orange-500/30', text: 'text-orange-400', icon: '🔥' };
-                  }
-                  // Complexe & Autres
-                  return { bg: 'bg-purple-500/10', border: 'border-purple-500/30', text: 'text-purple-400', icon: '💔' };
-                };
-
-                const hasRelations = relations.length > 0;
-                const hasApiRelations = apiRelated.length > 0;
-
-                if (!hasRelations && !hasApiRelations) return null;
-
-                return (
-                  <div className="mt-8 border-t border-gray-700 pt-6">
-                    <h3 className="text-lg font-bold text-gray-200 mb-4">{t.champion.relatedChampions}</h3>
-
-                    {/* Relations typées */}
-                    {hasRelations && (
-                      <div className="space-y-3">
-                        {relations.map((rel) => {
-                          const relChamp = allChampions.find(c => c.name === rel.champion);
-                          const style = getTypeStyle(rel.type);
-
-                          // Si le champion n'existe pas dans la liste (personnage non-jouable du lore)
-                          if (!relChamp) {
-                            return (
-                              <div key={rel.champion} className="flex items-start gap-3">
-                                <div className={`flex items-center gap-2 px-3 py-2 rounded-lg border ${style.bg} ${style.border} flex-1 opacity-75`}>
-                                  <div className={`w-8 h-8 rounded-full border-2 ${style.border} ${style.bg} flex items-center justify-center`}>
-                                    <span className="text-xs">{style.icon}</span>
-                                  </div>
-                                  <div className="flex-1">
-                                    <div className="flex items-center gap-2">
-                                      <span className={`text-sm ${style.text} font-medium italic`}>{rel.champion}</span>
-                                      <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs ${style.bg} ${style.border} ${style.text} border`}>
-                                        <span>{style.icon}</span>
-                                        <span>{(t.relationTypes as any)[rel.type]}</span>
-                                      </span>
-                                    </div>
-                                    {rel.note && (
-                                      <p className="text-xs text-gray-400 mt-1 italic">{rel.note}</p>
-                                    )}
-                                    <p className="text-xs text-gray-500 mt-0.5">Personnage du lore</p>
-                                  </div>
-                                </div>
-                              </div>
-                            );
-                          }
-
-                          // Champion jouable - lien cliquable
-                          return (
-                            <div key={rel.champion} className="flex items-start gap-3">
-                              <a
-                                href={`/champion/${relChamp.id}?lang=${locale}`}
-                                className={`flex items-center gap-2 hover:bg-gray-700 px-3 py-2 rounded-lg border transition-colors group flex-1 ${style.bg} ${style.border}`}
-                              >
-                                <img
-                                  src={`https://ddragon.leagueoflegends.com/cdn/${latestVersion}/img/champion/${relChamp.image.full}`}
-                                  alt={rel.champion}
-                                  className={`w-8 h-8 rounded-full border-2 ${style.border} group-hover:scale-110 transition-transform`}
-                                />
-                                <div className="flex-1">
-                                  <div className="flex items-center gap-2">
-                                    <span className={`text-sm ${style.text} group-hover:text-white font-medium`}>{rel.champion}</span>
-                                    <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs ${style.bg} ${style.border} ${style.text} border`}>
-                                      <span>{style.icon}</span>
-                                      <span>{(t.relationTypes as any)[rel.type]}</span>
-                                    </span>
-                                  </div>
-                                  {rel.note && (
-                                    <p className="text-xs text-gray-400 mt-1 italic">{rel.note}</p>
-                                  )}
-                                </div>
-                              </a>
-                            </div>
-                          );
-                        })}
-                      </div>
-                    )}
-
-                    {/* Fallback: Relations de l'API (non typées) */}
-                    {!hasRelations && hasApiRelations && (
-                      <div className="flex flex-wrap gap-3">
-                        {apiRelated.map((rel) => {
-                          const relChamp = allChampions.find(c => c.name === rel.name);
-                          if (!relChamp) return null;
-
-                          return (
-                            <a
-                              key={rel.slug}
-                              href={`/champion/${relChamp.id}?lang=${locale}`}
-                              className="flex items-center gap-2 bg-gray-900/50 hover:bg-gray-700 px-3 py-2 rounded-lg border border-gray-700 transition-colors group"
-                            >
-                              <img
-                                src={`https://ddragon.leagueoflegends.com/cdn/${latestVersion}/img/champion/${relChamp.image.full}`}
-                                alt={rel.name}
-                                className="w-6 h-6 rounded-full border border-gray-600 group-hover:border-yellow-500"
-                              />
-                              <span className="text-sm text-gray-300 group-hover:text-white">{rel.name}</span>
-                            </a>
-                          );
-                        })}
-                      </div>
-                    )}
-                  </div>
-                );
-              })()}
+              {/* Relations typées depuis notre base de données OU API Fallback */}
+              <ChampionRelations
+                championName={name}
+                championDetails={championDetails}
+                allChampions={allChampions}
+                t={t}
+                locale={locale}
+                latestVersion={latestVersion}
+              />
             </div>
           </div>
 

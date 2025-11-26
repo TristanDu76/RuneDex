@@ -79,7 +79,25 @@ async function fetchChampionUniverseDetails(championId: string, locale: string =
       faction = data.champion['associated-faction-slug'];
     }
 
-    if (faction === 'unaffiliated') faction = 'Runeterra'; // Ou null
+    // Normalisation de la faction
+    if (faction) {
+      faction = faction.toLowerCase();
+    }
+
+    if (faction === 'unaffiliated') faction = 'runeterra';
+    if (faction === 'mount-targon') faction = 'targon';
+    if (faction === 'bandle-city') faction = 'bandle-city';
+    if (faction === 'shadow-isles') faction = 'shadow-isles';
+    if (faction === 'piltover') faction = 'piltover';
+    if (faction === 'zaun') faction = 'zaun';
+    if (faction === 'ixtal') faction = 'ixtal';
+    if (faction === 'shurima') faction = 'shurima';
+    if (faction === 'bilgewater') faction = 'bilgewater';
+    if (faction === 'freljord') faction = 'freljord';
+    if (faction === 'demacia') faction = 'demacia';
+    if (faction === 'noxus') faction = 'noxus';
+    if (faction === 'ionia') faction = 'ionia';
+    if (faction === 'void') faction = 'void';
 
     // On cherche les relations
     let relatedChampions = data['related-champions'];

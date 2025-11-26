@@ -4,6 +4,7 @@ import React, { useState, useMemo } from 'react';
 import { ChampionData } from '@/types/champion';
 import ChampionCard from './ChampionCard';
 import { getTranslation } from '@/lib/translations';
+import { matchesSearch } from '@/lib/championTags';
 
 interface ChampionGridProps {
     champions: ChampionData[];
@@ -15,11 +16,7 @@ export default function ChampionGrid({ champions, lang = 'fr_FR' }: ChampionGrid
     const t = getTranslation(lang);
 
     const filteredChampions = useMemo(() => {
-        const lowerQuery = query.toLowerCase();
-        return champions.filter((champion) =>
-            champion.name.toLowerCase().includes(lowerQuery) ||
-            champion.title.toLowerCase().includes(lowerQuery)
-        );
+        return champions.filter((champion) => matchesSearch(champion, query));
     }, [query, champions]);
 
     return (
