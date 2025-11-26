@@ -67,10 +67,17 @@ export interface ChampionData {
     skins?: ChampionSkin[];
     spells?: ChampionSpell[];
     passive?: ChampionPassive;
-    faction?: string;
-    relatedChampions?: {
+    faction?: string; // Gardé pour compatibilité, mais on préfère factions
+    factions?: string[]; // Nouvelle colonne DB
+    custom_tags?: string[]; // Nouvelle colonne DB
+    relatedChampions?: { // Ancien champ (API ?)
         name: string;
         slug: string;
-        image?: string; // Optional image for related champion
+        image?: string;
+    }[];
+    related_champions?: { // Nouveau champ DB
+        champion: string;
+        type: string;
+        note?: string;
     }[];
 }

@@ -41,7 +41,7 @@ export default function ChampionCard({ champion, lang }: ChampionCardProps) {
       <div
         className="
           absolute bottom-0 w-full p-2 text-center 
-          bg-gradient-to-t from-gray-900 via-gray-900/80 to-transparent 
+          bg-linear-to-t from-gray-900 via-gray-900/80 to-transparent 
           text-white text-sm font-semibold 
         "
       >

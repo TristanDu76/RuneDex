@@ -4,7 +4,6 @@ import React, { useState, useMemo } from 'react';
 import { ChampionData } from '@/types/champion';
 import ChampionCard from './ChampionCard';
 import { getTranslation } from '@/lib/translations';
-import { matchesSearch } from '@/lib/championTags';
 
 interface ChampionGridProps {
     champions: ChampionData[];
@@ -16,7 +15,25 @@ export default function ChampionGrid({ champions, lang = 'fr_FR' }: ChampionGrid
     const t = getTranslation(lang);
 
     const filteredChampions = useMemo(() => {
-        return champions.filter((champion) => matchesSearch(champion, query));
+        const lowerQuery = query.toLowerCase();
+        if (!lowerQuery) return champions;
+
+        return champions.filter((champion) => {
+            // Recherche dans le nom et le titre
+            if (champion.name.toLowerCase().includes(lowerQuery)) return true;
+            if (champion.title.toLowerCase().includes(lowerQuery)) return true;
+
+            // Recherche dans les factions (DB)
+            if (champion.factions?.some(f => f.toLowerCase().includes(lowerQuery))) return true;
+
+            // Recherche dans les tags personnalisés (DB)
+            if (champion.custom_tags?.some(tag => tag.toLowerCase().includes(lowerQuery))) return true;
+
+            // Recherche dans les tags officiels (Riot)
+            if (champion.tags?.some(tag => tag.toLowerCase().includes(lowerQuery))) return true;
+
+            return false;
+        });
     }, [query, champions]);
 
     return (

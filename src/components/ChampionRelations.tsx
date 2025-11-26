@@ -1,11 +1,10 @@
 import React from 'react';
-import { championRelations } from '@/lib/championRelations';
-import { getChampionTags } from '@/lib/championTags';
+import { ChampionData } from '@/types/champion';
 
 interface ChampionRelationsProps {
     championName: string;
-    championDetails: any;
-    allChampions: any[];
+    championDetails: ChampionData;
+    allChampions: ChampionData[];
     t: any;
     locale: string;
     latestVersion: string;
@@ -19,12 +18,9 @@ export default function ChampionRelations({
     locale,
     latestVersion
 }: ChampionRelationsProps) {
-    const relations = championRelations[championName] || [];
+    // Utilisation des relations stockées en base de données
+    const relations = championDetails.related_champions || [];
     const apiRelated = championDetails.relatedChampions || [];
-
-    // Combine logic:
-    // If we have manual relations, use them.
-    // If NOT, convert API relations to a compatible format and use them.
 
     let displayRelations: { champion: string; type: string; note?: string }[] = [];
 
@@ -32,7 +28,7 @@ export default function ChampionRelations({
         displayRelations = [...relations];
     } else if (apiRelated.length > 0) {
         // Fallback: Convert API relations to generic 'related' type
-        displayRelations = apiRelated.map((rel: any) => ({
+        displayRelations = apiRelated.map((rel: { name: string; slug: string; image?: string }) => ({
             champion: rel.name,
             type: 'related',
             note: undefined
@@ -40,18 +36,15 @@ export default function ChampionRelations({
     }
 
     // Expansion des relations de type 'faction'
-    // Si une relation est de type 'faction', on ajoute tous les champions de cette faction
     const factionRelations = displayRelations.filter(r => r.type === 'faction');
     factionRelations.forEach(rel => {
         const targetFaction = rel.champion.toLowerCase();
         const factionMembers = allChampions.filter(c => {
-            const tags = getChampionTags(c.name);
-            // On vérifie si le tag correspond à la faction demandée
-            return tags.includes(targetFaction) && c.name !== championName;
+            // On vérifie si le champion appartient à la faction (via la colonne factions de la DB)
+            return c.factions?.includes(targetFaction) && c.name !== championName;
         });
 
         factionMembers.forEach(member => {
-            // On ajoute seulement si le champion n'est pas déjà dans la liste
             if (!displayRelations.some(r => r.champion === member.name)) {
                 displayRelations.push({
                     champion: member.name,
@@ -62,68 +55,55 @@ export default function ChampionRelations({
         });
     });
 
-    // On retire les relations de type 'faction' originales pour ne garder que les membres
+    // On retire les relations de type 'faction' originales
     displayRelations = displayRelations.filter(r => r.type !== 'faction');
 
     if (displayRelations.length === 0) return null;
 
     // Couleurs et icônes par catégorie de type
     const getTypeStyle = (type: string) => {
-        // Famille
         if (['sibling', 'parent', 'child', 'spouse', 'ancestor', 'descendant', 'adoptive-family', 'family'].includes(type)) {
             return { bg: 'bg-blue-500/10', border: 'border-blue-500/30', text: 'text-blue-400', icon: '👨‍👩‍👧‍👦' };
         }
-        // Romance
         if (['lover', 'ex-lover', 'unrequited-love'].includes(type)) {
             return { bg: 'bg-pink-500/10', border: 'border-pink-500/30', text: 'text-pink-400', icon: '💕' };
         }
-        // Amitié & Alliance
         if (['friend', 'mentor', 'student', 'ally', 'comrade', 'faction-member'].includes(type)) {
             return { bg: 'bg-green-500/10', border: 'border-green-500/30', text: 'text-green-400', icon: '🤝' };
         }
-        // Hostilité
-        if (['enemy', 'nemesis', 'betrayed', 'betrayer', 'victim', 'killer', 'hunts'].includes(type)) {
+        if (['enemy', 'nemesis', 'betrayed', 'betrayer', 'victim', 'killer', 'hunts', 'hunted-by', 'corrupted', 'corrupted-by'].includes(type)) {
             return { bg: 'bg-red-500/10', border: 'border-red-500/30', text: 'text-red-400', icon: '⚔️' };
         }
-        // Rivalité
         if (['rival'].includes(type)) {
             return { bg: 'bg-orange-500/10', border: 'border-orange-500/30', text: 'text-orange-400', icon: '🔥' };
         }
-        // Autre / API Fallback
         if (type === 'related') {
             return { bg: 'bg-gray-500/10', border: 'border-gray-500/30', text: 'text-gray-400', icon: '🔗' };
         }
-        // Complexe & Autres
         return { bg: 'bg-purple-500/10', border: 'border-purple-500/30', text: 'text-purple-400', icon: '💔' };
     };
 
     // Fonction pour obtenir la région principale d'un champion
     const getRegion = (champName: string): string => {
-        const tags = getChampionTags(champName);
-        // Liste des régions connues (basée sur championTags.ts)
-        const regions = [
-            'darkin', // Priorité pour les Darkin
-            'demacia', 'noxus', 'ionia', 'freljord', 'shurima',
-            'piltover', 'zaun', 'bilgewater', 'targon', 'ixtal',
-            'shadow-isles', 'bandle-city', 'void', 'runeterra'
-        ];
+        // 1. Chercher le champion dans la liste chargée depuis la DB
+        const champ = allChampions.find(c => c.name === champName || c.id === champName);
 
-        // Chercher la première région trouvée dans les tags
-        const foundRegion = tags.find(tag => regions.includes(tag));
-
-        // Cas spéciaux ou PNJ si pas de tag trouvé
-        if (!foundRegion) {
-            // Essayer de déduire pour certains PNJ connus si pas dans tags
-            if (['Silco', 'Vander'].includes(champName)) return 'zaun';
-            if (['Ambessa', 'Général Du Couteau', 'Boram Darkwill'].includes(champName)) return 'noxus';
-            if (['Isolde'].includes(champName)) return 'shadow-isles';
-            if (['Avarosa', 'Serylda'].includes(champName)) return 'freljord';
-            if (['Kusho', 'Elder Souma', 'Yunara'].includes(champName)) return 'ionia';
-            if (['Setaka', 'Myisha', 'Shadya'].includes(champName)) return 'shurima';
-            if (['Durand', 'Tiana Crownguard', 'Jarvan III'].includes(champName)) return 'demacia';
-            return 'autre';
+        if (champ && champ.factions && champ.factions.length > 0) {
+            return champ.factions[0];
         }
-        return foundRegion;
+
+        // 2. Fallback pour les PNJ ou si pas de faction trouvée
+        // (On garde la logique hardcodée pour les PNJ importants qui ne sont pas dans la table champions)
+        if (['Silco', 'Vander', 'Zaahen'].includes(champName)) return 'zaun';
+        if (['Ambessa', 'Général Du Couteau', 'Boram Darkwill'].includes(champName)) return 'noxus';
+        if (['Isolde', 'Vilemaw', 'Maître Kindred'].includes(champName)) return 'shadow-isles';
+        if (['Avarosa', 'Serylda'].includes(champName)) return 'freljord';
+        if (['Kusho', 'Elder Souma', 'Yunara'].includes(champName)) return 'ionia';
+        if (['Setaka', 'Myisha', 'Shadya'].includes(champName)) return 'shurima';
+        if (['Durand', 'Tiana Crownguard', 'Jarvan III'].includes(champName)) return 'demacia';
+        if (['Ashlesh', 'Tybaulk'].includes(champName)) return 'runeterra';
+
+        return 'autre';
     };
 
     // Grouper par région
@@ -151,7 +131,7 @@ export default function ChampionRelations({
                     <div key={region} className="space-y-3">
                         <h3 className="text-lg font-semibold text-gray-300 uppercase tracking-wider border-b border-gray-700 pb-1 mb-3">
                             {/* Traduction de la région si possible, sinon formatage simple */}
-                            {(t.factions as any)[region] || region.charAt(0).toUpperCase() + region.slice(1)}
+                            {(t.factions as Record<string, string>)[region] || region.charAt(0).toUpperCase() + region.slice(1)}
                         </h3>
                         <div className="grid grid-cols-1 gap-3">
                             {regionRelations.map((rel) => {
@@ -170,12 +150,12 @@ export default function ChampionRelations({
                                                     <span className={`text-sm font-medium ${style.text}`}>{rel.champion}</span>
                                                     <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs ${style.bg} ${style.border} ${style.text} border`}>
                                                         <span>{style.icon}</span>
-                                                        <span>{(t.relationTypes as any)[rel.type] || rel.type}</span>
+                                                        <span>{(t.relationTypes as Record<string, string>)[rel.type] || rel.type}</span>
                                                     </span>
                                                 </div>
                                                 <p className="text-xs text-gray-400 mt-1">Personnage du lore</p>
                                                 {rel.note && (
-                                                    <p className="text-xs text-gray-400 mt-0.5 italic">"{rel.note}"</p>
+                                                    <p className="text-xs text-gray-400 mt-0.5 italic">&quot;{rel.note}&quot;</p>
                                                 )}
                                             </div>
                                         </div>
@@ -198,11 +178,11 @@ export default function ChampionRelations({
                                                 <div className="flex items-center gap-2 flex-wrap">
                                                     <span className={`text-sm ${style.text} group-hover:text-white font-bold truncate`}>{rel.champion}</span>
                                                     <span className={`inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] uppercase tracking-wide font-semibold ${style.bg} ${style.border} ${style.text} border`}>
-                                                        {style.icon} {(t.relationTypes as any)[rel.type] || rel.type}
+                                                        {style.icon} {(t.relationTypes as Record<string, string>)[rel.type] || rel.type}
                                                     </span>
                                                 </div>
                                                 {rel.note && (
-                                                    <p className="text-xs text-gray-400 mt-1 italic whitespace-normal break-words">"{rel.note}"</p>
+                                                    <p className="text-xs text-gray-400 mt-1 italic whitespace-normal break-words">&quot;{rel.note}&quot;</p>
                                                 )}
                                             </div>
                                         </a>
