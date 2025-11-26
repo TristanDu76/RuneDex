@@ -5,6 +5,16 @@ export interface ChampionSkin {
     chromas: boolean;
 }
 
+export interface LoreCharacter {
+    id: string;
+    name: string;
+    faction: string;
+    gender?: string;
+    species?: string;
+    description?: string;
+    image?: string;
+}
+
 export interface ChampionImage {
     full: string;
     sprite: string;
@@ -80,4 +90,14 @@ export interface ChampionData {
         type: string;
         note?: string;
     }[];
+    gender?: string; // Nouvelle colonne DB
+    species?: string; // Nouvelle colonne DB
+
+    // Champs de traduction (anglais)
+    title_en?: string;
+    lore_en?: string;
+    blurb_en?: string;
+    spells_en?: ChampionSpell[];
+    passive_en?: ChampionPassive;
+    tags_en?: string[];
 }

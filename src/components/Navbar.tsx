@@ -20,7 +20,7 @@ export default function Navbar() {
     const toggleLanguage = (newLang: string) => {
         const params = new URLSearchParams(searchParams.toString());
         params.set('lang', newLang);
-        return `?${params.toString()}`;
+        return `${pathname}?${params.toString()}`;
     };
 
     return (

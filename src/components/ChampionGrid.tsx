@@ -26,6 +26,10 @@ export default function ChampionGrid({ champions, lang = 'fr_FR' }: ChampionGrid
             // Recherche dans les factions (DB)
             if (champion.factions?.some(f => f.toLowerCase().includes(lowerQuery))) return true;
 
+            // Recherche dans le genre et l'espèce (DB)
+            if (champion.gender?.toLowerCase().includes(lowerQuery)) return true;
+            if (champion.species?.toLowerCase().includes(lowerQuery)) return true;
+
             // Recherche dans les tags personnalisés (DB)
             if (champion.custom_tags?.some(tag => tag.toLowerCase().includes(lowerQuery))) return true;
 

@@ -1,10 +1,11 @@
 import React from 'react';
-import { ChampionData } from '@/types/champion';
+import { ChampionData, LoreCharacter } from '@/types/champion';
 
 interface ChampionRelationsProps {
     championName: string;
     championDetails: ChampionData;
     allChampions: ChampionData[];
+    loreCharacters: LoreCharacter[];
     t: any;
     locale: string;
     latestVersion: string;
@@ -14,13 +15,14 @@ export default function ChampionRelations({
     championName,
     championDetails,
     allChampions,
+    loreCharacters,
     t,
     locale,
     latestVersion
 }: ChampionRelationsProps) {
     // Utilisation des relations stockées en base de données
     const relations = championDetails.related_champions || [];
-    const apiRelated = championDetails.relatedChampions || [];
+    const apiRelated = (championDetails.relatedChampions || []) as { name: string; slug: string; image?: string }[];
 
     let displayRelations: { champion: string; type: string; note?: string }[] = [];
 
@@ -92,16 +94,11 @@ export default function ChampionRelations({
             return champ.factions[0];
         }
 
-        // 2. Fallback pour les PNJ ou si pas de faction trouvée
-        // (On garde la logique hardcodée pour les PNJ importants qui ne sont pas dans la table champions)
-        if (['Silco', 'Vander', 'Zaahen'].includes(champName)) return 'zaun';
-        if (['Ambessa', 'Général Du Couteau', 'Boram Darkwill'].includes(champName)) return 'noxus';
-        if (['Isolde', 'Vilemaw', 'Maître Kindred'].includes(champName)) return 'shadow-isles';
-        if (['Avarosa', 'Serylda'].includes(champName)) return 'freljord';
-        if (['Kusho', 'Elder Souma', 'Yunara'].includes(champName)) return 'ionia';
-        if (['Setaka', 'Myisha', 'Shadya'].includes(champName)) return 'shurima';
-        if (['Durand', 'Tiana Crownguard', 'Jarvan III'].includes(champName)) return 'demacia';
-        if (['Ashlesh', 'Tybaulk'].includes(champName)) return 'runeterra';
+        // 2. Chercher dans les personnages du lore (depuis la DB)
+        const loreChar = loreCharacters.find(c => c.name === champName);
+        if (loreChar) {
+            return loreChar.faction;
+        }
 
         return 'autre';
     };
@@ -140,10 +137,16 @@ export default function ChampionRelations({
 
                                 // PNJ ou Champion non trouvé dans l'API
                                 if (!relChamp) {
+                                    const loreChar = loreCharacters.find(c => c.name === rel.champion);
+
                                     return (
                                         <div key={rel.champion} className={`flex items-start gap-3 p-3 rounded-lg border ${style.bg} ${style.border} opacity-80`}>
-                                            <div className={`w-8 h-8 rounded-full flex items-center justify-center bg-gray-800 border-2 ${style.border} shrink-0`}>
-                                                <span className="text-xs font-bold text-gray-500">?</span>
+                                            <div className={`w-8 h-8 rounded-full flex items-center justify-center bg-gray-800 border-2 ${style.border} shrink-0 overflow-hidden`}>
+                                                {loreChar && loreChar.image ? (
+                                                    <img src={loreChar.image} alt={loreChar.name} className="w-full h-full object-cover" />
+                                                ) : (
+                                                    <span className="text-xs font-bold text-gray-500">?</span>
+                                                )}
                                             </div>
                                             <div>
                                                 <div className="flex items-center gap-2 flex-wrap">
@@ -153,9 +156,18 @@ export default function ChampionRelations({
                                                         <span>{(t.relationTypes as Record<string, string>)[rel.type] || rel.type}</span>
                                                     </span>
                                                 </div>
-                                                <p className="text-xs text-gray-400 mt-1">Personnage du lore</p>
+                                                <p className="text-xs text-gray-400 mt-1">
+                                                    {loreChar ? (
+                                                        <>
+                                                            {loreChar.species && <span>{loreChar.species} &bull; </span>}
+                                                            Personnage du lore
+                                                        </>
+                                                    ) : "Personnage du lore"}
+                                                </p>
                                                 {rel.note && (
-                                                    <p className="text-xs text-gray-400 mt-0.5 italic">&quot;{rel.note}&quot;</p>
+                                                    <p className="text-xs text-gray-400 mt-0.5 italic">
+                                                        &quot;{typeof rel.note === 'object' && rel.note !== null ? (rel.note as any)[locale === 'fr_FR' ? 'fr' : 'en'] || (rel.note as any)['en'] : rel.note}&quot;
+                                                    </p>
                                                 )}
                                             </div>
                                         </div>
@@ -182,7 +194,9 @@ export default function ChampionRelations({
                                                     </span>
                                                 </div>
                                                 {rel.note && (
-                                                    <p className="text-xs text-gray-400 mt-1 italic whitespace-normal break-words">&quot;{rel.note}&quot;</p>
+                                                    <p className="text-xs text-gray-400 mt-1 italic whitespace-normal break-words">
+                                                        &quot;{typeof rel.note === 'object' && rel.note !== null ? (rel.note as any)[locale === 'fr_FR' ? 'fr' : 'en'] || (rel.note as any)['en'] : rel.note}&quot;
+                                                    </p>
                                                 )}
                                             </div>
                                         </a>

@@ -1,6 +1,6 @@
 // src/app/champion/[championId]/page.tsx
 import React from 'react';
-import { fetchChampionDetails, fetchAllChampions } from "@/lib/data";
+import { fetchChampionDetails, fetchAllChampions, fetchLoreCharacters } from "@/lib/data";
 import SkinCarousel from '@/components/SkinCarousel';
 import SpellList from '@/components/SpellList';
 import ChampionNavigation from '@/components/ChampionNavigation';
@@ -23,6 +23,7 @@ export default async function ChampionPage({ params, searchParams }: ChampionPag
 
   // ASTUCE: On récupère la version la plus récente en appelant la liste de champions
   const allChampions = await fetchAllChampions(locale);
+  const loreCharacters = await fetchLoreCharacters();
   const latestVersion = allChampions.length > 0 ? allChampions[0].version : '15.23.1';
 
   // Tri des champions pour la navigation (A-Z)
@@ -41,7 +42,7 @@ export default async function ChampionPage({ params, searchParams }: ChampionPag
   }
 
   // 2. Préparation des données pour l'affichage
-  const { name, title, lore, blurb, skins, spells, passive, partype } = championDetails;
+  const { name, title, lore, blurb, skins, spells, passive, partype, gender, species } = championDetails;
 
   const regionColors: Record<string, string> = {
     demacia: 'text-blue-300 border-blue-500/30 bg-blue-900/20',
@@ -61,6 +62,45 @@ export default async function ChampionPage({ params, searchParams }: ChampionPag
     darkin: 'text-red-500 border-red-600/30 bg-red-950/40',
   };
 
+  // Helper pour les couleurs d'espèces
+  const getSpeciesColor = (s: string) => {
+    const species = s.toLowerCase();
+    if (species.includes('human')) return 'text-amber-200';
+    if (species.includes('yordle')) return 'text-orange-300';
+    if (species.includes('vastaya')) return 'text-pink-300';
+    if (species.includes('void')) return 'text-violet-400';
+    if (species.includes('undead') || species.includes('revenant') || species.includes('wraith')) return 'text-teal-400';
+    if (species.includes('darkin')) return 'text-red-500';
+    if (species.includes('god') || species.includes('spirit') || species.includes('celestial') || species.includes('aspect')) return 'text-cyan-300';
+    if (species.includes('golem') || species.includes('construct') || species.includes('cyborg')) return 'text-gray-400';
+    if (species.includes('dragon')) return 'text-red-400';
+    if (species.includes('demon')) return 'text-red-600';
+    return 'text-gray-200';
+  };
+
+  // Helper pour les couleurs de genre
+  const getGenderColor = (g: string) => {
+    const gender = g.toLowerCase();
+    if (gender === 'male') return 'text-blue-300';
+    if (gender === 'female') return 'text-pink-300';
+    return 'text-purple-300';
+  };
+
+  // Helper pour les couleurs de ressource
+  const getResourceColor = (r: string) => {
+    const resource = r.toLowerCase();
+    if (resource.includes('mana')) return 'text-blue-400';
+    if (resource.includes('energy') || resource.includes('énergie')) return 'text-yellow-400';
+    if (resource.includes('rage') || resource.includes('fury') || resource.includes('fureur')) return 'text-red-400';
+    if (resource.includes('health') || resource.includes('vie') || resource.includes('pv')) return 'text-green-400';
+    if (resource.includes('heat') || resource.includes('chaleur')) return 'text-orange-400';
+    if (resource.includes('grit') || resource.includes('courage')) return 'text-orange-300';
+    if (resource.includes('flow') || resource.includes('flux')) return 'text-cyan-300';
+    if (resource.includes('shield') || resource.includes('bouclier')) return 'text-gray-300';
+    if (resource.includes('none') || resource.includes('aucun') || resource.includes('manaless')) return 'text-gray-400';
+    return 'text-gray-300';
+  };
+
   return (
     <main className="min-h-screen bg-gray-900 text-white pb-20 relative">
       <ChampionNavigation
@@ -78,6 +118,53 @@ export default async function ChampionPage({ params, searchParams }: ChampionPag
           </div>
 
           {skins && <SkinCarousel skins={skins} championId={championId} />}
+
+          {/* Info Bar */}
+          <div className="flex flex-wrap justify-center gap-4 mt-8 mb-4">
+            {/* Factions */}
+            {championDetails.factions && championDetails.factions.length > 0 && (
+              <div className="flex items-center gap-2 bg-gray-800/50 px-4 py-2 rounded-full border border-gray-700">
+                <span className="text-gray-400 text-sm uppercase tracking-wider font-semibold">{t.champion.region}</span>
+                <div className="flex gap-2">
+                  {championDetails.factions.map(faction => (
+                    <span key={faction} className={`text-sm font-bold px-2 py-0.5 rounded ${regionColors[faction.toLowerCase()] || 'text-gray-300'}`}>
+                      {(t.factions as any)[faction] || faction}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Species */}
+            {species && (
+              <div className="flex items-center gap-2 bg-gray-800/50 px-4 py-2 rounded-full border border-gray-700">
+                <span className="text-gray-400 text-sm uppercase tracking-wider font-semibold">{t.champion.species}</span>
+                <span className={`font-medium ${getSpeciesColor(species)}`}>
+                  {(t.species as any)[species] || species}
+                </span>
+              </div>
+            )}
+
+            {/* Gender */}
+            {gender && (
+              <div className="flex items-center gap-2 bg-gray-800/50 px-4 py-2 rounded-full border border-gray-700">
+                <span className="text-gray-400 text-sm uppercase tracking-wider font-semibold">{t.champion.gender}</span>
+                <span className={`font-medium ${getGenderColor(gender)}`}>
+                  {(t.gender as any)[gender] || gender}
+                </span>
+              </div>
+            )}
+
+            {/* Resource */}
+            {partype && (
+              <div className="flex items-center gap-2 bg-gray-800/50 px-4 py-2 rounded-full border border-gray-700">
+                <span className="text-gray-400 text-sm uppercase tracking-wider font-semibold">{t.champion.resource}</span>
+                <span className={`font-medium ${getResourceColor(partype)}`}>
+                  {(t.resource as any)[partype] || partype}
+                </span>
+              </div>
+            )}
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
@@ -86,11 +173,6 @@ export default async function ChampionPage({ params, searchParams }: ChampionPag
             <div className="bg-gray-800/30 p-8 rounded-xl border border-gray-700 sticky top-8">
               <h2 className="text-2xl font-bold text-gray-200 mb-6 border-b border-gray-700 pb-2 flex justify-between items-center">
                 <span>{t.champion.loreTitle}</span>
-                {championDetails.faction && (
-                  <span className={`text-sm font-normal px-3 py-1 rounded-full border ${regionColors[championDetails.faction] || 'text-yellow-500 border-yellow-500/30 bg-gray-900/50'}`}>
-                    {(t.factions as any)[championDetails.faction] || championDetails.faction.toUpperCase()}
-                  </span>
-                )}
               </h2>
               <p className="text-gray-300 leading-relaxed whitespace-pre-line text-justify mb-8">
                 {lore || blurb}
@@ -101,6 +183,7 @@ export default async function ChampionPage({ params, searchParams }: ChampionPag
                 championName={name}
                 championDetails={championDetails}
                 allChampions={allChampions}
+                loreCharacters={loreCharacters}
                 t={t}
                 locale={locale}
                 latestVersion={latestVersion}
