@@ -13,7 +13,7 @@ export const fetchAllChampions = unstable_cache(
       // Ajout de title_en pour la traduction
       const { data, error } = await supabase
         .from('champions')
-        .select('id, key, name, title, image, tags, factions, custom_tags, version, gender, species');
+        .select('id, key, name, title, image, tags, factions, custom_tags, version, gender, species, partype');
 
       if (error) {
         console.error("Erreur Supabase (fetchAllChampions) :", error);
@@ -37,7 +37,7 @@ export const fetchAllChampions = unstable_cache(
       return [];
     }
   },
-  ['all-champions-v3'], // Clé de cache mise à jour pour forcer le refresh
+  ['all-champions-v4'], // Clé de cache mise à jour pour forcer le refresh avec partype
   { revalidate: 3600 } // Revalider toutes les heures (3600s)
 );
 

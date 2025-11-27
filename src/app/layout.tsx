@@ -17,6 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "RuneDex",
   description: "League of Legends Champion Database",
+
 };
 
 export default function RootLayout({

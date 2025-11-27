@@ -119,6 +119,20 @@ export const translations = {
             noResults: "Aucun champion trouvé pour \"{query}\"",
             allRegions: "Toutes les régions",
         },
+        filters: {
+            all: "Tous",
+            race: "Race",
+            gender: "Genre",
+            region: "Région",
+            resource: "Ressource",
+            role: "Rôle",
+            showAll: "Tous",
+            filterButton: "Filtres",
+            title: "Filtres",
+            filterActive: "filtre actif",
+            filtersActive: "filtres actifs",
+            clearAll: "Effacer tout",
+        },
         champion: {
             loreTitle: "Histoire",
             spellsTitle: "Compétences",
@@ -186,7 +200,15 @@ export const translations = {
             "Blood Well": "Puits de sang",
             "Crimson Rush": "Afflux sanguin",
             "Moonlight": "Clair de lune"
-        }
+        },
+        roles: {
+            "Fighter": "Combattant",
+            "Tank": "Tank",
+            "Mage": "Mage",
+            "Assassin": "Assassin",
+            "Support": "Support",
+            "Marksman": "Tireur"
+        },
     },
     en_US: {
         home: {
@@ -194,6 +216,20 @@ export const translations = {
             searchPlaceholder: "Search for a champion...",
             noResults: "No champion found for \"{query}\"",
             allRegions: "All regions",
+        },
+        filters: {
+            all: "All",
+            race: "Race",
+            gender: "Gender",
+            region: "Region",
+            resource: "Resource",
+            role: "Role",
+            showAll: "All",
+            filterButton: "Filters",
+            title: "Filters",
+            filterActive: "filter active",
+            filtersActive: "filters active",
+            clearAll: "Clear all",
         },
         champion: {
             loreTitle: "Lore",
@@ -262,6 +298,14 @@ export const translations = {
             "Blood Well": "Blood Well",
             "Crimson Rush": "Crimson Rush",
             "Moonlight": "Moonlight"
+        },
+        roles: {
+            "Fighter": "Fighter",
+            "Tank": "Tank",
+            "Mage": "Mage",
+            "Assassin": "Assassin",
+            "Support": "Support",
+            "Marksman": "Marksman"
         }
     }
 };

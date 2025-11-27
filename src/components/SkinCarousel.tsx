@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChampionSkin } from '@/types/champion';
 
@@ -38,6 +38,7 @@ const swipePower = (offset: number, velocity: number) => {
 export default function SkinCarousel({ skins, championId }: SkinCarouselProps) {
     const [page, setPage] = useState([0, 0]);
     const [currentIndex, direction] = page;
+    const [isPaused, setIsPaused] = useState(false);
 
     // Calculate the actual skin index based on the infinite page count
     const skinIndex = ((currentIndex % skins.length) + skins.length) % skins.length;
@@ -48,8 +49,23 @@ export default function SkinCarousel({ skins, championId }: SkinCarouselProps) {
         setPage([currentIndex + newDirection, newDirection]);
     };
 
+    // Auto-play effect
+    useEffect(() => {
+        if (isPaused) return;
+
+        const timer = setInterval(() => {
+            paginate(1);
+        }, 3000);
+
+        return () => clearInterval(timer);
+    }, [currentIndex, isPaused]); // Re-run when index changes or pause state changes
+
     return (
-        <div className="relative w-full aspect-video max-h-[80vh] mx-auto overflow-hidden rounded-2xl shadow-2xl bg-gray-900 group border border-gray-800">
+        <div
+            className="relative w-full aspect-video max-h-[80vh] mx-auto overflow-hidden rounded-2xl shadow-2xl bg-gray-900 group border border-gray-800"
+            onMouseEnter={() => setIsPaused(true)}
+            onMouseLeave={() => setIsPaused(false)}
+        >
             <AnimatePresence initial={false} custom={direction}>
                 <motion.img
                     key={currentIndex}

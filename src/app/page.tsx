@@ -22,25 +22,31 @@ export default async function Home({ searchParams }: HomeProps) {
 
   return (
     <main className="min-h-screen bg-gray-900 p-8 relative">
-      <LanguageSwitcher />
+      {/* Centered Container for all content */}
+      <div className="w-full max-w-7xl mx-auto relative">
+        {/* Language Switcher - Positioned absolutely within centered container */}
+        <div className="absolute top-0 right-0">
+          <LanguageSwitcher />
+        </div>
 
-      {/* --- Header/Titre --- */}
-      <div className="flex flex-col items-center mb-8 mt-8">
-        <Image
-          src="/LogoRuneDex.png"
-          alt="RuneDex Logo"
-          width={400}
-          height={150}
-          className="w-auto h-32 object-contain mb-4"
-          priority
-        />
-        <h1 className="text-6xl font-bold text-yellow-500 text-center tracking-tight" style={{ textShadow: '0 4px 20px rgba(234, 179, 8, 0.2)' }}>
-          RuneDex
-        </h1>
+        {/* --- Header/Titre --- */}
+        <div className="flex flex-col items-center justify-center mb-8 mt-8">
+          <Image
+            src="/LogoRuneDex.png"
+            alt="RuneDex Logo"
+            width={400}
+            height={150}
+            className="w-auto h-32 object-contain mb-4"
+            priority
+          />
+          <h1 className="text-6xl font-bold text-yellow-500 text-center tracking-tight" style={{ textShadow: '0 4px 20px rgba(234, 179, 8, 0.2)' }}>
+            RuneDex
+          </h1>
+        </div>
+
+        {/* --- Grille des Champions avec Recherche --- */}
+        <ChampionGrid champions={sortedChampions} lang={locale} />
       </div>
-
-      {/* --- Grille des Champions avec Recherche --- */}
-      <ChampionGrid champions={sortedChampions} lang={locale} />
 
       {/* Note : Le composant Image de Next.js gère la mise en cache des images de Riot */}
     </main>

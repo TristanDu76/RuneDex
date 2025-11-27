@@ -70,7 +70,6 @@ async function updateAllChampions() {
                 spells_en: dataEN.spells,
                 passive_en: dataEN.passive,
                 partype_en: dataEN.partype,
-                tags_en: dataEN.tags,
 
             };
 
