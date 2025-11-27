@@ -119,6 +119,16 @@ export const translations = {
             noResults: "Aucun champion trouvé pour \"{query}\"",
             allRegions: "Toutes les régions",
         },
+        quiz: {
+            victory: "Victoire !",
+            playAgain: "Rejouer",
+            title: "Devinez le Champion",
+            subtitle: "Trouvez le champion caché en devinant ses attributs !",
+            back: "Retour à l'accueil",
+            loading: "Chargement...",
+            noChampions: "Aucun champion trouvé.",
+            typePlaceholder: "Tapez un nom de champion...",
+        },
         filters: {
             all: "Tous",
             race: "Race",
@@ -198,6 +208,7 @@ export const translations = {
             "None": "Aucune",
             "Ferocity": "Férocité",
             "Blood Well": "Puits de sang",
+            "Manaless": "Aucune",
             "Crimson Rush": "Afflux sanguin",
             "Moonlight": "Clair de lune"
         },
@@ -209,6 +220,13 @@ export const translations = {
             "Support": "Support",
             "Marksman": "Tireur"
         },
+        lanes: {
+            "Top": "Top",
+            "Jungle": "Jungle",
+            "Mid": "Mid",
+            "Adc": "Adc",
+            "Support": "Support"
+        },
     },
     en_US: {
         home: {
@@ -216,6 +234,16 @@ export const translations = {
             searchPlaceholder: "Search for a champion...",
             noResults: "No champion found for \"{query}\"",
             allRegions: "All regions",
+        },
+        quiz: {
+            victory: "Victory!",
+            playAgain: "Play Again",
+            title: "Guess the Champion",
+            subtitle: "Find the hidden champion by guessing attributes!",
+            back: "Back to Home",
+            loading: "Loading...",
+            noChampions: "No champions found.",
+            typePlaceholder: "Type a champion name...",
         },
         filters: {
             all: "All",
@@ -296,6 +324,7 @@ export const translations = {
             "None": "None",
             "Ferocity": "Ferocity",
             "Blood Well": "Blood Well",
+            "Manaless": "Manaless",
             "Crimson Rush": "Crimson Rush",
             "Moonlight": "Moonlight"
         },
@@ -306,6 +335,13 @@ export const translations = {
             "Assassin": "Assassin",
             "Support": "Support",
             "Marksman": "Marksman"
+        },
+        lanes: {
+            "Top": "Top",
+            "Jungle": "Jungle",
+            "Mid": "Mid",
+            "Adc": "Adc",
+            "Support": "Support"
         }
     }
 };

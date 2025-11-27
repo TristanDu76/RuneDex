@@ -1,14 +1,22 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { ChampionData } from '@/types/champion';
-import { fetchAllChampions } from '@/lib/data';
+import { ChampionData, LoreCharacter } from '@/types/champion';
+
 import { getTranslation } from '@/lib/translations';
 
-export default function GlobalSearch() {
+interface GlobalSearchProps {
+    champions: ChampionData[];
+    loreCharacters: LoreCharacter[];
+}
+
+type SearchResult =
+    | { type: 'champion'; data: ChampionData }
+    | { type: 'lore'; data: LoreCharacter };
+
+export default function GlobalSearch({ champions, loreCharacters }: GlobalSearchProps) {
     const [query, setQuery] = useState('');
-    const [results, setResults] = useState<ChampionData[]>([]);
-    const [champions, setChampions] = useState<ChampionData[]>([]);
+    const [results, setResults] = useState<SearchResult[]>([]);
     const [isOpen, setIsOpen] = useState(false);
     const [isMobileOpen, setIsMobileOpen] = useState(false);
     const [mounted, setMounted] = useState(false);
@@ -23,28 +31,28 @@ export default function GlobalSearch() {
         setMounted(true);
     }, []);
 
-    // Fetch champions once on mount
-    useEffect(() => {
-        const loadChampions = async () => {
-            const data = await fetchAllChampions(lang);
-            setChampions(data);
-        };
-        loadChampions();
-    }, [lang]);
-
     useEffect(() => {
         if (query.length > 0) {
             const lowerQuery = query.toLowerCase();
-            const filtered = champions.filter(c =>
-                c.name.toLowerCase().includes(lowerQuery)
-            );
-            setResults(filtered.slice(0, 5)); // Limit to 5 results
+
+            const filteredChampions = champions
+                .filter(c => c.name.toLowerCase().includes(lowerQuery))
+                .map(c => ({ type: 'champion' as const, data: c }));
+
+            const filteredLore = loreCharacters
+                .filter(c => c.name.toLowerCase().includes(lowerQuery))
+                .map(c => ({ type: 'lore' as const, data: c }));
+
+            // Combine and limit
+            const combined = [...filteredChampions, ...filteredLore].slice(0, 8);
+
+            setResults(combined);
             setIsOpen(true);
         } else {
             setResults([]);
             setIsOpen(false);
         }
-    }, [query, champions]);
+    }, [query, champions, loreCharacters]);
 
     // Close dropdown when clicking outside
     useEffect(() => {
@@ -59,8 +67,15 @@ export default function GlobalSearch() {
         };
     }, [wrapperRef]);
 
-    const handleSelect = (championId: string) => {
-        const url = lang ? `/champion/${championId}?lang=${lang}` : `/champion/${championId}`;
+    const handleSelect = (result: SearchResult) => {
+        let url = '';
+        if (result.type === 'champion') {
+            url = lang ? `/champion/${result.data.id}?lang=${lang}` : `/champion/${result.data.id}`;
+        } else {
+            // Lore character
+            url = lang ? `/lore/${result.data.name}?lang=${lang}` : `/lore/${result.data.name}`;
+        }
+
         router.push(url);
         setQuery('');
         setIsOpen(false);
@@ -69,7 +84,7 @@ export default function GlobalSearch() {
 
     const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
         if (e.key === 'Enter' && results.length > 0) {
-            handleSelect(results[0].id);
+            handleSelect(results[0]);
         }
     };
 
@@ -97,18 +112,31 @@ export default function GlobalSearch() {
                 {isOpen && results.length > 0 && (
                     <div className="absolute z-[100] mt-2 w-full bg-gray-800 border border-gray-700 rounded-md shadow-lg overflow-hidden">
                         <ul>
-                            {results.map((champion) => (
+                            {results.map((result) => (
                                 <li
-                                    key={champion.id}
-                                    onClick={() => handleSelect(champion.id)}
+                                    key={`${result.type}-${result.data.id}`}
+                                    onClick={() => handleSelect(result)}
                                     className="cursor-pointer px-4 py-2 hover:bg-gray-700 text-gray-200 flex items-center gap-3 transition-colors"
                                 >
-                                    <img
-                                        src={`https://ddragon.leagueoflegends.com/cdn/${champion.version}/img/champion/${champion.image.full}`}
-                                        alt={champion.name}
-                                        className="w-8 h-8 rounded-full border border-gray-600"
-                                    />
-                                    <span>{champion.name}</span>
+                                    {result.type === 'champion' ? (
+                                        <img
+                                            src={`https://ddragon.leagueoflegends.com/cdn/${(result.data as ChampionData).version}/img/champion/${(result.data as ChampionData).image.full}`}
+                                            alt={result.data.name}
+                                            className="w-8 h-8 rounded-full border border-gray-600"
+                                        />
+                                    ) : (
+                                        <div className="w-8 h-8 rounded-full border border-gray-600 bg-gray-700 flex items-center justify-center overflow-hidden">
+                                            {(result.data as LoreCharacter).image ? (
+                                                <img src={(result.data as LoreCharacter).image!} alt={result.data.name} className="w-full h-full object-cover" />
+                                            ) : (
+                                                <span className="text-xs font-bold text-gray-500">?</span>
+                                            )}
+                                        </div>
+                                    )}
+                                    <div className="flex flex-col">
+                                        <span className="font-medium">{result.data.name}</span>
+                                        <span className="text-xs text-gray-500 uppercase">{result.type === 'champion' ? 'Champion' : 'Lore'}</span>
+                                    </div>
                                 </li>
                             ))}
                         </ul>
@@ -158,18 +186,31 @@ export default function GlobalSearch() {
                     {results.length > 0 ? (
                         <div className="flex-grow overflow-y-auto bg-gray-800 rounded-lg border border-gray-700 shadow-xl">
                             <ul>
-                                {results.map((champion) => (
+                                {results.map((result) => (
                                     <li
-                                        key={champion.id}
-                                        onClick={() => handleSelect(champion.id)}
+                                        key={`${result.type}-${result.data.id}`}
+                                        onClick={() => handleSelect(result)}
                                         className="cursor-pointer px-4 py-3 hover:bg-gray-700 text-gray-200 flex items-center gap-4 border-b border-gray-700 last:border-0"
                                     >
-                                        <img
-                                            src={`https://ddragon.leagueoflegends.com/cdn/${champion.version}/img/champion/${champion.image.full}`}
-                                            alt={champion.name}
-                                            className="w-12 h-12 rounded-full border border-gray-600"
-                                        />
-                                        <span className="text-lg font-semibold">{champion.name}</span>
+                                        {result.type === 'champion' ? (
+                                            <img
+                                                src={`https://ddragon.leagueoflegends.com/cdn/${(result.data as ChampionData).version}/img/champion/${(result.data as ChampionData).image.full}`}
+                                                alt={result.data.name}
+                                                className="w-12 h-12 rounded-full border border-gray-600"
+                                            />
+                                        ) : (
+                                            <div className="w-12 h-12 rounded-full border border-gray-600 bg-gray-700 flex items-center justify-center overflow-hidden">
+                                                {(result.data as LoreCharacter).image ? (
+                                                    <img src={(result.data as LoreCharacter).image!} alt={result.data.name} className="w-full h-full object-cover" />
+                                                ) : (
+                                                    <span className="text-xs font-bold text-gray-500">?</span>
+                                                )}
+                                            </div>
+                                        )}
+                                        <div className="flex flex-col">
+                                            <span className="text-lg font-semibold">{result.data.name}</span>
+                                            <span className="text-sm text-gray-500 uppercase">{result.type === 'champion' ? 'Champion' : 'Lore'}</span>
+                                        </div>
                                     </li>
                                 ))}
                             </ul>

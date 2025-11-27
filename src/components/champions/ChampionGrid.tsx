@@ -3,7 +3,7 @@
 import React, { useState, useMemo } from 'react';
 import { ChampionData } from '@/types/champion';
 import ChampionCard from './ChampionCard';
-import FilterBar, { ActiveFilters, FilterOption } from './FilterBar';
+import FilterBar, { ActiveFilters, FilterOption } from '../ui/FilterBar';
 import { getTranslation } from '@/lib/translations';
 
 interface ChampionGridProps {

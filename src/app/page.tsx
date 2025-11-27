@@ -1,8 +1,9 @@
 // src/app/page.tsx
-import { fetchAllChampions } from "@/lib/data";
-import ChampionGrid from "@/components/ChampionGrid";
-import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { fetchAllChampions, fetchLoreCharacters } from "@/lib/data";
+import HomeContent from "@/components/layout/HomeContent";
+import LanguageSwitcher from "@/components/layout/LanguageSwitcher";
 import Image from "next/image";
+import Link from "next/link";
 import { getTranslation } from "@/lib/translations";
 
 interface HomeProps {
@@ -16,9 +17,11 @@ export default async function Home({ searchParams }: HomeProps) {
 
   // 1. Récupération des données (s'exécute côté serveur)
   const champions = await fetchAllChampions(locale);
+  const loreCharacters = await fetchLoreCharacters();
 
   // Tri optionnel pour le fun, par ordre alphabétique du nom
   const sortedChampions = champions.sort((a, b) => a.name.localeCompare(b.name));
+  const sortedLoreCharacters = loreCharacters.sort((a, b) => a.name.localeCompare(b.name));
 
   return (
     <main className="min-h-screen bg-gray-900 p-8 relative">
@@ -42,10 +45,20 @@ export default async function Home({ searchParams }: HomeProps) {
           <h1 className="text-6xl font-bold text-yellow-500 text-center tracking-tight" style={{ textShadow: '0 4px 20px rgba(234, 179, 8, 0.2)' }}>
             RuneDex
           </h1>
+          <Link
+            href={`/quiz?lang=${locale}`}
+            className="mt-6 px-6 py-2 bg-yellow-600/20 hover:bg-yellow-600/40 border border-yellow-600/50 rounded-full text-yellow-400 font-medium transition-all hover:scale-105 flex items-center gap-2"
+          >
+            <span>🎮</span> Play Quiz
+          </Link>
         </div>
 
-        {/* --- Grille des Champions avec Recherche --- */}
-        <ChampionGrid champions={sortedChampions} lang={locale} />
+        {/* --- Contenu Principal (Grilles) --- */}
+        <HomeContent
+          champions={sortedChampions}
+          loreCharacters={sortedLoreCharacters}
+          lang={locale}
+        />
       </div>
 
       {/* Note : Le composant Image de Next.js gère la mise en cache des images de Riot */}

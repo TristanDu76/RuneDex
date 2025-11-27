@@ -38,12 +38,12 @@ async function updateAllChampions() {
         try {
             // 2. Récupérer les données FR (pour les colonnes de base)
             const urlFR = `https://ddragon.leagueoflegends.com/cdn/${champ.version}/data/fr_FR/champion/${champ.id}.json`;
-            const resFR = await axios.get(urlFR);
+            const resFR = await axios.get<any>(urlFR);
             const dataFR = resFR.data.data[champ.id];
 
             // 3. Récupérer les données EN (pour les colonnes _en et la standardisation)
             const urlEN = `https://ddragon.leagueoflegends.com/cdn/${champ.version}/data/en_US/champion/${champ.id}.json`;
-            const resEN = await axios.get(urlEN);
+            const resEN = await axios.get<any>(urlEN);
             const dataEN = resEN.data.data[champ.id];
 
             if (!dataFR || !dataEN) {

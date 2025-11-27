@@ -1,11 +1,11 @@
 // src/app/champion/[championId]/page.tsx
 import React from 'react';
 import { fetchChampionDetails, fetchAllChampions, fetchLoreCharacters } from "@/lib/data";
-import SkinCarousel from '@/components/SkinCarousel';
-import SpellList from '@/components/SpellList';
-import ChampionNavigation from '@/components/ChampionNavigation';
+import SkinCarousel from '@/components/champions/SkinCarousel';
+import SpellList from '@/components/champions/SpellList';
+import ChampionNavigation from '@/components/champions/ChampionNavigation';
 import { getTranslation } from '@/lib/translations';
-import ChampionRelations from '@/components/ChampionRelations';
+import ChampionRelations from '@/components/champions/ChampionRelations';
 
 // Interface pour les props de la page
 interface ChampionPageProps {
@@ -24,6 +24,7 @@ export default async function ChampionPage({ params, searchParams }: ChampionPag
   // ASTUCE: On récupère la version la plus récente en appelant la liste de champions
   const allChampions = await fetchAllChampions(locale);
   const loreCharacters = await fetchLoreCharacters();
+  console.log('Lore Characters in Page:', JSON.stringify(loreCharacters, null, 2));
   const latestVersion = allChampions.length > 0 ? allChampions[0].version : '15.23.1';
 
   // Tri des champions pour la navigation (A-Z)
@@ -42,7 +43,7 @@ export default async function ChampionPage({ params, searchParams }: ChampionPag
   }
 
   // 2. Préparation des données pour l'affichage
-  const { name, title, lore, blurb, skins, spells, passive, partype, gender, species } = championDetails;
+  const { name, title, lore, blurb, skins, spells, passive, partype, gender, species, tags } = championDetails;
 
   const regionColors: Record<string, string> = {
     demacia: 'text-blue-300 border-blue-500/30 bg-blue-900/20',
@@ -60,6 +61,18 @@ export default async function ChampionPage({ params, searchParams }: ChampionPag
     void: 'text-violet-400 border-violet-500/30 bg-violet-900/20',
     runeterra: 'text-gray-300 border-gray-500/30 bg-gray-900/20',
     darkin: 'text-red-500 border-red-600/30 bg-red-950/40',
+  };
+
+  // Helper pour les couleurs de rôle
+  const getRoleColor = (r: string) => {
+    const role = r.toLowerCase();
+    if (role === 'mage') return 'text-blue-400';
+    if (role === 'assassin') return 'text-red-400';
+    if (role === 'fighter' || role === 'combattant') return 'text-orange-400';
+    if (role === 'tank') return 'text-green-400';
+    if (role === 'marksman' || role === 'tireur') return 'text-cyan-400';
+    if (role === 'support') return 'text-teal-400';
+    return 'text-gray-300';
   };
 
   // Helper pour les couleurs d'espèces
@@ -121,6 +134,20 @@ export default async function ChampionPage({ params, searchParams }: ChampionPag
 
           {/* Info Bar */}
           <div className="flex flex-wrap justify-center gap-4 mt-8 mb-4">
+            {/* Roles */}
+            {tags && tags.length > 0 && (
+              <div className="flex items-center gap-2 bg-gray-800/50 px-4 py-2 rounded-full border border-gray-700">
+                <span className="text-gray-400 text-sm uppercase tracking-wider font-semibold">{t.filters.role}</span>
+                <div className="flex gap-2">
+                  {tags.map(tag => (
+                    <span key={tag} className={`font-medium ${getRoleColor(tag)}`}>
+                      {(t.roles as any)[tag] || tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* Factions */}
             {championDetails.factions && championDetails.factions.length > 0 && (
               <div className="flex items-center gap-2 bg-gray-800/50 px-4 py-2 rounded-full border border-gray-700">

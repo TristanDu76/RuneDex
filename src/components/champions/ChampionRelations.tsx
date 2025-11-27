@@ -24,6 +24,8 @@ export default function ChampionRelations({
     const relations = championDetails.related_champions || [];
     const apiRelated = (championDetails.relatedChampions || []) as { name: string; slug: string; image?: string }[];
 
+
+
     let displayRelations: { champion: string; type: string; note?: string }[] = [];
 
     if (relations.length > 0) {
@@ -135,13 +137,20 @@ export default function ChampionRelations({
                                 const relChamp = allChampions.find((c) => c.name === rel.champion);
                                 const style = getTypeStyle(rel.type);
 
+                                // Debug log
+                                // console.log(`[ChampionRelations] Processing ${rel.champion}. Found in champions? ${!!relChamp}`);
+
                                 // PNJ ou Champion non trouvé dans l'API
                                 if (!relChamp) {
                                     const loreChar = loreCharacters.find(c => c.name === rel.champion);
 
                                     return (
-                                        <div key={rel.champion} className={`flex items-start gap-3 p-3 rounded-lg border ${style.bg} ${style.border} opacity-80`}>
-                                            <div className={`w-8 h-8 rounded-full flex items-center justify-center bg-gray-800 border-2 ${style.border} shrink-0 overflow-hidden`}>
+                                        <a
+                                            key={rel.champion}
+                                            href={`/lore/${rel.champion}?lang=${locale}`}
+                                            className={`flex items-start gap-3 p-3 rounded-lg border ${style.bg} ${style.border} opacity-80 hover:opacity-100 hover:bg-gray-700/50 transition-all group`}
+                                        >
+                                            <div className={`w-8 h-8 rounded-full flex items-center justify-center bg-gray-800 border-2 ${style.border} shrink-0 overflow-hidden group-hover:scale-110 transition-transform`}>
                                                 {loreChar && loreChar.image ? (
                                                     <img src={loreChar.image} alt={loreChar.name} className="w-full h-full object-cover" />
                                                 ) : (
@@ -150,7 +159,7 @@ export default function ChampionRelations({
                                             </div>
                                             <div>
                                                 <div className="flex items-center gap-2 flex-wrap">
-                                                    <span className={`text-sm font-medium ${style.text}`}>{rel.champion}</span>
+                                                    <span className={`text-sm font-medium ${style.text} group-hover:text-white transition-colors`}>{rel.champion}</span>
                                                     <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs ${style.bg} ${style.border} ${style.text} border`}>
                                                         <span>{style.icon}</span>
                                                         <span>{(t.relationTypes as Record<string, string>)[rel.type] || rel.type}</span>
@@ -170,7 +179,7 @@ export default function ChampionRelations({
                                                     </p>
                                                 )}
                                             </div>
-                                        </div>
+                                        </a>
                                     );
                                 }
 

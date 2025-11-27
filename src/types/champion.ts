@@ -13,6 +13,12 @@ export interface LoreCharacter {
     species?: string;
     description?: string;
     image?: string;
+    description_en?: string;
+    related_champions?: {
+        champion: string;
+        type: string;
+        note?: string;
+    }[];
 }
 
 export interface ChampionImage {
@@ -92,6 +98,7 @@ export interface ChampionData {
     }[];
     gender?: string; // Nouvelle colonne DB
     species?: string; // Nouvelle colonne DB
+    lanes?: string[]; // Nouvelle colonne DB (Top, Jungle, Mid, Bot, Support)
 
     // Champs de traduction (anglais)
     title_en?: string;

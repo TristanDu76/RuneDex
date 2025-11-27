@@ -6,7 +6,14 @@ import Image from 'next/image';
 import { useSearchParams, usePathname } from 'next/navigation';
 import GlobalSearch from './GlobalSearch';
 
-export default function Navbar() {
+import { ChampionData, LoreCharacter } from '@/types/champion';
+
+interface NavbarProps {
+    champions: ChampionData[];
+    loreCharacters: LoreCharacter[];
+}
+
+export default function Navbar({ champions, loreCharacters }: NavbarProps) {
     const searchParams = useSearchParams();
     const pathname = usePathname();
     const lang = searchParams.get('lang') || 'fr_FR';
@@ -49,7 +56,7 @@ export default function Navbar() {
                     </Link>
 
                     {/* Search Bar */}
-                    <GlobalSearch />
+                    <GlobalSearch champions={champions} loreCharacters={loreCharacters} />
                 </div>
 
                 {/* Right: Language Switcher */}
