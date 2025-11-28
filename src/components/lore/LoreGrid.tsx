@@ -3,16 +3,15 @@
 import React, { useState, useMemo } from 'react';
 import { LoreCharacter } from '@/types/champion';
 import LoreCard from './LoreCard';
-import { getTranslation } from '@/lib/translations';
+import { useTranslations } from 'next-intl';
 
 interface LoreGridProps {
     characters: LoreCharacter[];
-    lang?: string;
 }
 
-export default function LoreGrid({ characters, lang = 'fr_FR' }: LoreGridProps) {
+export default function LoreGrid({ characters }: LoreGridProps) {
     const [query, setQuery] = useState('');
-    const t = getTranslation(lang);
+    const t = useTranslations();
 
     const filteredCharacters = useMemo(() => {
         let result = characters;
@@ -52,7 +51,7 @@ export default function LoreGrid({ characters, lang = 'fr_FR' }: LoreGridProps) 
                     <input
                         type="text"
                         className="block w-full pl-11 pr-4 py-3 border border-gray-700 rounded-lg leading-5 bg-gray-800 text-gray-300 placeholder-gray-500 focus:outline-none focus:bg-gray-700 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/50 sm:text-sm transition-all shadow-lg"
-                        placeholder="Rechercher un personnage du lore..."
+                        placeholder={t('home.searchPlaceholder')}
                         value={query}
                         onChange={(e) => setQuery(e.target.value)}
                     />
@@ -80,13 +79,12 @@ export default function LoreGrid({ characters, lang = 'fr_FR' }: LoreGridProps) 
                         <LoreCard
                             key={char.id}
                             character={char}
-                            lang={lang}
                         />
                     ))}
                 </section>
             ) : (
                 <div className="text-center text-gray-500 mt-12">
-                    <p className="text-xl">{t.home.noResults.replace('{query}', query)}</p>
+                    <p className="text-xl">{t('home.noResults', { query })}</p>
                 </div>
             )}
         </div>

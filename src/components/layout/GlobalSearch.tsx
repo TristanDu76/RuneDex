@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useRouter } from '@/i18n/routing';
 import { ChampionData, LoreCharacter } from '@/types/champion';
-
-import { getTranslation } from '@/lib/translations';
+import { useTranslations } from 'next-intl';
 
 interface GlobalSearchProps {
     champions: ChampionData[];
@@ -23,9 +22,7 @@ export default function GlobalSearch({ champions, loreCharacters }: GlobalSearch
     const wrapperRef = useRef<HTMLDivElement>(null);
 
     const router = useRouter();
-    const searchParams = useSearchParams();
-    const lang = searchParams.get('lang') || 'fr_FR';
-    const t = getTranslation(lang);
+    const t = useTranslations();
 
     useEffect(() => {
         setMounted(true);
@@ -70,10 +67,10 @@ export default function GlobalSearch({ champions, loreCharacters }: GlobalSearch
     const handleSelect = (result: SearchResult) => {
         let url = '';
         if (result.type === 'champion') {
-            url = lang ? `/champion/${result.data.id}?lang=${lang}` : `/champion/${result.data.id}`;
+            url = `/champion/${result.data.id}`;
         } else {
             // Lore character
-            url = lang ? `/lore/${result.data.name}?lang=${lang}` : `/lore/${result.data.name}`;
+            url = `/lore/${result.data.name}`;
         }
 
         router.push(url);
@@ -101,7 +98,7 @@ export default function GlobalSearch({ champions, loreCharacters }: GlobalSearch
                     <input
                         type="text"
                         className="block w-full pl-10 pr-3 py-2 border border-gray-600 rounded-full leading-5 bg-gray-800 text-gray-300 placeholder-gray-500 focus:outline-none focus:bg-gray-700 focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 sm:text-sm transition-colors"
-                        placeholder={t.search.placeholder}
+                        placeholder={t('search.placeholder')}
                         value={query}
                         onChange={(e) => setQuery(e.target.value)}
                         onFocus={() => query.length > 0 && setIsOpen(true)}
@@ -168,7 +165,7 @@ export default function GlobalSearch({ champions, loreCharacters }: GlobalSearch
                                 type="text"
                                 autoFocus
                                 className="block w-full pl-10 pr-3 py-3 border border-gray-600 rounded-full leading-5 bg-gray-800 text-gray-300 placeholder-gray-500 focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 text-base"
-                                placeholder={t.search.placeholder}
+                                placeholder={t('search.placeholder')}
                                 value={query}
                                 onChange={(e) => setQuery(e.target.value)}
                                 onKeyDown={handleKeyDown}
@@ -218,7 +215,7 @@ export default function GlobalSearch({ champions, loreCharacters }: GlobalSearch
                     ) : (
                         query.length > 0 && (
                             <div className="text-center text-gray-400 mt-8">
-                                <p>{t.search.noResults}</p>
+                                <p>{t('search.noResults')}</p>
                             </div>
                         )
                     )}

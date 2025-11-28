@@ -122,7 +122,7 @@ export default function ChampionRelations({
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
-                {t.champion.relatedChampions}
+                {t('champion.relatedChampions')}
             </h2>
 
             <div className="space-y-8">
@@ -130,7 +130,7 @@ export default function ChampionRelations({
                     <div key={region} className="space-y-3">
                         <h3 className="text-lg font-semibold text-gray-300 uppercase tracking-wider border-b border-gray-700 pb-1 mb-3">
                             {/* Traduction de la région si possible, sinon formatage simple */}
-                            {(t.factions as Record<string, string>)[region] || region.charAt(0).toUpperCase() + region.slice(1)}
+                            {t(`factions.${region}`) || region.charAt(0).toUpperCase() + region.slice(1)}
                         </h3>
                         <div className="grid grid-cols-1 gap-3">
                             {regionRelations.map((rel) => {
@@ -147,7 +147,7 @@ export default function ChampionRelations({
                                     return (
                                         <a
                                             key={rel.champion}
-                                            href={`/lore/${rel.champion}?lang=${locale}`}
+                                            href={`/${locale}/lore/${rel.champion}`}
                                             className={`flex items-start gap-3 p-3 rounded-lg border ${style.bg} ${style.border} opacity-80 hover:opacity-100 hover:bg-gray-700/50 transition-all group`}
                                         >
                                             <div className={`w-8 h-8 rounded-full flex items-center justify-center bg-gray-800 border-2 ${style.border} shrink-0 overflow-hidden group-hover:scale-110 transition-transform`}>
@@ -162,7 +162,7 @@ export default function ChampionRelations({
                                                     <span className={`text-sm font-medium ${style.text} group-hover:text-white transition-colors`}>{rel.champion}</span>
                                                     <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs ${style.bg} ${style.border} ${style.text} border`}>
                                                         <span>{style.icon}</span>
-                                                        <span>{(t.relationTypes as Record<string, string>)[rel.type] || rel.type}</span>
+                                                        <span>{t(`relationTypes.${rel.type}`) || rel.type}</span>
                                                     </span>
                                                 </div>
                                                 <p className="text-xs text-gray-400 mt-1">
@@ -175,7 +175,7 @@ export default function ChampionRelations({
                                                 </p>
                                                 {rel.note && (
                                                     <p className="text-xs text-gray-400 mt-0.5 italic">
-                                                        &quot;{typeof rel.note === 'object' && rel.note !== null ? (rel.note as any)[locale === 'fr_FR' ? 'fr' : 'en'] || (rel.note as any)['en'] : rel.note}&quot;
+                                                        &quot;{typeof rel.note === 'object' && rel.note !== null ? (rel.note as any)[locale === 'fr' ? 'fr' : 'en'] || (rel.note as any)['en'] : rel.note}&quot;
                                                     </p>
                                                 )}
                                             </div>
@@ -187,7 +187,7 @@ export default function ChampionRelations({
                                 return (
                                     <div key={rel.champion} className="flex items-start gap-3">
                                         <a
-                                            href={`/champion/${relChamp.id}?lang=${locale}`}
+                                            href={`/${locale}/champion/${relChamp.id}`}
                                             className={`flex items-center gap-3 hover:bg-gray-700/50 px-3 py-2 rounded-lg border transition-all group flex-1 ${style.bg} ${style.border}`}
                                         >
                                             <img
@@ -199,12 +199,12 @@ export default function ChampionRelations({
                                                 <div className="flex items-center gap-2 flex-wrap">
                                                     <span className={`text-sm ${style.text} group-hover:text-white font-bold truncate`}>{rel.champion}</span>
                                                     <span className={`inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] uppercase tracking-wide font-semibold ${style.bg} ${style.border} ${style.text} border`}>
-                                                        {style.icon} {(t.relationTypes as Record<string, string>)[rel.type] || rel.type}
+                                                        {style.icon} {t(`relationTypes.${rel.type}`) || rel.type}
                                                     </span>
                                                 </div>
                                                 {rel.note && (
                                                     <p className="text-xs text-gray-400 mt-1 italic whitespace-normal break-words">
-                                                        &quot;{typeof rel.note === 'object' && rel.note !== null ? (rel.note as any)[locale === 'fr_FR' ? 'fr' : 'en'] || (rel.note as any)['en'] : rel.note}&quot;
+                                                        &quot;{typeof rel.note === 'object' && rel.note !== null ? (rel.note as any)[locale === 'fr' ? 'fr' : 'en'] || (rel.note as any)['en'] : rel.note}&quot;
                                                     </p>
                                                 )}
                                             </div>

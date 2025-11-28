@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
-import { getTranslation } from '@/lib/translations';
+import { useTranslations } from 'next-intl';
 
 export interface ActiveFilters {
     regions: string[];
@@ -18,7 +18,6 @@ export interface FilterOption {
 }
 
 interface FilterBarProps {
-    lang?: string;
     activeFilters: ActiveFilters;
     onFiltersChange: (filters: ActiveFilters) => void;
     filterOptions: {
@@ -31,14 +30,13 @@ interface FilterBarProps {
 }
 
 export default function FilterBar({
-    lang = 'fr_FR',
     activeFilters,
     onFiltersChange,
     filterOptions,
 }: FilterBarProps) {
     const [openDropdown, setOpenDropdown] = useState<string | null>(null);
     const dropdownRef = useRef<HTMLDivElement>(null);
-    const t = getTranslation(lang);
+    const t = useTranslations();
 
     // Close dropdown when clicking outside
     useEffect(() => {
@@ -80,6 +78,17 @@ export default function FilterBar({
         return Object.values(activeFilters).reduce((sum, arr) => sum + arr.length, 0);
     };
 
+    const getTranslationKey = (category: keyof ActiveFilters) => {
+        switch (category) {
+            case 'regions': return 'factions';
+            case 'races': return 'species';
+            case 'genders': return 'gender';
+            case 'resources': return 'resource';
+            case 'roles': return 'roles';
+            default: return category;
+        }
+    };
+
     const renderDropdownButton = (
         category: keyof ActiveFilters,
         label: string,
@@ -88,6 +97,7 @@ export default function FilterBar({
     ) => {
         const activeCount = activeFilters[category].length;
         const isOpen = openDropdown === category;
+        const translationKey = getTranslationKey(category);
 
         if (options.length === 0) return null;
 
@@ -136,7 +146,7 @@ export default function FilterBar({
                                         />
                                         <span className={`flex-1 text-sm ${isActive ? 'text-yellow-400 font-semibold' : 'text-gray-300'
                                             }`}>
-                                            {option.label}
+                                            {t(`${translationKey}.${option.value}`) || option.label}
                                         </span>
                                         {option.count !== undefined && (
                                             <span className={`text-xs px-2 py-0.5 rounded-full ${isActive
@@ -160,11 +170,11 @@ export default function FilterBar({
 
     return (
         <div className="flex flex-wrap items-center gap-2">
-            {renderDropdownButton('regions', t.filters.region, '🗺️', filterOptions.regions)}
-            {renderDropdownButton('races', t.filters.race, '🧬', filterOptions.races)}
-            {renderDropdownButton('genders', t.filters.gender, '⚧️', filterOptions.genders)}
-            {renderDropdownButton('resources', t.filters.resource, '⚡', filterOptions.resources)}
-            {renderDropdownButton('roles', t.filters.role, '⚔️', filterOptions.roles)}
+            {renderDropdownButton('regions', t('filters.region'), '🗺️', filterOptions.regions)}
+            {renderDropdownButton('races', t('filters.race'), '🧬', filterOptions.races)}
+            {renderDropdownButton('genders', t('filters.gender'), '⚧️', filterOptions.genders)}
+            {renderDropdownButton('resources', t('filters.resource'), '⚡', filterOptions.resources)}
+            {renderDropdownButton('roles', t('filters.role'), '⚔️', filterOptions.roles)}
 
             {activeCount > 0 && (
                 <button

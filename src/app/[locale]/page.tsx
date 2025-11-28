@@ -1,19 +1,18 @@
-// src/app/page.tsx
+// src/app/[locale]/page.tsx
 import { fetchAllChampions, fetchLoreCharacters } from "@/lib/data";
 import HomeContent from "@/components/layout/HomeContent";
 import LanguageSwitcher from "@/components/layout/LanguageSwitcher";
 import Image from "next/image";
-import Link from "next/link";
-import { getTranslation } from "@/lib/translations";
+import { Link } from "@/i18n/routing";
+import { getTranslations } from 'next-intl/server';
 
 interface HomeProps {
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+  params: Promise<{ locale: string }>;
 }
 
-export default async function Home({ searchParams }: HomeProps) {
-  const params = await searchParams;
-  const locale = (params.lang as string) || 'fr_FR';
-  const t = getTranslation(locale);
+export default async function Home({ params }: HomeProps) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'home' });
 
   // 1. Récupération des données (s'exécute côté serveur)
   const champions = await fetchAllChampions(locale);
@@ -46,10 +45,10 @@ export default async function Home({ searchParams }: HomeProps) {
             RuneDex
           </h1>
           <Link
-            href={`/quiz?lang=${locale}`}
+            href="/quiz"
             className="mt-6 px-6 py-2 bg-yellow-600/20 hover:bg-yellow-600/40 border border-yellow-600/50 rounded-full text-yellow-400 font-medium transition-all hover:scale-105 flex items-center gap-2"
           >
-            <span>🎮</span> Play Quiz
+            <span>🎮</span> {t('playQuiz')}
           </Link>
         </div>
 
@@ -57,7 +56,6 @@ export default async function Home({ searchParams }: HomeProps) {
         <HomeContent
           champions={sortedChampions}
           loreCharacters={sortedLoreCharacters}
-          lang={locale}
         />
       </div>
 

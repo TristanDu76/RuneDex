@@ -1,6 +1,6 @@
 import React from 'react';
 import { fetchLoreCharacter, fetchAllChampions, fetchLoreCharacters } from "@/lib/data";
-import { getTranslation } from '@/lib/translations';
+import { getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import ChampionRelations from '@/components/champions/ChampionRelations';
 import { ChampionData } from '@/types/champion';
@@ -8,18 +8,16 @@ import { ChampionData } from '@/types/champion';
 interface LorePageProps {
     params: Promise<{
         name: string;
+        locale: string;
     }>;
-    searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
-export default async function LorePage({ params, searchParams }: LorePageProps) {
-    const { name } = await params;
+export default async function LorePage({ params }: LorePageProps) {
+    const { name, locale } = await params;
     // Decode the name from URL (e.g. "Kusho" or "Kusho%20Master")
     const decodedName = decodeURIComponent(name);
 
-    const { lang } = await searchParams;
-    const locale = (lang as string) || 'fr_FR';
-    const t = getTranslation(locale);
+    const t = await getTranslations({ locale });
 
     const character = await fetchLoreCharacter(decodedName, locale);
     const allChampions = await fetchAllChampions(locale);
@@ -121,9 +119,9 @@ export default async function LorePage({ params, searchParams }: LorePageProps) 
                     {/* Faction */}
                     {character.faction && (
                         <div className="flex items-center gap-2 bg-gray-800/50 px-4 py-2 rounded-full border border-gray-700">
-                            <span className="text-gray-400 text-sm uppercase tracking-wider font-semibold">{t.champion.region}</span>
+                            <span className="text-gray-400 text-sm uppercase tracking-wider font-semibold">{t('champion.region')}</span>
                             <span className={`font-bold ${regionColors[character.faction.toLowerCase()] || 'text-gray-300'}`}>
-                                {(t.factions as any)[character.faction] || character.faction}
+                                {t(`factions.${character.faction}`) || character.faction}
                             </span>
                         </div>
                     )}
@@ -131,9 +129,9 @@ export default async function LorePage({ params, searchParams }: LorePageProps) 
                     {/* Species */}
                     {character.species && (
                         <div className="flex items-center gap-2 bg-gray-800/50 px-4 py-2 rounded-full border border-gray-700">
-                            <span className="text-gray-400 text-sm uppercase tracking-wider font-semibold">{t.champion.species}</span>
+                            <span className="text-gray-400 text-sm uppercase tracking-wider font-semibold">{t('champion.species')}</span>
                             <span className={`font-medium ${getSpeciesColor(character.species)}`}>
-                                {(t.species as any)[character.species] || character.species}
+                                {t(`species.${character.species}`) || character.species}
                             </span>
                         </div>
                     )}
@@ -141,9 +139,9 @@ export default async function LorePage({ params, searchParams }: LorePageProps) 
                     {/* Gender */}
                     {character.gender && (
                         <div className="flex items-center gap-2 bg-gray-800/50 px-4 py-2 rounded-full border border-gray-700">
-                            <span className="text-gray-400 text-sm uppercase tracking-wider font-semibold">{t.champion.gender}</span>
+                            <span className="text-gray-400 text-sm uppercase tracking-wider font-semibold">{t('champion.gender')}</span>
                             <span className={`font-medium ${getGenderColor(character.gender)}`}>
-                                {(t.gender as any)[character.gender] || character.gender}
+                                {t(`gender.${character.gender}`) || character.gender}
                             </span>
                         </div>
                     )}
@@ -156,7 +154,7 @@ export default async function LorePage({ params, searchParams }: LorePageProps) 
                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                             </svg>
-                            {t.champion.loreTitle}
+                            {t('champion.loreTitle')}
                         </h2>
                         <div className="prose prose-invert max-w-none">
                             <p className="text-gray-300 leading-relaxed text-lg italic">

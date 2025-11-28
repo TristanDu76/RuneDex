@@ -1,17 +1,14 @@
 import { fetchAllChampions } from "@/lib/data";
 import QuizClient from "@/components/quiz/QuizClient";
-import LanguageSwitcher from "@/components/layout/LanguageSwitcher";
-import Link from "next/link";
-import { getTranslation } from "@/lib/translations";
+import { getTranslations } from 'next-intl/server';
 
 interface QuizPageProps {
-    searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+    params: Promise<{ locale: string }>;
 }
 
-export default async function QuizPage({ searchParams }: QuizPageProps) {
-    const params = await searchParams;
-    const locale = (params.lang as string) || 'fr_FR';
-    const t = getTranslation(locale);
+export default async function QuizPage({ params }: QuizPageProps) {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'quiz' });
 
     const champions = await fetchAllChampions(locale);
 
@@ -25,11 +22,11 @@ export default async function QuizPage({ searchParams }: QuizPageProps) {
             {/* Content */}
             <div className="flex-1 flex flex-col items-center justify-start pt-10 pb-20 px-4">
                 <div className="text-center mb-8">
-                    <h2 className="text-4xl font-bold mb-2">{t.quiz.title}</h2>
-                    <p className="text-gray-400">{t.quiz.subtitle}</p>
+                    <h2 className="text-4xl font-bold mb-2">{t('title')}</h2>
+                    <p className="text-gray-400">{t('subtitle')}</p>
                 </div>
 
-                <QuizClient champions={champions} lang={locale} />
+                <QuizClient champions={champions} />
             </div>
         </main>
     );

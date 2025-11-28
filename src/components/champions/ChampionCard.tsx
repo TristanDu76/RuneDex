@@ -1,22 +1,21 @@
 // src/components/ChampionCard.tsx
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import { ChampionData } from '@/types/champion';
 
 interface ChampionCardProps {
   champion: ChampionData;
-  lang?: string;
 }
 
 const getChampionImageURL = (version: string, imageId: string) => {
   return `https://ddragon.leagueoflegends.com/cdn/${version}/img/champion/${imageId}.png`;
 };
 
-export default function ChampionCard({ champion, lang }: ChampionCardProps) {
+export default function ChampionCard({ champion }: ChampionCardProps) {
   const imageUrl = getChampionImageURL(champion.version, champion.id);
 
-  // L'URL de la page détaillée : /champion/Aatrox?lang=...
-  const href = lang ? `/champion/${champion.id}?lang=${lang}` : `/champion/${champion.id}`;
+  // L'URL de la page détaillée : /champion/Aatrox (Link adds locale)
+  const href = `/champion/${champion.id}`;
 
   return (
     // On enveloppe toute la carte dans le composant Link

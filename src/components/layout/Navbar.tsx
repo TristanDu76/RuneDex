@@ -1,10 +1,10 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
-import { useSearchParams, usePathname } from 'next/navigation';
 import GlobalSearch from './GlobalSearch';
+import { Link, usePathname } from '@/i18n/routing';
+import { useLocale } from 'next-intl';
 
 import { ChampionData, LoreCharacter } from '@/types/champion';
 
@@ -14,21 +14,13 @@ interface NavbarProps {
 }
 
 export default function Navbar({ champions, loreCharacters }: NavbarProps) {
-    const searchParams = useSearchParams();
     const pathname = usePathname();
-    const lang = searchParams.get('lang') || 'fr_FR';
+    const locale = useLocale();
 
+    // Hide navbar on home page
     if (pathname === '/') {
         return null;
     }
-
-    const homeHref = lang !== 'fr_FR' ? `/?lang=${lang}` : '/';
-
-    const toggleLanguage = (newLang: string) => {
-        const params = new URLSearchParams(searchParams.toString());
-        params.set('lang', newLang);
-        return `${pathname}?${params.toString()}`;
-    };
 
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 bg-gray-900/90 backdrop-blur-md border-b border-gray-800 shadow-lg h-16">
@@ -37,7 +29,7 @@ export default function Navbar({ champions, loreCharacters }: NavbarProps) {
                 {/* Left: Logo */}
                 <div className="flex-shrink-0 flex items-center gap-6">
                     <Link
-                        href={homeHref}
+                        href="/"
                         className="flex items-center gap-3 hover:opacity-80 transition-opacity"
                     >
                         <Image
@@ -65,8 +57,9 @@ export default function Navbar({ champions, loreCharacters }: NavbarProps) {
 
                     <div className="flex items-center bg-gray-800 rounded-lg p-1 border border-gray-700">
                         <Link
-                            href={toggleLanguage('fr_FR')}
-                            className={`px-3 py-1 rounded-md text-sm font-medium transition-all ${lang === 'fr_FR'
+                            href={pathname}
+                            locale="fr"
+                            className={`px-3 py-1 rounded-md text-sm font-medium transition-all ${locale === 'fr'
                                 ? 'bg-gray-700 text-yellow-500 shadow-sm'
                                 : 'text-gray-400 hover:text-gray-200'
                                 }`}
@@ -74,8 +67,9 @@ export default function Navbar({ champions, loreCharacters }: NavbarProps) {
                             FR
                         </Link>
                         <Link
-                            href={toggleLanguage('en_US')}
-                            className={`px-3 py-1 rounded-md text-sm font-medium transition-all ${lang === 'en_US'
+                            href={pathname}
+                            locale="en"
+                            className={`px-3 py-1 rounded-md text-sm font-medium transition-all ${locale === 'en'
                                 ? 'bg-gray-700 text-yellow-500 shadow-sm'
                                 : 'text-gray-400 hover:text-gray-200'
                                 }`}

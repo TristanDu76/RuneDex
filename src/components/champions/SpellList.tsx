@@ -1,17 +1,16 @@
 import React from 'react';
 import { ChampionSpell, ChampionPassive } from '@/types/champion';
-import { getTranslation } from '@/lib/translations';
+import { useTranslations } from 'next-intl';
 
 interface SpellListProps {
     spells: ChampionSpell[];
     passive: ChampionPassive;
     version: string;
-    lang?: string;
     partype: string;
 }
 
-export default function SpellList({ spells, passive, version, lang = 'fr_FR', partype }: SpellListProps) {
-    const t = getTranslation(lang);
+export default function SpellList({ spells, passive, version, partype }: SpellListProps) {
+    const t = useTranslations();
 
     const getSpellImage = (imageId: string) =>
         `https://ddragon.leagueoflegends.com/cdn/${version}/img/spell/${imageId}`;
@@ -58,13 +57,13 @@ export default function SpellList({ spells, passive, version, lang = 'fr_FR', pa
 
     const formatRange = (spell: ChampionSpell) => {
         if (spell.id === 'AatroxQ') {
-            return t.champion.rangeVariable;
+            return t('champion.rangeVariable');
         }
 
         // Check for global ranges (typically 10000, 20000, 25000, etc.)
         const rangeValue = parseInt(spell.rangeBurn);
         if (!isNaN(rangeValue) && rangeValue >= 10000) {
-            return t.champion.rangeUnlimited;
+            return t('champion.rangeUnlimited');
         }
 
         return spell.rangeBurn;
@@ -75,7 +74,7 @@ export default function SpellList({ spells, passive, version, lang = 'fr_FR', pa
             {/* Passive */}
             <div className="bg-gray-800/50 p-6 rounded-xl border border-gray-700">
                 <h3 className="text-xl font-bold text-yellow-500 mb-4 flex items-center gap-2">
-                    {t.champion.passive}
+                    {t('champion.passive')}
                 </h3>
                 <div className="flex flex-col sm:flex-row gap-4">
                     <div className="flex-shrink-0">
@@ -98,7 +97,7 @@ export default function SpellList({ spells, passive, version, lang = 'fr_FR', pa
             {/* Spells */}
             <div className="space-y-6">
                 <h3 className="text-xl font-bold text-yellow-500 mb-4 border-b border-gray-700 pb-2">
-                    {t.champion.spellsTitle}
+                    {t('champion.spellsTitle')}
                 </h3>
 
                 {spells.map((spell, index) => {
@@ -128,17 +127,17 @@ export default function SpellList({ spells, passive, version, lang = 'fr_FR', pa
                                     <div className="flex flex-wrap gap-4 text-xs text-gray-500 mb-3 font-mono">
                                         {spell.cooldownBurn && (
                                             <span className="bg-gray-900/50 px-2 py-1 rounded">
-                                                {t.champion.cooldown} <span className="text-gray-300">{spell.cooldownBurn}s</span>
+                                                {t('champion.cooldown')} <span className="text-gray-300">{spell.cooldownBurn}s</span>
                                             </span>
                                         )}
                                         {costDisplay && (
                                             <span className="bg-gray-900/50 px-2 py-1 rounded">
-                                                {t.champion.cost} <span className="text-gray-300">{costDisplay}</span>
+                                                {t('champion.cost')} <span className="text-gray-300">{costDisplay}</span>
                                             </span>
                                         )}
                                         {rangeDisplay && rangeDisplay !== "0" && (
                                             <span className="bg-gray-900/50 px-2 py-1 rounded">
-                                                {t.champion.range} <span className="text-gray-300">{rangeDisplay}</span>
+                                                {t('champion.range')} <span className="text-gray-300">{rangeDisplay}</span>
                                             </span>
                                         )}
                                     </div>

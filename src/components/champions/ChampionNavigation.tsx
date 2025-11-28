@@ -1,13 +1,12 @@
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 
 interface ChampionNavigationProps {
     prevChampionId: string;
     nextChampionId: string;
-    lang?: string;
 }
 
-export default function ChampionNavigation({ prevChampionId, nextChampionId, lang }: ChampionNavigationProps) {
-    const getLink = (id: string) => lang ? `/champion/${id}?lang=${lang}` : `/champion/${id}`;
+export default function ChampionNavigation({ prevChampionId, nextChampionId }: ChampionNavigationProps) {
+    const getLink = (id: string) => `/champion/${id}`;
 
     return (
         <>

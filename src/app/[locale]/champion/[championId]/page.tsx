@@ -1,30 +1,28 @@
-// src/app/champion/[championId]/page.tsx
+// src/app/[locale]/champion/[championId]/page.tsx
 import React from 'react';
 import { fetchChampionDetails, fetchAllChampions, fetchLoreCharacters } from "@/lib/data";
 import SkinCarousel from '@/components/champions/SkinCarousel';
 import SpellList from '@/components/champions/SpellList';
 import ChampionNavigation from '@/components/champions/ChampionNavigation';
-import { getTranslation } from '@/lib/translations';
+import { getTranslations } from 'next-intl/server';
 import ChampionRelations from '@/components/champions/ChampionRelations';
 
 // Interface pour les props de la page
 interface ChampionPageProps {
   params: Promise<{
     championId: string;
+    locale: string;
   }>;
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
-export default async function ChampionPage({ params, searchParams }: ChampionPageProps) {
-  const { championId } = await params;
-  const { lang } = await searchParams;
-  const locale = (lang as string) || 'fr_FR';
-  const t = getTranslation(locale);
+export default async function ChampionPage({ params }: ChampionPageProps) {
+  const { championId, locale } = await params;
+  const t = await getTranslations({ locale });
 
   // ASTUCE: On récupère la version la plus récente en appelant la liste de champions
   const allChampions = await fetchAllChampions(locale);
   const loreCharacters = await fetchLoreCharacters();
-  console.log('Lore Characters in Page:', JSON.stringify(loreCharacters, null, 2));
+  // console.log('Lore Characters in Page:', JSON.stringify(loreCharacters, null, 2));
   const latestVersion = allChampions.length > 0 ? allChampions[0].version : '15.23.1';
 
   // Tri des champions pour la navigation (A-Z)
@@ -119,7 +117,6 @@ export default async function ChampionPage({ params, searchParams }: ChampionPag
       <ChampionNavigation
         prevChampionId={prevChampion.id}
         nextChampionId={nextChampion.id}
-        lang={lang as string}
       />
 
       <div className="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
@@ -137,11 +134,11 @@ export default async function ChampionPage({ params, searchParams }: ChampionPag
             {/* Roles */}
             {tags && tags.length > 0 && (
               <div className="flex items-center gap-2 bg-gray-800/50 px-4 py-2 rounded-full border border-gray-700">
-                <span className="text-gray-400 text-sm uppercase tracking-wider font-semibold">{t.filters.role}</span>
+                <span className="text-gray-400 text-sm uppercase tracking-wider font-semibold">{t('filters.role')}</span>
                 <div className="flex gap-2">
                   {tags.map(tag => (
                     <span key={tag} className={`font-medium ${getRoleColor(tag)}`}>
-                      {(t.roles as any)[tag] || tag}
+                      {t(`roles.${tag}`) || tag}
                     </span>
                   ))}
                 </div>
@@ -151,11 +148,11 @@ export default async function ChampionPage({ params, searchParams }: ChampionPag
             {/* Factions */}
             {championDetails.factions && championDetails.factions.length > 0 && (
               <div className="flex items-center gap-2 bg-gray-800/50 px-4 py-2 rounded-full border border-gray-700">
-                <span className="text-gray-400 text-sm uppercase tracking-wider font-semibold">{t.champion.region}</span>
+                <span className="text-gray-400 text-sm uppercase tracking-wider font-semibold">{t('champion.region')}</span>
                 <div className="flex gap-2">
                   {championDetails.factions.map(faction => (
                     <span key={faction} className={`text-sm font-bold px-2 py-0.5 rounded ${regionColors[faction.toLowerCase()] || 'text-gray-300'}`}>
-                      {(t.factions as any)[faction] || faction}
+                      {t(`factions.${faction}`) || faction}
                     </span>
                   ))}
                 </div>
@@ -165,9 +162,9 @@ export default async function ChampionPage({ params, searchParams }: ChampionPag
             {/* Species */}
             {species && (
               <div className="flex items-center gap-2 bg-gray-800/50 px-4 py-2 rounded-full border border-gray-700">
-                <span className="text-gray-400 text-sm uppercase tracking-wider font-semibold">{t.champion.species}</span>
+                <span className="text-gray-400 text-sm uppercase tracking-wider font-semibold">{t('champion.species')}</span>
                 <span className={`font-medium ${getSpeciesColor(species)}`}>
-                  {(t.species as any)[species] || species}
+                  {t(`species.${species}`) || species}
                 </span>
               </div>
             )}
@@ -175,9 +172,9 @@ export default async function ChampionPage({ params, searchParams }: ChampionPag
             {/* Gender */}
             {gender && (
               <div className="flex items-center gap-2 bg-gray-800/50 px-4 py-2 rounded-full border border-gray-700">
-                <span className="text-gray-400 text-sm uppercase tracking-wider font-semibold">{t.champion.gender}</span>
+                <span className="text-gray-400 text-sm uppercase tracking-wider font-semibold">{t('champion.gender')}</span>
                 <span className={`font-medium ${getGenderColor(gender)}`}>
-                  {(t.gender as any)[gender] || gender}
+                  {t(`gender.${gender}`) || gender}
                 </span>
               </div>
             )}
@@ -185,9 +182,9 @@ export default async function ChampionPage({ params, searchParams }: ChampionPag
             {/* Resource */}
             {partype && (
               <div className="flex items-center gap-2 bg-gray-800/50 px-4 py-2 rounded-full border border-gray-700">
-                <span className="text-gray-400 text-sm uppercase tracking-wider font-semibold">{t.champion.resource}</span>
+                <span className="text-gray-400 text-sm uppercase tracking-wider font-semibold">{t('champion.resource')}</span>
                 <span className={`font-medium ${getResourceColor(partype)}`}>
-                  {(t.resource as any)[partype] || partype}
+                  {t(`resource.${partype}`) || partype}
                 </span>
               </div>
             )}
@@ -199,7 +196,7 @@ export default async function ChampionPage({ params, searchParams }: ChampionPag
           <div className="lg:col-span-1">
             <div className="bg-gray-800/30 p-8 rounded-xl border border-gray-700 sticky top-8">
               <h2 className="text-2xl font-bold text-gray-200 mb-6 border-b border-gray-700 pb-2 flex justify-between items-center">
-                <span>{t.champion.loreTitle}</span>
+                <span>{t('champion.loreTitle')}</span>
               </h2>
               <p className="text-gray-300 leading-relaxed whitespace-pre-line text-justify mb-8">
                 {lore || blurb}
@@ -221,7 +218,7 @@ export default async function ChampionPage({ params, searchParams }: ChampionPag
           {/* Right Column: Spells */}
           <div className="lg:col-span-2">
             {spells && passive && (
-              <SpellList spells={spells} passive={passive} version={latestVersion} lang={locale} partype={partype} />
+              <SpellList spells={spells} passive={passive} version={latestVersion} partype={partype} />
             )}
           </div>
         </div>

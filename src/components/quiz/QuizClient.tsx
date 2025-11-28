@@ -4,12 +4,11 @@ import { useState, useEffect, useMemo, useRef } from 'react';
 import Image from 'next/image';
 import { ChampionData } from '@/types/champion';
 import { motion, AnimatePresence } from 'framer-motion';
-import { getTranslation } from '@/lib/translations';
-import { ChevronLeft, ChevronRight, HelpCircle, X } from 'lucide-react'; // Assuming lucide-react is available, or I'll use text
+import { useTranslations } from 'next-intl';
+import { ChevronLeft, ChevronRight, HelpCircle, X } from 'lucide-react';
 
 interface QuizClientProps {
     champions: ChampionData[];
-    lang: string;
 }
 
 interface GuessResult {
@@ -22,7 +21,7 @@ interface GuessResult {
     role: 'correct' | 'incorrect' | 'partial';
 }
 
-export default function QuizClient({ champions, lang }: QuizClientProps) {
+export default function QuizClient({ champions }: QuizClientProps) {
     const [targetChampion, setTargetChampion] = useState<ChampionData | null>(null);
     const [guesses, setGuesses] = useState<GuessResult[]>([]);
     const [input, setInput] = useState('');
@@ -34,7 +33,7 @@ export default function QuizClient({ champions, lang }: QuizClientProps) {
     const inputRef = useRef<HTMLInputElement>(null);
     const suggestionsRef = useRef<HTMLDivElement>(null);
 
-    const t = getTranslation(lang);
+    const t = useTranslations();
 
     // Initialize random champion
     useEffect(() => {
@@ -136,8 +135,9 @@ export default function QuizClient({ champions, lang }: QuizClientProps) {
     };
 
     const translateValue = (category: 'gender' | 'species' | 'resource' | 'roles' | 'factions' | 'lanes', value: string) => {
-        // @ts-ignore
-        return t[category]?.[value] || value;
+        // Try to translate, fallback to value if key is missing (next-intl returns key by default if missing)
+        // We assume value matches the key structure in JSON
+        return t(`${category}.${value}`);
     };
 
     const formatList = (list: string[] | undefined, category: 'roles' | 'factions' | 'lanes') => {
@@ -207,8 +207,8 @@ export default function QuizClient({ champions, lang }: QuizClientProps) {
 
     const clues = getClues();
 
-    if (champions.length === 0) return <div className="text-white text-center mt-10">{t.quiz.noChampions}</div>;
-    if (!targetChampion) return <div className="text-white text-center mt-10">{t.quiz.loading}</div>;
+    if (champions.length === 0) return <div className="text-white text-center mt-10">{t('quiz.noChampions')}</div>;
+    if (!targetChampion) return <div className="text-white text-center mt-10">{t('quiz.loading')}</div>;
 
     return (
         <div className="w-full max-w-7xl mx-auto p-4 flex gap-4 relative">
@@ -233,25 +233,25 @@ export default function QuizClient({ champions, lang }: QuizClientProps) {
                         </div>
                         <div className="space-y-5 text-sm">
                             <div>
-                                <span className="text-gray-500 block text-xs uppercase font-bold mb-1 tracking-wider">{t.champion.gender}</span>
+                                <span className="text-gray-500 block text-xs uppercase font-bold mb-1 tracking-wider">{t('champion.gender')}</span>
                                 <span className={`text-base font-medium ${clues.gender ? "text-green-400" : "text-gray-600"}`}>
                                     {clues.gender ? translateValue('gender', clues.gender) : '???'}
                                 </span>
                             </div>
                             <div>
-                                <span className="text-gray-500 block text-xs uppercase font-bold mb-1 tracking-wider">{t.champion.species}</span>
+                                <span className="text-gray-500 block text-xs uppercase font-bold mb-1 tracking-wider">{t('champion.species')}</span>
                                 <span className={`text-base font-medium ${clues.species ? "text-green-400" : "text-gray-600"}`}>
                                     {clues.species ? translateValue('species', clues.species) : '???'}
                                 </span>
                             </div>
                             <div>
-                                <span className="text-gray-500 block text-xs uppercase font-bold mb-1 tracking-wider">{t.champion.resource}</span>
+                                <span className="text-gray-500 block text-xs uppercase font-bold mb-1 tracking-wider">{t('champion.resource')}</span>
                                 <span className={`text-base font-medium ${clues.resource ? "text-green-400" : "text-gray-600"}`}>
                                     {clues.resource ? translateValue('resource', clues.resource) : '???'}
                                 </span>
                             </div>
                             <div>
-                                <span className="text-gray-500 block text-xs uppercase font-bold mb-1 tracking-wider">{t.champion.region}</span>
+                                <span className="text-gray-500 block text-xs uppercase font-bold mb-1 tracking-wider">{t('champion.region')}</span>
                                 <div className="flex flex-wrap gap-1.5">
                                     {clues.regions.size > 0 ? Array.from(clues.regions).map(r => (
                                         <span
@@ -277,7 +277,7 @@ export default function QuizClient({ champions, lang }: QuizClientProps) {
                                 </div>
                             </div>
                             <div>
-                                <span className="text-gray-500 block text-xs uppercase font-bold mb-1 tracking-wider">{t.filters.role}</span>
+                                <span className="text-gray-500 block text-xs uppercase font-bold mb-1 tracking-wider">{t('filters.role')}</span>
                                 <div className="flex flex-wrap gap-1.5">
                                     {clues.roles.size > 0 ? Array.from(clues.roles).map(r => (
                                         <span
@@ -316,7 +316,7 @@ export default function QuizClient({ champions, lang }: QuizClientProps) {
                             setShowSuggestions(true);
                         }}
                         onKeyDown={handleKeyDown}
-                        placeholder={t.quiz.typePlaceholder}
+                        placeholder={t('quiz.typePlaceholder')}
                         className="w-full py-3 px-5 bg-gray-800 text-white border border-gray-700 rounded-full focus:outline-none focus:border-yellow-500 shadow-lg text-sm transition-all focus:ring-2 focus:ring-yellow-500/20"
                         disabled={isWon}
                     />
@@ -351,13 +351,13 @@ export default function QuizClient({ champions, lang }: QuizClientProps) {
                         animate={{ opacity: 1, y: 0 }}
                         className="text-center p-6 bg-green-900/50 border border-green-500 rounded-xl backdrop-blur-sm w-full max-w-lg"
                     >
-                        <h2 className="text-3xl font-bold text-green-400 mb-2">{t.quiz.victory}</h2>
+                        <h2 className="text-3xl font-bold text-green-400 mb-2">{t('quiz.victory')}</h2>
                         <p className="text-lg text-gray-200">The champion was <span className="font-bold text-yellow-400">{targetChampion.name}</span></p>
                         <button
                             onClick={() => window.location.reload()}
                             className="mt-4 px-6 py-2 bg-green-600 hover:bg-green-500 text-white rounded-full transition-colors font-bold shadow-lg hover:shadow-green-500/20"
                         >
-                            {t.quiz.playAgain}
+                            {t('quiz.playAgain')}
                         </button>
                     </motion.div>
                 )}
@@ -368,12 +368,12 @@ export default function QuizClient({ champions, lang }: QuizClientProps) {
                         {/* Header */}
                         <div className="grid grid-cols-7 gap-2 text-center text-gray-500 font-bold text-xs uppercase tracking-wider mb-1">
                             <div>Champion</div>
-                            <div>{t.champion.gender}</div>
-                            <div>{t.champion.species}</div>
-                            <div>{t.champion.resource}</div>
-                            <div>{t.champion.region}</div>
+                            <div>{t('champion.gender')}</div>
+                            <div>{t('champion.species')}</div>
+                            <div>{t('champion.resource')}</div>
+                            <div>{t('champion.region')}</div>
                             <div>Lane</div>
-                            <div>{t.filters.role}</div>
+                            <div>{t('filters.role')}</div>
                         </div>
 
                         <AnimatePresence>

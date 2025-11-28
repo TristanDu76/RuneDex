@@ -1,16 +1,15 @@
 import React from 'react';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import { LoreCharacter } from '@/types/champion';
 
 interface LoreCardProps {
     character: LoreCharacter;
-    lang: string;
 }
 
-export default function LoreCard({ character, lang }: LoreCardProps) {
+export default function LoreCard({ character }: LoreCardProps) {
     return (
         <Link
-            href={`/lore/${character.name}?lang=${lang}`}
+            href={`/lore/${character.name}`}
             className="group relative flex flex-col items-center"
         >
             {/* Image Container with Hover Effect */}

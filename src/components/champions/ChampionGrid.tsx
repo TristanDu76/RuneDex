@@ -4,14 +4,13 @@ import React, { useState, useMemo } from 'react';
 import { ChampionData } from '@/types/champion';
 import ChampionCard from './ChampionCard';
 import FilterBar, { ActiveFilters, FilterOption } from '../ui/FilterBar';
-import { getTranslation } from '@/lib/translations';
+import { useTranslations } from 'next-intl';
 
 interface ChampionGridProps {
     champions: ChampionData[];
-    lang?: string;
 }
 
-export default function ChampionGrid({ champions, lang = 'fr_FR' }: ChampionGridProps) {
+export default function ChampionGrid({ champions }: ChampionGridProps) {
     const [query, setQuery] = useState('');
     const [activeFilters, setActiveFilters] = useState<ActiveFilters>({
         regions: [],
@@ -20,7 +19,7 @@ export default function ChampionGrid({ champions, lang = 'fr_FR' }: ChampionGrid
         resources: [],
         roles: [],
     });
-    const t = getTranslation(lang);
+    const t = useTranslations();
 
     // Generate filter options with counts
     const filterOptions = useMemo(() => {
@@ -215,7 +214,7 @@ export default function ChampionGrid({ champions, lang = 'fr_FR' }: ChampionGrid
                         <input
                             type="text"
                             className="block w-full pl-11 pr-4 py-3 border border-gray-700 rounded-lg leading-5 bg-gray-800 text-gray-300 placeholder-gray-500 focus:outline-none focus:bg-gray-700 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/50 sm:text-sm transition-all shadow-lg"
-                            placeholder={t.home.searchPlaceholder}
+                            placeholder={t('home.searchPlaceholder')}
                             value={query}
                             onChange={(e) => setQuery(e.target.value)}
                         />
@@ -224,7 +223,6 @@ export default function ChampionGrid({ champions, lang = 'fr_FR' }: ChampionGrid
                     {/* Filter Buttons - Centered */}
                     <div className="flex-shrink-0">
                         <FilterBar
-                            lang={lang}
                             activeFilters={activeFilters}
                             onFiltersChange={setActiveFilters}
                             filterOptions={filterOptions}
@@ -291,13 +289,12 @@ export default function ChampionGrid({ champions, lang = 'fr_FR' }: ChampionGrid
                         <ChampionCard
                             key={champion.id}
                             champion={champion}
-                            lang={lang}
                         />
                     ))}
                 </section>
             ) : (
                 <div className="text-center text-gray-500 mt-12">
-                    <p className="text-xl">{t.home.noResults.replace('{query}', query)}</p>
+                    <p className="text-xl">{t('home.noResults', { query })}</p>
                 </div>
             )}
         </div>

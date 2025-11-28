@@ -22,8 +22,8 @@ export const fetchAllChampions = unstable_cache(
 
       const champions = data as ChampionData[];
 
-      // Si locale est en_US, on utilise le titre anglais
-      if (locale === 'en_US') {
+      // Si locale est en_US ou en, on utilise le titre anglais
+      if (locale.startsWith('en')) {
         return champions.map(c => ({
           ...c,
           title: c.title_en || c.title
@@ -87,7 +87,7 @@ export const fetchChampionDetails = unstable_cache(
         return {
           champion: target?.name || 'Inconnu',
           type: rel.type,
-          note: locale === 'en_US' ? rel.note_en : rel.note_fr,
+          note: locale.startsWith('en') ? rel.note_en : rel.note_fr,
           image: target?.image
         };
       });
@@ -95,8 +95,8 @@ export const fetchChampionDetails = unstable_cache(
       // @ts-ignore - On force le type
       champion.related_champions = formattedRelations;
 
-      // Si la locale est en_US, on remplace les champs par leur version anglaise si elle existe
-      if (locale === 'en_US') {
+      // Si la locale est en_US ou en, on remplace les champs par leur version anglaise si elle existe
+      if (locale.startsWith('en')) {
         if (champion.title_en) champion.title = champion.title_en;
         if (champion.lore_en) champion.lore = champion.lore_en;
         if (champion.blurb_en) champion.blurb = champion.blurb_en;
@@ -186,7 +186,7 @@ export const fetchLoreCharacter = unstable_cache(
         return {
           champion: target?.name || 'Inconnu', // Le nom de la cible
           type: rel.type,
-          note: locale === 'en_US' ? rel.note_en : rel.note_fr,
+          note: locale.startsWith('en') ? rel.note_en : rel.note_fr,
           // On ajoute l'image directement ici si besoin, ou on laisse le composant gérer
           image: target?.image
         };
@@ -197,7 +197,7 @@ export const fetchLoreCharacter = unstable_cache(
       loreChar.related_champions = formattedRelations;
 
       // Localization
-      if (locale === 'en_US') {
+      if (locale.startsWith('en')) {
         if (loreChar.description_en) loreChar.description = loreChar.description_en;
       }
 

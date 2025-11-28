@@ -4,15 +4,16 @@ import React, { useState } from 'react';
 import { ChampionData, LoreCharacter } from '@/types/champion';
 import ChampionGrid from '../champions/ChampionGrid';
 import LoreGrid from '../lore/LoreGrid';
+import { useTranslations } from 'next-intl';
 
 interface HomeContentProps {
     champions: ChampionData[];
     loreCharacters: LoreCharacter[];
-    lang: string;
 }
 
-export default function HomeContent({ champions, loreCharacters, lang }: HomeContentProps) {
+export default function HomeContent({ champions, loreCharacters }: HomeContentProps) {
     const [viewMode, setViewMode] = useState<'champions' | 'lore'>('champions');
+    const t = useTranslations('home');
 
     return (
         <div className="w-full">
@@ -26,7 +27,7 @@ export default function HomeContent({ champions, loreCharacters, lang }: HomeCon
                             : 'text-gray-400 hover:text-white'
                             }`}
                     >
-                        Champions
+                        {t('champions')}
                     </button>
                     <button
                         onClick={() => setViewMode('lore')}
@@ -35,16 +36,16 @@ export default function HomeContent({ champions, loreCharacters, lang }: HomeCon
                             : 'text-gray-400 hover:text-white'
                             }`}
                     >
-                        Personnages du Lore
+                        {t('loreCharacters')}
                     </button>
                 </div>
             </div>
 
             {/* Content */}
             {viewMode === 'champions' ? (
-                <ChampionGrid champions={champions} lang={lang} />
+                <ChampionGrid champions={champions} />
             ) : (
-                <LoreGrid characters={loreCharacters} lang={lang} />
+                <LoreGrid characters={loreCharacters} />
             )}
         </div>
     );
