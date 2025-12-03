@@ -98,7 +98,7 @@ export default function GlobalSearch({ champions, loreCharacters }: GlobalSearch
                     <input
                         type="text"
                         className="block w-full pl-10 pr-3 py-2 border border-gray-600 rounded-full leading-5 bg-gray-800 text-gray-300 placeholder-gray-500 focus:outline-none focus:bg-gray-700 focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 sm:text-sm transition-colors"
-                        placeholder={t('search.placeholder')}
+                        placeholder={t('home.searchPlaceholder')}
                         value={query}
                         onChange={(e) => setQuery(e.target.value)}
                         onFocus={() => query.length > 0 && setIsOpen(true)}
@@ -165,7 +165,7 @@ export default function GlobalSearch({ champions, loreCharacters }: GlobalSearch
                                 type="text"
                                 autoFocus
                                 className="block w-full pl-10 pr-3 py-3 border border-gray-600 rounded-full leading-5 bg-gray-800 text-gray-300 placeholder-gray-500 focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 text-base"
-                                placeholder={t('search.placeholder')}
+                                placeholder={t('home.searchPlaceholder')}
                                 value={query}
                                 onChange={(e) => setQuery(e.target.value)}
                                 onKeyDown={handleKeyDown}
@@ -215,7 +215,7 @@ export default function GlobalSearch({ champions, loreCharacters }: GlobalSearch
                     ) : (
                         query.length > 0 && (
                             <div className="text-center text-gray-400 mt-8">
-                                <p>{t('search.noResults')}</p>
+                                <p>{t('home.noResults', { query })}</p>
                             </div>
                         )
                     )}
