@@ -103,6 +103,7 @@ export const fetchChampionDetails = unstable_cache(
         if (champion.spells_en) champion.spells = champion.spells_en;
         if (champion.passive_en) champion.passive = champion.passive_en;
         if (champion.tags_en) champion.tags = champion.tags_en;
+        if (champion.skins_en) champion.skins = champion.skins_en;
       }
 
       return champion;

@@ -107,4 +107,5 @@ export interface ChampionData {
     spells_en?: ChampionSpell[];
     passive_en?: ChampionPassive;
     tags_en?: string[];
+    skins_en?: ChampionSkin[];
 }

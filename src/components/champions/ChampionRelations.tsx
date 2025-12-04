@@ -11,6 +11,10 @@ interface ChampionRelationsProps {
     latestVersion: string;
 }
 
+import { getTypeStyle } from '@/utils/colors';
+
+// ... (imports)
+
 export default function ChampionRelations({
     championName,
     championDetails,
@@ -64,28 +68,6 @@ export default function ChampionRelations({
 
     if (displayRelations.length === 0) return null;
 
-    // Couleurs et icônes par catégorie de type
-    const getTypeStyle = (type: string) => {
-        if (['sibling', 'parent', 'child', 'spouse', 'ancestor', 'descendant', 'adoptive-family', 'family'].includes(type)) {
-            return { bg: 'bg-blue-500/10', border: 'border-blue-500/30', text: 'text-blue-400', icon: '👨‍👩‍👧‍👦' };
-        }
-        if (['lover', 'ex-lover', 'unrequited-love'].includes(type)) {
-            return { bg: 'bg-pink-500/10', border: 'border-pink-500/30', text: 'text-pink-400', icon: '💕' };
-        }
-        if (['friend', 'mentor', 'student', 'ally', 'comrade', 'faction-member'].includes(type)) {
-            return { bg: 'bg-green-500/10', border: 'border-green-500/30', text: 'text-green-400', icon: '🤝' };
-        }
-        if (['enemy', 'nemesis', 'betrayed', 'betrayer', 'victim', 'killer', 'hunts', 'hunted-by', 'corrupted', 'corrupted-by'].includes(type)) {
-            return { bg: 'bg-red-500/10', border: 'border-red-500/30', text: 'text-red-400', icon: '⚔️' };
-        }
-        if (['rival'].includes(type)) {
-            return { bg: 'bg-orange-500/10', border: 'border-orange-500/30', text: 'text-orange-400', icon: '🔥' };
-        }
-        if (type === 'related') {
-            return { bg: 'bg-gray-500/10', border: 'border-gray-500/30', text: 'text-gray-400', icon: '🔗' };
-        }
-        return { bg: 'bg-purple-500/10', border: 'border-purple-500/30', text: 'text-purple-400', icon: '💔' };
-    };
 
     // Fonction pour obtenir la région principale d'un champion
     const getRegion = (champName: string): string => {
@@ -169,9 +151,9 @@ export default function ChampionRelations({
                                                     {loreChar ? (
                                                         <>
                                                             {loreChar.species && <span>{loreChar.species} &bull; </span>}
-                                                            Personnage du lore
+                                                            {t('home.loreCharacters')}
                                                         </>
-                                                    ) : "Personnage du lore"}
+                                                    ) : t('home.loreCharacters')}
                                                 </p>
                                                 {rel.note && (
                                                     <p className="text-xs text-gray-400 mt-0.5 italic">

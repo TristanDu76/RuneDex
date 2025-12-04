@@ -4,6 +4,7 @@ import { getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import ChampionRelations from '@/components/champions/ChampionRelations';
 import { ChampionData } from '@/types/champion';
+import LoreNavigation from '@/components/champions/LoreNavigation';
 
 interface LorePageProps {
     params: Promise<{
@@ -11,6 +12,10 @@ interface LorePageProps {
         locale: string;
     }>;
 }
+
+import { regionColors, getSpeciesColor, getGenderColor } from '@/utils/colors';
+
+// ... (imports)
 
 export default async function LorePage({ params }: LorePageProps) {
     const { name, locale } = await params;
@@ -26,6 +31,14 @@ export default async function LorePage({ params }: LorePageProps) {
     if (!character) {
         notFound();
     }
+
+    // Sort lore characters alphabetically
+    const sortedLore = loreCharacters.sort((a, b) => a.name.localeCompare(b.name));
+    const currentIndex = sortedLore.findIndex(c => c.name === character.name);
+
+    // Circular navigation
+    const prevLore = currentIndex > 0 ? sortedLore[currentIndex - 1] : sortedLore[sortedLore.length - 1];
+    const nextLore = currentIndex < sortedLore.length - 1 ? sortedLore[currentIndex + 1] : sortedLore[0];
 
     // Determine latest version from champions list
     const latestVersion = allChampions.length > 0 ? allChampions[0].version : '13.24.1';
@@ -47,53 +60,16 @@ export default async function LorePage({ params }: LorePageProps) {
         factions: character.faction ? [character.faction] : [],
     };
 
-    // Helper pour les couleurs de faction (réutilisé de champion page)
-    const regionColors: Record<string, string> = {
-        demacia: 'text-blue-300 border-blue-500/30 bg-blue-900/20',
-        noxus: 'text-red-400 border-red-500/30 bg-red-900/20',
-        ionia: 'text-pink-300 border-pink-500/30 bg-pink-900/20',
-        freljord: 'text-cyan-300 border-cyan-500/30 bg-cyan-900/20',
-        shurima: 'text-yellow-400 border-yellow-500/30 bg-yellow-900/20',
-        piltover: 'text-amber-300 border-amber-500/30 bg-amber-900/20',
-        zaun: 'text-green-400 border-green-500/30 bg-green-900/20',
-        bilgewater: 'text-orange-400 border-orange-500/30 bg-orange-900/20',
-        targon: 'text-purple-300 border-purple-500/30 bg-purple-900/20',
-        ixtal: 'text-emerald-400 border-emerald-500/30 bg-emerald-900/20',
-        'shadow-isles': 'text-teal-300 border-teal-500/30 bg-teal-900/20',
-        'bandle-city': 'text-lime-300 border-lime-500/30 bg-lime-900/20',
-        void: 'text-violet-400 border-violet-500/30 bg-violet-900/20',
-        runeterra: 'text-gray-300 border-gray-500/30 bg-gray-900/20',
-        darkin: 'text-red-500 border-red-600/30 bg-red-950/40',
-    };
-
-    // Helper pour les couleurs d'espèces
-    const getSpeciesColor = (s: string) => {
-        const species = s.toLowerCase();
-        if (species.includes('human')) return 'text-amber-200';
-        if (species.includes('yordle')) return 'text-orange-300';
-        if (species.includes('vastaya')) return 'text-pink-300';
-        if (species.includes('void')) return 'text-violet-400';
-        if (species.includes('undead') || species.includes('revenant') || species.includes('wraith')) return 'text-teal-400';
-        if (species.includes('darkin')) return 'text-red-500';
-        if (species.includes('god') || species.includes('spirit') || species.includes('celestial') || species.includes('aspect')) return 'text-cyan-300';
-        if (species.includes('golem') || species.includes('construct') || species.includes('cyborg')) return 'text-gray-400';
-        if (species.includes('dragon')) return 'text-red-400';
-        if (species.includes('demon')) return 'text-red-600';
-        return 'text-gray-200';
-    };
-
-    const getGenderColor = (g: string) => {
-        const gender = g.toLowerCase();
-        if (gender === 'male') return 'text-blue-300';
-        if (gender === 'female') return 'text-pink-300';
-        return 'text-purple-300';
-    };
 
     return (
         <main className="min-h-screen bg-gray-900 text-white pb-20 relative">
+            <LoreNavigation
+                prevLoreName={prevLore.name}
+                nextLoreName={nextLore.name}
+            />
+
             <div className="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8 pt-20">
 
-                {/* Header */}
                 {/* Header */}
                 <div className="text-center mb-12">
                     <div className="relative w-72 h-72 mx-auto mb-8 rounded-3xl overflow-hidden border-4 border-yellow-500/30 shadow-[0_0_30px_rgba(234,179,8,0.2)] group hover:shadow-[0_0_50px_rgba(234,179,8,0.4)] transition-all duration-500">
@@ -111,7 +87,7 @@ export default async function LorePage({ params }: LorePageProps) {
                     </div>
 
                     <h1 className="text-5xl font-extrabold text-white mb-2 tracking-tight">{character.name}</h1>
-                    <p className="text-xl text-yellow-500 font-light uppercase tracking-widest">Personnage du Lore</p>
+                    <p className="text-xl text-yellow-500 font-light uppercase tracking-widest">{t('home.loreCharacters')}</p>
                 </div>
 
                 {/* Info Bar */}

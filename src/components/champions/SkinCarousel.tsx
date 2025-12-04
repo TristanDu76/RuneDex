@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChampionSkin } from '@/types/champion';
-
+import { useTranslations } from 'next-intl';
 
 interface SkinCarouselProps {
     skins: ChampionSkin[];
@@ -36,6 +36,7 @@ const swipePower = (offset: number, velocity: number) => {
 };
 
 export default function SkinCarousel({ skins, championId }: SkinCarouselProps) {
+    const t = useTranslations('champion');
     const [page, setPage] = useState([0, 0]);
     const [currentIndex, direction] = page;
     const [isPaused, setIsPaused] = useState(false);
@@ -123,7 +124,7 @@ export default function SkinCarousel({ skins, championId }: SkinCarouselProps) {
                     transition={{ delay: 0.2 }}
                     className="text-3xl md:text-4xl font-bold text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] tracking-wide"
                 >
-                    {currentSkin.name === 'default' ? 'Base Skin' : currentSkin.name}
+                    {currentSkin.name === 'default' ? t('baseSkin') : currentSkin.name}
                 </motion.h2>
 
                 {/* Indicators */}

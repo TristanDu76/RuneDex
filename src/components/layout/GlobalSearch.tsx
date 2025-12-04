@@ -19,6 +19,7 @@ export default function GlobalSearch({ champions, loreCharacters }: GlobalSearch
     const [isOpen, setIsOpen] = useState(false);
     const [isMobileOpen, setIsMobileOpen] = useState(false);
     const [mounted, setMounted] = useState(false);
+    const [selectedIndex, setSelectedIndex] = useState(-1);
     const wrapperRef = useRef<HTMLDivElement>(null);
 
     const router = useRouter();
@@ -45,9 +46,11 @@ export default function GlobalSearch({ champions, loreCharacters }: GlobalSearch
 
             setResults(combined);
             setIsOpen(true);
+            setSelectedIndex(-1); // Reset selection
         } else {
             setResults([]);
             setIsOpen(false);
+            setSelectedIndex(-1);
         }
     }, [query, champions, loreCharacters]);
 
@@ -77,11 +80,24 @@ export default function GlobalSearch({ champions, loreCharacters }: GlobalSearch
         setQuery('');
         setIsOpen(false);
         setIsMobileOpen(false);
+        setSelectedIndex(-1);
     };
 
     const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-        if (e.key === 'Enter' && results.length > 0) {
-            handleSelect(results[0]);
+        if (results.length === 0) return;
+
+        if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            setSelectedIndex(prev => (prev < results.length - 1 ? prev + 1 : 0));
+        } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            setSelectedIndex(prev => (prev > 0 ? prev - 1 : results.length - 1));
+        } else if (e.key === 'Enter') {
+            e.preventDefault();
+            const indexToSelect = selectedIndex >= 0 ? selectedIndex : 0;
+            if (results[indexToSelect]) {
+                handleSelect(results[indexToSelect]);
+            }
         }
     };
 
@@ -109,11 +125,13 @@ export default function GlobalSearch({ champions, loreCharacters }: GlobalSearch
                 {isOpen && results.length > 0 && (
                     <div className="absolute z-[100] mt-2 w-full bg-gray-800 border border-gray-700 rounded-md shadow-lg overflow-hidden">
                         <ul>
-                            {results.map((result) => (
+                            {results.map((result, index) => (
                                 <li
                                     key={`${result.type}-${result.data.id}`}
                                     onClick={() => handleSelect(result)}
-                                    className="cursor-pointer px-4 py-2 hover:bg-gray-700 text-gray-200 flex items-center gap-3 transition-colors"
+                                    onMouseEnter={() => setSelectedIndex(index)}
+                                    className={`cursor-pointer px-4 py-2 text-gray-200 flex items-center gap-3 transition-colors ${index === selectedIndex ? 'bg-gray-700' : 'hover:bg-gray-700'
+                                        }`}
                                 >
                                     {result.type === 'champion' ? (
                                         <img
@@ -183,11 +201,12 @@ export default function GlobalSearch({ champions, loreCharacters }: GlobalSearch
                     {results.length > 0 ? (
                         <div className="flex-grow overflow-y-auto bg-gray-800 rounded-lg border border-gray-700 shadow-xl">
                             <ul>
-                                {results.map((result) => (
+                                {results.map((result, index) => (
                                     <li
                                         key={`${result.type}-${result.data.id}`}
                                         onClick={() => handleSelect(result)}
-                                        className="cursor-pointer px-4 py-3 hover:bg-gray-700 text-gray-200 flex items-center gap-4 border-b border-gray-700 last:border-0"
+                                        className={`cursor-pointer px-4 py-3 text-gray-200 flex items-center gap-4 border-b border-gray-700 last:border-0 transition-colors ${index === selectedIndex ? 'bg-gray-700' : 'hover:bg-gray-700'
+                                            }`}
                                     >
                                         {result.type === 'champion' ? (
                                             <img

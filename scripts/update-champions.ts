@@ -62,6 +62,7 @@ async function updateAllChampions() {
                 passive: dataFR.passive,
                 partype: dataFR.partype,
                 tags: dataFR.tags,
+                skins: dataFR.skins,
 
                 // --- Données de traduction (Anglais) ---
                 title_en: dataEN.title,
@@ -70,6 +71,7 @@ async function updateAllChampions() {
                 spells_en: dataEN.spells,
                 passive_en: dataEN.passive,
                 partype_en: dataEN.partype,
+                skins_en: dataEN.skins,
 
             };
 
