@@ -1,5 +1,5 @@
 // src/app/[locale]/page.tsx
-import { fetchAllChampions, fetchLoreCharacters } from "@/lib/data";
+import { fetchAllChampions, fetchLoreCharacters, fetchArtifacts, fetchRunes } from "@/lib/data";
 import HomeContent from "@/components/layout/HomeContent";
 import LanguageSwitcher from "@/components/layout/LanguageSwitcher";
 import Image from "next/image";
@@ -17,10 +17,15 @@ export default async function Home({ params }: HomeProps) {
   // 1. Récupération des données (s'exécute côté serveur)
   const champions = await fetchAllChampions(locale);
   const loreCharacters = await fetchLoreCharacters();
+  const artifacts = await fetchArtifacts(locale);
+  const runes = await fetchRunes(locale);
 
   // Tri optionnel pour le fun, par ordre alphabétique du nom
   const sortedChampions = champions.sort((a, b) => a.name.localeCompare(b.name));
   const sortedLoreCharacters = loreCharacters.sort((a, b) => a.name.localeCompare(b.name));
+
+  // Version pour les images des items
+  const latestVersion = champions.length > 0 ? champions[0].version : '15.24.1';
 
   return (
     <main className="min-h-screen bg-gray-900 p-8 relative">
@@ -44,18 +49,22 @@ export default async function Home({ params }: HomeProps) {
           <h1 className="text-6xl font-bold text-yellow-500 text-center tracking-tight" style={{ textShadow: '0 4px 20px rgba(234, 179, 8, 0.2)' }}>
             RuneDex
           </h1>
-          <Link
-            href="/quiz"
-            className="mt-6 px-6 py-2 bg-yellow-600/20 hover:bg-yellow-600/40 border border-yellow-600/50 rounded-full text-yellow-400 font-medium transition-all hover:scale-105 flex items-center gap-2"
-          >
-            <span>🎮</span> {t('playQuiz')}
-          </Link>
+          <div className="flex flex-wrap justify-center gap-4 mt-6">
+            <Link
+              href="/quiz"
+              className="px-6 py-2 bg-yellow-600/20 hover:bg-yellow-600/40 border border-yellow-600/50 rounded-full text-yellow-400 font-medium transition-all hover:scale-105 flex items-center gap-2"
+            >
+              <span>🎮</span> {t('playQuiz')}
+            </Link>
+          </div>
         </div>
 
         {/* --- Contenu Principal (Grilles) --- */}
         <HomeContent
           champions={sortedChampions}
           loreCharacters={sortedLoreCharacters}
+          artifacts={artifacts}
+          runes={runes}
         />
       </div>
 

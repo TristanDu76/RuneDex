@@ -1,11 +1,12 @@
 // src/app/[locale]/champion/[championId]/page.tsx
 import React from 'react';
-import { fetchChampionDetails, fetchAllChampions, fetchLoreCharacters } from "@/lib/data";
+import { fetchChampionDetails, fetchAllChampions, fetchLoreCharacters, fetchChampionArtifacts, fetchChampionRunes } from "@/lib/data";
 import SkinCarousel from '@/components/champions/SkinCarousel';
 import SpellList from '@/components/champions/SpellList';
 import ChampionNavigation from '@/components/champions/ChampionNavigation';
 import { getTranslations } from 'next-intl/server';
 import ChampionRelations from '@/components/champions/ChampionRelations';
+import ChampionArtifacts from '@/components/champions/ChampionArtifacts';
 
 // Interface pour les props de la page
 interface ChampionPageProps {
@@ -39,6 +40,8 @@ export default async function ChampionPage({ params }: ChampionPageProps) {
 
   // 1. Récupération des données DETAILED spécifiques au champion
   const championDetails = await fetchChampionDetails(championId, latestVersion, locale);
+  const championArtifacts = await fetchChampionArtifacts(championId, locale);
+  const championRunes = await fetchChampionRunes(championId, locale);
 
   if (!championDetails) {
     return <main className="text-white p-8">Champion non trouvé ou erreur de données.</main>;
@@ -147,6 +150,12 @@ export default async function ChampionPage({ params }: ChampionPageProps) {
                 t={t}
                 locale={locale}
                 latestVersion={latestVersion}
+              />
+
+              <ChampionArtifacts
+                artifacts={championArtifacts}
+                runes={championRunes}
+                t={t}
               />
             </div>
           </div>

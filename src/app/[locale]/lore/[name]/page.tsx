@@ -4,7 +4,7 @@ import { getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import ChampionRelations from '@/components/champions/ChampionRelations';
 import { ChampionData } from '@/types/champion';
-import LoreNavigation from '@/components/champions/LoreNavigation';
+import LoreNavigation from '@/components/lore/LoreNavigation';
 
 interface LorePageProps {
     params: Promise<{

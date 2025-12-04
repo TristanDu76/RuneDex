@@ -10,6 +10,14 @@ const nextConfig = {
                 protocol: 'https' as const,
                 hostname: 'ddragon.leagueoflegends.com',
             },
+            {
+                protocol: 'https' as const,
+                hostname: 'wiki.leagueoflegends.com',
+            },
+            {
+                protocol: 'https' as const,
+                hostname: 'raw.communitydragon.org',
+            },
         ],
     },
 };

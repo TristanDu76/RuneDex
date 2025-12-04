@@ -209,6 +209,303 @@ export const fetchLoreCharacter = unstable_cache(
       return null;
     }
   },
+  // ... existing code ...
   ['lore-character-details-v5'], // Bump version
+  { revalidate: 3600 }
+);
+
+/**
+ * Récupère tous les objets (items) depuis Supabase.
+ */
+export const fetchItems = unstable_cache(
+  async (locale: string = 'fr_FR') => {
+    // Déterminer la langue pour les colonnes traduites
+    const isEnglish = locale.startsWith('en');
+    const nameCol = isEnglish ? 'name_en' : 'name';
+    const descCol = isEnglish ? 'description_en' : 'description';
+    const plaintextCol = isEnglish ? 'plaintext_en' : 'plaintext';
+
+    const { data, error } = await supabase
+      .from('items')
+      .select(`
+        id,
+        name: ${nameCol},
+        description: ${descCol},
+        plaintext: ${plaintextCol},
+        gold_base,
+        gold_total,
+        gold_sell,
+        tags,
+        stats,
+        image,
+        maps
+      `)
+      .order('gold_total', { ascending: false });
+
+    if (error) {
+      console.error('Error fetching items:', error);
+      return [];
+    }
+
+    return data;
+  },
+  ['items-list-v1'],
+  { revalidate: 3600 }
+);
+
+/**
+ * Récupère tous les artefacts du lore.
+ */
+export const fetchArtifacts = unstable_cache(
+  async (locale: string = 'fr_FR') => {
+    const isEnglish = locale.startsWith('en');
+    const nameCol = isEnglish ? 'name_en' : 'name';
+    const descCol = isEnglish ? 'description_en' : 'description';
+
+    const { data, error } = await supabase
+      .from('artifacts')
+      .select(`
+        id,
+        name: ${nameCol},
+        description: ${descCol},
+        image_url,
+        type,
+        riot_id
+      `)
+      .order('name');
+
+    if (error) {
+      console.error('Error fetching artifacts:', error);
+      return [];
+    }
+
+    return data;
+  },
+  ['artifacts-list-v2'],
+  { revalidate: 3600 }
+);
+
+/**
+ * Récupère les détails d'un artefact par son ID.
+ */
+export const fetchArtifactById = unstable_cache(
+  async (id: string, locale: string = 'fr_FR') => {
+    const isEnglish = locale.startsWith('en');
+    const nameCol = isEnglish ? 'name_en' : 'name';
+    const descCol = isEnglish ? 'description_en' : 'description';
+
+    const { data, error } = await supabase
+      .from('artifacts')
+      .select(`
+        id,
+        name: ${nameCol},
+        description: ${descCol},
+        image_url,
+        type,
+        riot_id,
+        owner:artifact_owners(
+            champion:champions(id, name, image, title),
+            lore_character:lore_characters(id, name, image),
+            relation_type
+        )
+      `)
+      .eq('id', id)
+      .single();
+
+    if (error) {
+      console.error(`Error fetching artifact ${id}:`, error);
+      return null;
+    }
+
+    // Helper pour extraire l'objet unique s'il est retourné comme tableau
+    const getSingle = (val: any) => Array.isArray(val) ? val[0] : val;
+
+    const ownerData = data.owner?.[0];
+    const champion = ownerData ? getSingle(ownerData.champion) : null;
+    const loreChar = ownerData ? getSingle(ownerData.lore_character) : null;
+
+    // Aplatir la structure pour le frontend
+    const formattedData = {
+      ...data,
+      owner: ownerData ? {
+        name: champion?.name || loreChar?.name,
+        image: champion?.image || loreChar?.image,
+        title: champion?.title, // Pour les champions
+        type: ownerData.relation_type,
+        link: champion ? `/champion/${champion.id}` : `/lore/${loreChar?.name}`
+      } : null
+    };
+
+    return formattedData;
+  },
+  ['artifact-details-v2'],
+  { revalidate: 3600 }
+);
+
+/**
+ * Récupère toutes les Runes Telluriques (World Runes).
+ */
+export const fetchRunes = unstable_cache(
+  async (locale: string = 'fr_FR') => {
+    const isEnglish = locale.startsWith('en');
+    const nameCol = isEnglish ? 'name_en' : 'name';
+    const descCol = isEnglish ? 'description_en' : 'description';
+
+    const { data, error } = await supabase
+      .from('runes')
+      .select(`
+        id,
+        name: ${nameCol},
+        description: ${descCol},
+        image_url,
+        type
+      `)
+      .order('name');
+
+    if (error) {
+      console.error('Error fetching runes:', error);
+      return [];
+    }
+
+    return data;
+  },
+  ['runes-list-lore-v1'],
+  { revalidate: 3600 }
+);
+
+/**
+ * Récupère les détails d'une rune par son ID.
+ */
+export const fetchRuneById = unstable_cache(
+  async (id: string, locale: string = 'fr_FR') => {
+    const isEnglish = locale.startsWith('en');
+    const nameCol = isEnglish ? 'name_en' : 'name';
+    const descCol = isEnglish ? 'description_en' : 'description';
+
+    const { data, error } = await supabase
+      .from('runes')
+      .select(`
+        id,
+        name: ${nameCol},
+        description: ${descCol},
+        image_url,
+        type
+      `)
+      .eq('id', id)
+      .single();
+
+    if (error) {
+      console.error(`Error fetching rune ${id}:`, error);
+      return null;
+    }
+
+    // Pour l'instant, pas de propriétaire lié dans la table runes, mais on pourrait l'ajouter
+    // On simule la structure pour le frontend si besoin
+    return { ...data, owner: null };
+  },
+  ['rune-details-v1'],
+  { revalidate: 3600 }
+);
+
+/**
+ * Récupère les runes précédente et suivante pour la navigation.
+ */
+export const fetchRuneNeighbors = unstable_cache(
+  async (currentId: string, locale: string = 'fr_FR') => {
+    const isEnglish = locale.startsWith('en');
+    const nameCol = isEnglish ? 'name_en' : 'name';
+
+    // Récupérer toutes les runes triées par nom pour trouver les voisins
+    // Ce n'est pas très optimisé pour une grande table, mais pour 5 runes c'est instantané
+    const { data: runes } = await supabase
+      .from('runes')
+      .select(`id, name: ${nameCol}`)
+      .order(nameCol);
+
+    if (!runes) return { prev: null, next: null };
+
+    const currentIndex = runes.findIndex(r => r.id === currentId);
+    if (currentIndex === -1) return { prev: null, next: null };
+
+    const prev = currentIndex > 0 ? runes[currentIndex - 1] : runes[runes.length - 1]; // Boucle
+    const next = currentIndex < runes.length - 1 ? runes[currentIndex + 1] : runes[0]; // Boucle
+
+    return { prev, next };
+  },
+  ['rune-neighbors-v1'],
+  { revalidate: 3600 }
+);
+
+/**
+ * Récupère les artefacts liés à un champion.
+ */
+export const fetchChampionArtifacts = unstable_cache(
+  async (championId: string, locale: string = 'fr_FR') => {
+    const isEnglish = locale.startsWith('en');
+    const nameCol = isEnglish ? 'name_en' : 'name';
+
+    const { data, error } = await supabase
+      .from('artifact_owners')
+      .select(`
+        relation_type,
+        artifact:artifacts(
+          id,
+          name: ${nameCol},
+          image_url,
+          type
+        )
+      `)
+      .eq('champion_id', championId);
+
+    if (error) {
+      console.error(`Error fetching artifacts for champion ${championId}:`, error);
+      return [];
+    }
+
+    return data.map((item: any) => ({
+      ...item.artifact,
+      relation_type: item.relation_type
+    }));
+  },
+  ['champion-artifacts-v1'],
+  { revalidate: 3600 }
+);
+
+/**
+ * Récupère les runes liées à un champion.
+ */
+export const fetchChampionRunes = unstable_cache(
+  async (championId: string, locale: string = 'fr_FR') => {
+    const isEnglish = locale.startsWith('en');
+    const nameCol = isEnglish ? 'name_en' : 'name';
+
+    // Note: Cette requête suppose l'existence de la table 'rune_owners'
+    const { data, error } = await supabase
+      .from('rune_owners')
+      .select(`
+        relation_type,
+        rune:runes(
+          id,
+          name: ${nameCol},
+          image_url,
+          type
+        )
+      `)
+      .eq('champion_id', championId);
+
+    if (error) {
+      // On ne log pas d'erreur si la table n'existe pas encore pour éviter le spam
+      if (error.code !== '42P01') { // 42P01 = undefined_table
+        console.error(`Error fetching runes for champion ${championId}:`, error);
+      }
+      return [];
+    }
+
+    return data.map((item: any) => ({
+      ...item.rune,
+      relation_type: item.relation_type
+    }));
+  },
+  ['champion-runes-v1'],
   { revalidate: 3600 }
 );

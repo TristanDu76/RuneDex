@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import GlobalSearch from './GlobalSearch';
 import { Link, usePathname } from '@/i18n/routing';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 import { ChampionData, LoreCharacter } from '@/types/champion';
 
@@ -16,6 +16,7 @@ interface NavbarProps {
 export default function Navbar({ champions, loreCharacters }: NavbarProps) {
     const pathname = usePathname();
     const locale = useLocale();
+    const t = useTranslations();
 
     // Hide navbar on home page
     if (pathname === '/') {
@@ -49,6 +50,7 @@ export default function Navbar({ champions, loreCharacters }: NavbarProps) {
 
                     {/* Search Bar */}
                     <GlobalSearch champions={champions} loreCharacters={loreCharacters} />
+
                 </div>
 
                 {/* Right: Language Switcher */}
