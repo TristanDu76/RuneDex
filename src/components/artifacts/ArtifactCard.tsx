@@ -15,7 +15,7 @@ export default function ArtifactCard({ artifact }: ArtifactCardProps) {
         return cleaned;
     };
 
-    const linkHref = artifact.type === 'World Rune'
+    const linkHref = artifact.type === 'home.worldRunes'
         ? `/rune/${artifact.id}`
         : `/artifact/${artifact.id}`;
 
@@ -50,16 +50,8 @@ export default function ArtifactCard({ artifact }: ArtifactCardProps) {
 
             {/* Type */}
             <p className="text-xs text-yellow-600/80 mt-1 text-center font-medium uppercase tracking-wider">
-                {artifact.type || 'Artefact'}
+                {artifact.type || 'home.artifacts'}
             </p>
-
-            {/* Tooltip Description */}
-            <div className="absolute z-50 bottom-full mb-2 left-1/2 -translate-x-1/2 w-64 bg-gray-900 border border-yellow-600/50 rounded-lg shadow-2xl p-4 opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-200 hidden group-hover:block">
-                <div className="text-sm font-bold text-yellow-400 mb-2">{artifact.name}</div>
-                <div className="text-xs text-gray-300 leading-relaxed line-clamp-6">
-                    {cleanDescription(artifact.description)}
-                </div>
-            </div>
         </Link>
     );
 }
