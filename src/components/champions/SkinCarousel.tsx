@@ -63,7 +63,7 @@ export default function SkinCarousel({ skins, championId }: SkinCarouselProps) {
 
     return (
         <div
-            className="relative w-full aspect-video max-h-[80vh] mx-auto overflow-hidden rounded-2xl shadow-2xl bg-gray-900 group border border-gray-800"
+            className="relative w-full aspect-video mx-auto overflow-hidden rounded-2xl shadow-2xl bg-gray-900 group border border-gray-800"
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
         >

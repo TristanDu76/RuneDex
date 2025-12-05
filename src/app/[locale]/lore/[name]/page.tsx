@@ -146,7 +146,6 @@ export default async function LorePage({ params }: LorePageProps) {
                     championDetails={championDetailsAdapter}
                     allChampions={allChampions}
                     loreCharacters={loreCharacters}
-                    t={t}
                     locale={locale}
                     latestVersion={latestVersion}
                 />

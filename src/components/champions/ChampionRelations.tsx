@@ -1,41 +1,166 @@
-import React from 'react';
+'use client';
+
+import React, { useRef } from 'react';
 import { ChampionData, LoreCharacter } from '@/types/champion';
+import { getTypeStyle } from '@/utils/colors';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 interface ChampionRelationsProps {
     championName: string;
     championDetails: ChampionData;
     allChampions: ChampionData[];
     loreCharacters: LoreCharacter[];
-    t: any;
     locale: string;
     latestVersion: string;
 }
 
-import { getTypeStyle } from '@/utils/colors';
+const RelationCard = ({ rel, allChampions, loreCharacters, t, locale, latestVersion, className = "" }: any) => {
+    const relChamp = allChampions.find((c: any) => c.name === rel.champion);
+    const style = getTypeStyle(rel.type);
+    const cardClasses = `flex-shrink-0 snap-start flex flex-col gap-3 p-4 rounded-xl border ${style.bg} ${style.border} hover:bg-gray-700/50 transition-all group ${className || 'w-full sm:w-64'}`;
 
-// ... (imports)
+    // PNJ ou Champion non trouvé dans l'API
+    if (!relChamp) {
+        const loreChar = loreCharacters.find((c: any) => c.name === rel.champion);
+
+        return (
+            <a
+                href={`/${locale}/lore/${rel.champion}`}
+                className={`${cardClasses} opacity-90 hover:opacity-100`}
+            >
+                <div className="flex items-center gap-3">
+                    <div className={`w-12 h-12 rounded-full flex items-center justify-center bg-gray-800 border-2 ${style.border} shrink-0 overflow-hidden`}>
+                        {loreChar && loreChar.image ? (
+                            <img src={loreChar.image} alt={loreChar.name} className="w-full h-full object-cover" />
+                        ) : (
+                            <span className="text-xs font-bold text-gray-500">?</span>
+                        )}
+                    </div>
+                    <div className="min-w-0">
+                        <span className={`block text-sm font-bold ${style.text} truncate`}>{rel.champion}</span>
+                        <span className="text-xs text-gray-400">{t('home.loreCharacters')}</span>
+                    </div>
+                </div>
+
+                <div className="mt-auto">
+                    {rel.note && (
+                        <p className="text-xs text-gray-400 italic line-clamp-2">
+                            &quot;{typeof rel.note === 'object' && rel.note !== null ? (rel.note as any)[locale === 'fr' ? 'fr' : 'en'] || (rel.note as any)['en'] : rel.note}&quot;
+                        </p>
+                    )}
+                </div>
+            </a>
+        );
+    }
+
+    // Champion jouable
+    return (
+        <a
+            href={`/${locale}/champion/${relChamp.id}`}
+            className={cardClasses}
+        >
+            <div className="flex items-center gap-3">
+                <img
+                    src={`https://ddragon.leagueoflegends.com/cdn/${latestVersion}/img/champion/${relChamp.image.full}`}
+                    alt={rel.champion}
+                    className={`w-12 h-12 rounded-full border-2 ${style.border} shadow-sm`}
+                />
+                <div className="min-w-0">
+                    <span className={`block text-sm font-bold ${style.text} truncate`}>{rel.champion}</span>
+                    <span className="text-xs text-gray-400">{t('home.champions')}</span>
+                </div>
+            </div>
+
+            <div className="mt-auto">
+                {rel.note && (
+                    <p className="text-xs text-gray-400 italic line-clamp-2">
+                        &quot;{typeof rel.note === 'object' && rel.note !== null ? (rel.note as any)[locale === 'fr' ? 'fr' : 'en'] || (rel.note as any)['en'] : rel.note}&quot;
+                    </p>
+                )}
+            </div>
+        </a>
+    );
+};
+
+const RelationGroup = ({ title, relations, allChampions, loreCharacters, t, locale, latestVersion }: any) => {
+    const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+    const scroll = (direction: 'left' | 'right') => {
+        if (scrollContainerRef.current) {
+            const scrollAmount = 300;
+            scrollContainerRef.current.scrollBy({
+                left: direction === 'left' ? -scrollAmount : scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+    };
+
+    return (
+        <div className="space-y-3">
+            <h3 className="text-lg font-semibold text-gray-300 uppercase tracking-wider border-b border-gray-700 pb-1 mb-3 flex items-center gap-2">
+                {title}
+            </h3>
+
+            <div className="flex items-center gap-2">
+                {/* Left Arrow */}
+                <button
+                    onClick={() => scroll('left')}
+                    className="p-2 rounded-full bg-gray-800 border border-gray-700 text-yellow-500 hover:bg-gray-700 transition-colors shrink-0"
+                >
+                    <ChevronLeft size={24} />
+                </button>
+
+                {/* Scrollable Container */}
+                <div
+                    ref={scrollContainerRef}
+                    className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide snap-x flex-1"
+                    style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+                >
+                    {relations.map((rel: any) => (
+                        <RelationCard
+                            key={rel.champion}
+                            rel={rel}
+                            allChampions={allChampions}
+                            loreCharacters={loreCharacters}
+                            t={t}
+                            locale={locale}
+                            latestVersion={latestVersion}
+                        />
+                    ))}
+                </div>
+
+                {/* Right Arrow */}
+                <button
+                    onClick={() => scroll('right')}
+                    className="p-2 rounded-full bg-gray-800 border border-gray-700 text-yellow-500 hover:bg-gray-700 transition-colors shrink-0"
+                >
+                    <ChevronRight size={24} />
+                </button>
+            </div>
+        </div>
+    );
+};
 
 export default function ChampionRelations({
     championName,
     championDetails,
     allChampions,
     loreCharacters,
-    t,
     locale,
     latestVersion
 }: ChampionRelationsProps) {
+    const t = useTranslations();
     // Utilisation des relations stockées en base de données
     const relations = championDetails.related_champions || [];
     const apiRelated = (championDetails.relatedChampions || []) as { name: string; slug: string; image?: string }[];
-
-
 
     let displayRelations: { champion: string; type: string; note?: string }[] = [];
 
     if (relations.length > 0) {
         displayRelations = [...relations];
     } else if (apiRelated.length > 0) {
-        // Fallback: Convert API relations to generic 'related' type
+        // Fallback
         displayRelations = apiRelated.map((rel: { name: string; slug: string; image?: string }) => ({
             champion: rel.name,
             type: 'related',
@@ -48,7 +173,6 @@ export default function ChampionRelations({
     factionRelations.forEach(rel => {
         const targetFaction = rel.champion.toLowerCase();
         const factionMembers = allChampions.filter(c => {
-            // On vérifie si le champion appartient à la faction (via la colonne factions de la DB)
             return c.factions?.includes(targetFaction) && c.name !== championName;
         });
 
@@ -63,40 +187,40 @@ export default function ChampionRelations({
         });
     });
 
-    // On retire les relations de type 'faction' originales
     displayRelations = displayRelations.filter(r => r.type !== 'faction');
 
     if (displayRelations.length === 0) return null;
 
-
-    // Fonction pour obtenir la région principale d'un champion
-    const getRegion = (champName: string): string => {
-        // 1. Chercher le champion dans la liste chargée depuis la DB
-        const champ = allChampions.find(c => c.name === champName || c.id === champName);
-
-        if (champ && champ.factions && champ.factions.length > 0) {
-            return champ.factions[0];
-        }
-
-        // 2. Chercher dans les personnages du lore (depuis la DB)
-        const loreChar = loreCharacters.find(c => c.name === champName);
-        if (loreChar) {
-            return loreChar.faction;
-        }
-
-        return 'autre';
-    };
-
-    // Grouper par région
+    // Grouper par type de relation
     const groupedRelations: Record<string, typeof displayRelations> = {};
 
     displayRelations.forEach(rel => {
-        const region = getRegion(rel.champion);
-        if (!groupedRelations[region]) {
-            groupedRelations[region] = [];
+        const type = rel.type;
+        if (!groupedRelations[type]) {
+            groupedRelations[type] = [];
         }
-        groupedRelations[region].push(rel);
+        groupedRelations[type].push(rel);
     });
+
+    const priorityOrder = [
+        'family', 'brother', 'sister', 'father', 'mother', 'son', 'daughter',
+        'ally', 'friend', 'mentor', 'student',
+        'rival', 'enemy', 'nemesis',
+        'related'
+    ];
+
+    const sortedTypes = Object.keys(groupedRelations).sort((a, b) => {
+        const indexA = priorityOrder.indexOf(a);
+        const indexB = priorityOrder.indexOf(b);
+        if (indexA !== -1 && indexB !== -1) return indexA - indexB;
+        if (indexA !== -1) return -1;
+        if (indexB !== -1) return 1;
+        return a.localeCompare(b);
+    });
+
+    const SPARSE_THRESHOLD = 3;
+    const denseTypes = sortedTypes.filter(type => groupedRelations[type].length > SPARSE_THRESHOLD);
+    const sparseTypes = sortedTypes.filter(type => groupedRelations[type].length <= SPARSE_THRESHOLD);
 
     return (
         <div className="bg-gray-800/50 rounded-xl p-6 border border-gray-700 backdrop-blur-sm mt-8">
@@ -107,96 +231,53 @@ export default function ChampionRelations({
                 {t('champion.relatedChampions')}
             </h2>
 
-            <div className="space-y-8">
-                {Object.entries(groupedRelations).map(([region, regionRelations]) => (
-                    <div key={region} className="space-y-3">
-                        <h3 className="text-lg font-semibold text-gray-300 uppercase tracking-wider border-b border-gray-700 pb-1 mb-3">
-                            {/* Traduction de la région si possible, sinon formatage simple */}
-                            {t(`factions.${region}`) || region.charAt(0).toUpperCase() + region.slice(1)}
-                        </h3>
-                        <div className="grid grid-cols-1 gap-3">
-                            {regionRelations.map((rel) => {
-                                const relChamp = allChampions.find((c) => c.name === rel.champion);
-                                const style = getTypeStyle(rel.type);
-
-                                // Debug log
-                                // console.log(`[ChampionRelations] Processing ${rel.champion}. Found in champions? ${!!relChamp}`);
-
-                                // PNJ ou Champion non trouvé dans l'API
-                                if (!relChamp) {
-                                    const loreChar = loreCharacters.find(c => c.name === rel.champion);
-
-                                    return (
-                                        <a
-                                            key={rel.champion}
-                                            href={`/${locale}/lore/${rel.champion}`}
-                                            className={`flex items-start gap-3 p-3 rounded-lg border ${style.bg} ${style.border} opacity-80 hover:opacity-100 hover:bg-gray-700/50 transition-all group`}
-                                        >
-                                            <div className={`w-8 h-8 rounded-full flex items-center justify-center bg-gray-800 border-2 ${style.border} shrink-0 overflow-hidden group-hover:scale-110 transition-transform`}>
-                                                {loreChar && loreChar.image ? (
-                                                    <img src={loreChar.image} alt={loreChar.name} className="w-full h-full object-cover" />
-                                                ) : (
-                                                    <span className="text-xs font-bold text-gray-500">?</span>
-                                                )}
-                                            </div>
-                                            <div>
-                                                <div className="flex items-center gap-2 flex-wrap">
-                                                    <span className={`text-sm font-medium ${style.text} group-hover:text-white transition-colors`}>{rel.champion}</span>
-                                                    <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs ${style.bg} ${style.border} ${style.text} border`}>
-                                                        <span>{style.icon}</span>
-                                                        <span>{t(`relationTypes.${rel.type}`) || rel.type}</span>
-                                                    </span>
-                                                </div>
-                                                <p className="text-xs text-gray-400 mt-1">
-                                                    {loreChar ? (
-                                                        <>
-                                                            {loreChar.species && <span>{loreChar.species} &bull; </span>}
-                                                            {t('home.loreCharacters')}
-                                                        </>
-                                                    ) : t('home.loreCharacters')}
-                                                </p>
-                                                {rel.note && (
-                                                    <p className="text-xs text-gray-400 mt-0.5 italic">
-                                                        &quot;{typeof rel.note === 'object' && rel.note !== null ? (rel.note as any)[locale === 'fr' ? 'fr' : 'en'] || (rel.note as any)['en'] : rel.note}&quot;
-                                                    </p>
-                                                )}
-                                            </div>
-                                        </a>
-                                    );
-                                }
-
-                                // Champion jouable - lien cliquable
-                                return (
-                                    <div key={rel.champion} className="flex items-start gap-3">
-                                        <a
-                                            href={`/${locale}/champion/${relChamp.id}`}
-                                            className={`flex items-center gap-3 hover:bg-gray-700/50 px-3 py-2 rounded-lg border transition-all group flex-1 ${style.bg} ${style.border}`}
-                                        >
-                                            <img
-                                                src={`https://ddragon.leagueoflegends.com/cdn/${latestVersion}/img/champion/${relChamp.image.full}`}
-                                                alt={rel.champion}
-                                                className={`w-10 h-10 rounded-full border-2 ${style.border} group-hover:scale-110 transition-transform shadow-sm`}
-                                            />
-                                            <div className="flex-1 min-w-0">
-                                                <div className="flex items-center gap-2 flex-wrap">
-                                                    <span className={`text-sm ${style.text} group-hover:text-white font-bold truncate`}>{rel.champion}</span>
-                                                    <span className={`inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] uppercase tracking-wide font-semibold ${style.bg} ${style.border} ${style.text} border`}>
-                                                        {style.icon} {t(`relationTypes.${rel.type}`) || rel.type}
-                                                    </span>
-                                                </div>
-                                                {rel.note && (
-                                                    <p className="text-xs text-gray-400 mt-1 italic whitespace-normal break-words">
-                                                        &quot;{typeof rel.note === 'object' && rel.note !== null ? (rel.note as any)[locale === 'fr' ? 'fr' : 'en'] || (rel.note as any)['en'] : rel.note}&quot;
-                                                    </p>
-                                                )}
-                                            </div>
-                                        </a>
-                                    </div>
-                                );
-                            })}
-                        </div>
-                    </div>
+            <div className="space-y-12">
+                {/* Dense Categories (Carousel) */}
+                {denseTypes.map((type) => (
+                    <RelationGroup
+                        key={type}
+                        title={
+                            <>
+                                <span className="text-yellow-500">{getTypeStyle(type).icon}</span>
+                                {t(`relationTypes.${type}`) || type}
+                            </>
+                        }
+                        relations={groupedRelations[type]}
+                        allChampions={allChampions}
+                        loreCharacters={loreCharacters}
+                        t={t}
+                        locale={locale}
+                        latestVersion={latestVersion}
+                    />
                 ))}
+
+                {/* Sparse Categories (Grid) */}
+                {sparseTypes.length > 0 && (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                        {sparseTypes.map((type) => (
+                            <div key={type} className="flex flex-col gap-3">
+                                <h3 className="text-sm font-bold text-gray-400 uppercase tracking-wider border-b border-gray-700 pb-1 flex items-center gap-2">
+                                    <span className="text-yellow-500">{getTypeStyle(type).icon}</span>
+                                    {t(`relationTypes.${type}`) || type}
+                                </h3>
+                                <div className="flex flex-col gap-3">
+                                    {groupedRelations[type].map((rel) => (
+                                        <RelationCard
+                                            key={rel.champion}
+                                            rel={rel}
+                                            allChampions={allChampions}
+                                            loreCharacters={loreCharacters}
+                                            t={t}
+                                            locale={locale}
+                                            latestVersion={latestVersion}
+                                            className="w-full"
+                                        />
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                )}
             </div>
         </div>
     );
