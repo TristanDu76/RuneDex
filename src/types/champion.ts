@@ -18,6 +18,7 @@ export interface LoreCharacter {
         champion: string;
         type: string;
         note?: string;
+        image?: string;
     }[];
 }
 
@@ -91,10 +92,11 @@ export interface ChampionData {
         slug: string;
         image?: string;
     }[];
-    related_champions?: { // Nouveau champ DB
+    related_champions?: {
         champion: string;
         type: string;
         note?: string;
+        image?: string;
     }[];
     gender?: string; // Nouvelle colonne DB
     species?: string; // Nouvelle colonne DB

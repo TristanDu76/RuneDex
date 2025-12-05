@@ -39,7 +39,7 @@ export default async function ChampionPage({ params }: ChampionPageProps) {
   const nextChampion = currentIndex < sortedChampions.length - 1 ? sortedChampions[currentIndex + 1] : sortedChampions[0];
 
   // 1. Récupération des données DETAILED spécifiques au champion
-  const championDetails = await fetchChampionDetails(championId, latestVersion, locale);
+  const championDetails = await fetchChampionDetails(championId, locale);
   const championArtifacts = await fetchChampionArtifacts(championId, locale);
   const championRunes = await fetchChampionRunes(championId, locale);
 

@@ -1,6 +1,7 @@
 import { supabase } from '@/lib/supabase';
 import { ChampionData, LoreCharacter } from '@/types/champion';
 import { unstable_cache } from 'next/cache';
+import { formatRelations, localizeChampion, localizeLoreCharacter, getColName } from './data-utils';
 
 /**
  * Récupère tous les champions depuis la base de données Supabase.
@@ -13,7 +14,7 @@ export const fetchAllChampions = unstable_cache(
       // Ajout de title_en pour la traduction
       const { data, error } = await supabase
         .from('champions')
-        .select('id, key, name, title, image, tags, factions, custom_tags, version, gender, species, partype, lanes');
+        .select('id, key, name, title, image, tags, factions, custom_tags, version, gender, species, partype, lanes, title_en');
 
       if (error) {
         console.error("Erreur Supabase (fetchAllChampions) :", error);
@@ -37,7 +38,7 @@ export const fetchAllChampions = unstable_cache(
       return [];
     }
   },
-  ['all-champions-v5'], // Clé de cache mise à jour pour forcer le refresh avec partype
+  ['all-champions-v6'], // Clé de cache mise à jour pour forcer le refresh avec partype
   { revalidate: 3600 } // Revalider toutes les heures (3600s)
 );
 
@@ -46,7 +47,7 @@ export const fetchAllChampions = unstable_cache(
  * Utilise le cache de Next.js.
  */
 export const fetchChampionDetails = unstable_cache(
-  async (championId: string, version: string, locale: string = 'fr_FR') => {
+  async (championId: string, locale: string = 'fr_FR') => {
     try {
       // 1. Récupérer le champion
       const { data: championData, error } = await supabase
@@ -80,40 +81,17 @@ export const fetchChampionDetails = unstable_cache(
       }
 
       // 3. Formater les relations pour le frontend
-      const formattedRelations = (relationsData || []).map((rel: any) => {
-        const isChampion = !!rel.target_champion;
-        const target = isChampion ? rel.target_champion : rel.target_lore;
+      champion.related_champions = formatRelations(relationsData || [], locale);
 
-        return {
-          champion: target?.name || 'Inconnu',
-          type: rel.type,
-          note: locale.startsWith('en') ? rel.note_en : rel.note_fr,
-          image: target?.image
-        };
-      });
-
-      // @ts-ignore - On force le type
-      champion.related_champions = formattedRelations;
-
-      // Si la locale est en_US ou en, on remplace les champs par leur version anglaise si elle existe
-      if (locale.startsWith('en')) {
-        if (champion.title_en) champion.title = champion.title_en;
-        if (champion.lore_en) champion.lore = champion.lore_en;
-        if (champion.blurb_en) champion.blurb = champion.blurb_en;
-        if (champion.spells_en) champion.spells = champion.spells_en;
-        if (champion.passive_en) champion.passive = champion.passive_en;
-        if (champion.tags_en) champion.tags = champion.tags_en;
-        if (champion.skins_en) champion.skins = champion.skins_en;
-      }
-
-      return champion;
+      // 4. Localization
+      return localizeChampion(champion, locale);
 
     } catch (error) {
       console.error(`Erreur inattendue (fetchChampionDetails pour ${championId}) :`, error);
       return null;
     }
   },
-  ['champion-details-v4'], // Bump version
+  ['champion-details-v5'], // Bump version
   { revalidate: 3600 } // Revalider toutes les heures
 );
 
@@ -140,7 +118,7 @@ export const fetchLoreCharacters = unstable_cache(
       return [];
     }
   },
-  ['lore-characters-v6'],
+  ['lore-characters-v7'],
   { revalidate: 3600 }
 );
 
@@ -179,38 +157,20 @@ export const fetchLoreCharacter = unstable_cache(
         console.error("Erreur récupération relations :", relError);
       }
 
-      // 3. Formater les relations pour le frontend
-      const formattedRelations = (relationsData || []).map((rel: any) => {
-        const isChampion = !!rel.target_champion;
-        const target = isChampion ? rel.target_champion : rel.target_lore;
-
-        return {
-          champion: target?.name || 'Inconnu', // Le nom de la cible
-          type: rel.type,
-          note: locale.startsWith('en') ? rel.note_en : rel.note_fr,
-          // On ajoute l'image directement ici si besoin, ou on laisse le composant gérer
-          image: target?.image
-        };
-      });
-
       const loreChar = character as LoreCharacter;
-      // @ts-ignore - On force le type car on a enrichi les relations
-      loreChar.related_champions = formattedRelations;
 
-      // Localization
-      if (locale.startsWith('en')) {
-        if (loreChar.description_en) loreChar.description = loreChar.description_en;
-      }
+      // 3. Formater les relations pour le frontend
+      loreChar.related_champions = formatRelations(relationsData || [], locale);
 
-      return loreChar;
+      // 4. Localization
+      return localizeLoreCharacter(loreChar, locale);
 
     } catch (error) {
       console.error(`Erreur inattendue (fetchLoreCharacter pour ${name}) :`, error);
       return null;
     }
   },
-  // ... existing code ...
-  ['lore-character-details-v5'], // Bump version
+  ['lore-character-details-v6'], // Bump version
   { revalidate: 3600 }
 );
 
@@ -219,11 +179,9 @@ export const fetchLoreCharacter = unstable_cache(
  */
 export const fetchItems = unstable_cache(
   async (locale: string = 'fr_FR') => {
-    // Déterminer la langue pour les colonnes traduites
-    const isEnglish = locale.startsWith('en');
-    const nameCol = isEnglish ? 'name_en' : 'name';
-    const descCol = isEnglish ? 'description_en' : 'description';
-    const plaintextCol = isEnglish ? 'plaintext_en' : 'plaintext';
+    const nameCol = getColName('name', locale);
+    const descCol = getColName('description', locale);
+    const plaintextCol = getColName('plaintext', locale);
 
     const { data, error } = await supabase
       .from('items')
@@ -247,9 +205,9 @@ export const fetchItems = unstable_cache(
       return [];
     }
 
-    return data;
+    return data as any;
   },
-  ['items-list-v1'],
+  ['items-list-v2'],
   { revalidate: 3600 }
 );
 
@@ -258,9 +216,8 @@ export const fetchItems = unstable_cache(
  */
 export const fetchArtifacts = unstable_cache(
   async (locale: string = 'fr_FR') => {
-    const isEnglish = locale.startsWith('en');
-    const nameCol = isEnglish ? 'name_en' : 'name';
-    const descCol = isEnglish ? 'description_en' : 'description';
+    const nameCol = getColName('name', locale);
+    const descCol = getColName('description', locale);
 
     const { data, error } = await supabase
       .from('artifacts')
@@ -279,9 +236,9 @@ export const fetchArtifacts = unstable_cache(
       return [];
     }
 
-    return data;
+    return data as any;
   },
-  ['artifacts-list-v2'],
+  ['artifacts-list-v3'],
   { revalidate: 3600 }
 );
 
@@ -290,11 +247,10 @@ export const fetchArtifacts = unstable_cache(
  */
 export const fetchArtifactById = unstable_cache(
   async (id: string, locale: string = 'fr_FR') => {
-    const isEnglish = locale.startsWith('en');
-    const nameCol = isEnglish ? 'name_en' : 'name';
-    const descCol = isEnglish ? 'description_en' : 'description';
+    const nameCol = getColName('name', locale);
+    const descCol = getColName('description', locale);
 
-    const { data, error } = await supabase
+    const { data: rawData, error } = await supabase
       .from('artifacts')
       .select(`
         id,
@@ -317,6 +273,9 @@ export const fetchArtifactById = unstable_cache(
       return null;
     }
 
+    // Cast to any to avoid ParserError due to dynamic query string
+    const data = rawData as any;
+
     // Helper pour extraire l'objet unique s'il est retourné comme tableau
     const getSingle = (val: any) => Array.isArray(val) ? val[0] : val;
 
@@ -338,7 +297,7 @@ export const fetchArtifactById = unstable_cache(
 
     return formattedData;
   },
-  ['artifact-details-v2'],
+  ['artifact-details-v3'],
   { revalidate: 3600 }
 );
 
@@ -347,9 +306,8 @@ export const fetchArtifactById = unstable_cache(
  */
 export const fetchRunes = unstable_cache(
   async (locale: string = 'fr_FR') => {
-    const isEnglish = locale.startsWith('en');
-    const nameCol = isEnglish ? 'name_en' : 'name';
-    const descCol = isEnglish ? 'description_en' : 'description';
+    const nameCol = getColName('name', locale);
+    const descCol = getColName('description', locale);
 
     const { data, error } = await supabase
       .from('runes')
@@ -367,9 +325,9 @@ export const fetchRunes = unstable_cache(
       return [];
     }
 
-    return data;
+    return data as any;
   },
-  ['runes-list-lore-v1'],
+  ['runes-list-lore-v2'],
   { revalidate: 3600 }
 );
 
@@ -378,9 +336,8 @@ export const fetchRunes = unstable_cache(
  */
 export const fetchRuneById = unstable_cache(
   async (id: string, locale: string = 'fr_FR') => {
-    const isEnglish = locale.startsWith('en');
-    const nameCol = isEnglish ? 'name_en' : 'name';
-    const descCol = isEnglish ? 'description_en' : 'description';
+    const nameCol = getColName('name', locale);
+    const descCol = getColName('description', locale);
 
     const { data, error } = await supabase
       .from('runes')
@@ -394,16 +351,16 @@ export const fetchRuneById = unstable_cache(
       .eq('id', id)
       .single();
 
-    if (error) {
+    if (error || !data) {
       console.error(`Error fetching rune ${id}:`, error);
       return null;
     }
 
     // Pour l'instant, pas de propriétaire lié dans la table runes, mais on pourrait l'ajouter
     // On simule la structure pour le frontend si besoin
-    return { ...data, owner: null };
+    return { ...(data as any), owner: null };
   },
-  ['rune-details-v1'],
+  ['rune-details-v2'],
   { revalidate: 3600 }
 );
 
@@ -412,15 +369,16 @@ export const fetchRuneById = unstable_cache(
  */
 export const fetchRuneNeighbors = unstable_cache(
   async (currentId: string, locale: string = 'fr_FR') => {
-    const isEnglish = locale.startsWith('en');
-    const nameCol = isEnglish ? 'name_en' : 'name';
+    const nameCol = getColName('name', locale);
 
     // Récupérer toutes les runes triées par nom pour trouver les voisins
     // Ce n'est pas très optimisé pour une grande table, mais pour 5 runes c'est instantané
-    const { data: runes } = await supabase
+    const { data } = await supabase
       .from('runes')
       .select(`id, name: ${nameCol}`)
       .order(nameCol);
+
+    const runes = data as { id: string; name: string }[] | null;
 
     if (!runes) return { prev: null, next: null };
 
@@ -432,7 +390,7 @@ export const fetchRuneNeighbors = unstable_cache(
 
     return { prev, next };
   },
-  ['rune-neighbors-v1'],
+  ['rune-neighbors-v2'],
   { revalidate: 3600 }
 );
 
@@ -441,8 +399,7 @@ export const fetchRuneNeighbors = unstable_cache(
  */
 export const fetchChampionArtifacts = unstable_cache(
   async (championId: string, locale: string = 'fr_FR') => {
-    const isEnglish = locale.startsWith('en');
-    const nameCol = isEnglish ? 'name_en' : 'name';
+    const nameCol = getColName('name', locale);
 
     const { data, error } = await supabase
       .from('artifact_owners')
@@ -467,7 +424,7 @@ export const fetchChampionArtifacts = unstable_cache(
       relation_type: item.relation_type
     }));
   },
-  ['champion-artifacts-v1'],
+  ['champion-artifacts-v2'],
   { revalidate: 3600 }
 );
 
@@ -476,8 +433,7 @@ export const fetchChampionArtifacts = unstable_cache(
  */
 export const fetchChampionRunes = unstable_cache(
   async (championId: string, locale: string = 'fr_FR') => {
-    const isEnglish = locale.startsWith('en');
-    const nameCol = isEnglish ? 'name_en' : 'name';
+    const nameCol = getColName('name', locale);
 
     // Note: Cette requête suppose l'existence de la table 'rune_owners'
     const { data, error } = await supabase
@@ -506,6 +462,6 @@ export const fetchChampionRunes = unstable_cache(
       relation_type: item.relation_type
     }));
   },
-  ['champion-runes-v1'],
+  ['champion-runes-v2'],
   { revalidate: 3600 }
 );
