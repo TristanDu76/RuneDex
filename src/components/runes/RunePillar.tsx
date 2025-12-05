@@ -73,7 +73,7 @@ export default function RunePillar({ rune }: RunePillarProps) {
     return (
         <Link
             href={`/rune/${rune.id}`}
-            className={`group relative flex flex-col items-center justify-end h-[500px] w-full overflow-hidden border-x border-gray-800/50 bg-gray-900/80 transition-all duration-500 ${style.shadow} hover:shadow-[0_0_30px_rgba(0,0,0,0.5)]`}
+            className={`group relative flex flex-col items-center justify-end h-[200px] md:h-[500px] w-full overflow-hidden border-x border-gray-800/50 bg-gray-900/80 transition-all duration-500 ${style.shadow} hover:shadow-[0_0_30px_rgba(0,0,0,0.5)]`}
         >
             {/* Background Gradient */}
             <div className={`absolute inset-0 bg-linear-to-b ${style.gradient} opacity-30 group-hover:opacity-60 transition-opacity duration-500`} />
@@ -82,7 +82,7 @@ export default function RunePillar({ rune }: RunePillarProps) {
             <div className="absolute top-0 left-0 right-0 h-32 bg-linear-to-b from-black/80 to-transparent z-10" />
 
             {/* Rune Image (Icon) */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 transition-transform duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 md:w-48 md:h-48 transition-transform duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
                 {rune.image_url ? (
                     <Image
                         src={rune.image_url}

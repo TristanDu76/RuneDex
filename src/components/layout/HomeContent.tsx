@@ -81,7 +81,7 @@ export default function HomeContent({ champions, loreCharacters, artifacts, rune
             )}
 
             {viewMode === 'runes' && (
-                <div className="flex flex-col md:flex-row justify-center items-stretch w-full max-w-6xl mx-auto overflow-hidden rounded-xl border border-gray-800 shadow-2xl bg-black h-[500px]">
+                <div className="flex flex-col md:flex-row justify-center items-stretch w-full max-w-6xl mx-auto overflow-hidden rounded-xl border border-gray-800 shadow-2xl bg-black h-auto md:h-[500px]">
                     {runes.map((rune: any) => (
                         <div
                             key={rune.id}
