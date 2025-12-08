@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { ChampionData } from '@/types/champion';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { ChevronLeft, ChevronRight, HelpCircle, X } from 'lucide-react';
+import { ChevronLeft, ChevronRight, HelpCircle, X, Lightbulb } from 'lucide-react';
 
 interface QuizClientProps {
     champions: ChampionData[];
@@ -21,6 +21,8 @@ interface GuessResult {
     role: 'correct' | 'incorrect' | 'partial';
 }
 
+type Category = 'gender' | 'species' | 'resource' | 'region' | 'lane' | 'role';
+
 export default function QuizClient({ champions }: QuizClientProps) {
     const [targetChampion, setTargetChampion] = useState<ChampionData | null>(null);
     const [guesses, setGuesses] = useState<GuessResult[]>([]);
@@ -29,6 +31,7 @@ export default function QuizClient({ champions }: QuizClientProps) {
     const [showSuggestions, setShowSuggestions] = useState(false);
     const [selectedIndex, setSelectedIndex] = useState(0);
     const [showHelper, setShowHelper] = useState(false);
+    const [unlockedHints, setUnlockedHints] = useState<Set<Category>>(new Set());
 
     const inputRef = useRef<HTMLInputElement>(null);
     const suggestionsRef = useRef<HTMLDivElement>(null);
@@ -46,9 +49,9 @@ export default function QuizClient({ champions }: QuizClientProps) {
 
     const filteredChampions = useMemo(() => {
         if (!input) return [];
+        const guessedIds = new Set(guesses.map(g => g.champion.id));
         return champions
-            .filter(c => c.name.toLowerCase().includes(input.toLowerCase()))
-            .filter(c => !guesses.some(g => g.champion.id === c.id))
+            .filter(c => !guessedIds.has(c.id) && c.name.toLowerCase().includes(input.toLowerCase()))
             .slice(0, 5);
     }, [input, champions, guesses]);
 
@@ -97,10 +100,16 @@ export default function QuizClient({ champions }: QuizClientProps) {
             role: checkMatch(targetChampion.tags, champion.tags),
         };
 
-        setGuesses([newGuess, ...guesses]);
+        const newGuesses = [newGuess, ...guesses];
+        setGuesses(newGuesses);
         setInput('');
         setShowSuggestions(false);
         setSelectedIndex(0);
+
+        // Hint Logic: Every 5 guesses, unlock a random category
+        if (newGuesses.length % 5 === 0) {
+            unlockRandomHint(newGuesses);
+        }
 
         if (champion.id === targetChampion.id) {
             setIsWon(true);
@@ -109,6 +118,64 @@ export default function QuizClient({ champions }: QuizClientProps) {
         // Keep focus on input
         setTimeout(() => inputRef.current?.focus(), 10);
     };
+
+    const unlockRandomHint = (currentGuesses: GuessResult[]) => {
+        // Max 3 hints allowed
+        if (unlockedHints.size >= 3) return;
+
+        const categories: Category[] = ['gender', 'species', 'resource', 'region', 'lane', 'role'];
+
+        // Priority 1: Categories neither unlocked nor guessed correctly
+        let availableCategories = categories.filter(cat => {
+            if (unlockedHints.has(cat)) return false;
+            // Check if user already found it
+            const found = currentGuesses.some(g => g[cat] === 'correct');
+            return !found;
+        });
+
+        // Priority 2: Fallback to any locked category if all were guessed correctly
+        if (availableCategories.length === 0) {
+            availableCategories = categories.filter(cat => !unlockedHints.has(cat));
+        }
+
+        if (availableCategories.length > 0) {
+            const randomCat = availableCategories[Math.floor(Math.random() * availableCategories.length)];
+            setUnlockedHints(prev => new Set(prev).add(randomCat));
+        }
+    };
+
+    // Retroactive Hint Check (Safety Net)
+    useEffect(() => {
+        const expectedHints = Math.min(3, Math.floor(guesses.length / 5));
+        if (unlockedHints.size < expectedHints) {
+            setUnlockedHints(prev => {
+                const newSet = new Set(prev);
+                let needed = expectedHints - newSet.size;
+                const categories: Category[] = ['gender', 'species', 'resource', 'region', 'lane', 'role'];
+
+                while (needed > 0) {
+                    // Try to find categories not yet guessed correctly
+                    let candidates = categories.filter(cat => {
+                        if (newSet.has(cat)) return false;
+                        const found = guesses.some(g => g[cat] === 'correct');
+                        return !found;
+                    });
+
+                    // Fallback
+                    if (candidates.length === 0) {
+                        candidates = categories.filter(cat => !newSet.has(cat));
+                    }
+
+                    if (candidates.length === 0) break;
+
+                    const randomCat = candidates[Math.floor(Math.random() * candidates.length)];
+                    newSet.add(randomCat);
+                    needed--;
+                }
+                return newSet;
+            });
+        }
+    }, [guesses, unlockedHints.size]);
 
     const handleKeyDown = (e: React.KeyboardEvent) => {
         if (e.key === 'ArrowDown') {
@@ -135,8 +202,6 @@ export default function QuizClient({ champions }: QuizClientProps) {
     };
 
     const translateValue = (category: 'gender' | 'species' | 'resource' | 'roles' | 'factions' | 'lanes', value: string) => {
-        // Try to translate, fallback to value if key is missing (next-intl returns key by default if missing)
-        // We assume value matches the key structure in JSON
         return t(`${category}.${value}`);
     };
 
@@ -159,41 +224,45 @@ export default function QuizClient({ champions }: QuizClientProps) {
             isRoleCorrect: false,
         };
 
-        // Check for correct array matches first
+        if (!targetChampion) return clues;
+
+        // 1. Apply Unlocked Hints (Strictly Target Data)
+        if (unlockedHints.has('gender')) clues.gender = targetChampion.gender || 'Unknown';
+        if (unlockedHints.has('species')) clues.species = targetChampion.species || 'Unknown';
+        if (unlockedHints.has('resource')) clues.resource = targetChampion.partype;
+        if (unlockedHints.has('region')) {
+            targetChampion.factions?.forEach(f => clues.regions.add(f));
+            clues.isRegionCorrect = true;
+        }
+        if (unlockedHints.has('lane')) {
+            targetChampion.lanes?.forEach(l => clues.lanes.add(l));
+            clues.isLaneCorrect = true;
+        }
+        if (unlockedHints.has('role')) {
+            targetChampion.tags.forEach(r => clues.roles.add(r));
+            clues.isRoleCorrect = true;
+        }
+
+        // 2. Apply Correct Guesses (Strictly Target Data)
+        // If we found the correct value in a previous guess, we show it.
+        // We do NOT pollute this with partial guesses anymore.
+
         const correctRegionGuess = guesses.find(g => g.region === 'correct');
         if (correctRegionGuess) {
             correctRegionGuess.champion.factions?.forEach(f => clues.regions.add(f));
             clues.isRegionCorrect = true;
-        } else {
-            guesses.forEach(g => {
-                if (g.region === 'partial') {
-                    g.champion.factions?.forEach(f => clues.regions.add(f));
-                }
-            });
         }
 
         const correctLaneGuess = guesses.find(g => g.lane === 'correct');
         if (correctLaneGuess) {
             correctLaneGuess.champion.lanes?.forEach(l => clues.lanes.add(l));
             clues.isLaneCorrect = true;
-        } else {
-            guesses.forEach(g => {
-                if (g.lane === 'partial') {
-                    g.champion.lanes?.forEach(l => clues.lanes.add(l));
-                }
-            });
         }
 
         const correctRoleGuess = guesses.find(g => g.role === 'correct');
         if (correctRoleGuess) {
             correctRoleGuess.champion.tags.forEach(r => clues.roles.add(r));
             clues.isRoleCorrect = true;
-        } else {
-            guesses.forEach(g => {
-                if (g.role === 'partial') {
-                    g.champion.tags.forEach(r => clues.roles.add(r));
-                }
-            });
         }
 
         guesses.forEach(g => {
@@ -206,6 +275,7 @@ export default function QuizClient({ champions }: QuizClientProps) {
     };
 
     const clues = getClues();
+    const attemptsUntilHint = 5 - (guesses.length % 5);
 
     if (champions.length === 0) return <div className="text-white text-center mt-10">{t('quiz.noChampions')}</div>;
     if (!targetChampion) return <div className="text-white text-center mt-10">{t('quiz.loading')}</div>;
@@ -213,7 +283,7 @@ export default function QuizClient({ champions }: QuizClientProps) {
     return (
         <div className="w-full max-w-7xl mx-auto p-4 flex gap-4 relative">
 
-            {/* Helper Panel (Toggleable) */}
+            {/* Helper Panel (Toggleable Side Panel) */}
             <AnimatePresence>
                 {showHelper && (
                     <motion.div
@@ -232,26 +302,27 @@ export default function QuizClient({ champions }: QuizClientProps) {
                             </button>
                         </div>
                         <div className="space-y-5 text-sm">
+                            {[
+                                { id: 'gender', label: t('champion.gender'), val: clues.gender ? translateValue('gender', clues.gender) : '???', correct: !!clues.gender },
+                                { id: 'species', label: t('champion.species'), val: clues.species ? translateValue('species', clues.species) : '???', correct: !!clues.species },
+                                { id: 'resource', label: t('champion.resource'), val: clues.resource ? translateValue('resource', clues.resource) : '???', correct: !!clues.resource },
+                            ].map((item) => (
+                                <div key={item.id}>
+                                    <span className="text-gray-500 block text-xs uppercase font-bold mb-1 tracking-wider flex items-center gap-2">
+                                        {item.label}
+                                        {unlockedHints.has(item.id as Category) && <Lightbulb size={12} className="text-yellow-500" />}
+                                    </span>
+                                    <span className={`text-base font-medium ${item.correct ? "text-green-400" : "text-gray-600"}`}>
+                                        {item.val}
+                                    </span>
+                                </div>
+                            ))}
+
                             <div>
-                                <span className="text-gray-500 block text-xs uppercase font-bold mb-1 tracking-wider">{t('champion.gender')}</span>
-                                <span className={`text-base font-medium ${clues.gender ? "text-green-400" : "text-gray-600"}`}>
-                                    {clues.gender ? translateValue('gender', clues.gender) : '???'}
+                                <span className="text-gray-500 block text-xs uppercase font-bold mb-1 tracking-wider flex items-center gap-2">
+                                    {t('champion.region')}
+                                    {unlockedHints.has('region') && <Lightbulb size={12} className="text-yellow-500" />}
                                 </span>
-                            </div>
-                            <div>
-                                <span className="text-gray-500 block text-xs uppercase font-bold mb-1 tracking-wider">{t('champion.species')}</span>
-                                <span className={`text-base font-medium ${clues.species ? "text-green-400" : "text-gray-600"}`}>
-                                    {clues.species ? translateValue('species', clues.species) : '???'}
-                                </span>
-                            </div>
-                            <div>
-                                <span className="text-gray-500 block text-xs uppercase font-bold mb-1 tracking-wider">{t('champion.resource')}</span>
-                                <span className={`text-base font-medium ${clues.resource ? "text-green-400" : "text-gray-600"}`}>
-                                    {clues.resource ? translateValue('resource', clues.resource) : '???'}
-                                </span>
-                            </div>
-                            <div>
-                                <span className="text-gray-500 block text-xs uppercase font-bold mb-1 tracking-wider">{t('champion.region')}</span>
                                 <div className="flex flex-wrap gap-1.5">
                                     {clues.regions.size > 0 ? Array.from(clues.regions).map(r => (
                                         <span
@@ -260,11 +331,18 @@ export default function QuizClient({ champions }: QuizClientProps) {
                                         >
                                             {translateValue('factions', r)}
                                         </span>
-                                    )) : <span className="text-gray-600">???</span>}
+                                    )) : (unlockedHints.has('region') || clues.isRegionCorrect ? (
+                                        <span className="px-2 py-0.5 rounded text-xs font-medium border text-green-400 bg-green-400/10 border-green-400/20">
+                                            {translateValue('factions', 'runeterra')}
+                                        </span>
+                                    ) : <span className="text-gray-600">???</span>)}
                                 </div>
                             </div>
                             <div>
-                                <span className="text-gray-500 block text-xs uppercase font-bold mb-1 tracking-wider">Lane</span>
+                                <span className="text-gray-500 block text-xs uppercase font-bold mb-1 tracking-wider flex items-center gap-2">
+                                    Lane
+                                    {unlockedHints.has('lane') && <Lightbulb size={12} className="text-yellow-500" />}
+                                </span>
                                 <div className="flex flex-wrap gap-1.5">
                                     {clues.lanes.size > 0 ? Array.from(clues.lanes).map(r => (
                                         <span
@@ -277,7 +355,10 @@ export default function QuizClient({ champions }: QuizClientProps) {
                                 </div>
                             </div>
                             <div>
-                                <span className="text-gray-500 block text-xs uppercase font-bold mb-1 tracking-wider">{t('filters.role')}</span>
+                                <span className="text-gray-500 block text-xs uppercase font-bold mb-1 tracking-wider flex items-center gap-2">
+                                    {t('filters.role')}
+                                    {unlockedHints.has('role') && <Lightbulb size={12} className="text-yellow-500" />}
+                                </span>
                                 <div className="flex flex-wrap gap-1.5">
                                     {clues.roles.size > 0 ? Array.from(clues.roles).map(r => (
                                         <span
@@ -304,6 +385,67 @@ export default function QuizClient({ champions }: QuizClientProps) {
 
             {/* Main Content */}
             <div className="flex-1 flex flex-col items-center gap-6 w-full">
+
+                {/* Hint Progress & Unlocked Hints Display */}
+                <div className="w-full max-w-lg flex flex-col gap-3">
+                    {/* Progress Bar - Only show if less than 3 hints unlocked */}
+                    {unlockedHints.size < 3 && (
+                        <>
+                            <div className="flex items-center justify-between text-xs text-gray-400 uppercase font-bold tracking-wider">
+                                <span>{t('quiz.nextHint')} {attemptsUntilHint} {t('quiz.attempts')}</span>
+                                <span>{unlockedHints.size} / 3 {t('quiz.unlockedHints')}</span>
+                            </div>
+                            <div className="w-full h-2 bg-gray-800 rounded-full overflow-hidden border border-gray-700">
+                                <motion.div
+                                    className="h-full bg-yellow-500"
+                                    initial={{ width: 0 }}
+                                    animate={{ width: `${((5 - attemptsUntilHint) / 5) * 100}%` }}
+                                    transition={{ duration: 0.5 }}
+                                />
+                            </div>
+                        </>
+                    )}
+
+                    {/* Unlocked Hints Cards */}
+                    {unlockedHints.size > 0 && (
+                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-2">
+                            {Array.from(unlockedHints).map(cat => {
+                                let label = '';
+                                let val: string | React.ReactNode = '???';
+
+                                switch (cat) {
+                                    case 'gender': label = t('champion.gender'); val = clues.gender ? translateValue('gender', clues.gender) : '???'; break;
+                                    case 'species': label = t('champion.species'); val = clues.species ? translateValue('species', clues.species) : '???'; break;
+                                    case 'resource': label = t('champion.resource'); val = clues.resource ? translateValue('resource', clues.resource) : '???'; break;
+                                    case 'region':
+                                        label = t('champion.region');
+                                        val = clues.regions.size > 0
+                                            ? Array.from(clues.regions).map(r => translateValue('factions', r)).join(', ')
+                                            : translateValue('factions', 'runeterra');
+                                        break;
+                                    case 'lane': label = 'Lane'; val = Array.from(clues.lanes).map(l => translateValue('lanes', l)).join(', '); break;
+                                    case 'role': label = t('filters.role'); val = Array.from(clues.roles).map(r => translateValue('roles', r)).join(', '); break;
+                                }
+
+                                return (
+                                    <motion.div
+                                        key={cat}
+                                        initial={{ scale: 0.8, opacity: 0 }}
+                                        animate={{ scale: 1, opacity: 1 }}
+                                        className="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-2 flex flex-col items-center text-center"
+                                    >
+                                        <span className="text-[10px] text-yellow-500 font-bold uppercase mb-1 flex items-center gap-1">
+                                            <Lightbulb size={10} /> {label}
+                                        </span>
+                                        <span className="text-xs font-medium text-white truncate w-full">
+                                            {val}
+                                        </span>
+                                    </motion.div>
+                                );
+                            })}
+                        </div>
+                    )}
+                </div>
 
                 {/* Search Input */}
                 <div className="relative w-full max-w-lg z-50">

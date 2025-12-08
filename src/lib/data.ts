@@ -14,7 +14,7 @@ export const fetchAllChampions = unstable_cache(
       // Ajout de title_en pour la traduction
       const { data, error } = await supabase
         .from('champions')
-        .select('id, key, name, title, image, tags, factions, custom_tags, version, gender, species, partype, lanes, title_en');
+        .select('id, key, name, title, image, tags, factions, custom_tags, version, gender, species, partype, lanes, title_en, skins');
 
       if (error) {
         console.error("Erreur Supabase (fetchAllChampions) :", error);
