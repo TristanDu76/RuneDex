@@ -10,6 +10,7 @@ import { formatRelations, localizeChampion, localizeLoreCharacter, getColName } 
 export const fetchAllChampions = unstable_cache(
   async (locale: string = 'fr_FR') => {
     try {
+      console.log(`Fetching champions for locale: ${locale}`);
       // On sélectionne uniquement les champs nécessaires pour la grille
       // Ajout de title_en pour la traduction
       const { data, error } = await supabase
@@ -19,6 +20,12 @@ export const fetchAllChampions = unstable_cache(
       if (error) {
         console.error("Erreur Supabase (fetchAllChampions) :", error);
         return [];
+      }
+
+      if (!data || data.length === 0) {
+        console.warn("Supabase returned no champions.");
+      } else {
+        console.log(`Fetched ${data.length} champions.`);
       }
 
       const champions = data as ChampionData[];
@@ -38,7 +45,7 @@ export const fetchAllChampions = unstable_cache(
       return [];
     }
   },
-  ['all-champions-v6'], // Clé de cache mise à jour pour forcer le refresh avec partype
+  ['all-champions-v7'], // Clé de cache mise à jour pour forcer le refresh
   { revalidate: 3600 } // Revalider toutes les heures (3600s)
 );
 
