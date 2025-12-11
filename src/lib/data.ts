@@ -157,7 +157,7 @@ export const fetchItems = async (locale: string = 'fr_FR') => {
           gold_total,
           gold_sell,
           tags,
-          stats,
+
           image,
           maps
         `)

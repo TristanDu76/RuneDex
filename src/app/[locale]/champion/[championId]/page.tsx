@@ -48,7 +48,7 @@ export default async function ChampionPage({ params }: ChampionPageProps) {
   }
 
   // 2. Préparation des données pour l'affichage
-  const { name, title, lore, blurb, skins, spells, passive, partype, gender, species, tags } = championDetails;
+  const { name, title, lore, skins, spells, passive, partype, gender, species, tags } = championDetails;
 
 
   return (
@@ -206,7 +206,7 @@ export default async function ChampionPage({ params }: ChampionPageProps) {
             <span>{t('champion.loreTitle')}</span>
           </h2>
           <p className="text-gray-300 leading-relaxed whitespace-pre-line text-justify text-lg">
-            {lore || blurb}
+            {lore}
           </p>
         </div>
 

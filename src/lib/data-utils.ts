@@ -25,7 +25,6 @@ export const localizeChampion = (champion: ChampionData, locale: string) => {
     if (locale.startsWith('en')) {
         if (champion.title_en) champion.title = champion.title_en;
         if (champion.lore_en) champion.lore = champion.lore_en;
-        if (champion.blurb_en) champion.blurb = champion.blurb_en;
         if (champion.spells_en) champion.spells = champion.spells_en;
         if (champion.passive_en) champion.passive = champion.passive_en;
         if (champion.tags_en) champion.tags = champion.tags_en;

@@ -84,7 +84,7 @@ export default async function QuizHubPage({ params }: QuizPageProps) {
 
                                 {quiz.active ? (
                                     <span className={`px-6 py-2 rounded-full bg-gradient-to-r ${quiz.color} text-white font-bold text-sm shadow-lg opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all`}>
-                                        Play Now
+                                        {t('playQuiz')}
                                     </span>
                                 ) : (
                                     <span className="px-4 py-1 rounded-full bg-gray-700 text-gray-400 text-xs font-bold">

@@ -201,7 +201,7 @@ export default function SkinQuizClient({ champions }: SkinQuizClientProps) {
 
         if (mode === 'blur_gray') {
             // Blur: Start at 15px, decrease by 3px per attempt, min 0
-            const blur = Math.max(0, 15 - (attempts * 3));
+            const blur = Math.max(0, 10 - (attempts * 2));
 
             // Grayscale: Start at 100%, decrease by 20% per attempt, min 0%
             // This allows colors to appear gradually

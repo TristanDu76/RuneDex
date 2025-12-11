@@ -50,10 +50,10 @@ export default async function LorePage({ params }: LorePageProps) {
         key: '',
         name: character.name,
         title: 'Lore Character',
-        blurb: '',
+
         tags: [],
         partype: '',
-        info: { attack: 0, defense: 0, magic: 0, difficulty: 0 },
+
         version: latestVersion,
         image: { full: '', sprite: '', group: '', x: 0, y: 0, w: 0, h: 0 },
         related_champions: character.related_champions,

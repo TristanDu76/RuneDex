@@ -65,16 +65,8 @@ export interface ChampionData {
     name: string;
     title: string;
 
-    blurb: string;
     tags: string[];
     partype: string;
-
-    info: {
-        attack: number;
-        defense: number;
-        magic: number;
-        difficulty: number;
-    };
 
     version: string;
     image: ChampionImage;
@@ -105,7 +97,6 @@ export interface ChampionData {
     // Champs de traduction (anglais)
     title_en?: string;
     lore_en?: string;
-    blurb_en?: string;
     spells_en?: ChampionSpell[];
     passive_en?: ChampionPassive;
     tags_en?: string[];
