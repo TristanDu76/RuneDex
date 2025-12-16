@@ -6,7 +6,7 @@ import { Suspense } from "react";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { SpeedInsights } from '@vercel/speed-insights/next';
+
 
 import { fetchAllChampions, fetchLoreCharacters } from "@/lib/data";
 
@@ -59,7 +59,7 @@ export default async function RootLayout({
             {children}
           </div>
         </NextIntlClientProvider>
-        <SpeedInsights />
+
       </body>
     </html>
   );
