@@ -43,7 +43,7 @@ export default function QuizClient({ champions }: QuizClientProps) {
         if (champions.length > 0) {
             const random = champions[Math.floor(Math.random() * champions.length)];
             setTargetChampion(random);
-            console.log('Target:', random.name);
+            // console.log('Target:', random.name);
         }
     }, [champions]);
 
