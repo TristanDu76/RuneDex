@@ -7,6 +7,8 @@ import ChampionNavigation from '@/components/champions/ChampionNavigation';
 import { getTranslations } from 'next-intl/server';
 import ChampionRelations from '@/components/champions/ChampionRelations';
 import ChampionArtifacts from '@/components/champions/ChampionArtifacts';
+import LoreDisplay from '@/components/champions/LoreDisplay';
+import ChampionSwipeNavigation from '@/components/champions/ChampionSwipeNavigation';
 
 // Interface pour les props de la page
 interface ChampionPageProps {
@@ -54,6 +56,10 @@ export default async function ChampionPage({ params }: ChampionPageProps) {
   return (
     <main className="min-h-screen bg-gray-900 text-white pb-20 relative">
       <ChampionNavigation
+        prevChampionId={prevChampion.id}
+        nextChampionId={nextChampion.id}
+      />
+      <ChampionSwipeNavigation
         prevChampionId={prevChampion.id}
         nextChampionId={nextChampion.id}
       />
@@ -205,9 +211,7 @@ export default async function ChampionPage({ params }: ChampionPageProps) {
           <h2 className="text-2xl font-bold text-gray-200 mb-6 border-b border-gray-700 pb-2 flex justify-between items-center">
             <span>{t('champion.loreTitle')}</span>
           </h2>
-          <p className="text-gray-300 leading-relaxed whitespace-pre-line text-justify text-lg">
-            {lore}
-          </p>
+          <LoreDisplay lore={lore || ''} showMoreText={t('champion.showMore')} showLessText={t('champion.showLess')} />
         </div>
 
         {/* Relations Section */}
