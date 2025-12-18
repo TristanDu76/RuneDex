@@ -52,6 +52,7 @@ export default function QuizClient({ champions }: QuizClientProps) {
         const guessedIds = new Set(guesses.map(g => g.champion.id));
         return champions
             .filter(c => !guessedIds.has(c.id) && c.name.toLowerCase().includes(input.toLowerCase()))
+            .sort((a, b) => a.name.localeCompare(b.name))
             .slice(0, 5);
     }, [input, champions, guesses]);
 
