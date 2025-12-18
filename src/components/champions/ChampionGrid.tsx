@@ -165,24 +165,8 @@ export default function ChampionGrid({ champions }: ChampionGridProps) {
         const lowerQuery = query.toLowerCase();
         if (lowerQuery) {
             result = result.filter((champion) => {
-                // Recherche dans le nom et le titre
-                if (champion.name.toLowerCase().includes(lowerQuery)) return true;
-                if (champion.title.toLowerCase().includes(lowerQuery)) return true;
-
-                // Recherche dans les factions (DB)
-                if (champion.factions?.some(f => f.toLowerCase().includes(lowerQuery))) return true;
-
-                // Recherche dans le genre et l'espèce (DB)
-                if (champion.gender?.toLowerCase().includes(lowerQuery)) return true;
-                if (champion.species?.toLowerCase().includes(lowerQuery)) return true;
-
-                // Recherche dans les tags personnalisés (DB)
-                if (champion.custom_tags?.some(tag => tag.toLowerCase().includes(lowerQuery))) return true;
-
-                // Recherche dans les tags officiels (Riot)
-                if (champion.tags?.some(tag => tag.toLowerCase().includes(lowerQuery))) return true;
-
-                return false;
+                // Recherche uniquement sur le nom (commence par)
+                return champion.name.toLowerCase().startsWith(lowerQuery);
             });
         }
 

@@ -34,9 +34,9 @@ export default async function QuizHubPage({ params }: QuizPageProps) {
             title: t('abilityTitle'),
             description: t('abilityDesc'),
             icon: Zap,
-            href: '#',
+            href: `/${locale}/quiz/ability`,
             color: 'from-yellow-500 to-orange-500',
-            active: false
+            active: true
         }
     ];
 

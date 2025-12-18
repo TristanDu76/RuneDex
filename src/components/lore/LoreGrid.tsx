@@ -19,9 +19,7 @@ export default function LoreGrid({ characters }: LoreGridProps) {
         if (query) {
             const lowerQuery = query.toLowerCase();
             result = result.filter((char) =>
-                char.name.toLowerCase().includes(lowerQuery) ||
-                char.faction?.toLowerCase().includes(lowerQuery) ||
-                char.species?.toLowerCase().includes(lowerQuery)
+                char.name.toLowerCase().startsWith(lowerQuery)
             );
         }
 

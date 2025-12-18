@@ -12,7 +12,7 @@ export const fetchAllChampions = async (locale: string = 'fr_FR') => {
       try {
         const { data, error } = await supabase
           .from('champions')
-          .select('id, key, name, title, image, tags, factions, custom_tags, version, gender, species, partype, lanes, title_en, skins');
+          .select('id, key, name, title, image, tags, factions, custom_tags, version, gender, species, partype, lanes, title_en, skins, spells, passive');
 
         if (error) {
           console.error("Erreur Supabase (fetchAllChampions) :", error);

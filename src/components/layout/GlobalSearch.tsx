@@ -34,11 +34,11 @@ export default function GlobalSearch({ champions, loreCharacters }: GlobalSearch
             const lowerQuery = query.toLowerCase();
 
             const filteredChampions = champions
-                .filter(c => c.name.toLowerCase().includes(lowerQuery))
+                .filter(c => c.name.toLowerCase().startsWith(lowerQuery))
                 .map(c => ({ type: 'champion' as const, data: c }));
 
             const filteredLore = loreCharacters
-                .filter(c => c.name.toLowerCase().includes(lowerQuery))
+                .filter(c => c.name.toLowerCase().startsWith(lowerQuery))
                 .map(c => ({ type: 'lore' as const, data: c }));
 
             // Combine and limit
