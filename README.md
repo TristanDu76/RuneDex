@@ -45,10 +45,10 @@ RuneDex is an interactive web application dedicated to exploring the rich lore o
 - **Framer Motion** - Smooth animations and transitions
 - **next-intl** - Internationalization (i18n)
 
-### Backend & Database
-- **Supabase** - PostgreSQL database and authentication
-- **Next.js API Routes** - Serverless API endpoints
-- **Unstable Cache** - Optimized data caching strategy
+### Data Architecture
+- **JSON Files** - Static data stored in `src/data/` for easy community contributions
+- **Next.js Cache** - Optimized data caching strategy
+- **Git-based** - All data is version-controlled and open for contributions
 
 ### Tools & Libraries
 - **Lucide React** - Icon library
@@ -62,7 +62,6 @@ RuneDex is an interactive web application dedicated to exploring the rich lore o
 
 - Node.js 20.x or higher
 - npm or yarn
-- Supabase account (for database)
 
 ### Installation
 
@@ -77,20 +76,12 @@ cd runedex
 npm install
 ```
 
-3. Set up environment variables
-
-Create a `.env.local` file in the root directory:
-```env
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-```
-
-4. Run the development server
+3. Run the development server
 ```bash
 npm run dev
 ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ## 📁 Project Structure
 
@@ -143,6 +134,60 @@ The application is designed to be deployed on Vercel:
 ```bash
 npm run build
 ```
+
+## 🤝 Contributing
+
+Contributions are welcome! This project uses a JSON-based data architecture, making it easy for anyone to contribute.
+
+### How to Contribute Data
+
+All game data is stored in `src/data/` as JSON files:
+
+- `champions.json` - Champion information
+- `lore-characters.json` - Non-playable lore characters
+- `artifacts.json` - Legendary artifacts
+- `runes.json` - World runes
+- `relations.json` - Character relationships
+- `artifact-owners.json` - Artifact ownership data
+- `rune-owners.json` - Rune ownership data
+
+### Contribution Process
+
+1. **Fork the repository**
+2. **Create a new branch** (`git checkout -b fix/typo-in-yasuo-lore`)
+3. **Edit the JSON files** with your corrections/additions
+4. **Test locally** (`npm run dev`)
+5. **Commit your changes** (`git commit -m 'Fix: Corrected Yasuo lore typo'`)
+6. **Push to your fork** (`git push origin fix/typo-in-yasuo-lore`)
+7. **Open a Pull Request**
+
+### What to Contribute
+
+- ✅ Lore corrections and updates
+- ✅ Missing character relationships
+- ✅ New champions (when Riot releases them)
+- ✅ Translation improvements (French/English)
+- ✅ Missing artifacts or runes
+- ✅ Bug fixes
+- ✅ Feature suggestions (via Issues)
+
+### Data Format Example
+
+```json
+{
+  "id": "champion-id",
+  "name": "Champion Name",
+  "title": "The Title",
+  "title_en": "The Title",
+  "lore": "French lore text...",
+  "lore_en": "English lore text...",
+  ...
+}
+```
+
+All contributions will be reviewed before merging. Thank you for helping improve RuneDex! 🙏
+
+## 🌐 Deployment
 
 ## 📜 License
 

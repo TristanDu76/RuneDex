@@ -26,7 +26,7 @@ export default async function ChampionPage({ params }: ChampionPageProps) {
   const { championId, locale } = await params;
   const t = await getTranslations({ locale });
 
-  // ASTUCE: On récupère la version la plus récente en appelant la liste de champions
+  // TIP: We fetch the latest version by calling the champion list
   const allChampions = await fetchAllChampions(locale);
   const loreCharacters = await fetchLoreCharacters();
   // console.log('Lore Characters in Page:', JSON.stringify(loreCharacters, null, 2));
@@ -40,7 +40,7 @@ export default async function ChampionPage({ params }: ChampionPageProps) {
   const prevChampion = currentIndex > 0 ? sortedChampions[currentIndex - 1] : sortedChampions[sortedChampions.length - 1];
   const nextChampion = currentIndex < sortedChampions.length - 1 ? sortedChampions[currentIndex + 1] : sortedChampions[0];
 
-  // 1. Récupération des données DETAILED spécifiques au champion
+  // 1. Fetching DETAILED data specific to the champion
   const championDetails = await fetchChampionDetails(championId, locale);
   const championArtifacts = await fetchChampionArtifacts(championId, locale);
   const championRunes = await fetchChampionRunes(championId, locale);
@@ -49,7 +49,7 @@ export default async function ChampionPage({ params }: ChampionPageProps) {
     return <main className="text-white p-8">Champion non trouvé ou erreur de données.</main>;
   }
 
-  // 2. Préparation des données pour l'affichage
+  // 2. Preparing data for display
   const { name, title, lore, skins, spells, passive, partype, gender, species, tags } = championDetails;
 
 

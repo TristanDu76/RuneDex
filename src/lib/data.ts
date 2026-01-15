@@ -1,41 +1,94 @@
-import { supabase } from '@/lib/supabase';
-import { ChampionData, LoreCharacter } from '@/types/champion';
+import { ChampionData, ChampionLight, ChampionGridData, LoreCharacter, LoreCharacterLight, ChampionSpell, ChampionSkin, ChampionPassive } from '@/types/champion';
 import { formatRelations, localizeChampion, localizeLoreCharacter, getColName } from './data-utils';
 import { cachedQuery } from './cache';
 
+// Import JSON data
+import championsData from '@/data/champions.json';
+import loreCharactersData from '@/data/lore-characters.json';
+import artifactsData from '@/data/artifacts.json';
+import runesData from '@/data/runes.json';
+import relationsData from '@/data/relations.json';
+import artifactOwnersData from '@/data/artifact-owners.json';
+import runeOwnersData from '@/data/rune-owners.json';
+
 /**
- * Fetches all champions from the Supabase database.
+ * Fetches all champions (full data).
+ * @deprecated Use fetchAllChampionsLight or fetchAllChampionsGrid to improve performance.
  */
 export const fetchAllChampions = async (locale: string = 'fr_FR') => {
   return cachedQuery(
     async () => {
-      try {
-        const { data, error } = await supabase
-          .from('champions')
-          .select('id, key, name, title, image, tags, factions, custom_tags, version, gender, species, partype, lanes, title_en, skins, spells, passive');
+      const champions = championsData as ChampionData[];
 
-        if (error) {
-          console.error("Erreur Supabase (fetchAllChampions) :", error);
-          return [];
-        }
-
-        const champions = data as ChampionData[];
-
-        if (locale.startsWith('en')) {
-          return champions.map(c => ({
-            ...c,
-            title: c.title_en || c.title
-          }));
-        }
-
-        return champions;
-      } catch (error) {
-        console.error("Erreur inattendue (fetchAllChampions) :", error);
-        return [];
+      if (locale.startsWith('en')) {
+        return champions.map(c => ({
+          ...c,
+          title: c.title_en || c.title,
+          lore: c.lore_en || c.lore,
+          spells: c.spells_en || c.spells,
+          passive: c.passive_en || c.passive,
+          tags: c.tags_en || c.tags,
+          skins: c.skins_en || c.skins
+        }));
       }
+
+      return champions;
     },
-    ['all-champions', locale], // Unique key including locale
-    ['champions'] // Tag for global invalidation
+    ['all-champions', locale],
+    ['champions']
+  );
+};
+
+/**
+ * Fetches a lightweight version of champions for search bar and navigation.
+ * Excludes lore, spells, skins, stats, info.
+ */
+export const fetchAllChampionsLight = async (locale: string = 'fr_FR') => {
+  return cachedQuery(
+    async () => {
+      const champions = await fetchAllChampions(locale);
+      return champions.map((c: ChampionData): ChampionLight => ({
+        id: c.id,
+        key: c.key,
+        name: c.name,
+        title: c.title,
+        version: c.version,
+        image: c.image
+      }));
+    },
+    ['all-champions-light', locale],
+    ['champions']
+  );
+};
+
+/**
+ * Fetches data needed for the champion grid (filtering).
+ * Excludes lore, spells, skins.
+ */
+export const fetchAllChampionsGrid = async (locale: string = 'fr_FR') => {
+  return cachedQuery(
+    async () => {
+      const champions = await fetchAllChampions(locale);
+      return champions.map((c: ChampionData): ChampionGridData => ({
+        id: c.id,
+        key: c.key,
+        name: c.name,
+        title: c.title,
+        version: c.version,
+        image: c.image,
+        tags: c.tags,
+        partype: c.partype,
+        info: (c as any).info,
+        stats: (c as any).stats,
+        factions: c.factions,
+        faction: c.faction,
+        gender: c.gender,
+        species: c.species,
+        lanes: c.lanes
+      }));
+    },
+    ['all-champions-grid', locale],
+    ['champions']
   );
 };
 
@@ -46,31 +99,38 @@ export const fetchChampionDetails = async (championId: string, locale: string = 
   return cachedQuery(
     async () => {
       try {
-        const { data: championData, error } = await supabase
-          .from('champions')
-          .select('*')
-          .eq('id', championId)
-          .single();
+        const championData = (championsData as ChampionData[]).find(c => c.id === championId);
+        if (!championData) return null;
 
-        if (error || !championData) return null;
+        const champion = { ...championData };
 
-        const champion = championData as ChampionData;
+        // Get relations for this champion
+        const championRelations = (relationsData as any[]).filter(
+          (rel: any) => rel.source_champion_id === champion.id
+        );
 
-        const { data: relationsData } = await supabase
-          .from('relations')
-          .select(`
-            type,
-            note_fr,
-            note_en,
-            target_champion:champions!target_champion_id(name, image),
-            target_lore:lore_characters!target_lore_id(name, image)
-          `)
-          .eq('source_champion_id', champion.id);
+        // Enrich relations with target data
+        const enrichedRelations = championRelations.map((rel: any) => {
+          const targetChampion = (championsData as ChampionData[]).find(
+            c => c.id === rel.target_champion_id
+          );
+          const targetLore = (loreCharactersData as LoreCharacter[]).find(
+            l => l.id === rel.target_lore_id
+          );
 
-        champion.related_champions = formatRelations(relationsData || [], locale);
+          return {
+            type: rel.type,
+            note_fr: rel.note_fr,
+            note_en: rel.note_en,
+            target_champion: targetChampion ? { name: targetChampion.name, image: targetChampion.image } : null,
+            target_lore: targetLore ? { name: targetLore.name, image: targetLore.image } : null
+          };
+        });
+
+        champion.related_champions = formatRelations(enrichedRelations, locale);
         return localizeChampion(champion, locale);
       } catch (error) {
-        console.error(`Erreur (fetchChampionDetails ${championId}) :`, error);
+        console.error(`Error (fetchChampionDetails ${championId}):`, error);
         return null;
       }
     },
@@ -85,18 +145,31 @@ export const fetchChampionDetails = async (championId: string, locale: string = 
 export const fetchLoreCharacters = async () => {
   return cachedQuery(
     async () => {
-      try {
-        const { data, error } = await supabase.from('lore_characters').select('*');
-        if (error) return [];
-        return data as LoreCharacter[];
-      } catch (error) {
-        return [];
-      }
+      return loreCharactersData as LoreCharacter[];
     },
-    ['lore-characters'],
+    ['all-lore-characters'],
     ['lore']
   );
 };
+
+/**
+ * Fetches a lightweight version of lore characters (name + image).
+ */
+export const fetchLoreCharactersLight = async () => {
+  return cachedQuery(
+    async () => {
+      const chars = loreCharactersData as LoreCharacter[];
+      return chars.map((c): LoreCharacterLight => ({
+        id: c.id,
+        name: c.name,
+        image: c.image
+      }));
+    },
+    ['all-lore-characters-light'],
+    ['lore_characters']
+  );
+};
+
 
 /**
  * Fetches details of a lore character.
@@ -105,27 +178,37 @@ export const fetchLoreCharacter = async (name: string, locale: string = 'fr_FR')
   return cachedQuery(
     async () => {
       try {
-        const { data: character, error } = await supabase
-          .from('lore_characters')
-          .select('*')
-          .ilike('name', name)
-          .single();
+        const character = (loreCharactersData as LoreCharacter[]).find(
+          c => c.name.toLowerCase() === name.toLowerCase()
+        );
 
-        if (error || !character) return null;
+        if (!character) return null;
 
-        const { data: relationsData } = await supabase
-          .from('relations')
-          .select(`
-            type,
-            note_fr,
-            note_en,
-            target_champion:champions!target_champion_id(name, image),
-            target_lore:lore_characters!target_lore_id(name, image)
-          `)
-          .eq('source_lore_id', character.id);
+        // Get relations for this lore character
+        const loreRelations = (relationsData as any[]).filter(
+          (rel: any) => rel.source_lore_id === character.id
+        );
 
-        const loreChar = character as LoreCharacter;
-        loreChar.related_champions = formatRelations(relationsData || [], locale);
+        // Enrich relations with target data
+        const enrichedRelations = loreRelations.map((rel: any) => {
+          const targetChampion = (championsData as ChampionData[]).find(
+            c => c.id === rel.target_champion_id
+          );
+          const targetLore = (loreCharactersData as LoreCharacter[]).find(
+            l => l.id === rel.target_lore_id
+          );
+
+          return {
+            type: rel.type,
+            note_fr: rel.note_fr,
+            note_en: rel.note_en,
+            target_champion: targetChampion ? { name: targetChampion.name, image: targetChampion.image } : null,
+            target_lore: targetLore ? { name: targetLore.name, image: targetLore.image } : null
+          };
+        });
+
+        const loreChar = { ...character };
+        loreChar.related_champions = formatRelations(enrichedRelations, locale);
         return localizeLoreCharacter(loreChar, locale);
       } catch (error) {
         return null;
@@ -142,29 +225,9 @@ export const fetchLoreCharacter = async (name: string, locale: string = 'fr_FR')
 export const fetchItems = async (locale: string = 'fr_FR') => {
   return cachedQuery(
     async () => {
-      const nameCol = getColName('name', locale);
-      const descCol = getColName('description', locale);
-      const plaintextCol = getColName('plaintext', locale);
-
-      const { data, error } = await supabase
-        .from('items')
-        .select(`
-          id,
-          name: ${nameCol},
-          description: ${descCol},
-          plaintext: ${plaintextCol},
-          gold_base,
-          gold_total,
-          gold_sell,
-          tags,
-
-          image,
-          maps
-        `)
-        .order('gold_total', { ascending: false });
-
-      if (error) return [];
-      return data as any;
+      // Items are not in the current data export
+      // This can be implemented when items data is added
+      return [];
     },
     ['items-list', locale],
     ['items']
@@ -177,23 +240,16 @@ export const fetchItems = async (locale: string = 'fr_FR') => {
 export const fetchArtifacts = async (locale: string = 'fr_FR') => {
   return cachedQuery(
     async () => {
-      const nameCol = getColName('name', locale);
-      const descCol = getColName('description', locale);
+      const artifacts = artifactsData as any[];
 
-      const { data, error } = await supabase
-        .from('artifacts')
-        .select(`
-          id,
-          name: ${nameCol},
-          description: ${descCol},
-          image_url,
-          type,
-          riot_id
-        `)
-        .order('name');
-
-      if (error) return [];
-      return data as any;
+      return artifacts.map(artifact => ({
+        id: artifact.id,
+        name: locale.startsWith('en') ? artifact.name_en : artifact.name,
+        description: locale.startsWith('en') ? artifact.description_en : artifact.description,
+        image_url: artifact.image_url,
+        type: artifact.type,
+        riot_id: artifact.riot_id
+      })).sort((a, b) => a.name.localeCompare(b.name));
     },
     ['artifacts-list', locale],
     ['artifacts']
@@ -206,44 +262,33 @@ export const fetchArtifacts = async (locale: string = 'fr_FR') => {
 export const fetchArtifactById = async (id: string, locale: string = 'fr_FR') => {
   return cachedQuery(
     async () => {
-      const nameCol = getColName('name', locale);
-      const descCol = getColName('description', locale);
+      const artifact = (artifactsData as any[]).find(a => a.id === id);
+      if (!artifact) return null;
 
-      const { data: rawData, error } = await supabase
-        .from('artifacts')
-        .select(`
-          id,
-          name: ${nameCol},
-          description: ${descCol},
-          image_url,
-          type,
-          riot_id,
-          owner:artifact_owners(
-              champion:champions(id, name, image, title),
-              lore_character:lore_characters(id, name, image),
-              relation_type
-          )
-        `)
-        .eq('id', id)
-        .single();
+      const ownerData = (artifactOwnersData as any[]).find(ao => ao.artifact_id === id);
 
-      if (error) return null;
+      let owner = null;
+      if (ownerData) {
+        const champion = (championsData as ChampionData[]).find(c => c.id === ownerData.champion_id);
+        const loreChar = (loreCharactersData as LoreCharacter[]).find(l => l.id === ownerData.lore_character_id);
 
-      const data = rawData as any;
-      const getSingle = (val: any) => Array.isArray(val) ? val[0] : val;
-      const ownerData = data.owner?.[0];
-      const champion = ownerData ? getSingle(ownerData.champion) : null;
-      const loreChar = ownerData ? getSingle(ownerData.lore_character) : null;
-
-      return {
-        ...data,
-        owner: ownerData ? {
+        owner = {
           name: champion?.name || loreChar?.name,
           image: champion?.image || loreChar?.image,
           title: champion?.title,
           type: ownerData.relation_type,
           link: champion ? `/champion/${champion.id}` : `/lore/${loreChar?.name}`
-        } : null
+        };
+      }
+
+      return {
+        id: artifact.id,
+        name: locale.startsWith('en') ? artifact.name_en : artifact.name,
+        description: locale.startsWith('en') ? artifact.description_en : artifact.description,
+        image_url: artifact.image_url,
+        type: artifact.type,
+        riot_id: artifact.riot_id,
+        owner
       };
     },
     ['artifact-details', id, locale],
@@ -257,22 +302,15 @@ export const fetchArtifactById = async (id: string, locale: string = 'fr_FR') =>
 export const fetchRunes = async (locale: string = 'fr_FR') => {
   return cachedQuery(
     async () => {
-      const nameCol = getColName('name', locale);
-      const descCol = getColName('description', locale);
+      const runes = runesData as any[];
 
-      const { data, error } = await supabase
-        .from('runes')
-        .select(`
-          id,
-          name: ${nameCol},
-          description: ${descCol},
-          image_url,
-          type
-        `)
-        .order('name');
-
-      if (error) return [];
-      return data as any;
+      return runes.map(rune => ({
+        id: rune.id,
+        name: locale.startsWith('en') ? rune.name_en : rune.name,
+        description: locale.startsWith('en') ? rune.description_en : rune.description,
+        image_url: rune.image_url,
+        type: rune.type
+      })).sort((a, b) => a.name.localeCompare(b.name));
     },
     ['runes-list', locale],
     ['runes']
@@ -285,23 +323,17 @@ export const fetchRunes = async (locale: string = 'fr_FR') => {
 export const fetchRuneById = async (id: string, locale: string = 'fr_FR') => {
   return cachedQuery(
     async () => {
-      const nameCol = getColName('name', locale);
-      const descCol = getColName('description', locale);
+      const rune = (runesData as any[]).find(r => r.id === id);
+      if (!rune) return null;
 
-      const { data, error } = await supabase
-        .from('runes')
-        .select(`
-          id,
-          name: ${nameCol},
-          description: ${descCol},
-          image_url,
-          type
-        `)
-        .eq('id', id)
-        .single();
-
-      if (error || !data) return null;
-      return { ...(data as any), owner: null };
+      return {
+        id: rune.id,
+        name: locale.startsWith('en') ? rune.name_en : rune.name,
+        description: locale.startsWith('en') ? rune.description_en : rune.description,
+        image_url: rune.image_url,
+        type: rune.type,
+        owner: null
+      };
     },
     ['rune-details', id, locale],
     ['runes', `rune-${id}`]
@@ -314,14 +346,10 @@ export const fetchRuneById = async (id: string, locale: string = 'fr_FR') => {
 export const fetchRuneNeighbors = async (currentId: string, locale: string = 'fr_FR') => {
   return cachedQuery(
     async () => {
-      const nameCol = getColName('name', locale);
-      const { data } = await supabase
-        .from('runes')
-        .select(`id, name: ${nameCol}`)
-        .order(nameCol);
-
-      const runes = data as { id: string; name: string }[] | null;
-      if (!runes) return { prev: null, next: null };
+      const runes = (runesData as any[]).map(r => ({
+        id: r.id,
+        name: locale.startsWith('en') ? r.name_en : r.name
+      })).sort((a, b) => a.name.localeCompare(b.name));
 
       const currentIndex = runes.findIndex(r => r.id === currentId);
       if (currentIndex === -1) return { prev: null, next: null };
@@ -342,25 +370,23 @@ export const fetchRuneNeighbors = async (currentId: string, locale: string = 'fr
 export const fetchChampionArtifacts = async (championId: string, locale: string = 'fr_FR') => {
   return cachedQuery(
     async () => {
-      const nameCol = getColName('name', locale);
-      const { data, error } = await supabase
-        .from('artifact_owners')
-        .select(`
-          relation_type,
-          artifact:artifacts(
-            id,
-            name: ${nameCol},
-            image_url,
-            type
-          )
-        `)
-        .eq('champion_id', championId);
+      const championArtifacts = (artifactOwnersData as any[])
+        .filter(ao => ao.champion_id === championId)
+        .map(ao => {
+          const artifact = (artifactsData as any[]).find(a => a.id === ao.artifact_id);
+          if (!artifact) return null;
 
-      if (error) return [];
-      return data.map((item: any) => ({
-        ...item.artifact,
-        relation_type: item.relation_type
-      }));
+          return {
+            id: artifact.id,
+            name: locale.startsWith('en') ? artifact.name_en : artifact.name,
+            image_url: artifact.image_url,
+            type: artifact.type,
+            relation_type: ao.relation_type
+          };
+        })
+        .filter(Boolean);
+
+      return championArtifacts;
     },
     ['champion-artifacts', championId, locale],
     ['champions', 'artifacts', `champion-${championId}`]
@@ -373,25 +399,23 @@ export const fetchChampionArtifacts = async (championId: string, locale: string 
 export const fetchChampionRunes = async (championId: string, locale: string = 'fr_FR') => {
   return cachedQuery(
     async () => {
-      const nameCol = getColName('name', locale);
-      const { data, error } = await supabase
-        .from('rune_owners')
-        .select(`
-          relation_type,
-          rune:runes(
-            id,
-            name: ${nameCol},
-            image_url,
-            type
-          )
-        `)
-        .eq('champion_id', championId);
+      const championRunes = (runeOwnersData as any[])
+        .filter(ro => ro.champion_id === championId)
+        .map(ro => {
+          const rune = (runesData as any[]).find(r => r.id === ro.rune_id);
+          if (!rune) return null;
 
-      if (error) return [];
-      return data.map((item: any) => ({
-        ...item.rune,
-        relation_type: item.relation_type
-      }));
+          return {
+            id: rune.id,
+            name: locale.startsWith('en') ? rune.name_en : rune.name,
+            image_url: rune.image_url,
+            type: rune.type,
+            relation_type: ro.relation_type
+          };
+        })
+        .filter(Boolean);
+
+      return championRunes;
     },
     ['champion-runes', championId, locale],
     ['champions', 'runes', `champion-${championId}`]

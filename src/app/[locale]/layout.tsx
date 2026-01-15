@@ -9,7 +9,7 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 
 
-import { fetchAllChampions, fetchLoreCharacters } from "@/lib/data";
+import { fetchAllChampionsLight, fetchLoreCharactersLight } from "@/lib/data";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,8 +44,8 @@ export default async function RootLayout({
   // Providing all messages to the client
   const messages = await getMessages();
 
-  const champions = await fetchAllChampions(locale);
-  const loreCharacters = await fetchLoreCharacters();
+  const champions = await fetchAllChampionsLight(locale);
+  const loreCharacters = await fetchLoreCharactersLight();
 
   return (
     <html lang={locale} suppressHydrationWarning>

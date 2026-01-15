@@ -94,8 +94,8 @@ export default async function ArtifactPage({ params }: ArtifactPageProps) {
                                     <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-gray-600 group-hover:border-yellow-500 transition-colors bg-gray-900">
                                         {artifact.owner.image ? (
                                             <Image
-                                                src={artifact.owner.image}
-                                                alt={artifact.owner.name}
+                                                src={(artifact.owner.image as any) || ''}
+                                                alt={artifact.owner.name || ''}
                                                 fill
                                                 className="object-cover"
                                             />

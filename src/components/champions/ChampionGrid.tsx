@@ -1,13 +1,13 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
-import { ChampionData } from '@/types/champion';
+import { ChampionData, ChampionGridData } from '@/types/champion';
 import ChampionCard from './ChampionCard';
 import FilterBar, { ActiveFilters, FilterOption } from '../ui/FilterBar';
 import { useTranslations } from 'next-intl';
 
 interface ChampionGridProps {
-    champions: ChampionData[];
+    champions: ChampionGridData[];
 }
 
 export default function ChampionGrid({ champions }: ChampionGridProps) {

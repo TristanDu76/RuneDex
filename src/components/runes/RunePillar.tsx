@@ -67,7 +67,7 @@ export default function RunePillar({ rune }: RunePillarProps) {
         shadow: 'hover:shadow-gray-500/50'
     };
 
-    // Nettoyer le nom pour l'affichage (enlever "Rune de " ou "Rune of ")
+    // Clean the name for display (remove "Rune de " or "Rune of ")
     const displayName = rune.name.replace(/Rune (de |d'|of )/i, '').toUpperCase();
 
     return (

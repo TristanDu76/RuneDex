@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { ChampionData, LoreCharacter } from '@/types/champion';
+import { ChampionData, ChampionGridData, LoreCharacter } from '@/types/champion';
 import ChampionGrid from '../champions/ChampionGrid';
 import LoreGrid from '../lore/LoreGrid';
 import ArtifactCard from '../artifacts/ArtifactCard';
@@ -9,7 +9,7 @@ import RunePillar from '../runes/RunePillar';
 import { useTranslations } from 'next-intl';
 
 interface HomeContentProps {
-    champions: ChampionData[];
+    champions: ChampionGridData[];
     loreCharacters: LoreCharacter[];
     artifacts: any[];
     runes: any[];

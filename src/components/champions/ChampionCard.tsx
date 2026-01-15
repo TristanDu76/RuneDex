@@ -1,10 +1,10 @@
 // src/components/ChampionCard.tsx
 import Image from 'next/image';
 import { Link } from '@/i18n/routing';
-import { ChampionData } from '@/types/champion';
+import { ChampionData, ChampionLight } from '@/types/champion';
 
 interface ChampionCardProps {
-  champion: ChampionData;
+  champion: ChampionLight;
 }
 
 const getChampionImageURL = (version: string, imageId: string) => {
@@ -14,11 +14,11 @@ const getChampionImageURL = (version: string, imageId: string) => {
 export default function ChampionCard({ champion }: ChampionCardProps) {
   const imageUrl = getChampionImageURL(champion.version, champion.id);
 
-  // L'URL de la page détaillée : /champion/Aatrox (Link adds locale)
+  // Detailed page URL: /champion/Aatrox (Link adds locale)
   const href = `/champion/${champion.id}`;
 
   return (
-    // On enveloppe toute la carte dans le composant Link
+    // Wrap the entire card in the Link component
     <Link
       href={href}
       className="
@@ -27,7 +27,7 @@ export default function ChampionCard({ champion }: ChampionCardProps) {
         border border-gray-700 hover:border-yellow-500 block 
       "
     >
-      {/* L'image du champion */}
+      {/* Champion image */}
       <Image
         src={imageUrl}
         alt={`Portrait de ${champion.name}`}
@@ -36,7 +36,7 @@ export default function ChampionCard({ champion }: ChampionCardProps) {
         className="object-cover transition-opacity duration-500 group-hover:opacity-80"
       />
 
-      {/* Le nom du champion en bas de la carte (overlay) */}
+      {/* Champion name at the bottom of the card (overlay) */}
       <div
         className="
           absolute bottom-0 w-full p-2 text-center 

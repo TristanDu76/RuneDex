@@ -102,3 +102,57 @@ export interface ChampionData {
     tags_en?: string[];
     skins_en?: ChampionSkin[];
 }
+
+export interface ChampionLight {
+    id: string;
+    key: string;
+    name: string;
+    title: string;
+    version: string;
+    image: ChampionImage;
+}
+
+export interface ChampionGridData extends ChampionLight {
+    tags: string[];
+    partype: string;
+    info?: {
+        attack: number;
+        defense: number;
+        magic: number;
+        difficulty: number;
+    };
+    stats?: {
+        hp: number;
+        hpperlevel: number;
+        mp: number;
+        mpperlevel: number;
+        movespeed: number;
+        armor: number;
+        armorperlevel: number;
+        spellblock: number;
+        spellblockperlevel: number;
+        attackrange: number;
+        hpregen: number;
+        hpregenperlevel: number;
+        mpregen: number;
+        mpregenperlevel: number;
+        crit: number;
+        critperlevel: number;
+        attackdamage: number;
+        attackdamageperlevel: number;
+        attackspeedperlevel: number;
+        attackspeed: number;
+    };
+    // New fields for filters
+    faction?: string;
+    factions?: string[];
+    gender?: string;
+    species?: string;
+    lanes?: string[];
+}
+
+export interface LoreCharacterLight {
+    id: string;
+    name: string;
+    image?: string;
+}

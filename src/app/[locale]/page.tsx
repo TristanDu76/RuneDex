@@ -1,5 +1,5 @@
 // src/app/[locale]/page.tsx
-import { fetchAllChampions, fetchLoreCharacters, fetchArtifacts, fetchRunes } from "@/lib/data";
+import { fetchAllChampionsGrid, fetchLoreCharacters, fetchArtifacts, fetchRunes } from "@/lib/data";
 import HomeContent from "@/components/layout/HomeContent";
 import LanguageSwitcher from "@/components/layout/LanguageSwitcher";
 import Image from "next/image";
@@ -14,8 +14,8 @@ export default async function Home({ params }: HomeProps) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'home' });
 
-  // 1. Récupération des données (s'exécute côté serveur)
-  const champions = await fetchAllChampions(locale);
+  // 1. Data fetching (executes server-side)
+  const champions = await fetchAllChampionsGrid(locale);
   const loreCharacters = await fetchLoreCharacters();
   const artifacts = await fetchArtifacts(locale);
   const runes = await fetchRunes(locale);
@@ -68,7 +68,7 @@ export default async function Home({ params }: HomeProps) {
         />
       </div>
 
-      {/* Note : Le composant Image de Next.js gère la mise en cache des images de Riot */}
+      {/* Note: The Next.js Image component handles caching of Riot images */}
     </main>
   );
 }

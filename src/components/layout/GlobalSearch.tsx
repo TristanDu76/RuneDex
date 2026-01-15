@@ -1,17 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { useRouter } from '@/i18n/routing';
-import { ChampionData, LoreCharacter } from '@/types/champion';
+import { ChampionLight, LoreCharacterLight } from '@/types/champion';
 import { useTranslations } from 'next-intl';
 
 interface GlobalSearchProps {
-    champions: ChampionData[];
-    loreCharacters: LoreCharacter[];
+    champions: ChampionLight[];
+    loreCharacters: LoreCharacterLight[];
 }
 
 type SearchResult =
-    | { type: 'champion'; data: ChampionData }
-    | { type: 'lore'; data: LoreCharacter };
+    | { type: 'champion'; data: ChampionLight }
+    | { type: 'lore'; data: LoreCharacterLight };
 
 export default function GlobalSearch({ champions, loreCharacters }: GlobalSearchProps) {
     const [query, setQuery] = useState('');
@@ -135,14 +135,14 @@ export default function GlobalSearch({ champions, loreCharacters }: GlobalSearch
                                 >
                                     {result.type === 'champion' ? (
                                         <img
-                                            src={`https://ddragon.leagueoflegends.com/cdn/${(result.data as ChampionData).version}/img/champion/${(result.data as ChampionData).image.full}`}
+                                            src={`https://ddragon.leagueoflegends.com/cdn/${(result.data as ChampionLight).version}/img/champion/${(result.data as ChampionLight).image.full}`}
                                             alt={result.data.name}
                                             className="w-8 h-8 rounded-full border border-gray-600"
                                         />
                                     ) : (
                                         <div className="w-8 h-8 rounded-full border border-gray-600 bg-gray-700 flex items-center justify-center overflow-hidden">
-                                            {(result.data as LoreCharacter).image ? (
-                                                <img src={(result.data as LoreCharacter).image!} alt={result.data.name} className="w-full h-full object-cover" />
+                                            {(result.data as LoreCharacterLight).image ? (
+                                                <img src={(result.data as LoreCharacterLight).image!} alt={result.data.name} className="w-full h-full object-cover" />
                                             ) : (
                                                 <span className="text-xs font-bold text-gray-500">?</span>
                                             )}
@@ -210,14 +210,14 @@ export default function GlobalSearch({ champions, loreCharacters }: GlobalSearch
                                     >
                                         {result.type === 'champion' ? (
                                             <img
-                                                src={`https://ddragon.leagueoflegends.com/cdn/${(result.data as ChampionData).version}/img/champion/${(result.data as ChampionData).image.full}`}
+                                                src={`https://ddragon.leagueoflegends.com/cdn/${(result.data as ChampionLight).version}/img/champion/${(result.data as ChampionLight).image.full}`}
                                                 alt={result.data.name}
                                                 className="w-12 h-12 rounded-full border border-gray-600"
                                             />
                                         ) : (
                                             <div className="w-12 h-12 rounded-full border border-gray-600 bg-gray-700 flex items-center justify-center overflow-hidden">
-                                                {(result.data as LoreCharacter).image ? (
-                                                    <img src={(result.data as LoreCharacter).image!} alt={result.data.name} className="w-full h-full object-cover" />
+                                                {(result.data as LoreCharacterLight).image ? (
+                                                    <img src={(result.data as LoreCharacterLight).image!} alt={result.data.name} className="w-full h-full object-cover" />
                                                 ) : (
                                                     <span className="text-xs font-bold text-gray-500">?</span>
                                                 )}

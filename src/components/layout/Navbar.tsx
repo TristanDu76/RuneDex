@@ -6,11 +6,11 @@ import GlobalSearch from './GlobalSearch';
 import { Link, usePathname } from '@/i18n/routing';
 import { useLocale, useTranslations } from 'next-intl';
 
-import { ChampionData, LoreCharacter } from '@/types/champion';
+import { ChampionLight, LoreCharacterLight } from '@/types/champion';
 
 interface NavbarProps {
-    champions: ChampionData[];
-    loreCharacters: LoreCharacter[];
+    champions: ChampionLight[];
+    loreCharacters: LoreCharacterLight[];
 }
 
 export default function Navbar({ champions, loreCharacters }: NavbarProps) {
