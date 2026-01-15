@@ -4,7 +4,7 @@ import { formatRelations, localizeChampion, localizeLoreCharacter, getColName } 
 import { cachedQuery } from './cache';
 
 /**
- * Récupère tous les champions depuis la base de données Supabase.
+ * Fetches all champions from the Supabase database.
  */
 export const fetchAllChampions = async (locale: string = 'fr_FR') => {
   return cachedQuery(
@@ -34,13 +34,13 @@ export const fetchAllChampions = async (locale: string = 'fr_FR') => {
         return [];
       }
     },
-    ['all-champions', locale], // Clé unique incluant la locale
-    ['champions'] // Tag pour invalidation globale
+    ['all-champions', locale], // Unique key including locale
+    ['champions'] // Tag for global invalidation
   );
 };
 
 /**
- * Récupère les détails complets d'un champion.
+ * Fetches complete details of a champion.
  */
 export const fetchChampionDetails = async (championId: string, locale: string = 'fr_FR') => {
   return cachedQuery(
@@ -80,7 +80,7 @@ export const fetchChampionDetails = async (championId: string, locale: string = 
 };
 
 /**
- * Récupère tous les personnages du lore.
+ * Fetches all lore characters.
  */
 export const fetchLoreCharacters = async () => {
   return cachedQuery(
@@ -99,7 +99,7 @@ export const fetchLoreCharacters = async () => {
 };
 
 /**
- * Récupère les détails d'un personnage du lore.
+ * Fetches details of a lore character.
  */
 export const fetchLoreCharacter = async (name: string, locale: string = 'fr_FR') => {
   return cachedQuery(
@@ -137,7 +137,7 @@ export const fetchLoreCharacter = async (name: string, locale: string = 'fr_FR')
 };
 
 /**
- * Récupère tous les objets (items).
+ * Fetches all items.
  */
 export const fetchItems = async (locale: string = 'fr_FR') => {
   return cachedQuery(
@@ -172,7 +172,7 @@ export const fetchItems = async (locale: string = 'fr_FR') => {
 };
 
 /**
- * Récupère tous les artefacts.
+ * Fetches all artifacts.
  */
 export const fetchArtifacts = async (locale: string = 'fr_FR') => {
   return cachedQuery(
@@ -201,7 +201,7 @@ export const fetchArtifacts = async (locale: string = 'fr_FR') => {
 };
 
 /**
- * Récupère les détails d'un artefact.
+ * Fetches details of an artifact.
  */
 export const fetchArtifactById = async (id: string, locale: string = 'fr_FR') => {
   return cachedQuery(
@@ -252,7 +252,7 @@ export const fetchArtifactById = async (id: string, locale: string = 'fr_FR') =>
 };
 
 /**
- * Récupère toutes les Runes.
+ * Fetches all runes.
  */
 export const fetchRunes = async (locale: string = 'fr_FR') => {
   return cachedQuery(
@@ -280,7 +280,7 @@ export const fetchRunes = async (locale: string = 'fr_FR') => {
 };
 
 /**
- * Récupère les détails d'une rune.
+ * Fetches details of a rune.
  */
 export const fetchRuneById = async (id: string, locale: string = 'fr_FR') => {
   return cachedQuery(
@@ -309,7 +309,7 @@ export const fetchRuneById = async (id: string, locale: string = 'fr_FR') => {
 };
 
 /**
- * Récupère les voisins d'une rune.
+ * Fetches neighbors of a rune.
  */
 export const fetchRuneNeighbors = async (currentId: string, locale: string = 'fr_FR') => {
   return cachedQuery(
@@ -337,7 +337,7 @@ export const fetchRuneNeighbors = async (currentId: string, locale: string = 'fr
 };
 
 /**
- * Récupère les artefacts d'un champion.
+ * Fetches artifacts of a champion.
  */
 export const fetchChampionArtifacts = async (championId: string, locale: string = 'fr_FR') => {
   return cachedQuery(
@@ -368,7 +368,7 @@ export const fetchChampionArtifacts = async (championId: string, locale: string 
 };
 
 /**
- * Récupère les runes d'un champion.
+ * Fetches runes of a champion.
  */
 export const fetchChampionRunes = async (championId: string, locale: string = 'fr_FR') => {
   return cachedQuery(

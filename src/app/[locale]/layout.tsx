@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 import { Suspense } from "react";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
@@ -49,15 +50,16 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-900 text-white`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-900 text-white flex flex-col min-h-screen`}
       >
         <NextIntlClientProvider messages={messages}>
           <Suspense fallback={<div className="h-16 bg-gray-900 border-b border-gray-800" />}>
             <Navbar champions={champions} loreCharacters={loreCharacters} />
           </Suspense>
-          <div className="pt-16">
+          <div className="pt-16 flex-grow">
             {children}
           </div>
+          <Footer />
         </NextIntlClientProvider>
 
       </body>

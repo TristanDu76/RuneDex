@@ -1,13 +1,13 @@
 import { unstable_cache } from 'next/cache';
 
 /**
- * Wrapper générique pour le cache Next.js (unstable_cache).
- * Permet de standardiser la gestion des clés et des tags.
+ * Generic wrapper for Next.js cache (unstable_cache).
+ * Standardizes cache key and tag management.
  * 
- * @param queryFn La fonction asynchrone qui récupère les données
- * @param keyParts Les parties uniques de la clé de cache (ex: ['champions', locale])
- * @param tags Les tags pour l'invalidation (ex: ['champions'])
- * @param revalidate Durée de validité en secondes (défaut: 1h)
+ * @param queryFn The async function that fetches the data
+ * @param keyParts Unique parts of the cache key (e.g., ['champions', locale])
+ * @param tags Tags for invalidation (e.g., ['champions'])
+ * @param revalidate Validity duration in seconds (default: 1h)
  */
 export async function cachedQuery<T>(
     queryFn: () => Promise<T>,

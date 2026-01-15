@@ -165,7 +165,7 @@ export default function ChampionGrid({ champions }: ChampionGridProps) {
         const lowerQuery = query.toLowerCase();
         if (lowerQuery) {
             result = result.filter((champion) => {
-                // Recherche uniquement sur le nom (commence par)
+                // Search only by name (starts with)
                 return champion.name.toLowerCase().startsWith(lowerQuery);
             });
         }

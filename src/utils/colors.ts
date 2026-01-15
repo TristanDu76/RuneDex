@@ -66,7 +66,7 @@ export const getResourceColor = (r: string) => {
 export const getTypeStyle = (type: string) => {
     const t = type.toLowerCase();
 
-    // Famille (Bleu)
+    // Family (Blue)
     if ([
         'sibling', 'parent', 'child', 'spouse', 'ancestor', 'descendant', 'adoptive-family', 'family',
         'father', 'mother', 'son', 'daughter', 'brother', 'sister', 'twin-brother', 'twin-sister',
@@ -77,14 +77,14 @@ export const getTypeStyle = (type: string) => {
         return { bg: 'bg-blue-500/10', border: 'border-blue-500/30', text: 'text-blue-400', icon: '👨‍👩‍👧‍👦' };
     }
 
-    // Amour (Rose)
+    // Love (Pink)
     if ([
         'lover', 'ex-lover', 'unrequited-love', 'eternal-lover', 'love/crush', 'love/crush/forbidden'
     ].includes(t)) {
         return { bg: 'bg-pink-500/10', border: 'border-pink-500/30', text: 'text-pink-400', icon: '💕' };
     }
 
-    // Alliés / Amis / Mentorat (Vert)
+    // Allies / Friends / Mentorship (Green)
     if ([
         'friend', 'mentor', 'student', 'ally', 'comrade', 'faction-member', 'apprentice', 'leader/black-rose',
         'subordinate/black-rose', 'employee', 'creator', 'creation', 'host', 'mentor/ally',
@@ -93,7 +93,7 @@ export const getTypeStyle = (type: string) => {
         return { bg: 'bg-green-500/10', border: 'border-green-500/30', text: 'text-green-400', icon: '🤝' };
     }
 
-    // Ennemis / Conflits (Rouge)
+    // Enemies / Conflicts (Red)
     if ([
         'enemy', 'nemesis', 'betrayed', 'betrayer', 'victim', 'killer', 'hunts', 'hunted-by',
         'corrupted', 'corrupted-by', 'predator', 'prey', 'hunter', 'enemy/shared',
@@ -104,7 +104,7 @@ export const getTypeStyle = (type: string) => {
         return { bg: 'bg-red-500/10', border: 'border-red-500/30', text: 'text-red-400', icon: '⚔️' };
     }
 
-    // Rivaux / Tensions (Orange)
+    // Rivals / Tensions (Orange)
     if ([
         'rival', 'strained', 'tense', 'rival/ally', 'rival/corruption', 'rival/ex-ally',
         'rival/ex-brother', 'rival/ex-father', 'rival/ex-friend', 'rival/ex-mother',
@@ -113,13 +113,13 @@ export const getTypeStyle = (type: string) => {
         return { bg: 'bg-orange-500/10', border: 'border-orange-500/30', text: 'text-orange-400', icon: '🔥' };
     }
 
-    // Cas spécifiques (Violet / Mystique)
+    // Special cases (Purple / Mystical)
     if (['void', 'darkin', 'spirit', 'god', 'aspect', 'self', 'brother/enemy', 'slave', 'master'].some(k => t.includes(k))) {
         return { bg: 'bg-purple-500/10', border: 'border-purple-500/30', text: 'text-purple-400', icon: '�' };
     }
 
-    // Par défaut / Neutre (Gris)
-    // Cela inclut 'related', 'neutral', 'self', 'complex', 'unknown' et tout ce qui n'est pas listé
+    // Default / Neutral (Gray)
+    // This includes 'related', 'neutral', 'self', 'complex', 'unknown' and anything not listed
     return { bg: 'bg-gray-500/10', border: 'border-gray-500/30', text: 'text-gray-400', icon: '�' };
 };
 
