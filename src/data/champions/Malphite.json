@@ -1,0 +1,501 @@
+{
+  "id": "Malphite",
+  "key": "54",
+  "name": "Malphite",
+  "title": "Éclat du monolithe",
+  "version": "15.23.1",
+  "lore": "Malphite est une créature de pierre vivante, née pour servir le Monolithe, une forteresse volante de pierre élémentaire créée par l'orgueilleux Transfiguré (Ascended) Ne'Zuk, un mage d'Ixtal. Ne'Zuk avait promis à l'Empire Shurimien de créer une arme assez puissante pour éradiquer le Néant (Void) à sa source, dans les ruines d'Icathia.\n\nLe Monolithe, de la taille d'une cité, était la création de Ne'Zuk, maintenue par les plus grands mages élémentaires. Il se dirigea vers Icathia pour affronter le Néant.\n\nLa bataille dura des semaines, une violence sans précédent à Runeterra. La magie utilisée était suffisante pour raser des civilisations. Le Néant riposta, entaillant la pierre vivante du Monolithe, dont la surface fut marquée par des cicatrices minérales appelées « malphite » (mauvaise pierre en ixtali).\n\nLe Monolithe fut poussé au-delà de ses limites. Alors que Ne'Zuk tentait de rallier ses frères Transfigurés, la forteresse céda : elle s'écrasa au sol, ouvrant la fissure du Néant aux cieux. Une grande partie de la forteresse fut engloutie par le Néant. Ne'Zuk fut le seul Transfiguré à survivre au désastre, fuyant la folie de sa plus grande erreur.\n\nContre toute raison, quelques fragments du Monolithe survécurent, encore imprégnés de vie magique. La plupart s'éteignirent, mais un unique éclat perdura, enfoui profondément. Après d'innombrables siècles, il s'éveilla, réalisant qu'il était seul.\n\nCe dernier éclat, Malphite, est devenu une légende sur Runeterra. On dit qu'il a été aperçu partout, de Targon à Zaun. La volonté écrasante insufflée par Ne'Zuk dans le Monolithe ne s'est pas éteinte : Malphite sait qu'il doit se lever pour affronter l'obscurité résurgente, car le Néant menace à nouveau tout Runeterra.\n\nIl lutte pour imposer un ordre sacré dans un monde chaotique, portant le poids d'être le seul survivant de son espèce.",
+  "tags": [
+    "Tank",
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 336,
+    "y": 48,
+    "full": "Malphite.png",
+    "group": "champion",
+    "sprite": "champion2.png"
+  },
+  "skins": [
+    {
+      "id": "54000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "54001",
+      "num": 1,
+      "name": "Malphite aux trèfles",
+      "chromas": false
+    },
+    {
+      "id": "54002",
+      "num": 2,
+      "name": "Malphite corallien",
+      "chromas": false
+    },
+    {
+      "id": "54003",
+      "num": 3,
+      "name": "Malphite de marbre",
+      "chromas": false
+    },
+    {
+      "id": "54004",
+      "num": 4,
+      "name": "Malphite d'obsidienne",
+      "chromas": false
+    },
+    {
+      "id": "54005",
+      "num": 5,
+      "name": "Malphite glacial",
+      "chromas": false
+    },
+    {
+      "id": "54006",
+      "num": 6,
+      "name": "Mecha Malphite",
+      "chromas": true
+    },
+    {
+      "id": "54007",
+      "num": 7,
+      "name": "Malphite flibustier",
+      "chromas": false
+    },
+    {
+      "id": "54016",
+      "num": 16,
+      "name": "Malphite de l'Odyssée",
+      "chromas": true
+    },
+    {
+      "id": "54023",
+      "num": 23,
+      "name": "Malphite du pulsar sombre",
+      "chromas": false
+    },
+    {
+      "id": "54024",
+      "num": 24,
+      "name": "Malphite du pulsar sombre prestige",
+      "chromas": false
+    },
+    {
+      "id": "54025",
+      "num": 25,
+      "name": "FPX Malphite",
+      "chromas": true
+    },
+    {
+      "id": "54027",
+      "num": 27,
+      "name": "Malphite dieu ancien",
+      "chromas": true
+    },
+    {
+      "id": "54037",
+      "num": 37,
+      "name": "Malphite gardien lunaire",
+      "chromas": true
+    },
+    {
+      "id": "54048",
+      "num": 48,
+      "name": "Malplouf",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "SeismicShard",
+      "name": "Éclat sismique",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 0,
+        "full": "SeismicShard.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Malphite lance un éclat de terre sur un ennemi, infligeant <magicDamage>{{ qdamagecalc }} pts de dégâts magiques</magicDamage> et <status>ralentissant</status> cet ennemi de {{ e2 }}% pendant {{ slowduration }} sec. Malphite vole également le montant <status>ralenti</status>, ce qui augmente sa <speed>vitesse de déplacement</speed> d'autant pendant {{ slowduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/75/80/85/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Coût en @AbilityResourceName@",
+          "Dégâts",
+          "Ralentissement"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "625",
+      "datavalues": {},
+      "description": "Malphite envoie un éclat de terre à son ennemi à travers le sol, infligeant des dégâts à l'impact et lui dérobant sa vitesse de déplacement pendant 3 sec.",
+      "cooldownBurn": "8"
+    },
+    {
+      "id": "Obduracy",
+      "name": "Coup de tonnerre",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 0,
+        "full": "Obduracy.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive : </spellPassive>Malphite gagne <scaleArmor>+{{ bonusarmorpassive*100 }}% d'armure (%i:scaleArmor%{{ f1 }})</scaleArmor>. Cet effet est augmenté à <scaleArmor>+{{ bonusarmorpassive*300 }}% (%i:scaleArmor%{{ f2 }})</scaleArmor> quand <spellName>Bouclier de granit</spellName> est actif.<br /><br /><spellPassive>Active : </spellPassive>la prochaine attaque de Malphite inflige <physicalDamage>{{ totalbonusdamage }} pts de dégâts physiques</physicalDamage> supplémentaires et provoque une onde de choc qui inflige <physicalDamage>{{ thunderclapsplash }} pts de dégâts physiques</physicalDamage> dans la direction du coup. Ses attaques continuent de provoquer des ondes de choc pendant {{ thunderclapbuffduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30/35/40/45/50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Coût en @AbilityResourceName@",
+          "Armure",
+          "Dégâts",
+          "Dégâts de zone des ondes de choc",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Malphite attaque avec tant de force qu'il crée des bangs supersoniques. Pendant quelques secondes, ses attaques produisent des ondes de choc devant lui.",
+      "cooldownBurn": "10/9.5/9/8.5/8"
+    },
+    {
+      "id": "Landslide",
+      "name": "Choc au sol",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 0,
+        "full": "Landslide.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Malphite frappe le sol, infligeant <magicDamage>{{ edamagecalc }} pts de dégâts magiques</magicDamage> et réduisant la <attackSpeed>vitesse d'attaque de {{ asreduction }}%</attackSpeed> pendant {{ duration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Réduction de vitesse d'attaque"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Malphite frappe le sol, provoquant une onde de choc qui inflige des dégâts magiques en fonction de son armure et qui réduit brièvement la vitesse d'attaque des ennemis.",
+      "cooldownBurn": "7"
+    },
+    {
+      "id": "UFSlash",
+      "name": "Force indomptable",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 0,
+        "full": "UFSlash.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Malphite se rue dans une direction et est impossible à arrêter. À la fin de la ruée, Malphite <status>projette dans les airs</status> pendant {{ knockupduration }} sec et inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Malphite fonce vers une position à grande vitesse, blessant les ennemis et les projetant dans les airs.",
+      "cooldownBurn": "130/105/80"
+    }
+  ],
+  "passive": {
+    "name": "Bouclier de granit",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 336,
+      "y": 48,
+      "full": "Malphite_GraniteShield.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Malphite est protégé par un bouclier de roche qui absorbe des dégâts équivalents à 10% de ses PV max. Si Malphite n'est pas touché pendant quelques secondes, l'effet se recharge."
+  },
+  "created_at": "2025-11-26T15:13:33.959475+00:00",
+  "factions": [
+    "ixtal"
+  ],
+  "custom_tags": [
+    "monolithe",
+    "element"
+  ],
+  "gender": "Male",
+  "species": "Golem",
+  "title_en": "Shard of the Monolith",
+  "lore_en": "Malphite is a massive living stone creature, born to serve the Monolith, a floating fortress of living stone created by the arrogant Ascended Ne'Zuk, an Ixtali elemental mage. Ne'Zuk pledged to the Shuriman Empire to create a weapon powerful enough to eradicate the Void at its source in the ruins of Icathia.\n\nThe Monolith, the size of a city, was Ne'Zuk's creation, maintained by the greatest elemental mages. It glided toward Icathia to face the Void.\n\nThe battle raged for weeks with unprecedented violence. The Void retaliated, scarring the Monolith's living stone with unnatural mineral-like wounds called \"malphite\" (Ixtali for \"bad stone\").\n\nThe Monolith was pushed beyond its limits. As Ne'Zuk fought to rally his Ascended brethren, the unthinkable happened: the fortress crashed to earth, cleaving through Icathia's bedrock and opening the Void beneath to the skies. Much of the fortress vanished into the abyssal maw. Ne'Zuk was the only Ascended to survive the disaster, fleeing his greatest folly.\n\nAgainst all reason, a few fragments of the Monolith endured, still imbued with magical life. Most faded, but a single shard remained, buried deep beneath the surface. After uncounted centuries, it awakened, realizing it was alone.\n\nThis last shard, Malphite, has become a legend across Runeterra. The overwhelming drive instilled by Ne'Zuk to create order has not wavered: Malphite knows it must soon rise to meet the resurgent darkness, as the Void threatens all of Runeterra once more.\n\nHe struggles to impose a sacred order in a chaotic world, bearing the burden of being the last survivor of his kind.",
+  "spells_en": [
+    {
+      "id": "SeismicShard",
+      "name": "Seismic Shard",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 0,
+        "full": "SeismicShard.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Malphite launches a shard of earth at an enemy, dealing <magicDamage>{{ qdamagecalc }} magic damage</magicDamage> and <status>Slowing</status> them by {{ e2 }}% for {{ slowduration }} seconds. Malphite also steals the amount <status>Slowed</status>, gaining it as <speed>Move Speed</speed> for {{ slowduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/75/80/85/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "@AbilityResourceName@ Cost",
+          "Damage",
+          "Slow"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "625",
+      "datavalues": {},
+      "description": "Malphite sends a shard of the earth through the ground at his foe, dealing damage upon impact and stealing Move Speed for 3 seconds.",
+      "cooldownBurn": "8"
+    },
+    {
+      "id": "Obduracy",
+      "name": "Thunderclap",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 0,
+        "full": "Obduracy.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive: </spellPassive>Malphite gains <scaleArmor>{{ bonusarmorpassive*100 }}% Armor (%i:scaleArmor%{{ f1 }})</scaleArmor>. This effect is increased to <scaleArmor>{{ bonusarmorpassive*300 }}% (%i:scaleArmor%{{ f2 }})</scaleArmor> while <spellName>Granite Shield</spellName> is active.<br /><br /><spellPassive>Active: </spellPassive>Malphite's next Attack deals an additional <physicalDamage>{{ totalbonusdamage }} physical damage</physicalDamage> and creates an aftershock which deals <physicalDamage>{{ thunderclapsplash }} physical damage</physicalDamage> in their direction. His Attacks continue to create aftershocks for the next {{ thunderclapbuffduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30/35/40/45/50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "@AbilityResourceName@ Cost",
+          "Armor",
+          "Damage",
+          "Aftershock Splash Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Malphite attacks with such force that it creates a sonic boom. For the next few seconds, his attacks create aftershocks in front of him.",
+      "cooldownBurn": "10/9.5/9/8.5/8"
+    },
+    {
+      "id": "Landslide",
+      "name": "Ground Slam",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 0,
+        "full": "Landslide.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Malphite slams the ground, dealing <magicDamage>{{ edamagecalc }} magic damage</magicDamage> and reducing <attackSpeed>Attack Speed by {{ asreduction }}%</attackSpeed> for {{ duration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Attack Speed Reduction"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Malphite slams the ground, sending out a shockwave that deals magic damage based on his Armor and reduces the Attack Speed of enemies for a short duration.",
+      "cooldownBurn": "7"
+    },
+    {
+      "id": "UFSlash",
+      "name": "Unstoppable Force",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 0,
+        "full": "UFSlash.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Malphite charges with the force of a landslide, dashing Unstoppably. At the end of the dash, Malphite <status>Knocks Up</status> for {{ knockupduration }} seconds and deals <magicDamage>{{ totaldamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Malphite launches himself to a location at high speed, damaging enemies and knocking them into the air.",
+      "cooldownBurn": "130/105/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Granite Shield",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 336,
+      "y": 48,
+      "full": "Malphite_GraniteShield.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Malphite is shielded by a layer of rock which absorbs damage up to 10% of his maximum Health. If Malphite has not been hit for a few seconds, this effect recharges."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Top",
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "54000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "54001",
+      "num": 1,
+      "name": "Shamrock Malphite",
+      "chromas": false
+    },
+    {
+      "id": "54002",
+      "num": 2,
+      "name": "Coral Reef Malphite",
+      "chromas": false
+    },
+    {
+      "id": "54003",
+      "num": 3,
+      "name": "Marble Malphite",
+      "chromas": false
+    },
+    {
+      "id": "54004",
+      "num": 4,
+      "name": "Obsidian Malphite",
+      "chromas": false
+    },
+    {
+      "id": "54005",
+      "num": 5,
+      "name": "Glacial Malphite",
+      "chromas": false
+    },
+    {
+      "id": "54006",
+      "num": 6,
+      "name": "Mecha Malphite",
+      "chromas": true
+    },
+    {
+      "id": "54007",
+      "num": 7,
+      "name": "Ironside Malphite",
+      "chromas": false
+    },
+    {
+      "id": "54016",
+      "num": 16,
+      "name": "Odyssey Malphite",
+      "chromas": true
+    },
+    {
+      "id": "54023",
+      "num": 23,
+      "name": "Dark Star Malphite",
+      "chromas": false
+    },
+    {
+      "id": "54024",
+      "num": 24,
+      "name": "Prestige Dark Star Malphite",
+      "chromas": false
+    },
+    {
+      "id": "54025",
+      "num": 25,
+      "name": "FPX Malphite",
+      "chromas": true
+    },
+    {
+      "id": "54027",
+      "num": 27,
+      "name": "Old God Malphite",
+      "chromas": true
+    },
+    {
+      "id": "54037",
+      "num": 37,
+      "name": "Lunar Guardian Malphite",
+      "chromas": true
+    },
+    {
+      "id": "54048",
+      "num": 48,
+      "name": "Pool Party Malphite",
+      "chromas": true
+    }
+  ]
+}

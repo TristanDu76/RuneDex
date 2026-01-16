@@ -1,0 +1,447 @@
+{
+  "id": "Sett",
+  "key": "875",
+  "name": "Sett",
+  "title": "Patron",
+  "version": "15.23.1",
+  "lore": "Sett s'est imposé en tant que chef du monde criminel florissant d'Ionia après la guerre contre Noxus. Bien qu'il ait fait ses débuts de manière modeste dans les arènes de combat de Navori, il s'est rapidement fait une réputation pour sa force sauvage et sa capacité à encaisser tous les coups sans broncher. Après s'être battu pour se faire une place parmi les combattants locaux, Sett s'est hissé au sommet à la force de ses poings pour finalement prendre le contrôle des arènes dans lesquelles il se battait autrefois.",
+  "tags": [
+    "Fighter",
+    "Tank"
+  ],
+  "partype": "Agressivité",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 384,
+    "y": 96,
+    "full": "Sett.png",
+    "group": "champion",
+    "sprite": "champion3.png"
+  },
+  "skins": [
+    {
+      "id": "875000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "875001",
+      "num": 1,
+      "name": "Sett du royaume des mechas",
+      "chromas": true
+    },
+    {
+      "id": "875008",
+      "num": 8,
+      "name": "Sett dragon obsidienne",
+      "chromas": true
+    },
+    {
+      "id": "875009",
+      "num": 9,
+      "name": "Sett dragon obsidienne prestige",
+      "chromas": false
+    },
+    {
+      "id": "875010",
+      "num": 10,
+      "name": "Sett bronzette",
+      "chromas": true
+    },
+    {
+      "id": "875019",
+      "num": 19,
+      "name": "Sett pyrotechnicien",
+      "chromas": true
+    },
+    {
+      "id": "875038",
+      "num": 38,
+      "name": "Sett fleur spirituelle",
+      "chromas": true
+    },
+    {
+      "id": "875045",
+      "num": 45,
+      "name": "Sett combattant spirituel",
+      "chromas": true
+    },
+    {
+      "id": "875056",
+      "num": 56,
+      "name": "HEARTSTEEL Sett",
+      "chromas": true
+    },
+    {
+      "id": "875066",
+      "num": 66,
+      "name": "Sett serpent radieux",
+      "chromas": false
+    },
+    {
+      "id": "875067",
+      "num": 67,
+      "name": "Sett fleur spirituelle onsen",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "SettQ",
+      "name": "Rogne",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 48,
+        "full": "SettQ.png",
+        "group": "spell",
+        "sprite": "spell12.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Sett meurt d'envie de se battre, ce qui lui octroie <speed>+{{ msamount*100 }}% de vitesse de déplacement</speed> vers les champions ennemis pendant {{ msduration }} sec.<br /><br />De plus, les deux prochaines attaques de Sett infligent <physicalDamage>{{ basedamage }} plus {{ maxhealthdamagecalc }} des PV max en dégâts physiques</physicalDamage> supplémentaires.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts de base",
+          "% des PV max tous les 100 pts de dégâts d'attaque"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "0",
+      "datavalues": {},
+      "description": "Les deux prochaines attaques de Sett infligent des dégâts supplémentaires en fonction des PV max de la cible. De plus, Sett augmente sa vitesse de déplacement quand il se dirige vers des champions ennemis.",
+      "cooldownBurn": "9/8/7/6/5"
+    },
+    {
+      "id": "SettW",
+      "name": "Coup cathartique",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 48,
+        "full": "SettW.png",
+        "group": "spell",
+        "sprite": "spell12.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> Sett stocke {{ damagestored*100 }}% des dégâts subis sous forme d'<keywordMajor>agressivité</keywordMajor>, jusqu'à un maximum de <keywordMajor>{{ maxgrit }}</keywordMajor>. L'<keywordMajor>agressivité</keywordMajor> se dissipe rapidement {{ adrenalinestoragewindow }} sec après avoir subi des dégâts.<br /><br /><spellActive>Active :</spellActive> Sett consomme toute son <keywordMajor>agressivité</keywordMajor> pour gagner un <shield>bouclier dont les PV sont équivalents à {{ shieldconversion*100 }}% de l'agressivité consommée</shield> et qui se désagrège en {{ shieldmaxduration }} sec. Sett donne ensuite un coup de poing ravageur, infligeant <trueDamage>{{ damagecalc }} plus {{ damageconversion }} de l'agressivité consommée en dégâts bruts</trueDamage> aux ennemis au centre (max : <trueDamage>{{ f1 }} pts de dégâts</trueDamage>). Les ennemis qui ne sont pas au centre subissent à la place des <physicalDamage>dégâts physiques</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts de base"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Passivement, Sett stocke une partie des dégâts qu'il subit sous forme d'agressivité. À l'activation, Sett dépense toute l'agressivité stockée pour gagner un bouclier et donner un coup de poing à effet de zone qui inflige des dégâts bruts au centre et des dégâts physiques sur les côtés.",
+      "cooldownBurn": "18/16.5/15/13.5/12"
+    },
+    {
+      "id": "SettE",
+      "name": "Casse-tête",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 48,
+        "full": "SettE.png",
+        "group": "spell",
+        "sprite": "spell12.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Sett saisit les ennemis de chaque côté de lui et les cogne les uns contre les autres, infligeant <physicalDamage>{{ damagecalc }} pts de dégâts physiques</physicalDamage> et les <status>ralentissant</status> de {{ slowamount*100 }}% pendant {{ slowduration }} sec. Si Sett a saisi au moins un ennemi de chaque côté, tous les ennemis sont <status>étourdis</status> pendant {{ stunduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts de base"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "490",
+      "datavalues": {},
+      "description": "Sett attire les ennemis venant de deux directions opposées pour leur infliger des dégâts et les étourdir. S'il n'y avait des ennemis que dans une direction, ces ennemis sont ralentis au lieu d'être étourdis.",
+      "cooldownBurn": "16/14.5/13/11.5/10"
+    },
+    {
+      "id": "SettR",
+      "name": "Le Clou du spectacle",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 48,
+        "full": "SettR.png",
+        "group": "spell",
+        "sprite": "spell12.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Sett saisit un champion ennemi et le <status>neutralise</status> tout en le portant, puis l'écrase au sol, infligeant <physicalDamage>{{ damagecalc }} plus {{ maxhealthdamage*100 }}% des PV bonus de l'ennemi saisi en dégâts physiques</physicalDamage> aux ennemis proches et les <status>ralentissant</status> de {{ slowamount*100 }}% pendant {{ slowduration }} sec. Plus les ennemis sont éloignés du point d'atterrissage de Sett, moins ils subissent de dégâts.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "PV bonus en dégâts",
+          "Dégâts de base"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Sett saisit un champion ennemi et l'emporte dans les airs avant de l'écraser au sol, infligeant des dégâts et ralentissant tous les ennemis près de son point d'atterrissage.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive": {
+    "name": "Roi de l'arène",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 384,
+      "y": 96,
+      "full": "Sett_P.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Lors de ses attaques de base, Sett alterne son direct du gauche et son direct du droit. Le direct du droit est un peu plus puissant et rapide. De plus, Sett déteste perdre, ce qui augmente la régénération de ses PV selon ses PV manquants."
+  },
+  "created_at": "2025-11-26T15:13:34.800791+00:00",
+  "factions": [
+    "ionia"
+  ],
+  "custom_tags": [
+    "chef-crime"
+  ],
+  "gender": "Male",
+  "species": "Vastaya",
+  "title_en": "the Boss",
+  "lore_en": "A leader of Ionia's growing criminal underworld, Sett rose to prominence in the wake of the war with Noxus. Though he began as a humble challenger in the fighting pits of Navori, he quickly gained notoriety for his savage strength, and his ability to take seemingly endless amounts of punishment. Now, having climbed through the ranks of local combatants, Sett has muscled to the top, reigning over the pits he once fought in.",
+  "spells_en": [
+    {
+      "id": "SettQ",
+      "name": "Knuckle Down",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 48,
+        "full": "SettQ.png",
+        "group": "spell",
+        "sprite": "spell12.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Sett itches for a fight, gaining <speed>{{ msamount*100 }}% Move Speed</speed> towards enemy champions for {{ msduration }} seconds.<br /><br />Additionally Sett's next two Attacks deal an additional <physicalDamage>{{ basedamage }} plus {{ maxhealthdamagecalc }} max Health physical damage</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Base Damage",
+          "% Max Health Per 100 AD"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "0",
+      "datavalues": {},
+      "description": "Sett's next two attacks deal additional damage based off of the target's max health. Sett also gains Move Speed while moving towards enemy champions.",
+      "cooldownBurn": "9/8/7/6/5"
+    },
+    {
+      "id": "SettW",
+      "name": "Haymaker",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 48,
+        "full": "SettW.png",
+        "group": "spell",
+        "sprite": "spell12.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Sett stores {{ damagestored*100 }}% of damage taken as <keywordMajor>Grit</keywordMajor>, up to <keywordMajor>{{ maxgrit }}</keywordMajor>. <keywordMajor>Grit</keywordMajor> decays quickly {{ adrenalinestoragewindow }} seconds after the damage was taken.<br /><br /><spellActive>Active:</spellActive> Sett consumes all <keywordMajor>Grit</keywordMajor>, gaining a <shield>{{ shieldconversion*100 }}% Grit consumed Shield</shield> decaying over {{ shieldmaxduration }} seconds. Sett then delivers a massive punch, dealing <trueDamage>{{ damagecalc }} plus {{ damageconversion }} Grit consumed true damage</trueDamage> to enemies in the center (max <trueDamage>{{ f1 }} damage</trueDamage>). Enemies not in the center instead take <physicalDamage>physical damage</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Base Damage"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Sett passively stores damage he takes as Grit. On cast, Sett expends all stored Grit to gain a shield and punch an area, dealing true damage in the center and physical damage on the sides.",
+      "cooldownBurn": "18/16.5/15/13.5/12"
+    },
+    {
+      "id": "SettE",
+      "name": "Facebreaker",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 48,
+        "full": "SettE.png",
+        "group": "spell",
+        "sprite": "spell12.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Sett smashes enemies on either side of him into each other, dealing <physicalDamage>{{ damagecalc }} physical damage</physicalDamage> and <status>Slowing</status> them by {{ slowamount*100 }}% for {{ slowduration }} seconds. If Sett grabbed at least one enemy on each side, all enemies are <status>Stunned</status> for {{ stunduration }} second.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Base Damage"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "490",
+      "datavalues": {},
+      "description": "Sett pulls in all enemies on opposite sides of him, dealing damage and stunning them. If enemies were only on one side, they are slowed instead of stunned.",
+      "cooldownBurn": "16/14.5/13/11.5/10"
+    },
+    {
+      "id": "SettR",
+      "name": "The Show Stopper",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 48,
+        "full": "SettR.png",
+        "group": "spell",
+        "sprite": "spell12.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Sett grabs an enemy champion and <status>Suppresses</status> them as he carries them forward, then slams them into the ground, dealing <physicalDamage>{{ damagecalc }} plus {{ maxhealthdamage*100 }}% of the grabbed enemy's bonus Health physical damage</physicalDamage> to surrounding enemies and <status>Slowing</status> them by {{ slowamount*100 }}% for {{ slowduration }} second. Enemies take less damage the further they are from where Sett lands.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Bonus Health Damage",
+          "Base Damage"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Sett carries an enemy champion through the air and slams them into the ground, dealing damage and slowing all enemies near where they land.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Pit Grit",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 384,
+      "y": 96,
+      "full": "Sett_P.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Sett's basic attacks alternate between left and right punch. Right punch is slightly stronger and faster. Sett also hates losing, gaining additional health regeneration based off of his missing health."
+  },
+  "partype_en": "Grit",
+  "lanes": [
+    "Top"
+  ],
+  "skins_en": [
+    {
+      "id": "875000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "875001",
+      "num": 1,
+      "name": "Mecha Kingdoms Sett",
+      "chromas": true
+    },
+    {
+      "id": "875008",
+      "num": 8,
+      "name": "Obsidian Dragon Sett",
+      "chromas": true
+    },
+    {
+      "id": "875009",
+      "num": 9,
+      "name": "Prestige Obsidian Dragon Sett",
+      "chromas": false
+    },
+    {
+      "id": "875010",
+      "num": 10,
+      "name": "Pool Party Sett",
+      "chromas": true
+    },
+    {
+      "id": "875019",
+      "num": 19,
+      "name": "Firecracker Sett",
+      "chromas": true
+    },
+    {
+      "id": "875038",
+      "num": 38,
+      "name": "Spirit Blossom Sett",
+      "chromas": true
+    },
+    {
+      "id": "875045",
+      "num": 45,
+      "name": "Soul Fighter Sett",
+      "chromas": true
+    },
+    {
+      "id": "875056",
+      "num": 56,
+      "name": "HEARTSTEEL Sett",
+      "chromas": true
+    },
+    {
+      "id": "875066",
+      "num": 66,
+      "name": "Radiant Serpent Sett",
+      "chromas": false
+    },
+    {
+      "id": "875067",
+      "num": 67,
+      "name": "Spirit Blossom Springs Sett",
+      "chromas": true
+    }
+  ]
+}

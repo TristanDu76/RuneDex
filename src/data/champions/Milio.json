@@ -1,0 +1,358 @@
+{
+  "id": "Milio",
+  "key": "902",
+  "name": "Milio",
+  "title": "Douce flamme",
+  "version": "15.23.1",
+  "lore": "Milio est un jeune garçon d'Ixtal, dont l'histoire est marquée par la tragédie familiale et l'exil. Sa grand-mère, Lupé, et sa jumelle, Luné, étaient des maîtresses élémentaires de la caste dirigeante des Yun Tal. Luné fut bannie pour avoir comploté, mais Lupé fut également punie et exilée à cause de leur lien gémellaire.\n\nMilio a grandi en exil, mais n'a connu que l'amour et le bonheur de sa famille. Lupé a tenté de lui enseigner l'axiomatique élémentaire, mais Milio peinait avec la rigidité des règles. Il a continué seul, abandonnant les restrictions, étudiant la nature pour finalement maîtriser l'Axiome du feu, que sa grand-mère refusait de lui enseigner.\n\nLa Découverte du Feu Guérisseur :\n\nMilio se demandait si le feu devait être si destructeur. La réponse lui vint une nuit, alors qu'il tentait en vain d'aider une chasseuse blessée. Poussé par la nécessité, il fit l'effort désespéré d'adapter l'axiome pour qu'il guérisse. En se concentrant sur une sensation de chaleur familière et apaisante (l'« inner flame » ou flamme intérieure de la chasseuse), il manifesta une nouvelle créature : une petite flamme timide et amicale, qu'il nomma « fuemigo » (son feu guérisseur).\n\nIl avait découvert un tout nouvel axiome : le « feu apaisant » (soothing fire).\n\nLa Quête de Rédemption :\n\nLupé fut troublée par l'innovation de Milio, mais y vit aussi sa seule chance de réintégrer les Yun Tal. Elle prépara Milio, à seulement douze ans, pour qu'il se rende dans la capitale, Ixaocan, et y affronte les épreuves du Vidalion, annulant ainsi l'exil de la famille.\n\nMilio accepta, son amour pour sa famille l'emportant sur la peur de partir. Il se confectionna un sac à dos spécial, sa « furnasita », pour garder son fuemigo toujours brûlant.\n\nAprès un long voyage, Milio est arrivé à Ixaocan pour commencer son entraînement. Le « garçon aux flammes apaisantes » a attiré l'attention, notamment celle de Luné, sa grand-tante, qui est actuellement emprisonnée sous la ville et qui attend son heure. Milio, concentré sur sa mission de rendre sa famille fière, ignore les dangers et les machinations qui l'attendent.",
+  "tags": [
+    "Support",
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 96,
+    "y": 96,
+    "full": "Milio.png",
+    "group": "champion",
+    "sprite": "champion2.png"
+  },
+  "skins": [
+    {
+      "id": "902000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "902001",
+      "num": 1,
+      "name": "Milio de la cour féérique",
+      "chromas": true
+    },
+    {
+      "id": "902011",
+      "num": 11,
+      "name": "Milio berger de la pluie",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "MilioQ",
+      "name": "Ultra méga boule de feu",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 96,
+        "full": "MilioQ.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Milio tire une boule de feu qui <status>repousse</status> le premier ennemi touché. À l'impact, la boule rebondit derrière l'ennemi et explose, infligeant <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage> aux ennemis proches et les <status>ralentissant</status> de {{ slowamountpercent }} pendant {{ slowduration }} sec.<br /><br />Toucher au moins un champion ennemi avec <spellName>Ultra méga boule de feu</spellName> vous rend {{ refundratio*100 }}% de son coût en mana.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ralentissement",
+          "Coût en mana"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1200",
+      "datavalues": {},
+      "description": "Milio tire une boule de feu qui repousse un ennemi. À l'impact, la boule part en cloche et retombe sur l'ennemi, ce qui blesse et ralentit les ennemis dans la zone.",
+      "cooldownBurn": "10"
+    },
+    {
+      "id": "MilioW",
+      "name": "Feu de camp",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 96,
+        "full": "MilioW.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Milio crée un brasier qui suit les champions alliés pendant {{ zoneduration }} sec. Les champions alliés gagnent +{{ rangepercent }} portée d'attaque et récupèrent <healing>{{ healingovertime }} PV</healing> sur la durée. Le brasier applique aussi <spellName>Tout feu tout flamme</spellName> toutes les {{ healfrequencyseconds }} sec.<br /><br /><recast>Réactivation :</recast> permet de changer l'allié que le brasier doit suivre.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "90/100/110/120/130",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Portée",
+          "Soins",
+          "Délai de récupération",
+          "Coût en mana"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "350",
+      "datavalues": {},
+      "description": "Milio crée une zone de renforcement qui soigne les alliés qui y entrent tout en augmentant leur portée d'attaque. La zone suit l'allié le plus proche du point de départ.",
+      "cooldownBurn": "29/27/25/23/21"
+    },
+    {
+      "id": "MilioE",
+      "name": "Chaud devant !",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 96,
+        "full": "MilioE.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "2",
+      "maxrank": 5,
+      "tooltip": "Milio enveloppe un champion allié de flammes protectrices, octroyant un <shield>bouclier de {{ shieldcalc }} PV</shield> et <speed>+{{ movespeedamount*100 }}% de vitesse de déplacement</speed> pendant {{ movespeedduration }} sec.<br /><br />Cette compétence a 2 charges et ses effets peuvent se cumuler sur une même cible.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/60/70/80/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "PV du bouclier",
+          "Vitesse de déplacement",
+          "Coût en mana",
+          "Délai de rechargement"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Milio lance un bouclier sur un allié, ce qui augmente temporairement la vitesse de déplacement de cet allié. Cette compétence a 2 charges.",
+      "cooldownBurn": "0.5"
+    },
+    {
+      "id": "MilioR",
+      "name": "Flammes vitales",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 96,
+        "full": "MilioR.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Milio lance une vague de flammes guérisseuses sur les champions alliés proches, supprimant les <status>entraves</status> et les <status>immobilisations</status> qui les affectent, leur rendant <healing>{{ healcalc }} PV</healing> et leur octroyant +{{ tenacityamount*100 }}% de ténacité pendant {{ tenacityduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Soins",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Milio libère une vague de flammes guérisseuses qui soignent les alliés à portée tout en supprimant les effets de contrôle de foule qui les affectent.",
+      "cooldownBurn": "160/145/130"
+    }
+  ],
+  "passive": {
+    "name": "Tout feu tout flamme",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 96,
+      "y": 96,
+      "full": "Milio_P.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Les compétences de Milio enchantent les alliés touchés, ce qui permet aux prochains dégâts de ces alliés d'infliger des dégâts supplémentaires et de brûler leur cible."
+  },
+  "created_at": "2025-11-26T15:13:34.174598+00:00",
+  "factions": [
+    "ixtal"
+  ],
+  "custom_tags": [
+    "chaleur",
+    "guérisseur"
+  ],
+  "gender": "Male",
+  "species": "Human",
+  "title_en": "The Gentle Flame",
+  "lore_en": "Milio is a young, warm-hearted boy from Ixtal, whose story is marked by family tragedy and exile. His grandmother, Lupé, and her twin, Luné, were elemental masters of the ruling caste, the Yun Tal. Luné was banished for plotting, and Lupé was punished and exiled alongside her due to their twin bond.\n\nMilio grew up in exile, knowing only love and happiness. Lupé tried to teach him the elemental axiomata, but Milio struggled with the discipline's rigidity. He continued learning on his own, abandoning restrictions and eventually mastering the Fire Axiom, which his grandmother would not teach him.\n\nThe Discovery of Soothing Fire:\n\nMilio wondered if fire had to be so destructive. The answer came one night when he was trying to help an injured hunter. Driven by desperation, he sought to adapt the axiom to heal. By focusing on a familiar, soothing warmth (the hunter's \"inner flame\"), he manifested a new creature: a small, timid, friendly flame he named \"fuemigo.\"\n\nHe had discovered an entirely new axiom: \"soothing fire.\"\n\nThe Quest for Redemption:\n\nLupé was unsettled by Milio's innovation but saw it as her last chance to rejoin the Yun Tal. She prepared Milio, at only twelve years old, to travel to the capital, Ixaocan, and challenge the Vidalion trials, thereby ending the family's exile.\n\nMilio accepted, his love for his family overcoming his fear of leaving home. He fashioned a special backpack, his \"furnasita,\" to keep his fuemigo burning.\n\nAfter a long journey, Milio arrived at Ixaocan to begin his training. \"The boy with the soothing flames\" has caught the eye of many, including Luné, his great-aunt, who is currently imprisoned beneath the city and biding her time. Milio, focused on making his family proud, is unaware of the dangers and machinations that await him.",
+  "spells_en": [
+    {
+      "id": "MilioQ",
+      "name": "Ultra Mega Fire Kick",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 96,
+        "full": "MilioQ.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Milio kicks a fireball, <status>Knocking Back</status> the first enemy hit. If it hits, the ball bounces past them and explodes, dealing <magicDamage>{{ damage }} magic damage</magicDamage> to surrounding enemies and <status>Slowing</status> them by {{ slowamountpercent }} for {{ slowduration }} seconds.<br /><br />Hitting at least one enemy champion with <spellName>Ultra Mega Fire Kick</spellName> refunds {{ refundratio*100 }}% of it's Mana cost.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Slow",
+          "Mana Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1200",
+      "datavalues": {},
+      "description": "Kick a ball that knocks back an enemy. The ball launches upward on hit and falls toward the enemy, damaging and slowing enemies in the area upon impact.",
+      "cooldownBurn": "10"
+    },
+    {
+      "id": "MilioW",
+      "name": "Cozy Campfire",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 96,
+        "full": "MilioW.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Milio creates a hearth that follows ally champions for {{ zoneduration }} seconds. Ally champions nearby gain {{ rangepercent }} Attack Range and restore <healing>{{ healingovertime }} Health</healing> over the duration. The hearth also applies <spellName>Fired Up!</spellName> every {{ healfrequencyseconds }} seconds.<br /><br /><recast>Recast:</recast> Change the hearth's follow ally.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "90/100/110/120/130",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Range",
+          "Healing",
+          "Cooldown",
+          "Mana Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "350",
+      "datavalues": {},
+      "description": "Create an empowering zone that heals allies and increases attack range to those inside. The zone follows the ally nearest to the cast point.",
+      "cooldownBurn": "29/27/25/23/21"
+    },
+    {
+      "id": "MilioE",
+      "name": "Warm Hugs",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 96,
+        "full": "MilioE.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "2",
+      "maxrank": 5,
+      "tooltip": "Milio wraps an ally champion in protective flames, granting <shield>{{ shieldcalc }} Shield</shield> and <speed>{{ movespeedamount*100 }}% Move Speed</speed> for {{ movespeedduration }} seconds.<br /><br />This ability has 2 charges and the effects stack on repeat targets.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/60/70/80/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Shield Amount",
+          "Move Speed",
+          "Mana Cost",
+          "Recharge Time"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Milio tosses a shield to an ally, temporarily increasing their movement speed. This ability has 2 charges.",
+      "cooldownBurn": "0.5"
+    },
+    {
+      "id": "MilioR",
+      "name": "Breath of Life",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 96,
+        "full": "MilioR.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Milio unleashes a wave of soothing flames on nearby ally champions, cleansing <status>Disabling</status> and <status>Immobilizing</status> effects, restoring <healing>{{ healcalc }} Health</healing>, and granting {{ tenacityamount*100 }}% Tenacity for {{ tenacityduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Healing",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Milio unleashes a wave of soothing flames that heal and remove crowd control effects from allies in range.",
+      "cooldownBurn": "160/145/130"
+    }
+  ],
+  "passive_en": {
+    "name": "Fired Up!",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 96,
+      "y": 96,
+      "full": "Milio_P.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Milio's abilities enchant allies on touch, making their next damage deal a burst of extra damage and burn the target."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Support"
+  ],
+  "skins_en": [
+    {
+      "id": "902000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "902001",
+      "num": 1,
+      "name": "Faerie Court Milio",
+      "chromas": true
+    },
+    {
+      "id": "902011",
+      "num": 11,
+      "name": "Rain Shepherd Milio",
+      "chromas": true
+    }
+  ]
+}

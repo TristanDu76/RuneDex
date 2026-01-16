@@ -1,0 +1,405 @@
+{
+  "id": "Kalista",
+  "key": "429",
+  "name": "Kalista",
+  "title": "Lance de la vengeance",
+  "version": "15.23.1",
+  "lore": "Kalista était la générale la plus fière et loyale de son empire, nièce du Roi sans nom. Sa vigilance sauva le Roi d'un assassin, mais la lame empoisonnée blessa mortellement la Reine.\n\nLa Quête et la Trahison Secrète : Le Roi, accablé de chagrin, envoya Kalista chercher un remède sur les Îles Bénies (Blessed Isles), dont les maîtres connaissaient le secret de la vie éternelle à Helia. Pendant son absence, Hecarim, animé par sa soif de gloire, prit sa place à la droite du Roi. Kalista revint avec le secret (un talisman pour le passage), mais la Reine était déjà morte.\n\nLa Ruine Initiée par Hecarim : Le Roi, fou de chagrin, refusa la vérité et fut persuadé par Hecarim de se rendre sur les Îles pour y prendre le remède. Lorsque les maîtres d'Helia refusèrent de ressusciter la Reine (car cela briserait l'ordre naturel), le Roi ordonna le massacre. Kalista refusa. C'est à cet instant qu'Hecarim, trahissant sa cousine, planta sa lance dans le dos de Kalista en plein armure, incitant l'Ordre de Fer à la cribler de lances.\n\nLe Sacrifice de Ledros : Au milieu du massacre, le général Ledros, le plus fidèle et dévoué compagnon de Kalista, se jeta dans la mêlée pour la défendre contre Hecarim. Il fut massacré, tué en vainquant quelques traîtres. Kalista, mourant, jura vengeance contre les menteurs et les traîtres.\n\nLa Transformation Spectrale : La catastrophe (la Ruine) s'ensuivit, transformant les Îles Bénies en Îles Obscures (Shadow Isles). Kalista revint en tant que Spectre courroucé, l'incarnation de la vengeance, un cauchemar en armure qui pourchasse les âmes des traîtres qui font un pacte avec elle.\n\nL'Éternel Conflit : Kalista est désormais liée à la Nappe noire. Cependant, Ledros est l'un des rares spectres qui conserve une conscience, sa loyauté étant plus forte que la malédiction de la Brume. Il erre dans la non-vie, luttant pour retrouver Kalista et lui apporter la paix, brisant le cycle de vengeance qui consume l'esprit de sa bien-aimée.",
+  "tags": [
+    "Marksman"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 288,
+    "y": 96,
+    "full": "Kalista.png",
+    "group": "champion",
+    "sprite": "champion1.png"
+  },
+  "skins": [
+    {
+      "id": "429000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "429001",
+      "num": 1,
+      "name": "Kalista lune de sang",
+      "chromas": false
+    },
+    {
+      "id": "429002",
+      "num": 2,
+      "name": "Kalista des Worlds 2015",
+      "chromas": true
+    },
+    {
+      "id": "429003",
+      "num": 3,
+      "name": "SKT T1 Kalista",
+      "chromas": false
+    },
+    {
+      "id": "429005",
+      "num": 5,
+      "name": "Kalista maraudeuse",
+      "chromas": true
+    },
+    {
+      "id": "429014",
+      "num": 14,
+      "name": "Kalista de la cour féérique",
+      "chromas": true
+    },
+    {
+      "id": "429024",
+      "num": 24,
+      "name": "Kalista héraut de l'aube",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "KalistaMysticShot",
+      "name": "Perforation",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 0,
+        "full": "KalistaMysticShot.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Kalista jette une lance, infligeant <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> à la première cible touchée. Si cette compétence tue la cible, la lance continue son chemin, transférant tous les effets <spellName>Extirpation</spellName> à la cible suivante.<br /><br />Kalista peut faire une ruée avec <spellName>Maintien martial</spellName> après avoir utilisé cette compétence.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Coût en @AbilityResourceName@",
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1150",
+      "datavalues": {},
+      "description": "Kalista projette une lance rapide qui traverse les ennemis ainsi tués.",
+      "cooldownBurn": "9"
+    },
+    {
+      "id": "KalistaW",
+      "name": "Sentinelle",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 0,
+        "full": "KalistaW.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "2",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> quand Kalista et son <keywordMajor>pactisant</keywordMajor> attaquent la même cible, Kalista inflige <magicDamage>{{ maxhealthdamage*100 }}% des PV max en dégâts magiques</magicDamage>. Cet effet a un délai de récupération de {{ pertargetcooldown }} sec par cible et une limite de {{ maximummonsterdamage }} pts de dégâts contre les non-champions.<br /><br /><spellPassive>Active :</spellPassive> Kalista envoie un fantôme patrouiller dans une zone pendant trois trajets. La patrouille révèle pendant 4 sec les champions aperçus. Cette compétence a 2 charges ({{ ammorechargetooltip }} sec de rechargement).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Pourcentage des PV max en dégâts",
+          "Recharge des munitions",
+          "Dégâts max aux monstres"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "5000",
+      "datavalues": {},
+      "description": "Inflige des dégâts supplémentaires quand Kalista et son pactisant frappent la même cible. <br><br>Activez pour envoyer une âme patrouiller le long d'une route, révélant la zone devant elle.",
+      "cooldownBurn": "30"
+    },
+    {
+      "id": "KalistaExpungeWrapper",
+      "name": "Extirpation",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 0,
+        "full": "KalistaExpungeWrapper.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive : </spellPassive>les lances de Kalista se plantent dans leur cible pendant 4 sec (cumulable à l'infini).<br /><br /><spellActive>Active :</spellActive> Kalista arrache les lances des ennemis proches, leur infligeant <physicalDamage>{{ normaldamage }}</physicalDamage> pts de dégâts physiques plus <physicalDamage>{{ additionaldamage }}</physicalDamage> par lance au-delà de la première. Cela <status>ralentit</status> aussi les ennemis touchés de <attention>{{ totalslowamount }}</attention> pendant {{ slowduration }} sec.<br /><br />Si cette compétence tue au moins une cible, son délai de récupération est annulé et Kalista récupère <scaleMana>{{ manarefund }} pts de mana</scaleMana>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Dégâts par effet cumulé",
+          "Ratio de dégâts d'attaque par effet cumulé",
+          "Réduction de la vitesse de déplacement",
+          "Mana rendu",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Les attaques plantent des lances dans leurs cibles. Activez pour extirper les lances, ralentissant les ennemis et leur infligeant des dégâts augmentés.",
+      "cooldownBurn": "0"
+    },
+    {
+      "id": "KalistaRx",
+      "name": "Appel du destin",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 0,
+        "full": "KalistaRx.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Kalista met son <keywordMajor>pactisant</keywordMajor> en stase et l'attire jusqu'à elle pendant un maximum de 4 sec. Le <keywordMajor>pactisant</keywordMajor> peut cliquer pour se projeter ; il s'arrête alors au premier champion ennemi touché et <status>repousse</status> tous les ennemis proches. Si le <keywordMajor>pactisant</keywordMajor> touche un champion, il est placé à sa portée d'attaque maximum par rapport à cet ennemi.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Durée de la projection"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Kalista téléporte le pactisant allié auprès d'elle. Le pactisant peut ensuite charger vers une position pour repousser tous les champions ennemis proches.",
+      "cooldownBurn": "160/140/120"
+    }
+  ],
+  "passive": {
+    "name": "Maintien martial",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 288,
+      "y": 96,
+      "full": "Kalista_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Donnez un ordre de déplacement pendant l'animation de l'attaque de base ou de la Perforation de Kalista pour bondir sur une petite distance dans cette direction après avoir lancé l'attaque."
+  },
+  "created_at": "2025-11-26T15:13:33.462857+00:00",
+  "factions": [
+    "shadow-isles"
+  ],
+  "custom_tags": [
+    "spectre",
+    "vengeance"
+  ],
+  "gender": "Female",
+  "species": "Undead",
+  "title_en": "the Spear of Vengeance",
+  "lore_en": "Kalista was the proud and loyal general of her empire, niece to the unnamed King. Her vigilance saved the King from an assassin, but the poisoned blade mortally wounded the Queen.\n\nThe Quest and Hecarim's Rise: The King, overwhelmed by grief, sent Kalista to seek a cure on the Blessed Isles (Helia), whose masters knew the secret to eternal life. During her absence, Hecarim, driven by his hunger for glory, took her place at the King's side. Kalista returned with the secret but the Queen was already dead. The King believed she was a traitor, but Hecarim persuaded her to guide the King to the Isles.\n\nThe Ultimate Betrayal: When Helia’s masters refused to resurrect the Queen (to avoid breaking the natural order), the King ordered the slaughter. Kalista refused. In that moment, Hecarim, betraying his cousin, drove his spear through Kalista’s back, inciting the Iron Order to join him in the treachery.\n\nLedros's Sacrifice: Amidst the betrayal, General Ledros, Kalista's most devoted loyalist (and devoted companion), threw himself into the fight to defend her against Hecarim. He was massacred, dying while attempting to save her. Kalista died swearing vengeance against traitors.\n\nThe Ruination and Transformation: The ensuing cataclysm (the Ruination) transformed the Blessed Isles into the Shadow Isles. Kalista returned as a Wrathful Specter, the immortal spirit of Vengeance, a nightmare invoked to hunt down betrayers and oathbreakers.\n\nThe Eternal Conflict: Kalista is bound to the Black Mist. However, Ledros is one of the few specters to retain a sliver of consciousness, his devotion stronger than the curse of the Mist. He wanders in undeath, desperately seeking to find Kalista and bring her peace, breaking the cycle of vengeance that consumes her spirit.",
+  "spells_en": [
+    {
+      "id": "KalistaMysticShot",
+      "name": "Pierce",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 0,
+        "full": "KalistaMysticShot.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Kalista hurls a spear, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> to the first target hit. If this kills the target, the spear continues onward, carrying any <spellName>Rend</spellName> stacks to the next target hit.<br /><br />Kalista can dash after using this Ability using <spellName>Martial Poise</spellName>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "@AbilityResourceName@ Cost",
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1150",
+      "datavalues": {},
+      "description": "Throw a fast moving spear that passes through enemies it kills.",
+      "cooldownBurn": "9"
+    },
+    {
+      "id": "KalistaW",
+      "name": "Sentinel",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 0,
+        "full": "KalistaW.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "2",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> When Kalista and her <keywordMajor>Oathsworn</keywordMajor> both Attack the same target, she deals <magicDamage>{{ maxhealthdamage*100 }}% max Health magic damage</magicDamage>. This effect has a {{ pertargetcooldown }} second Cooldown per target and a cap of {{ maximummonsterdamage }} to non-champions.<br /><br /><spellPassive>Active: </spellPassive>Kalista sends a ghost to patrol an area for three laps. Champions spotted are revealed for 4 seconds. This ability has 2 charges ({{ ammorechargetooltip }} second refresh).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Maximum Health Damage",
+          "Ammo Recharge",
+          "Monster Damage Cap"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "5000",
+      "datavalues": {},
+      "description": "Gain bonus damage when Kalista and her Oathsworn strike the same target. <br><br>Activate to send a soul to scout out the path, revealing the area in front of it.",
+      "cooldownBurn": "30"
+    },
+    {
+      "id": "KalistaExpungeWrapper",
+      "name": "Rend",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 0,
+        "full": "KalistaExpungeWrapper.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive: </spellPassive>Kalista's spears linger in their target for 4 seconds, stacking any number of times.<br /><br /><spellActive>Active:</spellActive> Kalista rips the spears from nearby enemies, dealing <physicalDamage>{{ normaldamage }}</physicalDamage> plus <physicalDamage>{{ additionaldamage }} physical damage</physicalDamage> per spear beyond the first. <status>Slows</status> enemies hit by <attention>{{ totalslowamount }}</attention> for {{ slowduration }} seconds.<br /><br />If this Ability kills at least one target, its Cooldown is refreshed and it refunds <scaleMana>{{ manarefund }} Mana</scaleMana>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Damage per Stack",
+          "AD Ratio per Stack",
+          "Move Speed Slow",
+          "Mana Refund",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Attacks impale their targets with spears. Activate to rip the spears out, slowing and dealing escalating damage.",
+      "cooldownBurn": "0"
+    },
+    {
+      "id": "KalistaRx",
+      "name": "Fate's Call",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 0,
+        "full": "KalistaRx.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Kalista puts her <keywordMajor>Oathsworn</keywordMajor> into Stasis and draws them to herself for up to 4 seconds. The <keywordMajor>Oathsworn</keywordMajor> can click to launch themselves, stopping at the first champion hit and <status>Knocking Back</status> all nearby enemies. If the <keywordMajor>Oathsworn</keywordMajor> hits a champion, they are placed at their maximum attack range from it.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Knockup Duration"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Kalista teleports the Oathsworn ally to herself. They gain the ability to dash toward a position, knocking enemy champions back.",
+      "cooldownBurn": "160/140/120"
+    }
+  ],
+  "passive_en": {
+    "name": "Martial Poise",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 288,
+      "y": 96,
+      "full": "Kalista_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Enter a movement command while winding up Kalista's basic attack or Pierce to lunge a short distance when she launches her attack."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Adc"
+  ],
+  "skins_en": [
+    {
+      "id": "429000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "429001",
+      "num": 1,
+      "name": "Blood Moon Kalista",
+      "chromas": false
+    },
+    {
+      "id": "429002",
+      "num": 2,
+      "name": "Worlds 2015 Kalista",
+      "chromas": true
+    },
+    {
+      "id": "429003",
+      "num": 3,
+      "name": "SKT T1 Kalista",
+      "chromas": false
+    },
+    {
+      "id": "429005",
+      "num": 5,
+      "name": "Marauder Kalista",
+      "chromas": true
+    },
+    {
+      "id": "429014",
+      "num": 14,
+      "name": "Faerie Court Kalista",
+      "chromas": true
+    },
+    {
+      "id": "429024",
+      "num": 24,
+      "name": "Dawnbringer Kalista",
+      "chromas": true
+    }
+  ]
+}

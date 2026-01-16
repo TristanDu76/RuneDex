@@ -1,0 +1,404 @@
+{
+  "id": "Quinn",
+  "key": "133",
+  "name": "Quinn",
+  "title": "Ailes de Demacia",
+  "version": "15.23.1",
+  "lore": "Quinn est un chevalier-éclaireur d'élite de Demacia qui se spécialise dans les missions d'infiltration en territoire ennemi. Avec son aigle de légende, Valor, elle forme un duo inséparable dont les proies rendent souvent l'âme avant même de comprendre qu'elles affrontaient non pas un, mais deux héros demaciens. D'une grande agilité quand la situation l'impose, Quinn pointe son arbalète sur l'ennemi pendant que Valor survole le terrain et marque les cibles évasives, pour une efficacité meurtrière sur le champ de bataille.",
+  "tags": [
+    "Marksman",
+    "Assassin"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 144,
+    "y": 48,
+    "full": "Quinn.png",
+    "group": "champion",
+    "sprite": "champion3.png"
+  },
+  "skins": [
+    {
+      "id": "133000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "133001",
+      "num": 1,
+      "name": "Quinn phénix",
+      "chromas": false
+    },
+    {
+      "id": "133002",
+      "num": 2,
+      "name": "Quinn éclaireur pastel",
+      "chromas": false
+    },
+    {
+      "id": "133003",
+      "num": 3,
+      "name": "Quinn corsaire",
+      "chromas": false
+    },
+    {
+      "id": "133004",
+      "num": 4,
+      "name": "Quinn cœur-de-cible",
+      "chromas": false
+    },
+    {
+      "id": "133005",
+      "num": 5,
+      "name": "Quinn purificatrice",
+      "chromas": true
+    },
+    {
+      "id": "133014",
+      "num": 14,
+      "name": "Quinn gardienne des étoiles",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "QuinnQ",
+      "name": "Assaut aveuglant",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 144,
+        "full": "QuinnQ.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Quinn ordonne à Valor d'attaquer, rendant <keywordMajor>vulnérable</keywordMajor> le premier ennemi touché, réduisant son champ de vision pendant {{ e3 }} sec et infligeant <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> à tous les ennemis proches.<br /><br />Si le premier ennemi touché n'est pas un champion, il est <status>désarmé</status> pendant {{ e3 }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ratio de dégâts d'attaque bonus",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1025",
+      "datavalues": {},
+      "description": "Quinn fait appel à Valor pour marquer un ennemi et limiter sa vision avant de blesser tous les ennemis proches.",
+      "cooldownBurn": "11/10.5/10/9.5/9"
+    },
+    {
+      "id": "QuinnW",
+      "name": "Œil d'aigle",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 144,
+        "full": "QuinnW.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> attaquer une cible <keywordMajor>vulnérable</keywordMajor> octroie à Quinn <attackSpeed>+{{ attackspeedbonus*100 }}% de vitesse d'attaque</attackSpeed> et <speed>+{{ e3 }}% de vitesse de déplacement</speed> pendant {{ e1 }} sec.<br /><br /><spellActive>Active :</spellActive> Valor révèle une large zone proche pendant {{ e5 }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Vitesse d'attaque",
+          "Vitesse de déplacement",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "2100",
+      "datavalues": {},
+      "description": "Confère passivement de plus grandes vitesses d'attaque et de déplacement à Quinn lorsqu'elle a attaqué un ennemi <font color='#FFF673'>vulnérable</font>. Activer pour que Valor révèle une large zone proche.",
+      "cooldownBurn": "50/45/40/35/30"
+    },
+    {
+      "id": "QuinnE",
+      "name": "Salto",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 144,
+        "full": "QuinnE.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Quinn se rue sur un ennemi, lui infligeant <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> et le rendant <keywordMajor>vulnérable</keywordMajor>. Quinn bondit ensuite vers l'arrière, <status>repoussant</status> légèrement l'ennemi et le <status>ralentissant</status> de {{ e1 }}% (ce ralentissement diminue en {{ e3 }} sec).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "675",
+      "datavalues": {},
+      "description": "Quinn charge un ennemi, lui infligeant des dégâts physiques et réduisant sa vitesse de déplacement. Après avoir atteint sa cible, elle prend appui sur celle-ci, l'interrompt brièvement et se projette en arrière sur une distance équivalente à sa portée d'attaque max.",
+      "cooldownBurn": "12/11/10/9/8"
+    },
+    {
+      "id": "QuinnR",
+      "name": "En territoire ennemi",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 144,
+        "full": "QuinnR.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Quinn demande à Valor de la porter. Après une canalisation de 2 sec, elle gagne <speed>+{{ movementspeedmod*100 }}% de vitesse de déplacement</speed> et elle peut <recast>réactiver</recast> cette compétence. Attaquer ou utiliser <spellName>Assaut aveuglant</spellName> ou <spellName>Salto</spellName> <recast>réactive</recast> automatiquement cette compétence.<br /><br /><recast>Réactivation</recast> : Quinn et Valor effectuent une manœuvre aérienne, infligeant <physicalDamage>{{ damage }} pts de dégâts physiques</physicalDamage>, marquant les champions comme <keywordMajor>vulnérables</keywordMajor> et mettant fin à cette compétence.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100/50/0",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Vitesse de déplacement",
+          "Coût en mana"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Quinn et Valor s'unissent pour voler à grande vitesse. Mettre fin à la compétence lance Volée fatale, qui inflige des dégâts aux ennemis proches et rend les champions vulnérables.",
+      "cooldownBurn": "3"
+    }
+  ],
+  "passive": {
+    "name": "Busard",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 144,
+      "y": 48,
+      "full": "Quinn_Passive.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Valor, l'aigle demacien de Quinn, marque périodiquement des ennemis, les rendant <font color='#FFF673'>vulnérables</font>. La première attaque de base de Quinn contre une cible <font color='#FFF673'>vulnérable</font> inflige des dégâts physiques supplémentaires."
+  },
+  "created_at": "2025-11-26T15:13:34.616021+00:00",
+  "factions": [
+    "demacia"
+  ],
+  "custom_tags": [
+    "ranger",
+    "éclaireur"
+  ],
+  "gender": "Female",
+  "species": "Human",
+  "title_en": "Demacia's Wings",
+  "lore_en": "Quinn is an elite ranger-knight of Demacia, who undertakes dangerous missions deep in enemy territory. She and her legendary eagle, Valor, share an unbreakable bond, and their foes are often slain before they realize they are fighting not one, but two of the kingdom's greatest heroes. Nimble and acrobatic when required, Quinn takes aim with her crossbow while Valor marks their elusive targets from above, making them a deadly pair on the battlefield.",
+  "spells_en": [
+    {
+      "id": "QuinnQ",
+      "name": "Blinding Assault",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 144,
+        "full": "QuinnQ.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Quinn orders Valor to dive, making the first enemy hit <keywordMajor>Vulnerable</keywordMajor>, reducing their vision radius for {{ e3 }} seconds and dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> to all surrounding enemies.<br /><br />If the first enemy struck is not a champion, it is <status>Disarmed</status> for {{ e3 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Bonus AD Ratio",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1025",
+      "datavalues": {},
+      "description": "Quinn calls Valor to mark an enemy and hinder its vision before damaging all enemies in the immediate area.",
+      "cooldownBurn": "11/10.5/10/9.5/9"
+    },
+    {
+      "id": "QuinnW",
+      "name": "Heightened Senses",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 144,
+        "full": "QuinnW.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Attacking a <keywordMajor>Vulnerable</keywordMajor> target grants Quinn <attackSpeed>{{ attackspeedbonus*100 }}% Attack Speed</attackSpeed> and <speed>{{ e3 }}% Move Speed</speed> for {{ e1 }} seconds.<br /><br /><spellActive>Active:</spellActive> Valor reveals a large area nearby for {{ e5 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Attack Speed",
+          "Move Speed",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "2100",
+      "datavalues": {},
+      "description": "Passively grants Quinn Attack Speed and Move Speed after she attacks a <font color='#FFF673'>Vulnerable</font> target. Activate to have Valor reveal a large area nearby.",
+      "cooldownBurn": "50/45/40/35/30"
+    },
+    {
+      "id": "QuinnE",
+      "name": "Vault",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 144,
+        "full": "QuinnE.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Quinn dashes to an enemy, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> and marking them <keywordMajor>Vulnerable</keywordMajor>. Quinn then leaps backwards from the target, slightly <status>Knocking</status> them <status>Back</status> and <status>Slowing</status> them by {{ e1 }}%, decaying over {{ e3 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "675",
+      "datavalues": {},
+      "description": "Quinn dashes to an enemy, dealing physical damage and slowing the target's Move Speed. Upon reaching the target, she leaps off the target, briefly interrupting it, and lands near her maximum Attack Range away from the target.",
+      "cooldownBurn": "12/11/10/9/8"
+    },
+    {
+      "id": "QuinnR",
+      "name": "Behind Enemy Lines",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 144,
+        "full": "QuinnR.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Quinn calls to Valor, pairing up after channeling for 2 seconds gaining <speed>{{ movementspeedmod*100 }}% Move Speed</speed> and allowing her to <recast>Recast</recast> this Ability. Attacking or using <spellName>Blinding Assault</spellName> or <spellName>Vault</spellName> automatically <recast>Recasts</recast> this Ability.<br /><br /><recast>Recast</recast>: Quinn and Valor perform an aerial maneuver, dealing <physicalDamage>{{ damage }} physical damage</physicalDamage>, marking champions as <keywordMajor>Vulnerable</keywordMajor>, and ending this Ability.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100/50/0",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Move Speed",
+          "Mana Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Quinn and Valor team up to fly around at great speed.  Ending the ability casts Skystrike, which deals damage to nearby enemies and marks champions as Vulnerable.",
+      "cooldownBurn": "3"
+    }
+  ],
+  "passive_en": {
+    "name": "Harrier",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 144,
+      "y": 48,
+      "full": "Quinn_Passive.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Valor, Quinn's Demacian eagle, periodically marks enemies as <font color='#FFF673'>Vulnerable</font>. Quinn's first basic attack against <font color='#FFF673'>Vulnerable</font> targets will deal bonus physical damage."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Top"
+  ],
+  "skins_en": [
+    {
+      "id": "133000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "133001",
+      "num": 1,
+      "name": "Phoenix Quinn",
+      "chromas": false
+    },
+    {
+      "id": "133002",
+      "num": 2,
+      "name": "Woad Scout Quinn",
+      "chromas": false
+    },
+    {
+      "id": "133003",
+      "num": 3,
+      "name": "Corsair Quinn",
+      "chromas": false
+    },
+    {
+      "id": "133004",
+      "num": 4,
+      "name": "Heartseeker Quinn",
+      "chromas": false
+    },
+    {
+      "id": "133005",
+      "num": 5,
+      "name": "Warden Quinn",
+      "chromas": true
+    },
+    {
+      "id": "133014",
+      "num": 14,
+      "name": "Star Guardian Quinn",
+      "chromas": true
+    }
+  ]
+}

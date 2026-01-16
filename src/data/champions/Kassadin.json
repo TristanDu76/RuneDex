@@ -1,0 +1,442 @@
+{
+  "id": "Kassadin",
+  "key": "38",
+  "name": "Kassadin",
+  "title": "Chasseur du Néant",
+  "version": "15.23.1",
+  "lore": "Kassadin a commencé sa vie modestement comme un paria, guidant les caravanes de marchands à travers le désert du Grand Sai en Shurima et les protégeant des prédateurs. Les étrangers le surnommaient affectueusement « Kassadin » (déformation de « Kas sai a dyn ? », ou « Qui le désert connaît-il ? »). Il fit fortune en explorant les ruines antiques de sa patrie.\n\nPrès de Zirima, il trouva un trésor personnel : il tomba amoureux d'une femme d'une tribu du désert. Il s'installa avec elle et leur fille, Kaisa (qui deviendra plus tard Kai'Sa), dans un petit village au sud. Il continuait ses voyages, revenant toujours avec des récits passionnants.\n\nSon voyage de retour de Piltover fut interrompu lorsqu'il rencontra des survivants terrifiés qui racontaient qu'une gueule des enfers avait dévoré leurs maisons. Craignant pour sa famille, Kassadin rentra chez lui au galop, pour ne trouver que du sable mouvant et des décombres. Il creusa jusqu'à ce que ses mains saignent, en vain. Des jours plus tard, il n'était plus qu'un homme brisé et vide, pleurant sous le soleil.\n\nRéduit à l'état de vagabond pendant des années, il fut éveillé par la rumeur du « Prophète » qui exigeait des sacrifices aux puissances obscures. Kassadin, qui connaissait les légendes de la chute d'Icathia (ravagée par le Néant), comprit que l'abîme avait été délibérément rouvert. Le Néant avait tué sa famille.\n\nKassadin fit le serment de venger sa femme et sa fille en détruisant ce Prophète, Malzahar, et la source de son pouvoir abyssal.\n\nIl décida de s'armer des armes les plus ésotériques et arcaniques de Valoran :\n\nIl fit appel à des faveurs pour obtenir des technologies interdites, souvent de l'ingéniosité zaunienne.\n\nIl s'allia à des guérisseurs spirituels ioniens.\n\nEnfin, il vola l'infâme Lame du Néant de Horok (Nether Blade), une épée légendaire.\n\nIl ne se souciait plus de sa propre mortalité, n'ayant plus rien à perdre. Sous l'apparence d'un pèlerin, Kassadin se rendit aux ruines d'Icathia. Il allait là où aucun homme n'était censé aller, prêt à affronter les monstres du Néant, même si cela devait le tuer.",
+  "tags": [
+    "Assassin",
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 432,
+    "y": 96,
+    "full": "Kassadin.png",
+    "group": "champion",
+    "sprite": "champion1.png"
+  },
+  "skins": [
+    {
+      "id": "38000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "38001",
+      "num": 1,
+      "name": "Kassadin du Festival",
+      "chromas": false
+    },
+    {
+      "id": "38002",
+      "num": 2,
+      "name": "Kassadin des profondeurs",
+      "chromas": false
+    },
+    {
+      "id": "38003",
+      "num": 3,
+      "name": "Kassadin humain",
+      "chromas": false
+    },
+    {
+      "id": "38004",
+      "num": 4,
+      "name": "Kassadin héraut",
+      "chromas": false
+    },
+    {
+      "id": "38005",
+      "num": 5,
+      "name": "Kassadin faucheur cosmique",
+      "chromas": false
+    },
+    {
+      "id": "38006",
+      "num": 6,
+      "name": "Comte Kassadin",
+      "chromas": true
+    },
+    {
+      "id": "38014",
+      "num": 14,
+      "name": "Kassadin Hextech",
+      "chromas": false
+    },
+    {
+      "id": "38015",
+      "num": 15,
+      "name": "Kassadin électrolame",
+      "chromas": false
+    },
+    {
+      "id": "38024",
+      "num": 24,
+      "name": "Kassadin dracomancien",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "NullLance",
+      "name": "Orbe du Néant",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 48,
+        "full": "NullLance.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Kassadin tire un orbe d'énergie du Néant qui inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> et qui interrompt les canalisations. Kassadin gagne également un <shield>bouclier pouvant bloquer {{ totalshield }} pts de dégâts magiques</shield> pendant 1.5 sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "PV du bouclier",
+          "Coût en @AbilityResourceName@",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Kassadin tire un orbe d'énergie du Néant sur sa cible, infligeant des dégâts et interrompant les canalisations. Le surplus d'énergie lui confère un bouclier temporaire qui absorbe les dégâts magiques.",
+      "cooldownBurn": "10/9.5/9/8.5/8"
+    },
+    {
+      "id": "NetherBlade",
+      "name": "Lame éthérée",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 48,
+        "full": "NetherBlade.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> les attaques de Kassadin infligent <magicDamage>{{ onhitdamage }} pts de dégâts magiques</magicDamage> bonus.<br /><br /><spellActive>Active :</spellActive> Kassadin charge sa lame, ce qui permet à sa prochaine attaque d'infliger <magicDamage>{{ activedamage }} pts de dégâts magiques</magicDamage> et de régénérer <scaleMana>{{ missingmanaratio }}% de son mana manquant</scaleMana> (<scaleMana>{{ championmissingmanaratio }}%</scaleMana> contre les champions).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "1",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts actifs",
+          "Mana rendu de base",
+          "Mana rendu contre les champions"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1",
+      "datavalues": {},
+      "description": "Passive : les attaques de base de Kassadin infligent des dégâts magiques supplémentaires. Active : la prochaine attaque de base de Kassadin inflige d'importants dégâts magiques supplémentaires et lui rend du mana.",
+      "cooldownBurn": "7"
+    },
+    {
+      "id": "ForcePulse",
+      "name": "Pulsation",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 48,
+        "full": "ForcePulse.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> le délai de récupération de <spellName>Pulsation</spellName> est réduit de {{ reductionperspellcast }} sec chaque fois qu'une compétence est activée près de Kassadin.<br /><br /><spellActive>Active :</spellActive> Kassadin provoque une pulsation d'énergie du Néant, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> et <status>ralentissant</status> les ennemis de {{ e2 }}% pendant {{ e3 }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ralentissement",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Kassadin tire de l'énergie des sorts lancés près de lui. Après avoir tiré assez d'énergie, Kassadin peut utiliser Pulsation pour blesser et ralentir les ennemis dans une zone en forme de cône devant lui.",
+      "cooldownBurn": "21/20/19/18/17"
+    },
+    {
+      "id": "RiftWalk",
+      "name": "Fissure",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 48,
+        "full": "RiftWalk.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Kassadin se téléporte dans une zone proche et inflige <magicDamage>{{ basedamage }} pts de dégâts magiques</magicDamage>.<br /><br />Chaque nouvelle utilisation de cette compétence dans les {{ rstackduration }} sec double le coût en mana et inflige <magicDamage>{{ bonusdamage }} pts de dégâts magiques</magicDamage> supplémentaires. L'augmentation du coût et des dégâts est cumulable jusqu'à {{ maxstacks }} fois.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Dégâts par effet cumulé",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "500",
+      "datavalues": {},
+      "description": "Kassadin se téléporte vers une destination proche, blessant les ennemis se trouvant à proximité. Chaque utilisation de Fissure dans une courte période augmente le coût en mana et les dégâts de la Fissure suivante.",
+      "cooldownBurn": "5/3.5/2"
+    }
+  ],
+  "passive": {
+    "name": "Pierre du Néant",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 432,
+      "y": 96,
+      "full": "Kassadin_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Kassadin subit moins de dégâts magiques et peut traverser les unités."
+  },
+  "created_at": "2025-11-26T15:13:33.462857+00:00",
+  "factions": [
+    "void",
+    "shurima"
+  ],
+  "custom_tags": null,
+  "gender": "Male",
+  "species": "Human",
+  "title_en": "the Void Walker",
+  "lore_en": "Kassadin began life as a lowly offcast, guiding merchant caravans across the harsh sands of the Great Sai in Shurima. His talents were sought after, and he became known as Kassadin in the back alleys and markets of Bel'zhun. After years of exploring ancient ruins, he found a treasure of his own near Zirima—he fell in love with a woman from a desert tribe. He settled with his wife and newborn daughter, Kaisa (who would become Kai'Sa), in a small village to the south.\n\nOn a journey home from distant Piltover, Kassadin met terrified survivors stumbling out of the desert, speaking of a disaster that had swallowed their homes. Fearing for his family, Kassadin rode hard. When he finally reached his village, he found only shifting sand and rubble. He clawed at the debris, screaming his wife and daughter’s names, finding no answer. For days, he was a broken, empty man, convinced his family was dead.\n\nReduced to a vagrant, Kassadin's despair was broken when word reached town of \"the Prophet.\" Whispers of unspeakable horrors beneath the earth and sacrifices made in their name chilled him. He knew the legends of doomed Icathia and realized the Void had been deliberately drawn toward Shurima.\n\nKassadin swore he would avenge his wife and daughter by destroying the insidious Prophet, Malzahar, and the source of his abyssal power.\n\nHe resolved to arm himself with the most arcane and esoteric weapons in Valoran:\n\nHe called in favors for forbidden technologies, often leveraging Zaunite ingenuity.\n\nHe sought blessings from Ionian spirit-healers.\n\nFinally, he stole the infamous Nether Blade of Horok, a legendary sword.\n\nHe no longer cared for his own mortality, having nothing left to lose. Disguised as a pilgrim, Kassadin made his way into Icathia. He would go where no man was ever meant to walk, ready to confront the monsters of the Void, even if it meant his death.",
+  "spells_en": [
+    {
+      "id": "NullLance",
+      "name": "Null Sphere",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 48,
+        "full": "NullLance.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Kassadin fires an orb of void energy, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> and interrupting channels. Kassadin also gains <shield>{{ totalshield }} Magic Shield</shield> for 1.5 seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Shield Amount",
+          "@AbilityResourceName@ Cost",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Kassadin fires an orb of void energy at a target, dealing damage and interrupting channels. The excess energy forms around himself, granting a temporary shield that absorbs magic damage.",
+      "cooldownBurn": "10/9.5/9/8.5/8"
+    },
+    {
+      "id": "NetherBlade",
+      "name": "Nether Blade",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 48,
+        "full": "NetherBlade.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Kassadin's Attacks deal an additional <magicDamage>{{ onhitdamage }} magic damage</magicDamage>.<br /><br /><spellActive>Active:</spellActive> Kassadin charges his blade, causing his next Attack to deal <magicDamage>{{ activedamage }} magic damage</magicDamage> and restore <scaleMana>{{ missingmanaratio }}% missing Mana</scaleMana>, increased to <scaleMana>{{ championmissingmanaratio }}%</scaleMana> against champions.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "1",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Active Damage",
+          "Base Mana Restore",
+          "Champion Mana Restore"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1",
+      "datavalues": {},
+      "description": "Passive: Kassadin's basic attacks deal bonus magic damage. Active: Kassadin's next basic attack deals significant bonus magic damage and restores Mana.",
+      "cooldownBurn": "7"
+    },
+    {
+      "id": "ForcePulse",
+      "name": "Force Pulse",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 48,
+        "full": "ForcePulse.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> <spellName>Force Pulse's</spellName> Cooldown is reduced by {{ reductionperspellcast }} second whenever any Ability is used near Kassadin.<br /><br /><spellActive>Active:</spellActive> Kassadin unleashes a void pulse, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> and <status>Slowing</status> by {{ e2 }}% for {{ e3 }} second.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Slow",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Kassadin draws energy from spells cast in his vicinity. Upon charging up, Kassadin can use Force Pulse to damage and slow enemies in a cone in front of him.",
+      "cooldownBurn": "21/20/19/18/17"
+    },
+    {
+      "id": "RiftWalk",
+      "name": "Riftwalk",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 48,
+        "full": "RiftWalk.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Kassadin teleports to a nearby location, dealing <magicDamage>{{ basedamage }} magic damage</magicDamage>.<br /><br />Each subsequent use of this Ability within the next {{ rstackduration }} seconds doubles the Mana cost and deals an additional <magicDamage>{{ bonusdamage }} magic damage</magicDamage>. The cost and damage increases can stack up to {{ maxstacks }} times.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Damage Per Stack",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "500",
+      "datavalues": {},
+      "description": "Kassadin teleports to a nearby location dealing damage to nearby enemy units. Multiple Riftwalks in a short period of time cost additional Mana but also deal additional damage.",
+      "cooldownBurn": "5/3.5/2"
+    }
+  ],
+  "passive_en": {
+    "name": "Void Stone",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 432,
+      "y": 96,
+      "full": "Kassadin_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Kassadin takes reduced magic damage and ignores unit collision."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Mid"
+  ],
+  "skins_en": [
+    {
+      "id": "38000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "38001",
+      "num": 1,
+      "name": "Festival Kassadin",
+      "chromas": false
+    },
+    {
+      "id": "38002",
+      "num": 2,
+      "name": "Deep One Kassadin",
+      "chromas": false
+    },
+    {
+      "id": "38003",
+      "num": 3,
+      "name": "Pre-Void Kassadin",
+      "chromas": false
+    },
+    {
+      "id": "38004",
+      "num": 4,
+      "name": "Harbinger Kassadin",
+      "chromas": false
+    },
+    {
+      "id": "38005",
+      "num": 5,
+      "name": "Cosmic Reaver Kassadin",
+      "chromas": false
+    },
+    {
+      "id": "38006",
+      "num": 6,
+      "name": "Count Kassadin",
+      "chromas": true
+    },
+    {
+      "id": "38014",
+      "num": 14,
+      "name": "Hextech Kassadin",
+      "chromas": false
+    },
+    {
+      "id": "38015",
+      "num": 15,
+      "name": "Shockblade Kassadin",
+      "chromas": false
+    },
+    {
+      "id": "38024",
+      "num": 24,
+      "name": "Dragonmancer Kassadin",
+      "chromas": false
+    }
+  ]
+}

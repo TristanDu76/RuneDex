@@ -1,0 +1,528 @@
+{
+  "id": "Riven",
+  "key": "92",
+  "name": "Riven",
+  "title": "Exilée brisée",
+  "version": "15.23.1",
+  "lore": "Autrefois soldat d'un régiment de Noxus, Riven est désormais expatriée dans un pays qu'elle avait elle-même tenté d'envahir. Elle s'est naguère élevée dans la hiérarchie grâce à sa force de conviction et à son efficacité brutale : sa récompense fut de commander ses propres troupes, armée d'une épée runique légendaire. Cependant, sur le front ionien, la foi de Riven en sa terre natale a vacillé avant de rompre. Ayant tranché tous ses liens avec l'empire, elle cherche désormais sa place dans un monde blessé, alors même que, d'après les rumeurs, Noxus a retrouvé sa vigueur d'antan…",
+  "tags": [
+    "Fighter",
+    "Assassin"
+  ],
+  "partype": "Aucune",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 48,
+    "y": 96,
+    "full": "Riven.png",
+    "group": "champion",
+    "sprite": "champion3.png"
+  },
+  "skins": [
+    {
+      "id": "92000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "92001",
+      "num": 1,
+      "name": "Riven repentie",
+      "chromas": false
+    },
+    {
+      "id": "92002",
+      "num": 2,
+      "name": "Riven Némésis",
+      "chromas": false
+    },
+    {
+      "id": "92003",
+      "num": 3,
+      "name": "Riven lapin de combat",
+      "chromas": true
+    },
+    {
+      "id": "92004",
+      "num": 4,
+      "name": "Riven des Worlds 2012",
+      "chromas": false
+    },
+    {
+      "id": "92005",
+      "num": 5,
+      "name": "Riven lame du dragon",
+      "chromas": true
+    },
+    {
+      "id": "92006",
+      "num": 6,
+      "name": "Riven arcade",
+      "chromas": true
+    },
+    {
+      "id": "92007",
+      "num": 7,
+      "name": "Riven des Worlds 2012 ravivée",
+      "chromas": true
+    },
+    {
+      "id": "92016",
+      "num": 16,
+      "name": "Riven héraut de l'aube",
+      "chromas": true
+    },
+    {
+      "id": "92018",
+      "num": 18,
+      "name": "Riven Pulsefire",
+      "chromas": true
+    },
+    {
+      "id": "92020",
+      "num": 20,
+      "name": "Riven à l'épée vaillante",
+      "chromas": false
+    },
+    {
+      "id": "92022",
+      "num": 22,
+      "name": "Riven à l'épée vaillante prestige",
+      "chromas": false
+    },
+    {
+      "id": "92023",
+      "num": 23,
+      "name": "Riven fleur spirituelle",
+      "chromas": true
+    },
+    {
+      "id": "92034",
+      "num": 34,
+      "name": "Riven Sentinelle",
+      "chromas": true
+    },
+    {
+      "id": "92044",
+      "num": 44,
+      "name": "Riven super lapin de combat",
+      "chromas": true
+    },
+    {
+      "id": "92045",
+      "num": 45,
+      "name": "Riven à l'épée vaillante prestige (2022)",
+      "chromas": false
+    },
+    {
+      "id": "92055",
+      "num": 55,
+      "name": "Riven de l'Alliance brisée",
+      "chromas": true
+    },
+    {
+      "id": "92063",
+      "num": 63,
+      "name": "Riven embuscade férale",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "RivenTriCleave",
+      "name": "Ailes brisées",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 96,
+        "full": "RivenTriCleave.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Riven se rue vers l'avant, infligeant <physicalDamage>{{ firstslashdamage }} pts de dégâts physiques</physicalDamage>. Elle peut <recast>réactiver</recast> cette compétence deux fois. La première <recast>réactivation</recast> est identique à l'activation d'origine, mais la seconde a un effet différent :<br /><br /><recast>Réactivation</recast> : Riven saute vers l'avant et retombe lourdement, infligeant <physicalDamage>{{ firstslashdamage }} pts de dégâts physiques</physicalDamage> et <status>projetant dans les airs</status> les ennemis proches pendant 0.75 sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ratio de dégâts d'attaque"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "275",
+      "datavalues": {},
+      "description": "Riven se déchaîne et lance une série de coups. Cette compétence peut être réactivée trois fois pendant une courte période et le troisième coup repousse les ennemis proches.",
+      "cooldownBurn": "13"
+    },
+    {
+      "id": "RivenMartyr",
+      "name": "Décharge de ki",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 96,
+        "full": "RivenMartyr.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Riven lance une décharge d'énergie runique qui inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> et <status>étourdit</status> les ennemis pendant {{ e5 }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "260",
+      "datavalues": {},
+      "description": "Riven lance une décharge de ki, blessant et étourdissant les ennemis proches.",
+      "cooldownBurn": "11/10/9/8/7"
+    },
+    {
+      "id": "RivenFeint",
+      "name": "Bravoure",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 96,
+        "full": "RivenFeint.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Riven se rue rapidement dans une direction et gagne un <shield>bouclier de {{ totalshield }} PV</shield> pendant 1.5 sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "PV du bouclier",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "250",
+      "datavalues": {},
+      "description": "Riven avance sur une courte distance et bloque des dégâts.",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "RivenFengShuiEngine",
+      "name": "Lame de l'exilée",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 96,
+        "full": "RivenFengShuiEngine.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "L'arme de Riven se remplit d'énergie spirituelle, lui octroyant <physicalDamage>+{{ bonusad }} dégâts d'attaque</physicalDamage> et augmentant la portée de ses compétences blessantes et de ses attaques pendant {{ duration }} sec. Pendant cette durée, elle peut <recast>réactiver</recast> cette compétence.<br /><br /><recast>Réactivation :</recast> Riven projette une rafale de vent qui inflige de <physicalDamage>{{ mindamage }}</physicalDamage> à <physicalDamage>{{ maxdamage }} pts de dégâts physiques</physicalDamage>, selon les PV manquants des ennemis.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts minimum de l'onde de choc",
+          "Dégâts maximum de l'onde de choc",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "200",
+      "datavalues": {},
+      "description": "Riven renforce son arme avec de l'énergie, augmentant ses dégâts d'attaque et sa portée. Pendant la durée de cet effet, Riven peut utiliser une fois Taillade du vent, une puissante attaque à distance.",
+      "cooldownBurn": "120/90/60"
+    }
+  ],
+  "passive": {
+    "name": "Lame runique",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 48,
+      "y": 96,
+      "full": "RivenRunicBlades.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Les compétences de Riven chargent sa lame, ce qui permet à ses attaques de base d'infliger des dégâts supplémentaires en consommant des charges."
+  },
+  "created_at": "2025-11-26T15:13:34.800791+00:00",
+  "factions": [
+    "noxus",
+    "ionia"
+  ],
+  "custom_tags": null,
+  "gender": "Female",
+  "species": "Human",
+  "title_en": "the Exile",
+  "lore_en": "Once a swordmaster in the warhosts of Noxus, Riven is an expatriate in a land she previously tried to conquer. She rose through the ranks on the strength of her conviction and brutal efficiency, and was rewarded with a legendary runic blade and a warband of her own. However, on the Ionian front, Riven's faith in her homeland was tested and ultimately broken. Having severed all ties to the empire, she now seeks to find her place in a shattered world, even as rumors abound that Noxus itself has been reforged...",
+  "spells_en": [
+    {
+      "id": "RivenTriCleave",
+      "name": "Broken Wings",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 96,
+        "full": "RivenTriCleave.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Riven dashes forward, dealing <physicalDamage>{{ firstslashdamage }} physical damage</physicalDamage>. She can <recast>Recast</recast> this Ability twice. The first <recast>Recast</recast> is the same as the original, but the second has a different effect:<br /><br /><recast>Recast</recast>: Riven leaps forward and slams, dealing <physicalDamage>{{ firstslashdamage }} physical damage</physicalDamage> and <status>Knocks Up</status> nearby enemies for 0.75 seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Attack Damage Ratio"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "275",
+      "datavalues": {},
+      "description": "Riven lashes out in a series of strikes. This ability can be reactivated three times in a short time frame with the third hit knocking back nearby enemies.",
+      "cooldownBurn": "13"
+    },
+    {
+      "id": "RivenMartyr",
+      "name": "Ki Burst",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 96,
+        "full": "RivenMartyr.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Riven's sword emits a burst of runic energy, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> and <status>Stunning</status> for {{ e5 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "260",
+      "datavalues": {},
+      "description": "Riven emits a Ki Burst, damaging and stunning nearby enemies.",
+      "cooldownBurn": "11/10/9/8/7"
+    },
+    {
+      "id": "RivenFeint",
+      "name": "Valor",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 96,
+        "full": "RivenFeint.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Riven quickly dashes and gains <shield>{{ totalshield }} Shield</shield> for 1.5 seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Shield Amount",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "250",
+      "datavalues": {},
+      "description": "Riven steps forward a short distance and blocks incoming damage.",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "RivenFengShuiEngine",
+      "name": "Blade of the Exile",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 96,
+        "full": "RivenFengShuiEngine.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Riven's weapon surges with spiritual energy, granting her <physicalDamage>{{ bonusad }} Attack Damage</physicalDamage> and increased range on damaging Abilities and Attacks for {{ duration }} seconds. While active, she can <recast>Recast.</recast><br /><br /><recast>Recast:</recast> Riven fires a wind slash that deals between <physicalDamage>{{ mindamage }}</physicalDamage> and <physicalDamage>{{ maxdamage }} physical damage</physicalDamage>, based on their missing Health.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Minimum Shockwave Damage",
+          "Maximum Shockwave Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "200",
+      "datavalues": {},
+      "description": "Riven empowers her keepsake weapon with energy, and gains Attack Damage and Range. During this time, she also gains the ability to use Wind Slash, a powerful ranged attack, once.",
+      "cooldownBurn": "120/90/60"
+    }
+  ],
+  "passive_en": {
+    "name": "Runic Blade",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 48,
+      "y": 96,
+      "full": "RivenRunicBlades.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Riven's abilities charge her blade, and her basic attacks expend charges to deal an additional damage."
+  },
+  "partype_en": "None",
+  "lanes": [
+    "Top"
+  ],
+  "skins_en": [
+    {
+      "id": "92000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "92001",
+      "num": 1,
+      "name": "Redeemed Riven",
+      "chromas": false
+    },
+    {
+      "id": "92002",
+      "num": 2,
+      "name": "Crimson Elite Riven",
+      "chromas": false
+    },
+    {
+      "id": "92003",
+      "num": 3,
+      "name": "Battle Bunny Riven",
+      "chromas": true
+    },
+    {
+      "id": "92004",
+      "num": 4,
+      "name": "Worlds 2012 Riven",
+      "chromas": false
+    },
+    {
+      "id": "92005",
+      "num": 5,
+      "name": "Dragonblade Riven",
+      "chromas": true
+    },
+    {
+      "id": "92006",
+      "num": 6,
+      "name": "Arcade Riven",
+      "chromas": true
+    },
+    {
+      "id": "92007",
+      "num": 7,
+      "name": "Reignited Worlds 2012 Riven",
+      "chromas": true
+    },
+    {
+      "id": "92016",
+      "num": 16,
+      "name": "Dawnbringer Riven",
+      "chromas": true
+    },
+    {
+      "id": "92018",
+      "num": 18,
+      "name": "Pulsefire Riven",
+      "chromas": true
+    },
+    {
+      "id": "92020",
+      "num": 20,
+      "name": "Valiant Sword Riven",
+      "chromas": false
+    },
+    {
+      "id": "92022",
+      "num": 22,
+      "name": "Prestige Valiant Sword Riven",
+      "chromas": false
+    },
+    {
+      "id": "92023",
+      "num": 23,
+      "name": "Spirit Blossom Riven",
+      "chromas": true
+    },
+    {
+      "id": "92034",
+      "num": 34,
+      "name": "Sentinel Riven",
+      "chromas": true
+    },
+    {
+      "id": "92044",
+      "num": 44,
+      "name": "Battle Bunny Prime Riven",
+      "chromas": true
+    },
+    {
+      "id": "92045",
+      "num": 45,
+      "name": "Prestige Valiant Sword Riven (2022)",
+      "chromas": false
+    },
+    {
+      "id": "92055",
+      "num": 55,
+      "name": "Broken Covenant Riven",
+      "chromas": true
+    },
+    {
+      "id": "92063",
+      "num": 63,
+      "name": "Primal Ambush Riven",
+      "chromas": true
+    }
+  ]
+}

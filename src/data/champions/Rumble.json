@@ -1,0 +1,399 @@
+{
+  "id": "Rumble",
+  "key": "68",
+  "name": "Rumble",
+  "title": "Menace mécanisée",
+  "version": "15.23.1",
+  "lore": "Rumble est un jeune inventeur soupe au lait. Ne disposant que de ses deux mains et d'une pile de ferraille, le yordle au tempérament de feu se fabriqua une colossale armure mécanique, dotée d'un arsenal de harpons électrifiés et de roquettes incendiaires. Si certains pouffent devant ses créations sorties tout droit d'une décharge, Rumble n'en a que faire : après tout, c'est lui qui est doté d'un lance-flammes.",
+  "tags": [
+    "Fighter",
+    "Mage"
+  ],
+  "partype": "Vapeur",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 96,
+    "y": 96,
+    "full": "Rumble.png",
+    "group": "champion",
+    "sprite": "champion3.png"
+  },
+  "skins": [
+    {
+      "id": "68000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "68001",
+      "num": 1,
+      "name": "Rumble de la jungle",
+      "chromas": false
+    },
+    {
+      "id": "68002",
+      "num": 2,
+      "name": "Rumble de Bilgewater",
+      "chromas": false
+    },
+    {
+      "id": "68003",
+      "num": 3,
+      "name": "Super Rumble intergalactique",
+      "chromas": false
+    },
+    {
+      "id": "68004",
+      "num": 4,
+      "name": "Rumble baron des friches",
+      "chromas": true
+    },
+    {
+      "id": "68013",
+      "num": 13,
+      "name": "Rumble astro-groove",
+      "chromas": true
+    },
+    {
+      "id": "68023",
+      "num": 23,
+      "name": "Rumble Café Chouchous",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "RumbleFlameThrower",
+      "name": "Lance-flammes",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 96,
+        "full": "RumbleFlameThrower.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Rumble tire avec son lance-flammes, infligeant des <magicDamage>dégâts magiques équivalents à {{ flatdamage }} plus {{ healthdamage*100 }}% des PV max de la cible</magicDamage> en {{ flamespitterduration }} sec. Les dégâts sont réduits à <attention>{{ minionmod*100 }}%</attention> contre les sbires.<br /><br /><keywordMajor>Zone rouge :</keywordMajor> les dégâts sont augmentés à <magicDamage>{{ empowereddamage }} plus {{ empoweredhealth }} des PV max de la cible</magicDamage>.<br /><br /><rules>Les dégâts selon les PV max sont limités à {{ monstercap }} contre les monstres. </rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": " pts de Vapeur",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Pourcentage des PV max",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ initialheatcost }} pts de Vapeur",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Rumble enflamme les adversaires devant lui, infligeant des dégâts magiques dans une zone conique pendant 3 sec. Dans la Zone rouge, les dégâts augmentent.",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "RumbleShield",
+      "name": "Bouclier recyclé",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 96,
+        "full": "RumbleShield.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Rumble lève une barrière, gagnant un <shield>bouclier de {{ totalshield }} PV</shield> pendant {{ shieldduration.1 }} sec et <speed>+{{ movespeed*100 }}% de vitesse de déplacement</speed> pendant {{ movespeedduration }} sec.<br /><br /><keywordMajor>Zone rouge :</keywordMajor> la barrière octroie à la place un <shield>bouclier de {{ empoweredshield }} PV</shield> et <speed>+{{ empoweredms }} vitesse de déplacement</speed>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": " pts de Vapeur",
+      "leveltip": {
+        "label": [
+          "PV du bouclier",
+          "Vitesse de déplacement"
+        ]
+      },
+      "resource": "{{ heatcost }} pts de Vapeur",
+      "rangeBurn": "20",
+      "datavalues": {},
+      "description": "Rumble crée un bouclier qui le protège des dégâts et lui donne un bonus de rapidité. Dans la Zone rouge, les PV du bouclier et le bonus de vitesse sont augmentés.",
+      "cooldownBurn": "6"
+    },
+    {
+      "id": "RumbleGrenade",
+      "name": "Harpon électrique",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 96,
+        "full": "RumbleGrenade.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "2",
+      "maxrank": 5,
+      "tooltip": "Rumble tire un harpon électrifié, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>, <status>ralentissant</status> l'ennemi touché de {{ baseslowamount }}% pendant {{ slowduration }} sec et réduisant sa <scaleMR>résistance magique</scaleMR> de {{ percmagicpen*100 }}% pendant {{ shredduration }} sec.<br /><br />Contre un ennemi déjà <status>ralenti</status> par cette compétence, le <status>ralentissement</status> est augmenté à {{ empoweredslowamount }}% et la <scaleMR>résistance magique</scaleMR> de l'ennemi est réduite de {{ enhancedmagicpen*100 }}%.<br /><br /><keywordMajor>Zone rouge :</keywordMajor> le harpon inflige à la place <magicDamage>{{ empdamage }} pts de dégâts magiques</magicDamage> et le <status>ralentissement</status> et la réduction de <scaleMR>résistance magique</scaleMR> sont augmentés de 50%.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": " pts de Vapeur",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ralentissement",
+          "Réduction de résistance magique"
+        ]
+      },
+      "resource": "{{ firstcastheatcost }} pts de Vapeur",
+      "rangeBurn": "850",
+      "datavalues": {},
+      "description": "Rumble tire un harpon qui électrocute sa cible, lui infligeant des dégâts magiques et réduisant sa vitesse de déplacement et sa résistance magique. Rumble peut porter 2 harpons en même temps. Dans la Zone rouge, les dégâts et le pourcentage de ralentissement sont augmentés.",
+      "cooldownBurn": "0.5"
+    },
+    {
+      "id": "RumbleCarpetBomb",
+      "name": "Éradication",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 96,
+        "full": "RumbleCarpetBomb.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Rumble tire une bordée de roquettes, créant une traînée de feu qui dure {{ trailduration }} secondes, <status>ralentissant</status> les ennemis de {{ slowamount }}% et infligeant <magicDamage>{{ damagepersecond }} pts de dégâts magiques</magicDamage> par seconde.<br /><br />Rumble peut contrôler la direction de la traînée en cliquant et en déplaçant le curseur tout en lançant cette compétence.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts par seconde",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "1750",
+      "datavalues": {},
+      "description": "Rumble tire une bordée de roquettes, créant un mur de flammes qui blesse et ralentit les ennemis.",
+      "cooldownBurn": "130/105/80"
+    }
+  ],
+  "passive": {
+    "name": "Titan de bric-à-brac",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 96,
+      "y": 96,
+      "full": "Rumble_JunkyardTitan1.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Chaque compétence lancée par Rumble augmente sa Vapeur. Quand Rumble atteint 50% de Vapeur, il entre dans la Zone rouge, ce qui confère des effets bonus à ses compétences de base. Quand il atteint 100% de Vapeur, il entre en Surchauffe, ce qui lui octroie de la vitesse d'attaque bonus et lui permet d'infliger des dégâts supplémentaires avec ses attaques de base, mais l'empêche d'utiliser ses compétences pendant quelques secondes."
+  },
+  "created_at": "2025-11-26T15:13:34.800791+00:00",
+  "factions": [
+    "bandle-city"
+  ],
+  "custom_tags": [
+    "techmaturge"
+  ],
+  "gender": "Male",
+  "species": "Yordle",
+  "title_en": "the Mechanized Menace",
+  "lore_en": "Rumble is a young inventor with a temper. Using nothing more than his own two hands and a heap of scrap, the feisty yordle constructed a colossal mech suit outfitted with an arsenal of electrified harpoons and incendiary rockets. Though others may scoff and sneer at his junkyard creations, Rumble doesn't mind—after all, he's the one with the flamespitter.",
+  "spells_en": [
+    {
+      "id": "RumbleFlameThrower",
+      "name": "Flamespitter",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 96,
+        "full": "RumbleFlameThrower.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Rumble ignites his flamethrower, dealing <magicDamage>{{ flatdamage }} plus {{ healthdamage*100 }}% max Health magic damage</magicDamage> over {{ flamespitterduration }} seconds, reduced to <attention>{{ minionmod*100 }}%</attention> against minions.<br /><br /><keywordMajor>Danger Zone:</keywordMajor> Damage is increased to <magicDamage>{{ empowereddamage }} plus {{ empoweredhealth }} max Health</magicDamage>.<br /><br /><rules>Percent damage is limited to {{ monstercap }} damage on Monsters. </rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": " Heat",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "% Max Health",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ initialheatcost }} Heat",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Rumble torches opponents in front of him, dealing magic damage in a cone for 3 seconds. While in Danger Zone this damage is increased.",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "RumbleShield",
+      "name": "Scrap Shield",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 96,
+        "full": "RumbleShield.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Rumble tosses up a barrier, gaining <shield>{{ totalshield }} Shield</shield> for {{ shieldduration.1 }} seconds and <speed>{{ movespeed*100 }}% Move Speed</speed> for {{ movespeedduration }} second.<br /><br /><keywordMajor>Danger Zone:</keywordMajor> The barrier grants <shield>{{ empoweredshield }} Shield</shield> and <speed>{{ empoweredms }} Move Speed</speed> instead.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": " Heat",
+      "leveltip": {
+        "label": [
+          "Shield Amount",
+          "Move Speed"
+        ]
+      },
+      "resource": "{{ heatcost }} Heat",
+      "rangeBurn": "20",
+      "datavalues": {},
+      "description": "Rumble pulls up a shield, protecting him from damage and granting him a quick burst of speed. While in Danger Zone, the shield strength and speed bonus is increased.",
+      "cooldownBurn": "6"
+    },
+    {
+      "id": "RumbleGrenade",
+      "name": "Electro Harpoon",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 96,
+        "full": "RumbleGrenade.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "2",
+      "maxrank": 5,
+      "tooltip": "Rumble launches an electrified harpoon, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>, <status>Slowing</status> by {{ baseslowamount }}% for {{ slowduration }} seconds, and reducing the enemy's <scaleMR>Magic Resist</scaleMR> by {{ percmagicpen*100 }}% for {{ shredduration }} seconds.<br /><br />Hitting an enemy who's already <status>Slowed</status> by this Ability increases the <status>Slow</status> to {{ empoweredslowamount }}% and reduces the enemy's <scaleMR>Magic Resist</scaleMR> by {{ enhancedmagicpen*100 }}%<br /><br /><keywordMajor>Danger Zone:</keywordMajor> The harpoon deals <magicDamage>{{ empdamage }} magic damage</magicDamage> instead and the <status>Slow</status> and reduced <scaleMR>Magic Resist</scaleMR> are increased by 50%.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": " Heat",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Slow",
+          "Magic Resist Shred"
+        ]
+      },
+      "resource": "{{ firstcastheatcost }} Heat",
+      "rangeBurn": "850",
+      "datavalues": {},
+      "description": "Rumble launches a harpoon, electrocuting his target with magic damage, slowing their Move Speed, and reducing their Magic Resist. Rumble can carry 2 harpoons at a time. While in Danger Zone the damage and slow percentage is increased.",
+      "cooldownBurn": "0.5"
+    },
+    {
+      "id": "RumbleCarpetBomb",
+      "name": "The Equalizer",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 96,
+        "full": "RumbleCarpetBomb.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Rumble launches a line of rockets, creating a burning trail that lasts {{ trailduration }} seconds, <status>Slowing</status> by {{ slowamount }}% and dealing <magicDamage>{{ damagepersecond }} magic damage</magicDamage> per second.<br /><br />Rumble can control the direction of the trail by clicking and dragging while casting this Ability.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Damage Per Second",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "1750",
+      "datavalues": {},
+      "description": "Rumble fires off a group of rockets, creating a wall of flames that damages and slows enemies.",
+      "cooldownBurn": "130/105/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Junkyard Titan",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 96,
+      "y": 96,
+      "full": "Rumble_JunkyardTitan1.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Every spell Rumble casts gives him Heat. When he reaches 50% Heat he reaches Danger Zone, granting all his basic abilities bonus effects. When he reaches 100% Heat, he starts Overheating, gaining bonus Attack Speed and granting his basic attacks bonus damage, but making him unable to cast spells for a few seconds."
+  },
+  "partype_en": "Heat",
+  "lanes": [
+    "Top"
+  ],
+  "skins_en": [
+    {
+      "id": "68000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "68001",
+      "num": 1,
+      "name": "Rumble in the Jungle",
+      "chromas": false
+    },
+    {
+      "id": "68002",
+      "num": 2,
+      "name": "Bilgerat Rumble",
+      "chromas": false
+    },
+    {
+      "id": "68003",
+      "num": 3,
+      "name": "Super Galaxy Rumble",
+      "chromas": false
+    },
+    {
+      "id": "68004",
+      "num": 4,
+      "name": "Badlands Baron Rumble",
+      "chromas": true
+    },
+    {
+      "id": "68013",
+      "num": 13,
+      "name": "Space Groove Rumble",
+      "chromas": true
+    },
+    {
+      "id": "68023",
+      "num": 23,
+      "name": "Cafe Cuties Rumble",
+      "chromas": true
+    }
+  ]
+}

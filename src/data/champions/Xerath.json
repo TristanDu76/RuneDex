@@ -1,0 +1,433 @@
+{
+  "id": "Xerath",
+  "key": "101",
+  "name": "Xerath",
+  "title": "Mage suprême",
+  "version": "15.23.1",
+  "lore": "Xerath est un mage transfiguré de la Shurima antique, un être d'énergie arcanique habitant les fragments détruits d'un sarcophage magique. Pendant des millénaires, il est resté prisonnier des sables du désert, mais le retour de Shurima l'a libéré de sa prison ancestrale. Devenu ivre de pouvoir, il cherche désormais à reprendre ce qu'il croit lui être dû et à remplacer les civilisations arrivistes qui ont pris possession du monde par une nouvelle, façonnée à son image.",
+  "tags": [
+    "Mage",
+    "Support"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 336,
+    "y": 0,
+    "full": "Xerath.png",
+    "group": "champion",
+    "sprite": "champion5.png"
+  },
+  "skins": [
+    {
+      "id": "101000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "101001",
+      "num": 1,
+      "name": "Xerath runique",
+      "chromas": false
+    },
+    {
+      "id": "101002",
+      "num": 2,
+      "name": "Proto Xerath",
+      "chromas": false
+    },
+    {
+      "id": "101003",
+      "num": 3,
+      "name": "Xerath de la terre brûlée",
+      "chromas": false
+    },
+    {
+      "id": "101004",
+      "num": 4,
+      "name": "Xerath gardien des sables",
+      "chromas": false
+    },
+    {
+      "id": "101005",
+      "num": 5,
+      "name": "Xerath du pulsar sombre",
+      "chromas": true
+    },
+    {
+      "id": "101012",
+      "num": 12,
+      "name": "Xerath des arcanes",
+      "chromas": true
+    },
+    {
+      "id": "101021",
+      "num": 21,
+      "name": "Xerath astronaute",
+      "chromas": true
+    },
+    {
+      "id": "101030",
+      "num": 30,
+      "name": "Xerath Crystalis Indomitus",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "XerathArcanopulseChargeUp",
+      "name": "Rayon arcanique",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 0,
+        "full": "XerathArcanopulseChargeUp.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "0",
+      "maxrank": 5,
+      "tooltip": "<charge>Début de la charge :</charge> Xerath commence à charger un rayon d'énergie arcanique, <status>se ralentissant</status> progressivement d'un maximum de 50%. <br /><br /><release>Relâchement :</release> Xerath tire le rayon, infligeant <magicDamage>{{ tooltiptotaldamage }} pts de dégâts magiques</magicDamage>. La portée augmente avec la durée de la charge.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80/90/100/110/120",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "750",
+      "datavalues": {},
+      "description": "Tire un rayon d'énergie à longue portée, infligeant des dégâts magiques à toutes les cibles touchées.",
+      "cooldownBurn": "9/8/7/6/5"
+    },
+    {
+      "id": "XerathArcaneBarrage2",
+      "name": "Œil de la destruction",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 0,
+        "full": "XerathArcaneBarrage2.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "0",
+      "maxrank": 5,
+      "tooltip": "Xerath fait tomber un rayon d'énergie arcanique, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> et un <status>ralentissement</status> de {{ slowamount*100 }}% pendant {{ slowduration }} sec. Les ennemis au centre de l'explosion subissent <magicDamage>{{ sweetspottotaldamage }} pts de dégâts magiques</magicDamage> et un <status>ralentissement</status> de {{ sweetspotslowamount*100 }}% diminuant en {{ slowduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80/90/100/110/120",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ralentissement max",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Fait tomber un barrage d'énergie arcanique, infligeant des dégâts magiques et ralentissant tous les ennemis dans la zone. Les cibles au centre de la zone d'effet subissent des dégâts supplémentaires et sont ralenties davantage.",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "XerathMageSpear",
+      "name": "Orbe d'électrocution",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 0,
+        "full": "XerathMageSpear.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "0",
+      "maxrank": 5,
+      "tooltip": "Xerath tire un orbe de magie pure, <status>étourdissant</status> le premier ennemi touché pendant un maximum de {{ maxstunduration }} sec, selon la distance parcourue par l'orbe, et infligeant <magicDamage>{{ tooltiptotaldamage }} pts de dégâts magiques</magicDamage>. {{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1050",
+      "datavalues": {},
+      "description": "Étourdit un ennemi et lui inflige des dégâts magiques.",
+      "cooldownBurn": "13/12.5/12/11.5/11"
+    },
+    {
+      "id": "XerathLocusOfPower2",
+      "name": "Rite arcanique",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 0,
+        "full": "XerathLocusOfPower2.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Xerath dévoile sa forme véritable et canalise la compétence pendant {{ e1 }} sec. Pendant ce laps de temps, il peut <recast>réactiver</recast> cette compétence jusqu'à {{ e2 }} fois.<br /><br /><recast>Réactivation :</recast> Xerath tire un projectile d'artillerie magique qui inflige <magicDamage>{{ tooltiptotaldamage }} pts de dégâts magiques</magicDamage>. Pour chaque champion touché, l'artillerie inflige <magicDamage>{{ rampdamagecalc }} pts de dégâts magiques</magicDamage> supplémentaires.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Nombre de tirs",
+          "Dégâts supplémentaires consécutifs",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "5000",
+      "datavalues": {},
+      "description": "Xerath s'immobilise et obtient plusieurs tirs de barrage à longue portée.",
+      "cooldownBurn": "130/115/100"
+    }
+  ],
+  "passive": {
+    "name": "Afflux de mana",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 336,
+      "y": 0,
+      "full": "Xerath_Passive1.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "Les attaques de base de Xerath restaurent régulièrement du mana. À chaque fois que Xerath tue une unité, ce délai de récupération est réduit."
+  },
+  "created_at": "2025-11-26T15:13:35.521432+00:00",
+  "factions": [
+    "shurima"
+  ],
+  "custom_tags": [
+    "ascensionne",
+    "forme-énergie"
+  ],
+  "gender": "Male",
+  "species": "Ascended",
+  "title_en": "the Magus Ascendant",
+  "lore_en": "Xerath is an Ascended Magus of ancient Shurima, a being of arcane energy writhing in the broken shards of a magical sarcophagus. For millennia, he was trapped beneath the desert sands, but the rise of Shurima freed him from his ancient prison. Driven insane with power, he now seeks to take what he believes is rightfully his and replace the upstart civilizations of the world with one fashioned in his image.",
+  "spells_en": [
+    {
+      "id": "XerathArcanopulseChargeUp",
+      "name": "Arcanopulse",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 0,
+        "full": "XerathArcanopulseChargeUp.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "0",
+      "maxrank": 5,
+      "tooltip": "<charge>Begin Charging:</charge> Xerath begins charging an arcane beam, <status>Slowing</status> himself gradually up to 50%. <br /><br /><release>Release:</release> Xerath fires the beam, dealing <magicDamage>{{ tooltiptotaldamage }} magic damage</magicDamage>. The range increases with time charged.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80/90/100/110/120",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "750",
+      "datavalues": {},
+      "description": "Fires a long-range beam of energy, dealing magic damage to all targets hit.",
+      "cooldownBurn": "9/8/7/6/5"
+    },
+    {
+      "id": "XerathArcaneBarrage2",
+      "name": "Eye of Destruction",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 0,
+        "full": "XerathArcaneBarrage2.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "0",
+      "maxrank": 5,
+      "tooltip": "Xerath calls down a blast of arcane energy, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> and <status>Slowing</status> them by {{ slowamount*100 }}% for {{ slowduration }} seconds. Enemies in the center take <magicDamage>{{ sweetspottotaldamage }} magic damage</magicDamage> instead and are <status>Slowed</status> by {{ sweetspotslowamount*100 }}%, decaying over {{ slowduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80/90/100/110/120",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Max Slow",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Calls down a barrage of arcane energy, slowing and dealing magic damage to all enemies in an area. Targets in the middle receive additional damage and a stronger slow.",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "XerathMageSpear",
+      "name": "Shocking Orb",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 0,
+        "full": "XerathMageSpear.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "0",
+      "maxrank": 5,
+      "tooltip": "Xerath fires an orb of raw magic, <status>Stunning</status> the first enemy hit for up to {{ maxstunduration }} seconds based on distance travelled, and dealing <magicDamage>{{ tooltiptotaldamage }} magic damage</magicDamage>. {{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1050",
+      "datavalues": {},
+      "description": "Deals magic damage to an enemy and stuns them.",
+      "cooldownBurn": "13/12.5/12/11.5/11"
+    },
+    {
+      "id": "XerathLocusOfPower2",
+      "name": "Rite of the Arcane",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 0,
+        "full": "XerathLocusOfPower2.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Xerath ascends to his true form and channels for {{ e1 }} seconds. During this time he may <recast>Recast</recast> up to {{ e2 }} times.<br /><br /><recast>Recast:</recast> Xerath launches a magical artillery, dealing <magicDamage>{{ tooltiptotaldamage }} magic damage</magicDamage>. For each champion hit, the artillery deals an additional <magicDamage>{{ rampdamagecalc }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Number of Shots",
+          "Consecutive Bonus Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "5000",
+      "datavalues": {},
+      "description": "Xerath immobilizes himself and gains numerous long-range barrages.",
+      "cooldownBurn": "130/115/100"
+    }
+  ],
+  "passive_en": {
+    "name": "Mana Surge",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 336,
+      "y": 0,
+      "full": "Xerath_Passive1.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "Xerath's basic attacks periodically restore Mana. Whenever Xerath kills a unit, this cooldown is reduced."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Support",
+    "Mid"
+  ],
+  "skins_en": [
+    {
+      "id": "101000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "101001",
+      "num": 1,
+      "name": "Runeborn Xerath",
+      "chromas": false
+    },
+    {
+      "id": "101002",
+      "num": 2,
+      "name": "Battlecast Xerath",
+      "chromas": false
+    },
+    {
+      "id": "101003",
+      "num": 3,
+      "name": "Scorched Earth Xerath",
+      "chromas": false
+    },
+    {
+      "id": "101004",
+      "num": 4,
+      "name": "Guardian of the Sands Xerath",
+      "chromas": false
+    },
+    {
+      "id": "101005",
+      "num": 5,
+      "name": "Dark Star Xerath",
+      "chromas": true
+    },
+    {
+      "id": "101012",
+      "num": 12,
+      "name": "Arcana Xerath",
+      "chromas": true
+    },
+    {
+      "id": "101021",
+      "num": 21,
+      "name": "Astronaut Xerath",
+      "chromas": true
+    },
+    {
+      "id": "101030",
+      "num": 30,
+      "name": "Crystalis Indomitus Xerath",
+      "chromas": true
+    }
+  ]
+}

@@ -1,0 +1,446 @@
+{
+  "id": "Karthus",
+  "key": "30",
+  "name": "Karthus",
+  "title": "Liche",
+  "version": "15.23.1",
+  "lore": "Karthus est né dans une misère abjecte dans les taudis en périphérie de la capitale Noxienne. La mort y était monnaie courante, et Karthus fut fasciné très tôt par le moment de la mort. Il se faufilait la nuit pour observer les mourants, cherchant à assister au passage de l'âme, mais cela restait insaisissable.\n\nIl obtint la révélation lors de la maladie de ses trois sœurs : il fut le frère dévoué, veillant sur elles pendant que la maladie les consumait. Il observa chacune d'elles mourir, ressentant une connexion sublime et un désir ardent de percer les secrets de l'éternité.\n\nAprès la mort de ses sœurs, Karthus rejoignit les rangs des « Tally-men » de Kindred (les collecteurs de corps de l'ordre de la mort noxien). Il gravit les échelons, de fossoyeur à collecteur de cadavres. Ses chants funèbres et ses complaintes, qui parlaient de la beauté de la mort et de l'espoir de l'au-delà, devinrent célèbres à Noxus, apportant du réconfort aux familles en deuil. Il travailla finalement au temple, guidant les âmes dans la mort en quête de sagesse.\n\nKarthus conclut qu'il ne pouvait plus apprendre des mortels. Il entendit des rumeurs d'un lieu où la mort n'était pas la fin : les Îles Obscures (Shadow Isles).\n\nIl dépouilla les coffres du temple pour acheter un passage vers Bilgewater, une ville affligée par la Brume noire. Il finit par convaincre un pêcheur lourdement endetté de le conduire vers les îles maudites. Leur bateau fit naufrage sur les rochers d'une île inconnue. Alors que le pêcheur fuyait, Karthus sauta dans la mer et chanta fièrement la complainte qu'il avait préparée pour sa propre mort.\n\nLa Brume noire s'écoula à travers lui, ravageant sa chair et son esprit avec une sorcellerie ancienne. Mais la force de son désir de transcender la mortalité fut telle qu'elle ne le détruisit pas ; elle le refit. Karthus renaquit dans les eaux de l'île en tant que revenant sans chair.\n\nLa révélation submergea Karthus : il était devenu ce qu'il croyait devoir être, un être à la frontière de la vie et de la mort. La beauté de ce moment éternel l'émerveilla. Les spectres misérables de l'île se levèrent, attirés par sa passion. Karthus décida qu'il devait retourner à Valoran pour partager son don avec les vivants et les libérer de leurs préoccupations mortelles.\n\nKarthus retrouva le pêcheur, lui accorda la bénédiction de la mort, et le ressuscita en tant qu'esprit immortel. Ce fut le premier de sa légion. Karthus voit les Îles Obscures comme un lieu d'apathie où le bienfait de la non-vie est gaspillé. Il est résolu à galvaniser les morts dans une croisade pour apporter la gloire de l'oubli aux vivants.\n\nIl est désormais l'émissaire des Îles Obscures, le héraut de l'oubli dont les complaintes sont des hymnes à la gloire de la mort.",
+  "tags": [
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 384,
+    "y": 96,
+    "full": "Karthus.png",
+    "group": "champion",
+    "sprite": "champion1.png"
+  },
+  "skins": [
+    {
+      "id": "30000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "30001",
+      "num": 1,
+      "name": "Karthus fantôme",
+      "chromas": false
+    },
+    {
+      "id": "30002",
+      "num": 2,
+      "name": "Statue de Karthus",
+      "chromas": false
+    },
+    {
+      "id": "30003",
+      "num": 3,
+      "name": "Karthus faucheur",
+      "chromas": true
+    },
+    {
+      "id": "30004",
+      "num": 4,
+      "name": "Karthus Pentakill",
+      "chromas": false
+    },
+    {
+      "id": "30005",
+      "num": 5,
+      "name": "Fnatic Karthus",
+      "chromas": false
+    },
+    {
+      "id": "30009",
+      "num": 9,
+      "name": "Karthus fléau de la lumière",
+      "chromas": false
+    },
+    {
+      "id": "30010",
+      "num": 10,
+      "name": "Karthus infernal",
+      "chromas": true
+    },
+    {
+      "id": "30017",
+      "num": 17,
+      "name": "Karthus Pentakill III : Lost Chapter",
+      "chromas": true
+    },
+    {
+      "id": "30026",
+      "num": 26,
+      "name": "Karthus sylvestre",
+      "chromas": true
+    },
+    {
+      "id": "30035",
+      "num": 35,
+      "name": "Karthus des arcanes",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "KarthusLayWasteA1",
+      "name": "Dévastation",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 48,
+        "full": "KarthusLayWasteA1.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "2",
+      "maxrank": 5,
+      "tooltip": "Karthus provoque une explosion magique, infligeant <magicDamage>{{ qdamage }} pts de dégâts magiques</magicDamage>. Si l'explosion ne touche qu'un seul ennemi, elle inflige à la place <magicDamage>{{ qsingletargetdamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "20/25/30/35/40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "875",
+      "datavalues": {},
+      "description": "Karthus crée une explosion à retardement, infligeant des dégâts aux ennemis proches. Les ennemis isolés subissent plus de dégâts. ",
+      "cooldownBurn": "0"
+    },
+    {
+      "id": "KarthusWallOfPain",
+      "name": "Mur de douleur",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 48,
+        "full": "KarthusWallOfPain.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Karthus crée un mur qui dure {{ e4 }} sec. Les ennemis qui le traversent perdent <scaleMR>{{ e1 }}% de résistance magique</scaleMR> pendant {{ e5 }} sec et sont <status>ralentis</status> de {{ e3 }}% (ce ralentissement diminue sur la durée).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Largeur du mur",
+          "Réduction de la vitesse de déplacement"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Karthus crée un mur d'énergie. Les ennemis franchissant le mur voient leur vitesse de déplacement et leur résistance magique temporairement réduites.",
+      "cooldownBurn": "15"
+    },
+    {
+      "id": "KarthusDefile",
+      "name": "Souillure",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 48,
+        "full": "KarthusDefile.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive : </spellPassive>quand Karthus tue une unité, il récupère <scaleMana>{{ e2 }} pts de mana</scaleMana>.<br /><br /><toggle>Activable/Désactivable : </toggle>Karthus crée un halo nécrosant qui inflige <magicDamage>{{ totaldps }} pts de dégâts magiques</magicDamage> par seconde aux ennemis proches.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30/42/54/66/78",
+      "costType": " pts de mana par sec",
+      "leveltip": {
+        "label": [
+          "Dégâts par seconde",
+          "Restauration du mana",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} pts de mana par sec",
+      "rangeBurn": "550",
+      "datavalues": {},
+      "description": "Karthus vole passivement l'énergie de ses victimes, gagnant du mana à chaque élimination. Karthus peut aussi s'immerger dans les âmes de ses proies, infligeant des dégâts aux ennemis proches mais au prix d'une grande perte de mana.",
+      "cooldownBurn": "0.5"
+    },
+    {
+      "id": "KarthusFallenOne",
+      "name": "Requiem",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 48,
+        "full": "KarthusFallenOne.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Après une canalisation de 3 sec, Karthus inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> aux champions ennemis (où qu'ils soient).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "10000",
+      "datavalues": {},
+      "description": "Après une canalisation de 3 secondes, Karthus inflige des dégâts à tous les champions ennemis.",
+      "cooldownBurn": "200/180/160"
+    }
+  ],
+  "passive": {
+    "name": "Déni de mort",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 384,
+      "y": 96,
+      "full": "Karthus_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Lorsqu'il meurt, Karthus prend une forme spirituelle qui lui permet de continuer à lancer des sorts."
+  },
+  "created_at": "2025-11-26T15:13:33.462857+00:00",
+  "factions": [
+    "noxus",
+    "shadow-isles"
+  ],
+  "custom_tags": [
+    "non-mort",
+    "chanteur"
+  ],
+  "gender": "Male",
+  "species": "Undead",
+  "title_en": "the Deathsinger",
+  "lore_en": "Karthus was born into abject poverty outside the Noxian capital. Death was commonplace in the slums. Karthus grew fascinated with the moment of death, spending years observing the dying, hoping to witness the passage of the soul.\n\nHe found revelation when his three sisters sickened with the plague. He watched each of them die, feeling a sublime connection and a yearning to unlock the secrets of eternity.\n\nAfter their deaths, Karthus was inducted into the ranks of the Kindred's \"Tally-men\" (Noxus's death collectors). He quickly ascended the ranks. His dirges and mournful laments, which spoke to the beauty of death and the hope of the beyond, became renowned, offering solace to grieving families. He worked at the temple, guiding souls into death in search of further wisdom.\n\nKarthus concluded he could learn no more from mortals. He heard whispered rumors of a place where death was not the end: the Shadow Isles.\n\nHe emptied the temple's coffers and bought passage to Bilgewater, a city afflicted by the Black Mist. He eventually found a rum-sodden fisherman to take him to the cursed island. When a storm drove them onto the rocks of an uncharted island, Karthus leapt into the sea and proudly sang the lament he had prepared for his own death.\n\nThe Black Mist flowed through him, ravaging his flesh and spirit. But the force of his desire to transcend mortality was so strong that it did not destroy him; it remade him. Karthus was born anew as a fleshless revenant.\n\nRevelation filled Karthus: he was now a being poised at the threshold of life and death. The wretched spirits of the island rose to behold his transformation, drawn to his passion. Karthus decided he had to return to Valoran to share his gift with the living, to free them from petty mortal concerns.\n\nKarthus found the fisherman, granted him the blessing of death, and raised him as an immortal spirit. The fisherman was the first of his legion. Karthus views the Shadow Isles as a place of apathetic limbo where the blessing of undeath is squandered. He is resolved to galvanize the dead in a crusade to bring the beauty of oblivion to the living.\n\nHe has become the emissary of the Shadow Isles, the herald of oblivion whose laments are paeans to the glory of death.",
+  "spells_en": [
+    {
+      "id": "KarthusLayWasteA1",
+      "name": "Lay Waste",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 48,
+        "full": "KarthusLayWasteA1.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "2",
+      "maxrank": 5,
+      "tooltip": "Karthus creates a blast of magic, dealing <magicDamage>{{ qdamage }} magic damage</magicDamage>. If the blast hits only one enemy, it instead deals <magicDamage>{{ qsingletargetdamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "20/25/30/35/40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "875",
+      "datavalues": {},
+      "description": "Karthus unleashes a delayed blast at a location, dealing damage to nearby enemies. Deals increased damage to isolated enemies. ",
+      "cooldownBurn": "0"
+    },
+    {
+      "id": "KarthusWallOfPain",
+      "name": "Wall of Pain",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 48,
+        "full": "KarthusWallOfPain.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Karthus creates a wall that lasts for {{ e4 }} seconds. Enemies that pass through lose <scaleMR>{{ e1 }}% Magic Resist</scaleMR> for {{ e5 }} seconds and are <status>Slowed</status> by {{ e3 }}% decaying over the duration.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Wall Width",
+          "Move Speed Slow"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Karthus creates a passable screen of leeching energy. Any enemy units that walk through the screen have their Move Speed and Magic Resist reduced for a period.",
+      "cooldownBurn": "15"
+    },
+    {
+      "id": "KarthusDefile",
+      "name": "Defile",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 48,
+        "full": "KarthusDefile.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive: </spellPassive>When Karthus kills a unit, he restores <scaleMana>{{ e2 }} Mana</scaleMana>.<br /><br /><toggle>Toggle: </toggle>Karthus creates a necrotic aura, dealing <magicDamage>{{ totaldps }} magic damage</magicDamage> per second to nearby enemies.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30/42/54/66/78",
+      "costType": " Mana per Second",
+      "leveltip": {
+        "label": [
+          "Damage Per Second",
+          "Mana Restore",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} Mana per Second",
+      "rangeBurn": "550",
+      "datavalues": {},
+      "description": "Karthus passively steals energy from his victims, gaining Mana on each kill. Alternatively, Karthus can surround himself in the souls of his prey, dealing damage to nearby enemies, but quickly draining his own Mana.",
+      "cooldownBurn": "0.5"
+    },
+    {
+      "id": "KarthusFallenOne",
+      "name": "Requiem",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 48,
+        "full": "KarthusFallenOne.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Karthus channels for 3 seconds, then deals <magicDamage>{{ totaldamage }} magic damage</magicDamage> to enemy champions, regardless of distance.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "10000",
+      "datavalues": {},
+      "description": "After channeling for 3 seconds, Karthus deals damage to all enemy champions.",
+      "cooldownBurn": "200/180/160"
+    }
+  ],
+  "passive_en": {
+    "name": "Death Defied",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 384,
+      "y": 96,
+      "full": "Karthus_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Upon dying, Karthus enters a spirit form that allows him to continue casting spells."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "30000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "30001",
+      "num": 1,
+      "name": "Phantom Karthus",
+      "chromas": false
+    },
+    {
+      "id": "30002",
+      "num": 2,
+      "name": "Statue of Karthus",
+      "chromas": false
+    },
+    {
+      "id": "30003",
+      "num": 3,
+      "name": "Grim Reaper Karthus",
+      "chromas": true
+    },
+    {
+      "id": "30004",
+      "num": 4,
+      "name": "Pentakill Karthus",
+      "chromas": false
+    },
+    {
+      "id": "30005",
+      "num": 5,
+      "name": "Fnatic Karthus",
+      "chromas": false
+    },
+    {
+      "id": "30009",
+      "num": 9,
+      "name": "Karthus Lightsbane",
+      "chromas": false
+    },
+    {
+      "id": "30010",
+      "num": 10,
+      "name": "Infernal Karthus",
+      "chromas": true
+    },
+    {
+      "id": "30017",
+      "num": 17,
+      "name": "Pentakill III: Lost Chapter Karthus",
+      "chromas": true
+    },
+    {
+      "id": "30026",
+      "num": 26,
+      "name": "Elderwood Karthus",
+      "chromas": true
+    },
+    {
+      "id": "30035",
+      "num": 35,
+      "name": "Arcana Karthus",
+      "chromas": true
+    }
+  ]
+}

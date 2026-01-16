@@ -1,0 +1,510 @@
+{
+  "id": "Kaisa",
+  "key": "145",
+  "name": "Kai'Sa",
+  "title": "Fille du Néant",
+  "version": "15.23.1",
+  "lore": "Kai'Sa a commencé sa vie modestement comme une fille ordinaire nommée Kaisa, fille de l'explorateur et érudit Kassadin, vivant avec ses parents aimants dans les déserts du sud de Shurima. À dix ans, son destin bascula pour toujours.\n\nDes événements inquiétants se produisaient. Kaisa et ses amis libérèrent des chèvres sacrificielles, déclenchant l'impensable : la terre trembla, un immense abîme se déchira et le village fut englouti. Le Néant (Void) s'était éveillé. Kaisa fut engloutie, et son père, Kassadin, la crut morte, ce qui le poussa à devenir un guerrier obsédé par la vengeance contre le Néant.\n\nKaisa se réveilla piégée sous terre. Elle se retrouva seule dans l'obscurité, les cris des autres survivants s'étant éteints. Poussée par la peur et la faim, elle s'enfonça dans le Néant jusqu'à une vaste caverne illuminée par une lueur violette. Elle y trouva des créatures du Néant.\n\nAttaquée par une première créature, elle la tua, mais sa peau non naturelle s'accrocha à son bras. Cette carapace sombre et dure comme l'acier se mit à croître, devenant une seconde peau vivante en symbiose avec elle. Au fil des années, Kaisa se transforma de jeune fille effrayée en chasseuse intrépide.\n\nPendant près d'une décennie, elle a vécu entre deux mondes pour tenter de les séparer, car le Néant cherche à consommer tout Runeterra. Elle est déterminée à empêcher cela.\n\nBien qu'elle ait tué d'innombrables créatures du Néant, elle comprend que beaucoup des personnes qu'elle protège la verraient comme un monstre elle-même. Son nom est passé dans la légende, un écho des anciennes horreurs de l'Icathia condamnée : elle n'est plus Kaisa, mais Kai'Sa.\n\nL'Ironie Tragique : Bien que son père, Kassadin, soit devenu un puissant guerrier anti-Néant, Kai'Sa reste isolée. Elle doit décider si elle doit pardonner aux mortels qui la rejettent et vaincre la vague montante des ténèbres, ou si elle doit les laisser être consumés par le Néant, seule, sans savoir que son père est lui aussi de l'autre côté, transformé et brisé.",
+  "tags": [
+    "Marksman",
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 240,
+    "y": 96,
+    "full": "Kaisa.png",
+    "group": "champion",
+    "sprite": "champion1.png"
+  },
+  "skins": [
+    {
+      "id": "145000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "145001",
+      "num": 1,
+      "name": "Kai'Sa ange exterminateur",
+      "chromas": true
+    },
+    {
+      "id": "145014",
+      "num": 14,
+      "name": "K/DA Kai'Sa",
+      "chromas": false
+    },
+    {
+      "id": "145015",
+      "num": 15,
+      "name": "K/DA Kai'Sa prestige",
+      "chromas": false
+    },
+    {
+      "id": "145016",
+      "num": 16,
+      "name": "iG Kai'Sa",
+      "chromas": false
+    },
+    {
+      "id": "145017",
+      "num": 17,
+      "name": "Kai'Sa arcade",
+      "chromas": false
+    },
+    {
+      "id": "145026",
+      "num": 26,
+      "name": "K/DA ALL OUT Kai'Sa",
+      "chromas": false
+    },
+    {
+      "id": "145027",
+      "num": 27,
+      "name": "K/DA ALL OUT Kai'Sa prestige",
+      "chromas": false
+    },
+    {
+      "id": "145029",
+      "num": 29,
+      "name": "Kai'Sa dragon du lagon",
+      "chromas": false
+    },
+    {
+      "id": "145039",
+      "num": 39,
+      "name": "K/DA Kai'Sa prestige (2022)",
+      "chromas": false
+    },
+    {
+      "id": "145040",
+      "num": 40,
+      "name": "Kai'Sa gardienne des étoiles",
+      "chromas": false
+    },
+    {
+      "id": "145048",
+      "num": 48,
+      "name": "Kai'Sa guerrière d'encre",
+      "chromas": false
+    },
+    {
+      "id": "145059",
+      "num": 59,
+      "name": "Kai'Sa écailles célestes",
+      "chromas": false
+    },
+    {
+      "id": "145069",
+      "num": 69,
+      "name": "Kai'Sa du pulsar sombre",
+      "chromas": false
+    },
+    {
+      "id": "145070",
+      "num": 70,
+      "name": "Kai'Sa légende transcendée",
+      "chromas": false
+    },
+    {
+      "id": "145071",
+      "num": 71,
+      "name": "Kai'Sa légende immortalisée",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "KaisaQ",
+      "name": "Pluie d'Icathia",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 144,
+        "full": "KaisaQ.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Kai'Sa tire {{ e2 }} projectiles qui se répartissent également entre les ennemis proches, chacun infligeant <physicalDamage>{{ totalindividualmissiledamage }} pts de dégâts physiques</physicalDamage> (max {{ maxdamagedisplay }} pts de dégâts physiques). Les projectiles supplémentaires sur un même champion ou un même monstre infligent {{ extrahitreduction*100 }}% de dégâts.<br /><br /><keywordMajor>Évoluée</keywordMajor> : Kai'Sa tire à la place {{ e7 }} projectiles.<br />Actuellement : <physicalDamage>{{ f11.1 }}/{{ e6 }} dégâts d'attaque bonus</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "55",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts par projectile"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Kai'Sa tire une volée de projectiles qui traquent les cibles proches.<br><br>Arme vivante : Pluie d'Icathia est améliorée pour tirer davantage de projectiles.",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "KaisaW",
+      "name": "Rayon du Néant",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 144,
+        "full": "KaisaW.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Kai'Sa tire un rayon qui inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>, applique {{ e4 }} effets <keywordMajor>Plasma</keywordMajor> et octroie pendant {{ spell.kaisapassive:pduration }} sec une <keywordStealth>vision pure</keywordStealth> du premier ennemi touché.<br /><br /><keywordMajor>Évoluée</keywordMajor> : Kai'Sa applique à la place {{ e5 }} effets <keywordMajor>Plasma</keywordMajor>, et toucher un champion réduit de {{ e3 }}% le délai de récupération.<br />Actuellement : <scaleAP>{{ f2.1 }}/{{ e2 }} puissance</scaleAP>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "55/60/65/70/75",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts",
+          "Coût en mana"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "3000",
+      "datavalues": {},
+      "description": "Kai'Sa tire un projectile à longue portée, marquant les ennemis avec sa compétence passive.<br><br>Arme vivante : Rayon du Néant est amélioré pour appliquer davantage de marques passives et pour réduire son délai de récupération contre les champions.",
+      "cooldownBurn": "22/20/18/16/14"
+    },
+    {
+      "id": "KaisaE",
+      "name": "Surpresseur",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0,
+        "full": "KaisaE.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Kai'Sa surcharge son énergie du Néant, gagnant <speed>+{{ totalmovespeed }} vitesse de déplacement</speed> et devenant fantomatique pendant la durée de la charge. Elle gagne ensuite <attackSpeed>+{{ e5 }}% de vitesse d'attaque</attackSpeed> pendant {{ e2 }} sec.<br /><br />Les attaques de Kai'Sa réduisent de {{ e4 }} sec le délai de récupération de cette compétence.<br /><br /><keywordMajor>Évoluée</keywordMajor> : Kai'Sa devient également <keywordStealth>invisible</keywordStealth> pendant {{ e7 }} sec.<br />Actuellement : <attackSpeed>{{ f10.1 }}%/{{ e6 }}% de vitesse d'attaque bonus</attackSpeed>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Vitesse de déplacement",
+          "Vitesse d'attaque"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1",
+      "datavalues": {},
+      "description": "Kai'Sa augmente brièvement sa vitesse de déplacement, puis augmente sa vitesse d'attaque.<br><br>Arme vivante : Surpresseur est amélioré pour octroyer une brève invisibilité.",
+      "cooldownBurn": "16/14.5/13/11.5/10"
+    },
+    {
+      "id": "KaisaR",
+      "name": "Instinct meurtrier",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 0,
+        "full": "KaisaR.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Kai'Sa se projette à proximité d'un champion ennemi affecté par <keywordMajor>Plasma</keywordMajor> et gagne un <shield>bouclier de {{ rcalculatedshieldvalue }} PV</shield> pendant {{ rshieldduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Portée",
+          "Délai de récupération",
+          "PV du bouclier",
+          "Ratio de dégâts d'attaque"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "2000/2500/3000",
+      "datavalues": {},
+      "description": "Kai'Sa effectue une ruée jusqu'à un champion ennemi.",
+      "cooldownBurn": "130/100/70"
+    }
+  ],
+  "passive": {
+    "name": "Seconde peau",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 240,
+      "y": 96,
+      "full": "Kaisa_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Les attaques de base de Kai'Sa appliquent des effets Plasma, infligeant de plus en plus de dégâts magiques supplémentaires. Les effets immobilisants des alliés appliquent aussi des effets Plasma. De plus, les objets achetés par Kai'Sa améliorent ses sorts de base en leur offrant des propriétés plus puissantes."
+  },
+  "created_at": "2025-11-26T15:13:33.462857+00:00",
+  "factions": [
+    "void",
+    "shurima"
+  ],
+  "custom_tags": null,
+  "gender": "Female",
+  "species": "Human",
+  "title_en": "Daughter of the Void",
+  "lore_en": "Kai'Sa (originally Kaisa) began her life as an ordinary girl, the daughter of the explorer and scholar Kassadin, living with her loving parents in the southern deserts of Shurima. In her tenth summer, her destiny changed forever.\n\nWhen she and her friends freed sacrificial goats, they triggered the unthinkable: the ground split open, and her village was swallowed, the Void having been awakened. Kaisa was presumed dead, which drove her father, Kassadin, to become a transformed warrior obsessed with revenge against the Void.\n\nKaisa woke up trapped underground. She was left alone in the darkness after the cries of the other survivors faded. Driven by fear and hunger, she followed a light down into the Void, finding a vast cavern illuminated by an otherworldly purplish glow and swarming Void creatures.\n\nShe killed the first creature that attacked her, but its unnatural skin attached itself to her arm. This dark, steel-hard shell began to grow, becoming a living second skin in symbiosis with her. Over years of survival, Kaisa transformed from a frightened girl into a fearless hunter.\n\nFor almost a decade, she has lived between two worlds, fighting to keep the Void from consuming all of Runeterra.\n\nThough she has slain countless Void-constructs, she understands that many of the people she protects view her as a monster herself. Her name has passed into legend as Kai'Sa.\n\nThe Tragic Irony: Though her father, Kassadin, became a powerful anti-Void warrior, Kai'Sa remains isolated. She must decide whether to forgive the mortals who reject her and defeat the growing darkness, or to let them be consumed—unaware that her father is also on the surface, transformed and heartbroken, fighting the very same enemy.",
+  "spells_en": [
+    {
+      "id": "KaisaQ",
+      "name": "Icathian Rain",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 144,
+        "full": "KaisaQ.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Kai'Sa launches {{ e2 }} missiles that split among nearby enemies, each dealing <physicalDamage>{{ totalindividualmissiledamage }} physical damage</physicalDamage>, up to a maximum of {{ maxdamagedisplay }}. Additional missile hits on champions or monsters deal {{ extrahitreduction*100 }}% damage.<br /><br /><keywordMajor>Evolved</keywordMajor>: Kai'Sa instead fires {{ e7 }} missiles.<br />Current: <physicalDamage>{{ f11.1 }}/{{ e6 }} Bonus Attack Damage</physicalDamage>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "55",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage Per Missile"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Kai'Sa shoots a swarm of missiles that seek out nearby targets.<br><br>Living Weapon: Icathian Rain is upgraded to shoot more missiles.",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "KaisaW",
+      "name": "Void Seeker",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 144,
+        "full": "KaisaW.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Kai'Sa fires a void blast that deals <magicDamage>{{ totaldamage }} magic damage</magicDamage>, applies {{ e4 }} stacks of <keywordMajor>Plasma</keywordMajor>, and grants <keywordStealth>True Sight</keywordStealth> of the first enemy hit for {{ spell.kaisapassive:pduration }} seconds.<br /><br /><keywordMajor>Evolved</keywordMajor>: Kai'Sa instead applies {{ e5 }} stacks of <keywordMajor>Plasma</keywordMajor> and hitting a champion reduces the Cooldown by {{ e3 }}%.<br />Current: <scaleAP>{{ f2.1 }}/{{ e2 }} Ability Power</scaleAP>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "55/60/65/70/75",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage",
+          "Mana Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "3000",
+      "datavalues": {},
+      "description": "Kai'Sa shoots a long range missile, marking enemies with her passive.<br><br>Living Weapon: Void Seeker is upgraded to apply more passive marks and reduce cooldown on champion hit.",
+      "cooldownBurn": "22/20/18/16/14"
+    },
+    {
+      "id": "KaisaE",
+      "name": "Supercharge",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0,
+        "full": "KaisaE.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Kai'Sa supercharges her void energy, gaining <speed>{{ totalmovespeed }} Move Speed</speed> and becoming Ghosted while charging, then gaining <attackSpeed>{{ e5 }}% Attack Speed</attackSpeed> for {{ e2 }} seconds.<br /><br />Attacks reduce this Ability's Cooldown by {{ e4 }} seconds.<br /><br /><keywordMajor>Evolved</keywordMajor>: Kai'Sa also becomes <keywordStealth>Invisible</keywordStealth> for {{ e7 }} seconds.<br />Current: <attackSpeed>{{ f10.1 }}%/{{ e6 }}% Bonus Attack Speed</attackSpeed>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Move Speed",
+          "Attack Speed"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1",
+      "datavalues": {},
+      "description": "Kai'Sa briefly increases her Move Speed, then increases her Attack Speed.<br><br>Living Weapon: Supercharge is upgraded to briefly grant Invisibility.",
+      "cooldownBurn": "16/14.5/13/11.5/10"
+    },
+    {
+      "id": "KaisaR",
+      "name": "Killer Instinct",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 0,
+        "full": "KaisaR.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Kai'Sa warps near an enemy champion affected by <keywordMajor>Plasma</keywordMajor> and gains <shield>{{ rcalculatedshieldvalue }} Shield</shield> for {{ rshieldduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Range",
+          "Cooldown",
+          "Shield Amount",
+          "Attack Damage Ratio"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "2000/2500/3000",
+      "datavalues": {},
+      "description": "Kai'Sa dashes near an enemy champion.",
+      "cooldownBurn": "130/100/70"
+    }
+  ],
+  "passive_en": {
+    "name": "Second Skin",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 240,
+      "y": 96,
+      "full": "Kaisa_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Kai'Sa's basic attacks stack Plasma, dealing increasing bonus magic damage. Allies' immobilizing effects help stack Plasma. Additionally, Kai'Sa's item purchases upgrade her basic spells to have more powerful properties."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Adc"
+  ],
+  "skins_en": [
+    {
+      "id": "145000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "145001",
+      "num": 1,
+      "name": "Bullet Angel Kai'Sa",
+      "chromas": true
+    },
+    {
+      "id": "145014",
+      "num": 14,
+      "name": "K/DA Kai'Sa",
+      "chromas": false
+    },
+    {
+      "id": "145015",
+      "num": 15,
+      "name": "Prestige K/DA Kai'Sa",
+      "chromas": false
+    },
+    {
+      "id": "145016",
+      "num": 16,
+      "name": "iG Kai'Sa",
+      "chromas": false
+    },
+    {
+      "id": "145017",
+      "num": 17,
+      "name": "Arcade Kai'Sa",
+      "chromas": false
+    },
+    {
+      "id": "145026",
+      "num": 26,
+      "name": "K/DA ALL OUT Kai'Sa",
+      "chromas": false
+    },
+    {
+      "id": "145027",
+      "num": 27,
+      "name": "Prestige K/DA ALL OUT Kai'Sa",
+      "chromas": false
+    },
+    {
+      "id": "145029",
+      "num": 29,
+      "name": "Lagoon Dragon Kai'Sa",
+      "chromas": false
+    },
+    {
+      "id": "145039",
+      "num": 39,
+      "name": "Prestige K/DA Kai'Sa (2022)",
+      "chromas": false
+    },
+    {
+      "id": "145040",
+      "num": 40,
+      "name": "Star Guardian Kai'Sa",
+      "chromas": false
+    },
+    {
+      "id": "145048",
+      "num": 48,
+      "name": "Inkshadow Kai'Sa",
+      "chromas": false
+    },
+    {
+      "id": "145059",
+      "num": 59,
+      "name": "Heavenscale Kai'Sa",
+      "chromas": false
+    },
+    {
+      "id": "145069",
+      "num": 69,
+      "name": "Dark Star Kai'Sa",
+      "chromas": false
+    },
+    {
+      "id": "145070",
+      "num": 70,
+      "name": "Risen Legend Kai'Sa",
+      "chromas": false
+    },
+    {
+      "id": "145071",
+      "num": 71,
+      "name": "Immortalized Legend Kai'Sa",
+      "chromas": false
+    }
+  ]
+}

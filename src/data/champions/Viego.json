@@ -1,0 +1,400 @@
+{
+  "id": "Viego",
+  "key": "234",
+  "name": "Viego",
+  "title": "Roi déchu",
+  "version": "15.23.1",
+  "lore": "Autrefois souverain d'un royaume perdu depuis longtemps, Viego mourut il y a plus de mille ans lorsqu'il tenta de ramener sa femme d'entre les morts. Cela causa la catastrophe magique connue sous le nom de la Ruine. Devenu un puissant spectre torturé par le désir obsessionnel de retrouver sa reine morte depuis des siècles, Viego est désormais le Roi déchu. Il contrôle la Nuit de l'horreur et parcourt Runeterra pour trouver un moyen de ramener sa bien-aimée, détruisant tout sur son passage avec la Brume noire qui se répand inlassablement depuis son cœur brisé et cruel.",
+  "tags": [
+    "Fighter",
+    "Assassin"
+  ],
+  "partype": "Aucune",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 48,
+    "y": 0,
+    "full": "Viego.png",
+    "group": "champion",
+    "sprite": "champion5.png"
+  },
+  "skins": [
+    {
+      "id": "234000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "234001",
+      "num": 1,
+      "name": "Viego bête lunaire",
+      "chromas": true
+    },
+    {
+      "id": "234010",
+      "num": 10,
+      "name": "Viego Dissonance de Pentakill",
+      "chromas": false
+    },
+    {
+      "id": "234019",
+      "num": 19,
+      "name": "EDG Viego",
+      "chromas": false
+    },
+    {
+      "id": "234021",
+      "num": 21,
+      "name": "Roi Viego",
+      "chromas": false
+    },
+    {
+      "id": "234030",
+      "num": 30,
+      "name": "Viego combattant spirituel",
+      "chromas": false
+    },
+    {
+      "id": "234037",
+      "num": 37,
+      "name": "Viego des Worlds 2024",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "ViegoQ",
+      "name": "Lame du roi déchu",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 96,
+        "full": "ViegoQ.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> les attaques de Viego infligent <physicalDamage>{{ totalpercenthealthonhit }} des PV actuels en dégâts physiques</physicalDamage> bonus. Sa première attaque contre un ennemi qu'il a récemment blessé avec une compétence frappe une seconde fois, infligeant <physicalDamage>{{ secondattackdamage }} pts de dégâts physiques</physicalDamage> et lui rendant <healing>{{ healmodvschamps*100 }}% des dégâts infligés en PV</healing>. Ces bonus sont conservés pendant la <keywordMajor>possession</keywordMajor>.<br /><br /><spellActive>Active : </spellActive>Viego donne un coup d'estoc, infligeant <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "% des PV actuels",
+          "Dégâts minimum selon les PV actuels",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "La lame spectrale de Viego inflige passivement un pourcentage des PV actuels de la cible en dégâts supplémentaires <OnHit>à l'impact</OnHit> et frappe deux fois les ennemis qu'il a récemment touchés avec une compétence, leur volant au passage des PV.<br><br>Viego peut activer cette compétence pour donner un coup d'estoc, empalant ainsi les ennemis devant lui.",
+      "cooldownBurn": "5/4.5/4/3.5/3"
+    },
+    {
+      "id": "ViegoW",
+      "name": "Gueule spectrale",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 96,
+        "full": "ViegoW.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<charge>Début de la charge :</charge> Viego commence à concentrer de la Brume, ce qui le <status>ralentit</status> de {{ selfslowpercent*100 }}%.<br /><br /><release>Relâchement :</release> Viego se rue vers l'avant et projette la Brume concentrée, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> et <status>étourdissant</status> le premier ennemi touché pendant {{ stunduration }} à {{ maxstuntt }} sec, selon la durée de la charge.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Viego charge son attaque avant de se ruer vers l'avant, projetant une boule de Brume noire concentrée qui étourdit le premier ennemi touché.",
+      "cooldownBurn": "8"
+    },
+    {
+      "id": "ViegoE",
+      "name": "Chemin tourmenté",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 96,
+        "full": "ViegoE.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Viego envoie un spectre hanter le premier élément de terrain touché, l'entourant de Brume pendant {{ mistduration }} sec. Viego est <keywordStealth>camouflé</keywordStealth> et gagne <speed>+{{ totalmovespeed }} vitesse de déplacement</speed> et <attackSpeed>+{{ attackspeed*100 }}% de vitesse d'attaque</attackSpeed> quand il est dans la Brume.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Vitesse de déplacement",
+          "Vitesse d'attaque",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "750",
+      "datavalues": {},
+      "description": "Viego ordonne à la Brume noire de hanter et entourer un élément de terrain. Viego peut se cacher dans la Brume sous forme de spectre, ce qui le camoufle et augmente ses vitesses de déplacement et d'attaque.",
+      "cooldownBurn": "14/12/10/8/6"
+    },
+    {
+      "id": "ViegoR",
+      "name": "Cœur brisé",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 96,
+        "full": "ViegoR.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Viego abandonne l'âme qu'il <keywordMajor>possède</keywordMajor> actuellement et se téléporte. À l'arrivée, il attaque le champion dont le pourcentage de PV est le plus bas, le <status>ralentissant</status> brièvement de {{ slowpercent*100 }}% et infligeant <physicalDamage>{{ totaldamage }} + {{ totalpercenthealth }}% des PV manquants en dégâts physiques</physicalDamage>. Les autres ennemis proches sont <status>repoussés</status> et subissent <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Pourcentage des PV manquants en dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "500",
+      "datavalues": {},
+      "description": "Viego se téléporte à un endroit proche et exécute un champion ennemi à l'arrivée, lui transperçant le cœur et provoquant une onde de choc destructrice qui repousse les alliés de cet ennemi.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive": {
+    "name": "Assujettissement",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 48,
+      "y": 0,
+      "full": "Viego_Passive.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "Les ennemis qui meurent devant Viego deviennent des spectres. Quand il attaque un spectre, Viego prend temporairement le contrôle du corps de l'ennemi mort, récupérant un pourcentage des PV max de la cible et gagnant l'accès à ses compétences de base et à ses objets. Viego ne gagne pas l'accès à l'ultime de la cible, mais peut lancer son propre ultime gratuitement."
+  },
+  "created_at": "2025-11-26T15:13:35.521432+00:00",
+  "factions": [
+    "shadow-isles"
+  ],
+  "custom_tags": [
+    "roi-déchu",
+    "ruine"
+  ],
+  "gender": "Male",
+  "species": "Undead",
+  "title_en": "The Ruined King",
+  "lore_en": "Once ruler of a long-lost kingdom, Viego perished over a thousand years ago when his attempt to bring his wife back from the dead triggered the magical catastrophe known as the Ruination. Transformed into a powerful, unliving specter tortured by an obsessive longing for his centuries-dead queen, Viego now stands as the Ruined King, controlling the deadly Harrowings as he scours Runeterra for anything that might one day restore her, and destroying all in his path as the Black Mist pours endlessly from his cruel, broken heart.",
+  "spells_en": [
+    {
+      "id": "ViegoQ",
+      "name": "Blade of the Ruined King",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 96,
+        "full": "ViegoQ.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": " <spellPassive>Passive:</spellPassive> Viego's Attacks deal an additional <physicalDamage>{{ totalpercenthealthonhit }} current Health physical damage</physicalDamage>. His first Attack against an enemy he has recently damaged with an Ability hits a second time, dealing <physicalDamage>{{ secondattackdamage }} physical damage</physicalDamage> and restoring <healing>{{ healmodvschamps*100 }}% of damage dealt as Health</healing>. These bonuses are kept during <keywordMajor>Possession</keywordMajor>.<br /><br /><spellActive>Active: </spellActive>Viego stabs forward, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Current Health %",
+          "Minimum Current Health Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Viego's spectral blade passively deals bonus percent current Health damage <OnHit>On-Hit</OnHit> and strikes twice vs. enemies he recently hit with an Ability, stealing Health.<br><br>Viego can activate this Ability to thrust his zweihander forward, impaling enemies in front of him.",
+      "cooldownBurn": "5/4.5/4/3.5/3"
+    },
+    {
+      "id": "ViegoW",
+      "name": "Spectral Maw",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 96,
+        "full": "ViegoW.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<charge>Begin Charging:</charge> Viego begins gathering Mist, <status>Slowing</status> himself by {{ selfslowpercent*100 }}%.<br /><br /><release>Release:</release> Viego dashes forward and hurls the gathered Mist. Deals <magicDamage>{{ totaldamage }} magic damage</magicDamage> and <status>Stuns</status> the first enemy hit for {{ stunduration }} to {{ maxstuntt }} seconds based on charge time.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Damage"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Viego charges up before dashing forward, releasing a ball of concentrated Black Mist that stuns the first enemy hit.",
+      "cooldownBurn": "8"
+    },
+    {
+      "id": "ViegoE",
+      "name": "Harrowed Path",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 96,
+        "full": "ViegoE.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Viego sends forth a spectre to haunt the first terrain hit, surrounding it with Mist for {{ mistduration }} seconds. Viego gains <keywordStealth>Camouflage</keywordStealth>, <speed>{{ totalmovespeed }} Move Speed</speed>, and <attackSpeed>{{ attackspeed*100 }}% Attack Speed</attackSpeed> while inside the Mist.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Move Speed",
+          "Attack Speed",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "750",
+      "datavalues": {},
+      "description": "Viego commands the Black Mist to haunt and surround a piece of terrain. Viego can hide in the Mist as a wraith, gaining camouflage, Move Speed, and Attack Speed.",
+      "cooldownBurn": "14/12/10/8/6"
+    },
+    {
+      "id": "ViegoR",
+      "name": "Heartbreaker",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 96,
+        "full": "ViegoR.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Viego discards any souls he is currently <keywordMajor>Possessing</keywordMajor> and teleports. On arrival he Attacks the champion with the lowest percent Health, briefly <status>Slowing</status> them by {{ slowpercent*100 }}% and dealing <physicalDamage>{{ totaldamage }} + {{ totalpercenthealth }}% missing Health physical damage</physicalDamage>. Other nearby enemies are <status>Knocked Back</status> and take <physicalDamage>{{ totaldamage }} physical damage</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Missing Health Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "500",
+      "datavalues": {},
+      "description": "Viego teleports to a nearby location and executes an enemy champion on arrival, piercing their heart and causing a destructive shockwave around them that knocks away their allies.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Sovereign's Domination",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 48,
+      "y": 0,
+      "full": "Viego_Passive.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "Enemies who fall before Viego become wraiths. By attacking a wraith, Viego temporarily seizes control of the dead enemy's body, healing for a percentage of his target's max health and gaining access to their basic abilities and items. He replaces their Ultimate with a free cast of his own."
+  },
+  "partype_en": "None",
+  "lanes": [
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "234000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "234001",
+      "num": 1,
+      "name": "Lunar Beast Viego",
+      "chromas": true
+    },
+    {
+      "id": "234010",
+      "num": 10,
+      "name": "Dissonance of Pentakill Viego",
+      "chromas": false
+    },
+    {
+      "id": "234019",
+      "num": 19,
+      "name": "EDG Viego",
+      "chromas": false
+    },
+    {
+      "id": "234021",
+      "num": 21,
+      "name": "King Viego",
+      "chromas": false
+    },
+    {
+      "id": "234030",
+      "num": 30,
+      "name": "Soul Fighter Viego",
+      "chromas": false
+    },
+    {
+      "id": "234037",
+      "num": 37,
+      "name": "Worlds 2024 Viego",
+      "chromas": false
+    }
+  ]
+}

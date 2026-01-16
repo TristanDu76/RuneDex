@@ -1,0 +1,590 @@
+{
+  "id": "MissFortune",
+  "key": "21",
+  "name": "Miss Fortune",
+  "title": "Chasseuse de primes",
+  "version": "15.23.1",
+  "lore": "Sarah Fortune est née dans une famille de renommés artisans armuriers, sa mère, Abigale Fortune, étant célèbre pour son talent à fabriquer des pistolets de qualité. Sarah a passé son enfance heureuse à apprendre cet art dans la forge de leur colonie insulaire.\n\nLe drame survint lorsqu'un pirate en pleine ascension, Gangplank, exigea une paire de pistolets Fortune uniques en leur genre, refusant de payer. Masqué, il fit irruption dans l'atelier et abattit la mère de Sarah avec ses propres créations, puis son père, et enfin la jeune Sarah elle-même. Par pure méchanceté, il détruisit les pistolets et incendia l'atelier pour effacer l'héritage des Fortune de Runeterra.\n\nSarah survécut miraculeusement, mais ses blessures étaient graves. Elle réussit à s'extirper des ruines en flammes, serrant les restes des deux pistolets contre sa poitrine. Torturée par des cauchemars pendant des années, elle fut consumée par un unique désir : la vengeance.\n\nElle rebâtit les pistolets de sa mère et se lança à Bilgewater pour traquer le meurtrier masqué, devenu le nouveau roi des pillards. Elle devint rapidement une chasseuse de primes redoutée, connue sous le nom de « Miss Fortune », gardant son identité secrète pour que Gangplank ne la voie pas venir.\n\nAprès des années de chasses sanglantes et d'exploits légendaires, Miss Fortune réalisa que simplement tuer Gangplank ne suffirait pas. Elle voulait son humiliation totale et la destruction de tout ce qu'il avait volé.\n\nElle orchestra une série de complots complexes et réussit finalement à faire exploser son navire, le Dead Pool, dans le port, faisant chuter le tyran sous les yeux de Bilgewater. C'était la vengeance parfaite.\n\nCependant, l'élimination de Gangplank entraîna une conséquence inattendue : les capitaines rivaux s'engagèrent immédiatement dans une guerre pour le contrôle de la ville. Le semblant de loi disparut, et des innocents furent pris entre les feux croisés.\n\nÀ contrecœur, Miss Fortune dut intervenir : en tant que capitaine du Syren, elle imposa une trêve fragile. Elle est désormais la Capitaine Fortune, forcée d'imposer son propre ordre à Bilgewater, réalisant que la véritable bataille pour la ville ne fait que commencer.",
+  "tags": [
+    "Marksman",
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 144,
+    "y": 96,
+    "full": "MissFortune.png",
+    "group": "champion",
+    "sprite": "champion2.png"
+  },
+  "skins": [
+    {
+      "id": "21000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "21001",
+      "num": 1,
+      "name": "Miss Fortune cow-girl",
+      "chromas": false
+    },
+    {
+      "id": "21002",
+      "num": 2,
+      "name": "Miss Fortune Waterloo",
+      "chromas": false
+    },
+    {
+      "id": "21003",
+      "num": 3,
+      "name": "Miss Fortune agent secret",
+      "chromas": false
+    },
+    {
+      "id": "21004",
+      "num": 4,
+      "name": "Miss Fortune sucre d'orge",
+      "chromas": false
+    },
+    {
+      "id": "21005",
+      "num": 5,
+      "name": "Mad Fortune",
+      "chromas": false
+    },
+    {
+      "id": "21006",
+      "num": 6,
+      "name": "Donna Fortune",
+      "chromas": false
+    },
+    {
+      "id": "21007",
+      "num": 7,
+      "name": "Miss Fortune arcade",
+      "chromas": true
+    },
+    {
+      "id": "21008",
+      "num": 8,
+      "name": "Capitaine Fortune",
+      "chromas": false
+    },
+    {
+      "id": "21009",
+      "num": 9,
+      "name": "Miss Fortune pistolets à eau",
+      "chromas": false
+    },
+    {
+      "id": "21015",
+      "num": 15,
+      "name": "Miss Fortune gardienne des étoiles",
+      "chromas": false
+    },
+    {
+      "id": "21016",
+      "num": 16,
+      "name": "Miss Fortune déesse des flingues",
+      "chromas": false
+    },
+    {
+      "id": "21017",
+      "num": 17,
+      "name": "Miss Fortune gardienne des pyjamas",
+      "chromas": false
+    },
+    {
+      "id": "21018",
+      "num": 18,
+      "name": "Miss Fortune sorcière",
+      "chromas": false
+    },
+    {
+      "id": "21020",
+      "num": 20,
+      "name": "Miss Fortune sorcière prestige",
+      "chromas": false
+    },
+    {
+      "id": "21021",
+      "num": 21,
+      "name": "Miss Fortune déchue",
+      "chromas": true
+    },
+    {
+      "id": "21031",
+      "num": 31,
+      "name": "Miss Fortune lapin de combat",
+      "chromas": true
+    },
+    {
+      "id": "21032",
+      "num": 32,
+      "name": "Amirale Miss Fortune lapin de combat",
+      "chromas": false
+    },
+    {
+      "id": "21033",
+      "num": 33,
+      "name": "Miss Fortune sorcière prestige (2022)",
+      "chromas": false
+    },
+    {
+      "id": "21040",
+      "num": 40,
+      "name": "Miss Fortune de l'Alliance brisée",
+      "chromas": true
+    },
+    {
+      "id": "21041",
+      "num": 41,
+      "name": "Miss Fortune de l'Alliance brisée prestige",
+      "chromas": false
+    },
+    {
+      "id": "21050",
+      "num": 50,
+      "name": "Miss Fortune de porcelaine",
+      "chromas": true
+    },
+    {
+      "id": "21060",
+      "num": 60,
+      "name": "Miss Fortune reine du combat",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "MissFortuneRicochetShot",
+      "name": "Doublé",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 144,
+        "full": "MissFortuneRicochetShot.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Miss Fortune tire une balle ricochante qui inflige <physicalDamage>{{ totaldamagetooltip }} pts de dégâts physiques</physicalDamage> à un ennemi et à un autre ennemi derrière lui. <br /><br />Le second coup peut être critique. Il est toujours critique si le premier coup a tué sa cible. {{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Miss Fortune tire une balle sur une cible, blessant cette cible et celle qui se trouve derrière. Les deux coups peuvent aussi appliquer Cœur volage.",
+      "cooldownBurn": "7/6/5/4/3"
+    },
+    {
+      "id": "MissFortuneViciousStrikes",
+      "name": "Fanfaronne",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 144,
+        "full": "MissFortuneViciousStrikes.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<passive>Passive :</passive> après ne pas avoir subi de dégâts pendant {{ passivebasemsooc }} sec, Miss Fortune gagne <speed>+{{ passivebasems }} vitesse de déplacement</speed>. Après {{ passivemaxmsextraooc }} sec supplémentaires, ce bonus augmente à <speed>+{{ passivemaxms }}</speed>.<br /><br /><active>Active :</active> Miss Fortune gagne le bonus maximal en <speed>vitesse de déplacement</speed> de la propriété passive et <attackSpeed>+{{ activeas*100 }}% de vitesse d'attaque</attackSpeed> pendant {{ activeduration }} sec.<br /><br /><spellName>Cœur volage</spellName> réduit de {{ lovetaprefund }} sec le délai de récupération de cette compétence.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "45",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Vitesse d'attaque",
+          "Vitesse de déplacement",
+          "Vitesse de déplacement maximum"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Miss Fortune augmente passivement sa vitesse de déplacement quand elle n'est pas attaquée. Cette compétence peut être activée pour recevoir un bonus en vitesse d'attaque pendant un court instant. Quand cette compétence est en récupération, Cœur volage réduit le délai de récupération restant de Fanfaronne.",
+      "cooldownBurn": "12"
+    },
+    {
+      "id": "MissFortuneScattershot",
+      "name": "Pluie de balles",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 144,
+        "full": "MissFortuneScattershot.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Miss Fortune fait pleuvoir des balles, ce qui révèle une zone, <status>ralentit</status> les ennemis de {{ totalslowamount }} et inflige <magicDamage>{{ totaldamagepersecond }} pts de dégâts magiques</magicDamage> par seconde pendant {{ baseduration }} sec (total : <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts par seconde",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Miss Fortune révèle une zone avec une pluie de balles, infligeant des vagues de dégâts aux ennemis et les ralentissant.",
+      "cooldownBurn": "18/17/16/15/14"
+    },
+    {
+      "id": "MissFortuneBulletTime",
+      "name": "Barrage de plomb",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 144,
+        "full": "MissFortuneBulletTime.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Miss Fortune canalise un déluge de balles. Elle tire {{ totalwaves }} vagues en {{ totalchannelduration }} sec, infligeant <physicalDamage>{{ physicaldamageperwave }} pts de dégâts physiques</physicalDamage> par vague (total : <physicalDamage>{{ totalphysicaldamage }} pts de dégâts physiques</physicalDamage>).<br /><br />Chaque vague peut être critique et ainsi infliger %i:scaleCrit% <physicalDamage>{{ physicalcritperwave }} pts de dégâts physiques</physicalDamage> (total : %i:scaleCrit% <physicalDamage>{{ totalphysicalcritdamage }} pts de dégâts physiques</physicalDamage>).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Barrages de balles",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Miss Fortune déchaîne un déluge de balles dans un cône devant elle, infligeant d'importants dégâts aux ennemis. Chaque vague de Barrage de plomb peut infliger des coups critiques.",
+      "cooldownBurn": "120/110/100"
+    }
+  ],
+  "passive": {
+    "name": "Cœur volage",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 144,
+      "y": 96,
+      "full": "MissFortune_W.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Miss Fortune inflige des dégâts physiques supplémentaires quand elle attaque une nouvelle cible."
+  },
+  "created_at": "2025-11-26T15:13:34.174598+00:00",
+  "factions": [
+    "bilgewater"
+  ],
+  "custom_tags": [
+    "capitaine",
+    "chasseuse"
+  ],
+  "gender": "Female",
+  "species": "Human",
+  "title_en": "the Bounty Hunter",
+  "lore_en": "Sarah Fortune is the daughter of the renowned gun-dame Abigale Fortune, whose skill in crafting firearms was legendary. Sarah spent a happy childhood learning the trade in the forge of their island settlement.\n\nTragedy struck when an up-and-coming pirate, Gangplank, demanded a pair of unique Fortune pistols and returned a year later, masked, refusing to pay. Enraged, he seized the pistols and gunned down Sarah's mother with her own creations, then her father, and finally young Sarah herself. Out of spite, he destroyed the pistols and set the workshop ablaze to completely wipe the Fortune legacy from Runeterra.\n\nSarah miraculously survived, crawling from the burning ruins with the remains of the two pistols clutched to her chest. Tormented by nightmares for years, she was consumed by a single desire: vengeance.\n\nShe rebuilt her mother's pistols and set out for Bilgewater to hunt the masked murderer, who had since declared himself the new reaver king. She quickly earned a fearsome reputation as a bounty hunter known only as \"Miss Fortune,\" keeping her identity secret so Gangplank would never see her coming.\n\nAfter years of bloody hunts and legendary exploits, Miss Fortune realized that simply killing Gangplank was not enough. She wanted his total humiliation and the burning to ash of all he had stolen.\n\nShe orchestrated a series of plots and finally succeeded in blowing up his ship, the Dead Pool, in the harbor, overthrowing the tyrannical reaver king for all of Bilgewater to witness. It was the perfect vengeance.\n\nHowever, eliminating Gangplank had an unexpected consequence: the rival captains immediately descended into infighting for control of the city. The semblance of law vanished, and countless innocent civilians were caught in the crossfire.\n\nReluctantly, Miss Fortune had to step up: as captain of the Syren, she brokered an uneasy truce. She is now Captain Fortune, forced to impose her own brand of order on Bilgewater, realizing that the real battle for the city has only just begun.",
+  "spells_en": [
+    {
+      "id": "MissFortuneRicochetShot",
+      "name": "Double Up",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 144,
+        "full": "MissFortuneRicochetShot.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Miss Fortune fires a bouncing shot, dealing <physicalDamage>{{ totaldamagetooltip }} physical damage</physicalDamage> to an enemy and to another one behind them. <br /><br />The second shot can critically strike. It always critically strikes if the first shot kills its target. {{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Miss Fortune fires a bullet at an enemy, damaging them and a target behind them. Both strikes can also apply Love Tap.",
+      "cooldownBurn": "7/6/5/4/3"
+    },
+    {
+      "id": "MissFortuneViciousStrikes",
+      "name": "Strut",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 144,
+        "full": "MissFortuneViciousStrikes.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<passive>Passive:</passive> After {{ passivebasemsooc }} seconds of not taking damage, Miss Fortune gains <speed>{{ passivebasems }} Move Speed</speed>. After another {{ passivemaxmsextraooc }} seconds, this increases to <speed>{{ passivemaxms }}</speed>.<br /><br /><active>Active:</active> Gain the passive effect's full <speed>Move Speed</speed> bonus and <attackSpeed>{{ activeas*100 }}% Attack Speed</attackSpeed> for {{ activeduration }} seconds.<br /><br /><spellName>Love Taps</spellName> reduce the Cooldown of this Ability by {{ lovetaprefund }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "45",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Attack Speed",
+          "Move Speed",
+          "Max Move Speed"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Miss Fortune passively gains Move Speed when not attacked. This ability can be activated to grant bonus Attack Speed for a short duration. While it's on cooldown, Love Taps reduce the remaining cooldown of Strut.",
+      "cooldownBurn": "12"
+    },
+    {
+      "id": "MissFortuneScattershot",
+      "name": "Make It Rain",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 144,
+        "full": "MissFortuneScattershot.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Miss Fortune rains bullets, revealing an area, <status>Slowing</status> by {{ totalslowamount }} and dealing <magicDamage>{{ totaldamagepersecond }} magic damage</magicDamage> per second for {{ baseduration }} seconds (total <magicDamage>{{ totaldamage }} magic damage</magicDamage>).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage Per Second",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Miss Fortune reveals an area with a flurry of bullets, dealing waves of damage to opponents and slowing them.",
+      "cooldownBurn": "18/17/16/15/14"
+    },
+    {
+      "id": "MissFortuneBulletTime",
+      "name": "Bullet Time",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 144,
+        "full": "MissFortuneBulletTime.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Miss Fortune channels a barrage of bullets, firing {{ totalwaves }} waves over {{ totalchannelduration }} seconds, dealing <physicalDamage>{{ physicaldamageperwave }} physical damage</physicalDamage> per wave (total <physicalDamage>{{ totalphysicaldamage }} physical damage</physicalDamage>).<br /><br />Each wave can critically strike for %i:scaleCrit% <physicalDamage>{{ physicalcritperwave }} physical damage</physicalDamage> (total %i:scaleCrit% <physicalDamage>{{ totalphysicalcritdamage }} physical damage</physicalDamage>).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Bullet Barrages",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Miss Fortune channels a barrage of bullets into a cone in front of her, dealing large amounts of damage to enemies. Each wave of Bullet Time can critically strike",
+      "cooldownBurn": "120/110/100"
+    }
+  ],
+  "passive_en": {
+    "name": "Love Tap",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 144,
+      "y": 96,
+      "full": "MissFortune_W.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Miss Fortune deals bonus physical damage whenever she basic attacks a new target."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Adc"
+  ],
+  "skins_en": [
+    {
+      "id": "21000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "21001",
+      "num": 1,
+      "name": "Cowgirl Miss Fortune",
+      "chromas": false
+    },
+    {
+      "id": "21002",
+      "num": 2,
+      "name": "Waterloo Miss Fortune",
+      "chromas": false
+    },
+    {
+      "id": "21003",
+      "num": 3,
+      "name": "Secret Agent Miss Fortune",
+      "chromas": false
+    },
+    {
+      "id": "21004",
+      "num": 4,
+      "name": "Candy Cane Miss Fortune",
+      "chromas": false
+    },
+    {
+      "id": "21005",
+      "num": 5,
+      "name": "Road Warrior Miss Fortune",
+      "chromas": false
+    },
+    {
+      "id": "21006",
+      "num": 6,
+      "name": "Crime City Miss Fortune",
+      "chromas": false
+    },
+    {
+      "id": "21007",
+      "num": 7,
+      "name": "Arcade Miss Fortune",
+      "chromas": true
+    },
+    {
+      "id": "21008",
+      "num": 8,
+      "name": "Captain Fortune",
+      "chromas": false
+    },
+    {
+      "id": "21009",
+      "num": 9,
+      "name": "Pool Party Miss Fortune",
+      "chromas": false
+    },
+    {
+      "id": "21015",
+      "num": 15,
+      "name": "Star Guardian Miss Fortune",
+      "chromas": false
+    },
+    {
+      "id": "21016",
+      "num": 16,
+      "name": "Gun Goddess Miss Fortune",
+      "chromas": false
+    },
+    {
+      "id": "21017",
+      "num": 17,
+      "name": "Pajama Guardian Miss Fortune",
+      "chromas": false
+    },
+    {
+      "id": "21018",
+      "num": 18,
+      "name": "Bewitching Miss Fortune",
+      "chromas": false
+    },
+    {
+      "id": "21020",
+      "num": 20,
+      "name": "Prestige Bewitching Miss Fortune",
+      "chromas": false
+    },
+    {
+      "id": "21021",
+      "num": 21,
+      "name": "Ruined Miss Fortune",
+      "chromas": true
+    },
+    {
+      "id": "21031",
+      "num": 31,
+      "name": "Battle Bunny Miss Fortune",
+      "chromas": true
+    },
+    {
+      "id": "21032",
+      "num": 32,
+      "name": "Admiral Battle Bunny Miss Fortune",
+      "chromas": false
+    },
+    {
+      "id": "21033",
+      "num": 33,
+      "name": "Prestige Bewitching Miss Fortune (2022)",
+      "chromas": false
+    },
+    {
+      "id": "21040",
+      "num": 40,
+      "name": "Broken Covenant Miss Fortune",
+      "chromas": true
+    },
+    {
+      "id": "21041",
+      "num": 41,
+      "name": "Prestige Broken Covenant Miss Fortune",
+      "chromas": false
+    },
+    {
+      "id": "21050",
+      "num": 50,
+      "name": "Porcelain Miss Fortune",
+      "chromas": true
+    },
+    {
+      "id": "21060",
+      "num": 60,
+      "name": "Battle Queen Miss Fortune",
+      "chromas": true
+    }
+  ]
+}

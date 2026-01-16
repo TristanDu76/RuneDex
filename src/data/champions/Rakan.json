@@ -1,0 +1,472 @@
+{
+  "id": "Rakan",
+  "key": "497",
+  "name": "Rakan",
+  "title": "Charmeur",
+  "version": "15.23.1",
+  "lore": "Aussi lunatique qu'il est charmeur, Rakan est un trublion vastaya tristement célèbre, et le plus grand danseur guerrier de l'histoire de la tribu Lhotla. Pour les humains qui vivent dans les hautes terres d'Ionia, son nom est depuis longtemps synonyme de festivals endiablés, de fêtes déraisonnables et de musique anarchique. Peu de gens savent cependant que cet histrion ambulant est également le partenaire de Xayah, la rebelle, dont il défend avec ferveur la cause.",
+  "tags": [
+    "Support"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 192,
+    "y": 48,
+    "full": "Rakan.png",
+    "group": "champion",
+    "sprite": "champion3.png"
+  },
+  "skins": [
+    {
+      "id": "497000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "497001",
+      "num": 1,
+      "name": "Rakan de l'aube cosmique",
+      "chromas": false
+    },
+    {
+      "id": "497002",
+      "num": 2,
+      "name": "Rakan cœur tendre",
+      "chromas": false
+    },
+    {
+      "id": "497003",
+      "num": 3,
+      "name": "SSG Rakan",
+      "chromas": true
+    },
+    {
+      "id": "497004",
+      "num": 4,
+      "name": "iG Rakan",
+      "chromas": true
+    },
+    {
+      "id": "497005",
+      "num": 5,
+      "name": "Rakan gardien des étoiles",
+      "chromas": true
+    },
+    {
+      "id": "497009",
+      "num": 9,
+      "name": "Rakan sylvestre",
+      "chromas": true
+    },
+    {
+      "id": "497018",
+      "num": 18,
+      "name": "Rakan des arcanes",
+      "chromas": true
+    },
+    {
+      "id": "497027",
+      "num": 27,
+      "name": "Rakan de l'Alliance brisée",
+      "chromas": true
+    },
+    {
+      "id": "497036",
+      "num": 36,
+      "name": "Rakan gardien des étoiles repenti",
+      "chromas": false
+    },
+    {
+      "id": "497037",
+      "num": 37,
+      "name": "Rakan dracomancien",
+      "chromas": true
+    },
+    {
+      "id": "497038",
+      "num": 38,
+      "name": "Rakan dracomancien prestige",
+      "chromas": false
+    },
+    {
+      "id": "497047",
+      "num": 47,
+      "name": "Rakan de l'Académie du combat",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "RakanQ",
+      "name": "Rémige rayonnante",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 144,
+        "full": "RakanQ.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Rakan tire une plume magique qui inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> au premier ennemi touché.<br /><br />Si la plume touche un champion ou un monstre épique de la jungle, Rakan récupère <healing>{{ totalheal }} PV</healing> et rend le même montant aux alliés proches après un délai de {{ healdelay }} sec ou quand il touche un champion allié.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "45",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "850",
+      "datavalues": {},
+      "description": "Rakan tire une plume magique qui inflige des dégâts magiques. Frapper un champion ou un monstre épique permet à Rakan de soigner ses alliés.",
+      "cooldownBurn": "11/10/9/8/7"
+    },
+    {
+      "id": "RakanW",
+      "name": "Entrée triomphale",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 144,
+        "full": "RakanW.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Rakan se rue dans une direction et bondit, <status>projetant dans les airs</status> les ennemis touchés pendant {{ knockupduration }} sec et leur infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/60/70/80/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "Coût en mana"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Rakan fonce vers l'endroit ciblé, projetant en l'air les ennemis proches de son point d'arrivée.",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "RakanE",
+      "name": "Valse guerrière",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 144,
+        "full": "RakanE.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Rakan se rue sur un champion allié et lui octroie un <shield>bouclier de {{ totalshield }} PV</shield> pendant {{ e3 }} sec.<br /><br />Rakan peut <recast>réactiver</recast> une fois cette compétence dans les {{ e2 }} sec qui suivent la première activation.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/45/50/55/60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "PV du bouclier",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Rakan s'envole vers un champion allié en lui octroyant un bouclier. La compétence peut être relancée sans coût pendant un court instant.",
+      "cooldownBurn": "0"
+    },
+    {
+      "id": "RakanR",
+      "name": "Danse ultime",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 144,
+        "full": "RakanR.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Rakan gagne <speed>+{{ e5 }}% de vitesse de déplacement</speed> pendant {{ e2 }} sec. Rakan inflige <magicDamage>{{ totaldamagetooltip }} pts de dégâts magiques</magicDamage> et <status>charme</status> les ennemis pendant {{ e3 }} sec la première fois qu'il les touche. Le premier champion touché octroie à Rakan <speed>+{{ e6 }}% de vitesse de déplacement</speed>, et ce bonus diminue progressivement.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Durée du charme",
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "150",
+      "datavalues": {},
+      "description": "Rakan augmente sa vitesse de déplacement, charme les ennemis touchés et leur inflige des dégâts magiques.",
+      "cooldownBurn": "130/110/90"
+    }
+  ],
+  "passive": {
+    "name": "Plumes enchantées",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 192,
+      "y": 48,
+      "full": "Rakan_P.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Rakan gagne périodiquement un bouclier."
+  },
+  "created_at": "2025-11-26T15:13:34.616021+00:00",
+  "factions": [
+    "ionia"
+  ],
+  "custom_tags": [
+    "rebelle"
+  ],
+  "gender": "Male",
+  "species": "Vastaya",
+  "title_en": "The Charmer",
+  "lore_en": "As mercurial as he is charming, Rakan is an infamous vastayan troublemaker and the greatest battle-dancer in Lhotlan tribal history. To the humans of the Ionian highlands, his name has long been synonymous with wild festivals, uncontrollable parties, and anarchic music. Few would suspect this energetic, traveling showman is also partner to the rebel Xayah, and is dedicated to her cause.",
+  "spells_en": [
+    {
+      "id": "RakanQ",
+      "name": "Gleaming Quill",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 144,
+        "full": "RakanQ.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Rakan flings a magical feather that deals <magicDamage>{{ totaldamage }} magic damage</magicDamage> to the first enemy hit.<br /><br />If the feather hits a champion or epic jungle monster, Rakan restores <healing>{{ totalheal }} Health</healing> to himself and nearby allies after {{ healdelay }} seconds or when he touches an allied champion.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "45",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "850",
+      "datavalues": {},
+      "description": "Flings a magical feather that deals magic damage. Striking a champion or epic monster enables Rakan to heal his allies.",
+      "cooldownBurn": "11/10/9/8/7"
+    },
+    {
+      "id": "RakanW",
+      "name": "Grand Entrance",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 144,
+        "full": "RakanW.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Rakan dashes, then spirals into the air, <status>Knocking Up</status> for {{ knockupduration }} second and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/60/70/80/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "Mana Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Dashes to a location, knocking up nearby enemies on arrival.",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "RakanE",
+      "name": "Battle Dance",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 144,
+        "full": "RakanE.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Rakan dashes to an allied champion, granting them <shield>{{ totalshield }} Shield</shield> for {{ e3 }} seconds.<br /><br />Rakan can <recast>Recast</recast> this Ability once within {{ e2 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/45/50/55/60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Shield Health",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Flies to an allied champion granting them a shield. Can be re-cast for free for a short duration.",
+      "cooldownBurn": "0"
+    },
+    {
+      "id": "RakanR",
+      "name": "The Quickness",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 144,
+        "full": "RakanR.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Rakan gains <speed>{{ e5 }}% Move Speed</speed> for {{ e2 }} seconds. Rakan deals <magicDamage>{{ totaldamagetooltip }} magic damage</magicDamage> and <status>Charms</status> enemies for {{ e3 }} second(s) the first time he touches them. The first champion touched grants Rakan <speed>{{ e6 }}% decaying Move Speed</speed>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Charm Duration",
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "150",
+      "datavalues": {},
+      "description": "Gains Move Speed, charming and dealing magic damage to enemies touched.",
+      "cooldownBurn": "130/110/90"
+    }
+  ],
+  "passive_en": {
+    "name": "Fey Feathers",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 192,
+      "y": 48,
+      "full": "Rakan_P.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Rakan periodically gains a shield."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Support"
+  ],
+  "skins_en": [
+    {
+      "id": "497000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "497001",
+      "num": 1,
+      "name": "Cosmic Dawn Rakan",
+      "chromas": false
+    },
+    {
+      "id": "497002",
+      "num": 2,
+      "name": "Sweetheart Rakan",
+      "chromas": false
+    },
+    {
+      "id": "497003",
+      "num": 3,
+      "name": "SSG Rakan",
+      "chromas": true
+    },
+    {
+      "id": "497004",
+      "num": 4,
+      "name": "iG Rakan",
+      "chromas": true
+    },
+    {
+      "id": "497005",
+      "num": 5,
+      "name": "Star Guardian Rakan",
+      "chromas": true
+    },
+    {
+      "id": "497009",
+      "num": 9,
+      "name": "Elderwood Rakan",
+      "chromas": true
+    },
+    {
+      "id": "497018",
+      "num": 18,
+      "name": "Arcana Rakan",
+      "chromas": true
+    },
+    {
+      "id": "497027",
+      "num": 27,
+      "name": "Broken Covenant Rakan",
+      "chromas": true
+    },
+    {
+      "id": "497036",
+      "num": 36,
+      "name": "Redeemed Star Guardian Rakan",
+      "chromas": false
+    },
+    {
+      "id": "497037",
+      "num": 37,
+      "name": "Dragonmancer Rakan",
+      "chromas": true
+    },
+    {
+      "id": "497038",
+      "num": 38,
+      "name": "Prestige Dragonmancer Rakan",
+      "chromas": false
+    },
+    {
+      "id": "497047",
+      "num": 47,
+      "name": "Battle Academia Rakan",
+      "chromas": true
+    }
+  ]
+}

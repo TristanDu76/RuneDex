@@ -1,0 +1,477 @@
+{
+  "id": "Gangplank",
+  "key": "41",
+  "name": "Gangplank",
+  "title": "Fléau des mers",
+  "version": "15.23.1",
+  "lore": "Gangplank est un roi des pillards brutal et imprévisible qui a bâti sa fortune en s'attaquant aux routes commerciales des Douze Mers. Sa rapacité et sa violence lui ont valu de puissants ennemis à travers Runeterra :\r\n\r\n    En Ionia, il a provoqué la colère de l'Ordre de l'Ombre après avoir pillé le Temple du Couteau Dentelé.\r\n\r\n    À Noxus, le Grand Général Swain lui-même a juré sa perte après que Gangplank ait volé le Léviathan, le navire de guerre personnel de Swain et la fierté de la flotte noxienne.\r\n\r\nMalgré les assassins, les chasseurs de primes et les armadas lancés contre lui, personne n'a réussi à le capturer. Il prend un plaisir sombre à afficher les récompenses toujours croissantes pour sa tête sur le tableau des primes de Bilgewater chaque fois qu'il revient au port.\r\n\r\nCependant, son règne fut brisé par les machinations d'une seule personne : la chasseuse de primes Miss Fortune (Sarah Fortune). Son navire fut détruit sous les yeux de tout Bilgewater, tuant son équipage et brisant son aura d'invincibilité. Les gangs de Bilgewater, voyant qu'il était vulnérable, se sont immédiatement soulevés pour s'emparer du contrôle de la ville portuaire.\r\n\r\nMalgré des blessures horribles subies lors de l'explosion, Gangplank a survécu. Arborant de nouvelles cicatrices et doté d'un nouveau bras métallique pour remplacer son membre amputé, il est désormais plus dangereux que jamais.\r\n\r\nIl est déterminé à retrouver sa force, à récupérer ce qu'il considère comme lui appartenant de droit (le contrôle de Bilgewater) et à punir impitoyablement tous ceux qui se sont retournés contre lui. Gangplank préférerait engloutir la ville dans le sang plutôt que de la laisser tomber entre les mains de quiconque. Il possède maintenant suffisamment de pistolets, de sabres et de barils de poudre pour mener à bien sa vengeance.",
+  "tags": [
+    "Fighter"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 336,
+    "y": 0,
+    "full": "Gangplank.png",
+    "group": "champion",
+    "sprite": "champion1.png"
+  },
+  "skins": [
+    {
+      "id": "41000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "41001",
+      "num": 1,
+      "name": "Gangplank lugubre",
+      "chromas": false
+    },
+    {
+      "id": "41002",
+      "num": 2,
+      "name": "Gangplank minuteman",
+      "chromas": false
+    },
+    {
+      "id": "41003",
+      "num": 3,
+      "name": "Gangplank matelot",
+      "chromas": false
+    },
+    {
+      "id": "41004",
+      "num": 4,
+      "name": "Petit soldat Gangplank",
+      "chromas": false
+    },
+    {
+      "id": "41005",
+      "num": 5,
+      "name": "Gangplank des forces spéciales",
+      "chromas": false
+    },
+    {
+      "id": "41006",
+      "num": 6,
+      "name": "Gangplank sultan",
+      "chromas": false
+    },
+    {
+      "id": "41007",
+      "num": 7,
+      "name": "Capitaine Gangplank",
+      "chromas": false
+    },
+    {
+      "id": "41008",
+      "num": 8,
+      "name": "Gangplank nova d'effroi",
+      "chromas": true
+    },
+    {
+      "id": "41014",
+      "num": 14,
+      "name": "Gangplage",
+      "chromas": true
+    },
+    {
+      "id": "41021",
+      "num": 21,
+      "name": "FPX Gangplank",
+      "chromas": true
+    },
+    {
+      "id": "41023",
+      "num": 23,
+      "name": "Gangplank le Traître",
+      "chromas": true
+    },
+    {
+      "id": "41033",
+      "num": 33,
+      "name": "PROJET : Gangplank",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "GangplankQWrapper",
+      "name": "Pourparlers",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 0,
+        "full": "GangplankQWrapper.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "{{Spell_GangplankQWrapper_Tooltip_{{ gamemodeinteger }}}}{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/45/40/35/30",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "PO pillées",
+          "Serpents d'argent pillés",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "625",
+      "datavalues": {},
+      "description": "Gangplank tire sur une cible. Il gagne des PO supplémentaires si le tir tue la cible.",
+      "cooldownBurn": "4.5"
+    },
+    {
+      "id": "GangplankW",
+      "name": "Guérison du scorbut",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 0,
+        "full": "GangplankW.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Gangplank consomme un grand nombre d'agrumes, supprimant toutes les <status>entraves</status> qui l'affectent et récupérant <healing>{{ basehealth }} plus {{ e2 }}% de ses PV manquants</healing>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/70/80/90/100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Soins",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Gangplank mange des agrumes pour dissiper les effets de contrôle de foule qui l'affectent et récupérer des PV.",
+      "cooldownBurn": "22/20/18/16/14"
+    },
+    {
+      "id": "GangplankE",
+      "name": "Baril de poudre",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 0,
+        "full": "GangplankE.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "3",
+      "maxrank": 5,
+      "tooltip": "Gangplank pose un baril de poudre qui peut être attaqué par Gangplank et les champions ennemis pendant {{ e5 }} sec. Quand un ennemi le détruit, le baril est désamorcé. Quand Gangplank le détruit, le baril explose, <status>ralentissant</status> de {{ finalslowamount }}% pendant {{ e2 }} sec et infligeant les <physicalDamage>dégâts de l'attaque</physicalDamage> en ignorant {{ e0 }}% d'armure. Les champions subissent <physicalDamage>{{ e3 }} pts de dégâts physiques</physicalDamage> supplémentaires.<br /><br />Les barils perdent des PV toutes les {{ f5 }} sec. Les barils dont la zone d'effet mord sur celle du baril détruit explosent aussi, mais chaque ennemi ne peut subir des dégâts qu'une fois. Les explosions déclenchées avec <spellName>Pourparlers</spellName> octroient des PO supplémentaires si elles tuent des ennemis.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts supplémentaires contre les champions",
+          "Charges max",
+          "Ralentissement",
+          "Délai de rechargement"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Gangplank place un baril de poudre à l'endroit ciblé. S'il l'attaque, le baril explose, étendant les dégâts de l'attaque dans la zone et ralentissant les ennemis.",
+      "cooldownBurn": "0"
+    },
+    {
+      "id": "GangplankR",
+      "name": "Tir de barrage",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 0,
+        "full": "GangplankR.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Gangplank ordonne à son navire de tirer {{ totalwavestooltip }} vagues de boulets de canon en {{ zoneduration }} sec, n'importe où sur la carte. Chaque vague <status>ralentit</status> de {{ slowpercent }}% pendant {{ slowduration }} sec et inflige <magicDamage>{{ onewavedamage }} pts de dégâts magiques</magicDamage>. Dégâts max : {{ totaldamagetooltip }}.<br /><br />Cette compétence peut être améliorée à la boutique via <spellName>Pourparlers</spellName>.<br /><br /><spellName>Feu à volonté</spellName> : tire 6 vagues de boulets de canon supplémentaires.<br /><spellName>Jeune Camarde</spellName> : tire un énorme boulet de canon qui inflige <trueDamage>{{ deathsdaughterdamage }} pts de dégâts bruts</trueDamage> et un <status>ralentissement</status> de {{ deathsdaughterslow }}% pendant {{ deathsdaughterslowduration }} sec.<br /><spellName>Moral élevé</spellName> : les alliés dans la zone de Tir de barrage gagnent <speed>+{{ raisemoralehaste }}% de vitesse de déplacement</speed> pendant {{ raisemoralehasteduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts par vague",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "30000",
+      "datavalues": {},
+      "description": "Gangplank demande à son navire de bombarder une zone, ralentissant et blessant les ennemis.",
+      "cooldownBurn": "160/140/120"
+    }
+  ],
+  "passive": {
+    "name": "Épreuve du feu",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 336,
+      "y": 0,
+      "full": "Gangplank_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Toutes les quelques secondes, les attaques de base de Gangplank mettent le feu à sa cible."
+  },
+  "created_at": "2025-11-26T15:13:32.943584+00:00",
+  "factions": [
+    "bilgewater"
+  ],
+  "custom_tags": [
+    "pirate",
+    "roi"
+  ],
+  "gender": "Male",
+  "species": "Human",
+  "title_en": "the Saltwater Scourge",
+  "lore_en": "Gangplank is a brutal and unpredictable pirate king who grew rich preying upon the trade routes of the Twelve Seas. His rapacity and violence earned him many powerful enemies across Runeterra:\r\n\r\n    In Ionia, he incurred the wrath of the Order of Shadow after ransacking the Temple of the Jagged Knife.\r\n\r\n    In Noxus, Grand General Swain himself swore vengeance after Gangplank stole the Leviathan, Swain’s personal warship and the pride of the Noxian fleet.\r\n\r\nDespite assassins, bounty hunters, and entire armadas being sent after him, none have yet brought him to justice. He takes grim pleasure in the ever-increasing rewards posted for his head, which he makes sure to nail to the Bounty Board in Bilgewater whenever he returns to port.\r\n\r\nHowever, his reign was broken by the machinations of one individual: the bounty hunter Miss Fortune (Sarah Fortune). His ship was destroyed with all of Bilgewater watching, killing his crew and shattering his aura of invincibility. The gangs of Bilgewater, seeing he was vulnerable, immediately rose up, fighting among themselves to claim dominion over the port city.\r\n\r\nDespite suffering horrific injuries in the explosion, Gangplank survived. Sporting a multitude of fresh scars and with a newly crafted metal arm to replace his amputated limb, he is now more dangerous than ever.\r\n\r\nHe is determined to rebuild his strength, to reclaim what he sees as rightfully his (control over Bilgewater), and to ruthlessly punish all those who turned against him. Gangplank would rather see the city drowned in blood than let anyone else take it. He now possesses enough pistols, sabers, and powder kegs to claim back what he lost.",
+  "spells_en": [
+    {
+      "id": "GangplankQWrapper",
+      "name": "Parrrley",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 0,
+        "full": "GangplankQWrapper.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "{{Spell_GangplankQWrapper_Tooltip_{{ gamemodeinteger }}}}{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/45/40/35/30",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Plunder Gold",
+          "Plunder Silver Serpents",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "625",
+      "datavalues": {},
+      "description": "Shoots target, plundering Gold for each enemy unit killed.",
+      "cooldownBurn": "4.5"
+    },
+    {
+      "id": "GangplankW",
+      "name": "Remove Scurvy",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 0,
+        "full": "GangplankW.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Gangplank consumes a large amount of citrus fruit, removing all <status>Disabling</status> effects and restoring <healing>{{ basehealth }} plus {{ e2 }}% missing Health</healing>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/70/80/90/100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Healing",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Eats citrus to cure crowd control effects and restore Health.",
+      "cooldownBurn": "22/20/18/16/14"
+    },
+    {
+      "id": "GangplankE",
+      "name": "Powder Keg",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 0,
+        "full": "GangplankE.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "3",
+      "maxrank": 5,
+      "tooltip": "Gangplank places a powder keg that can be attacked by Gangplank and enemy champions for {{ e5 }} seconds. When an enemy destroys it, the keg is defused. When Gangplank destroys it, it explodes, <status>Slowing</status> by {{ finalslowamount }}% for {{ e2 }} seconds and dealing the <physicalDamage>Attack's damage</physicalDamage>, ignoring {{ e0 }}% Armor. Champions take an additional <physicalDamage>{{ e3 }} physical damage</physicalDamage>.<br /><br />Keg health decays every {{ f5 }} seconds. Keg explosions detonate other kegs with overlapping blast zones, but don't deal damage to the same target more than once. Keg explosions triggered by <spellName>Parrrley</spellName> will grant the bonus gold for targets killed.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Bonus Damage Against Champions",
+          "Max Charges",
+          "Slow",
+          "Recharge Time"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Gangplank uncovers a powder keg at target location. If he attacks it, it explodes, spreading the attack's damage to enemies in the area, slowing them.",
+      "cooldownBurn": "0"
+    },
+    {
+      "id": "GangplankR",
+      "name": "Cannon Barrage",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 0,
+        "full": "GangplankR.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Gangplank signals his ship to fire {{ totalwavestooltip }} waves of cannonballs anywhere on the map over {{ zoneduration }} seconds. Each wave <status>Slows</status> by {{ slowpercent }}% for {{ slowduration }} seconds and deals <magicDamage>{{ onewavedamage }} magic damage</magicDamage>. Maximum damage: {{ totaldamagetooltip }}<br /><br />This Ability can be upgraded in the shop via <spellName>Parrrley</spellName>.<br /><br /><spellName>Fire at Will</spellName>: Fires 6 additional waves of cannonballs.<br /><spellName>Death's Daughter</spellName>: Fires a Mega-Cannonball that deals <trueDamage>{{ deathsdaughterdamage }} true damage</trueDamage> and <status>Slows</status> by {{ deathsdaughterslow }}% for {{ deathsdaughterslowduration }} second.<br /><spellName>Raise Morale</spellName>: Allies inside Cannon Barrage gain <speed>{{ raisemoralehaste }}% Move Speed</speed> for {{ raisemoralehasteduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage Per Wave",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "30000",
+      "datavalues": {},
+      "description": "Gangplank signals his ship to bombard an area, slowing and damaging enemies.",
+      "cooldownBurn": "160/140/120"
+    }
+  ],
+  "passive_en": {
+    "name": "Trial by Fire",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 336,
+      "y": 0,
+      "full": "Gangplank_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Every few seconds, Gangplank's melee strike will set his opponent on fire."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Top"
+  ],
+  "skins_en": [
+    {
+      "id": "41000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "41001",
+      "num": 1,
+      "name": "Spooky Gangplank",
+      "chromas": false
+    },
+    {
+      "id": "41002",
+      "num": 2,
+      "name": "Minuteman Gangplank",
+      "chromas": false
+    },
+    {
+      "id": "41003",
+      "num": 3,
+      "name": "Sailor Gangplank",
+      "chromas": false
+    },
+    {
+      "id": "41004",
+      "num": 4,
+      "name": "Toy Soldier Gangplank",
+      "chromas": false
+    },
+    {
+      "id": "41005",
+      "num": 5,
+      "name": "Special Forces Gangplank",
+      "chromas": false
+    },
+    {
+      "id": "41006",
+      "num": 6,
+      "name": "Sultan Gangplank",
+      "chromas": false
+    },
+    {
+      "id": "41007",
+      "num": 7,
+      "name": "Captain Gangplank",
+      "chromas": false
+    },
+    {
+      "id": "41008",
+      "num": 8,
+      "name": "Dreadnova Gangplank",
+      "chromas": true
+    },
+    {
+      "id": "41014",
+      "num": 14,
+      "name": "Pool Party Gangplank",
+      "chromas": true
+    },
+    {
+      "id": "41021",
+      "num": 21,
+      "name": "FPX Gangplank",
+      "chromas": true
+    },
+    {
+      "id": "41023",
+      "num": 23,
+      "name": "Gangplank the Betrayer",
+      "chromas": true
+    },
+    {
+      "id": "41033",
+      "num": 33,
+      "name": "PROJECT: Gangplank",
+      "chromas": true
+    }
+  ]
+}

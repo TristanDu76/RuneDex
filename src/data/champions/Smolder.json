@@ -1,0 +1,341 @@
+{
+  "id": "Smolder",
+  "key": "901",
+  "name": "Smolder",
+  "title": "Dragonnet flamboyant",
+  "version": "15.23.1",
+  "lore": "Caché dans les falaises escarpées de la frontière noxienne et attentivement surveillé par sa mère, un jeune dragon apprend ce que signifie être l'héritier de la lignée impériale des dragons camavoriens. Joueur et impatient de grandir, Smolder est prêt à tout pour développer ses nouvelles compétences. Même s'il n'est encore qu'un dragonnet, ses compétences sont déjà impressionnantes : il met aisément le feu à tout ce qui peut brûler.",
+  "tags": [
+    "Marksman",
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 288,
+    "y": 0,
+    "full": "Smolder.png",
+    "group": "champion",
+    "sprite": "champion4.png"
+  },
+  "skins": [
+    {
+      "id": "901000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "901001",
+      "num": 1,
+      "name": "Smolder écailles célestes",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "SmolderQ",
+      "name": "Boule de feu draconique",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 0,
+        "full": "SmolderQ.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Smolder crache du feu, infligeant <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> + <magicDamage>{{ spell.smolderp:passive_qdamageincrease }} pts de dégâts magiques</magicDamage>. Si la cible meurt sur le coup, Smolder récupère <scaleMana>{{ manarestore }} pts de mana</scaleMana> (une fois par lancement de la compétence).<br /><br />Selon le nombre d'effets de <spellName>Dragon en herbe</spellName> cumulés, cette compétence évolue pour gagner les bonus suivants :<li><keywordMajor>{{ stacktier1 }} effets cumulés</keywordMajor> : blesse tous les ennemis autour de la cible.<li><keywordMajor>{{ stacktier2 }} effets cumulés</keywordMajor> : envoie <spellName>{{ tier2_numberofblowback }}</spellName> explosions derrière la cible. Ces explosions infligent {{ tier2_blowbackpercentagedamage }}% des dégâts de cette compétence.<li><keywordMajor>{{ stacktier3 }} effets cumulés</keywordMajor> : brûle la cible, infligeant des <trueDamage>dégâts bruts équivalents à {{ tier3_burn }} des PV max</trueDamage> en {{ tier3_dotlength }} sec. Les champions ennemis qui tombent sous <trueDamage>{{ tier3_executethreshold }}</trueDamage> des PV max lorsqu'ils brûlent sont instantanément tués.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "25",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts de base",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "550",
+      "datavalues": {},
+      "description": "Smolder crache du feu sur un ennemi. Au fil des effets cumulés, cette compétence devient plus puissante.",
+      "cooldownBurn": "5.5/5/4.5/4/3.5"
+    },
+    {
+      "id": "SmolderW",
+      "name": "Atchoum !",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 0,
+        "full": "SmolderW.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Smolder laisse échapper un adorable éternuement enflammé, infligeant <physicalDamage>{{ initialdamage }} pts de dégâts physiques</physicalDamage> et <status>ralentissant</status> les ennemis de {{ slowamount*100 }}% pendant {{ slowduration }} sec.<br /><br />Toucher des champions provoque une explosion, infligeant <physicalDamage>{{ explosiondamage }} pts de dégâts physiques</physicalDamage> + <magicDamage>{{ spell.smolderp:passive_wdamageincrease }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Dégâts de l'explosion",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1500",
+      "datavalues": {},
+      "description": "Smolder laisse échapper un adorable éternuement enflammé qui explose s'il touche des champions ennemis.",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "SmolderE",
+      "name": "Flap, flap, flap !",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 0,
+        "full": "SmolderE.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Smolder s'envole, gagnant <speed>+{{ movespeed*100 }}% de vitesse de déplacement</speed> et ignorant les obstacles pendant {{ duration }} sec.<br /><br />Pendant son vol, Smolder bombarde <spellName>{{ totalnumberofattacks }}</spellName> (arrondi à l'inférieur) fois l'ennemi qui a le moins de PV, lui infligeant <physicalDamage>{{ damageperhit }} pts de dégâts physiques</physicalDamage> + <magicDamage>{{ spell.smolderp:ebonusdamage }} pts de dégâts magiques</magicDamage> par coup.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "65",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts de base"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Smolder s'envole, ignorant les obstacles et bombardant l'ennemi qui a le moins de PV.",
+      "cooldownBurn": "24/22/20/18/16"
+    },
+    {
+      "id": "SmolderR",
+      "name": "MAMAAAN !",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 0,
+        "full": "SmolderR.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "La mère de Smolder crache du feu depuis les airs, infligeant <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage>. Les ennemis au centre de la zone subissent à la place <physicalDamage>{{ tooltiponly_totalsweetspotdamage }} pts de dégâts physiques</physicalDamage> et sont <status>ralentis</status> de {{ slowamount*100 }}% pendant {{ slowduration }} sec.<br /><br />La mère de Smolder lui rend <healing>{{ momhealcalc }} PV</healing> si elle le touche.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Soins",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "4200",
+      "datavalues": {},
+      "description": "Smolder fait appel à sa mère pour qu'elle crache du feu depuis les airs, infligeant des dégâts supplémentaires et ralentissant les ennemis au centre de son feu.",
+      "cooldownBurn": "120/110/100"
+    }
+  ],
+  "passive": {
+    "name": "Dragon en herbe",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 288,
+      "y": 0,
+      "full": "Icons_Smolder_Passive.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "Toucher des champions avec une compétence et éliminer des ennemis avec Boule de feu draconique octroie à Smolder un effet de Dragon en herbe. Les effets ainsi cumulés augmentent les dégâts des compétences de base de Smolder."
+  },
+  "created_at": "2025-11-26T15:13:35.01772+00:00",
+  "factions": [
+    "noxus"
+  ],
+  "custom_tags": [
+    "yordle"
+  ],
+  "gender": "Male",
+  "species": "Dragon",
+  "title_en": "the Fiery Fledgling",
+  "lore_en": "Hidden amongst the craggy cliffs of the Noxian frontier, under the watchful eyes of his mother, a young dragon is learning what it means to be heir to the Camavoran imperial dragon lineage. Playful and eager to grow up, Smolder looks for any excuse to practice his burgeoning abilities. Though he's still a fledgling, his skills are nothing to sneeze at, easily setting fire to anything that burns.",
+  "spells_en": [
+    {
+      "id": "SmolderQ",
+      "name": "Super Scorcher Breath",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 0,
+        "full": "SmolderQ.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Smolder belches flame, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> + <magicDamage>{{ spell.smolderp:passive_qdamageincrease }} magic damage</magicDamage>. If the target dies, Smolder refunds <scaleMana>{{ manarestore }} Mana</scaleMana>, once per cast.<br /><br />Based on stacks of <spellName>Dragon Practice</spellName>, this Ability evolves to gain the following effects:<li><keywordMajor>{{ stacktier1 }} Stacks</keywordMajor>: Damages all enemies surrounding the target.<li><keywordMajor>{{ stacktier2 }} Stacks</keywordMajor>: Sends <spellName>{{ tier2_numberofblowback }}</spellName> explosions beyond the target that deal {{ tier2_blowbackpercentagedamage }}% of this Ability's damage.<li><keywordMajor>{{ stacktier3 }} Stacks</keywordMajor>: Burns the target, dealing <trueDamage>{{ tier3_burn }} max Health true damage</trueDamage> over {{ tier3_dotlength }} seconds. Enemy champions that drop below <trueDamage>{{ tier3_executethreshold }}</trueDamage> total health while burning are killed instantly.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "25",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Base Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "550",
+      "datavalues": {},
+      "description": "Smolder breathes fire on an enemy. As he gains more stacks, this ability becomes more powerful.",
+      "cooldownBurn": "5.5/5/4.5/4/3.5"
+    },
+    {
+      "id": "SmolderW",
+      "name": "Achooo!",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 0,
+        "full": "SmolderW.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Smolder lets out an adorable flaming sneeze, dealing <physicalDamage>{{ initialdamage }} physical damage</physicalDamage> and <status>Slowing</status> by {{ slowamount*100 }}% for {{ slowduration }} seconds.<br /><br />Hitting champions causes an explosion, dealing <physicalDamage>{{ explosiondamage }} physical</physicalDamage> + <magicDamage>{{ spell.smolderp:passive_wdamageincrease }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Explosion Damage",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1500",
+      "datavalues": {},
+      "description": "Smolder lets out an adorable flaming sneeze that explodes when hitting enemy champions.",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "SmolderE",
+      "name": "Flap, Flap, Flap",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 0,
+        "full": "SmolderE.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Smolder takes flight, gaining <speed>{{ movespeed*100 }}% Move Speed</speed> and ignoring terrain for {{ duration }} seconds.<br /><br />While flying, Smolder bombards the lowest Health enemy <spellName>{{ totalnumberofattacks }}</spellName> (rounded down) times for <physicalDamage>{{ damageperhit }} physical damage</physicalDamage> + <magicDamage>{{ spell.smolderp:ebonusdamage }} magic damage</magicDamage> per hit.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "65",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Base Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Smolder takes flight ignoring terrain and bombarding the lowest health enemy.",
+      "cooldownBurn": "24/22/20/18/16"
+    },
+    {
+      "id": "SmolderR",
+      "name": "MMOOOMMMM!",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 0,
+        "full": "SmolderR.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Smolder's mom breathes fire from above, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage>. Enemies in the center take <physicalDamage>{{ tooltiponly_totalsweetspotdamage }} physical damage</physicalDamage> instead and are <status>Slowed</status> by {{ slowamount*100 }}% for {{ slowduration }} seconds.<br /><br />Smolder's mom heals her son for <healing>{{ momhealcalc }} Health</healing> if she hits him.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Heal",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "4200",
+      "datavalues": {},
+      "description": "Smolder calls his mom to breath fire from above, dealing extra damage and slowing enemies in the center of her fire.",
+      "cooldownBurn": "120/110/100"
+    }
+  ],
+  "passive_en": {
+    "name": "Dragon Practice",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 288,
+      "y": 0,
+      "full": "Icons_Smolder_Passive.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "Hitting champions with Abilities and killing enemies with Super Scorcher Breath grants a stack of Dragon Practice. Stacks increase the damage of Smolders basic Abilities."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Adc"
+  ],
+  "skins_en": [
+    {
+      "id": "901000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "901001",
+      "num": 1,
+      "name": "Heavenscale Smolder",
+      "chromas": true
+    }
+  ]
+}

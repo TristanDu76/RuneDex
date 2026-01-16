@@ -1,0 +1,468 @@
+{
+  "id": "Xayah",
+  "key": "498",
+  "name": "Xayah",
+  "title": "Rebelle",
+  "version": "15.23.1",
+  "lore": "Précise et meurtrière, Xayah est une révolutionnaire vastaya menant une guerre personnelle dans le but de sauver son peuple. Elle se sert de sa célérité, de sa ruse et de ses plumes tranchantes comme des rasoirs pour terrasser tous ceux qui se dressent sur sa route. Xayah se bat aux côtés de son partenaire et amant, Rakan, pour défendre leur tribu dépérissante et rendre à leur race ce qu'elle considère être sa gloire d'antan.",
+  "tags": [
+    "Marksman"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 288,
+    "y": 0,
+    "full": "Xayah.png",
+    "group": "champion",
+    "sprite": "champion5.png"
+  },
+  "skins": [
+    {
+      "id": "498000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "498001",
+      "num": 1,
+      "name": "Xayah du crépuscule cosmique",
+      "chromas": false
+    },
+    {
+      "id": "498002",
+      "num": 2,
+      "name": "Xayah cœur tendre",
+      "chromas": false
+    },
+    {
+      "id": "498003",
+      "num": 3,
+      "name": "SSG Xayah",
+      "chromas": true
+    },
+    {
+      "id": "498004",
+      "num": 4,
+      "name": "Xayah gardienne des étoiles",
+      "chromas": true
+    },
+    {
+      "id": "498008",
+      "num": 8,
+      "name": "Xayah sylvestre",
+      "chromas": true
+    },
+    {
+      "id": "498017",
+      "num": 17,
+      "name": "Xayah phénix courageux",
+      "chromas": true
+    },
+    {
+      "id": "498026",
+      "num": 26,
+      "name": "Xayah phénix courageux prestige",
+      "chromas": false
+    },
+    {
+      "id": "498028",
+      "num": 28,
+      "name": "Xayah des arcanes",
+      "chromas": true
+    },
+    {
+      "id": "498037",
+      "num": 37,
+      "name": "Xayah de l'Alliance brisée",
+      "chromas": true
+    },
+    {
+      "id": "498038",
+      "num": 38,
+      "name": "Xayah gardienne des étoiles repentie",
+      "chromas": false
+    },
+    {
+      "id": "498047",
+      "num": 47,
+      "name": "Xayah chauve-souris de combat",
+      "chromas": true
+    },
+    {
+      "id": "498057",
+      "num": 57,
+      "name": "Xayah de l'Académie du combat",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "XayahQ",
+      "name": "Dagues jumelles",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 0,
+        "full": "XayahQ.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Xayah lance deux dagues qui infligent <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> chacune et laissent deux <keywordMajor>plumes</keywordMajor>. Chaque dague inflige <physicalDamage>{{ multihitdamage }} de dégâts</physicalDamage> aux ennemis touchés au-delà de la première cible.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Xayah jette deux dagues qui infligent des dégâts et qui laissent des plumes qu'elle peut rappeler.",
+      "cooldownBurn": "10/9.5/9/8.5/8"
+    },
+    {
+      "id": "XayahW",
+      "name": "Plumage mortel",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 0,
+        "full": "XayahW.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Xayah crée une tempête de lames pendant {{ e2 }} sec, ce qui lui octroie <attackSpeed>+{{ e1 }}% de vitesse d'attaque</attackSpeed> et permet à ses attaques de tirer une lame secondaire qui inflige {{ bonusdamagepercent }}% de dégâts.<br /><br />Quand la lame secondaire touche un champion, Xayah gagne <speed>+{{ e3 }}% de vitesse de déplacement</speed> pendant {{ e4 }} sec.<br /><br />Si Rakan est proche, il profite lui aussi des effets de cette compétence, mais il gagne le bonus en <speed>vitesse de déplacement</speed> uniquement quand <i>Xayah</i> frappe une cible.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/55/50/45/40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Vitesse d'attaque",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Xayah crée une tempête de lames qui augmente sa vitesse d'attaque et ses dégâts, tout en augmentant sa vitesse de déplacement si elle attaque un champion.",
+      "cooldownBurn": "20/19/18/17/16"
+    },
+    {
+      "id": "XayahE",
+      "name": "Appel des lames",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 0,
+        "full": "XayahE.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Xayah rappelle toutes ses <keywordMajor>plumes</keywordMajor>, infligeant <physicalDamage>{{ featherdamage }} pts de dégâts physiques</physicalDamage> chacune. Si au moins {{ featherthreshold }} <keywordMajor>plumes</keywordMajor> touchent un ennemi, celui-ci est <status>immobilisé</status> pendant {{ rootduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "2000",
+      "datavalues": {},
+      "description": "Xayah rappelle toutes les plumes qu'elle a posées, infligeant des dégâts et immobilisant les ennemis.",
+      "cooldownBurn": "12/11/10/9/8"
+    },
+    {
+      "id": "XayahR",
+      "name": "Rafale de plumes",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 0,
+        "full": "XayahR.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Xayah bondit dans les airs et devient impossible à cibler et fantomatique pendant 1.5 sec, puis elle fait tomber une pluie de dagues qui infligent <physicalDamage>{{ damage }} pts de dégâts physiques</physicalDamage> et laissent une ligne de <keywordMajor>plumes</keywordMajor>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "450",
+      "datavalues": {},
+      "description": "Xayah bondit dans les airs, devenant impossible à cibler et lançant des dagues qui laissent des plumes qu'elle peut rappeler.",
+      "cooldownBurn": "140/120/100"
+    }
+  ],
+  "passive": {
+    "name": "Plumes perçantes",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 288,
+      "y": 0,
+      "full": "XayahPassive.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "Après avoir utilisé une compétence, les prochaines attaques de base de Xayah frapperont toutes les cibles sur leur passage et laisseront une <font color='#C200E1'>plume</font>."
+  },
+  "created_at": "2025-11-26T15:13:35.521432+00:00",
+  "factions": [
+    "ionia"
+  ],
+  "custom_tags": [
+    "rebelle"
+  ],
+  "gender": "Female",
+  "species": "Vastaya",
+  "title_en": "the Rebel",
+  "lore_en": "Deadly and precise, Xayah is a vastayan revolutionary waging a personal war to save her people. She uses her speed, guile, and razor-sharp feather blades to cut down anyone who stands in her way. Xayah fights alongside her partner and lover, Rakan, to protect their dwindling tribe, and restore their race to her vision of its former glory.",
+  "spells_en": [
+    {
+      "id": "XayahQ",
+      "name": "Double Daggers",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 0,
+        "full": "XayahQ.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Xayah throws two daggers, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> each and leaving two <keywordMajor>Feathers</keywordMajor>. Targets hit after the first take <physicalDamage>{{ multihitdamage }} damage</physicalDamage> from each dagger.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Xayah throws two damaging daggers that also drop Feathers she can recall.",
+      "cooldownBurn": "10/9.5/9/8.5/8"
+    },
+    {
+      "id": "XayahW",
+      "name": "Deadly Plumage",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 0,
+        "full": "XayahW.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Xayah creates a storm of blades for {{ e2 }} seconds that grants her <attackSpeed>{{ e1 }}% Attack Speed</attackSpeed> and cause her Attacks to fire a secondary blade that deals {{ bonusdamagepercent }}% damage.<br /><br />When the secondary blade hits a champion, she grants herself <speed>{{ e3 }}% Move Speed</speed> for {{ e4 }} seconds.<br /><br />If Rakan is nearby he will also gain the effects of this Ability, except he gains <speed>Move Speed</speed> when <i>Xayah</i> strikes a target.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/55/50/45/40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Attack Speed",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Xayah creates a storm of blades that increase her Attack Speed and damage while also granting her Move Speed if she attacks a champion.",
+      "cooldownBurn": "20/19/18/17/16"
+    },
+    {
+      "id": "XayahE",
+      "name": "Bladecaller",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 0,
+        "full": "XayahE.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Xayah calls all <keywordMajor>Feathers</keywordMajor> back to her, dealing <physicalDamage>{{ featherdamage }} physical damage</physicalDamage> each. If {{ featherthreshold }} or more <keywordMajor>Feathers</keywordMajor> hit an enemy, they are <status>Rooted</status> for {{ rootduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "2000",
+      "datavalues": {},
+      "description": "Xayah calls back all her dropped Feathers dealing damage and rooting enemies.",
+      "cooldownBurn": "12/11/10/9/8"
+    },
+    {
+      "id": "XayahR",
+      "name": "Featherstorm",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 0,
+        "full": "XayahR.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Xayah leaps into the air becoming Untargetable and Ghosted for 1.5 seconds before raining down daggers that deal <physicalDamage>{{ damage }} physical damage</physicalDamage> and leave behind a line of <keywordMajor>Feathers</keywordMajor>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "450",
+      "datavalues": {},
+      "description": "Xayah leaps into the air becoming untargetable and throwing out a fan of daggers, dropping Feathers she can recall.",
+      "cooldownBurn": "140/120/100"
+    }
+  ],
+  "passive_en": {
+    "name": "Clean Cuts",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 288,
+      "y": 0,
+      "full": "XayahPassive.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "After using an ability, Xayah's next basic attacks will hit all targets along their path and leave a <font color='#C200E1'>Feather</font>."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Adc"
+  ],
+  "skins_en": [
+    {
+      "id": "498000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "498001",
+      "num": 1,
+      "name": "Cosmic Dusk Xayah",
+      "chromas": false
+    },
+    {
+      "id": "498002",
+      "num": 2,
+      "name": "Sweetheart Xayah",
+      "chromas": false
+    },
+    {
+      "id": "498003",
+      "num": 3,
+      "name": "SSG Xayah",
+      "chromas": true
+    },
+    {
+      "id": "498004",
+      "num": 4,
+      "name": "Star Guardian Xayah",
+      "chromas": true
+    },
+    {
+      "id": "498008",
+      "num": 8,
+      "name": "Elderwood Xayah",
+      "chromas": true
+    },
+    {
+      "id": "498017",
+      "num": 17,
+      "name": "Brave Phoenix Xayah",
+      "chromas": true
+    },
+    {
+      "id": "498026",
+      "num": 26,
+      "name": "Prestige Brave Phoenix Xayah",
+      "chromas": false
+    },
+    {
+      "id": "498028",
+      "num": 28,
+      "name": "Arcana Xayah",
+      "chromas": true
+    },
+    {
+      "id": "498037",
+      "num": 37,
+      "name": "Broken Covenant Xayah",
+      "chromas": true
+    },
+    {
+      "id": "498038",
+      "num": 38,
+      "name": "Redeemed Star Guardian Xayah",
+      "chromas": false
+    },
+    {
+      "id": "498047",
+      "num": 47,
+      "name": "Battle Bat Xayah",
+      "chromas": true
+    },
+    {
+      "id": "498057",
+      "num": 57,
+      "name": "Battle Academia Xayah",
+      "chromas": true
+    }
+  ]
+}

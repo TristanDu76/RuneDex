@@ -1,0 +1,415 @@
+{
+  "id": "Urgot",
+  "key": "6",
+  "name": "Urgot",
+  "title": "Broyeur",
+  "version": "15.23.1",
+  "lore": "Autrefois, Urgot était un puissant bourreau noxien. Il fut trahi par l'empire pour lequel il avait tant tué. Ceint de chaînes de fer, il fut contraint d'apprendre le vrai sens de la force dans les Oubliettes, une mine de forçats située dans les profondeurs de Zaun. Il put émerger à l'occasion d'un désastre qui jeta toute la ville dans le chaos. À présent, son ombre imposante s'étend dans son empire criminel souterrain. Levant sur ses victimes les chaînes qui le maintenaient naguère en esclavage, il veut purger son nouveau foyer, nouvelle croisée des douleurs, de tous ceux qu'il en estime indignes.",
+  "tags": [
+    "Fighter",
+    "Tank"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 192,
+    "y": 96,
+    "full": "Urgot.png",
+    "group": "champion",
+    "sprite": "champion4.png"
+  },
+  "skins": [
+    {
+      "id": "6000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "6001",
+      "num": 1,
+      "name": "Crabgot ennemi géant",
+      "chromas": false
+    },
+    {
+      "id": "6002",
+      "num": 2,
+      "name": "Urgot le boucher",
+      "chromas": false
+    },
+    {
+      "id": "6003",
+      "num": 3,
+      "name": "Proto Urgot",
+      "chromas": true
+    },
+    {
+      "id": "6009",
+      "num": 9,
+      "name": "Urgot de l'Ouest",
+      "chromas": true
+    },
+    {
+      "id": "6015",
+      "num": 15,
+      "name": "Urgot cosplay Gardien des pyjamas",
+      "chromas": true
+    },
+    {
+      "id": "6023",
+      "num": 23,
+      "name": "Urgot Nuit d'effroi",
+      "chromas": true
+    },
+    {
+      "id": "6032",
+      "num": 32,
+      "name": "Urgot plombier de l'extrême",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "UrgotQ",
+      "name": "Torpille corrosive",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 144,
+        "full": "UrgotQ.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Urgot tire une charge explosive, infligeant <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> et appliquant un <status>ralentissement</status> de {{ slowamount*100 }}% pendant {{ slowduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts",
+          "Ralentissement"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Tire une torpille dans la zone ciblée. L'explosion inflige des dégâts physiques aux ennemis et les ralentit.",
+      "cooldownBurn": "10/9.5/9/8.5/8"
+    },
+    {
+      "id": "UrgotW",
+      "name": "Géhenne",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 144,
+        "full": "UrgotW.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> les autres compétences d'Urgot marquent le dernier champion touché pendant 5 sec.<br /><br /><spellActive>Active :</spellActive> Urgot commence à tirer avec sa mitrailleuse sur l'ennemi le plus proche (en priorité les ennemis marqués). Il les attaque {{ e8 }} fois par seconde, infligeant <physicalDamage>{{ damagepershot }} pts de dégâts physiques</physicalDamage> par tir. Urgot peut se déplacer en tirant et a {{ e2 }}% de résistance aux <status>ralentissements</status>, mais sa vitesse de déplacement est réduite de <speed>{{ e5 }}</speed>.<br /><br />Au rang max, cette compétence dure indéfiniment et devient <toggle>activable/désactivable</toggle> à volonté.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/30/20/10/0",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts d'attaque par tir",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "490",
+      "datavalues": {},
+      "description": "Urgot ralentit tout en déchargeant son arme sur les ennemis proches. Il vise en priorité les champions ennemis qu'il a récemment frappés avec d'autres compétences et il déclenche Flammes purificatrices.",
+      "cooldownBurn": "12/9/6/3/0"
+    },
+    {
+      "id": "UrgotE",
+      "name": "Mépris",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 144,
+        "full": "UrgotE.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Urgot se rue vers l'avant et gagne un <shield>bouclier de {{ etotalshieldhealth }} PV</shield> pendant {{ eshieldduration }} sec. Le premier champion touché est <status>étourdi</status> pendant {{ stunduration }} sec et projeté derrière Urgot. Tous les ennemis touchés par Urgot subissent <physicalDamage>{{ edamage }} pts de dégâts physiques</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/70/80/90/100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "PV du bouclier",
+          "Coût en @AbilityResourceName@",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "475",
+      "datavalues": {},
+      "description": "Urgot fonce dans une direction, s'entoure d'un bouclier et piétine les ennemis sur son passage (hors champions). S'il percute un champion ennemi, il s'arrête et le projette hors de son chemin.",
+      "cooldownBurn": "16/15.5/15/14.5/14"
+    },
+    {
+      "id": "UrgotR",
+      "name": "Règne de la terreur",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 144,
+        "full": "UrgotR.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Urgot tire un trépan qui empale le premier champion touché, infligeant <physicalDamage>{{ rcalculateddamage }} pts de dégâts physiques</physicalDamage> et appliquant un <status>ralentissement</status> pendant {{ rslowduration }} sec de 1% tous les 1% de PV manquants, jusqu'à {{ rmovespeedmod }}%.<br /><br />Si la cible empalée tombe sous {{ rhealththreshold }}% de ses PV, Urgot peut <recast>réactiver</recast> cette compétence, <status>neutralisant</status> la victime et la tirant vers lui. Quand elle atteint Urgot, elle est tuée et les ennemis proches sont <status>effrayés</status> pendant {{ rfearduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "2500",
+      "datavalues": {},
+      "description": "Urgot tire un trépan qui empale le premier champion ennemi touché. Si ce champion tombe sous un certain seuil de PV, Urgot considère qu'il est trop faible et peut l'exécuter.",
+      "cooldownBurn": "100/85/70"
+    }
+  ],
+  "passive": {
+    "name": "Flammes purificatrices",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 192,
+      "y": 96,
+      "full": "Urgot_Passive.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "Les attaques de base et Géhenne d'Urgot font jaillir des jets de flammes de ses jambes, infligeant des dégâts physiques."
+  },
+  "created_at": "2025-11-26T15:13:35.367127+00:00",
+  "factions": [
+    "zaun"
+  ],
+  "custom_tags": [
+    "criminel"
+  ],
+  "gender": "Male",
+  "species": "Cyborg",
+  "title_en": "the Dreadnought",
+  "lore_en": "Once a powerful Noxian headsman, Urgot was betrayed by the empire for which he had killed so many. Bound in iron chains, he was forced to learn the true meaning of strength in the Dredge—a prison mine deep beneath Zaun. Emerging in a disaster that spread chaos throughout the city, he now casts an imposing shadow over its criminal underworld. Raising his victims on the very chains that once enslaved him, he will purge his new home of the unworthy, making it a crucible of pain.",
+  "spells_en": [
+    {
+      "id": "UrgotQ",
+      "name": "Corrosive Charge",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 144,
+        "full": "UrgotQ.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Urgot fires an explosive charge, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> and <status>Slowing</status> by {{ slowamount*100 }}% for {{ slowduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage",
+          "Slow"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Fires an explosive charge at the target location, dealing physical damage and slowing enemies caught in the explosion.",
+      "cooldownBurn": "10/9.5/9/8.5/8"
+    },
+    {
+      "id": "UrgotW",
+      "name": "Purge",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 144,
+        "full": "UrgotW.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Urgot's other Abilities mark the last champion hit for 5 seconds.<br /><br /><spellActive>Active:</spellActive> Urgot begins firing his chain gun at the closest enemy, prioritizing marked enemies. He Attacks them {{ e8 }} times a second dealing <physicalDamage>{{ damagepershot }} physical damage</physicalDamage> per shot. Urgot can move while firing and has {{ e2 }}% <status>Slow</status> resistance, but loses <speed>{{ e5 }} Move Speed</speed>.<br /><br />At max rank, this Ability lasts indefinitely and can be <toggle>Toggled</toggle> on and off.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/30/20/10/0",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Attack Damage Per Shot",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "490",
+      "datavalues": {},
+      "description": "Urgot slows himself while he unloads his weapon on nearby enemies. Prioritizes enemy champions Urgot has recently struck with other abilities and triggers Echoing Flames.",
+      "cooldownBurn": "12/9/6/3/0"
+    },
+    {
+      "id": "UrgotE",
+      "name": "Disdain",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 144,
+        "full": "UrgotE.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Urgot charges forward, gaining <shield>{{ etotalshieldhealth }} Shield</shield> for {{ eshieldduration }} seconds. The first champion hit is <status>Stunned</status> for {{ stunduration }} seconds and thrown behind Urgot. All enemies Urgot collides with take <physicalDamage>{{ edamage }} physical damage</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/70/80/90/100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Shield Amount",
+          "@AbilityResourceName@ Cost",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "475",
+      "datavalues": {},
+      "description": "Urgot charges in a direction, shielding himself and trampling non-champion enemies. If he catches an enemy champion, he will stop and hurl them out of his way.",
+      "cooldownBurn": "16/15.5/15/14.5/14"
+    },
+    {
+      "id": "UrgotR",
+      "name": "Fear Beyond Death",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 144,
+        "full": "UrgotR.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Urgot fires a chem-drill, impaling the first champion hit, dealing <physicalDamage>{{ rcalculateddamage }} physical damage</physicalDamage> and <status>Slowing</status> for {{ rslowduration }} seconds by 1% per 1% missing Health, up to {{ rmovespeedmod }}%.<br /><br />If the impaled victim falls below {{ rhealththreshold }}% Health, Urgot can <recast>Recast</recast> this Ability, <status>Suppressing</status> the victim and dragging them to himself. On reaching Urgot, they are killed and nearby enemies are <status>Feared</status> for {{ rfearduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "2500",
+      "datavalues": {},
+      "description": "Urgot fires a chem-drill that impales the first enemy champion hit. If that champion falls below a health threshold, Urgot judges them weak and can execute them.",
+      "cooldownBurn": "100/85/70"
+    }
+  ],
+  "passive_en": {
+    "name": "Echoing Flames",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 192,
+      "y": 96,
+      "full": "Urgot_Passive.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "Urgot's basic attacks and Purge periodically trigger blasts of flame from his legs, dealing physical damage."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Top"
+  ],
+  "skins_en": [
+    {
+      "id": "6000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "6001",
+      "num": 1,
+      "name": "Giant Enemy Crabgot",
+      "chromas": false
+    },
+    {
+      "id": "6002",
+      "num": 2,
+      "name": "Butcher Urgot",
+      "chromas": false
+    },
+    {
+      "id": "6003",
+      "num": 3,
+      "name": "Battlecast Urgot",
+      "chromas": true
+    },
+    {
+      "id": "6009",
+      "num": 9,
+      "name": "High Noon Urgot",
+      "chromas": true
+    },
+    {
+      "id": "6015",
+      "num": 15,
+      "name": "Pajama Guardian Cosplay Urgot",
+      "chromas": true
+    },
+    {
+      "id": "6023",
+      "num": 23,
+      "name": "Fright Night Urgot",
+      "chromas": true
+    },
+    {
+      "id": "6032",
+      "num": 32,
+      "name": "Urgot the Clogfather",
+      "chromas": true
+    }
+  ]
+}

@@ -1,0 +1,488 @@
+{
+  "id": "Nasus",
+  "key": "75",
+  "name": "Nasus",
+  "title": "Gardien des sables",
+  "version": "15.23.1",
+  "lore": "Nasus était un érudit prodige de Shurima, reconnu bien avant son Ascension. Il maîtrisait l'histoire et la philosophie de Shurima avant l'âge de dix ans. Il devint le plus jeune général de l'histoire grâce à son génie stratégique et logistique (plutôt qu'au combat direct).\n\nLe Général Compassionné : Profondément empathique, Nasus assurait le bien-être et le traitement équitable de ses soldats. Il était respecté de tous, y compris de son jeune frère, Renekton, qu'il surveillait et qui servait sous ses ordres.\n\nL'Amour de la Connaissance : Nasus détestait la guerre, mais la jugeait nécessaire à l'expansion de l'empire. Sa plus grande contribution fut de préserver le savoir des cultures conquises, ajoutant leurs livres et enseignements aux bibliothèques de Shurima.\n\nL'Ascension Forcée et le Sacrifice de Renekton : Après des décennies de service, Nasus fut frappé par une maladie terrible qui devait l'emporter en une semaine. L'Empereur et le peuple implorèrent l'Ascension pour lui. Trop faible pour monter seul sur l'estrade, son frère, Renekton, par amour, le porta, acceptant l'oblivion pour son propre sacrifice. Contre toute attente, les deux frères survécurent : Nasus devint un Transfiguré à tête de chacal (symbole de sagesse) et Renekton un mastodonte à l'image d'un crocodile.\n\nLe Schisme avec Renekton : L'Ascension accrut la sauvagerie de Renekton. Après le siège de Nashramae, Nasus découvrit que son frère avait rasé la grande bibliothèque. Leur affrontement dans les décombres s'arrêta seulement lorsque Renekton se détourna de honte sous le regard sévère de Nasus.\n\nLa Chute de l'Empire : Lorsque l'Ascension d'Azir tourna mal, Nasus et Renekton revinrent trop tard. Ils combattirent le traître Xerath, sans réussir à le tuer. Poussé par la rage (et peut-être le besoin de se racheter), Renekton lutta contre Xerath dans la Tombe des Empereurs, suppliant Nasus de les sceller à l'intérieur. Nasus s'exécuta le cœur lourd.\n\nL'Exil et la Réouverture : Le Disque solaire s'effondra, entraînant la chute et la désolation de Shurima. Submergé par la culpabilité, Nasus s'imposa un exil de plusieurs siècles, devenant une légende. Il ne revint que lorsque la Tombe des Empereurs fut brisée, libérant Xerath.\n\nAujourd'hui, Nasus est de retour. Stupéfait de voir l'Empereur Azir renaître et le Disque solaire se relever, il est déterminé à guider le nouvel empereur et à empêcher la nouvelle Shurima de s'effondrer. L'espoir renaît en lui, y compris celui de retrouver son frère.",
+  "tags": [
+    "Fighter",
+    "Tank"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 432,
+    "y": 96,
+    "full": "Nasus.png",
+    "group": "champion",
+    "sprite": "champion2.png"
+  },
+  "skins": [
+    {
+      "id": "75000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "75001",
+      "num": 1,
+      "name": "Nasus galactique",
+      "chromas": false
+    },
+    {
+      "id": "75002",
+      "num": 2,
+      "name": "Nasus pharaon",
+      "chromas": false
+    },
+    {
+      "id": "75003",
+      "num": 3,
+      "name": "Nasus chevalier d'effroi",
+      "chromas": true
+    },
+    {
+      "id": "75004",
+      "num": 4,
+      "name": "Nasus K-Nine",
+      "chromas": false
+    },
+    {
+      "id": "75005",
+      "num": 5,
+      "name": "Nasus infernal",
+      "chromas": false
+    },
+    {
+      "id": "75006",
+      "num": 6,
+      "name": "Archiduc Nasus",
+      "chromas": false
+    },
+    {
+      "id": "75010",
+      "num": 10,
+      "name": "Nasus brise-monde",
+      "chromas": false
+    },
+    {
+      "id": "75011",
+      "num": 11,
+      "name": "Nasus gardien lunaire",
+      "chromas": true
+    },
+    {
+      "id": "75016",
+      "num": 16,
+      "name": "Proto Nasus",
+      "chromas": true
+    },
+    {
+      "id": "75025",
+      "num": 25,
+      "name": "Nasus astro-groove",
+      "chromas": true
+    },
+    {
+      "id": "75035",
+      "num": 35,
+      "name": "Nasus titan blindé",
+      "chromas": true
+    },
+    {
+      "id": "75045",
+      "num": 45,
+      "name": "Nasus héraut de la nuit",
+      "chromas": true
+    },
+    {
+      "id": "75054",
+      "num": 54,
+      "name": "Nasus forgeur de destins",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "NasusQ",
+      "name": "Buveuse d'âmes",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 48,
+        "full": "NasusQ.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "La prochaine attaque de Nasus inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage>. Tuer un ennemi avec cette attaque augmente définitivement ses dégâts de {{ basicstacks }}, ou de {{ bigstacks }} contre les champions, les grands sbires et les grands monstres.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "20",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts de base",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "255",
+      "datavalues": {},
+      "description": "Nasus frappe son ennemi, infligeant des dégâts et augmentant la puissance des prochaines Buveuses d'âmes s'il tue sa cible.",
+      "cooldownBurn": "7.5/6.5/5.5/4.5/3.5"
+    },
+    {
+      "id": "NasusW",
+      "name": "Flétrissement",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 48,
+        "full": "NasusW.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Nasus fait vieillir un champion, le <status>ralentissant</status> de {{ slowbase }}%. Ce ralentissement augmente jusqu'à {{ maxslowtooltiponly }}% en {{ duration }} sec. La <attackSpeed>vitesse d'attaque</attackSpeed> de ce champion est également réduite de {{ attackspeedslowmult*100 }}% du <status>ralentissement</status>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Ralentissement max",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Nasus fait vieillir un champion ennemi et réduit ses vitesses d'attaque et de déplacement sur la durée.",
+      "cooldownBurn": "15/14/13/12/11"
+    },
+    {
+      "id": "NasusE",
+      "name": "Esprit enflammé",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 48,
+        "full": "NasusE.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Nasus crée une zone de feu spirituel qui inflige <magicDamage>{{ initialdamage }} pts de dégâts magiques</magicDamage>. Les ennemis dans la zone perdent <scaleArmor>{{ e2 }}% d'armure</scaleArmor> et subissent <magicDamage>{{ totaldotdamage }} pts de dégâts magiques</magicDamage> en {{ e3 }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/70/80/90/100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts initiaux",
+          "Dégâts par seconde",
+          "% réduction d'armure",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Nasus libère un esprit enflammé sur une zone, infligeant des dégâts aux ennemis qui s'y trouvent et réduisant leur armure.",
+      "cooldownBurn": "12"
+    },
+    {
+      "id": "NasusR",
+      "name": "Fureur des sables",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 48,
+        "full": "NasusR.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Nasus est renforcé par une tempête de sable pendant 15 sec, augmentant ses <healing>PV max de {{ bonushealth }}</healing> et son <scaleArmor>armure</scaleArmor> et sa <scaleMR>résistance magique</scaleMR> de {{ initialresistgain }}.<br /><br />Tant que la tempête fait rage, les ennemis proches subissent chaque seconde des <magicDamage>dégâts magiques équivalents à {{ damagecalc }} de leurs PV max</magicDamage> et le délai de récupération de <spellName>Buveuse d'âmes</spellName> est réduit de {{ qcdr*100 }}%.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "PV supplémentaires",
+          "% des PV max",
+          "Armure et résistance magique bonus",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Nasus libère une puissante tempête de sable. Tant que la tempête fait rage, il a plus de PV, sa portée d'attaque est augmentée, il blesse les ennemis proches, il augmente son armure et sa résistance magique et le délai de récupération de Buveuse d'âmes est réduit.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive": {
+    "name": "Mangeur d'âmes",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 432,
+      "y": 96,
+      "full": "Nasus_Passive.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Nasus draine l'énergie spirituelle de son adversaire et profite d'un bonus de Vol de vie."
+  },
+  "created_at": "2025-11-26T15:13:34.174598+00:00",
+  "factions": [
+    "shurima"
+  ],
+  "custom_tags": [
+    "ascensionne",
+    "érudit"
+  ],
+  "gender": "Male",
+  "species": "Ascended",
+  "title_en": "the Curator of the Sands",
+  "lore_en": "Nasus's brilliance was recognized long before he was chosen to join the ranks of the Ascended. A voracious student, he was a master of Shuriman history and philosophy before the age of ten. He became the youngest general in history due to his strategic genius and logistics (rather than fighting).\n\nThe Compassionate General: A deeply empathetic man, Nasus always ensured his soldiers were treated fairly. He was respected by all, including his younger brother, Renekton, who served under his command.\n\nThe Love of Knowledge: Nasus disliked war but understood its necessity. His greatest contribution was to preserve the knowledge of defeated cultures, adding their books and teachings to Shurima's libraries.\n\nThe Forced Ascension and Renekton's Sacrifice: After decades of service, Nasus was struck by a terrible wasting sickness. The Emperor and the people pleaded for his Ascension. Too weak to climb the final steps, his brother, Renekton, out of love, carried him onto the dais, accepting oblivion for himself. Unexpectedly, both brothers survived and flourished: Nasus became a towering, jackal-headed avatar of wisdom, and Renekton a crocodile-like behemoth.\n\nThe Schism with Renekton: Ascension increased Renekton's savagery. After the siege of Nashramae, Nasus learned his brother had razed the grand library. Their confrontation in the rubble stopped only when Renekton turned away in shame under Nasus's disappointed gaze.\n\nThe Fall of the Empire: When Azir's Ascension went wrong, Nasus and Renekton returned too late. They fought the traitor Xerath, but were unable to slay him. Renekton, driven by rage, wrestled Xerath into the Tomb of the Emperors beneath the city, pleading with Nasus to seal them in. Nasus reluctantly committed Xerath and his brother to the darkness.\n\nExile and Reawakening: The Sun Disc fell, leading to the collapse and desolation of Shurima. Overwhelmed by guilt, Nasus imposed a centuries-long exile on himself, becoming a legend. He returned only when the Tomb of the Emperors was broken, freeing Xerath.\n\nToday, Nasus is back. Stunned to see Emperor Azir reborn and the Sun Disc raised once more, he is determined to guide the new god-emperor and prevent Shurima from falling again. Hope stirs within him for the first time in millennia, including the hope of being reunited with his beloved brother, Renekton.",
+  "spells_en": [
+    {
+      "id": "NasusQ",
+      "name": "Siphoning Strike",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 48,
+        "full": "NasusQ.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Nasus' next Attack deals <physicalDamage>{{ totaldamage }} physical damage</physicalDamage>. Killing an enemy with this Attack permanently increases its damage by {{ basicstacks }}, increased to {{ bigstacks }} against champions, large minions and large jungle monsters.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "20",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Base Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "255",
+      "datavalues": {},
+      "description": "Nasus strikes his foe, dealing damage and increasing the power of his future Siphoning Strikes if he slays his target.",
+      "cooldownBurn": "7.5/6.5/5.5/4.5/3.5"
+    },
+    {
+      "id": "NasusW",
+      "name": "Wither",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 48,
+        "full": "NasusW.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Nasus ages a champion, <status>Slowing</status> them by {{ slowbase }}%, increasing to {{ maxslowtooltiponly }}% over {{ duration }} seconds. Their <attackSpeed>Attack Speed</attackSpeed> is also reduced by {{ attackspeedslowmult*100 }}% of the <status>Slow</status>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Max Slow",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Nasus ages an enemy champion, decelerating their Move Speed and Attack Speed over time.",
+      "cooldownBurn": "15/14/13/12/11"
+    },
+    {
+      "id": "NasusE",
+      "name": "Spirit Fire",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 48,
+        "full": "NasusE.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Nasus ignites a spirit flame, dealing <magicDamage>{{ initialdamage }} magic damage</magicDamage>. Enemies in the area lose <scaleArmor>{{ e2 }}% Armor</scaleArmor> and take <magicDamage>{{ totaldotdamage }} magic damage</magicDamage> over {{ e3 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/70/80/90/100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Initial Damage",
+          "Damage Per Second",
+          "Armor Reduction %",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Nasus unleashes a spirit flame at a location, dealing damage and reducing the Armor of enemies who stand on it.",
+      "cooldownBurn": "12"
+    },
+    {
+      "id": "NasusR",
+      "name": "Fury of the Sands",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 48,
+        "full": "NasusR.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Nasus becomes empowered in the sandstorm for 15 seconds, increasing his <healing>maximum Health by {{ bonushealth }}</healing> and <scaleArmor>Armor</scaleArmor> and <scaleMR>Magic Resistance</scaleMR> by {{ initialresistgain }}.<br /><br />While the storm rages, nearby enemies take <magicDamage>{{ damagecalc }} of their maximum Health as magic damage</magicDamage> each second and <spellName>Siphoning Strike</spellName> has a {{ qcdr*100 }}% reduced Cooldown.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Bonus Health",
+          "Max Health %",
+          "Bonus Armor and Magic Resistance",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Nasus unleashes a mighty sandstorm that batters nearby enemies. While the storm rages, he gains increased Health, Attack Range, damages nearby enemies, has a reduced cooldown on Siphoning Strike, and gains bonus Armor and Magic Resistance.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Soul Eater",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 432,
+      "y": 96,
+      "full": "Nasus_Passive.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Nasus drains his foe's spiritual energy, giving him bonus Life Steal."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Top"
+  ],
+  "skins_en": [
+    {
+      "id": "75000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "75001",
+      "num": 1,
+      "name": "Galactic Nasus",
+      "chromas": false
+    },
+    {
+      "id": "75002",
+      "num": 2,
+      "name": "Pharaoh Nasus",
+      "chromas": false
+    },
+    {
+      "id": "75003",
+      "num": 3,
+      "name": "Dreadknight Nasus",
+      "chromas": true
+    },
+    {
+      "id": "75004",
+      "num": 4,
+      "name": "Riot K-9 Nasus",
+      "chromas": false
+    },
+    {
+      "id": "75005",
+      "num": 5,
+      "name": "Infernal Nasus",
+      "chromas": false
+    },
+    {
+      "id": "75006",
+      "num": 6,
+      "name": "Archduke Nasus",
+      "chromas": false
+    },
+    {
+      "id": "75010",
+      "num": 10,
+      "name": "Worldbreaker Nasus",
+      "chromas": false
+    },
+    {
+      "id": "75011",
+      "num": 11,
+      "name": "Lunar Guardian Nasus",
+      "chromas": true
+    },
+    {
+      "id": "75016",
+      "num": 16,
+      "name": "Battlecast Nasus",
+      "chromas": true
+    },
+    {
+      "id": "75025",
+      "num": 25,
+      "name": "Space Groove Nasus",
+      "chromas": true
+    },
+    {
+      "id": "75035",
+      "num": 35,
+      "name": "Armored Titan Nasus",
+      "chromas": true
+    },
+    {
+      "id": "75045",
+      "num": 45,
+      "name": "Nightbringer Nasus",
+      "chromas": true
+    },
+    {
+      "id": "75054",
+      "num": 54,
+      "name": "Fatemaker Nasus",
+      "chromas": true
+    }
+  ]
+}

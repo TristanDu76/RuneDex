@@ -1,0 +1,449 @@
+{
+  "id": "Jayce",
+  "key": "126",
+  "name": "Jayce",
+  "title": "Protecteur du futur",
+  "version": "15.23.1",
+  "lore": "Jayce Talis, natif de Piltover, fut élevé selon les principes de l'Invention et de la Découverte. Prodige de la mécanique, il devint le plus jeune apprenti à recevoir le patronage du Clan Giopara. Jayce inventa d'ingénieux outils transformables pour les ouvriers (comme une clé qui se transformait en pied-de-biche), mais son talent exceptionnel le rendait arrogant, hautain et impatient envers ses contemporains.\n\nSeul l'inventeur zaunien Viktor parvint à égaler l'intelligence de Jayce sans se soucier de son attitude supérieure. Ils devinrent amis et collègues, se complétant : Jayce cherchait à améliorer l'humanité par la technologie polyvalente ; Viktor cherchait à résoudre les problèmes inhérents à l'humanité (décadence physique, préjugés).\n\nLeur partenariat prit fin lors de la conception d'une combinaison de construction : la version de Viktor incluait un implant chemtech qui, en plus d'augmenter la force de dix fois, empêcherait le porteur de se fatiguer, de paniquer ou de désobéir aux ordres. Jayce trouva cette indifférence au libre arbitre immorale. Leur dispute devint publique, et après l'alerte de Jayce, Viktor fut ostracisé par la communauté scientifique de Piltover.\n\nJayce travailla en solitaire, son arrogance le rendant encore plus insulaire. Pour le punir de son manque de tact, le Clan Giopara lui donna un fragment de cristal bleu shurimien découvert dans le désert, que tous les autres érudits avaient jugé sans valeur.\n\nCe cristal résista au génie de Jayce. Ce fut la première fois qu'il butait contre ses propres limites. Il réalisa à quel point il avait été injuste et méprisant envers ses pairs, ce qui lui inspira une nouvelle détermination et l'envie... d'essayer d'être plus gentil.\n\nJayce tailla un éclat du cristal et le soumit à une expérience invasive. L'éclat émit une note puissante et se mit à luire, confirmant son potentiel.\n\nLe lendemain, Viktor se présenta à sa porte, attiré par le pic d'énergie. Il proposa à Jayce de le rejoindre pour son Évolution Glorieuse secrète à Zaun, affirmant qu'elle pouvait éradiquer la maladie et la haine. Il ne lui manquait qu'une source d'énergie comme le cristal. Jayce refusa, accusant Viktor d'avoir perdu sa boussole morale. Viktor l'agressa, s'empara du cristal principal et assomma Jayce.\n\nÀ son réveil, Jayce comprit que Viktor était sur le point de terminer son projet. Il récupéra l'éclat de cristal (que Viktor n'avait pas jugé utile de prendre) et l'installa dans un énorme marteau transformable qu'il avait abandonné faute de batterie assez puissante. L'éclat le tira vers les profondeurs de Zaun, cherchant à se réunir au cristal d'origine.\n\nJayce arriva à un entrepôt et découvrit l'horreur : des dizaines de cadavres au crâne scié, leurs cerveaux transplantés dans une armée de soldats métalliques alimentée par le cristal principal. C'était la première étape de l'Évolution Glorieuse.\n\nAprès une tentative d'apologie inattendue de Jayce (pour s'être comporté comme un crétin), Viktor ordonna à ses automates de le tuer. Dépassé par la vague mécanique, Jayce prit une décision : arrêter de penser et commencer à détruire.\n\nUtilisant toute la force Hextech de son marteau, Jayce sprinta vers le cristal principal et le fracassa. Viktor hurla d'horreur. L'onde de choc les projeta tous deux en arrière, et les automates s'écrasèrent, inanimés.\n\nJayce s'échappa de justesse avant que le bâtiment ne s'effondre. Le corps de Viktor ne fut jamais retrouvé.\n\nDe retour à Piltover, Jayce révéla les plans de Viktor. Il fut salué comme le Défenseur de Demain. Il prit ce surnom à cœur, sachant que Viktor était toujours là, et que beaucoup de problèmes se dirigeaient vers Piltover. Jayce, ayant appris l'humilité et le sens du sacrifice, sera désormais en attente.",
+  "tags": [
+    "Fighter",
+    "Marksman"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 96,
+    "y": 96,
+    "full": "Jayce.png",
+    "group": "champion",
+    "sprite": "champion1.png"
+  },
+  "skins": [
+    {
+      "id": "126000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "126001",
+      "num": 1,
+      "name": "Full Metal Jayce",
+      "chromas": false
+    },
+    {
+      "id": "126002",
+      "num": 2,
+      "name": "Jayce séducteur",
+      "chromas": false
+    },
+    {
+      "id": "126003",
+      "num": 3,
+      "name": "Jayce déchu",
+      "chromas": false
+    },
+    {
+      "id": "126004",
+      "num": 4,
+      "name": "Jayce marteau radieux",
+      "chromas": false
+    },
+    {
+      "id": "126005",
+      "num": 5,
+      "name": "Jayce de l'Académie du combat",
+      "chromas": true
+    },
+    {
+      "id": "126015",
+      "num": 15,
+      "name": "Jayce résistant",
+      "chromas": true
+    },
+    {
+      "id": "126024",
+      "num": 24,
+      "name": "Jayce inventeur d'Arcane",
+      "chromas": false
+    },
+    {
+      "id": "126025",
+      "num": 25,
+      "name": "Jayce des Jeux du zénith",
+      "chromas": true
+    },
+    {
+      "id": "126034",
+      "num": 34,
+      "name": "T1 Jayce",
+      "chromas": true
+    },
+    {
+      "id": "126035",
+      "num": 35,
+      "name": "Jayce survivant d'Arcane",
+      "chromas": false
+    },
+    {
+      "id": "126036",
+      "num": 36,
+      "name": "T1 Jayce prestige",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "JayceToTheSkies",
+      "name": "Direction le ciel ! / Orbe électrique",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 96,
+        "full": "JayceToTheSkies.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 6,
+      "tooltip": "<keywordMajor>Marteau Mercury :</keywordMajor> Jayce bondit sur un ennemi, infligeant <physicalDamage>{{ spell.jaycetotheskies:damage }} pts de dégâts physiques</physicalDamage> aux ennemis proches et les ralentissant de {{ spell.jaycetotheskies:slow*-100 }}% pendant {{ spell.jaycetotheskies:slowduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "Ralentissement"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Marteau : bondit sur un ennemi, infligeant des dégâts physiques et ralentissant les ennemis.<br><br>Canon : tire un orbe qui explose en touchant un ennemi ou en arrivant au bout de sa course, infligeant des dégâts physiques à tous les ennemis touchés.",
+      "cooldownBurn": "16/14/12/10/8/6"
+    },
+    {
+      "id": "JayceStaticField",
+      "name": "Champ électrique / Hypercharge",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 96,
+        "full": "JayceStaticField.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 6,
+      "tooltip": "<keywordMajor>Marteau Mercury - Passive :</keywordMajor> les attaques avec le <keywordMajor>marteau</keywordMajor> rendent <scaleMana>{{ spell.jaycestaticfield:managain }} pts de mana</scaleMana> à Jayce.<br /><br /><keywordMajor>Marteau Mercury - Active :</keywordMajor> Jayce crée un halo électrique qui inflige <magicDamage>{{ spell.jaycestaticfield:damage }} pts de dégâts magiques</magicDamage> en {{ spell.jaycestaticfield:duration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Restauration du mana"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "285",
+      "datavalues": {},
+      "description": "Marteau - Passive : rend du mana à chaque attaque.<br>Active : crée un champ d'électricité qui blesse les ennemis proches pendant plusieurs secondes.<br><br>Canon : provoque une poussée d'énergie, augmentant la vitesse d'attaque au maximum pour plusieurs attaques.",
+      "cooldownBurn": "10"
+    },
+    {
+      "id": "JayceThunderingBlow",
+      "name": "Coup foudroyant / Portail d'accélération",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 96,
+        "full": "JayceThunderingBlow.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 6,
+      "tooltip": "<keywordMajor>Marteau Mercury </keywordMajor>: Jayce donne un puissant coup de marteau, <status>repoussant</status> sa cible et infligeant <magicDamage>{{ spell.jaycethunderingblow:flatdamage }} plus {{ spell.jaycethunderingblow:perchpdamage*100 }}% des PV max en dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "55",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "% des PV max",
+          "Délai de récupération",
+          "Dégâts max aux monstres"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "240",
+      "datavalues": {},
+      "description": "Marteau : inflige des dégâts magiques à un ennemi et le repousse sur une courte distance.<br><br>Canon : déploie un Portail d'accélération qui augmente la vitesse de déplacement de tous les champions alliés le traversant. Si Orbe électrique passe le portail, la vitesse, la portée et les dégâts du projectile augmentent.",
+      "cooldownBurn": "20/18/16/14/12/10"
+    },
+    {
+      "id": "JayceStanceHtG",
+      "name": "Canon Mercury / Marteau Mercury",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 96,
+        "full": "JayceStanceHtG.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 1,
+      "tooltip": "<keywordMajor>Marteau Mercury </keywordMajor>: Jayce transforme son arme en <keywordMajor>Canon Mercury</keywordMajor>, ce qui le fait combattre à distance et lui donne de nouvelles compétences. La prochaine attaque de Jayce supprimera <scaleArmor>{{ spell.jaycestancehtg:rangedformshred }} d'armure</scaleArmor> et <scaleMR>{{ spell.jaycestancehtg:rangedformshred }} de résistance magique</scaleMR> pendant {{ spell.jaycestancehtg:shredduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "resource": "Pas de coût",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Marteau : transforme le Marteau Mercury en Canon Mercury, offrant à Jayce de nouvelles compétences et augmentant sa portée. La première attaque avec le canon réduit l'armure et la résistance magique de l'ennemi.<br>Canon : transforme le Canon Mercury en Marteau Mercury, offrant à Jayce de nouvelles compétences et augmentant ses résistances aux dégâts. La première attaque avec le marteau infligera des dégâts magiques supplémentaires.",
+      "cooldownBurn": "6"
+    }
+  ],
+  "passive": {
+    "name": "Capaciteur Hextech",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 96,
+      "y": 96,
+      "full": "Jayce_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Quand Jayce change d'arme, il gagne un bonus en vitesse de déplacement pendant un court instant."
+  },
+  "created_at": "2025-11-26T15:13:33.462857+00:00",
+  "factions": [
+    "piltover"
+  ],
+  "custom_tags": [
+    "inventeur",
+    "technologie-hexa"
+  ],
+  "gender": "Male",
+  "species": "Human",
+  "title_en": "the Defender of Tomorrow",
+  "lore_en": "Jayce Talis, a native of Piltover, was raised to believe in Invention and Discovery. A mechanical prodigy, he earned the honor of being the youngest apprentice to receive patronage from Clan Giopara. Jayce invented ingenious transformable multi-tools for the working class (like a wrench that turned into a prybar), but his exceptional talent made him arrogant, dismissive, and unwilling to slow down for his peers.\n\nOnly the Zaunite inventor Viktor managed to match Jayce's intelligence while maintaining an indifference to his superior attitude. They became friends and colleagues: Jayce sought to improve humanity via versatile technology; Viktor sought to solve inherent human problems (physical decay, prejudice).\n\nTheir partnership ended during the design of a construction suit: Viktor's version included a chemtech implant that would not only enhance strength tenfold but also prevent the wearer from getting tired, panicking, or disobeying instructions. Jayce found this indifference toward free will immoral. The argument became public, and after Jayce warned the academy, Viktor was stripped of his honors and ostracized from Piltover's scientific community.\n\nJayce worked in solitude, his arrogance making him more insular. As a punishment for his lack of tact, Clan Giopara gave him a fragment of a Shuriman blue crystal discovered in the desert, which all other scholars had unanimously deemed worthless.\n\nThis crystal resisted Jayce's genius. For the first time, he bumped against his own limitations. He realized how unfair and dismissive he had been toward his peers, inspiring him with new determination and the thought to try to be nicer.\n\nJayce chiseled off a shard of the crystal and conducted an invasive experiment. The shard emitted a powerful note and glowed brightly, confirming its potential.\n\nThe next day, Viktor appeared on his doorstep, alerted by the power spike. He proposed Jayce join him for his secret Glorious Evolution in Zaun, claiming it could eradicate disease and hatred. He only needed a power source like the crystal. Jayce refused, accusing Viktor of lacking a moral compass. Viktor assaulted him, grabbed the main crystal, and knocked Jayce unconscious.\n\nWhen Jayce awoke hours later, he realized Viktor was close to completion. He retrieved the smaller crystal shard (which Viktor had neglected) and installed it into a massive, transforming hammer he had abandoned years ago for lack of a powerful enough battery. The shard pulled him toward the depths of Zaun.\n\nJayce arrived at a warehouse and found the horror: dozens of corpses with hollowed-out skulls, their brains transplanted into an army of immobile metal soldiers powered by the main crystal. This was the first step of the Glorious Evolution.\n\nAfter an unexpected apology from Jayce (for acting like a jerk), Viktor sighed and gave a two-word response: \"Kill him.\"\n\nThe automatons rushed Jayce. Overwhelmed, Jayce made a decision: to stop thinking and just break stuff. Using all the Hextech-enhanced force his hammer could muster, Jayce sprinted toward the main crystal and crushed it. Viktor cried out in horror. The shockwave blasted them both back, and the automatons collapsed lifelessly.\n\nJayce barely managed to escape before the building toppled. Viktor's body was never found.\n\nUpon his return to Piltover, Jayce revealed Viktor's plans. He was hailed as the Defender of Tomorrow. Jayce took the nickname to heart, knowing Viktor was still out there, plotting his revenge. Having learned humility and sacrifice, Jayce now waits, ready to defend the future.",
+  "spells_en": [
+    {
+      "id": "JayceToTheSkies",
+      "name": "To the Skies! / Shock Blast",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 96,
+        "full": "JayceToTheSkies.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 6,
+      "tooltip": "<keywordMajor>Mercury Hammer:</keywordMajor> Jayce leaps to an enemy, dealing <physicalDamage>{{ spell.jaycetotheskies:damage }} physical damage</physicalDamage> to surrounding enemies and <status>Slowing</status> them by {{ spell.jaycetotheskies:slow*-100 }}% for {{ spell.jaycetotheskies:slowduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "Slow"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Hammer Stance: Leaps to an enemy dealing physical damage and slowing enemies.<br><br>Cannon Stance: Fires an orb of electricity that detonates upon hitting an enemy (or reaching the end of its path) dealing physical damage to all enemies hit.",
+      "cooldownBurn": "16/14/12/10/8/6"
+    },
+    {
+      "id": "JayceStaticField",
+      "name": "Lightning Field / Hyper Charge",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 96,
+        "full": "JayceStaticField.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 6,
+      "tooltip": "<keywordMajor>Mercury Hammer - Passive:</keywordMajor> Jayce's <keywordMajor>Hammer</keywordMajor> Attacks grant <scaleMana>{{ spell.jaycestaticfield:managain }} Mana</scaleMana>.<br /><br /><keywordMajor>Mercury Hammer - Active:</keywordMajor> Jayce creates an electric aura dealing <magicDamage>{{ spell.jaycestaticfield:damage }} magic damage</magicDamage> over {{ spell.jaycestaticfield:duration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Mana Restore"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "285",
+      "datavalues": {},
+      "description": "Hammer Stance: Passive: Restores Mana per strike. Active: Creates a field of lightning damaging nearby enemies for several seconds.<br><br>Cannon Stance: Gains a burst of energy, increasing Attack Speed to maximum for several attacks.",
+      "cooldownBurn": "10"
+    },
+    {
+      "id": "JayceThunderingBlow",
+      "name": "Thundering Blow / Acceleration Gate",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 96,
+        "full": "JayceThunderingBlow.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 6,
+      "tooltip": "<keywordMajor>Hammer Form</keywordMajor>: Jayce swings his hammer, <status>Knocking Back</status> his target and dealing <magicDamage>{{ spell.jaycethunderingblow:flatdamage }} plus {{ spell.jaycethunderingblow:perchpdamage*100 }}% max Health magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "55",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Max Health %",
+          "Cooldown",
+          "Monster Damage Cap"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "240",
+      "datavalues": {},
+      "description": "Hammer Stance: Deals magic damage to an enemy and knocks them back a short distance.<br><br>Cannon Stance: Deploys an Acceleration Gate increasing the Move Speed of all allied champions who pass through it. If Shock Blast is fired through the gate the missile speed, range, and damage will increase.",
+      "cooldownBurn": "20/18/16/14/12/10"
+    },
+    {
+      "id": "JayceStanceHtG",
+      "name": "Mercury Cannon / Mercury Hammer",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 96,
+        "full": "JayceStanceHtG.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 1,
+      "tooltip": "<keywordMajor>Mercury Hammer</keywordMajor>: Jayce transforms his weapon into the <keywordMajor>Mercury Cannon</keywordMajor>, gaining Attack Range and new Abilities. Jayce's next Attack removes <scaleArmor>{{ spell.jaycestancehtg:rangedformshred }} Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR> for {{ spell.jaycestancehtg:shredduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "resource": "No Cost",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Hammer Stance: Transforms the Mercury Hammer into the Mercury Cannon gaining new abilities and increased range. The first attack in this form reduces the target's Armor and Magic Resist.<br><br>Cannon Stance: Transforms the Mercury Cannon into the Mercury Hammer gaining new abilities and increasing Armor and Magic Resist. The first attack in this form deals additional magic damage.",
+      "cooldownBurn": "6"
+    }
+  ],
+  "passive_en": {
+    "name": "Hextech Capacitor",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 96,
+      "y": 96,
+      "full": "Jayce_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "When Jayce swaps weapons he gains Move Speed for a short duration."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Top",
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "126000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "126001",
+      "num": 1,
+      "name": "Full Metal Jayce",
+      "chromas": false
+    },
+    {
+      "id": "126002",
+      "num": 2,
+      "name": "Debonair Jayce",
+      "chromas": false
+    },
+    {
+      "id": "126003",
+      "num": 3,
+      "name": "Forsaken Jayce",
+      "chromas": false
+    },
+    {
+      "id": "126004",
+      "num": 4,
+      "name": "Jayce Brighthammer",
+      "chromas": false
+    },
+    {
+      "id": "126005",
+      "num": 5,
+      "name": "Battle Academia Jayce",
+      "chromas": true
+    },
+    {
+      "id": "126015",
+      "num": 15,
+      "name": "Resistance Jayce",
+      "chromas": true
+    },
+    {
+      "id": "126024",
+      "num": 24,
+      "name": "Arcane Inventor Jayce",
+      "chromas": false
+    },
+    {
+      "id": "126025",
+      "num": 25,
+      "name": "Zenith Games Jayce",
+      "chromas": true
+    },
+    {
+      "id": "126034",
+      "num": 34,
+      "name": "T1 Jayce",
+      "chromas": true
+    },
+    {
+      "id": "126035",
+      "num": 35,
+      "name": "Arcane Survivor Jayce",
+      "chromas": false
+    },
+    {
+      "id": "126036",
+      "num": 36,
+      "name": "Prestige T1 Jayce",
+      "chromas": false
+    }
+  ]
+}

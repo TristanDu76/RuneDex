@@ -1,0 +1,425 @@
+{
+  "id": "Zilean",
+  "key": "26",
+  "name": "Zilean",
+  "title": "Gardien du Temps",
+  "version": "15.23.1",
+  "lore": "Naguère puissant mage d'Icathia, Zilean devint obsédé par le passage du temps après avoir assisté à la destruction de sa terre natale par le Néant. Refusant de perdre une minute à pleurer sur les décombres, il fit appel à une antique force magique capable de prédire tous les avenirs possibles. Devenu techniquement immortel, Zilean erre désormais entre passé, présent et futur, distordant autour de lui le flux du temps, toujours à la recherche du moment exact qui lui permettra de changer le passé et d'empêcher la destruction d'Icathia.",
+  "tags": [
+    "Support",
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 432,
+    "y": 48,
+    "full": "Zilean.png",
+    "group": "champion",
+    "sprite": "champion5.png"
+  },
+  "skins": [
+    {
+      "id": "26000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "26001",
+      "num": 1,
+      "name": "Vieux saint Zilean",
+      "chromas": false
+    },
+    {
+      "id": "26002",
+      "num": 2,
+      "name": "Zilean groovy",
+      "chromas": false
+    },
+    {
+      "id": "26003",
+      "num": 3,
+      "name": "Zilean du désert de Shurima",
+      "chromas": false
+    },
+    {
+      "id": "26004",
+      "num": 4,
+      "name": "Zilean voyageur du temps",
+      "chromas": false
+    },
+    {
+      "id": "26005",
+      "num": 5,
+      "name": "Zilean lune de sang",
+      "chromas": false
+    },
+    {
+      "id": "26006",
+      "num": 6,
+      "name": "Zilean folie sucrée",
+      "chromas": true
+    },
+    {
+      "id": "26014",
+      "num": 14,
+      "name": "Zilean élu de l'hiver",
+      "chromas": true
+    },
+    {
+      "id": "26024",
+      "num": 24,
+      "name": "Zilean des arcanes",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "ZileanQ",
+      "name": "Bombe à retardement",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 48,
+        "full": "ZileanQ.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Zilean lance une bombe à retardement qui se colle à la première unité ennemie qui entre dans sa zone. La bombe explose au bout de {{ e2 }} sec, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.<br /><br />Poser une bombe sur une unité qui en porte déjà une fait exploser la première bombe immédiatement, <status>étourdissant</status> pendant {{ e4 }} sec les ennemis pris dans l'explosion.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@",
+          "Dégâts",
+          "Durée de l'étourdissement :"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "900",
+      "datavalues": {},
+      "description": "Lance une bombe dans une zone. La bombe se colle sur une unité qui s'en approche (en priorité les champions) et explose après 3 secondes, infligeant des dégâts de zone. Si une Bombe à retardement explose prématurément à cause d'une autre Bombe à retardement, les ennemis sont également étourdis.",
+      "cooldownBurn": "10/9.5/9/8.5/8"
+    },
+    {
+      "id": "ZileanW",
+      "name": "Retour rapide",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 48,
+        "full": "ZileanW.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Zilean manipule le temps, réduisant de {{ e2 }} sec le délai de récupération de ses autres compétences de base.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "35",
+      "costType": " pts de mana",
+      "leveltip": {
+        "label": [
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ e3 }} pts de mana",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Zilean se prépare à de futures confrontations, réduisant le délai de récupération de ses autres compétences.",
+      "cooldownBurn": "14/12/10/8/6"
+    },
+    {
+      "id": "TimeWarp",
+      "name": "Distorsion temporelle",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 48,
+        "full": "TimeWarp.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Zilean <status>ralentit</status> un champion ennemi de {{ e2 }}% ou octroie à un champion allié <speed>+{{ e2 }}% de vitesse de déplacement</speed> pendant {{ e1 }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Ralentissement",
+          "Vitesse de déplacement"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "550",
+      "datavalues": {},
+      "description": "Zilean distord le temps autour d'une unité, réduisant la vitesse de déplacement d'un ennemi ou augmentant celle d'un allié pendant un court moment.",
+      "cooldownBurn": "15"
+    },
+    {
+      "id": "ChronoShift",
+      "name": "Retour temporel",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 48,
+        "full": "ChronoShift.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Zilean octroie une rune de protection à un champion allié pendant {{ rduration }} sec. Si cet allié meurt, la rune lui fait remonter le temps, le met en stase pendant {{ revivestateduration }} sec, puis le ramène à la vie en lui rendant <healing>{{ rtotalheal }} PV</healing>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "125/150/175",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@",
+          "Soins"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "900",
+      "datavalues": {},
+      "description": "Zilean place une rune temporelle sur un champion allié, le renvoyant dans le passé s'il subit des dégâts mortels.",
+      "cooldownBurn": "120/90/60"
+    }
+  ],
+  "passive": {
+    "name": "Temps dans une bouteille",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 432,
+      "y": 48,
+      "full": "Zilean_Passive.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "Zilean stocke du temps sous forme d'expérience et peut l'offrir à ses alliés. Quand il a suffisamment d'expérience pour augmenter le niveau d'un allié, il peut la lui offrir en lui cliquant dessus avec le bouton droit. Zilean reçoit autant d'expérience qu'il en donne."
+  },
+  "created_at": "2025-11-26T15:13:35.674409+00:00",
+  "factions": [
+    "runeterra",
+    "shurima",
+    "void"
+  ],
+  "custom_tags": [
+    "temps"
+  ],
+  "gender": "Male",
+  "species": "Human",
+  "title_en": "the Chronokeeper",
+  "lore_en": "Once a powerful Icathian mage, Zilean became obsessed with the passage of time after witnessing his homeland's destruction by the Void. Unable to spare even a minute to grieve the catastrophic loss, he called upon ancient temporal magic to divine all possible outcomes. Having become functionally immortal, Zilean now drifts through the past, present, and future, bending and warping the flow of time around him, always searching for that elusive moment that will turn back the clock and undo Icathia's destruction.",
+  "spells_en": [
+    {
+      "id": "ZileanQ",
+      "name": "Time Bomb",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 48,
+        "full": "ZileanQ.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Zilean tosses a time-delayed bomb that sticks to the first unit which comes within a small area around it. After {{ e2 }} seconds it detonates, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>.<br /><br />Placing a second bomb on a unit that already has one detonates the first bomb immediately and <status>Stuns</status> enemies in the blast for {{ e4 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "@AbilityResourceName@ Cost",
+          "Damage",
+          "Stun Duration:"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "900",
+      "datavalues": {},
+      "description": "Tosses a bomb to target area that sticks to units that come near it (prioritizes Champions). It detonates after 3 seconds, dealing area of effect damage. If a Time Bomb is detonated early by another Time Bomb, it also stuns enemies.",
+      "cooldownBurn": "10/9.5/9/8.5/8"
+    },
+    {
+      "id": "ZileanW",
+      "name": "Rewind",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 48,
+        "full": "ZileanW.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Zilean turns time, reducing his other basic Ability Cooldowns by {{ e2 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "35",
+      "costType": " Mana",
+      "leveltip": {
+        "label": [
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ e3 }} Mana",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Zilean can prepare himself for future confrontations, reducing the cooldowns of his other basic abilities.",
+      "cooldownBurn": "14/12/10/8/6"
+    },
+    {
+      "id": "TimeWarp",
+      "name": "Time Warp",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 48,
+        "full": "TimeWarp.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Zilean <status>Slows</status> an enemy champion by {{ e2 }}% or grants an allied champion <speed>{{ e2 }}% Move Speed</speed> for {{ e1 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Slow",
+          "Move Speed"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "550",
+      "datavalues": {},
+      "description": "Zilean bends time around any unit, decreasing an enemy's Move Speed or increasing an ally's Move Speed for a short time.",
+      "cooldownBurn": "15"
+    },
+    {
+      "id": "ChronoShift",
+      "name": "Chronoshift",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 48,
+        "full": "ChronoShift.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Zilean grants a protective time rune to an allied champion for {{ rduration }} seconds. If the target would die, the rune rewinds their timeline, putting them into Stasis for {{ revivestateduration }} seconds, then reviving them and restoring <healing>{{ rtotalheal }} Health</healing>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "125/150/175",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "@AbilityResourceName@ Cost",
+          "Healing"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "900",
+      "datavalues": {},
+      "description": "Zilean places a protective time rune on an allied champion, teleporting the champion back in time if they take lethal damage.",
+      "cooldownBurn": "120/90/60"
+    }
+  ],
+  "passive_en": {
+    "name": "Time In A Bottle",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 432,
+      "y": 48,
+      "full": "Zilean_Passive.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "Zilean stores time as Experience and can grant it to his allies. When he has enough Experience to finish an ally's level up, he can right-click them to impart it. Zilean receives as much Experience as he gives."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Support"
+  ],
+  "skins_en": [
+    {
+      "id": "26000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "26001",
+      "num": 1,
+      "name": "Old Saint Zilean",
+      "chromas": false
+    },
+    {
+      "id": "26002",
+      "num": 2,
+      "name": "Groovy Zilean",
+      "chromas": false
+    },
+    {
+      "id": "26003",
+      "num": 3,
+      "name": "Shurima Desert Zilean",
+      "chromas": false
+    },
+    {
+      "id": "26004",
+      "num": 4,
+      "name": "Time Machine Zilean",
+      "chromas": false
+    },
+    {
+      "id": "26005",
+      "num": 5,
+      "name": "Blood Moon Zilean",
+      "chromas": false
+    },
+    {
+      "id": "26006",
+      "num": 6,
+      "name": "Sugar Rush Zilean",
+      "chromas": true
+    },
+    {
+      "id": "26014",
+      "num": 14,
+      "name": "Winterblessed Zilean",
+      "chromas": true
+    },
+    {
+      "id": "26024",
+      "num": 24,
+      "name": "Arcana Zilean",
+      "chromas": true
+    }
+  ]
+}

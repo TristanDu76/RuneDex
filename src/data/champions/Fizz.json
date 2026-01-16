@@ -1,0 +1,497 @@
+{
+  "id": "Fizz",
+  "key": "105",
+  "name": "Fizz",
+  "title": "Filou des mers",
+  "version": "15.23.1",
+  "lore": "Fizz est un Yordle qui vivait dans une grande et noble cité sous-marine du continent, dans les profondeurs de ce qui est aujourd'hui la Mer des Gardiens. Bien qu'il ne soit pas l'un des membres de cette fière race sous-marine, ils l'acceptaient comme un égal, appréciant son tempérament espiègle et ses récits d'aventures.\r\n\r\nLe monde changea, les océans se réchauffèrent, et de féroces prédateurs émergèrent des fosses abyssales. Les dirigeants de la cité n'arrivaient pas à s'accorder sur une stratégie défensive. Fizz, quant à lui, jura de parcourir les mers à la recherche de survivants et de solutions.\r\n\r\nUn jour sombre, les Gigalodons firent leur apparition. Ces immenses requins-dragons utilisèrent leurs cris terrifiants pour étourdir leurs proies. Des milliers de vies furent perdues en quelques heures, les monstres écrasant tours et temples dans une frénésie alimentaire. Fizz se précipita pour sauver la ville, mais il arriva trop tard. La cité avait été entièrement anéantie, il ne restait rien, et le banc de prédateurs voraces était parti.\r\n\r\nSeul dans les profondeurs glaciales, Fizz sombra dans un désespoir morose. Sa magie Yordle commença à s'estomper, et il se laissa dériver dans une torpeur catatonique, dormant pendant des millénaires.\r\n\r\nLe hasard le réveilla : quelques pièces de monnaie en cuivre, tombées d'un grand « poisson en bois » naviguant à la surface. Alarmé et curieux par ces « poissons » qui survivent en surface, Fizz s'aventura à la surface pour la première fois. Il découvrit des humains naviguant sur l'eau et qui jetaient des cadeaux curieux dans l'océan, un signe qui, pour le Yordle, signifiait qu'ils voulaient être ses amis.\r\n\r\nEn suivant les mouvements de ces navires, il atteignit la ville portuaire de Bilgewater. Pour ses habitants, cette créature étrange et insaisissable devint rapidement une légende, l'Escamoteur des Flots, un esprit de l'océan. On raconte qu'il peut invoquer de grandes bêtes, percer la coque des navires avec son trident de pierre et respirer sous l'eau ou dans l'air à sa guise.\r\n\r\nBien qu'il soit de bonne nature, Fizz est malicieux, même pour un Yordle, et prend plaisir à confondre les gens de Bilgewater. Il ne tolère pas les marins cupides ou égoïstes : plus d'un capitaine arrogant a vu son équipage, guidé par cet esprit versatile, finir par faire naufrage. Il aime semer le chaos de manière ludique, souvent confondu avec un esprit océanique capricieux.",
+  "tags": [
+    "Assassin",
+    "Fighter"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 240,
+    "y": 0,
+    "full": "Fizz.png",
+    "group": "champion",
+    "sprite": "champion1.png"
+  },
+  "skins": [
+    {
+      "id": "105000",
+      "num": 0,
+      "name": "default",
+      "chromas": true
+    },
+    {
+      "id": "105001",
+      "num": 1,
+      "name": "Fizz de l'Atlantide",
+      "chromas": false
+    },
+    {
+      "id": "105002",
+      "num": 2,
+      "name": "Fizz de la toundra",
+      "chromas": false
+    },
+    {
+      "id": "105003",
+      "num": 3,
+      "name": "Fizz pêcheur",
+      "chromas": false
+    },
+    {
+      "id": "105004",
+      "num": 4,
+      "name": "Fizz du Néant",
+      "chromas": false
+    },
+    {
+      "id": "105008",
+      "num": 8,
+      "name": "Fizz lapin",
+      "chromas": false
+    },
+    {
+      "id": "105009",
+      "num": 9,
+      "name": "Super Fizz intergalactique",
+      "chromas": false
+    },
+    {
+      "id": "105010",
+      "num": 10,
+      "name": "Fizz de la section Oméga",
+      "chromas": true
+    },
+    {
+      "id": "105014",
+      "num": 14,
+      "name": "Fizz toutou",
+      "chromas": false
+    },
+    {
+      "id": "105015",
+      "num": 15,
+      "name": "Fizz toutou prestige",
+      "chromas": false
+    },
+    {
+      "id": "105016",
+      "num": 16,
+      "name": "Fizz diablotin",
+      "chromas": true
+    },
+    {
+      "id": "105025",
+      "num": 25,
+      "name": "Fizz toutou prestige (2022)",
+      "chromas": false
+    },
+    {
+      "id": "105026",
+      "num": 26,
+      "name": "Fizz astronaute",
+      "chromas": true
+    },
+    {
+      "id": "105035",
+      "num": 35,
+      "name": "Fizz berger de la pluie",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "FizzQ",
+      "name": "Frappe de l'oursin",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 144,
+        "full": "FizzQ.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Fizz se rue à travers un ennemi, infligeant <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> plus <magicDamage>{{ qdamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "550",
+      "datavalues": {},
+      "description": "Fizz traverse sa cible, infligeant des dégâts magiques et des effets à l'impact.",
+      "cooldownBurn": "8/7.5/7/6.5/6"
+    },
+    {
+      "id": "FizzW",
+      "name": "Trident marin",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 144,
+        "full": "FizzW.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive </spellPassive>: les attaques de Fizz font saigner ses ennemis, infligeant <magicDamage>{{ dotdamage }} pts de dégâts magiques</magicDamage> en {{ bleedduration }} sec. <br /><br /><spellActive>Active </spellActive>: la prochaine attaque de Fizz inflige <magicDamage>{{ activedamage }} pts de dégâts magiques</magicDamage> supplémentaires. Si cette attaque tue sa cible, Fizz récupère <scaleMana>{{ onkillmanarefund }} pts de mana</scaleMana> et réduit à {{ onkillnewcooldown }} sec le délai de récupération de cette compétence. Si elle ne tue pas sa cible, les attaques de Fizz infligent <magicDamage>{{ onhitbuffdamage }} pts de dégâts magiques</magicDamage> supplémentaires pendant {{ onhitbuffduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30/40/50/60/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts passifs",
+          "Dégâts actifs",
+          "Dégâts à l'impact",
+          "Mana rendu",
+          "Coût en @AbilityResourceName@",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Les attaques de Fizz font saigner ses ennemis, infligeant des dégâts magiques en plusieurs secondes. Fizz peut renforcer sa prochaine attaque pour infliger des dégâts supplémentaires, et renforcer ses attaques suivantes pour une courte durée.",
+      "cooldownBurn": "7/6/5/4/3"
+    },
+    {
+      "id": "FizzE",
+      "name": "Joueur/Filou",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0,
+        "full": "FizzE.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Fizz bondit sur son trident, devenant impossible à cibler pendant 0.75 sec. Il inflige ensuite <magicDamage>{{ edamage }} pts de dégâts magiques</magicDamage> aux ennemis proches et les <status>ralentit</status> de {{ slowamount*100 }}% pendant {{ slowduration }} sec. <br /><br />Fizz peut <recast>réactiver</recast> cette compétence pendant qu'il est impossible à cibler pour se ruer à nouveau, ce qui met fin prématurément à l'effet, inflige des dégâts dans une plus petite zone et ne <status>ralentit</status> pas.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "75/80/85/90/95",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@",
+          "Dégâts",
+          "Ralentissement"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Fizz saute et retombe avec grâce sur sa lance, devenant impossible à cibler. Depuis cette position, Fizz peut soit frapper le sol, soit sauter à nouveau avant de retomber.",
+      "cooldownBurn": "16/14/12/10/8"
+    },
+    {
+      "id": "FizzR",
+      "name": "Pêche au gros",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 0,
+        "full": "FizzR.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Fizz lance un poisson qui s'accroche au premier champion ennemi touché. Fizz gagne une <keywordStealth>vision pure</keywordStealth> de la victime et lui inflige un <status>ralentissement</status> de 40% à 80%, selon la distance parcourue par le poisson avant de s'accrocher. <br /><br />Au bout de {{ detonationtime }} sec, un requin surgit sous la cible, <status>projetant dans les airs</status> pendant 1 sec la cible qui porte le poisson, <status>repoussant</status> toutes les autres unités et infligeant de <magicDamage>{{ smallsharkdamage }} à {{ bigsharkdamage }} pts de dégâts magiques</magicDamage>, selon la distance parcourue par le poisson avant de s'accrocher.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts du petit requin",
+          "Dégâts du requin moyen",
+          "Dégâts du gros requin"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1300",
+      "datavalues": {},
+      "description": "Fizz lance un poisson qui s'accroche à tout champion qui le touche, ralentissant la cible. Après un court instant, un requin surgit du sol, projetant la cible dans les airs et repoussant les ennemis proches. Tous les ennemis touchés subissent des dégâts magiques et sont ralentis.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive": {
+    "name": "Combattant agile",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 240,
+      "y": 0,
+      "full": "Fizz_P.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Fizz peut traverser les unités et profite d'un montant fixe de réduction des dégâts contre toutes les sources de dégâts."
+  },
+  "created_at": "2025-11-26T15:13:32.943584+00:00",
+  "factions": [
+    "bilgewater",
+    "bandle-city"
+  ],
+  "custom_tags": [
+    "aquatique",
+    "yordle-similaire"
+  ],
+  "gender": "Male",
+  "species": "Yordle",
+  "title_en": "the Tidal Trickster",
+  "lore_en": "Fizz is a Yordle who once lived in a great and noble underwater city on the continent, in the depths of what is now the Guardian's Sea. Although he was not one of the members of that proud, noble race, they treated him as an equal, enjoying his playful nature and adventurous tales.\r\n\r\nThe world changed, the oceans grew warmer, and fierce predators rose from the deepest trenches. The rulers of the great city could not agree on a defensive strategy. Fizz, meanwhile, pledged to roam the seas in search of survivors and solutions.\r\n\r\nThen, one dark day, the Gigalodons came. These huge dragon-sharks used their terrifying shrieking to stun their prey. Thousands died within hours, the immense bulk of the killers crushing towers and temples in a monstrous feeding frenzy. Fizz raced back to save the city, but he was too late. The city had been completely annihilated—not a single creature or stone remained, and the ravenous shoal had moved on.\r\n\r\nAlone in the cold depths, Fizz sank into mournful despair. His Yordle magic began to fade, and he allowed himself to drift in a catatonic torpor, dreaming away the millennia.\r\n\r\nChance reawakened him: a handful of copper coins fell from above, scattered to the seabed in the wake of a huge, wooden \"fish\" sailing on the surface. Alarmed and curious about these \"fish\" surviving on the surface, Fizz ventured up and peered into the salty air for the first time. He discovered humans sailing the water and casting curious gifts into the ocean, a sign which, to the Yordle, meant they wanted to be his friends.\r\n\r\nFollowing the movements of these ships, he eventually came to the port city of Bilgewater. To its inhabitants, this strange and slippery creature quickly became a legend, the Tidal Trickster, a spirit of the ocean itself. It is said he can summon great beasts, hole a ship's hull with his stone trident, and breathe air or water as it suits him.\r\n\r\nThough he is good-natured, Fizz is mischievous, even for a Yordle, and delights in confounding the people of Bilgewater. He does not take kindly to the greedy or selfish sailors: more than one haughty sea captain hoping to make a quick pile of silver has found that her mysterious guide has led her crew not to safety, but to shipwreck. He enjoys causing playful chaos, often mistaken for a capricious ocean spirit.",
+  "spells_en": [
+    {
+      "id": "FizzQ",
+      "name": "Urchin Strike",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 144,
+        "full": "FizzQ.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Fizz dashes through an enemy, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> plus <magicDamage>{{ qdamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "550",
+      "datavalues": {},
+      "description": "Fizz dashes through his target, dealing magic damage and applying on hit effects.",
+      "cooldownBurn": "8/7.5/7/6.5/6"
+    },
+    {
+      "id": "FizzW",
+      "name": "Seastone Trident",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 144,
+        "full": "FizzW.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive</spellPassive>: Fizz's Attacks cause his enemies to bleed, dealing <magicDamage>{{ dotdamage }} magic damage</magicDamage> over {{ bleedduration }} seconds. <br /><br /><spellActive>Active</spellActive>: Fizz's next Attack deals an additional <magicDamage>{{ activedamage }} magic damage</magicDamage>. If this Attack kills its target, Fizz refunds <scaleMana>{{ onkillmanarefund }} Mana</scaleMana> and reduces the cooldown of this Ability to {{ onkillnewcooldown }} second. If it does not kill, Fizz's Attacks deal an additional <magicDamage>{{ onhitbuffdamage }} magic damage</magicDamage> for {{ onhitbuffduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30/40/50/60/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Passive Damage",
+          "Active Damage",
+          "On-Hit Damage",
+          "Mana Refund",
+          "@AbilityResourceName@ Cost",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Fizz's attacks bleed his enemies, dealing magic damage over several seconds. Fizz can empower his next attack to deal bonus damage and empower his further attacks for a short time.",
+      "cooldownBurn": "7/6/5/4/3"
+    },
+    {
+      "id": "FizzE",
+      "name": "Playful / Trickster",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0,
+        "full": "FizzE.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Fizz hops onto his trident, becoming Untargetable for 0.75 seconds, after which he deals <magicDamage>{{ edamage }} magic damage</magicDamage> to nearby enemies and <status>Slows</status> them by {{ slowamount*100 }}% for {{ slowduration }} seconds. <br /><br />Fizz can <recast>Recast</recast> this Ability while Untargetable to dash again, which ends the effect early, deals damage in a smaller area, and doesn't <status>Slow</status>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "75/80/85/90/95",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "@AbilityResourceName@ Cost",
+          "Damage",
+          "Slow"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Fizz hops into the air, landing gracefully upon his spear and becoming untargetable. From this position, Fizz can either slam the ground or choose to jump again before smashing back down.",
+      "cooldownBurn": "16/14/12/10/8"
+    },
+    {
+      "id": "FizzR",
+      "name": "Chum the Waters",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 0,
+        "full": "FizzR.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Fizz launches a fish that attaches to the first champion hit. The victim is afflicted with <keywordStealth>True Sight</keywordStealth> and <status>Slowed</status> by between 40% to 80% based on how far the fish travelled before attaching. <br /><br />After {{ detonationtime }} seconds a shark erupts on the target, <status>Knocking Up</status> the target with the fish for 1 second, <status>Knocking Back</status> everything else, and dealing between <magicDamage>{{ smallsharkdamage }} to {{ bigsharkdamage }} magic damage</magicDamage> based on how far the fish travelled before attaching.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Small Shark Damage",
+          "Medium Shark Damage",
+          "Big Shark Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1300",
+      "datavalues": {},
+      "description": "Fizz tosses a fish in a direction that attaches to any champion that touches it, slowing the target. After a short delay, a shark erupts from the ground, knocking up the target and knocking any nearby enemies aside. All enemies hit are dealt magic damage and slowed.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Nimble Fighter",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 240,
+      "y": 0,
+      "full": "Fizz_P.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Fizz can move through units and takes a flat amount of reduced damage from all sources"
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Mid"
+  ],
+  "skins_en": [
+    {
+      "id": "105000",
+      "num": 0,
+      "name": "default",
+      "chromas": true
+    },
+    {
+      "id": "105001",
+      "num": 1,
+      "name": "Atlantean Fizz",
+      "chromas": false
+    },
+    {
+      "id": "105002",
+      "num": 2,
+      "name": "Tundra Fizz",
+      "chromas": false
+    },
+    {
+      "id": "105003",
+      "num": 3,
+      "name": "Fisherman Fizz",
+      "chromas": false
+    },
+    {
+      "id": "105004",
+      "num": 4,
+      "name": "Void Fizz",
+      "chromas": false
+    },
+    {
+      "id": "105008",
+      "num": 8,
+      "name": "Cottontail Fizz",
+      "chromas": false
+    },
+    {
+      "id": "105009",
+      "num": 9,
+      "name": "Super Galaxy Fizz",
+      "chromas": false
+    },
+    {
+      "id": "105010",
+      "num": 10,
+      "name": "Omega Squad Fizz",
+      "chromas": true
+    },
+    {
+      "id": "105014",
+      "num": 14,
+      "name": "Fuzz Fizz",
+      "chromas": false
+    },
+    {
+      "id": "105015",
+      "num": 15,
+      "name": "Prestige Fuzz Fizz",
+      "chromas": false
+    },
+    {
+      "id": "105016",
+      "num": 16,
+      "name": "Little Devil Fizz",
+      "chromas": true
+    },
+    {
+      "id": "105025",
+      "num": 25,
+      "name": "Prestige Fuzz Fizz (2022)",
+      "chromas": false
+    },
+    {
+      "id": "105026",
+      "num": 26,
+      "name": "Astronaut Fizz",
+      "chromas": true
+    },
+    {
+      "id": "105035",
+      "num": 35,
+      "name": "Rain Shepherd Fizz",
+      "chromas": true
+    }
+  ]
+}

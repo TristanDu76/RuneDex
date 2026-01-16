@@ -1,0 +1,413 @@
+{
+  "id": "Kayn",
+  "key": "141",
+  "name": "Kayn",
+  "title": "Faucheur de l'ombre",
+  "version": "15.23.1",
+  "lore": "Shieda Kayn est Noxien de naissance, mais fut enrôlé comme enfant soldat par les commandants les plus cruels de l'empire de Boram Darkwill. Après la désastreuse bataille du Placidium de Navori, l'invasion de l'Ionia se transforma en une guerre d'usure, exploitant la compassion ionienne (qui hésiterait à frapper un innocent). La première bataille de Kayn fut une mission suicide.\n\nDébarquant dans la province de Bahrl, Kayn fut l'une des rares recrues à ne pas fuir ou être tuée immédiatement. Il laissa tomber son épée lourde pour saisir une faucille brisée et fit face aux défenseurs locaux. Le massacre qui s'ensuivit fut terrible.\n\nDeux jours plus tard, l'Ordre de l'Ombre arriva sur les lieux. Leur chef, Zed, reconnut que le massacre était un message de Noxus. Il remarqua Kayn, un enfant d'à peine dix ans, au milieu de la boue, brandissant sa faucille brisée contre le maître assassin. Les yeux du garçon brûlaient de la fureur d'un guerrier endurci. Zed vit dans ce survivant abandonné une arme à retourner contre Noxus. Il tendit la main et accueillit Kayn dans l'Ordre.\n\nKayn se révéla être un élève hors pair, maîtrisant toutes les armes rapidement (les considérant comme de simples outils). Il s'enveloppait d'ombres et utilisait la rapidité et la furtivité, jugeant l'armure trop encombrante. À mesure que sa légende grandissait, son arrogance faisait de même. Il était convaincu qu'il éclipserait un jour le pouvoir de Zed lui-même.\n\nSon orgueil le mena à son épreuve finale : récupérer une arme Darkin récemment déterrée par Noxus pour s'assurer qu'elle ne soit pas utilisée contre l'Ionia. Là où tout autre acolyte aurait détruit la faux vivante nommée Rhaast, Kayn la prit pour lui.\n\nLa corruption s'empara de lui dès que ses doigts touchèrent l'arme, les enfermant dans une lutte fatidique. Rhaast attend le parfait hôte pour rejoindre ses frères Darkin et dévaster le monde. Mais Kayn n'est pas facilement dominé. Il revient triomphalement en Ionia, persuadé que Zed le nommera nouveau chef de l'Ordre de l'Ombre, car il a réussi son test. Son destin est scellé : soit il pliera l'arme à sa volonté, soit la faux le consumera entièrement.",
+  "tags": [
+    "Fighter",
+    "Assassin"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 96,
+    "y": 0,
+    "full": "Kayn.png",
+    "group": "champion",
+    "sprite": "champion2.png"
+  },
+  "skins": [
+    {
+      "id": "141000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "141001",
+      "num": 1,
+      "name": "Kayn chasseur d'âmes",
+      "chromas": false
+    },
+    {
+      "id": "141002",
+      "num": 2,
+      "name": "Kayn de l'Odyssée",
+      "chromas": true
+    },
+    {
+      "id": "141008",
+      "num": 8,
+      "name": "Kayn héraut de la nuit",
+      "chromas": true
+    },
+    {
+      "id": "141009",
+      "num": 9,
+      "name": "Kayn héraut de la nuit prestige",
+      "chromas": false
+    },
+    {
+      "id": "141015",
+      "num": 15,
+      "name": "Kayn lune de neige",
+      "chromas": true
+    },
+    {
+      "id": "141020",
+      "num": 20,
+      "name": "HEARTSTEEL Kayn",
+      "chromas": true
+    },
+    {
+      "id": "141026",
+      "num": 26,
+      "name": "Kayn de l'Académie du combat",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "KaynQ",
+      "name": "Moisson cruelle",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 96,
+        "full": "KaynQ.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Kayn se rue dans une direction, puis donne un coup de faux rotatif. Il inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> aux ennemis qu'il traverse, puis il inflige à nouveau ces dégâts aux ennemis proches.<br /><br /><keywordMajor>Tueur darkin :</keywordMajor> Kayn inflige à la place <physicalDamage>{{ darkinflatdamage }} plus {{ darkinpercentdamage }} des PV max en dégâts physiques</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts de base"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "350",
+      "datavalues": {},
+      "description": "Kayn se rue vers l'avant puis frappe. La ruée et l'attaque infligent toutes deux des dégâts.",
+      "cooldownBurn": "7/6.5/6/5.5/5"
+    },
+    {
+      "id": "KaynW",
+      "name": "Entaille sombre",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 96,
+        "full": "KaynW.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Kayn donne un coup de faux ascendant, infligeant <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> et <status>ralentissant</status> les ennemis touchés de {{ e3 }}% (ce ralentissement diminue en {{ e5 }} sec).<br /><br /><keywordMajor>Assassin de l'ombre :</keywordMajor> Kayn peut se déplacer tout en utilisant cette compétence et la portée de celle-ci est augmentée.<br /><br /><keywordMajor>Tueur darkin :</keywordMajor> les ennemis touchés sont également <status>projetés dans les airs</status> pendant {{ e2 }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/45/50/55/60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Kayn blesse et ralentit les cibles sur une ligne.",
+      "cooldownBurn": "13/12/11/10/9"
+    },
+    {
+      "id": "KaynE",
+      "name": "Passe-muraille",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 96,
+        "full": "KaynE.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Kayn gagne <speed>+{{ e1 }}% de vitesse de déplacement</speed>, devient fantomatique et peut traverser les éléments du terrain pendant {{ e2 }} sec. Quand il entre dans un élément du terrain, il récupère <healing>{{ totalhealing }} PV</healing>.<br /><br />Si Kayn se fait <status>immobiliser</status> ou passe plus de {{ e3 }} sec consécutives en dehors d'un élément du terrain, cette compétence prend fin prématurément.<br /><br /><keywordMajor>Assassin de l'ombre :</keywordMajor> Kayn gagne <speed>+{{ e5 }}% de vitesse de déplacement</speed>, devient immunisé contre les <status>ralentissements</status> et réduit le délai de récupération à {{ assassincdreduction }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Durée",
+          "Soins"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Kayn peut traverser le terrain.",
+      "cooldownBurn": "21/19/17/15/13"
+    },
+    {
+      "id": "KaynR",
+      "name": "Intrusion obscure",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 96,
+        "full": "KaynR.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellPassive>Passive :</spellPassive> les champions blessés par Kayn sont marqués pendant 3.15 sec.<br /><br />Kayn infeste un ennemi marqué et devient impossible à cibler. Au bout de {{ infestduration }} sec ou après avoir <recast>réactivé</recast> cette compétence, Kayn ressort violemment de l'ennemi, infligeant <physicalDamage>{{ damage }} pts de dégâts physiques</physicalDamage>.<br /><br /><keywordMajor>Assassin de l'ombre :</keywordMajor> augmente la portée de cette compétence (pour entrer dans l'ennemi ET pour en sortir) et met fin au délai de récupération de <spellName>Faux des Darkin</spellName> (en sortant de l'ennemi).<br /><br /><keywordMajor>Tueur darkin :</keywordMajor> inflige à la place <physicalDamage>{{ slayerdamage }} des PV max en dégâts physiques</physicalDamage> et rend <healing>{{ healvalue }} PV</healing> ({{ slayerhealpercent*100 }}% des dégâts) à Kayn.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "550",
+      "datavalues": {},
+      "description": "Kayn se cache dans le corps d'un ennemi, infligeant d'énormes dégâts quand il ressort.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive": {
+    "name": "Faux des Darkin",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 96,
+      "y": 0,
+      "full": "Kayn_Passive_Primary.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Kayn manie une arme antique et combat Rhaast, le Darkin qu'elle renferme, pour en prendre le contrôle. Soit le <font color='#fe5c50'>Darkin</font> triomphera, soit Kayn maîtrisera Rhaast et deviendra l'<font color='#8484fb'>Assassin de l'ombre</font>.<br><br><font color='#fe5c50'>Darkin :</font> soin équivalent à un pourcentage des dégâts de compétence infligés aux champions.<br><br><font color='#8484fb'>Assassin de l'ombre :</font> inflige des dégâts supplémentaires pendant les premières secondes d'un combat contre des champions ennemis."
+  },
+  "created_at": "2025-11-26T15:13:33.670998+00:00",
+  "factions": [
+    "noxus",
+    "ionia"
+  ],
+  "custom_tags": [
+    "ombre",
+    "rhaast-porteur"
+  ],
+  "gender": "Male",
+  "species": "Human",
+  "title_en": "the Shadow Reaper",
+  "lore_en": "Shieda Kayn is Noxian by birth but was conscripted as a child soldier, a cruel practice used by Boram Darkwill's devious commanders. Following the disastrous battle at the Placidium of Navori, the invasion of Ionia became a protracted war of attrition, exploiting Ionian compassion. Kayn’s first day in battle was intended to be his last.\n\nLanding at the Epool River, Kayn was one of the few conscripts who did not flee or die immediately. He dropped his heavy sword, snatched up a broken sickle, and faced the local defenders. The resulting carnage was staggering.\n\nTwo days later, the Order of Shadow came upon the grisly scene. Their leader, Zed, recognized the massacre as a message from Noxus. He noticed Kayn, barely ten years old, leveling his broken sickle at the master assassin. The boy’s eyes burned with the fury of a hardened warrior. Zed saw in this abandoned Noxian survivor a weapon to be turned against those who sent him to die. He held out his hand and welcomed Kayn into the Order.\n\nKayn proved to be an unmatched pupil, mastering every weapon (which he viewed as mere tools). He cloaked himself in shadows, relying on quickness and stealth, finding armor cumbersome. As Kayn’s legend grew, so did his arrogance. He truly believed that one day his power would eclipse even that of Zed himself.\n\nHis hubris led him to his final test: to seek out a Darkin weapon recently unearthed by Noxus, and prevent its use against Ionia. Where any other acolyte would have destroyed the living scythe named Rhaast, Kayn took it for himself.\n\nCorruption took hold the moment he grasped the weapon, locking them both in a fateful struggle. Rhaast awaits the perfect host to rejoin its Darkin brethren and lay waste to the world, but Kayn will not be easily dominated. He returns to Ionia in triumph, convinced that Zed will name him the new leader of the Order of Shadow. His destiny has only two possible endings: either Kayn will bend the weapon to his will, or the wicked scythe will consume him entirely.",
+  "spells_en": [
+    {
+      "id": "KaynQ",
+      "name": "Reaping Slash",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 96,
+        "full": "KaynQ.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Kayn dashes then spins his scythe, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> to enemies he passes through, then deals the damage again to nearby enemies.<br /><br /><keywordMajor>Darkin Slayer:</keywordMajor> Instead deal <physicalDamage>{{ darkinflatdamage }} plus {{ darkinpercentdamage }} max Health physical damage</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Base Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "350",
+      "datavalues": {},
+      "description": "Kayn dashes, then slashes. Both deal damage.",
+      "cooldownBurn": "7/6.5/6/5.5/5"
+    },
+    {
+      "id": "KaynW",
+      "name": "Blade's Reach",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 96,
+        "full": "KaynW.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Kayn swipes his scythe upward, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> and <status>Slowing</status> enemies hit by {{ e3 }}%, decaying over {{ e5 }} seconds.<br /><br /><keywordMajor>Shadow Assassin:</keywordMajor> Kayn can move while using this Ability and increases its range.<br /><br /><keywordMajor>Darkin Slayer:</keywordMajor> Additionally <status>Knocks Up</status> enemies hit for {{ e2 }} second.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/45/50/55/60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Kayn damages and slows targets in a line.",
+      "cooldownBurn": "13/12/11/10/9"
+    },
+    {
+      "id": "KaynE",
+      "name": "Shadow Step",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 96,
+        "full": "KaynE.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Kayn gains <speed>{{ e1 }}% Move Speed</speed>, becomes Ghosted, and can move through Terrain for {{ e2 }} seconds. When he first enters terrain, he restores <healing>{{ totalhealing }} Health</healing>.<br /><br />Being <status>Immobilized</status> and spending more than {{ e3 }} consecutive seconds outside of Terrain ends this Ability early.<br /><br /><keywordMajor>Shadow Assassin:</keywordMajor> Gain <speed>{{ e5 }}% Move Speed</speed>, <status>Slow</status> immunity, and reduce the Cooldown to {{ assassincdreduction }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Duration",
+          "Healing"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Kayn can walk through terrain.",
+      "cooldownBurn": "21/19/17/15/13"
+    },
+    {
+      "id": "KaynR",
+      "name": "Umbral Trespass",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 96,
+        "full": "KaynR.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Champions damaged by Kayn are marked for 3.15 seconds.<br /><br />Kayn infests a marked enemy, becoming Untargetable. After {{ infestduration }} seconds or after <recast>Recasting</recast>, Kayn bursts out, dealing <physicalDamage>{{ damage }} physical damage</physicalDamage> to the enemy.<br /><br /><keywordMajor>Shadow Assassin:</keywordMajor> Increases this Ability's range, the distance Kayn exits, and refreshes <spellName>The Darkin Scythe's</spellName> Cooldown on exit.<br /><br /><keywordMajor>Darkin Slayer:</keywordMajor> Instead deals <physicalDamage>{{ slayerdamage }} max Health physical damage</physicalDamage> and restores <healing>{{ healvalue }} Health</healing> ({{ slayerhealpercent*100 }}% damage amount).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "550",
+      "datavalues": {},
+      "description": "Kayn hides in an enemy's body, dealing massive damage when he bursts out.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive_en": {
+    "name": "The Darkin Scythe",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 96,
+      "y": 0,
+      "full": "Kayn_Passive_Primary.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Kayn wields an ancient weapon and fights Rhaast, the darkin within it, for control. Either the <font color='#fe5c50'>Darkin</font> will triumph, or Kayn will master Rhaast and become the <font color='#8484fb'>Shadow Assassin</font>.<br><br><font color='#fe5c50'>Darkin:</font> Heal for a percentage of spell damage dealt to champions.<br><br><font color='#8484fb'>Shadow Assassin:</font> For the first few seconds in combat with enemy champions, deal bonus damage."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "141000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "141001",
+      "num": 1,
+      "name": "Soulhunter Kayn",
+      "chromas": false
+    },
+    {
+      "id": "141002",
+      "num": 2,
+      "name": "Odyssey Kayn",
+      "chromas": true
+    },
+    {
+      "id": "141008",
+      "num": 8,
+      "name": "Nightbringer Kayn",
+      "chromas": true
+    },
+    {
+      "id": "141009",
+      "num": 9,
+      "name": "Prestige Nightbringer Kayn",
+      "chromas": false
+    },
+    {
+      "id": "141015",
+      "num": 15,
+      "name": "Snow Moon Kayn",
+      "chromas": true
+    },
+    {
+      "id": "141020",
+      "num": 20,
+      "name": "HEARTSTEEL Kayn",
+      "chromas": true
+    },
+    {
+      "id": "141026",
+      "num": 26,
+      "name": "Battle Academia Kayn",
+      "chromas": true
+    }
+  ]
+}

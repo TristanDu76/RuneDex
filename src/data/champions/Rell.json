@@ -1,0 +1,376 @@
+{
+  "id": "Rell",
+  "key": "526",
+  "name": "Rell",
+  "title": "Vierge de fer",
+  "version": "15.23.1",
+  "lore": "Changée en arme vivante par les expériences brutales de l'académie de la Rose noire, Rell est aujourd'hui déterminée à détruire Noxus. Son enfance a été particulièrement horrible ; on lui a fait subir des choses atroces afin de perfectionner ses capacités magiques de manipulation du métal... jusqu'à ce qu'elle réussisse à s'échapper en tuant beaucoup de ses ravisseurs au passage. Désormais considérée comme une criminelle, Rell s'attaque aux soldats noxiens tout en recherchant les survivants de son ancienne « académie ». Bien qu'elle défende les faibles, elle tuera sans pitié ses anciens tortionnaires.",
+  "tags": [
+    "Tank",
+    "Support"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 336,
+    "y": 48,
+    "full": "Rell.png",
+    "group": "champion",
+    "sprite": "champion3.png"
+  },
+  "skins": [
+    {
+      "id": "526000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "526001",
+      "num": 1,
+      "name": "Rell reine du combat",
+      "chromas": true
+    },
+    {
+      "id": "526010",
+      "num": 10,
+      "name": "Rell gardienne des étoiles",
+      "chromas": true
+    },
+    {
+      "id": "526020",
+      "num": 20,
+      "name": "Rell de l'Ouest",
+      "chromas": true
+    },
+    {
+      "id": "526030",
+      "num": 30,
+      "name": "Rell arénaire",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "RellQ",
+      "name": "Frappe dislocatrice",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 0,
+        "full": "RellQ.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Rell donne un coup d'estoc, <status>étourdissant</status> les cibles pendant {{ stunduration }} sec, détruisant tous les <shield>boucliers</shield> et infligeant <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Rell inflige des dégâts magiques aux unités sur une ligne, brisant leurs boucliers et les étourdissant. ",
+      "cooldownBurn": "11/10.5/10/9.5/9"
+    },
+    {
+      "id": "RellW_Dismount",
+      "name": "Ferromancie : Descendre en piqué",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 0,
+        "full": "RellW_Dismount.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Compétence passive - Cavalière :</spellPassive> quand elle est à cheval, Rell gagne <speed>+{{ spell.rellw_dismount:mountedmovespeed }} vitesse de déplacement</speed>.<br /><br /><spellActive>Active - Ferromancie : Descendre en piqué :</spellActive> Rell saute de son destrier, <status>projetant dans les airs</status> les ennemis et leur infligeant <magicDamage>{{ spell.rellw_dismount:dismountdamage }} pts de dégâts magiques</magicDamage>. Rell gagne un <shield>bouclier de {{ spell.rellw_dismount:shield }} PV</shield> qui dure jusqu'à ce qu'elle remonte à cheval.<br /><br />Rell prend alors sa forme en armure, gagnant <scaleArmor>+{{ spell.rellw_dismount:resistanceincrease*100 }}% d'armure bonus</scaleArmor> et de <scaleMR>résistance magique bonus</scaleMR>, <attackSpeed>+{{ spell.rellw_dismount:dismountedasboost*100 }}% de vitesse d'attaque</attackSpeed> et +{{ spell.rellw_dismount:dismountedrangeboost }} de portée d'attaque. Dans sa forme en armure, Rell peut utiliser <spellName>Ferromancie : Monter à cheval</spellName>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts à pied",
+          "PV du bouclier",
+          "Dégâts de la projection",
+          "Vitesse de déplacement passive"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "450",
+      "datavalues": {},
+      "description": "À cheval : Rell descend de cheval et s'abat au sol dans son armure, projetant dans les airs les ennemis et gagnant un solide bouclier. À pied, elle gagne de l'armure, de la résistance magique, de la vitesse d'attaque et de la portée d'attaque, mais elle est ralentie.<br><br>À pied : Rell recrée son destrier, gagnant un bref bonus de vitesse et projetant dans les airs le prochain ennemi qu'elle attaque.<br><br>",
+      "cooldownBurn": "10"
+    },
+    {
+      "id": "RellE",
+      "name": "Joute endiablée",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 0,
+        "full": "RellE.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Rell et un allié chargent, gagnant <speed>+{{ minms*100 }}% de vitesse de déplacement</speed> pendant {{ duration }} sec. Ce bonus est augmenté à <speed>{{ maxms*100 }}%</speed> en direction des ennemis ou l'un vers l'autre. La prochaine attaque ou <spellName>Frappe dislocatrice</spellName> de Rell provoque une explosion dans une zone, infligeant des <magicDamage>dégâts magiques équivalents à {{ maxhealthdamagecalc }} des PV max</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1200",
+      "datavalues": {},
+      "description": "Passive : Rell gagne de la vitesse de déplacement en dehors des combats.<br><br>Active : Rell et un allié gagnent de la vitesse de déplacement croissante. Ce bonus est doublé en direction des ennemis et quand Rell et son allié se dirigent l'un vers l'autre. La prochaine attaque de Rell provoquera une explosion, infligeant des dégâts magiques.<br>",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "RellR",
+      "name": "Tempête magnétique",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 0,
+        "full": "RellR.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Rell explose en une fureur magnétique, <status>attirant</status> violemment les ennemis proches. Elle <status>attire</status> ensuite continuellement les ennemis proches et inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> en {{ duration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "200",
+      "datavalues": {},
+      "description": "Rell explose en une fureur magnétique, attirant violemment les ennemis proches. Elle attire ensuite continuellement les ennemis proches pendant un bref instant, leur infligeant des dégâts magiques sur la durée.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive": {
+    "name": "Mise en pièces",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 336,
+      "y": 48,
+      "full": "RellP.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Les attaques et les compétences de Rell infligent des dégâts magiques bonus et volent de l'armure et de la résistance magique à l'impact."
+  },
+  "created_at": "2025-11-26T15:13:34.616021+00:00",
+  "factions": [
+    "noxus"
+  ],
+  "custom_tags": [
+    "rebelle",
+    "métal"
+  ],
+  "gender": "Female",
+  "species": "Human",
+  "title_en": "the Iron Maiden",
+  "lore_en": "The product of brutal experimentation at the hands of the Black Rose, Rell is a defiant, living weapon determined to topple Noxus. Her childhood was one of misery and horror, enduring unspeakable procedures to perfect and weaponize her magical control over metal... until she staged a violent escape, killing many of her captors in the process. Now branded as a criminal, Rell attacks Noxian soldiers on sight as she searches for survivors of her old “academy,” defending the meek while delivering violent death to her former overseers.",
+  "spells_en": [
+    {
+      "id": "RellQ",
+      "name": "Shattering Strike",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 0,
+        "full": "RellQ.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Rell thrusts her lance, <status>Stunning</status> targets for {{ stunduration }} seconds, destroying all <shield>Shields</shield>, and dealing <magicDamage>{{ damage }} magic damage.</magicDamage>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Rell deals magic damage to units in a line, breaking their shields and stunning them. ",
+      "cooldownBurn": "11/10.5/10/9.5/9"
+    },
+    {
+      "id": "RellW_Dismount",
+      "name": "Ferromancy: Crash Down",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 0,
+        "full": "RellW_Dismount.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive - Mounted Alacrity:</spellPassive> Rell gains <speed>{{ spell.rellw_dismount:mountedmovespeed }} Move Speed</speed> while mounted.<br /><br /><spellActive>Active - Ferromancy: Crash Down:</spellActive> Rell leaps off her mount, <status>Knocking Up</status> enemies and dealing <magicDamage>{{ spell.rellw_dismount:dismountdamage }} magic damage</magicDamage>. Rell gains <shield>{{ spell.rellw_dismount:shield }} Shield</shield>, which lasts until she remounts.<br /><br />Rell then enters her armored form, gaining <scaleArmor>{{ spell.rellw_dismount:resistanceincrease*100 }}% increased Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR>, <attackSpeed>{{ spell.rellw_dismount:dismountedasboost*100 }}% Attack Speed</attackSpeed> and {{ spell.rellw_dismount:dismountedrangeboost }} Attack Range. In this armored form, she can use <spellName>Ferromancy: Mount Up</spellName>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dismount Damage",
+          "Shield Amount",
+          "Flip Damage",
+          "Passive Move Speed"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "450",
+      "datavalues": {},
+      "description": "Mounted: Rell Dismounts, crashing down in her armor, Knocking enemies up and gaining a large Shield. While dismounted, she gains Armor, Magic Resist, Attack Speed, and Attack Range, but is Slowed.<br><br>Dismounted: Rell forms her Mount, gaining a burst of speed and Knocking Up the next enemy she attacks.<br><br>",
+      "cooldownBurn": "10"
+    },
+    {
+      "id": "RellE",
+      "name": "Full Tilt",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 0,
+        "full": "RellE.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Rell and an ally charge, gaining <speed>{{ minms*100 }}% Move Speed</speed>, increased to <speed>{{ maxms*100 }}%</speed> when facing enemy champions or each other for {{ duration }} seconds. Rell's next Attack or <spellName>Shattering Strike</spellName> explodes in an area for <magicDamage>{{ maxhealthdamagecalc }} max Health magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1200",
+      "datavalues": {},
+      "description": "Passive: Rell gains out of combat Move Speed.<br><br>Active: Rell and an ally gain ramping Move Speed, doubled toward enemies and each other. Her next Attack explodes, dealing magic damage.<br>",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "RellR",
+      "name": "Magnet Storm",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 0,
+        "full": "RellR.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Rell explodes in a magnetic fury, violently <status>Pulling</status> nearby enemies towards herself. Then Rell constantly <status>Drags</status> nearby enemies towards herself and deals <magicDamage>{{ totaldamage }} magic damage</magicDamage> over the next {{ duration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "200",
+      "datavalues": {},
+      "description": "Rell explodes in a magnetic fury, violently Pulling nearby enemies toward herself. Then Rell constantly Drags nearby enemies toward herself for a short while, dealing magic damage over time.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Break the Mold",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 336,
+      "y": 48,
+      "full": "RellP.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Rell's Attacks and Abilities deal additional magic damage and steal Armor and Magic Resist on hit."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Support"
+  ],
+  "skins_en": [
+    {
+      "id": "526000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "526001",
+      "num": 1,
+      "name": "Battle Queen Rell",
+      "chromas": true
+    },
+    {
+      "id": "526010",
+      "num": 10,
+      "name": "Star Guardian Rell",
+      "chromas": true
+    },
+    {
+      "id": "526020",
+      "num": 20,
+      "name": "High Noon Rell",
+      "chromas": true
+    },
+    {
+      "id": "526030",
+      "num": 30,
+      "name": "Grand Reckoning Rell",
+      "chromas": false
+    }
+  ]
+}

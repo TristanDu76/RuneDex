@@ -1,0 +1,480 @@
+{
+  "id": "Syndra",
+  "key": "134",
+  "name": "Syndra",
+  "title": "Souveraine obscure",
+  "version": "15.23.1",
+  "lore": "Syndra est une effrayante magicienne originaire d'Ionia, aux pouvoirs impressionnants. Enfant, elle perturba les anciens de son village avec sa magie sauvage et incontrôlée. Elle fut confiée à un maître dans l'espoir qu'elle apprendrait à se contrôler, mais elle finit par découvrir que son prétendu mentor limitait ses capacités. Créant des sphères d'énergie noire avec ses sentiments de douleur et de trahison, Syndra jura de détruire quiconque tenterait de la contrôler.",
+  "tags": [
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 48,
+    "y": 48,
+    "full": "Syndra.png",
+    "group": "champion",
+    "sprite": "champion4.png"
+  },
+  "skins": [
+    {
+      "id": "134000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "134001",
+      "num": 1,
+      "name": "Syndra justicière",
+      "chromas": false
+    },
+    {
+      "id": "134002",
+      "num": 2,
+      "name": "Syndra de l'Atlantide",
+      "chromas": false
+    },
+    {
+      "id": "134003",
+      "num": 3,
+      "name": "Syndra dame de carreau",
+      "chromas": false
+    },
+    {
+      "id": "134004",
+      "num": 4,
+      "name": "Syndra des neiges",
+      "chromas": false
+    },
+    {
+      "id": "134005",
+      "num": 5,
+      "name": "SKT T1 Syndra",
+      "chromas": true
+    },
+    {
+      "id": "134006",
+      "num": 6,
+      "name": "Syndra gardienne des étoiles",
+      "chromas": true
+    },
+    {
+      "id": "134007",
+      "num": 7,
+      "name": "Syndra beach-volley",
+      "chromas": true
+    },
+    {
+      "id": "134016",
+      "num": 16,
+      "name": "Syndra rose fanée",
+      "chromas": true
+    },
+    {
+      "id": "134025",
+      "num": 25,
+      "name": "Syndra sorcière",
+      "chromas": true
+    },
+    {
+      "id": "134034",
+      "num": 34,
+      "name": "Syndra gardienne des étoiles prestige",
+      "chromas": false
+    },
+    {
+      "id": "134044",
+      "num": 44,
+      "name": "Syndra fleur spirituelle",
+      "chromas": true
+    },
+    {
+      "id": "134054",
+      "num": 54,
+      "name": "Syndra de l'assemblée",
+      "chromas": true
+    },
+    {
+      "id": "134065",
+      "num": 65,
+      "name": "Syndra ravioles adorées",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "SyndraQ",
+      "name": "Sphère noire",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 96,
+        "full": "SyndraQ.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Syndra fait apparaître une <keywordMajor>sphère noire</keywordMajor>, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. La <keywordMajor>sphère noire</keywordMajor> dure {{ sphereduration }} sec et peut être manipulée grâce aux autres compétences de Syndra.<br /><br /><evolve>{{ spell.syndrapassive:q1upgradethreshold }} éclats de courroux</evolve> : Syndra peut stocker {{ upgrade1maxammo }} charges de <keywordMajor>Sphère noire</keywordMajor>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/45/50/55/60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Coût en @AbilityResourceName@",
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Syndra invoque une sphère noire, infligeant des dégâts magiques. La sphère dure quelques secondes et peut être manipulée grâce aux autres compétences de Syndra.",
+      "cooldownBurn": "7"
+    },
+    {
+      "id": "SyndraW",
+      "name": "Force de la volonté",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 96,
+        "full": "SyndraW.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Syndra saisit une <keywordMajor>sphère noire</keywordMajor>, un sbire ennemi ou un monstre non épique. Elle l'emporte avec elle et peut <recast>réactiver</recast> cette compétence dans les 5 sec.<br /><br /><recast>Réactivation</recast> : Syndra lance l'objet saisi, infligeant <magicDamage>{{ throwdamage }} pts de dégâts magiques</magicDamage> et <status>ralentissant</status> de {{ totalslowamount }}% pendant {{ f2 }} sec.<br /><br /><evolve>{{ spell.syndrapassive:wupgradethreshold }} éclats de courroux</evolve> : cette compétence inflige <trueDamage>{{ tooltiponlypassivebonuspercent }} pts de dégâts bruts</trueDamage> supplémentaires.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/70/80/90/100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@",
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "925",
+      "datavalues": {},
+      "description": "Syndra saisit et lance une sphère noire ou un sbire ennemi, infligeant des dégâts magiques et réduisant la vitesse de déplacement des ennemis.",
+      "cooldownBurn": "12/11/10/9/8"
+    },
+    {
+      "id": "SyndraE",
+      "name": "Dispersion des faibles",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 96,
+        "full": "SyndraE.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Syndra projette une vague de force, <status>repoussant</status> les ennemis et les <keywordMajor>sphères noires</keywordMajor> et infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.<br /><br />Les <keywordMajor>sphères noires</keywordMajor> ainsi repoussées <status>étourdissent</status> les ennemis pendant {{ stunduration }} sec et infligent <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.<br /><br /><evolve>{{ spell.syndrapassive:eupgradethreshold }} éclats de courroux</evolve> : cette compétence est plus large et elle <status>ralentit</status> les ennemis de <status>{{ upgradedslowamount*100 }}%</status> pendant {{ upgradedslowduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Syndra repousse les ennemis et les sphères noires, infligeant des dégâts magiques. Les ennemis frappés par les sphères noires sont étourdis.",
+      "cooldownBurn": "15"
+    },
+    {
+      "id": "SyndraR",
+      "name": "Déchaînement de puissance",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 96,
+        "full": "SyndraR.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellPassive>Passive</spellPassive> : <spellName>Sphère noire</spellName> gagne +{{ qhasteperrank }} accélération de compétence par rang de <spellName>Déchaînement de puissance</spellName>.<br /><br />Syndra libère toute sa puissance : elle lance sur un champion ennemi les 3 <keywordMajor>sphères noires</keywordMajor> qui orbitent autour d'elle plus jusqu'à 4 sphères proches. Chaque <keywordMajor>sphère noire</keywordMajor> inflige <magicDamage>{{ damagecalc }} pts de dégâts magiques</magicDamage> (max : <magicDamage>{{ maxdamagecalc }} pts de dégâts magiques</magicDamage>).<br /><br /><evolve>{{ spell.syndrapassive:rupgradethreshold }} éclats de courroux</evolve> : cette compétence <danger>exécute</danger> les ennemis qui ont moins de {{ upgradeexecutethreshold*100 }}% de leurs PV.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "Accélération de compétence de Sphère noire"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "675",
+      "datavalues": {},
+      "description": "Syndra bombarde un champion ennemi avec toutes ses sphères noires.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive": {
+    "name": "Transcendance",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 48,
+      "y": 48,
+      "full": "SyndraPassive.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "Syndra collecte des éclats de courroux quand elle gagne des niveaux et quand elle blesse des ennemis, ce qui améliore ses compétences.<br><br><font color='#FF9900'>Sphère noire</font> : Syndra peut stocker une charge supplémentaire.<br><font color='#FF9900'>Force de la volonté</font> : dégâts bruts supplémentaires.<br><font color='#FF9900'>Dispersion des faibles</font> : largeur augmentée et ralentit toutes les cibles.<br><font color='#FF9900'>Déchaînement de puissance</font> : exécute les cibles dont les PV sont bas."
+  },
+  "created_at": "2025-11-26T15:13:35.212437+00:00",
+  "factions": [
+    "ionia"
+  ],
+  "custom_tags": [
+    "puissance"
+  ],
+  "gender": "Female",
+  "species": "Human",
+  "title_en": "the Dark Sovereign",
+  "lore_en": "Syndra is a fearsome Ionian mage with incredible power at her command. As a child, she disturbed the village elders with her reckless and wild magic. She was sent away to be taught greater control, but eventually discovered her supposed mentor was restraining her abilities. Forming her feelings of betrayal and hurt into dark spheres of energy, Syndra has sworn to destroy all who would try to control her.",
+  "spells_en": [
+    {
+      "id": "SyndraQ",
+      "name": "Dark Sphere",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 96,
+        "full": "SyndraQ.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Syndra conjures a <keywordMajor>Dark Sphere</keywordMajor>, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>. The <keywordMajor>Dark Sphere</keywordMajor> remains for {{ sphereduration }} seconds and can be manipulated by Syndra's other Abilities.<br /><br /><evolve>{{ spell.syndrapassive:q1upgradethreshold }} Splinters of Wrath</evolve>: Syndra can store {{ upgrade1maxammo }} charges of <keywordMajor>Dark Sphere</keywordMajor>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/45/50/55/60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "@AbilityResourceName@ Cost",
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Syndra conjures a Dark Sphere dealing magic damage. The sphere remains and can be manipulated by her other powers.",
+      "cooldownBurn": "7"
+    },
+    {
+      "id": "SyndraW",
+      "name": "Force of Will",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 96,
+        "full": "SyndraW.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Syndra grabs a <keywordMajor>Dark Sphere</keywordMajor>, enemy minion, or non-epic monster. She drags it with her and can <recast>Recast</recast> for up to 5 seconds.<br /><br /><recast>Recast</recast>: Syndra hurls the object, dealing <magicDamage>{{ throwdamage }} magic damage</magicDamage> and <status>Slowing</status> by {{ totalslowamount }}% for {{ f2 }} seconds.<br /><br /><evolve>{{ spell.syndrapassive:wupgradethreshold }} Splinters of Wrath</evolve>: This Ability deals an additional <trueDamage>{{ tooltiponlypassivebonuspercent }} true damage</trueDamage>.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/70/80/90/100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "@AbilityResourceName@ Cost",
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "925",
+      "datavalues": {},
+      "description": "Syndra picks up and throws a Dark Sphere or enemy minion dealing magic damage and slowing the Move Speed of enemies.",
+      "cooldownBurn": "12/11/10/9/8"
+    },
+    {
+      "id": "SyndraE",
+      "name": "Scatter the Weak",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 96,
+        "full": "SyndraE.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Syndra projects a wave of force, <status>Knocking Back</status> enemies and <keywordMajor>Dark Spheres</keywordMajor> and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>.<br /><br /><keywordMajor>Dark Spheres</keywordMajor> that are pushed <status>Stun</status> enemies for {{ stunduration }} seconds and deal <magicDamage>{{ totaldamage }} magic damage</magicDamage>.<br /><br /><evolve>{{ spell.syndrapassive:eupgradethreshold }} Splinters of Wrath</evolve>: This Ability's width is increased and <status>Slows</status> enemies by <status>{{ upgradedslowamount*100 }}%</status> for {{ upgradedslowduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Syndra knocks enemies and Dark Spheres back dealing magic damage. Enemies hit by Dark Spheres become stunned.",
+      "cooldownBurn": "15"
+    },
+    {
+      "id": "SyndraR",
+      "name": "Unleashed Power",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 96,
+        "full": "SyndraR.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellPassive>Passive</spellPassive>: <spellName>Dark Sphere</spellName> gains an additional {{ qhasteperrank }} Ability Haste for each rank of <spellName>Unleashed Power</spellName>.<br /><br />Syndra draws on her full cataclysmic power, launching the 3 <keywordMajor>Dark Spheres</keywordMajor> orbiting her plus up to 4 more nearby at an enemy champion. Each <keywordMajor>Dark Sphere</keywordMajor> deals <magicDamage>{{ damagecalc }} magic damage</magicDamage> (max <magicDamage>{{ maxdamagecalc }} magic damage</magicDamage>).<br /><br /><evolve>{{ spell.syndrapassive:rupgradethreshold }} Splinters of Wrath</evolve>: This Ability <danger>executes</danger> enemies below {{ upgradeexecutethreshold*100 }}% Health.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "Dark Sphere Ability Haste"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "675",
+      "datavalues": {},
+      "description": "Syndra bombards an enemy Champion with all of her Dark Spheres.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Transcendent",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 48,
+      "y": 48,
+      "full": "SyndraPassive.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "Syndra collects Splinters of Wrath from gaining levels and damaging enemies which upgrade her abilities.<br><br><font color='#FF9900'>Dark Sphere</font>: Syndra can hold an additional charge<br><font color='#FF9900'>Force of Will</font>: Bonus true damage.<br><font color='#FF9900'>Scatter the Weak</font>: Increased width and slows all targets<br><font color='#FF9900'>Unleashed Power</font>: Executes low health targets"
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Mid"
+  ],
+  "skins_en": [
+    {
+      "id": "134000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "134001",
+      "num": 1,
+      "name": "Justicar Syndra",
+      "chromas": false
+    },
+    {
+      "id": "134002",
+      "num": 2,
+      "name": "Atlantean Syndra",
+      "chromas": false
+    },
+    {
+      "id": "134003",
+      "num": 3,
+      "name": "Queen of Diamonds Syndra",
+      "chromas": false
+    },
+    {
+      "id": "134004",
+      "num": 4,
+      "name": "Snow Day Syndra",
+      "chromas": false
+    },
+    {
+      "id": "134005",
+      "num": 5,
+      "name": "SKT T1 Syndra",
+      "chromas": true
+    },
+    {
+      "id": "134006",
+      "num": 6,
+      "name": "Star Guardian Syndra",
+      "chromas": true
+    },
+    {
+      "id": "134007",
+      "num": 7,
+      "name": "Pool Party Syndra",
+      "chromas": true
+    },
+    {
+      "id": "134016",
+      "num": 16,
+      "name": "Withered Rose Syndra",
+      "chromas": true
+    },
+    {
+      "id": "134025",
+      "num": 25,
+      "name": "Bewitching Syndra",
+      "chromas": true
+    },
+    {
+      "id": "134034",
+      "num": 34,
+      "name": "Prestige Star Guardian Syndra",
+      "chromas": false
+    },
+    {
+      "id": "134044",
+      "num": 44,
+      "name": "Spirit Blossom Syndra",
+      "chromas": true
+    },
+    {
+      "id": "134054",
+      "num": 54,
+      "name": "Coven Syndra",
+      "chromas": true
+    },
+    {
+      "id": "134065",
+      "num": 65,
+      "name": "Dumpling Darlings Syndra",
+      "chromas": true
+    }
+  ]
+}

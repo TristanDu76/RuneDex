@@ -1,0 +1,500 @@
+{
+  "id": "Diana",
+  "key": "131",
+  "name": "Diana",
+  "title": "Mépris de la lune",
+  "version": "15.23.1",
+  "lore": "Diana fut trouvée et recueillie par des chasseurs Solari (les fidèles du soleil) sur les pentes du Mont Targon, laissée orpheline par des parents étrangers. Elle fut élevée et entraînée dans la foi Solari, qui impose une discipline physique et religieuse rigoureuse. Cependant, Diana était perpétuellement tourmentée par des questions sur la raison d'être des croyances Solari et la logique derrière leurs actions.\r\n\r\nElle passait ses nuits à étudier les textes Solari, mais y trouvait plus de questions que de réponses. Elle remarqua que des chapitres entiers avaient été déchirés des tomes et que toute référence à la lune était absente. Ses professeurs la punissaient pour son esprit curieux, tentant de la forcer à la dévotion. Son seul réconfort était son amitié profonde avec Leona, la plus dévote de ses pairs, avec qui elle menait de longs débats passionnés.\r\n\r\nUne nuit, Diana fit une découverte cruciale : elle trouva une alcôve cachée dans la montagne, où le clair de lune révélait des images montrant le soleil et la lune côte à côte, avec des guerriers dorés (Solari) et argentés (Lunari) unis au sommet du Targon. Diana comprit que le soleil et la lune n'étaient pas ennemis. Elle se précipita pour le dire à Leona, mais son amie, horrifiée, la supplia de garder le silence, la mettant en garde contre l'hérésie.\r\n\r\nConvaincue que les Solari cachaient la vérité, Diana entreprit l'ascension périlleuse du Mont Targon, cherchant des réponses au sommet.\r\n\r\nAu sommet, la pleine lune la frappa d'un pilier de lumière. Elle sentit une présence s'emparer d'elle, partageant des visions d'une autre foi Rakkor, les Lunari. Diana fut choisie comme l'hôte d'un Aspect de la lune. La lumière se dissipa, et elle se retrouva vêtue d'une armure d'argent, maniant une lame en croissant de lune. À ses côtés se tenait Leona, elle aussi transformée par un Aspect, vêtue d'une armure dorée et portant une épée et un bouclier éclatants.\r\n\r\nDiana, remplie de joie à l'idée de partager cette révélation avec son amie, fut consternée par la réaction de Leona, qui ne songeait qu'à retourner auprès des Solari. Leur désaccord se transforma rapidement en un combat titanesque entre le clair de lune et le feu solaire. Craignant de perdre son humanité au profit de l'Aspect, Diana s'enfuit en bas de la montagne.\r\n\r\nVindiquée dans sa quête, Diana retourna au temple pour confronter les grands prêtres. Lorsqu'elle leur raconta l'histoire des Lunari, ils la dénoncèrent comme une hérétique. La rage s'empara de Diana, amplifiée par l'Aspect, et elle déchaîna une terrible explosion de clair de lune qui fit des victimes.\r\n\r\nAujourd'hui, Diana est en fuite, une hors-la-loi. Guidée par des visions et des fragments de savoir ancien, elle s'accroche à la conviction que les Lunari et les Solari ne doivent pas être des ennemis et qu'elle a un grand destin à accomplir. Elle lutte pour comprendre sa puissance et son rôle en ce monde, sans que son but ne soit clair, mais elle le poursuivra à tout prix.",
+  "tags": [
+    "Fighter",
+    "Assassin"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 288,
+    "y": 96,
+    "full": "Diana.png",
+    "group": "champion",
+    "sprite": "champion0.png"
+  },
+  "skins": [
+    {
+      "id": "131000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "131001",
+      "num": 1,
+      "name": "Diana valkyrie sombre",
+      "chromas": false
+    },
+    {
+      "id": "131002",
+      "num": 2,
+      "name": "Diana déesse lunaire",
+      "chromas": true
+    },
+    {
+      "id": "131003",
+      "num": 3,
+      "name": "Diana infernale",
+      "chromas": false
+    },
+    {
+      "id": "131011",
+      "num": 11,
+      "name": "Diana lune de sang",
+      "chromas": false
+    },
+    {
+      "id": "131012",
+      "num": 12,
+      "name": "Diana des eaux sombres",
+      "chromas": true
+    },
+    {
+      "id": "131018",
+      "num": 18,
+      "name": "Diana tueuse de dragons",
+      "chromas": true
+    },
+    {
+      "id": "131025",
+      "num": 25,
+      "name": "Diana reine du combat",
+      "chromas": false
+    },
+    {
+      "id": "131026",
+      "num": 26,
+      "name": "Diana reine du combat prestige",
+      "chromas": false
+    },
+    {
+      "id": "131027",
+      "num": 27,
+      "name": "Diana Sentinelle",
+      "chromas": true
+    },
+    {
+      "id": "131037",
+      "num": 37,
+      "name": "Diana pyrotechnicienne",
+      "chromas": true
+    },
+    {
+      "id": "131047",
+      "num": 47,
+      "name": "Diana élue de l'hiver",
+      "chromas": true
+    },
+    {
+      "id": "131054",
+      "num": 54,
+      "name": "Diana écailles célestes",
+      "chromas": true
+    },
+    {
+      "id": "131064",
+      "num": 64,
+      "name": "Diana démiurge cosmique",
+      "chromas": true
+    },
+    {
+      "id": "131065",
+      "num": 65,
+      "name": "Diana démiurge cosmique prestige",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "DianaQ",
+      "name": "Croissant lunaire",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 0,
+        "full": "DianaQ.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Diana libère une vague incurvée d'énergie lunaire, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> et appliquant la marque <keywordMajor>Clair de lune</keywordMajor> pendant {{ moonlightduration }} sec. <br /><br /><keywordMajor>Clair de lune</keywordMajor> révèle les ennemis qui ne sont pas <keywordStealth>furtifs</keywordStealth>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "900",
+      "datavalues": {},
+      "description": "Libère une vague incurvée d'énergie lunaire, infligeant des dégâts magiques.<br><br>Inflige Clair de lune aux ennemis touchés, les révélant pendant 3 sec s'ils ne sont pas furtifs.",
+      "cooldownBurn": "8/7.5/7/6.5/6"
+    },
+    {
+      "id": "DianaOrbs",
+      "name": "Corps célestes",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 0,
+        "full": "DianaOrbs.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Diana crée trois sphères qui tournent autour d'elle pendant {{ shieldduration }} sec et qui explosent au contact des ennemis. Chaque sphère inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>, jusqu'à un maximum de <magicDamage>{{ totalmaxdamage }} pts de dégâts</magicDamage>.<br /><br />Diana gagne également un <shield>bouclier de {{ shieldvalue }} PV</shield> pendant la même durée. Quand la dernière sphère explose, Diana gagne un nouveau <shield>bouclier de {{ shieldvalue }} PV</shield> et réinitialise la durée.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/45/50/55/60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "PV du bouclier",
+          "Coût en @AbilityResourceName@",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Diana crée trois sphères qui explosent au contact des ennemis et infligent des dégâts dans une zone. Elle obtient aussi un bouclier temporaire qui absorbe les dégâts. Si les trois sphères explosent, le bouclier est renforcé.",
+      "cooldownBurn": "15/13.5/12/10.5/9"
+    },
+    {
+      "id": "DianaTeleport",
+      "name": "Rush lunaire",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 0,
+        "full": "DianaTeleport.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Diana devient l'incarnation de la lune vengeresse. Elle se rue sur un ennemi et lui inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. Si la cible est affectée par <keywordMajor>Clair de lune</keywordMajor>, le délai de récupération de cette compétence est annulé.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/45/50/55/60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@",
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "825",
+      "datavalues": {},
+      "description": "Devient l'incarnation de la lune vengeresse et se rue sur un ennemi, infligeant des dégâts magiques.<br><br>Rush lunaire n'a pas de délai de récupération s'il permet de se ruer sur un ennemi affecté par Clair de lune. Tous les autres ennemis perdent l'effet Clair de lune, même s'ils n'ont pas été la cible de Rush lunaire.",
+      "cooldownBurn": "22/20/18/16/14"
+    },
+    {
+      "id": "DianaR",
+      "name": "Attraction lunaire",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 0,
+        "full": "DianaR.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Diana <status>attire</status> les ennemis proches, les <status>ralentit</status> de {{ slowtooltip }}% et les révèle pendant {{ slowduration }} sec.<br /><br />Si Diana touche au moins un champion ennemi, elle fait appel à la lune pour infliger <magicDamage>{{ rexplosiondamage }} pts de dégâts magiques</magicDamage> plus <magicDamage>{{ rmultihitamplification }}</magicDamage> par champion attiré au-delà du premier, jusqu'à un maximum de <magicDamage>{{ maxdamage }} pts de dégâts</magicDamage> supplémentaires.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts",
+          "Ralentissement"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "475",
+      "datavalues": {},
+      "description": "Diana révèle et attire tous les ennemis proches, puis les ralentit.<br><br>Si Diana attire au moins un champion ennemi, la lumière de la lune s'abat sur elle après un court délai, infligeant des dégâts magiques dans une zone autour d'elle. Les dégâts sont augmentés à chaque cible secondaire attirée.",
+      "cooldownBurn": "100/90/80"
+    }
+  ],
+  "passive": {
+    "name": "Lame sélène",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 288,
+      "y": 96,
+      "full": "Diana_Passive_LunarBlade.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Tous les trois coups, Diana frappe les ennemis proches et leur inflige des dégâts magiques bonus. Après avoir lancé une compétence, Diana augmente sa vitesse d'attaque pendant 5 sec."
+  },
+  "created_at": "2025-11-26T15:13:32.649099+00:00",
+  "factions": [
+    "targon"
+  ],
+  "custom_tags": [
+    "lune"
+  ],
+  "gender": "Female",
+  "species": "Aspect",
+  "title_en": "Scorn of the Moon",
+  "lore_en": "Diana was found and taken in by Solari hunters (followers of the sun) on the slopes of Mount Targon, orphaned by strangers to the land. She was raised and trained in the Solari faith, which enforced rigorous physical and religious discipline. However, Diana was perpetually tormented by questions about the rationale behind the Solari beliefs and their actions.\r\n\r\nShe spent her evenings studying the Solari texts but found more questions than answers. She noticed that entire chapters had been torn out of the tomes, and all references to the moon seemed missing. Her teachers assigned her harsh punishments for her inquisitive mind, attempting to exhaust her into devotion. Her only solace was her deep friendship with Leona, the most devout of her peers, with whom she engaged in long, passionate debates.\r\n\r\nOne night, Diana made a crucial discovery: she found a hidden alcove deep within the mountain where moonlight revealed imagery showing the sun and moon side-by-side, with silver-clad (Lunari) and gold-armored (Solari) warriors united at Targon’s peak. Diana realized the sun and moon were not enemies. She raced to tell Leona, but her friend was horrified, begging her to keep silent and warning her against heresy.\r\n\r\nConvinced the Solari were hiding the truth, Diana undertook the perilous climb up Mount Targon, seeking answers at the summit.\r\n\r\nAt the peak, the brightest, fullest moon slammed into her with a pillar of light. She felt a presence taking hold of her, sharing glimpses of another Rakkor faith called the Lunari. Diana realized she had been chosen as the host of an Aspect of the moon. When the light dissipated, she found herself clad in silver armor, wielding a crescent blade. Standing beside her was Leona, similarly transformed by an Aspect, wearing shining, golden battleplate.\r\n\r\nDiana was overjoyed to share this revelatory moment with her friend, but Leona only thought of returning to the Solari. Diana begged her not to, desperate that they face this new future together. Leona refused, and their disagreement quickly erupted into a titanic battle of moonlight and sunfire. Fearful of losing herself to the Aspect's power, Diana ultimately fled down the mountain.\r\n\r\nVindicated in her search, Diana returned to the temple to confront the high priests. When she told them of the Lunari, they denounced her as a heretic. Rage filled Diana, amplified by the Aspect within, and she unleashed a terrible burst of moonlight that left a trail of death in its wake.\r\n\r\nNow, Diana is on the run, an outlaw. Guided by half-remembered visions and fragments of ancient knowledge, she clings to the conviction that the Lunari and Solari need not be foes and that she has a greater purpose to fulfill. She struggles to understand her power and her role in this world, and will seek out her destiny, whatever the cost.",
+  "spells_en": [
+    {
+      "id": "DianaQ",
+      "name": "Crescent Strike",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 0,
+        "full": "DianaQ.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Diana unleashes an arc of lunar energy, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> and marking with <keywordMajor>Moonlight</keywordMajor> for {{ moonlightduration }} seconds. <br /><br /><keywordMajor>Moonlight</keywordMajor> reveals enemies that are not <keywordStealth>stealthed</keywordStealth>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "900",
+      "datavalues": {},
+      "description": "Unleashes a bolt of lunar energy in an arc dealing magic damage.<br><br>Afflicts enemies struck with Moonlight, revealing them if they are not stealthed for 3 seconds.",
+      "cooldownBurn": "8/7.5/7/6.5/6"
+    },
+    {
+      "id": "DianaOrbs",
+      "name": "Pale Cascade",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 0,
+        "full": "DianaOrbs.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Diana creates three orbiting spheres for {{ shieldduration }} seconds that explode on contact, each dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>, up to a max of <magicDamage>{{ totalmaxdamage }} damage</magicDamage>.<br /><br />Diana also gains <shield>{{ shieldvalue }} Shield</shield> for the same duration. When the last sphere detonates, she gains an additional <shield>{{ shieldvalue }} Shield</shield> and refreshes the duration.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/45/50/55/60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Shield Amount",
+          "@AbilityResourceName@ Cost",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Diana creates three orbiting spheres that detonate on contact with enemies to deal damage in an area. She also gains a temporary shield that absorbs damage. If her third sphere detonates, the shield gains additional strength.",
+      "cooldownBurn": "15/13.5/12/10.5/9"
+    },
+    {
+      "id": "DianaTeleport",
+      "name": "Lunar Rush",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 0,
+        "full": "DianaTeleport.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Diana becomes as the vengeful moon, dashing to an enemy and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>. If the target is afflicted with <keywordMajor>Moonlight</keywordMajor>, this Ability's Cooldown is refreshed.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/45/50/55/60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "@AbilityResourceName@ Cost",
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "825",
+      "datavalues": {},
+      "description": "Becomes the living embodiment of the vengeful moon, dashing to an enemy and dealing magic damage.<br><br>Lunar Rush has no cooldown when used to dash to an enemy afflicted with Moonlight. All other enemies will have the Moonlight debuff removed regardless of whether they were the target of Lunar Rush.",
+      "cooldownBurn": "22/20/18/16/14"
+    },
+    {
+      "id": "DianaR",
+      "name": "Moonfall",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 0,
+        "full": "DianaR.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Diana <status>Pulls In</status>, <status>Slows</status> by {{ slowtooltip }}%, and reveals nearby enemies for {{ slowduration }} seconds.<br /><br />If Diana hits at least one enemy champion, she calls to the moon, dealing <magicDamage>{{ rexplosiondamage }} magic damage</magicDamage> plus <magicDamage>{{ rmultihitamplification }}</magicDamage> for each champion pulled beyond the first, up to a max of an additional <magicDamage>{{ maxdamage }} damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage",
+          "Slow"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "475",
+      "datavalues": {},
+      "description": "Diana reveals and draws in all nearby enemies and slows them.<br><br>If Diana pulls in one or more enemy champions, the moonlight crashes down onto her after a short delay, dealing magic damage in an area around her, increased for each target beyond the first pulled.",
+      "cooldownBurn": "100/90/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Moonsilver Blade",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 288,
+      "y": 96,
+      "full": "Diana_Passive_LunarBlade.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Every third strike cleaves nearby enemies for an additional magic damage. After casting a spell, Diana gains Attack Speed for 5 seconds."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Jungle",
+    "Mid"
+  ],
+  "skins_en": [
+    {
+      "id": "131000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "131001",
+      "num": 1,
+      "name": "Dark Valkyrie Diana",
+      "chromas": false
+    },
+    {
+      "id": "131002",
+      "num": 2,
+      "name": "Lunar Goddess Diana",
+      "chromas": true
+    },
+    {
+      "id": "131003",
+      "num": 3,
+      "name": "Infernal Diana",
+      "chromas": false
+    },
+    {
+      "id": "131011",
+      "num": 11,
+      "name": "Blood Moon Diana",
+      "chromas": false
+    },
+    {
+      "id": "131012",
+      "num": 12,
+      "name": "Dark Waters Diana",
+      "chromas": true
+    },
+    {
+      "id": "131018",
+      "num": 18,
+      "name": "Dragonslayer Diana",
+      "chromas": true
+    },
+    {
+      "id": "131025",
+      "num": 25,
+      "name": "Battle Queen Diana",
+      "chromas": false
+    },
+    {
+      "id": "131026",
+      "num": 26,
+      "name": "Prestige Battle Queen Diana",
+      "chromas": false
+    },
+    {
+      "id": "131027",
+      "num": 27,
+      "name": "Sentinel Diana",
+      "chromas": true
+    },
+    {
+      "id": "131037",
+      "num": 37,
+      "name": "Firecracker Diana",
+      "chromas": true
+    },
+    {
+      "id": "131047",
+      "num": 47,
+      "name": "Winterblessed Diana",
+      "chromas": true
+    },
+    {
+      "id": "131054",
+      "num": 54,
+      "name": "Heavenscale Diana",
+      "chromas": true
+    },
+    {
+      "id": "131064",
+      "num": 64,
+      "name": "Dark Cosmic Diana",
+      "chromas": true
+    },
+    {
+      "id": "131065",
+      "num": 65,
+      "name": "Prestige Dark Cosmic Diana",
+      "chromas": false
+    }
+  ]
+}

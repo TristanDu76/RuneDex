@@ -1,0 +1,594 @@
+{
+  "id": "Lux",
+  "key": "99",
+  "name": "Lux",
+  "title": "Dame de lumière",
+  "version": "15.23.1",
+  "lore": "Luxanna \"Lux\" Crownguard est née à Haut-Silveremere, au sein de la prestigieuse famille Crownguard de Demacia, qui sert de protectrice du trône depuis des générations. Son frère aîné est Garen, et leur famille est très respectée.\n\nÉlevée dans un royaume isolationniste où la magie est interdite et craintive (largement en raison de son histoire ancienne et de la mort de l'oncle de Lux par un mage renégat), Lux était néanmoins une enfant pleine de zèle et d'optimisme, frustrée par l'attente de se soumettre aux devoirs familiaux. Elle remettait en question les enseignements de ses tuteurs, désirant explorer le monde.\n\nSa vie bascula une nuit fatidique, alors qu'elle était attaquée par des sabrewulfs. Dans un moment de peur désespérée, elle déchaîna un torrent de lumière magique émanant du plus profond d'elle. Elle réalisa avec effroi que la magie faisait partie d'elle, au même titre que son héritage Crownguard.\n\nPendant des années, la peur et le doute la rongèrent. Elle craignait d'être un monstre à exiler, et que la découverte de son pouvoir ne déshonore à jamais le nom des Crownguard. Cependant, avec le temps, elle apprit à gérer sa magie, s'entraînant en secret en jouant avec les rayons de soleil, les pliant en forme solide et créant de petites figures lumineuses dans sa main.\n\nÀ seize ans, elle se rendit à la Grande Cité de Demacia pour l'investiture de Garen au sein de la Vanguard Intrépide (Dauntless Vanguard). La ville l'éblouit. Elle y rencontra l'Ordre des Illuminateurs, un ordre religieux et caritatif, et se lia d'amitié avec une chevalière nommée Kahina.\n\nEn apprenant davantage sur le monde extérieur, sa diversité et son histoire, Lux commença à comprendre que la voie démaciienne n'était pas la seule. Elle vit que son amour pour sa patrie pouvait coexister avec son désir de la rendre plus juste... et peut-être un peu plus tolérante envers les mages comme elle. Elle emploie désormais secrètement ses talents pour le bénéfice de sa patrie.",
+  "tags": [
+    "Mage",
+    "Support"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 288,
+    "y": 48,
+    "full": "Lux.png",
+    "group": "champion",
+    "sprite": "champion2.png"
+  },
+  "skins": [
+    {
+      "id": "99000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "99001",
+      "num": 1,
+      "name": "Lux sorcière",
+      "chromas": false
+    },
+    {
+      "id": "99002",
+      "num": 2,
+      "name": "Lux voleuse de sorts",
+      "chromas": false
+    },
+    {
+      "id": "99003",
+      "num": 3,
+      "name": "Lux commando",
+      "chromas": false
+    },
+    {
+      "id": "99004",
+      "num": 4,
+      "name": "Lux impériale",
+      "chromas": false
+    },
+    {
+      "id": "99005",
+      "num": 5,
+      "name": "Lux de la Légion d'acier",
+      "chromas": false
+    },
+    {
+      "id": "99006",
+      "num": 6,
+      "name": "Lux gardienne des étoiles",
+      "chromas": false
+    },
+    {
+      "id": "99007",
+      "num": 7,
+      "name": "Lux élémentaliste",
+      "chromas": false
+    },
+    {
+      "id": "99008",
+      "num": 8,
+      "name": "Lux impératrice lunaire",
+      "chromas": true
+    },
+    {
+      "id": "99014",
+      "num": 14,
+      "name": "Lux gardienne des pyjamas",
+      "chromas": false
+    },
+    {
+      "id": "99015",
+      "num": 15,
+      "name": "Lux de l'Académie du combat",
+      "chromas": false
+    },
+    {
+      "id": "99016",
+      "num": 16,
+      "name": "Lux de l'Académie du combat prestige",
+      "chromas": false
+    },
+    {
+      "id": "99017",
+      "num": 17,
+      "name": "Lux démiurge cosmique",
+      "chromas": false
+    },
+    {
+      "id": "99018",
+      "num": 18,
+      "name": "Lux cosmique",
+      "chromas": false
+    },
+    {
+      "id": "99019",
+      "num": 19,
+      "name": "Lux astro-groove",
+      "chromas": true
+    },
+    {
+      "id": "99029",
+      "num": 29,
+      "name": "Lux de porcelaine",
+      "chromas": true
+    },
+    {
+      "id": "99038",
+      "num": 38,
+      "name": "Lux combattante spirituelle",
+      "chromas": true
+    },
+    {
+      "id": "99039",
+      "num": 39,
+      "name": "Lux de l'Académie du combat prestige (2022)",
+      "chromas": false
+    },
+    {
+      "id": "99040",
+      "num": 40,
+      "name": "Lux de porcelaine prestige",
+      "chromas": false
+    },
+    {
+      "id": "99042",
+      "num": 42,
+      "name": "Lux empyréenne",
+      "chromas": true
+    },
+    {
+      "id": "99061",
+      "num": 61,
+      "name": "Lux de la cour féérique",
+      "chromas": true
+    },
+    {
+      "id": "99070",
+      "num": 70,
+      "name": "Lux fleur spirituelle prestige",
+      "chromas": true
+    },
+    {
+      "id": "99072",
+      "num": 72,
+      "name": "Lux panda",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "LuxLightBinding",
+      "name": "Entrave de lumière",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 0,
+        "full": "LuxLightBinding.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Lux projette une sphère de lumière, <status>immobilisant</status> les deux premiers ennemis touchés pendant {{ e3 }} sec et leur infligeant <magicDamage>{{ totaldamagett }} pts de dégâts magiques</magicDamage> à chacun.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1175",
+      "datavalues": {},
+      "description": "Lux projette une sphère de lumière qui immobilise et blesse jusqu'à deux unités ennemies.",
+      "cooldownBurn": "11/10.5/10/9.5/9"
+    },
+    {
+      "id": "LuxPrismaticWave",
+      "name": "Barrière prismatique",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 0,
+        "full": "LuxPrismaticWave.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Lux lance son bâton, octroyant un <shield>bouclier de {{ totalshieldtt }} PV</shield> pendant {{ e3 }} sec aux alliés touchés. Puis le bâton revient, octroyant le même <shield>bouclier</shield> au retour.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "PV du bouclier",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1150",
+      "datavalues": {},
+      "description": "Lux lance son bâton et courbe la lumière autour des cibles alliées touchées, les protégeant contre les dégâts.",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "LuxLightStrikeKugel",
+      "name": "Anomalie radieuse",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 0,
+        "full": "LuxLightStrikeKugel.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Lux crée une zone de lumière qui <status>ralentit</status> de {{ e1 }}% et révèle la zone. Après {{ e3 }} sec ou en cas de <recast>réactivation</recast> de cette compétence, la zone explose, infligeant <magicDamage>{{ totaldamagett }} pts de dégâts magiques</magicDamage> et <status>ralentissant</status> pendant {{ slowlingerduration }} sec de plus.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/80/90/100/110",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ralentissement",
+          "Coût en @AbilityResourceName@",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1100",
+      "datavalues": {},
+      "description": "Crée une anomalie composée de lumière dans une zone, ralentissant les ennemis proches. Lux peut la faire exploser pour blesser les ennemis dans la zone d'effet.",
+      "cooldownBurn": "10/9.5/9/8.5/8"
+    },
+    {
+      "id": "LuxR",
+      "name": "Éclat final",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 0,
+        "full": "LuxR.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Lux tire un rayon lumineux, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> à tous les ennemis sur une ligne.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "3340",
+      "datavalues": {},
+      "description": "Après avoir chargé de l'énergie, Lux tire un rayon lumineux qui inflige des dégâts à toutes les cibles dans la zone. En outre, Éclat final déclenche la compétence passive de Lux et rafraîchit la durée du sortilège d'Illumination.",
+      "cooldownBurn": "60/50/40"
+    }
+  ],
+  "passive": {
+    "name": "Illumination",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 288,
+      "y": 48,
+      "full": "LuxIlluminatingFraulein.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Les compétences de Lux infligeant des dégâts chargent la cible en énergie pendant quelques secondes. La prochaine attaque de Lux embrase l'énergie, infligeant des dégâts magiques supplémentaires à la cible (en fonction du niveau de Lux)."
+  },
+  "created_at": "2025-11-26T15:13:33.959475+00:00",
+  "factions": [
+    "demacia"
+  ],
+  "custom_tags": [
+    "magie-cachee"
+  ],
+  "gender": "Female",
+  "species": "Human",
+  "title_en": "the Lady of Luminosity",
+  "lore_en": "Luxanna \"Lux\" Crownguard grew up in High Silvermere, born to the prestigious Crownguard family in Demacia, a family that has served as protectors of the throne for generations. Her older brother is Garen, and their family is highly respected.\n\nRaised in an isolationist kingdom where magic inspires fear and mistrust (due to ancient history and the death of Lux's uncle by a rogue mage), Lux was nonetheless a child full of zest and optimism, frustrated by the expectation of dutiful service. She questioned her tutors and yearned to explore the world beyond Demacia's borders.\n\nHer life changed one fateful night when she was attacked by sabrewulfs. In a moment of desperate fear, the young girl unleashed a torrent of magical light from deep within her. She realized with dread that magic was as much a part of her as her Crownguard lineage.\n\nFear and doubt gnawed at her. She feared becoming an abomination, to be imprisoned or exiled, and that discovery would bring disgrace upon the Crownguard name forever. Over time, however, she began experimenting in secret, playing with sunbeams, bending them into solid form, and creating tiny, glowing figures in her palm. She resolved to keep her power a secret.\n\nWhen she was sixteen, Lux traveled to the Great City of Demacia for Garen's investiture into the Dauntless Vanguard. The city dazzled her. She learned of the Illuminators, a charitable religious order, and befriended a knight named Kahina.\n\nSpending more time in the capital, Lux has begun to learn about the wider world—its diversity and history. She now understands that the Demacian way of life is not the only way. She sees that her love for her homeland stands alongside her desire to see it made more just... and perhaps a little more accepting of mages like her. She now secretly uses her unique talents for the benefit of her homeland.",
+  "spells_en": [
+    {
+      "id": "LuxLightBinding",
+      "name": "Light Binding",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 0,
+        "full": "LuxLightBinding.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Lux fires a ball of light, <status>Rooting</status> the first two enemies for {{ e3 }} seconds and dealing <magicDamage>{{ totaldamagett }} magic damage</magicDamage> to each.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1175",
+      "datavalues": {},
+      "description": "Lux releases a sphere of light that binds and deals damage to up to two enemy units.",
+      "cooldownBurn": "11/10.5/10/9.5/9"
+    },
+    {
+      "id": "LuxPrismaticWave",
+      "name": "Prismatic Barrier",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 0,
+        "full": "LuxPrismaticWave.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Lux throws her wand, granting <shield>{{ totalshieldtt }} Shield</shield> for {{ e3 }} seconds to allies it passes through. Then it returns, granting the same <shield>Shield</shield> on its return.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Shield Amount",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1150",
+      "datavalues": {},
+      "description": "Lux throws her wand and bends the light around any friendly target it touches, protecting them from enemy damage.",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "LuxLightStrikeKugel",
+      "name": "Lucent Singularity",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 0,
+        "full": "LuxLightStrikeKugel.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Lux creates a light zone that <status>Slows</status> by {{ e1 }}% and reveals the area. After {{ e3 }} seconds or on <recast>Recasting</recast> this Ability, it detonates, dealing <magicDamage>{{ totaldamagett }} magic damage</magicDamage> and <status>Slowing</status> for an additional {{ slowlingerduration }} second.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/80/90/100/110",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Movement Slow",
+          "@AbilityResourceName@ Cost",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1100",
+      "datavalues": {},
+      "description": "Fires an anomaly of twisted light to an area, which slows nearby enemies. Lux can detonate it to damage enemies in the area of effect.",
+      "cooldownBurn": "10/9.5/9/8.5/8"
+    },
+    {
+      "id": "LuxR",
+      "name": "Final Spark",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 0,
+        "full": "LuxR.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Lux fires a dazzling ray of light, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> to all enemies in a line.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "3340",
+      "datavalues": {},
+      "description": "After gathering energy, Lux fires a beam of light that deals damage to all targets in the area. In addition, triggers Lux's passive ability and refreshes the Illumination debuff duration.",
+      "cooldownBurn": "60/50/40"
+    }
+  ],
+  "passive_en": {
+    "name": "Illumination",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 288,
+      "y": 48,
+      "full": "LuxIlluminatingFraulein.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Lux's damaging spells charge the target with energy for a few seconds. Lux's next attack ignites the energy, dealing bonus magic damage (depending on Lux's level) to the target."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Support",
+    "Mid"
+  ],
+  "skins_en": [
+    {
+      "id": "99000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "99001",
+      "num": 1,
+      "name": "Sorceress Lux",
+      "chromas": false
+    },
+    {
+      "id": "99002",
+      "num": 2,
+      "name": "Spellthief Lux",
+      "chromas": false
+    },
+    {
+      "id": "99003",
+      "num": 3,
+      "name": "Commando Lux",
+      "chromas": false
+    },
+    {
+      "id": "99004",
+      "num": 4,
+      "name": "Imperial Lux",
+      "chromas": false
+    },
+    {
+      "id": "99005",
+      "num": 5,
+      "name": "Steel Legion Lux",
+      "chromas": false
+    },
+    {
+      "id": "99006",
+      "num": 6,
+      "name": "Star Guardian Lux",
+      "chromas": false
+    },
+    {
+      "id": "99007",
+      "num": 7,
+      "name": "Elementalist Lux",
+      "chromas": false
+    },
+    {
+      "id": "99008",
+      "num": 8,
+      "name": "Lunar Empress Lux",
+      "chromas": true
+    },
+    {
+      "id": "99014",
+      "num": 14,
+      "name": "Pajama Guardian Lux",
+      "chromas": false
+    },
+    {
+      "id": "99015",
+      "num": 15,
+      "name": "Battle Academia Lux",
+      "chromas": false
+    },
+    {
+      "id": "99016",
+      "num": 16,
+      "name": "Prestige Battle Academia Lux",
+      "chromas": false
+    },
+    {
+      "id": "99017",
+      "num": 17,
+      "name": "Dark Cosmic Lux",
+      "chromas": false
+    },
+    {
+      "id": "99018",
+      "num": 18,
+      "name": "Cosmic Lux",
+      "chromas": false
+    },
+    {
+      "id": "99019",
+      "num": 19,
+      "name": "Space Groove Lux",
+      "chromas": true
+    },
+    {
+      "id": "99029",
+      "num": 29,
+      "name": "Porcelain Lux",
+      "chromas": true
+    },
+    {
+      "id": "99038",
+      "num": 38,
+      "name": "Soul Fighter Lux",
+      "chromas": true
+    },
+    {
+      "id": "99039",
+      "num": 39,
+      "name": "Prestige Battle Academia Lux (2022)",
+      "chromas": false
+    },
+    {
+      "id": "99040",
+      "num": 40,
+      "name": "Prestige Porcelain Lux",
+      "chromas": false
+    },
+    {
+      "id": "99042",
+      "num": 42,
+      "name": "Empyrean Lux",
+      "chromas": true
+    },
+    {
+      "id": "99061",
+      "num": 61,
+      "name": "Faerie Court Lux",
+      "chromas": true
+    },
+    {
+      "id": "99070",
+      "num": 70,
+      "name": "Prestige Spirit Blossom Lux",
+      "chromas": true
+    },
+    {
+      "id": "99072",
+      "num": 72,
+      "name": "Panda Pal Lux",
+      "chromas": true
+    }
+  ]
+}

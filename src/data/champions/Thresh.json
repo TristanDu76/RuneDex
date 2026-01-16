@@ -1,0 +1,524 @@
+{
+  "id": "Thresh",
+  "key": "412",
+  "name": "Thresh",
+  "title": "Garde aux chaînes",
+  "version": "15.23.1",
+  "lore": "Sadique mais rusé, Thresh est un ambitieux spectre des Îles obscures. Autrefois le gardien d'innombrables secrets des arcanes, il fut terrassé par un pouvoir plus grand que la vie ou la mort, et il s'alimente maintenant des souffrances et des tourments qu'il inflige à d'autres avec une inventivité cruelle. Les souffrances de ses victimes ne se limitent pas à leur enveloppe mortelle, car Thresh fait agoniser leurs âmes, les emprisonnant pour l'éternité dans sa lanterne impie.",
+  "tags": [
+    "Support",
+    "Tank"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 336,
+    "y": 48,
+    "full": "Thresh.png",
+    "group": "champion",
+    "sprite": "champion4.png"
+  },
+  "skins": [
+    {
+      "id": "412000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "412001",
+      "num": 1,
+      "name": "Thresh des profondeurs",
+      "chromas": false
+    },
+    {
+      "id": "412002",
+      "num": 2,
+      "name": "Thresh des Worlds 2013",
+      "chromas": true
+    },
+    {
+      "id": "412003",
+      "num": 3,
+      "name": "Thresh lune de sang",
+      "chromas": false
+    },
+    {
+      "id": "412004",
+      "num": 4,
+      "name": "SSW Thresh",
+      "chromas": false
+    },
+    {
+      "id": "412005",
+      "num": 5,
+      "name": "Thresh du pulsar sombre",
+      "chromas": true
+    },
+    {
+      "id": "412006",
+      "num": 6,
+      "name": "Thresh de l'Ouest",
+      "chromas": true
+    },
+    {
+      "id": "412013",
+      "num": 13,
+      "name": "Thresh Pulsefire",
+      "chromas": false
+    },
+    {
+      "id": "412014",
+      "num": 14,
+      "name": "Thresh Pulsefire prestige",
+      "chromas": false
+    },
+    {
+      "id": "412015",
+      "num": 15,
+      "name": "FPX Thresh",
+      "chromas": true
+    },
+    {
+      "id": "412017",
+      "num": 17,
+      "name": "Thresh fleur spirituelle",
+      "chromas": true
+    },
+    {
+      "id": "412027",
+      "num": 27,
+      "name": "Thresh libéré",
+      "chromas": false
+    },
+    {
+      "id": "412028",
+      "num": 28,
+      "name": "Thresh dragon d'acier",
+      "chromas": true
+    },
+    {
+      "id": "412038",
+      "num": 38,
+      "name": "Thresh Pulsefire prestige (2022)",
+      "chromas": false
+    },
+    {
+      "id": "412039",
+      "num": 39,
+      "name": "Thresh empereur lunaire",
+      "chromas": true
+    },
+    {
+      "id": "412049",
+      "num": 49,
+      "name": "Thresh élu de l'hiver",
+      "chromas": true
+    },
+    {
+      "id": "412059",
+      "num": 59,
+      "name": "Thresh concierge",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "ThreshQ",
+      "name": "Peine capitale",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 0,
+        "full": "ThreshQ.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Thresh lance sa faux, <status>étourdissant</status> la première unité touchée et la <status>tirant</status> vers lui pendant {{ tauntlength }} sec. La faux inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> et octroie une <keywordStealth>vision pure</keywordStealth> de la cible pendant la durée de l'effet.<br /><br />Thresh peut <recast>réactiver</recast> cette compétence pour se jeter sur l'ennemi.<br /><br />Si cette compétence touche un ennemi, son délai de récupération est réduit de {{ hitbonuscooldown }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1075",
+      "datavalues": {},
+      "description": "Thresh ligote un ennemi dans ses chaînes et l'attire vers lui. Activer cette compétence une deuxième fois attire Thresh vers l'ennemi.",
+      "cooldownBurn": "19/16.5/14/11.5/9"
+    },
+    {
+      "id": "ThreshW",
+      "name": "Lien des ténèbres",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 0,
+        "full": "ThreshW.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Thresh lance sa lanterne, puis un allié peut cliquer dessus pour se ruer vers Thresh.<br /><br />La lanterne octroie aussi un <shield>bouclier de {{ totalshield }} PV</shield> pendant {{ shieldduration }} sec à Thresh et au premier champion allié qui entre en contact avec elle.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "PV du bouclier",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "950",
+      "datavalues": {},
+      "description": "Thresh lance une lanterne qui protège les champions alliés proches contre les dégâts. Les alliés peuvent cliquer sur la lanterne pour se ruer vers Thresh.",
+      "cooldownBurn": "21/20/19/18/17"
+    },
+    {
+      "id": "ThreshE",
+      "name": "Fauchage",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 0,
+        "full": "ThreshE.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> les attaques de Thresh infligent des dégâts supplémentaires selon le temps passé depuis la précédente attaque. Elles infligent de <magicDamage>{{ pattackdamagemin }}</magicDamage> à <magicDamage>{{ pattackdamagemax }} pts de dégâts magiques</magicDamage>.<br /><br /><spellActive>Active :</spellActive> Thresh donne un coup de chaînes, <status>attirant</status> ou <status>repoussant</status> les ennemis dans la direction du coup. Les ennemis touchés sont également <status>ralentis</status> de {{ e2 }}% pendant {{ e4 }} sec et subissent <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts passifs",
+          "Dégâts actifs",
+          "Ralentissement",
+          "Coût en @AbilityResourceName@",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "500",
+      "datavalues": {},
+      "description": "Les attaques de Thresh se chargent, infligeant davantage de dégâts s'il attend plus entre les attaques. À l'activation, Thresh effectue un fauchage avec sa chaîne, envoyant tous les ennemis touchés dans la direction du coup.",
+      "cooldownBurn": "13/12.25/11.5/10.75/10"
+    },
+    {
+      "id": "ThreshRPenta",
+      "name": "La cage",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 0,
+        "full": "ThreshRPenta.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Thresh crée des murs spectraux, <status>ralentissant</status> les champions de {{ e3 }}% pendant {{ e2 }} sec et infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. Les murs se brisent en cas de collision, et dès qu'un mur est brisé, les murs restants n'infligent plus de dégâts et leur <status>ralentissement</status> dure moitié moins longtemps.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "450",
+      "datavalues": {},
+      "description": "Une prison dont les murs ralentissent et blessent les ennemis qui les brisent.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive": {
+    "name": "Damnation",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 336,
+      "y": 48,
+      "full": "Thresh_Passive.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "Thresh peut collecter les âmes des ennemis qui meurent près de lui, augmentant définitivement son armure et sa puissance."
+  },
+  "created_at": "2025-11-26T15:13:35.212437+00:00",
+  "factions": [
+    "shadow-isles"
+  ],
+  "custom_tags": [
+    "spectre",
+    "bourreau"
+  ],
+  "gender": "Male",
+  "species": "Undead",
+  "title_en": "the Chain Warden",
+  "lore_en": "Sadistic and cunning, Thresh is an ambitious and restless specter of the Shadow Isles. Once the custodian of countless arcane secrets, he was undone by a power greater than life or death, and now sustains himself by tormenting and breaking others with slow, excruciating inventiveness. His victims suffer far beyond their brief mortal coil as Thresh wreaks agony upon their souls, imprisoning them in his unholy lantern to torture for all eternity.",
+  "spells_en": [
+    {
+      "id": "ThreshQ",
+      "name": "Death Sentence",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 0,
+        "full": "ThreshQ.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Thresh throws out his scythe, <status>Stunning</status> the first unit hit and <status>Pulling</status> them towards Thresh for {{ tauntlength }} seconds. The scythe does <magicDamage>{{ totaldamage }} magic damage</magicDamage> and also grants <keywordStealth>True Sight</keywordStealth> for the duration.<br /><br />Thresh can <recast>Recast</recast> this Ability to pull himself to the enemy.<br /><br />If this Ability hits, its Cooldown is reduced by {{ hitbonuscooldown }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1075",
+      "datavalues": {},
+      "description": "Thresh binds an enemy in chains and pulls them toward him. Activating this ability a second time pulls Thresh to the enemy.",
+      "cooldownBurn": "19/16.5/14/11.5/9"
+    },
+    {
+      "id": "ThreshW",
+      "name": "Dark Passage",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 0,
+        "full": "ThreshW.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Thresh throws his lantern, allowing an ally to click on it to dash to Thresh.<br /><br />The lantern also grants <shield>{{ totalshield }} Shield</shield> for {{ shieldduration }} seconds to Thresh and the first ally champion to come in contact with it.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Shield Amount",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "950",
+      "datavalues": {},
+      "description": "Thresh throws out a lantern that shields nearby allied Champions from damage. Allies can click the lantern to dash to Thresh.",
+      "cooldownBurn": "21/20/19/18/17"
+    },
+    {
+      "id": "ThreshE",
+      "name": "Flay",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 0,
+        "full": "ThreshE.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Thresh's Attacks deal additional damage based on how long since he last Attacked. They deal between <magicDamage>{{ pattackdamagemin }}</magicDamage> and <magicDamage>{{ pattackdamagemax }} magic damage</magicDamage>.<br /><br /><spellActive>Active:</spellActive> Thresh whips his chains, <status>Pulling</status> or <status>Pushing</status> enemies in the direction of the swing. Enemies hit are also <status>Slowed</status> by {{ e2 }}% for {{ e4 }} second and take <magicDamage>{{ totaldamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Passive Damage",
+          "Active Damage",
+          "Slow",
+          "@AbilityResourceName@ Cost",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "500",
+      "datavalues": {},
+      "description": "Thresh's attacks wind up, dealing more damage the longer he waits between attacks. When activated, Thresh sweeps his chain, knocking all enemies hit in the direction of the blow.",
+      "cooldownBurn": "13/12.25/11.5/10.75/10"
+    },
+    {
+      "id": "ThreshRPenta",
+      "name": "The Box",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 0,
+        "full": "ThreshRPenta.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Thresh creates a prison of spectral walls, <status>Slowing</status> champions by {{ e3 }}% for {{ e2 }} seconds and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>. Walls break after one collision, and after one is broken, the rest deal no damage and <status>Slow</status> for half duration.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "450",
+      "datavalues": {},
+      "description": "A prison of walls that slow and deal damage if broken.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Damnation",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 336,
+      "y": 48,
+      "full": "Thresh_Passive.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "Thresh can harvest the souls of enemies that die near him, permanently granting him Armor and Ability Power."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Support"
+  ],
+  "skins_en": [
+    {
+      "id": "412000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "412001",
+      "num": 1,
+      "name": "Deep Terror Thresh",
+      "chromas": false
+    },
+    {
+      "id": "412002",
+      "num": 2,
+      "name": "Worlds 2013 Thresh",
+      "chromas": true
+    },
+    {
+      "id": "412003",
+      "num": 3,
+      "name": "Blood Moon Thresh",
+      "chromas": false
+    },
+    {
+      "id": "412004",
+      "num": 4,
+      "name": "SSW Thresh",
+      "chromas": false
+    },
+    {
+      "id": "412005",
+      "num": 5,
+      "name": "Dark Star Thresh",
+      "chromas": true
+    },
+    {
+      "id": "412006",
+      "num": 6,
+      "name": "High Noon Thresh",
+      "chromas": true
+    },
+    {
+      "id": "412013",
+      "num": 13,
+      "name": "Pulsefire Thresh",
+      "chromas": false
+    },
+    {
+      "id": "412014",
+      "num": 14,
+      "name": "Prestige Pulsefire Thresh",
+      "chromas": false
+    },
+    {
+      "id": "412015",
+      "num": 15,
+      "name": "FPX Thresh",
+      "chromas": true
+    },
+    {
+      "id": "412017",
+      "num": 17,
+      "name": "Spirit Blossom Thresh",
+      "chromas": true
+    },
+    {
+      "id": "412027",
+      "num": 27,
+      "name": "Unbound Thresh",
+      "chromas": false
+    },
+    {
+      "id": "412028",
+      "num": 28,
+      "name": "Steel Dragon Thresh",
+      "chromas": true
+    },
+    {
+      "id": "412038",
+      "num": 38,
+      "name": "Prestige Pulsefire Thresh (2022)",
+      "chromas": false
+    },
+    {
+      "id": "412039",
+      "num": 39,
+      "name": "Lunar Emperor Thresh",
+      "chromas": true
+    },
+    {
+      "id": "412049",
+      "num": 49,
+      "name": "Winterblessed Thresh",
+      "chromas": true
+    },
+    {
+      "id": "412059",
+      "num": 59,
+      "name": "Janitor Thresh",
+      "chromas": true
+    }
+  ]
+}

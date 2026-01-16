@@ -1,0 +1,516 @@
+{
+  "id": "Renekton",
+  "key": "58",
+  "name": "Renekton",
+  "title": "Dévoreur des sables",
+  "version": "15.23.1",
+  "lore": "Originaire du désert brûlant de Shurima, Renekton est un Transfiguré terrifiant animé par la rage. Il était autrefois le guerrier le plus respecté de l'empire de Shurima, dont il avait mené les armées vers la victoire à maintes reprises. Cependant, après la chute de l'empire, Renekton fut enseveli sous les sables. Petit à petit, alors que le monde changeait, il sombra dans la démence. Désormais libre, son unique souhait est de retrouver et de tuer son frère Nasus qui, croit-il dans sa folie, est responsable des siècles qu'il a passés dans les ténèbres.",
+  "tags": [
+    "Fighter",
+    "Tank"
+  ],
+  "partype": "Fureur",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 432,
+    "y": 48,
+    "full": "Renekton.png",
+    "group": "champion",
+    "sprite": "champion3.png"
+  },
+  "skins": [
+    {
+      "id": "58000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "58001",
+      "num": 1,
+      "name": "Renekton galactique",
+      "chromas": false
+    },
+    {
+      "id": "58002",
+      "num": 2,
+      "name": "Renekton aborigène",
+      "chromas": false
+    },
+    {
+      "id": "58003",
+      "num": 3,
+      "name": "Renekton sanguinaire",
+      "chromas": false
+    },
+    {
+      "id": "58004",
+      "num": 4,
+      "name": "Renekton des Guerres runiques",
+      "chromas": false
+    },
+    {
+      "id": "58005",
+      "num": 5,
+      "name": "Renekton de la terre brûlée",
+      "chromas": false
+    },
+    {
+      "id": "58006",
+      "num": 6,
+      "name": "Renekton maître nageur",
+      "chromas": false
+    },
+    {
+      "id": "58007",
+      "num": 7,
+      "name": "Renekton préhistorique",
+      "chromas": false
+    },
+    {
+      "id": "58008",
+      "num": 8,
+      "name": "SKT T1 Renekton",
+      "chromas": false
+    },
+    {
+      "id": "58009",
+      "num": 9,
+      "name": "Renekton jouet",
+      "chromas": true
+    },
+    {
+      "id": "58017",
+      "num": 17,
+      "name": "Renekton Hextech",
+      "chromas": false
+    },
+    {
+      "id": "58018",
+      "num": 18,
+      "name": "Renekton des glaces noires",
+      "chromas": true
+    },
+    {
+      "id": "58026",
+      "num": 26,
+      "name": "PROJET : Renekton",
+      "chromas": true
+    },
+    {
+      "id": "58033",
+      "num": 33,
+      "name": "Renekton héraut de l'aube",
+      "chromas": true
+    },
+    {
+      "id": "58042",
+      "num": 42,
+      "name": "Renekton des Worlds 2023",
+      "chromas": true
+    },
+    {
+      "id": "58048",
+      "num": 48,
+      "name": "Renekton guerrier d'encre",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "RenektonCleave",
+      "name": "Destruction des faibles",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 48,
+        "full": "RenektonCleave.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Renekton lance une attaque circulaire, infligeant <physicalDamage>{{ basicdamage }} pts de dégâts physiques</physicalDamage> et récupérant <healing>{{ nonchamphealing }} PV</healing> par non-champion touché et <healing>{{ champhealing }}</healing> PV par champion touché. Il génère également <keywordMajor>{{ minionfurygain }} pts de Fureur</keywordMajor> par non-champion touché et <keywordMajor>{{ championfurygain }} pts de Fureur</keywordMajor> par champion touché.<br /><br /><keywordMajor>Bonus de Fureur</keywordMajor> : les dégâts sont augmentés à <physicalDamage>{{ empdamage }} pts de dégâts physiques</physicalDamage>, et les soins sont augmentés à <healing>{{ empnonchamphealing }} PV</healing> contre les non-champions et <healing>{{ empchamphealing }} PV</healing> contre les champions. Cette attaque ne génère pas de <keywordMajor>Fureur</keywordMajor>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "PV récupérés par champion",
+          "PV récupérés par non-champion",
+          "Soins max"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "325",
+      "datavalues": {},
+      "description": "Renekton lance une attaque circulaire, infligeant des dégâts physiques modérés à tous les ennemis qui l'entourent et se soignant d'un montant égal à une petite portion des dégâts infligés. S'il a plus de 50 pts de Fureur, les dégâts et les soins augmentent.",
+      "cooldownBurn": "7"
+    },
+    {
+      "id": "RenektonPreExecute",
+      "name": "Prédateur impitoyable",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 48,
+        "full": "RenektonPreExecute.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "La prochaine attaque de Renekton frappe 2 fois, <status>étourdissant</status> la cible pendant {{ stunduration }} sec et infligeant un total de <physicalDamage>{{ basictotaldamage }} pts de dégâts physiques</physicalDamage>. Toucher un champion génère <keywordMajor>{{ bonusfuryvschamps }} pts de Fureur</keywordMajor> bonus.<br /><br /><keywordMajor>Bonus de Fureur</keywordMajor> : Renekton attaque 3 fois, détruisant les <shield>boucliers</shield> avant d'infliger <physicalDamage>{{ emptotaldamage }} pts de dégâts physiques</physicalDamage> et d'<status>étourdir</status> la cible pendant {{ enragedstunduration }} sec. Cette attaque ne génère pas de <keywordMajor>Fureur</keywordMajor>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Dégâts renforcés",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "300",
+      "datavalues": {},
+      "description": "Renekton frappe deux fois la cible en infligeant des dégâts physiques modérés et en l'étourdissant pendant 0.75 sec. Si Renekton a plus de 50 pts de Fureur, il frappe la cible trois fois, détruisant instantanément tout bouclier anti-dégâts se trouvant sur elle, lui infligeant de lourds dégâts physiques et l'étourdissant pendant 1.5 sec.",
+      "cooldownBurn": "16/14/12/10/8"
+    },
+    {
+      "id": "RenektonSliceAndDice",
+      "name": "Tranche et coupe",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 48,
+        "full": "RenektonSliceAndDice.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Renekton se rue dans une direction, infligeant <physicalDamage>{{ basicdamage }} pts de dégâts physiques</physicalDamage>. Il génère <keywordMajor>{{ minionragegeneration }} pts de Fureur</keywordMajor> par non-champion touché et <keywordMajor>{{ championragegeneration }} pts de Fureur</keywordMajor> par champion touché. Toucher au moins un ennemi permet à Renekton de <recast>réactiver</recast> cette compétence une fois pendant {{ dicetimer }} sec. <br /><br /><keywordMajor>Bonus de Fureur</keywordMajor> : la ruée de la <recast>réactivation</recast> inflige à la place <physicalDamage>{{ empdamage }} pts de dégâts physiques</physicalDamage> et supprime <scaleArmor>{{ enragedarmorshred }}% d'armure</scaleArmor> pendant {{ shredtimer }} sec. Elle ne génère pas de <keywordMajor>Fureur</keywordMajor>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Dégâts renforcés",
+          "% réduction d'armure",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "450",
+      "datavalues": {},
+      "description": "Renekton charge et inflige des dégâts à toutes les unités sur son chemin. S'il a plus de 50 pts de Fureur, Renekton inflige des dégâts supplémentaires et réduit l'armure des unités touchées.",
+      "cooldownBurn": "16/14.5/13/11.5/10"
+    },
+    {
+      "id": "RenektonReignOfTheTyrant",
+      "name": "Dominus",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 48,
+        "full": "RenektonReignOfTheTyrant.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Renekton s'entoure d'énergie sombre pendant {{ buffduration }} sec, gagnant <healing>+{{ healthgain }} PV max</healing> et <keywordMajor>{{ furyoncast }} pts de Fureur</keywordMajor>. Pendant la durée de cette compétence, il inflige <magicDamage>{{ totaldamagepersecond }} pts de dégâts magiques</magicDamage> et gagne <keywordMajor>{{ furypersecond }} pts de Fureur</keywordMajor> par seconde.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "PV supplémentaires",
+          "Dégâts par seconde",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "20",
+      "datavalues": {},
+      "description": "Renekton prend sa Forme de tyran et profite de PV supplémentaires ; il inflige également des dégâts à tous les ennemis qui l'entourent. Tant qu'il est en Forme de tyran, Renekton gagne périodiquement de la Fureur.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive": {
+    "name": "Règne de la colère",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 432,
+      "y": 48,
+      "full": "Renekton_Passive.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Les attaques de Renekton génèrent de la Fureur, et encore plus quand il lui reste peu de PV. Cette Fureur peut renforcer ses compétences en leur conférant des effets supplémentaires."
+  },
+  "created_at": "2025-11-26T15:13:34.616021+00:00",
+  "factions": [
+    "shurima"
+  ],
+  "custom_tags": [
+    "ascensionne",
+    "corrompu"
+  ],
+  "gender": "Male",
+  "species": "Ascended",
+  "title_en": "the Butcher of the Sands",
+  "lore_en": "Renekton is a terrifying, rage-fueled Ascended being from the scorched deserts of Shurima. Once, he was his empire's most esteemed warrior, leading the nation's armies to countless victories. However, after the empire's fall, Renekton was entombed beneath the sands, and slowly, as the world turned and changed, he succumbed to insanity. Now free once more, he is utterly consumed with finding and killing his brother, Nasus, who he blames, in his madness, for the centuries he spent in darkness.",
+  "spells_en": [
+    {
+      "id": "RenektonCleave",
+      "name": "Cull the Meek",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 48,
+        "full": "RenektonCleave.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Renekton swings his blade, dealing <physicalDamage>{{ basicdamage }} physical damage</physicalDamage> and restoring <healing>{{ nonchamphealing }} Health</healing> per non-champion and <healing>{{ champhealing }}</healing> per champion hit. He also generates <keywordMajor>{{ minionfurygain }} Fury</keywordMajor> per non-champion and <keywordMajor>{{ championfurygain }} Fury</keywordMajor> per champion.<br /><br /><keywordMajor>Fury Bonus</keywordMajor>: Damage is increased to <physicalDamage>{{ empdamage }} physical damage</physicalDamage> and healing is increased to <healing>{{ empnonchamphealing }} Health</healing> against non-champions and <healing>{{ empchamphealing }} Health</healing> against champions. Does not generate any <keywordMajor>Fury</keywordMajor>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Healing per Champion",
+          "Healing per non-Champion",
+          "Maximum Heal"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "325",
+      "datavalues": {},
+      "description": "Renekton swings his blade, dealing moderate physical damage to all targets around him, and heals for a small portion of the damage dealt. If he has more than 50 Fury, his damage and heal are increased.",
+      "cooldownBurn": "7"
+    },
+    {
+      "id": "RenektonPreExecute",
+      "name": "Ruthless Predator",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 48,
+        "full": "RenektonPreExecute.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Renekton's next Attack strikes twice, <status>Stunning</status> for {{ stunduration }} seconds and dealing a total of <physicalDamage>{{ basictotaldamage }} physical damage</physicalDamage>. Hitting a champion generates an additional <keywordMajor>{{ bonusfuryvschamps }} Fury</keywordMajor>.<br /><br /><keywordMajor>Fury Bonus</keywordMajor>: Renekton Attacks 3 times instead, destroying <shield>Shields</shield> before dealing <physicalDamage>{{ emptotaldamage }} physical damage</physicalDamage> and <status>Stunning</status> for {{ enragedstunduration }} seconds. Does not generate any <keywordMajor>Fury</keywordMajor>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Empowered Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "300",
+      "datavalues": {},
+      "description": "Renekton slashes his target twice, dealing moderate physical damage and stuns them for 0.75 seconds. If Renekton has more than 50 Fury, he slashes his target three times, destroying damage shields on the target, dealing high physical damage, and stunning them for 1.5 seconds.",
+      "cooldownBurn": "16/14/12/10/8"
+    },
+    {
+      "id": "RenektonSliceAndDice",
+      "name": "Slice and Dice",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 48,
+        "full": "RenektonSliceAndDice.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Renekton dashes, dealing <physicalDamage>{{ basicdamage }} physical damage</physicalDamage>. He generates <keywordMajor>{{ minionragegeneration }} Fury</keywordMajor> per non-champion and <keywordMajor>{{ championragegeneration }} Fury</keywordMajor> per champion hit. Hitting at least one enemy allows Renekton to <recast>Recast</recast> this Ability once for {{ dicetimer }} seconds. <br /><br /><keywordMajor>Fury Bonus</keywordMajor>: The <recast>Recast</recast> dash deals <physicalDamage>{{ empdamage }} physical damage</physicalDamage> instead and removes <scaleArmor>{{ enragedarmorshred }}% Armor</scaleArmor> for {{ shredtimer }} seconds. Does not generate <keywordMajor>Fury</keywordMajor>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Empowered Damage",
+          "Armor Reduction %",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "450",
+      "datavalues": {},
+      "description": "Renekton dashes, dealing damage to units along the way. Empowered, Renekton deals bonus damage and reduces the Armor of units hit.",
+      "cooldownBurn": "16/14.5/13/11.5/10"
+    },
+    {
+      "id": "RenektonReignOfTheTyrant",
+      "name": "Dominus",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 48,
+        "full": "RenektonReignOfTheTyrant.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Renekton surrounds himself with dark energies for {{ buffduration }} seconds, gaining <healing>{{ healthgain }} max Health</healing> and <keywordMajor>{{ furyoncast }} Fury</keywordMajor>. While active, he deals <magicDamage>{{ totaldamagepersecond }} magic damage</magicDamage> and gains <keywordMajor>{{ furypersecond }} Fury</keywordMajor> per second.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Bonus Health",
+          "Damage Per Second",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "20",
+      "datavalues": {},
+      "description": "Renekton transforms into the Tyrant form, gaining bonus Health and dealing damage to enemies around him. While in this form, Renekton gains Fury periodically.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Reign of Anger",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 432,
+      "y": 48,
+      "full": "Renekton_Passive.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Renekton's attacks generate Fury, increased when he is low on life. This Fury can empower his abilities with bonus effects."
+  },
+  "partype_en": "Fury",
+  "lanes": [
+    "Top"
+  ],
+  "skins_en": [
+    {
+      "id": "58000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "58001",
+      "num": 1,
+      "name": "Galactic Renekton",
+      "chromas": false
+    },
+    {
+      "id": "58002",
+      "num": 2,
+      "name": "Outback Renekton",
+      "chromas": false
+    },
+    {
+      "id": "58003",
+      "num": 3,
+      "name": "Bloodfury Renekton",
+      "chromas": false
+    },
+    {
+      "id": "58004",
+      "num": 4,
+      "name": "Rune Wars Renekton",
+      "chromas": false
+    },
+    {
+      "id": "58005",
+      "num": 5,
+      "name": "Scorched Earth Renekton",
+      "chromas": false
+    },
+    {
+      "id": "58006",
+      "num": 6,
+      "name": "Pool Party Renekton",
+      "chromas": false
+    },
+    {
+      "id": "58007",
+      "num": 7,
+      "name": "Prehistoric Renekton",
+      "chromas": false
+    },
+    {
+      "id": "58008",
+      "num": 8,
+      "name": "SKT T1 Renekton",
+      "chromas": false
+    },
+    {
+      "id": "58009",
+      "num": 9,
+      "name": "Renektoy",
+      "chromas": true
+    },
+    {
+      "id": "58017",
+      "num": 17,
+      "name": "Hextech Renekton",
+      "chromas": false
+    },
+    {
+      "id": "58018",
+      "num": 18,
+      "name": "Blackfrost Renekton",
+      "chromas": true
+    },
+    {
+      "id": "58026",
+      "num": 26,
+      "name": "PROJECT: Renekton",
+      "chromas": true
+    },
+    {
+      "id": "58033",
+      "num": 33,
+      "name": "Dawnbringer Renekton",
+      "chromas": true
+    },
+    {
+      "id": "58042",
+      "num": 42,
+      "name": "Worlds 2023 Renekton",
+      "chromas": true
+    },
+    {
+      "id": "58048",
+      "num": 48,
+      "name": "Inkshadow Renekton",
+      "chromas": true
+    }
+  ]
+}

@@ -1,0 +1,486 @@
+{
+  "id": "Nami",
+  "key": "267",
+  "name": "Nami",
+  "title": "Aquamancienne",
+  "version": "15.23.1",
+  "lore": "Nami est une jeune Vastaya de la tribu des Marai, qui vit dans les mers à l'ouest du Mont Targon. Les Marai protègent leur village d'une obscurité horrible qui s'échappe d'une faille abyssale en utilisant une pierre de lune (moonstone), imprégnée de magie céleste.\n\nEnviron tous les cent ans, la lumière de la pierre s'affaiblit, nécessitant un rituel : le Cœur de la Marée (Tidecaller) doit plonger dans la faille, vaincre les horreurs, récupérer une perle abyssale, puis l'échanger à terre avec un Targonian contre une nouvelle pierre de lune.\n\nLa Désobéissance Salvatrice :\n\nNami était une guerrière féroce mais impulsive. Lorsque la pierre de lune s'est éteinte, les Anciens ont choisi un guerrier prudent, Rasho, plutôt qu'elle. Rasho a échoué à revenir après un mois, un événement sans précédent.\n\nLes Anciens hésitaient, mais Nami, sachant que le temps pressait, a pris les choses en main. Elle a saisi le bâton aquamancien de sa mère et a plongé seule dans l'abysse.\n\nElle est revenue après plusieurs jours avec la perle, le bâton de Rasho et un regard horrifié, prouvant sa bravoure. Les Anciens la nommèrent officiellement Cœur de la Marée.\n\nLe Pacte Rompu :\n\nNami monta à terre pour l'échange, mais le porteur de la pierre n'était pas là. À sa place, une femme âgée l'informa que l'accord était rompu : l'Aspect de la Lune (le seul être capable de conjurer une pierre de lune) avait fui Targon.\n\nNami refusa d'accepter cet échec, car la vie de son peuple en dépendait. Utilisant la magie de son bâton pour invoquer une piscine d'eau perpétuelle sous ses nageoires, elle prit pied sur la terre ferme pour la première fois.\n\nDéterminée, Nami s'est aventurée dans un tout nouveau monde pour retrouver l'Aspect de la Lune et accomplir sa quête.",
+  "tags": [
+    "Support",
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 384,
+    "y": 96,
+    "full": "Nami.png",
+    "group": "champion",
+    "sprite": "champion2.png"
+  },
+  "skins": [
+    {
+      "id": "267000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "267001",
+      "num": 1,
+      "name": "Koi Nami",
+      "chromas": true
+    },
+    {
+      "id": "267002",
+      "num": 2,
+      "name": "Nami naïade",
+      "chromas": false
+    },
+    {
+      "id": "267003",
+      "num": 3,
+      "name": "Urf le Nami-tin",
+      "chromas": false
+    },
+    {
+      "id": "267007",
+      "num": 7,
+      "name": "Nami des abysses",
+      "chromas": false
+    },
+    {
+      "id": "267008",
+      "num": 8,
+      "name": "SKT T1 Nami",
+      "chromas": false
+    },
+    {
+      "id": "267009",
+      "num": 9,
+      "name": "Programme Nami",
+      "chromas": true
+    },
+    {
+      "id": "267015",
+      "num": 15,
+      "name": "Nami au bâton splendide",
+      "chromas": true
+    },
+    {
+      "id": "267024",
+      "num": 24,
+      "name": "Nami destinée cosmique",
+      "chromas": true
+    },
+    {
+      "id": "267032",
+      "num": 32,
+      "name": "Nami sorcière",
+      "chromas": true
+    },
+    {
+      "id": "267041",
+      "num": 41,
+      "name": "Nami astro-groove",
+      "chromas": true
+    },
+    {
+      "id": "267042",
+      "num": 42,
+      "name": "Nami astro-groove prestige",
+      "chromas": false
+    },
+    {
+      "id": "267051",
+      "num": 51,
+      "name": "Nami de l'assemblée",
+      "chromas": true
+    },
+    {
+      "id": "267058",
+      "num": 58,
+      "name": "Nami mythificatrice",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "NamiQ",
+      "name": "Prison aqueuse",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 48,
+        "full": "NamiQ.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Nami envoie une bulle qui <status>étourdit</status> pendant {{ e2 }} sec et inflige <magicDamage>{{ totaldamagett }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "875",
+      "datavalues": {},
+      "description": "Envoie une bulle sur la zone ciblée, infligeant des dégâts et étourdissant tous les ennemis à l'impact.",
+      "cooldownBurn": "12/11/10/9/8"
+    },
+    {
+      "id": "NamiW",
+      "name": "Flux et reflux",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 48,
+        "full": "NamiW.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Nami projette un flux d'eau qui rebondit sur les champions alliés et ennemis. Le flux ne peut toucher qu'une seule fois le même champion et touche jusqu'à {{ maxtargets }} cibles.<li>Rend <healing>{{ totalheal }} PV</healing> aux alliés avant de rebondir vers un champion ennemi proche. <li>Inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> aux ennemis avant de rebondir vers un champion allié proche.<br />La valeur des dégâts et des soins est modifiée de {{ bouncescaling }} à chaque rebond. {{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/75/80/85/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Soins",
+          "Dégâts",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "725",
+      "datavalues": {},
+      "description": "Projette un flux d'eau qui rebondit sur les champions alliés et ennemis, soignant les alliés et blessant les ennemis.",
+      "cooldownBurn": "10"
+    },
+    {
+      "id": "NamiE",
+      "name": "Bénédiction de l'Aquamancienne",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 48,
+        "full": "NamiE.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Nami renforce les {{ hitcount }} prochaines attaques et compétences d'un champion allié pendant {{ buffduration }} sec, pour qu'elles <status>ralentissent</status> leurs cibles de {{ totalslow }} pendant {{ slowduration }} sec et infligent <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> bonus. {{ spellmodifierdescriptionappend }}",
+      "costBurn": "55/60/65/70/75",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ralentissement",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Renforce un champion allié pendant un court instant, permettant à ses attaques de base et à ses compétences d'infliger des dégâts magiques supplémentaires et de ralentir sa cible.",
+      "cooldownBurn": "11"
+    },
+    {
+      "id": "NamiR",
+      "name": "Raz-de-marée",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 48,
+        "full": "NamiR.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Nami invoque un raz-de-marée qui <status>projette en l'air</status> pendant 0.5 sec, <status>ralentit</status> de {{ e4 }}% et inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. La durée du <status>ralentissement</status> augmente avec la distance parcourue (max {{ e5 }} sec).<br /><br />Les alliés touchés par la vague gagnent le double de l'effet de <spellName>Déferlantes</spellName>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "2550",
+      "datavalues": {},
+      "description": "Invoque un énorme raz-de-marée qui projette tous les ennemis touchés en l'air, les ralentit et les blesse. Les alliés touchés gagnent le double de l'effet de Déferlantes.",
+      "cooldownBurn": "120/110/100"
+    }
+  ],
+  "passive": {
+    "name": "Déferlantes",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 384,
+      "y": 96,
+      "full": "NamiPassive.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Quand les compétences de Nami touchent des champions alliés, la vitesse de déplacement de ces champions augmente un court instant."
+  },
+  "created_at": "2025-11-26T15:13:34.174598+00:00",
+  "factions": [
+    "targon",
+    "bilgewater"
+  ],
+  "custom_tags": [
+    "marai",
+    "aquatique",
+    "guerisseuse"
+  ],
+  "gender": "Female",
+  "species": "Vastaya",
+  "title_en": "the Tidecaller",
+  "lore_en": "Nami is a young Vastaya of the Marai tribe, dwelling in the seas west of Mount Targon. The Marai protect their village from a horrible darkness escaping an abyssal rift using a moonstone, infused with celestial magic.\n\nRoughly every hundred years, the moonstone's light dims, requiring a ritual: the Tidecaller must plunge into the rift, retrieve an abyssal pearl, and trade it on shore with a Targonian for a new moonstone.\n\nThe Saving Disobedience:\n\nNami was a fierce but impulsive warrior who yearned to be the Tidecaller. When the moonstone dimmed, the Elders chose the prudent warrior, Rasho, over her. Rasho failed to return after an entire month, an unprecedented failure.\n\nWhile the Elders argued, Nami knew someone had to act. She grabbed her mother's bathystaff and dove alone into the abyss.\n\nShe returned several days later with the pearl, the fallen Tidecaller's staff, and a look of quiet horror, proving her bravery. The Elders officially designated her the Tidecaller.\n\nThe Broken Pact:\n\nNami ascended to shore for the exchange, but the stonebearer was nowhere to be found. Instead, an elderly woman explained that the ancient agreement was broken: the Aspect of the Moon (the only being who could conjure a moonstone) had fled Targon.\n\nNami was unwilling to accept this, as her people's lives depended on it. Using the mystical Tidecaller staff's power to summon a perpetual pool of moving water beneath her fins, she took to land for the first time.\n\nDetermined, Nami swam into a brand new world to find the Aspect of the Moon and complete her quest.",
+  "spells_en": [
+    {
+      "id": "NamiQ",
+      "name": "Aqua Prison",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 48,
+        "full": "NamiQ.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Nami hurls a bubble, <status>Stunning</status> for {{ e2 }} seconds and dealing <magicDamage>{{ totaldamagett }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "875",
+      "datavalues": {},
+      "description": "Sends a bubble to a target area, dealing damage and stunning all enemies on impact.",
+      "cooldownBurn": "12/11/10/9/8"
+    },
+    {
+      "id": "NamiW",
+      "name": "Ebb and Flow",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 48,
+        "full": "NamiW.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Nami unleashes a stream of water that bounces between allied and enemy champions. Each champion can only be hit once, and it hits up to {{ maxtargets }} targets.<li>Restores <healing>{{ totalheal }} Health</healing> to allies and will bounce to a nearby enemy champion. <li>Deals <magicDamage>{{ totaldamage }} magic damage</magicDamage> to enemies and will bounce to a nearby allied champion.<br />The damage and healing value is modified by {{ bouncescaling }} each bounce. {{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/75/80/85/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Healing",
+          "Damage",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "725",
+      "datavalues": {},
+      "description": "Unleashes a stream of water that bounces back and forth between allied and enemy champions, healing allies and damaging enemies.",
+      "cooldownBurn": "10"
+    },
+    {
+      "id": "NamiE",
+      "name": "Tidecaller's Blessing",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 48,
+        "full": "NamiE.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Nami empowers an allied champion's next {{ hitcount }} Attacks and Abilities for {{ buffduration }} seconds, causing them to <status>Slow</status> their targets by {{ totalslow }} for {{ slowduration }}s and deal an additional <magicDamage>{{ totaldamage }} magic damage</magicDamage>. {{ spellmodifierdescriptionappend }}",
+      "costBurn": "55/60/65/70/75",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Slow",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Empowers an allied champion for a short duration. The ally's basic attacks and spells deal bonus magic damage and slow the target.",
+      "cooldownBurn": "11"
+    },
+    {
+      "id": "NamiR",
+      "name": "Tidal Wave",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 48,
+        "full": "NamiR.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Nami summons a tidal wave, <status>Knocking Up</status> for 0.5 seconds, <status>Slowing</status> by {{ e4 }}%, and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>. The duration of the <status>Slow</status> increases based on distance the wave traveled, up to {{ e5 }} seconds.<br /><br />Allies hit by the wave gain double the effect of <spellName>Surging Tides</spellName>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "2550",
+      "datavalues": {},
+      "description": "Summons a massive Tidal Wave that knocks up, slows, and damages enemies. Allies hit gain double the effect of Surging Tides.",
+      "cooldownBurn": "120/110/100"
+    }
+  ],
+  "passive_en": {
+    "name": "Surging Tides",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 384,
+      "y": 96,
+      "full": "NamiPassive.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "When Nami's Abilities hit allied champions they gain Move Speed for a short duration."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Support"
+  ],
+  "skins_en": [
+    {
+      "id": "267000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "267001",
+      "num": 1,
+      "name": "Koi Nami",
+      "chromas": true
+    },
+    {
+      "id": "267002",
+      "num": 2,
+      "name": "River Spirit Nami",
+      "chromas": false
+    },
+    {
+      "id": "267003",
+      "num": 3,
+      "name": "Urf the Nami-tee",
+      "chromas": false
+    },
+    {
+      "id": "267007",
+      "num": 7,
+      "name": "Deep Sea Nami",
+      "chromas": false
+    },
+    {
+      "id": "267008",
+      "num": 8,
+      "name": "SKT T1 Nami",
+      "chromas": false
+    },
+    {
+      "id": "267009",
+      "num": 9,
+      "name": "Program Nami",
+      "chromas": true
+    },
+    {
+      "id": "267015",
+      "num": 15,
+      "name": "Splendid Staff Nami",
+      "chromas": true
+    },
+    {
+      "id": "267024",
+      "num": 24,
+      "name": "Cosmic Destiny Nami",
+      "chromas": true
+    },
+    {
+      "id": "267032",
+      "num": 32,
+      "name": "Bewitching Nami",
+      "chromas": true
+    },
+    {
+      "id": "267041",
+      "num": 41,
+      "name": "Space Groove Nami",
+      "chromas": true
+    },
+    {
+      "id": "267042",
+      "num": 42,
+      "name": "Prestige Space Groove Nami",
+      "chromas": false
+    },
+    {
+      "id": "267051",
+      "num": 51,
+      "name": "Coven Nami",
+      "chromas": true
+    },
+    {
+      "id": "267058",
+      "num": 58,
+      "name": "Mythmaker Nami",
+      "chromas": true
+    }
+  ]
+}

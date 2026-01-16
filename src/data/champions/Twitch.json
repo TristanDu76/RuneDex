@@ -1,0 +1,489 @@
+{
+  "id": "Twitch",
+  "key": "29",
+  "name": "Twitch",
+  "title": "Semeur de peste",
+  "version": "15.23.1",
+  "lore": "Rat de Zaun, pesteux de naissance, connaisseur en saleté par passion, Twitch n'a pas peur de se salir les pattes. Armé d'une arbalète chimique qu'il pointe droit sur le cœur de Piltover, Twitch s'est juré de montrer aux gens de la surface à quel point ils sont vraiment sales. Toujours furtif et insaisissable, quand il ne traîne pas dans le Puisard, il fouille dans les déchets à la recherche de trésors qu'il est le seul à apprécier... ou d'un morceau de sandwich.",
+  "tags": [
+    "Marksman",
+    "Assassin"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 96,
+    "y": 96,
+    "full": "Twitch.png",
+    "group": "champion",
+    "sprite": "champion4.png"
+  },
+  "skins": [
+    {
+      "id": "29000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "29001",
+      "num": 1,
+      "name": "Twitch le boss",
+      "chromas": false
+    },
+    {
+      "id": "29002",
+      "num": 2,
+      "name": "Twitch de Whistler",
+      "chromas": false
+    },
+    {
+      "id": "29003",
+      "num": 3,
+      "name": "Twitch médiéval",
+      "chromas": true
+    },
+    {
+      "id": "29004",
+      "num": 4,
+      "name": "Twitch gangster",
+      "chromas": false
+    },
+    {
+      "id": "29005",
+      "num": 5,
+      "name": "Twitch Vandale",
+      "chromas": false
+    },
+    {
+      "id": "29006",
+      "num": 6,
+      "name": "Twitch pickpocket",
+      "chromas": false
+    },
+    {
+      "id": "29007",
+      "num": 7,
+      "name": "SSW Twitch",
+      "chromas": false
+    },
+    {
+      "id": "29008",
+      "num": 8,
+      "name": "Twitch de la section Oméga",
+      "chromas": true
+    },
+    {
+      "id": "29012",
+      "num": 12,
+      "name": "Twitch roi des glaces",
+      "chromas": true
+    },
+    {
+      "id": "29027",
+      "num": 27,
+      "name": "Twitch Sombrepas",
+      "chromas": false
+    },
+    {
+      "id": "29036",
+      "num": 36,
+      "name": "Twitch tueur de dragons",
+      "chromas": false
+    },
+    {
+      "id": "29045",
+      "num": 45,
+      "name": "Twitch de l'Ouest",
+      "chromas": false
+    },
+    {
+      "id": "29055",
+      "num": 55,
+      "name": "Twitch au fromage",
+      "chromas": false
+    },
+    {
+      "id": "29064",
+      "num": 64,
+      "name": "Twitch arbalète à eau",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "TwitchHideInShadows",
+      "name": "Embuscade",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 96,
+        "full": "TwitchHideInShadows.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Twitch <keywordStealth>se camoufle</keywordStealth> et gagne <speed>+{{ e3 }}% de vitesse de déplacement</speed> pendant {{ e2 }} sec. Ce bonus de vitesse augmente à +{{ e3 }}% lorsque Twitch est près d'un champion ennemi qui ne peut pas le voir. En quittant son <keywordStealth>camouflage</keywordStealth>, Twitch gagne <attackSpeed>+{{ e1 }}% de vitesse d'attaque</attackSpeed> pendant {{ e6 }} sec.<br /><br />Quand un champion ennemi meurt en étant affecté par <keywordMajor>Venin</keywordMajor>, le délai de récupération de cette compétence est annulé.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Durée du camouflage",
+          "Vitesse d'attaque"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "20",
+      "datavalues": {},
+      "description": "Twitch se camoufle pendant un court instant et sa vitesse de déplacement est augmentée. Quand il quitte son camouflage, sa vitesse d'attaque est augmentée pendant un court instant.<br><br>Quand un champion ennemi affecté par Venin mortel meurt, le délai de récupération d'Embuscade prend fin.",
+      "cooldownBurn": "16"
+    },
+    {
+      "id": "TwitchVenomCask",
+      "name": "Dose de venin",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 96,
+        "full": "TwitchVenomCask.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Twitch lance une fiole qui ajoute un effet <spellName>Venin mortel</spellName> sur tous les ennemis touchés et laisse un nuage toxique qui persiste pendant {{ duration }} sec.<br /><br />Les ennemis qui restent dans le nuage sont <status>ralentis</status> de {{ totalslowamount }}% et reçoivent chaque seconde un effet <spellName>Venin mortel</spellName> supplémentaire.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Réduction de la vitesse de déplacement",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "950",
+      "datavalues": {},
+      "description": "Twitch projette une dose de venin qui explose sur une zone, ralentissant les cibles et leur infligeant Venin mortel.",
+      "cooldownBurn": "13/12/11/10/9"
+    },
+    {
+      "id": "TwitchExpunge",
+      "name": "Contamination",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 96,
+        "full": "TwitchExpunge.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Twitch inflige <physicalDamage>{{ basedamage }} pts de dégâts physiques</physicalDamage> à tous les ennemis proches affectés par <spellName>Venin mortel</spellName>, plus <physicalDamage>{{ physicaldamageperstack }} pts de dégâts physiques</physicalDamage> et <magicDamage>{{ magicdamageperstack }} pts de dégâts magiques</magicDamage> par effet <spellName>Venin mortel</spellName> cumulé.<br /><br />Dégâts max : <physicalDamage>{{ maxphysicaldamage }} pts de dégâts physiques</physicalDamage> et <magicDamage>{{ maxmagicdamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/60/70/80/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Dégâts par effet cumulé",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1200",
+      "datavalues": {},
+      "description": "Twitch contamine encore plus les ennemis empoisonnés avec de terribles maladies.",
+      "cooldownBurn": "12/11/10/9/8"
+    },
+    {
+      "id": "TwitchFullAutomatic",
+      "name": "Panique",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 96,
+        "full": "TwitchFullAutomatic.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Twitch débride son arbalète, gagnant +{{ bonusrange }} de portée d'attaque et <scaleAD>+{{ bonusad }} dégâts d'attaque</scaleAD> et permettant à ses attaques de tirer des carreaux perforants pendant {{ duration }} sec. Ces carreaux touchent tous les ennemis qu'ils traversent, mais infligent {{ falloffdamage*100 }}% de dégâts en moins aux cibles subséquentes, jusqu'à un minimum de {{ minimumfalloffdamage*100 }}% des dégâts.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts d'attaque"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1200",
+      "datavalues": {},
+      "description": "Twitch libère toute la puissance de son arbalète, tirant des carreaux à longue portée qui transpercent tous les ennemis touchés.",
+      "cooldownBurn": "90"
+    }
+  ],
+  "passive": {
+    "name": "Venin mortel",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 96,
+      "y": 96,
+      "full": "Twitch_Passive.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "Les attaques de base de Twitch contaminent sa cible, lui infligeant des dégâts bruts chaque seconde."
+  },
+  "created_at": "2025-11-26T15:13:35.367127+00:00",
+  "factions": [
+    "zaun"
+  ],
+  "custom_tags": null,
+  "gender": "Male",
+  "species": "Rat",
+  "title_en": "the Plague Rat",
+  "lore_en": "A Zaunite plague rat by birth, but a connoisseur of filth by passion, Twitch is not afraid to get his paws dirty. Aiming a chem-powered crossbow at the gilded heart of Piltover, he has vowed to show those in the city above just how filthy they really are. Always a sneaky sneak, when he's not rooting around in the Sump, he's digging deep into other people's garbage for discarded treasures… and perhaps a moldy sandwich.",
+  "spells_en": [
+    {
+      "id": "TwitchHideInShadows",
+      "name": "Ambush",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 96,
+        "full": "TwitchHideInShadows.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Twitch <keywordStealth>Camouflages</keywordStealth> and gains <speed>{{ e3 }}% Move Speed</speed> for {{ e2 }} seconds. The Move Speed increases to {{ e3 }}% while near an enemy champion that can't see him. After exiting <keywordStealth>Camouflage</keywordStealth>, Twitch gains <attackSpeed>{{ e1 }}% Attack Speed</attackSpeed> for {{ e6 }} seconds.<br /><br />When an enemy champion dies while afflicted with <keywordMajor>Venom</keywordMajor>, this Ability's Cooldown is refreshed.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Camouflage Duration",
+          "Attack Speed"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "20",
+      "datavalues": {},
+      "description": "Twitch becomes Camouflaged for a short duration and gains Move Speed. When leaving Camouflage, Twitch gains Attack Speed for a short duration.<br><br>When an enemy champion with Deadly Venom dies, Ambush's cooldown is reset.",
+      "cooldownBurn": "16"
+    },
+    {
+      "id": "TwitchVenomCask",
+      "name": "Venom Cask",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 96,
+        "full": "TwitchVenomCask.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Twitch hurls a cask that adds a stack of <spellName>Deadly Venom</spellName> to all enemies struck and leaves behind a toxic cloud that persists for {{ duration }} seconds.<br /><br />Enemies that remain within the cloud are <status>Slowed</status> by {{ totalslowamount }}% and receive an additional stack of <spellName>Deadly Venom</spellName> each second.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Move Speed Slow",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "950",
+      "datavalues": {},
+      "description": "Twitch hurls a cask of venom that explodes in an area, slowing targets and applying deadly venom to the target.",
+      "cooldownBurn": "13/12/11/10/9"
+    },
+    {
+      "id": "TwitchExpunge",
+      "name": "Contaminate",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 96,
+        "full": "TwitchExpunge.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Deals <physicalDamage>{{ basedamage }} physical damage</physicalDamage> to all nearby enemies affected by <spellName>Deadly Venom</spellName>, plus an additional <physicalDamage>{{ physicaldamageperstack }} physical damage</physicalDamage> and <magicDamage>{{ magicdamageperstack }} magical damage</magicDamage> per stack of <spellName>Deadly Venom</spellName>.<br /><br />Max Damage: <physicalDamage>{{ maxphysicaldamage }} physical damage</physicalDamage> and <magicDamage>{{ maxmagicdamage }} magical damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/60/70/80/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Damage per Stack",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1200",
+      "datavalues": {},
+      "description": "Twitch wreaks further havoc on poisoned enemies with a blast of his vile diseases.",
+      "cooldownBurn": "12/11/10/9/8"
+    },
+    {
+      "id": "TwitchFullAutomatic",
+      "name": "Spray and Pray",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 96,
+        "full": "TwitchFullAutomatic.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Twitch unleashes his crossbow, gaining {{ bonusrange }} Attack Range and <scaleAD>{{ bonusad }} Attack Damage</scaleAD>, and causing his Attacks to become piercing bolts for {{ duration }} seconds. These bolts hit all enemies they pass through, but deal {{ falloffdamage*100 }}% less damage to subsequent targets, down to a minimum of {{ minimumfalloffdamage*100 }}% damage.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Attack Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1200",
+      "datavalues": {},
+      "description": "Twitch unleashes the full power of his crossbow, shooting bolts over a great distance that pierce all enemies caught in their path.",
+      "cooldownBurn": "90"
+    }
+  ],
+  "passive_en": {
+    "name": "Deadly Venom",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 96,
+      "y": 96,
+      "full": "Twitch_Passive.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "Twitch's basic attacks infect the target, dealing true damage each second."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Adc"
+  ],
+  "skins_en": [
+    {
+      "id": "29000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "29001",
+      "num": 1,
+      "name": "Kingpin Twitch",
+      "chromas": false
+    },
+    {
+      "id": "29002",
+      "num": 2,
+      "name": "Whistler Village Twitch",
+      "chromas": false
+    },
+    {
+      "id": "29003",
+      "num": 3,
+      "name": "Medieval Twitch",
+      "chromas": true
+    },
+    {
+      "id": "29004",
+      "num": 4,
+      "name": "Crime City Twitch",
+      "chromas": false
+    },
+    {
+      "id": "29005",
+      "num": 5,
+      "name": "Vandal Twitch",
+      "chromas": false
+    },
+    {
+      "id": "29006",
+      "num": 6,
+      "name": "Pickpocket Twitch",
+      "chromas": false
+    },
+    {
+      "id": "29007",
+      "num": 7,
+      "name": "SSW Twitch",
+      "chromas": false
+    },
+    {
+      "id": "29008",
+      "num": 8,
+      "name": "Omega Squad Twitch",
+      "chromas": true
+    },
+    {
+      "id": "29012",
+      "num": 12,
+      "name": "Ice King Twitch",
+      "chromas": true
+    },
+    {
+      "id": "29027",
+      "num": 27,
+      "name": "Twitch Shadowfoot",
+      "chromas": false
+    },
+    {
+      "id": "29036",
+      "num": 36,
+      "name": "Dragonslayer Twitch",
+      "chromas": false
+    },
+    {
+      "id": "29045",
+      "num": 45,
+      "name": "High Noon Twitch",
+      "chromas": false
+    },
+    {
+      "id": "29055",
+      "num": 55,
+      "name": "Cheddar Chief Twitch",
+      "chromas": false
+    },
+    {
+      "id": "29064",
+      "num": 64,
+      "name": "Pool Party Twitch",
+      "chromas": false
+    }
+  ]
+}

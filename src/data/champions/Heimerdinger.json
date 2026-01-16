@@ -1,0 +1,440 @@
+{
+  "id": "Heimerdinger",
+  "key": "74",
+  "name": "Heimerdinger",
+  "title": "Inventeur réputé",
+  "version": "15.23.1",
+  "lore": "Le professeur Cecil B. Heimerdinger est un scientifique Yordle excentrique, reconnu comme l'un des esprits les plus innovants de Piltover. Son génie est alimenté par une obsession névrotique pour le travail : il est fasciné par les mystères qui déconcertent ses contemporains depuis des décennies et s'épanouit en tentant de répondre aux questions les plus impénétrables de l'univers.\n\nHeimerdinger est le membre actif le plus ancien du Conseil de Piltover. Il a été un témoin privilégié de la croissance de la ville et a vu les meilleurs aspects, ainsi que les pires, du désir incessant de progrès de Piltover.\n\nMalgré le caractère parfois opaque et ésotérique de ses théories, Heimerdinger est fermement convaincu que le savoir doit être partagé. Il se consacre à l'enseignement de tous ceux qui aspirent à la connaissance.\n\nSon objectif reste de tout son être d'utiliser ses dispositifs et inventions atypiques (souvent des merveilles de la techmaturgie) pour améliorer la vie d'autrui. Il est l'une des figures de proue du progrès technique de la ville et s'efforce toujours d'assurer que l'innovation serve le bien commun.",
+  "tags": [
+    "Mage",
+    "Support"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 192,
+    "y": 48,
+    "full": "Heimerdinger.png",
+    "group": "champion",
+    "sprite": "champion1.png"
+  },
+  "skins": [
+    {
+      "id": "74000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "74001",
+      "num": 1,
+      "name": "Heimerdinger l'envahisseur",
+      "chromas": false
+    },
+    {
+      "id": "74002",
+      "num": 2,
+      "name": "Heimerdinger explosif",
+      "chromas": false
+    },
+    {
+      "id": "74003",
+      "num": 3,
+      "name": "Heimerdinger Jackys Piltover",
+      "chromas": false
+    },
+    {
+      "id": "74004",
+      "num": 4,
+      "name": "Snowmerdinger",
+      "chromas": false
+    },
+    {
+      "id": "74005",
+      "num": 5,
+      "name": "Heimerdinger Hazmat",
+      "chromas": false
+    },
+    {
+      "id": "74006",
+      "num": 6,
+      "name": "Heimerdinger dragonnier",
+      "chromas": false
+    },
+    {
+      "id": "74015",
+      "num": 15,
+      "name": "Heimerdinger du petit bain",
+      "chromas": false
+    },
+    {
+      "id": "74024",
+      "num": 24,
+      "name": "Heimerdinger abeille",
+      "chromas": false
+    },
+    {
+      "id": "74033",
+      "num": 33,
+      "name": "Heimerdinger professeur d'Arcane",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "HeimerdingerQ",
+      "name": "Tourelle H-28G Évolution",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 144,
+        "full": "HeimerdingerQ.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "3",
+      "maxrank": 5,
+      "tooltip": "Heimerdinger construit une <keywordMajor>tourelle</keywordMajor> qui attaque les ennemis proches. Heimerdinger peut avoir jusqu'à {{ maxturrets }} tourelles actives à la fois. Les <keywordMajor>tourelles</keywordMajor> se chargent petit à petit. Une fois qu'une tourelle est pleinement chargée, sa prochaine attaque est plus puissante.<br /><br />Si Heimerdinger s'éloigne trop, ses <keywordMajor>tourelles</keywordMajor> se désactivent au bout de 8 sec.<br /><br />Cette compétence a {{ maxkits }} charges.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "20",
+      "costType": " kit de tourelle et {{ cost }} pts de mana",
+      "leveltip": {
+        "label": [
+          "Dégâts du canon",
+          "Dégâts du rayon laser"
+        ]
+      },
+      "resource": "{{ kitcost }} kit de tourelle et {{ cost }} pts de mana",
+      "rangeBurn": "350",
+      "datavalues": {},
+      "description": "Heimerdinger déploie une tourelle équipée d'un laser secondaire perforant (elle inflige 50% de dégâts aux tourelles ennemies).",
+      "cooldownBurn": "1"
+    },
+    {
+      "id": "HeimerdingerW",
+      "name": "Micro-roquettes Hextech",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 144,
+        "full": "HeimerdingerW.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Heimerdinger lance un barrage de {{ rockets }} roquettes qui infligent <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage> au premier ennemi touché. Les roquettes supplémentaires contre une même unité infligent moins de dégâts.<br /><br />Dégâts max : <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.<br /><br />Les <keywordMajor>tourelles</keywordMajor> proches gagnent 20% de charge par roquette qui touche un champion.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/60/70/80/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1325",
+      "datavalues": {},
+      "description": "Heimerdinger lance des roquettes à longue portée qui convergent vers son curseur.",
+      "cooldownBurn": "11/10/9/8/7"
+    },
+    {
+      "id": "HeimerdingerE",
+      "name": "Grenade électro-tempête CH-2",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 144,
+        "full": "HeimerdingerE.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Heimerdinger lance une grenade qui inflige <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage> dans une zone et qui <status>ralentit</status> les ennemis de {{ slowpercent.0*100 }}% pendant {{ slowduration }} sec. Les ennemis au centre de l'explosion sont également <status>étourdis</status> pendant {{ stunduration }} sec.<br /><br />Toucher un champion charge complètement les <keywordMajor>tourelles</keywordMajor> proches.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "85",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "970",
+      "datavalues": {},
+      "description": "Heimerdinger lance une grenade vers l'endroit ciblé, infligeant des dégâts aux unités ennemies. Cela étourdit aussi les unités touchées directement et ralentit les unités proches.",
+      "cooldownBurn": "11"
+    },
+    {
+      "id": "HeimerdingerR",
+      "name": "AMÉLIORATION !",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 144,
+        "full": "HeimerdingerR.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Heimerdinger améliore sa prochaine compétence non ultime.<br /><br /><spellName>Tourelle H-28Q Apogée :</spellName> place une <keywordMajor>tourelle</keywordMajor> améliorée pendant 8 sec. Celle-ci ne compte pas dans la limite des tourelles d'Heimerdinger, et elle inflige <magicDamage>{{ qultdamage }} pts de dégâts magiques</magicDamage> par tir et <magicDamage>{{ qultdamagebeam }} pts de dégâts magiques</magicDamage> par tir chargé. Ses attaques infligent des dégâts de zone et <status>ralentissent</status> les ennemis de 25% pendant 2 sec. La tourelle est immunisée contre les contrôles de foule.<br /><br /><spellName>Nuée de roquettes Hextech :</spellName> tire 4 vagues de roquettes qui infligent chacune <magicDamage>{{ wultdamage }} pts de dégâts magiques</magicDamage>. Au-delà de la première, les roquettes subséquentes contre un même champion ou monstre de la jungle infligent moins de dégâts, mais les sbires subissent plus de dégâts. Dégâts max : <magicDamage>{{ wulttotaldamage }} pts de dégâts magiques</magicDamage>. <br /><br /><spellName>Grenade éclair CH-3X :</spellName> lance une grenade rebondissante qui se déclenche trois fois, infligeant <magicDamage>{{ eultdamage }} pts de dégâts magiques</magicDamage>. Les zones d'<status>étourdissement</status> et de <status>ralentissement</status> sont plus grandes.<br /><br /><recast>Réactivation :</recast> annule cette compétence.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts du canon de la Tourelle Apogée",
+          "Dégâts du rayon laser de la tourelle",
+          "Dégâts de la Nuée de roquettes",
+          "Dégâts max de la Nuée de roquettes",
+          "Dégâts de la Grenade éclair"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1",
+      "datavalues": {},
+      "description": "Heimerdinger invente une amélioration, ce qui permet à son prochain sort d'avoir des effets augmentés.",
+      "cooldownBurn": "100/85/70"
+    }
+  ],
+  "passive": {
+    "name": "Affinité Hextech",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 192,
+      "y": 48,
+      "full": "Heimerdinger_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Gagne de la vitesse de déplacement à proximité des tourelles alliées et des tourelles déployées par Heimerdinger."
+  },
+  "created_at": "2025-11-26T15:13:33.248576+00:00",
+  "factions": [
+    "piltover",
+    "bandle-city"
+  ],
+  "custom_tags": [
+    "scientifique"
+  ],
+  "gender": "Male",
+  "species": "Yordle",
+  "title_en": "the Revered Inventor",
+  "lore_en": "Professor Cecil B. Heimerdinger is an eccentric Yordle scientist, widely lauded as one of the most innovative minds and esteemed inventors Piltover has ever seen. His genius is fueled by a neurotic obsession with work: he is fascinated by mysteries that have confounded his contemporaries for decades, and thrives on answering the universe's most impenetrable questions.\n\nHeimerdinger is the longest-serving active member of the Piltover Council. He has been a keen observer of the city's growth, witnessing both the best and the worst outcomes that the city's relentless desire for progress has produced.\n\nDespite the often opaque and esoteric nature of his theories, Heimerdinger firmly believes that knowledge should be shared. He is devoted to teaching all who desire it.\n\nHis ultimate goal remains to use his atypical devices and inventions (often wonders of techmaturgy) to improve the lives of others. He is a leading figure in the city's technical progress and always strives to ensure that innovation serves the greater good.",
+  "spells_en": [
+    {
+      "id": "HeimerdingerQ",
+      "name": "H-28 G Evolution Turret",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 144,
+        "full": "HeimerdingerQ.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "3",
+      "maxrank": 5,
+      "tooltip": "Heimerdinger constructs a <keywordMajor>Turret</keywordMajor> that attacks nearby enemies. Heimerdinger can have {{ maxturrets }} turrets active at once. <keywordMajor>Turrets</keywordMajor> slowly build up charge. At max charge, they fire a stronger attack.<br /><br />If Heimerdinger gets too far away, his <keywordMajor>Turrets</keywordMajor> will deactivate after 8 seconds.<br /><br />This Ability has {{ maxkits }} charges.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "20",
+      "costType": " Turret Kit & {{ cost }} Mana",
+      "leveltip": {
+        "label": [
+          "Cannon Damage",
+          "Beam Damage"
+        ]
+      },
+      "resource": "{{ kitcost }} Turret Kit & {{ cost }} Mana",
+      "rangeBurn": "350",
+      "datavalues": {},
+      "description": "Heimerdinger lays down a rapid-fire cannon turret equipped with a secondary pass-through beam attack (turrets deal half damage to towers).",
+      "cooldownBurn": "1"
+    },
+    {
+      "id": "HeimerdingerW",
+      "name": "Hextech Micro-Rockets",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 144,
+        "full": "HeimerdingerW.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Heimerdinger unleashes a barrage of {{ rockets }} rockets that deal <magicDamage>{{ damage }} magic damage</magicDamage> to the first enemy hit. Additional rocket hits deal reduced damage.<br /><br />Max Damage: <magicDamage>{{ totaldamage }} magic damage</magicDamage>.<br /><br />Nearby <keywordMajor>Turrets</keywordMajor> gain 20% charge per rocket that hits a champion.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/60/70/80/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1325",
+      "datavalues": {},
+      "description": "Heimerdinger fires long-range rockets that converge on his cursor.",
+      "cooldownBurn": "11/10/9/8/7"
+    },
+    {
+      "id": "HeimerdingerE",
+      "name": "CH-2 Electron Storm Grenade",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 144,
+        "full": "HeimerdingerE.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Heimerdinger hurls a grenade that deals <magicDamage>{{ damage }} magic damage</magicDamage> in an area and <status>Slows</status> by {{ slowpercent.0*100 }}% for {{ slowduration }} seconds. Enemies in the center are also <status>Stunned</status> for {{ stunduration }} seconds.<br /><br />Hitting a champion fully charges nearby <keywordMajor>Turrets</keywordMajor>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "85",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "970",
+      "datavalues": {},
+      "description": "Heimerdinger lobs a grenade at a location, dealing damage to enemy units, as well as stunning anyone directly hit and slowing surrounding units.",
+      "cooldownBurn": "11"
+    },
+    {
+      "id": "HeimerdingerR",
+      "name": "UPGRADE!!!",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 144,
+        "full": "HeimerdingerR.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Heimerdinger upgrades his next non-ultimate Ability.<br /><br /><spellName>H-28Q Apex Turret:</spellName> Place an upgraded <keywordMajor>Turret</keywordMajor> for 8 seconds that doesn't count towards Heimerdinger's max turrets, deals <magicDamage>{{ qultdamage }} magic damage</magicDamage> per shot and <magicDamage>{{ qultdamagebeam }} magic damage</magicDamage> per charged shot. Its attacks deal damage in an area, <status>Slow</status> by 25% for 2 seconds, and it is immune to crowd control.<br /><br /><spellName>Hextech Rocket Swarm:</spellName> Fires 4 waves of rockets that each deal <magicDamage>{{ wultdamage }} magic damage</magicDamage>. Champions and jungle monsters hit by additional rockets take reduced damage, and minions take increased damage. Max Damage: <magicDamage>{{ wulttotaldamage }} magic damage</magicDamage>. <br /><br /><spellName>CH-3X Lightning Grenade:</spellName> Throws a bouncing grenade that discharges three times, dealing <magicDamage>{{ eultdamage }} magic damage</magicDamage>. The <status>Stun</status> and <status>Slow</status> areas are larger.<br /><br /><recast>Recast:</recast> Cancel this Ability.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Apex Turret Cannon Damage",
+          "Turret Beam Damage",
+          "Rocket Swarm Damage",
+          "Rocket Swarm Max Damage",
+          "Lightning Grenade Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1",
+      "datavalues": {},
+      "description": "Heimerdinger invents an upgrade, causing his next spell to have increased effects. ",
+      "cooldownBurn": "100/85/70"
+    }
+  ],
+  "passive_en": {
+    "name": "Hextech Affinity",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 192,
+      "y": 48,
+      "full": "Heimerdinger_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Gain Move Speed while near allied towers and turrets deployed by Heimerdinger."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Top"
+  ],
+  "skins_en": [
+    {
+      "id": "74000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "74001",
+      "num": 1,
+      "name": "Alien Invader Heimerdinger",
+      "chromas": false
+    },
+    {
+      "id": "74002",
+      "num": 2,
+      "name": "Blast Zone Heimerdinger",
+      "chromas": false
+    },
+    {
+      "id": "74003",
+      "num": 3,
+      "name": "Piltover Customs Heimerdinger",
+      "chromas": false
+    },
+    {
+      "id": "74004",
+      "num": 4,
+      "name": "Snowmerdinger",
+      "chromas": false
+    },
+    {
+      "id": "74005",
+      "num": 5,
+      "name": "Hazmat Heimerdinger",
+      "chromas": false
+    },
+    {
+      "id": "74006",
+      "num": 6,
+      "name": "Dragon Trainer Heimerdinger",
+      "chromas": false
+    },
+    {
+      "id": "74015",
+      "num": 15,
+      "name": "Pool Party Heimerdinger",
+      "chromas": false
+    },
+    {
+      "id": "74024",
+      "num": 24,
+      "name": "Heimerstinger",
+      "chromas": false
+    },
+    {
+      "id": "74033",
+      "num": 33,
+      "name": "Arcane Professor Heimerdinger",
+      "chromas": false
+    }
+  ]
+}

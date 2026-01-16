@@ -1,0 +1,525 @@
+{
+  "id": "Janna",
+  "key": "40",
+  "name": "Janna",
+  "title": "Avatar de l'air",
+  "version": "15.23.1",
+  "lore": "Depuis les temps anciens, les mortels ont prié les vents, que ce soit les marins pour la bonne météo ou les opprimés pour le vent du changement. Ces prières ont parfois semblé recevoir une réponse. Les marins voyaient un oiseau bleu vif annonciateur de bon vent, et certains juraient avoir vu l'oiseau se transformer en une femme mystérieuse capable de diriger le vent avec son bâton.\n\nLes fidèles l'appelaient Jan'ahrem (ancien mot shurimien signifiant « gardien ») pour son apparition dans les moments de grand besoin. Ce nom fut raccourci en Janna.\n\nSon culte se répandit le long des côtes de Shurima. Les marins d'Oshra Va'Zaun (l'ancienne Zaun) étaient ses fidèles les plus fervents, dépendants des mers calmes pour le commerce. Même après que l'Empire shurimien eut annexé la ville, leur dévotion continua. Lorsque l'empereur émit des décrets supprimant les « fausses idoles », les statues de Janna furent détruites, mais beaucoup continuèrent à lui offrir des prières silencieuses, portant des amulettes d'oiseau bleu en son honneur. Janna continua d'aider les plus vulnérables qui l'appelaient, restant une constante au milieu du chaos.\n\nAprès la chute de l'empire Shurimien, les terres verdoyantes se transformèrent en désert. Janna protégea la ville, désormais connue sous le nom de Zaun, du tumulte environnant.\n\nAu fil des siècles, les ambitions de Zaun grandirent. Ses habitants rêvèrent de creuser un canal pour relier les mers, un projet qui rendit de grandes portions de la ville instables. Les prières à Janna s'estompèrent, la foi des mortels se concentrant sur leurs machinations terrestres.\n\nLors d'un jour catastrophique, des districts entiers s'effondrèrent, et des milliers de personnes se retrouvèrent à lutter pour leur vie. Alors qu'ils faisaient face à leur perte, ils appelèrent le nom de leur ancienne protectrice : Janna.\n\nMême si les mortels l'avaient apparemment oubliée, Janna n'hésita pas. Une rafale immense balaya la ville alors qu'elle prenait forme corporelle. Des murs d'air impossibles retinrent les eaux de crue, et des rafales féroces coupèrent la fumée suffocante des incendies. Bien qu'elle ait sauvé de nombreuses vies, des milliers périrent. Ceux qui survécurent furent témoins de la bienveillance de Janna et jurèrent de ne plus jamais oublier leur sauveuse.\n\nAujourd'hui, à travers l'ascension de Piltover et les luttes de Zaun moderne, les fidèles de Janna portent des médaillons d'oiseau bleu. Janna reste inébranlable aux côtés des humbles et des démunis, un fanal d'espoir pour ceux qui luttent contre la brutalité des barons de la chimie ou la pollution de la Brume grise (Zaun Gray).",
+  "tags": [
+    "Support",
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 432,
+    "y": 48,
+    "full": "Janna.png",
+    "group": "champion",
+    "sprite": "champion1.png"
+  },
+  "skins": [
+    {
+      "id": "40000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "40001",
+      "num": 1,
+      "name": "Janna des tempêtes",
+      "chromas": false
+    },
+    {
+      "id": "40002",
+      "num": 2,
+      "name": "Janna Hextech",
+      "chromas": false
+    },
+    {
+      "id": "40003",
+      "num": 3,
+      "name": "Janna reine de givre",
+      "chromas": false
+    },
+    {
+      "id": "40004",
+      "num": 4,
+      "name": "Janna héroïne de guerre",
+      "chromas": false
+    },
+    {
+      "id": "40005",
+      "num": 5,
+      "name": "Janna miss météo",
+      "chromas": false
+    },
+    {
+      "id": "40006",
+      "num": 6,
+      "name": "Fnatic Janna",
+      "chromas": false
+    },
+    {
+      "id": "40007",
+      "num": 7,
+      "name": "Janna gardienne des étoiles",
+      "chromas": false
+    },
+    {
+      "id": "40008",
+      "num": 8,
+      "name": "Janna à l'épée sacrée",
+      "chromas": true
+    },
+    {
+      "id": "40013",
+      "num": 13,
+      "name": "Janna sorcière",
+      "chromas": true
+    },
+    {
+      "id": "40020",
+      "num": 20,
+      "name": "Janna gardienne des sables",
+      "chromas": true
+    },
+    {
+      "id": "40027",
+      "num": 27,
+      "name": "Janna reine du combat",
+      "chromas": true
+    },
+    {
+      "id": "40036",
+      "num": 36,
+      "name": "Janna rose de cristal",
+      "chromas": true
+    },
+    {
+      "id": "40045",
+      "num": 45,
+      "name": "Janna cyber halo",
+      "chromas": true
+    },
+    {
+      "id": "40046",
+      "num": 46,
+      "name": "Janna cyber halo prestige",
+      "chromas": false
+    },
+    {
+      "id": "40056",
+      "num": 56,
+      "name": "Janna écailles célestes",
+      "chromas": true
+    },
+    {
+      "id": "40066",
+      "num": 66,
+      "name": "Janna héraut de l'aube",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "HowlingGale",
+      "name": "Vent hurlant",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 48,
+        "full": "HowlingGale.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Janna invoque une tornade qui gagne en puissance en {{ maxduration }} sec, puis l'envoie dans une direction. La tornade inflige <magicDamage>{{ minimumdamage }} - {{ maxdamage }} pts de dégâts magiques</magicDamage> et <status>projette dans les airs</status> pendant {{ baseknockup }} - {{ maxknockup }} sec. La distance, les dégâts et la durée de <status>projection dans les airs</status> augmentent avec le temps de charge de la tornade. Janna peut <recast>réactiver</recast> cette compétence pour envoyer la tornade plus tôt.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "90/95/100/105/110",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Dégâts par seconde de charge",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1075",
+      "datavalues": {},
+      "description": "En modifiant localement la pression et la température, Janna peut créer une petite tornade qui croît en taille avec le temps. Elle peut activer une nouvelle fois le sort pour libérer la tornade. Elle fonce alors dans la direction de l'invocation, projetant en l'air les ennemis sur son passage et leur infligeant des dégâts.",
+      "cooldownBurn": "14"
+    },
+    {
+      "id": "SowTheWind",
+      "name": "Alizé",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 48,
+        "full": "SowTheWind.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> Janna gagne <speed>+{{ totalms }} vitesse de déplacement</speed> et est fantomatique.<br /><br /><spellActive>Active :</spellActive> l'élémentaire de Janna frappe un ennemi, le <status>ralentissant</status> de {{ totalslow }} pendant {{ slowduration }} sec et lui infligeant <magicDamage>{{ totaldamage }} + {{ spell.tailwindself:bonusdamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ralentissement",
+          "Vitesse de déplacement passive",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "4294967295",
+      "datavalues": {},
+      "description": "Janna invoque un élémentaire d'air qui, passivement, augmente sa vitesse de déplacement et lui permet de traverser les unités. Elle peut aussi activer cette compétence pour infliger des dégâts et réduire la vitesse de déplacement d'un ennemi.",
+      "cooldownBurn": "8/7.5/7/6.5/6"
+    },
+    {
+      "id": "EyeOfTheStorm",
+      "name": "Œil du cyclone",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 48,
+        "full": "EyeOfTheStorm.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Janna octroie à un champion allié ou à une tourelle alliée un <shield>bouclier de {{ totalshield }} PV</shield> pendant {{ shieldduration }} sec. Tant que le bouclier est actif, l'entité protégée gagne +<scaleAD>{{ totalad }} dégâts d'attaque</scaleAD>.<br /><br />Janna récupère {{ ecdrefundforcc*100 }}% du délai de récupération à chaque fois qu'elle restreint les déplacements d'un champion ennemi avec une compétence.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/75/80/85/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "PV du bouclier",
+          "Dégâts d'attaque",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Janna invoque une tempête défensive qui protège un champion allié ou une tourelle alliée contre les dégâts et qui augmente ses dégâts d'attaque.",
+      "cooldownBurn": "16/15/14/13/12"
+    },
+    {
+      "id": "ReapTheWhirlwind",
+      "name": "Mousson",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 48,
+        "full": "ReapTheWhirlwind.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Janna invoque une mousson magique, <status>repoussant</status> les ennemis proches, puis rendant <healing>{{ totalheal }} PV</healing> en {{ e3 }} sec à tous les alliés. Vous déplacer ou utiliser une compétence met fin prématurément à la mousson.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Soins par seconde",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "725",
+      "datavalues": {},
+      "description": "Janna s'entoure d'une puissante tempête magique, repoussant au loin les ennemis. Quand la tempête est terminée, les dernières brises soignent les alliés proches tant que la compétence est active.",
+      "cooldownBurn": "130/115/100"
+    }
+  ],
+  "passive": {
+    "name": "Zéphyr",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 432,
+      "y": 48,
+      "full": "JannaP.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Les alliés de Janna gagnent de la vitesse de déplacement quand ils se dirigent vers elle.<br><br>Les dégâts à l'impact de Janna et Alizé infligent des dégâts magiques supplémentaires équivalents à une partie de sa vitesse de déplacement bonus."
+  },
+  "created_at": "2025-11-26T15:13:33.248576+00:00",
+  "factions": [
+    "zaun"
+  ],
+  "custom_tags": null,
+  "gender": "Female",
+  "species": "Spirit",
+  "title_en": "the Storm's Fury",
+  "lore_en": "Since ancient times, mortals have prayed to the winds, from sailors seeking good weather to the downtrodden calling on winds of change. Surprisingly, the wind sometimes seemed to answer. Seafarers might spot a bright blue bird just before a healthy tailwind billowed their sails. Others might swear they heard a whistling in the air before a storm, as if to warn them. Some even swore they had seen the bird transform into a woman.\n\nThe faithful called this wind spirit Jan'ahrem (an ancient Shuriman word meaning \"guardian\") for her appearance in moments of great need. Over time, she became known simply as Janna.\n\nHer name spread across the Shuriman continent's coasts, and the seafaring people of Oshra Va'Zaun (ancient Zaun) were her most fervent believers, dependent on calm seas for trade. Even after the Shuriman empire enveloped the city, their devotion continued. When the emperor issued decrees suppressing \"false idols,\" Janna's statues were torn down, but many still offered quiet prayers, wearing smaller, personal bluebird amulets in her honor. Janna continued to aid the vulnerable who called upon her, remaining constant in a region rife with upheaval.\n\nAfter the great Shuriman empire fell, the once verdant lands became a desert. Janna shielded the city, now known as Zaun, from the turmoil.\n\nOver the centuries, Zaun's ambitions grew. Its people dreamed of cutting a canal through the isthmus, a project that made great portions of the city unstable. Prayers to Janna waned as mortal dreams focused on mortal machinations.\n\nHowever, on one cataclysmic day, entire districts collapsed, and thousands suddenly found themselves fighting for their lives. As these unfortunate souls faced their doom, they called out the name of their ancient protector: Janna.\n\nThough these mortals had seemingly forgotten her until now, Janna did not hesitate to help them. An immense gale swept over the city as she took corporeal form. Impossible walls of air held flooding waters at bay, and ferocious gusts cut through the suffocating smoke. Though she saved many, thousands still perished—but all who survived witnessed Janna's benevolence and vowed never to forget their savior.\n\nTo this day, through the rise of Piltover and the struggles of modern Zaun, Janna stands steadfast by the humble and the meek. Zaunites know that whether they fight for breath amid the toxic Zaun Gray or stand against the brutality of chem-barons, Janna will not abandon them.",
+  "spells_en": [
+    {
+      "id": "HowlingGale",
+      "name": "Howling Gale",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 48,
+        "full": "HowlingGale.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Janna summons a tornado that grows stronger over {{ maxduration }} seconds then blows along its path. It deals <magicDamage>{{ minimumdamage }} - {{ maxdamage }} magic damage</magicDamage> and <status>Knocks Up</status> for {{ baseknockup }} - {{ maxknockup }} seconds. The distance, damage, and <status>Knock Up</status> duration increase based on how much the tornado grew. Janna can <recast>Recast</recast> to send the tornado early.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "90/95/100/105/110",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Damage Per Second Charged",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1075",
+      "datavalues": {},
+      "description": "By creating a localized change in pressure and temperature, Janna is able to create a small storm that grows in size with time. She can activate the spell again to release the storm. On release this storm will fly towards the direction it was cast in, dealing damage and knocking away any enemies in its path.",
+      "cooldownBurn": "14"
+    },
+    {
+      "id": "SowTheWind",
+      "name": "Zephyr",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 48,
+        "full": "SowTheWind.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Janna gains <speed>{{ totalms }} Move Speed</speed> and is Ghosted.<br /><br /><spellActive>Active:</spellActive> Janna's elemental strikes an enemy, <status>Slowing</status> them by {{ totalslow }} for {{ slowduration }} seconds, and dealing <magicDamage>{{ totaldamage }} + {{ spell.tailwindself:bonusdamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Slow",
+          "Passive Move Speed",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "4294967295",
+      "datavalues": {},
+      "description": "Janna summons an air elemental that passively increases her Move Speed and enables her to pass through units. She may also activate this ability to deal damage and slow an enemy's Move Speed.",
+      "cooldownBurn": "8/7.5/7/6.5/6"
+    },
+    {
+      "id": "EyeOfTheStorm",
+      "name": "Eye Of The Storm",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 48,
+        "full": "EyeOfTheStorm.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Janna grants an ally champion or turret <shield>{{ totalshield }} Shield</shield> for {{ shieldduration }} seconds. While shielded, they gain <scaleAD>{{ totalad }} Attack Damage</scaleAD>.<br /><br />Janna refunds {{ ecdrefundforcc*100 }}% of the cooldown whenever she impairs an enemy champion's movement with an Ability.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/75/80/85/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Shield Health",
+          "Attack Damage",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Janna conjures a defensive gale that shields an ally champion or turret from incoming damage and increases their Attack Damage.",
+      "cooldownBurn": "16/15/14/13/12"
+    },
+    {
+      "id": "ReapTheWhirlwind",
+      "name": "Monsoon",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 48,
+        "full": "ReapTheWhirlwind.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Janna summons a magical monsoon, <status>Knocking Back</status> nearby enemies then healing nearby allies for <healing>{{ totalheal }} Health</healing> over {{ e3 }} seconds. Moving or using an Ability ends the monsoon early.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Heal Per Second",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "725",
+      "datavalues": {},
+      "description": "Janna surrounds herself in a magical storm, throwing enemies back. After the storm has settled, soothing winds heal nearby allies while the ability is active.",
+      "cooldownBurn": "130/115/100"
+    }
+  ],
+  "passive_en": {
+    "name": "Tailwind",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 432,
+      "y": 48,
+      "full": "JannaP.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Janna's allies gain Move Speed moving towards her.<br><br>Janna deals a portion of bonus Move Speed as bonus magic damage on hit and with Zephyr."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Support"
+  ],
+  "skins_en": [
+    {
+      "id": "40000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "40001",
+      "num": 1,
+      "name": "Tempest Janna",
+      "chromas": false
+    },
+    {
+      "id": "40002",
+      "num": 2,
+      "name": "Hextech Janna",
+      "chromas": false
+    },
+    {
+      "id": "40003",
+      "num": 3,
+      "name": "Frost Queen Janna",
+      "chromas": false
+    },
+    {
+      "id": "40004",
+      "num": 4,
+      "name": "Victorious Janna",
+      "chromas": false
+    },
+    {
+      "id": "40005",
+      "num": 5,
+      "name": "Forecast Janna",
+      "chromas": false
+    },
+    {
+      "id": "40006",
+      "num": 6,
+      "name": "Fnatic Janna",
+      "chromas": false
+    },
+    {
+      "id": "40007",
+      "num": 7,
+      "name": "Star Guardian Janna",
+      "chromas": false
+    },
+    {
+      "id": "40008",
+      "num": 8,
+      "name": "Sacred Sword Janna",
+      "chromas": true
+    },
+    {
+      "id": "40013",
+      "num": 13,
+      "name": "Bewitching Janna",
+      "chromas": true
+    },
+    {
+      "id": "40020",
+      "num": 20,
+      "name": "Guardian of the Sands Janna",
+      "chromas": true
+    },
+    {
+      "id": "40027",
+      "num": 27,
+      "name": "Battle Queen Janna",
+      "chromas": true
+    },
+    {
+      "id": "40036",
+      "num": 36,
+      "name": "Crystal Rose Janna",
+      "chromas": true
+    },
+    {
+      "id": "40045",
+      "num": 45,
+      "name": "Cyber Halo Janna",
+      "chromas": true
+    },
+    {
+      "id": "40046",
+      "num": 46,
+      "name": "Prestige Cyber Halo Janna",
+      "chromas": false
+    },
+    {
+      "id": "40056",
+      "num": 56,
+      "name": "Heavenscale Janna",
+      "chromas": true
+    },
+    {
+      "id": "40066",
+      "num": 66,
+      "name": "Dawnbringer Janna",
+      "chromas": false
+    }
+  ]
+}

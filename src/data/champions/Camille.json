@@ -1,0 +1,418 @@
+{
+  "id": "Camille",
+  "key": "164",
+  "name": "Camille",
+  "title": "Ombre d'acier",
+  "version": "15.23.1",
+  "lore": "C'est l'histoire tragique d'un sacrifice forcé. L'histoire de Camille est celle d'une femme déchirée entre son devoir impitoyable envers son clan et son désir de bonheur personnel, une lutte qu'elle perdra à cause de la manipulation.\r\n\r\nVoici l'analyse détaillée de l'histoire de Camille, avec la version anglaise fournie en dernier.\r\n⚙️ 22. Camille : Le Cœur Hextéch de Piltover\r\n🇫🇷 Français (Version Détaillée)\r\n\r\nLe Clan Ferros de Piltover a bâti sa richesse sur la récolte et l'exploitation des cristaux Hextech (first crystals) provenant des Brackern de Shurima. La devise de la famille, « Pour la famille, je donnerai », est née du sacrifice d'un membre s'étant fait amputer un bras lors d'une expédition. Pour maintenir son monopole, le clan a recours à l'espionnage, à l'intimidation et au meurtre, et ses activités ont contribué à la pollution de Zaun.\r\n\r\nCamille, l'aînée survivante, a reçu une éducation complète. Elle était destinée à être l'Intelligencer Principal de la famille, l'agent chargé de garantir le succès du clan par tous les moyens. Son jeune frère, Stevan, à la constitution fragile, n'étant pas apte, Camille prit sa place, excellant dans le combat, la reconnaissance et l'interrogatoire.\r\n\r\nÀ l'âge de vingt-cinq ans, son père fut mortellement blessé par des voyous zauniens augmentés, et sa mère mourut peu après de chagrin. Stevan devint le maître du clan et intensifia la recherche sur l'augmentation humaine Hextech.\r\n\r\nCamille, désireuse de dépasser ses limites humaines, demanda l'augmentation à Hakim Naderi, un jeune cristallographe shurimien devenu l'artificier en chef. Une romance passionnée naquit entre Camille et Hakim, qui craignait que l'opération ne lui enlève son humanité. Il lui proposa le mariage et la supplia de s'enfuir avec lui, créant un dilemme déchirant chez Camille.\r\n\r\nStevan, qui avait besoin de Camille pour exécuter sa vision, manipula la situation. Il simula une attaque contre lui-même. En voyant son frère ensanglanté, Camille réalisa ce qui pouvait arriver si son attention était divisée. Elle mit fin à sa relation avec Hakim, insistant pour que l'opération se poursuive : Pour la famille, elle donnerait.\r\n\r\nHakim effectua l'opération, excision le cœur de Camille pour le remplacer par un cœur Hextech, puis démissionna, la laissant seule à son réveil.\r\n\r\nCamille se consacra entièrement à son devoir. Elle subit d'autres perfectionnements, notamment des jambes-lames et des hanches à treuil (grapple-spindled hips), se transformant de plus en plus en machine. Au fil des années, ses missions devinrent plus sombres et plus meurtrières.\r\n\r\nFinalement, elle découvrit l'étendue de la trahison de Stevan (l'attaque simulée et ses machinations) et réalisa que ses actions ne servaient plus l'intérêt du clan. Elle écarta le dernier sentiment qu'elle éprouvait pour son frère, et installa sa petite-nièce préférée comme maître du clan.\r\n\r\nDésormais, Camille gère à la fois les affaires publiques et les opérations secrètes. Elle a accepté sa transformation et le jugement implacable qu'elle lui offre. Malgré le faible gémissement mélancolique qu'elle ressent parfois dans son cœur Hextech, elle refuse l'inaction, trouvant sa vigueur dans l'espionnage industriel bien exécuté, le thé frais et les longues marches dans la Brume grise de Zaun.",
+  "tags": [
+    "Fighter",
+    "Assassin"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 48,
+    "y": 96,
+    "full": "Camille.png",
+    "group": "champion",
+    "sprite": "champion0.png"
+  },
+  "skins": [
+    {
+      "id": "164000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "164001",
+      "num": 1,
+      "name": "Programme Camille",
+      "chromas": false
+    },
+    {
+      "id": "164002",
+      "num": 2,
+      "name": "Camille de l'assemblée",
+      "chromas": true
+    },
+    {
+      "id": "164010",
+      "num": 10,
+      "name": "iG Camille",
+      "chromas": true
+    },
+    {
+      "id": "164011",
+      "num": 11,
+      "name": "Camille des arcanes",
+      "chromas": true
+    },
+    {
+      "id": "164021",
+      "num": 21,
+      "name": "Camille commandante d'assaut",
+      "chromas": true
+    },
+    {
+      "id": "164031",
+      "num": 31,
+      "name": "Camille élue de l'hiver",
+      "chromas": true
+    },
+    {
+      "id": "164032",
+      "num": 32,
+      "name": "Camille élue de l'hiver prestige",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "CamilleQ",
+      "name": "Protocole de précision",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 96,
+        "full": "CamilleQ.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "La prochaine attaque de Camille inflige <physicalDamage>{{ bonusdamage }} pts de dégâts physiques</physicalDamage> supplémentaires et lui octroie <speed>+{{ msbonus*100 }}% de vitesse de déplacement</speed> pendant {{ msduration }} sec. Cette compétence peut être <recast>réactivée</recast> dans les {{ qtotalrecasttime }} sec.<br /><br />Si l'attaque de la <recast>réactivation</recast> touche un ennemi au moins {{ qrampuptime }} sec après la première attaque, les dégâts supplémentaires sont augmentés à <physicalDamage>{{ empoweredbonusdamage }}</physicalDamage> et {{ damageconversionpercentage }} des dégâts de la seconde attaque sont convertis en <trueDamage>dégâts bruts</trueDamage>.<br /><br /><rules>Cette compétence déclenche les effets de sort quand elle inflige des dégâts.</rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "25",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Ratio de dégâts d'attaque totaux",
+          "Vitesse de déplacement",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "325",
+      "datavalues": {},
+      "description": "La prochaine attaque de Camille infligera des dégâts supplémentaires et lui octroiera un bonus en vitesse de déplacement. Cette compétence peut être relancée pendant un court instant, et Camille inflige des dégâts beaucoup plus importants si elle attend entre les deux attaques.",
+      "cooldownBurn": "9/8/7/6/5"
+    },
+    {
+      "id": "CamilleW",
+      "name": "Balayage tactique",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 96,
+        "full": "CamilleW.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Après un délai, Camille lance une attaque tranchante qui inflige <physicalDamage>{{ basedamagetotal }} pts de dégâts physiques</physicalDamage>.<br /><br />Les ennemis touchés dans la moitié extérieure du cône subissent <physicalDamage>{{ outeredgetooltip }} des PV max en dégâts physiques</physicalDamage> supplémentaires, ainsi qu'un <status>ralentissement</status> de {{ slowpercentage }}% qui diminue en {{ slowduration }} sec. Camille récupère <healing>{{ outerconehealingratio }}% des dégâts supplémentaires infligés aux champions en PV</healing>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Coût en @AbilityResourceName@",
+          "Dégâts",
+          "Pourcentage des PV max en dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "610",
+      "datavalues": {},
+      "description": "Après un délai, Camille frappe dans une zone conique, infligeant des dégâts. Les ennemis pris dans la moitié extérieure du cône sont ralentis, subissent des dégâts supplémentaires et rendent des PV à Camille.",
+      "cooldownBurn": "15/14/13/12/11"
+    },
+    {
+      "id": "CamilleE",
+      "name": "Grappin",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 96,
+        "full": "CamilleE.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Camille tire un grappin qui se plante dans le terrain. Elle est ensuite attirée vers ce terrain et y reste accrochée pendant 1 sec, ce qui lui permet de <recast>réactiver</recast> cette compétence.<br /><br /><recast>Réactivation :</recast> Camille se rue dans une direction et percute le premier champion ennemi touché. À l'atterrissage, elle inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> aux ennemis proches et <status>étourdit</status> les champions ennemis pendant {{ knockupduration }} sec. Les ruées vers les champions ennemis vont deux fois plus loin et, à l'impact, lui octroient <attackSpeed>+{{ asbuff*100 }}% de vitesse d'attaque</attackSpeed> pendant {{ asduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts",
+          "Vitesse d'attaque"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Camille se propulse vers un mur et bondit, projetant en l'air tous les champions ennemis à l'atterrissage.",
+      "cooldownBurn": "16/15/14/13/12"
+    },
+    {
+      "id": "CamilleR",
+      "name": "Ultimatum Hextech",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 96,
+        "full": "CamilleR.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Camille devient brièvement impossible à cibler et bondit sur un champion ennemi, interrompant les canalisations et emprisonnant l'ennemi dans une zone dont il ne peut pas sortir pendant {{ rduration }} sec. Les autres ennemis proches sont <status>repoussés</status>. Ses attaques contre l'ennemi piégé infligent <magicDamage>{{ rpercentcurrenthpdamage }}% des PV actuels en dégâts magiques</magicDamage> bonus.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Pourcentage des PV actuels en dégâts",
+          "Durée",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "475",
+      "datavalues": {},
+      "description": "Camille fonce vers le champion ciblé et l'emprisonne dans une zone. Ses attaques de base infligent aussi des dégâts magiques supplémentaires à la cible.",
+      "cooldownBurn": "140/115/90"
+    }
+  ],
+  "passive": {
+    "name": "Protection modulable",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 48,
+      "y": 96,
+      "full": "Camille_Passive.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Les attaques de base contre les champions octroient à Camille un bouclier équivalent à un pourcentage de ses PV max contre le type de dégâts de l'ennemi (physique ou magique) pendant un court moment."
+  },
+  "created_at": "2025-11-26T15:13:32.649099+00:00",
+  "factions": [
+    "piltover"
+  ],
+  "custom_tags": [
+    "clan-ferros",
+    "enforcer"
+  ],
+  "gender": "Female",
+  "species": "Cyborg",
+  "title_en": "the Steel Shadow",
+  "lore_en": "Camille is the matriarchal head of Clan Ferros in Piltover. The family’s wealth was built on harvesting and exploiting Hextech crystals (first crystals) from the Brackern of Shurima. The family motto, “For family, will I give,” was born from a member's sacrifice after losing an arm on an early expedition. To maintain their monopoly, the clan resorted to espionage, intimidation, and murder, and their activities contributed heavily to the pollution of Zaun.\r\n\r\nCamille, the eldest surviving child, received every educational advantage. She was destined to become the family’s Principal Intelligencer, the agent tasked with securing the clan's success by any means necessary. Since her younger brother, Stevan, was too frail, Camille took his place, excelling in combat, reconnaissance, and interrogation.\r\n\r\nAt twenty-five, her father was mortally wounded by augmented Zaunite thugs, and her mother died soon after from grief. Stevan became clan master and ramped up research into human Hextech augmentation.\r\n\r\nCamille, eager to push beyond her human limits, requested augmentation from Hakim Naderi, a promising Shuriman crystallographer who became the lead artificer. A passionate romance blossomed between Camille and Hakim, who worried that the operation might remove her humanity. He proposed marriage and begged her to run away with him, creating a heartbreaking dilemma for Camille.\r\n\r\nStevan, needing Camille to execute his vision, manipulated the situation. He staged an attack on himself. Seeing her bruised and bloodied brother, Camille recognized what could happen when her attention was divided. She ended her relationship with Hakim, insisting the surgery proceed: For family, she would give.\r\n\r\nHakim performed the operation, excising Camille's heart and replacing it with a Hextech one, then resigned, leaving her alone upon waking.\r\n\r\nCamille dedicated herself entirely to her duty. She underwent further refinements, including bladed legs and grapple-spindled hips, transforming more and more into a machine. Over the years, her missions grew darker and deadlier.\r\n\r\nEventually, she uncovered the depth of Stevan’s betrayal (the staged attack and his machinations) and realized his actions no longer served the clan's best interests. She discarded the last sentiment she felt toward her brother and installed her favorite grand-niece as clan master.\r\n\r\nNow, Camille manages both the public affairs and the shady operations. She has accepted her transformation and the cutting judgment it affords her. Despite a strange, mournful keening she sometimes feels in her Hextech heart, she refuses to sit idle, gaining invigoration from well-executed industrial espionage, fresh-brewed tea, and long walks in the Zaun Gray.",
+  "spells_en": [
+    {
+      "id": "CamilleQ",
+      "name": "Precision Protocol",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 96,
+        "full": "CamilleQ.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Camille's next Attack deals an additional <physicalDamage>{{ bonusdamage }} physical damage</physicalDamage> and grants her <speed>{{ msbonus*100 }}% Move Speed</speed> for {{ msduration }} second. This ability can be <recast>Recast</recast> in the next {{ qtotalrecasttime }} seconds.<br /><br />If the <recast>Recast</recast> Attack hits at least {{ qrampuptime }} seconds after the first, the bonus damage is increased to <physicalDamage>{{ empoweredbonusdamage }}</physicalDamage> and {{ damageconversionpercentage }} of the Attack's damage is converted into <trueDamage>true damage</trueDamage>.<br /><br /><rules>This Ability triggers spell effects upon dealing damage.</rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "25",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Total AD Ratio",
+          "Move Speed",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "325",
+      "datavalues": {},
+      "description": "Camille's next attack deals bonus damage and grants bonus Move Speed. This spell can be recast for a short period of time, doing significantly increased bonus damage if Camille delays a period of time between the two attacks.",
+      "cooldownBurn": "9/8/7/6/5"
+    },
+    {
+      "id": "CamilleW",
+      "name": "Tactical Sweep",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 96,
+        "full": "CamilleW.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Camille winds up and slices, dealing <physicalDamage>{{ basedamagetotal }} physical damage</physicalDamage>.<br /><br />Enemies hit by the outer half are <status>Slowed</status> by {{ slowpercentage }}% decaying over {{ slowduration }} seconds, and they take an additional <physicalDamage>{{ outeredgetooltip }} max Health physical damage</physicalDamage>. Camille restores <healing>{{ outerconehealingratio }}% of the bonus damage dealt to champions as Health</healing>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "@AbilityResourceName@ Cost",
+          "Damage",
+          "Maximum Health Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "610",
+      "datavalues": {},
+      "description": "Camille blasts in a cone after a delay, dealing damage. Enemies in the outer half are slowed and take extra damage, while also healing Camille.",
+      "cooldownBurn": "15/14/13/12/11"
+    },
+    {
+      "id": "CamilleE",
+      "name": "Hookshot",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 96,
+        "full": "CamilleE.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Camille fires a hookshot that attaches to terrain, pulling her to it for 1 second and allowing this Ability to be <recast>Recast</recast>.<br /><br /><recast>Recast:</recast> Camille dashes from the wall, colliding with the first enemy champion hit. Upon landing, she deals <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> to nearby enemies and <status>Stuns</status> enemy champions for {{ knockupduration }} seconds. Dashes towards enemy champions travel twice as far and grant <attackSpeed>{{ asbuff*100 }}% Attack Speed</attackSpeed> for {{ asduration }} seconds on impact.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage",
+          "Attack Speed"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Camille pulls herself to a wall, leaping off and knocking up enemy champions upon landing.",
+      "cooldownBurn": "16/15/14/13/12"
+    },
+    {
+      "id": "CamilleR",
+      "name": "The Hextech Ultimatum",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 96,
+        "full": "CamilleR.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Camille briefly becomes Untargetable and leaps onto an enemy champion, interrupting channels and locking them into an area they cannot escape by any means for {{ rduration }} seconds. Other nearby enemies are <status>Knocked Away</status>. Her Attacks against the trapped enemy deal an additional <magicDamage>{{ rpercentcurrenthpdamage }}% current Health magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Current Health Damage",
+          "Duration",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "475",
+      "datavalues": {},
+      "description": "Camille dashes to target champion, anchoring them to the area. She also deals bonus magic damage to the target with her basic attacks.",
+      "cooldownBurn": "140/115/90"
+    }
+  ],
+  "passive_en": {
+    "name": "Adaptive Defenses",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 48,
+      "y": 96,
+      "full": "Camille_Passive.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Basic attacks on champions grant a shield equal to a percentage of Camille's maximum health against their damage type (Physical or Magic) for a brief duration."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Top"
+  ],
+  "skins_en": [
+    {
+      "id": "164000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "164001",
+      "num": 1,
+      "name": "Program Camille",
+      "chromas": false
+    },
+    {
+      "id": "164002",
+      "num": 2,
+      "name": "Coven Camille",
+      "chromas": true
+    },
+    {
+      "id": "164010",
+      "num": 10,
+      "name": "iG Camille",
+      "chromas": true
+    },
+    {
+      "id": "164011",
+      "num": 11,
+      "name": "Arcana Camille",
+      "chromas": true
+    },
+    {
+      "id": "164021",
+      "num": 21,
+      "name": "Strike Commander Camille",
+      "chromas": true
+    },
+    {
+      "id": "164031",
+      "num": 31,
+      "name": "Winterblessed Camille",
+      "chromas": true
+    },
+    {
+      "id": "164032",
+      "num": 32,
+      "name": "Prestige Winterblessed Camille",
+      "chromas": false
+    }
+  ]
+}

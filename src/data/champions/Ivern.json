@@ -1,0 +1,391 @@
+{
+  "id": "Ivern",
+  "key": "427",
+  "name": "Ivern",
+  "title": "Aîné de la forêt",
+  "version": "15.23.1",
+  "lore": "Ivern le Cruel était un féroce guerrier et lieutenant des anciens Vorrijaard (une tribu du Freljord). Son clan refusait de se plier aux Trois Sœurs. Pour obtenir le pouvoir nécessaire pour vaincre leurs ennemis, Ivern et les siens se lancèrent dans une expédition à l'est, à la recherche de la terre d'où toute la magie était censée provenir.\n\nSa flotte arriva sur les rives d'Ionia. Après avoir ravagé plusieurs colonies côtières, Ivern et ses guerriers découvrirent un bosquet sacré, l'Omikayalan, le « Cœur du Monde ». Ils y rencontrèrent une résistance féroce de la part d'êtres chimériques, mi-humains mi-bêtes.\n\nImperturbable, Ivern atteignit ce que les Ioniens vénéraient : le légendaire Saule divin (God-Willow). Transfixé par la magie émanant de l'arbre colossal, Ivern décida de le détruire pour briser la volonté de ses défenseurs. Il brandit sa hache et frappa l'arbre, jusqu'à ce que le grand Saule tombe.\n\nDans une explosion chaotique d'énergie vitale, Ivern le Cruel fut instantanément défait.\n\nIl se retrouva détaché, flottant, témoin de la fin de la bataille. Il observa la mort se transformer en vie : les restes des corps nourrissaient les charognards, puis le sol fertile, et des graines germaient en arbres porteurs de fruits. Il n'avait jamais vu une telle beauté. La vie, sous toutes ses formes, était inextricablement mêlée.\n\nIvern pleura des larmes de rosée qui tombèrent sur son corps transformé. Il réalisa qu'il était devenu plus grand, ses membres recouverts d'écorce et de feuilles. La magie du Saule divin coulait en lui ; il était tout ce qui restait de l'arbre.\n\nSubmergé par le remords, il entendit le gémissement des collines et le hurlement des arbres, et pleura pour le pardon.\n\nLorsqu'il put enfin bouger, un temps immense s'était écoulé. La violence et la tristesse de son ancien moi n'étaient que de lointains échos. Il découvrit qu'il pouvait s'enraciner dans le sol et communiquer avec la nature.\n\nIvern erra loin, et la magie de l'Omikayalan le suivait. Il noua des liens étroits avec les créatures, grandes et petites, offrant son aide. Il se fit une amie dévouée d'un golem de pierre blessé, Daisy, lui donnant un nouveau cœur fait d'un galet de rivière.\n\nBien qu'il rencontra des mortels qui l'appelèrent Père Vert ou Aîné de la forêt, il fut attristé de constater leur cruauté et leur insouciance, et se retira de leur compagnie. Portant l'héritage du Saule divin, il se donne pour mission de cultiver l'humanité — les aider à grandir et à devenir meilleurs. Sachant que ce sera difficile, il est néanmoins confiant, car il sait qu'il a tout le temps devant lui pour accomplir sa tâche avant le dernier coucher de soleil.",
+  "tags": [
+    "Support",
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 384,
+    "y": 48,
+    "full": "Ivern.png",
+    "group": "champion",
+    "sprite": "champion1.png"
+  },
+  "skins": [
+    {
+      "id": "427000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "427001",
+      "num": 1,
+      "name": "Ivern roi des bonbons",
+      "chromas": false
+    },
+    {
+      "id": "427002",
+      "num": 2,
+      "name": "Ivern roi du dunk",
+      "chromas": true
+    },
+    {
+      "id": "427011",
+      "num": 11,
+      "name": "Ivern dieu ancien",
+      "chromas": true
+    },
+    {
+      "id": "427020",
+      "num": 20,
+      "name": "Ivern astronaute",
+      "chromas": true
+    },
+    {
+      "id": "427030",
+      "num": 30,
+      "name": "Ivern fleur spirituelle",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "IvernQ",
+      "name": "Enracinement",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 48,
+        "full": "IvernQ.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ivern projette une racine, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> et <status>immobilisant</status> le premier ennemi touché pendant {{ rootduration }} sec. Les alliés qui attaquent un ennemi ainsi <status>immobilisé</status> se ruent à portée d'attaque. <br /><br /><recast>Réactivation :</recast> Ivern se rue directement sur l'ennemi <status>immobilisé</status>.<br /><br /><rules>Toucher des monstres non épiques réduit de 50% le délai de récupération d'<spellName>Enracinement</spellName>.</rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Durée de l'immobilisation",
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1125",
+      "datavalues": {},
+      "description": "Ivern projette une racine, infligeant des dégâts et immobilisant les cibles ennemies touchées. Les alliés d'Ivern peuvent foncer vers la cible immobilisée.",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "IvernW",
+      "name": "Main verte",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 48,
+        "full": "IvernW.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "3",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> dans les hautes herbes et pendant {{ buffduration }} sec après être sorti des hautes herbes, les attaques d'Ivern infligent <magicDamage>{{ totaldamage }} pts de dégâts magiques supplémentaires</magicDamage>. Les alliés proches gagnent cet effet pendant {{ allybuffduration }} sec et infligent <magicDamage>{{ totalallydamage }} pts de dégâts magiques</magicDamage>.<br /><br /><spellActive>Active :</spellActive> Ivern fait pousser une parcelle de hautes herbes et révèle la zone pendant {{ revealduration }} sec. Cette parcelle persiste jusqu'à ce que l'équipe d'Ivern perde la vision de ce qui s'y trouve, ou pendant {{ maxbrushduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts magiques",
+          "Dégâts magiques des alliés"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1150",
+      "datavalues": {},
+      "description": "Dans les hautes herbes, les attaques d'Ivern et de ses alliés proches infligent des dégâts magiques supplémentaires. Ivern peut activer cette compétence pour créer une parcelle d'herbes hautes.",
+      "cooldownBurn": "0.5"
+    },
+    {
+      "id": "IvernE",
+      "name": "Graine à retardement",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 48,
+        "full": "IvernE.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ivern octroie un <shield>bouclier de {{ totalshield }} PV</shield> à un champion allié ou à Marguerite. Au bout de {{ slowduration }} sec, le bouclier explose, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> et <status>ralentissant</status> les ennemis de {{ slowamount*100 }}% pendant {{ shieldduration }} sec.<br /><br />Si aucun champion ennemi n'est touché par l'explosion de <spellName>Graine à retardement</spellName> tant que le bouclier persiste, l'allié gagne un bouclier de <shield>{{ totalshield }} PV</shield> pendant {{ shieldduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "PV du bouclier",
+          "Dégâts",
+          "Ralentissement",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "750",
+      "datavalues": {},
+      "description": "Ivern offre à un allié un bouclier qui explose après un court instant, ralentissant et blessant les ennemis. Le bouclier se réinitialise s'il ne touche aucun ennemi.",
+      "cooldownBurn": "11/10/9/8/7"
+    },
+    {
+      "id": "IvernR",
+      "name": "Marguerite !",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 48,
+        "full": "IvernR.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Ivern invoque son amie Marguerite, une sentinelle, pour qu'elle bondisse dans la mêlée pendant {{ daisyduration }} sec.<br /><br /><spellActive>Marguerite, écrase ! :</spellActive> la 3e attaque consécutive de Marguerite contre un même champion ou monstre épique déclenche une onde de choc, infligeant <magicDamage>{{ totalshockwavedamage }} pts de dégâts magiques</magicDamage> à tous les ennemis touchés en plus de les <status>projeter dans les airs</status> pendant {{ shockwaveccduration }} sec. Cet effet ne peut se produire qu'une fois toutes les {{ shockwavecd }} sec.<br /><br /><recast>Réactivation :</recast> Ivern ordonne à Marguerite d'attaquer ou de se déplacer.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts d'attaque",
+          "Dégâts de l'onde de choc",
+          "Bonus en vitesse d'attaque de Marguerite",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Ivern invoque son amie Marguerite, une sentinelle, pour qu'elle combatte à ses côtés. Relancez la compétence pour ordonner à Marguerite d'attaquer ou de se déplacer.",
+      "cooldownBurn": "140/130/120"
+    }
+  ],
+  "passive": {
+    "name": "Ami de la forêt",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 384,
+      "y": 48,
+      "full": "IvernP.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Ivern ne peut pas attaquer ou être attaqué par les monstres non épiques. Ivern peut créer des bosquets magiques qui se développent progressivement sur les camps de monstres. Quand le bosquet est pleinement développé, Ivern peut libérer les monstres pour recevoir des PO et de l'expérience."
+  },
+  "created_at": "2025-11-26T15:13:33.248576+00:00",
+  "factions": [
+    "ionia"
+  ],
+  "custom_tags": null,
+  "gender": "Male",
+  "species": "Magically Altered Human",
+  "title_en": "the Green Father",
+  "lore_en": "Ivern the Cruel was a fierce warrior and lieutenant in the ancient Vorrijaard (a Freljordian tribe). His clan refused to kneel to the Three Sisters. To seize the power needed to break their foes, Ivern and his kin set sail into the east, searching for the land from where all magic was said to flow.\n\nHis fleet arrived on the shores of Ionia. After cleaving through several coastal settlements, Ivern and his warriors discovered a sacred grove, Omikayalan, \"the Heart of the World.\" They met fierce resistance there from chimeric beings, half-human, half-beast.\n\nUndeterred, Ivern pressed on until the battered remnants of his expedition reached what the Ionians held so sacred: the legendary God-Willow. Ivern was transfixed by the magic of the colossal tree. Seeking to shatter his enemies' resolve, he took up his war axe and struck the God-Willow over and over again until the great tree fell.\n\nIn a riot of life-energy, Ivern the Cruel was instantly undone.\n\nHe found himself detached, drifting, witnessing the battle's aftermath. He watched death explode into life: the flesh of the fallen fed scavengers, decaying into fertile soil, and seeds sprouted into fruit-bearing trees. He had never beheld such beauty. Life, in all its forms, was tangled together like an impossible knot.\n\nIvern wept, and those dewdrop tears fell upon his changed body. He realized he was taller than he remembered, his limbs rough with bark and leaves. The magic of the God-Willow coursed through him; he was all that now remained of the tree.\n\nWashed over by remorse, he heard the bawling of hills and the howling of trees, and cried out for forgiveness.\n\nWhen he finally moved, vast time had passed. The violence and sadness of his former self were mere echoes. He found he could dig his toes deep into the soil and commune with nature.\n\nIvern wandered far, and the strange magic of Omikayalan followed his wake. He developed close kinships with creatures great and small, offering a helping hand. He made a devoted life-friend of a wounded stone golem, Daisy, fashioning her a new heart from a river pebble.\n\nThough he met mortals who called him Green Father or Old Woodsman, he was saddened to see how cruel and careless they still were, and retreated from their company. Bearing the God-Willow's legacy, he made it his mission to cultivate humanity—to help them watch, listen, and grow. Knowing this will be difficult, he smiles, confident that he has time to complete this task before the final sunset.",
+  "spells_en": [
+    {
+      "id": "IvernQ",
+      "name": "Rootcaller",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 48,
+        "full": "IvernQ.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ivern conjures a vine dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> and <status>Rooting</status> the first enemy hit for {{ rootduration }} seconds. Allies that Attack a <status>Rooted</status> enemy dash into Attack Range. <br /><br /><recast>Recast:</recast> Ivern dashes directly onto the <status>Rooted</status> enemy.<br /><br /><rules>Hitting non-epic monsters reduces <spellName>Rootcaller's</spellName> cooldown by 50%.</rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Root Duration",
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1125",
+      "datavalues": {},
+      "description": "Ivern conjures a vine, dealing damage and rooting enemy targets hit. Ivern's allies can dash to the rooted target.",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "IvernW",
+      "name": "Brushmaker",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 48,
+        "full": "IvernW.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "3",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> While in brush and for {{ buffduration }} seconds after leaving, Ivern's Attacks deal an additional <magicDamage>{{ totaldamage }} magic damage</magicDamage>. Nearby allies will gain this effect for {{ allybuffduration }} seconds and deal <magicDamage>{{ totalallydamage }} magic damage</magicDamage>.<br /><br /><spellActive>Active:</spellActive> Ivern grows a patch of Brush, revealing the area for {{ revealduration }} seconds. The Brush persists until Ivern's team loses vision within it, or up to {{ maxbrushduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Magic Damage",
+          "Ally Magic Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1150",
+      "datavalues": {},
+      "description": "In brush, Ivern and his nearby allies attacks deal bonus magic damage. Ivern can activate this ability to create a patch of brush.",
+      "cooldownBurn": "0.5"
+    },
+    {
+      "id": "IvernE",
+      "name": "Triggerseed",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 48,
+        "full": "IvernE.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ivern grants <shield>{{ totalshield }} Shield</shield> to an ally champion or Daisy. After {{ shieldduration }} seconds, it bursts, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> and <status>Slowing</status> enemies by {{ slowamount*100 }}% for {{ slowduration }} seconds.<br /><br />If <spellName>Triggerseed</spellName> detonates and no enemy champions are hit while the shield still persists, the ally will be shielded for <shield>{{ totalshield }} </shield>for {{ shieldduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Shield Amount",
+          "Damage",
+          "Slow",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "750",
+      "datavalues": {},
+      "description": "Ivern places a shield on an ally which explodes after a short duration slowing and damaging enemies. The shield refreshes if it hits no enemies.",
+      "cooldownBurn": "11/10/9/8/7"
+    },
+    {
+      "id": "IvernR",
+      "name": "Daisy!",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 48,
+        "full": "IvernR.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Ivern summons his sentinel friend Daisy to leap into the fray for {{ daisyduration }} seconds.<br /><br /><spellActive>Daisy, Slam!:</spellActive> Daisy's 3rd consecutive Attack on the same champion or epic monster will launch a shockwave, dealing<magicDamage> {{ totalshockwavedamage }} magic damage</magicDamage> to all enemies hit as well as <status>Knocking Up</status> for {{ shockwaveccduration }} second. This effect can only occur once every {{ shockwavecd }} seconds.<br /><br /><recast>Recast:</recast> Instruct Daisy to Attack or move.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Attack Damage",
+          "Shockwave Damage",
+          "Daisy Bonus Attack Speed",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Ivern summons his Sentinel friend Daisy to fight with him. Re-cast command Daisy to attack or move.",
+      "cooldownBurn": "140/130/120"
+    }
+  ],
+  "passive_en": {
+    "name": "Friend of the Forest",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 384,
+      "y": 48,
+      "full": "IvernP.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Ivern cannot attack or be attacked by non-epic monsters. Ivern can create magical groves on jungle camps which grow over time. When the grove is fully grown, Ivern may free the monsters to receive gold and experience."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "427000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "427001",
+      "num": 1,
+      "name": "Candy King Ivern",
+      "chromas": false
+    },
+    {
+      "id": "427002",
+      "num": 2,
+      "name": "Dunkmaster Ivern",
+      "chromas": true
+    },
+    {
+      "id": "427011",
+      "num": 11,
+      "name": "Old God Ivern",
+      "chromas": true
+    },
+    {
+      "id": "427020",
+      "num": 20,
+      "name": "Astronaut Ivern",
+      "chromas": true
+    },
+    {
+      "id": "427030",
+      "num": 30,
+      "name": "Spirit Blossom Ivern",
+      "chromas": false
+    }
+  ]
+}

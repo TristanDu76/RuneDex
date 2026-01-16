@@ -1,0 +1,497 @@
+{
+  "id": "Ryze",
+  "key": "13",
+  "name": "Ryze",
+  "title": "Mage runique",
+  "version": "15.23.1",
+  "lore": "Largement considéré comme l'un des plus puissants sorciers de Runeterra, Ryze est un archimage endurci par les ans qui porte un fardeau incommensurable sur ses épaules. Armé d'une constitution à toute épreuve et d'un vaste arsenal de connaissances mystiques, il consacre sa vie à rassembler les Runes telluriques, les fragments de magie brute qui ont jadis servi à façonner le monde. Ryze doit récupérer ces reliques avant qu'elles ne tombent entre de mauvaises mains, car il sait quel genre d'horreurs elles pourraient déchaîner sur Runeterra.",
+  "tags": [
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 144,
+    "y": 96,
+    "full": "Ryze.png",
+    "group": "champion",
+    "sprite": "champion3.png"
+  },
+  "skins": [
+    {
+      "id": "13000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "13001",
+      "num": 1,
+      "name": "Ryze jeune",
+      "chromas": false
+    },
+    {
+      "id": "13002",
+      "num": 2,
+      "name": "Ryze tribal",
+      "chromas": false
+    },
+    {
+      "id": "13003",
+      "num": 3,
+      "name": "Oncle Ryze",
+      "chromas": false
+    },
+    {
+      "id": "13004",
+      "num": 4,
+      "name": "Ryze triomphant",
+      "chromas": false
+    },
+    {
+      "id": "13005",
+      "num": 5,
+      "name": "Ryze professeur",
+      "chromas": false
+    },
+    {
+      "id": "13006",
+      "num": 6,
+      "name": "Ryze zombie",
+      "chromas": false
+    },
+    {
+      "id": "13007",
+      "num": 7,
+      "name": "Ryze au cristal noir",
+      "chromas": false
+    },
+    {
+      "id": "13008",
+      "num": 8,
+      "name": "Ryze pirate",
+      "chromas": false
+    },
+    {
+      "id": "13009",
+      "num": 9,
+      "name": "Ryze barbe blanche",
+      "chromas": false
+    },
+    {
+      "id": "13010",
+      "num": 10,
+      "name": "SKT T1 Ryze",
+      "chromas": true
+    },
+    {
+      "id": "13011",
+      "num": 11,
+      "name": "Ryze des Worlds 2019",
+      "chromas": true
+    },
+    {
+      "id": "13013",
+      "num": 13,
+      "name": "Ryze gardien des sables",
+      "chromas": true
+    },
+    {
+      "id": "13020",
+      "num": 20,
+      "name": "Ryze des arcanes",
+      "chromas": true
+    },
+    {
+      "id": "13029",
+      "num": 29,
+      "name": "Ryze lune de sang",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "RyzeQWrapper",
+      "name": "Court-circuit",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 144,
+        "full": "RyzeQWrapper.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> <spellName>Prison runique</spellName> et <spellName>Flux envoûtant</spellName> mettent fin au délai de récupération de cette compétence et chargent une rune pendant {{ runeduration }} sec (max : {{ maximumrunes }} runes).<br /><br /><spellActive>Active :</spellActive> Ryze lance un projectile magique qui inflige <magicDamage>{{ qdamagecalc }} pts de dégâts magiques</magicDamage> au premier ennemi touché. Si la cible était marquée par <keywordMajor>Flux</keywordMajor>, la marque est consommée, ce qui permet à cette compétence d'infliger {{ spell.ryzer:overloaddamagebonus }}% de dégâts supplémentaires et de rebondir vers les ennemis proches marqués par <keywordMajor>Flux</keywordMajor>.<br /><br />Ryze décharge également toutes les runes, ce qui lui octroie <speed>+{{ movementspeedamount }}% de vitesse de déplacement</speed> pendant {{ movementspeedduration }} sec si {{ maximumrunes }} runes étaient chargées.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/38/36/34/32",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Vitesse de déplacement",
+          "Coût en mana"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Passivement, les autres compétences de base de Ryze réinitialisent le délai de récupération de Court-circuit et chargent une rune. Lorsque Ryze lance Court-circuit avec deux runes chargées, il gagne un bref bonus en vitesse de déplacement.<br><br>À l'activation, Ryze tire une décharge de pure énergie en ligne droite, infligeant des dégâts au premier ennemi touché. Si la cible est marquée par Flux, Court-circuit inflige des dégâts supplémentaires et rebondit vers les ennemis proches marqués par Flux.",
+      "cooldownBurn": "5"
+    },
+    {
+      "id": "RyzeW",
+      "name": "Prison runique",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 144,
+        "full": "RyzeW.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ryze inflige <magicDamage>{{ wdamagecalc }} pts de dégâts magiques</magicDamage> et <status>ralentit</status> la cible de {{ slowamount*100 }}% pendant {{ ccduration }} sec. Si la cible était marquée par <keywordMajor>Flux</keywordMajor>, la marque est consommée et le <status>ralentissement</status> de cette compétence est remplacé par une <status>immobilisation</status>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/60/70/80/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "Coût en mana"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "615",
+      "datavalues": {},
+      "description": "Ryze piège une cible dans une prison de runes, lui infligeant des dégâts et ralentissant ses déplacements. Si la cible est marquée par Flux, elle est immobilisée au lieu d'être ralentie.",
+      "cooldownBurn": "11/10.5/10/9.5/9"
+    },
+    {
+      "id": "RyzeE",
+      "name": "Flux envoûtant",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 144,
+        "full": "RyzeE.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ryze lance un orbe qui inflige <magicDamage>{{ edamagecalc }} pts de dégâts magiques</magicDamage> et applique <keywordMajor>Flux</keywordMajor> pendant {{ debuffduration }} sec sur la cible et les ennemis proches. Les ennemis déjà marqués par <keywordMajor>Flux</keywordMajor> répandent la marque encore plus loin.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "35/45/55/65/75",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "Coût en mana"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "615",
+      "datavalues": {},
+      "description": "Ryze projette un orbe de pure énergie magique qui blesse une cible et marque les ennemis proches de sa cible. Les compétences de Ryze ont des effets supplémentaires sur les ennemis marqués.",
+      "cooldownBurn": "3.5/3.25/3/2.75/2.5"
+    },
+    {
+      "id": "RyzeR",
+      "name": "Portail transdimensionnel",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 144,
+        "full": "RyzeR.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellPassive>Passive :</spellPassive> le bonus de dégâts de <spellName>Court-circuit</spellName> contre les cibles marquées par <keywordMajor>Flux</keywordMajor> est augmenté à {{ overloaddamagebonus }}%.<br /><br /><spellActive>Active :</spellActive> Ryze ouvre un portail menant à un autre endroit. Après {{ chargetimetooltip }} sec, tous les alliés proches du portail sont téléportés à cet endroit.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Augmentation des dégâts de Court-circuit"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "3000",
+      "datavalues": {},
+      "description": "Passivement, Court-circuit inflige des dégâts supplémentaires aux cibles marquées par Flux.<br><br>À l'incantation, Ryze ouvre un portail menant à un endroit proche. Quelques secondes plus tard, tous les alliés près du portail sont transportés à l'endroit ciblé.",
+      "cooldownBurn": "180/160/140"
+    }
+  ],
+  "passive": {
+    "name": "Maîtrise des arcanes",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 144,
+      "y": 96,
+      "full": "Ryze_P.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "<mainText>Les compétences de Ryze infligent des dégâts supplémentaires en fonction de son mana supplémentaire, et son mana max est augmenté d'un pourcentage en fonction de sa puissance.</mainText>"
+  },
+  "created_at": "2025-11-26T15:13:34.800791+00:00",
+  "factions": [
+    "runeterra"
+  ],
+  "custom_tags": [
+    "vagabond"
+  ],
+  "gender": "Male",
+  "species": "Human",
+  "title_en": "the Rune Mage",
+  "lore_en": "Widely considered one of the most adept sorcerers on Runeterra, Ryze is an ancient, hard-bitten archmage with an impossibly heavy burden to bear. Armed with immense arcane power and a boundless constitution, he tirelessly hunts for World Runes—fragments of the raw magic that once shaped the world from nothingness. He must retrieve these artifacts before they fall into the wrong hands, for Ryze understands the horrors they could unleash on Runeterra.",
+  "spells_en": [
+    {
+      "id": "RyzeQWrapper",
+      "name": "Overload",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 144,
+        "full": "RyzeQWrapper.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> <spellName>Rune Prison</spellName> and <spellName>Spell Flux</spellName> refresh this Ability's Cooldown and charge a rune for {{ runeduration }} seconds (max {{ maximumrunes }} runes).<br /><br /><spellActive>Active:</spellActive> Ryze unleashes a blast, dealing <magicDamage>{{ qdamagecalc }} magic damage</magicDamage> to the first enemy hit. If the target has <keywordMajor>Flux</keywordMajor> on it, it is consumed, causing this Ability to deal {{ spell.ryzer:overloaddamagebonus }}% increased damage and bounces to nearby enemies with <keywordMajor>Flux</keywordMajor>.<br /><br />Ryze also discharges all runes, granting Ryze <speed>{{ movementspeedamount }}% Move Speed</speed> for {{ movementspeedduration }} seconds if {{ maximumrunes }} runes were charged.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/38/36/34/32",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Move Speed",
+          "Mana Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Passively, Ryze's other basic abilities reset the cooldown of Overload and charge a rune. When Ryze casts Overload with 2 runes charged, he gains a brief burst of Move Speed.<br><br>On cast, Ryze throws a charge of pure energy in a line, dealing damage to the first enemy struck. If the target has Flux on it, Overload deals extra damage and bounces to nearby enemies with Flux.",
+      "cooldownBurn": "5"
+    },
+    {
+      "id": "RyzeW",
+      "name": "Rune Prison",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 144,
+        "full": "RyzeW.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ryze deals <magicDamage>{{ wdamagecalc }} magic damage</magicDamage> and <status>Slows</status> by {{ slowamount*100 }}% for {{ ccduration }} seconds. If the target has <keywordMajor>Flux</keywordMajor>, it is consumed and this Ability <status>Roots</status> instead of <status>Slowing</status>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/60/70/80/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "Mana Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "615",
+      "datavalues": {},
+      "description": "Ryze traps a target in a cage of runes, damaging them and slowing their movement. If the target has Flux on it, they are instead rooted.",
+      "cooldownBurn": "11/10.5/10/9.5/9"
+    },
+    {
+      "id": "RyzeE",
+      "name": "Spell Flux",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 144,
+        "full": "RyzeE.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ryze fires an orb, dealing <magicDamage>{{ edamagecalc }} magic damage</magicDamage> and applies <keywordMajor>Flux</keywordMajor> for {{ debuffduration }} seconds to the target and nearby enemies. Enemies already afflicted with <keywordMajor>Flux</keywordMajor> will cause it to spread further.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "35/45/55/65/75",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "Mana Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "615",
+      "datavalues": {},
+      "description": "Ryze releases an orb of pure magical power that damages an enemy and debuffs all nearby enemies. Ryze's spells have additional effects against the debuffed enemy.",
+      "cooldownBurn": "3.5/3.25/3/2.75/2.5"
+    },
+    {
+      "id": "RyzeR",
+      "name": "Realm Warp",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 144,
+        "full": "RyzeR.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellPassive>Passive:</spellPassive> <spellName>Overload</spellName> damage bonus against targets with <keywordMajor>Flux</keywordMajor> increased to {{ overloaddamagebonus }}%.<br /><br /><spellActive>Active:</spellActive> Ryze opens a portal to another location. After {{ chargetimetooltip }} seconds, all allies near the portal are teleported to that location.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Overload Damage Increase"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "3000",
+      "datavalues": {},
+      "description": "Passively, Overload deals even more damage against targets with Flux.<br><br>On cast, Ryze creates a portal to a nearby location. After a few seconds, allies standing near the portal are teleported to the target location.",
+      "cooldownBurn": "180/160/140"
+    }
+  ],
+  "passive_en": {
+    "name": "Arcane Mastery",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 144,
+      "y": 96,
+      "full": "Ryze_P.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "<mainText>Ryze's spells deal extra damage based on his Bonus Mana, and he gains a percentage increase to his maximum Mana based on his Ability Power.</mainText>"
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Mid",
+    "Top"
+  ],
+  "skins_en": [
+    {
+      "id": "13000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "13001",
+      "num": 1,
+      "name": "Young Ryze",
+      "chromas": false
+    },
+    {
+      "id": "13002",
+      "num": 2,
+      "name": "Tribal Ryze",
+      "chromas": false
+    },
+    {
+      "id": "13003",
+      "num": 3,
+      "name": "Uncle Ryze",
+      "chromas": false
+    },
+    {
+      "id": "13004",
+      "num": 4,
+      "name": "Triumphant Ryze",
+      "chromas": false
+    },
+    {
+      "id": "13005",
+      "num": 5,
+      "name": "Professor Ryze",
+      "chromas": false
+    },
+    {
+      "id": "13006",
+      "num": 6,
+      "name": "Zombie Ryze",
+      "chromas": false
+    },
+    {
+      "id": "13007",
+      "num": 7,
+      "name": "Dark Crystal Ryze",
+      "chromas": false
+    },
+    {
+      "id": "13008",
+      "num": 8,
+      "name": "Pirate Ryze",
+      "chromas": false
+    },
+    {
+      "id": "13009",
+      "num": 9,
+      "name": "Ryze Whitebeard",
+      "chromas": false
+    },
+    {
+      "id": "13010",
+      "num": 10,
+      "name": "SKT T1 Ryze",
+      "chromas": true
+    },
+    {
+      "id": "13011",
+      "num": 11,
+      "name": "Worlds 2019 Ryze",
+      "chromas": true
+    },
+    {
+      "id": "13013",
+      "num": 13,
+      "name": "Guardian of the Sands Ryze",
+      "chromas": true
+    },
+    {
+      "id": "13020",
+      "num": 20,
+      "name": "Arcana Ryze",
+      "chromas": true
+    },
+    {
+      "id": "13029",
+      "num": 29,
+      "name": "Blood Moon Ryze",
+      "chromas": true
+    }
+  ]
+}

@@ -1,0 +1,489 @@
+{
+  "id": "Leblanc",
+  "key": "7",
+  "name": "LeBlanc",
+  "title": "Manipulatrice",
+  "version": "15.23.1",
+  "lore": "LeBlanc est la matrone de la Rose noire (Black Rose), un ordre clandestin qui existe depuis plus longtemps que Noxus elle-même. Son identité est aussi insaisissable que ses illusions. Certains prétendent qu'elle est l'une des nombreuses dénominations de la femme pâle qui manipule le destin de l'empire depuis ses débuts.\n\nOrigines Antiques :\n\nLes légendes racontent qu'elle était une sorcière pâle et puissante qui, avant la fondation de Noxus, était un membre du cercle rapproché de l'Iron Revenant (Mordekaiser).\n\nElle trahit Mordekaiser en jurant de neutraliser la source de son pouvoir : la Bastion Immortelle (Immortal Bastion).\n\nElle est experte en illusion et son plus grand tour fut de faire oublier à Noxus le pouvoir arcanique qui sommeillait en son cœur, effaçant sa présence des pages de l'histoire autour de l'époque des Guerres runiques.\n\nLe Règne Secret à Noxus :\n\nLa Rose noire recrute les riches et les puissants, servant les intérêts clandestins de ceux qui manient la magie. LeBlanc utilise ses illusions pour apparaître partout à la fois et manipuler le cours des événements.\n\nSon influence sur les dirigeants de Noxus est constante :\n\nBoram Darkwill : La Rose noire a aidé Darkwill à prendre le trône. Lorsqu'il refusa leurs conseils, LeBlanc utilisa une mesure drastique : elle manipula le jeune Jericho Swain pour qu'il révèle l'implication du culte, et se laissa exécuter (en apparence) avec les conspirateurs. Elle revint ensuite vers Darkwill, lui promettant la vie éternelle et le corrompant lentement. Ensemble, ils firent en sorte que la réputation de Swain soit brisée en Ionia.\n\nJericho Swain : Cependant, Swain, renforcé par les savoirs interdits de la Bastion Immortelle, renversa Darkwill et s'empara du pouvoir. LeBlanc voit en lui un nouveau Grand Général qui n'est pas intéressé par son propre héritage, mais par la gloire de l'empire, le rendant plus difficile à corrompre. Elle se demande si elle n'a pas enfin trouvé un ennemi digne de ce nom.\n\nHéritage et Ambition :\n\nLes actions de LeBlanc ont poussé Runeterra au bord de la guerre totale à de nombreuses reprises (au Freljord, à Targon, à Shurima). La magie sombre se répand à nouveau, se rapprochant de Noxus. Son but est insaisissable, mais son influence découle de racines anciennes.\n\nLa véritable identité de LeBlanc reste un mystère : s'agit-il de la sorcière pâle originale, ou d'une de ses innombrables reflets creux créés par ses illusions ? Quoi qu'il en soit, la Rose noire n'a pas encore vraiment fleuri.",
+  "tags": [
+    "Assassin",
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 432,
+    "y": 0,
+    "full": "Leblanc.png",
+    "group": "champion",
+    "sprite": "champion2.png"
+  },
+  "skins": [
+    {
+      "id": "7000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "7001",
+      "num": 1,
+      "name": "LeBlanc cruelle",
+      "chromas": false
+    },
+    {
+      "id": "7002",
+      "num": 2,
+      "name": "LeBlanc prestigieuse",
+      "chromas": true
+    },
+    {
+      "id": "7003",
+      "num": 3,
+      "name": "LeBlanc du gui",
+      "chromas": false
+    },
+    {
+      "id": "7004",
+      "num": 4,
+      "name": "LeBlanc corvus",
+      "chromas": false
+    },
+    {
+      "id": "7005",
+      "num": 5,
+      "name": "LeBlanc sylvestre",
+      "chromas": false
+    },
+    {
+      "id": "7012",
+      "num": 12,
+      "name": "Programme LeBlanc",
+      "chromas": true
+    },
+    {
+      "id": "7019",
+      "num": 19,
+      "name": "iG LeBlanc",
+      "chromas": true
+    },
+    {
+      "id": "7020",
+      "num": 20,
+      "name": "LeBlanc de l'assemblée",
+      "chromas": true
+    },
+    {
+      "id": "7029",
+      "num": 29,
+      "name": "LeBlanc des Worlds 2020",
+      "chromas": true
+    },
+    {
+      "id": "7033",
+      "num": 33,
+      "name": "LeBlanc de l'assemblée prestige",
+      "chromas": false
+    },
+    {
+      "id": "7035",
+      "num": 35,
+      "name": "LeBlanc séductrice",
+      "chromas": true
+    },
+    {
+      "id": "7045",
+      "num": 45,
+      "name": "LeBlanc sorcière",
+      "chromas": true
+    },
+    {
+      "id": "7055",
+      "num": 55,
+      "name": "LeBlanc légende transcendée",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "LeblancQ",
+      "name": "Sceau de malveillance",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 48,
+        "full": "LeblancQ.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "LeBlanc lance un sceau sur un ennemi, lui infligeant <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage> et le marquant pendant {{ markduration }} sec.<br /><br />Blesser l'ennemi marqué avec une compétence fait exploser le sceau, ce qui inflige <magicDamage>{{ markdamage }} pts de dégâts magiques</magicDamage>.<br /><br />Si le sceau ou son explosion tue la cible, LeBlanc récupère {{ manarefund*100 }}% du coût en mana et réduit de {{ cooldownrefund*100 }}% le délai de récupération restant de cette compétence.<br /><br /><rules>Le sceau initial inflige {{ bonusminiondamage }} pts de dégâts supplémentaires aux sbires. </rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts du sceau",
+          "Dégâts de l'explosion"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "LeBlanc lance un sceau qui inflige des dégâts et qui marque la cible pendant 3.5 sec. Blesser la cible marquée avec une compétence fait exploser le sceau, infligeant des dégâts supplémentaires. Si le sceau ou son explosion tue la cible, LeBlanc récupère le coût en mana et réduit le délai de récupération restant de cette compétence.",
+      "cooldownBurn": "6"
+    },
+    {
+      "id": "LeblancW",
+      "name": "Distorsion",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 48,
+        "full": "LeblancW.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "LeBlanc se rue dans une direction, puis inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> aux ennemis proches. Pendant {{ e3 }} sec après la ruée, LeBlanc peut <recast>réactiver</recast> cette compétence.<br /><br /><recast>Réactivation :</recast> LeBlanc retourne à son point de départ.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/70/80/90/100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "LeBlanc fonce jusqu'à l'endroit visé, infligeant des dégâts aux ennemis proches de son point d'arrivée. Dans les 4 sec qui suivent, LeBlanc peut réactiver Distorsion pour retourner à son point de départ.",
+      "cooldownBurn": "15/13.75/12.5/11.25/10"
+    },
+    {
+      "id": "LeblancE",
+      "name": "Chaînes éthérées",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 48,
+        "full": "LeblancE.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "LeBlanc lance une chaîne qui s'attache au premier ennemi touché, infligeant <magicDamage>{{ initialdamage }} pts de dégâts magiques</magicDamage> et octroyant une <keywordStealth>vision pure</keywordStealth> de l'ennemi.<br /><br />Si l'ennemi reste enchaîné pendant {{ e3 }} sec, LeBlanc l'<status>immobilise</status> pendant {{ e4 }} sec et inflige <magicDamage>{{ delayeddamage }} pts de dégâts magiques</magicDamage> supplémentaires.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts de la chaîne",
+          "Dégâts à l'immobilisation",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "925",
+      "datavalues": {},
+      "description": "LeBlanc lance une chaîne qui s'attache au premier ennemi touché. Si la cible reste enchaînée pendant 1.5 sec, LeBlanc l'immobilise et lui inflige des dégâts supplémentaires.",
+      "cooldownBurn": "14/13.25/12.5/11.75/11"
+    },
+    {
+      "id": "LeblancR",
+      "name": "Imitation",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 48,
+        "full": "LeblancR.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "2",
+      "maxrank": 3,
+      "tooltip": "LeBlanc imite sa compétence la plus récente et la réutilise. La compétence imitée inflige plus de dégâts.<br /><br />Le <spellName>Sceau de malveillance imité</spellName> inflige <magicDamage>{{ rq1damage }} pts de dégâts magiques</magicDamage> à l'application et <magicDamage>{{ rq2damage }} pts de dégâts magiques</magicDamage> à l'explosion.<br />La <spellName>Distorsion imitée</spellName> inflige <magicDamage>{{ rwdamage }} pts de dégâts magiques</magicDamage>.<br />Les <spellName>Chaînes éthérées imitées</spellName> infligent <magicDamage>{{ re1damage }} pts de dégâts magiques</magicDamage> à l'ennemi touché, puis <magicDamage>{{ re2damage }} pts de dégâts magiques</magicDamage> lors de l'<status>immobilisation</status>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts de Sceau de malveillance/Chaînes éthérées imités",
+          "Dégâts de marque/immobilisation imitées",
+          "Dégâts de Distorsion imitée",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "LeBlanc imite l'une de ses compétences de base.",
+      "cooldownBurn": "45/35/25"
+    }
+  ],
+  "passive": {
+    "name": "Image miroir",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 432,
+      "y": 0,
+      "full": "LeblancP.Leblanc_Rework.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Quand LeBlanc tombe à moins de 40% de ses PV max, elle devient invisible pendant 1 sec et crée une Image miroir qui n'inflige aucun dégât et dure jusqu'à 8 sec."
+  },
+  "created_at": "2025-11-26T15:13:33.670998+00:00",
+  "factions": [
+    "noxus"
+  ],
+  "custom_tags": [
+    "rose-noire",
+    "manipulatrice"
+  ],
+  "gender": "Female",
+  "species": "Human",
+  "title_en": "the Deceiver",
+  "lore_en": "LeBlanc is the matron of the Black Rose, a clandestine order that has existed far longer than Noxus itself. Her identity is as intangible as her illusions. Some claim she is merely one of the many names of the pale woman who has manipulated the empire's destiny since its earliest days.\n\nAncient Origins:\n\nLegends say she was a powerful, pale sorceress who, before Noxus's founding, was a member of the inner circle of the Iron Revenant (Mordekaiser).\n\nShe betrayed Mordekaiser, vowing to neutralize the source of his power: the Immortal Bastion.\n\nShe is uniquely skilled in illusion, and her greatest trick was making Noxus forget the arcane power roiling in its own heart, erasing her presence from history around the time of the Rune Wars.\n\nThe Secret Reign in Noxus:\n\nThe Black Rose recruits the rich and powerful, serving the clandestine interests of those who can wield magic. LeBlanc uses her illusions to be everywhere at once and manipulate events.\n\nHer influence on Noxus's rulers is constant:\n\nBoram Darkwill: The Black Rose aided Darkwill's bid for the throne. When he refused their counsel, LeBlanc took drastic measures: she manipulated the young Jericho Swain into revealing the cult's involvement, and allowed herself to be executed (or so it seemed) with the conspirators. She later approached Darkwill, promising him eternal life and slowly poisoning his mind. Together, they ensured Swain's reputation would end in disgrace in Ionia.\n\nJericho Swain: However, Swain, emboldened by forbidden lore from within the Immortal Bastion, overthrew Darkwill and seized power. LeBlanc sees the new Grand General as someone uninterested in his own legacy but focused on the empire's glory, making him harder to corrupt. She wonders if she has finally found a worthy nemesis.\n\nLegacy and Ambition:\n\nLeBlanc's actions have pushed Runeterra to the brink of all-out war many times. The darkest magic is spreading again, circling closer to Noxus. Her ultimate goal is elusive, but her influence stems from ancient roots.\n\nLeBlanc's true identity remains a mystery: is she the original pale sorceress, or merely one of countless hollow reflections created by her illusions? Regardless, the Black Rose has yet to truly bloom.",
+  "spells_en": [
+    {
+      "id": "LeblancQ",
+      "name": "Sigil of Malice",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 48,
+        "full": "LeblancQ.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "LeBlanc projects a sigil to an enemy, dealing <magicDamage>{{ damage }} magic damage</magicDamage> and marking them for {{ markduration }} seconds.<br /><br />Damaging the marked enemy with an Ability detonates the sigil, dealing <magicDamage>{{ markdamage }} magic damage</magicDamage>.<br /><br />If either part kills the target, Leblanc refunds {{ manarefund*100 }}% of the Mana cost and {{ cooldownrefund*100 }}% of this spell's remaining Cooldown.<br /><br /><rules>The initial sigil deals an additional {{ bonusminiondamage }} damage to minions. </rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Sigil Damage",
+          "Detonation Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "LeBlanc projects a sigil, dealing damage and marking the target for 3.5 seconds. Damaging the marked target with an ability detonates the sigil, dealing additional damage. If either part kills the target, Leblanc refunds the Mana cost and part of this spell's remaining Cooldown.",
+      "cooldownBurn": "6"
+    },
+    {
+      "id": "LeblancW",
+      "name": "Distortion",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 48,
+        "full": "LeblancW.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "LeBlanc dashes then deals <magicDamage>{{ totaldamage }} magic damage</magicDamage> to nearby enemies. For {{ e3 }} seconds after dashing, LeBlanc can <recast>Recast</recast>.<br /><br /><recast>Recast:</recast> LeBlanc returns to her starting location.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/70/80/90/100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "LeBlanc dashes to a location, dealing damage to enemies near her destination. For the next 4 seconds, activate Distortion again to return LeBlanc to her starting location.",
+      "cooldownBurn": "15/13.75/12.5/11.25/10"
+    },
+    {
+      "id": "LeblancE",
+      "name": "Ethereal Chains",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 48,
+        "full": "LeblancE.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "LeBlanc launches a chain that shackles the first enemy hit, dealing <magicDamage>{{ initialdamage }} magic damage</magicDamage> and granting <keywordStealth>True Sight</keywordStealth>.<br /><br />If they remain shackled for {{ e3 }} seconds, LeBlanc <status>Roots</status> them for {{ e4 }} seconds and deals an additional <magicDamage>{{ delayeddamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Chain Damage",
+          "Root Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "925",
+      "datavalues": {},
+      "description": "LeBlanc launches a chain that shackles the first enemy hit. If the target remains shackled for 1.5 seconds, LeBlanc roots them and deals additional damage.",
+      "cooldownBurn": "14/13.25/12.5/11.75/11"
+    },
+    {
+      "id": "LeblancR",
+      "name": "Mimic",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 48,
+        "full": "LeblancR.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "2",
+      "maxrank": 3,
+      "tooltip": "LeBlanc mimics her most recent Ability, using it again. The mimicked Ability deals increased damage.<br /><br /><spellName>Mimicked Sigil of Malice</spellName> deals <magicDamage>{{ rq1damage }} magic damage</magicDamage> when applied, and <magicDamage>{{ rq2damage }} magic damage</magicDamage> when consumed.<br /><spellName>Mimicked Distortion</spellName> deals <magicDamage>{{ rwdamage }} magic damage</magicDamage>.<br /><spellName>Mimicked Ethereal Chains</spellName> deals <magicDamage>{{ re1damage }} magic damage</magicDamage> when shackled and <magicDamage>{{ re2damage }} magic damage</magicDamage> when <status>Rooting</status>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Mimicked Sigil of Malice / Ethereal Chains Damage",
+          "Mimicked Mark / Root Damage",
+          "Mimicked Distortion Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "LeBlanc casts a mimicked version of one of her basic spells.",
+      "cooldownBurn": "45/35/25"
+    }
+  ],
+  "passive_en": {
+    "name": "Mirror Image",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 432,
+      "y": 0,
+      "full": "LeblancP.Leblanc_Rework.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "When LeBlanc drops below 40% Health, she becomes invisible for 1 second and creates a Mirror Image that deals no damage and lasts for up to 8 seconds."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Mid",
+    "Support"
+  ],
+  "skins_en": [
+    {
+      "id": "7000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "7001",
+      "num": 1,
+      "name": "Wicked LeBlanc",
+      "chromas": false
+    },
+    {
+      "id": "7002",
+      "num": 2,
+      "name": "Prestigious LeBlanc",
+      "chromas": true
+    },
+    {
+      "id": "7003",
+      "num": 3,
+      "name": "Mistletoe LeBlanc",
+      "chromas": false
+    },
+    {
+      "id": "7004",
+      "num": 4,
+      "name": "Ravenborn LeBlanc",
+      "chromas": false
+    },
+    {
+      "id": "7005",
+      "num": 5,
+      "name": "Elderwood LeBlanc",
+      "chromas": false
+    },
+    {
+      "id": "7012",
+      "num": 12,
+      "name": "Program LeBlanc",
+      "chromas": true
+    },
+    {
+      "id": "7019",
+      "num": 19,
+      "name": "iG LeBlanc",
+      "chromas": true
+    },
+    {
+      "id": "7020",
+      "num": 20,
+      "name": "Coven LeBlanc",
+      "chromas": true
+    },
+    {
+      "id": "7029",
+      "num": 29,
+      "name": "Worlds 2020 LeBlanc",
+      "chromas": true
+    },
+    {
+      "id": "7033",
+      "num": 33,
+      "name": "Prestige Coven LeBlanc",
+      "chromas": false
+    },
+    {
+      "id": "7035",
+      "num": 35,
+      "name": "Debonair LeBlanc",
+      "chromas": true
+    },
+    {
+      "id": "7045",
+      "num": 45,
+      "name": "Bewitching LeBlanc",
+      "chromas": true
+    },
+    {
+      "id": "7055",
+      "num": 55,
+      "name": "Risen Legend LeBlanc",
+      "chromas": true
+    }
+  ]
+}

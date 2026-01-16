@@ -1,0 +1,508 @@
+{
+  "id": "Alistar",
+  "key": "12",
+  "name": "Alistar",
+  "title": "Minotaure",
+  "version": "15.23.1",
+  "lore": "Alistar était un guerrier respecté et noble au sein des clans de Minotaures qui vivaient dans les montagnes de la Grande Barrière de Shurima. Ces clans avaient longtemps gardé les routes commerciales, mais s'isolaient des conflits de Valoran. Alistar, cependant, encourageait son peuple à forger des liens avec d'autres races mortelles pour contrer l'idée que les Minotaures n'étaient que des bêtes sauvages.\r\n\r\nL'Empire Noxien arriva avec une proposition d'alliance pour une campagne militaire. Alistar se méfiait de la duplicité noxienne et fut envoyé, avec cinquante guerriers, pour rejeter formellement cette alliance. Cependant, la rencontre fut un piège : les autres clans, avides de pouvoir et de reconnaissance, s'étaient déjà ralliés à Noxus et se retournèrent contre lui. Sous la bannière de la trêve, Alistar et les siens furent trahis.\r\n\r\nAccusé d'incitation à la rébellion, Alistar fut enchaîné et emmené vers la capitale noxienne pour être jeté dans les Arènes de la Revanche (le Reckoning), un festival de gladiateurs appelé le Fleshing. Il implora son clan de ne pas se battre comme des bêtes, mais après vingt et un jours d'horreur sanglante, Alistar fut le seul survivant de sa tribu. Poussé à tuer, il fut complètement consumé par la rage, à tel point que les souvenirs de sa maison furent souillés par le sang.\r\n\r\nAlistar sombrait dans une folie bestiale jusqu'à ce qu'il rencontre Ayelia, une servante de l'arène dont le pays avait également été conquis par Noxus. Contrairement aux autres, Ayelia lui parla avec douceur et respect, lui redonnant lentement son humanité. Elle organisa son évasion, sacrifiant beaucoup pour obtenir la clé de sa cellule.\r\n\r\nAu moment de leur fuite près de la rivière, ils furent attaqués par des agents noxiens. Alistar, dont la vision était encore obscurcie par sa rage emmagasinée, se jeta dans la bataille. Il fut tellement absorbé par le combat qu'il n'entendit pas les appels d'Ayelia. Quand il eut tué tous les assaillants, le bateau de fuite avait disparu, et Ayelia avec lui. Elle avait été soit capturée, soit tuée.\r\n\r\nAujourd'hui, Alistar voyage seul et dans l'anonymat, utilisant ses sabots, ses cornes et ses poings pour lutter contre les oppresseurs dans les territoires sous domination noxienne. Il cherche désespérément à retrouver Ayelia, qu'il jure de payer au centuple pour son sacrifice. Il a fait le serment de ne retourner dans ses montagnes natales et de ne laisser sa rage s'éteindre que lorsqu'il aura effacé la honte de sa trahison et de sa chute, en remboursant chaque cruauté et chaque gentillesse qu'il a reçue.",
+  "tags": [
+    "Tank",
+    "Support"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 192,
+    "y": 0,
+    "full": "Alistar.png",
+    "group": "champion",
+    "sprite": "champion0.png"
+  },
+  "skins": [
+    {
+      "id": "12000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "12001",
+      "num": 1,
+      "name": "Alistar noir",
+      "chromas": false
+    },
+    {
+      "id": "12002",
+      "num": 2,
+      "name": "Alistar doré",
+      "chromas": false
+    },
+    {
+      "id": "12003",
+      "num": 3,
+      "name": "Alistar matador",
+      "chromas": false
+    },
+    {
+      "id": "12004",
+      "num": 4,
+      "name": "Alistar longhorn",
+      "chromas": false
+    },
+    {
+      "id": "12005",
+      "num": 5,
+      "name": "Alistar déchaîné",
+      "chromas": false
+    },
+    {
+      "id": "12006",
+      "num": 6,
+      "name": "Alistar infernal",
+      "chromas": false
+    },
+    {
+      "id": "12007",
+      "num": 7,
+      "name": "Alistar libéro",
+      "chromas": false
+    },
+    {
+      "id": "12008",
+      "num": 8,
+      "name": "Alistar maraudeur",
+      "chromas": false
+    },
+    {
+      "id": "12009",
+      "num": 9,
+      "name": "SKT T1 Alistar",
+      "chromas": false
+    },
+    {
+      "id": "12010",
+      "num": 10,
+      "name": "Alistar meuh-meuh",
+      "chromas": true
+    },
+    {
+      "id": "12019",
+      "num": 19,
+      "name": "Alistar Hextech",
+      "chromas": false
+    },
+    {
+      "id": "12020",
+      "num": 20,
+      "name": "Alistar conquérant",
+      "chromas": true
+    },
+    {
+      "id": "12022",
+      "num": 22,
+      "name": "Alistar des glaces noires",
+      "chromas": true
+    },
+    {
+      "id": "12029",
+      "num": 29,
+      "name": "Alistar bête lunaire",
+      "chromas": true
+    },
+    {
+      "id": "12040",
+      "num": 40,
+      "name": "Alistar sylvestre",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "Pulverize",
+      "name": "Atomisation",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 144,
+        "full": "Pulverize.png",
+        "group": "spell",
+        "sprite": "spell0.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Alistar frappe le sol, <status>projetant dans les airs</status> les ennemis pendant {{ knockupduration }} sec et infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@",
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "365",
+      "datavalues": {},
+      "description": "Alistar frappe le sol, infligeant des dégâts magiques aux ennemis proches et les projetant dans les airs.",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "Headbutt",
+      "name": "Coup de tête",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 144,
+        "full": "Headbutt.png",
+        "group": "spell",
+        "sprite": "spell0.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Alistar fonce dans un ennemi, le <status>repoussant</status> et lui infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@",
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Alistar charge une cible, lui inflige des dégâts et la fait tomber à la renverse.",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "AlistarE",
+      "name": "Piétinement",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 144,
+        "full": "AlistarE.png",
+        "group": "spell",
+        "sprite": "spell0.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Alistar piétine le sol, devient fantomatique et inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> aux ennemis proches en {{ e3 }} sec. Chaque pulsation qui blesse au moins un champion octroie un effet.<br /><br />À {{ e5 }} effets cumulés, la prochaine attaque d'Alistar contre un champion <status>étourdit</status> la cible pendant {{ e6 }} sec et inflige <magicDamage>{{ attackbonusdamage }} pts de dégâts magiques</magicDamage> supplémentaires.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@",
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "350",
+      "datavalues": {},
+      "description": "Alistar piétine les unités ennemies proches, ignorant les collisions avec les unités et gagnant un effet s'il blesse un champion ennemi. Au maximum d'effets cumulés, la prochaine attaque de base d'Alistar contre un champion ennemi infligera des dégâts magiques supplémentaires et étourdira la cible.",
+      "cooldownBurn": "12/11.5/11/10.5/10"
+    },
+    {
+      "id": "FerociousHowl",
+      "name": "Volonté de fer",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 144,
+        "full": "FerociousHowl.png",
+        "group": "spell",
+        "sprite": "spell0.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Alistar purge immédiatement toutes les <status>entraves</status> qui l'affectent et réduit les dégâts qu'il subit de {{ rdamagereduction }}% pendant {{ rduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Réduction des dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1",
+      "datavalues": {},
+      "description": "Alistar lâche un puissant rugissement, dissipant tous les effets de contrôle de foule qui l'affectent et réduisant les dégâts physiques et magiques subis pendant la durée d'effet.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive": {
+    "name": "Cri triomphant",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 192,
+      "y": 0,
+      "full": "Alistar_E.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Alistar charge son cri en étourdissant ou en déplaçant des champions ennemis ou quand des ennemis proches meurent. Quand le cri est pleinement chargé, Alistar se soigne et soigne tous les champions alliés proches."
+  },
+  "created_at": "2025-11-26T15:13:31.919828+00:00",
+  "factions": [
+    "runeterra",
+    "noxus"
+  ],
+  "custom_tags": null,
+  "gender": "Male",
+  "species": "Minotaur",
+  "title_en": "the Minotaur",
+  "lore_en": "Alistar was a respected and noble warrior among the Minotaur clans living in the Great Barrier mountains of Shurima. These clans had long guarded the trade routes but remained isolated from Valoran’s wider conflicts. Alistar, however, encouraged his people to forge bonds with other mortal races to counter the perception that Minotaurs were just wild beasts.\r\n\r\nThe Noxian Empire arrived with an offer of alliance for a military campaign. Alistar was skeptical of Noxian duplicity and was sent, along with fifty warriors, to formally reject the alliance. However, the meeting was a trap: the other clans, eager for power and recognition, had already pledged themselves to Noxus and turned against him. Under the banner of truce, Alistar and his kin were betrayed.\r\n\r\nAccused of inciting rebellion, Alistar was chained and taken to the Noxian capital to be thrown into the Reckoning arenas, a gladiatorial festival known as the Fleshing. He implored his clan not to fight like beasts, but after twenty-one days of bloody horror, Alistar was the sole survivor of his tribe. Driven to kill, he was consumed by rage to the extent that even his memories of home became stained with blood.\r\n\r\nAlistar was sinking into bestial madness until he met Ayelia, an arena servant girl whose homeland had also been claimed by Noxus. Unlike the others, Ayelia spoke to him with gentle respect, slowly restoring his humanity. She arranged his escape, sacrificing much to obtain the key to his cell.\r\n\r\nJust as they were escaping near the river, they were ambushed by Noxian agents. Alistar, his vision still tunneled by his stored rage, threw himself into battle. He was so consumed by the fight that he did not hear Ayelia’s calls. By the time he had slain all the attackers, the escape boat was gone, and Ayelia with it. She had either been captured or killed.\r\n\r\nToday, Alistar travels alone and anonymously, using his hooves, horns, and fists to fight against oppressors in Noxian-held territories and on behalf of the downtrodden. He desperately searches for Ayelia, whom he swears to repay ten times over for her sacrifice. He has vowed not to return to his native mountains or let his rage subside until he has cleared the shame of his betrayal and downfall, repaying every cruelty and every kindness he has received.",
+  "spells_en": [
+    {
+      "id": "Pulverize",
+      "name": "Pulverize",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 144,
+        "full": "Pulverize.png",
+        "group": "spell",
+        "sprite": "spell0.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Alistar smashes the ground, <status>Knocking Up</status> enemies for {{ knockupduration }} second and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "@AbilityResourceName@ Cost",
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "365",
+      "datavalues": {},
+      "description": "Alistar smashes the ground, dealing damage to nearby enemies and tossing them into the air.",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "Headbutt",
+      "name": "Headbutt",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 144,
+        "full": "Headbutt.png",
+        "group": "spell",
+        "sprite": "spell0.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Alistar rams into an enemy, <status>Knocking</status> them <status>Back</status> and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "@AbilityResourceName@ Cost",
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Alistar rams a target with his head, dealing damage and knocking the target back.",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "AlistarE",
+      "name": "Trample",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 144,
+        "full": "AlistarE.png",
+        "group": "spell",
+        "sprite": "spell0.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Alistar begins trampling the ground, becoming Ghosted and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> over {{ e3 }} seconds to nearby enemies. Each pulse that damages a champion grants a stack.<br /><br />At {{ e5 }} stacks, Alistar's next Attack against champions <status>Stuns</status> for {{ e6 }} second and deals an additional <magicDamage>{{ attackbonusdamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "@AbilityResourceName@ Cost",
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "350",
+      "datavalues": {},
+      "description": "Alistar tramples nearby enemy units, ignoring unit collision and gaining stacks if he damages an enemy champion. At full stacks Alistar's next basic attack against an enemy champion deals additional magic damage and stuns them.",
+      "cooldownBurn": "12/11.5/11/10.5/10"
+    },
+    {
+      "id": "FerociousHowl",
+      "name": "Unbreakable Will",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 144,
+        "full": "FerociousHowl.png",
+        "group": "spell",
+        "sprite": "spell0.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Alistar immediately cleanses all <status>Disabling</status> effects and takes {{ rdamagereduction }}% reduced damage for {{ rduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage Reduction"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1",
+      "datavalues": {},
+      "description": "Alistar lets out a wild roar, removing all crowd control effects on himself, and reducing incoming physical and magical damage for the duration.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Triumphant Roar",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 192,
+      "y": 0,
+      "full": "Alistar_E.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Alistar charges his roar by stunning or displacing enemy champions or when nearby enemies die. When fully charged he heals himself all nearby allied champions."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Support"
+  ],
+  "skins_en": [
+    {
+      "id": "12000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "12001",
+      "num": 1,
+      "name": "Black Alistar",
+      "chromas": false
+    },
+    {
+      "id": "12002",
+      "num": 2,
+      "name": "Golden Alistar",
+      "chromas": false
+    },
+    {
+      "id": "12003",
+      "num": 3,
+      "name": "Matador Alistar",
+      "chromas": false
+    },
+    {
+      "id": "12004",
+      "num": 4,
+      "name": "Longhorn Alistar",
+      "chromas": false
+    },
+    {
+      "id": "12005",
+      "num": 5,
+      "name": "Unchained Alistar",
+      "chromas": false
+    },
+    {
+      "id": "12006",
+      "num": 6,
+      "name": "Infernal Alistar",
+      "chromas": false
+    },
+    {
+      "id": "12007",
+      "num": 7,
+      "name": "Sweeper Alistar",
+      "chromas": false
+    },
+    {
+      "id": "12008",
+      "num": 8,
+      "name": "Marauder Alistar",
+      "chromas": false
+    },
+    {
+      "id": "12009",
+      "num": 9,
+      "name": "SKT T1 Alistar",
+      "chromas": false
+    },
+    {
+      "id": "12010",
+      "num": 10,
+      "name": "Moo Cow Alistar",
+      "chromas": true
+    },
+    {
+      "id": "12019",
+      "num": 19,
+      "name": "Hextech Alistar",
+      "chromas": false
+    },
+    {
+      "id": "12020",
+      "num": 20,
+      "name": "Conqueror Alistar",
+      "chromas": true
+    },
+    {
+      "id": "12022",
+      "num": 22,
+      "name": "Blackfrost Alistar",
+      "chromas": true
+    },
+    {
+      "id": "12029",
+      "num": 29,
+      "name": "Lunar Beast Alistar",
+      "chromas": true
+    },
+    {
+      "id": "12040",
+      "num": 40,
+      "name": "Elderwood Alistar",
+      "chromas": false
+    }
+  ]
+}

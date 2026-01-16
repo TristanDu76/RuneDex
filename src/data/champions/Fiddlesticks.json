@@ -1,0 +1,480 @@
+{
+  "id": "Fiddlesticks",
+  "key": "9",
+  "name": "Fiddlesticks",
+  "title": "Effroi nocturne",
+  "version": "15.23.1",
+  "lore": "L'histoire de Fiddlesticks n'est pas une histoire unique, mais une collection de mythes et de légendes contradictoires provenant de tous les coins de Runeterra. Ce qui est certain, c'est que Fiddlesticks est une horreur intemporelle, une entité si ancienne et si terrifiante que les avertissements de l'humanité sont passés du mythe à de simples fables destinées à effrayer les enfants.\r\n\r\nL'Origine Légendaire :\r\n\r\nLe conte le plus souvent raconté est celui d'un jeune mage insensé qui, dans une tour au bord de la mer, invoqua une chose qu'il ne pouvait contrôler. Ce qui apparut était plus ancien que l'histoire écrite, plus sombre qu'une nuit sans étoiles. Le mage, la créature et la tour disparurent dans l'instant.\r\n\r\nLes Mythes Régionaux :\r\n\r\n    Freljord : On raconte l'histoire d'un monstre qui s'extirpe de tombes abandonnées dans la glace, son corps étant une masse branlante de bois, de fourrures et d'armures hétéroclites.\r\n\r\n    Bilgewater : Des marins ivres parlent de quelque chose qui se dresse seul sur un atoll lointain d'où personne n'est jamais revenu.\r\n\r\n    Targon : Une vieille légende parle d'un enfant qui a volé la seule joie d'une horreur délabrée et chuchotante.\r\n\r\n    Noxus : Une fable raconte l'histoire d'un valet de ferme solitaire blâmé pour une mauvaise récolte, donné aux corbeaux, et revenu sous la forme d'un démon.\r\n\r\nL'Éveil et la Réalité :\r\n\r\nCes mythes sont restés des fables jusqu'à récemment. Quelque chose s'est éveillé dans l'arrière-pays de Demacia, attiré par un climat de peur et de paranoïa croissantes (probablement lié à la rébellion et au conflit avec la magie). Des régions entières se vident, des voyageurs et des patrouilles disparaissent.\r\n\r\nLes rares survivants, les yeux écarquillés, racontent des histoires macabres : des corbeaux qui n'en sont pas, des sons qui ne sont pas des sons, et une horreur déséquilibrée ayant la forme d'un épouvantail qui croasse avec les voix volées des morts.\r\n\r\nLa vérité est bien pire que les fables. L'entité revenue est si foncièrement aliène qu'elle défie la connaissance magique contemporaine. Une autre légende ressurgit : celle d'un grand mal qui n'a ni forme, ni pensées, ni compréhension du monde, mais qui se construit dans la forme grossière de ceux qui le craignent. Fiddlesticks est la terreur de toutes les choses vivantes, animée par le premier cri terrible de la création, un démon avant que les démons ne soient connus.\r\n\r\nFiddlesticks est réel et arpente les frontières des civilisations mortelles, se repaissant de la paranoïa et moissonnant la peur elle-même avec sa faux ébréchée.",
+  "tags": [
+    "Mage",
+    "Support"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 144,
+    "y": 0,
+    "full": "Fiddlesticks.png",
+    "group": "champion",
+    "sprite": "champion1.png"
+  },
+  "skins": [
+    {
+      "id": "9000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "9001",
+      "num": 1,
+      "name": "Fiddlesticks spectral",
+      "chromas": false
+    },
+    {
+      "id": "9002",
+      "num": 2,
+      "name": "Fiddlesticks Union Jack",
+      "chromas": false
+    },
+    {
+      "id": "9003",
+      "num": 3,
+      "name": "Fiddlesticks le bandito",
+      "chromas": true
+    },
+    {
+      "id": "9004",
+      "num": 4,
+      "name": "Fiddlesticks citrouille",
+      "chromas": false
+    },
+    {
+      "id": "9005",
+      "num": 5,
+      "name": "Fiddlesticks pirate",
+      "chromas": false
+    },
+    {
+      "id": "9006",
+      "num": 6,
+      "name": "Fiddlesticks clown maléfique",
+      "chromas": true
+    },
+    {
+      "id": "9007",
+      "num": 7,
+      "name": "Fiddlesticks horreur sucrée",
+      "chromas": false
+    },
+    {
+      "id": "9008",
+      "num": 8,
+      "name": "Fiddlesticks réanimé",
+      "chromas": false
+    },
+    {
+      "id": "9009",
+      "num": 9,
+      "name": "Fiddlesticks prétorien",
+      "chromas": true
+    },
+    {
+      "id": "9027",
+      "num": 27,
+      "name": "Fiddlesticks cauchemar des étoiles",
+      "chromas": true
+    },
+    {
+      "id": "9037",
+      "num": 37,
+      "name": "Fiddlesticks lune de sang",
+      "chromas": true
+    },
+    {
+      "id": "9046",
+      "num": 46,
+      "name": "Fiddlesticks flora fatalis",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "FiddleSticksQ",
+      "name": "Terreur",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 144,
+        "full": "FiddleSticksQ.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> en dehors des combats ou en imitant une <keywordMajor>Effigie</keywordMajor>, si Fiddlesticks n'est pas visible, blesser un ennemi avec une compétence l'<status>effraie</status> pendant {{ fearduration }} sec.<br /><br /><spellActive>Active :</spellActive> <status>effraie</status> un ennemi pendant {{ fearduration }} sec et inflige <magicDamage>{{ totalpercenthealthdamage }} des PV actuels en dégâts magiques</magicDamage>. Si la cible a récemment été <status>effrayée</status> par Fiddlesticks, cette compétence inflige à la place <magicDamage>{{ totalpercenthealthdamagefeared }} des PV actuels en dégâts magiques</magicDamage>.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "65",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Durée",
+          "Délai de récupération",
+          "% des PV actuels"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "575",
+      "datavalues": {},
+      "description": "Si Fiddlesticks blesse un ennemi avec un sort en n'étant pas visible ou s'il cible un ennemi avec la propriété active de Terreur, il terrifie cet ennemi et le fait fuir aussi longtemps que dure l'effet.",
+      "cooldownBurn": "15/14.5/14/13.5/13"
+    },
+    {
+      "id": "FiddleSticksW",
+      "name": "Moisson fructueuse",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 144,
+        "full": "FiddleSticksW.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Fiddlesticks canalise la compétence et draine les âmes des ennemis proches, infligeant <magicDamage>{{ draindamagecalc }} pts de dégâts magiques</magicDamage> par seconde pendant 2 sec, plus <magicDamage>{{ percentfortooltip }}% des PV manquants en dégâts magiques</magicDamage> à la fin. Fiddlesticks récupère <healing>{{ vamppercentage }}% des dégâts en PV</healing>.<br /><br />Si Fiddlesticks met fin à la canalisation sans avoir été interrompu, le délai de récupération restant est réduit de 60%.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts par seconde",
+          "Pourcentage des PV manquants en dégâts",
+          "Pourcentage soigné",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Fiddlesticks draine l'essence vitale des ennemis proches, infligeant des dégâts d'exécution supplémentaires à la fin de l'effet.",
+      "cooldownBurn": "10/9.5/9/8.5/8"
+    },
+    {
+      "id": "FiddleSticksE",
+      "name": "Fauchaison",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 144,
+        "full": "FiddleSticksE.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Fiddlesticks déchaîne sa magie noire, infligeant <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage> et <status>ralentissant</status> les ennemis de {{ slowamount*-100 }}% pendant {{ silenceduration }} sec. Les ennemis au centre de la zone sont également <status>réduits au silence</status> pendant la durée.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/45/50/55/60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ralentissement",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "850",
+      "datavalues": {},
+      "description": "Fiddlesticks donne un coup de faux dans une zone, ralentissant tous les ennemis touchés et réduisant au silence ceux touchés au centre de la zone.",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "FiddleSticksR",
+      "name": "Rafale de corbeaux",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 144,
+        "full": "FiddleSticksR.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Après une canalisation de {{ channeltime }} sec, Fiddlesticks se téléporte en libérant une nuée de corbeaux qui inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> en {{ duration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts par seconde",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Une nuée de corbeaux tourbillonne sauvagement autour de Fiddlesticks, infligeant des dégâts par seconde à toutes les unités ennemies dans la zone.",
+      "cooldownBurn": "140/110/80"
+    }
+  ],
+  "passive": {
+    "name": "Épouvantable épouvantail",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 144,
+      "y": 0,
+      "full": "FiddlesticksP.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "La relique de Fiddlesticks est remplacée par des Effigies d'épouvantail."
+  },
+  "created_at": "2025-11-26T15:13:32.943584+00:00",
+  "factions": [
+    "runeterra"
+  ],
+  "custom_tags": [
+    "démon",
+    "peur",
+    "ancien"
+  ],
+  "gender": "Other",
+  "species": "Demon",
+  "title_en": "the Ancient Fear",
+  "lore_en": "The story of Fiddlesticks is not a single narrative but a collection of contradictory myths and legends from every corner of Runeterra. What is certain is that Fiddlesticks is a timeless horror, an entity so ancient and terrifying that the warnings of nascent humanity have faded from myth into simple fables designed to frighten children.\r\n\r\nThe Legendary Origin:\r\n\r\nThe most oft-told story is that of a foolish young mage who, in a tower by the edge of the sea, summoned a thing he could not control. What stepped before the boy was older than recorded history, darker than a starless night. The mage, the creature, and the tower itself were lost to time.\r\n\r\nThe Regional Myths:\r\n\r\n    Freljord: Tales speak of a monster that raises itself from untended graves in the ice, its body a shambling mass of mismatched armor, furs, and wood.\r\n\r\n    Bilgewater: Drunken sailors trade accounts of something standing alone on a tiny, distant atoll from which no one has ever returned.\r\n\r\n    Targon: An old legend tells of a child who stole the only joy from a ragged, whispering horror.\r\n\r\n    Noxus: A fable recounts a lonely farmhand who was blamed for a poor harvest, fed to the crows, and returned as a demon.\r\n\r\nThe Awakening and Reality:\r\n\r\nThese myths remained fables until recently. Something has awakened in the Demacian hinterlands, drawn by a climate of rising fear and paranoia (likely related to rebellion and conflict with magic). Rural protectorates are emptying in mere days, travelers vanish, and guard patrols fail to report back.\r\n\r\nThe few wild-eyed survivors wail about crows that aren't crows, sounds that aren't sounds, and a lopsided horror in the shape of a scarecrow that croaks in the stolen voices of the dead.\r\n\r\nThe truth is far worse than the fables. The entity that returned is so utterly alien that it defies almost all contemporary knowledge of magic. Another legend sees a resurgence: that of a great evil that has no form, no thoughts, and no understanding of the world it inhabits, instead building itself into the crude shape of those who fear it. Fiddlesticks is the terror of all living things, given life in that first terrible scream of creation, a demon before demons were known.\r\n\r\nFiddlesticks is real and stalks the boundaries of mortal civilizations, feeding on paranoia and harvesting fear itself with its chipped scythe.",
+  "spells_en": [
+    {
+      "id": "FiddleSticksQ",
+      "name": "Terrify",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 144,
+        "full": "FiddleSticksQ.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> While unseen and out of combat or impersonating an <keywordMajor>Effigy</keywordMajor>, damaging an enemy with an ability <status>Fears</status> them for {{ fearduration }} second(s).<br /><br /><spellActive>Active:</spellActive> <status>Fear</status> an enemy for {{ fearduration }} second(s) and deal <magicDamage>{{ totalpercenthealthdamage }} current Health magic damage</magicDamage>. If the target has recently been <status>Feared</status> by Fiddlesticks, instead deal <magicDamage>{{ totalpercenthealthdamagefeared }} current Health magic damage</magicDamage>.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "65",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Duration",
+          "Cooldown",
+          "Current Health %"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "575",
+      "datavalues": {},
+      "description": "Fiddlesticks damaging enemies with spells while unseen or targeting an enemy with Terrify's activation strikes a target unit with fear, causing it to flee in terror for a duration.",
+      "cooldownBurn": "15/14.5/14/13.5/13"
+    },
+    {
+      "id": "FiddleSticksW",
+      "name": "Bountiful Harvest",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 144,
+        "full": "FiddleSticksW.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Fiddlesticks channels and drains the souls of nearby enemies, dealing <magicDamage>{{ draindamagecalc }} magic damage</magicDamage> per second for 2 seconds, plus <magicDamage>{{ percentfortooltip }}% missing Health magic damage</magicDamage> at the end. Fiddlesticks restores <healing>{{ vamppercentage }}% of damage as Health</healing>.<br /><br />If Fiddlesticks ends the channel without interruption, the remaining Cooldown is reduced by 60%.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage Per Second",
+          "Missing Health Damage",
+          "Percent Healed",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Fiddlesticks drains health from nearby enemies, dealing bonus execute damage at the end of the duration.",
+      "cooldownBurn": "10/9.5/9/8.5/8"
+    },
+    {
+      "id": "FiddleSticksE",
+      "name": "Reap",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 144,
+        "full": "FiddleSticksE.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Fiddlesticks unleashes dark magic, dealing <magicDamage>{{ damage }} magic damage</magicDamage> and <status>Slowing</status> by {{ slowamount*-100 }}% for {{ silenceduration }} seconds. Enemies in the center are also <status>Silenced</status> for the duration.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/45/50/55/60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Slow",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "850",
+      "datavalues": {},
+      "description": "Fiddlesticks slashes an area with its scythe, slowing all enemies hit and silencing enemies hit in the center of the slash.",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "FiddleSticksR",
+      "name": "Crowstorm",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 144,
+        "full": "FiddleSticksR.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Fiddlesticks channels for {{ channeltime }} seconds, then teleports and unleashes a murder of crows, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> over {{ duration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage Per Second",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "A murder of crows flock wildly around Fiddlesticks, dealing damage per second to all enemy units in the area.",
+      "cooldownBurn": "140/110/80"
+    }
+  ],
+  "passive_en": {
+    "name": "A Harmless Scarecrow",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 144,
+      "y": 0,
+      "full": "FiddlesticksP.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Fiddlesticks' trinket is replaced by scarecrow effigies."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Jungle",
+    "Support"
+  ],
+  "skins_en": [
+    {
+      "id": "9000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "9001",
+      "num": 1,
+      "name": "Spectral Fiddlesticks",
+      "chromas": false
+    },
+    {
+      "id": "9002",
+      "num": 2,
+      "name": "Union Jack Fiddlesticks",
+      "chromas": false
+    },
+    {
+      "id": "9003",
+      "num": 3,
+      "name": "Bandito Fiddlesticks",
+      "chromas": true
+    },
+    {
+      "id": "9004",
+      "num": 4,
+      "name": "Pumpkinhead Fiddlesticks",
+      "chromas": false
+    },
+    {
+      "id": "9005",
+      "num": 5,
+      "name": "Fiddle Me Timbers",
+      "chromas": false
+    },
+    {
+      "id": "9006",
+      "num": 6,
+      "name": "Surprise Party Fiddlesticks",
+      "chromas": true
+    },
+    {
+      "id": "9007",
+      "num": 7,
+      "name": "Dark Candy Fiddlesticks",
+      "chromas": false
+    },
+    {
+      "id": "9008",
+      "num": 8,
+      "name": "Risen Fiddlesticks",
+      "chromas": false
+    },
+    {
+      "id": "9009",
+      "num": 9,
+      "name": "Praetorian Fiddlesticks",
+      "chromas": true
+    },
+    {
+      "id": "9027",
+      "num": 27,
+      "name": "Star Nemesis Fiddlesticks",
+      "chromas": true
+    },
+    {
+      "id": "9037",
+      "num": 37,
+      "name": "Blood Moon Fiddlesticks",
+      "chromas": true
+    },
+    {
+      "id": "9046",
+      "num": 46,
+      "name": "Flora Fatalis Fiddlesticks",
+      "chromas": true
+    }
+  ]
+}

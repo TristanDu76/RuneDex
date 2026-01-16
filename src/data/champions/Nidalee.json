@@ -1,0 +1,529 @@
+{
+  "id": "Nidalee",
+  "key": "76",
+  "name": "Nidalee",
+  "title": "Chasseresse bestiale",
+  "version": "15.23.1",
+  "lore": "Nidalee fut trouvée seule, encore bébé, dans les vastes jungles à la frontière d'Ixtal et de Shurima. Elle fut recueillie et élevée par une mère pakaa (une des bêtes félines les plus féroces de la jungle) et ses petits.\n\nL'Enfance Sauvage : Nidalee grandit comme une créature de la jungle, apprenant à chasser avec les crocs et les griffes de sa famille adoptive. Elle était une chasseuse capable et fut traitée comme l'un des leurs.\n\nLa Double Nature : Malgré tout, son corps subissait parfois des demi-transformations involontaires : ses pattes devenaient des mains, ses crocs s'émoussaient. Durant ces moments, elle était attirée par les silhouettes floues de deux figures humaines (ses parents biologiques ?), qui lui apportaient un sentiment de chaleur, malgré l'avertissement de sa famille féline de se méfier des étrangers.\n\nLa Tragédie et l'Éveil : La crise survint lors d'une saison des pluies, lorsqu'ils rencontrèrent les Kiilash, des chasseurs Vastayas qui pénétraient dans la jungle pour chasser. La mère pakaa de Nidalee fut blessée par leurs lames. Poussée par la rage et le chagrin, Nidalee bondit de la broussaille.\n\nLa Transformation Maîtrisée : Au combat, elle sentit un héritage oublié se réveiller en elle. Elle se transforma en une forme humaine et utilisa les armes d'un chasseur avec des réflexes félins. Les Kiilash, maudissant les ancêtres Vastayashai'rei, se retirèrent. Les frères et sœurs félins de Nidalee acceptèrent cette métamorphe comme leur nouvelle chef, et elle jura de défendre son foyer adopté.\n\nL'Héritage Humain et l'Alliance : Au fil du temps, elle apprit à contrôler ses transformations et à manier la lance et les pièges. Elle apprit également à fabriquer des onguents de guérison, mélangeant les instincts félins avec une connaissance des herbes inconnue des pakaa.\n\nLa Connexion : Son désir de trouver d'autres êtres de son espèce l'a conduite à rencontrer la Vastaya Neeko, et les deux sont devenues inséparables pendant un temps, explorant les merveilles de la jungle, avant que Neeko ne parte suivre son propre destin.\n\nNidalee défend farouchement la jungle, traquant et blessant sa proie sous forme humaine avec sa lance avant de se jeter sur elle sous sa forme de couguar.",
+  "tags": [
+    "Assassin",
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 96,
+    "y": 0,
+    "full": "Nidalee.png",
+    "group": "champion",
+    "sprite": "champion3.png"
+  },
+  "skins": [
+    {
+      "id": "76000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "76001",
+      "num": 1,
+      "name": "Nidalee lapin des neiges",
+      "chromas": false
+    },
+    {
+      "id": "76002",
+      "num": 2,
+      "name": "Nidalee léopard",
+      "chromas": false
+    },
+    {
+      "id": "76003",
+      "num": 3,
+      "name": "Nidalee servante",
+      "chromas": false
+    },
+    {
+      "id": "76004",
+      "num": 4,
+      "name": "Pharaon Nidalee",
+      "chromas": false
+    },
+    {
+      "id": "76005",
+      "num": 5,
+      "name": "Nidalee sorcière",
+      "chromas": false
+    },
+    {
+      "id": "76006",
+      "num": 6,
+      "name": "Nidalee chasseuse de têtes",
+      "chromas": false
+    },
+    {
+      "id": "76007",
+      "num": 7,
+      "name": "Nidalee du royaume en guerre",
+      "chromas": false
+    },
+    {
+      "id": "76008",
+      "num": 8,
+      "name": "Nidalee challenger",
+      "chromas": true
+    },
+    {
+      "id": "76009",
+      "num": 9,
+      "name": "Super Nidalee intergalactique",
+      "chromas": false
+    },
+    {
+      "id": "76011",
+      "num": 11,
+      "name": "Nidalee héraut de l'aube",
+      "chromas": true
+    },
+    {
+      "id": "76018",
+      "num": 18,
+      "name": "Nidalee chasseresse cosmique",
+      "chromas": true
+    },
+    {
+      "id": "76027",
+      "num": 27,
+      "name": "DWG Nidalee",
+      "chromas": true
+    },
+    {
+      "id": "76029",
+      "num": 29,
+      "name": "Nidalee du Chant de l'océan",
+      "chromas": true
+    },
+    {
+      "id": "76039",
+      "num": 39,
+      "name": "Nidamiaou",
+      "chromas": false
+    },
+    {
+      "id": "76048",
+      "num": 48,
+      "name": "Nidalee La Ilusión",
+      "chromas": false
+    },
+    {
+      "id": "76058",
+      "num": 58,
+      "name": "Nidalee fleur spirituelle",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "JavelinToss",
+      "name": "Javelot / Mise à terre",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 96,
+        "full": "JavelinToss.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<keywordMajor>Forme humaine :</keywordMajor> Nidalee lance son javelot, infligeant <magicDamage>{{ humanminimumdamage }} pts de dégâts magiques</magicDamage>. Ces dégâts augmentent jusqu'à <magicDamage>{{ humanmaximumdamage }} pts de dégâts magiques</magicDamage> avec la distance parcourue.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts min du javelot",
+          "Dégâts max du javelot",
+          "Coût en mana du javelot"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1500",
+      "datavalues": {},
+      "description": "Dans sa forme humaine, Nidalee lance un javelot qui inflige de plus en plus de dégâts selon la distance parcourue. Sous la forme d'un Couguar, sa prochaine attaque tente d'égorger sa cible, et plus celle-ci a déjà perdu de PV, plus les dégâts sont importants.",
+      "cooldownBurn": "6"
+    },
+    {
+      "id": "Bushwhack",
+      "name": "Guérilla / Bond",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 96,
+        "full": "Bushwhack.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "0",
+      "maxrank": 5,
+      "tooltip": "<keywordMajor>Forme humaine :</keywordMajor> Nidalee pose un piège invisible pendant 2 min. Lorsqu'un ennemi marche dessus, il subit <magicDamage>{{ damagepersecond }} pts de dégâts magiques</magicDamage> par seconde pendant {{ e3 }} sec.<br /><br />Jusqu'à {{ maxtraps }} pièges peuvent être actifs simultanément.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30/35/40/45/50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts du piège",
+          "Délai de récupération du piège",
+          "Coût en mana du piège"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "900",
+      "datavalues": {},
+      "description": "Dans sa forme humaine, Nidalee place un piège qui blesse et révèle la cible qui le déclenche. Sous la forme d'un Couguar, elle bondit dans une direction et inflige des dégâts de zone en atterrissant.",
+      "cooldownBurn": "13/12/11/10/9"
+    },
+    {
+      "id": "PrimalSurge",
+      "name": "Charge primale / Taillade",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 96,
+        "full": "PrimalSurge.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<keywordMajor>Forme humaine :</keywordMajor> Nidalee rend <healing>{{ totalhealing }} PV</healing> (augmentés jusqu'à <healing>{{ maxhealing }}</healing> selon les PV manquants) à une cible et lui octroie <attackSpeed>+{{ bonusas*100 }}% de vitesse d'attaque</attackSpeed> pendant {{ asduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Soins de Charge primale",
+          "Vitesse d'attaque de Charge primale",
+          "Coût en mana de Charge primale"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "900",
+      "datavalues": {},
+      "description": "Dans sa forme humaine, Nidalee canalise l'esprit du Couguar pour soigner ses alliés et leur conférer temporairement un bonus en vitesse d'attaque. Sous la forme d'un Couguar, elle donne un coup de griffes aux ennemis devant elle.",
+      "cooldownBurn": "12"
+    },
+    {
+      "id": "AspectOfTheCougar",
+      "name": "Aspect du Couguar",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 96,
+        "full": "AspectOfTheCougar.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 4,
+      "tooltip": "<spellPassive>Passive :</spellPassive> en <keywordMajor>forme humaine</keywordMajor>, déclencher l'effet <keywordMajor>Chassé</keywordMajor> met fin au délai de récupération de cette compétence.<br /><br /><keywordMajor>Forme humaine :</keywordMajor> Nidalee prend sa <keywordMajor>forme de couguar</keywordMajor>. Ses compétences actives sont remplacées et elle attaque désormais en mêlée.<br /><br /><keywordMajor>Forme de couguar :</keywordMajor> Nidalee prend sa <keywordMajor>forme humaine</keywordMajor>. Ses compétences actives sont remplacées et elle attaque désormais à distance.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts de Mise à terre",
+          "Amplification des dégâts de Mise à terre",
+          "Dégâts de Bond",
+          "Dégâts de Taillade",
+          "Délai de récupération de Bond renforcé"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "20",
+      "datavalues": {},
+      "description": "Nidalee prend la forme d'un Couguar, ce qui lui confère de nouvelles compétences.",
+      "cooldownBurn": "3"
+    }
+  ],
+  "passive": {
+    "name": "Prédateur",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 96,
+      "y": 0,
+      "full": "Nidalee_Passive.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Dans les herbes hautes, la vitesse de déplacement de Nidalee augmente de 10% pendant 2 sec. Le bonus passe à 30% si Nidalee va vers des champions ennemis visibles à moins de 1400 unités de distance.<br><br>Quand elle touche des champions ou des monstres avec Javelot ou Guérilla, Nidalee se met à les <font color='#FFF673'>chasser</font> et obtient une <font color='#ee91d7'>vision pure</font> de ces cibles pendant 4 sec. Pendant ce temps, la vitesse de déplacement de Nidalee augmente de 10% (30% vers les cibles <font color='#FFF673'>chassées</font>) et, contre ces cibles, Mise à terre et Bond sont renforcés."
+  },
+  "created_at": "2025-11-26T15:13:34.38849+00:00",
+  "factions": [
+    "ixtal",
+    "shurima"
+  ],
+  "custom_tags": [
+    "chasseuse",
+    "cougar"
+  ],
+  "gender": "Female",
+  "species": "Human",
+  "title_en": "the Bestial Huntress",
+  "lore_en": "Nidalee was found alone as a cub in the vast jungles on the border of Ixtal and Shurima. She was taken in and raised by a mother pakaa (one of the jungle's fiercest cats) and her cubs.\n\nThe Wild Childhood: Nidalee grew up as a creature of the jungle, learning to hunt with tooth and claw from her adopted feline family. She became a capable huntress and pack member.\n\nThe Dual Nature: Unbeknownst to her, she sometimes lost control of her own body, with her paws changing to strange, hairless hands and feet. In these moments, she would follow the hazy silhouettes of two human figures (her biological parents?), which brought her a sense of warmth, despite her pack's caution toward outsiders.\n\nTragedy and Awakening: The crisis came during the summer rains when they encountered the Kiilash, Vastayan hunters who ranged into the forests for kills. Nidalee's pakaa mother was wounded. Howling with grief and rage, Nidalee lunged from the undergrowth.\n\nThe Mastered Transformation: In the fight, she felt a long-forgotten heritage rise up within her. She transformed from pakaa into a human-like form, grabbing a hunter's spear with cat-like reflexes. The Kiilash, cursing their Vastayashai'rei ancestors, retreated. Nidalee's feline siblings accepted this shapechanger as their new leader, and she vowed to defend her adopted home.\n\nHuman Heritage and Alliance: Over time, she learned to control her shifting and became adept with her new form, crafting traps, weapons, and healing salves (like honeyfruit) unknown to the pakaa.\n\nThe Connection: Her yearning to find others of her kind led her to the chameleon-like Vastaya Neeko, and the two became inseparable for a time, reveling in exploring the jungle's wonders, before Neeko eventually departed.\n\nNidalee fiercely defends the jungle, stalking and crippling her prey in human form with her spear before pouncing in her cougar form.",
+  "spells_en": [
+    {
+      "id": "JavelinToss",
+      "name": "Javelin Toss / Takedown",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 96,
+        "full": "JavelinToss.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<keywordMajor>Human Form:</keywordMajor> Nidalee throws her javelin, dealing <magicDamage>{{ humanminimumdamage }} magic damage</magicDamage>, increased up to <magicDamage>{{ humanmaximumdamage }} magic damage</magicDamage> based on distance flown.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Javelin Minimum Damage",
+          "Javelin Maximum Damage",
+          "Javelin Mana Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1500",
+      "datavalues": {},
+      "description": "In human form, Nidalee throws a spiked javelin at her target that gains damage as it flies.  As a cougar, her next attack will attempt to fatally wound her target, dealing more damage the less life they have.",
+      "cooldownBurn": "6"
+    },
+    {
+      "id": "Bushwhack",
+      "name": "Bushwhack / Pounce",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 96,
+        "full": "Bushwhack.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "0",
+      "maxrank": 5,
+      "tooltip": "<keywordMajor>Human Form:</keywordMajor> Nidalee places an invisible trap for 2 minutes. When an enemy walks over it, they are dealt <magicDamage>{{ damagepersecond }} magic damage</magicDamage> per second for {{ e3 }} seconds.<br /><br />{{ maxtraps }} traps may be active at once.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30/35/40/45/50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Trap Damage",
+          "Trap Cooldown",
+          "Trap Mana Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "900",
+      "datavalues": {},
+      "description": "In human form, Nidalee lays a trap for unwary opponents that, when sprung, damages and reveals its target. As a cougar, she jumps in a direction, dealing damage in an area where she lands.",
+      "cooldownBurn": "13/12/11/10/9"
+    },
+    {
+      "id": "PrimalSurge",
+      "name": "Primal Surge / Swipe",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 96,
+        "full": "PrimalSurge.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<keywordMajor>Human Form:</keywordMajor> Nidalee restores <healing>{{ totalhealing }} Health</healing> increased up to <healing>{{ maxhealing }}</healing> based on missing Health and grants them <attackSpeed>{{ bonusas*100 }}% Attack Speed</attackSpeed> for {{ asduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Primal Surge Heal",
+          "Primal Surge Attack Speed",
+          "Primal Surge Mana Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "900",
+      "datavalues": {},
+      "description": "In human form, Nidalee channels the spirit of the cougar to heal her allies and imbue them with Attack Speed for a short duration. As a cougar, she claws in a direction, dealing damage to enemies in front of her.",
+      "cooldownBurn": "12"
+    },
+    {
+      "id": "AspectOfTheCougar",
+      "name": "Aspect Of The Cougar",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 96,
+        "full": "AspectOfTheCougar.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 4,
+      "tooltip": "<spellPassive>Passive:</spellPassive> While in <keywordMajor>Human Form</keywordMajor>, applying <keywordMajor>Hunted</keywordMajor> refreshes this Ability's Cooldown.<br /><br /><keywordMajor>Human Form:</keywordMajor> Nidalee transforms into <keywordMajor>Cougar Form</keywordMajor>, gaining melee Attacks and replacing her Active Abilities.<br /><br /><keywordMajor>Cougar Form:</keywordMajor> Nidalee transforms into <keywordMajor>Human Form</keywordMajor>, gaining ranged Attacks and replacing her Active Abilities.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Takedown Damage",
+          "Takedown Damage Amp",
+          "Pounce Damage",
+          "Swipe Damage",
+          "Enhanced Pounce Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "20",
+      "datavalues": {},
+      "description": "Nidalee transforms into a cougar, gaining new abilities.",
+      "cooldownBurn": "3"
+    }
+  ],
+  "passive_en": {
+    "name": "Prowl",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 96,
+      "y": 0,
+      "full": "Nidalee_Passive.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Moving through brush increases Nidalee's Move Speed by 10% for 2 seconds, increased to 30% toward visible enemy champions within 1400 range.<br><br>Hitting champions or monsters with Javelin Toss or Bushwhack triggers a <font color='#FFF673'>Hunt</font>, granting <font color='#ee91d7'>True Sight</font> of them for 4 seconds. During this time, Nidalee gains 10% Move Speed (increased to 30% toward the <font color='#FFF673'>Hunted</font> target) and her Takedown and Pounce are enhanced against them."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "76000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "76001",
+      "num": 1,
+      "name": "Snow Bunny Nidalee",
+      "chromas": false
+    },
+    {
+      "id": "76002",
+      "num": 2,
+      "name": "Leopard Nidalee",
+      "chromas": false
+    },
+    {
+      "id": "76003",
+      "num": 3,
+      "name": "French Maid Nidalee",
+      "chromas": false
+    },
+    {
+      "id": "76004",
+      "num": 4,
+      "name": "Pharaoh Nidalee",
+      "chromas": false
+    },
+    {
+      "id": "76005",
+      "num": 5,
+      "name": "Bewitching Nidalee",
+      "chromas": false
+    },
+    {
+      "id": "76006",
+      "num": 6,
+      "name": "Headhunter Nidalee",
+      "chromas": false
+    },
+    {
+      "id": "76007",
+      "num": 7,
+      "name": "Warring Kingdoms Nidalee",
+      "chromas": false
+    },
+    {
+      "id": "76008",
+      "num": 8,
+      "name": "Challenger Nidalee",
+      "chromas": true
+    },
+    {
+      "id": "76009",
+      "num": 9,
+      "name": "Super Galaxy Nidalee",
+      "chromas": false
+    },
+    {
+      "id": "76011",
+      "num": 11,
+      "name": "Dawnbringer Nidalee",
+      "chromas": true
+    },
+    {
+      "id": "76018",
+      "num": 18,
+      "name": "Cosmic Huntress Nidalee",
+      "chromas": true
+    },
+    {
+      "id": "76027",
+      "num": 27,
+      "name": "DWG Nidalee",
+      "chromas": true
+    },
+    {
+      "id": "76029",
+      "num": 29,
+      "name": "Ocean Song Nidalee",
+      "chromas": true
+    },
+    {
+      "id": "76039",
+      "num": 39,
+      "name": "Kittalee",
+      "chromas": false
+    },
+    {
+      "id": "76048",
+      "num": 48,
+      "name": "La Ilusión Nidalee",
+      "chromas": false
+    },
+    {
+      "id": "76058",
+      "num": 58,
+      "name": "Spirit Blossom Nidalee",
+      "chromas": false
+    }
+  ]
+}

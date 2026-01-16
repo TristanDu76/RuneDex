@@ -1,0 +1,467 @@
+{
+  "id": "Zyra",
+  "key": "143",
+  "name": "Zyra",
+  "title": "Dame aux ronces",
+  "version": "15.23.1",
+  "lore": "Née au cours d'une ancienne catastrophe magique, Zyra est la colère de la nature incarnée : mélange de plante et d'humain, faisant émerger de nouvelles pousses à chaque pas. Elle considère les nombreux mortels de Valoran comme de simples proies pour sa progéniture végétale, et les éliminer avec ses gerbes d'épines ne lui pose aucun problème. Bien que nul ne connaisse ses vrais objectifs, Zyra erre de par le monde, suivant son instinct qui est de coloniser toujours plus de terres et d'en exterminer toutes les autres formes de vie.",
+  "tags": [
+    "Mage",
+    "Support"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 48,
+    "y": 96,
+    "full": "Zyra.png",
+    "group": "champion",
+    "sprite": "champion5.png"
+  },
+  "skins": [
+    {
+      "id": "143000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "143001",
+      "num": 1,
+      "name": "Zyra magmatique",
+      "chromas": false
+    },
+    {
+      "id": "143002",
+      "num": 2,
+      "name": "Zyra hantée",
+      "chromas": false
+    },
+    {
+      "id": "143003",
+      "num": 3,
+      "name": "SKT T1 Zyra",
+      "chromas": false
+    },
+    {
+      "id": "143004",
+      "num": 4,
+      "name": "Zyra sorcière draconique",
+      "chromas": false
+    },
+    {
+      "id": "143005",
+      "num": 5,
+      "name": "Zyra de l'assemblée",
+      "chromas": true
+    },
+    {
+      "id": "143006",
+      "num": 6,
+      "name": "Zyra de l'assemblée prestige",
+      "chromas": false
+    },
+    {
+      "id": "143007",
+      "num": 7,
+      "name": "Zyra rose de cristal",
+      "chromas": true
+    },
+    {
+      "id": "143016",
+      "num": 16,
+      "name": "Zyra cauchemar criminel",
+      "chromas": true
+    },
+    {
+      "id": "143036",
+      "num": 36,
+      "name": "Zyra mythificatrice",
+      "chromas": true
+    },
+    {
+      "id": "143046",
+      "num": 46,
+      "name": "Zyra ville démoniaque",
+      "chromas": true
+    },
+    {
+      "id": "143055",
+      "num": 55,
+      "name": "Zyra lune de sang",
+      "chromas": true
+    },
+    {
+      "id": "143064",
+      "num": 64,
+      "name": "Zyra fleur spirituelle",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "ZyraQ",
+      "name": "Épines funestes",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 96,
+        "full": "ZyraQ.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Zyra répand des ronces dans le sol et provoque une explosion d'épines, infligeant <magicDamage>{{ initialdamage }} pts de dégâts magiques</magicDamage>.<br /><br />Si cette compétence est lancée près d'une <keywordMajor>graine</keywordMajor>, cette <keywordMajor>graine</keywordMajor> se transforme en Cracheuse de ronces qui inflige <magicDamage>{{ spell.zyrap:plantdamage }} pts de dégâts magiques</magicDamage> et dure {{ spell.zyrap:plantduration }} sec. Les Cracheuses de ronces ont une portée de 575 unités de distance.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "55",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Des ronces se répandent dans le sol et provoquent une explosion d'épines, infligeant des dégâts magiques aux ennemis dans la zone. Si le sort est lancé près d'une graine, Épines funestes fait pousser une Cracheuse de ronces qui tire sur les ennemis de loin.",
+      "cooldownBurn": "7/6.5/6/5.5/5"
+    },
+    {
+      "id": "ZyraW",
+      "name": "Croissance incontrôlée",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 96,
+        "full": "ZyraW.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "2",
+      "maxrank": 5,
+      "tooltip": "Zyra plante une <keywordMajor>graine</keywordMajor> qui dure {{ e6 }} sec. Quand un champion ennemi marche sur une <keywordMajor>graine</keywordMajor>, celle-ci est détruite et octroie pendant {{ e3 }} sec une <keywordStealth>vision pure</keywordStealth> de ce champion.<br /><br />Cette compétence a 2 charges et un délai de rechargement de {{ ammorechargetime }} sec. Tuer un sbire ennemi ou un monstre réduit le délai de rechargement de {{ e1 }}%. Participer à l'élimination d'un champion réduit le délai de rechargement de {{ e2 }}% à la place.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "1 graine",
+      "leveltip": {
+        "label": [
+          "Délai de rechargement des graines"
+        ]
+      },
+      "resource": "1 graine",
+      "rangeBurn": "850",
+      "datavalues": {},
+      "description": "Zyra plante une graine qui dure jusqu'à 60 sec. Lancer Épines funestes ou Racines fixatrices près des graines les change en plantes qui combattront pour Zyra. Zyra peut stocker plusieurs graines. Tuer des ennemis réduit le délai de rechargement de Croissance incontrôlée.",
+      "cooldownBurn": "0"
+    },
+    {
+      "id": "ZyraE",
+      "name": "Racines fixatrices",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 96,
+        "full": "ZyraE.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Zyra lance des racines qui <status>immobilisent</status> les ennemis pendant {{ e5 }} sec et leur infligent <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. <br /><br />Si cette compétence passe près d'une <keywordMajor>graine</keywordMajor>, cette <keywordMajor>graine</keywordMajor> se transforme en Plante flagellante qui inflige <magicDamage>{{ spell.zyrap:plantdamage }} pts de dégâts magiques</magicDamage> et dure {{ spell.zyrap:plantduration }} sec. Les Plantes flagellantes ont une portée de 400 unités de distance et leurs attaques <status>ralentissent</status> les ennemis de {{ e2 }}% pendant {{ e3 }} sec. Les <status>ralentissements</status> de multiples Plantes flagellantes se cumulent jusqu'à {{ maxslowstacks }} fois.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/75/80/85/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Coût en @AbilityResourceName@",
+          "Dégâts",
+          "Durée de l'immobilisation"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1100",
+      "datavalues": {},
+      "description": "Zyra lance des racines à travers le sol pour capturer sa cible, infligeant des dégâts et immobilisant les ennemis qu'elles touchent. Si le sort est lancé près d'une graine, Racines fixatrices fait pousser une Plante flagellante dont les attaques à courte portée réduisent la vitesse de déplacement des ennemis.",
+      "cooldownBurn": "11"
+    },
+    {
+      "id": "ZyraR",
+      "name": "Ronces étrangleuses",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 96,
+        "full": "ZyraR.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Zyra invoque la fureur de la nature, créant des ronces malfaisantes qui infligent <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. Au bout de 2 sec, les ronces <status>projettent dans les airs</status> pendant {{ e1 }} sec.<br /><br />Les plantes de Zyra dans les ronces deviennent enragées, ce qui réinitialise leur durée, leur octroie <healing>+{{ e2 }}% de PV</healing> et permet à leurs attaques d'infliger {{ plantdamagebonus }}% de dégâts supplémentaires.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Zyra invoque des ronces malfaisantes dans la zone ciblée, infligeant des dégâts aux ennemis en s'étendant avant de les projeter en l'air. Les plantes dans les ronces deviennent enragées.",
+      "cooldownBurn": "110/100/90"
+    }
+  ],
+  "passive": {
+    "name": "Jardin de ronces",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 48,
+      "y": 96,
+      "full": "ZyraP.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "Des graines apparaissent régulièrement autour de Zyra, de plus en plus souvent au fur et à mesure qu'elle gagne des niveaux. Zyra peut lancer Épines funestes ou Racines fixatrices près des graines pour faire pousser des plantes qui combattront pour elle."
+  },
+  "created_at": "2025-11-26T15:13:35.751829+00:00",
+  "factions": [
+    "ixtal"
+  ],
+  "custom_tags": [
+    "plante"
+  ],
+  "gender": "Female",
+  "species": "Plant",
+  "title_en": "Rise of the Thorns",
+  "lore_en": "Born in an ancient, sorcerous catastrophe, Zyra is the wrath of nature given form—an alluring hybrid of plant and human, kindling new life with every step. She views the many mortals of Valoran as little more than prey for her seeded progeny, and thinks nothing of slaying them with flurries of deadly spines. Though her true purpose has not been revealed, Zyra wanders the world, indulging her most primal urges to colonize, and strangle all other life from it.",
+  "spells_en": [
+    {
+      "id": "ZyraQ",
+      "name": "Deadly Spines",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 96,
+        "full": "ZyraQ.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Zyra causes thick vines to spread and explode into spines, dealing <magicDamage>{{ initialdamage }} magic damage</magicDamage>.<br /><br />If this Ability is cast near a <keywordMajor>Seed</keywordMajor>, the <keywordMajor>Seed</keywordMajor> grows into a Thorn Spitter that deals <magicDamage>{{ spell.zyrap:plantdamage }} magic damage</magicDamage> and lasts {{ spell.zyrap:plantduration }} seconds. Thorn Spitters have 575 range.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "55",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Thick vines spread through the ground and explode into spines, dealing magic damage to enemies within the area. If cast near a seed, Deadly Spines grows a Thorn Spitter plant, which fires at enemies from afar.",
+      "cooldownBurn": "7/6.5/6/5.5/5"
+    },
+    {
+      "id": "ZyraW",
+      "name": "Rampant Growth",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 96,
+        "full": "ZyraW.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "2",
+      "maxrank": 5,
+      "tooltip": "Zyra plants a <keywordMajor>Seed</keywordMajor> that lasts {{ e6 }} seconds. These <keywordMajor>Seeds</keywordMajor> grant <keywordStealth>True Sight</keywordStealth> of enemy champions that step on them for {{ e3 }} seconds, but are still destroyed.<br /><br />This Ability has 2 charges with a {{ ammorechargetime }} second recharge time. Killing an enemy minion or monster reduces the recharge time by {{ e1 }}%. Champion takedowns reduce the recharge time by {{ e2 }}% instead.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "1 Seed",
+      "leveltip": {
+        "label": [
+          "Seed Recharge Rate"
+        ]
+      },
+      "resource": "1 Seed",
+      "rangeBurn": "850",
+      "datavalues": {},
+      "description": "Zyra plants a seed, lasting up to 60 seconds. Deadly Spines and Grasping Roots cast near seeds will turn them into plants who fight for Zyra. Zyra can store multiple seeds at once, and killing enemies reduces Rampant Growth's recharge time.",
+      "cooldownBurn": "0"
+    },
+    {
+      "id": "ZyraE",
+      "name": "Grasping Roots",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 96,
+        "full": "ZyraE.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Zyra sends vines forward, <status>Rooting</status> for {{ e5 }} second(s) and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>. <br /><br />If this Ability passes near a <keywordMajor>Seed</keywordMajor>, the <keywordMajor>Seed</keywordMajor> grows into a Vine Lasher that deals <magicDamage>{{ spell.zyrap:plantdamage }} magic damage</magicDamage> and lasts {{ spell.zyrap:plantduration }} seconds. Vine Lashers have 400 range, and their Attacks <status>Slow</status> by {{ e2 }}% for {{ e3 }} seconds. The <status>Slow</status> from multiple Vine Lashers stacks up to {{ maxslowstacks }} times.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/75/80/85/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "@AbilityResourceName@ Cost",
+          "Damage",
+          "Root Duration"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1100",
+      "datavalues": {},
+      "description": "Zyra sends forth vines through the ground to ensnare her target, dealing damage and rooting enemies they come across. If cast near a seed, Grasping Roots grows a Vine Lasher, whose short range attacks reduce enemy Move Speed.",
+      "cooldownBurn": "11"
+    },
+    {
+      "id": "ZyraR",
+      "name": "Stranglethorns",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 96,
+        "full": "ZyraR.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Zyra summons the fury of nature, growing a twisted thicket that deals <magicDamage>{{ totaldamage }} magic damage</magicDamage>. After 2 seconds, the vines snap upwards, <status>Knocking Up</status> for {{ e1 }} second.<br /><br />Zyra's plants within the thicket become enraged, resetting their duration, gaining <healing>{{ e2 }}% Health</healing> and Attacking for {{ plantdamagebonus }}% bonus damage.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Zyra summons a twisted thicket at her target location, dealing damage to enemies as it expands and knocking them airborne as it contracts. Plants within the thicket are enraged.",
+      "cooldownBurn": "110/100/90"
+    }
+  ],
+  "passive_en": {
+    "name": "Garden of Thorns",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 48,
+      "y": 96,
+      "full": "ZyraP.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "Seeds spawn around Zyra periodically, becoming faster with level. Zyra can cast Deadly Spines or Grasping Roots near seeds to grow plants, who fight for Zyra."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Support"
+  ],
+  "skins_en": [
+    {
+      "id": "143000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "143001",
+      "num": 1,
+      "name": "Wildfire Zyra",
+      "chromas": false
+    },
+    {
+      "id": "143002",
+      "num": 2,
+      "name": "Haunted Zyra",
+      "chromas": false
+    },
+    {
+      "id": "143003",
+      "num": 3,
+      "name": "SKT T1 Zyra",
+      "chromas": false
+    },
+    {
+      "id": "143004",
+      "num": 4,
+      "name": "Dragon Sorceress Zyra",
+      "chromas": false
+    },
+    {
+      "id": "143005",
+      "num": 5,
+      "name": "Coven Zyra",
+      "chromas": true
+    },
+    {
+      "id": "143006",
+      "num": 6,
+      "name": "Prestige Coven Zyra",
+      "chromas": false
+    },
+    {
+      "id": "143007",
+      "num": 7,
+      "name": "Crystal Rose Zyra",
+      "chromas": true
+    },
+    {
+      "id": "143016",
+      "num": 16,
+      "name": "Crime City Nightmare Zyra",
+      "chromas": true
+    },
+    {
+      "id": "143036",
+      "num": 36,
+      "name": "Mythmaker Zyra",
+      "chromas": true
+    },
+    {
+      "id": "143046",
+      "num": 46,
+      "name": "Street Demons Zyra",
+      "chromas": true
+    },
+    {
+      "id": "143055",
+      "num": 55,
+      "name": "Blood Moon Zyra",
+      "chromas": true
+    },
+    {
+      "id": "143064",
+      "num": 64,
+      "name": "Spirit Blossom Zyra",
+      "chromas": true
+    }
+  ]
+}

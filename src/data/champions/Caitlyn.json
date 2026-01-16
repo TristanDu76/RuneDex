@@ -1,0 +1,557 @@
+{
+  "id": "Caitlyn",
+  "key": "51",
+  "name": "Caitlyn",
+  "title": "Shérif de Piltover",
+  "version": "15.23.1",
+  "lore": "Caitlyn Kiramman est née dans un clan marchand riche et influent de Piltover. Bien qu'elle maîtrisait les codes sociaux de la Cité du Progrès, elle préférait passer son temps dans les terres sauvages adjacentes, développant des talents de chasseuse et de tireuse d'élite. Ses parents, qui lui inculquèrent un sens aigu du bien et du mal, étaient l'une de ses plus grandes forces. Sa mère, une haute contrôleur du Clan Kiramman, la mettait en garde contre la duplicité de Piltover.\r\n\r\nLe destin de Caitlyn bascula un Jour du Progrès. Elle revint chez elle et trouva sa maison mise à sac et ses parents torturés pour des informations. Caitlyn réussit à retrouver les voyous un par un grâce à ses talents de pistage, et sauva ses parents, alertant les Gardiens de Piltover. Cependant, aucun des ravisseurs n'a pu identifier leur commanditaire, seulement un intermédiaire portant l'initiale \"C\".\r\n\r\nCet événement changea tout. Sa mère quitta son rôle prestigieux, et Caitlyn refusa de prendre sa place. Au lieu de cela, elle se concentra sur le démantèlement de la toile d'intrigues entourant le mystérieux \"C\". Elle s'établit avec succès comme détective privée, se faisant un nom en tant que personne capable de trouver n'importe qui ou n'importe quoi. En reconnaissance de son succès auto-construit, ses parents lui fabriquèrent un fusil Hextech d'une précision exquise, capable d'utiliser différents types de munitions spécialisées.\r\n\r\nAprès une affaire particulièrement traumatisante impliquant un artefact Hextech disparu et des enlèvements d'enfants, Caitlyn fut recommandée par un Gardien et se vit offrir un poste officiel de shérif. Elle refusa d'abord, mais réalisa que les ressources des Gardiens la rapprocheraient potentiellement de la véritable identité de \"C\".\r\n\r\nCaitlyn est devenue une officière très respectée au sein des Gardiens. Elle est célèbre pour son intelligence et son calme, qu'elle utilise pour concevoir des pièges élaborés afin d'attraper les criminels insaisissables de la ville. Elle a récemment été associée à une nouvelle recrue de Zaun, la téméraire et fougueuse Vi. Leur partenariat improbable, où le calme de Caitlyn équilibre le chaos de Vi, est devenu la source de nombreuses rumeurs, mais son efficacité est incontestable.\r\n\r\nCe que Caitlyn ignore, c'est que le mystérieux \"C\" la surveille également, surtout à mesure que ses enquêtes se rapprochent dangereusement de la vérité.",
+  "tags": [
+    "Marksman"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 0,
+    "y": 96,
+    "full": "Caitlyn.png",
+    "group": "champion",
+    "sprite": "champion0.png"
+  },
+  "skins": [
+    {
+      "id": "51000",
+      "num": 0,
+      "name": "default",
+      "chromas": true
+    },
+    {
+      "id": "51001",
+      "num": 1,
+      "name": "Caitlyn résistante",
+      "chromas": false
+    },
+    {
+      "id": "51002",
+      "num": 2,
+      "name": "Shérif Caitlyn",
+      "chromas": false
+    },
+    {
+      "id": "51003",
+      "num": 3,
+      "name": "Caitlyn safari",
+      "chromas": false
+    },
+    {
+      "id": "51004",
+      "num": 4,
+      "name": "Caitlyn arctique",
+      "chromas": false
+    },
+    {
+      "id": "51005",
+      "num": 5,
+      "name": "Agent Caitlyn",
+      "chromas": false
+    },
+    {
+      "id": "51006",
+      "num": 6,
+      "name": "Caitlyn chasseuse de têtes",
+      "chromas": false
+    },
+    {
+      "id": "51010",
+      "num": 10,
+      "name": "Caitlyn spectre lunaire",
+      "chromas": true
+    },
+    {
+      "id": "51011",
+      "num": 11,
+      "name": "Caitlyn Pulsefire",
+      "chromas": true
+    },
+    {
+      "id": "51013",
+      "num": 13,
+      "name": "Caitlyn fusil à eau",
+      "chromas": true
+    },
+    {
+      "id": "51019",
+      "num": 19,
+      "name": "Caitlyn arcade",
+      "chromas": false
+    },
+    {
+      "id": "51020",
+      "num": 20,
+      "name": "Caitlyn arcade prestige",
+      "chromas": false
+    },
+    {
+      "id": "51022",
+      "num": 22,
+      "name": "Caitlyn de l'Académie du combat",
+      "chromas": true
+    },
+    {
+      "id": "51028",
+      "num": 28,
+      "name": "Caitlyn pacifieuse d'Arcane",
+      "chromas": false
+    },
+    {
+      "id": "51029",
+      "num": 29,
+      "name": "Caitlyn arcade prestige (2022)",
+      "chromas": false
+    },
+    {
+      "id": "51030",
+      "num": 30,
+      "name": "Caitlyn lune de neige",
+      "chromas": true
+    },
+    {
+      "id": "51039",
+      "num": 39,
+      "name": "Caitlyn coup de cœur",
+      "chromas": true
+    },
+    {
+      "id": "51048",
+      "num": 48,
+      "name": "DRX Caitlyn",
+      "chromas": true
+    },
+    {
+      "id": "51050",
+      "num": 50,
+      "name": "Caitlyn commandante d'Arcane",
+      "chromas": true
+    },
+    {
+      "id": "51051",
+      "num": 51,
+      "name": "Caitlyn commandante d'Arcane prestige",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "CaitlynQ",
+      "name": "Pacificateur de Piltover",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 48,
+        "full": "CaitlynQ.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Caitlyn tire un projectile perforant qui inflige <physicalDamage>{{ initialdamage }} pts de dégâts physiques</physicalDamage>. Après que le projectile a touché une première cible, il s'élargit et inflige <physicalDamage>{{ secondarydamage }} pts de dégâts physiques</physicalDamage>.<br /><br />Les ennemis révélés par <spellName>Piège-yordle</spellName> subissent toujours l'intégralité des dégâts.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "55/60/65/70/75",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ratio de dégâts d'attaque totaux",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1250",
+      "datavalues": {},
+      "description": "Caitlyn fait monter son fusil en puissance pendant 1 seconde pour effectuer un tir perforant qui inflige des dégâts physiques (les cibles consécutives subissent moins de dégâts).",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "CaitlynW",
+      "name": "Piège-yordle",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 48,
+        "full": "CaitlynW.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "2",
+      "maxrank": 5,
+      "tooltip": "Caitlyn pose un piège qui <status>immobilise</status> pendant {{ e6 }} sec le premier champion qui marche dessus. Le piège octroie une <keywordStealth>vision pure</keywordStealth> de ce champion pendant 3 sec. Les pièges durent {{ e3 }} sec et {{ e5 }} pièges peuvent être actifs simultanément. Cette compétence a {{ e5 }} charges ({{ ammorechargetime }} sec de rechargement).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "20",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts supplémentaires de Tir dans la tête contre les cibles piégées",
+          "Délai de rechargement",
+          "Pièges max",
+          "Durée du piège"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Caitlyn pose un piège. Quand il est déclenché, il révèle et immobilise le champion ennemi pendant 1.5 sec, et il octroie un Tir dans la tête renforcé à Caitlyn.",
+      "cooldownBurn": "0.5"
+    },
+    {
+      "id": "CaitlynE",
+      "name": "Filet de calibre 90",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 96,
+        "full": "CaitlynE.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Caitlyn tire un filet, ce qui la repousse en arrière. Le filet <status>ralentit</status> la première cible touchée de {{ e3 }}% pendant {{ e2 }} sec et lui inflige <magicDamage>{{ netdamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "75",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "750",
+      "datavalues": {},
+      "description": "Caitlyn lance un filet lourd qui ralentit sa cible. Le recul projette Caitlyn en arrière.",
+      "cooldownBurn": "16/14/12/10/8"
+    },
+    {
+      "id": "CaitlynR",
+      "name": "Tir chirurgical",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 96,
+        "full": "CaitlynR.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Caitlyn prend le temps de canaliser un tir parfait, puis elle fait feu, infligeant <physicalDamage>{{ rtotaldamage }} pts de dégâts physiques</physicalDamage>. Les autres champions ennemis peuvent intercepter le tir. Cette compétence octroie une <keywordStealth>vision pure</keywordStealth> de la cible pendant la canalisation.<br /><br /><rules>Inflige jusqu'à {{ critchanceamp*100 }}% de dégâts supplémentaires selon les chances de coup critique de Caitlyn.</rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "3500",
+      "datavalues": {},
+      "description": "Caitlyn prend son temps pour réaliser le tir parfait, infligeant d'importants dégâts à une cible unique et à très longue portée. Les champions ennemis peuvent intercepter la balle à la place de leur allié.",
+      "cooldownBurn": "90"
+    }
+  ],
+  "passive": {
+    "name": "Tir dans la tête",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 0,
+      "y": 96,
+      "full": "Caitlyn_Headshot.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Toutes les quelques attaques de base ou quand elle vise une cible prise dans un de ses pièges ou dans son filet, Caitlyn tire dans la tête de sa cible, infligeant des dégâts supplémentaires qui augmentent avec ses chances de coup critique. Contre les cibles prises au piège ou dans un filet, la portée du Tir dans la tête est doublée."
+  },
+  "created_at": "2025-11-26T15:13:32.649099+00:00",
+  "factions": [
+    "piltover"
+  ],
+  "custom_tags": [
+    "shérif",
+    "enforcer"
+  ],
+  "gender": "Female",
+  "species": "Human",
+  "title_en": "the Sheriff of Piltover",
+  "lore_en": "Caitlyn Kiramman was born into a wealthy and influential merchant clan in Piltover. While she mastered the social graces of the City of Progress, she preferred spending time in the wild lands outside it, developing skills as a hunter and a sharp-shooter. Her parents, who instilled in her a strong sense of right and wrong, were one of her greatest assets. Her mother, a high comptroller in Clan Kiramman, always warned her against Piltover's seductions and its gilded promises.\r\n\r\nCaitlyn's fate changed on one Progress Day. She returned home to find her house ransacked and her parents being tortured for information. Caitlyn successfully tracked down the thugs one by one using her hunting skills and rescued her parents, alerting the Piltover Wardens. However, none of the kidnappers knew the identity of the individual who hired them, only a proxy with the initial \"C\".\r\n\r\nThis event changed everything. Her mother gave up her prestigious role, and Caitlyn had no desire to take her mother's place. Instead, her focus turned to breaking through the web of intrigue surrounding the mysterious \"C\". She successfully established herself as a private investigator, making a name for herself as someone who could find anything or anyone. In recognition of her self-made success, her parents crafted her an exquisite Hextech rifle of greater accuracy, capable of taking a variety of specialized shells.\r\n\r\nAfter a particularly traumatic case involving a missing Hextech device and a series of child abductions, Caitlyn was recommended by one of the Wardens and was offered a formal position as a Sheriff. She initially refused, but eventually realized that the Wardens' resources could potentially get her closer to discovering the true identity of \"C\".\r\n\r\nCaitlyn has since become a highly respected officer within the Wardens' ranks. She is famous for her intelligence and calm demeanor, which she uses to devise elaborate traps to catch the city's most elusive criminals. She recently partnered with a new recruit from Zaun, the brash and reckless Vi. Their unlikely pairing, where Caitlyn's calm counterbalances Vi's fire, is the subject of much speculation, but their effectiveness is undeniable.\r\n\r\nWhat Caitlyn does not know is that the mysterious \"C\" is also keeping tabs on her, especially as her investigations bring her ever closer to the truth.",
+  "spells_en": [
+    {
+      "id": "CaitlynQ",
+      "name": "Piltover Peacemaker",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 48,
+        "full": "CaitlynQ.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Caitlyn revs her rifle to fire a piercing shot dealing <physicalDamage>{{ initialdamage }} physical damage</physicalDamage>. After the bolt strikes the first target, it opens into a wider shot that deals <physicalDamage>{{ secondarydamage }} physical damage</physicalDamage>.<br /><br />Enemies revealed by <spellName>Yordle Snap Trap</spellName> always take full damage.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "55/60/65/70/75",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Total AD Ratio",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1250",
+      "datavalues": {},
+      "description": "Caitlyn revs up her rifle for 1 second to unleash a penetrating shot that deals physical damage (deals less damage to subsequent targets).",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "CaitlynW",
+      "name": "Yordle Snap Trap",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 48,
+        "full": "CaitlynW.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "2",
+      "maxrank": 5,
+      "tooltip": "Caitlyn sets a trap that <status>Roots</status> the first champion that steps on it for {{ e6 }} seconds and granting <keywordStealth>True Sight</keywordStealth> of them for 3 seconds. Traps last for {{ e3 }} seconds, and {{ e5 }} traps may be active at once. This Ability has {{ e5 }} charges ({{ ammorechargetime }} second refresh).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "20",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Bonus Headshot Damage on Trapped Targets",
+          "Recharge Time",
+          "Maximum Traps",
+          "Trap Duration"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Caitlyn sets a trap that, when sprung, reveals and immobilizes the enemy champion for 1.5 seconds, granting Caitlyn an empowered Headshot.",
+      "cooldownBurn": "0.5"
+    },
+    {
+      "id": "CaitlynE",
+      "name": "90 Caliber Net",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 96,
+        "full": "CaitlynE.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Caitlyn fires a net, pushing her backwards. The net <status>Slows</status> the first target hit by {{ e3 }}% for {{ e2 }} second and deals <magicDamage>{{ netdamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "75",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "750",
+      "datavalues": {},
+      "description": "Caitlyn fires a heavy net to slow her target. The recoil knocks Caitlyn back.",
+      "cooldownBurn": "16/14/12/10/8"
+    },
+    {
+      "id": "CaitlynR",
+      "name": "Ace in the Hole",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 96,
+        "full": "CaitlynR.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Caitlyn takes a moment to channel and line up the perfect shot, then she fires, dealing <physicalDamage>{{ rtotaldamage }} physical damage</physicalDamage>, but other enemy champions can intercept it. This Ability grants <keywordStealth>True Sight</keywordStealth> of the target during the channel.<br /><br /><rules>Deals up to an additional {{ critchanceamp*100 }}% based on Caitlyn's Critical Strike chance.</rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "3500",
+      "datavalues": {},
+      "description": "Caitlyn takes time to line up the perfect shot, dealing massive damage to a single target at a huge range. Enemy champions can intercept the bullet for their ally.",
+      "cooldownBurn": "90"
+    }
+  ],
+  "passive_en": {
+    "name": "Headshot",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 0,
+      "y": 96,
+      "full": "Caitlyn_Headshot.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Every few basic attacks, or against a target she has trapped or netted, Caitlyn will fire a headshot dealing bonus damage that scales with her critical strike chance. On trapped or netted targets, Caitlyn's Headshot attack range is doubled."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Adc"
+  ],
+  "skins_en": [
+    {
+      "id": "51000",
+      "num": 0,
+      "name": "default",
+      "chromas": true
+    },
+    {
+      "id": "51001",
+      "num": 1,
+      "name": "Resistance Caitlyn",
+      "chromas": false
+    },
+    {
+      "id": "51002",
+      "num": 2,
+      "name": "Sheriff Caitlyn",
+      "chromas": false
+    },
+    {
+      "id": "51003",
+      "num": 3,
+      "name": "Safari Caitlyn",
+      "chromas": false
+    },
+    {
+      "id": "51004",
+      "num": 4,
+      "name": "Arctic Warfare Caitlyn",
+      "chromas": false
+    },
+    {
+      "id": "51005",
+      "num": 5,
+      "name": "Officer Caitlyn",
+      "chromas": false
+    },
+    {
+      "id": "51006",
+      "num": 6,
+      "name": "Headhunter Caitlyn",
+      "chromas": false
+    },
+    {
+      "id": "51010",
+      "num": 10,
+      "name": "Lunar Wraith Caitlyn",
+      "chromas": true
+    },
+    {
+      "id": "51011",
+      "num": 11,
+      "name": "Pulsefire Caitlyn",
+      "chromas": true
+    },
+    {
+      "id": "51013",
+      "num": 13,
+      "name": "Pool Party Caitlyn",
+      "chromas": true
+    },
+    {
+      "id": "51019",
+      "num": 19,
+      "name": "Arcade Caitlyn",
+      "chromas": false
+    },
+    {
+      "id": "51020",
+      "num": 20,
+      "name": "Prestige Arcade Caitlyn",
+      "chromas": false
+    },
+    {
+      "id": "51022",
+      "num": 22,
+      "name": "Battle Academia Caitlyn",
+      "chromas": true
+    },
+    {
+      "id": "51028",
+      "num": 28,
+      "name": "Arcane Enforcer Caitlyn",
+      "chromas": false
+    },
+    {
+      "id": "51029",
+      "num": 29,
+      "name": "Prestige Arcade Caitlyn (2022)",
+      "chromas": false
+    },
+    {
+      "id": "51030",
+      "num": 30,
+      "name": "Snow Moon Caitlyn",
+      "chromas": true
+    },
+    {
+      "id": "51039",
+      "num": 39,
+      "name": "Heartthrob Caitlyn",
+      "chromas": true
+    },
+    {
+      "id": "51048",
+      "num": 48,
+      "name": "DRX Caitlyn",
+      "chromas": true
+    },
+    {
+      "id": "51050",
+      "num": 50,
+      "name": "Arcane Commander Caitlyn",
+      "chromas": true
+    },
+    {
+      "id": "51051",
+      "num": 51,
+      "name": "Prestige Arcane Commander Caitlyn",
+      "chromas": true
+    }
+  ]
+}

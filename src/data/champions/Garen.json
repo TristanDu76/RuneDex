@@ -1,0 +1,522 @@
+{
+  "id": "Garen",
+  "key": "86",
+  "name": "Garen",
+  "title": "Force de Demacia",
+  "version": "15.23.1",
+  "lore": "Garen est né dans la noble et influente famille Crownguard de Demacia, destiné à défendre le trône avec sa vie. Son père et sa tante, Tianna (capitaine d'épée de l'élite de l'Avant-garde Intrépide), étaient des figures militaires respectées.\r\n\r\nL'enfance de Garen fut marquée par les récits de son oncle sur les dangers extérieurs, notamment les mages. Le pire se confirma lorsque cet oncle fut tué par un mage avant les onze ans de Garen. En voyant la douleur de sa famille et la peur dans les yeux de sa jeune sœur, Lux, Garen en tira une conviction absolue : la magie était le plus grand danger pour Demacia. Il fit le serment de ne jamais la laisser franchir les murs du royaume.\r\n\r\nÀ l'âge de douze ans, il rejoignit l'armée, où il rencontra et devint inséparable de Jarvan IV, le prince qu'il était destiné à servir. Il s'entraîna sans relâche, transformant son corps et son esprit en une arme d'acier.\r\n\r\nAu fil des années, Garen se forgea une réputation redoutable, servant avec honneur lors de campagnes aux frontières du Freljord et dans la purge de cultistes. À dix-huit ans, il fut rappelé dans la Grande Cité et recommandé par sa tante pour les épreuves de l'Avant-garde Intrépide (Dauntless Vanguard).\r\n\r\nDe retour chez lui, il fut fier de voir Lux, mais il fut également troublé par un soupçon lancinant : il craignait que sa sœur ne possède des pouvoirs magiques interdits. L'idée qu'un Crownguard puisse être capable de la même sorcellerie qui avait tué leur oncle était trop insupportable pour qu'il la confronte.\r\n\r\nGaren remporta sa place dans l'Avant-garde et prêta serment devant le trône. Il s'immergea dans ses nouvelles fonctions, redoublant d'efforts pour éviter d'avoir à faire face à ses soupçons concernant Lux. Il aimait sa sœur plus que tout, mais une petite partie de lui savait ce qu'il serait forcé de faire si ses peurs étaient confirmées.\r\n\r\nLorsque le capitaine d'épée de l'Avant-garde tomba au combat, Garen fut unanimement choisi pour le commandement.\r\n\r\nAujourd'hui, Garen est bien plus que le soldat le plus redoutable de Demacia ; il est l'incarnation même des idéaux les plus nobles sur lesquels le royaume a été fondé, se tenant résolument en défense de sa patrie, ignorant le secret douloureux qui menace de le détruire.",
+  "tags": [
+    "Fighter",
+    "Tank"
+  ],
+  "partype": "Aucune",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 384,
+    "y": 0,
+    "full": "Garen.png",
+    "group": "champion",
+    "sprite": "champion1.png"
+  },
+  "skins": [
+    {
+      "id": "86000",
+      "num": 0,
+      "name": "default",
+      "chromas": true
+    },
+    {
+      "id": "86001",
+      "num": 1,
+      "name": "Garen sanguin",
+      "chromas": false
+    },
+    {
+      "id": "86002",
+      "num": 2,
+      "name": "Garen soldat du désert",
+      "chromas": false
+    },
+    {
+      "id": "86003",
+      "num": 3,
+      "name": "Garen commando",
+      "chromas": false
+    },
+    {
+      "id": "86004",
+      "num": 4,
+      "name": "Garen chevalier d'effroi",
+      "chromas": false
+    },
+    {
+      "id": "86005",
+      "num": 5,
+      "name": "Garen vagabond",
+      "chromas": false
+    },
+    {
+      "id": "86006",
+      "num": 6,
+      "name": "Garen de la Légion d'acier",
+      "chromas": false
+    },
+    {
+      "id": "86010",
+      "num": 10,
+      "name": "Garen amiral renégat",
+      "chromas": false
+    },
+    {
+      "id": "86011",
+      "num": 11,
+      "name": "Garen du royaume en guerre",
+      "chromas": true
+    },
+    {
+      "id": "86013",
+      "num": 13,
+      "name": "Dieu-roi Garen",
+      "chromas": false
+    },
+    {
+      "id": "86014",
+      "num": 14,
+      "name": "Garen Demacia Vice",
+      "chromas": true
+    },
+    {
+      "id": "86022",
+      "num": 22,
+      "name": "Garen du royaume des mechas",
+      "chromas": false
+    },
+    {
+      "id": "86023",
+      "num": 23,
+      "name": "Garen du royaume des mechas prestige",
+      "chromas": false
+    },
+    {
+      "id": "86024",
+      "num": 24,
+      "name": "Garen de l'Académie du combat",
+      "chromas": true
+    },
+    {
+      "id": "86033",
+      "num": 33,
+      "name": "Garen mythificateur",
+      "chromas": true
+    },
+    {
+      "id": "86044",
+      "num": 44,
+      "name": "Dieu-roi Garen détrôné",
+      "chromas": false
+    },
+    {
+      "id": "86046",
+      "num": 46,
+      "name": "Garen Darkin",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "GarenQ",
+      "name": "Coup décisif",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 48,
+        "full": "GarenQ.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Garen supprime tous les <status>ralentissements</status> qui l'affectent et gagne <speed>+{{ movementspeedamount*100 }}% de vitesse de déplacement</speed> pendant {{ movementspeedduration }} sec.<br /><br />Sa prochaine attaque <status>réduit au silence</status> pendant {{ silenceduration }} sec et inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Durée du bonus en vitesse de déplacement"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "300",
+      "datavalues": {},
+      "description": "Garen reçoit un bonus en vitesse de déplacement et purge tous les ralentissements qui l'affectent. Sa prochaine attaque frappe un point vital de son adversaire, infligeant des dégâts supplémentaires et le réduisant au silence.",
+      "cooldownBurn": "8"
+    },
+    {
+      "id": "GarenW",
+      "name": "Courage",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 48,
+        "full": "GarenW.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> Garen gagne +<scaleArmor>{{ resistsfortooltip }} armure bonus</scaleArmor> et +<scaleMR>{{ resistsfortooltip }} résistance magique bonus</scaleMR>. Tuer des unités octroie définitivement <attention>+{{ resistgainonkilltooltip }} résistances</attention> (bonus max : +<attention>{{ resistmax }}</attention>).<br /><br /><spellActive>Active :</spellActive> Garen rassemble tout son courage pendant {{ drduration }} sec, réduisant de {{ drpercent*100 }}% les dégâts qui le ciblent. Il gagne aussi un <shield>bouclier de {{ totalshield }} PV</shield> et +<slow>{{ upfronttenacity*100 }}% de ténacité</slow> pendant {{ upfrontduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "PV du bouclier",
+          "Réduction des dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "0",
+      "datavalues": {},
+      "description": "Garen augmente passivement son armure et sa résistance magique quand il tue des ennemis. Il peut également activer cette compétence pour recevoir un bouclier et augmenter grandement sa Ténacité pendant un bref instant, avant de profiter d'un montant moindre de réduction des dégâts pendant une durée plus longue.",
+      "cooldownBurn": "22/19.5/17/14.5/12"
+    },
+    {
+      "id": "GarenE",
+      "name": "Jugement",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 48,
+        "full": "GarenE.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Garen donne des coups d'épée tourbillonnants pendant {{ duration }} sec, infligeant <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> {{ f1 }} fois sur la durée. L'ennemi le plus proche subit +<physicalDamage>{{ nearestenemybonus*100 }}% de dégâts</physicalDamage>. Les champions touchés par {{ stackstoshred }} coups perdent <scaleArmor>{{ shredamount*100 }}% d'armure</scaleArmor> pendant {{ shredduration }} sec.<br /><br /><recast>Réactivation</recast> : Garen met fin à cette compétence prématurément{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts de base par tourbillon",
+          "Ratio de dégâts d'attaque par rotation",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "325",
+      "datavalues": {},
+      "description": "Garen donne des coups d'épée tourbillonnants, infligeant des dégâts physiques aux ennemis proches.",
+      "cooldownBurn": "9/8.25/7.5/6.75/6"
+    },
+    {
+      "id": "GarenR",
+      "name": "Justice de Demacia",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 48,
+        "full": "GarenR.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Garen fait appel à la puissance de Demacia pour abattre son ennemi, infligeant <trueDamage>{{ basedamage }} plus {{ executedamage*100 }}% des PV manquants en dégâts bruts</trueDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts",
+          "Pourcentage des PV manquants en dégâts"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Garen en appelle à la puissance de Demacia pour tenter d'exécuter un champion ennemi.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive": {
+    "name": "Persévérance",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 384,
+      "y": 0,
+      "full": "Garen_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Si Garen n'a pas subi de dégâts ou de compétences ennemies récemment, il régénère un pourcentage de ses PV totaux chaque seconde."
+  },
+  "created_at": "2025-11-26T15:13:32.943584+00:00",
+  "factions": [
+    "demacia"
+  ],
+  "custom_tags": [
+    "élite",
+    "sans-magie"
+  ],
+  "gender": "Male",
+  "species": "Human",
+  "title_en": "The Might of Demacia",
+  "lore_en": "Garen was born into the noble and influential Crownguard family of Demacia, destined to defend the throne with his life. His father and his aunt, Tianna (Sword-Captain of the elite Dauntless Vanguard), were respected military figures.\r\n\r\nGaren's childhood was marked by his uncle's tales of external dangers, particularly mages. The worst was confirmed when that uncle was killed by a mage before Garen turned eleven. Seeing the pain this brought his family and the fear in his young sister Lux's eyes, Garen formed an absolute conviction: magic was Demacia's first and greatest peril. He vowed never to let it within their walls.\r\n\r\nAt the age of twelve, he left home to join the military, where he met and became inseparable from Jarvan IV, the prince he was destined to serve. He trained tirelessly, honing his body and mind into a weapon as strong and true as Demacian steel.\r\n\r\nOver the years, Garen earned a fearsome reputation on the battlefield, serving with honor in campaigns along the Freljordian borders and in the purging of cultists. By the time he was eighteen, he was summoned back to the Great City and recommended by his aunt for the trials necessary to join the ranks of the Dauntless Vanguard.\r\n\r\nReturning home, he was proud to see Lux, but he also wrestled with a gnawing suspicion: he feared his sister possessed the same forbidden magical powers that had slain their uncle. The thought of a Crownguard being capable of such sorceries was too unbearable to confront.\r\n\r\nGaren won his place in the Vanguard and took his oaths before the throne. He threw himself into his new duties, fighting and training twice as hard to avoid confronting his suspicions about Lux. Though he loved his sister more than anything else in the world, some small part of him knew what he would be forced to do if his fears were ever confirmed.\r\n\r\nWhen the Sword-Captain of the Vanguard fell in battle, Garen was unanimously nominated for command.\r\n\r\nTo this day, Garen stands resolute in the defense of his homeland. Far more than Demacia's most formidable soldier, he is the very embodiment of all the noblest ideals upon which the kingdom was founded, resolute in his duty while silently battling the secret that threatens to destroy him.",
+  "spells_en": [
+    {
+      "id": "GarenQ",
+      "name": "Decisive Strike",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 48,
+        "full": "GarenQ.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Garen removes all <status>Slowing</status> effects on him and gains <speed>{{ movementspeedamount*100 }}% Move Speed</speed> for {{ movementspeedduration }} second(s).<br /><br />His next Attack <status>Silences</status> for {{ silenceduration }} seconds and does <physicalDamage>{{ totaldamage }} physical damage</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Move Speed Duration"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "300",
+      "datavalues": {},
+      "description": "Garen gains a burst of Move Speed, breaking free of all slows affecting him. His next attack strikes a vital area of his foe, dealing bonus damage and silencing them.",
+      "cooldownBurn": "8"
+    },
+    {
+      "id": "GarenW",
+      "name": "Courage",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 48,
+        "full": "GarenW.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Garen has <scaleArmor>{{ resistsfortooltip }} bonus Armor</scaleArmor> and <scaleMR>{{ resistsfortooltip }} bonus Magic Resist</scaleMR>. Killing units permanently grants <attention>{{ resistgainonkilltooltip }} resists</attention>, up to a max of <attention>{{ resistmax }}</attention>.<br /><br /><spellActive>Active:</spellActive> Garen steels his courage for {{ drduration }} seconds, reducing incoming damage by {{ drpercent*100 }}%. He also gains <shield>{{ totalshield }} Shield</shield> and <slow>{{ upfronttenacity*100 }}% Tenacity</slow> for {{ upfrontduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Shield Amount",
+          "Damage Reduction",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "0",
+      "datavalues": {},
+      "description": "Garen passively increases his Armor and Magic Resist by killing enemies. He may also activate this ability to give him a shield and tenacity for a brief moment followed by a lesser amount of damage reduction for a longer duration.",
+      "cooldownBurn": "22/19.5/17/14.5/12"
+    },
+    {
+      "id": "GarenE",
+      "name": "Judgment",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 48,
+        "full": "GarenE.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Garen rapidly spins his sword for {{ duration }} seconds, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> {{ f1 }} times over the duration. The nearest enemy takes <physicalDamage>{{ nearestenemybonus*100 }}% increased damage</physicalDamage>. Champions hit by {{ stackstoshred }} strikes lose <scaleArmor>{{ shredamount*100 }}% Armor</scaleArmor> for {{ shredduration }} seconds.<br /><br /><recast>Recast</recast>: Garen ends this Ability early.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Base Damage Per Spin",
+          "Attack Damage Scaling Per Spin",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "325",
+      "datavalues": {},
+      "description": "Garen rapidly spins his sword around his body, dealing physical damage to nearby enemies.",
+      "cooldownBurn": "9/8.25/7.5/6.75/6"
+    },
+    {
+      "id": "GarenR",
+      "name": "Demacian Justice",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 48,
+        "full": "GarenR.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Garen calls upon the might of Demacia to slay his enemy, dealing <trueDamage>{{ basedamage }} plus {{ executedamage*100 }}% missing Health true damage</trueDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage",
+          "Percent Missing Health Damage"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Garen calls upon the might of Demacia to attempt to execute an enemy champion.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Perseverance",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 384,
+      "y": 0,
+      "full": "Garen_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "If Garen has not recently been struck by damage or enemy abilities, he regenerates a percentage of his total health each second."
+  },
+  "partype_en": "None",
+  "lanes": [
+    "Top"
+  ],
+  "skins_en": [
+    {
+      "id": "86000",
+      "num": 0,
+      "name": "default",
+      "chromas": true
+    },
+    {
+      "id": "86001",
+      "num": 1,
+      "name": "Sanguine Garen",
+      "chromas": false
+    },
+    {
+      "id": "86002",
+      "num": 2,
+      "name": "Desert Trooper Garen",
+      "chromas": false
+    },
+    {
+      "id": "86003",
+      "num": 3,
+      "name": "Commando Garen",
+      "chromas": false
+    },
+    {
+      "id": "86004",
+      "num": 4,
+      "name": "Dreadknight Garen",
+      "chromas": false
+    },
+    {
+      "id": "86005",
+      "num": 5,
+      "name": "Rugged Garen",
+      "chromas": false
+    },
+    {
+      "id": "86006",
+      "num": 6,
+      "name": "Steel Legion Garen",
+      "chromas": false
+    },
+    {
+      "id": "86010",
+      "num": 10,
+      "name": "Rogue Admiral Garen",
+      "chromas": false
+    },
+    {
+      "id": "86011",
+      "num": 11,
+      "name": "Warring Kingdoms Garen",
+      "chromas": true
+    },
+    {
+      "id": "86013",
+      "num": 13,
+      "name": "God-King Garen",
+      "chromas": false
+    },
+    {
+      "id": "86014",
+      "num": 14,
+      "name": "Demacia Vice Garen",
+      "chromas": true
+    },
+    {
+      "id": "86022",
+      "num": 22,
+      "name": "Mecha Kingdoms Garen",
+      "chromas": false
+    },
+    {
+      "id": "86023",
+      "num": 23,
+      "name": "Prestige Mecha Kingdoms Garen",
+      "chromas": false
+    },
+    {
+      "id": "86024",
+      "num": 24,
+      "name": "Battle Academia Garen",
+      "chromas": true
+    },
+    {
+      "id": "86033",
+      "num": 33,
+      "name": "Mythmaker Garen",
+      "chromas": true
+    },
+    {
+      "id": "86044",
+      "num": 44,
+      "name": "Fallen God-King Garen",
+      "chromas": false
+    },
+    {
+      "id": "86046",
+      "num": 46,
+      "name": "Visions of the Fallen Garen",
+      "chromas": false
+    }
+  ]
+}

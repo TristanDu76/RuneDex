@@ -1,0 +1,398 @@
+{
+  "id": "Zac",
+  "key": "154",
+  "name": "Zac",
+  "title": "Arme secrète",
+  "version": "15.23.1",
+  "lore": "Zac est le produit d'une fuite toxique qui, dégoulinant par une veine techno-chimique, se transforma en bassin dans une profonde caverne du Puisard de Zaun. En dépit de ses humbles origines, Zac a évolué pour passer du stade de dépôt primordial à celui d'être pensant qui se faufile dans les canalisations de la ville. De temps en temps, il émerge pour aider ceux qui ne s'en sortent pas seuls ou pour reconstruire les infrastructures en mauvais état de Zaun.",
+  "tags": [
+    "Tank",
+    "Fighter"
+  ],
+  "partype": "Aucune",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 240,
+    "y": 48,
+    "full": "Zac.png",
+    "group": "champion",
+    "sprite": "champion5.png"
+  },
+  "skins": [
+    {
+      "id": "154000",
+      "num": 0,
+      "name": "default",
+      "chromas": true
+    },
+    {
+      "id": "154001",
+      "num": 1,
+      "name": "Zac arme spéciale",
+      "chromas": false
+    },
+    {
+      "id": "154002",
+      "num": 2,
+      "name": "Zaquatique",
+      "chromas": false
+    },
+    {
+      "id": "154006",
+      "num": 6,
+      "name": "SKT T1 Zac",
+      "chromas": false
+    },
+    {
+      "id": "154007",
+      "num": 7,
+      "name": "Proto Zac",
+      "chromas": true
+    },
+    {
+      "id": "154014",
+      "num": 14,
+      "name": "Zac empyréen",
+      "chromas": true
+    },
+    {
+      "id": "154024",
+      "num": 24,
+      "name": "Zac nachos",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "ZacQ",
+      "name": "Étirements",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 144,
+        "full": "ZacQ.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Zac étend un bras et saisit le premier ennemi touché, lui infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> et le <status>ralentissant</status> brièvement. La prochaine attaque de Zac a une portée augmentée et inflige les mêmes dégâts et <status>ralentissement</status>. <br /><br />Si Zac frappe un ennemi <i>différent</i> avec cette attaque, il envoie les deux ennemis l'un contre l'autre en les <status>projetant dans les airs</status>. S'ils se percutent, ces ennemis et les ennemis proches subissent <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> et sont brièvement <status>ralentis</status>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "% des PV actuels ({{ healthcosttooltip }})",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Coûte {{ e2 }}% des PV actuels ({{ healthcosttooltip }})",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Zac étend un bras et attrape un ennemi. S'il attaque ensuite un ennemi différent, il envoie les deux cibles l'une contre l'autre.",
+      "cooldownBurn": "14/12.5/11/9.5/8"
+    },
+    {
+      "id": "ZacW",
+      "name": "Matière instable",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 144,
+        "full": "ZacW.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Le corps de Zac éclate, infligeant <magicDamage>{{ basedamage }} + {{ displaypercentdamage }} des PV max en dégâts magiques</magicDamage> aux ennemis proches.<br /><br />Absorber de la <keywordMajor>matière gluante</keywordMajor> réduit de 1 sec le délai de récupération de cette compétence.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "% des PV actuels ({{ tooltiphealthcost }})",
+      "leveltip": {
+        "label": [
+          "Dégâts fixes",
+          "Pourcentage des PV max en dégâts"
+        ]
+      },
+      "resource": "Coûte {{ e2 }}% des PV actuels ({{ tooltiphealthcost }})",
+      "rangeBurn": "350",
+      "datavalues": {},
+      "description": "Zac explose en direction des ennemis proches, leur infligeant des dégâts magiques équivalents à un pourcentage de leurs PV max.",
+      "cooldownBurn": "5"
+    },
+    {
+      "id": "ZacE",
+      "name": "Fronde",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0,
+        "full": "ZacE.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<charge>Début de la charge :</charge> Zac se tend pour charger une ruée en {{ e4 }} sec.<br /><br /><release>Relâchement :</release> Zac se propulse vers la zone ciblée, <status>projetant dans les airs</status> les ennemis à l'atterrissage pendant un maximum de {{ maxstun }} sec (selon la durée de la charge) et infligeant <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage>. Zac perd un bout de <keywordMajor>matière gluante</keywordMajor> supplémentaire pour chaque champion ennemi qu'il touche.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "% des PV actuels ({{ healthcosttooltip }})",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Portée",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Coûte {{ e2 }}% des PV actuels ({{ healthcosttooltip }})",
+      "rangeBurn": "300",
+      "datavalues": {},
+      "description": "Zac fixe ses bras au sol et prend de l'élan pour se projeter vers l'avant.",
+      "cooldownBurn": "22/19/16/13/10"
+    },
+    {
+      "id": "ZacR",
+      "name": "Boing !",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 0,
+        "full": "ZacR.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Zac rebondit {{ bounces }} fois. La première fois qu'un ennemi est touché par un rebond, il est <status>projeté</status> en arrière et il subit <magicDamage>{{ damageperbounce }} pts de dégâts magiques</magicDamage>. Les rebonds suivants lui infligent <magicDamage>{{ damagepersubsequentbounce }} pts de dégâts magiques</magicDamage> et le <status>ralentissent</status> de {{ slowamount*100 }}% pendant {{ slowduration }} sec.<br /><br />Zac gagne jusqu'à <speed>+{{ endingms*100 }}% de vitesse de déplacement</speed> sur la durée et peut lancer <spellName>Matière instable</spellName> tout en rebondissant.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts de base des rebonds",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "300",
+      "datavalues": {},
+      "description": "Zac rebondit quatre fois, projetant en l'air les ennemis touchés et les ralentissant.",
+      "cooldownBurn": "120/105/90"
+    }
+  ],
+  "passive": {
+    "name": "Division cellulaire",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 240,
+      "y": 48,
+      "full": "ZacPassive.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "À chaque fois que Zac frappe un ennemi avec une compétence, il perd un bout de lui-même qu'il peut absorber pour récupérer des PV. S'il subit des dégâts mortels, Zac se divise en 4 blobs qui tentent de se recombiner. S'il reste des blobs, Zac revient à la vie avec un nombre de PV qui dépend des PV des blobs survivants. Chaque blob a un pourcentage des PV max, de l'armure et de la résistance magique de Zac. Cette compétence a un délai de récupération de 5 minutes."
+  },
+  "created_at": "2025-11-26T15:13:35.674409+00:00",
+  "factions": [
+    "zaun"
+  ],
+  "custom_tags": [
+    "bio-arme"
+  ],
+  "gender": "Male",
+  "species": "Golem",
+  "title_en": "the Secret Weapon",
+  "lore_en": "Zac is the product of a toxic spill that ran through a chemtech seam and pooled in an isolated cavern deep in Zaun's Sump. Despite such humble origins, Zac has grown from primordial ooze into a thinking being who dwells in the city's pipes, occasionally emerging to help those who cannot help themselves or to rebuild the broken infrastructure of Zaun.",
+  "spells_en": [
+    {
+      "id": "ZacQ",
+      "name": "Stretching Strikes",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 144,
+        "full": "ZacQ.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Zac stretches his arm out, attaching it to the first enemy hit to deal <magicDamage>{{ totaldamage }} magic damage</magicDamage> and briefly <status>Slow</status> them. Zac's next Attack gains increased range and applies the same damage and <status>Slow</status>. <br /><br />If Zac hits a <i>different</i> enemy with this Attack, he <status>Knocks Up</status> both towards each other. If they collide, they and surrounding enemies take <magicDamage>{{ totaldamage }} magic damage</magicDamage> and are briefly <status>Slowed</status>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "% of current Health ({{ healthcosttooltip }})",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ e2 }}% of current Health ({{ healthcosttooltip }})",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Zac stretches an arm, grabbing an enemy. Attacking a different enemy will cause him to throw both targets towards each other.",
+      "cooldownBurn": "14/12.5/11/9.5/8"
+    },
+    {
+      "id": "ZacW",
+      "name": "Unstable Matter",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 144,
+        "full": "ZacW.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Zac's body erupts, dealing <magicDamage>{{ basedamage }} + {{ displaypercentdamage }} max Health magic damage</magicDamage> to nearby enemies.<br /><br />Absorbing <keywordMajor>Goo</keywordMajor> reduces this Ability's Cooldown by 1 second.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "% of current Health ({{ tooltiphealthcost }})",
+      "leveltip": {
+        "label": [
+          "Flat Damage",
+          "Maximum Health Damage"
+        ]
+      },
+      "resource": "{{ e2 }}% of current Health ({{ tooltiphealthcost }})",
+      "rangeBurn": "350",
+      "datavalues": {},
+      "description": "Zac explodes outward towards nearby enemies, dealing a percentage of their maximum health as magic damage.",
+      "cooldownBurn": "5"
+    },
+    {
+      "id": "ZacE",
+      "name": "Elastic Slingshot",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0,
+        "full": "ZacE.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<charge>Begin Charging:</charge> Zac pulls himself taut, charging up a dash over {{ e4 }} seconds.<br /><br /><release>Release:</release> Zac launches himself and <status>Knocks Up</status> enemies where he lands for up to {{ maxstun }} second (based on charge time), dealing them <magicDamage>{{ damage }} magic damage</magicDamage>. Zac spawns an extra chunk of <keywordMajor>Goo</keywordMajor> for each enemy champion hit.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "% of current Health ({{ healthcosttooltip }})",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Range",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ e2 }}% of current Health ({{ healthcosttooltip }})",
+      "rangeBurn": "300",
+      "datavalues": {},
+      "description": "Zac attaches his arms to the ground and stretches back, launching himself forward.",
+      "cooldownBurn": "22/19/16/13/10"
+    },
+    {
+      "id": "ZacR",
+      "name": "Let's Bounce!",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 0,
+        "full": "ZacR.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Zac bounces {{ bounces }} times. The first bounce to hit each enemy <status>Knocks</status> them back and deals <magicDamage>{{ damageperbounce }} magic damage</magicDamage>. Subsequent bounces deal <magicDamage>{{ damagepersubsequentbounce }} magic damage</magicDamage> and <status>Slow</status> by {{ slowamount*100 }}% for {{ slowduration }} second.<br /><br />Zac gains up to <speed>{{ endingms*100 }}% Move Speed</speed> over time and can cast <spellName>Unstable Matter</spellName> while bouncing.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Base Bounce Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "300",
+      "datavalues": {},
+      "description": "Zac bounces four times, knocking up enemies hit and slowing them.",
+      "cooldownBurn": "120/105/90"
+    }
+  ],
+  "passive_en": {
+    "name": "Cell Division",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 240,
+      "y": 48,
+      "full": "ZacPassive.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "Each time Zac hits an enemy with an ability, he sheds a chunk of himself that can be reabsorbed to restore Health. Upon taking fatal damage, Zac splits into 4 bloblets that attempt to recombine. If any bloblets remain, he will revive with an amount of Health depending on the Health of the surviving bloblets. Each bloblet has a percentage of Zac's maximum Health, Armor and Magic Resistance. This ability has a 5 minute cooldown."
+  },
+  "partype_en": "None",
+  "lanes": [
+    "Jungle",
+    "Top"
+  ],
+  "skins_en": [
+    {
+      "id": "154000",
+      "num": 0,
+      "name": "default",
+      "chromas": true
+    },
+    {
+      "id": "154001",
+      "num": 1,
+      "name": "Special Weapon Zac",
+      "chromas": false
+    },
+    {
+      "id": "154002",
+      "num": 2,
+      "name": "Pool Party Zac",
+      "chromas": false
+    },
+    {
+      "id": "154006",
+      "num": 6,
+      "name": "SKT T1 Zac",
+      "chromas": false
+    },
+    {
+      "id": "154007",
+      "num": 7,
+      "name": "Battlecast Zac",
+      "chromas": true
+    },
+    {
+      "id": "154014",
+      "num": 14,
+      "name": "Empyrean Zac",
+      "chromas": true
+    },
+    {
+      "id": "154024",
+      "num": 24,
+      "name": "Zesty Dip Zac",
+      "chromas": true
+    }
+  ]
+}

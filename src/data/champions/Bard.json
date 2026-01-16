@@ -1,0 +1,423 @@
+{
+  "id": "Bard",
+  "key": "432",
+  "name": "Bard",
+  "title": "Gardien errant",
+  "version": "15.23.1",
+  "lore": "Bard est une entité cosmique aussi énigmatique qu'éternelle, originaire du royaume céleste. Pour lui, l'univers n'est pas vu, mais entendu : le firmament est une symphonie mystique. Né au premier souffle de la création, il flottait dans le silence jusqu'à ce que la formation des premières étoiles rompe ce silence avec les premières notes extatiques de l'opus cosmique.\r\n\r\nBard voyagea à travers ces harmonies, accompagné des Meeps, de minuscules entités semi-tonales de pensée résiduelle attirées par sa présence et qui sonnent en parfait accord avec lui. Pour Bard, c'était l'émerveillement, même si ce n'était pas son chef-d'œuvre.\r\n\r\nToutefois, une dissonance insidieuse commença à apparaître dans la symphonie cosmique. Guidé par ses Meeps, Bard découvrit la source de cette disharmonie : Runeterra, un monde avec une chanson propre, primitive et chaotique, mais possédant une beauté inhérente. Le problème était que cette chanson était devenue plus qu'un simple contrepoint; elle était en train de devenir destructrice pour l'ordre cosmique naturel.\r\n\r\nBard traversa le royaume céleste jusqu'à Ionia et pénétra dans le royaume matériel. Là, ses oreilles devinrent comme des yeux, et il se façonna un corps simple à partir des babioles et des tissus d'un chariot de joueur de chalumeau, y compris son masque circulaire caractéristique.\r\n\r\nIl erra dans le monde, trouvant que la situation était plus complexe qu'il ne l'avait imaginé. De nombreux objets au pouvoir imprévisible et sauvage étaient arrivés sur Runeterra de manière erronée, perturbant l'équilibre cosmique. Bard en déduisit qu'une autre puissance dans le royaume céleste était à l'œuvre.\r\n\r\nNéanmoins, Bard a pris le rôle de gardien. Sa mission est de récupérer toute relique hors de sa place et de la rendre à l'endroit où elle ne pourra plus nuire. Bien que cela ne soit que la première étape pour réaccorder l'univers, c'est peut-être le seul moyen de sauver Runeterra des menaces qui se trouvent au-delà.\r\n\r\nBien que ses actions puissent paraître étranges ou incompréhensibles aux mortels, elles sont toujours bénéfiques et visent à maintenir l'équilibre. Bard n'est pas aveugle au futur : il voit un grand conflit approcher, qui se déroulera dans tous les royaumes, et il attend le moment où il devra finalement choisir son camp.",
+  "tags": [
+    "Support",
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 192,
+    "y": 48,
+    "full": "Bard.png",
+    "group": "champion",
+    "sprite": "champion0.png"
+  },
+  "skins": [
+    {
+      "id": "432000",
+      "num": 0,
+      "name": "default",
+      "chromas": true
+    },
+    {
+      "id": "432001",
+      "num": 1,
+      "name": "Bard sylvestre",
+      "chromas": false
+    },
+    {
+      "id": "432005",
+      "num": 5,
+      "name": "Bard des neiges",
+      "chromas": true
+    },
+    {
+      "id": "432006",
+      "num": 6,
+      "name": "Bard le barde",
+      "chromas": false
+    },
+    {
+      "id": "432008",
+      "num": 8,
+      "name": "Bard astronaute",
+      "chromas": true
+    },
+    {
+      "id": "432017",
+      "num": 17,
+      "name": "Bard Café Chouchous",
+      "chromas": true
+    },
+    {
+      "id": "432026",
+      "num": 26,
+      "name": "Bard des rouleaux de Shan Hai",
+      "chromas": true
+    },
+    {
+      "id": "432035",
+      "num": 35,
+      "name": "T1 Bard",
+      "chromas": true
+    },
+    {
+      "id": "432037",
+      "num": 37,
+      "name": "Bard fleur spirituelle",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "BardQ",
+      "name": "Lien cosmique",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 144,
+        "full": "BardQ.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Bard tire un projectile d'énergie, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> aux deux premiers ennemis touchés. La première cible touchée est <status>ralentie</status> de {{ slowamountpercentage }}% pendant {{ slowduration }} sec.<br /><br />Si le projectile touche un deuxième ennemi ou un mur, tous les ennemis touchés sont <status>étourdis</status> pendant {{ stunduration }} sec.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Durée de ralentissement",
+          "Durée de l'étourdissement :",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Bard tire un projectile qui ralentit le premier ennemi touché et qui continue sur sa lancée. S'il touche un mur, il étourdit la cible initiale ; s'il touche un deuxième ennemi, il étourdit les deux cibles.",
+      "cooldownBurn": "11/10/9/8/7"
+    },
+    {
+      "id": "BardW",
+      "name": "Don du gardien",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 144,
+        "full": "BardW.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "2",
+      "maxrank": 5,
+      "tooltip": "Bard crée un sanctuaire de soin qui octroie <speed>+{{ calc_movespeed }} vitesse de déplacement</speed> (le bonus diminue en {{ movespeed_duration }} sec) et qui rend au moins <healing>{{ initialheal }} PV</healing> au premier allié qui le ramasse. Le sanctuaire se renforce pour rendre <healing>{{ maxheal }} PV</healing> après {{ chargeuptime }} sec d'existence.<br /><br />Jusqu'à {{ maxpacks }} sanctuaires peuvent être actifs simultanément. Si un champion ennemi marche sur un sanctuaire, ce dernier est détruit.<br /><br />Cette compétence a {{ ammo_limit }} charges.<br /><br />Sanctuaires actifs : {{ f1 }} / {{ f2 }}.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Soins de base",
+          "Soins max",
+          "Vitesse de déplacement"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Révèle un sanctuaire de soin qui gagne en puissance pendant quelques secondes. Il disparaît après avoir soigné et accéléré le premier allié qui le touche.",
+      "cooldownBurn": "0"
+    },
+    {
+      "id": "BardE",
+      "name": "Route magique",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 144,
+        "full": "BardE.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Bard ouvre un portail à sens unique à travers un obstacle pendant {{ e1 }} sec. Tous les champions peuvent emprunter le portail en cliquant sur l'entrée lorsqu'ils sont à portée.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "900",
+      "datavalues": {},
+      "description": "Bard ouvre un portail dans un élément du décor proche. Les alliés et les ennemis peuvent emprunter la route à sens unique ainsi créée en passant par le portail.",
+      "cooldownBurn": "22/20.5/19/17.5/16"
+    },
+    {
+      "id": "BardR",
+      "name": "Destin tempéré",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 144,
+        "full": "BardR.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Bard projette de l'énergie protectrice dans une zone, mettant en stase toutes les unités et tous les bâtiments touchés pendant {{ rstasisduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "3400",
+      "datavalues": {},
+      "description": "Bard envoie de l'énergie spirituelle dans une zone, ce qui met brièvement en stase toutes les unités et toutes les tourelles.",
+      "cooldownBurn": "110/95/80"
+    }
+  ],
+  "passive": {
+    "name": "Instinct du voyageur",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 192,
+      "y": 48,
+      "full": "Bard_Passive.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "<font color='#FF9900'>Meeps :</font> Bard attire des esprits inférieurs qui soutiennent ses attaques de base en infligeant des dégâts magiques supplémentaires. Quand Bard a collecté suffisamment de <font color='#cccc00'>carillons</font>, ses Meeps infligeront en plus des dégâts dans une zone et ralentiront les ennemis touchés.<br><br><font color='#FF9900'>Carillons :</font> d'antiques <font color='#cccc00'>carillons</font> que peut collecter Bard apparaissent aléatoirement. Ils lui font gagner de l'expérience, lui rendent du mana et lui octroient un bonus en vitesse de déplacement en dehors des combats."
+  },
+  "created_at": "2025-11-26T15:13:32.327162+00:00",
+  "factions": [
+    "runeterra",
+    "targon"
+  ],
+  "custom_tags": [
+    "celeste",
+    "mystere"
+  ],
+  "gender": "Other",
+  "species": "Celestial",
+  "title_en": "the Wandering Caretaker",
+  "lore_en": "Bard is an enigmatic and eternal cosmic entity originating from the celestial realm. For him, the universe is not seen, but heard: the firmament is a mystical symphony. Born in the first breath of creation, he drifted in silence until the forging of the first stars broke that silence with the first rapturous notes of the cosmic opus.\r\n\r\nBard traveled through these swirling harmonies, accompanied by the Meeps, tiny, semitonal motes of residual thought drawn to his presence and ringing in one perfect accord. For Bard, this was a wonder, even if it wasn't his masterpiece.\r\n\r\nHowever, a creeping dissonance began to appear in the cosmic symphony. Guided by his Meeps, Bard discovered the source of this disharmony: Runeterra, a world with a song of its own, primitive and chaotic, yet possessing an inherent beauty. The problem was that this song had gone beyond a mere counterpoint; it was becoming destructive to the natural cosmic order.\r\n\r\nBard crossed the celestial realm to Ionia and stepped into the material realm. There, his ears became like eyes, and he fashioned a simple body for himself from the trinkets and fabrics of a traveling shawm-player's wagon, including his characteristic circular mask.\r\n\r\nHe walked the world, finding the state of things far more complex than he had first imagined. Many objects of wild and unpredictable power had made their way erroneously into Runeterra, disrupting the cosmic balance. Bard deduced that some other power within the celestial realm was at work.\r\n\r\nRegardless, Bard has taken on the role of caretaker. His mission is to retrieve any relic out of place and return it to where it can do no further harm. While this may be only the first step in bringing the universe back in tune, it may also be the only way this world can be saved from what lies beyond it.\r\n\r\nThough his actions may seem strange or incomprehensible to mortals, they are always benevolent and aimed at maintaining balance. Bard is not blind to the future: he can see a great conflict approaching, one fought in all realms, and he awaits the time when he must finally pick a side.",
+  "spells_en": [
+    {
+      "id": "BardQ",
+      "name": "Cosmic Binding",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 144,
+        "full": "BardQ.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Bard fires an energy bolt, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> to the first two enemies hit. The first target hit is <status>Slowed</status> by {{ slowamountpercentage }}% for {{ slowduration }}s.<br /><br />If the bolt hits a second enemy or a wall, any enemies hit are <status>Stunned</status> for {{ stunduration }}s.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Slow Duration",
+          "Stun Duration:",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Bard fires a missile which will slow the first enemy struck, and continue onward. If it strikes a wall, it will stun the initial target; if it strikes another enemy, it will stun them both.",
+      "cooldownBurn": "11/10/9/8/7"
+    },
+    {
+      "id": "BardW",
+      "name": "Caretaker's Shrine",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 144,
+        "full": "BardW.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "2",
+      "maxrank": 5,
+      "tooltip": "Bard creates a Health shrine that grants <speed>{{ calc_movespeed }} Move Speed</speed> decaying over {{ movespeed_duration }} seconds and restores at least <healing>{{ initialheal }} Health</healing> to the first ally to enter. The shrine grows to restore <healing>{{ maxheal }} Health</healing> after existing for {{ chargeuptime }} seconds.<br /><br />Bard can have up to {{ maxpacks }} shrines at once. If an enemy champion enters a shrine, it is destroyed.<br /><br />This ability has {{ ammo_limit }} charges.<br /><br />Current Active Shrines: {{ f1 }} / {{ f2 }}{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Base Heal",
+          "Max Heal",
+          "Move Speed"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Reveals a Health shrine which powers up over a short time, disappearing after healing and speeding up the first ally that touches it.",
+      "cooldownBurn": "0"
+    },
+    {
+      "id": "BardE",
+      "name": "Magical Journey",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 144,
+        "full": "BardE.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Bard opens a one-way portal through Terrain for {{ e1 }} seconds. Any champion can enter the portal by moving onto it while near the entrance.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "900",
+      "datavalues": {},
+      "description": "Bard opens a portal in nearby terrain. Allies and enemies alike can take a one-way trip through that terrain by moving into the portal.",
+      "cooldownBurn": "22/20.5/19/17.5/16"
+    },
+    {
+      "id": "BardR",
+      "name": "Tempered Fate",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 144,
+        "full": "BardR.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Bard hurls magical protective energy to an area, placing all units and structures hit into Stasis for {{ rstasisduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "3400",
+      "datavalues": {},
+      "description": "Bard sends spirit energy arcing to a location, putting all champions, minions, monsters, and turrets hit into stasis for a brief time.",
+      "cooldownBurn": "110/95/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Traveler's Call",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 192,
+      "y": 48,
+      "full": "Bard_Passive.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "<font color='#FF9900'>Meeps:</font> Bard attracts lesser spirits that assist with his basic attacks to deal extra magic damage. When Bard has collected enough  <font color='#cccc00'>Chimes</font>, his meeps will also deal damage in an area and slow enemies hit.<br><br><font color='#FF9900'>Chimes:</font> Ancient <font color='#cccc00'>chimes</font> randomly appear for Bard to collect. These grant experience, restore mana, and provide out of combat Move Speed."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Support"
+  ],
+  "skins_en": [
+    {
+      "id": "432000",
+      "num": 0,
+      "name": "default",
+      "chromas": true
+    },
+    {
+      "id": "432001",
+      "num": 1,
+      "name": "Elderwood Bard",
+      "chromas": false
+    },
+    {
+      "id": "432005",
+      "num": 5,
+      "name": "Snow Day Bard",
+      "chromas": true
+    },
+    {
+      "id": "432006",
+      "num": 6,
+      "name": "Bard Bard",
+      "chromas": false
+    },
+    {
+      "id": "432008",
+      "num": 8,
+      "name": "Astronaut Bard",
+      "chromas": true
+    },
+    {
+      "id": "432017",
+      "num": 17,
+      "name": "Cafe Cuties Bard",
+      "chromas": true
+    },
+    {
+      "id": "432026",
+      "num": 26,
+      "name": "Shan Hai Scrolls Bard",
+      "chromas": true
+    },
+    {
+      "id": "432035",
+      "num": 35,
+      "name": "T1 Bard",
+      "chromas": true
+    },
+    {
+      "id": "432037",
+      "num": 37,
+      "name": "Spirit Blossom Bard",
+      "chromas": true
+    }
+  ]
+}

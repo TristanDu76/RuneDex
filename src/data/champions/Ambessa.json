@@ -1,0 +1,350 @@
+{
+  "id": "Ambessa",
+  "key": "799",
+  "name": "Ambessa",
+  "title": "Matriarche de guerre",
+  "version": "15.23.1",
+  "lore": "Ambessa Medarda est la matriarche de l'une des familles les plus puissantes du Noxus moderne. Née dans la haute société, sa jeunesse fut imprégnée de la culture de la force et de l'honneur noxiens. Dès son plus jeune âge, elle observa les gladiateurs des Arènes de la Revanche et, après avoir été envoyée sur un champ de bataille pour collecter des armes, elle développa une conviction profonde : la mort et le sacrifice devaient être respectés, car la grandeur l'exigeait.\r\n\r\nGuidée par le code familial des Medarda, qui prône à la fois la ruse du Renard du désert et la force implacable du Loup, Ambessa choisit la vie militaire et devint rapidement une Générale respectée. Elle était l'une des favorites de son grand-père, le patriarche Menelik. Cependant, elle était également une femme, une amante et une mère.\r\n\r\nLa naissance de son fils, Kino, lui révéla la dévotion inconditionnelle, mais elle réalisa avec déception qu'il ne posséderait jamais la force d'un guerrier. Plus tard, alors qu'elle était enceinte de sa fille, Mel, elle frôla la mort en défendant son foyer ancestral. Cette expérience près du trépas la marqua profondément et forgea son ambition de manière quasi-totale. Elle jura de plier le monde à sa volonté afin qu'aucune faiblesse chez ses enfants ne puisse être exploitée par ses ennemis.\r\n\r\nDès lors, l'ascension d'Ambessa fut fulgurante. Elle devint impitoyable, sans peur, et dirigeait ses troupes en première ligne. Après la mort de Menelik, elle défit ses rivaux pour devenir la nouvelle matriarche, se jurant de forger un héritage digne du nom Medarda et de l'héritage de ses propres enfants.\r\n\r\nEn tant que matriarche, elle fit de son mantra personnel, « En toutes choses, sois le Loup », une loi absolue, n'acceptant aucune faiblesse ou dissidence, car cela pourrait menacer toute la famille. C'est pour cette raison, ainsi que par ambition, qu'elle exila sa fille Mel à Piltover.\r\n\r\nDes années plus tard, intriguée par les rumeurs d'une nouvelle et puissante invention appelée Hextech (créée par les « idéalistes à l'échine molle de Piltover »), Ambessa se rendit dans la cité dorée pour rendre visite à sa fille. Son objectif : déterminer si cette technologie pouvait être exploitée pour conférer encore plus de puissance et d'influence à la Maison Medarda, quitte à sacrifier l'amour de ses enfants pour assurer la pérennité de leur héritage.",
+  "tags": [
+    "Fighter",
+    "Assassin"
+  ],
+  "partype": "Énergie",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 240,
+    "y": 0,
+    "full": "Ambessa.png",
+    "group": "champion",
+    "sprite": "champion0.png"
+  },
+  "skins": [
+    {
+      "id": "799000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "799001",
+      "num": 1,
+      "name": "Ambessa de la Chasse éternelle",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "AmbessaQ",
+      "name": "Frappe fourbe / Frappe fracassante",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 144,
+        "full": "AmbessaQ.png",
+        "group": "spell",
+        "sprite": "spell0.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellActive>Frappe fourbe</spellActive> : Ambessa fait tourner ses lames devant elle, infligeant <physicalDamage>{{ calc_damage_1_max }} + {{ calc_damage_1_percent_max }} des PV max en dégâts physiques</physicalDamage> aux ennemis touchés par le bord de l'attaque. Tous les autres ennemis subissent {{ calc_damage_1_min_ratio }} pts de dégâts. Toucher un ennemi prépare une <spellActive>Frappe fracassante</spellActive>.<br /><br /><spellActive>Frappe fracassante</spellActive> : Ambessa frappe le sol avec ses lames, infligeant <physicalDamage>{{ calc_damage_2_max }} + {{ calc_damage_2_percent_max }} des PV max en dégâts physiques</physicalDamage> au premier ennemi touché. Tous les autres ennemis subissent {{ calc_damage_2_min_ratio }} pts de dégâts.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Frappe fourbe | Dégâts",
+          "Frappe fourbe | PV max en dégâts",
+          "Délai de récupération",
+          "Frappe fracassante | Dégâts",
+          "Frappe fracassante | PV max en dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Ambessa fait tourner ses doubles chiens-dragons en demi-cercle devant elle, infligeant des dégâts bonus aux ennemis touchés par les lames. Si elle touche un ennemi, elle transforme le prochain lancement de cette compétence pendant une courte période, ce qui lui permet de projeter ses doubles chiens-dragons en ligne droite devant elle, infligeant des dégâts bonus au premier ennemi touché.",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "AmbessaW",
+      "name": "Égide dévastatrice",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 144,
+        "full": "AmbessaW.png",
+        "group": "spell",
+        "sprite": "spell0.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ambessa gagne un <shield>bouclier de {{ calc_shield }} PV</shield> pendant {{ shield_duration }} sec et se protège pendant {{ buff_duration }} sec. Elle frappe ensuite le sol, infligeant <physicalDamage>{{ calc_damage_low }} pts de dégâts physiques</physicalDamage> aux ennemis proches. Ces dégâts sont augmentés à <physicalDamage>{{ calc_damage_high }} pts de dégâts physiques</physicalDamage> si elle a bloqué des dégâts d'un champion ennemi, d'un grand monstre ou d'un bâtiment.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "325",
+      "datavalues": {},
+      "description": "Ambessa gagne un bouclier, se protège brièvement puis frappe le sol pour infliger des dégâts aux ennemis proches. Pendant qu'elle se protège, si elle bloque les dégâts d'unités autres qu'un sbire, cette compétence inflige des dégâts bonus.",
+      "cooldownBurn": "18/17/16/15/14"
+    },
+    {
+      "id": "AmbessaE",
+      "name": "Lacération",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0,
+        "full": "AmbessaE.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ambessa fait tourner ses chaînes autour d'elle, infligeant <physicalDamage>{{ calc_damage_flat }} pts de dégâts physiques</physicalDamage> aux ennemis touchés et les <status>ralentissant</status> de <status>{{ slow_amount*100 }}%</status> (diminue en {{ slow_duration }} sec). Utiliser <spellName>Ruée des chiens-dragons</spellName> à partir de cette compétence déclenche une frappe supplémentaire.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts",
+          "Ratio de dégâts d'attaque"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "325",
+      "datavalues": {},
+      "description": "Ambessa fait tourner ses doubles chiens-dragons autour d'elle, blessant et ralentissant les ennemis proches. Utiliser Ruée des chiens-dragons à partir de cette compétence déclenche une frappe supplémentaire à la fin de la ruée.",
+      "cooldownBurn": "13/12/11/10/9"
+    },
+    {
+      "id": "AmbessaR",
+      "name": "Exécution publique",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 0,
+        "full": "AmbessaR.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellPassive>Passive</spellPassive> : Ambessa gagne <armorPen>%i:scaleAPen% +{{ armor_penetration*100 }}% de pénétration d'armure</armorPen> et ses compétences <healing>lui rendent des PV équivalents à {{ calc_omnivamp }} des dégâts infligés</healing>.<br /><br /><spellActive>Active</spellActive> : Ambessa devient <attention>impossible à arrêter</attention> et se téléporte sur l'ennemi le plus éloigné sur une ligne droite, le <status>neutralisant</status> pendant {{ suppress_duration }} sec avant de le projeter au sol, ce qui lui inflige <physicalDamage>{{ calc_damage }} pts de dégâts physiques</physicalDamage> et l'<status>étourdit</status> pendant {{ stun_duration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Pénétration d'armure",
+          "Soins",
+          "Dégâts"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "1250",
+      "datavalues": {},
+      "description": "Ambessa se téléporte sur l'ennemi le plus éloigné sur une ligne droite de son choix, ce qui le neutralise à son arrivée. Elle le projette ensuite au sol pour lui infliger des dégâts et l'étourdir.",
+      "cooldownBurn": "130/115/100"
+    }
+  ],
+  "passive": {
+    "name": "Ruée des chiens-dragons",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 240,
+      "y": 0,
+      "full": "Icon_Ambessa_Passive.Domina.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Déclencher un déplacement ou une attaque lorsqu'elle lance une compétence permet à Ambessa de se ruer sur une courte distance une fois la compétence lancée. Cela octroie à sa prochaine attaque de la portée bonus, des dégâts bonus, de la vitesse d'attaque bonus, et lui rend de l'énergie."
+  },
+  "created_at": "2025-11-26T15:13:31.919828+00:00",
+  "factions": [
+    "noxus"
+  ],
+  "custom_tags": [
+    "général",
+    "matriarche",
+    "trifarix"
+  ],
+  "gender": "Female",
+  "species": "Human",
+  "title_en": "Matriarch of War",
+  "lore_en": "Ambessa Medarda is the matriarch of one of the most powerful families in modern Noxus. Born into high society, her youth was steeped in the Noxian culture of strength and honor. From a young age, she observed the gladiators in the Reckoning arenas and, after being sent to a battlefield to collect weapons, she developed a deep conviction: death and sacrifice must be respected, as greatness demands it.\r\n\r\nGuided by the Medarda family code, which advocates both the cunning of the Desert Fox and the ruthless strength of the Wolf, Ambessa chose a military life and quickly became a respected General. She was one of her grandfather Menelik's favorites, the patriarch. However, she was also a woman, a lover, and a mother.\r\n\r\nThe birth of her son, Kino, revealed unconditional devotion to her, but she realized with disappointment that he would never possess the strength of a warrior. Later, while pregnant with her daughter, Mel, she came close to death defending her ancestral home. This near-death experience profoundly marked her and alloyed her ambition absolutely. She vowed to bend the world to her will so that any weakness in her children could not be exploited by her enemies.\r\n\r\nFrom that moment, Ambessa's rise was meteoric. She became ruthless, fearless, and led her troops from the front. After Menelik's death, she defeated her rivals to become the new matriarch, vowing to forge a legacy worthy of the Medarda name and her own children's inheritance.\r\n\r\nAs matriarch, she made her personal mantra, \"In all things, be the Wolf,\" an absolute law, tolerating no weakness or dissent, lest that weakness spill over into her family. It was for this reason, as well as ambition, that she exiled her daughter Mel to Piltover.\r\n\r\nYears later, intrigued by rumors of a powerful new invention called Hextech (created by the \"soft-spined idealists of Piltover\"), Ambessa traveled to the gilded city to visit her daughter. Her goal: to determine if this technology could be leveraged to gain even more power and influence for the Medarda House, even if it meant sacrificing her children's love to ensure the continuation of their legacy.",
+  "spells_en": [
+    {
+      "id": "AmbessaQ",
+      "name": "Cunning Sweep / Sundering Slam",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 144,
+        "full": "AmbessaQ.png",
+        "group": "spell",
+        "sprite": "spell0.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellActive>Cunning Sweep</spellActive>: Ambessa sweeps her blades forward, dealing <physicalDamage>{{ calc_damage_1_max }} + {{ calc_damage_1_percent_max }} max Health physical damage</physicalDamage> to enemies at the edge of the strike. All other enemies take {{ calc_damage_1_min_ratio }} damage. Striking an enemy readies a <spellActive>Sundering Slam</spellActive>.<br /><br /><spellActive>Sundering Slam</spellActive>: Ambessa slams her blades down, dealing <physicalDamage>{{ calc_damage_2_max }} + {{ calc_damage_2_percent_max }} max Health physical damage</physicalDamage> against the first enemy hit. All other enemies take {{ calc_damage_2_min_ratio }} damage.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cunning Sweep | Damage",
+          "Cunning Sweep | Max Health Damage",
+          "Cooldown",
+          "Sundering Slam | Damage",
+          "Sundering Slam | Max Health Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Ambessa sweeps her twin drakehounds in a semicircle in front of her, dealing bonus damage to enemies hit by the blades. Striking an enemy will transform the next cast of this ability for a short period of time, causing her to slam her twin drakehounds down in a line in front of her, dealing bonus damage to the first enemy hit.",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "AmbessaW",
+      "name": "Repudiation",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 144,
+        "full": "AmbessaW.png",
+        "group": "spell",
+        "sprite": "spell0.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ambessa gains <shield>{{ calc_shield }} Shield</shield> for {{ shield_duration }} seconds and braces herself for {{ buff_duration }} seconds. She then slams the ground, dealing <physicalDamage>{{ calc_damage_low }} physical damage</physicalDamage> to nearby enemies, which increases to <physicalDamage>{{ calc_damage_high }} physical damage</physicalDamage> if she braced herself from damage from an enemy champion, large monster, or structure.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "325",
+      "datavalues": {},
+      "description": "Ambessa gains a shield, briefly braces herself, and then slams the ground to damage nearby enemies. If she blocked any non-minion damage while bracing herself, this ability will deal increased damage.",
+      "cooldownBurn": "18/17/16/15/14"
+    },
+    {
+      "id": "AmbessaE",
+      "name": "Lacerate",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0,
+        "full": "AmbessaE.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ambessa whips her chains around, dealing <physicalDamage>{{ calc_damage_flat }} physical damage</physicalDamage> and <status>Slowing</status> enemies by <status>{{ slow_amount*100 }}%</status>, which decays over {{ slow_duration }} second. Initiating <spellName>Drakehound's Step</spellName> from this Ability will trigger an additional strike.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage",
+          "Attack Damage Ratio"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "325",
+      "datavalues": {},
+      "description": "Ambessa whips her twin drakehounds around herself, damaging and slowing nearby enemies. Initiating Drakehound's Step from this ability causes her to strike a second time at the end of its dash.",
+      "cooldownBurn": "13/12/11/10/9"
+    },
+    {
+      "id": "AmbessaR",
+      "name": "Public Execution",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 0,
+        "full": "AmbessaR.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellPassive>Passive</spellPassive>: Ambessa gains <armorPen>{{ armor_penetration*100 }}% %i:scaleAPen% Armor Penetration</armorPen> and her Abilities <healing>heal her for {{ calc_omnivamp }} of the damage she dealt</healing>.<br /><br /><spellActive>Active</spellActive>: Ambessa becomes <attention>Unstoppable</attention> and blinks to the farthest enemy champion in a line, <status>Suppressing</status> the target for {{ suppress_duration }} seconds and then slamming them into the ground, dealing <physicalDamage>{{ calc_damage }} physical damage</physicalDamage> and <status>Stunning</status> them for {{ stun_duration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No cost",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Armor Penetration",
+          "Healing",
+          "Damage"
+        ]
+      },
+      "resource": "No cost",
+      "rangeBurn": "1250",
+      "datavalues": {},
+      "description": "Ambessa blinks to the farthest enemy champion in a line of her choosing and suppresses them upon her arrival. She then slams the enemy into the ground where they take damage and are stunned.",
+      "cooldownBurn": "130/115/100"
+    }
+  ],
+  "passive_en": {
+    "name": "Drakehound's Step",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 240,
+      "y": 0,
+      "full": "Icon_Ambessa_Passive.Domina.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Entering an attack or movement command while casting an ability will cause Ambessa to dash a short distance once the ability is cast, granting her next attack bonus range, damage, and attack speed, and refunding energy."
+  },
+  "partype_en": "Energy",
+  "lanes": [
+    "Top",
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "799000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "799001",
+      "num": 1,
+      "name": "Chosen of the Wolf Ambessa",
+      "chromas": true
+    }
+  ]
+}

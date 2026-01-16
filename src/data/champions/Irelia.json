@@ -1,0 +1,511 @@
+{
+  "id": "Irelia",
+  "key": "39",
+  "name": "Irelia",
+  "title": "Danseuse des lames",
+  "version": "15.23.1",
+  "lore": "Xan Irelia était une jeune fille de la province de Navori, en Ionia, fascinée par la grâce du mouvement humain. Elle apprit les danses traditionnelles de la soie de sa grand-mère et étudia avec les artistes les plus respectés au Placidium de Navori.\n\nLa paix fut brisée par l'invasion de Noxus. Irelia revint dans son village pour le trouver occupé. Ses frères et son père, Lito, avaient protesté et gisaient maintenant dans des tombes anonymes.\n\nDévastée, Irelia vit les hommes de l'Amiral Duqal piller sa maison, emportant le grand blason métallique de la famille Xan. Dans un accès de rage et de douleur, elle arracha le blason aux mains d'un Noxien, fut jetée au sol, et vit le blason se faire briser par un marteau. Alors que les soldats l'entouraient pour la tuer, un étrange rythme commença à battre au fond de son âme. Les éclats de métal brisé se mirent à bouger, mus par la force de la danse ancestrale qui l'habitait.\n\nD'un mouvement de bras, elle envoya les éclats voler comme des lames acérées, tranchant net deux Noxiens. Elle récupéra les fragments du blason et s'enfuit dans les forêts. Elle comprit alors que les techniques apprises n'étaient pas de simples danses, mais une puissante expression du mysticisme ionien.\n\nLa résistance contre l'occupation noxienne s'organisa. Irelia rejoignit leurs rangs, utilisant ses danses pour préserver la culture ionienne. Elle n'avait que quatorze ans lorsque le général Jericho Swain captura le Placidium et prit ses défenseurs en otage.\n\nC'est là qu'Irelia se manifesta. Libérée de ses liens, elle déchaîna le plein potentiel de sa danse des lames antique, faisant léviter les fragments de métal avec une grâce féroce. Une douzaine de vétérans de Swain tombèrent, et après avoir semé le chaos, elle frappa le général lui-même — le spectacle de la jeune fille brandissant le bras coupé de Swain devint le tournant de la guerre.\n\nCette victoire, la Grande Défense de Navori, fit d'Irelia le symbole de la Résistance. Elle dirigea le mouvement pendant près de trois ans de combats acharnés, jusqu'à sa victoire finale à la baie de Dalu, où elle put enfin exécuter l'Amiral Duqal, accomplissant la vengeance qu'elle cherchait.\n\nBien que la guerre soit terminée, Ionia est maintenant divisée par des factions rivales. Beaucoup se tournent vers Irelia pour trouver des réponses, mais elle, malgré son pouvoir, est mal à l'aise dans son rôle de leader. Au fond, elle aspire toujours à ne faire que danser seule.",
+  "tags": [
+    "Fighter",
+    "Assassin"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 336,
+    "y": 48,
+    "full": "Irelia.png",
+    "group": "champion",
+    "sprite": "champion1.png"
+  },
+  "skins": [
+    {
+      "id": "39000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "39001",
+      "num": 1,
+      "name": "Irelia assassin",
+      "chromas": false
+    },
+    {
+      "id": "39002",
+      "num": 2,
+      "name": "Irelia aviatrice",
+      "chromas": false
+    },
+    {
+      "id": "39003",
+      "num": 3,
+      "name": "Cyber Irelia",
+      "chromas": false
+    },
+    {
+      "id": "39004",
+      "num": 4,
+      "name": "Irelia lame de glace",
+      "chromas": true
+    },
+    {
+      "id": "39005",
+      "num": 5,
+      "name": "Irelia de l'Ordre du lotus",
+      "chromas": false
+    },
+    {
+      "id": "39006",
+      "num": 6,
+      "name": "Irelia à l'épée divine",
+      "chromas": true
+    },
+    {
+      "id": "39015",
+      "num": 15,
+      "name": "iG Irelia",
+      "chromas": true
+    },
+    {
+      "id": "39016",
+      "num": 16,
+      "name": "PROJET : Irelia",
+      "chromas": false
+    },
+    {
+      "id": "39017",
+      "num": 17,
+      "name": "PROJET : Irelia prestige",
+      "chromas": false
+    },
+    {
+      "id": "39018",
+      "num": 18,
+      "name": "Irelia de l'Ouest",
+      "chromas": true
+    },
+    {
+      "id": "39026",
+      "num": 26,
+      "name": "Irelia Sentinelle",
+      "chromas": true
+    },
+    {
+      "id": "39036",
+      "num": 36,
+      "name": "PROJET : Irelia prestige (2022)",
+      "chromas": false
+    },
+    {
+      "id": "39037",
+      "num": 37,
+      "name": "Irelia mythificatrice",
+      "chromas": true
+    },
+    {
+      "id": "39045",
+      "num": 45,
+      "name": "Irelia de porcelaine",
+      "chromas": true
+    },
+    {
+      "id": "39055",
+      "num": 55,
+      "name": "Irelia fleur spirituelle",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "IreliaQ",
+      "name": "Rush fatal",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 0,
+        "full": "IreliaQ.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Irelia se rue sur un ennemi, infligeant <physicalDamage>{{ championdamage }} pts de dégâts physiques</physicalDamage> et récupérant <healing>{{ healamount }} PV</healing>. Si l'ennemi meurt ou était <keywordMajor>déséquilibré</keywordMajor>, le délai de récupération est annulé.<br /><br />Inflige {{ miniondamage }} pts de dégâts aux sbires.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "15",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "Ratio de soins"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Irelia fonce vers l'avant pour frapper sa cible tout en récupérant des PV. Si la cible était marquée ou si elle est tuée par Rush fatal, le délai de récupération de la compétence est annulé.",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "IreliaW",
+      "name": "Danse de défi",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 0,
+        "full": "IreliaW.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<charge>Début de la charge :</charge> Irelia adopte une posture défensive pendant un maximum de {{ maxduration }} sec, devenant incapable d'agir, mais réduisant les dégâts physiques qu'elle subit de {{ finalphysicaldr }}% et les dégâts magiques qu'elle subit de {{ finalmagicdr }}%.<br /><br /><release>Relâchement :</release> Irelia frappe avec ses lames, infligeant <physicalDamage>{{ mindamagecalc }} pts de dégâts physiques</physicalDamage>. Ces dégâts augmentent jusqu'à <physicalDamage>{{ maxdamagecalc }}</physicalDamage> avec la durée de la charge.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/75/80/85/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "Coût en mana"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "825",
+      "datavalues": {},
+      "description": "Irelia charge une attaque. Plus la charge dure longtemps, plus les dégâts augmentent. Irelia subit moins de dégâts physiques pendant la charge.",
+      "cooldownBurn": "20/18/16/14/12"
+    },
+    {
+      "id": "IreliaE",
+      "name": "Duo parfait",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 0,
+        "full": "IreliaE.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Irelia plante une lame dans le sol et peut <recast>réactiver</recast> cette compétence dans les {{ buffduration }} sec. <br /><br /><recast>Réactivation :</recast> Irelia lance une seconde lame. Les deux lames volent ensuite l'une vers l'autre, <status>étourdissant</status> les ennemis pendant {{ stunduration }} sec et leur infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. Les champions et les grands monstres de la jungle sont <keywordMajor>déséquilibrés</keywordMajor> pendant {{ markduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "850",
+      "datavalues": {},
+      "description": "Irelia envoie deux lames qui volent ensuite l'une vers l'autre. Les ennemis pris entre les lames sont blessés, étourdis et marqués.",
+      "cooldownBurn": "16/14.5/13/11.5/10"
+    },
+    {
+      "id": "IreliaR",
+      "name": "Pointe de l'avant-garde",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 0,
+        "full": "IreliaR.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Irelia lance un barrage de lames, infligeant <magicDamage>{{ missiledamage }} pts de dégâts magiques</magicDamage> et <keywordMajor>déséquilibrant</keywordMajor> les champions et les grands monstres pendant {{ markduration }} sec. Le barrage explose et crée une cage pendant {{ zoneduration }} sec autour du premier champion touché. La cage inflige <magicDamage>{{ zonedamage }} pts de dégâts magiques</magicDamage> et <status>ralentit</status> les ennemis de {{ slowamount }}% pendant {{ ccduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Dégâts du mur",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "950",
+      "datavalues": {},
+      "description": "Irelia tire un grand nombre de lames qui se dispersent en touchant un champion ennemi. Les ennemis touchés par les lames sont blessés et marqués. Les lames forment ensuite un mur qui blesse et ralentit les ennemis qui le traversent.",
+      "cooldownBurn": "125/105/85"
+    }
+  ],
+  "passive": {
+    "name": "Ferveur ionienne",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 336,
+      "y": 48,
+      "full": "Irelia_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Quand Irelia frappe des ennemis avec ses compétences, elle gagne un bonus de vitesse d'attaque cumulable. Au maximum d'effets cumulés, elle gagne aussi des dégâts à l'impact supplémentaires."
+  },
+  "created_at": "2025-11-26T15:13:33.248576+00:00",
+  "factions": [
+    "ionia"
+  ],
+  "custom_tags": [
+    "résistance",
+    "danseuse"
+  ],
+  "gender": "Female",
+  "species": "Human",
+  "title_en": "the Blade Dancer",
+  "lore_en": "Xan Irelia was a young girl from the Navori province in Ionia, fascinated by the grace of human movement. She learned the traditional silk dances from her grandmother and studied with the most respected performers at the Placidium of Navori.\n\nThe peace was shattered by the Noxian invasion. Irelia returned to her village to find it occupied. Her brothers and her father, Lito, had protested and now lay in unmarked graves.\n\nRavaged by grief, Irelia watched Admiral Duqal's men loot her home, taking the great metal crest of the Xan family. In a burst of rage and pain, she wrenched the crest from Noxian hands, was hurled to the ground, and watched the crest be shattered by an iron maul. As the soldiers surrounded her to kill her, a strange rhythm began to beat deep within her soul. The shattered metal shards began to twitch and twist, moving seemingly on their own, powered by the ancient dance within her.\n\nWith a sweep of her arm, she sent the pieces flying like ragged blades, cutting clean through two Noxians. She snatched up the crest fragments and fled into the forests. She realized then that the techniques she had learned were more than mere dances—they were a powerful expression of Ionian mysticism.\n\nThe resistance against the Noxian occupation began to form. Irelia joined their ranks, using her dances to preserve Ionian culture. She was barely fourteen when General Jericho Swain captured the Placidium and took its defenders hostage.\n\nIt was in this moment that Irelia rose to meet her destiny. Freed from her bonds, she unleashed the full potential of her ancient blade dance, lashing out with graceful zeal. A dozen of Swain's veterans fell, and after sowing chaos, she struck down the general himself—the sight of the rebellious girl hefting Swain’s severed arm over her head became the turning point of the war.\n\nThis victory, the Great Stand at Navori, made Irelia the symbol of the Resistance. She reluctantly led the movement for almost three years of grueling battle, until her final triumph at Dalu Bay, where she finally cornered and exacted the vengeance she had sought on Admiral Duqal.\n\nThough the war has long since ended, Ionia is now divided by rival factions. Many look to Irelia for answers, but she, despite her power, remains uneasy with her leadership role. At heart, she still yearns only to dance alone.",
+  "spells_en": [
+    {
+      "id": "IreliaQ",
+      "name": "Bladesurge",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 0,
+        "full": "IreliaQ.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Irelia dashes to an enemy, dealing <physicalDamage>{{ championdamage }} physical damage</physicalDamage> and restoring <healing>{{ healamount }} Health</healing> to herself. If the enemy dies or was <keywordMajor>Unsteady</keywordMajor>, the Cooldown is refreshed.<br /><br />Deals {{ miniondamage }} damage to minions.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "15",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "Heal Ratio"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Irelia dashes forward to strike her target, healing herself. If the target is Marked or dies to Bladesurge, its cooldown refreshes.",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "IreliaW",
+      "name": "Defiant Dance",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 0,
+        "full": "IreliaW.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<charge>Begin Charging:</charge> Irelia enters a defensive stance for up to {{ maxduration }} seconds, becoming unable to act but reducing physical damage taken by {{ finalphysicaldr }}% and magic damage taken by {{ finalmagicdr }}%.<br /><br /><release>Release:</release> Irelia lashes out with her blades, dealing <physicalDamage>{{ mindamagecalc }} physical damage</physicalDamage> increased up to <physicalDamage>{{ maxdamagecalc }}</physicalDamage> based on charge time.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/75/80/85/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "Mana Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "825",
+      "datavalues": {},
+      "description": "Irelia charges a strike that deals more damage as she charges. She takes reduced physical damage during the charge.",
+      "cooldownBurn": "20/18/16/14/12"
+    },
+    {
+      "id": "IreliaE",
+      "name": "Flawless Duet",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 0,
+        "full": "IreliaE.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Irelia throws a blade into the ground and can <recast>Recast</recast> for up to {{ buffduration }} seconds. <br /><br /><recast>Recast:</recast> Irelia throws a second blade, then they fly towards each other <status>Stunning</status> for {{ stunduration }} seconds and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>. Champions and large jungle monsters become <keywordMajor>Unsteady</keywordMajor> for {{ markduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "850",
+      "datavalues": {},
+      "description": "Irelia sends out two blades which converge on each other. Enemies caught in between are damaged, stunned and Marked.",
+      "cooldownBurn": "16/14.5/13/11.5/10"
+    },
+    {
+      "id": "IreliaR",
+      "name": "Vanguard's Edge",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 0,
+        "full": "IreliaR.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Irelia launches a barrage of blades, dealing <magicDamage>{{ missiledamage }} magic damage</magicDamage> and making champions and large jungle monsters <keywordMajor>Unsteady</keywordMajor> for {{ markduration }} seconds. The barrage explodes into a cage around the first champion hit for {{ zoneduration }} seconds. The cage deals <magicDamage>{{ zonedamage }} magic damage</magicDamage> and <status>Slows</status> by {{ slowamount }}% for {{ ccduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Wall Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "950",
+      "datavalues": {},
+      "description": "Irelia fires a massive number of blades that explode outward upon hitting an enemy champion. Enemies hit by the blades are damaged and Marked. Afterwards the blades form a wall that will damage and slow enemies that walk through it.",
+      "cooldownBurn": "125/105/85"
+    }
+  ],
+  "passive_en": {
+    "name": "Ionian Fervor",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 336,
+      "y": 48,
+      "full": "Irelia_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "When Irelia strikes enemies with spells she gains stacking bonus Attack Speed. At maximum stacks she also gains bonus damage on hit."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Top",
+    "Mid"
+  ],
+  "skins_en": [
+    {
+      "id": "39000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "39001",
+      "num": 1,
+      "name": "Nightblade Irelia",
+      "chromas": false
+    },
+    {
+      "id": "39002",
+      "num": 2,
+      "name": "Aviator Irelia",
+      "chromas": false
+    },
+    {
+      "id": "39003",
+      "num": 3,
+      "name": "Infiltrator Irelia",
+      "chromas": false
+    },
+    {
+      "id": "39004",
+      "num": 4,
+      "name": "Frostblade Irelia",
+      "chromas": true
+    },
+    {
+      "id": "39005",
+      "num": 5,
+      "name": "Order of the Lotus Irelia",
+      "chromas": false
+    },
+    {
+      "id": "39006",
+      "num": 6,
+      "name": "Divine Sword Irelia",
+      "chromas": true
+    },
+    {
+      "id": "39015",
+      "num": 15,
+      "name": "iG Irelia",
+      "chromas": true
+    },
+    {
+      "id": "39016",
+      "num": 16,
+      "name": "PROJECT: Irelia",
+      "chromas": false
+    },
+    {
+      "id": "39017",
+      "num": 17,
+      "name": "Prestige PROJECT: Irelia",
+      "chromas": false
+    },
+    {
+      "id": "39018",
+      "num": 18,
+      "name": "High Noon Irelia",
+      "chromas": true
+    },
+    {
+      "id": "39026",
+      "num": 26,
+      "name": "Sentinel Irelia",
+      "chromas": true
+    },
+    {
+      "id": "39036",
+      "num": 36,
+      "name": "Prestige PROJECT: Irelia (2022)",
+      "chromas": false
+    },
+    {
+      "id": "39037",
+      "num": 37,
+      "name": "Mythmaker Irelia",
+      "chromas": true
+    },
+    {
+      "id": "39045",
+      "num": 45,
+      "name": "Porcelain Irelia",
+      "chromas": true
+    },
+    {
+      "id": "39055",
+      "num": 55,
+      "name": "Spirit Blossom Irelia",
+      "chromas": true
+    }
+  ]
+}

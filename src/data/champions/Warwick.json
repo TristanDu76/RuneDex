@@ -1,0 +1,511 @@
+{
+  "id": "Warwick",
+  "key": "19",
+  "name": "Warwick",
+  "title": "Fureur déchaînée de Zaun",
+  "version": "15.23.1",
+  "lore": "Warwick est un monstre qui chasse dans les allées grises de Zaun. Métamorphosé à l'issue d'expériences incroyablement douloureuses, son corps est désormais fusionné avec un système complexe de chambres et de pompes, une machinerie qui distille dans ses veines une rage alchimique constante. Il bondit des ombres pour traquer les criminels qui terrorisent les profondeurs de la ville. Warwick est attiré par le sang, dont l'odeur déclenche chez lui une furie meurtrière... et les proies blessées ne lui échappent jamais.",
+  "tags": [
+    "Fighter",
+    "Tank"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 240,
+    "y": 0,
+    "full": "Warwick.png",
+    "group": "champion",
+    "sprite": "champion5.png"
+  },
+  "skins": [
+    {
+      "id": "19000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "19001",
+      "num": 1,
+      "name": "Warwick gris",
+      "chromas": true
+    },
+    {
+      "id": "19002",
+      "num": 2,
+      "name": "Urf le lamantin",
+      "chromas": false
+    },
+    {
+      "id": "19003",
+      "num": 3,
+      "name": "Grand méchant Warwick",
+      "chromas": false
+    },
+    {
+      "id": "19004",
+      "num": 4,
+      "name": "Warwick de la toundra",
+      "chromas": false
+    },
+    {
+      "id": "19005",
+      "num": 5,
+      "name": "Warwick sauvage",
+      "chromas": false
+    },
+    {
+      "id": "19006",
+      "num": 6,
+      "name": "Warwick de feu",
+      "chromas": false
+    },
+    {
+      "id": "19007",
+      "num": 7,
+      "name": "Warwick hyène",
+      "chromas": false
+    },
+    {
+      "id": "19008",
+      "num": 8,
+      "name": "Warwick maraudeur",
+      "chromas": false
+    },
+    {
+      "id": "19009",
+      "num": 9,
+      "name": "Urfwick",
+      "chromas": false
+    },
+    {
+      "id": "19010",
+      "num": 10,
+      "name": "Warwick gardien lunaire",
+      "chromas": true
+    },
+    {
+      "id": "19016",
+      "num": 16,
+      "name": "PROJET : Warwick",
+      "chromas": true
+    },
+    {
+      "id": "19035",
+      "num": 35,
+      "name": "Warwick dieu ancien",
+      "chromas": false
+    },
+    {
+      "id": "19045",
+      "num": 45,
+      "name": "Warwick élu de l'hiver",
+      "chromas": false
+    },
+    {
+      "id": "19046",
+      "num": 46,
+      "name": "Warwick élu de l'hiver prestige",
+      "chromas": false
+    },
+    {
+      "id": "19056",
+      "num": 56,
+      "name": "Warwick Vander d'Arcane",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "WarwickQ",
+      "name": "Dents de la bête",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 144,
+        "full": "WarwickQ.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<tap>Appuyer :</tap> Warwick se jette en avant et mord sa cible, infligeant <magicDamage>{{ basebitedamage }} plus {{ targetpercenthpdamage }}% des PV max en dégâts magiques</magicDamage> et <healing>récupérant des PV équivalents à {{ e3 }}% des dégâts infligés</healing>.<br /><br /><hold>Maintenir :</hold> Warwick se jette sur sa cible et referme sa mâchoire sur elle avant de bondir derrière elle. Tant que sa mâchoire est refermée, Warwick suit tous les déplacements de sa cible. Après le relâchement, il inflige les mêmes dégâts et récupère le même nombre de PV.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80/85/90/95/100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Soins",
+          "% des PV en dégâts",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "365",
+      "datavalues": {},
+      "description": "Warwick se jette en avant et mord sa cible, infligeant des dégâts en fonction des PV max de cette cible et récupérant des PV équivalents à une partie des dégâts infligés.",
+      "cooldownBurn": "8/7.5/7/6.5/6"
+    },
+    {
+      "id": "WarwickW",
+      "name": "Traque sanguinaire",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 144,
+        "full": "WarwickW.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "2",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> Warwick peut sentir les champions qui ont moins de 50% de leurs PV, gagnant alors <speed>+{{ passivemsbonus }}% de vitesse de déplacement</speed> dans leur direction. Les compétences et les attaques effectuées contre des ennemis qui ont moins de 50% de leurs PV octroient <speed>+{{ passiveasbonus }}% de vitesse d'attaque</speed> à Warwick. Ces effets sont augmentés de 200% contre les ennemis qui ont moins de 25% de leurs PV. <br /><br /><spellActive>Active :</spellActive> Warwick peut brièvement sentir tous les ennemis et, pendant 8 sec, il gagne les bonus passifs de cette compétence contre le champion le plus proche, quels que soient ses PV. Si aucun champion n'est trouvé, le délai de récupération de cette compétence est réduit de 30%.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "55",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Vitesse de déplacement",
+          "Vitesse d'attaque",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "4000",
+      "datavalues": {},
+      "description": "Warwick repère les ennemis qui ont moins de 50% de leurs PV et obtient contre eux des bonus en vitesse de déplacement et en vitesse d'attaque. Contre les ennemis qui ont moins de 25% de leurs PV, ces bonus sont triplés.",
+      "cooldownBurn": "80/70/60/50/40"
+    },
+    {
+      "id": "WarwickE",
+      "name": "Hurlement bestial",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0,
+        "full": "WarwickE.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Warwick gagne +{{ e1 }}% de réduction des dégâts pendant 2.5 sec. À la fin de l'effet, Warwick pousse un hurlement, <status>effrayant</status> les ennemis proches pendant {{ e3 }} sec. Warwick peut <recast>réactiver</recast> cette compétence pour y mettre un terme prématurément.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Réduction des dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "375",
+      "datavalues": {},
+      "description": "Warwick gagne de la réduction des dégâts pendant 2.5 sec. À la fin, ou si la compétence est réactivée, il hurle, ce qui fait fuir les ennemis proches pendant 1 sec.",
+      "cooldownBurn": "15/14/13/12/11"
+    },
+    {
+      "id": "WarwickR",
+      "name": "Contrainte infinie",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 0,
+        "full": "WarwickR.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Warwick bondit sur une énorme distance qui augmente avec sa <speed>vitesse de déplacement</speed>, <status>neutralisant</status> le premier champion touché pendant {{ rduration }} sec de canalisation. Il attaque ce champion 3 fois sur la durée, infligeant <magicDamage>{{ damagecumulative }} pts de dégâts magiques</magicDamage>. Warwick <healing>récupère des PV équivalents à 100% de tous les dégâts infligés</healing> pendant la canalisation.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Warwick bondit dans une direction (la distance augmente avec sa vitesse de déplacement bonus), neutralisant le premier champion touché pendant 1.5 sec.",
+      "cooldownBurn": "110/90/70"
+    }
+  ],
+  "passive": {
+    "name": "Soif inextinguible",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 240,
+      "y": 0,
+      "full": "WarwickP.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "Les attaques de base de Warwick infligent des dégâts magiques supplémentaires. Si Warwick a moins de 50% de ses PV, il récupère des PV équivalents à ces dégâts. Si Warwick a moins de 25% de ses PV, le montant rendu est triplé."
+  },
+  "created_at": "2025-11-26T15:13:35.521432+00:00",
+  "factions": [
+    "zaun"
+  ],
+  "custom_tags": [
+    "expérience",
+    "chimère"
+  ],
+  "gender": "Male",
+  "species": "Chimera",
+  "title_en": "the Uncaged Wrath of Zaun",
+  "lore_en": "Warwick is a monster who hunts the gray alleys of Zaun. Transformed by agonizing experiments, his body is fused with an intricate system of chambers and pumps, machinery filling his veins with alchemical rage. He bursts from the shadows to prey upon those criminals who terrorize the city's depths. Warwick is drawn to blood, driven mad by its scent… and none who spill it can escape him.",
+  "spells_en": [
+    {
+      "id": "WarwickQ",
+      "name": "Jaws of the Beast",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 144,
+        "full": "WarwickQ.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<tap>Tap:</tap> Warwick lunges forward and bites, dealing <magicDamage>{{ basebitedamage }} plus {{ targetpercenthpdamage }}% max Health magic damage</magicDamage> and <healing>healing for {{ e3 }}% of the damage dealt</healing>.<br /><br /><hold>Hold:</hold> Warwick lunges and clamps his jaws on the target, leaping behind them. While clamped, Warwick follows all movement of the target. After releasing his hold, he does the same damage and healing.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80/85/90/95/100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Healing",
+          "% Health damage",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "365",
+      "datavalues": {},
+      "description": "Warwick lunges forward and bites his target, dealing damage based on their maximum health and healing for damage dealt.",
+      "cooldownBurn": "8/7.5/7/6.5/6"
+    },
+    {
+      "id": "WarwickW",
+      "name": "Blood Hunt",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 144,
+        "full": "WarwickW.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "2",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Warwick can sense champions below 50% Health, gaining <speed>{{ passivemsbonus }}% Move Speed</speed> towards them. Spells and attacks against enemies below 50% Health grant <speed>{{ passiveasbonus }}% Attack Speed</speed>. These effects are increased by 200% against enemies below 25% Health. <br /><br /><spellActive>Active:</spellActive> Warwick can briefly sense all enemies, and gains this Ability's passive effect against the closest champion for 8 seconds, regardless of Health. If no champions are found, this Ability's cooldown is reduced by 30%.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "55",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Move Speed",
+          "Attack Speed",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "4000",
+      "datavalues": {},
+      "description": "Warwick senses enemies below 50% health, gaining Move Speed toward and attack speed against them. When they fall below 25% health, he frenzies and these bonuses triple.",
+      "cooldownBurn": "80/70/60/50/40"
+    },
+    {
+      "id": "WarwickE",
+      "name": "Primal Howl",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0,
+        "full": "WarwickE.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Warwick gains {{ e1 }}% damage reduction for 2.5 seconds. After it ends, Warwick howls, <status>Fearing</status> nearby enemies for {{ e3 }} second. Warwick can <recast>Recast</recast> to end the Ability early.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage Reduction",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "375",
+      "datavalues": {},
+      "description": "Warwick gains damage reduction for 2.5 seconds. At the end, or if re-activated, he howls, causing nearby enemies to flee for 1 second.",
+      "cooldownBurn": "15/14/13/12/11"
+    },
+    {
+      "id": "WarwickR",
+      "name": "Infinite Duress",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 0,
+        "full": "WarwickR.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Warwick leaps a huge distance that scales with his <speed>Move Speed</speed>, <status>Suppressing</status> the first champion he collides with while he channels for {{ rduration }} seconds. He attacks that champion 3 times over the duration, dealing <magicDamage>{{ damagecumulative }} magic damage</magicDamage>. Warwick <healing>heals for 100% of all damage dealt</healing> during the channel.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Warwick leaps in a direction (scaling with his bonus Move Speed), suppressing the first champion he collides with for 1.5 seconds.",
+      "cooldownBurn": "110/90/70"
+    }
+  ],
+  "passive_en": {
+    "name": "Eternal Hunger",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 240,
+      "y": 0,
+      "full": "WarwickP.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "Warwick's basic attacks deal bonus magic damage. If Warwick is below 50% health, he heals the same amount. If Warwick is below 25% health, this healing triples."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Jungle",
+    "Top"
+  ],
+  "skins_en": [
+    {
+      "id": "19000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "19001",
+      "num": 1,
+      "name": "Grey Warwick",
+      "chromas": true
+    },
+    {
+      "id": "19002",
+      "num": 2,
+      "name": "Urf the Manatee",
+      "chromas": false
+    },
+    {
+      "id": "19003",
+      "num": 3,
+      "name": "Big Bad Warwick",
+      "chromas": false
+    },
+    {
+      "id": "19004",
+      "num": 4,
+      "name": "Tundra Hunter Warwick",
+      "chromas": false
+    },
+    {
+      "id": "19005",
+      "num": 5,
+      "name": "Feral Warwick",
+      "chromas": false
+    },
+    {
+      "id": "19006",
+      "num": 6,
+      "name": "Firefang Warwick",
+      "chromas": false
+    },
+    {
+      "id": "19007",
+      "num": 7,
+      "name": "Hyena Warwick",
+      "chromas": false
+    },
+    {
+      "id": "19008",
+      "num": 8,
+      "name": "Marauder Warwick",
+      "chromas": false
+    },
+    {
+      "id": "19009",
+      "num": 9,
+      "name": "Urfwick",
+      "chromas": false
+    },
+    {
+      "id": "19010",
+      "num": 10,
+      "name": "Lunar Guardian Warwick",
+      "chromas": true
+    },
+    {
+      "id": "19016",
+      "num": 16,
+      "name": "PROJECT: Warwick",
+      "chromas": true
+    },
+    {
+      "id": "19035",
+      "num": 35,
+      "name": "Old God Warwick",
+      "chromas": false
+    },
+    {
+      "id": "19045",
+      "num": 45,
+      "name": "Winterblessed Warwick",
+      "chromas": false
+    },
+    {
+      "id": "19046",
+      "num": 46,
+      "name": "Prestige Winterblessed Warwick",
+      "chromas": false
+    },
+    {
+      "id": "19056",
+      "num": 56,
+      "name": "Arcane Vander Warwick",
+      "chromas": false
+    }
+  ]
+}

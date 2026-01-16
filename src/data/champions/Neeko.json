@@ -1,0 +1,448 @@
+{
+  "id": "Neeko",
+  "key": "518",
+  "name": "Neeko",
+  "title": "Caméléon curieux",
+  "version": "15.23.1",
+  "lore": "Neeko est une jeune Vastaya originaire d'une tribu disparue. Elle est dotée d'un pouvoir de métamorphose unique et puissant : elle peut non seulement emprunter l'apparence des autres (mortels et Vastayas), mais elle absorbe également un soupçon de leur état émotionnel (sho'ma en Vastaya) pour mieux les comprendre et distinguer les amis des ennemis.\n\nOrigines Perdues : Neeko est l'une des rares survivantes de sa lignée, son foyer ayant été détruit lors d'un cataclysme inconnu (probablement lié à la chute de son ancienne civilisation Vastaya).\n\nLa Quête de Connexion : Sa nature de Vastaya lui confère une puissante force spirituelle primordiale. Cependant, elle est profondément curieuse et désireuse de se lier à d'autres êtres, cherchant un nouveau foyer et une nouvelle famille après la perte de sa tribu.\n\nLe Mimétisme par Empathie : Sa capacité à se fondre dans la foule est alimentée par une forme d'empathie spirituelle : elle perçoit les émotions fondamentales de ceux qu'elle imite. Cela lui permet d'évaluer rapidement une personne.\n\nL'Inconnu : Personne ne sait réellement où ni qui est vraiment Neeko, car son apparence et son identité sont fluides.\n\nConclusion :\n\nCeux qui tentent de lui faire du mal découvrent la véritable force primordiale de son pouvoir spirituel. Neeko est une force de la nature par sa puissance, mais sa motivation principale est la curiosité sincère et le besoin de connexion.",
+  "tags": [
+    "Mage",
+    "Support"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 48,
+    "y": 0,
+    "full": "Neeko.png",
+    "group": "champion",
+    "sprite": "champion3.png"
+  },
+  "skins": [
+    {
+      "id": "518000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "518001",
+      "num": 1,
+      "name": "Neeko merveille hivernale",
+      "chromas": true
+    },
+    {
+      "id": "518010",
+      "num": 10,
+      "name": "Neeko gardienne des étoiles",
+      "chromas": false
+    },
+    {
+      "id": "518011",
+      "num": 11,
+      "name": "Neeko gardienne des étoiles prestige",
+      "chromas": false
+    },
+    {
+      "id": "518012",
+      "num": 12,
+      "name": "Neeko des rouleaux de Shan Hai",
+      "chromas": true
+    },
+    {
+      "id": "518021",
+      "num": 21,
+      "name": "Neeko gardienne des étoiles prestige (2022)",
+      "chromas": false
+    },
+    {
+      "id": "518022",
+      "num": 22,
+      "name": "Neeko sorcière",
+      "chromas": true
+    },
+    {
+      "id": "518031",
+      "num": 31,
+      "name": "Neeko ville démoniaque",
+      "chromas": true
+    },
+    {
+      "id": "518040",
+      "num": 40,
+      "name": "Neeko cosplayeuse",
+      "chromas": true
+    },
+    {
+      "id": "518049",
+      "num": 49,
+      "name": "Neeko abeille",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "NeekoQ",
+      "name": "Explosion florale",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 96,
+        "full": "NeekoQ.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Neeko lance une graine qui éclot pour infliger <magicDamage>{{ explosiondamage }} pts de dégâts magiques</magicDamage>. Si la graine tue une unité ou touche un champion ou un grand monstre, l'éclosion se répète, infligeant <magicDamage>{{ seconddamage }} pts de dégâts magiques</magicDamage> (2 éclosions supplémentaires max).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/60/70/80/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts initiaux",
+          "Dégâts de l'explosion",
+          "Coût en @AbilityResourceName@",
+          "Dégâts supplémentaires aux monstres",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Neeko lance une graine qui inflige des dégâts magiques. La graine éclot une nouvelle fois si elle touche des champions ou si elle tue des ennemis.",
+      "cooldownBurn": "9/8.5/8/7.5/7"
+    },
+    {
+      "id": "NeekoW",
+      "name": "Métaclonage",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 96,
+        "full": "NeekoW.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<passive>Passive :</passive> toutes les 3 attaques, Neeko inflige <magicDamage>{{ passivebonusdamagecalc }} pts de dégâts magiques supplémentaires</magicDamage> et augmente sa <speed>vitesse de déplacement de {{ passivehaste }}%</speed> pendant {{ passivehasteduration }} sec.<br /><br /><active>Active :</active> Neeko devient <keywordStealth>invisible</keywordStealth> pendant {{ stealthduration }} sec et projette un clone qui dure {{ cloneduration }} sec. Neeko et le clone ont une <speed>vitesse de déplacement</speed> augmentée de {{ haste }}% pendant {{ hasteduration }} sec. <br /><br /><rules>Le clone peut être contrôlé avec la touche Déplacer familier (clic) ou en <recast>réactivant</recast> cette compétence.<br />Le clone imite les utilisations de compétence, les emotes et les rappels de Neeko.</rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts passifs",
+          "Vitesse de déplacement active",
+          "Vitesse de déplacement passive",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "900",
+      "datavalues": {},
+      "description": "Passivement, Neeko inflige des dégâts magiques supplémentaires toutes les 3 attaques, augmentant brièvement sa vitesse de déplacement. Elle peut activer la compétence pour envoyer un clone dans une direction et la réactiver pour modifier la direction du clone.",
+      "cooldownBurn": "16/15/14/13/12"
+    },
+    {
+      "id": "NeekoE",
+      "name": "Spirale épineuse",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 96,
+        "full": "NeekoE.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Neeko tire un projectile qui inflige <magicDamage>{{ basedamage }} pts de dégâts magiques</magicDamage> et qui <status>immobilise</status> les ennemis pendant {{ minrootduration }} sec.<br /><br />Le projectile se renforce après avoir touché un ennemi, devenant plus large, plus rapide et <status>immobilisant</status> pendant {{ maxrootduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Durée d'immobilisation minimum",
+          "Durée de l'immobilisation renforcée",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Neeko tire un projectile qui blesse et qui immobilise tous les ennemis traversés. Si le projectile tue un ennemi ou traverse un champion, il augmente sa taille, sa vitesse et la durée de son immobilisation.",
+      "cooldownBurn": "12/11.5/11/10.5/10"
+    },
+    {
+      "id": "NeekoR",
+      "name": "Floraison renversante",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 96,
+        "full": "NeekoR.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Après une courte préparation, Neeko bondit dans les airs, <status>projetant dans les airs</status> tous les ennemis proches pendant {{ delayuntilexplosion }} sec. Quand Neeko atterrit, elle inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> aux ennemis proches et les <status>étourdit</status> pendant {{ stunduration }} sec.<br /><br /><rules>Cette compétence peut être préparée en secret si Neeko est déguisée. {{ delaybeforepassiveremoval }} sec après avoir lancé cette compétence, Neeko met fin à son déguisement.</rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Après une courte préparation, Neeko bondit dans les airs, projetant en l'air tous les ennemis proches. Quand elle atterrit, les ennemis proches sont blessés et étourdis. La préparation ne se voit pas si Neeko est déguisée.",
+      "cooldownBurn": "120/105/90"
+    }
+  ],
+  "passive": {
+    "name": "Mirage inné",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 48,
+      "y": 0,
+      "full": "Neeko_P.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Neeko peut prendre l'apparence d'un champion allié ou d'autres unités sur la carte. Votre déguisement prend fin si vous subissez une immobilisation, lancez des compétences offensives, infligez des dégâts aux tourelles ennemies (uniquement si vous avez pris la forme d'un non-champion) ou si vous subissez des dégâts équivalents aux PV de votre déguisement."
+  },
+  "created_at": "2025-11-26T15:13:34.38849+00:00",
+  "factions": [
+    "ixtal"
+  ],
+  "custom_tags": [
+    "métamorphe"
+  ],
+  "gender": "Female",
+  "species": "Vastaya",
+  "title_en": "the Curious Chameleon",
+  "lore_en": "Neeko is a young Vastaya originating from a vanished tribe. She is gifted with a unique and powerful shapeshifting ability: she can not only borrow the appearance of others (mortals and Vastaya), but she also absorbs a sense of their emotional state (sho'ma in Vastaya) to better understand them and differentiate between friends and foes.\n\nLost Origins: Neeko is one of the rare survivors of her lineage, her home having been destroyed during an unknown cataclysm (likely related to the fall of her ancient Vastaya civilization).\n\nThe Quest for Connection: Her Vastaya nature grants her powerful primordial spiritual strength. However, she is deeply curious and longs to bond with other beings, seeking a new home and a new family after the loss of her tribe.\n\nMimicry through Empathy: Her ability to blend into any crowd is fueled by a form of spiritual empathy: she perceives the fundamental emotions of those she mimics. This allows her to quickly assess an individual.\n\nThe Unknown: No one truly knows where—or who—Neeko actually is, as her appearance and identity are fluid.\n\nConclusion:\n\nThose who seek to harm her will quickly discover her true nature and experience the full force of her primordial spiritual power. Neeko is a force of nature due to her strength, but her core motivation is sincere curiosity and the need for connection.",
+  "spells_en": [
+    {
+      "id": "NeekoQ",
+      "name": "Blooming Burst",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 96,
+        "full": "NeekoQ.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Neeko throws a seed that blooms to deal <magicDamage>{{ explosiondamage }} magic damage</magicDamage>. If it kills a unit or hits a champion or large monster, it will bloom again, dealing <magicDamage>{{ seconddamage }} magic damage</magicDamage>. Max 2 extra blooms.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/60/70/80/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Initial Damage",
+          "Explosion Damage",
+          "@AbilityResourceName@ Cost",
+          "Bonus Monster Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Neeko throws a seed dealing magic damage. The seed blooms again on hitting champions or killing units.",
+      "cooldownBurn": "9/8.5/8/7.5/7"
+    },
+    {
+      "id": "NeekoW",
+      "name": "Shapesplitter",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 96,
+        "full": "NeekoW.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<passive>Passive:</passive> Every 3rd Attack deals an additional <magicDamage>{{ passivebonusdamagecalc }} bonus magic damage</magicDamage> and increases Neeko's <speed>Move Speed by {{ passivehaste }}%</speed> for {{ passivehasteduration }} second.<br /><br /><active>Active:</active> Neeko becomes <keywordStealth>invisible</keywordStealth> for {{ stealthduration }} seconds and projects a clone that lasts {{ cloneduration }} seconds. Neeko and the clone gain <speed>{{ haste }}% Move Speed</speed> for {{ hasteduration }} seconds. <br /><br /><rules>The clone can be controlled using the Move Pet Click hotkey or by <recast>Recasting</recast> this Ability.<br />The clone mirrors her spellcasts, emotes, and recall.</rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Passive Damage",
+          "Active Move Speed",
+          "Passive Move Speed",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "900",
+      "datavalues": {},
+      "description": "Neeko passively deals bonus magic damage every third attack, briefly increasing her move speed. Neeko can activate to send a clone in a direction and recast to change the direction of the clone.",
+      "cooldownBurn": "16/15/14/13/12"
+    },
+    {
+      "id": "NeekoE",
+      "name": "Tangle-Barbs",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 96,
+        "full": "NeekoE.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Neeko slings a tangle that deals <magicDamage>{{ basedamage }} magic damage</magicDamage> and <status>Roots</status> for {{ minrootduration }} seconds.<br /><br />The tangle becomes empowered after hitting an enemy, growing larger, moving faster, and <status>Rooting</status> for {{ maxrootduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Minimum Root Duration",
+          "Empowered Root Duration",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Neeko slings a tangle that damages and roots everything it passes through. If the tangle kills an enemy or passes through a champion, it becomes larger, faster, and roots for longer.",
+      "cooldownBurn": "12/11.5/11/10.5/10"
+    },
+    {
+      "id": "NeekoR",
+      "name": "Pop Blossom",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 96,
+        "full": "NeekoR.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "After a delay Neeko leaps into the air, <status>Knocking Up</status> all nearby enemies for {{ delayuntilexplosion }} seconds. She then crashes down, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> to all nearby enemies and <status>Stunning</status> them for {{ stunduration }} seconds.<br /><br /><rules>This Ability can be prepared in secret if Neeko is disguised. {{ delaybeforepassiveremoval }} seconds after casting this ability Neeko breaks her disguise.</rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "After a short preparation, Neeko leaps into the air, knocking up all nearby enemies. Upon landing, nearby enemies are damaged and stunned. The preparation is hidden if Neeko is disguised.",
+      "cooldownBurn": "120/105/90"
+    }
+  ],
+  "passive_en": {
+    "name": "Inherent Glamour",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 48,
+      "y": 0,
+      "full": "Neeko_P.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Neeko can look like an ally champion or as other units on the map. Receiving immobilizing crowd control, casting damaging spells, damaging enemy towers as a non-champion, or your disguise taking damage equal to its healthbar breaks the disguise."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Mid",
+    "Support"
+  ],
+  "skins_en": [
+    {
+      "id": "518000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "518001",
+      "num": 1,
+      "name": "Winter Wonder Neeko",
+      "chromas": true
+    },
+    {
+      "id": "518010",
+      "num": 10,
+      "name": "Star Guardian Neeko",
+      "chromas": false
+    },
+    {
+      "id": "518011",
+      "num": 11,
+      "name": "Prestige Star Guardian Neeko",
+      "chromas": false
+    },
+    {
+      "id": "518012",
+      "num": 12,
+      "name": "Shan Hai Scrolls Neeko",
+      "chromas": true
+    },
+    {
+      "id": "518021",
+      "num": 21,
+      "name": "Prestige Star Guardian Neeko (2022)",
+      "chromas": false
+    },
+    {
+      "id": "518022",
+      "num": 22,
+      "name": "Bewitching Neeko",
+      "chromas": true
+    },
+    {
+      "id": "518031",
+      "num": 31,
+      "name": "Street Demons Neeko",
+      "chromas": true
+    },
+    {
+      "id": "518040",
+      "num": 40,
+      "name": "Cosplayer Neeko",
+      "chromas": true
+    },
+    {
+      "id": "518049",
+      "num": 49,
+      "name": "Beeko",
+      "chromas": false
+    }
+  ]
+}

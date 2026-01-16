@@ -1,0 +1,533 @@
+{
+  "id": "Evelynn",
+  "key": "28",
+  "name": "Evelynn",
+  "title": "Démon sadique",
+  "version": "15.23.1",
+  "lore": "Evelynn n'a pas toujours été une chasseresse habile. Elle commença il y a des éons comme une entité primordiale, informe et à peine consciente, qui flottait dans l'insensibilité. Son existence fut éveillée par les Guerres Runiques, une époque de souffrance massive et généralisée sur tout Runeterra.\r\n\r\nAlors que les mortels expérimentaient la douleur, l'angoisse et la perte, l'ombre se mit à frémir. Le silence qu'elle avait connu fut remplacé par les vibrations maniaques d'un monde agonisant. L'entité absorba toute cette douleur, qu'elle perçut comme un plaisir sans bornes. Cette sensation la nourrit et, avec le temps, la transforma en quelque chose de plus : un démon, un parasite spirituel avide qui se nourrit des émotions humaines les plus viles.\r\n\r\nLorsque les guerres cessèrent, la souffrance du monde diminua. Le démon sombra dans le désespoir, réalisant que le seul plaisir qu'il ait jamais connu naissait de la misère des autres. Sans douleur, il ne sentait plus rien. Il comprit alors que s'il ne pouvait pas obtenir la souffrance nécessaire pour prospérer, il devrait la créer lui-même en l'infligeant aux autres.\r\n\r\nAu début, la chasse était difficile. Le démon pouvait se déplacer sans être détecté sous sa forme d'ombre, mais pour toucher un humain, il devait se manifester physiquement. Ses premières tentatives pour se façonner un corps étaient monstrueuses, ce qui effrayait sa proie.\r\n\r\nLe démon comprit qu'il lui fallait une forme qui soit agréable aux humains, qui non seulement les attirerait dans ses griffes, mais qui leur offrirait l'extase née de leurs propres désirs. Cela rendrait leur douleur d'autant plus douce.\r\n\r\nLe démon se mit à étudier ses proies, perfectionnant sa silhouette, apprenant à dire ce qu'elles voulaient entendre et à marcher de manière séduisante. En quelques semaines, il perfectionna son physique, menant des dizaines de victimes amoureuses à une torture mortelle. Bien qu'elle se délecte de leur douleur exquise, Evelynn en veut toujours plus. Les désirs humains sont si petits, et les victimes meurent trop tôt. Leur douleur est trop éphémère.\r\n\r\nEvelynn aspire au jour où elle pourra plonger le monde dans un chaos total, lui permettant de retrouver une existence d'extase pure et raptueuse en se nourrissant du chaos de masse.",
+  "tags": [
+    "Assassin",
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 48,
+    "y": 0,
+    "full": "Evelynn.png",
+    "group": "champion",
+    "sprite": "champion1.png"
+  },
+  "skins": [
+    {
+      "id": "28000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "28001",
+      "num": 1,
+      "name": "Evelynn noire",
+      "chromas": false
+    },
+    {
+      "id": "28002",
+      "num": 2,
+      "name": "Evelynn masquée",
+      "chromas": false
+    },
+    {
+      "id": "28003",
+      "num": 3,
+      "name": "Evelynn tango",
+      "chromas": false
+    },
+    {
+      "id": "28004",
+      "num": 4,
+      "name": "Evelynn perceuse de coffres",
+      "chromas": false
+    },
+    {
+      "id": "28005",
+      "num": 5,
+      "name": "Evelynn lune de sang",
+      "chromas": false
+    },
+    {
+      "id": "28006",
+      "num": 6,
+      "name": "K/DA Evelynn",
+      "chromas": false
+    },
+    {
+      "id": "28007",
+      "num": 7,
+      "name": "K/DA Evelynn prestige",
+      "chromas": false
+    },
+    {
+      "id": "28008",
+      "num": 8,
+      "name": "Evelynn folie sucrée",
+      "chromas": true
+    },
+    {
+      "id": "28015",
+      "num": 15,
+      "name": "K/DA ALL OUT Evelynn",
+      "chromas": true
+    },
+    {
+      "id": "28024",
+      "num": 24,
+      "name": "Evelynn de l'assemblée",
+      "chromas": true
+    },
+    {
+      "id": "28031",
+      "num": 31,
+      "name": "K/DA Evelynn prestige (2022)",
+      "chromas": false
+    },
+    {
+      "id": "28032",
+      "num": 32,
+      "name": "Evelynn fleur spirituelle",
+      "chromas": true
+    },
+    {
+      "id": "28042",
+      "num": 42,
+      "name": "Evelynn combattante spirituelle",
+      "chromas": true
+    },
+    {
+      "id": "28052",
+      "num": 52,
+      "name": "Evelynn de l'Ouest",
+      "chromas": true
+    },
+    {
+      "id": "28053",
+      "num": 53,
+      "name": "Evelynn de l'Ouest prestige",
+      "chromas": false
+    },
+    {
+      "id": "28064",
+      "num": 64,
+      "name": "Evelynn héraut de la nuit",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "EvelynnQ",
+      "name": "Piques de haine",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 96,
+        "full": "EvelynnQ.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Evelynn frappe avec son cirre, infligeant <magicDamage>{{ missiledamage }} pts de dégâts magiques</magicDamage> au premier ennemi touché et permettant aux 3 prochaines attaques ou compétences d'Evelynn contre cette unité d'infliger <magicDamage>{{ totalbonusdamage }} pts de dégâts magiques</magicDamage> bonus. Evelynn peut <recast>réactiver</recast> cette compétence jusqu'à {{ qstackcount }} fois.<br /><br /><recast>Réactivation</recast> : Evelynn tire des piques à travers l'ennemi le plus proche, infligeant <magicDamage>{{ missiledamage }} pts de dégâts magiques</magicDamage> à tous les ennemis touchés.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/45/50/55/60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts du cirre et des piques",
+          "Dégâts supplémentaires",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Evelynn frappe avec son cirre et inflige des dégâts à la première unité touchée. Elle peut ensuite tirer une ligne de piques vers les ennemis proches à plusieurs reprises.",
+      "cooldownBurn": "4"
+    },
+    {
+      "id": "EvelynnW",
+      "name": "Séduction",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 96,
+        "full": "EvelynnW.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Evelynn marque un champion ou un monstre pendant 5 sec. Si Evelynn frappe la cible avec une attaque ou une compétence, elle consomme la marque, ce qui lui rend le coût de la compétence et <status>ralentit</status> la cible de {{ slowamount*100 }}% pendant {{ slowduration }} sec.<br /><br />Si la marque dure au moins 2.5 sec, sa consommation a des effets supplémentaires :<li>Contre les champions : les <status>charme</status> pendant {{ charmduration }} sec et supprime <scaleMR>{{ mrshred*100 }}% de résistance magique</scaleMR> pendant {{ shredduration }} sec.<li>Contre les monstres : les <status>charme</status> pendant {{ monstercharm }} sec et inflige <magicDamage>{{ monsterdamagetotaltooltip }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/70/80/90/100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Durée du charme",
+          "Durée du charme contre les monstres",
+          "Réduction de résistance magique",
+          "Dégâts aux monstres",
+          "Délai de récupération",
+          "Portée"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1200/1300/1400/1500/1600",
+      "datavalues": {},
+      "description": "Evelynn maudit une cible, ce qui permet à sa prochaine attaque ou à son prochain sort de charmer sa cible et de réduire sa résistance magique.",
+      "cooldownBurn": "15/14/13/12/11"
+    },
+    {
+      "id": "EvelynnE",
+      "name": "Coup de fouet",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 96,
+        "full": "EvelynnE.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Evelynn fouette un ennemi, infligeant <magicDamage>{{ basedamage }} plus {{ percenthealthbasetooltip }} des PV max en dégâts magiques</magicDamage>. Evelynn gagne <speed>+{{ speedamount*100 }}% de vitesse de déplacement</speed> pendant {{ speedduration }} sec.<br /><br />Entrer dans l'<keywordMajor>Ombre démoniaque</keywordMajor> renforce cette compétence et réinitialise son délai de récupération. Quand cette compétence est renforcée, Evelynn se rue sur sa cible et inflige <magicDamage>{{ empowereddamage }} plus {{ percenthealthempoweredtooltip }} des PV max en dégâts magiques</magicDamage> à sa cible et à tous les ennemis traversés.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/45/50/55/60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Dégâts renforcés",
+          "Vitesse de déplacement",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "210",
+      "datavalues": {},
+      "description": "Evelynn donne un coup de fouet à sa cible avec son cirre et lui inflige des dégâts. Elle augmente ensuite sa vitesse de déplacement pendant un court instant.",
+      "cooldownBurn": "8"
+    },
+    {
+      "id": "EvelynnR",
+      "name": "Faiseuse de veuves",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 96,
+        "full": "EvelynnR.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Evelynn libère son énergie démoniaque, infligeant d'énormes dégâts, devenant impossible à cibler et se téléportant vers l'arrière. Elle inflige <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage>, et ces dégâts sont augmentés à <magicDamage>{{ critdamage }}</magicDamage> contre les ennemis qui ont moins de <healing>30% de leurs PV</healing>. Lancer cette compétence applique un délai de récupération de 1.25 sec sur Ombre démoniaque.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Dégâts renforcés",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Evelynn devient brièvement impossible à cibler et ravage la zone devant elle avant de se téléporter loin en arrière.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive": {
+    "name": "Ombre démoniaque",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 48,
+      "y": 0,
+      "full": "Evelynn_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "En dehors des combats, Evelynn se plonge dans une Ombre démoniaque. Ombre démoniaque soigne Evelynn quand ses PV sont bas et lui octroie un camouflage à partir du niveau 6."
+  },
+  "created_at": "2025-11-26T15:13:32.943584+00:00",
+  "factions": [
+    "runeterra"
+  ],
+  "custom_tags": [
+    "démon",
+    "agonie",
+    "succube"
+  ],
+  "gender": "Female",
+  "species": "Demon",
+  "title_en": "Agony's Embrace",
+  "lore_en": "Evelynn was not always a skilled huntress. She began eons ago as something primordial, shapeless, and barely sentient, drifting in numbness. Her existence was roused by the Rune Wars, an era of mass suffering across Runeterra.\r\n\r\nAs mortals began to experience vast amounts of pain, anguish, and loss, the shadow stirred. The silence it had known was replaced by the manic vibrations of an agonized world. The entity drank in all of Runeterra's pain, which it experienced as boundless pleasure. This sensation nourished it, and over time, it transformed into something more: a demon, a ravenous spiritual parasite that fed on the basest of human emotions.\r\n\r\nWhen the wars finally ended, the world's suffering waned. The demon found itself growing desperate, realizing that the only pleasure it had ever known was born of others' misery. Without pain, it felt nothing. It understood then that if the world would not provide the suffering it needed to thrive, it would have to create it by inflicting it upon others.\r\n\r\nAt first, catching prey was a challenge. The demon could move undetected in its shadow form, but to touch a human, it needed to manifest physically. Its early attempts to fashion a body were monstrous, scaring off her prey.\r\n\r\nThe demon realized it needed a shape that was pleasing to humans, one that would not only lure them into its claws but would offer them ecstasy born of their own desires. This would make their pain all the sweeter.\r\n\r\nThe demon began to study its intended prey, perfecting her physique, learning to say what they wanted to hear, and to walk in a manner they found alluring. In a matter of weeks, she perfected her form, leading dozens of enamored victims to be tortured to death at her hands. Though she relishes the exquisite pain of each victim, Evelynn always finds herself wanting more. Human desires are so small, and they always expire too soon. Their pain is too fleeting.\r\n\r\nEvelynn yearns for the day she can plunge the world into utter chaos, allowing her to return to an existence of pure, rapturous ecstasy by feeding on mass suffering.",
+  "spells_en": [
+    {
+      "id": "EvelynnQ",
+      "name": "Hate Spike",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 96,
+        "full": "EvelynnQ.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Evelynn strikes with her Lasher, dealing <magicDamage>{{ missiledamage }} magic damage</magicDamage> to the first enemy hit and causing Evelynn's next 3 Attacks or Abilities on that unit to deal an additional <magicDamage>{{ totalbonusdamage }} magic damage</magicDamage>. Evelynn can <recast>Recast</recast> this Ability up to {{ qstackcount }} times.<br /><br /><recast>Recast:</recast> Evelynn fires spikes through the nearest enemy, dealing <magicDamage>{{ missiledamage }} magic damage</magicDamage> to all enemies hit.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/45/50/55/60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Lasher and Spike Damage",
+          "Bonus Damage",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Evelynn strikes out with her Lasher, dealing damage to the first unit hit. Then, Evelynn can shoot a line of spikes at nearby foes a few times.",
+      "cooldownBurn": "4"
+    },
+    {
+      "id": "EvelynnW",
+      "name": "Allure",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 96,
+        "full": "EvelynnW.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Evelynn marks a champion or monster for 5 seconds. If Evelynn hits the target with an Attack or Ability, she will expunge the mark, refund its cost, and <status>Slow</status> the target by {{ slowamount*100 }}% for {{ slowduration }} seconds.<br /><br />If the mark lasts at least 2.5 seconds, expunging it has extra effects:<li>Against champions: <status>Charms</status> them for {{ charmduration }} second(s) and removes <scaleMR>{{ mrshred*100 }}% Magic Resist</scaleMR> for {{ shredduration }} seconds.<li>Against monsters: <status>Charms</status> them for {{ monstercharm }} seconds and deals <magicDamage>{{ monsterdamagetotaltooltip }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/70/80/90/100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Charm Duration",
+          "Monster Charm Duration",
+          "Magic Resist Shred",
+          "Monster Damage",
+          "Cooldown",
+          "Range"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1200/1300/1400/1500/1600",
+      "datavalues": {},
+      "description": "Evelynn curses her target, causing her next attack or spell after a delay to charm her target and reduce their magic resist.",
+      "cooldownBurn": "15/14/13/12/11"
+    },
+    {
+      "id": "EvelynnE",
+      "name": "Whiplash",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 96,
+        "full": "EvelynnE.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Evelynn whips an enemy, dealing <magicDamage>{{ basedamage }} plus {{ percenthealthbasetooltip }} max Health magic damage</magicDamage>. Evelynn gains <speed>{{ speedamount*100 }}% Move Speed</speed> for {{ speedduration }} seconds.<br /><br />Entering <keywordMajor>Demon Shade</keywordMajor> refreshes this Ability's cooldown and empowers it. When this Ability is empowered, Evelynn dashes to the target and deals <magicDamage>{{ empowereddamage }} plus {{ percenthealthempoweredtooltip }} max Health magic damage</magicDamage> to her target and everyone she passes through instead.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/45/50/55/60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Empowered Damage",
+          "Move Speed",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "210",
+      "datavalues": {},
+      "description": "Evelynn whips her target with her Lasher, dealing damage. She then gains Move Speed for a short duration.",
+      "cooldownBurn": "8"
+    },
+    {
+      "id": "EvelynnR",
+      "name": "Last Caress",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 96,
+        "full": "EvelynnR.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Evelynn unleashes her demonic energy, dealing heavy damage, becoming Untargetable and teleporting backwards. She deals <magicDamage>{{ damage }} magic damage</magicDamage>, increased to <magicDamage>{{ critdamage }}</magicDamage> against enemies below <healing>30% Health</healing>. Upon cast, set Demon Shade to a 1.25 second cooldown.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Empowered Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Evelynn briefly goes untargetable and decimates the area in front of her before warping backwards a long distance.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Demon Shade",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 48,
+      "y": 0,
+      "full": "Evelynn_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "When out of combat, Evelynn enters Demon Shade. Demon Shade heals Evelynn when she is low on health and grants Camouflage after level 6."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "28000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "28001",
+      "num": 1,
+      "name": "Shadow Evelynn",
+      "chromas": false
+    },
+    {
+      "id": "28002",
+      "num": 2,
+      "name": "Masquerade Evelynn",
+      "chromas": false
+    },
+    {
+      "id": "28003",
+      "num": 3,
+      "name": "Tango Evelynn",
+      "chromas": false
+    },
+    {
+      "id": "28004",
+      "num": 4,
+      "name": "Safecracker Evelynn",
+      "chromas": false
+    },
+    {
+      "id": "28005",
+      "num": 5,
+      "name": "Blood Moon Evelynn",
+      "chromas": false
+    },
+    {
+      "id": "28006",
+      "num": 6,
+      "name": "K/DA Evelynn",
+      "chromas": false
+    },
+    {
+      "id": "28007",
+      "num": 7,
+      "name": "Prestige K/DA Evelynn",
+      "chromas": false
+    },
+    {
+      "id": "28008",
+      "num": 8,
+      "name": "Sugar Rush Evelynn",
+      "chromas": true
+    },
+    {
+      "id": "28015",
+      "num": 15,
+      "name": "K/DA ALL OUT Evelynn",
+      "chromas": true
+    },
+    {
+      "id": "28024",
+      "num": 24,
+      "name": "Coven Evelynn",
+      "chromas": true
+    },
+    {
+      "id": "28031",
+      "num": 31,
+      "name": "Prestige K/DA Evelynn (2022)",
+      "chromas": false
+    },
+    {
+      "id": "28032",
+      "num": 32,
+      "name": "Spirit Blossom Evelynn",
+      "chromas": true
+    },
+    {
+      "id": "28042",
+      "num": 42,
+      "name": "Soul Fighter Evelynn",
+      "chromas": true
+    },
+    {
+      "id": "28052",
+      "num": 52,
+      "name": "High Noon Evelynn",
+      "chromas": true
+    },
+    {
+      "id": "28053",
+      "num": 53,
+      "name": "Prestige High Noon Evelynn",
+      "chromas": false
+    },
+    {
+      "id": "28064",
+      "num": 64,
+      "name": "Nightbringer Evelynn",
+      "chromas": false
+    }
+  ]
+}

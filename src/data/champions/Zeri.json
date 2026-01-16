@@ -1,0 +1,388 @@
+{
+  "id": "Zeri",
+  "key": "221",
+  "name": "Zeri",
+  "title": "Étincelle de Zaun",
+  "version": "15.23.1",
+  "lore": "Zeri est une jeune femme vive et téméraire originaire des quartiers défavorisés de Zaun. Elle canalise son électricité intérieure afin de la charger dans un fusil conçu spécialement pour elle. Son pouvoir magique est le reflet de ses émotions, et ses étincelles sont aussi fulgurantes que son caractère. Résolument tournée vers les autres, Zeri se sert de son amour pour sa famille et son quartier durant chaque combat. Malgré toute sa bonne volonté, cependant, les événements ne se passent pas toujours comme prévu. Cela dit, Zeri est sûre d'une chose : si vous vous battez pour votre communauté, elle se battra avec vous.",
+  "tags": [
+    "Marksman"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 336,
+    "y": 48,
+    "full": "Zeri.png",
+    "group": "champion",
+    "sprite": "champion5.png"
+  },
+  "skins": [
+    {
+      "id": "221000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "221001",
+      "num": 1,
+      "name": "Zeri rose fanée",
+      "chromas": true
+    },
+    {
+      "id": "221010",
+      "num": 10,
+      "name": "Zeri du Chant de l'océan",
+      "chromas": true
+    },
+    {
+      "id": "221019",
+      "num": 19,
+      "name": "Zeri du Voyage immortel",
+      "chromas": true
+    },
+    {
+      "id": "221028",
+      "num": 28,
+      "name": "Zeri Nuit d'effroi",
+      "chromas": true
+    },
+    {
+      "id": "221029",
+      "num": 29,
+      "name": "Zeri Nuit d'effroi prestige",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "ZeriQ",
+      "name": "Rafale",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 0,
+        "full": "ZeriQ.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Zeri tire une rafale de {{ numberofmissiles }} balles qui inflige <physicalDamage>{{ activedamagethatcancrit }} pts de dégâts physiques</physicalDamage> au premier ennemi touché. Cette compétence est traitée comme une attaque. {{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ratio de dégâts d'attaque totaux"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Rafale tire 7 balles qui infligent les dégâts d'attaque de Zeri au premier ennemi touché. Cette compétence est traitée comme une attaque.",
+      "cooldownBurn": "0"
+    },
+    {
+      "id": "ZeriW",
+      "name": "Laser électrocuteur",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 0,
+        "full": "ZeriW.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Zeri tire une impulsion électrique qui inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> et <status>ralentit</status> le premier ennemi touché de {{ slowpercent*100 }}% pendant {{ slowduration }} sec.<br /><br />Si l'impulsion frappe un obstacle, elle se transforme en laser qui applique les mêmes effets dans une zone et inflige des coups critiques aux champions et aux monstres.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/60/70/80/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ralentissement",
+          "Coût en @AbilityResourceName@",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1150",
+      "datavalues": {},
+      "description": "Zeri lance une impulsion électrique qui ralentit et blesse le premier ennemi touché. Si l'impulsion touche un mur, elle se transforme en laser à longue portée.",
+      "cooldownBurn": "12/11/10/9/8"
+    },
+    {
+      "id": "ZeriE",
+      "name": "Charge ionique",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 0,
+        "full": "ZeriE.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Zeri effectue une courte ruée et bondit par-dessus les obstacles qu'elle touche, ce qui augmente considérablement la distance parcourue. Pendant les {{ buffduration }} prochaines secondes, ses activations de <spellName>Rafale</spellName> sont perforantes et infligent {{ pendamagepercent*100 }}% de dégâts aux ennemis au-delà du premier. Elles infligent également <magicDamage>{{ bonusdamagetotal }} pts de dégâts magiques</magicDamage> supplémentaires à l'impact à la première cible touchée. <br /><br />Toucher un champion ennemi avec une attaque ou une compétence réduit de {{ cdreductionperhit }} sec le délai de récupération de cette compétence. Les coups critiques réduisent de {{ critcdreductionperhit }} sec le délai de récupération.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "90/85/80/75/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Pourcentage des dégâts",
+          "Dégâts de base",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Zeri effectue une courte ruée et renforce ses 3 prochaines Rafales, qui deviennent perforantes. Elle bondit par-dessus tous les obstacles qu'elle touche.",
+      "cooldownBurn": "22/21/20/19/18"
+    },
+    {
+      "id": "ZeriR",
+      "name": "Éruption électrique",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 0,
+        "full": "ZeriR.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Zeri provoque une nova d'électricité, infligeant <magicDamage>{{ totalactivedamage }} pts de dégâts magiques</magicDamage> aux ennemis proches. Si elle touche un champion ennemi, Zeri gagne <attackSpeed>+{{ baseaspercent*100 }}% de vitesse d'attaque</attackSpeed> et <speed>+{{ basebonusms*100 }}% de vitesse de déplacement</speed> pendant {{ rduration }} sec. Toucher un champion ennemi avec une attaque ou une compétence prolonge la durée de cette compétence et ajoute un effet Surcharge pendant {{ maxhyperchargeduration }} sec. Les coups critiques ajoutent 2 effets supplémentaires. Chaque effet octroie <speed>+{{ mspercent*100 }}% de vitesse de déplacement</speed>.<br /><br />Pendant cette période, <spellName>Rafale</spellName> devient un triple tir plus rapide qui crée une chaîne d'éclairs infligeant <physicalDamage>{{ chainphysicaldamage }} pts de dégâts physiques</physicalDamage> aux ennemis proches.<br /><br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Zeri provoque une nova d'électricité et se surcharge : elle inflige plus de dégâts et gagne un bonus cumulable en vitesse d'attaque qui s'actualise et augmente à chaque fois qu'elle touche un champion ennemi. Lorsque Zeri est surchargée, Rafale devient un triple tir plus rapide qui crée une chaîne d'éclairs entre les ennemis.",
+      "cooldownBurn": "80/75/70"
+    }
+  ],
+  "passive": {
+    "name": "Batterie vivante",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 336,
+      "y": 48,
+      "full": "ZeriP.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "Les attaques de Zeri infligent des dégâts magiques et sont traitées comme des compétences. Se déplacer et lancer Rafale stocke de l'énergie dans le Paquetage ionique de Zeri. Lorsqu'elle est chargée à bloc, sa prochaine attaque inflige des dégâts supplémentaires."
+  },
+  "created_at": "2025-11-26T15:13:35.674409+00:00",
+  "factions": [
+    "zaun"
+  ],
+  "custom_tags": null,
+  "gender": "Female",
+  "species": "Human",
+  "title_en": "The Spark of Zaun",
+  "lore_en": "A headstrong, spirited young woman from Zaun's working-class, Zeri channels her electric magic to charge herself and her custom-crafted gun. Her volatile power mirrors her emotions, its sparks reflecting her lightning-fast approach to life. Deeply compassionate toward others, Zeri carries the love of her family and her home into every fight. Though her eagerness to help can sometimes backfire, Zeri believes one truth to be certain: stand up for your community, and it will stand up with you.",
+  "spells_en": [
+    {
+      "id": "ZeriQ",
+      "name": "Burst Fire",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 0,
+        "full": "ZeriQ.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Zeri fires a burst of {{ numberofmissiles }} rounds that deals <physicalDamage>{{ activedamagethatcancrit }} physical damage</physicalDamage> to the first enemy hit. This Ability is treated as an Attack. {{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Total AD Ratio"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Burst Fire shoots a burst of 7 rounds that deal attack damage to the first enemy hit. This Ability is treated as an Attack.",
+      "cooldownBurn": "0"
+    },
+    {
+      "id": "ZeriW",
+      "name": "Ultrashock Laser",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 0,
+        "full": "ZeriW.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Zeri fires an electric pulse that deals <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> and <status>Slows</status> the first enemy hit by {{ slowpercent*100 }}% for {{ slowduration }} seconds.<br /><br />If the pulse hits terrain, it expands into a laser that applies the effects in an area and Critically Strikes champions and monsters.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/60/70/80/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Slow",
+          "@AbilityResourceName@ Cost",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1150",
+      "datavalues": {},
+      "description": "Zeri fires an electric pulse that slows and damages the first enemy hit. If the pulse hits a wall it expands into a long range laser.",
+      "cooldownBurn": "12/11/10/9/8"
+    },
+    {
+      "id": "ZeriE",
+      "name": "Spark Surge",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 0,
+        "full": "ZeriE.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Zeri dashes a short distance and vaults over any terrain she touches, greatly extending the dash range. For the next {{ buffduration }} seconds, her shots of <spellName>Burst Fire</spellName> pierce dealing {{ pendamagepercent*100 }}% damage to enemies after the first and an additional <magicDamage>{{ bonusdamagetotal }} magic damage</magicDamage> On-Hit to the first target struck. <br /><br />Hitting an enemy champion with an Attack or Ability reduces this Ability's cooldown by {{ cdreductionperhit }} seconds. Critical strikes reduce the cooldown by {{ critcdreductionperhit }} seconds instead.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "90/85/80/75/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Percentage Damage",
+          "Base Damage",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Zeri dashes a short distance and energizes her next 3 shots of Burst Fire, causing them to pierce through enemies. She will vault and grind over any terrain she touches.",
+      "cooldownBurn": "22/21/20/19/18"
+    },
+    {
+      "id": "ZeriR",
+      "name": "Lightning Crash",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 0,
+        "full": "ZeriR.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Zeri discharges a nova of electricity, dealing <magicDamage>{{ totalactivedamage }} magic damage</magicDamage> to nearby enemies. If she hits an enemy champion, Zeri gains <attackSpeed>{{ baseaspercent*100 }}% Attack Speed</attackSpeed> and <speed>{{ basebonusms*100 }}% Move Speed</speed> for {{ rduration }} seconds. Hitting an enemy champion with an Attack or Ability extends this ability's duration and adds a stack of Overcharge for {{ maxhyperchargeduration }} seconds. Critical strikes add 2 additional stacks. Each stack grants <speed>{{ mspercent*100 }}% Move Speed</speed>.<br /><br />During this time, <spellName>Burst Fire</spellName> becomes a faster triple shot that chains <physicalDamage>{{ chainphysicaldamage }} physical damage</physicalDamage> to nearby enemies.<br /><br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Zeri discharges a nova of electricity and overcharges herself, gaining increased damage and stacking Move Speed that refreshes and gets stronger every time she hits an enemy champion. While overcharged, Burst fire becomes a faster triple shot that chains lightning between enemies.",
+      "cooldownBurn": "80/75/70"
+    }
+  ],
+  "passive_en": {
+    "name": "Living Battery",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 336,
+      "y": 48,
+      "full": "ZeriP.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "Zeri's Attacks deal magic damage and are treated as Abilities. Moving and casting Burst Fire stores up energy in Zeri's Sparkpack. When fully charged her next Attack deals bonus damage."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Adc"
+  ],
+  "skins_en": [
+    {
+      "id": "221000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "221001",
+      "num": 1,
+      "name": "Withered Rose Zeri",
+      "chromas": true
+    },
+    {
+      "id": "221010",
+      "num": 10,
+      "name": "Ocean Song Zeri",
+      "chromas": true
+    },
+    {
+      "id": "221019",
+      "num": 19,
+      "name": "Immortal Journey Zeri",
+      "chromas": true
+    },
+    {
+      "id": "221028",
+      "num": 28,
+      "name": "Fright Night Zeri",
+      "chromas": true
+    },
+    {
+      "id": "221029",
+      "num": 29,
+      "name": "Prestige Fright Night Zeri",
+      "chromas": false
+    }
+  ]
+}

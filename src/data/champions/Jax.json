@@ -1,0 +1,527 @@
+{
+  "id": "Jax",
+  "key": "24",
+  "name": "Jax",
+  "title": "Maître d'armes",
+  "version": "15.23.1",
+  "lore": "Saijax Cail-Rynx Icath'un (Jax) a grandi en Icathia, un protectorat de l'Empire Shurimien. Son père lui inculqua le ressentiment ardent de son peuple pour l'oppression shurimienne et le souvenir des Kohari, les héros icathiens qui s'étaient immolés après la mort de leur Roi-mage. Saijax se consacra à l'étude des armes, apprenant des maîtres shurimiens et des anciens de son propre clan.\n\nUn énorme tremblement de terre révéla une entité enfouie sous terre, d'une puissance capable de vaincre les guerriers Transfigurés de Shurima. Saijax fut chargé de protéger les mages qui découvrirent cette force, qu'ils appelèrent le Néant (the Void). Saijax, en tant que maître d'armes, vit le danger de ce pouvoir incontrôlable, mais le Conseil icathien décida de l'utiliser pour vaincre leurs oppresseurs.\n\nUn nouveau Roi-mage fut couronné et les Kohari furent rétablis, Saijax parmi eux. Ils remportèrent des victoires, mais lorsque l'Armée transfigurée approcha, les mages icathiens déclenchèrent le Néant.\n\nLe désastre fut immédiat : la Ruine s'abattit sur la terre. Icathiens, Shurimiens et même les Transfigurés furent démantelés. En un instant, Icathia fut perdue, aspirée par le Néant.\n\nDévasté, Saijax chevaucha vers le cratère en ruine pour mettre fin à ses jours comme les Kohari d'antan. Mais il vit parmi les décombres un bâton-brasero abandonné — l'une des armes utilisées par les gardes au début de la découverte — qui brûlait encore d'un feu élémentaire capable de nuire au Néant. Cette flamme ralluma une étincelle d'espoir.\n\nSaijax prit le bâton, son « dernière lumière d'Icathia », et laissa derrière lui son nom pour n'être plus connu que sous le nom de Jax.\n\nHonteux et affligé, Jax devint un vagabond. Le bâton élémentaire prolongea sa vie au-delà des attentes. Il comprit qu'il ne pouvait pas fuir son passé : il devait revenir se battre contre la menace du Néant.\n\nPendant des siècles, Jax a parcouru le monde, à la recherche de guerriers assez forts et assez courageux pour reconstruire les Kohari. Il éprouve les qualités de tous ceux qu'il rencontre. Mais jusqu'à présent, aucun n'a réussi à le convaincre qu'il pourrait marcher contre l'obscurité. Le doute de la chute d'Icathia le hante, mais une chose est certaine : lorsque la bataille finale viendra, Jax se tiendra seul contre le Néant, s'il le faut.",
+  "tags": [
+    "Fighter"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 48,
+    "y": 96,
+    "full": "Jax.png",
+    "group": "champion",
+    "sprite": "champion1.png"
+  },
+  "skins": [
+    {
+      "id": "24000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "24001",
+      "num": 1,
+      "name": "Le Grand Jax",
+      "chromas": false
+    },
+    {
+      "id": "24002",
+      "num": 2,
+      "name": "Jax le vandale",
+      "chromas": false
+    },
+    {
+      "id": "24003",
+      "num": 3,
+      "name": "Jax le pêcheur",
+      "chromas": false
+    },
+    {
+      "id": "24004",
+      "num": 4,
+      "name": "Jax PAX",
+      "chromas": false
+    },
+    {
+      "id": "24005",
+      "num": 5,
+      "name": "Jaximus",
+      "chromas": false
+    },
+    {
+      "id": "24006",
+      "num": 6,
+      "name": "Jax Shaolin",
+      "chromas": false
+    },
+    {
+      "id": "24007",
+      "num": 7,
+      "name": "Jax Némésis",
+      "chromas": true
+    },
+    {
+      "id": "24008",
+      "num": 8,
+      "name": "SKT T1 Jax",
+      "chromas": false
+    },
+    {
+      "id": "24012",
+      "num": 12,
+      "name": "Jax purificateur",
+      "chromas": false
+    },
+    {
+      "id": "24013",
+      "num": 13,
+      "name": "Jax au bâton divin",
+      "chromas": false
+    },
+    {
+      "id": "24014",
+      "num": 14,
+      "name": "Jax du royaume des mechas",
+      "chromas": true
+    },
+    {
+      "id": "24020",
+      "num": 20,
+      "name": "Jax conquérant",
+      "chromas": false
+    },
+    {
+      "id": "24021",
+      "num": 21,
+      "name": "Jax conquérant prestige",
+      "chromas": false
+    },
+    {
+      "id": "24022",
+      "num": 22,
+      "name": "Jax empyréen",
+      "chromas": true
+    },
+    {
+      "id": "24032",
+      "num": 32,
+      "name": "Néo Jax PAX",
+      "chromas": false
+    },
+    {
+      "id": "24033",
+      "num": 33,
+      "name": "PROJET : Jax",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "JaxQ",
+      "name": "Frappe bondissante",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 96,
+        "full": "JaxQ.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Jax bondit sur une unité ou une balise alliée ou ennemie, infligeant <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> s'il s'agit d'un ennemi.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "65",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Jax bondit sur une unité. S'il s'agit d'un ennemi, il le frappe avec son arme.",
+      "cooldownBurn": "8/7.5/7/6.5/6"
+    },
+    {
+      "id": "JaxW",
+      "name": "Élargissement",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 96,
+        "full": "JaxW.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Jax charge son arme en énergie pour que sa prochaine attaque ou <spellName>Frappe bondissante</spellName> inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> supplémentaires.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "300",
+      "datavalues": {},
+      "description": "Jax charge son arme en énergie pour infliger des dégâts supplémentaires avec sa prochaine attaque.",
+      "cooldownBurn": "7/6/5/4/3"
+    },
+    {
+      "id": "JaxE",
+      "name": "Contre-attaque",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 96,
+        "full": "JaxE.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Jax prend une posture défensive pendant un maximum de {{ dodgeduration }} sec, esquivant les attaques et réduisant de {{ aoedamagereduction }}% les dégâts que lui infligent les compétences à effet de zone. Au bout de {{ dodgeduration }} sec ou à la <recast>réactivation</recast>, Jax inflige des <magicDamage>dégâts magiques équivalents à {{ totaldamage }} + {{ percenthealthdamage }}% des PV max</magicDamage> et il <status>étourdit</status> les ennemis proches pendant {{ stunduration }} sec. <br /><br />Les dégâts sont augmentés de {{ percentincreasedperdodge*100 }}% par attaque esquivée, jusqu'à un maximum de <magicDamage>{{ maxdamage }} + {{ maxpercenthealthdamage }}% des PV max</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/60/70/80/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "300",
+      "datavalues": {},
+      "description": "Jax est capable d'esquiver toutes les attaques pendant un bref instant puis d'étourdir tous les ennemis proches en contre-attaquant.",
+      "cooldownBurn": "17/15/13/11/9"
+    },
+    {
+      "id": "JaxR",
+      "name": "Maître d'armes",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 96,
+        "full": "JaxR.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellPassive>Passive :</spellPassive> toutes les 3 attaques en moins de {{ passivefallofftime }} sec, Jax inflige <magicDamage>{{ onhitdamage }} pts de dégâts magiques</magicDamage> supplémentaires.<br /><br /><spellActive>Active :</spellActive> Jax frappe le sol avec sa lanterne, ce qui inflige <magicDamage>{{ swingdamagetotal }} pts de dégâts magiques</magicDamage> aux ennemis proches. S'il touche un champion, il gagne <scaleArmor>+{{ basearmor }} armure</scaleArmor> et <scaleMR>+{{ basemr }} résistance magique</scaleMR> (plus <scaleArmor>+{{ bonusarmor }} armure</scaleArmor> et <scaleMR>+{{ bonusmr }} résistance magique</scaleMR> par champion touché supplémentaire) pendant {{ duration }} sec. Pendant cette même durée, Jax inflige des <magicDamage>dégâts magiques</magicDamage> supplémentaires toutes les 2 attaques, au lieu de toutes les 3 attaques.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts passifs",
+          "Dégâts actifs",
+          "Armure de base",
+          "Résistance magique de base",
+          "Armure par champion supplémentaire",
+          "Résistance magique par champion supplémentaire",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "260",
+      "datavalues": {},
+      "description": "Toutes les trois attaques consécutives, Jax inflige des dégâts magiques supplémentaires. De plus, Jax peut activer cette compétence pour infliger des dégâts autour de lui et renforcer sa détermination, ce qui augmente son armure et sa résistance magique pendant un court instant.",
+      "cooldownBurn": "110/100/90"
+    }
+  ],
+  "passive": {
+    "name": "Acharnement",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 48,
+      "y": 96,
+      "full": "Armsmaster_MasterOfArms.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Les attaques de base successives de Jax augmentent continuellement sa vitesse d'attaque."
+  },
+  "created_at": "2025-11-26T15:13:33.462857+00:00",
+  "factions": [
+    "icathia"
+  ],
+  "custom_tags": [
+    "maitre-armes"
+  ],
+  "gender": "Male",
+  "species": "Unknown",
+  "title_en": "Grandmaster at Arms",
+  "lore_en": "Saijax Cail-Rynx Icath'un (Jax) grew up in Icathia, a satrapy of the Shuriman Empire. His father instilled in him the burning resentment of his people for Shuriman oppression and the memory of the Kohari, the Icathian heroes who committed ritual suicide after their Mage King died. Saijax dedicated himself to the study of arms, learning from both Shuriman weapons masters and his own clan elders.\n\nA massive earthquake revealed something hidden deep beneath the earth, a power strong enough to overcome Shurima's Ascended warriors. Saijax was entrusted with protecting the mages who encountered this force, which they called the Void. Saijax, as a weapons master, knew the danger of using a weapon they could neither fully understand nor safely harness, but the Icathian council immediately saw its potential to defeat their oppressors.\n\nA new Mage King was crowned, and the Kohari were rebuilt, with Saijax among the first to join their ranks. They triumphed in early engagements, but when the Ascended Host approached, the Icathian mages unleashed the Void.\n\nRuin was instantaneous: chaos swept over the land. Icathians, Shurimans, and even the Ascended were unraveled from existence. In moments, Icathia was lost, swallowed into cold, silent oblivion by the Void.\n\nDevastated, Saijax rode to the ruined crater, determined to fall upon his sword like the Kohari of old. But before he could take his life, he saw amidst the devastation a discarded brazier-stave—one of the weapons used by the guards at the discovery—that still blazed with elemental fire that harmed the Void. This flame kindled a spark of hope.\n\nSaijax took up the stave, his \"last light of Icathia,\" and left behind his old name to be known only as Jax.\n\nGrieving and ashamed, Jax became a wanderer. The elemental stave extended his life beyond even the expectations of his long-lived people. He understood that he could not run from his past: he had a duty to return and fight the enduring threat of the Void.\n\nFor centuries since, Jax has roamed the known world, a vagabond warrior searching for those strong enough to rebuild the Kohari. He tests the mettle of all the warriors he encounters. But none have yet convinced him that they can march against the coming darkness. The fall of Icathia has plagued Jax with doubt, but one thing remains certain: when the final battle comes, Jax will stand against the Void, even if he has to face it alone.",
+  "spells_en": [
+    {
+      "id": "JaxQ",
+      "name": "Leap Strike",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 96,
+        "full": "JaxQ.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Jax leaps to a friendly or enemy unit or ward, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> if it is an enemy.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "65",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Jax leaps toward a unit. If they are an enemy, he strikes them with his weapon.",
+      "cooldownBurn": "8/7.5/7/6.5/6"
+    },
+    {
+      "id": "JaxW",
+      "name": "Empower",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 96,
+        "full": "JaxW.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Jax charges his weapon with energy, causing his next Attack or <spellName>Leap Strike</spellName> to deal an additional <magicDamage>{{ totaldamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "300",
+      "datavalues": {},
+      "description": "Jax charges his weapon with energy, causing his next attack to deal additional damage.",
+      "cooldownBurn": "7/6/5/4/3"
+    },
+    {
+      "id": "JaxE",
+      "name": "Counter Strike",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 96,
+        "full": "JaxE.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Jax enters a defensive stance for up to {{ dodgeduration }} seconds, dodging incoming Attacks and taking {{ aoedamagereduction }}% less damage from area of effect Abilities. After {{ dodgeduration }} seconds or <recast>Recasting</recast>, Jax deals <magicDamage>{{ totaldamage }} + {{ percenthealthdamage }}% max Health magic damage</magicDamage> and <status>Stuns</status> nearby enemies for {{ stunduration }} second. <br /><br />The damage is increased by {{ percentincreasedperdodge*100 }}% per Attack dodged, up to a maximum of <magicDamage>{{ maxdamage }} + {{ maxpercenthealthdamage }}% max Health</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/60/70/80/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "300",
+      "datavalues": {},
+      "description": "Jax's combat prowess allows him to dodge all incoming attacks for a short duration and then quickly counterattack, stunning all surrounding enemies.",
+      "cooldownBurn": "17/15/13/11/9"
+    },
+    {
+      "id": "JaxR",
+      "name": "Grandmaster-at-Arms",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 96,
+        "full": "JaxR.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Every third Attack within {{ passivefallofftime }} seconds deals an additional <magicDamage>{{ onhitdamage }} magic damage</magicDamage>.<br /><br /><spellActive>Active:</spellActive> Jax slams his lantern down, dealing <magicDamage>{{ swingdamagetotal }} magic damage</magicDamage> to nearby enemies. If he hits a champion he gains <scaleArmor>{{ basearmor }} Armor</scaleArmor> and <scaleMR>{{ basemr }} Magic Resist</scaleMR> plus <scaleArmor>{{ bonusarmor }} Armor</scaleArmor> and <scaleMR>{{ bonusmr }} Magic Resist</scaleMR> per additional champion hit for {{ duration }} seconds. During this time every second Attack deals additional <magicDamage>magic damage</magicDamage> instead of every third.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Passive Damage",
+          "Active Damage",
+          "Base Armor",
+          "Base Magic Resist",
+          "Armor per Additional Champion",
+          "Magic Resist per Additional Champion",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "260",
+      "datavalues": {},
+      "description": "Every third consecutive attack deals additional Magic Damage. Additionally, Jax can activate this ability to deal damage around himself and strengthen his resolve, increasing his Armor and Magic Resist for a short duration.",
+      "cooldownBurn": "110/100/90"
+    }
+  ],
+  "passive_en": {
+    "name": "Relentless Assault",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 48,
+      "y": 96,
+      "full": "Armsmaster_MasterOfArms.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Jax's consecutive basic attacks continuously increase his Attack Speed."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Top",
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "24000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "24001",
+      "num": 1,
+      "name": "The Mighty Jax",
+      "chromas": false
+    },
+    {
+      "id": "24002",
+      "num": 2,
+      "name": "Vandal Jax",
+      "chromas": false
+    },
+    {
+      "id": "24003",
+      "num": 3,
+      "name": "Angler Jax",
+      "chromas": false
+    },
+    {
+      "id": "24004",
+      "num": 4,
+      "name": "PAX Jax",
+      "chromas": false
+    },
+    {
+      "id": "24005",
+      "num": 5,
+      "name": "Jaximus",
+      "chromas": false
+    },
+    {
+      "id": "24006",
+      "num": 6,
+      "name": "Temple Jax",
+      "chromas": false
+    },
+    {
+      "id": "24007",
+      "num": 7,
+      "name": "Nemesis Jax",
+      "chromas": true
+    },
+    {
+      "id": "24008",
+      "num": 8,
+      "name": "SKT T1 Jax",
+      "chromas": false
+    },
+    {
+      "id": "24012",
+      "num": 12,
+      "name": "Warden Jax",
+      "chromas": false
+    },
+    {
+      "id": "24013",
+      "num": 13,
+      "name": "God Staff Jax",
+      "chromas": false
+    },
+    {
+      "id": "24014",
+      "num": 14,
+      "name": "Mecha Kingdoms Jax",
+      "chromas": true
+    },
+    {
+      "id": "24020",
+      "num": 20,
+      "name": "Conqueror Jax",
+      "chromas": false
+    },
+    {
+      "id": "24021",
+      "num": 21,
+      "name": "Prestige Conqueror Jax",
+      "chromas": false
+    },
+    {
+      "id": "24022",
+      "num": 22,
+      "name": "Empyrean Jax",
+      "chromas": true
+    },
+    {
+      "id": "24032",
+      "num": 32,
+      "name": "Neo PAX Jax",
+      "chromas": false
+    },
+    {
+      "id": "24033",
+      "num": 33,
+      "name": "PROJECT: Jax",
+      "chromas": true
+    }
+  ]
+}

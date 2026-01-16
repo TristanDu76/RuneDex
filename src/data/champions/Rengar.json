@@ -1,0 +1,428 @@
+{
+  "id": "Rengar",
+  "key": "107",
+  "name": "Rengar",
+  "title": "Fier traqueur",
+  "version": "15.23.1",
+  "lore": "Rengar est un féroce Vastaya chasseur de trophées qui ne vit que pour le frisson de la traque et de l'élimination des proies les plus dangereuses. Il parcourt le monde à la recherche des bêtes les plus féroces, et surtout de Kha'Zix, la créature du Néant qui lui a fait perdre un œil. Rengar ne piste ses proies ni pour la nourriture ni pour la gloire, mais pour la beauté de la poursuite en elle-même.",
+  "tags": [
+    "Assassin",
+    "Fighter"
+  ],
+  "partype": "Férocité",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 0,
+    "y": 96,
+    "full": "Rengar.png",
+    "group": "champion",
+    "sprite": "champion3.png"
+  },
+  "skins": [
+    {
+      "id": "107000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "107001",
+      "num": 1,
+      "name": "Rengar chasseur de têtes",
+      "chromas": true
+    },
+    {
+      "id": "107002",
+      "num": 2,
+      "name": "Rengar chasseur nocturne",
+      "chromas": false
+    },
+    {
+      "id": "107003",
+      "num": 3,
+      "name": "SSW Rengar",
+      "chromas": false
+    },
+    {
+      "id": "107008",
+      "num": 8,
+      "name": "Mecha Rengar",
+      "chromas": true
+    },
+    {
+      "id": "107015",
+      "num": 15,
+      "name": "Rengar joli matou",
+      "chromas": true
+    },
+    {
+      "id": "107023",
+      "num": 23,
+      "name": "Rengar gardien des sables",
+      "chromas": true
+    },
+    {
+      "id": "107030",
+      "num": 30,
+      "name": "Rengar Sentinelle",
+      "chromas": true
+    },
+    {
+      "id": "107040",
+      "num": 40,
+      "name": "Rengar ville démoniaque",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "RengarQ",
+      "name": "Esprit sauvage",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 48,
+        "full": "RengarQ.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "1",
+      "maxrank": 5,
+      "tooltip": "Les 2 prochaines attaques de Rengar gagnent <attackSpeed>+{{ e5 }}% de vitesse d'attaque</attackSpeed>. La première attaque est un coup critique qui inflige <physicalDamage>{{ F4 }} (%i:scaleAD%%i:scaleCrit%) pts de dégâts physiques</physicalDamage>.<br /><br /><keywordMajor>Férocité max :</keywordMajor> la première attaque est un coup critique qui inflige <physicalDamage>{{ F5 }} (%i:scaleLevel%%i:scaleAD%%i:scaleCrit%) pts de dégâts physiques</physicalDamage> et qui octroie <attackSpeed>+{{ empoweredqas }} vitesse d'attaque</attackSpeed> à Rengar pendant {{ e3 }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Génère 1 pt de Férocité",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ratio de dégâts d'attaque totaux",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Génère 1 pt de Férocité",
+      "rangeBurn": "450",
+      "datavalues": {},
+      "description": "La prochaine attaque de Rengar poignarde brutalement sa cible pour lui infliger des dégâts bonus.<br><br>Férocité : inflige encore plus de dégâts et augmente la vitesse d'attaque de Rengar.",
+      "cooldownBurn": "0.25"
+    },
+    {
+      "id": "RengarW",
+      "name": "Rugissement",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 48,
+        "full": "RengarW.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "1",
+      "maxrank": 5,
+      "tooltip": "Rengar rugit, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> aux ennemis proches et récupérant des PV équivalents à <healing>{{ damagepercentagehealed }}%</healing> des dégâts qu'il a subis dans les {{ e3 }} dernières secondes.<br /><br /><keywordMajor>Férocité max :</keywordMajor> inflige <magicDamage>{{ totaldamageempowered }} pts de dégâts magiques</magicDamage> et purge les contrôles de foule qui affectent Rengar.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Génère 1 pt de Férocité",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Génère 1 pt de Férocité",
+      "rangeBurn": "450",
+      "datavalues": {},
+      "description": "Rengar émet un rugissement qui inflige des dégâts aux ennemis et lui permet de récupérer des PV équivalents à une partie des dégâts qu'il a subis récemment.<br><br>Férocité : brise également les effets de contrôle de foule.",
+      "cooldownBurn": "0.25"
+    },
+    {
+      "id": "RengarE",
+      "name": "Bolas",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 96,
+        "full": "RengarE.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "1",
+      "maxrank": 5,
+      "tooltip": "Rengar lance des bolas, infligeant <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> au premier ennemi touché, le révélant et le <status>ralentissant</status> de {{ e2 }}% pendant {{ e3 }} sec.<br /><br /><keywordMajor>Férocité max :</keywordMajor> inflige <physicalDamage>{{ totalempowereddamage }} pts de dégâts physiques</physicalDamage> et <status>immobilise</status> l'ennemi pendant {{ e4 }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Génère 1 pt de Férocité",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ralentissement"
+        ]
+      },
+      "resource": "Génère 1 pt de Férocité",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Rengar lance des bolas, ralentissant la première cible touchée pendant un court instant.<br><br>Férocité : immobilise la cible.",
+      "cooldownBurn": "0.25"
+    },
+    {
+      "id": "RengarR",
+      "name": "Chasseur-né",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 96,
+        "full": "RengarR.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellPassive>Passive :</spellPassive> Rengar bondit également quand il est <keywordStealth>camouflé</keywordStealth>.<br /><br /><spellActive>Active :</spellActive> Rengar gagne <speed>+{{ stealthms }}% de vitesse de déplacement</speed> et une <keywordStealth>vision pure</keywordStealth> dans une petite zone autour du champion ennemi le plus proche pendant {{ stealthduration }} sec.<br /><br />Au bout de {{ fadetime }} sec, Rengar devient <keywordStealth>camouflé</keywordStealth> et peut bondir sur un ennemi sans avoir besoin d'être dans des hautes herbes. Bondir sur le champion le plus proche inflige <physicalDamage>{{ bonusdamage }} pts de dégâts physiques</physicalDamage> bonus, réduit l'<scaleArmor>armure</scaleArmor> de la cible de <scaleArmor>{{ armorshred }}</scaleArmor> pendant {{ armorshredduration }} sec et met un terme à cette compétence.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Réduction d'armure",
+          "Durée",
+          "Vitesse de déplacement",
+          "Portée de détection",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "2500/3000/3500",
+      "datavalues": {},
+      "description": "Rengar fait appel à tous ses sens de prédateur. Il <font color='#cd90ee'>se camoufle</font> et révèle le champion ennemi le plus proche à une très longue distance. Pendant Chasseur-né, Rengar gagne de la vitesse de déplacement, peut bondir sur l'ennemi traqué sans avoir à être dans les hautes herbes et réduit l'armure de sa cible.",
+      "cooldownBurn": "100/90/80"
+    }
+  ],
+  "passive": {
+    "name": "Prédateur invisible",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 0,
+      "y": 96,
+      "full": "Rengar_P.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Quand Rengar est dans les hautes herbes, son attaque de base le fait bondir sur un ennemi.<br><br>Rengar génère de la Férocité chaque fois qu'il lance une compétence. Au maximum de Férocité, sa prochaine compétence est renforcée.<br><br>Tuer des champions ennemis ajoute des trophées au <font color='#BBFFFF'>Collier de dents</font> de Rengar, ce qui augmente ses dégâts d'attaque."
+  },
+  "created_at": "2025-11-26T15:13:34.800791+00:00",
+  "factions": [
+    "ixtal",
+    "shurima"
+  ],
+  "custom_tags": [
+    "chasseur"
+  ],
+  "gender": "Male",
+  "species": "Vastaya",
+  "title_en": "the Pridestalker",
+  "lore_en": "Rengar is a ferocious vastayan trophy hunter who lives for the thrill of tracking down and killing dangerous creatures. He scours the world for the most fearsome beasts he can find, especially seeking any trace of Kha'Zix, the void creature who scratched out his eye. Rengar stalks his prey neither for food nor glory, but for the sheer beauty of the pursuit.",
+  "spells_en": [
+    {
+      "id": "RengarQ",
+      "name": "Savagery",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 48,
+        "full": "RengarQ.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "1",
+      "maxrank": 5,
+      "tooltip": "Rengar's next 2 Attacks gain <attackSpeed>{{ e5 }}% Attack Speed</attackSpeed>. The first Attack critically strikes for <physicalDamage>{{ F4 }} (%i:scaleAD%%i:scaleCrit%) physical damage</physicalDamage>.<br /><br /><keywordMajor>Max Ferocity:</keywordMajor> The first Attack critically strikes for <physicalDamage>{{ F5 }} (%i:scaleLevel%%i:scaleAD%%i:scaleCrit%) physical damage</physicalDamage> and grants Rengar <attackSpeed>{{ empoweredqas }} Attack Speed</attackSpeed> for {{ e3 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Generates 1 Ferocity",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Total AD Ratio",
+          "Cooldown"
+        ]
+      },
+      "resource": "Generates 1 Ferocity",
+      "rangeBurn": "450",
+      "datavalues": {},
+      "description": "Rengar's next Attack brutally stabs his target for bonus damage.<br><br>Ferocity effect: deals increased damage and grants Attack Speed.",
+      "cooldownBurn": "0.25"
+    },
+    {
+      "id": "RengarW",
+      "name": "Battle Roar",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 48,
+        "full": "RengarW.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "1",
+      "maxrank": 5,
+      "tooltip": "Rengar roars, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> to nearby enemies and restoring <healing>{{ damagepercentagehealed }}%</healing> of the damage taken in the last {{ e3 }} seconds as Health.<br /><br /><keywordMajor>Max Ferocity:</keywordMajor> Deals <magicDamage>{{ totaldamageempowered }} magic damage</magicDamage> and additionally cleanses Rengar of crowd control.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Generates 1 Ferocity",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "Generates 1 Ferocity",
+      "rangeBurn": "450",
+      "datavalues": {},
+      "description": "Rengar lets out a battle roar, damaging enemies and healing for some of the recent damage he has taken.<br><br>Ferocity effect: additionally breaks crowd control effects.",
+      "cooldownBurn": "0.25"
+    },
+    {
+      "id": "RengarE",
+      "name": "Bola Strike",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 96,
+        "full": "RengarE.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "1",
+      "maxrank": 5,
+      "tooltip": "Rengar throws a bola, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> to the first enemy hit, revealing and <status>Slowing</status> them by {{ e2 }}% for {{ e3 }} seconds.<br /><br /><keywordMajor>Max Ferocity:</keywordMajor> Deals <physicalDamage>{{ totalempowereddamage }} physical damage</physicalDamage> and <status>Roots</status> for {{ e4 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Generates 1 Ferocity",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Slow"
+        ]
+      },
+      "resource": "Generates 1 Ferocity",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Rengar throws a bola, slowing the first target hit for a short duration.<br><br>Ferocity effect: roots the target.",
+      "cooldownBurn": "0.25"
+    },
+    {
+      "id": "RengarR",
+      "name": "Thrill of the Hunt",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 96,
+        "full": "RengarR.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Rengar will also leap Attack when <keywordStealth>Camouflaged</keywordStealth>.<br /><br /><spellActive>Active:</spellActive> Rengar gains <speed>{{ stealthms }}% Move Speed</speed> and <keywordStealth>True Sight</keywordStealth> in a small area around the nearest enemy champion for {{ stealthduration }} seconds.<br /><br />After {{ fadetime }} seconds, Rengar becomes <keywordStealth>Camouflaged</keywordStealth> and can leap without being in Brush. Leaping to the nearest champion deals an additional <physicalDamage>{{ bonusdamage }} physical damage</physicalDamage>, shreds <scaleArmor>{{ armorshred }} Armor</scaleArmor> for {{ armorshredduration }} seconds, and ends this Ability.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Armor Reduction",
+          "Duration",
+          "Move Speed",
+          "Tracking Range",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "2500/3000/3500",
+      "datavalues": {},
+      "description": "Rengar's predatory instincts take over, <font color='#cd90ee'>Camouflaging</font> him and revealing the nearest enemy champion in a large radius around him. During Thrill of the Hunt, Rengar gains Move Speed and he can leap to the tracked enemy without being in brush, reducing their armor.",
+      "cooldownBurn": "100/90/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Unseen Predator",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 0,
+      "y": 96,
+      "full": "Rengar_P.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "While in Brush, Rengar leaps at his target with his basic attack.<br><br>Rengar generates Ferocity whenever he casts an ability. At Max Ferocity, his next ability is empowered.<br><br>Killing enemy champions awards trophies on Rengar's <font color='#BBFFFF'>Bonetooth Necklace</font>, granting bonus attack damage."
+  },
+  "partype_en": "Ferocity",
+  "lanes": [
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "107000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "107001",
+      "num": 1,
+      "name": "Headhunter Rengar",
+      "chromas": true
+    },
+    {
+      "id": "107002",
+      "num": 2,
+      "name": "Night Hunter Rengar",
+      "chromas": false
+    },
+    {
+      "id": "107003",
+      "num": 3,
+      "name": "SSW Rengar",
+      "chromas": false
+    },
+    {
+      "id": "107008",
+      "num": 8,
+      "name": "Mecha Rengar",
+      "chromas": true
+    },
+    {
+      "id": "107015",
+      "num": 15,
+      "name": "Pretty Kitty Rengar",
+      "chromas": true
+    },
+    {
+      "id": "107023",
+      "num": 23,
+      "name": "Guardian of the Sands Rengar",
+      "chromas": true
+    },
+    {
+      "id": "107030",
+      "num": 30,
+      "name": "Sentinel Rengar",
+      "chromas": true
+    },
+    {
+      "id": "107040",
+      "num": 40,
+      "name": "Street Demons Rengar",
+      "chromas": true
+    }
+  ]
+}

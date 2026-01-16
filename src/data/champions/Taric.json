@@ -1,0 +1,406 @@
+{
+  "id": "Taric",
+  "key": "44",
+  "name": "Taric",
+  "title": "Bouclier de Valoran",
+  "version": "15.23.1",
+  "lore": "Taric est la Manifestation du Protecteur, doté d'un incroyable pouvoir en tant que gardien de la vie, de l'amour et de la beauté sur Runeterra. Couvert d'opprobre pour avoir abandonné son devoir et exilé de sa terre natale de Demacia, Taric a entrepris l'ascension du Mont Targon en quête de rédemption et s'est découvert une mission supérieure au sein des étoiles. Imprégné de la force antique de Targon, le Bouclier de Valoran monte désormais constamment la garde contre la corruption insidieuse du Néant.",
+  "tags": [
+    "Support",
+    "Tank"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 240,
+    "y": 48,
+    "full": "Taric.png",
+    "group": "champion",
+    "sprite": "champion4.png"
+  },
+  "skins": [
+    {
+      "id": "44000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "44001",
+      "num": 1,
+      "name": "Taric émeraude",
+      "chromas": false
+    },
+    {
+      "id": "44002",
+      "num": 2,
+      "name": "Taric du cinquième âge",
+      "chromas": false
+    },
+    {
+      "id": "44003",
+      "num": 3,
+      "name": "Taric hémolithe",
+      "chromas": false
+    },
+    {
+      "id": "44004",
+      "num": 4,
+      "name": "Taric à Malibu",
+      "chromas": true
+    },
+    {
+      "id": "44009",
+      "num": 9,
+      "name": "Taric Clair-Pavois",
+      "chromas": true
+    },
+    {
+      "id": "44018",
+      "num": 18,
+      "name": "Taric astro-groove",
+      "chromas": true
+    },
+    {
+      "id": "44027",
+      "num": 27,
+      "name": "Taric briseur de destins",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "TaricQ",
+      "name": "Bénédiction stellaire",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 144,
+        "full": "TaricQ.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> Taric gagne un effet (max : {{ e6 }}) toutes les {{ stackcooldown }} sec et quand il touche un ennemi avec une attaque renforcée par <spellName>Plastronneur</spellName>.<br /><br /><spellActive>Active :</spellActive> Taric consomme tous les effets cumulés pour rendre <healing>{{ healingperstack }} PV</healing> par effet aux champions alliés proches (<healing>{{ maxstackhealing }} PV</healing> à {{ e6 }} effets).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " pts de mana, toutes les charges",
+      "leveltip": {
+        "label": [
+          "Charges max",
+          "Soins max"
+        ]
+      },
+      "resource": "{{ cost }} pts de mana, toutes les charges",
+      "rangeBurn": "325",
+      "datavalues": {},
+      "description": "Rend des PV aux champions alliés proches en fonction du nombre de charges stockées. Les attaques renforcées par Plastronneur octroient une charge de Bénédiction stellaire.",
+      "cooldownBurn": "3"
+    },
+    {
+      "id": "TaricW",
+      "name": "Bastion",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 144,
+        "full": "TaricW.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> Taric gagne <scaleArmor>+{{ bonusarmor }} armure</scaleArmor> et crée un lien entre lui et l'allié auquel il s'est lié avec cette compétence. Tant qu'ils sont proches l'un de l'autre, l'allié gagne <scaleArmor>+{{ bonusarmor }} armure</scaleArmor> et toutes les compétences de Taric partent de lui et de son allié lié.<br /><br /><spellPassive>Active : </spellPassive>Taric se lie à un champion allié, octroyant un <shield>bouclier équivalent à {{ e2 }}% des PV max</shield> pendant {{ e3 }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Gain d'armure passif",
+          "Ratio du bouclier"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Augmente passivement l'armure de Taric et de tout champion allié affecté par Bastion.<br><br>À l'activation, offre un bouclier à un allié et ce dernier bénéficie de l'effet Bastion aussi longtemps qu'il reste près de Taric. Les compétences de Taric se lancent également depuis l'allié affecté par Bastion.",
+      "cooldownBurn": "15"
+    },
+    {
+      "id": "TaricE",
+      "name": "Éblouissement",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0,
+        "full": "TaricE.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Taric projette un rayon de lumière stellaire qui explose au bout de {{ e3 }} sec pour infliger <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> et <status>étourdir</status> les ennemis pendant {{ e2 }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "610",
+      "datavalues": {},
+      "description": "Taric prépare un rayon de lumière stellaire qui, après un bref délai, inflige des dégâts magiques et étourdit les ennemis.",
+      "cooldownBurn": "16/15/14/13/12"
+    },
+    {
+      "id": "TaricR",
+      "name": "Lumière cosmique",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 0,
+        "full": "TaricR.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Taric fait appel aux cieux pour se protéger. Au bout de {{ initialdelay }} sec, les champions alliés proches deviennent invulnérables pendant {{ invulnduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Après un délai, nimbe les champions alliés proches d'énergie cosmique, les rendant invulnérables pendant un court instant.",
+      "cooldownBurn": "180/150/120"
+    }
+  ],
+  "passive": {
+    "name": "Plastronneur",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 240,
+      "y": 48,
+      "full": "Taric_Passive.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "Lancer des compétences renforce les 2 prochaines attaques de base de Taric, leur permettant d'infliger des dégâts magiques supplémentaires, de réduire les délais de récupération de ses compétences et de s'enchaîner rapidement."
+  },
+  "created_at": "2025-11-26T15:13:35.212437+00:00",
+  "factions": [
+    "targon",
+    "demacia"
+  ],
+  "custom_tags": [
+    "protecteur"
+  ],
+  "gender": "Male",
+  "species": "Aspect",
+  "title_en": "the Shield of Valoran",
+  "lore_en": "Taric is the Aspect of the Protector, wielding incredible power as Runeterra's guardian of life, love, and beauty. Shamed by a dereliction of duty and exiled from his homeland Demacia, Taric ascended Mount Targon to find redemption, only to discover a higher calling among the stars. Imbued with the might of ancient Targon, the Shield of Valoran now stands ever vigilant against the insidious corruption of the Void.",
+  "spells_en": [
+    {
+      "id": "TaricQ",
+      "name": "Starlight's Touch",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 144,
+        "full": "TaricQ.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Gain a stack (max {{ e6 }}) every {{ stackcooldown }} seconds and when hitting a <spellName>Bravado</spellName> Attack.<br /><br /><spellActive>Active:</spellActive> Consume all stacks to restore <healing>{{ healingperstack }} Health</healing> per stack to nearby ally champions (<healing>{{ maxstackhealing }}</healing> at {{ e6 }} stacks).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " Mana, all Charges",
+      "leveltip": {
+        "label": [
+          "Max Charges",
+          "Max Healing"
+        ]
+      },
+      "resource": "{{ cost }} Mana, all Charges",
+      "rangeBurn": "325",
+      "datavalues": {},
+      "description": "Heals nearby allied champions based on charges stored. Bravado-empowered attacks grant a charge of Starlight's Touch.",
+      "cooldownBurn": "3"
+    },
+    {
+      "id": "TaricW",
+      "name": "Bastion",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 144,
+        "full": "TaricW.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive: </spellPassive>Taric gains <scaleArmor>{{ bonusarmor }} Armor</scaleArmor> and forms a tether between him and the ally bound by this Ability. As long as they are near each other, the ally gains <scaleArmor>{{ bonusarmor }} Armor</scaleArmor> and Taric casts all his Abilities from both himself and his linked ally.<br /><br /><spellPassive>Active: </spellPassive>Taric binds to an ally champion, granting a <shield>{{ e2 }}% max Health Shield</shield> for {{ e3 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Passive Armor",
+          "Shield Ratio"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Passively increase the Armor of Taric and any allied champion with Bastion.<br><br>Actively shields an ally and grants them Bastion for as long as they remain near Taric. Taric's spells also cast off the ally with Bastion.",
+      "cooldownBurn": "15"
+    },
+    {
+      "id": "TaricE",
+      "name": "Dazzle",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0,
+        "full": "TaricE.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Taric projects a beam of starlight, bursting after {{ e3 }} second to deal <magicDamage>{{ totaldamage }} magic damage</magicDamage> and <status>Stun</status> enemies for {{ e2 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "610",
+      "datavalues": {},
+      "description": "Taric readies a beam of starlight that, after a brief delay, deals magic damage and stuns enemies.",
+      "cooldownBurn": "16/15/14/13/12"
+    },
+    {
+      "id": "TaricR",
+      "name": "Cosmic Radiance",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 0,
+        "full": "TaricR.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Taric calls down protection from the heavens. After {{ initialdelay }} seconds, nearby ally champions become invulnerable for {{ invulnduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Pulses cosmic energy onto nearby allied champions after a delay, making them invulnerable for a short duration.",
+      "cooldownBurn": "180/150/120"
+    }
+  ],
+  "passive_en": {
+    "name": "Bravado",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 240,
+      "y": 48,
+      "full": "Taric_Passive.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "Spellcasts empower Taric's next 2 basic attacks to deal bonus magic damage, reduce his spell cooldowns, and attack in quick succession."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Support"
+  ],
+  "skins_en": [
+    {
+      "id": "44000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "44001",
+      "num": 1,
+      "name": "Emerald Taric",
+      "chromas": false
+    },
+    {
+      "id": "44002",
+      "num": 2,
+      "name": "Armor of the Fifth Age Taric",
+      "chromas": false
+    },
+    {
+      "id": "44003",
+      "num": 3,
+      "name": "Bloodstone Taric",
+      "chromas": false
+    },
+    {
+      "id": "44004",
+      "num": 4,
+      "name": "Pool Party Taric",
+      "chromas": true
+    },
+    {
+      "id": "44009",
+      "num": 9,
+      "name": "Taric Luminshield",
+      "chromas": true
+    },
+    {
+      "id": "44018",
+      "num": 18,
+      "name": "Space Groove Taric",
+      "chromas": true
+    },
+    {
+      "id": "44027",
+      "num": 27,
+      "name": "Fatebreaker Taric",
+      "chromas": true
+    }
+  ]
+}

@@ -1,0 +1,522 @@
+{
+  "id": "Fiora",
+  "key": "114",
+  "name": "Fiora",
+  "title": "Sublime bretteuse",
+  "version": "15.23.1",
+  "lore": "Fiora est née dans la noble Maison Laurent de Demacia et était destinée à être un pion politique, mariée pour des alliances. Dès son plus jeune âge, elle rejeta fermement ces attentes : elle délaissa les poupées pour le rapier de son frère aîné, s'entraînant en secret, et utilisa les mannequins de couture pour pratiquer ses estocs et ses ripostes.\r\n\r\nMalgré sa résistance, un mariage politiquement avantageux fut arrangé avec une branche de la famille Crownguard pour après son dix-huitième anniversaire. Le jour de la cérémonie, Fiora se leva et déclara qu'elle préférait mourir plutôt que de laisser quelqu'un d'autre décider de sa vie. Cet éclat public humilia son fiancé. Sa famille exigea réparation sous la forme d'un duel à mort (à l'ancienne).\r\n\r\nFiora accepta immédiatement, mais son père, Sebastien, implora le roi Jarvan III d'intervenir. Ses mains étant liées par l'acceptation de Fiora, Sebastien n'eut qu'une seule option : invoquer son droit de se battre à la place de sa fille. Sachant que sa défaite était presque certaine et que le nom des Laurent serait ruiné, Sebastien commit l'impardonnable : la veille du duel, il tenta de droguer son adversaire pour émousser ses sens. Il fut pris sur le fait et arrêté.\r\n\r\nLa loi était claire : Sebastien Laurent avait brisé le code d'honneur fondamental et devait être pendu comme un criminel. La veille de l'exécution, Fiora lui rendit visite en cellule (le contenu de leur conversation reste secret).\r\n\r\nLe lendemain, Fiora s'approcha du roi et demanda la permission de combattre à la place de son père pour réclamer le nom Laurent et servir la justice. Le duel fut d'une rapidité et d'une beauté mémorables, un véritable ballet de lames. Finalement, Fiora planta sa rapière dans le cœur de son propre père.\r\n\r\nLe roi Jarvan jugea solennellement que Sebastien avait payé ses crimes et que Fiora serait sa successeure. Bien que la querelle familiale fût résolue, le scandale la suivait. Les rumeurs l'accusaient d'avoir usurpé le nom familial et se moquaient de son arrogance. Plutôt que de recourir à d'autres duels, Fiora choisit de légitimer son pouvoir en étendant le statut noble à sa famille élargie, des cousins aux maîtres d'épée. Ensemble, ils se dédièrent au perfectionnement de l'art de l'escrime à Demacia, insistant sur le fait que le duel n'avait pas toujours à se terminer par la mort.\r\n\r\nSi quiconque ose s'opposer à cette notion, Fiora est toujours prête à tester la force de ses convictions au combat.",
+  "tags": [
+    "Fighter",
+    "Assassin"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 192,
+    "y": 0,
+    "full": "Fiora.png",
+    "group": "champion",
+    "sprite": "champion1.png"
+  },
+  "skins": [
+    {
+      "id": "114000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "114001",
+      "num": 1,
+      "name": "Fiora garde royal",
+      "chromas": false
+    },
+    {
+      "id": "114002",
+      "num": 2,
+      "name": "Fiora oiseau nocturne",
+      "chromas": false
+    },
+    {
+      "id": "114003",
+      "num": 3,
+      "name": "Proviseur Fiora",
+      "chromas": true
+    },
+    {
+      "id": "114004",
+      "num": 4,
+      "name": "PROJET : Fiora",
+      "chromas": true
+    },
+    {
+      "id": "114005",
+      "num": 5,
+      "name": "Fiora starlette des plages",
+      "chromas": true
+    },
+    {
+      "id": "114022",
+      "num": 22,
+      "name": "Fiora à l'épée ascendante",
+      "chromas": false
+    },
+    {
+      "id": "114023",
+      "num": 23,
+      "name": "Fiora percecœur",
+      "chromas": true
+    },
+    {
+      "id": "114031",
+      "num": 31,
+      "name": "iG Fiora",
+      "chromas": true
+    },
+    {
+      "id": "114041",
+      "num": 41,
+      "name": "Fiora Pulsefire",
+      "chromas": false
+    },
+    {
+      "id": "114050",
+      "num": 50,
+      "name": "Fiora bête lunaire",
+      "chromas": false
+    },
+    {
+      "id": "114051",
+      "num": 51,
+      "name": "Fiora bête lunaire prestige",
+      "chromas": false
+    },
+    {
+      "id": "114060",
+      "num": 60,
+      "name": "Fiora sorcière",
+      "chromas": false
+    },
+    {
+      "id": "114069",
+      "num": 69,
+      "name": "Fiora de la cour féérique",
+      "chromas": true
+    },
+    {
+      "id": "114080",
+      "num": 80,
+      "name": "Fiora dracomancienne",
+      "chromas": false
+    },
+    {
+      "id": "114089",
+      "num": 89,
+      "name": "Fiora reine du combat",
+      "chromas": true
+    },
+    {
+      "id": "114098",
+      "num": 98,
+      "name": "Fiora héroïne de guerre",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "FioraQ",
+      "name": "Fente",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 144,
+        "full": "FioraQ.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Fiora se fend dans une direction et frappe l'ennemi, la balise ou le bâtiment le plus proche, infligeant <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage>. Ce coup vise en priorité les <keywordMajor>points faibles</keywordMajor> et les ennemis qu'il peut tuer.<br /><br />Si Fiora touche un ennemi, le délai de récupération de cette compétence est réduit de {{ cdrefundpercent*100 }}%.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "20",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ratio de dégâts d'attaque bonus",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Fiora se fend dans une direction et frappe un ennemi proche, infligeant des dégâts physiques et appliquant ses effets à l'impact.",
+      "cooldownBurn": "13/11.25/9.5/7.75/6"
+    },
+    {
+      "id": "FioraW",
+      "name": "Riposte",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 144,
+        "full": "FioraW.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Fiora pare tous les dégâts, toutes les entraves et tous les effets négatifs qui la ciblent pendant {{ parryduration }} sec, après quoi elle donne un coup d'estoc. Ce coup d'estoc inflige <magicDamage>{{ stabdamage }} pts de dégâts magiques</magicDamage> au premier champion touché et <status>ralentit</status> sa <speed>vitesse de déplacement</speed> de {{ msslowpercent*-100 }}% et sa <attackSpeed>vitesse d'attaque</attackSpeed> de {{ attackslowpercent*-100 }}% pendant {{ ccduration }} sec. Si Fiora pare un effet <status>immobilisant</status>, l'ennemi touché est <status>étourdi</status> plutôt que <status>ralenti</status>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "750",
+      "datavalues": {},
+      "description": "Fiora pare tous les dégâts et toutes les entraves qui la ciblent pendant un court instant, après quoi elle donne un coup d'estoc dans une direction. Ce coup d'estoc ralentit le premier champion ennemi touché. Si Fiora a paré un effet immobilisant, elle étourdit le premier champion ennemi touché.",
+      "cooldownBurn": "24/22/20/18/16"
+    },
+    {
+      "id": "FioraE",
+      "name": "Botte secrète",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 144,
+        "full": "FioraE.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Fiora gagne <attackSpeed>+{{ aspercent*100 }}% de vitesse d'attaque</attackSpeed> pour ses deux prochaines attaques. La première attaque <status>ralentit</status> de {{ slowpercent*-100 }}% pendant {{ slowduration }} sec. La seconde attaque est toujours un coup critique qui inflige <physicalDamage>{{ attacktwopercenttad*100 }}% de dégâts</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts critiques",
+          "Délai de récupération",
+          "Vitesse d'attaque"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "425",
+      "datavalues": {},
+      "description": "Fiora augmente sa vitesse d'attaque pour ses deux prochaines attaques. La première attaque ralentit la cible et la seconde inflige un coup critique.",
+      "cooldownBurn": "11/10/9/8/7"
+    },
+    {
+      "id": "FioraR",
+      "name": "Défi suprême",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 144,
+        "full": "FioraR.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellPassive>Passive :</spellPassive> <spellName>Danse de la duelliste</spellName> La <speed>vitesse de déplacement</speed> bonus est augmentée à {{ percentms*100 }}%.<br /><br /><spellActive>Active :</spellActive> Fiora révèle les quatre <keywordMajor>points faibles</keywordMajor> d'un champion pour un potentiel de dégâts d'un maximum de <trueDamage>{{ spell.fiorapassive:rdamagetotal }} des PV max sous forme de dégâts bruts</trueDamage> et gagne le bonus de <speed>vitesse de déplacement</speed> de <spellName>Danse de la duelliste</spellName> tant qu'elle est près de la cible.<br /><br />Si Fiora touche les quatre <keywordMajor>points faibles</keywordMajor> en moins de {{ markduration }} sec ou si la cible meurt après qu'elle en a touché au moins un, Fiora rend <healing>{{ healpersecondcalc }} PV par sec</healing> aux champions alliés proches pendant {{ healduration }} s.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Vitesse de déplacement de duelliste",
+          "Soins par seconde"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "500",
+      "datavalues": {},
+      "description": "Fiora révèle les quatre points faibles d'un champion ennemi et augmente sa vitesse de déplacement à proximité de ce champion. Si Fiora frappe les quatre points faibles ou si l'adversaire meurt après qu'elle en a frappé au moins un, Fiora et ses alliés dans la zone sont soignés pendant quelques secondes.",
+      "cooldownBurn": "110/90/70"
+    }
+  ],
+  "passive": {
+    "name": "Danse de la duelliste",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 192,
+      "y": 0,
+      "full": "Fiora_P.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Fiora a révélé un des <keywordMajor>points faibles</keywordMajor> de ce champion. Si elle frappe ce <keywordMajor>point faible</keywordMajor>, elle <healing>récupère des PV</healing> et gagne de la <speed>vitesse de déplacement</speed>."
+  },
+  "created_at": "2025-11-26T15:13:32.943584+00:00",
+  "factions": [
+    "demacia"
+  ],
+  "custom_tags": [
+    "duelliste",
+    "noble"
+  ],
+  "gender": "Female",
+  "species": "Human",
+  "title_en": "the Grand Duelist",
+  "lore_en": "Fiora was born into the noble Laurent family of Demacia and was destined to be a political pawn, married off for alliances. From an early age, she deliberately defied these expectations: she ignored dolls for her eldest brother's rapier, secretly forcing him to give her lessons, and used dressmaking mannequins to practice her lunges and ripostes.\r\n\r\nDespite her years of quiet resistance, a politically advantageous marriage was eventually arranged with a branch of the Crownguard family after her eighteenth birthday. On the day of the wedding, Fiora stood up and declared she would sooner die than allow someone else to decide the course of her life. This public outburst shamed her betrothed, and his family demanded satisfaction in the old manner—a duel to the death.\r\n\r\nFiora immediately accepted, but her father, Sebastien, implored King Jarvan III to intervene. His hands were tied by Fiora's acceptance, leaving Sebastien with only one option: invoking his right to fight in his daughter's place. Knowing his defeat was almost certain and the Laurent name would be ruined, Sebastien committed the unforgivable: the night before the duel, he attempted to drug his opponent to dull his senses. He was caught in the act and arrested.\r\n\r\nThe law was clear. Sebastien Laurent had broken the most fundamental code of honor and was to be hanged like a common criminal. On the eve of his execution, Fiora visited his cell (the content of their conversation remains a secret).\r\n\r\nThe next day, Fiora approached the king's dais and requested permission to fight in her father's place to claim the Laurent name and serve justice. The duel was blindingly swift and an exquisite dance of blades. In the end, Fiora tearfully buried her rapier in her father's heart.\r\n\r\nKing Jarvan solemnly ruled that Sebastien had paid for his crimes in full, and Fiora would be his successor. Though the family feud was resolved, the scandal followed her. Rumors accused her of usurping the family name and scoffed at her arrogance. Rather than demanding more justice at the edge of her sword, Fiora chose to legitimize her power by extending noble status to her wider family, cousins, and renowned swordmasters. Together, they dedicated themselves to the refinement of bladecraft within the kingdom, insisting that dueling need not always end in death.\r\n\r\nIf anyone cares to disagree with that notion, Fiora is always ready to test the strength of their conviction in combat herself.",
+  "spells_en": [
+    {
+      "id": "FioraQ",
+      "name": "Lunge",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 144,
+        "full": "FioraQ.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Fiora lunges in a direction and stabs the closest enemy, ward, or structure, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage>. The strike will prioritize <keywordMajor>Vitals</keywordMajor> and enemies it will kill.<br /><br />If Fiora strikes an enemy, this Ability's Cooldown is reduced by {{ cdrefundpercent*100 }}%.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "20",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Bonus AD Ratio",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Fiora lunges in a direction and stabs a nearby enemy, dealing physical damage and applying on-hit effects.",
+      "cooldownBurn": "13/11.25/9.5/7.75/6"
+    },
+    {
+      "id": "FioraW",
+      "name": "Riposte",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 144,
+        "full": "FioraW.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Fiora parries all incoming damage, disables, and negative effects for {{ parryduration }} seconds, then stabs. The stab deals <magicDamage>{{ stabdamage }} magic damage</magicDamage> to the first champion hit and <status>Slows</status> <speed>Move Speed</speed> by {{ msslowpercent*-100 }}%<attackSpeed> and Attack Speed by {{ attackslowpercent*-100 }}% </attackSpeed> for {{ ccduration }} seconds. If Fiora parries an <status>Immobilizing</status> effect, the stabbed enemy is <status>Stunned</status> rather than <status>Slowed</status>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "750",
+      "datavalues": {},
+      "description": "Fiora parries all incoming damage and disables for a short time, then stabs in a direction. This stab slows the first enemy champion hit, or stuns them if Fiora blocked an immobilizing effect with this ability.",
+      "cooldownBurn": "24/22/20/18/16"
+    },
+    {
+      "id": "FioraE",
+      "name": "Bladework",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 144,
+        "full": "FioraE.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Fiora gains <attackSpeed>{{ aspercent*100 }}% Attack Speed</attackSpeed> for her next two Attacks. The first Attack <status>Slows</status> by {{ slowpercent*-100 }}% for {{ slowduration }} second. The second Attack always critically strikes for <physicalDamage>{{ attacktwopercenttad*100 }}% damage</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Critical Strike Damage",
+          "Cooldown",
+          "Attack Speed"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "425",
+      "datavalues": {},
+      "description": "Fiora has increased attack speed for the next two attacks. The first attack slows the target, and the second attack will critically strike.",
+      "cooldownBurn": "11/10/9/8/7"
+    },
+    {
+      "id": "FioraR",
+      "name": "Grand Challenge",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 144,
+        "full": "FioraR.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellPassive>Passive:</spellPassive> <spellName>Duelist's Dance</spellName> <speed>Move Speed</speed> bonus is increased to {{ percentms*100 }}%.<br /><br /><spellActive>Active:</spellActive> Fiora reveals all four <keywordMajor>Vitals</keywordMajor> on a champion for a max of <trueDamage>{{ spell.fiorapassive:rdamagetotal }} max Health true damage</trueDamage> and gains <spellName>Duelist's Dance's</spellName> <speed>Move Speed</speed> bonus while near the target.<br /><br />If Fiora strikes all four <keywordMajor>Vitals</keywordMajor> within {{ markduration }} seconds or if the target dies after she has hit at least one, Fiora restores <healing>{{ healpersecondcalc }} Health per second</healing> to surrounding allied champions for {{ healduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Duelist Move Speed",
+          "Heal Per Second"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "500",
+      "datavalues": {},
+      "description": "Fiora reveals all four Vitals on an enemy champion and gains Move Speed while near them. If Fiora hits all four Vitals or if the target dies after she has hit at least one, Fiora and her allies in the area are healed over the next few seconds.",
+      "cooldownBurn": "110/90/70"
+    }
+  ],
+  "passive_en": {
+    "name": "Duelist's Dance",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 192,
+      "y": 0,
+      "full": "Fiora_P.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Fiora has revealed a <keywordMajor>Vital</keywordMajor> on this Champion. If she hits the <keywordMajor>Vital</keywordMajor>, she <healing>restores Health</healing> and gains <speed>Move Speed</speed>."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Top"
+  ],
+  "skins_en": [
+    {
+      "id": "114000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "114001",
+      "num": 1,
+      "name": "Royal Guard Fiora",
+      "chromas": false
+    },
+    {
+      "id": "114002",
+      "num": 2,
+      "name": "Nightraven Fiora",
+      "chromas": false
+    },
+    {
+      "id": "114003",
+      "num": 3,
+      "name": "Headmistress Fiora",
+      "chromas": true
+    },
+    {
+      "id": "114004",
+      "num": 4,
+      "name": "PROJECT: Fiora",
+      "chromas": true
+    },
+    {
+      "id": "114005",
+      "num": 5,
+      "name": "Pool Party Fiora",
+      "chromas": true
+    },
+    {
+      "id": "114022",
+      "num": 22,
+      "name": "Soaring Sword Fiora",
+      "chromas": false
+    },
+    {
+      "id": "114023",
+      "num": 23,
+      "name": "Heartpiercer Fiora",
+      "chromas": true
+    },
+    {
+      "id": "114031",
+      "num": 31,
+      "name": "iG Fiora",
+      "chromas": true
+    },
+    {
+      "id": "114041",
+      "num": 41,
+      "name": "Pulsefire Fiora",
+      "chromas": false
+    },
+    {
+      "id": "114050",
+      "num": 50,
+      "name": "Lunar Beast Fiora",
+      "chromas": false
+    },
+    {
+      "id": "114051",
+      "num": 51,
+      "name": "Prestige Lunar Beast Fiora",
+      "chromas": false
+    },
+    {
+      "id": "114060",
+      "num": 60,
+      "name": "Bewitching Fiora",
+      "chromas": false
+    },
+    {
+      "id": "114069",
+      "num": 69,
+      "name": "Faerie Court Fiora",
+      "chromas": true
+    },
+    {
+      "id": "114080",
+      "num": 80,
+      "name": "Dragonmancer Fiora",
+      "chromas": false
+    },
+    {
+      "id": "114089",
+      "num": 89,
+      "name": "Battle Queen Fiora",
+      "chromas": true
+    },
+    {
+      "id": "114098",
+      "num": 98,
+      "name": "Victorious Fiora",
+      "chromas": true
+    }
+  ]
+}

@@ -1,0 +1,460 @@
+{
+  "id": "XinZhao",
+  "key": "5",
+  "name": "Xin Zhao",
+  "title": "Sénéchal de Demacia",
+  "version": "15.23.1",
+  "lore": "Xin Zhao est un guerrier résolu qui sert fidèlement la dynastie régnante des Lightshield. Naguère condamné à se battre dans les arènes de combat de Noxus, il survécut à d'innombrables rencontres de gladiateurs. Mais après avoir été libéré par les forces de Demacia, il jura allégeance à ses braves libérateurs. Armé de sa lance à trois pointes, Xin Zhao combat désormais pour son royaume, défiant ses ennemis avec audace, quelles que soient ses chances de succès.",
+  "tags": [
+    "Fighter",
+    "Tank"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 384,
+    "y": 0,
+    "full": "XinZhao.png",
+    "group": "champion",
+    "sprite": "champion5.png"
+  },
+  "skins": [
+    {
+      "id": "5000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "5001",
+      "num": 1,
+      "name": "Xin Zhao commando",
+      "chromas": false
+    },
+    {
+      "id": "5002",
+      "num": 2,
+      "name": "Xin Zhao impérial",
+      "chromas": false
+    },
+    {
+      "id": "5003",
+      "num": 3,
+      "name": "Xin Zhao Viscero",
+      "chromas": false
+    },
+    {
+      "id": "5004",
+      "num": 4,
+      "name": "Xin Zhao hussard ailé",
+      "chromas": false
+    },
+    {
+      "id": "5005",
+      "num": 5,
+      "name": "Xin Zhao du royaume en guerre",
+      "chromas": true
+    },
+    {
+      "id": "5006",
+      "num": 6,
+      "name": "Xin Zhao agent secret",
+      "chromas": false
+    },
+    {
+      "id": "5013",
+      "num": 13,
+      "name": "Xin Zhao tueur de dragons",
+      "chromas": true
+    },
+    {
+      "id": "5020",
+      "num": 20,
+      "name": "Xin Zhao défenseur cosmique",
+      "chromas": true
+    },
+    {
+      "id": "5027",
+      "num": 27,
+      "name": "Xin Zhao maraudeur",
+      "chromas": true
+    },
+    {
+      "id": "5036",
+      "num": 36,
+      "name": "Xin Zhao pyrotechnicien",
+      "chromas": true
+    },
+    {
+      "id": "5047",
+      "num": 47,
+      "name": "Xin Zhao des Épreuves du crépuscule",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "XinZhaoQ",
+      "name": "Frappe des trois serres",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 48,
+        "full": "XinZhaoQ.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Les 3 prochaines attaques de Xin Zhao infligent <physicalDamage>{{ bonusdamage }} pts de dégâts physiques</physicalDamage> supplémentaires et réduisent de 1 sec le délai de récupération de ses autres compétences. La troisième attaque <status>projette dans les airs</status> pendant {{ e2 }} sec.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts supplémentaires",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "375",
+      "datavalues": {},
+      "description": "Les 3 prochaines attaques de base de Xin Zhao infligeront plus de dégâts et la 3e attaque projettera la cible dans les airs.",
+      "cooldownBurn": "7/6.5/6/5.5/5"
+    },
+    {
+      "id": "XinZhaoW",
+      "name": "Vent et foudre",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 48,
+        "full": "XinZhaoW.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Xin Zhao donne un coup de taille qui inflige <physicalDamage>{{ slashdamage }} pts de dégâts physiques</physicalDamage>, puis un coup d'estoc qui inflige <physicalDamage>{{ thrustdamage }}</physicalDamage> pts de dégâts physiques. Les ennemis touchés par le coup d'estoc sont <status>ralentis</status> de {{ e6 }}% pendant {{ e7 }} sec.<br /><br />Les champions et les grands monstres touchés par le coup d'estoc sont marqués comme <keywordMajor>défiés</keywordMajor> pendant {{ markduration }} sec et sont révélés (sauf s'ils sont <keywordStealth>furtifs</keywordStealth>).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/55/50/45/40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts de taille",
+          "Dégâts d'estoc",
+          "Coût en @AbilityResourceName@",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Xin Zhao donne un coup de taille devant lui avec sa lance, puis donne un coup d'estoc, ralentissant les ennemis affectés et les marquant comme défiés.",
+      "cooldownBurn": "12/11/10/9/8"
+    },
+    {
+      "id": "XinZhaoE",
+      "name": "Charge audacieuse",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 48,
+        "full": "XinZhaoE.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Xin Zhao charge un ennemi, infligeant <magicDamage>{{ chargedamage }} pts de dégâts magiques</magicDamage> aux ennemis proches et les <status>ralentissant</status> de {{ baseslowamount }}% pendant {{ e6 }} sec.<br /><br />Xin Zhao gagne également <attackSpeed>+{{ e3 }}% de vitesse d'attaque</attackSpeed> pendant {{ e4 }} sec.<br /><br />La portée de cette compétence est augmentée contre les ennemis <keywordMajor>défiés</keywordMajor>. <br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Vitesse d'attaque"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Xin Zhao charge un ennemi, augmentant sa vitesse d'attaque, infligeant des dégâts à tous les ennemis dans la zone et les ralentissant brièvement. La portée de cette compétence est augmentée contre les ennemis défiés.",
+      "cooldownBurn": "11"
+    },
+    {
+      "id": "XinZhaoR",
+      "name": "Garde circulaire",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 48,
+        "full": "XinZhaoR.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellPassive>Passive :</spellPassive> le dernier champion que Xin Zhao a blessé avec une attaque ou avec <spellName>Charge audacieuse</spellName> est <keywordMajor>défié</keywordMajor> pendant {{ markduration }} sec.<br /><br /><spellActive>Active :</spellActive> Xin Zhao effectue un balayage autour de lui, infligeant <physicalDamage>{{ totaldamage }} plus {{ percentcurrenthealthdamage*100 }}% des PV actuels en dégâts physiques</physicalDamage> et <status>repoussant</status> tous les ennemis <keywordMajor>non défiés</keywordMajor>. <br />  <br />Ensuite, pendant {{ missiledefensebaseduration }} sec, Xin Zhao devient immunisé contre les dégâts qui viennent d'ennemis se trouvant hors de la zone balayée. {{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "500",
+      "datavalues": {},
+      "description": "Xin Zhao défie passivement un ennemi qu'il a récemment blessé. Lorsque la compétence est activée, Xin Zhao inflige des dégâts aux ennemis proches en fonction de leurs PV actuels et repousse les cibles non défiées. Il est ensuite immunisé contre les dégâts infligés par les champions hors du cercle créé.",
+      "cooldownBurn": "120/110/100"
+    }
+  ],
+  "passive": {
+    "name": "Détermination",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 384,
+      "y": 0,
+      "full": "XinZhaoReworkP.XinZhaoRework.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "Toutes les 3 attaques, Xin Zhao inflige des dégâts supplémentaires et récupère des PV."
+  },
+  "created_at": "2025-11-26T15:13:35.521432+00:00",
+  "factions": [
+    "demacia"
+  ],
+  "custom_tags": [
+    "garde",
+    "lancier"
+  ],
+  "gender": "Male",
+  "species": "Human",
+  "title_en": "the Seneschal of Demacia",
+  "lore_en": "Xin Zhao is a resolute warrior loyal to the ruling Lightshield dynasty. Once condemned to the fighting pits of Noxus, he survived countless gladiatorial bouts, but after being freed by Demacian forces, he swore his life and allegiance to these brave liberators. Armed with his favored three-talon spear, Xin Zhao now fights for his adopted kingdom, audaciously challenging any foe, no matter the odds.",
+  "spells_en": [
+    {
+      "id": "XinZhaoQ",
+      "name": "Three Talon Strike",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 48,
+        "full": "XinZhaoQ.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Xin Zhao's next 3 Attacks deal an additional <physicalDamage>{{ bonusdamage }} physical damage</physicalDamage> and reduces his other Ability's Cooldowns by 1 second. The third Attack also <status>Knocks Up</status> for {{ e2 }} seconds.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Bonus Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "375",
+      "datavalues": {},
+      "description": "Xin Zhao's next 3 standard attacks deal increased damage with the third attack knocking an opponent into the air.",
+      "cooldownBurn": "7/6.5/6/5.5/5"
+    },
+    {
+      "id": "XinZhaoW",
+      "name": "Wind Becomes Lightning",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 48,
+        "full": "XinZhaoW.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Xin Zhao slashes, dealing <physicalDamage>{{ slashdamage }} physical damage</physicalDamage>, then thrusts, dealing <physicalDamage>{{ thrustdamage }}</physicalDamage>. Enemies hit by the thrust are <status>Slowed</status> by {{ e6 }}% for {{ e7 }} seconds. <br /><br />Champions and Large Monsters hit by the thrust are marked as <keywordMajor>Challenged</keywordMajor> for {{ markduration }} seconds and revealed unless <keywordStealth>Stealthed</keywordStealth>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/55/50/45/40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Slash Damage",
+          "Thrust Damage",
+          "@AbilityResourceName@ Cost",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Xin Zhao slashes in front of himself with his spear, then thrusts it forward, slowing affected enemies and marking them as Challenged.",
+      "cooldownBurn": "12/11/10/9/8"
+    },
+    {
+      "id": "XinZhaoE",
+      "name": "Audacious Charge",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 48,
+        "full": "XinZhaoE.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Xin Zhao charges an enemy, dealing <magicDamage>{{ chargedamage }} magic damage</magicDamage> to nearby enemies and <status>Slowing</status> them by {{ baseslowamount }}% for {{ e6 }} seconds.<br /><br />Xin Zhao also grants himself <attackSpeed>{{ e3 }}% Attack Speed</attackSpeed> for {{ e4 }} seconds.<br /><br />This Ability's range is increased on enemies that are <keywordMajor>Challenged</keywordMajor>. <br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Attack Speed"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Xin Zhao charges to an enemy, gaining increased Attack Speed and dealing damage to all enemies in the area, slowing them briefly. This Ability gains increased range against Challenged targets.",
+      "cooldownBurn": "11"
+    },
+    {
+      "id": "XinZhaoR",
+      "name": "Crescent Guard",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 48,
+        "full": "XinZhaoR.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellPassive>Passive:</spellPassive> The last champion Xin Zhao damaged with an Attack or <spellName>Audacious Charge</spellName> is <keywordMajor>Challenged</keywordMajor> for {{ markduration }} seconds.<br /><br /><spellActive>Active:</spellActive> Xin Zhao unleashes a sweep around him that deals <physicalDamage>{{ totaldamage }} plus {{ percentcurrenthealthdamage*100 }}% current Health physical damage</physicalDamage> and <status>Knocks Back</status> all <keywordMajor>non-Challenged</keywordMajor> enemies. <br />  <br />Afterwards, Xin Zhao becomes immune to damage from enemies outside the sweep range for {{ missiledefensebaseduration }} seconds. {{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "500",
+      "datavalues": {},
+      "description": "Xin Zhao passively challenges an enemy he damaged recently. When activated, Xin Zhao deals damage to nearby enemies based on their current Health and knocks non-challenged targets back, becoming impervious to damage dealt by champions outside of the circle created.",
+      "cooldownBurn": "120/110/100"
+    }
+  ],
+  "passive_en": {
+    "name": "Determination",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 384,
+      "y": 0,
+      "full": "XinZhaoReworkP.XinZhaoRework.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "Every third attack deals bonus damage and heals Xin Zhao."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "5000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "5001",
+      "num": 1,
+      "name": "Commando Xin Zhao",
+      "chromas": false
+    },
+    {
+      "id": "5002",
+      "num": 2,
+      "name": "Imperial Xin Zhao",
+      "chromas": false
+    },
+    {
+      "id": "5003",
+      "num": 3,
+      "name": "Viscero Xin Zhao",
+      "chromas": false
+    },
+    {
+      "id": "5004",
+      "num": 4,
+      "name": "Winged Hussar Xin Zhao",
+      "chromas": false
+    },
+    {
+      "id": "5005",
+      "num": 5,
+      "name": "Warring Kingdoms Xin Zhao",
+      "chromas": true
+    },
+    {
+      "id": "5006",
+      "num": 6,
+      "name": "Secret Agent Xin Zhao",
+      "chromas": false
+    },
+    {
+      "id": "5013",
+      "num": 13,
+      "name": "Dragonslayer Xin Zhao",
+      "chromas": true
+    },
+    {
+      "id": "5020",
+      "num": 20,
+      "name": "Cosmic Defender Xin Zhao",
+      "chromas": true
+    },
+    {
+      "id": "5027",
+      "num": 27,
+      "name": "Marauder Xin Zhao",
+      "chromas": true
+    },
+    {
+      "id": "5036",
+      "num": 36,
+      "name": "Firecracker Xin Zhao",
+      "chromas": true
+    },
+    {
+      "id": "5047",
+      "num": 47,
+      "name": "Trials of Twilight Xin Zhao",
+      "chromas": false
+    }
+  ]
+}

@@ -1,0 +1,505 @@
+{
+  "id": "Sona",
+  "key": "37",
+  "name": "Sona",
+  "title": "Virtuose de la harpe",
+  "version": "15.23.1",
+  "lore": "Sona est la plus grande virtuose de l'etwahl de Demacia, ne s'exprimant que par ses accords vibrants et gracieux. Ses manières distinguées lui valent d'être appréciée par l'aristocratie, bien que beaucoup soupçonnent ses mélodies envoûtantes de s'apparenter à de la magie, tabou à Demacia. Inaudible pour des étrangers, mais comprise par ses compagnons les plus proches, Sona se sert de ses harmonies pour soigner ses alliés blessés, mais également pour frapper ses ennemis par surprise.",
+  "tags": [
+    "Support",
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 336,
+    "y": 0,
+    "full": "Sona.png",
+    "group": "champion",
+    "sprite": "champion4.png"
+  },
+  "skins": [
+    {
+      "id": "37000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "37001",
+      "num": 1,
+      "name": "Sona la muse",
+      "chromas": false
+    },
+    {
+      "id": "37002",
+      "num": 2,
+      "name": "Sona Pentakill",
+      "chromas": false
+    },
+    {
+      "id": "37003",
+      "num": 3,
+      "name": "Sona nocturne",
+      "chromas": false
+    },
+    {
+      "id": "37004",
+      "num": 4,
+      "name": "Sona au guqin",
+      "chromas": true
+    },
+    {
+      "id": "37005",
+      "num": 5,
+      "name": "Sona arcade",
+      "chromas": true
+    },
+    {
+      "id": "37006",
+      "num": 6,
+      "name": "DJ Sona",
+      "chromas": false
+    },
+    {
+      "id": "37007",
+      "num": 7,
+      "name": "Sona cœur tendre",
+      "chromas": false
+    },
+    {
+      "id": "37009",
+      "num": 9,
+      "name": "Sona de l'Odyssée",
+      "chromas": true
+    },
+    {
+      "id": "37017",
+      "num": 17,
+      "name": "Sona psychoguerrière",
+      "chromas": true
+    },
+    {
+      "id": "37026",
+      "num": 26,
+      "name": "Sona Pentakill III : Lost Chapter",
+      "chromas": true
+    },
+    {
+      "id": "37035",
+      "num": 35,
+      "name": "Sona gardienne des étoiles",
+      "chromas": true
+    },
+    {
+      "id": "37045",
+      "num": 45,
+      "name": "Sona du Voyage immortel",
+      "chromas": true
+    },
+    {
+      "id": "37046",
+      "num": 46,
+      "name": "Sona du Voyage immortel prestige",
+      "chromas": false
+    },
+    {
+      "id": "37056",
+      "num": 56,
+      "name": "Sona héroïne de guerre",
+      "chromas": true
+    },
+    {
+      "id": "37066",
+      "num": 66,
+      "name": "Sona fleur spirituelle onsen",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "SonaQ",
+      "name": "Hymne à la bravoure",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 0,
+        "full": "SonaQ.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Sona inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> aux deux ennemis les plus proches, en donnant la priorité aux champions. Elle commence ensuite une nouvelle <keywordMajor>Mélodie</keywordMajor>. Vous gagnez un effet <keywordMajor>Accelerando</keywordMajor> à chaque champion touché par cette compétence.<br /><br /><keywordMajor>Mélodie :</keywordMajor> Sona s'entoure pendant {{ auraduration }} sec d'un halo qui octroie <magicDamage>+{{ totalonhitdamage }} pts de dégâts magiques</magicDamage>%i:OnHit% à la prochaine attaque des champions alliés pendant {{ onhitduration }} sec.<br /><br /><keywordMajor>Accord de puissance - Staccato :</keywordMajor> Accord de puissance inflige des dégâts supplémentaires (<magicDamage>{{ totalstaccatodamage }} du total des dégâts magiques</magicDamage>).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts (actifs)",
+          "Dégâts (Mélodie)",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "825",
+      "datavalues": {},
+      "description": "Sona joue l'Hymne à la bravoure, dont les ondes sonores infligent des dégâts magiques à deux ennemis proches (priorité aux champions et aux monstres). Sona reçoit un halo temporaire qui confère aux alliés touchés par la zone un bonus aux dégâts de leur prochaine attaque contre un ennemi.",
+      "cooldownBurn": "8"
+    },
+    {
+      "id": "SonaW",
+      "name": "Aria de persévérance",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 0,
+        "full": "SonaW.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Active :</spellPassive> Sona se rend <healing>{{ totalheal }} PV</healing> et autant à un champion allié proche, en donnant la priorité au plus mal en point. Elle commence ensuite une nouvelle <keywordMajor>Mélodie</keywordMajor>.<br /><br /><keywordMajor>Mélodie</keywordMajor> : Sona s'entoure pendant {{ auraduration }} sec d'un halo qui octroie aux champions alliés un <shield>bouclier de {{ totalshield }} PV</shield> pendant {{ shieldduration }} sec.<br /><br />Vous obtenez un effet <keywordMajor>Accelerando</keywordMajor> dès que vous soignez un allié ou que vous le protégez en encaissant au moins {{ accelerandoshieldbreakpoint }} pts de dégâts avec ce bouclier.<br /><br /><keywordMajor>Accord de puissance - Diminuendo</keywordMajor> : Accord de puissance réduit les dégâts physiques et magiques infligés par la cible de {{ totaldiminuendoweakenpercent }} pendant {{ diminuendoduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80/85/90/95/100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Soins (actifs)",
+          "Bouclier (Mélodie)",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Sona joue l'Aria de persévérance. Sa mélodie protectrice la soigne, ainsi qu'un allié blessé proche. Sona reçoit un halo temporaire qui confère aux alliés touchés par la zone un bouclier temporaire.",
+      "cooldownBurn": "10"
+    },
+    {
+      "id": "SonaE",
+      "name": "Mélodie de vélocité",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 0,
+        "full": "SonaE.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Active :</spellPassive> Sona commence une nouvelle <keywordMajor>Mélodie</keywordMajor>, ce qui lui octroie <speed>+{{ totalselfmovementspeed }} vitesse de déplacement</speed> pendant {{ selfmovementspeeddurationmin }} sec. Ce bonus peut durer jusqu'à {{ selfmovementspeeddurationmax }} sec si Sona ne subit aucun dégât. <br /><br /><keywordMajor>Mélodie :</keywordMajor> Sona s'entoure pendant {{ auraduration }} sec d'un halo qui octroie aux champions alliés <speed>+{{ totalallymovementspeed }} vitesse de déplacement</speed> pendant {{ allymovementspeedduration }} sec.<br /><br /><keywordMajor>Accord de puissance - Tempo :</keywordMajor> Accord de puissance <status>ralentit</status> aussi la cible de {{ totaltempomovespeedslow }} pendant {{ tempoduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "65",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Vitesse de déplacement"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "430",
+      "datavalues": {},
+      "description": "Sona joue la Mélodie de vélocité, ce qui confère aux alliés proches un bonus en vitesse de déplacement. Sona reçoit un halo temporaire qui permet aux champions alliés touchés par la zone d'augmenter leur vitesse de déplacement.",
+      "cooldownBurn": "14"
+    },
+    {
+      "id": "SonaR",
+      "name": "Crescendo",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 0,
+        "full": "SonaR.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Sona joue un accord irrésistible qui <status>étourdit</status> les ennemis pendant {{ stunduration }} sec et leur inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "900",
+      "datavalues": {},
+      "description": "Sona joue son accord ultime, étourdissant les champions ennemis, les forçant à danser et leur infligeant des dégâts magiques.",
+      "cooldownBurn": "140/120/100"
+    }
+  ],
+  "passive": {
+    "name": "Accord de puissance",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 336,
+      "y": 0,
+      "full": "Sona_Passive_Charged.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "<passive>Accelerando</passive> : les compétences de base de Sona octroient une accélération de compétence (hors ultime) lorsqu'elles sont correctement utilisées, jusqu'à un maximum. Au-delà de celui-ci, bien utiliser une compétence réduit le délai de récupération de l'ultime de Sona.<br><br><passive>Accord de puissance</passive> : après avoir lancé quelques compétences, la prochaine attaque de Sona inflige des dégâts magiques bonus et applique un effet supplémentaire selon la dernière compétence de base lancée."
+  },
+  "created_at": "2025-11-26T15:13:35.01772+00:00",
+  "factions": [
+    "demacia"
+  ],
+  "custom_tags": [
+    "musicienne"
+  ],
+  "gender": "Female",
+  "species": "Human",
+  "title_en": "Maven of the Strings",
+  "lore_en": "Sona is Demacia's foremost virtuoso of the stringed etwahl, speaking only through her graceful chords and vibrant arias. This genteel manner has endeared her to the highborn, though others suspect her spellbinding melodies to actually emanate magic—a Demacian taboo. Silent to outsiders but somehow understood by close companions, Sona plucks her harmonies not only to soothe injured allies, but also to strike down unsuspecting enemies.",
+  "spells_en": [
+    {
+      "id": "SonaQ",
+      "name": "Hymn of Valor",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 0,
+        "full": "SonaQ.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Sona deals <magicDamage>{{ totaldamage }} magic damage</magicDamage> to the nearest two enemies, prioritizing champions. She then begins a new <keywordMajor>Melody</keywordMajor>. Gain a stack of <keywordMajor>Accelerando</keywordMajor> for every champion you damage with this.<br /><br /><keywordMajor>Melody:</keywordMajor> Sona gains an aura for {{ auraduration }} seconds, granting allied champions an additional <magicDamage>{{ totalonhitdamage }} magic damage</magicDamage> %i:OnHit% on their next Attack within {{ onhitduration }} seconds.<br /><br /><keywordMajor>Power Chord - Staccato:</keywordMajor> Power Chord bonus damage (<magicDamage>{{ totalstaccatodamage }} total magic damage</magicDamage>).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage (active)",
+          "Damage (melody)",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "825",
+      "datavalues": {},
+      "description": "Sona plays the Hymn of Valor, sends out bolts of sound, dealing magic damage to two nearby enemies, prioritizing champions and monsters. Sona gains a temporary aura that grants allies tagged by the zone bonus damage on their next attack against enemies.",
+      "cooldownBurn": "8"
+    },
+    {
+      "id": "SonaW",
+      "name": "Aria of Perseverance",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 0,
+        "full": "SonaW.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Active:</spellPassive> Sona restores <healing>{{ totalheal }} Health</healing> to herself and a nearby allied champion, prioritizing the most wounded. She then begins a new <keywordMajor>Melody</keywordMajor>.<br /><br /><keywordMajor>Melody:</keywordMajor> Sona gains an aura for {{ auraduration }} seconds, granting allied champions <shield>{{ totalshield }} Shield</shield> for {{ shieldduration }} seconds.<br /><br />Gain a stack of <keywordMajor>Accelerando</keywordMajor> whenever you heal another injured ally and every time you protect another ally from at least {{ accelerandoshieldbreakpoint }} damage with this shield.<br /><br /><keywordMajor>Power Chord - Diminuendo:</keywordMajor> Power Chord also reduces physical and magic damage dealt by the target by {{ totaldiminuendoweakenpercent }} for {{ diminuendoduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80/85/90/95/100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Heal (active)",
+          "Shield (melody)",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Sona plays the Aria of Perseverance, sending out protective melodies, healing Sona and a nearby wounded ally. Sona gains a temporary aura that grants allies tagged by the zone a temporary shield.",
+      "cooldownBurn": "10"
+    },
+    {
+      "id": "SonaE",
+      "name": "Song of Celerity",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 0,
+        "full": "SonaE.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Active:</spellPassive> She begins a new <keywordMajor>Melody</keywordMajor> and grants herself <speed>{{ totalselfmovementspeed }} Move Speed</speed> for {{ selfmovementspeeddurationmin }} seconds, extended to up to {{ selfmovementspeeddurationmax }} seconds if she doesn't take damage. <br /><br /><keywordMajor>Melody:</keywordMajor> Sona gains an aura for {{ auraduration }} seconds that grants allied champions <speed>{{ totalallymovementspeed }} Move Speed</speed> for {{ allymovementspeedduration }} seconds.<br /><br /><keywordMajor>Power Chord - Tempo:</keywordMajor> Power Chord also <status>Slows</status> the target by {{ totaltempomovespeedslow }} for {{ tempoduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "65",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Move Speed"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "430",
+      "datavalues": {},
+      "description": "Sona plays the Song of Celerity, granting nearby allies bonus Move Speed. Sona gains a temporary aura that grants allied champions tagged by the zone bonus Move Speed.",
+      "cooldownBurn": "14"
+    },
+    {
+      "id": "SonaR",
+      "name": "Crescendo",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 0,
+        "full": "SonaR.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Sona strikes an irresistible chord, <status>Stunning</status> enemy for {{ stunduration }} seconds and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "900",
+      "datavalues": {},
+      "description": "Sona plays her ultimate chord, stunning enemy champions and forcing them to dance and dealing magic damage to them.",
+      "cooldownBurn": "140/120/100"
+    }
+  ],
+  "passive_en": {
+    "name": "Power Chord",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 336,
+      "y": 0,
+      "full": "Sona_Passive_Charged.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "<passive>Accelerando</passive>: Sona gains non-Ultimate ability haste permanently for her basic abilities as she uses her abilities well, up to a cap. Beyond that cap, further successful uses reduce her ultimate's remaining cooldown instead.<br><br><passive>Power Chord</passive>: Every few spell casts, Sona's next attack will deal bonus magic damage in addition to an additional effect based on what basic Ability Sona last activated."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Support"
+  ],
+  "skins_en": [
+    {
+      "id": "37000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "37001",
+      "num": 1,
+      "name": "Muse Sona",
+      "chromas": false
+    },
+    {
+      "id": "37002",
+      "num": 2,
+      "name": "Pentakill Sona",
+      "chromas": false
+    },
+    {
+      "id": "37003",
+      "num": 3,
+      "name": "Silent Night Sona",
+      "chromas": false
+    },
+    {
+      "id": "37004",
+      "num": 4,
+      "name": "Guqin Sona",
+      "chromas": true
+    },
+    {
+      "id": "37005",
+      "num": 5,
+      "name": "Arcade Sona",
+      "chromas": true
+    },
+    {
+      "id": "37006",
+      "num": 6,
+      "name": "DJ Sona",
+      "chromas": false
+    },
+    {
+      "id": "37007",
+      "num": 7,
+      "name": "Sweetheart Sona",
+      "chromas": false
+    },
+    {
+      "id": "37009",
+      "num": 9,
+      "name": "Odyssey Sona",
+      "chromas": true
+    },
+    {
+      "id": "37017",
+      "num": 17,
+      "name": "PsyOps Sona",
+      "chromas": true
+    },
+    {
+      "id": "37026",
+      "num": 26,
+      "name": "Pentakill III: Lost Chapter Sona",
+      "chromas": true
+    },
+    {
+      "id": "37035",
+      "num": 35,
+      "name": "Star Guardian Sona",
+      "chromas": true
+    },
+    {
+      "id": "37045",
+      "num": 45,
+      "name": "Immortal Journey Sona",
+      "chromas": true
+    },
+    {
+      "id": "37046",
+      "num": 46,
+      "name": "Prestige Immortal Journey Sona",
+      "chromas": false
+    },
+    {
+      "id": "37056",
+      "num": 56,
+      "name": "Victorious Sona",
+      "chromas": true
+    },
+    {
+      "id": "37066",
+      "num": 66,
+      "name": "Spirit Blossom Springs Sona",
+      "chromas": true
+    }
+  ]
+}

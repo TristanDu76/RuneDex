@@ -1,0 +1,419 @@
+{
+  "id": "Kindred",
+  "key": "203",
+  "name": "Kindred",
+  "title": "Chasseurs éternels",
+  "version": "15.23.1",
+  "lore": "Kindred représente les deux essences jumelles de la mort : Agneau (Lamb) et Loup (Wolf). Ils sont séparés mais inséparables, formant ensemble la mort elle-même.\n\nAgneau offre une fin rapide et paisible (sa flèche d'argent) à ceux qui acceptent leur sort.\n\nLoup poursuit ceux qui fuient la mort et leur arrache brutalement la vie avec ses crocs lors d'une chasse joyeuse.\n\nKindred est l'étreinte blanche du néant et le grincement de dents dans l'obscurité. Ils sont à la fois le berger et le boucher, le poète et le primitif. Le moment où ils sont appelés est lorsque le pouls martèle à la gorge d'un être vivant pris au bord de la vie.\n\nKindred traque Valoran depuis que ses peuples connaissent la mort. Les interprétations de leur nature varient selon les régions :\n\nUn vrai Démacien est censé se tourner vers Agneau, acceptant sa flèche.\n\nDans les rues sombres de Noxus, c'est Loup qui mène la chasse.\n\nDans les neiges du Freljord, les guerriers « embrassent Loup » avant de se battre, jurant d'honorer sa chasse avec le sang de leurs ennemis.\n\nÀ Bilgewater, les survivants de la Ruine se rassemblent pour honorer ceux qui ont eu droit à une vraie mort par Agneau et Loup.\n\nNier Kindred, c'est nier l'ordre naturel des choses. Ceux qui parviennent à leur échapper (comme les morts-vivants des Îles Obscures) ne trouvent aucun sanctuaire, mais seulement un cauchemar éveillé. Kindred attend patiemment les âmes piégées dans la non-vie, car ils savent que tous finiront par tomber sous l'arc d'Agneau ou les dents de Loup.\n\nLa plus ancienne apparition documentée des chasseurs éternels se trouve sur des masques anciens, sculptés dans des sépultures oubliées. Agneau et Loup restent toujours ensemble, car ils sont toujours Kindred.",
+  "tags": [
+    "Marksman"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 240,
+    "y": 0,
+    "full": "Kindred.png",
+    "group": "champion",
+    "sprite": "champion2.png"
+  },
+  "skins": [
+    {
+      "id": "203000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "203001",
+      "num": 1,
+      "name": "Kindred feu des ombres",
+      "chromas": false
+    },
+    {
+      "id": "203002",
+      "num": 2,
+      "name": "Super Kindred intergalactique",
+      "chromas": false
+    },
+    {
+      "id": "203003",
+      "num": 3,
+      "name": "Kindred fleur spirituelle",
+      "chromas": true
+    },
+    {
+      "id": "203012",
+      "num": 12,
+      "name": "Kindred de porcelaine",
+      "chromas": true
+    },
+    {
+      "id": "203022",
+      "num": 22,
+      "name": "Kindred Toutou et Matou",
+      "chromas": true
+    },
+    {
+      "id": "203023",
+      "num": 23,
+      "name": "DRX Kindred",
+      "chromas": true
+    },
+    {
+      "id": "203033",
+      "num": 33,
+      "name": "Kindred de porcelaine prestige",
+      "chromas": false
+    },
+    {
+      "id": "203034",
+      "num": 34,
+      "name": "Kindred de la Chasse éternelle",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "KindredQ",
+      "name": "Danse des flèches",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 144,
+        "full": "KindredQ.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Kindred fait une cabriole et tire sur un maximum de 3 ennemis, infligeant <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> et gagnant <attackSpeed>+{{ totalqattackspeed }} vitesse d'attaque</attackSpeed> pendant {{ e8 }} sec.<br /><br />À l'intérieur de <spellName>Frénésie de Loup</spellName>, le délai de récupération de cette compétence est réduit à {{ e4 }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "35",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération de Frénésie de Loup"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "340",
+      "datavalues": {},
+      "description": "Kindred fait une cabriole et tire sur un maximum de trois cibles proches.",
+      "cooldownBurn": "9"
+    },
+    {
+      "id": "KindredW",
+      "name": "Frénésie de Loup",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 144,
+        "full": "KindredW.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> Kindred gagne des effets en se déplaçant et en attaquant. À 100 effets cumulés, la prochaine attaque de Kindred lui permet de récupérer jusqu'à <healing>{{ attackheal }} PV</healing> selon ses PV manquants.<br /><br /><spellActive>Active :</spellActive> Kindred marque son territoire, ordonnant à Loup de mordre le dernier ennemi attaqué par Agneau. La morsure de Loup inflige <magicDamage>{{ basewolfdamage }}</magicDamage> plus <magicDamage>{{ percentwolfdamage }} des PV actuels en dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "560",
+      "datavalues": {},
+      "description": "Loup enrage et attaque les ennemis proches de lui.  Agneau cumule passivement des effets en se déplaçant et en attaquant. Au maximum d'effets cumulés, la prochaine attaque d'Agneau lui rend des PV.",
+      "cooldownBurn": "18/17/16/15/14"
+    },
+    {
+      "id": "KindredEWrapper",
+      "name": "Terreur mortelle",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0,
+        "full": "KindredEWrapper.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Kindred affaiblit un ennemi, le <status>ralentissant</status> de {{ totalslow }}% pendant {{ slowduration }} sec.<br /><br />La troisième attaque de Kindred contre la cible en moins de {{ totalduration }} sec envoie Loup sur l'ennemi, infligeant <physicalDamage>{{ basebitedamage }}</physicalDamage> plus <physicalDamage>{{ percentbitedamage }} des PV manquants en dégâts physiques</physicalDamage>.<br /><br />Si la cible a moins de {{ healththreshold }} de ses PV, le bond de Loup est alors un coup critique qui inflige <physicalDamage>{{ basebitedamage }}</physicalDamage> plus <physicalDamage>{{ critdamage }} des PV manquants en dégâts physiques</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "500",
+      "datavalues": {},
+      "description": "Agneau effectue un tir précis, ralentissant la cible. Si Agneau attaque la cible deux fois de plus, sa troisième attaque envoie Loup sur la cible pour lui infliger d'énormes dégâts.",
+      "cooldownBurn": "14/12.5/11/9.5/8"
+    },
+    {
+      "id": "KindredR",
+      "name": "Repos d'Agneau",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 0,
+        "full": "KindredR.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Kindred bénit le sol pendant {{ e2 }} sec, créant une zone dans laquelle aucune unité, alliée, ennemie ou neutre, ne peut mourir. Une fois à 10% de leurs PV max, les unités ne peuvent pas être blessées ou soignées lorsqu'elles sont dans la zone.<br /><br />Quand la bénédiction se termine, toutes les unités dans la zone récupèrent <healing>{{ e1 }} PV</healing>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Soins",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "500",
+      "datavalues": {},
+      "description": "Agneau offre à toutes les créatures vivantes dans une zone un refuge contre la mort. Jusqu'à la fin de l'effet, personne ne peut y mourir. Les unités sont ensuite soignées.",
+      "cooldownBurn": "160/140/120"
+    }
+  ],
+  "passive": {
+    "name": "Marque de Kindred",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 240,
+      "y": 0,
+      "full": "Kindred_Passive.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Kindred peut marquer des cibles à chasser. Chaque chasse fructueuse renforce définitivement les compétences de base de Kindred. Toutes les 4 chasses menées à bien, la portée des attaques de base de Kindred augmente également."
+  },
+  "created_at": "2025-11-26T15:13:33.670998+00:00",
+  "factions": [
+    "runeterra"
+  ],
+  "custom_tags": [
+    "esprit",
+    "mort"
+  ],
+  "gender": "Other",
+  "species": "Spirit",
+  "title_en": "The Eternal Hunters",
+  "lore_en": "Kindred represents the twin essences of death: Lamb and Wolf. They are separate but never parted, together forming death itself.\n\nLamb's bow offers a swift and peaceful release from the mortal realm for those who accept their fate.\n\nWolf hunts down those who run from their end, delivering violent finality within his crushing jaws during his merry chase.\n\nKindred is the white embrace of nothingness and the gnashing of teeth in the dark. They are both the shepherd and the butcher, the poet and the primitive. They are called to their hunt by the hammering pulse at one's throat when caught on the edge of life.\n\nKindred has stalked Valoran for as long as its people have known death. Interpretations of their nature vary across regions:\n\nA true Demacian is said to turn to Lamb, taking the arrow swiftly.\n\nThrough the shadowed streets of Noxus, Wolf leads the hunt.\n\nIn the snows of the Freljord, warbands \"kiss the Wolf\" before fighting, vowing to honor his chase with their enemies' blood.\n\nIn Bilgewater, survivors gather after the Harrowing to honor those granted a true death by Lamb and Wolf.\n\nDenying Kindred is denying the natural order of things. Those few who have eluded them (like the undead of the Shadow Isles) find no sanctuary, only a waking nightmare. Kindred waits for those locked in undeath, knowing all will eventually fall to Lamb's bow or Wolf's teeth.\n\nThe earliest dated appearance of the eternal hunters is from a pair of ancient masks, carved into the gravesites of long-forgotten people. Lamb and Wolf remain together, for they are always Kindred.",
+  "spells_en": [
+    {
+      "id": "KindredQ",
+      "name": "Dance of Arrows",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 144,
+        "full": "KindredQ.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Kindred vaults, firing an arrow at up to 3 enemies, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> and gaining <attackSpeed>{{ totalqattackspeed }} Attack Speed</attackSpeed> for {{ e8 }} seconds.<br /><br />While inside of <spellName>Wolf's Frenzy</spellName>, this Ability's Cooldown is reduced to {{ e4 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "35",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown in Wolf's Frenzy"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "340",
+      "datavalues": {},
+      "description": "Kindred tumbles and shoots up to three arrows at nearby targets.",
+      "cooldownBurn": "9"
+    },
+    {
+      "id": "KindredW",
+      "name": "Wolf's Frenzy",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 144,
+        "full": "KindredW.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Kindred gains stacks as they move and attack. At 100 stacks, Kindred's next Attack restores up to <healing>{{ attackheal }} Health</healing> based on their missing Health.<br /><br /><spellActive>Active:</spellActive> Kindred claims a territory, ordering Wolf to bite at the last enemy Lamb Attacked. Wolf's bites deal <magicDamage>{{ basewolfdamage }}</magicDamage> plus <magicDamage>{{ percentwolfdamage }} current Health magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "560",
+      "datavalues": {},
+      "description": "Wolf enrages and attacks enemies around him.  Lamb passively gains stacks by moving and attacking. When fully charged, Lamb's next attack restores health.",
+      "cooldownBurn": "18/17/16/15/14"
+    },
+    {
+      "id": "KindredEWrapper",
+      "name": "Mounting Dread",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0,
+        "full": "KindredEWrapper.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Kindred weakens an enemy, <status>Slowing</status> them by {{ totalslow }}% for {{ slowduration }} second.<br /><br />Kindred's third Attack against the target within {{ totalduration }} seconds of each other directs Wolf to pounce on the enemy, dealing <physicalDamage>{{ basebitedamage }}</physicalDamage> plus <physicalDamage>{{ percentbitedamage }} missing Health physical damage</physicalDamage>.<br /><br />Wolf's pounce critically strikes for <physicalDamage>{{ basebitedamage }}</physicalDamage> plus <physicalDamage>{{ critdamage }} missing Health physical damage</physicalDamage> instead if they are below {{ healththreshold }} Health.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "500",
+      "datavalues": {},
+      "description": "Lamb fires a carefully placed shot, slowing the target. If Lamb attacks the target two more times, her third attack instead directs Wolf to pounce on the enemy, savaging them for massive damage.",
+      "cooldownBurn": "14/12.5/11/9.5/8"
+    },
+    {
+      "id": "KindredR",
+      "name": "Lamb's Respite",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 0,
+        "full": "KindredR.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Kindred blesses the ground for {{ e2 }} seconds, allowing no unit, ally, enemy, or neutral to die while inside. Upon reaching 10% Health, units can't be damaged or healed while still inside the zone.<br /><br />When the blessing ends, all units inside heal for <healing>{{ e1 }} Health</healing>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Healing",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "500",
+      "datavalues": {},
+      "description": "Lamb grants all living things inside a zone a respite from death. Until the effect ends, nothing can die. At the end, units are healed.",
+      "cooldownBurn": "160/140/120"
+    }
+  ],
+  "passive_en": {
+    "name": "Mark of the Kindred",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 240,
+      "y": 0,
+      "full": "Kindred_Passive.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Kindred can mark targets to Hunt. Successfully completing a Hunt permanently empowers Kindred's basic abilities. Every 4 hunts completed also increases Kindred's basic attack range."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "203000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "203001",
+      "num": 1,
+      "name": "Shadowfire Kindred",
+      "chromas": false
+    },
+    {
+      "id": "203002",
+      "num": 2,
+      "name": "Super Galaxy Kindred",
+      "chromas": false
+    },
+    {
+      "id": "203003",
+      "num": 3,
+      "name": "Spirit Blossom Kindred",
+      "chromas": true
+    },
+    {
+      "id": "203012",
+      "num": 12,
+      "name": "Porcelain Kindred",
+      "chromas": true
+    },
+    {
+      "id": "203022",
+      "num": 22,
+      "name": "Woof and Lamb Kindred",
+      "chromas": true
+    },
+    {
+      "id": "203023",
+      "num": 23,
+      "name": "DRX Kindred",
+      "chromas": true
+    },
+    {
+      "id": "203033",
+      "num": 33,
+      "name": "Prestige Porcelain Kindred",
+      "chromas": false
+    },
+    {
+      "id": "203034",
+      "num": 34,
+      "name": "Chosen of the Wolf Kindred",
+      "chromas": true
+    }
+  ]
+}

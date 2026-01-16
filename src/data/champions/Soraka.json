@@ -1,0 +1,543 @@
+{
+  "id": "Soraka",
+  "key": "16",
+  "name": "Soraka",
+  "title": "Enfant des étoiles",
+  "version": "15.23.1",
+  "lore": "Voyageuse originaire de dimensions célestes d'au-delà du Mont Targon, Soraka a abandonné son immortalité pour protéger les mortels de leurs instincts violents. Elle cherche à pousser tous ceux qu'elle rencontre à embrasser les vertus de la compassion et de la pitié, allant jusqu'à soigner même ceux qui lui veulent du mal. Et, malgré toutes les souffrances dont Soraka a été témoin dans ce monde, elle croit encore que le peuple de Runeterra n'a pas atteint son plein potentiel.",
+  "tags": [
+    "Support",
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 384,
+    "y": 0,
+    "full": "Soraka.png",
+    "group": "champion",
+    "sprite": "champion4.png"
+  },
+  "skins": [
+    {
+      "id": "16000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "16001",
+      "num": 1,
+      "name": "Soraka dryade",
+      "chromas": false
+    },
+    {
+      "id": "16002",
+      "num": 2,
+      "name": "Soraka divine",
+      "chromas": false
+    },
+    {
+      "id": "16003",
+      "num": 3,
+      "name": "Soraka du temple",
+      "chromas": false
+    },
+    {
+      "id": "16004",
+      "num": 4,
+      "name": "Soraka faucheuse",
+      "chromas": true
+    },
+    {
+      "id": "16005",
+      "num": 5,
+      "name": "Soraka de l'Ordre des bananes",
+      "chromas": false
+    },
+    {
+      "id": "16006",
+      "num": 6,
+      "name": "Programme Soraka",
+      "chromas": false
+    },
+    {
+      "id": "16007",
+      "num": 7,
+      "name": "Soraka gardienne des étoiles",
+      "chromas": false
+    },
+    {
+      "id": "16008",
+      "num": 8,
+      "name": "Soraka gardienne des pyjamas",
+      "chromas": false
+    },
+    {
+      "id": "16009",
+      "num": 9,
+      "name": "Soraka merveille hivernale",
+      "chromas": true
+    },
+    {
+      "id": "16015",
+      "num": 15,
+      "name": "Soraka héraut de l'aube",
+      "chromas": false
+    },
+    {
+      "id": "16016",
+      "num": 16,
+      "name": "Soraka héraut de la nuit",
+      "chromas": false
+    },
+    {
+      "id": "16017",
+      "num": 17,
+      "name": "Soraka gardienne des étoiles prestige",
+      "chromas": false
+    },
+    {
+      "id": "16018",
+      "num": 18,
+      "name": "Soraka Café Chouchous",
+      "chromas": true
+    },
+    {
+      "id": "16027",
+      "num": 27,
+      "name": "Soraka fleur spirituelle",
+      "chromas": true
+    },
+    {
+      "id": "16037",
+      "num": 37,
+      "name": "Soraka du Voyage immortel",
+      "chromas": true
+    },
+    {
+      "id": "16044",
+      "num": 44,
+      "name": "Soraka de la cour féérique",
+      "chromas": true
+    },
+    {
+      "id": "16053",
+      "num": 53,
+      "name": "Soraka flora fatalis",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "SorakaQ",
+      "name": "Appel de l'étoile",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 48,
+        "full": "SorakaQ.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Soraka fait tomber une étoile, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> et <status>ralentissant</status> de {{ movespeedslow*100 }}% pendant {{ slowduration }} sec. <br /><br />Toucher un champion octroie <keywordMajor>Rajeunissement</keywordMajor> à Soraka, ce qui lui rend <healing>{{ totalhot }} PV</healing> en {{ hotduration }} sec et lui octroie <speed>+{{ movespeedhaste*100 }}% de vitesse de déplacement</speed> (ce bonus diminue sur la même durée).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "45/50/55/60/65",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "PV rendus (Rajeunissement)",
+          "Vitesse de déplacement",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "810",
+      "datavalues": {},
+      "description": "Une étoile s'abat à l'endroit ciblé, infligeant des dégâts magiques et ralentissant les ennemis. Si un champion ennemi est touché par Appel de l'étoile, Soraka récupère des PV.",
+      "cooldownBurn": "8/7/6/5/4"
+    },
+    {
+      "id": "SorakaW",
+      "name": "Infusion astrale",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 48,
+        "full": "SorakaW.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Soraka rend <healing>{{ totalheal }} PV</healing> à un autre champion allié.<br /><br />Si Soraka est affectée par <keywordMajor>Rajeunissement</keywordMajor>, le coût en PV est réduit de {{ percenthealthcostrefund*100 }}% et la cible gagne <keywordMajor>Rajeunissement</keywordMajor> pendant {{ spell.sorakaq:hotduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/45/50/55/60",
+      "costType": "% des PV max, {{ cost }} pts de mana",
+      "leveltip": {
+        "label": [
+          "Soins",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@",
+          "Réduction du coût en PV"
+        ]
+      },
+      "resource": "{{ percenthealthcost*100 }}% des PV max, {{ cost }} pts de mana",
+      "rangeBurn": "550",
+      "datavalues": {},
+      "description": "Soraka sacrifie une partie de ses PV pour soigner un autre champion allié.",
+      "cooldownBurn": "6/5/4/3/2"
+    },
+    {
+      "id": "SorakaE",
+      "name": "Équinoxe",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 48,
+        "full": "SorakaE.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Soraka crée un champ d'étoiles qui inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> aux champions. Le champ persiste pendant {{ rootdelay }} sec, <status>réduisant au silence</status> les ennemis qui s'y trouvent. Quand la zone disparaît, les champions qui s'y trouvaient sont <status>immobilisés</status> pendant {{ rootduration }} sec et subissent <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/75/80/85/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "Durée de l'immobilisation",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "925",
+      "datavalues": {},
+      "description": "Crée une zone qui réduit au silence tous les ennemis s'y trouvant. Quand la zone disparaît, tous les ennemis qui s'y trouvent encore sont immobilisés.",
+      "cooldownBurn": "20/19/18/17/16"
+    },
+    {
+      "id": "SorakaR",
+      "name": "Souhait",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 48,
+        "full": "SorakaR.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Soraka fait appel à des pouvoirs divins pour rendre <healing>{{ healingcalc }} PV</healing> à tous les champions alliés, où qu'ils soient. Les soins sont augmentés à <healing>{{ ampedhealing }}</healing> sur les cibles qui ont moins de 40% de leurs PV.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Soins",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Soraka remplit ses alliés d'espoir, ce qui rend immédiatement des PV à tous les champions alliés et à elle-même.",
+      "cooldownBurn": "150/135/120"
+    }
+  ],
+  "passive": {
+    "name": "Salut",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 384,
+      "y": 0,
+      "full": "Soraka_Passive.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "Soraka court plus vite en direction des alliés affaiblis à proximité."
+  },
+  "created_at": "2025-11-26T15:13:35.01772+00:00",
+  "factions": [
+    "targon",
+    "ionia"
+  ],
+  "custom_tags": [
+    "celeste",
+    "guérisseur"
+  ],
+  "gender": "Female",
+  "species": "Celestial",
+  "title_en": "the Starchild",
+  "lore_en": "A wanderer from the celestial dimensions beyond Mount Targon, Soraka gave up her immortality to protect the mortal races from their own more violent instincts. She endeavors to spread the virtues of compassion and mercy to everyone she meets—even healing those who would wish harm upon her. And, for all Soraka has seen of this world's struggles, she still believes the people of Runeterra have yet to reach their full potential.",
+  "spells_en": [
+    {
+      "id": "SorakaQ",
+      "name": "Starcall",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 48,
+        "full": "SorakaQ.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Soraka calls down a star, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> and <status>Slowing</status> by {{ movespeedslow*100 }}% for {{ slowduration }} seconds. <br /><br />Hitting an enemy champion grants Soraka <keywordMajor>Rejuvenation</keywordMajor>, which restores <healing>{{ totalhot }} Health</healing> over {{ hotduration }} seconds and grants <speed>{{ movespeedhaste*100 }}% Move Speed</speed> decaying over the same duration.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "45/50/55/60/65",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Health Restore (Rejuvenation)",
+          "Move Speed",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "810",
+      "datavalues": {},
+      "description": "A star falls from the sky at the target location dealing magic damage and slowing enemies. If an enemy champion is hit by Starcall, Soraka recovers Health.",
+      "cooldownBurn": "8/7/6/5/4"
+    },
+    {
+      "id": "SorakaW",
+      "name": "Astral Infusion",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 48,
+        "full": "SorakaW.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Soraka restores <healing>{{ totalheal }} Health</healing> to another allied champion.<br /><br />If Soraka is affected by <keywordMajor>Rejuvenation</keywordMajor>, the Health cost will be reduced by {{ percenthealthcostrefund*100 }}%, and the target will gain <keywordMajor>Rejuvenation</keywordMajor> for {{ spell.sorakaq:hotduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/45/50/55/60",
+      "costType": "% Max Health, {{ cost }} Mana",
+      "leveltip": {
+        "label": [
+          "Healing",
+          "Cooldown",
+          "@AbilityResourceName@ Cost",
+          "Health Cost Reduction"
+        ]
+      },
+      "resource": "{{ percenthealthcost*100 }}% Max Health, {{ cost }} Mana",
+      "rangeBurn": "550",
+      "datavalues": {},
+      "description": "Soraka sacrifices a portion of her own health to heal another friendly champion.",
+      "cooldownBurn": "6/5/4/3/2"
+    },
+    {
+      "id": "SorakaE",
+      "name": "Equinox",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 48,
+        "full": "SorakaE.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Soraka creates a starfield that deals <magicDamage>{{ totaldamage }} magic damage</magicDamage> to champions. The field lingers for {{ rootdelay }} seconds, <status>Silencing</status> enemies inside. When the zone disappears, champions inside the zone are <status>Rooted</status> for {{ rootduration }} second(s) and take <magicDamage>{{ totaldamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/75/80/85/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "Root Duration",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "925",
+      "datavalues": {},
+      "description": "Creates a zone at a location that silences all enemies inside. When the zone expires, all enemies still inside are rooted.",
+      "cooldownBurn": "20/19/18/17/16"
+    },
+    {
+      "id": "SorakaR",
+      "name": "Wish",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 48,
+        "full": "SorakaR.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Soraka calls upon divine powers, restoring <healing>{{ healingcalc }} Health</healing> to all allied champions, regardless of distance. Healing is increased to <healing>{{ ampedhealing }}</healing> on targets below 40% Health.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Healing",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Soraka fills her allies with hope, instantly restoring health to herself and all allied champions.",
+      "cooldownBurn": "150/135/120"
+    }
+  ],
+  "passive_en": {
+    "name": "Salvation",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 384,
+      "y": 0,
+      "full": "Soraka_Passive.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "Soraka runs faster towards nearby low health allies."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Support"
+  ],
+  "skins_en": [
+    {
+      "id": "16000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "16001",
+      "num": 1,
+      "name": "Dryad Soraka",
+      "chromas": false
+    },
+    {
+      "id": "16002",
+      "num": 2,
+      "name": "Divine Soraka",
+      "chromas": false
+    },
+    {
+      "id": "16003",
+      "num": 3,
+      "name": "Celestine Soraka",
+      "chromas": false
+    },
+    {
+      "id": "16004",
+      "num": 4,
+      "name": "Reaper Soraka",
+      "chromas": true
+    },
+    {
+      "id": "16005",
+      "num": 5,
+      "name": "Order of the Banana Soraka",
+      "chromas": false
+    },
+    {
+      "id": "16006",
+      "num": 6,
+      "name": "Program Soraka",
+      "chromas": false
+    },
+    {
+      "id": "16007",
+      "num": 7,
+      "name": "Star Guardian Soraka",
+      "chromas": false
+    },
+    {
+      "id": "16008",
+      "num": 8,
+      "name": "Pajama Guardian Soraka",
+      "chromas": false
+    },
+    {
+      "id": "16009",
+      "num": 9,
+      "name": "Winter Wonder Soraka",
+      "chromas": true
+    },
+    {
+      "id": "16015",
+      "num": 15,
+      "name": "Dawnbringer Soraka",
+      "chromas": false
+    },
+    {
+      "id": "16016",
+      "num": 16,
+      "name": "Nightbringer Soraka",
+      "chromas": false
+    },
+    {
+      "id": "16017",
+      "num": 17,
+      "name": "Prestige Star Guardian Soraka",
+      "chromas": false
+    },
+    {
+      "id": "16018",
+      "num": 18,
+      "name": "Cafe Cuties Soraka",
+      "chromas": true
+    },
+    {
+      "id": "16027",
+      "num": 27,
+      "name": "Spirit Blossom Soraka",
+      "chromas": true
+    },
+    {
+      "id": "16037",
+      "num": 37,
+      "name": "Immortal Journey Soraka",
+      "chromas": true
+    },
+    {
+      "id": "16044",
+      "num": 44,
+      "name": "Faerie Court Soraka",
+      "chromas": true
+    },
+    {
+      "id": "16053",
+      "num": 53,
+      "name": "Flora Fatalis Soraka",
+      "chromas": true
+    }
+  ]
+}

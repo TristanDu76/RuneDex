@@ -1,0 +1,381 @@
+{
+  "id": "Aphelios",
+  "key": "523",
+  "name": "Aphelios",
+  "title": "Arme des Lunaris",
+  "version": "15.23.1",
+  "lore": "Aphelios et sa sœur jumelle, Alune, sont nés sous une rare convergence lunaire (l'éclipse de la lune physique par son reflet dans le royaume spirituel), ce qui fit d'eux des enfants du destin pour les Lunari, les fidèles de la lune de Targon. Tandis qu'Aphelios était doué physiquement comme la lune de pierre, Alune excellait en magie, comme son reflet spirituel. Les Lunari, considérés comme hérétiques par les Solari (fidèles du soleil), étaient contraints de vivre cachés.\r\n\r\nLa pression de protéger leur foi pesait lourdement sur Aphelios. Il s'entraînait sans relâche avec des lames en pierre de lune, développant ses talents d'assassin. Il noua un lien profond avec Alune, son seul véritable ami. Tandis qu'Aphelios partait en missions dangereuses, Alune s'entraînait séparément en tant que voyante, utilisant sa magie pour révéler des vérités cachées.\r\n\r\nLa foi d'Aphelios vacilla lorsque Alune dut le quitter pour poursuivre sa formation. Désespéré, il entreprit un voyage rituel où il consomma l'essence toxique des fleurs rares de noctum. Cette substance le rendit muet et lui infligea une douleur si intense qu'elle l'engourdit à tout le reste.\r\n\r\nPeu de temps après, le temple antique, le Marus Omegnum, commença à émerger du royaume spirituel pour la première fois depuis des siècles. Les Lunari s'y rassemblèrent pour assister au changement cosmique. Alune, dont l'orbite la menait au temple, entra dans la forteresse.\r\n\r\nCependant, les Lunari furent découverts. Une armée de Solari les attaqua. Alors qu'Aphelios était battu et ses lames brisées, Alune atteignit le cœur du temple, débloquant son plein potentiel magique. Par le poison de noctum qui coulait dans les veines d'Aphelios, celui-ci put sentir le pouvoir d'Alune l'envelopper et entendre sa voix dans son esprit. Elle projeta sa magie dans ses mains, transformant ses lames brisées en un arsenal de nouvelles armes en pierre de lune.\r\n\r\nÀ ce moment, ils comprirent leur destin : Aphelios, muet et vidé par la douleur, serait le conduit de la puissance de la lune. Alune vivrait isolée dans le temple (qu'elle renvoya dans le royaume spirituel pour le protéger), mais elle pourrait guider son frère, voyant à travers ses yeux et projetant son arsenal mystique.\r\n\r\nEnsemble, liés par le sacrifice et la douleur, ils sont devenus l'arme dont les Lunari ont besoin. Seul le fait d'être séparés leur permet d'être unis, leurs âmes se frôlant à travers le voile, pour protéger les derniers fidèles de la lune.",
+  "tags": [
+    "Marksman"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 432,
+    "y": 0,
+    "full": "Aphelios.png",
+    "group": "champion",
+    "sprite": "champion0.png"
+  },
+  "skins": [
+    {
+      "id": "523000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "523001",
+      "num": 1,
+      "name": "Aphelios héraut de la nuit",
+      "chromas": true
+    },
+    {
+      "id": "523009",
+      "num": 9,
+      "name": "Aphelios bête lunaire",
+      "chromas": true
+    },
+    {
+      "id": "523018",
+      "num": 18,
+      "name": "EDG Aphelios",
+      "chromas": false
+    },
+    {
+      "id": "523020",
+      "num": 20,
+      "name": "Aphelios fleur spirituelle",
+      "chromas": false
+    },
+    {
+      "id": "523030",
+      "num": 30,
+      "name": "HEARTSTEEL Aphelios",
+      "chromas": false
+    },
+    {
+      "id": "523040",
+      "num": 40,
+      "name": "Aphelios fleur spirituelle onsen prestige",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "ApheliosQ_ClientTooltipWrapper",
+      "name": "Compétences d'arme",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 48,
+        "full": "ApheliosQ_ClientTooltipWrapper.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 6,
+      "tooltip": "{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": []
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1450",
+      "datavalues": {},
+      "description": "Aphelios a 5 compétences actives différentes, chacune liée à son arme principale :<br><br>Calibrum (fusil) : tire une balle à longue portée qui marque la cible et permet une seconde attaque à très longue portée.<br>Severum (pistolet-faux) : court rapidement en attaquant les ennemis proches avec les deux armes.<br>Gravitum (canon) : immobilise tous les ennemis ralentis par cette arme.<br>Infernum (lance-flammes) : frappe les ennemis dans un cône et les attaque avec l'arme secondaire.<br>Crescendum (chakram) : déploie une vigie qui attaque avec l'arme secondaire.<br>",
+      "cooldownBurn": "9"
+    },
+    {
+      "id": "ApheliosW",
+      "name": "Phase",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 48,
+        "full": "ApheliosW.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 6,
+      "tooltip": "Échange les armes principale et secondaire pour s'équiper de : <b><i><span class=\"colora64dff\">Gravitum</span></i></b>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": []
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "250",
+      "datavalues": {},
+      "description": "Aphelios échange son arme principale avec son arme secondaire, ce qui remplace ses attaques de base ainsi que sa compétence active.",
+      "cooldownBurn": "0.8"
+    },
+    {
+      "id": "ApheliosE_ClientTooltipWrapper",
+      "name": "Système de file d'armes",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 48,
+        "full": "ApheliosE_ClientTooltipWrapper.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 6,
+      "tooltip": "{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": []
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Aphelios n'a pas de troisième compétence. Cet emplacement lui indique la prochaine arme qu'Alune lui donnera. L'ordre des armes est toujours le même en début de partie, mais peut évoluer au fil de la partie. Lorsqu'une arme est à court de munitions, elle se place tout en bas de la rotation.",
+      "cooldownBurn": "0"
+    },
+    {
+      "id": "ApheliosR",
+      "name": "Veille au clair de lune",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 48,
+        "full": "ApheliosR.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Aphelios tire un rayon de lune concentré qui explose au contact d'un champion et qui inflige <physicalDamage>{{ maxdamage }} pts de dégâts physiques</physicalDamage> aux ennemis proches.<br /><br />Aphelios attaque ensuite tous les champions touchés avec son arme principale. {{ Spell_ApheliosR_WeaponMod_{{ f1 }} }}{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Bonus du Calibrum : dégâts de la marque",
+          "Bonus du Severum : soins",
+          "Bonus de l'Infernum : dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1300",
+      "datavalues": {},
+      "description": "Envoie un rayon de lune concentré qui explose au contact d'un champion ennemi. Applique l'effet unique de l'arme principale d'Aphelios.",
+      "cooldownBurn": "120/110/100"
+    }
+  ],
+  "passive": {
+    "name": "Le Tueur et l'Oracle",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 432,
+      "y": 0,
+      "full": "ApheliosP.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Aphelios manie 5 armes de Lunari forgées par sa sœur Alune. Il peut en porter deux à la fois : une principale et une secondaire. Chaque arme possède une attaque de base et une compétence uniques. Les attaques et les compétences consomment les munitions de son arme. Lorsqu'il n'a plus de munitions, Aphelios jette son arme et Alune invoque la suivante (parmi les 5). "
+  },
+  "created_at": "2025-11-26T15:13:31.919828+00:00",
+  "factions": [
+    "targon"
+  ],
+  "custom_tags": [
+    "lunari",
+    "tueur"
+  ],
+  "gender": "Male",
+  "species": "Human",
+  "title_en": "the Weapon of the Faithful",
+  "lore_en": "Aphelios and his twin sister, Alune, were born during a rare lunar convergence (the physical moon eclipsed by its reflection in the spirit realm), marking them as children of destiny for the Lunari, the followers of Targon's moon faith. While Aphelios was physically gifted like the stone moon, Alune excelled magically, like its spiritual reflection. The Lunari, deemed heretics by the Solari (followers of the sun), were forced into hiding.\r\n\r\nThe pressure to protect their faith weighed heavily on Aphelios. He trained tirelessly with mystical moonstone blades, developing his skills as an assassin. He bonded deeply with Alune, his only true friend. While Aphelios went on dangerous missions, Alune trained separately as a seer, using her magic to reveal hidden truths.\r\n\r\nAphelios' faith wavered when Alune had to leave him to continue her training. Desperate, he undertook a ritual journey where he consumed the poisonous essence of rare noctum flowers. This substance rendered him mute and inflicted such intense pain that it numbed him to everything else.\r\n\r\nSoon after, the ancient temple, the Marus Omegnum, began to phase back from the spirit realm. Lunari gathered to witness the celestial shift. Alune, whose orbit led her to the temple, entered the fortress.\r\n\r\nHowever, the Lunari were discovered. An army of Solari descended upon them. As Aphelios was being beaten and his blades shattered, Alune reached the heart of the temple, unlocking her full magical potential. Through the noctum poison coursing through Aphelios' veins, he could feel Alune's power embrace him and hear her voice in his mind. She projected her magic into his hands, transforming his shattered blades into an arsenal of new moonstone weapons.\r\n\r\nAt that moment, they understood their destiny: Aphelios, muted and hollowed out by pain, would be the conduit for the moon's power. Alune would live isolated within the temple (which she pushed back into the spirit realm for safety), but she could guide her brother, seeing through his eyes and projecting her mystical arsenal.\r\n\r\nTogether, bound by sacrifice and pain, they became the weapon the Lunari needed. Only apart could they truly be together, their souls brushing across the veil to protect the last followers of the moon.",
+  "spells_en": [
+    {
+      "id": "ApheliosQ_ClientTooltipWrapper",
+      "name": "Weapon Abilites",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 48,
+        "full": "ApheliosQ_ClientTooltipWrapper.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 6,
+      "tooltip": "{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": []
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1450",
+      "datavalues": {},
+      "description": "Aphelios has 5 different activated abilities, based on his main-hand weapon:<br><br>Calibrum (Rifle): Long range shot that marks its target for a long-range follow-up attack.<br>Severum (Scythe Pistol): Run fast while attacking nearby enemies with both weapons.<br>Gravitum (Cannon): Root all enemies slowed by this weapon.<br>Infernum (Flamethrower): Blast enemies in a cone and attack them with your off-hand weapon.<br>Crescendum (Chakram): Deploy a sentry that shoots your off-hand weapon.<br>",
+      "cooldownBurn": "9"
+    },
+    {
+      "id": "ApheliosW",
+      "name": "Phase",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 48,
+        "full": "ApheliosW.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 6,
+      "tooltip": "Swap main-hand and off-hand weapons, equipping <b><i><span class=\"colora64dff\">Gravitum</span></i></b>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": []
+      },
+      "resource": "No Cost",
+      "rangeBurn": "250",
+      "datavalues": {},
+      "description": "Aphelios swaps his main-hand gun with his off-hand gun, replacing his basic attack and activated ability.",
+      "cooldownBurn": "0.8"
+    },
+    {
+      "id": "ApheliosE_ClientTooltipWrapper",
+      "name": "Weapon Queue System",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 48,
+        "full": "ApheliosE_ClientTooltipWrapper.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 6,
+      "tooltip": "{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": []
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Aphelios has no third ability. This slot shows the next weapon Alune will give him. Weapon order begins fixed but may change over game time -- when a weapon is out of ammo it goes to the end of the order.",
+      "cooldownBurn": "0"
+    },
+    {
+      "id": "ApheliosR",
+      "name": "Moonlight Vigil",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 48,
+        "full": "ApheliosR.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Aphelios fires a concentrated blast of moonlight that explodes when it hits a champion, dealing <physicalDamage>{{ maxdamage }} physical damage</physicalDamage> to surrounding enemies.<br /><br />Then, Aphelios attacks all champions hit with his main-hand weapon. {{ Spell_ApheliosR_WeaponMod_{{ f1 }} }}{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Calibrum Bonus: Mark Damage",
+          "Severum Bonus: Heal",
+          "Infernum Bonus: Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1300",
+      "datavalues": {},
+      "description": "Fire a concentrated blast of moonlight that explodes on enemy champions. Applies the unique effect of Aphelios' main-hand gun.",
+      "cooldownBurn": "120/110/100"
+    }
+  ],
+  "passive_en": {
+    "name": "The Hitman and the Seer",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 432,
+      "y": 0,
+      "full": "ApheliosP.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Aphelios wields 5 Lunari Weapons made by his sister Alune. He has access to two at a time: one main-hand and one off-hand. Each weapon has a unique Basic Attack and Ability. Attacks and abilities consume a weapon's ammo. When out of ammo, Aphelios discards the weapon and Alune summons the next of the 5. "
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Adc"
+  ],
+  "skins_en": [
+    {
+      "id": "523000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "523001",
+      "num": 1,
+      "name": "Nightbringer Aphelios",
+      "chromas": true
+    },
+    {
+      "id": "523009",
+      "num": 9,
+      "name": "Lunar Beast Aphelios",
+      "chromas": true
+    },
+    {
+      "id": "523018",
+      "num": 18,
+      "name": "EDG Aphelios",
+      "chromas": false
+    },
+    {
+      "id": "523020",
+      "num": 20,
+      "name": "Spirit Blossom Aphelios",
+      "chromas": false
+    },
+    {
+      "id": "523030",
+      "num": 30,
+      "name": "HEARTSTEEL Aphelios",
+      "chromas": false
+    },
+    {
+      "id": "523040",
+      "num": 40,
+      "name": "Prestige Spirit Blossom Springs Aphelios",
+      "chromas": false
+    }
+  ]
+}

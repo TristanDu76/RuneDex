@@ -1,0 +1,467 @@
+{
+  "id": "Ziggs",
+  "key": "115",
+  "name": "Ziggs",
+  "title": "Expert des Hexplosifs",
+  "version": "15.23.1",
+  "lore": "Amoureux des grosses bombes et des mèches courtes, le yordle Ziggs est une force de la nature explosive. Assistant d'un inventeur de Piltover, il finit par se lasser de sa vie routinière et devint l'ami d'une jeune fille imprévisible et portée sur les explosifs, Jinx. Après une folle nuit en ville, Ziggs suivit les conseils de Jinx et s'installa à Zaun, où il se livre désormais à sa passion plus librement, terrorisant les Barons de la chimie comme les simples citoyens dans sa quête éternelle pour faire sauter tout ce qui traverse son champ de vision.",
+  "tags": [
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 384,
+    "y": 48,
+    "full": "Ziggs.png",
+    "group": "champion",
+    "sprite": "champion5.png"
+  },
+  "skins": [
+    {
+      "id": "115000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "115001",
+      "num": 1,
+      "name": "Ziggs savant fou",
+      "chromas": false
+    },
+    {
+      "id": "115002",
+      "num": 2,
+      "name": "Commandant Ziggs",
+      "chromas": false
+    },
+    {
+      "id": "115003",
+      "num": 3,
+      "name": "Ziggs bombe à eau",
+      "chromas": false
+    },
+    {
+      "id": "115004",
+      "num": 4,
+      "name": "Ziggs des neiges",
+      "chromas": false
+    },
+    {
+      "id": "115005",
+      "num": 5,
+      "name": "Ziggs maître arcaniste",
+      "chromas": false
+    },
+    {
+      "id": "115006",
+      "num": 6,
+      "name": "Ziggs boss de combat",
+      "chromas": false
+    },
+    {
+      "id": "115007",
+      "num": 7,
+      "name": "Ziggs de l'Odyssée",
+      "chromas": true
+    },
+    {
+      "id": "115014",
+      "num": 14,
+      "name": "Ziggs folie sucrée",
+      "chromas": true
+    },
+    {
+      "id": "115023",
+      "num": 23,
+      "name": "Ziggs Hextech",
+      "chromas": false
+    },
+    {
+      "id": "115024",
+      "num": 24,
+      "name": "Ziggs abeille",
+      "chromas": true
+    },
+    {
+      "id": "115033",
+      "num": 33,
+      "name": "Ziggs La Ilusión",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "ZiggsQ",
+      "name": "Bombe rebondissante",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 48,
+        "full": "ZiggsQ.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ziggs lance une bombe rebondissante qui inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ratio de puissance total",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "850",
+      "datavalues": {},
+      "description": "Ziggs lance une bombe rebondissante qui inflige des dégâts magiques.",
+      "cooldownBurn": "6/5.5/5/4.5/4"
+    },
+    {
+      "id": "ZiggsW",
+      "name": "Charge explosive",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 48,
+        "full": "ZiggsW.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ziggs jette une charge explosive qui explose au bout de {{ bombduration }} sec, ou quand cette compétence est <recast>réactivée</recast>. L'explosion inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> aux ennemis et les <status>repousse</status>. Ziggs aussi est repoussé, mais il ne subit aucun dégât.<br /><br />Charge explosive détruit automatiquement les tourelles qui ont moins de {{ turretdestroypercent*100 }}% de leurs PV.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "Seuil de destruction des tourelles"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Ziggs jette une charge explosive qui explose après un délai, ou quand vous réactivez cette compétence. L'explosion inflige des dégâts magiques aux ennemis et les repousse. Ziggs aussi est repoussé mais il ne subit aucun dégât. <br><br>Ziggs peut utiliser cette charge pour hexploser les tourelles ennemies vulnérables.",
+      "cooldownBurn": "20/18/16/14/12"
+    },
+    {
+      "id": "ZiggsE",
+      "name": "Mines Hexplosives",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 48,
+        "full": "ZiggsE.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ziggs disperse des mines de proximité qui explosent au contact des ennemis, leur infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> et les <status>ralentissant</status> de {{ slow*-100 }}% pendant {{ e4 }} sec. Les mines durent {{ mineduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/80/90/100/110",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts de la mine",
+          "Ratio de puissance total",
+          "Ralentissement",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "900",
+      "datavalues": {},
+      "description": "Ziggs disperse des mines de proximité qui explosent au contact des ennemis, leur infligeant des dégâts magiques et les ralentissant. Quand un ennemi déclenche une mine, les mines supplémentaires lui infligent des dégâts réduits.",
+      "cooldownBurn": "16"
+    },
+    {
+      "id": "ZiggsR",
+      "name": "Méga bombe infernale",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 48,
+        "full": "ZiggsR.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Ziggs lance sa création ultime, infligeant <magicDamage>{{ empowereddamage }} pts de dégâts magiques</magicDamage> au centre de l'explosion, ou <magicDamage>{{ blastdamage }} pts de dégâts magiques</magicDamage> à la périphérie de l'explosion.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts dans la zone du souffle",
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "5000",
+      "datavalues": {},
+      "description": "Ziggs déploie sa création ultime, la Méga bombe infernale, et la lance de très loin. Les ennemis dans la zone d'impact principale subissent plus de dégâts que les ennemis plus éloignés.",
+      "cooldownBurn": "120/95/70"
+    }
+  ],
+  "passive": {
+    "name": "Mèche courte",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 384,
+      "y": 48,
+      "full": "ZiggsPassiveReady.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "Périodiquement, la prochaine attaque de base de Ziggs inflige des dégâts magiques supplémentaires. Ce délai est réduit quand Ziggs utilise une compétence."
+  },
+  "created_at": "2025-11-26T15:13:35.674409+00:00",
+  "factions": [
+    "zaun"
+  ],
+  "custom_tags": [
+    "bombardier"
+  ],
+  "gender": "Male",
+  "species": "Yordle",
+  "title_en": "the Hexplosives Expert",
+  "lore_en": "With a love of big bombs and short fuses, the yordle Ziggs is an explosive force of nature. As an inventor's assistant in Piltover, he was bored by his predictable life and befriended a mad, blue-haired bomber named Jinx. After a wild night on the town, Ziggs took her advice and moved to Zaun, where he now explores his fascinations more freely, terrorizing the chem-barons and regular citizens alike in his never ending quest to blow stuff up.",
+  "spells_en": [
+    {
+      "id": "ZiggsQ",
+      "name": "Bouncing Bomb",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 48,
+        "full": "ZiggsQ.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ziggs throws a bouncing bomb that deals <magicDamage>{{ totaldamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Total AP Ratio",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "850",
+      "datavalues": {},
+      "description": "Ziggs throws a bouncing bomb that deals magic damage.",
+      "cooldownBurn": "6/5.5/5/4.5/4"
+    },
+    {
+      "id": "ZiggsW",
+      "name": "Satchel Charge",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 48,
+        "full": "ZiggsW.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ziggs flings an explosive charge that detonates after {{ bombduration }} seconds, or when this ability is <recast>Recast</recast>. It deals <magicDamage>{{ totaldamage }} magic damage</magicDamage> to enemies and <status>Knocks</status> them <status>Back</status>. Ziggs is also knocked away, but takes no damage.<br /><br />Satchel Charge will automatically destroy towers below {{ turretdestroypercent*100 }}% of their Health.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "Tower Destruction Threshold"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Ziggs flings an explosive charge that detonates after a delay, or when this ability is activated again. The explosion deals magic damage to enemies, knocking them away. Ziggs is also knocked away, but takes no damage. <br><br>Ziggs can use the Satchel to hexplode vulnerable enemy turrets.",
+      "cooldownBurn": "20/18/16/14/12"
+    },
+    {
+      "id": "ZiggsE",
+      "name": "Hexplosive Minefield",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 48,
+        "full": "ZiggsE.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ziggs scatters proximity mines that detonate on enemy contact, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> and <status>Slows</status> by {{ slow*-100 }}% for {{ e4 }} seconds. Mines last {{ mineduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/80/90/100/110",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Mine Damage",
+          "Total AP Ratio",
+          "Slow",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "900",
+      "datavalues": {},
+      "description": "Ziggs scatters proximity mines that detonate on enemy contact, dealing magic damage and slowing. Successive mine detonations on the same target deal reduced damage.",
+      "cooldownBurn": "16"
+    },
+    {
+      "id": "ZiggsR",
+      "name": "Mega Inferno Bomb",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 48,
+        "full": "ZiggsR.png",
+        "group": "spell",
+        "sprite": "spell17.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Ziggs hurls his ultimate creation, dealing <magicDamage>{{ empowereddamage }} magic damage</magicDamage> in the center of the blast radius, or <magicDamage>{{ blastdamage }} magic damage</magicDamage> at the edge.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Blast Zone Damage",
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "5000",
+      "datavalues": {},
+      "description": "Ziggs deploys his ultimate creation, the Mega Inferno Bomb, hurling it an enormous distance. Enemies in the primary blast zone take more damage than those farther away.",
+      "cooldownBurn": "120/95/70"
+    }
+  ],
+  "passive_en": {
+    "name": "Short Fuse",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 384,
+      "y": 48,
+      "full": "ZiggsPassiveReady.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "Periodically, Ziggs' next basic attack deals bonus magic damage. This cooldown is reduced whenever Ziggs uses an ability."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Adc",
+    "Mid"
+  ],
+  "skins_en": [
+    {
+      "id": "115000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "115001",
+      "num": 1,
+      "name": "Mad Scientist Ziggs",
+      "chromas": false
+    },
+    {
+      "id": "115002",
+      "num": 2,
+      "name": "Major Ziggs",
+      "chromas": false
+    },
+    {
+      "id": "115003",
+      "num": 3,
+      "name": "Pool Party Ziggs",
+      "chromas": false
+    },
+    {
+      "id": "115004",
+      "num": 4,
+      "name": "Snow Day Ziggs",
+      "chromas": false
+    },
+    {
+      "id": "115005",
+      "num": 5,
+      "name": "Master Arcanist Ziggs",
+      "chromas": false
+    },
+    {
+      "id": "115006",
+      "num": 6,
+      "name": "Battle Boss Ziggs",
+      "chromas": false
+    },
+    {
+      "id": "115007",
+      "num": 7,
+      "name": "Odyssey Ziggs",
+      "chromas": true
+    },
+    {
+      "id": "115014",
+      "num": 14,
+      "name": "Sugar Rush Ziggs",
+      "chromas": true
+    },
+    {
+      "id": "115023",
+      "num": 23,
+      "name": "Hextech Ziggs",
+      "chromas": false
+    },
+    {
+      "id": "115024",
+      "num": 24,
+      "name": "BZZZiggs",
+      "chromas": true
+    },
+    {
+      "id": "115033",
+      "num": 33,
+      "name": "La Ilusión Ziggs",
+      "chromas": true
+    }
+  ]
+}

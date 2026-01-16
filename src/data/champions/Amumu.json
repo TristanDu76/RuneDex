@@ -1,0 +1,495 @@
+{
+  "id": "Amumu",
+  "key": "32",
+  "name": "Amumu",
+  "title": "Momie mélancolique",
+  "version": "15.23.1",
+  "lore": "L'histoire d'Amumu n'est pas un fait établi, mais un ensemble de mythes et de légendes contradictoires, transmis pendant des générations à Shurima. Le seul point sur lequel tous s'accordent est que cette âme solitaire est condamnée par une ancienne malédiction à errer éternellement seul, tout geste d'affection de sa part apportant la ruine, et son contact étant mortel.\r\n\r\nLes légendes principales concernant ses origines sont les suivantes :\r\n\r\n    Le Prince Malade et la Malédiction de la Sorcière :\r\n\r\n        Amumu était le plus jeune enfant de la première grande famille régnante de Shurima, atteint d'une maladie corruptrice.\r\n        Mis en quarantaine, il se lia d'amitié avec une servante qui l'entendait pleurer à travers les murs.\r\n        Un matin, elle brisa la quarantaine pour le réconforter après la mort de son dernier frère, faisant d'Amumu l'Empereur.\r\n        Au moment de leur étreinte, la servante succomba à la maladie. Sa grand-mère, croyant qu'Amumu avait assassiné sa petite-fille, lui jeta une malédiction qui l'emprisonna dans son moment de souffrance, comme un insecte dans de l'ambre.\r\n\r\n    L'Empereur Cruel et l'Œil d'Angor :\r\n\r\n        Amumu était un prince capricieux et cruel, couronné jeune empereur, qui força ses sujets à l'adorer comme un dieu béni par le soleil.\r\n        Il chercha l'Œil d'Angor, un artefact censé accorder la vie éternelle. Il exploita et sacrifia des esclaves pour atteindre le trésor.\r\n        Une fois Amumu entré dans le tombeau, ses esclaves se vengèrent en scellant la porte derrière lui.\r\n        Le pouvoir de l'Œil prolongea sa vie, mais il fut maudit à rester seul à jamais. Devenu fou par l'isolement, il s'enveloppa de bandages et s'échappa des années plus tard lors d'un tremblement de terre, cherchant à se racheter pour ses péchés passés.\r\n\r\n    Le Yordle au Cœur Brisé :\r\n\r\n        Une autre histoire suggère qu'Amumu fut le premier et unique Yordle (créature magique) à régner sur Shurima.\r\n        Il croyait en la bonté innée de l'humanité et jura de vivre comme un mendiant jusqu'à ce qu'il se fasse un véritable ami.\r\n        Des milliers de personnes passèrent devant le Yordle négligé sans jamais lui offrir d'aide. Amumu mourut de la tristesse d'avoir le cœur brisé.\r\n        Son esprit errant chercherait toujours quelqu'un qui pourrait restaurer sa foi en l'humanité.\r\n\r\nMalgré toutes les contradictions, le dénominateur commun est clair : Amumu est une âme brisée, éternellement seule et sans ami. Il est fardeau d'une malédiction qui fait de sa présence un danger. On raconte que par les longues nuits d'hiver, on peut l'entendre pleurer dans le désert, désespérant de ne jamais connaître le réconfort de l'amitié.",
+  "tags": [
+    "Tank",
+    "Support"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 288,
+    "y": 0,
+    "full": "Amumu.png",
+    "group": "champion",
+    "sprite": "champion0.png"
+  },
+  "skins": [
+    {
+      "id": "32000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "32001",
+      "num": 1,
+      "name": "Amumu pharaon",
+      "chromas": false
+    },
+    {
+      "id": "32002",
+      "num": 2,
+      "name": "Amumu de Vancouver",
+      "chromas": false
+    },
+    {
+      "id": "32003",
+      "num": 3,
+      "name": "Emumu",
+      "chromas": false
+    },
+    {
+      "id": "32004",
+      "num": 4,
+      "name": "Amumu remballé",
+      "chromas": false
+    },
+    {
+      "id": "32005",
+      "num": 5,
+      "name": "Amumu quasi-roi du bal",
+      "chromas": false
+    },
+    {
+      "id": "32006",
+      "num": 6,
+      "name": "Petit chevalier Amumu",
+      "chromas": false
+    },
+    {
+      "id": "32007",
+      "num": 7,
+      "name": "Amumu triste droïde",
+      "chromas": false
+    },
+    {
+      "id": "32008",
+      "num": 8,
+      "name": "Amumu fêtard",
+      "chromas": true
+    },
+    {
+      "id": "32017",
+      "num": 17,
+      "name": "Amumu infernal",
+      "chromas": true
+    },
+    {
+      "id": "32023",
+      "num": 23,
+      "name": "Amumu Hextech",
+      "chromas": false
+    },
+    {
+      "id": "32024",
+      "num": 24,
+      "name": "Amumu prince des citrouilles",
+      "chromas": true
+    },
+    {
+      "id": "32034",
+      "num": 34,
+      "name": "Amumu de porcelaine",
+      "chromas": true
+    },
+    {
+      "id": "32044",
+      "num": 44,
+      "name": "Amumu cœur brisé",
+      "chromas": true
+    },
+    {
+      "id": "32053",
+      "num": 53,
+      "name": "Amumu ravioles adorées",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "BandageToss",
+      "name": "Jet de bandelette",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 0,
+        "full": "BandageToss.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "2",
+      "maxrank": 5,
+      "tooltip": "Amumu lance une bandelette dans une direction, se tractant jusqu'au premier ennemi touché, l'<status>étourdissant</status> pendant {{ e2 }} sec et lui infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.<br /><br />Cette compétence a 2 charges.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de rechargement"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1100",
+      "datavalues": {},
+      "description": "Amumu jette une bandelette collante qui étourdit et blesse l'ennemi touché tandis qu'Amumu s'approche de lui.",
+      "cooldownBurn": "3"
+    },
+    {
+      "id": "AuraofDespair",
+      "name": "Désespoir",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 0,
+        "full": "AuraofDespair.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<toggle>Activable/Désactivable :</toggle> Amumu commence à pleurer, infligeant aux ennemis proches <magicDamage>{{ basedamage }} plus {{ totalhealthdamage }}% des PV max en dégâts magiques</magicDamage> chaque seconde et réinitialisant <keywordMajor>Malédiction</keywordMajor>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "8",
+      "costType": " {{ abilityresourcename }} par sec",
+      "leveltip": {
+        "label": [
+          "% des PV en dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }} par sec",
+      "rangeBurn": "300",
+      "datavalues": {},
+      "description": "Saisis par l'angoisse, les ennemis proches perdent chaque seconde un pourcentage de leurs PV max et leurs <font color='#9b0f5f'>Malédictions</font> sont actualisées.",
+      "cooldownBurn": "1"
+    },
+    {
+      "id": "Tantrum",
+      "name": "Colère",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 0,
+        "full": "Tantrum.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> Amumu subit des dégâts physiques réduits de {{ damagereduction }}. De plus, quand Amumu est touché par une attaque, le délai de récupération de cette compétence est réduit de {{ e3 }} sec.<br /><br /><spellActive>Active :</spellActive> Amumu pique une colère, infligeant <magicDamage>{{ tantrumdamage }} pts de dégâts magiques</magicDamage> aux ennemis proches.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "35",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts réduits",
+          "Délai de récupération",
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "350",
+      "datavalues": {},
+      "description": "Les dégâts physiques subis par Amumu sont réduits. Amumu peut libérer sa rage pour infliger des dégâts aux ennemis proches. Chaque fois qu'Amumu est touché, le délai de récupération de Colère est réduit.",
+      "cooldownBurn": "9/8/7/6/5"
+    },
+    {
+      "id": "CurseoftheSadMummy",
+      "name": "Malédiction d'Amumu",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 0,
+        "full": "CurseoftheSadMummy.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Amumu répand ses bandelettes autour de lui, <status>étourdissant</status> les ennemis pendant {{ rduration }} sec, leur infligeant <magicDamage>{{ rcalculateddamage }} pts de dégâts magiques</magicDamage> et appliquant <keywordMajor>Malédiction</keywordMajor>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100/150/200",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Coût en @AbilityResourceName@",
+          "Délai de récupération",
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "550",
+      "datavalues": {},
+      "description": "Amumu emmêle les ennemis proches dans des bandelettes, appliquant sa <keywordMajor>Malédiction</keywordMajor>, leur infligeant des dégâts et les étourdissant.",
+      "cooldownBurn": "150/125/100"
+    }
+  ],
+  "passive": {
+    "name": "Toucher maudit",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 288,
+      "y": 0,
+      "full": "Amumu_Passive.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Les attaques de base d'Amumu <font color='#9b0f5f'>maudissent</font> ses ennemis, leur faisant subir des dégâts bruts supplémentaires chaque fois qu'ils subissent des dégâts magiques."
+  },
+  "created_at": "2025-11-26T15:13:31.919828+00:00",
+  "factions": [
+    "shurima"
+  ],
+  "custom_tags": [
+    "momie",
+    "maudit"
+  ],
+  "gender": "Male",
+  "species": "Undead Yordle",
+  "title_en": "the Sad Mummy",
+  "lore_en": "The story of Amumu is not a single, established fact, but a collection of conflicting myths and legends, passed down through generations in Shurima. The only point of agreement is that this lonely soul is cursed by an ancient spell to wander eternally alone, as any gesture of affection from him brings ruin, and his touch is lethal.\r\n\r\nThe main legends concerning his origins are as follows:\r\n\r\n    The Sick Prince and the Witch's Curse:\r\n\r\n        Amumu was the youngest child of Shurima’s first great ruling family, afflicted by a corrupting disease.\r\n        Quarantined, he befriended a servant girl who heard his cries through the walls.\r\n        One morning, she broke quarantine to comfort him after his last remaining brother died, making Amumu the Emperor.\r\n        Upon embracing him, the servant girl succumbed to the disease. Her grandmother, believing Amumu had murdered her kin, placed a curse upon him, trapping him in his moment of suffering like a locust in amber.\r\n\r\n    The Cruel Emperor and the Eye of Angor:\r\n\r\n        Amumu was a petulant and cruel prince, crowned young emperor, who forced his subjects to worship him as a sun-blessed god.\r\n        He sought the Eye of Angor, an artifact said to grant eternal life. He exploited and sacrificed slaves to reach the treasure.\r\n        Once Amumu entered the tomb, his slaves exacted revenge by sealing the door behind him.\r\n        The Eye's power extended his life, but he was cursed to be forever alone. Driven insane by isolation, he wrapped himself in bandages and escaped years later during an earthquake, seeking to atone for his past sins.\r\n\r\n    The Broken-Hearted Yordle:\r\n\r\n        Another story suggests Amumu was the first and only Yordle (a magical creature) to rule Shurima.\r\n        He believed in the innate goodness of the human heart and swore an oath to live as a beggar until he made one true friend.\r\n        Thousands walked past the disheveled Yordle, but not one offered help. Amumu died of a broken heart due to sadness.\r\n        His wandering spirit is still said to search for someone who might restore his faith in humanity.\r\n\r\nDespite all the contradictions, the common thread is clear: Amumu is a broken soul, eternally alone and friendless. He is burdened by a curse that makes his presence dangerous. It is said that on long winter nights, he can sometimes be heard weeping in the desert, despairing that he will never know the solace of friendship.",
+  "spells_en": [
+    {
+      "id": "BandageToss",
+      "name": "Bandage Toss",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 0,
+        "full": "BandageToss.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "2",
+      "maxrank": 5,
+      "tooltip": "Amumu launches a bandage, pulling himself to the first enemy hit, <status>Stunning</status> them for {{ e2 }} second, and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>.<br /><br />This Ability has 2 charges.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Recharge Time"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1100",
+      "datavalues": {},
+      "description": "Amumu tosses a sticky bandage at a target, stunning and damaging the target while he pulls himself to them.",
+      "cooldownBurn": "3"
+    },
+    {
+      "id": "AuraofDespair",
+      "name": "Despair",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 0,
+        "full": "AuraofDespair.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<toggle>Toggle:</toggle> Amumu begins crying, dealing <magicDamage>{{ basedamage }} plus {{ totalhealthdamage }}% max Health magic damage</magicDamage> to nearby enemies every second and refreshing <keywordMajor>Curse</keywordMajor>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "8",
+      "costType": " {{ abilityresourcename }} per Second",
+      "leveltip": {
+        "label": [
+          "% Health damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }} per Second",
+      "rangeBurn": "300",
+      "datavalues": {},
+      "description": "Overcome by anguish, nearby enemies lose a percentage of their maximum Health each second and have their <font color='#9b0f5f'>Curses</font> refreshed.",
+      "cooldownBurn": "1"
+    },
+    {
+      "id": "Tantrum",
+      "name": "Tantrum",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 0,
+        "full": "Tantrum.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Amumu takes {{ damagereduction }} reduced physical damage. Additionally, when Amumu is hit by an Attack, this Ability's Cooldown is reduced by {{ e3 }} seconds.<br /><br /><spellActive>Active:</spellActive> Amumu throws a tantrum, dealing <magicDamage>{{ tantrumdamage }} magic damage</magicDamage> to nearby enemies.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "35",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage Reduced",
+          "Cooldown",
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "350",
+      "datavalues": {},
+      "description": "Permanently reduces the physical damage Amumu would take. Amumu can unleash his rage, dealing damage to surrounding enemies. Each time Amumu is hit, the cooldown on Tantrum is reduced.",
+      "cooldownBurn": "9/8/7/6/5"
+    },
+    {
+      "id": "CurseoftheSadMummy",
+      "name": "Curse of the Sad Mummy",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 0,
+        "full": "CurseoftheSadMummy.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Amumu flares out his bandages, <status>Stunning</status> for {{ rduration }} seconds, dealing <magicDamage>{{ rcalculateddamage }} magic damage</magicDamage> and applying <keywordMajor>Curse</keywordMajor>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100/150/200",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "@AbilityResourceName@ Cost",
+          "Cooldown",
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "550",
+      "datavalues": {},
+      "description": "Amumu entangles surrounding enemy units in bandages, applying his <keywordMajor>Curse</keywordMajor>, damaging and stunning them.",
+      "cooldownBurn": "150/125/100"
+    }
+  ],
+  "passive_en": {
+    "name": "Cursed Touch",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 288,
+      "y": 0,
+      "full": "Amumu_Passive.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Amumu's basic attacks <font color='#9b0f5f'>Curse</font> his enemies, causing them to take bonus true damage from incoming magic damage."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Jungle",
+    "Support"
+  ],
+  "skins_en": [
+    {
+      "id": "32000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "32001",
+      "num": 1,
+      "name": "Pharaoh Amumu",
+      "chromas": false
+    },
+    {
+      "id": "32002",
+      "num": 2,
+      "name": "Vancouver Amumu",
+      "chromas": false
+    },
+    {
+      "id": "32003",
+      "num": 3,
+      "name": "Emumu",
+      "chromas": false
+    },
+    {
+      "id": "32004",
+      "num": 4,
+      "name": "Re-Gifted Amumu",
+      "chromas": false
+    },
+    {
+      "id": "32005",
+      "num": 5,
+      "name": "Almost-Prom King Amumu",
+      "chromas": false
+    },
+    {
+      "id": "32006",
+      "num": 6,
+      "name": "Little Knight Amumu",
+      "chromas": false
+    },
+    {
+      "id": "32007",
+      "num": 7,
+      "name": "Sad Robot Amumu",
+      "chromas": false
+    },
+    {
+      "id": "32008",
+      "num": 8,
+      "name": "Surprise Party Amumu",
+      "chromas": true
+    },
+    {
+      "id": "32017",
+      "num": 17,
+      "name": "Infernal Amumu",
+      "chromas": true
+    },
+    {
+      "id": "32023",
+      "num": 23,
+      "name": "Hextech Amumu",
+      "chromas": false
+    },
+    {
+      "id": "32024",
+      "num": 24,
+      "name": "Pumpkin Prince Amumu",
+      "chromas": true
+    },
+    {
+      "id": "32034",
+      "num": 34,
+      "name": "Porcelain Amumu",
+      "chromas": true
+    },
+    {
+      "id": "32044",
+      "num": 44,
+      "name": "Heartache Amumu",
+      "chromas": true
+    },
+    {
+      "id": "32053",
+      "num": 53,
+      "name": "Dumpling Darlings Amumu",
+      "chromas": true
+    }
+  ]
+}

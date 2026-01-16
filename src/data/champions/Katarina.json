@@ -1,0 +1,541 @@
+{
+  "id": "Katarina",
+  "key": "55",
+  "name": "Katarina",
+  "title": "Lame sinistre",
+  "version": "15.23.1",
+  "lore": "Katarina Du Couteau est née dans l'une des familles nobles les plus respectées de Noxus. Si sa jeune sœur, Cassiopeia, excellait en politique, Katarina était la fille de son père, le légendaire Général Du Couteau. Son père était un enseignant sévère, exigeant une précision mortelle plutôt qu'une brutalité irréfléchie, et il était notoirement difficile de l'impressionner.\n\nL'enfance de Katarina fut consacrée à l'entraînement rigoureux, faisant d'elle l'arme ultime. Elle testait sa résistance, sa dextérité, et même sa tolérance à la douleur en ingérant des poisons à petites doses. Elle désirait ardemment l'opportunité de servir l'empire et le trône.\n\nSa première mission, donnée par son père, était l'assassinat d'un simple officier subalterne, Demetrius. Katarina fut furieuse de voir ses talents gaspillés sur une cible de si bas étage. Désobéissant aux ordres, elle s'introduisit dans le camp ennemi et égorgea le commandant adverse dans son sommeil. C'était une exécution sans faille, censée apporter la gloire à Noxus et rendre son père fier.\n\nCependant, le plan échoua tragiquement : Demetrius, le sous-officier qu'elle avait épargné, devint le héros vengeur et mena une charge qui coûta la vie à des dizaines de soldats noxiens. Le Général Du Couteau lui-même échappa de peu à la mort.\n\nSon père, furieux, refusa de la regarder. Il lui rappela que les plus grands assassins ne cherchent ni la reconnaissance ni la gloire. Accablée, Katarina s'enfuit.\n\nElle fut attaquée peu après par un autre protégé de son père, envoyé pour la tuer en punition de son échec. Malgré le sang coulant sur son visage, elle réussit à vaincre son assaillant.\n\nKatarina termina sa mission initiale en tuant Demetrius. De retour, elle jeta la tête coupée de sa victime aux pieds de son père. Elle lui avoua qu'elle avait envisagé de le tuer lui, mais avait finalement accepté qu'il avait eu raison d'ordonner sa mort : elle avait échoué en tant qu'assassin, fille, et Noxienne, par arrogance.\n\nAcceptant la conséquence de son échec, elle passa ses doigts sur la profonde cicatrice au-dessus de son œil gauche (infligée par l'assassin de son père). Elle savait qu'elle avait perdu les faveurs du Général Du Couteau, mais elle jura de se racheter, peu importe le prix, et de redevenir l'arme sinistre qu'elle avait toujours eu l'intention d'être au service de l'empire.",
+  "tags": [
+    "Assassin",
+    "Mage"
+  ],
+  "partype": "Aucune",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 0,
+    "y": 0,
+    "full": "Katarina.png",
+    "group": "champion",
+    "sprite": "champion2.png"
+  },
+  "skins": [
+    {
+      "id": "55000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "55001",
+      "num": 1,
+      "name": "Katarina mercenaire",
+      "chromas": false
+    },
+    {
+      "id": "55002",
+      "num": 2,
+      "name": "Katarina carton rouge",
+      "chromas": false
+    },
+    {
+      "id": "55003",
+      "num": 3,
+      "name": "Katarina de Bilgewater",
+      "chromas": false
+    },
+    {
+      "id": "55004",
+      "num": 4,
+      "name": "Katarina mistigri",
+      "chromas": false
+    },
+    {
+      "id": "55005",
+      "num": 5,
+      "name": "Katarina du Haut commandement",
+      "chromas": false
+    },
+    {
+      "id": "55006",
+      "num": 6,
+      "name": "Katarina du désert",
+      "chromas": false
+    },
+    {
+      "id": "55007",
+      "num": 7,
+      "name": "Katarina sucre d'orge",
+      "chromas": false
+    },
+    {
+      "id": "55008",
+      "num": 8,
+      "name": "Katarina du royaume en guerre",
+      "chromas": true
+    },
+    {
+      "id": "55009",
+      "num": 9,
+      "name": "PROJET : Katarina",
+      "chromas": false
+    },
+    {
+      "id": "55010",
+      "num": 10,
+      "name": "Katarina thanatophore",
+      "chromas": false
+    },
+    {
+      "id": "55012",
+      "num": 12,
+      "name": "Katarina de l'Académie du combat",
+      "chromas": true
+    },
+    {
+      "id": "55021",
+      "num": 21,
+      "name": "Katarina lune de sang",
+      "chromas": true
+    },
+    {
+      "id": "55029",
+      "num": 29,
+      "name": "Katarina reine du combat",
+      "chromas": true
+    },
+    {
+      "id": "55037",
+      "num": 37,
+      "name": "Katarina de l'Ouest",
+      "chromas": true
+    },
+    {
+      "id": "55047",
+      "num": 47,
+      "name": "Katarina de la cour féérique",
+      "chromas": true
+    },
+    {
+      "id": "55048",
+      "num": 48,
+      "name": "Katarina de la cour féérique prestige",
+      "chromas": false
+    },
+    {
+      "id": "55059",
+      "num": 59,
+      "name": "Katarina de la Chasse éternelle",
+      "chromas": false
+    },
+    {
+      "id": "55060",
+      "num": 60,
+      "name": "Katarina bal masqué de la Rose noire prestige",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "KatarinaQ",
+      "name": "Lame rebondissante",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 48,
+        "full": "KatarinaQ.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Katarina lance une <keywordMajor>dague</keywordMajor>, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> à la cible et à {{ maxbounces }} ennemis proches. La <keywordMajor>dague</keywordMajor> se plante ensuite dans le sol derrière la cible principale.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts de base",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "625",
+      "datavalues": {},
+      "description": "Katarina lance une <font color='#FFF673'>dague</font> sur une cible. La dague rebondit ensuite sur les ennemis proches avant de tomber au sol.",
+      "cooldownBurn": "11/10/9/8/7"
+    },
+    {
+      "id": "KatarinaW",
+      "name": "Préparation",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 48,
+        "full": "KatarinaW.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Katarina lance une <keywordMajor>dague</keywordMajor> en l'air et gagne <speed>+{{ e4 }}% de vitesse de déplacement</speed> (ce bonus diminue en {{ e2 }} sec).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Vitesse de déplacement",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Katarina augmente sa vitesse de déplacement et lance une <font color='#FFF673'>dague</font> dans les airs.",
+      "cooldownBurn": "15/14/13/12/11"
+    },
+    {
+      "id": "KatarinaEWrapper",
+      "name": "Shunpo",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 96,
+        "full": "KatarinaEWrapper.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Katarina se téléporte en un éclair sur l'allié, l'ennemi ou la <keywordMajor>dague</keywordMajor> ciblés. Si la cible est un ennemi, Katarina lui inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. Sinon, elle frappe l'ennemi le plus proche à portée.<br /><br />Ramasser une <keywordMajor>dague</keywordMajor> réduira de <scaleLevel>{{ daggercooldownreduction }}</scaleLevel> sec (<scaleLevel>{{ tooltipdaggerreduction }}</scaleLevel>) le délai de récupération de cette compétence. Katarina peut se téléporter n'importe où près de la cible.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "725",
+      "datavalues": {},
+      "description": "Katarina se téléporte près de sa cible. S'il s'agit d'un ennemi, elle le frappe. Sinon, elle frappe l'ennemi le plus proche.",
+      "cooldownBurn": "12/11/10/9/8"
+    },
+    {
+      "id": "KatarinaR",
+      "name": "Lotus mortel",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 96,
+        "full": "KatarinaR.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Katarina tournoie et projette rapidement des couteaux sur les 3 champions ennemis les plus proches. Chaque couteau inflige <magicDamage>{{ damagecalc }} pts de dégâts magiques</magicDamage> et <physicalDamage>{{ addamagecalc }} pts de dégâts physiques</physicalDamage> et applique {{ grievousamount*100 }}% d'Hémorragie pendant {{ grievousduration }} sec.<br /><br />Total en {{ duration }} sec à chaque ennemi : <magicDamage>{{ totaldamagecalc }} pts de dégâts magiques</magicDamage> et <physicalDamage>{{ totaladdamagecalc }} pts de dégâts physiques</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts par couteau",
+          "Délai de récupération",
+          "Modificateur de dégâts à l'impact"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "550",
+      "datavalues": {},
+      "description": "Katarina tournoie et projette rapidement des couteaux sur les trois champions ennemis les plus proches, infligeant d'énormes dégâts sur la durée de la canalisation.",
+      "cooldownBurn": "75/60/45"
+    }
+  ],
+  "passive": {
+    "name": "Voracité",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 0,
+      "y": 0,
+      "full": "Katarina_Passive.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Les délais de récupération des compétences de Katarina sont grandement réduits quand un champion qu'elle a blessé récemment meurt.<br><br>Si Katarina ramasse une <font color='#FFF673'>dague</font>, elle s'en sert pour frapper tous les ennemis proches, infligeant des dégâts magiques."
+  },
+  "created_at": "2025-11-26T15:13:33.670998+00:00",
+  "factions": [
+    "noxus"
+  ],
+  "custom_tags": [
+    "lame"
+  ],
+  "gender": "Female",
+  "species": "Human",
+  "title_en": "the Sinister Blade",
+  "lore_en": "Katarina Du Couteau was born into one of the most respected noble families of Noxus. While her younger sister, Cassiopeia, was politically inclined, Katarina was very much her father's daughter, the legendary General Du Couteau. He was a harsh teacher who demanded deadly precision rather than reckless brutality, and was notoriously difficult to impress.\n\nKatarina's childhood was dedicated to rigorous training, honing herself into the ultimate weapon. She yearned for the opportunity to serve the empire and the throne.\n\nHer first assignment from her father was the assassination of a low-ranking line officer named Demetrius. Katarina was livid, feeling her talents were wasted on such a low-born target. Disobeying orders, she infiltrated the enemy camp and slit the enemy commander's throat instead. It was a flawless execution, intended to bring swift victory and make her father proud.\n\nHowever, the plan failed tragically: the spare target, Demetrius, led a berserk charge into her father's encampment. Dozens of Noxian soldiers were slaughtered, and General Du Couteau himself barely escaped with his life.\n\nHer father, beyond furious, refused to look at her. He reminded her that the greatest assassins do not seek recognition or glory. Overwhelmed, Katarina fled into the wilderness.\n\nShe was attacked soon after by another of her father's protégés, sent to kill her as punishment. Despite being bloodied, she defeated her attacker, sustaining a raw, deep gash over her left eye.\n\nKatarina completed her original mission by killing Demetrius. Returning, she tossed Demetrius's severed head at her father's feet. She admitted that, though she hated to admit it, he was right to order her death: she had failed as an assassin and a Noxian due to arrogance.\n\nAccepting the consequence of her failure (symbolized by the scar), she vowed to redeem herself, regardless of the cost—to rededicate her talents to the empire and become the sinister weapon she always intended to be.",
+  "spells_en": [
+    {
+      "id": "KatarinaQ",
+      "name": "Bouncing Blade",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 48,
+        "full": "KatarinaQ.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Katarina throws a <keywordMajor>Dagger</keywordMajor>, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> to the target and {{ maxbounces }} nearby enemies. The <keywordMajor>Dagger</keywordMajor> then ricochets onto the ground behind the primary target.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Base Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "625",
+      "datavalues": {},
+      "description": "Katarina throws a <font color='#FFF673'>Dagger</font> at the target that then bounces to nearby enemies before ricocheting onto the ground.",
+      "cooldownBurn": "11/10/9/8/7"
+    },
+    {
+      "id": "KatarinaW",
+      "name": "Preparation",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 48,
+        "full": "KatarinaW.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Katarina tosses a <keywordMajor>Dagger</keywordMajor> into the air and gains <speed>{{ e4 }}% Move Speed</speed> decaying over {{ e2 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Move Speed",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Katarina gains a burst of Move Speed, tossing a <font color='#FFF673'>Dagger</font> into the air directly above herself.",
+      "cooldownBurn": "15/14/13/12/11"
+    },
+    {
+      "id": "KatarinaEWrapper",
+      "name": "Shunpo",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 96,
+        "full": "KatarinaEWrapper.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Katarina blinks in the wink of an eye to the target ally, enemy, or <keywordMajor>Dagger</keywordMajor>. If it is an enemy, Katarina strikes for <magicDamage>{{ totaldamage }} magic damage</magicDamage> - otherwise she strikes the nearest enemy in range.<br /><br />Picking up a <keywordMajor>Dagger</keywordMajor> will reduce this Ability's Cooldown by <scaleLevel>{{ daggercooldownreduction }}</scaleLevel> seconds (<scaleLevel>{{ tooltipdaggerreduction }}</scaleLevel>). Katarina can blink to any location near the target.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "725",
+      "datavalues": {},
+      "description": "Katarina blinks to the target, striking it if its an enemy, or striking the nearest enemy otherwise.",
+      "cooldownBurn": "12/11/10/9/8"
+    },
+    {
+      "id": "KatarinaR",
+      "name": "Death Lotus",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 96,
+        "full": "KatarinaR.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Katarina becomes a flurry of blades, rapidly attacking the three nearest enemy champions with a flurry of knives. Each knife deals <magicDamage>{{ damagecalc }} magic damage</magicDamage> and <physicalDamage>{{ addamagecalc }} physical damage</physicalDamage>, and applies {{ grievousamount*100 }}% Grievous Wounds for {{ grievousduration }} seconds.<br /><br />Total over {{ duration }} seconds to each enemy: <magicDamage>{{ totaldamagecalc }} magic damage</magicDamage> and <physicalDamage>{{ totaladdamagecalc }} physical damage</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Damage Per Knife",
+          "Cooldown",
+          "On Hit Damage Modifier"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "550",
+      "datavalues": {},
+      "description": "Katarina becomes a flurry of blades, dealing massive magic damage while she channels to the 3 nearest enemy champions.",
+      "cooldownBurn": "75/60/45"
+    }
+  ],
+  "passive_en": {
+    "name": "Voracity",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 0,
+      "y": 0,
+      "full": "Katarina_Passive.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Whenever an enemy champion dies that Katarina has damaged recently, her remaining ability cooldowns are dramatically reduced.<br><br>If Katarina picks up a <font color='#FFF673'>Dagger</font>, she uses it to slash through all nearby enemies, dealing magic damage."
+  },
+  "partype_en": "None",
+  "lanes": [
+    "Mid"
+  ],
+  "skins_en": [
+    {
+      "id": "55000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "55001",
+      "num": 1,
+      "name": "Mercenary Katarina",
+      "chromas": false
+    },
+    {
+      "id": "55002",
+      "num": 2,
+      "name": "Red Card Katarina",
+      "chromas": false
+    },
+    {
+      "id": "55003",
+      "num": 3,
+      "name": "Bilgewater Katarina",
+      "chromas": false
+    },
+    {
+      "id": "55004",
+      "num": 4,
+      "name": "Kitty Cat Katarina",
+      "chromas": false
+    },
+    {
+      "id": "55005",
+      "num": 5,
+      "name": "High Command Katarina",
+      "chromas": false
+    },
+    {
+      "id": "55006",
+      "num": 6,
+      "name": "Sandstorm Katarina",
+      "chromas": false
+    },
+    {
+      "id": "55007",
+      "num": 7,
+      "name": "Slay Belle Katarina",
+      "chromas": false
+    },
+    {
+      "id": "55008",
+      "num": 8,
+      "name": "Warring Kingdoms Katarina",
+      "chromas": true
+    },
+    {
+      "id": "55009",
+      "num": 9,
+      "name": "PROJECT: Katarina",
+      "chromas": false
+    },
+    {
+      "id": "55010",
+      "num": 10,
+      "name": "Death Sworn Katarina",
+      "chromas": false
+    },
+    {
+      "id": "55012",
+      "num": 12,
+      "name": "Battle Academia Katarina",
+      "chromas": true
+    },
+    {
+      "id": "55021",
+      "num": 21,
+      "name": "Blood Moon Katarina",
+      "chromas": true
+    },
+    {
+      "id": "55029",
+      "num": 29,
+      "name": "Battle Queen Katarina",
+      "chromas": true
+    },
+    {
+      "id": "55037",
+      "num": 37,
+      "name": "High Noon Katarina",
+      "chromas": true
+    },
+    {
+      "id": "55047",
+      "num": 47,
+      "name": "Faerie Court Katarina",
+      "chromas": true
+    },
+    {
+      "id": "55048",
+      "num": 48,
+      "name": "Prestige Faerie Court Katarina",
+      "chromas": false
+    },
+    {
+      "id": "55059",
+      "num": 59,
+      "name": "Chosen of the Wolf Katarina",
+      "chromas": false
+    },
+    {
+      "id": "55060",
+      "num": 60,
+      "name": "Prestige Masque of the Black Rose Katarina",
+      "chromas": true
+    }
+  ]
+}

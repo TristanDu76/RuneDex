@@ -1,0 +1,474 @@
+{
+  "id": "Anivia",
+  "key": "34",
+  "name": "Anivia",
+  "title": "Cryophénix",
+  "version": "15.23.1",
+  "lore": "Anivia est un ancien demi-dieu du Freljord, représentant le cycle éternel de la vie, de la mort et de la renaissance. Elle est l'âme élémentaire du Freljord lui-même, un symbole d'espoir et un catalyseur de changement pour les tribus du Nord, qui la vénèrent sous le nom de Cryophénix.\r\n\r\nLes mythes racontent qu'Anivia est née de la glace et des vents les plus froids. Sa naissance aurait apporté la neige dans le monde, ses ailes sont l'origine des vents glaciaux, et son plus grand don fut la création de la Vraie Glace, une substance élémentaire non fondante et extrêmement puissante convoitée par les mages et les guerriers.\r\n\r\nLorsque les premiers mortels arrivèrent au Freljord, Anivia les accueillit. Elle les guida vers des vallées abritées, les aidant à s'établir et à s'endurcir contre les éléments. Elle les surveilla pendant des siècles, et ils la vénérèrent en retour. Elle espérait que ces tribus resteraient unies, mais fut déçue par les luttes intestines et les querelles de sang.\r\n\r\nFace aux menaces extérieures, sa colère est redoutable :\r\n\r\n    La légende raconte qu'un roi du sud ayant tenté de s'emparer des terres du nord fut balayé par une tempête de neige qu'Anivia provoqua et qui dura cent ans et un jour.\r\n\r\n    Une autre saga parle d'un sacrifice qu'elle fit contre une armée de gigantesques Balestriders : sachant qu'elle ne pouvait les tuer, elle se fracassa dans la glace sous leurs pieds pour les ensevelir.\r\n\r\nLe don le plus fondamental d'Anivia est son immortalité cyclique. Les sagas décrivent qu'elle a été abattue et tuée plusieurs fois au cours de l'histoire, mais elle renaît toujours de son œuf de glace tant que le Freljord existe. Chaque renaissance coïncide avec l'aube d'une nouvelle ère. Par conséquent, si son apparition est considérée comme une bénédiction, elle est aussi le signe avant-coureur d'une grande menace qui se profile à l'horizon.\r\n\r\nRécemment, des chamans et des marcheurs des esprits affirment qu'Anivia a éclos de nouveau et qu'elle est apparue devant la nouvelle chef des Avarosans, la Gardienne de Guerre Ashe. Certains y voient un signe qu'Anivia croit qu'Ashe est celle qui pourrait enfin réunir le Freljord. Son retour, cependant, pose la question cruciale : quelle terrible menace l'a obligée à se manifester à nouveau ?",
+  "tags": [
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 336,
+    "y": 0,
+    "full": "Anivia.png",
+    "group": "champion",
+    "sprite": "champion0.png"
+  },
+  "skins": [
+    {
+      "id": "34000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "34001",
+      "num": 1,
+      "name": "Anivia Esprit d'équipe",
+      "chromas": false
+    },
+    {
+      "id": "34002",
+      "num": 2,
+      "name": "Anivia oiseau de proie",
+      "chromas": false
+    },
+    {
+      "id": "34003",
+      "num": 3,
+      "name": "Anivia chasseresse de Noxus",
+      "chromas": false
+    },
+    {
+      "id": "34004",
+      "num": 4,
+      "name": "Anivia Hextech",
+      "chromas": false
+    },
+    {
+      "id": "34005",
+      "num": 5,
+      "name": "Anivia des glaces noires",
+      "chromas": false
+    },
+    {
+      "id": "34006",
+      "num": 6,
+      "name": "Anivia préhistorique",
+      "chromas": false
+    },
+    {
+      "id": "34007",
+      "num": 7,
+      "name": "Anivia reine du carnaval",
+      "chromas": false
+    },
+    {
+      "id": "34008",
+      "num": 8,
+      "name": "Anivia origami",
+      "chromas": true
+    },
+    {
+      "id": "34017",
+      "num": 17,
+      "name": "Anivia oiseau cosmique",
+      "chromas": true
+    },
+    {
+      "id": "34027",
+      "num": 27,
+      "name": "Anivia phénix divin",
+      "chromas": true
+    },
+    {
+      "id": "34037",
+      "num": 37,
+      "name": "Anivamp sorcière",
+      "chromas": true
+    },
+    {
+      "id": "34046",
+      "num": 46,
+      "name": "Anivia héroïne de guerre",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "FlashFrost",
+      "name": "Lance de glace",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 0,
+        "full": "FlashFrost.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Anivia tire un gros bloc de glace, infligeant <magicDamage>{{ totalpassthroughdamage }} pts de dégâts magiques</magicDamage> et <keywordMajor>gelant</keywordMajor> les ennemis pendant {{ slowduration }} sec, ce qui les <status>ralentit</status> de {{ spell.glacialstorm:slowamount }}%. Une fois arrivé au bout de sa portée, le bloc de glace explose, <status>étourdissant</status> les ennemis pendant {{ stunduration }} sec et infligeant <magicDamage>{{ totalexplosiondamage }} pts de dégâts magiques</magicDamage>.<br /><br />Anivia peut <recast>réactiver</recast> cette compétence pour faire exploser le bloc de glace prématurément.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80/85/90/95/100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Dégâts de l'explosion",
+          "Durée de l'étourdissement :",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1075",
+      "datavalues": {},
+      "description": "Anivia invoque une sphère de glace qui fonce vers ses adversaires, gelant et blessant tout le monde sur son passage. Quand la sphère explose, quiconque est à proximité est blessé et étourdi.",
+      "cooldownBurn": "11/10/9/8/7"
+    },
+    {
+      "id": "Crystallize",
+      "name": "Cristallisation",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 0,
+        "full": "Crystallize.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Anivia invoque un mur de glace de {{ e2 }} unités de large. Le mur dure {{ e1 }} sec, puis fond.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Largeur"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "En utilisant l'humidité de l'air, Anivia invoque un mur de glace impénétrable pour bloquer le passage. Le mur ne dure qu'un court moment avant de fondre.",
+      "cooldownBurn": "17"
+    },
+    {
+      "id": "Frostbite",
+      "name": "Gelure",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 0,
+        "full": "Frostbite.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Anivia frappe un ennemi avec un vent glaçant, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. Contre les ennemis <keywordMajor>gelés</keywordMajor>, Anivia inflige <magicDamage>{{ empowereddamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "D'un mouvement d'ailes, Anivia lance une rafale de vent glacé vers sa cible, infligeant des dégâts. Si la cible a récemment été touchée par Lance de glace ou une Tempête glaciale à taille maximale, les dégâts sont doublés.",
+      "cooldownBurn": "4"
+    },
+    {
+      "id": "GlacialStorm",
+      "name": "Tempête glaciale",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 0,
+        "full": "GlacialStorm.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<toggle>Activable/Désactivable :</toggle> Anivia fait tomber une pluie de glace et de grêle dans une zone, <status>ralentissant</status> les ennemis de {{ slowamount }}% et infligeant <magicDamage>{{ totaldamagepersecond }} pts de dégâts magiques par seconde</magicDamage>. La zone affectée s'étend pendant {{ growthtime }} sec.<br /><br />Quand la zone atteint sa taille maximale, elle <keywordMajor>gèle</keywordMajor> les ennemis, les <status>ralentissant</status> de {{ slowpercentempoweredtt }}%, et elle inflige <magicDamage>{{ empowereddamagepersecondtooltiponly }} pts de dégâts magiques par seconde</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " + {{ manacostpersecond }} pts de mana par sec",
+      "leveltip": {
+        "label": [
+          "Dégâts par seconde",
+          "Ralentissement",
+          "Ralentissement du gel",
+          "Coût en mana par seconde",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} + {{ manacostpersecond }} pts de mana par sec",
+      "rangeBurn": "750",
+      "datavalues": {},
+      "description": "Anivia invoque une pluie de glace et de grêle qui blesse ses ennemis et les ralentit.",
+      "cooldownBurn": "4/3/2"
+    }
+  ],
+  "passive": {
+    "name": "Renaissance",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 336,
+      "y": 0,
+      "full": "Anivia_P.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Quand elle subit des dégâts mortels, Anivia se transforme en œuf et revient à la vie avec tous ses PV."
+  },
+  "created_at": "2025-11-26T15:13:31.919828+00:00",
+  "factions": [
+    "freljord"
+  ],
+  "custom_tags": [
+    "cryophénix"
+  ],
+  "gender": "Female",
+  "species": "Spirit",
+  "title_en": "the Cryophoenix",
+  "lore_en": "Anivia is an ancient Freljordian demi-god, representing the eternal cycle of life, death, and rebirth. She is the elemental soul of the Freljord itself, a symbol of hope, and a sacred catalyst for change for the northern tribes, who venerate her as the Cryophoenix.\r\n\r\nMyths say Anivia was born from the coldest ice and the sharpest winds. Her birth supposedly brought snow into the world, her wings are the source of the frigid winds, and her greatest gift was the creation of True Ice, a pure, unmelting, and extremely potent elemental substance coveted by mages and warriors.\r\n\r\nWhen mortals first arrived in the Freljord, Anivia welcomed them. She guided them to sheltered valleys, helping them establish themselves and slowly harden themselves against the elements. She watched over them for centuries, and they, in turn, worshipped her. She hoped these tribes would remain unified, but was disappointed by the rising infighting and blood-feuds.\r\n\r\nAgainst outside threats, her anger is formidable:\r\n\r\n    Legend tells of a greedy southern king who sought dominion over the northlands; Anivia blasted them with a snowstorm that lasted a century and a day.\r\n\r\n    Another saga speaks of a sacrifice she made against an army of colossal Balestriders: knowing she could not slay them, she shattered her own body into the ice beneath their feet to entomb them.\r\n\r\nAnivia's most fundamental gift is her cyclical immortality. Sagas describe that she has been struck down and slain a handful of times throughout history, but she is always reborn from her ice egg as long as the Freljord exists. Each rebirth coincides with the dawning of a new era. Consequently, while her appearance is regarded as a wondrous blessing, it is also the harbinger of a great threat looming on the horizon.\r\n\r\nRecently, shamans and spirit walkers claim that Anivia has hatched once more and appeared before the new leader of the Avarosan, the Warmother Ashe. Some see this as a sign that Anivia believes Ashe may be the one who can finally reunite the Freljord. Her return, however, poses the crucial question: what terrible threat has compelled her to manifest again?",
+  "spells_en": [
+    {
+      "id": "FlashFrost",
+      "name": "Flash Frost",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 0,
+        "full": "FlashFrost.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Anivia fires a massive chunk of ice, dealing <magicDamage>{{ totalpassthroughdamage }} magic damage</magicDamage> and <keywordMajor>Chilling</keywordMajor> enemies for {{ slowduration }} seconds, <status>Slowing</status> them by {{ spell.glacialstorm:slowamount }}%. At the end of its range, the ice detonates, <status>Stunning</status> enemies for {{ stunduration }} seconds and dealing <magicDamage>{{ totalexplosiondamage }} magic damage</magicDamage>.<br /><br />Anivia can <recast>Recast</recast> this ability while the ice flies to detonate it early.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80/85/90/95/100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Detonation Damage",
+          "Stun Duration:",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1075",
+      "datavalues": {},
+      "description": "Anivia brings her wings together and summons a sphere of ice that flies towards her opponents, chilling and damaging anyone in its path. When the sphere explodes it does moderate damage in a radius, stunning anyone in the area.",
+      "cooldownBurn": "11/10/9/8/7"
+    },
+    {
+      "id": "Crystallize",
+      "name": "Crystallize",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 0,
+        "full": "Crystallize.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Anivia summons a wall of ice {{ e2 }} units wide. The wall lasts for {{ e1 }} seconds before it melts.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Width"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Anivia condenses the moisture in the air into an impassable wall of ice to block all movement. The wall only lasts a short duration before it melts.",
+      "cooldownBurn": "17"
+    },
+    {
+      "id": "Frostbite",
+      "name": "Frostbite",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 0,
+        "full": "Frostbite.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Anivia blasts an enemy with a freezing wind, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>. Against <keywordMajor>Chilled</keywordMajor> enemies, Anivia deals <magicDamage>{{ empowereddamage }} magic damage</magicDamage> instead.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "With a flap of her wings, Anivia blasts a freezing gust of wind at her target, dealing damage. If the target was recently hit by Flash Frost or damaged by a fully formed Glacial Storm, the damage they take is doubled.",
+      "cooldownBurn": "4"
+    },
+    {
+      "id": "GlacialStorm",
+      "name": "Glacial Storm",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 0,
+        "full": "GlacialStorm.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<toggle>Toggle:</toggle> Anivia calls forth a driving rain of ice and hail that <status>Slows</status> enemies by {{ slowamount }}% and deals <magicDamage>{{ totaldamagepersecond }} magic damage per second</magicDamage>. The storm increases in size over {{ growthtime }} seconds.<br /><br />When the storm is fully formed, it <keywordMajor>Chills</keywordMajor>, <status>Slows</status> by {{ slowpercentempoweredtt }}%, and does <magicDamage>{{ empowereddamagepersecondtooltiponly }} magic damage per second</magicDamage> instead.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " + {{ manacostpersecond }} Mana per second",
+      "leveltip": {
+        "label": [
+          "Damage Per Second",
+          "Slow",
+          "Chilled Slow Amount",
+          "Mana Cost Per Second",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} + {{ manacostpersecond }} Mana per second",
+      "rangeBurn": "750",
+      "datavalues": {},
+      "description": "Anivia summons a driving rain of ice and hail to damage her enemies and slow their advance.",
+      "cooldownBurn": "4/3/2"
+    }
+  ],
+  "passive_en": {
+    "name": "Rebirth",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 336,
+      "y": 0,
+      "full": "Anivia_P.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Upon taking fatal damage, Anivia reverts to an egg and is reborn with full health."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Mid"
+  ],
+  "skins_en": [
+    {
+      "id": "34000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "34001",
+      "num": 1,
+      "name": "Team Spirit Anivia",
+      "chromas": false
+    },
+    {
+      "id": "34002",
+      "num": 2,
+      "name": "Bird of Prey Anivia",
+      "chromas": false
+    },
+    {
+      "id": "34003",
+      "num": 3,
+      "name": "Noxus Hunter Anivia",
+      "chromas": false
+    },
+    {
+      "id": "34004",
+      "num": 4,
+      "name": "Hextech Anivia",
+      "chromas": false
+    },
+    {
+      "id": "34005",
+      "num": 5,
+      "name": "Blackfrost Anivia",
+      "chromas": false
+    },
+    {
+      "id": "34006",
+      "num": 6,
+      "name": "Prehistoric Anivia",
+      "chromas": false
+    },
+    {
+      "id": "34007",
+      "num": 7,
+      "name": "Festival Queen Anivia",
+      "chromas": false
+    },
+    {
+      "id": "34008",
+      "num": 8,
+      "name": "Papercraft Anivia",
+      "chromas": true
+    },
+    {
+      "id": "34017",
+      "num": 17,
+      "name": "Cosmic Flight Anivia",
+      "chromas": true
+    },
+    {
+      "id": "34027",
+      "num": 27,
+      "name": "Divine Phoenix Anivia",
+      "chromas": true
+    },
+    {
+      "id": "34037",
+      "num": 37,
+      "name": "Bewitching Batnivia",
+      "chromas": true
+    },
+    {
+      "id": "34046",
+      "num": 46,
+      "name": "Victorious Anivia",
+      "chromas": true
+    }
+  ]
+}

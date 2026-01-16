@@ -1,0 +1,364 @@
+{
+  "id": "Briar",
+  "key": "233",
+  "name": "Briar",
+  "title": "Faim insatiable",
+  "version": "15.23.1",
+  "lore": "Briar est née près de la fin du règne du Grand Général Boram Darkwill, conçue par la Rose noire et ses hémomanciens pour être une nouvelle forme d'arme vivante, alimentée par le sang et destinée à chasser sans avoir besoin de nourriture ou d'eau. Cependant, ses créateurs obtinrent une créature guidée par un seul et unique désir : manger (le sang).\r\n\r\nSa première mission fut un échec sanglant et frénétique. La Rose noire jugea Briar trop dangereuse à utiliser, mais trop puissante à détruire. Pour la contrôler, ils conçurent un pilori spécial verrouillé par une gemme hémolithe, destiné à la contenir et à concentrer son esprit. Une fois enchaînée, elle fut déployée lors du coup d'État de Jericho Swain contre Darkwill. Briar fut libérée de son pilori, mais elle dévoça immédiatement son gardien et tous ceux qui étaient proches, sauf sa cible, Swain.\r\n\r\nAprès une capture ardue, les gardes de Swain réussirent à réactiver le pilori et à l'enfermer. Seule dans sa cellule, Briar était torturée par une faim lancinante (elle ne pouvait pas mourir de faim, mais l'absence de sang frais l'affaiblissait). Elle entendit bientôt les plaintes et les cris des autres armes vivantes capturées autour d'elle, qui ne parlaient que de leur soif de sang (hemomania).\r\n\r\nPour Briar, cette mono-obsession était d'un ennui mortel. Craignant que sa propre frénésie la rende aussi simple d'esprit et ennuyeuse que ses voisins, elle se résigna à une solitude apathique. Les années passèrent, lui permettant de réfléchir au monde extérieur.\r\n\r\nUn jour, en jouant avec son pilori, elle le desserra par inadvertance, découvrant le mécanisme de l'hémolithe. Elle réalisa qu'être sous contrôle était aussi dangereux qu'être hors de contrôle. Son nouveau but : trouver l'équilibre en décidant elle-même quand se déchaîner.\r\n\r\nElle mit au point un plan pour attirer un garde près de sa cellule et, avec le sang de celui-ci, elle se libéra.\r\n\r\nAujourd'hui, l'arme vivante rôde dans les rues de Noxus, le pilori de nouveau verrouillé... jusqu'à ce qu'elle décide de le déverrouiller. Elle s'acclimate au monde extérieur, apprenant avidement, faisant de nouvelles découvertes, et savourant chaque occasion de se déchaîner, cherchant à satisfaire sa faim de sang et de connaissances, bien décidée à ne jamais devenir l'arme simple et ennuyeuse que la Rose noire voulait qu'elle soit.",
+  "tags": [
+    "Fighter",
+    "Assassin"
+  ],
+  "partype": "Fureur",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 432,
+    "y": 48,
+    "full": "Briar.png",
+    "group": "champion",
+    "sprite": "champion0.png"
+  },
+  "skins": [
+    {
+      "id": "233000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "233001",
+      "num": 1,
+      "name": "Briar ville démoniaque",
+      "chromas": true
+    },
+    {
+      "id": "233010",
+      "num": 10,
+      "name": "Briar primordienne",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "BriarQ",
+      "name": "À table !",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 48,
+        "full": "BriarQ.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Briar bondit sur une cible, l'<status>étourdissant</status> pendant {{ stunduration }} sec, lui infligeant <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> et réduisant son <scaleArmor>armure</scaleArmor> et sa <scaleMR>résistance magique</scaleMR> de {{ shredpercent*100 }}% pendant {{ shredduration }} sec.<br /><br /><rules>Sous l'effet de <keywordMajor>Folie sanguinaire</keywordMajor>, Briar ne priorise plus les champions si la compétence vise un sbire ou un monstre.</rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "% des PV actuels.",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Réduction d'armure et de résistance magique",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Coûte {{ spell.briarp:currenthealthpercentcost*100 }}% des PV actuels.",
+      "rangeBurn": "475",
+      "datavalues": {},
+      "description": "Briar bondit sur une unité, et frappe les ennemis avec un méchant coup de pied, les étourdissant et brisant leur armure.",
+      "cooldownBurn": "13/12/11/10/9"
+    },
+    {
+      "id": "BriarW",
+      "name": "Folie sanguinaire / Juste un croc",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 48,
+        "full": "BriarW.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Briar bondit et entre dans une <keywordMajor>Folie sanguinaire</keywordMajor>. Elle applique une provocation sur elle-même contre l'ennemi le plus proche pendant {{ berserkduration }} sec, en priorisant les champions. Tant qu'elle est dans une <keywordMajor>Folie sanguinaire</keywordMajor>, elle gagne <attackSpeed>+{{ berserkas*100 }}% de vitesse d'attaque</attackSpeed> et <speed>+{{ berserkms*100 }}% de vitesse de déplacement</speed>, et ses attaques infligent <physicalDamage>{{ totalaoedamage }} pts de dégâts physiques</physicalDamage> aux ennemis autour de sa cible.<br /><br />Briar peut <recast>relancer</recast> cette compétence pour renforcer sa prochaine attaque. Cela inflige <physicalDamage>{{ totalattackbonusdamage }} + {{ totalattackpercentmissinghealth }}% des PV manquants en dégâts physiques</physicalDamage> et <healing>rend à Briar des PV équivalents à {{ attackmaxhpheal }} + {{ attackhealpercent*100 }}% des dégâts infligés</healing>.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "% des PV actuels.",
+      "leveltip": {
+        "label": [
+          "Vitesse d'attaque",
+          "Vitesse de déplacement",
+          "Ratio des dégâts de zone en fonction des dégâts d'attaque",
+          "Dégâts",
+          "Soins",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Coûte {{ spell.briarp:currenthealthpercentcost*100 }}% des PV actuels.",
+      "rangeBurn": "350",
+      "datavalues": {},
+      "description": "Briar bondit en avant et fait éclater son pilori. Elle succombe à la Folie sanguinaire et poursuit sans relâche l'ennemi le plus proche (en priorisant les champions). Sous l'effet de la frénésie, ses vitesses de déplacement et d'attaque augmentent et ses attaques infligent des dégâts de zone autour de sa cible.<br><br>Briar peut réactiver la compétence pour prendre un CROC sur sa cible à sa prochaine attaque, ce qui inflige des dégâts supplémentaires en fonction des PV manquants et soigne Briar proportionnellement aux dégâts qu'elle inflige.",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "BriarE",
+      "name": "Cri sanglant",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 48,
+        "full": "BriarE.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<charge>Début de la charge</charge> : Briar sort de sa <keywordMajor>Folie sanguinaire</keywordMajor> et rassemble de l'énergie, ce qui réduit les dégâts qu'elle subit de {{ drpercent }}% et lui rend <healing>{{ percentmaxhpheal }} PV</healing> en 1 sec.<br /><br /><release>Relâchement</release> : Briar pousse un cri qui inflige jusqu'à <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage> aux ennemis en fonction de la durée de la charge et les <status>ralentit</status> de {{ slowpercent*100 }}% pendant {{ slowduration }} sec. Lorsque le cri est entièrement chargé, il <status>repousse</status> les ennemis, infligeant <magicDamage>{{ wallhitdamage }} pts de dégâts magiques</magicDamage> à ceux qui touchent un mur et les <status>étourdissant</status> pendant {{ wallstunduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "% des PV actuels.",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Dégâts supplémentaires",
+          "Ratio de soins"
+        ]
+      },
+      "resource": "Coûte {{ spell.briarp:currenthealthpercentcost*100 }}% des PV actuels.",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Briar récupère ses esprits, se libère de la Folie sanguinaire et canalise son énergie dans un puissant cri qui inflige des dégâts et ralentit les ennemis. Lorsqu'elle charge son cri, les dégâts qu'elle subit sont réduits et elle se soigne d'une partie de ses PV max. Un cri entièrement chargé repousse les ennemis, inflige des dégâts supplémentaires et étourdit ceux qui touchent un mur.",
+      "cooldownBurn": "16"
+    },
+    {
+      "id": "BriarR",
+      "name": "Vol mortel",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 48,
+        "full": "BriarR.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Briar lance l'hémolithe de son pilori à travers la carte et s'envole jusqu'au premier ennemi touché par la gemme, le marquant comme sa proie. Lorsqu'elle atterrit, elle inflige <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage> à tout ce qui l'entoure et oblige les ennemis qui ne sont pas sa proie à <status>fuir</status> pendant {{ fearduration }} sec. Elle rentre ensuite dans une <keywordMajor>Folie sanguinaire</keywordMajor> et pourchasse sa proie jusqu'à la mort. Pendant la durée de l'effet, elle gagne +{{ totalresists }} <scaleArmor>armure</scaleArmor> et <scaleMR>résistance magique</scaleMR>, +{{ lifestealpercent*100 }}% de vol de vie et <speed>+{{ extramovespeedpercent*100 }}% de vitesse de déplacement</speed> bonus.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "% des PV actuels.",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Vol de vie",
+          "Vitesse de déplacement",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Coûte {{ spell.briarp:currenthealthpercentcost*100 }}% des PV actuels.",
+      "rangeBurn": "12000",
+      "datavalues": {},
+      "description": "Briar lance l'hémolithe de son pilori à travers la carte, marquant le premier champion ennemi touché comme sa proie. Briar vole jusqu'à lui, effrayant les autres ennemis proches à son arrivée, et entre dans un état d'hémomanie complète. Elle pourchasse sa proie jusqu'à la mort. Elle gagne les avantages de Folie sanguinaire ainsi que de l'armure, de la résistance magique, du vol de vie et de la vitesse de déplacement supplémentaires.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive": {
+    "name": "Malédiction écarlate",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 432,
+      "y": 48,
+      "full": "BriarP.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Les attaques et compétences de Briar infligent un saignement cumulable qui la soigne d'une partie des dégâts qu'il inflige. Du fait de sa faim permanente, Briar manque de régénération naturelle des PV, mais moins elle a de PV, plus ses soins sont renforcés."
+  },
+  "created_at": "2025-11-26T15:13:32.327162+00:00",
+  "factions": [
+    "noxus"
+  ],
+  "custom_tags": [
+    "combattante",
+    "arme-biologique"
+  ],
+  "gender": "Female",
+  "species": "Magically Altered Human",
+  "title_en": "the Restrained Hunger",
+  "lore_en": "Briar was conceived near the end of Grand General Boram Darkwill's reign, created by the Black Rose and its hemomancers to be a new kind of living weapon, fueled by blood and designed to hunt targets without needing food or water. However, her creators got a creature driven by one singular desire: to eat (blood).\r\n\r\nHer first mission ended in a frenzied, gory failure. The Black Rose deemed Briar too dangerous to use but too powerful to destroy. To control her, they devised a special pillory locked by a hemolith gemstone, intended to restrain and focus her mind. Once shackled, she was deployed during Jericho Swain's coup against Darkwill. Briar was released from her pillory, but immediately devoured her handler and everyone nearby—everyone except her target, Swain.\r\n\r\nAfter an arduous capture, Swain's guards managed to re-activate the pillory and lock her away. Alone in her cell, Briar was plagued by a gnawing hunger (she couldn't die from starvation, but the absence of fresh blood weakened her). She soon heard the wails and cries of the other captured living weapons around her, who talked of nothing but their bloodlust (hemomania).\r\n\r\nTo Briar, this single-minded obsession was boringly monotonous. Fearing that her own frenzy would make her as single-minded and boring as her neighbors, she resigned herself to listless solitude. Years passed, allowing her to reflect on the outside world.\r\n\r\nOne day, while toying with her pillory, she inadvertently loosened it, discovering the hemolith's mechanism. She realized that being under control was just as dangerous as being out of control. Her new goal: to strike a balance by deciding herself when to unleash the frenzy.\r\n\r\nShe devised a plan to lure a guard close to her cell and, using his blood, she broke free.\r\n\r\nNow, the living weapon gleefully roams the streets of Noxus, the pillory locked back in place—until she decides to unlock it. She is acclimating to the outside world, eagerly learning all she can, making new friends and discoveries, and relishing every opportunity to unleash her frenzy, determined to satisfy her hunger for both blood and knowledge, and committed to never becoming the simple, boring weapon the Black Rose intended her to be.",
+  "spells_en": [
+    {
+      "id": "BriarQ",
+      "name": "Head Rush",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 48,
+        "full": "BriarQ.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Briar leaps to a target, <status>Stunning</status> it for {{ stunduration }} seconds, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> and reducing {{ shredpercent*100 }}% <scaleArmor>Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR> for {{ shredduration }} seconds.<br /><br /><rules>Briar will stop prioritizing champions if she casts this Ability on a minion or monster during <keywordMajor>Blood Frenzy</keywordMajor>.</rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "% of current Health",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Armor and Magic Resist Shred",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ spell.briarp:currenthealthpercentcost*100 }}% of current Health",
+      "rangeBurn": "475",
+      "datavalues": {},
+      "description": "Briar leaps to a unit and hits enemies with The Heel Wheel (of Pain), stunning them and breaking their Armor.",
+      "cooldownBurn": "13/12/11/10/9"
+    },
+    {
+      "id": "BriarW",
+      "name": "Blood Frenzy / Snack Attack",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 48,
+        "full": "BriarW.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Briar leaps and enters a <keywordMajor>Blood Frenzy</keywordMajor>, self-taunting to the nearest enemy for {{ berserkduration }} seconds, prioritizing Champions. While in <keywordMajor>Blood Frenzy</keywordMajor> she gains <attackSpeed>{{ berserkas*100 }}% Attack Speed</attackSpeed> and <speed>{{ berserkms*100 }}% Move Speed</speed>, and her Attacks deal <physicalDamage>{{ totalaoedamage }} physical damage</physicalDamage> to enemies surrounding her target.<br /><br />Briar can <recast>Recast</recast> this Ability to empower her next Attack. It deals <physicalDamage>{{ totalattackbonusdamage }} + {{ totalattackpercentmissinghealth }}% missing Health physical damage</physicalDamage> and <healing>heals Briar for {{ attackmaxhpheal }} + {{ attackhealpercent*100 }}% of the damage dealt</healing>.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "% of current Health",
+      "leveltip": {
+        "label": [
+          "Attack Speed",
+          "Move Speed",
+          "Area Damage AD Ratio",
+          "Damage",
+          "Healing",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ spell.briarp:currenthealthpercentcost*100 }}% of current Health",
+      "rangeBurn": "350",
+      "datavalues": {},
+      "description": "Briar leaps forward and shatters her pillory, entering a Blood Frenzy that causes her to relentlessly pursue the nearest enemy (prioritizing champions). While frenzied, she gains increased Attack Speed and Move Speed, and her attacks deal damage in an area around her target.<br><br>Briar can reactivate this ability while frenzied to take a CHOMP out of her target on her next attack, dealing additional damage based on their missing Health, and healing Briar based on the damage she deals.",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "BriarE",
+      "name": "Chilling Scream",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 48,
+        "full": "BriarE.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<charge>Begin Charging:</charge> Briar removes <keywordMajor>Blood Frenzy</keywordMajor> and gathers energy, gaining {{ drpercent }}% damage reduction and restoring <healing>{{ percentmaxhpheal }} Health</healing> over 1 second.<br /><br /><release>Release:</release> Briar unleashes a scream that deals up to <magicDamage>{{ damage }} magic damage</magicDamage> based on time charged, and <status>Slows</status> by {{ slowpercent*100 }}% for {{ slowduration }} seconds. When fully charged, the scream <status>Knocks Back</status> enemies, dealing <magicDamage>{{ wallhitdamage }} magic damage</magicDamage> to those who hit a wall and <status>Stunning</status> them for {{ wallstunduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "% of current Health",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Additional Damage",
+          "Heal Ratio"
+        ]
+      },
+      "resource": "{{ spell.briarp:currenthealthpercentcost*100 }}% of current Health",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Briar refocuses her mind, removing Blood Frenzy and channeling energy into a powerful scream that damages and slows enemies. While charging, she takes reduced damage and heals for a portion of her max Health. A fully charged scream knocks foes back, dealing additional damage and stunning those who collide with a wall.",
+      "cooldownBurn": "16"
+    },
+    {
+      "id": "BriarR",
+      "name": "Certain Death",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 48,
+        "full": "BriarR.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Briar kicks her pillory's hemolith gemstone and flies to the location of the first champion it hits, marking them as her prey. On landing, she deals <magicDamage>{{ damage }} magic damage</magicDamage> to everything nearby and causes enemies who are not her prey to <status>Flee</status> for {{ fearduration }} seconds. She then enters an empowered <keywordMajor>Blood Frenzy</keywordMajor> and will pursue her prey until death. During this time, she gains {{ totalresists }} <scaleArmor>Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR>, {{ lifestealpercent*100 }}% Lifesteal, and an additional <speed>{{ extramovespeedpercent*100 }}% Move Speed</speed>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "% of current Health",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Life Steal",
+          "Move Speed",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ spell.briarp:currenthealthpercentcost*100 }}% of current Health",
+      "rangeBurn": "12000",
+      "datavalues": {},
+      "description": "Briar kicks her pillory's hemolith gemstone, marking the first champion it hits as her prey. She then beelines straight to them, fearing other surrounding enemies upon arriving at her target, and enters a state of complete hemomania. She will pursue her prey until death, gaining the benefits of Blood Frenzy as well as additional Armor, Magic Resistance, Life Steal, and Move Speed.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Crimson Curse",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 432,
+      "y": 48,
+      "full": "BriarP.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Briar's attacks and abilities apply a stacking bleed that heals her for a portion of the damage it deals. Perpetually hungry, she gains increased healing based on her missing Health, but lacks innate Health Regeneration."
+  },
+  "partype_en": "Fury",
+  "lanes": [
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "233000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "233001",
+      "num": 1,
+      "name": "Street Demons Briar",
+      "chromas": true
+    },
+    {
+      "id": "233010",
+      "num": 10,
+      "name": "Primordian Briar",
+      "chromas": true
+    }
+  ]
+}

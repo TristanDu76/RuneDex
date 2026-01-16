@@ -1,0 +1,429 @@
+{
+  "id": "Viktor",
+  "key": "112",
+  "name": "Viktor",
+  "title": "Héraut de l'arcane",
+  "version": "15.23.1",
+  "lore": "Passant d'être humain maladif à un être entièrement biomécanique, Viktor a adopté sa glorieuse évolution et est devenu une sorte de messie pour ses adeptes. Il a sacrifié sa propre humanité, convaincu qu'éliminer ses émotions éliminerait ses souffrances. Il cherche désormais à apporter la révélation du cœur Hextech au reste du monde, et ce même si ce dernier se révèle incapable d'en comprendre les bénéfices. Après tout, pour ce maître de l'arcane, la violence n'est rien d'autre qu'une variable nécessaire pour équilibrer l'équation ultime.",
+  "tags": [
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 96,
+    "y": 0,
+    "full": "Viktor.png",
+    "group": "champion",
+    "sprite": "champion5.png"
+  },
+  "skins": [
+    {
+      "id": "112000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "112001",
+      "num": 1,
+      "name": "Viktor ex machina",
+      "chromas": false
+    },
+    {
+      "id": "112002",
+      "num": 2,
+      "name": "Viktor prototype",
+      "chromas": false
+    },
+    {
+      "id": "112003",
+      "num": 3,
+      "name": "Viktor créateur",
+      "chromas": false
+    },
+    {
+      "id": "112004",
+      "num": 4,
+      "name": "Viktor thanatophore",
+      "chromas": false
+    },
+    {
+      "id": "112005",
+      "num": 5,
+      "name": "Viktor psychoguerrier",
+      "chromas": true
+    },
+    {
+      "id": "112014",
+      "num": 14,
+      "name": "Viktor de l'Ouest",
+      "chromas": true
+    },
+    {
+      "id": "112024",
+      "num": 24,
+      "name": "Viktor sauveur d'Arcane",
+      "chromas": false
+    },
+    {
+      "id": "112025",
+      "num": 25,
+      "name": "Viktor héraut des machines",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "ViktorQ",
+      "name": "Siphonnage",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 96,
+        "full": "ViktorQ.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Viktor frappe un ennemi, lui infligeant <magicDamage>{{ totalmissiledamage }} pts de dégâts magiques</magicDamage>. Il obtient alors un <shield>bouclier de {{ shieldlevelscaling }} PV</shield> pendant {{ buffduration }} sec.<br /><br />La prochaine attaque de Viktor dans les 4 sec inflige <magicDamage>{{ attacktotaldmg }} pts de dégâts magiques</magicDamage>.<br /><br /><keywordMajor>Amélioration</keywordMajor> : Viktor obtient un <shield>bouclier de {{ totalaugmentedshieldvalue }} PV</shield>, et il gagne également +<speed>{{ augmentmovespeedbonus }}% de vitesse de déplacement</speed> pendant {{ buffduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "45/50/55/60/65",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@",
+          "Dégâts du projectile",
+          "Dégâts de l'attaque"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Viktor inflige des dégâts magiques à une unité ennemie, obtient un bouclier et renforce sa prochaine attaque de base.<br><br>Amélioration : le bouclier de Siphonnage est augmenté de 60% et Viktor gagne de la vitesse de déplacement bonus après le lancement.<br>",
+      "cooldownBurn": "9/8/7/6/5"
+    },
+    {
+      "id": "ViktorW",
+      "name": "Champ gravitationnel",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 96,
+        "full": "ViktorW.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Viktor déploie un dispositif de capture gravitationnel qui dure {{ fieldduration }} sec, <status>ralentissant</status> de {{ slowpotency*-1 }}% les ennemis dans la zone. Les ennemis qui restent dans la zone pendant 1.25 sec sont <status>étourdis</status> pendant {{ stunduration }} sec.<br /><br /><keywordMajor>Amélioration - Passive :</keywordMajor> les compétences de Viktor <status>ralentissent</status> les ennemis de {{ augmentslow }}% pendant 1 sec.<br /><br /><br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "65",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Ralentissement"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Viktor crée un champ gravitationnel qui ralentit les ennemis dans son rayon d'action. Les ennemis qui restent trop longtemps dans le champ sont étourdis.<br><br>Amélioration : les compétences de Viktor ralentissent les ennemis touchés.<br>",
+      "cooldownBurn": "17/16/15/14/13"
+    },
+    {
+      "id": "ViktorE",
+      "name": "Rayon Hextech",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 96,
+        "full": "ViktorE.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Viktor tire un rayon Hextech dans la direction de son choix, infligeant <magicDamage>{{ laserdamage }} pts de dégâts magiques</magicDamage> à tous les ennemis touchés.<br /><br /><keywordMajor>Amélioration :</keywordMajor> le rayon Hextech provoque une explosion dans son sillage, infligeant <magicDamage>{{ aftershockdamage }} pts de dégâts magiques</magicDamage>.<br /><br /><br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/70/80/90/100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts (Rayon Hextech)",
+          "Dégâts (explosion)",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "525",
+      "datavalues": {},
+      "description": "Viktor utilise son bras biomécanique pour tirer un rayon Hextech en ligne droite, infligeant des dégâts à tous les ennemis sur son passage.<br><br>Amélioration : le rayon Hextech provoque une explosion dans son sillage, infligeant des dégâts magiques.<br>",
+      "cooldownBurn": "12/11/10/9/8"
+    },
+    {
+      "id": "ViktorR",
+      "name": "Tempête arcanique",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 96,
+        "full": "ViktorR.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Viktor crée une tempête arcanique dans une zone pendant {{ stormduration }} sec, infligeant instantanément <magicDamage>{{ initialburstdamage }} pts de dégâts magiques</magicDamage>, puis infligeant <magicDamage>{{ subsequentburstdamage }} pts de dégâts magiques</magicDamage> par seconde aux ennemis proches. La tempête suit automatiquement les champions qu'elle a récemment blessés.<br /><br /><recast>Réactivation</recast> : Viktor peut manuellement déplacer la tempête.<br /><br /><keywordMajor>Amélioration</keywordMajor> : la tempête se déplace {{ augmentboost*100 }}% plus vite. Quand un champion meurt après qu'elle lui a infligé des dégâts, elle grandit et sa durée est augmentée de {{ tooltip_durationextension }} sec (jusqu'à {{ maxgrowths }} fois).<br /><br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts initiaux",
+          "Dégâts périodiques"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Viktor crée une tempête arcanique dans une zone, infligeant des dégâts magiques et interrompant les canalisations ennemies. La tempête inflige périodiquement des dégâts magiques à tous les ennemis proches et peut être redirigée par Viktor.<br><br>Amélioration : la tempête arcanique se déplace 25% plus vite. Quand un champion meurt après qu'elle lui a infligé des dégâts, elle grandit et sa durée est augmentée.<br><br>",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive": {
+    "name": "Glorieuse évolution",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 96,
+      "y": 0,
+      "full": "Viktor_Passive.ViktorVGU.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "Viktor gagne des fragments Hextech chaque fois qu'il tue un ennemi. Tous les 100 fragments Hextech, Viktor améliore définitivement une de ses compétences actives. Après avoir amélioré toutes ses compétences de base, il peut récupérer 100 fragments Hextech pour améliorer sa compétence ultime."
+  },
+  "created_at": "2025-11-26T15:13:35.521432+00:00",
+  "factions": [
+    "zaun",
+    "piltover"
+  ],
+  "custom_tags": [
+    "évolution"
+  ],
+  "gender": "Male",
+  "species": "Cyborg",
+  "title_en": "the Herald of the Arcane",
+  "lore_en": "The fully biomechanical evolution of his former self, Viktor has embraced his Glorious Evolution and become something of a messiah to his followers. He sacrificed his own humanity under the logic that eliminating emotion would thereby eliminate suffering—and now seeks to bring the revelation of the hexcore to the rest of the world, even if they're incapable of understanding the benefit. After all, to this master of the arcane, violence is merely a variable necessary to balance the ultimate equation.",
+  "spells_en": [
+    {
+      "id": "ViktorQ",
+      "name": "Siphon Power",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 96,
+        "full": "ViktorQ.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Viktor blasts an enemy, dealing <magicDamage>{{ totalmissiledamage }} magic damage</magicDamage> and granting Viktor <shield>{{ shieldlevelscaling }} Shield</shield> for {{ buffduration }} seconds.<br /><br />Viktor's next Attack within 4 seconds deals <magicDamage>{{ attacktotaldmg }} magic damage</magicDamage>.<br /><br /><keywordMajor>Upgraded:</keywordMajor> Grants <shield>{{ totalaugmentedshieldvalue }} Shield</shield> and Viktor additionally gains <speed>{{ augmentmovespeedbonus }}% Move Speed</speed> for {{ buffduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "45/50/55/60/65",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "@AbilityResourceName@ Cost",
+          "Damage (Missile)",
+          "Damage (Attack)"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Viktor blasts an enemy unit with magic damage, which grants him a shield and empowers his next basic attack.<br><br>Augment: Siphon Power's shield is increased by 60% and Viktor gains bonus move speed after casting the Ability.<br>",
+      "cooldownBurn": "9/8/7/6/5"
+    },
+    {
+      "id": "ViktorW",
+      "name": "Gravity Field",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 96,
+        "full": "ViktorW.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Viktor deploys a gravitational imprisonment device for {{ fieldduration }} seconds, <status>Slowing</status> enemies inside it by {{ slowpotency*-1 }}%. Enemies who remain within its radius for 1.25 seconds are <status>Stunned</status> for {{ stunduration }} seconds.<br /><br /><keywordMajor>Upgraded Passive:</keywordMajor> Viktor's Abilities <status>Slow</status> by {{ augmentslow }}% for 1 second.<br /><br /><br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "65",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Movement Slow"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Viktor conjures a heavy gravitational field that slows enemies caught within its radius. Enemies who stay in the field for too long become stunned.<br><br>Augment: Viktor's spells apply a slow to enemies.<br>",
+      "cooldownBurn": "17/16/15/14/13"
+    },
+    {
+      "id": "ViktorE",
+      "name": "Hextech Ray",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 96,
+        "full": "ViktorE.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Viktor fires a hextech ray in a chosen direction, dealing <magicDamage>{{ laserdamage }} magic damage</magicDamage> to any enemies it hits.<br /><br /><keywordMajor>Upgraded:</keywordMajor> An aftershock follows Hextech Ray, dealing <magicDamage>{{ aftershockdamage }} magic damage</magicDamage>.<br /><br /><br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/70/80/90/100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage (Hextech Ray)",
+          "Damage (Aftershock)",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "525",
+      "datavalues": {},
+      "description": "Viktor uses his biomechanical arm to fire a Hextech Ray that cuts across the field in a line, dealing damage to all enemies in its path.<br><br>Augment: An explosion follows in the Hextech Ray's wake, dealing magic damage.<br>",
+      "cooldownBurn": "12/11/10/9/8"
+    },
+    {
+      "id": "ViktorR",
+      "name": "Arcane Storm",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 96,
+        "full": "ViktorR.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Viktor conjures an Arcane Storm in an area for {{ stormduration }} seconds, which instantly deals <magicDamage>{{ initialburstdamage }} magic damage</magicDamage> followed by <magicDamage>{{ subsequentburstdamage }} magic damage</magicDamage> per second to surrounding enemies. The storm automatically follows champions it has recently damaged.<br /><br /><recast>Recast:</recast> Viktor can manually move the storm.<br /><br /><keywordMajor>Upgraded:</keywordMajor> The storm moves {{ augmentboost*100 }}% faster. If a champion that the storm has damaged dies, the storm increases its size and its duration by {{ tooltip_durationextension }} seconds (up to {{ maxgrowths }} times).<br /><br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage (Initial Burst)",
+          "Damage (Periodic Ticks)"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Viktor conjures an Arcane Storm on the field, dealing magic damage and interrupting enemy channels. The storm periodically does magic damage to all nearby enemies and can be redirected by Viktor.<br><br>Augment: The Arcane Storm moves 25% faster, and whenever champions die after taking damage from it, the storm grows and increases in its duration.<br><br>",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Glorious Evolution",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 96,
+      "y": 0,
+      "full": "Viktor_Passive.ViktorVGU.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "Viktor gains Hex Fragments whenever he kills an enemy. With every 100 Hex Fragments he obtains, Viktor permanently augments an active ability. After upgrading all of his basic abilities, he can gather 100 Hex Fragments to augment his ultimate ability."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Mid"
+  ],
+  "skins_en": [
+    {
+      "id": "112000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "112001",
+      "num": 1,
+      "name": "Full Machine Viktor",
+      "chromas": false
+    },
+    {
+      "id": "112002",
+      "num": 2,
+      "name": "Prototype Viktor",
+      "chromas": false
+    },
+    {
+      "id": "112003",
+      "num": 3,
+      "name": "Creator Viktor",
+      "chromas": false
+    },
+    {
+      "id": "112004",
+      "num": 4,
+      "name": "Death Sworn Viktor",
+      "chromas": false
+    },
+    {
+      "id": "112005",
+      "num": 5,
+      "name": "PsyOps Viktor",
+      "chromas": true
+    },
+    {
+      "id": "112014",
+      "num": 14,
+      "name": "High Noon Viktor",
+      "chromas": true
+    },
+    {
+      "id": "112024",
+      "num": 24,
+      "name": "Arcane Savior Viktor",
+      "chromas": false
+    },
+    {
+      "id": "112025",
+      "num": 25,
+      "name": "Machine Herald Viktor",
+      "chromas": true
+    }
+  ]
+}

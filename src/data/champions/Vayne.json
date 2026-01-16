@@ -1,0 +1,547 @@
+{
+  "id": "Vayne",
+  "key": "67",
+  "name": "Vayne",
+  "title": "Chasseresse nocturne",
+  "version": "15.23.1",
+  "lore": "Shauna Vayne est une chasseuse de monstres mortelle et sans scrupule. Originaire de Demacia, elle voue sa vie à la destruction du démon qui a assassiné sa famille. Armée d'une arbalète montée sur son poignet et dotée d'un cœur rongé par le désir de vengeance, elle n'est heureuse que quand elle assassine les praticiens ou les créations des arts obscurs en les frappant depuis l'ombre avec une volée de carreaux d'argent.",
+  "tags": [
+    "Marksman",
+    "Assassin"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 288,
+    "y": 96,
+    "full": "Vayne.png",
+    "group": "champion",
+    "sprite": "champion4.png"
+  },
+  "skins": [
+    {
+      "id": "67000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "67001",
+      "num": 1,
+      "name": "Vayne justicière",
+      "chromas": false
+    },
+    {
+      "id": "67002",
+      "num": 2,
+      "name": "Vayne aristocrate",
+      "chromas": false
+    },
+    {
+      "id": "67003",
+      "num": 3,
+      "name": "Vayne tueuse de dragons",
+      "chromas": true
+    },
+    {
+      "id": "67004",
+      "num": 4,
+      "name": "Vayne cœur-de-cible",
+      "chromas": false
+    },
+    {
+      "id": "67005",
+      "num": 5,
+      "name": "SKT T1 Vayne",
+      "chromas": false
+    },
+    {
+      "id": "67006",
+      "num": 6,
+      "name": "Vayne à l'arbalète pure",
+      "chromas": false
+    },
+    {
+      "id": "67010",
+      "num": 10,
+      "name": "Vayne voleuse d'âmes",
+      "chromas": true
+    },
+    {
+      "id": "67011",
+      "num": 11,
+      "name": "PROJET : Vayne",
+      "chromas": false
+    },
+    {
+      "id": "67012",
+      "num": 12,
+      "name": "Vayne pyrotechnicienne",
+      "chromas": true
+    },
+    {
+      "id": "67013",
+      "num": 13,
+      "name": "Vayne pyrotechnicienne prestige",
+      "chromas": false
+    },
+    {
+      "id": "67014",
+      "num": 14,
+      "name": "Vayne fleur spirituelle",
+      "chromas": true
+    },
+    {
+      "id": "67015",
+      "num": 15,
+      "name": "FPX Vayne",
+      "chromas": true
+    },
+    {
+      "id": "67025",
+      "num": 25,
+      "name": "Vayne Sentinelle",
+      "chromas": true
+    },
+    {
+      "id": "67032",
+      "num": 32,
+      "name": "Vayne chauve-souris de combat",
+      "chromas": true
+    },
+    {
+      "id": "67033",
+      "num": 33,
+      "name": "Vayne pyrotechnicienne prestige (2022)",
+      "chromas": false
+    },
+    {
+      "id": "67044",
+      "num": 44,
+      "name": "Vayne héraut de l'aube",
+      "chromas": true
+    },
+    {
+      "id": "67055",
+      "num": 55,
+      "name": "Vayne dracomancienne",
+      "chromas": true
+    },
+    {
+      "id": "67064",
+      "num": 64,
+      "name": "Vayne légende transcendée",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "VayneTumble",
+      "name": "Roulade",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 0,
+        "full": "VayneTumble.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Vayne fait une roulade sur une courte distance. Sa prochaine attaque inflige <physicalDamage>{{ adratiobonus }} pts de dégâts physiques</physicalDamage> supplémentaires.<br /><br /><rules>Cette compétence déclenche les effets de sort quand elle inflige des dégâts.</rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Ratio de dégâts d'attaque"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "300",
+      "datavalues": {},
+      "description": "Vayne fait une roulade et se positionne pour mieux viser. Sa prochaine attaque inflige des dégâts supplémentaires.",
+      "cooldownBurn": "6/5/4/3/2"
+    },
+    {
+      "id": "VayneSilveredBolts",
+      "name": "Carreaux d'argent",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 0,
+        "full": "VayneSilveredBolts.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive</spellPassive> : toutes les 3 attaques ou compétences consécutives contre un ennemi, Vayne inflige <trueDamage>{{ totaldamage }} des PV max en dégâts bruts</trueDamage> supplémentaires.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Compétence passive",
+      "leveltip": {
+        "label": [
+          "Pourcentage de dégâts bruts",
+          "Dégâts minimum",
+          "Dégâts aux monstres"
+        ]
+      },
+      "resource": "Compétence passive",
+      "rangeBurn": "750",
+      "datavalues": {},
+      "description": "Vayne trempe ses carreaux dans de l'argent, un métal nocif pour les êtres maléfiques. La troisième attaque ou compétence consécutive contre une même cible inflige un pourcentage des PV max de la cible sous forme de dégâts bruts supplémentaires.",
+      "cooldownBurn": "0"
+    },
+    {
+      "id": "VayneCondemn",
+      "name": "Condamnation",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 0,
+        "full": "VayneCondemn.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Vayne tire un carreau qui <status>repousse</status> une cible et lui inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage>. Si la cible percute le décor, elle subit <physicalDamage>{{ empowereddamagett }} pts de dégâts physiques supplémentaires</physicalDamage> et devient <status>étourdie</status> pendant {{ stunduration }} sec. {{ spellmodifierdescriptionappend }}",
+      "costBurn": "90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "550",
+      "datavalues": {},
+      "description": "Vayne prend l'arbalète qu'elle porte sur le dos et tire un carreau gigantesque sur sa cible, lui infligeant des dégâts et la projetant en arrière. Si la cible percute le décor, elle est empalée, ce qui lui inflige des dégâts supplémentaires et l'étourdit.",
+      "cooldownBurn": "20/18/16/14/12"
+    },
+    {
+      "id": "VayneInquisition",
+      "name": "Combat ultime",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 0,
+        "full": "VayneInquisition.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Vayne gagne <physicalDamage>+{{ bonusattackdamage }} dégâts d'attaque</physicalDamage> pendant {{ baseduration }} sec, et cette durée est augmentée de {{ durationtoadd }} sec chaque fois qu'un champion meurt dans les {{ damagedmarkerduration }} sec après avoir été blessé par Vayne. De plus, pendant la durée :<li><spellName>Chasseresse nocturne</spellName> lui octroie à la place <speed>+{{ movementspeed }} vitesse de déplacement</speed>.<li><spellName>Roulade</spellName> la rend <keywordStealth>invisible</keywordStealth> pendant {{ tumblestealthduration }} sec et son délai de récupération est réduit de {{ tumblecdreduction }}%.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Durée",
+          "Dégâts d'attaque supplémentaires",
+          "Réduction du délai de récupération de Roulade"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1",
+      "datavalues": {},
+      "description": "Vayne se prépare à un combat épique ; ses dégâts d'attaque augmentent, elle devient invisible pendant Roulade, le délai de récupération de Roulade est réduit et le bonus de vitesse de Chasseresse nocturne est augmenté.",
+      "cooldownBurn": "100/85/70"
+    }
+  ],
+  "passive": {
+    "name": "Chasseresse nocturne",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 288,
+      "y": 96,
+      "full": "Vayne_NightHunter.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "Vayne traque sans relâche les êtres malfaisants, gagnant de la vitesse de déplacement vers les champions ennemis proches."
+  },
+  "created_at": "2025-11-26T15:13:35.367127+00:00",
+  "factions": [
+    "demacia"
+  ],
+  "custom_tags": [
+    "chasseur-noir",
+    "anti-magie"
+  ],
+  "gender": "Female",
+  "species": "Human",
+  "title_en": "the Night Hunter",
+  "lore_en": "Shauna Vayne is a deadly, remorseless Demacian monster hunter, who has dedicated her life to finding and destroying the demon that murdered her family. Armed with a wrist-mounted crossbow and a heart full of vengeance, she is only truly happy when slaying practitioners or creations of the dark arts, striking from the shadows with a flurry of silver bolts.",
+  "spells_en": [
+    {
+      "id": "VayneTumble",
+      "name": "Tumble",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 0,
+        "full": "VayneTumble.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Vayne rolls a short distance, and deals an additional <physicalDamage>{{ adratiobonus }} physical damage</physicalDamage> on her next Attack.<br /><br /><rules>This Ability triggers spell effects upon dealing damage.</rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "AD Ratio %"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "300",
+      "datavalues": {},
+      "description": "Vayne tumbles, maneuvering to carefully place her next shot. Her next attack deals bonus damage.",
+      "cooldownBurn": "6/5/4/3/2"
+    },
+    {
+      "id": "VayneSilveredBolts",
+      "name": "Silver Bolts",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 0,
+        "full": "VayneSilveredBolts.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive</spellPassive>: Every third consecutive Attack or Ability against an enemy deals an additional <trueDamage>{{ totaldamage }} max Health true damage</trueDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Passive",
+      "leveltip": {
+        "label": [
+          "True Damage %",
+          "Minimum Damage",
+          "Monster Damage"
+        ]
+      },
+      "resource": "Passive",
+      "rangeBurn": "750",
+      "datavalues": {},
+      "description": "Vayne tips her bolts with a rare metal, toxic to evil things. The third consecutive attack or ability against the same target deals a percentage of the target's max health as bonus true damage.",
+      "cooldownBurn": "0"
+    },
+    {
+      "id": "VayneCondemn",
+      "name": "Condemn",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 0,
+        "full": "VayneCondemn.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Vayne fires a bolt that <status>Knocks Back</status> and deals <physicalDamage>{{ totaldamage }} physical damage</physicalDamage>. If the target collides with terrain, they take <physicalDamage>{{ empowereddamagett }} bonus physical damage</physicalDamage> and become <status>Stunned</status> for {{ stunduration }} seconds. {{ spellmodifierdescriptionappend }}",
+      "costBurn": "90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "550",
+      "datavalues": {},
+      "description": "Vayne draws a heavy crossbow from her back, and fires a huge bolt at her target, knocking them back and dealing damage. If they collide with terrain, they are impaled, dealing bonus damage and stunning them.",
+      "cooldownBurn": "20/18/16/14/12"
+    },
+    {
+      "id": "VayneInquisition",
+      "name": "Final Hour",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 0,
+        "full": "VayneInquisition.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Vayne gains <physicalDamage>{{ bonusattackdamage }} Attack Damage</physicalDamage> for {{ baseduration }} seconds, extended by {{ durationtoadd }} seconds whenever a champion damaged by Vayne dies within {{ damagedmarkerduration }} seconds. Additionally, during the duration:<li><spellName>Night Hunter</spellName> instead grants <speed>{{ movementspeed }} Move Speed</speed>.<li>The Cooldown of <spellName>Tumble</spellName> is reduced by {{ tumblecdreduction }}%, and grants <keywordStealth>Invisibility</keywordStealth> for {{ tumblestealthduration }} second.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Duration",
+          "Bonus AD",
+          "Tumble Cooldown Reduction"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1",
+      "datavalues": {},
+      "description": "Readying herself for an epic confrontation, Vayne gains increased Attack Damage, Invisibility during Tumble, reduced Tumble cooldown, and more bonus Move Speed from Night Hunter",
+      "cooldownBurn": "100/85/70"
+    }
+  ],
+  "passive_en": {
+    "name": "Night Hunter",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 288,
+      "y": 96,
+      "full": "Vayne_NightHunter.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "Vayne ruthlessly hunts evil-doers, gaining Move Speed when moving toward nearby enemy champions."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Adc",
+    "Top"
+  ],
+  "skins_en": [
+    {
+      "id": "67000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "67001",
+      "num": 1,
+      "name": "Vindicator Vayne",
+      "chromas": false
+    },
+    {
+      "id": "67002",
+      "num": 2,
+      "name": "Aristocrat Vayne",
+      "chromas": false
+    },
+    {
+      "id": "67003",
+      "num": 3,
+      "name": "Dragonslayer Vayne",
+      "chromas": true
+    },
+    {
+      "id": "67004",
+      "num": 4,
+      "name": "Heartseeker Vayne",
+      "chromas": false
+    },
+    {
+      "id": "67005",
+      "num": 5,
+      "name": "SKT T1 Vayne",
+      "chromas": false
+    },
+    {
+      "id": "67006",
+      "num": 6,
+      "name": "Arclight Vayne",
+      "chromas": false
+    },
+    {
+      "id": "67010",
+      "num": 10,
+      "name": "Soulstealer Vayne",
+      "chromas": true
+    },
+    {
+      "id": "67011",
+      "num": 11,
+      "name": "PROJECT: Vayne",
+      "chromas": false
+    },
+    {
+      "id": "67012",
+      "num": 12,
+      "name": "Firecracker Vayne",
+      "chromas": true
+    },
+    {
+      "id": "67013",
+      "num": 13,
+      "name": "Prestige Firecracker Vayne",
+      "chromas": false
+    },
+    {
+      "id": "67014",
+      "num": 14,
+      "name": "Spirit Blossom Vayne",
+      "chromas": true
+    },
+    {
+      "id": "67015",
+      "num": 15,
+      "name": "FPX Vayne",
+      "chromas": true
+    },
+    {
+      "id": "67025",
+      "num": 25,
+      "name": "Sentinel Vayne",
+      "chromas": true
+    },
+    {
+      "id": "67032",
+      "num": 32,
+      "name": "Battle Bat Vayne",
+      "chromas": true
+    },
+    {
+      "id": "67033",
+      "num": 33,
+      "name": "Prestige Firecracker Vayne (2022)",
+      "chromas": false
+    },
+    {
+      "id": "67044",
+      "num": 44,
+      "name": "Dawnbringer Vayne",
+      "chromas": true
+    },
+    {
+      "id": "67055",
+      "num": 55,
+      "name": "Dragonmancer Vayne",
+      "chromas": true
+    },
+    {
+      "id": "67064",
+      "num": 64,
+      "name": "Risen Legend Vayne",
+      "chromas": true
+    }
+  ]
+}

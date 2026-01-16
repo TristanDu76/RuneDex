@@ -1,0 +1,475 @@
+{
+  "id": "Shen",
+  "key": "98",
+  "name": "Shen",
+  "title": "Œil du crépuscule",
+  "version": "15.23.1",
+  "lore": "Shen, l'Œil du crépuscule, est le chef d'un groupe secret de guerriers ioniens connu sous le nom de Kinkou. Désireux d'échapper aux méfaits des émotions, des préjugés et de l'ego, il porte un regard désintéressé sur les choses en arpentant le chemin invisible entre le royaume des esprits et le monde physique. Ayant pour mission d'assurer leur équilibre, Shen emploie ses lames d'acier et son énergie arcanique contre ceux qui voudraient le menacer.",
+  "tags": [
+    "Tank"
+  ],
+  "partype": "Énergie",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 0,
+    "y": 0,
+    "full": "Shen.png",
+    "group": "champion",
+    "sprite": "champion4.png"
+  },
+  "skins": [
+    {
+      "id": "98000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "98001",
+      "num": 1,
+      "name": "Shen glacé",
+      "chromas": false
+    },
+    {
+      "id": "98002",
+      "num": 2,
+      "name": "Shen au manteau jaune",
+      "chromas": false
+    },
+    {
+      "id": "98003",
+      "num": 3,
+      "name": "Shen chirurgien",
+      "chromas": true
+    },
+    {
+      "id": "98004",
+      "num": 4,
+      "name": "Shen lune de sang",
+      "chromas": false
+    },
+    {
+      "id": "98005",
+      "num": 5,
+      "name": "Samouraï Shen",
+      "chromas": true
+    },
+    {
+      "id": "98006",
+      "num": 6,
+      "name": "TPA Shen",
+      "chromas": false
+    },
+    {
+      "id": "98015",
+      "num": 15,
+      "name": "Shen Pulsefire",
+      "chromas": true
+    },
+    {
+      "id": "98016",
+      "num": 16,
+      "name": "Shen infernal",
+      "chromas": true
+    },
+    {
+      "id": "98022",
+      "num": 22,
+      "name": "Shen psychoguerrier",
+      "chromas": true
+    },
+    {
+      "id": "98040",
+      "num": 40,
+      "name": "Shen électrolame",
+      "chromas": true
+    },
+    {
+      "id": "98049",
+      "num": 49,
+      "name": "Shen gardien de cendres",
+      "chromas": true
+    },
+    {
+      "id": "98051",
+      "num": 51,
+      "name": "Shen des Trois Honneurs",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "ShenQ",
+      "name": "Assaut crépusculaire",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 48,
+        "full": "ShenQ.png",
+        "group": "spell",
+        "sprite": "spell12.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Shen rappelle sa <keywordMajor>lame spirituelle</keywordMajor>. Les ennemis touchés par la lame sont <status>ralentis</status> de {{ e4 }}% pendant {{ e5 }} sec quand ils s'éloignent de Shen.<br /><br />De plus, les {{ e3 }} prochaines attaques de Shen infligent <magicDamage>{{ baseflatdamage }}</magicDamage> plus <magicDamage>{{ basepercenthealth }} des PV max en dégâts magiques</magicDamage> supplémentaires. Si Shen touche un champion ennemi avec la <keywordMajor>lame spirituelle</keywordMajor>, les dégâts sont augmentés à <magicDamage>{{ baseflatdamage }}</magicDamage> plus <magicDamage>{{ emppercenthealth }} des PV max en dégâts magiques</magicDamage> et il gagne <attackSpeed>+{{ e9 }}% de vitesse d'attaque</attackSpeed> pour ces attaques.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "140/130/120/110/100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Pourcentage des dégâts de base",
+          "Pourcentage des dégâts renforcés",
+          "Ralentissement",
+          "Coût en @AbilityResourceName@",
+          "Dégâts max aux monstres",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Shen rappelle sa lame spirituelle pour attaquer avec elle, infligeant des dégâts basés sur les PV max de sa cible. Les attaques sont grandement renforcées si la lame touche un champion ennemi. Tous les ennemis touchés par la lame sont ralentis quand ils s'éloignent de Shen.",
+      "cooldownBurn": "8/7.25/6.5/5.75/5"
+    },
+    {
+      "id": "ShenW",
+      "name": "Refuge spirituel",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 48,
+        "full": "ShenW.png",
+        "group": "spell",
+        "sprite": "spell12.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Shen crée une zone défensive à l'emplacement de sa <keywordMajor>lame spirituelle</keywordMajor> pendant {{ e1 }} sec. Les attaques contre les champions alliés à l'intérieur de cette zone sont bloquées. <br /><br />Si elle n'a aucun champion à protéger au début de son effet, la zone temporise pendant un maximum de {{ e2 }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Les attaques qui ciblent Shen ou ses alliés sont bloquées quand ils sont près de la lame spirituelle.",
+      "cooldownBurn": "16/14.5/13/11.5/10"
+    },
+    {
+      "id": "ShenE",
+      "name": "Rush des ombres",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 96,
+        "full": "ShenE.png",
+        "group": "spell",
+        "sprite": "spell12.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> Shen récupère <keywordMajor>{{ energyrefund }} pts d'énergie</keywordMajor> quand il inflige des dégâts avec <spellName>Assaut crépusculaire</spellName> ou cette compétence.<br /><br /><spellActive>Active :</spellActive> Shen se rue dans une direction, <status>provoquant</status> pendant {{ ccduration }} sec les champions et monstres de la jungle touchés et leur infligeant <physicalDamage>{{ tauntdamage }} pts de dégâts physiques</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "150",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Shen fonce dans une direction en provoquant les ennemis sur son passage.",
+      "cooldownBurn": "18/16/14/12/10"
+    },
+    {
+      "id": "ShenR",
+      "name": "Soutien indéfectible",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 96,
+        "full": "ShenR.png",
+        "group": "spell",
+        "sprite": "spell12.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Shen octroie à un champion allié n'importe où sur la carte un bouclier de <shield>{{ shield }}</shield> - <shield>{{ maxshield }}</shield> PV, selon les PV manquants de l'allié, pendant {{ shieldduration }} sec (bouclier max à 60% de PV manquants). Après une canalisation de {{ channelduration }} sec, Shen se téléporte près de son allié avec sa <keywordMajor>lame spirituelle</keywordMajor>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "PV min du bouclier",
+          "PV max du bouclier",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "35000",
+      "datavalues": {},
+      "description": "Shen offre un bouclier absorbant les dégâts à un champion allié, puis se téléporte jusqu'à lui.",
+      "cooldownBurn": "200/180/160"
+    }
+  ],
+  "passive": {
+    "name": "Barrière de ki",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 0,
+      "y": 0,
+      "full": "Shen_Passive.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "Après avoir lancé une compétence, Shen gagne un bouclier. Affecter d'autres champions réduit le délai de récupération de cet effet."
+  },
+  "created_at": "2025-11-26T15:13:35.01772+00:00",
+  "factions": [
+    "ionia"
+  ],
+  "custom_tags": [
+    "kinkou",
+    "eye-of-twilight"
+  ],
+  "gender": "Male",
+  "species": "Human",
+  "title_en": "the Eye of Twilight",
+  "lore_en": "Among the secretive, Ionian warriors known as the Kinkou, Shen serves as their leader, the Eye of Twilight. He longs to remain free from the confusion of emotion, prejudice, and ego, and walks the unseen path of dispassionate judgment between the spirit realm and the physical world. Tasked with enforcing the equilibrium between them, Shen wields blades of steel and arcane energy against any who would threaten it.",
+  "spells_en": [
+    {
+      "id": "ShenQ",
+      "name": "Twilight Assault",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 48,
+        "full": "ShenQ.png",
+        "group": "spell",
+        "sprite": "spell12.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Shen recalls his <keywordMajor>Spirit Blade</keywordMajor>. Enemies hit by the pull are <status>Slowed</status> by {{ e4 }}% while moving away from Shen for the next {{ e5 }} seconds.<br /><br />Additionally, Shen's next {{ e3 }} Attacks deal an additional <magicDamage>{{ baseflatdamage }}</magicDamage> plus <magicDamage>{{ basepercenthealth }} max Health magic damage</magicDamage>. If Shen hit an enemy champion with the <keywordMajor>Spirit Blade</keywordMajor>, the damage is increased to <magicDamage>{{ baseflatdamage }}</magicDamage> plus <magicDamage>{{ emppercenthealth }} max Health magic damage</magicDamage> and he gains <attackSpeed>{{ e9 }}% Attack Speed</attackSpeed> for those Attacks.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "140/130/120/110/100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Base Percent Damage",
+          "Enhanced Percent Damage",
+          "Slow",
+          "@AbilityResourceName@ Cost",
+          "Monster Damage Cap",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Shen recalls his spirit blade to attack with it, dealing damage based on the target's max health. The attacks are greatly empowered if it collides with an enemy champion, and all collided enemies are slowed while running away from Shen.",
+      "cooldownBurn": "8/7.25/6.5/5.75/5"
+    },
+    {
+      "id": "ShenW",
+      "name": "Spirit's Refuge",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 48,
+        "full": "ShenW.png",
+        "group": "spell",
+        "sprite": "spell12.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Shen creates a defensive zone at his <keywordMajor>Spirit Blade</keywordMajor> for {{ e1 }} seconds. Attacks against allied champions in the zone are blocked. <br /><br />If there are no champions to protect in the zone when it starts, it will wait for up to {{ e2 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Attacks that would hit Shen or his allies near his spirit blade are blocked.",
+      "cooldownBurn": "16/14.5/13/11.5/10"
+    },
+    {
+      "id": "ShenE",
+      "name": "Shadow Dash",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 96,
+        "full": "ShenE.png",
+        "group": "spell",
+        "sprite": "spell12.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Dealing damage with <spellName>Twilight Assault</spellName> or this Ability recovers <keywordMajor>{{ energyrefund }} Energy</keywordMajor>.<br /><br /><spellActive>Active:</spellActive> Shen dashes, <status>Taunting</status> champions and jungle monsters for {{ ccduration }} seconds and dealing <physicalDamage>{{ tauntdamage }} physical damage</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "150",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Shen dashes in a direction, taunting enemies in his path.",
+      "cooldownBurn": "18/16/14/12/10"
+    },
+    {
+      "id": "ShenR",
+      "name": "Stand United",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 96,
+        "full": "ShenR.png",
+        "group": "spell",
+        "sprite": "spell12.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Shen grants an allied champion anywhere on the map between <shield>{{ shield }}</shield> and <shield>{{ maxshield }} Shield</shield> based on their missing Health for {{ shieldduration }} seconds (max Shield at 60% missing Health). After channeling for {{ channelduration }} seconds, Shen teleports to his ally's location with his <keywordMajor>Spirit Blade</keywordMajor>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Minimum Shield Health",
+          "Maximum Shield Health",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "35000",
+      "datavalues": {},
+      "description": "Shen shields target allied champion from incoming damage, and soon after teleports to their location.",
+      "cooldownBurn": "200/180/160"
+    }
+  ],
+  "passive_en": {
+    "name": "Ki Barrier",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 0,
+      "y": 0,
+      "full": "Shen_Passive.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "After casting a spell, Shen gets a shield. Affecting other champions reduces the cooldown of this effect."
+  },
+  "partype_en": "Energy",
+  "lanes": [
+    "Top"
+  ],
+  "skins_en": [
+    {
+      "id": "98000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "98001",
+      "num": 1,
+      "name": "Frozen Shen",
+      "chromas": false
+    },
+    {
+      "id": "98002",
+      "num": 2,
+      "name": "Yellow Jacket Shen",
+      "chromas": false
+    },
+    {
+      "id": "98003",
+      "num": 3,
+      "name": "Surgeon Shen",
+      "chromas": true
+    },
+    {
+      "id": "98004",
+      "num": 4,
+      "name": "Blood Moon Shen",
+      "chromas": false
+    },
+    {
+      "id": "98005",
+      "num": 5,
+      "name": "Warlord Shen",
+      "chromas": true
+    },
+    {
+      "id": "98006",
+      "num": 6,
+      "name": "TPA Shen",
+      "chromas": false
+    },
+    {
+      "id": "98015",
+      "num": 15,
+      "name": "Pulsefire Shen",
+      "chromas": true
+    },
+    {
+      "id": "98016",
+      "num": 16,
+      "name": "Infernal Shen",
+      "chromas": true
+    },
+    {
+      "id": "98022",
+      "num": 22,
+      "name": "PsyOps Shen",
+      "chromas": true
+    },
+    {
+      "id": "98040",
+      "num": 40,
+      "name": "Shockblade Shen",
+      "chromas": true
+    },
+    {
+      "id": "98049",
+      "num": 49,
+      "name": "Ashen Guardian Shen",
+      "chromas": true
+    },
+    {
+      "id": "98051",
+      "num": 51,
+      "name": "Three Honors Shen",
+      "chromas": false
+    }
+  ]
+}

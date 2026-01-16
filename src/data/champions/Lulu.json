@@ -1,0 +1,487 @@
+{
+  "id": "Lulu",
+  "key": "117",
+  "name": "Lulu",
+  "title": "Sorcière féérique",
+  "version": "15.23.1",
+  "lore": "Lulu est une Yordle profondément empathique qui vit autant dans ses rêveries fantasques que dans la réalité. Un jour, alors qu'elle errait dans le royaume matériel, elle rencontra Pix, un petit esprit féérique espiègle. Pix s'empara de sa canne et la mena à travers la forêt jusqu'à une caverne cachée derrière une cascade. Sans s'en rendre compte, ils traversèrent le voile vers le royaume spirituel.\n\nIls arrivèrent à la Clairière (the Glade), un lieu plus étrange encore que la Cité de Bandle, peut-être la source même d'où Bandle City a jailli. C'était un lieu de magie primordiale brute, si profondément caché qu'aucun autre Yordle ne l'avait trouvé.\n\nLà, la magie de Lulu fut amplifiée. Riant de joie, elle découvrit qu'elle pouvait remodeler son environnement et altérer sa forme à volonté. Son imagination débordante prit vie. Lulu tomba immédiatement amoureuse de la Clairière et oublia l'existence du reste du monde.\n\nLorsqu'elle se rappela finalement du monde matériel, elle ne savait pas si un jour ou mille ans s'étaient écoulés. Elle découvrit que certains de ses nouveaux pouvoirs l'avaient accompagnée : elle pouvait agrandir les petites choses, changer les couleurs, et endormir des créatures spontanément. À l'amusement sans fin de Pix, elle transformait des bêtes puissantes en minuscules grenouilles ou écureuils avec un coup de sa baguette.\n\nLulu a décidé de retourner à la Clairière, bien que la route soit changeante et qu'elle ne s'en souvienne plus. Elle voyage au gré de ses envies, le chaos, le sortilège et les mésaventures la suivant partout où elle va :\n\nEn Demacia, elle a libéré des enfants de leurs leçons ennuyeuses, les transformant involontairement en cèpes (toadstools) pendant une lune entière, à la détresse de leurs parents.\n\nDans les confins du Freljord, elle a transformé les armes de deux tribus rivales en fleurs juste avant leur affrontement, provoquant le chaos et la confusion.\n\nPlus récemment, elle s'est perdue en Ionia, faisant des farces aux novices de l'Ordre de l'Ombre (qu'elle trouve trop sérieux).\n\nBeaucoup considèrent sa magie comme non naturelle, voire dangereuse, mais Lulu estime qu'un peu d'enchantement ne fait de mal à personne. Bien qu'elle désire retourner à la Clairière, elle est heureuse, car elle a réalisé qu'elle porte une partie de la Clairière dans son cœur, où qu'elle aille.",
+  "tags": [
+    "Support",
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 240,
+    "y": 48,
+    "full": "Lulu.png",
+    "group": "champion",
+    "sprite": "champion2.png"
+  },
+  "skins": [
+    {
+      "id": "117000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "117001",
+      "num": 1,
+      "name": "Lulu douce-amère",
+      "chromas": false
+    },
+    {
+      "id": "117002",
+      "num": 2,
+      "name": "Lulu funèbre",
+      "chromas": false
+    },
+    {
+      "id": "117003",
+      "num": 3,
+      "name": "Lulu dragonnière",
+      "chromas": true
+    },
+    {
+      "id": "117004",
+      "num": 4,
+      "name": "Lulu merveille hivernale",
+      "chromas": false
+    },
+    {
+      "id": "117005",
+      "num": 5,
+      "name": "moLulusque",
+      "chromas": true
+    },
+    {
+      "id": "117006",
+      "num": 6,
+      "name": "Lulu gardienne des étoiles",
+      "chromas": false
+    },
+    {
+      "id": "117014",
+      "num": 14,
+      "name": "Lulu enchanteresse cosmique",
+      "chromas": true
+    },
+    {
+      "id": "117015",
+      "num": 15,
+      "name": "Lulu gardienne des pyjamas",
+      "chromas": false
+    },
+    {
+      "id": "117026",
+      "num": 26,
+      "name": "Lulu astro-groove",
+      "chromas": true
+    },
+    {
+      "id": "117027",
+      "num": 27,
+      "name": "Lulu astro-groove prestige",
+      "chromas": false
+    },
+    {
+      "id": "117037",
+      "num": 37,
+      "name": "Lulu dresseuse de monstres",
+      "chromas": true
+    },
+    {
+      "id": "117046",
+      "num": 46,
+      "name": "Lulu Café Chouchous",
+      "chromas": true
+    },
+    {
+      "id": "117055",
+      "num": 55,
+      "name": "Lulu des arcanes",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "LuluQ",
+      "name": "Duo éclatant",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 144,
+        "full": "LuluQ.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Lulu et Pix tirent chacun un projectile perforant qui inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> et qui <status>ralentit</status> les ennemis de {{ slowamount*-100 }}% (ce ralentissement diminue en {{ slowduration }} sec).<br /><br />Les ennemis subissent <magicDamage>{{ bonusmissiledamage }} pts de dégâts magiques</magicDamage> par projectile supplémentaire.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "925",
+      "datavalues": {},
+      "description": "Pix et Lulu tirent chacun un projectile magique qui blesse et ralentit grandement les ennemis touchés.",
+      "cooldownBurn": "7"
+    },
+    {
+      "id": "LuluW",
+      "name": "Fantaisie",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 144,
+        "full": "LuluW.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Si la compétence est utilisée sur un allié, Lulu lui octroie <speed>+{{ totalms }} vitesse de déplacement</speed> et <attackSpeed>+{{ e7 }}% de vitesse d'attaque</attackSpeed> pendant {{ e5 }} sec.<br /><br />Si la compétence est utilisée sur un ennemi, Lulu le <status>transforme</status> pendant {{ e3 }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "65",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Durée des bonus en vitesses de déplacement et d'attaque",
+          "Vitesse d'attaque",
+          "Durée du polymorphisme"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Si le sort est lancé sur un allié, il augmente temporairement ses vitesses de déplacement et d'attaque. S'il est lancé sur un ennemi, il le transforme en une petite bête adorable qui ne peut ni attaquer, ni lancer de sorts.",
+      "cooldownBurn": "18"
+    },
+    {
+      "id": "LuluE",
+      "name": "Pix à la rescousse !",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0,
+        "full": "LuluE.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Si la compétence est utilisée sur un allié, Pix le rejoint et lui octroie <spellName>Pix, le Compagnon féérique</spellName> pendant {{ e1 }} sec. Si l'allié est un champion, Pix lui octroie également un <shield>bouclier de {{ totalshield }} PV</shield> pendant {{ e7 }} sec.<br /><br />Si la compétence est utilisée sur un champion ennemi, Pix le gêne, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> et octroyant une <keywordStealth>vision pure</keywordStealth> de la cible pendant {{ e6 }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "PV du bouclier",
+          "Dégâts",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Sort lancé sur un allié : ordonne à Pix de rejoindre un allié et de le protéger, après quoi Pix le suit et l'aide à attaquer. Sort lancé sur un ennemi : ordonne à Pix de foncer sur un ennemi et de le blesser, après quoi Pix le suit et vous confère la vision de cet ennemi.",
+      "cooldownBurn": "10/9.5/9/8.5/8"
+    },
+    {
+      "id": "LuluR",
+      "name": "Croissance prodigieuse",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 0,
+        "full": "LuluR.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Lulu agrandit un allié, <status>projetant dans les airs</status> les ennemis proches pendant {{ knockbackduration }} sec. L'allié agrandi gagne <healing>+{{ totalbonushealth }} PV max</healing> et <status>ralentit</status> les ennemis proches de {{ slowpercent }}% pendant {{ buffduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "PV supplémentaires",
+          "Ralentissement",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "900",
+      "datavalues": {},
+      "description": "Lulu fait grandir un allié, projetant en l'air les ennemis proches et lui conférant de nombreux PV supplémentaires. Pendant les quelques secondes qui suivent, cet allié bénéficie d'un halo qui ralentit les ennemis proches.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive": {
+    "name": "Pix, le Compagnon féérique",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 240,
+      "y": 48,
+      "full": "Lulu_PixFaerieCompanion.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Pix tire des projectiles magiques quand le champion qu'il suit attaque une autre unité ennemie. Ces tirs sont guidés, mais ils peuvent être interceptés par d'autres unités."
+  },
+  "created_at": "2025-11-26T15:13:33.959475+00:00",
+  "factions": [
+    "bandle-city"
+  ],
+  "custom_tags": [
+    "faerie"
+  ],
+  "gender": "Female",
+  "species": "Yordle",
+  "title_en": "the Fae Sorceress",
+  "lore_en": "Lulu was always a caring and deeply empathetic Yordle, living as much in her whimsical daydreams as in reality. One day, while wandering the material realm, she encountered Pix, a tiny, mischievous fae spirit. Pix led her through the forest, into a cave behind a waterfall, and across the threshold into the spirit realm without her realizing it.\n\nThey arrived at the Glade, a place stranger than Bandle City itself, perhaps the raw, primordial source from which Bandle City sprung. It was a place of raw primordial magic, hidden so deeply that no other Yordle had found it.\n\nHere, Lulu's magic became wildly magnified. Laughing joyfully, she discovered she could reshape her surroundings at will, as well as alter her form into whatever she wanted. Her overactive imagination came to life. Lulu instantly fell in love with the Glade and soon forgot anything else existed.\n\nWhen she finally remembered the material realm, she didn't know if a single day or a thousand years had passed. She found that some of her newfound power had come with her: she could make small things large, change colors, and cause creatures to fall spontaneously asleep. To Pix's endless amusement, she turned the mightiest beasts into tiny, bewildered frogs or squirrels with a flick of her staff.\n\nLulu decided to go back to the Glade, although she didn't remember the way, as the route is always shifting. She travels wherever her fancy takes her, with magic, mayhem, and mishap tending to follow wherever she goes:\n\nIn Demacia, she freed a group of children from their boring history lessons, turning them into toadstools for a full moon, much to the distress of their parents and the local militia.\n\nIn the borderlands of the Freljord, she changed the weapons of two rival tribes into flowers just as they clashed, resulting in chaos and confusion.\n\nMore recently, she has been lost in Ionia, playing pranks on bewildered acolytes of the Order of Shadow (whom she finds far too serious).\n\nMany believe her magic to be unnatural, if not dangerous, but she believes a little enchantment never hurt anyone. Though she seeks to return to the Glade, she is happy, because she has come to realize that she carries a part of the Glade in her heart, wherever she goes.",
+  "spells_en": [
+    {
+      "id": "LuluQ",
+      "name": "Glitterlance",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 144,
+        "full": "LuluQ.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Lulu and Pix each fire a piercing bolt dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> and <status>Slowing</status> by {{ slowamount*-100 }}%, decaying over {{ slowduration }} seconds.<br /><br />Enemies take <magicDamage>{{ bonusmissiledamage }} magic damage</magicDamage> from additional bolts.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "925",
+      "datavalues": {},
+      "description": "Pix and Lulu each fire a bolt of magical energy that damages and heavily slows all enemies it hits.",
+      "cooldownBurn": "7"
+    },
+    {
+      "id": "LuluW",
+      "name": "Whimsy",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 144,
+        "full": "LuluW.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "When used on an ally, Lulu grants <speed>{{ totalms }} Move Speed</speed> and <attackSpeed>{{ e7 }}% Attack Speed</attackSpeed> for {{ e5 }} seconds.<br /><br />When used on an enemy, Lulu <status>Polymorphs</status> them for {{ e3 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "65",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Move Speed and Attack Speed Duration",
+          "Attack Speed",
+          "Polymorph Duration"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "If cast on an ally, grants them Attack Speed and Move Speed for a short time. If cast on an enemy, turns them into an adorable critter that can't attack or cast spells.",
+      "cooldownBurn": "18"
+    },
+    {
+      "id": "LuluE",
+      "name": "Help, Pix!",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0,
+        "full": "LuluE.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "When used on an ally, Pix jumps to them and grants <spellName>Pix, Faerie Companion</spellName> for {{ e1 }} seconds. If the ally is a champion, Pix also grants <shield>{{ totalshield }} Shield</shield> for {{ e7 }} seconds.<br /><br />When used on an enemy champion, Pix hampers them, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> and granting <keywordStealth>True Sight</keywordStealth> of them for {{ e6 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Shield Amount",
+          "Damage",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "If cast on an ally, commands Pix to jump to an ally and shield them. He then follows them and aids their attacks. If cast on an enemy, commands Pix to jump to an enemy and damage them. He then follows them and grants you vision of that enemy.",
+      "cooldownBurn": "10/9.5/9/8.5/8"
+    },
+    {
+      "id": "LuluR",
+      "name": "Wild Growth",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 0,
+        "full": "LuluR.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Lulu enlarges an ally, <status>Knocking Up</status> surrounding enemies for {{ knockbackduration }} second. The enlarged ally gains <healing>{{ totalbonushealth }} max Health</healing> and <status>Slows</status> surrounding enemies by {{ slowpercent }}% for {{ buffduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Bonus Health",
+          "Slow",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "900",
+      "datavalues": {},
+      "description": "Lulu enlarges an ally, knocking nearby enemies into the air and granting the ally a large amount of bonus health. For the next few seconds, that ally gains an aura that slows nearby enemies.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Pix, Faerie Companion",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 240,
+      "y": 48,
+      "full": "Lulu_PixFaerieCompanion.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Pix fires magical bolts of energy whenever the champion he's following attacks another enemy unit. These bolts are homing, but can be intercepted by other units."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Support"
+  ],
+  "skins_en": [
+    {
+      "id": "117000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "117001",
+      "num": 1,
+      "name": "Bittersweet Lulu",
+      "chromas": false
+    },
+    {
+      "id": "117002",
+      "num": 2,
+      "name": "Wicked Lulu",
+      "chromas": false
+    },
+    {
+      "id": "117003",
+      "num": 3,
+      "name": "Dragon Trainer Lulu",
+      "chromas": true
+    },
+    {
+      "id": "117004",
+      "num": 4,
+      "name": "Winter Wonder Lulu",
+      "chromas": false
+    },
+    {
+      "id": "117005",
+      "num": 5,
+      "name": "Pool Party Lulu",
+      "chromas": true
+    },
+    {
+      "id": "117006",
+      "num": 6,
+      "name": "Star Guardian Lulu",
+      "chromas": false
+    },
+    {
+      "id": "117014",
+      "num": 14,
+      "name": "Cosmic Enchantress Lulu",
+      "chromas": true
+    },
+    {
+      "id": "117015",
+      "num": 15,
+      "name": "Pajama Guardian Lulu",
+      "chromas": false
+    },
+    {
+      "id": "117026",
+      "num": 26,
+      "name": "Space Groove Lulu",
+      "chromas": true
+    },
+    {
+      "id": "117027",
+      "num": 27,
+      "name": "Prestige Space Groove Lulu",
+      "chromas": false
+    },
+    {
+      "id": "117037",
+      "num": 37,
+      "name": "Monster Tamer Lulu",
+      "chromas": true
+    },
+    {
+      "id": "117046",
+      "num": 46,
+      "name": "Cafe Cuties Lulu",
+      "chromas": true
+    },
+    {
+      "id": "117055",
+      "num": 55,
+      "name": "Arcana Lulu",
+      "chromas": false
+    }
+  ]
+}

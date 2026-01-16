@@ -1,0 +1,386 @@
+{
+  "id": "Samira",
+  "key": "360",
+  "name": "Samira",
+  "title": "Rose du désert",
+  "version": "15.23.1",
+  "lore": "Toujours en quête de sensations fortes, Samira regarde la mort dans les yeux avec une confiance inébranlable. Après la destruction qui a frappé son foyer shurimien lorsqu'elle était enfant, Samira a trouvé sa véritable vocation à Noxus, où elle s'est forgé une réputation de tête brûlée extrêmement classe qui accepte les missions les plus dangereuses. Munie de deux pistolets à poudre noire et d'une épée personnalisée, Samira s'épanouit lorsque sa vie est en danger et élimine spectaculairement tous ceux qui se mettent en travers de sa route.",
+  "tags": [
+    "Marksman",
+    "Assassin"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 192,
+    "y": 96,
+    "full": "Samira.png",
+    "group": "champion",
+    "sprite": "champion3.png"
+  },
+  "skins": [
+    {
+      "id": "360000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "360001",
+      "num": 1,
+      "name": "Samira psychoguerrière",
+      "chromas": true
+    },
+    {
+      "id": "360010",
+      "num": 10,
+      "name": "Samira astro-groove",
+      "chromas": true
+    },
+    {
+      "id": "360020",
+      "num": 20,
+      "name": "Samira de l'Ouest",
+      "chromas": true
+    },
+    {
+      "id": "360030",
+      "num": 30,
+      "name": "Samira combattante spirituelle",
+      "chromas": false
+    },
+    {
+      "id": "360033",
+      "num": 33,
+      "name": "Samira bal masqué de la Rose noire",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "SamiraQ",
+      "name": "Panache",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 144,
+        "full": "SamiraQ.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Samira tire une balle qui inflige <physicalDamage>{{ damagecalc }} pts de dégâts physiques</physicalDamage> au premier ennemi touché.<br /><br />Si cette compétence est lancée vers un ennemi à portée de mêlée, Samira donne à la place un coup d'épée qui inflige <physicalDamage>{{ damagecalc }} pts de dégâts physiques</physicalDamage>. {{ spellmodifierdescriptionappend }}",
+      "costBurn": "30",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "Ratio de dégâts d'attaque totaux"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "950",
+      "datavalues": {},
+      "description": "Samira tire une balle ou donne un coup d'épée, infligeant des dégâts. Si cette compétence est lancée pendant Charge sauvage, Samira frappe tous les ennemis sur son chemin à la fin de la ruée.",
+      "cooldownBurn": "6/5/4/3/2"
+    },
+    {
+      "id": "SamiraW",
+      "name": "Tourbillon de lame",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 144,
+        "full": "SamiraW.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Samira donne un coup d'épée tourbillonnant pendant {{ slashduration }} sec, ce qui inflige deux fois <physicalDamage>{{ damagecalc }} pts de dégâts physiques</physicalDamage> et détruit les projectiles ennemis qui entrent dans la zone.<br /><br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "325",
+      "datavalues": {},
+      "description": "Samira donne un coup d'épée tourbillonnant, ce qui blesse les ennemis et détruit les projectiles ennemis.",
+      "cooldownBurn": "30/28/26/24/22"
+    },
+    {
+      "id": "SamiraE",
+      "name": "Charge sauvage",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 144,
+        "full": "SamiraE.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Samira se rue à travers un ennemi (bâtiments inclus), infligeant <magicDamage>{{ dashdamage }} pts de dégâts magiques</magicDamage> aux ennemis qu'elle traverse et gagnant <attackSpeed>+{{ bonusattackspeed*100 }}% de vitesse d'attaque</attackSpeed> pendant {{ attackspeedduration }} sec. <br /><br />Si un champion ennemi meurt dans les 3 sec après avoir été blessé par Samira, le délai de récupération de cette compétence est annulé.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "Vitesse d'attaque"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Samira se rue à travers un ennemi (bâtiments inclus), tailladant les ennemis qu'elle traverse et gagnant de la vitesse d'attaque. Tuer un champion ennemi réinitialise le délai de récupération de cette compétence.",
+      "cooldownBurn": "20/18/16/14/12"
+    },
+    {
+      "id": "SamiraR",
+      "name": "Gâchette infernale",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 144,
+        "full": "SamiraR.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Samira ne peut utiliser cette compétence que si son <keywordMajor>style</keywordMajor> est au rang S. Utiliser cette compétence consomme tous les rangs de <keywordMajor>style</keywordMajor>.<br /><br />Samira tire une pluie de balles sur tous les ennemis qui l'entourent. Elle tire 10 balles en 2 sec, chaque balle infligeant <physicalDamage>{{ damagecalc }} pts de dégâts physiques</physicalDamage> et appliquant le vol de vie avec {{ lifestealmod*100 }}% d'efficacité. Chaque balle peut aussi infliger un coup critique.<br /><br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Samira tire une pluie de balles sur tous les ennemis qui l'entourent.",
+      "cooldownBurn": "5"
+    }
+  ],
+  "passive": {
+    "name": "Élan téméraire",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 192,
+      "y": 96,
+      "full": "SamiraP.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Samira fait des combos en enchaînant des attaques ou compétences différentes de la précédente. En mêlée, les attaques de Samira infligent des dégâts magiques supplémentaires. Les attaques de Samira contre les ennemis affectés par des effets <status>immobilisants</status> la font se ruer à portée d'attaque. Si l'ennemi est <status>projeté dans les airs</status>, elle le maintient brièvement <status>dans les airs</status>."
+  },
+  "created_at": "2025-11-26T15:13:34.800791+00:00",
+  "factions": [
+    "noxus",
+    "shurima"
+  ],
+  "custom_tags": [
+    "mercenaire"
+  ],
+  "gender": "Female",
+  "species": "Human",
+  "title_en": "the Desert Rose",
+  "lore_en": "Samira stares death in the eye with unyielding confidence, seeking thrill wherever she goes. After her Shuriman home was destroyed as a child, Samira found her true calling in Noxus, where she built a reputation as a stylish daredevil taking on dangerous missions of the highest caliber. Wielding black-powder pistols and a custom-engineered blade, Samira thrives in life-or-death circumstances, eliminating any who stand in her way with flash and flair.",
+  "spells_en": [
+    {
+      "id": "SamiraQ",
+      "name": "Flair",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 144,
+        "full": "SamiraQ.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Samira fires a shot, dealing <physicalDamage>{{ damagecalc }} physical damage</physicalDamage> to the first enemy hit.<br /><br />If this Ability is cast towards an enemy in melee range, Samira will instead slash with her sword, dealing <physicalDamage>{{ damagecalc }} physical damage</physicalDamage>. {{ spellmodifierdescriptionappend }}",
+      "costBurn": "30",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "Total AD Ratio"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "950",
+      "datavalues": {},
+      "description": "Samira fires a shot or swings her sword, dealing damage. If cast during Wild Rush, strike all enemies in her path upon completion.",
+      "cooldownBurn": "6/5/4/3/2"
+    },
+    {
+      "id": "SamiraW",
+      "name": "Blade Whirl",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 144,
+        "full": "SamiraW.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Samira slashes around her for {{ slashduration }} seconds, damaging enemies twice for <physicalDamage>{{ damagecalc }} physical damage</physicalDamage> each and destroying any enemy missiles that enter the area.<br /><br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "325",
+      "datavalues": {},
+      "description": "Samira slashes around her, damaging enemies and destroying enemy missiles.",
+      "cooldownBurn": "30/28/26/24/22"
+    },
+    {
+      "id": "SamiraE",
+      "name": "Wild Rush",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 144,
+        "full": "SamiraE.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Samira dashes through an enemy (including structures), slashing enemies she passes through dealing <magicDamage>{{ dashdamage }} magic damage</magicDamage> and gaining <attackSpeed>{{ bonusattackspeed*100 }}% Attack Speed</attackSpeed> for {{ attackspeedduration }} seconds. <br /><br />If an enemy champion is killed within 3 seconds of Samira damaging them, This Ability's Cooldown is reset.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "Attack Speed"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Samira dashes through an enemy (including structures), slashing enemies she passes through and gaining Attack Speed. Killing an enemy champion refreshes this ability's cooldown.",
+      "cooldownBurn": "20/18/16/14/12"
+    },
+    {
+      "id": "SamiraR",
+      "name": "Inferno Trigger",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 144,
+        "full": "SamiraR.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Samira can only use this Ability if her current <keywordMajor>Style</keywordMajor> rating is S. Using this Ability consumes all <keywordMajor>Style</keywordMajor> rating.<br /><br />Samira unleashes a torrent of shots from her weapons, wildly shooting all enemies surrounding her 10 times over 2 seconds, each shot dealing <physicalDamage>{{ damagecalc }} physical damage</physicalDamage> and applying Life Steal at {{ lifestealmod*100 }}% effectiveness. Each shot can also critically strike.<br /><br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Samira unleashes a torrent of shots from her weapons, wildly shooting all enemies surrounding her.",
+      "cooldownBurn": "5"
+    }
+  ],
+  "passive_en": {
+    "name": "Daredevil Impulse",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 192,
+      "y": 96,
+      "full": "SamiraP.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Samira builds a combo by hitting attacks or abilities unique from the previous hit. Samira's attacks in melee range deal additional magic damage. Samira's attacks against enemies affected by <status>Immobilizing</status> effects will dash her to her attack range. If the enemy is <status>Knocked Up</status>, she also keeps them <status>Knocked Up</status> briefly."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Adc"
+  ],
+  "skins_en": [
+    {
+      "id": "360000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "360001",
+      "num": 1,
+      "name": "PsyOps Samira",
+      "chromas": true
+    },
+    {
+      "id": "360010",
+      "num": 10,
+      "name": "Space Groove Samira",
+      "chromas": true
+    },
+    {
+      "id": "360020",
+      "num": 20,
+      "name": "High Noon Samira",
+      "chromas": true
+    },
+    {
+      "id": "360030",
+      "num": 30,
+      "name": "Soul Fighter Samira",
+      "chromas": false
+    },
+    {
+      "id": "360033",
+      "num": 33,
+      "name": "Masque of the Black Rose Samira",
+      "chromas": false
+    }
+  ]
+}

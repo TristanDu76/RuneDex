@@ -1,0 +1,384 @@
+{
+  "id": "Hwei",
+  "key": "910",
+  "name": "Hwei",
+  "title": "Visionnaire",
+  "version": "15.23.1",
+  "lore": "Lukai Hwei était le jeune héritier destiné à diriger le Temple de Koyehn, un conservatoire des arts renommé sur l'île sereine de Koyehn, au nord-ouest de l'Ionia. Enfant précoce et gentil, Hwei était intensément connecté aux « nuances du monde », percevant la vie elle-même comme de l'art. Ses yeux changeaient de teinte pour refléter son humeur et son esprit.\n\nIl pratiquait la magie de la peinture, un médium qui influence directement les émotions du public, nécessitant un contrôle et une discipline stricts. Jeune, Hwei a déjà frôlé la catastrophe lorsqu'il a laissé son imagination déborder lors d'une démonstration : il a recréé la mer, mais a submergé mentalement les maîtres, les laissant au bord de la noyade dans son émotion. Bien qu'il ait été horrifié, il était aussi fasciné par la profondeur de son pouvoir.\n\nDurant des années, Hwei a respecté les conventions le jour, mais la nuit, il explorait en secret ses limites, nourrissant l'intensité de son imagination jusqu'à pouvoir manifester une palette de peinture magique. Adulte, il se préparait à hériter de son droit de naissance, apprécié de ses pairs.\n\nTout changea avec l'arrivée de l'artiste invité : Khada Jhin.\n\nPendant un été, Hwei et Jhin échangèrent leurs perspectives créatives. La nuit précédant le départ de Jhin, celui-ci défia Hwei, sentant que son art public n'était qu'une façade forcée. Suppliant de la catharsis, Hwei se laissa aller. Il peignit une œuvre d'une brillante infinité, illuminant la nuit et accueillant le flot d'émotions harmonieuses et viscérales. Il réalisa le potentiel de son art : connexion, inspiration et création sans entraves.\n\nJhin fut témoin de tout. Le lendemain matin, Hwei et les artistes se réveillèrent au milieu d'une série de tragédies conçues comme des œuvres d'art :\n\nQuatre tableaux historiques détruits.\n\nUn arrangement macabre de quatre corps (les maîtres qu'Hwei avait presque tués dans sa jeunesse).\n\nL'éruption en feu des quatre étages inférieurs du temple.\n\nAu milieu des flammes, l'imagination d'Hwei déborda. C'était terrifiant, mais c'était aussi de l'art. Il fut saisi par le même mélange d'horreur et de fascination, comprenant le potentiel de son art pour la destruction et le tourment. Hwei fut le seul survivant de l'effondrement du temple.\n\nHanté par sa culpabilité et les visions de la catastrophe, il trouva sous les décombres le vestige d'un piège en forme de fleur de lotus, reconnaissant la signature de Jhin. Un torrent d'émotions (peur, trahison, tristesse, et surtout crainte respectueuse — Awe) le submergea.\n\nHwei quitta son île, déterminé à trouver la réponse à la question \"pourquoi?\". Il traque désormais les individus néfastes dans les coins sombres de l'Ionia. Il utilise son art pour leur infliger des scènes de souffrance, cherchant à comprendre sa propre source de douleur, tout en offrant de la tranquillité et de la réflexion aux victimes.\n\nEn s'enfonçant dans les ombres, Hwei donne forme à d'infinies possibilités. Le destin de Hwei est désormais de se confronter à l'artiste qui a déclenché ce conflit, risquant de sombrer dans le désespoir le plus complet.",
+  "tags": [
+    "Mage",
+    "Support"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 240,
+    "y": 48,
+    "full": "Hwei.png",
+    "group": "champion",
+    "sprite": "champion1.png"
+  },
+  "skins": [
+    {
+      "id": "910000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "910001",
+      "num": 1,
+      "name": "Hwei élu de l'hiver",
+      "chromas": true
+    },
+    {
+      "id": "910011",
+      "num": 11,
+      "name": "Hwei fleur spirituelle",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "HweiQ",
+      "name": "Sujet : Désastres",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 144,
+        "full": "HweiQ.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Hwei peint des visions de désastres qui infligent une grande quantité de dégâts aux ennemis.<br /><br /><spellName>Feu dévastateur</spellName><br />Hwei tire une boule de feu rapide qui explose au premier ennemi touché, infligeant des <magicDamage>dégâts magiques équivalents à {{ tooltip_qqdamage }} + {{ tooltip_qqbonusdamage }}% des PV max</magicDamage>.<br /><br /><spellName>Éclair enflammé</spellName><br />Hwei frappe un endroit éloigné avec un éclair à retardement qui inflige <magicDamage>{{ tooltip_qwdamage }} pts de dégâts magiques</magicDamage>. Les ennemis isolés ou <status>immobilisés</status> subissent des dégâts bonus en fonction de leurs PV manquants (jusqu'à <magicDamage>{{ tooltip_qwbonusdamage }} pts de dégâts magiques</magicDamage>).<br /><br /><spellName>Champ de lave</spellName><br />Hwei peint une chaîne d'éruptions volcaniques qui infligent <magicDamage>{{ tooltip_qedamage }} pts de dégâts magiques</magicDamage> dans une zone et laissent des mares de lave sur leur passage. Ces dernières <status>ralentissent</status> les ennemis de {{ spell.hweiqe:slowpercent }}% et leur infligent <magicDamage>{{ tooltip_qedamagepersecond }} pts de dégâts magiques par seconde</magicDamage> pendant {{ spell.hweiqe:duration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80/90/100/110/120",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "<spellName>Feu dévastateur</spellName> | Dégâts",
+          "<spellName>Feu dévastateur</spellName> | Pourcentage des PV max en dégâts",
+          "<spellName>Éclair enflammé</spellName> | Dégâts",
+          "<spellName>Éclair enflammé</spellName> | Dégâts supplémentaires max",
+          "<spellName>Champ de lave</spellName> | Dégâts de l'explosion",
+          "<spellName>Champ de lave</spellName> | Dégâts par seconde",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "0",
+      "datavalues": {},
+      "description": "Hwei imagine une série de désastres, ce qui lui permet de peindre des coups dévastateurs.<br><br>Désastres remplace les compétences de Hwei par des compétences blessantes : Feu dévastateur, Éclair enflammé et Champ de lave.",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "HweiW",
+      "name": "Sujet : Sérénités",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 144,
+        "full": "HweiW.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Hwei peint des visions de sérénité qui le soutiennent lui et les champions alliés.<br /><br /><spellName>Ruisseau</spellName><br />Hwei peint un cours d'eau mouvementé en ligne droite qui octroie <speed>+{{ tooltip_wqmovespeed }} vitesse de déplacement</speed> aux alliés.<br /><br /><spellName>Étang</spellName><br />Hwei conjure un étang protecteur qui octroie aux champions alliés dans la zone un <shield>bouclier de {{ tooltip_wwshieldamount }} PV</shield> sur la durée. Le bouclier est réduit de {{ spell.hweiww:tooltipallymod*100 }}% sur les alliés.<br /><br /><spellName>Nuit étoilée</spellName><br />Hwei peint trois orbes de lumière qui orbitent autour de lui et renforcent ses trois prochaines attaques ou compétences pour chacune infliger <magicDamage>{{ tooltip_weonhitdamage }} pts de dégâts magiques bonus</magicDamage> et lui rendre <scaleMana>{{ tooltip_weonhitmanarestore }} pts de mana</scaleMana>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "90/95/100/105/110",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "<spellName>Ruisseau</spellName> | Vitesse de déplacement",
+          "<spellName>Ruisseau</spellName> | Durée",
+          "<spellName>Étang</spellName> | PV du bouclier",
+          "<spellName>Nuit étoilée</spellName> | Dégâts",
+          "<spellName>Nuit étoilée</spellName> | Total du mana rendu",
+          "Délai de récupération",
+          "Coût en mana"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "0",
+      "datavalues": {},
+      "description": "Hwei imagine une série de sérénités, ce qui lui permet de peindre des paysages revigorants.<br><br>Sérénités remplace les compétences de Hwei par des compétences utilitaires : Ruisseau, Étang et Nuit étoilée.",
+      "cooldownBurn": "18/17.5/17/16.5/16"
+    },
+    {
+      "id": "HweiE",
+      "name": "Sujet : Tourments",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0,
+        "full": "HweiE.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Hwei peint des visions de tourment qui contrôlent les ennemis.<br /><br /><spellName>Visage effroyable</spellName><br />Hwei envoie un visage terrifiant vers l'avant qui force le premier ennemi touché à <status>fuir</status> pendant {{ tooltip_eqfleeduration }} sec et lui inflige <magicDamage>{{ tooltip_eqdamage }} pts de dégâts magiques</magicDamage>.<br /><br /><spellName>Œil des abysses</spellName><br />Hwei peint un œil abyssal à l'emplacement ciblé qui octroie de la vision et fixe du regard le premier champion ennemi à sa portée avant de se jeter sur lui, <status>immobilisant</status> le premier ennemi touché pendant {{ tooltip_ewrootduration }} sec et lui infligeant <magicDamage>{{ tooltip_ewdamage }} pts de dégâts magiques</magicDamage>.<br /><br /><spellName>Mâchoires chatoyantes</spellName><br />Hwei peint d'imposantes mâchoires à l'emplacement ciblé qui <status>attirent</status> les ennemis touchés vers leur centre, leur infligeant <magicDamage>{{ tooltip_eedamage }} pts de dégâts magiques</magicDamage> et les <status>ralentissant</status> de {{ tooltip_eeslowamount }}% (le ralentissement diminue en 1.25 sec).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "<spellName>Visage effroyable</spellName> | Dégâts",
+          "<spellName>Visage effroyable</spellName> | Durée",
+          "<spellName>Œil des abysses</spellName> | Dégâts",
+          "<spellName>Œil des abysses</spellName> | Durée de l'immobilisation",
+          "<spellName>Mâchoires chatoyantes</spellName> | Dégâts",
+          "<spellName>Mâchoires chatoyantes</spellName> | Ralentissement",
+          "Délai de récupération",
+          "Coût en mana"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "0",
+      "datavalues": {},
+      "description": "Hwei imagine une série de tourments, ce qui lui permet de peindre des visages manipulateurs.<br><br>Tourments remplace les compétences de Hwei par des contrôles de foule : Visage effroyable, Œil des abysses et Mâchoires chatoyantes.",
+      "cooldownBurn": "13/12.5/12/11.5/11"
+    },
+    {
+      "id": "HweiR",
+      "name": "Vision de désespoir",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 0,
+        "full": "HweiR.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Hwei déclenche une vision de désespoir pur qui s'accroche à un champion ennemi pendant {{ duration }} sec. La vision s'étend sur la durée, appliquant aux ennemis un <status>ralentissement</status> cumulable de {{ slowpercentperstack }}% toutes les 0.25 sec, et leur infligeant <magicDamage>{{ damageovertime }} pts de dégâts magiques par seconde</magicDamage>.<br /><br />À la fin de la compétence, la vision explose en infligeant <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Dégâts par seconde",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1300",
+      "datavalues": {},
+      "description": "Hwei peint une vision de pur désespoir. Le premier champion ennemi touché devient le centre d'une peinture grandissante, qui ralentit et blesse les ennemis proches. Cette vision explose lorsqu'elle atteint sa limite de taille, ou lorsque le champion affecté meurt.",
+      "cooldownBurn": "140/115/80"
+    }
+  ],
+  "passive": {
+    "name": "Signature du Visionnaire",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 240,
+      "y": 48,
+      "full": "HweiPassive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Hwei prépare les champions ennemis qu'il blesse à l'aide de ses compétences pour sa touche finale : sa signature.<br><br>Toucher un ennemi avec une deuxième compétence blessante termine sa signature, qui apparaît sous l'ennemi. La signature explose après un court délai, infligeant des dégâts magiques à tous les ennemis à portée."
+  },
+  "created_at": "2025-11-26T15:13:33.248576+00:00",
+  "factions": [
+    "ionia"
+  ],
+  "custom_tags": [
+    "artiste",
+    "peintre"
+  ],
+  "gender": "Male",
+  "species": "Human",
+  "title_en": "the Visionary",
+  "lore_en": "Lukai Hwei was the young heir destined to lead the Temple of Koyehn, a renowned conservatory for the arts on the serene island of Koyehn, northwest Ionia. A kind and precocious child, Hwei was intensely connected to the \"shades of the world,\" seeing life itself as art. His eye color shifted in hue to reflect his mind and mood.\n\nHe practiced paint magic, a medium that directly influenced the emotions of the audience, requiring strict control and discipline. Young Hwei already skirted disaster when he indulged his imagination during a demonstration: he recreated the sea but mentally submerged the masters, leaving them on the verge of drowning in his emotion. Though horrified, he was also fascinated by the depth of his power.\n\nFor years, Hwei upheld conventions by day, but alone at night, he secretly pushed his boundaries, focusing the intensity of his imagination until he could manifest a palette flowing with magical paint. As an adult, he prepared to inherit his birthright, respected by his peers.\n\nEverything changed with the arrival of the visiting artist: Khada Jhin.\n\nOver a gilded summer, Hwei and Jhin exchanged creative perspectives. The night before Jhin's departure, he challenged Hwei, sensing that his public art was a forced façade. Begging for catharsis, Hwei surrendered. He painted a work of brilliant infinity, lighting up the night and welcoming the harmonious and visceral flow of emotions. He realized the potential of his art: connection, inspiration, and unfettered creation.\n\nJhin witnessed it all. At dawn, Hwei and his fellow artists awoke to a series of tragedies designed as art pieces:\n\nFour historic paintings destroyed.\n\nAn arrangement of four bodies (the masters Hwei had almost killed in his youth).\n\nThe fiery eruption of the temple's four lowest floors.\n\nAmid the flames, Hwei's imagination overflowed. It was terrifying, yet it was art. He was seized by the same mix of horror and fascination, understanding his art's potential for destruction and torment. Hwei emerged as the temple's only survivor.\n\nHaunted by guilt and the visions of the disaster, he found the remnants of a lotus-petaled trap beneath the rubble, recognizing Jhin's signature. A cascade of emotions—fear, sorrow, betrayal, and most importantly, awe—engulfed him.\n\nHwei left his island, determined to find the answer to the question \"why?\" He now tracks nefarious individuals in Ionia's darkest corners. He uses his art to unleash scenes of suffering upon them, seeking to understand his own well of pain, while also creating shared tranquility and reflection for the victims.\n\nAs he spirals deeper into the shadows, Hwei gives shape to infinite possibilities. Hwei's destiny is now to confront the artist who initiated this conflict, risking either finding an answer or succumbing to utter despair.",
+  "spells_en": [
+    {
+      "id": "HweiQ",
+      "name": "Subject: Disaster",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 144,
+        "full": "HweiQ.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Hwei paints visions of disaster that deal large damage to enemies.<br /><br /><spellName>Devastating Fire</spellName><br />Hwei launches a blazing fast fireball that explodes on the first enemy hit, dealing <magicDamage>{{ tooltip_qqdamage }} plus {{ tooltip_qqbonusdamage }}% max health magic damage</magicDamage>.<br /><br /><spellName>Severing Bolt</spellName><br />Hwei strikes over far distances with a delayed lightning bolt, dealing <magicDamage>{{ tooltip_qwdamage }} magic damage</magicDamage>. Hitting an Isolated or <status>Immobilized</status> target increases the damage up to <magicDamage>{{ tooltip_qwbonusdamage }} magic damage</magicDamage>, based on the target's missing health.<br /><br /><spellName>Molten Fissure</spellName><br />Hwei unleashes a path of eruptions, dealing <magicDamage>{{ tooltip_qedamage }} magic damage</magicDamage> in an area and leaving behind pools of lava that <status>Slow</status> enemies by {{ spell.hweiqe:slowpercent }}% and deal <magicDamage>{{ tooltip_qedamagepersecond }} magic damage per second</magicDamage> for {{ spell.hweiqe:duration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80/90/100/110/120",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "<spellName>Devastating Fire</spellName> | Damage",
+          "<spellName>Devastating Fire</spellName> | Maximum Health Damage",
+          "<spellName>Severing Bolt</spellName> | Damage",
+          "<spellName>Severing Bolt</spellName> | Maximum Bonus Damage",
+          "<spellName>Molten Fissure</spellName> | Explosion Damage",
+          "<spellName>Molten Fissure</spellName> | Damage Per Second",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "0",
+      "datavalues": {},
+      "description": "Hwei envisions a series of disasters, allowing him to paint a devastating blow.<br><br>This ability replaces Hwei's abilities with damaging abilities: Devastating Fire, Severing Bolt, and Molten Fissure.",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "HweiW",
+      "name": "Subject: Serenity",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 144,
+        "full": "HweiW.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Hwei paints visions of serenity that provide utility for himself and allied champions.<br /><br /><spellName>Fleeting Current</spellName><br />Hwei launches a current of swift waters in a line that grants allies <speed>{{ tooltip_wqmovespeed }} Move Speed</speed>.<br /><br /><spellName>Pool of Reflection</spellName><br />Hwei forms a protective pool that grants <shield>{{ tooltip_wwshieldamount }} Shields</shield> over time to allied champions inside reduced by {{ spell.hweiww:tooltipallymod*100 }}% for allies.<br /><br /><spellName>Stirring Lights</spellName><br />Hwei creates three swirling lights that empower his next three Abilities or Attacks to deal an additional <magicDamage>{{ tooltip_weonhitdamage }} magic damage</magicDamage> and restore <scaleMana>{{ tooltip_weonhitmanarestore }} Mana</scaleMana> each.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "90/95/100/105/110",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "<spellName>Fleeting Current</spellName> | Move Speed",
+          "<spellName>Fleeting Current</spellName> | Duration",
+          "<spellName>Pool of Reflection</spellName> | Shield Amount",
+          "<spellName>Stirring Lights</spellName> | Damage",
+          "<spellName>Stirring Lights</spellName> | Total Mana Restore",
+          "Cooldown",
+          "Mana Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "0",
+      "datavalues": {},
+      "description": "Hwei envisions a series of serenities, allowing him to paint invigorating settings.<br><br>This ability replaces Hwei's abilities with utility abilities: Fleeting Current, Pool of Reflection, and Stirring Lights.",
+      "cooldownBurn": "18/17.5/17/16.5/16"
+    },
+    {
+      "id": "HweiE",
+      "name": "Subject: Torment",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0,
+        "full": "HweiE.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Hwei paints visions of torment that control enemies.<br /><br /><spellName>Grim Visage</spellName><br />Hwei launches a terrifying face that causes the first enemy hit to <status>Flee</status> for {{ tooltip_eqfleeduration }} second(s) and take <magicDamage>{{ tooltip_eqdamage }} magic damage</magicDamage>.<br /><br /><spellName>Gaze of the Abyss</spellName><br />Hwei forms an eye that lingers and provides vision locking onto the first enemy champion that enters and launching a homing missile that <status>Roots</status> the first enemy hit for {{ tooltip_ewrootduration }} seconds dealing <magicDamage>{{ tooltip_ewdamage }} magic damage</magicDamage>.<br /><br /><spellName>Crushing Maw</spellName><br />Hwei paints a set of jaws at a target location that <status>Drags</status> enemies to the center dealing <magicDamage>{{ tooltip_eedamage }} magic damage</magicDamage> and <status>Slowing</status> enemies caught by {{ tooltip_eeslowamount }}% decaying over 1.25 seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "<spellName>Grim Visage</spellName> | Damage",
+          "<spellName>Grim Visage</spellName> | Duration",
+          "<spellName>Gaze of the Abyss</spellName> | Damage",
+          "<spellName>Gaze of the Abyss</spellName> | Root Duration",
+          "<spellName>Crushing Maw</spellName> | Damage",
+          "<spellName>Crushing Maw</spellName> | Slow Amount",
+          "Cooldown",
+          "Mana Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "0",
+      "datavalues": {},
+      "description": "Hwei envisions a series of torments, allowing him to paint controlling visages.<br><br>This ability replaces Hwei's abilities with crowd control abilities: Grim Visage, Gaze of the Abyss, and Crushing Maw.",
+      "cooldownBurn": "13/12.5/12/11.5/11"
+    },
+    {
+      "id": "HweiR",
+      "name": "Spiraling Despair",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 0,
+        "full": "HweiR.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Hwei launches a vision of pure despair that sticks to an enemy champion for {{ duration }} seconds. The vision expands over time applying a <status>Slow</status> to enemies for {{ slowpercentperstack }}% stacking every 0.25 seconds, and dealing <magicDamage>{{ damageovertime }} magic damage per second</magicDamage>.<br /><br />Upon completion, the vision shatters, dealing <magicDamage>{{ damage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Damage Per Second",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1300",
+      "datavalues": {},
+      "description": "Hwei paints a vision of pure despair. The first enemy champion struck becomes the center of an expanding painting that slows and damages nearby enemies. The vision explodes after reaching its maximum size or when the champion dies.",
+      "cooldownBurn": "140/115/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Signature of the Visionary",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 240,
+      "y": 48,
+      "full": "HweiPassive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Hwei primes enemy champions he damages with his abilities for his signature finishing touch.<br><br>Hitting an enemy with a second damaging spell completes his signature, leaving it beneath them. The signature detonates after a short delay, dealing magic damage to all enemies in range."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Mid"
+  ],
+  "skins_en": [
+    {
+      "id": "910000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "910001",
+      "num": 1,
+      "name": "Winterblessed Hwei",
+      "chromas": true
+    },
+    {
+      "id": "910011",
+      "num": 11,
+      "name": "Spirit Blossom Hwei",
+      "chromas": true
+    }
+  ]
+}

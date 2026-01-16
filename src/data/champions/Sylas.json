@@ -1,0 +1,440 @@
+{
+  "id": "Sylas",
+  "key": "517",
+  "name": "Sylas",
+  "title": "Révolutionnaire déchaîné",
+  "version": "15.23.1",
+  "lore": "Élevé dans l'un des quartiers les plus pauvres de Demacia, Sylas de Liebourg est devenu le symbole du côté obscur de la Grande cité. Enfant, sa capacité à déceler la sorcellerie cachée attira l'attention des tristement célèbres traqueurs de mages, qui finirent par l'emprisonner pour avoir retourné ses pouvoirs contre eux. Désormais libéré de ses chaînes, Sylas est un révolutionnaire convaincu, employant la magie de ceux qui l'entourent pour ravager le royaume qu'il a autrefois servi… Et son groupe de mages exilés semble grandir chaque jour un peu plus.",
+  "tags": [
+    "Mage",
+    "Assassin"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 0,
+    "y": 48,
+    "full": "Sylas.png",
+    "group": "champion",
+    "sprite": "champion4.png"
+  },
+  "skins": [
+    {
+      "id": "517000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "517001",
+      "num": 1,
+      "name": "Sylas spectre lunaire",
+      "chromas": true
+    },
+    {
+      "id": "517008",
+      "num": 8,
+      "name": "Sylas de Freljord",
+      "chromas": true
+    },
+    {
+      "id": "517013",
+      "num": 13,
+      "name": "PROJET : Sylas",
+      "chromas": true
+    },
+    {
+      "id": "517014",
+      "num": 14,
+      "name": "PROJET : Sylas prestige",
+      "chromas": false
+    },
+    {
+      "id": "517024",
+      "num": 24,
+      "name": "Sylas loup de combat",
+      "chromas": true
+    },
+    {
+      "id": "517034",
+      "num": 34,
+      "name": "Sylas tueur de cendres",
+      "chromas": true
+    },
+    {
+      "id": "517036",
+      "num": 36,
+      "name": "Sylas élu de l'hiver",
+      "chromas": true
+    },
+    {
+      "id": "517046",
+      "num": 46,
+      "name": "Sylas du pulsar sombre",
+      "chromas": true
+    },
+    {
+      "id": "517053",
+      "num": 53,
+      "name": "T1 Sylas prestige",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "SylasQ",
+      "name": "Croix du forçat",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 48,
+        "full": "SylasQ.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Sylas donne un coup de chaînes, infligeant <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage> et appliquant un <status>ralentissement</status> de {{ slowamountcalc }} pendant {{ slowduration }} sec. L'endroit où les chaînes se croisent explose, infligeant <magicDamage>{{ explosiondamage }} pts de dégâts magiques</magicDamage> supplémentaires.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "55",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Dégâts de l'explosion",
+          "Ralentissement",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "775",
+      "datavalues": {},
+      "description": "Sylas donne un coup en croisant ses chaînes, infligeant des dégâts magiques à l'endroit ciblé et ralentissant les ennemis. <br><br>Après un délai, une explosion d'énergie magique se produit à l'intersection des chaînes, infligeant des dégâts.",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "SylasW",
+      "name": "Régicide",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 48,
+        "full": "SylasW.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Sylas se jette sur un ennemi et lui assène un coup magique infligeant <magicDamage>{{ mindamage }} pts de dégâts magiques</magicDamage>. Contre les champions, Sylas récupère entre <healing>{{ minhealing }}</healing> et <healing>{{ maxhealing }} PV</healing>, selon ses PV manquants (soins max à {{ maxexecutethreshold*100 }}% de ses PV ou moins).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/60/70/80/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Soins",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Sylas se jette sur un ennemi pour infliger des dégâts et, contre des champions, récupérer des PV.",
+      "cooldownBurn": "12/10.5/9/7.5/6"
+    },
+    {
+      "id": "SylasE",
+      "name": "Évasion / Enlèvement",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 96,
+        "full": "SylasE.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Sylas se rue dans une direction et prépare une <recast>réactivation</recast> pendant 3.5 sec.<br /><br /><recast>Réactivation :</recast> Sylas lance sa chaîne pour se rapprocher du premier ennemi touché, lui infligeant <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage> et le <status>projetant dans les airs</status> pendant {{ knockupduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "65",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Sylas se rue dans une direction. Sylas peut réactiver cette compétence pour lancer ses chaînes et se rapprocher de l'ennemi touché.",
+      "cooldownBurn": "13/12/11/10/9"
+    },
+    {
+      "id": "SylasR",
+      "name": "Détournement",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 96,
+        "full": "SylasR.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Sylas dérobe l'ultime d'un champion ennemi et peut ensuite utiliser une copie de celui-ci en tenant compte du rang de son propre ultime et de ses propres stats.<br /><br />Dérober un ennemi applique sur celui-ci un délai de récupération équivalent à {{ pertargetcooldown }}% (modifié par l'accélération de compétence de Sylas) du délai de récupération de l'ultime de l'ennemi, avec un minimum de {{ minimumenemycooldown }} sec, empêchant ainsi Sylas de détourner à nouveau son ultime.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "75",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "950",
+      "datavalues": {},
+      "description": "Sylas vole la compétence ultime de l'ennemi et peut la lancer librement.",
+      "cooldownBurn": "80/55/30"
+    }
+  ],
+  "passive": {
+    "name": "Volée de pétricite",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 0,
+      "y": 48,
+      "full": "SylasP.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "Après avoir lancé une compétence, Sylas stocke une charge de Volée de pétricite. Les attaques de base de Sylas dépensent une charge pour donner un coup de chaînes énergisé autour de lui, infligeant des dégâts magiques supplémentaires aux ennemis touchés. Tant que Sylas possède une charge de Volée de pétricite, sa vitesse d'attaque est augmentée. "
+  },
+  "created_at": "2025-11-26T15:13:35.212437+00:00",
+  "factions": [
+    "demacia",
+    "freljord"
+  ],
+  "custom_tags": [
+    "révolutionnaire",
+    "mage-rebelle"
+  ],
+  "gender": "Male",
+  "species": "Human",
+  "title_en": "the Unshackled",
+  "lore_en": "Raised in one of Demacia's lesser quarters, Sylas of Dregbourne has come to symbolize the darker side of the Great City. As a boy, his ability to root out hidden sorcery caught the attention of the notorious mageseekers, who eventually imprisoned him for turning those same powers against them. Having now broken free, Sylas lives as a hardened revolutionary, using the magic of those around him to destroy the kingdom he once served… and his band of outcast mage followers seems to grow by the day.",
+  "spells_en": [
+    {
+      "id": "SylasQ",
+      "name": "Chain Lash",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 48,
+        "full": "SylasQ.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Sylas lashes his chains out, dealing <magicDamage>{{ damage }} magic damage</magicDamage> and <status>Slowing</status> by {{ slowamountcalc }} for {{ slowduration }} seconds. The place where the chains intersect explodes, dealing a further <magicDamage>{{ explosiondamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "55",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Explosion Damage",
+          "Slow",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "775",
+      "datavalues": {},
+      "description": "Sylas lashes his chains out, intersecting at his targeted location dealing damage to and slowing enemies. <br><br>After a delay, magical energy explodes from the intersection point dealing damage.",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "SylasW",
+      "name": "Kingslayer",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 48,
+        "full": "SylasW.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Sylas lunges at an enemy with magical force dealing <magicDamage>{{ mindamage }} magic damage</magicDamage>. Against champions, Sylas restores between <healing>{{ minhealing }}</healing> and <healing>{{ maxhealing }} Health</healing> based on his missing Health (max healing at or below {{ maxexecutethreshold*100 }}% Health).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/60/70/80/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Healing",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Sylas lunges at an enemy with magical force dealing damage and healing himself against enemy champions.",
+      "cooldownBurn": "12/10.5/9/7.5/6"
+    },
+    {
+      "id": "SylasE",
+      "name": "Abscond / Abduct",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 96,
+        "full": "SylasE.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Sylas quickly dashes, and prepares a <recast>Recast</recast> for 3.5 seconds.<br /><br /><recast>Recast:</recast> Sylas throws his chains, pulling himself to the first enemy hit, dealing <magicDamage>{{ damage }} magic damage</magicDamage>, and <status>Knocking Up</status> for {{ knockupduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "65",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Sylas dashes to a location. Sylas can recast the ability to throw his chains out, pulling himself to an enemy he hits.",
+      "cooldownBurn": "13/12/11/10/9"
+    },
+    {
+      "id": "SylasR",
+      "name": "Hijack",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 96,
+        "full": "SylasR.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Sylas hijacks an enemy champion, allowing him to cast a copy of their ultimate Ability, based on his Ultimate level and using his stats.<br /><br />Hijacking an enemy places a Cooldown on them for {{ pertargetcooldown }}% (modified by Sylas' Ability Haste) of the enemy's ultimate's Cooldown, with a minimum of {{ minimumenemycooldown }} seconds, during which time Sylas cannot hijack them again.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "75",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "950",
+      "datavalues": {},
+      "description": "Sylas steals the enemy's ultimate ability and can cast it freely.",
+      "cooldownBurn": "80/55/30"
+    }
+  ],
+  "passive_en": {
+    "name": "Petricite Burst",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 0,
+      "y": 48,
+      "full": "SylasP.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "After casting a spell, Sylas stores a charge of Petricite Burst. Sylas's basic attacks will expend a charge and whirl his energized chains around him dealing bonus magic damage to enemies hit. While Sylas has a charge of Petricite Burst, he gains attack speed. "
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Jungle",
+    "Mid"
+  ],
+  "skins_en": [
+    {
+      "id": "517000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "517001",
+      "num": 1,
+      "name": "Lunar Wraith Sylas",
+      "chromas": true
+    },
+    {
+      "id": "517008",
+      "num": 8,
+      "name": "Freljord Sylas",
+      "chromas": true
+    },
+    {
+      "id": "517013",
+      "num": 13,
+      "name": "PROJECT: Sylas",
+      "chromas": true
+    },
+    {
+      "id": "517014",
+      "num": 14,
+      "name": "Prestige PROJECT: Sylas",
+      "chromas": false
+    },
+    {
+      "id": "517024",
+      "num": 24,
+      "name": "Battle Wolf Sylas",
+      "chromas": true
+    },
+    {
+      "id": "517034",
+      "num": 34,
+      "name": "Ashen Slayer Sylas",
+      "chromas": true
+    },
+    {
+      "id": "517036",
+      "num": 36,
+      "name": "Winterblessed Sylas",
+      "chromas": true
+    },
+    {
+      "id": "517046",
+      "num": 46,
+      "name": "Dark Star Sylas",
+      "chromas": true
+    },
+    {
+      "id": "517053",
+      "num": 53,
+      "name": "Prestige T1 Sylas",
+      "chromas": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "id": "Ornn",
+  "key": "516",
+  "name": "Ornn",
+  "title": "Dieu de la forge volcanique",
+  "version": "15.23.1",
+  "lore": "Ornn est le demi-dieu de la forge et de l'artisanat du Freljord. Il valorise l'intimité, la solitude et la concentration au-dessus de tout. Il travaille dans sa forge enfouie sous un volcan endormi, l'Âtre-foyer (Hearth-Home), où il crée des outils d'une qualité inégalable (comme le bouclier légendaire de Braum).\n\nLe Peuple Perdu : Autrefois, un peuple connu sous le nom des Sangs-du-Foyer (Hearthblood) s'est rassemblé sur les pentes de son volcan. Ces architectes, brasseurs et forgerons imitaient l'exemple d'Ornn, cherchant constamment à améliorer leur art. Ornn les désapprouvait publiquement (il ne leur accordait que des froncements de sourcils ou de brefs hochements de tête), mais il appréciait secrètement leur persévérance et leur désir d'excellence.\n\nLa Catastrophe Fratricide : Cette culture fut détruite en une seule nuit lors d'une bataille dévastatrice entre Ornn et son frère, le demi-dieu Volibear, au sommet de la montagne. Le cataclysme de feu, de cendres et de foudre fut si violent que les Sangs-du-Foyer furent réduits en os et en cendres.\n\nL'Exil du Culpable : Dévasté (bien qu'il ne l'avouerait jamais), Ornn fut submergé par la culpabilité. Il avait entrevu le potentiel de la vie mortelle à travers les Sangs-du-Foyer, mais l'avait anéanti sous la colère aveugle des immortels. Il se retira dans l'isolement de sa fonderie pendant des siècles.\n\nLe Retour Imminent : Aujourd'hui, Ornn sent que le monde est au bord d'une nouvelle ère. Ses frères et sœurs (notamment Volibear) s'immiscent à nouveau dans les affaires des mortels, le Freljord est fracturé et des horreurs anciennes se cachent dans l'ombre.\n\nLe Nouveau But : Ornn sait que pendant les guerres à venir et à leur issue, le Freljord — et le reste de Runeterra — aura besoin d'un bon forgeron. Il sort de son antre pour remettre les divinités à leur place, avec son fidèle marteau ou la puissance du volcan, et pour forger ce qui est nécessaire à l'ère nouvelle.",
+  "tags": [
+    "Tank"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 384,
+    "y": 0,
+    "full": "Ornn.png",
+    "group": "champion",
+    "sprite": "champion3.png"
+  },
+  "skins": [
+    {
+      "id": "516000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "516001",
+      "num": 1,
+      "name": "Fulguro Ornn",
+      "chromas": false
+    },
+    {
+      "id": "516002",
+      "num": 2,
+      "name": "Ornn sylvestre",
+      "chromas": true
+    },
+    {
+      "id": "516011",
+      "num": 11,
+      "name": "Ornn astro-groove",
+      "chromas": true
+    },
+    {
+      "id": "516020",
+      "num": 20,
+      "name": "Ornn tchou-tchou",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "OrnnQ",
+      "name": "Fracture magmatique",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 48,
+        "full": "OrnnQ.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ornn frappe le sol, créant une fissure qui inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> et qui <status>ralentit</status> les ennemis de {{ e5 }}% pendant {{ e6 }} sec. Une colonne de roche se forme au bout de la fissure pendant {{ e3 }} sec. {{ spellmodifierdescriptionappend }}",
+      "costBurn": "45",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Ornn frappe le sol, créant une fissure qui blesse et ralentit les ennemis touchés. Après un court délai, une colonne de lave se forme au bout de la fissure.",
+      "cooldownBurn": "9/8.5/8/7.5/7"
+    },
+    {
+      "id": "OrnnW",
+      "name": "Fournaise",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 48,
+        "full": "OrnnW.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ornn devient impossible à arrêter et avance en crachant du feu, infligeant <magicDamage>{{ maxpercenthpperticktooltip }}% des PV max en dégâts magiques</magicDamage> en {{ breathduration }} sec. Les ennemis touchés par la dernière flamme deviennent <keywordMajor>fragiles</keywordMajor> pendant {{ brittleduration }} sec.<br /><br />Contre les cibles <keywordMajor>fragiles</keywordMajor>, les effets <status>immobilisants</status> durent 30% plus longtemps et infligent <magicDamage>{{ brittlepercentmaxhpcalc }} des PV max en dégâts magiques</magicDamage> supplémentaires. Les attaques d'Ornn <status>repoussent</status> les cibles <keywordMajor>fragiles</keywordMajor> et leur infligent des dégâts supplémentaires.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "45/50/55/60/65",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "% des PV en dégâts",
+          "Dégâts minimum",
+          "Dégâts maximum",
+          "Coût en @AbilityResourceName@",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Ornn avance en crachant des flammes. Les ennemis touchés par la dernière flamme deviennent fragiles.",
+      "cooldownBurn": "12/11.5/11/10.5/10"
+    },
+    {
+      "id": "OrnnE",
+      "name": "Ruée ardente",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 48,
+        "full": "OrnnE.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ornn se rue dans une direction, infligeant <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage>. Si Ornn percute un terrain, il crée une onde de choc qui <status>projette dans les airs</status> les ennemis pendant {{ knockupduration }} sec et qui inflige les mêmes dégâts à ceux que la ruée n'a pas touchés.<br /><br />La ruée d'Ornn détruit les colonnes de lave et les terrains créés par les ennemis.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "35/40/45/50/55",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts de la ruée",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "450",
+      "datavalues": {},
+      "description": "Ornn fonce dans une direction en infligeant des dégâts aux ennemis qu'il traverse. Si Ornn percute un terrain pendant la ruée, l'impact crée une onde de choc autour de lui qui blesse et projette en l'air les ennemis.",
+      "cooldownBurn": "14/13.5/13/12.5/12"
+    },
+    {
+      "id": "OrnnR",
+      "name": "Appel du dieu de la forge",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 48,
+        "full": "OrnnR.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Ornn invoque un énorme élémentaire de lave qui fonce vers lui, infligeant <magicDamage>{{ rdamagecalc }} pts de dégâts magiques</magicDamage>, appliquant <keywordMajor>Fragilité</keywordMajor> et <status>ralentissant</status> les ennemis touchés de {{ rslowpercentbasepremath }}% pendant {{ brittledurationtooltiponly }} sec.<br /><br />Ornn peut <recast>réactiver</recast> cette compétence pour effectuer une ruée en donnant un coup de tête. S'il se rue contre l'élémentaire, il redirige celui-ci et le renforce, ce qui lui permet de <status>projeter dans les airs</status> le premier champion touché pendant {{ rstunduration }} sec et les champions suivants pendant {{ minstun }} sec. L'élémentaire inflige également <magicDamage>{{ rdamagecalc }} pts de dégâts magiques</magicDamage> et réapplique <keywordMajor>Fragilité</keywordMajor>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ralentissement",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "2500",
+      "datavalues": {},
+      "description": "Ornn invoque un énorme élémentaire à l'endroit ciblé. Cet élémentaire se déplace ensuite vers Ornn, de plus en plus vite. Les ennemis écrasés par l'élémentaire subissent des dégâts, sont ralentis et deviennent fragiles. Ornn peut relancer cette compétence pour se ruer vers l'élémentaire, le réorientant selon la direction de la collision. L'élémentaire redirigé projette en l'air les ennemis qu'il touche, en infligeant les mêmes dégâts qu'avant et en appliquant de nouveau l'effet Fragilité.",
+      "cooldownBurn": "140/120/100"
+    }
+  ],
+  "passive": {
+    "name": "Forgeron ambulant",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 384,
+      "y": 0,
+      "full": "OrnnP.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Ornn augmente tous ses bonus d'armure et de résistance magique.<br><br>Ornn peut dépenser des PO pour forger des objets non consommables n'importe où sur la carte.<br><br>De plus, il peut créer des chefs-d'œuvre pour ses alliés ou lui-même."
+  },
+  "created_at": "2025-11-26T15:13:34.38849+00:00",
+  "factions": [
+    "freljord"
+  ],
+  "custom_tags": [
+    "demi-dieu",
+    "forgeron"
+  ],
+  "gender": "Male",
+  "species": "Spirit",
+  "title_en": "The Fire below the Mountain",
+  "lore_en": "Ornn is the demi-god of the forge and craftsmanship in the Freljord. He values privacy, solitude, and focus above all. He labors in his forge beneath a dormant volcano, Hearth-Home, creating tools of inimitable quality (such as the legendary shield of Braum).\n\nThe Lost People: Once, a people known as the Hearthblood gathered on his slopes. These blacksmiths, architects, and brewmasters imitated Ornn's example, constantly striving to hone their craft. Ornn publicly disapproved (giving only curt nods or frowns), but he secretly approved of their perseverance and pursuit of excellence.\n\nThe Fratricidal Cataclysm: This culture was destroyed in a single night when Ornn battled his brother, the demigod Volibear, at the mountain's peak. The resultant storm of fire, ash, and lightning was so violent that the Hearthblood were reduced to scattered bones and cinders.\n\nThe Guilty Exile: Though he would never admit it, Ornn was devastated and wracked with guilt. He had glimpsed the potential of mortal life through the Hearthblood, only to see it lost beneath the indiscriminate wrath of the immortals. He retreated to the isolation of his foundry for an age.\n\nThe Imminent Return: Now, Ornn senses the world is on the cusp of a new era. His siblings (especially Volibear) are taking physical form again, the Freljord is fractured, and ancient horrors lurk in the shadows.\n\nThe New Purpose: Ornn knows that during the wars to come and in their aftermath, the Freljord—and the rest of Runeterra—will have need of a good blacksmith. He emerges from his lair only to put these deities in their place, with his hammer or the powers of the volcano itself, and to forge what is needed for the new era.",
+  "spells_en": [
+    {
+      "id": "OrnnQ",
+      "name": "Volcanic Rupture",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 48,
+        "full": "OrnnQ.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ornn slams the ground, creating a fissure dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> and <status>Slowing</status> by {{ e5 }}% for {{ e6 }} seconds. A pillar of rock forms at the fissure's end for {{ e3 }} seconds. {{ spellmodifierdescriptionappend }}",
+      "costBurn": "45",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Ornn slams the ground, sending out a fissure dealing damage and slowing enemies hit. After a small delay, a magma pillar forms at the end location.",
+      "cooldownBurn": "9/8.5/8/7.5/7"
+    },
+    {
+      "id": "OrnnW",
+      "name": "Bellows Breath",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 48,
+        "full": "OrnnW.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ornn stomps forward Unstoppably while breathing fire, dealing <magicDamage>{{ maxpercenthpperticktooltip }}% max Health magic damage</magicDamage> over {{ breathduration }} seconds. Enemies hit by the final bout of flame become <keywordMajor>Brittle</keywordMajor> for {{ brittleduration }} seconds.<br /><br /><status>Immobilizing</status> effects on <keywordMajor>Brittle</keywordMajor> targets have their duration increased by 30% and deal an additional <magicDamage>{{ brittlepercentmaxhpcalc }} max Health magic damage</magicDamage>. Ornn's Attacks against <keywordMajor>Brittle</keywordMajor> targets <status>Knock</status> them <status>Back</status>, dealing the additional damage.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "45/50/55/60/65",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "% Health damage",
+          "Minimum Damage",
+          "Maximum Damage",
+          "@AbilityResourceName@ Cost",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Ornn advances, breathing fire. Enemies hit by the final gout of flame become Brittle.",
+      "cooldownBurn": "12/11.5/11/10.5/10"
+    },
+    {
+      "id": "OrnnE",
+      "name": "Searing Charge",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 48,
+        "full": "OrnnE.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ornn charges, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage>. If Ornn rams into terrain, he creates a shockwave that <status>Knocks Up</status> enemies for {{ knockupduration }} seconds and applies the same damage to those not hit by the charge.<br /><br />Ornn's charge destroys magma pillars and terrain created by enemies.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "35/40/45/50/55",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dash Damage",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "450",
+      "datavalues": {},
+      "description": "Ornn charges, dealing damage to enemies he passes through. If Ornn collides with terrain while charging, the impact creates a shockwave around him which deals damage and knocks up enemies.",
+      "cooldownBurn": "14/13.5/13/12.5/12"
+    },
+    {
+      "id": "OrnnR",
+      "name": "Call of the Forge God",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 48,
+        "full": "OrnnR.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Ornn summons a massive lava elemental, which stampedes towards him, dealing <magicDamage>{{ rdamagecalc }} magic damage</magicDamage>, applying <keywordMajor>Brittle</keywordMajor> to, and <status>Slowing</status> enemies hit by {{ rslowpercentbasepremath }}% for {{ brittledurationtooltiponly }} seconds.<br /><br />Ornn can <recast>Recast</recast> to dash with a headbutt. If he dashes into the elemental, he redirects and empowers it, causing it to <status>Knock Up</status> the first champion for {{ rstunduration }} second and subsequent champions for {{ minstun }} seconds. The elemental also deals <magicDamage>{{ rdamagecalc }} magic damage</magicDamage> and reapplies <keywordMajor>Brittle</keywordMajor>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Slow",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "2500",
+      "datavalues": {},
+      "description": "Ornn summons a massive elemental at a location which travels toward him with increasing speed. Enemies run over by the elemental take damage, are slowed and are made Brittle. Ornn can recast the ability to charge into the elemental, redirecting it in the direction he hits it, causing the elemental to affect any enemies it runs over to be knocked up, dealing the same damage and re-applying Brittle.",
+      "cooldownBurn": "140/120/100"
+    }
+  ],
+  "passive_en": {
+    "name": "Living Forge",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 384,
+      "y": 0,
+      "full": "OrnnP.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Ornn gains an additional bonus Armor and Magic Resist from all sources.<br><br>Ornn can spend gold to forge non-consumable items anywhere.<br><br>Additionally, he can create masterwork items for himself and for his allies."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Top"
+  ],
+  "skins_en": [
+    {
+      "id": "516000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "516001",
+      "num": 1,
+      "name": "Thunder Lord Ornn",
+      "chromas": false
+    },
+    {
+      "id": "516002",
+      "num": 2,
+      "name": "Elderwood Ornn",
+      "chromas": true
+    },
+    {
+      "id": "516011",
+      "num": 11,
+      "name": "Space Groove Ornn",
+      "chromas": true
+    },
+    {
+      "id": "516020",
+      "num": 20,
+      "name": "Choo-Choo Ornn",
+      "chromas": true
+    }
+  ]
+}

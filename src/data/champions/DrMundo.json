@@ -1,0 +1,469 @@
+{
+  "id": "DrMundo",
+  "key": "36",
+  "name": "Dr. Mundo",
+  "title": "Dément de Zaun",
+  "version": "15.23.1",
+  "lore": "Le personnage connu sous le nom de Dr. Mundo était à l'origine un exécuteur (enforcer) pour l'un des puissants barons de la chimie de Zaun. Il était connu pour son côté jovial et bruyant, mais son manque de prudence et son habitude de faire des faux pas lui valurent de s'attirer la colère de son patron.\r\n\r\nDéterminé à faire de lui un exemple, le baron de la chimie fit interner son exécuteur à l'Asile Osweld, un établissement célèbre pour ses traitements inhumains et ses « remèdes » douteux. Pendant des mois, l'homme subit d'indicibles horreurs : nerfs stimulés, lobes cérébraux sectionnés et quantités massives de médicaments non prouvés.\r\n\r\nLe corps de l'exécuteur se transforma, ses muscles augmentant de jour en jour. Mais son cerveau fut dévasté : il perdit tout souvenir de sa vie passée et lutta pour donner un sens au monde cruel qui l'entourait. Il regarda son ancienne camisole de force, qui ressemblait de loin aux blouses blanches des médecins.\r\n\r\nMalisant les mots sur son propre uniforme, il se forgea une nouvelle identité : « Je dois être un docteur, moi aussi. Pourquoi d'autre serais-je dans ce misérable asile ? » Et tous les autres devaient être ses patients.\r\n\r\nLorsque le baron de la chimie revint pour le libérer, il trouva les couloirs de l'asile sinistrement silencieux et vides. Il entra dans une chambre et découvrit une scène horrifiante : des corps démembrés (personnel et patients) jonchaient le sol. Au milieu se tenait une monstruosité pourpre et énorme, marmonnant de manière incohérente, une langue bleue pendante, serrant une scie chirurgicale dans sa main. Le baron reconnut son ancien exécuteur.\r\n\r\nLe monstre, qui ne se souvenait plus de son patron, ne voyait qu'un autre patient ayant désespérément besoin de traitement. Le baron tira avec son pistolet Hextech, mais le trou dans la chair du monstre se referma rapidement, de nouvelles plaques de muscle se reformant instantanément. Le monstre conclut : « Tu es malade. Besoin aide ! »\r\n\r\nImitant les traitements qu'il avait subis, le faux docteur ligota le baron sur une civière et prépara ses instruments. L'opération ne fut pas un succès.\r\n\r\nLe docteur ajouta les restes de son dernier patient à la pile. Bien qu'il fût attristé de ne pas pouvoir les « sauver », il savait qu'il aurait d'autres chances. Zaun est pleine de gens malades qui n'attendent que d'être guéris. Mundo quitta l'asile, se lançant dans les rues pour trouver de nouveaux patients, reproduisant les méthodes immorales dont il avait été la victime.",
+  "tags": [
+    "Tank",
+    "Fighter"
+  ],
+  "partype": "Aucune",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 384,
+    "y": 96,
+    "full": "DrMundo.png",
+    "group": "champion",
+    "sprite": "champion0.png"
+  },
+  "skins": [
+    {
+      "id": "36000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "36001",
+      "num": 1,
+      "name": "Dr. Mundo toxique",
+      "chromas": false
+    },
+    {
+      "id": "36002",
+      "num": 2,
+      "name": "M. Mundoverse",
+      "chromas": false
+    },
+    {
+      "id": "36003",
+      "num": 3,
+      "name": "Mundo de la bourse",
+      "chromas": true
+    },
+    {
+      "id": "36004",
+      "num": 4,
+      "name": "Mundo Mundo",
+      "chromas": false
+    },
+    {
+      "id": "36005",
+      "num": 5,
+      "name": "Mundo bourreau",
+      "chromas": false
+    },
+    {
+      "id": "36006",
+      "num": 6,
+      "name": "Mundo enragé",
+      "chromas": false
+    },
+    {
+      "id": "36007",
+      "num": 7,
+      "name": "TPA Mundo",
+      "chromas": false
+    },
+    {
+      "id": "36008",
+      "num": 8,
+      "name": "Mundo banjoïste",
+      "chromas": false
+    },
+    {
+      "id": "36009",
+      "num": 9,
+      "name": "Mundo El Macho",
+      "chromas": false
+    },
+    {
+      "id": "36010",
+      "num": 10,
+      "name": "Mundo prince gelé",
+      "chromas": true
+    },
+    {
+      "id": "36021",
+      "num": 21,
+      "name": "Dr. Mundo ville démoniaque",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "DrMundoQ",
+      "name": "Scie souillée",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 48,
+        "full": "DrMundoQ.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Dr. Mundo lance sa scie, infligeant <magicDamage>{{ currenthealthdamage*100 }}% des PV actuels en dégâts magiques</magicDamage> au premier ennemi touché et le <status>ralentissant</status> de {{ slowamount*100 }}% pendant {{ slowduration }} sec.<br /><br />Si la scie touche un champion ou un monstre, Dr. Mundo récupère <healing>{{ healthrestoreonhitchampionmonster }} PV</healing>. Si elle touche une cible autre qu'un champion ou un monstre, Dr. Mundo récupère <healing>{{ healthrestoreonhitminion }} PV</healing>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": " PV",
+      "leveltip": {
+        "label": [
+          "Pourcentage des PV actuels en dégâts",
+          "Dégâts minimum",
+          "Dégâts max aux monstres",
+          "Coût en PV"
+        ]
+      },
+      "resource": "{{ healthcost }} PV",
+      "rangeBurn": "975",
+      "datavalues": {},
+      "description": "Dr. Mundo lance une scie à os souillée, ralentissant le premier ennemi touché et lui infligeant des dégâts selon ses PV actuels.",
+      "cooldownBurn": "4"
+    },
+    {
+      "id": "DrMundoW",
+      "name": "Défibrillateur",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 48,
+        "full": "DrMundoW.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Dr. Mundo charge un défibrillateur, infligeant <magicDamage>{{ damagepertick*4 }} pts de dégâts magiques</magicDamage> aux ennemis proches chaque seconde pendant un maximum de {{ duration }} sec. De plus, il stocke des PV gris équivalents à {{ grayhealthstorageinitial }} des dégâts subis pendant les {{ grayhealthinitialduration }} premières secondes, puis {{ grayhealthstorage*100 }}% pendant la durée restante, et il peut <recast>réactiver</recast> la compétence.<br /><br /><recast>Réactivation :</recast> le défibrillateur explose, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> aux ennemis proches. Si l'explosion touche au moins un champion, Dr. Mundo récupère <healing>{{ grayhealthbigmod*100 }}% de ses PV gris</healing> ; sinon, il récupère <healing>{{ grayhealthsmallmod*100 }}% de ses PV gris</healing>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "% des PV actuels",
+      "leveltip": {
+        "label": [
+          "Dégâts par tic",
+          "Dégâts à la réactivation",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ currenthealthcost*100 }}% des PV actuels",
+      "rangeBurn": "325",
+      "datavalues": {},
+      "description": "Dr. Mundo s'électrocute, infligeant des dégâts continus aux ennemis proches et stockant une partie des dégâts subis. À la fin de la durée ou à la réactivation, Dr. Mundo inflige une vague de dégâts aux ennemis proches. Si la vague touche un ennemi, Dr. Mundo récupère des PV équivalents à un pourcentage des dégâts stockés.",
+      "cooldownBurn": "17/16.5/16/15.5/15"
+    },
+    {
+      "id": "DrMundoE",
+      "name": "Contusion",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 48,
+        "full": "DrMundoE.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> Dr. Mundo gagne <physicalDamage>+{{ passivebonusad }} dégâts d'attaque</physicalDamage>.<br /><br /><spellActive>Active :</spellActive> Dr. Mundo donne un violent coup avec sa sacoche « médicale » et son attaque suivante inflige jusqu'à <physicalDamage>{{ additionaldamage }} pts de dégâts physiques</physicalDamage> supplémentaires, augmentés d'un maximum de {{ maxdamageamptooltip }} selon ses PV manquants. Si la cible meurt sur le coup, elle est repoussée et elle inflige <physicalDamage>{{ additionaldamage }} pts de dégâts physiques</physicalDamage> aux ennemis qu'elle traverse.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": " PV",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts de base",
+          "Coût en PV",
+          "PV en dégâts d'attaque"
+        ]
+      },
+      "resource": "{{ flathealthcost }} PV",
+      "rangeBurn": "0",
+      "datavalues": {},
+      "description": "Passive - Dr. Mundo gagne des dégâts d'attaque bonus selon ses PV max.<br><br>Active - Dr. Mundo donne un violent coup avec sa sacoche « médicale », infligeant des dégâts supplémentaires selon ses PV manquants. Si la cible meurt sur le coup, elle est repoussée et elle inflige des dégâts aux ennemis qu'elle traverse.",
+      "cooldownBurn": "9/8.25/7.5/6.75/6"
+    },
+    {
+      "id": "DrMundoR",
+      "name": "Dosage maximal",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 48,
+        "full": "DrMundoR.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Dr. Mundo s'injecte des produits chimiques, gagnant <healing>{{ missinghealthheal*100 }}% de ses PV manquants en PV max</healing> et <speed>+{{ speedboostamount*100 }}% de vitesse de déplacement</speed>, et récupérant <healing>{{ maxhealthhot*100 }}% de ses PV max</healing> en {{ duration }} sec.<br /><br />Au rang 3, les deux effets de soins sont augmentés de {{ bonuspernearbychampion*100 }}% par champion ennemi proche.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "PV supplémentaires",
+          "Vitesse de déplacement",
+          "% des PV max"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "20",
+      "datavalues": {},
+      "description": "Dr. Mundo s'injecte des produits chimiques et récupère instantanément un pourcentage de ses PV manquants. Il gagne ensuite de la vitesse de déplacement et régénère une partie de ses PV max sur une longue durée.",
+      "cooldownBurn": "120"
+    }
+  ],
+  "passive": {
+    "name": "Il va où il veut",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 384,
+      "y": 96,
+      "full": "DrMundo_P.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Dr. Mundo résiste au premier effet immobilisant qui l'affecte. En revanche, il perd des PV et laisse tomber une bonbonne chimique. Dr. Mundo peut la ramasser en marchant dessus, ce qui lui rend des PV et réduit le délai de récupération de cette compétence.<br><br>Dr. Mundo dispose aussi d'une régénération de PV considérablement accrue.<br>"
+  },
+  "created_at": "2025-11-26T15:13:32.649099+00:00",
+  "factions": [
+    "zaun"
+  ],
+  "custom_tags": [
+    "fou",
+    "chirurgien"
+  ],
+  "gender": "Male",
+  "species": "Human",
+  "title_en": "the Madman of Zaun",
+  "lore_en": "The character known as Dr. Mundo was originally an enforcer for one of Zaun's powerful chem-barons. He was known for his boisterous affability, but his lack of caution and habit of stepping on toes earned him the ire of his boss.\r\n\r\nDetermined to make an example of him, the chem-baron had his enforcer committed to Osweld Asylum, an infamous facility known for its inhumane treatment and questionable cures. For months, the man suffered unspeakable horrors: nerves were prodded, lobes were severed, and unproven medicines were administered in large quantities.\r\n\r\nThe enforcer's body transformed, gaining muscle daily. But his brain suffered a far worse fate: he lost all memory of his past life and struggled to make sense of the cruel world around him. He looked down at his old restraining jacket, which almost resembled the white coats of the medical professionals.\r\n\r\nMisreading the words on his uniform, he assumed a new identity: \"I must be a doctor, too. Why else would I be in this wretched asylum?\" And everyone else must be his patients.\r\n\r\nWhen the chem-baron returned to discharge him, he found the asylum halls eerily silent and empty. He entered a room and discovered a horrifying sight: countless dismembered bodies (staff and patients) lay scattered on the floor. Standing above them was a hulking, purple monstrosity, babbling incoherently, a large blue tongue lolling out, clutching a surgical saw. The baron recognized his old enforcer.\r\n\r\nThe monster, recalling nothing of his old boss, saw only another patient in desperate need of treatment. The baron fired his chem-tech pistol, but the hole in the creature's flesh quickly closed as new slabs of muscle rapidly regrew over the wound. The monster uttered, \"You sick. Need help!\"\r\n\r\nMimicking the treatments he had endured, the pseudo-doctor strapped the baron onto a gurney and prepared his instruments. The ensuing surgery was not successful.\r\n\r\nThe burgeoning doctor added the remains of his latest patient to the pile. Though saddened he could not \"save\" them, he knew he would have other chances. Zaun is full of sick people just waiting to be cured. Mundo left the asylum, setting out into the streets to find more patients, replicating the immoral methods he had once been a victim of.",
+  "spells_en": [
+    {
+      "id": "DrMundoQ",
+      "name": "Infected Bonesaw",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 48,
+        "full": "DrMundoQ.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Dr. Mundo hurls his bonesaw, dealing <magicDamage>{{ currenthealthdamage*100 }}% current Health magic damage</magicDamage> to the first enemy hit and <status>Slowing</status> them by {{ slowamount*100 }}% for {{ slowduration }} seconds.<br /><br />If the bonesaw hits a champion or monster, Dr. Mundo restores <healing>{{ healthrestoreonhitchampionmonster }} Health</healing>. If it hits a non-champion or non-monster, Dr. Mundo instead restores <healing>{{ healthrestoreonhitminion }} Health</healing>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": " Health",
+      "leveltip": {
+        "label": [
+          "Current Health Damage",
+          "Minimum Damage",
+          "Monster Damage Cap",
+          "Health Cost"
+        ]
+      },
+      "resource": "{{ healthcost }} Health",
+      "rangeBurn": "975",
+      "datavalues": {},
+      "description": "Dr. Mundo throws an infected bonesaw, dealing damage to the first enemy hit based on their current health and slowing them.",
+      "cooldownBurn": "4"
+    },
+    {
+      "id": "DrMundoW",
+      "name": "Heart Zapper",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 48,
+        "full": "DrMundoW.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Dr. Mundo charges up a defibrilator, dealing <magicDamage>{{ damagepertick*4 }} magic damage</magicDamage> each second for up to {{ duration }} seconds to nearby enemies. Additionally he stores {{ grayhealthstorageinitial }} of damage taken for the first {{ grayhealthinitialduration }} seconds and {{ grayhealthstorage*100 }}% for the remaining duration as gray health and can <recast>Recast</recast>.<br /><br /><recast>Recast:</recast> Detonate the defibrilator, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> to nearby enemies. If this hits at least one champion, Dr. Mundo restores <healing>{{ grayhealthbigmod*100 }}% of gray health</healing>, otherwise he instead restores <healing>{{ grayhealthsmallmod*100 }}% of gray health</healing>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "% Current Health",
+      "leveltip": {
+        "label": [
+          "Damage per Tick",
+          "Recast Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ currenthealthcost*100 }}% Current Health",
+      "rangeBurn": "325",
+      "datavalues": {},
+      "description": "Dr. Mundo electrocutes himself, dealing persistent damage to nearby enemies and storing a portion of damage he takes. At the end of the duration or on Recast, Dr. Mundo deals a burst of damage to nearby enemies. If the burst hit an enemy, he heals a percentage of the stored damage.",
+      "cooldownBurn": "17/16.5/16/15.5/15"
+    },
+    {
+      "id": "DrMundoE",
+      "name": "Blunt Force Trauma",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 48,
+        "full": "DrMundoE.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Dr Mundo gains <physicalDamage>{{ passivebonusad }} Attack Damage</physicalDamage>.<br /><br /><spellActive>Active:</spellActive> Dr Mundo violently swings his \"medical\" bag, causing his next Attack to deal an additional <physicalDamage>{{ additionaldamage }} physical damage</physicalDamage>, increased by up to {{ maxdamageamptooltip }} based on his missing Health. If the enemy is killed, Mundo swats them away, dealing <physicalDamage>{{ additionaldamage }} physical damage</physicalDamage> to enemies they pass through.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": " Health",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Base Damage",
+          "Health Cost",
+          "Health Into Attack Damage"
+        ]
+      },
+      "resource": "{{ flathealthcost }} Health",
+      "rangeBurn": "0",
+      "datavalues": {},
+      "description": "Passive - Dr. Mundo gains bonus Attack Damage, increasing based on his max Health.<br><br>Active - Dr. Mundo slams his “medical” bag into an enemy, dealing additional damage based on his missing Health. If the enemy dies they are swatted away, dealing damage to enemies they pass through.",
+      "cooldownBurn": "9/8.25/7.5/6.75/6"
+    },
+    {
+      "id": "DrMundoR",
+      "name": "Maximum Dosage",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 48,
+        "full": "DrMundoR.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Dr. Mundo pumps himself with chemicals, gaining <healing>{{ missinghealthheal*100 }}% of his missing Health as max Health</healing>, <speed>{{ speedboostamount*100 }}% Move Speed</speed>, and regenerating <healing>{{ maxhealthhot*100 }}% max Health</healing> over {{ duration }} seconds.<br /><br />At Rank 3, both healing effects are increased by an additional {{ bonuspernearbychampion*100 }}% per nearby enemy champion.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Bonus Health",
+          "Move Speed",
+          "Max Health %"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "20",
+      "datavalues": {},
+      "description": "Dr. Mundo pumps himself with chemicals, instantly healing a percent of his missing Health. He then gains Move Speed and regenerates a portion of his maximum Health over a long duration.",
+      "cooldownBurn": "120"
+    }
+  ],
+  "passive_en": {
+    "name": "Goes Where He Pleases",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 384,
+      "y": 96,
+      "full": "DrMundo_P.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Dr. Mundo resists the first Immobilizing effect that hits him, instead losing Health and dropping a chemical cannister nearby. Dr. Mundo can pick it up by walking over it, restoring Health and reducing this Ability's Cooldown.<br><br>Dr. Mundo also has significantly increased Health regeneration.<br>"
+  },
+  "partype_en": "None",
+  "lanes": [
+    "Top",
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "36000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "36001",
+      "num": 1,
+      "name": "Toxic Dr. Mundo",
+      "chromas": false
+    },
+    {
+      "id": "36002",
+      "num": 2,
+      "name": "Mr. Mundoverse",
+      "chromas": false
+    },
+    {
+      "id": "36003",
+      "num": 3,
+      "name": "Corporate Mundo",
+      "chromas": true
+    },
+    {
+      "id": "36004",
+      "num": 4,
+      "name": "Mundo Mundo",
+      "chromas": false
+    },
+    {
+      "id": "36005",
+      "num": 5,
+      "name": "Executioner Mundo",
+      "chromas": false
+    },
+    {
+      "id": "36006",
+      "num": 6,
+      "name": "Rageborn Mundo",
+      "chromas": false
+    },
+    {
+      "id": "36007",
+      "num": 7,
+      "name": "TPA Mundo",
+      "chromas": false
+    },
+    {
+      "id": "36008",
+      "num": 8,
+      "name": "Pool Party Mundo",
+      "chromas": false
+    },
+    {
+      "id": "36009",
+      "num": 9,
+      "name": "El Macho Mundo",
+      "chromas": false
+    },
+    {
+      "id": "36010",
+      "num": 10,
+      "name": "Frozen Prince Mundo",
+      "chromas": true
+    },
+    {
+      "id": "36021",
+      "num": 21,
+      "name": "Street Demons Dr. Mundo",
+      "chromas": true
+    }
+  ]
+}

@@ -1,0 +1,459 @@
+{
+  "id": "Gnar",
+  "key": "150",
+  "name": "Gnar",
+  "title": "Chaînon manquant",
+  "version": "15.23.1",
+  "lore": "Avant que la glace ne donne son nom au Freljord, la terre était remplie d'émerveillement, du moins aux yeux de Gnar, un jeune Yordle débordant d'énergie. Lui et les autres Yordles vivaient ouvertement parmi les tribus du nord. Malgré sa petite taille, Gnar possédait un tempérament féroce et irrationnel. Il se sentait plus proche des grandes créatures (qu'il voyait comme d'énormes Yordles à fourrure blanche) que des mortels.\r\n\r\nGnar était un collectionneur joyeux de babioles, mais son plus grand trésor était la mâchoire d'un drüvask, son « boomerang » chéri qu'il aimait lancer et rattraper. Il se considérait comme un chasseur et parcourait les terres avec insouciance.\r\n\r\nCependant, Gnar sentit le changement arriver : le ciel s'assombrissait, le vent se faisait plus froid et les tribus mortelles commençaient à se chasser les unes les autres. Il décida d'aller chercher ses grands amis à fourrure blanche (les Transfigurés / Iceborn ou les dieux-animaux) dans les sommets enneigés, loin de ses sentiers habituels.\r\n\r\nIl arriva sur place au milieu d'une foule de mortels, juste avant qu'un monstre n'émerge d'un abîme nouvellement ouvert (probablement les Guerres de Givre ou une incursion du Néant). En voyant le monstre menacer ses nouveaux amis, Gnar ressentit une douleur étrange à la poitrine, comme la peur de perdre son boomerang, ce qui le plongea dans une colère incontrôlée.\r\n\r\nDans cette rage, Gnar se transforma. Il devint aussi grand que les « grands Yordles blancs » (sa forme Mega Gnar), arrachant un rocher de la montagne pour l'utiliser comme une boule de neige géante et se jeta sur le monstre.\r\n\r\nLe coup ne fut jamais porté. Une vague de froid élémentaire (probablement la Vraie Glace ou une magie élémentaire puissante) figea Gnar sur place, le transformant en glace. Sa colère et sa force fondirent, et il s'endormit doucement.\r\n\r\nGnar dormit pendant un temps immémorial. À son réveil, il secoua simplement le givre de ses épaules. Le monde autour de lui était recouvert de neige (le Freljord moderne). Il n'a aucun souvenir de ce qui s'est passé, de la façon dont il a été libéré, ni de la durée de son sommeil. Il est simplement ravi de se retrouver dans un monde exotique et merveilleux à explorer, son cher boomerang à ses côtés, prêt à se déchaîner dès que sa rage primitive se réveillera.",
+  "tags": [
+    "Fighter",
+    "Tank"
+  ],
+  "partype": "Rage",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 432,
+    "y": 0,
+    "full": "Gnar.png",
+    "group": "champion",
+    "sprite": "champion1.png"
+  },
+  "skins": [
+    {
+      "id": "150000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "150001",
+      "num": 1,
+      "name": "Dino Gnar",
+      "chromas": true
+    },
+    {
+      "id": "150002",
+      "num": 2,
+      "name": "Gnar gentleman",
+      "chromas": false
+    },
+    {
+      "id": "150003",
+      "num": 3,
+      "name": "Gnar des neiges",
+      "chromas": false
+    },
+    {
+      "id": "150004",
+      "num": 4,
+      "name": "Gnar El León",
+      "chromas": false
+    },
+    {
+      "id": "150013",
+      "num": 13,
+      "name": "Super Gnar intergalactique",
+      "chromas": false
+    },
+    {
+      "id": "150014",
+      "num": 14,
+      "name": "SSG Gnar",
+      "chromas": true
+    },
+    {
+      "id": "150015",
+      "num": 15,
+      "name": "Gnar astronaute",
+      "chromas": true
+    },
+    {
+      "id": "150022",
+      "num": 22,
+      "name": "Gnar sylvestre",
+      "chromas": true
+    },
+    {
+      "id": "150031",
+      "num": 31,
+      "name": "Gnar La Ilusión",
+      "chromas": true
+    },
+    {
+      "id": "150041",
+      "num": 41,
+      "name": "T1 Gnar",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "GnarQ",
+      "name": "Jet de boomerang/Jet de rocher",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 48,
+        "full": "GnarQ.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<keywordMajor>Mini Gnar :</keywordMajor> Gnar lance un boomerang qui inflige <physicalDamage>{{ spell.gnarq:minitotaldamage }} pts de dégâts physiques</physicalDamage> et qui <status>ralentit</status> les ennemis de {{ spell.gnarq:slowamount*100 }}% pendant {{ spell.gnarq:slowduration }} sec. Le boomerang revient vers Gnar après avoir frappé un ennemi, infligeant des dégâts réduits aux cibles secondaires. Chaque ennemi ne peut être frappé qu'une fois. Si Gnar rattrape le boomerang, le délai de récupération de cette compétence est réduit de {{ spell.gnarq:minicdrefund*100 }}%.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts du boomerang",
+          "Dégâts du rocher",
+          "Ralentissement",
+          "Ralentissement de Jet de rocher",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "1100",
+      "datavalues": {},
+      "description": "Gnar lance un boomerang qui blesse et ralentit les cibles touchées avant de retourner vers lui. S'il rattrape le boomerang, le délai de récupération est réduit.<br><br>Méga Gnar lance un rocher qui s'arrête à la première unité touchée, blessant et ralentissant tous les ennemis proches. Gnar peut ensuite ramasser le rocher pour réduire le délai de récupération.",
+      "cooldownBurn": "16/14.5/13/11.5/10"
+    },
+    {
+      "id": "GnarW",
+      "name": "Agitation/Beigne",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 48,
+        "full": "GnarW.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<keywordMajor>Mini Gnar (passive)</keywordMajor> : toutes les 3 attaques ou compétences contre un même ennemi, Gnar inflige <magicDamage>{{ spell.gnarw:minitotaldamage }} plus {{ spell.gnarw:minipercenthpdamage*100 }}% des PV max en dégâts magiques</magicDamage> bonus et gagne <speed>+{{ spell.gnarr:rhypermovementspeedpercent }}% de vitesse de déplacement</speed> (ce bonus diminue en {{ spell.gnarw:minihasteduration }} sec).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts d'Agitation",
+          "Dégâts % PV d'Agitation",
+          "Dégâts de Beigne"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "0",
+      "datavalues": {},
+      "description": "Gnar est agité à force d'attaquer et d'utiliser des compétences, ce qui lui permet d'infliger des dégâts supplémentaires et d'augmenter sa vitesse de déplacement.<br><br>Méga Gnar est enragé : il se dresse sur ses pattes arrière et frappe devant lui, étourdissant les ennemis dans la zone.",
+      "cooldownBurn": "7"
+    },
+    {
+      "id": "GnarE",
+      "name": "Rebond/Aplatissement",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 48,
+        "full": "GnarE.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<keywordMajor>Mini Gnar :</keywordMajor> Gnar bondit et gagne <attackSpeed>+{{ spell.gnare:minibas*100 }}% de vitesse d'attaque</attackSpeed> pendant {{ spell.gnare:miniasduration }} sec. Si Gnar atterrit sur une unité, il rebondit sur elle et va plus loin. S'il rebondit sur un ennemi, celui-ci subit <physicalDamage>{{ spell.gnare:minitotaldamage }} pts de dégâts physiques</physicalDamage> et est brièvement <status>ralenti</status> de {{ spell.gnare:movespeedmod*-100 }}%.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts de Rebond",
+          "Dégâts d'Aplatissement",
+          "Vitesse d'attaque supplémentaire",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "475",
+      "datavalues": {},
+      "description": "Gnar bondit dans la direction ciblée et rebondit sur la tête de toute unité sur laquelle il atterrit, ce qui lui permet d'aller plus loin.<br><br>Méga Gnar est trop gros pour rebondir : il atterrit de façon fracassante et inflige des dégâts de zone.",
+      "cooldownBurn": "22/19.5/17/14.5/12"
+    },
+    {
+      "id": "GnarR",
+      "name": "GNAR !",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 48,
+        "full": "GnarR.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<keywordMajor>Mini Gnar - Passive :</keywordMajor> augmente la <speed>vitesse de déplacement</speed> d'<spellName>Agitation</spellName>.<br /><br /><keywordMajor>Méga Gnar :</keywordMajor> Gnar projette les ennemis proches, leur infligeant <physicalDamage>{{ damage }} pts de dégâts physiques</physicalDamage>, les <status>repoussant</status> et les <status>ralentissant</status> de {{ rslowpercent }}% pendant {{ rccduration }} sec. Les ennemis projetés contre un mur subissent à la place <physicalDamage>{{ walldamage }} pts de dégâts physiques</physicalDamage> et sont <status>étourdis</status>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Durée du ralentissement/de l'étourdissement",
+          "Vitesse de déplacement d'Agitation",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "590",
+      "datavalues": {},
+      "description": "Méga Gnar projette tous les ennemis proches dans la direction ciblée, leur infligeant des dégâts et les ralentissant. Si un ennemi percute un mur, il est étourdi et il subit des dégâts supplémentaires.",
+      "cooldownBurn": "90/60/30"
+    }
+  ],
+  "passive": {
+    "name": "Rage génique",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 432,
+      "y": 0,
+      "full": "Gnar_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Gnar génère de la Rage quand il combat. Une fois sa jauge de Rage remplie, sa prochaine compétence le transforme en Méga Gnar, ce qui améliore ses défenses et lui octroie de nouvelles compétences."
+  },
+  "created_at": "2025-11-26T15:13:32.943584+00:00",
+  "factions": [
+    "freljord"
+  ],
+  "custom_tags": [
+    "préhistorique"
+  ],
+  "gender": "Male",
+  "species": "Yordle",
+  "title_en": "the Missing Link",
+  "lore_en": "Before the ice gave the Freljord its name, the land was filled with wonder, at least through the eyes of Gnar, a young Yordle with boundless energy. He and the other Yordles lived openly among the northern tribes. Despite his small size, Gnar possessed a fierce, irrational temper. He felt more kinship with the greater and wiser creatures (which he saw as overgrown, white-furred Yordles) than with mortals.\r\n\r\nGnar was a joyous collector of trinkets, but his greatest treasure was the jawbone of a drüvask, his cherished \"boomerang\" that he loved to throw and catch. He considered himself a hunter and roamed the lands carelessly.\r\n\r\nHowever, Gnar sensed change coming: the sky seemed darker, the winds felt colder, and the mortal tribes began hunting each other. He decided to seek out his big white furry friends (the Iceborn or animal gods) in the snow-capped peaks, much farther than he had ever wandered before.\r\n\r\nHe arrived at the scene amidst a crowd of mortals, just before a monster emerged from a newly opened abyss (likely the Fimbulwinter or a Void incursion). Seeing the monster threaten his new friends, Gnar felt an odd pain in his chest—like the fear of losing his boomerang—which plunged him into an uncontrolled rage.\r\n\r\nIn that moment of rage, Gnar transformed. He grew as large as the \"big white Yordles\" (his Mega Gnar form), plucking a boulder from the mountainside to use as a giant snowball and lunged toward the monster.\r\n\r\nThe blow never landed. A chill colder than any winter (likely True Ice or powerful elemental magic) froze Gnar in place. His strength and anger melted away, and he fell softly asleep.\r\n\r\nGnar slept for an immeasurable time. When he finally awoke, he simply shook the frost from his shoulders. The world around him was blanketed in snow (the modern Freljord). He has no memory of what happened, how he escaped, or how long he slept. He simply marvels at the exotic and wonderful world before him, his cherished boomerang by his side, ready to unleash his primitive rage whenever it awakens again.",
+  "spells_en": [
+    {
+      "id": "GnarQ",
+      "name": "Boomerang Throw / Boulder Toss",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 48,
+        "full": "GnarQ.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<keywordMajor>Mini Gnar:</keywordMajor> Gnar throws a boomerang that deals <physicalDamage>{{ spell.gnarq:minitotaldamage }} physical damage</physicalDamage> and <status>Slows</status> by {{ spell.gnarq:slowamount*100 }}% for {{ spell.gnarq:slowduration }} seconds. The boomerang returns after hitting an enemy, dealing reduced damage to subsequent targets. Each enemy can only be hit once. Catching the boomerang reduces its Cooldown by {{ spell.gnarq:minicdrefund*100 }}%.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Boomerang Damage",
+          "Boulder Damage",
+          "Slow",
+          "Boulder Slow Amount",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "1100",
+      "datavalues": {},
+      "description": "Gnar throws a boomerang that damages and slows enemies it hits before returning to him. If he catches the boomerang its cooldown is reduced.<br><br>Mega Gnar instead throws a boulder that stops on the first unit hit, damaging and slowing everything nearby. It can then be picked up to reduce the cooldown.",
+      "cooldownBurn": "16/14.5/13/11.5/10"
+    },
+    {
+      "id": "GnarW",
+      "name": "Hyper / Wallop",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 48,
+        "full": "GnarW.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<keywordMajor>Mini Gnar Passive:</keywordMajor> Every third Attack or Ability on the same enemy deals an additional <magicDamage>{{ spell.gnarw:minitotaldamage }} plus {{ spell.gnarw:minipercenthpdamage*100 }}% max Health magic damage</magicDamage> and grants <speed>{{ spell.gnarr:rhypermovementspeedpercent }}% Move Speed</speed> decaying over {{ spell.gnarw:minihasteduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Hyper Damage",
+          "Hyper % Health Damage",
+          "Wallop Damage"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "0",
+      "datavalues": {},
+      "description": "Gnar's attacks and spells hype him up, dealing bonus damage and granting him Move Speed.<br><br>Mega Gnar is too enraged to be hyper and instead can rear up on his hind legs and smash down on the area in front of him, stunning enemies in an area.",
+      "cooldownBurn": "7"
+    },
+    {
+      "id": "GnarE",
+      "name": "Hop / Crunch",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 48,
+        "full": "GnarE.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<keywordMajor>Mini Gnar:</keywordMajor> Gnar leaps, gaining <attackSpeed>{{ spell.gnare:minibas*100 }}% Attack Speed</attackSpeed> for {{ spell.gnare:miniasduration }} seconds. If Gnar lands on a unit he will bounce off it, traveling further. Bouncing off an enemy deals <physicalDamage>{{ spell.gnare:minitotaldamage }} physical damage</physicalDamage> and briefly <status>Slows</status> by {{ spell.gnare:movespeedmod*-100 }}%.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Hop Damage",
+          "Crunch Damage",
+          "Bonus Attack Speed",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "475",
+      "datavalues": {},
+      "description": "Gnar leaps to a location and bounces off the head of any unit he lands on, traveling further.<br><br>Mega Gnar is too large to bounce and instead lands with earth-shattering force, dealing damage in an area around him.",
+      "cooldownBurn": "22/19.5/17/14.5/12"
+    },
+    {
+      "id": "GnarR",
+      "name": "GNAR!",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 48,
+        "full": "GnarR.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<keywordMajor>Mini Gnar Passive:</keywordMajor> Increase <spellName>Hyper's</spellName> <speed>Move Speed</speed>.<br /><br /><keywordMajor>Mega Gnar:</keywordMajor> Gnar tosses nearby enemies, dealing <physicalDamage>{{ damage }} physical damage</physicalDamage>, <status>Knocking Back</status>, and <status>Slowing</status> them by {{ rslowpercent }}% for {{ rccduration }} seconds. Enemies that hit a wall instead take <physicalDamage>{{ walldamage }} physical damage</physicalDamage> and are <status>Stunned</status>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Slow/Stun Duration",
+          "Hyper Move Speed",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "590",
+      "datavalues": {},
+      "description": "Mega Gnar throws everything around him in a chosen direction, dealing damage and slowing them.  Any enemy that hits a wall is stunned and takes bonus damage.",
+      "cooldownBurn": "90/60/30"
+    }
+  ],
+  "passive_en": {
+    "name": "Rage Gene",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 432,
+      "y": 0,
+      "full": "Gnar_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "While in combat Gnar generates Rage. At maximum Rage his next ability will transform him into Mega Gnar, granting increased survivability and access to new spells."
+  },
+  "partype_en": "Rage",
+  "lanes": [
+    "Top"
+  ],
+  "skins_en": [
+    {
+      "id": "150000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "150001",
+      "num": 1,
+      "name": "Dino Gnar",
+      "chromas": true
+    },
+    {
+      "id": "150002",
+      "num": 2,
+      "name": "Gentleman Gnar",
+      "chromas": false
+    },
+    {
+      "id": "150003",
+      "num": 3,
+      "name": "Snow Day Gnar",
+      "chromas": false
+    },
+    {
+      "id": "150004",
+      "num": 4,
+      "name": "El León Gnar",
+      "chromas": false
+    },
+    {
+      "id": "150013",
+      "num": 13,
+      "name": "Super Galaxy Gnar",
+      "chromas": false
+    },
+    {
+      "id": "150014",
+      "num": 14,
+      "name": "SSG Gnar",
+      "chromas": true
+    },
+    {
+      "id": "150015",
+      "num": 15,
+      "name": "Astronaut Gnar",
+      "chromas": true
+    },
+    {
+      "id": "150022",
+      "num": 22,
+      "name": "Elderwood Gnar",
+      "chromas": true
+    },
+    {
+      "id": "150031",
+      "num": 31,
+      "name": "La Ilusión Gnar",
+      "chromas": true
+    },
+    {
+      "id": "150041",
+      "num": 41,
+      "name": "T1 Gnar",
+      "chromas": true
+    }
+  ]
+}

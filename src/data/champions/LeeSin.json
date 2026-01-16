@@ -1,0 +1,558 @@
+{
+  "id": "LeeSin",
+  "key": "64",
+  "name": "Lee Sin",
+  "title": "Moine aveugle",
+  "version": "15.23.1",
+  "lore": "Lee Sin arriva au monastère de Shojin en Ionia alors qu'il n'était qu'un garçon, affirmant que l'esprit du dragon l'avait choisi pour manier son pouvoir. Les anciens moines reconnurent son talent, mais aussi son orgueil irréfléchi et le danger qu'il représentait. Ils le prirent comme élève mais, par prudence, le maintinrent à de basses besognes.\n\nImpatient, Lee Sin s'introduisit dans les archives secrètes, trouvant des textes décrivant comment invoquer le royaume spirituel. Il choisit de faire étalage de son pouvoir lors d'une leçon de combat, libérant la rage du dragon par un coup de pied qui paralysa son instructeur. Couvert de honte et banni pour son arrogance, il partit pour s'amender.\n\nAprès des années d'errance et d'aide aux nécessiteux, il arriva au Freljord, où il rencontra Udyr, le marcheur des esprits. Udyr, qui luttait pour contrôler les bêtes primitives en lui, amena Lee Sin à douter de sa propre capacité à contrôler le dragon. Les deux hommes se lièrent d'amitié et Lee Sin invita Udyr à rentrer avec lui en Ionia.\n\nÀ leur retour, l'empire de Noxus avait envahi l'Ionia. Les moines s'étaient repliés pour défendre le monastère sacré d'Hirana. Lee Sin et Udyr y trouvèrent un siège actif.\n\nAlors qu'Udyr se précipitait au combat, Lee Sin hésita, terrifié de voir ses anciens pairs tomber. Ne lui restant plus d'autre choix pour sauver l'ancienne culture ionienne, il invoqua l'esprit du dragon. Une tempête de flammes l'engloutit, lui brûlant la peau et le privant de la vue. Imprégné de cette puissance sauvage, il mit les envahisseurs en déroute avec une rafale de coups de poing et de coups de pied ultra-rapides.\n\nLes moines furent victorieux, mais le monastère était en ruines, et la vue de Lee Sin perdue à jamais. Dans l'obscurité aveugle, il comprit enfin qu'aucun mortel ne pouvait jamais plier complètement le pouvoir du dragon à sa volonté. Dévasté, il banda ses yeux aveugles et tenta de s'éloigner.\n\nMais les anciens survivants l'arrêtèrent. En renonçant à tout désir de pouvoir, leur ancien élève disgracié était enfin prêt à recommencer. Ils lui offrirent l'absolution, car ils savaient que l'âme la plus humble et la plus digne pouvait parfois contrer la nature ardente du dragon et la diriger.\n\nLee Sin resta pour reconstruire le monastère, puis se consacra entièrement à la poursuite de l'illumination. Il continue de méditer pour se maîtriser lui-même, et l'esprit du dragon en lui, afin de protéger l'Ionia contre les menaces futures.",
+  "tags": [
+    "Fighter",
+    "Assassin"
+  ],
+  "partype": "Énergie",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 0,
+    "y": 48,
+    "full": "LeeSin.png",
+    "group": "champion",
+    "sprite": "champion2.png"
+  },
+  "skins": [
+    {
+      "id": "64000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "64001",
+      "num": 1,
+      "name": "Lee Sin classique",
+      "chromas": false
+    },
+    {
+      "id": "64002",
+      "num": 2,
+      "name": "Lee Sin acolyte",
+      "chromas": false
+    },
+    {
+      "id": "64003",
+      "num": 3,
+      "name": "Lee Sin poing du dragon",
+      "chromas": true
+    },
+    {
+      "id": "64004",
+      "num": 4,
+      "name": "Lee Sin muay thaï",
+      "chromas": true
+    },
+    {
+      "id": "64005",
+      "num": 5,
+      "name": "Lee piSin",
+      "chromas": false
+    },
+    {
+      "id": "64006",
+      "num": 6,
+      "name": "SKT T1 Lee Sin",
+      "chromas": false
+    },
+    {
+      "id": "64010",
+      "num": 10,
+      "name": "Lee Sin pugiliste",
+      "chromas": false
+    },
+    {
+      "id": "64011",
+      "num": 11,
+      "name": "Lee Sin poing divin",
+      "chromas": false
+    },
+    {
+      "id": "64012",
+      "num": 12,
+      "name": "Lee Sin meneur de jeu",
+      "chromas": true
+    },
+    {
+      "id": "64027",
+      "num": 27,
+      "name": "Lee Sin héraut de la nuit",
+      "chromas": false
+    },
+    {
+      "id": "64028",
+      "num": 28,
+      "name": "Lee Sin héraut de la nuit prestige",
+      "chromas": false
+    },
+    {
+      "id": "64029",
+      "num": 29,
+      "name": "FPX Lee Sin",
+      "chromas": false
+    },
+    {
+      "id": "64031",
+      "num": 31,
+      "name": "Lee Sin dragon des tempêtes",
+      "chromas": false
+    },
+    {
+      "id": "64039",
+      "num": 39,
+      "name": "Lee Sin héraut de la nuit prestige (2022)",
+      "chromas": false
+    },
+    {
+      "id": "64041",
+      "num": 41,
+      "name": "Lee Sin des Jeux du zénith",
+      "chromas": false
+    },
+    {
+      "id": "64051",
+      "num": 51,
+      "name": "Lee Sin écailles célestes",
+      "chromas": false
+    },
+    {
+      "id": "64052",
+      "num": 52,
+      "name": "Lee Sin écailles célestes divines",
+      "chromas": false
+    },
+    {
+      "id": "64068",
+      "num": 68,
+      "name": "T1 Lee Sin",
+      "chromas": false
+    },
+    {
+      "id": "64072",
+      "num": 72,
+      "name": "Lee Sin guerrier d'encre",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "LeeSinQOne",
+      "name": "Onde sonore/Coup résonant",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 48,
+        "full": "LeeSinQOne.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Lee Sin émet une onde sonore, infligeant <physicalDamage>{{ initialdamage }} pts de dégâts physiques</physicalDamage> au premier ennemi touché, octroyant une <keywordStealth>vision pure</keywordStealth> de la cible et permettant à Lee Sin de <recast>réactiver</recast> cette compétence dans les {{ reactivatetime }} sec qui suivent.<br /><br /><recast>Réactivation</recast> : Lee Sin se rue vers l'ennemi touché par l'onde sonore, infligeant de <physicalDamage>{{ recastdamage }} à {{ empowereddamage }} pts de dégâts physiques</physicalDamage> selon les PV manquants de sa cible. {{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts d'Onde sonore",
+          "Dégâts de base minimum de Coup résonant",
+          "Dégâts de base maximum de Coup résonant",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1100",
+      "datavalues": {},
+      "description": "Onde sonore : Lee Sin émet une onde sonore pour localiser ses ennemis, infligeant des dégâts physiques au premier ennemi touché. Si Onde sonore touche un ennemi, Lee Sin peut lancer Coup résonant dans les 3 sec qui suivent.<br>Coup résonant : Lee Sin fonce vers l'ennemi touché par Onde sonore, infligeant des dégâts physiques en fonction des PV manquants de l'ennemi.",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "LeeSinWOne",
+      "name": "Rempart/Force d'âme",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 48,
+        "full": "LeeSinWOne.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Lee Sin se rue sur un allié ou une balise. Si la cible est un champion, Lee Sin et la cible gagnent chacun un <shield>bouclier de {{ shieldamount }} PV</shield> pendant {{ shieldduration }} sec et le délai de récupération de cette compétence est réduit de {{ w1cooldownrecovered*100 }}%. Lee Sin peut <recast>réactiver</recast> cette compétence dans les {{ w1reactivatetime }} sec qui suivent.<br /><br /><recast>Réactivation :</recast> Lee Sin gagne +{{ lifestealandspellvamp }}% de vol de vie et de sort vampirique pendant {{ lifestealandspellvamptime }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Absorption du bouclier de Rempart",
+          "Vol de vie/Sort vamp. de Force d'âme"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Rempart : Lee Sin fonce vers un allié, se protégeant contre les dégâts. Si l'allié est un champion, il est également protégé. Après avoir lancé Rempart, Lee Sin peut lancer Force d'âme.<br>Force d'âme : l'entraînement intense de Lee Sin lui permet de décupler ses forces pendant le combat. Lee Sin obtient du vol de vie et du sort vampirique.",
+      "cooldownBurn": "12"
+    },
+    {
+      "id": "LeeSinEOne",
+      "name": "Trombe/Fracture",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 96,
+        "full": "LeeSinEOne.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Lee Sin frappe le sol, envoyant une onde de choc qui inflige <magicDamage>{{ initialdamage }} pts de dégâts magiques</magicDamage> et révèle les cibles touchées pendant {{ slowduration }} sec. Si la compétence touche un ennemi, Lee Sin peut la <recast>réactiver</recast> dans les {{ reactivatetime }} sec qui suivent.<br /><br /><recast>Réactivation :</recast> Lee Sin <status>ralentit</status> de {{ slowamount }}% les ennemis proches frappés par l'onde de choc (diminue en {{ slowduration }} sec).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts de Trombe",
+          "Ralentissement de Fracture"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "450",
+      "datavalues": {},
+      "description": "Trombe : Lee Sin frappe le sol, envoyant une onde de choc qui inflige des dégâts magiques et révèle les unités ennemies touchées. Si Trombe touche un ennemi, Lee Sin peut lancer Fracture.<br>Fracture : Lee Sin estropie les ennemis proches blessés par Trombe, réduisant leur vitesse de déplacement. La vitesse de déplacement revient peu à peu à la normale pendant la durée de la compétence.",
+      "cooldownBurn": "8"
+    },
+    {
+      "id": "LeeSinR",
+      "name": "Rage du dragon",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 96,
+        "full": "LeeSinR.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Lee Sin donne un puissant coup de pied qui <status>repousse</status> un champion ennemi et lui inflige <physicalDamage>{{ damage }} pts de dégâts physiques</physicalDamage>.<br /><br />Les ennemis percutés par la cible sont <status>projetés dans les airs</status> un court moment et subissent des <physicalDamage>dégâts physiques équivalents à {{ damage }} plus {{ percenthpcarrythrough }}% des PV supplémentaires de l'ennemi repoussé</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "PV bonus en dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "375",
+      "datavalues": {},
+      "description": "Lee Sin donne un puissant coup de pied qui projette sa cible en arrière, infligeant des dégâts physiques à la cible et à tous les ennemis qu'elle percute. Les ennemis ainsi percutés sont également projetés en l'air un court instant. Cette technique lui a été enseignée par Jesse Perring, mais Lee Sin ne sait pas encore éjecter les joueurs de la carte.",
+      "cooldownBurn": "110/85/60"
+    }
+  ],
+  "passive": {
+    "name": "Rafale",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 0,
+      "y": 48,
+      "full": "LeeSinPassive.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Après avoir utilisé une compétence, Lee Sin voit sa vitesse d'attaque augmenter pour ses 2 prochaines attaques de base. Ces attaques accélérées lui rendent de l'énergie."
+  },
+  "created_at": "2025-11-26T15:13:33.959475+00:00",
+  "factions": [
+    "ionia"
+  ],
+  "custom_tags": [
+    "moine",
+    "aveugle"
+  ],
+  "gender": "Male",
+  "species": "Human",
+  "title_en": "the Blind Monk",
+  "lore_en": "Lee Sin arrived at the Shojin monastery in Ionia as a boy, claiming the dragon spirit had chosen him to wield its power. The elder monks recognized his talent but also sensed his reckless pride and the disaster it could bring. They kept him as a pupil but confined him to chores.\n\nLee Sin grew impatient. Sneaking into the archives, he found ancient texts and chose to flaunt his skill during a combat lesson. He rashly unleashed the dragon’s rage in a wild kick that paralyzed his instructor. Consumed with shame and banished for his arrogance, he set out to atone.\n\nYears passed. He wandered far, eventually reaching the Freljord, where he met Udyr, the Spirit Walker. Udyr struggled to control the primal beasts within him, making Lee Sin wonder if controlling the dragon was even possible. They forged a bond, and Lee Sin invited Udyr back home.\n\nThey were dismayed to find that the Noxian empire had invaded Ionia, and the monks had fallen back to defend the holy Hirana monastery. Lee Sin found it besieged.\n\nAs Udyr leapt to join the fray, Lee Sin hesitated, seeing his former peers fall. With no other choice, he invoked the dragon spirit. A tempest of flames engulfed him, searing his skin and burning the sight from his eyes. Imbued with wild power, he crippled the invaders, the untamable spirit flaring hotter with each blow.\n\nThe monks were victorious, but the monastery lay in ruins, and Lee Sin's vision was permanently gone. In the blind darkness, he finally understood that no mortal could ever completely bend the dragon spirit to their will. Devastated, he bound a cloth over his sightless eyes and tried to stagger away.\n\nThe surviving elders stopped him. In forsaking all desire for power, their disgraced pupil was finally ready to begin anew. The monks offered absolution, teaching that the humblest soul could sometimes counter and direct the dragon's fiery nature.\n\nLee Sin stayed to rebuild the monastery. After the work was done and Udyr returned to the Freljord, Lee Sin devoted himself fully to the pursuit of enlightenment, mastering himself and the dragon spirit within, to face whatever foe is yet to come.",
+  "spells_en": [
+    {
+      "id": "LeeSinQOne",
+      "name": "Sonic Wave / Resonating Strike",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 48,
+        "full": "LeeSinQOne.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Lee Sin projects a discordant wave of sound, dealing <physicalDamage>{{ initialdamage }} physical damage</physicalDamage> to the first enemy hit, granting <keywordStealth>True Sight</keywordStealth> of them, and allows Lee Sin to <recast>Recast</recast> for the next {{ reactivatetime }} seconds.<br /><br /><recast>Recast:</recast> Lee Sin dashes to the enemy hit by the sound wave, dealing between <physicalDamage>{{ recastdamage }} to {{ empowereddamage }} physical damage</physicalDamage> scaling with the target's missing Health. {{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Sonic Wave Damage",
+          "Resonating Strike Minimum Base Damage",
+          "Resonating Strike Maximum Base Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1100",
+      "datavalues": {},
+      "description": "Sonic Wave: Lee Sin projects a discordant wave of sound to locate his enemies, dealing physical damage to the first enemy it encounters. If Sonic Wave hits, Lee Sin can cast Resonating Strike for the next 3 seconds.<br>Resonating Strike: Lee Sin dashes to the enemy hit by Sonic Wave, dealing physical damage based on the target's missing Health.",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "LeeSinWOne",
+      "name": "Safeguard / Iron Will",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 48,
+        "full": "LeeSinWOne.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Lee Sin dashes to an ally or ward. If the target is a champion, Lee Sin grants them and himself <shield>{{ shieldamount }} Shield</shield> for {{ shieldduration }} seconds and reduces this Ability's Cooldown by {{ w1cooldownrecovered*100 }}%. Lee Sin may <recast>Recast</recast> for the next {{ w1reactivatetime }} seconds.<br /><br /><recast>Recast:</recast> Lee Sin gains {{ lifestealandspellvamp }}% Life Steal and Spell Vamp for {{ lifestealandspellvamptime }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Safeguard Shield Absorption",
+          "Iron Will Lifesteal / Spell Vamp %"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Safeguard: Lee Sin rushes to target ally, shielding himself from damage. If the ally is a champion, they are also shielded. After using Safeguard, Lee Sin can cast Iron Will.<br>Iron Will: Lee Sin's intense training allows him to thrive in battle. Lee Sin gains Life Steal and Spell Vamp.",
+      "cooldownBurn": "12"
+    },
+    {
+      "id": "LeeSinEOne",
+      "name": "Tempest / Cripple",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 96,
+        "full": "LeeSinEOne.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Lee Sin smashes the ground, sending out a shockwave that deals <magicDamage>{{ initialdamage }} magic damage</magicDamage> and reveals them for {{ slowduration }} seconds. If this hits an enemy, Lee Sin can <recast>Recast</recast> for the next {{ reactivatetime }} seconds.<br /><br /><recast>Recast:</recast> Lee Sin <status>Slows</status> nearby enemies struck by the shockwave by {{ slowamount }}% decaying over {{ slowduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Tempest Damage",
+          "Cripple Slow"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "450",
+      "datavalues": {},
+      "description": "Tempest: Lee Sin smashes the ground, sending out a shockwave that deals magic damage and reveals enemy units hit. If Tempest hits an enemy, Lee Sin can cast cripple.<br>Cripple: Lee Sin cripples nearby enemies damaged by Tempest, reducing their Move Speed. Move Speed recovers gradually over the duration.",
+      "cooldownBurn": "8"
+    },
+    {
+      "id": "LeeSinR",
+      "name": "Dragon's Rage",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 96,
+        "full": "LeeSinR.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Lee Sin performs a powerful roundhouse kick <status>Knocking Back</status> an enemy champion and dealing <physicalDamage>{{ damage }} physical damage</physicalDamage>.<br /><br />Enemies the target collides with are briefly <status>Knocked Up</status> and take <physicalDamage>{{ damage }} plus {{ percenthpcarrythrough }}% of the kicked enemy's bonus Health as physical damage</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Bonus Health Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "375",
+      "datavalues": {},
+      "description": "Lee Sin performs a powerful roundhouse kick launching his target back, dealing physical damage to the target and any enemies they collide with. Enemies the target collides with are knocked into the air for a short duration. This technique was taught to him by Jesse Perring, although Lee Sin does not kick players off the map.",
+      "cooldownBurn": "110/85/60"
+    }
+  ],
+  "passive_en": {
+    "name": "Flurry",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 0,
+      "y": 48,
+      "full": "LeeSinPassive.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "After Lee Sin uses an ability, his next 2 basic attacks gain Attack Speed and return Energy."
+  },
+  "partype_en": "Energy",
+  "lanes": [
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "64000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "64001",
+      "num": 1,
+      "name": "Traditional Lee Sin",
+      "chromas": false
+    },
+    {
+      "id": "64002",
+      "num": 2,
+      "name": "Acolyte Lee Sin",
+      "chromas": false
+    },
+    {
+      "id": "64003",
+      "num": 3,
+      "name": "Dragon Fist Lee Sin",
+      "chromas": true
+    },
+    {
+      "id": "64004",
+      "num": 4,
+      "name": "Muay Thai Lee Sin",
+      "chromas": true
+    },
+    {
+      "id": "64005",
+      "num": 5,
+      "name": "Pool Party Lee Sin",
+      "chromas": false
+    },
+    {
+      "id": "64006",
+      "num": 6,
+      "name": "SKT T1 Lee Sin",
+      "chromas": false
+    },
+    {
+      "id": "64010",
+      "num": 10,
+      "name": "Knockout Lee Sin",
+      "chromas": false
+    },
+    {
+      "id": "64011",
+      "num": 11,
+      "name": "God Fist Lee Sin",
+      "chromas": false
+    },
+    {
+      "id": "64012",
+      "num": 12,
+      "name": "Playmaker Lee Sin",
+      "chromas": true
+    },
+    {
+      "id": "64027",
+      "num": 27,
+      "name": "Nightbringer Lee Sin",
+      "chromas": false
+    },
+    {
+      "id": "64028",
+      "num": 28,
+      "name": "Prestige Nightbringer Lee Sin",
+      "chromas": false
+    },
+    {
+      "id": "64029",
+      "num": 29,
+      "name": "FPX Lee Sin",
+      "chromas": false
+    },
+    {
+      "id": "64031",
+      "num": 31,
+      "name": "Storm Dragon Lee Sin",
+      "chromas": false
+    },
+    {
+      "id": "64039",
+      "num": 39,
+      "name": "Prestige Nightbringer Lee Sin (2022)",
+      "chromas": false
+    },
+    {
+      "id": "64041",
+      "num": 41,
+      "name": "Zenith Games Lee Sin",
+      "chromas": false
+    },
+    {
+      "id": "64051",
+      "num": 51,
+      "name": "Heavenscale Lee Sin",
+      "chromas": false
+    },
+    {
+      "id": "64052",
+      "num": 52,
+      "name": "Divine Heavenscale Lee Sin",
+      "chromas": false
+    },
+    {
+      "id": "64068",
+      "num": 68,
+      "name": "T1 Lee Sin",
+      "chromas": false
+    },
+    {
+      "id": "64072",
+      "num": 72,
+      "name": "Inkshadow Lee Sin",
+      "chromas": false
+    }
+  ]
+}

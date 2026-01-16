@@ -1,0 +1,486 @@
+{
+  "id": "Tryndamere",
+  "key": "23",
+  "name": "Tryndamere",
+  "title": "Roi barbare",
+  "version": "15.23.1",
+  "lore": "Poussé par une rage infinie, Tryndamere traverse Freljord et parfait sa maîtrise du combat en défiant les plus grands guerriers du nord, pour se préparer aux jours sombres qui s'annoncent. Longtemps dominé par sa haine, il cherchait à se venger de l'annihilation de son clan, mais il a depuis rencontré Ashe et trouvé un nouveau foyer auprès des Avarosans. Sa force est pratiquement surhumaine et son courage légendaire, et cela lui a permis de remporter avec ses nouveaux alliés d'innombrables victoires plus qu'improbables.",
+  "tags": [
+    "Fighter",
+    "Assassin"
+  ],
+  "partype": "Fureur",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 0,
+    "y": 96,
+    "full": "Tryndamere.png",
+    "group": "champion",
+    "sprite": "champion4.png"
+  },
+  "skins": [
+    {
+      "id": "23000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "23001",
+      "num": 1,
+      "name": "Tryndamere des Highlands",
+      "chromas": false
+    },
+    {
+      "id": "23002",
+      "num": 2,
+      "name": "Roi Tryndamere",
+      "chromas": false
+    },
+    {
+      "id": "23003",
+      "num": 3,
+      "name": "Tryndamere viking",
+      "chromas": false
+    },
+    {
+      "id": "23004",
+      "num": 4,
+      "name": "Tryndamere possédé",
+      "chromas": false
+    },
+    {
+      "id": "23005",
+      "num": 5,
+      "name": "Tryndamere sultan",
+      "chromas": false
+    },
+    {
+      "id": "23006",
+      "num": 6,
+      "name": "Tryndamere du royaume en guerre",
+      "chromas": false
+    },
+    {
+      "id": "23007",
+      "num": 7,
+      "name": "Tryndamere du cauchemar",
+      "chromas": false
+    },
+    {
+      "id": "23008",
+      "num": 8,
+      "name": "Tryndamere chasseur de bêtes",
+      "chromas": false
+    },
+    {
+      "id": "23009",
+      "num": 9,
+      "name": "Tryndamere techno-chimique",
+      "chromas": false
+    },
+    {
+      "id": "23010",
+      "num": 10,
+      "name": "Tryndamere lune de sang",
+      "chromas": true
+    },
+    {
+      "id": "23018",
+      "num": 18,
+      "name": "Tryndamere héraut de la nuit",
+      "chromas": true
+    },
+    {
+      "id": "23027",
+      "num": 27,
+      "name": "Tryndamere héros de guerre",
+      "chromas": true
+    },
+    {
+      "id": "23037",
+      "num": 37,
+      "name": "Tryndamere Darkin",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "TryndamereQ",
+      "name": "Soif de sang",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 48,
+        "full": "TryndamereQ.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> Tryndamere a soif de sang, ce qui augmente ses <scaleAD>dégâts d'attaque de {{ flatad }}</scaleAD> plus <scaleAD>{{ adperonepercentmissinghp }}</scaleAD> tous les 1% de PV manquants.<br /><br /><spellActive>Active :</spellActive> Tryndamere consomme sa <keywordMajor>Fureur</keywordMajor>, récupérant <healing>{{ baseheal }} PV plus {{ healperfury }} PV par point de Fureur</healing>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts d'attaque",
+          "Dégâts d'attaque par pourcentage de PV manquants",
+          "Soins",
+          "PV rendus par point de Fureur"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Tryndamere s'épanouit lors des combats, ce qui accroît ses dégâts d'attaque au fur et à mesure qu'il subit des blessures. Il peut lancer Soif de sang pour consommer sa Fureur et se soigner.",
+      "cooldownBurn": "12"
+    },
+    {
+      "id": "TryndamereW",
+      "name": "Moquerie",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 48,
+        "full": "TryndamereW.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Tryndamere lance des insultes, réduisant les dégâts d'attaque des champions de {{ adreduction*-1 }} pendant {{ reductionduration }} sec. Les champions ennemis ayant le dos tourné à Tryndamere sont <status>ralentis</status> de {{ slowpotency*-100 }}% pendant la même durée.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Réduction des dégâts physiques",
+          "Ralentissement"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "850",
+      "datavalues": {},
+      "description": "Tryndamere lance un hurlement, réduisant les dégâts d'attaque des champions proches. De plus, les ennemis ayant le dos tourné voient leur vitesse de déplacement être réduite.",
+      "cooldownBurn": "14"
+    },
+    {
+      "id": "TryndamereE",
+      "name": "Balafre",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 96,
+        "full": "TryndamereE.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Tryndamere tourbillonne à travers ses ennemis, infligeant <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> et générant <keywordMajor>{{ nonchampfurygain }} pts de Fureur</keywordMajor> par ennemi touché (<keywordMajor>{{ champfurygain }} pts de Fureur</keywordMajor> contre les champions).<br /><br />Le délai de récupération de cette compétence est réduit de {{ nonchampcdrefund }} sec quand Tryndamere inflige un coup critique et de {{ champcdrefund }} sec quand il inflige un coup critique à un champion.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Tryndamere lance un coup de taille vers une unité ciblée, infligeant des dégâts aux ennemis sur son chemin.",
+      "cooldownBurn": "12/11/10/9/8"
+    },
+    {
+      "id": "UndyingRage",
+      "name": "Rage inépuisable",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 96,
+        "full": "UndyingRage.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Tryndamere devient immortel pendant {{ e3 }} sec et conserve au moins {{ e2 }} PV tout en gagnant instantanément <keywordMajor>{{ e1 }} pts de Fureur</keywordMajor>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "PV minimum",
+          "Points de Fureur gagnés"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "La soif de combattre de Tryndamere devient si puissante qu'il ne peut pas mourir, quelles que soient les blessures qu'il subit.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive": {
+    "name": "Vague de violence",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 0,
+      "y": 96,
+      "full": "Tryndamere_Passive.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "Tryndamere gagne de la Fureur à chaque attaque, coup critique et coup de grâce qu'il inflige. La Fureur augmente passivement ses chances de coup critique et elle peut être utilisée par sa compétence Soif de sang."
+  },
+  "created_at": "2025-11-26T15:13:35.367127+00:00",
+  "factions": [
+    "freljord"
+  ],
+  "custom_tags": [
+    "barbare",
+    "roi"
+  ],
+  "gender": "Male",
+  "species": "Human",
+  "title_en": "the Barbarian King",
+  "lore_en": "Fueled by unbridled fury and rage, Tryndamere once carved his way through the Freljord, openly challenging the greatest warriors of the north to prepare himself for even darker days ahead. The wrathful barbarian has long sought revenge for the annihilation of his clan, though more recently he has found companionship with Ashe, the Avarosan warmother, and a home with her people. His almost inhuman strength and fortitude is legendary, and has delivered him and his new allies countless victories against the greatest of odds.",
+  "spells_en": [
+    {
+      "id": "TryndamereQ",
+      "name": "Bloodlust",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 48,
+        "full": "TryndamereQ.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Tryndamere thirsts for blood, gaining <scaleAD>{{ flatad }} Attack Damage</scaleAD> plus <scaleAD>{{ adperonepercentmissinghp }}</scaleAD> per 1% missing Health.<br /><br /><spellActive>Active:</spellActive> Tryndamere consumes his <keywordMajor>Fury</keywordMajor>, restoring <healing>{{ baseheal }} plus {{ healperfury }} Health per Fury</healing>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Attack Damage",
+          "Attack Damage per Health % Missing",
+          "Healing",
+          "Heal Per Fury"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Tryndamere thrives on the thrills of combat, increasing his Attack Damage as he is more and more wounded. He can cast Bloodlust to consume his Fury and heal himself.",
+      "cooldownBurn": "12"
+    },
+    {
+      "id": "TryndamereW",
+      "name": "Mocking Shout",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 48,
+        "full": "TryndamereW.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Tryndamere hurls insults, reducing champions' Attack Damage by {{ adreduction*-1 }} for {{ reductionduration }} seconds. Enemy champions with their backs towards Tryndamere are <status>Slowed</status> by {{ slowpotency*-100 }}% for the same duration.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Physical Damage Reduction",
+          "Slow"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "850",
+      "datavalues": {},
+      "description": "Tryndamere lets out an insulting cry, decreasing surrounding champions' Attack Damage. Enemies with their backs turned to Tryndamere also have their Move Speed reduced.",
+      "cooldownBurn": "14"
+    },
+    {
+      "id": "TryndamereE",
+      "name": "Spinning Slash",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 96,
+        "full": "TryndamereE.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Tryndamere spins through his enemies, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> and generating <keywordMajor>{{ nonchampfurygain }} Fury</keywordMajor> per enemy hit, increased to <keywordMajor>{{ champfurygain }} Fury</keywordMajor> against enemy champions.<br /><br />This Ability's Cooldown is reduced by {{ nonchampcdrefund }} second when Tryndamere critically strikes, and reduced by {{ champcdrefund }} seconds when critically striking a champion.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Tryndamere slices toward a target unit, dealing damage to enemies in his path.",
+      "cooldownBurn": "12/11/10/9/8"
+    },
+    {
+      "id": "UndyingRage",
+      "name": "Undying Rage",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 96,
+        "full": "UndyingRage.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Tryndamere becomes completely immune to death for {{ e3 }} seconds, refusing to be reduced below {{ e2 }} Health, and instantly gains <keywordMajor>{{ e1 }} Fury</keywordMajor>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Minimum Health",
+          "Fury Gained"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Tryndamere's lust for battle becomes so strong that he is unable to die, no matter how wounded he becomes.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Battle Fury",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 0,
+      "y": 96,
+      "full": "Tryndamere_Passive.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "Tryndamere gains Fury for each attack, critical strike, and killing blow he makes. Fury passively increases his Critical Strike Chance and can be consumed with his Bloodlust spell."
+  },
+  "partype_en": "Fury",
+  "lanes": [
+    "Top"
+  ],
+  "skins_en": [
+    {
+      "id": "23000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "23001",
+      "num": 1,
+      "name": "Highland Tryndamere",
+      "chromas": false
+    },
+    {
+      "id": "23002",
+      "num": 2,
+      "name": "King Tryndamere",
+      "chromas": false
+    },
+    {
+      "id": "23003",
+      "num": 3,
+      "name": "Viking Tryndamere",
+      "chromas": false
+    },
+    {
+      "id": "23004",
+      "num": 4,
+      "name": "Demonblade Tryndamere",
+      "chromas": false
+    },
+    {
+      "id": "23005",
+      "num": 5,
+      "name": "Sultan Tryndamere",
+      "chromas": false
+    },
+    {
+      "id": "23006",
+      "num": 6,
+      "name": "Warring Kingdoms Tryndamere",
+      "chromas": false
+    },
+    {
+      "id": "23007",
+      "num": 7,
+      "name": "Nightmare Tryndamere",
+      "chromas": false
+    },
+    {
+      "id": "23008",
+      "num": 8,
+      "name": "Beast Hunter Tryndamere",
+      "chromas": false
+    },
+    {
+      "id": "23009",
+      "num": 9,
+      "name": "Chemtech Tryndamere",
+      "chromas": false
+    },
+    {
+      "id": "23010",
+      "num": 10,
+      "name": "Blood Moon Tryndamere",
+      "chromas": true
+    },
+    {
+      "id": "23018",
+      "num": 18,
+      "name": "Nightbringer Tryndamere",
+      "chromas": true
+    },
+    {
+      "id": "23027",
+      "num": 27,
+      "name": "Victorious Tryndamere",
+      "chromas": true
+    },
+    {
+      "id": "23037",
+      "num": 37,
+      "name": "Visions of the Fallen Tryndamere",
+      "chromas": true
+    }
+  ]
+}

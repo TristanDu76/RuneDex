@@ -1,0 +1,443 @@
+{
+  "id": "MonkeyKing",
+  "key": "62",
+  "name": "Wukong",
+  "title": "Roi des singes",
+  "version": "15.23.1",
+  "lore": "Wukong est un Vastaya (au nom de naissance Kong de la tribu Shimon), connu pour son mélange de force, d'agilité et d'intelligence.\n\nSon histoire est intrinsèquement liée à celle de son maître :\n\nLe Défi au Maître : Après la destruction du village de Wuju par Noxus, Maître Yi, le dernier survivant de cet art martial, s'était isolé, brisé par le chagrin et la culpabilité. Kong, le Vastaya, défia Yi en duel.\n\nL'Apprentissage : Bien que facilement vaincu la première fois, Kong revint jour après jour, utilisant des ruses et des tours de plus en plus intelligents. Ces défis forcèrent Yi à se remettre en question et à improviser, ravivant ainsi l'esprit du Wuju en lui.\n\nL'Héritage du Wuju : Impressionné par sa détermination et son potentiel, Maître Yi accepta Kong comme son élève. Il lui enseigna le Wuju, l'art martial ionien sacré axé sur l'union entre la pensée et l'action.\n\nLe Nouveau Nom et l'Arme : Yi donna à Kong le titre honorifique de Wukong et lui fit don de son bâton enchanté (staff). Ce nom et cet art le transforment en plus qu'un simple guerrier, faisant de lui l'héritier direct de cette tradition.\n\nMission Actuelle :\n\nEn tant que dernier tenant du Wuju (avec Yi), Wukong utilise son style de combat pour semer la confusion chez ses adversaires. Il est déterminé à combattre toute menace qui pourrait transformer son foyer, l'Ionia, en ruines et décombres.\n\nWukong combine donc l'agilité et la malice de sa nature Vastaya avec la discipline du Wuju pour devenir un protecteur puissant.",
+  "tags": [
+    "Fighter",
+    "Tank"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 192,
+    "y": 96,
+    "full": "MonkeyKing.png",
+    "group": "champion",
+    "sprite": "champion2.png"
+  },
+  "skins": [
+    {
+      "id": "62000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "62001",
+      "num": 1,
+      "name": "Wukong volcanique",
+      "chromas": false
+    },
+    {
+      "id": "62002",
+      "num": 2,
+      "name": "Général Wukong",
+      "chromas": false
+    },
+    {
+      "id": "62003",
+      "num": 3,
+      "name": "Wukong dragon de jade",
+      "chromas": true
+    },
+    {
+      "id": "62004",
+      "num": 4,
+      "name": "Wukong des enfers",
+      "chromas": true
+    },
+    {
+      "id": "62005",
+      "num": 5,
+      "name": "Wukong radieux",
+      "chromas": false
+    },
+    {
+      "id": "62006",
+      "num": 6,
+      "name": "Wukong Lancier Stratus",
+      "chromas": false
+    },
+    {
+      "id": "62007",
+      "num": 7,
+      "name": "Wukong de l'Académie du combat",
+      "chromas": true
+    },
+    {
+      "id": "62016",
+      "num": 16,
+      "name": "Wukong sylvestre",
+      "chromas": true
+    },
+    {
+      "id": "62026",
+      "num": 26,
+      "name": "Wukong du royaume des mechas",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "MonkeyKingDoubleAttack",
+      "name": "Écrasement",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 144,
+        "full": "MonkeyKingDoubleAttack.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "La prochaine attaque de Wukong et de son <keywordMajor>clone</keywordMajor> a une portée augmentée de {{ attackrangebonus }}, inflige <physicalDamage>{{ bonusdamagett }} pts de dégâts physiques</physicalDamage> supplémentaires et supprime <scaleArmor>{{ armorshredpercent*100 }}% d'armure</scaleArmor> pendant {{ shredduration }} sec.<br /><br />Le délai de récupération de cette compétence est réduit de {{ cooldowndecrease }} sec chaque fois que Wukong ou son <keywordMajor>clone</keywordMajor> touche un ennemi avec une attaque ou une compétence.<br /><br /><rules>Cette compétence déclenche les effets de sort quand elle inflige des dégâts.</rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "20",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "% réduction d'armure",
+          "Portée",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "250/275/300/325/350",
+      "datavalues": {},
+      "description": "La prochaine attaque de Wukong a une plus longue portée, inflige des dégâts supplémentaires et réduit l'armure de la cible pendant quelques secondes.",
+      "cooldownBurn": "8/7.5/7/6.5/6"
+    },
+    {
+      "id": "MonkeyKingDecoy",
+      "name": "Guerrier espiègle",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 144,
+        "full": "MonkeyKingDecoy.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Wukong se rue vers le curseur et devient <keywordStealth>invisible</keywordStealth> pendant {{ stealthduration }} sec, laissant derrière lui un <keywordMajor>clone</keywordMajor> immobile pendant {{ cloneduration }} sec.<br /><br />Le <keywordMajor>clone</keywordMajor> attaque les ennemis proches que Wukong a récemment blessés et imite sa compétence ultime, infligeant {{ clonedamagemod*100 }}% des dégâts normaux.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/55/50/45/40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Pourcentage de dégâts",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "275",
+      "datavalues": {},
+      "description": "Wukong devient <font color='#91d7ee'>invisible</font> et se rue dans une direction, laissant derrière lui un clone qui attaquera les ennemis proches.",
+      "cooldownBurn": "22/21/20/19/18"
+    },
+    {
+      "id": "MonkeyKingNimbus",
+      "name": "Nimbus",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 144,
+        "full": "MonkeyKingNimbus.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Wukong se rue sur un ennemi et envoie des <keywordMajor>clones</keywordMajor> qui copient la ruée sur un maximum de {{ extratargets }} ennemis proches supplémentaires. Chaque ennemi touché subit <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. Wukong et son <keywordMajor>clone</keywordMajor> gagnent ensuite <attackSpeed>+{{ attackspeed*100 }}% de vitesse d'attaque</attackSpeed> pendant {{ attackspeedduration }} sec.<br /><br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30/35/40/45/50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Vitesse d'attaque",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Wukong se rue sur l'ennemi ciblé et envoie des images qui attaquent les ennemis proches de sa cible, infligeant des dégâts à chaque ennemi frappé.",
+      "cooldownBurn": "10/9.25/8.5/7.75/7"
+    },
+    {
+      "id": "MonkeyKingSpinToWin",
+      "name": "Cyclone",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 144,
+        "full": "MonkeyKingSpinToWin.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Wukong gagne <speed>+{{ movespeed*100 }}% de vitesse de déplacement</speed> et fait tournoyer son bâton, <status>projetant dans les airs</status> les ennemis proches pendant {{ knockupduration }} sec et leur infligeant <physicalDamage>{{ totaldamagett }} plus {{ percenthpdamagett }} des PV max en dégâts physiques</physicalDamage> en {{ spinduration }} sec.<br /><br />Cette compétence peut être lancée une seconde fois dans les {{ recastwindow }} sec avant d'entrer en phase de récupération.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Pourcentage des PV max en dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "315",
+      "datavalues": {},
+      "description": "Wukong agrandit son bâton et le fait tournoyer, ce qui augmente sa vitesse de déplacement.<br><br>Les ennemis touchés subissent des dégâts et sont projetés en l'air.",
+      "cooldownBurn": "130/110/90"
+    }
+  ],
+  "passive": {
+    "name": "Peau de pierre",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 192,
+      "y": 96,
+      "full": "MonkeyKingStoneSkin.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Wukong augmente son armure et la régénération de ses PV lorsqu'il est en combat avec des champions ou des monstres (effet cumulable)."
+  },
+  "created_at": "2025-11-26T15:13:34.174598+00:00",
+  "factions": [
+    "ionia"
+  ],
+  "custom_tags": [
+    "shimon",
+    "combattant"
+  ],
+  "gender": "Male",
+  "species": "Vastaya",
+  "title_en": "the Monkey King",
+  "lore_en": "Wukong (born Kong of the Shimon tribe) is a Vastaya known for using his unique blend of strength, agility, and intelligence to sow confusion among his opponents and gain the upper hand.\n\nHis story is intrinsically linked to that of his master:\n\nThe Challenge to the Master: Following the destruction of the Wuju village by Noxus, Master Yi, the sole survivor of the martial art, had retreated into broken isolation. Kong, the Vastaya, challenged Yi to a duel.\n\nThe Apprenticeship: Though easily defeated the first time, Kong returned day after day, using increasingly clever tricks and schemes. These challenges forced Yi to react and improvise, reviving the spirit of Wuju within him.\n\nThe Wuju Legacy: Impressed by his determination and potential, Master Yi accepted Kong as his student. He taught him Wuju, the sacred Ionian martial art focused on uniting thought and action.\n\nThe New Name and Weapon: Yi gifted Kong the honorific title of Wukong and gave him an enchanted staff. This name and art transformed him into more than just a warrior, making him the direct heir to this tradition.\n\nCurrent Mission:\n\nAs the last inheritor of Wuju (alongside Yi), Wukong uses his fighting style to sow confusion among his adversaries. He is determined to fight any threat that might turn his home, Ionia, into ruins and rubble.\n\nWukong thus combines the agility and cunning of his Vastaya nature with the discipline of Wuju to become a powerful protector.",
+  "spells_en": [
+    {
+      "id": "MonkeyKingDoubleAttack",
+      "name": "Crushing Blow",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 144,
+        "full": "MonkeyKingDoubleAttack.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Wukong and his <keywordMajor>Clone's</keywordMajor> next Attack gains {{ attackrangebonus }} range, deals an additional <physicalDamage>{{ bonusdamagett }} physical damage</physicalDamage>, and removes <scaleArmor>{{ armorshredpercent*100 }}% Armor</scaleArmor> for {{ shredduration }} seconds.<br /><br />This Ability's cooldown is reduced by {{ cooldowndecrease }} seconds every time Wukong or his <keywordMajor>Clone</keywordMajor> hit an enemy with an Attack or Ability.<br /><br /><rules>This Ability triggers spell effects upon dealing damage.</rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "20",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Armor Reduction %",
+          "Range",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "250/275/300/325/350",
+      "datavalues": {},
+      "description": "Wukong's next attack gains attack range, deals bonus damage, and reduces the target's armor for a few seconds.",
+      "cooldownBurn": "8/7.5/7/6.5/6"
+    },
+    {
+      "id": "MonkeyKingDecoy",
+      "name": "Warrior Trickster",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 144,
+        "full": "MonkeyKingDecoy.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Wukong dashes and becomes <keywordStealth>Invisible</keywordStealth> for {{ stealthduration }} second, leaving behind a stationary <keywordMajor>Clone</keywordMajor> for {{ cloneduration }} seconds.<br /><br />The <keywordMajor>Clone</keywordMajor> Attacks nearby enemies Wukong has recently damaged and will mimic his ultimate, each dealing {{ clonedamagemod*100 }}% of normal damage.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/55/50/45/40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage Percent",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "275",
+      "datavalues": {},
+      "description": "Wukong becomes <font color='#91d7ee'>Invisible</font> and dashes in a direction, leaving behind a clone that will attack nearby enemies.",
+      "cooldownBurn": "22/21/20/19/18"
+    },
+    {
+      "id": "MonkeyKingNimbus",
+      "name": "Nimbus Strike",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 144,
+        "full": "MonkeyKingNimbus.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Wukong dashes to an enemy, sending out <keywordMajor>Clones</keywordMajor> that mimic the dash to up to {{ extratargets }} additional enemies nearby. Each enemy struck takes <magicDamage>{{ totaldamage }} magic damage</magicDamage>. He and his <keywordMajor>Clone</keywordMajor> gain <attackSpeed>{{ attackspeed*100 }}% Attack Speed</attackSpeed> for {{ attackspeedduration }} seconds.<br /><br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30/35/40/45/50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Attack Speed",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Wukong dashes to a targeted enemy and sends out images to attack enemies near his target, dealing damage to each enemy struck.",
+      "cooldownBurn": "10/9.25/8.5/7.75/7"
+    },
+    {
+      "id": "MonkeyKingSpinToWin",
+      "name": "Cyclone",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 144,
+        "full": "MonkeyKingSpinToWin.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Wukong gains <speed>{{ movespeed*100 }}% Move Speed</speed> and spins his staff, <status>Knocking Up</status> nearby enemies for {{ knockupduration }} seconds and take <physicalDamage>{{ totaldamagett }} plus {{ percenthpdamagett }} max Health physical damage</physicalDamage> over {{ spinduration }} seconds.<br /><br />This Ability can be cast a second time within {{ recastwindow }} seconds before going on cooldown.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Maximum Health Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "315",
+      "datavalues": {},
+      "description": "Wukong's extends his staff and spins it around repeatedly, gaining Move Speed.<br><br>Enemies struck take damage and are knocked up.",
+      "cooldownBurn": "130/110/90"
+    }
+  ],
+  "passive_en": {
+    "name": "Stone Skin",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 192,
+      "y": 96,
+      "full": "MonkeyKingStoneSkin.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Wukong gains stacking armor and max health regeneration while fighting champions and monsters."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Jungle",
+    "Top"
+  ],
+  "skins_en": [
+    {
+      "id": "62000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "62001",
+      "num": 1,
+      "name": "Volcanic Wukong",
+      "chromas": false
+    },
+    {
+      "id": "62002",
+      "num": 2,
+      "name": "General Wukong",
+      "chromas": false
+    },
+    {
+      "id": "62003",
+      "num": 3,
+      "name": "Jade Dragon Wukong",
+      "chromas": true
+    },
+    {
+      "id": "62004",
+      "num": 4,
+      "name": "Underworld Wukong",
+      "chromas": true
+    },
+    {
+      "id": "62005",
+      "num": 5,
+      "name": "Radiant Wukong",
+      "chromas": false
+    },
+    {
+      "id": "62006",
+      "num": 6,
+      "name": "Lancer Stratus Wukong",
+      "chromas": false
+    },
+    {
+      "id": "62007",
+      "num": 7,
+      "name": "Battle Academia Wukong",
+      "chromas": true
+    },
+    {
+      "id": "62016",
+      "num": 16,
+      "name": "Elderwood Wukong",
+      "chromas": true
+    },
+    {
+      "id": "62026",
+      "num": 26,
+      "name": "Mecha Kingdoms Wukong",
+      "chromas": true
+    }
+  ]
+}

@@ -1,0 +1,489 @@
+{
+  "id": "Graves",
+  "key": "104",
+  "name": "Graves",
+  "title": "Hors-la-loi",
+  "version": "15.23.1",
+  "lore": "Malcolm Graves a été élevé dans les ruelles portuaires de Bilgewater, où il a rapidement appris à se battre, à voler et à devenir une force brute pour les trafiquants et autres personnages peu recommandables. Aspirant à plus d'excitation, il s'est enfui à un jeune âge, volant un tromblon et se dirigeant vers le continent shurimien pour y vivre de vol et de jeu.\r\n\r\nAu cours d'une partie de cartes illégale, il a rencontré l'homme qui allait changer sa vie : le tricheur connu sous le nom de Twisted Fate. Les deux hommes ont immédiatement reconnu l'un chez l'autre la même passion pour l'aventure et le danger, et ils ont formé un partenariat très lucratif. La combinaison de la force brute de Graves et de l'habileté de Twisted Fate à s'en sortir par la ruse (brawn and brains) les a rendus incroyablement efficaces. Leur sens mutuel de l'honneur des vauriens a rapidement évolué vers une confiance mutuelle authentique.\r\n\r\nLeurs exploits étaient légendaires : ils ont réussi à monter des nobles maisons noxiennes les unes contre les autres pour couvrir le sauvetage d'un héritier (qu'ils ont ensuite revendu au plus offrant) et ont été les seuls voleurs à percer le Coffre à horlogerie de Piltover, trompant même les gardes pour qu'ils chargent le butin sur leur navire détourné. Leurs crimes n'étaient généralement découverts qu'après leur fuite, souvent avec une carte de visite signée Twisted Fate en guise de moquerie.\r\n\r\nFinalement, leur chance tourna. Lors d'un braquage bâclé, Graves fut capturé par les exécuteurs locaux, tandis que Twisted Fate s'enfuit et l'abandonna.\r\n\r\nJeté dans la sinistre prison du Verrou (the Locker), Graves a enduré des années de torture et d'isolement, nourrissant une rage amère et une soif de vengeance contre son ancien partenaire. Un homme moins fort aurait été brisé, mais Graves s'est accroché à sa haine.\r\n\r\nLorsqu'il a finalement réussi à s'échapper, armé du fusil à double canon du directeur (qu'il a nommé Destinée), Graves a commencé sa longue poursuite de Twisted Fate. La chasse le ramena à Bilgewater, où il retrouva son ancien ami. Cependant, alors qu'il était sur le point de l'abattre, ils furent forcés de mettre de côté leurs différends pour échapper à une mort certaine pendant le conflit entre le roi pillard Gangplank et ses rivaux.\r\n\r\nGraves se retrouva à nouveau à fuir sa ville natale, mais cette fois, avec son vieil ami. Malgré leur partenariat rétabli dans le danger, le ressentiment de l'abandon n'a pas pu être oublié du jour au lendemain. Néanmoins, Graves sent l'appel de Bilgewater une fois de plus, espérant que le duo retrouvera son rythme pour le casse ultime.",
+  "tags": [
+    "Marksman"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 48,
+    "y": 48,
+    "full": "Graves.png",
+    "group": "champion",
+    "sprite": "champion1.png"
+  },
+  "skins": [
+    {
+      "id": "104000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "104001",
+      "num": 1,
+      "name": "Graves tueur à gages",
+      "chromas": false
+    },
+    {
+      "id": "104002",
+      "num": 2,
+      "name": "Graves fugitif",
+      "chromas": false
+    },
+    {
+      "id": "104003",
+      "num": 3,
+      "name": "Don Graves",
+      "chromas": false
+    },
+    {
+      "id": "104004",
+      "num": 4,
+      "name": "Graves anti-émeutes",
+      "chromas": false
+    },
+    {
+      "id": "104005",
+      "num": 5,
+      "name": "Graves pistolet à eau",
+      "chromas": true
+    },
+    {
+      "id": "104006",
+      "num": 6,
+      "name": "Graves coupe-jarret",
+      "chromas": false
+    },
+    {
+      "id": "104007",
+      "num": 7,
+      "name": "Graves des neiges",
+      "chromas": true
+    },
+    {
+      "id": "104014",
+      "num": 14,
+      "name": "Graves héros de guerre",
+      "chromas": true
+    },
+    {
+      "id": "104018",
+      "num": 18,
+      "name": "Graves prétorien",
+      "chromas": true
+    },
+    {
+      "id": "104025",
+      "num": 25,
+      "name": "Professeur Graves de l'Académie",
+      "chromas": true
+    },
+    {
+      "id": "104035",
+      "num": 35,
+      "name": "Graves Sentinelle",
+      "chromas": true
+    },
+    {
+      "id": "104042",
+      "num": 42,
+      "name": "EDG Graves",
+      "chromas": true
+    },
+    {
+      "id": "104045",
+      "num": 45,
+      "name": "Graves de porcelaine",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "GravesQLineSpell",
+      "name": "Terminus",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 96,
+        "full": "GravesQLineSpell.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Graves tire une cartouche pleine de poudre qui inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage>. Après 1 sec ou après un contact avec le terrain, la cartouche explose, infligeant <physicalDamage>{{ totaldetonationdamage }} pts de dégâts physiques</physicalDamage> le long de sa trajectoire et aux ennemis proches de l'explosion.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Dégâts de l'explosion",
+          "Ratio de dégâts d'attaque de l'explosion",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "925",
+      "datavalues": {},
+      "description": "Graves tire un projectile qui explose au bout de 1 sec, ou quand il entre en contact avec un obstacle.",
+      "cooldownBurn": "13/11.25/9.5/7.75/6"
+    },
+    {
+      "id": "GravesSmokeGrenade",
+      "name": "Écran de fumée",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 96,
+        "full": "GravesSmokeGrenade.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Graves crée un nuage de fumée noire pendant 4 sec, <status>ralentissant</status> de {{ e2 }}% les ennemis qui s'y trouvent et bloquant leur vision en dehors de la zone. L'impact initial inflige <magicDamage>{{ impactdamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/75/80/85/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Coût en @AbilityResourceName@",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "950",
+      "datavalues": {},
+      "description": "Graves tire une grenade fumigène qui produit un nuage de fumée réduisant le champ de vision. Les ennemis touchés par l'impact initial subissent des dégâts magiques et sont brièvement ralentis.",
+      "cooldownBurn": "26/24/22/20/18"
+    },
+    {
+      "id": "GravesMove",
+      "name": "Ruée vers l'or",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 96,
+        "full": "GravesMove.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Graves se rue dans une direction et remet une <keywordMajor>cartouche</keywordMajor> dans son fusil. Il gagne également un effet pendant {{ buffduration }} sec (max : {{ maxstacks }} effets), ou deux effets s'il se rue vers un champion ennemi. Les effets lui octroient <scaleArmor>{{ armorperstack }} d'armure</scaleArmor> et <scaleMR>{{ mrgrant }} de résistance magique</scaleMR>. La durée des effets est réinitialisée quand Graves blesse une cible autre qu'un sbire.<br /><br />Chaque balle des attaques de Graves qui touche un ennemi réduit le délai de récupération de cette compétence de {{ cooldownperhit }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Armure",
+          "Résistance magique",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "425",
+      "datavalues": {},
+      "description": "Graves charge devant lui et profite d'un bonus en armure et en résistance magique pendant quelques secondes. Si Graves fonce vers un champion ennemi, il gagne deux effets Nerfs d'acier au lieu d'un. Lorsqu'il touche des ennemis avec ses attaques de base, le délai de récupération de cette compétence est réduit et le bonus est actualisé.",
+      "cooldownBurn": "16/15/14/13/12"
+    },
+    {
+      "id": "GravesChargeShot",
+      "name": "Dégâts collatéraux",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 96,
+        "full": "GravesChargeShot.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Graves tire un projectile explosif, se projetant lui-même en arrière. Le projectile inflige <physicalDamage>{{ damage }} pts de dégâts physiques</physicalDamage> au premier ennemi touché. En touchant un champion ennemi ou en arrivant au bout de sa course, le projectile explose et inflige <physicalDamage>{{ falloffdamage }} pts de dégâts physiques</physicalDamage> dans une zone conique.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts initiaux",
+          "Dégâts de zone",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Graves tire un obus explosif qui inflige de lourds dégâts au premier champion touché. Lorsque l'obus touche un champion ou arrive au bout de sa course, il explose et inflige des dégâts dans une zone en forme de cône.",
+      "cooldownBurn": "100/80/60"
+    }
+  ],
+  "passive": {
+    "name": "Nouvelle destinée",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 48,
+      "y": 48,
+      "full": "GravesTrueGrit.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Le fusil de Graves dispose de propriétés uniques. Graves doit recharger quand il n'a plus de munitions. Chaque attaque tire 4 balles qui ne traversent pas les unités. Les unités touchées par plusieurs balles sont repoussées (sauf les champions)."
+  },
+  "created_at": "2025-11-26T15:13:33.248576+00:00",
+  "factions": [
+    "bilgewater"
+  ],
+  "custom_tags": [
+    "hors-la-loi",
+    "escroc"
+  ],
+  "gender": "Male",
+  "species": "Human",
+  "title_en": "the Outlaw",
+  "lore_en": "Malcolm Graves was raised in the wharf alleys of Bilgewater, where he quickly learned how to fight and steal, skills that would serve him well. He always found work hauling contraband and worked as hired muscle for various unsavory local characters. Craving more excitement, he ran away at a young age, stole a blunderbuss, and made his way to the Shuriman mainland, living by stealing, lying, and gambling.\r\n\r\nAcross the table of a high-stakes card game in Mudtown, he met the man who would change his life: the trickster known as Twisted Fate. The two immediately saw in each other the same reckless passion for adventure and danger, forming a highly lucrative partnership. The combination of Graves' raw brawn and Twisted Fate's ability to talk their way out of (and back into) trouble made them an unusually effective team. Their mutual sense of roguish honor blossomed into genuine trust.\r\n\r\nTheir exploits were legendary: they managed to set two renowned Noxian noble houses against each other as cover for a kidnapped heir's rescue (whom they then ransomed to the highest bidder) and hold the distinction of being the only thieves ever to crack Piltover's supposedly impenetrable Clockwork Vault, even tricking the guards into loading the loot onto their getaway ship. Their crimes were usually only discovered after their escape, often accompanied by one of Twisted Fate's signature calling cards.\r\n\r\nEventually, their luck ran out. During a heist that rapidly turned completely botched, Graves was captured by local enforcers, while Twisted Fate merely turned tail and abandoned him.\r\n\r\nThrown into the infamous Locker prison, Graves endured years of torture and solitary confinement, nursing a bitter anger and thirst for revenge against his old partner. A lesser man would have been broken, but Graves clung to his hatred.\r\n\r\nWhen he finally clawed his way to freedom, with the warden's brand new shotgun slung over his shoulder (which he named Destiny), Graves began his long-overdue pursuit of Twisted Fate. The search led him back to Bilgewater, where he found his old friend. However, just as he had Twisted Fate in his sights, they were forced to put aside their differences to escape almost certain death in the conflict between the reaver king Gangplank and his rival ship captains.\r\n\r\nGraves found himself escaping his hometown once more, but this time, with his old friend in tow. While their partnership was renewed in danger, the resentment from the betrayal couldn't simply be forgotten overnight. Nevertheless, Graves feels Bilgewater calling to him again, hoping the pair will find their stride for the ultimate heist.",
+  "spells_en": [
+    {
+      "id": "GravesQLineSpell",
+      "name": "End of the Line",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 96,
+        "full": "GravesQLineSpell.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Graves fires a powder round dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage>. After 1 second or after colliding with terrain, it detonates, dealing <physicalDamage>{{ totaldetonationdamage }} physical damage</physicalDamage> along the travel path again and to enemies near the blast.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Detonation Damage",
+          "Detonation AD Ratio",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "925",
+      "datavalues": {},
+      "description": "Graves fires an explosive shell that detonates after 1 second, or after colliding with terrain.",
+      "cooldownBurn": "13/11.25/9.5/7.75/6"
+    },
+    {
+      "id": "GravesSmokeGrenade",
+      "name": "Smoke Screen",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 96,
+        "full": "GravesSmokeGrenade.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Graves creates a cloud of black smoke for 4 seconds, <status>Slowing</status> enemies inside by {{ e2 }}% and blocking their vision outside the area. The initial impact deals <magicDamage>{{ impactdamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/75/80/85/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "@AbilityResourceName@ Cost",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "950",
+      "datavalues": {},
+      "description": "Graves fires a smoke canister at the target area creating a cloud of smoke that reduces sight range. Enemies caught in the initial impact are dealt magic damage and have their Move Speed reduced briefly.",
+      "cooldownBurn": "26/24/22/20/18"
+    },
+    {
+      "id": "GravesMove",
+      "name": "Quickdraw",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 96,
+        "full": "GravesMove.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Graves dashes and reloads one <keywordMajor>Shell</keywordMajor> into his shotgun. He also gains a stack for {{ buffduration }} seconds (max {{ maxstacks }} stacks) or two stacks if he dashes towards an enemy champion. Stacks grant him <scaleArmor>{{ armorperstack }} Armor</scaleArmor> and <scaleMR>{{ mrgrant }} Magic Resist</scaleMR>. Stacks are refreshed when damaging a non-minion.<br /><br />Each bullet hit from Graves' Attacks reduces this Ability's Cooldown by {{ cooldownperhit }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Armor",
+          "Magic Resist",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "425",
+      "datavalues": {},
+      "description": "Graves dashes forward gaining an Armor and Magic Resist boost for several seconds. If Graves dashes towards an enemy champion, gain two stacks of True Grit instead. Hitting enemies with basic attacks lowers the cooldown of this skill and refreshes the resistance boost.",
+      "cooldownBurn": "16/15/14/13/12"
+    },
+    {
+      "id": "GravesChargeShot",
+      "name": "Collateral Damage",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 96,
+        "full": "GravesChargeShot.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Graves fires an explosive cartridge, blasting himself backwards. The cartridge deals <physicalDamage>{{ damage }} physical damage</physicalDamage> to the first enemy hit. After hitting an enemy champion or reaching the end of its range, the cartridge explodes outward, dealing <physicalDamage>{{ falloffdamage }} physical damage</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Primary Damage",
+          "Cone Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Graves fires an explosive shell dealing heavy damage to the first champion it hits. After hitting a champion or reaching the end of its range, the shell explodes dealing damage in a cone.",
+      "cooldownBurn": "100/80/60"
+    }
+  ],
+  "passive_en": {
+    "name": "New Destiny",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 48,
+      "y": 48,
+      "full": "GravesTrueGrit.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Graves' shotgun has some unique properties. He must reload when he runs out of ammo. Attacks fire 4 bullets, which cannot pass through units. Non-champions struck by multiple bullets are knocked back."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "104000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "104001",
+      "num": 1,
+      "name": "Hired Gun Graves",
+      "chromas": false
+    },
+    {
+      "id": "104002",
+      "num": 2,
+      "name": "Jailbreak Graves",
+      "chromas": false
+    },
+    {
+      "id": "104003",
+      "num": 3,
+      "name": "Crime City Graves",
+      "chromas": false
+    },
+    {
+      "id": "104004",
+      "num": 4,
+      "name": "Riot Graves",
+      "chromas": false
+    },
+    {
+      "id": "104005",
+      "num": 5,
+      "name": "Pool Party Graves",
+      "chromas": true
+    },
+    {
+      "id": "104006",
+      "num": 6,
+      "name": "Cutthroat Graves",
+      "chromas": false
+    },
+    {
+      "id": "104007",
+      "num": 7,
+      "name": "Snow Day Graves",
+      "chromas": true
+    },
+    {
+      "id": "104014",
+      "num": 14,
+      "name": "Victorious Graves",
+      "chromas": true
+    },
+    {
+      "id": "104018",
+      "num": 18,
+      "name": "Praetorian Graves",
+      "chromas": true
+    },
+    {
+      "id": "104025",
+      "num": 25,
+      "name": "Battle Professor Graves",
+      "chromas": true
+    },
+    {
+      "id": "104035",
+      "num": 35,
+      "name": "Sentinel Graves",
+      "chromas": true
+    },
+    {
+      "id": "104042",
+      "num": 42,
+      "name": "EDG Graves",
+      "chromas": true
+    },
+    {
+      "id": "104045",
+      "num": 45,
+      "name": "Porcelain Graves",
+      "chromas": false
+    }
+  ]
+}

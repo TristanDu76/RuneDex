@@ -1,0 +1,456 @@
+{
+  "id": "Nautilus",
+  "key": "111",
+  "name": "Nautilus",
+  "title": "Titan des profondeurs",
+  "version": "15.23.1",
+  "lore": "Nautilus était un célèbre plongeur de récupération à Bilgewater et aux alentours des Îles de la Flamme Bleue. C'était un homme d'une force musculaire incroyable, capable de plonger sans scaphandre grâce à sa capacité pulmonaire. Sa seule exigence était que le capitaine jette une pièce par-dessus bord avant le départ, en guise de tribut à l'océan.\n\nLa Trahison : Un jour, un nouveau capitaine étranger, obsédé par une épave spécifique cachée dans l'obscurité, acheta le navire et l'équipage. Il apporta un scaphandre géant en laiton et en fer pour permettre une plongée plus longue.\n\nL'Oubli du Tribut : Le capitaine força Nautilus à entrer dans l'armure. Au moment de la descente, Nautilus réalisa qu'ils n'avaient rien payé pour le tribut. Le capitaine se moqua de la superstition, promettant de payer au retour.\n\nL'Horreur des Profondeurs : Au fond, Nautilus comprit que le capitaine ne cherchait pas un trésor, mais un pouvoir mystique et endormi. Quelque chose venu des profondeurs le tira vers le bas. Nautilus s'agrippa désespérément à la chaîne de l'ancre, son dernier lien avec le monde.\n\nLa Chute et la Transformation : Juste avant d'atteindre la surface, la chaîne se rompit. Nautilus hurla, mais personne ne l'entendit. Il fut emporté par le maelström, agrippant l'ancre qui coulait. L'armure devint une coquille homogène autour de lui, liant une puissance primordiale à son esprit.\n\nLa Quête Vaine : Lorsqu'il se réveilla au fond de l'océan, il était devenu « quelque chose de différent ». Le noir ne pouvait plus lui faire de mal, mais il ne se souvenait que de la promesse brisée du capitaine. Il jura que tous paieraient le tribut de l'océan.\n\nLe Retour et le Mythe : Quand il atteignit Bilgewater des années plus tard, il ne trouva aucune trace de son capitaine ou de son équipage. Sans foyer ni vengeance à prendre, il retourna à la mer. Il est désormais un titan qui frappe sans prévenir, utilisant son ancre gigantesque pour couler les navires et emmener les marins avares qui oublient de payer le tribut au fond des mers. Le Nautilus, l'homme, reste noyé juste sous la surface de la légende.",
+  "tags": [
+    "Tank",
+    "Support"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 0,
+    "y": 0,
+    "full": "Nautilus.png",
+    "group": "champion",
+    "sprite": "champion3.png"
+  },
+  "skins": [
+    {
+      "id": "111000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "111001",
+      "num": 1,
+      "name": "Nautilus des abysses",
+      "chromas": false
+    },
+    {
+      "id": "111002",
+      "num": 2,
+      "name": "Nautilus souterrain",
+      "chromas": false
+    },
+    {
+      "id": "111003",
+      "num": 3,
+      "name": "AstroNautilus",
+      "chromas": true
+    },
+    {
+      "id": "111004",
+      "num": 4,
+      "name": "Nautilus purificateur",
+      "chromas": false
+    },
+    {
+      "id": "111005",
+      "num": 5,
+      "name": "Nautilus brise-monde",
+      "chromas": false
+    },
+    {
+      "id": "111006",
+      "num": 6,
+      "name": "Nautilus conquérant",
+      "chromas": false
+    },
+    {
+      "id": "111009",
+      "num": 9,
+      "name": "Nautilus des rouleaux de Shan Hai",
+      "chromas": false
+    },
+    {
+      "id": "111018",
+      "num": 18,
+      "name": "Nautilus Nuit d'effroi",
+      "chromas": false
+    },
+    {
+      "id": "111027",
+      "num": 27,
+      "name": "Nautilus paladin cosmique",
+      "chromas": false
+    },
+    {
+      "id": "111036",
+      "num": 36,
+      "name": "Nautilus Crystalis Indomitus",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "NautilusAnchorDrag",
+      "name": "Abordage",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 48,
+        "full": "NautilusAnchorDrag.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Nautilus lance son ancre devant lui. S'il touche un ennemi, Nautilus et la cible sont tirés l'un vers l'autre, infligeant <magicDamage>{{ qdamagecalc }} pts de dégâts magiques</magicDamage> à l'ennemi et l'<status>étourdissant</status> brièvement. Si l'ancre touche un élément de terrain, Nautilus est tiré vers lui.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1150",
+      "datavalues": {},
+      "description": "Nautilus lance son ancre devant lui.  S'il touche un ennemi, Nautilus et la cible sont tirés l'un vers l'autre et Nautilus lui inflige des dégâts magiques.  S'il touche un élément de terrain, Nautilus est tiré vers lui.",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "NautilusPiercingGaze",
+      "name": "Colère du titan",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 48,
+        "full": "NautilusPiercingGaze.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Nautilus s'octroie un <shield>bouclier de {{ shieldcalc }} PV</shield> pendant {{ shieldduration }} sec. Tant que le <shield>bouclier</shield> persiste, les attaques de Nautilus infligent <magicDamage>{{ dotdamagecalc }} pts de dégâts magiques</magicDamage> supplémentaires à sa cible et à tous les ennemis proches pendant 2 sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "PV du bouclier",
+          "Dégâts magiques",
+          "Pourcentage des PV max"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "350",
+      "datavalues": {},
+      "description": "Nautilus profite d'un bouclier temporaire.  Tant que le bouclier persiste, les attaques de Nautilus infligent des dégâts sur la durée à ses cibles et aux ennemis proches.",
+      "cooldownBurn": "12"
+    },
+    {
+      "id": "NautilusSplashZone",
+      "name": "Répliques",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 96,
+        "full": "NautilusSplashZone.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Nautilus crée trois vagues explosives autour de lui, chacune infligeant <magicDamage>{{ damagecalc }} pts de dégâts magiques</magicDamage> aux ennemis dans la zone et les <status>ralentissant</status> de {{ slowpercent*100 }}% (diminue en {{ slowduration }} sec).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/60/70/80/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@",
+          "Dégâts",
+          "Dégâts aux monstres",
+          "Ralentissement"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Nautilus crée trois vagues explosives autour de lui. Chaque explosion blesse et ralentit les ennemis.",
+      "cooldownBurn": "7/6.5/6/5.5/5"
+    },
+    {
+      "id": "NautilusGrandLine",
+      "name": "Grenade ASM",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 96,
+        "full": "NautilusGrandLine.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Nautilus provoque une onde de choc qui poursuit un champion ennemi, lui infligeant <magicDamage>{{ primarytargetdamage }} pts de dégâts magiques</magicDamage>, le <status>projetant dans les airs</status> et l'<status>étourdissant</status> pendant {{ stunduration }} sec. Les autres ennemis touchés par l'onde de choc sont également <status>projetés dans les airs</status> et <status>étourdis</status>, et ils subissent <magicDamage>{{ secondarytargetdamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts sur la trajectoire",
+          "Durée de l'étourdissement :",
+          "Dégâts de l'explosion"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "825",
+      "datavalues": {},
+      "description": "Nautilus lance une onde de choc qui poursuit un ennemi. L'onde de choc transperce le sol et projette les ennemis en l'air. Quand elle atteint l'ennemi, l'onde de choc éclate, projetant la cible en l'air en l'étourdissant.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive": {
+    "name": "Coup écrasant",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 0,
+      "y": 0,
+      "full": "Nautilus_StaggeringBlow.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "La première attaque de Nautilus contre une cible inflige des dégâts physiques supplémentaires et l'immobilise brièvement."
+  },
+  "created_at": "2025-11-26T15:13:34.38849+00:00",
+  "factions": [
+    "bilgewater"
+  ],
+  "custom_tags": [
+    "spectre",
+    "noyé"
+  ],
+  "gender": "Male",
+  "species": "Undead",
+  "title_en": "the Titan of the Depths",
+  "lore_en": "Nautilus was a renowned salvage diver in Bilgewater and around the Blue Flame Isles. He was a hulk of solid muscle, capable of freediving without a suit. His only demand was that the captain toss a coin overboard before setting out, honoring and appeasing the ocean's tithe.\n\nThe Betrayal: One day, a new, foreign captain, obsessed with a specific, dark shipwreck, bought the ship and crew. He brought a giant brass and iron diving suit to reach the crushing depths.\n\nThe Forgotten Tithe: The captain bolted Nautilus into the suit. As he was lowered, Nautilus panicked, realizing they had paid no tithe. The captain laughed, promising to make the sacrifice when they returned.\n\nThe Deep Horror: At the bottom, Nautilus realized the captain sought not treasure, but some slumbering, eldritch power. Something from the depths reached out, pulling him down. Nautilus grabbed the anchor chain, his last connection to the surface, and hauled himself up.\n\nThe Fall and Transformation: Just as his metal fingers were about to breach the surface, the chain snapped. Nautilus tumbled back into the inky maelstrom, clutching the sinking anchor. The metal suit became a seamless shell around him, bonding a primordial power to his spirit.\n\nThe Vain Quest: When he awoke on the ocean floor, he was \"something different.\" He remembered only the captain's broken promise and vowed that all would pay the ocean's tithe.\n\nThe Return and the Myth: By the time he reached Bilgewater years later, he found no trace of his captain or crew. With no home or revenge to take, he returned to the sea. He is now a silent, armored titan who strikes without warning, using his mighty anchor to gut the ships of the greedy who forget the tithe, dragging them to the depths. The man who is Nautilus remains drowned just below the surface of the legend.",
+  "spells_en": [
+    {
+      "id": "NautilusAnchorDrag",
+      "name": "Dredge Line",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 48,
+        "full": "NautilusAnchorDrag.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Nautilus hurls his anchor forward. If it hits an enemy, Nautilus drags himself and the target together, dealing <magicDamage>{{ qdamagecalc }} magic damage</magicDamage> and <status>Stunning</status> them briefly. If the anchor hits terrain, Nautilus will drag himself towards it.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1150",
+      "datavalues": {},
+      "description": "Nautilus hurls his anchor forward.  Colliding with an enemy pulls them and Nautilus together, dealing magic damage.  Colliding with terrain pulls Nautilus towards it.",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "NautilusPiercingGaze",
+      "name": "Titan's Wrath",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 48,
+        "full": "NautilusPiercingGaze.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Nautilus gains a <shield>{{ shieldcalc }} Shield</shield> for {{ shieldduration }} seconds. While the <shield>Shield</shield> persists, Nautilus' Attacks deal an additional <magicDamage>{{ dotdamagecalc }} magic damage</magicDamage> over 2 seconds to his target and all surrounding enemies.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Shield Amount",
+          "Magic Damage",
+          "% Max Health"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "350",
+      "datavalues": {},
+      "description": "Nautilus gains a temporary Shield.  While it persists, his Attacks deal damage over time to his target and surrounding enemies.",
+      "cooldownBurn": "12"
+    },
+    {
+      "id": "NautilusSplashZone",
+      "name": "Riptide",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 96,
+        "full": "NautilusSplashZone.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Nautilus creates three exploding waves around himself, each dealing <magicDamage>{{ damagecalc }} magic damage</magicDamage> to enemies in the area and <status>Slows</status> them by {{ slowpercent*100 }}% decaying over {{ slowduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/60/70/80/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "@AbilityResourceName@ Cost",
+          "Damage",
+          "Monster Damage",
+          "Slow"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Nautilus creates three exploding waves around himself. Each explosion damages and slows enemies.",
+      "cooldownBurn": "7/6.5/6/5.5/5"
+    },
+    {
+      "id": "NautilusGrandLine",
+      "name": "Depth Charge",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 96,
+        "full": "NautilusGrandLine.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Nautilus fires a shockwave that chases an enemy champion, dealing <magicDamage>{{ primarytargetdamage }} magic damage</magicDamage>, <status>Knocking</status> them <status>Up</status> and <status>Stunning</status> them for {{ stunduration }} seconds. Other enemies hit by the shockwave are also <status>Knocked Up</status> and <status>Stunned</status> and take <magicDamage>{{ secondarytargetdamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Pass Through Damage",
+          "Stun Duration:",
+          "Explosion Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "825",
+      "datavalues": {},
+      "description": "Nautilus fires a shockwave into the earth that chases an opponent. This shockwave rips up the earth above it, knocking enemies into the air. When it reaches the opponent, the shockwave erupts, knocking his target into the air and stunning them.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Staggering Blow",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 0,
+      "y": 0,
+      "full": "Nautilus_StaggeringBlow.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Nautilus' first Attack against a target deals increased physical damage and roots them briefly."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Support"
+  ],
+  "skins_en": [
+    {
+      "id": "111000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "111001",
+      "num": 1,
+      "name": "Abyssal Nautilus",
+      "chromas": false
+    },
+    {
+      "id": "111002",
+      "num": 2,
+      "name": "Subterranean Nautilus",
+      "chromas": false
+    },
+    {
+      "id": "111003",
+      "num": 3,
+      "name": "AstroNautilus",
+      "chromas": true
+    },
+    {
+      "id": "111004",
+      "num": 4,
+      "name": "Warden Nautilus",
+      "chromas": false
+    },
+    {
+      "id": "111005",
+      "num": 5,
+      "name": "Worldbreaker Nautilus",
+      "chromas": false
+    },
+    {
+      "id": "111006",
+      "num": 6,
+      "name": "Conqueror Nautilus",
+      "chromas": false
+    },
+    {
+      "id": "111009",
+      "num": 9,
+      "name": "Shan Hai Scrolls Nautilus",
+      "chromas": false
+    },
+    {
+      "id": "111018",
+      "num": 18,
+      "name": "Fright Night Nautilus",
+      "chromas": false
+    },
+    {
+      "id": "111027",
+      "num": 27,
+      "name": "Cosmic Paladin Nautilus",
+      "chromas": false
+    },
+    {
+      "id": "111036",
+      "num": 36,
+      "name": "Crystalis Indomitus Nautilus",
+      "chromas": false
+    }
+  ]
+}

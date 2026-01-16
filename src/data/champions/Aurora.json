@@ -1,0 +1,354 @@
+{
+  "id": "Aurora",
+  "key": "893",
+  "name": "Aurora",
+  "title": "Sorcière d'entre les mondes",
+  "version": "15.23.1",
+  "lore": "Aurora est une Vastaya originaire du village isolé d'Aamu, au Freljord. Depuis sa naissance, elle est l'une des rares mortelles à pouvoir percevoir simultanément le royaume spirituel et le royaume matériel. Pendant son enfance, elle jouait avec des créatures que personne d'autre ne voyait, ses parents croyant que ses \"amis\" étaient imaginaires. Seule sa grand-tante Havu encourageait sa passion.\r\n\r\nEn grandissant, Aurora réalisa que ses amis invisibles étaient en fait des esprits. Elle se dédia alors à l'étude méticuleuse de ce monde entremêlé, cherchant à aider les autres à comprendre les esprits d'Aamu. Au fil du temps, elle remarqua l'apparition d'esprits \"égarés\" (wayward), devenus sauvages et désorientés suite à une perturbation de l'équilibre des royaumes. Aurora découvrit qu'elle pouvait les aider à retrouver leur chemin en ciblant la source de leur douleur, trouvant ainsi un sens à sa vie.\r\n\r\nPour approfondir ses recherches, elle quitta Aamu. C'est lors de ses voyages qu'elle rencontra un esprit égaré prenant la forme d'un élan monstrueux et tordu aux bois ensanglantés. Sauvage et terrifié, il attaquait sans discernement. Aurora, touchée par son désespoir, réussit à gagner sa confiance, mais toutes ses tentatives pour l'aider échouèrent. Elle convainquit alors l'élan affligé de voyager avec elle, le dissimulant dans le royaume spirituel pendant qu'elle cherchait des réponses.\r\n\r\nAprès avoir consulté sans succès des marcheurs des esprits, Aurora fut dirigée vers Udyr, le marcheur des esprits le plus puissant de la toundra. Udyr identifia la puissance immense de l'esprit, mais le trouva trop perdu pour communier. Il suggéra à Aurora de chercher des réponses auprès des demi-dieux du Freljord.\r\n\r\nAurora se concentra sur le Grand Bélier, Ornn. Grâce à des recherches tenaces, elle localisa son foyer, la Forge des Cœurs (Hearth-Home). En utilisant sa capacité à ouvrir une porte entre les royaumes, elle entra dans le hall de la forge d'Ornn, intact dans le royaume spirituel. Ornn, qui valorisait la solitude comme elle, finit par lui faire confiance et révéla le nom de son compagnon : Haestryr (autrefois appelé Hestrelk). Ornn expliqua qu'avec le déclin du culte des Anciens Dieux, de nombreux demi-dieux avaient perdu leur identité et s'étaient transformés en ombres déformées de ce qu'ils étaient.\r\n\r\nCette révélation confirma la nature de son ami et l'encouragea à poursuivre sa quête. Ornn lui parla également de ses autres frères et sœurs, notamment Ysjarn (la Cryophénix, Anivia) et Valhir (l'Ours-Loup), le dieu de la tempête. Convaincue que ces demi-dieux détiennent la clé du rétablissement d'Haestryr, Aurora traverse désormais le Freljord, voyageant entre les deux réalités à la recherche de leur savoir.",
+  "tags": [
+    "Mage",
+    "Assassin"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 96,
+    "y": 48,
+    "full": "Aurora.png",
+    "group": "champion",
+    "sprite": "champion0.png"
+  },
+  "skins": [
+    {
+      "id": "893000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "893001",
+      "num": 1,
+      "name": "Aurora lapin de combat",
+      "chromas": true
+    },
+    {
+      "id": "893011",
+      "num": 11,
+      "name": "Aurora des arcanes",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "AuroraQ",
+      "name": "Maléfice",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 96,
+        "full": "AuroraQ.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Aurora lance un trait d'énergie maudite dans une direction, infligeant <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage> aux ennemis et les maudissant pendant {{ markduration }} sec.<br /><br /><recast>Réactivation :</recast> Aurora met fin à la malédiction en arrachant une partie de l'esprit de l'ennemi, ce qui inflige jusqu'à <magicDamage>{{ q2damagemax }} pts de dégâts magiques</magicDamage> aux ennemis traversés en fonction de leurs PV manquants. Les ennemis touchés par plusieurs projectiles subissent 20% des dégâts au-delà du premier.<br /><br />À la fin de la durée, Aurora <recast>relance</recast> automatiquement la compétence.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "900",
+      "datavalues": {},
+      "description": "Aurora envoie un projectile qui maudit les ennemis touchés. Elle peut ensuite relancer la compétence pour attirer les maléfices actifs vers elle, ce qui blesse les ennemis touchés au passage.",
+      "cooldownBurn": "9/8.5/8/7.5/7"
+    },
+    {
+      "id": "AuroraW",
+      "name": "Derrière le voile",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 96,
+        "full": "AuroraW.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Aurora bondit dans une direction. À l'atterrissage, elle pénètre dans le royaume spirituel, ce qui la rend <keywordStealth>invisible</keywordStealth> pendant {{ invisduration }} sec et lui octroie <keywordMajor>Passe-royaume</keywordMajor>, gagnant <speed>+{{ movespeedbonus }}% de vitesse de déplacement</speed>.<br /><br />Participer à l'élimination d'un champion ennemi réinitialise le délai de récupération de cette compétence.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Durée",
+          "Vitesse de déplacement"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Aurora bondit dans la direction de son choix, entre dans le royaume spirituel en retombant, devient invisible et gagne de la vitesse de déplacement pendant un bref instant.",
+      "cooldownBurn": "22/21/20/19/18"
+    },
+    {
+      "id": "AuroraE",
+      "name": "Sortilège",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 96,
+        "full": "AuroraE.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Aurora fait converger les royaumes, envoyant une boule de magie spirituelle qui inflige <magicDamage>{{ damagecalc }} pts de dégâts magiques</magicDamage> aux ennemis dans la zone et les <status>ralentit</status> de {{ slowpercent*-100 }}% (diminue en {{ slowduration }} sec).<br /><br />Aurora bondit légèrement en arrière après avoir lancé cette compétence.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "825",
+      "datavalues": {},
+      "description": "Aurora fait converger les royaumes, envoyant une boule de magie spirituelle qui inflige des dégâts magiques aux ennemis touchés et les ralentit. Après quoi, Aurora bondit en arrière pour se mettre à l'abri.",
+      "cooldownBurn": "15/14/13/12/11"
+    },
+    {
+      "id": "AuroraR",
+      "name": "Entre les mondes",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 96,
+        "full": "AuroraR.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Aurora bondit dans une direction. À l'atterrissage, elle fait converger les royaumes et envoie une impulsion d'énergie spirituelle qui inflige <magicDamage>{{ damagecalc }} pts de dégâts magiques</magicDamage> et <status>ralentit</status> les ennemis touchés de {{ slowpercent*-100 }}% pendant 2 sec.<br /><br />La zone de convergence reste active pendant {{ areaduration }} sec, octroyant <keywordMajor>Passe-royaume</keywordMajor> à Aurora pendant {{ rbuffduration }} sec, et lui permettant de se téléporter d'un bord à l'autre de la zone.<br /><br />Les ennemis essayant d'entrer ou de sortir de la zone sont <status>ralentis</status> de {{ exitslowpercent*-100 }}% pendant {{ stunduration }} sec.<br /><br />Aurora peut <recast>relancer</recast> cette compétence pour mettre fin à l'effet plus tôt.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts",
+          "Durée"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "250",
+      "datavalues": {},
+      "description": "Aurora bondit dans la direction de son choix, ce qui libère une onde de choc qui blesse et ralentit tous les ennemis touchés. Elle crée ensuite une zone qui ralentit les ennemis à l'intérieur et permet à Aurora de se téléporter d'un bord à l'autre de la zone.",
+      "cooldownBurn": "140/120/100"
+    }
+  ],
+  "passive": {
+    "name": "Abjuration spirituelle",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 96,
+      "y": 48,
+      "full": "AuroraPassive.Aurora.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Aurora exorcise les esprits des ennemis qu'elle blesse avec ses compétences et ses attaques. Les esprits exorcisés la suivent et la soignent."
+  },
+  "created_at": "2025-11-26T15:13:32.327162+00:00",
+  "factions": [
+    "freljord"
+  ],
+  "custom_tags": [
+    "vastaya",
+    "esprit",
+    "sorciere"
+  ],
+  "gender": "Female",
+  "species": "Vastaya",
+  "title_en": "the Witch Between Worlds",
+  "lore_en": "Aurora is a Vastaya from the secluded village of Aamu in the Freljord. Since birth, she has been one of the few mortals able to perceive both the spirit realm and the material realm simultaneously. During her youth, she played with creatures no one else could see, her parents believing her \"friends\" were merely imaginary. Only her great aunt Havu encouraged her passion.\r\n\r\nAs Aurora grew older, she realized her invisible friends were, in fact, spirits. She dedicated herself to meticulously documenting this intertwined world, hoping to help others understand the spirits of Aamu. Over time, she noticed the appearance of \"wayward\" spirits, who had become feral and disoriented after a disturbance in the balance of the realms. Aurora discovered she could help them return home by addressing the root of their pain, thus finding her life's purpose.\r\n\r\nTo further her research, she left Aamu. It was during her travels that she encountered a wayward spirit taking the form of a monstrous, twisted elk with bloodstained antlers. Feral and afraid, he lashed out indiscriminately. Aurora, moved by his despair, managed to earn his trust, but all her attempts to help him failed. She convinced the afflicted elk to travel with her, tucking him away in the spirit realm while she searched for answers.\r\n\r\nAfter unsuccessfully consulting spirit walkers, Aurora was directed to Udyr, the tundra's most powerful spirit walker. Udyr recognized the immense power of the spirit but found him too lost to commune with. He encouraged Aurora to seek answers from the Freljord's demigods.\r\n\r\nAurora focused on the Great Ram, Ornn. Through persistent research, she located his home, Hearth-Home. Using her ability to open a doorway between realms, she stepped inside Ornn's forge hall, which was intact in the spirit realm. Ornn, who valued solitude like her, eventually trusted her and revealed her companion's name: Haestryr (once commonly called Hestrelk). Ornn explained that with the waning worship of the Old Gods, many demigods had lost their identities and become distorted shadows of their former selves.\r\n\r\nThis revelation confirmed her friend's nature and encouraged her to continue her quest. Ornn also told her about his other siblings, notably Ysjarn (the Cryophoenix, Anivia) and Valhir (the Volibear), the storm god. Believing these demigods hold the key to Haestryr's recovery, Aurora now traverses the Freljord, traveling between the two realities in unwavering pursuit of their knowledge.",
+  "spells_en": [
+    {
+      "id": "AuroraQ",
+      "name": "Twofold Hex",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 96,
+        "full": "AuroraQ.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Fire cursed energy in a direction, dealing <magicDamage>{{ damage }} magic damage</magicDamage> to enemies and cursing them for {{ markduration }} seconds.<br /><br /><recast>Recast:</recast> End the curse, drawing back part of the enemy's spirit to Aurora, dealing up to <magicDamage>{{ q2damagemax }} magic damage</magicDamage> to enemies passed through based on their missing Health. Damage beyond the first hit is reduced to 20%.<br /><br />If the duration runs out, Aurora will automatically <recast>Recast</recast> the Ability.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "900",
+      "datavalues": {},
+      "description": "Aurora sends out a missile that curses any enemies it hits. She can then recast the ability to draw active curses back toward herself, damaging foes who are hit along the way.",
+      "cooldownBurn": "9/8.5/8/7.5/7"
+    },
+    {
+      "id": "AuroraW",
+      "name": "Across the Veil",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 96,
+        "full": "AuroraW.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Hop in a direction. Upon landing, enter the spirit realm, becoming <keywordStealth>Invisible</keywordStealth> for {{ invisduration }} seconds and entering <keywordMajor>Realm Hopper</keywordMajor>, gaining <speed>{{ movespeedbonus }}% Move Speed</speed>.<br /><br />Scoring a takedown on an enemy champion resets this Ability's Cooldown.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Duration",
+          "Move Speed"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Aurora leaps in a direction of her choosing, entering the spirit realm upon landing, becoming invisible, and gaining Move Speed for a short duration of time.",
+      "cooldownBurn": "22/21/20/19/18"
+    },
+    {
+      "id": "AuroraE",
+      "name": "The Weirding",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 96,
+        "full": "AuroraE.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Converge the realms, sending out a blast of spirit magic dealing <magicDamage>{{ damagecalc }} magic damage</magicDamage> to enemies in the area and <status>Slowing</status> them by {{ slowpercent*-100 }}% decaying over {{ slowduration }} second.<br /><br />Aurora hops backwards a short distance after casting.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "825",
+      "datavalues": {},
+      "description": "Aurora converges the realms, sending out a blast of spirit magic that damages and slows enemies before Aurora hops backward to safety.",
+      "cooldownBurn": "15/14/13/12/11"
+    },
+    {
+      "id": "AuroraR",
+      "name": "Between Worlds",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 96,
+        "full": "AuroraR.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Leap in a direction. Upon landing, Aurora converges the realms, sending out a pulse of spirit energy that deals <magicDamage>{{ damagecalc }} magic damage</magicDamage> and <status>Slows</status> enemies hit by {{ slowpercent*-100 }}% for 2 seconds.<br /><br />The area of convergence stays active for {{ areaduration }} seconds, granting Aurora <keywordMajor>Realm Hopper</keywordMajor> for {{ rbuffduration }} seconds, allowing her to jump from one edge of the area to another.<br /><br />Enemies attempting to enter or leave the area are <status>Slowed</status> by {{ exitslowpercent*-100 }}% for {{ stunduration }} seconds.<br /><br />Aurora can <recast>Recast</recast> this Ability to end the effect early.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage",
+          "Duration"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "250",
+      "datavalues": {},
+      "description": "Aurora leaps in a direction of her choosing, releasing a shockwave that damages and slows any enemies it hits. Afterward, she creates an area that slows enemies within it and allows Aurora to teleport from one side of the area to the other.",
+      "cooldownBurn": "140/120/100"
+    }
+  ],
+  "passive_en": {
+    "name": "Spirit Abjuration",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 96,
+      "y": 48,
+      "full": "AuroraPassive.Aurora.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Aurora's spells and attacks exorcise spirits from the enemies she damages. Exorcised spirits follow Aurora around and heal her."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Mid",
+    "Top"
+  ],
+  "skins_en": [
+    {
+      "id": "893000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "893001",
+      "num": 1,
+      "name": "Battle Bunny Aurora",
+      "chromas": true
+    },
+    {
+      "id": "893011",
+      "num": 11,
+      "name": "Arcana Aurora",
+      "chromas": true
+    }
+  ]
+}

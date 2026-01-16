@@ -1,0 +1,508 @@
+{
+  "id": "Darius",
+  "key": "122",
+  "name": "Darius",
+  "title": "Main de Noxus",
+  "version": "15.23.1",
+  "lore": "Darius et son frère Draven ont grandi orphelins dans la ville portuaire de Basilich, avant que celle-ci ne soit annexée par l'Empire Noxien. Dès son plus jeune âge, Darius a dû se battre constamment pour leur survie, accumulant les cicatrices. Leur force et leur esprit de défi furent remarqués par un commandant noxien, et les frères trouvèrent leur place au sein de l'armée.\r\n\r\nDarius s'est élevé dans les rangs de l'empire en incarnant l'idéal noxien : la méritocratie. Il mettait toujours le devoir au-dessus de tout, et se fit respecter pour son agressivité, sa discipline et son refus de jamais reculer. Son moment le plus célèbre fut sur la plaine de Dalamor, où, face à un ennemi supérieur, il décapita son propre général pour lâcheté après que celui-ci eut ordonné la retraite. Brandissant sa hache ensanglantée, Darius rallia les troupes et remporta une victoire inattendue.\r\n\r\nIl fut récompensé par un commandement senior, mais n'accepta que les recrues les plus fortes et les plus disciplinées. Sa réputation était telle que des cités entières se rendaient souvent à la seule vue de ses bannières. Après une victoire difficile contre les Varju, Darius fut nommé la Main de Noxus par l'Empereur Boram Darkwill.\r\n\r\nCependant, la loyauté de Darius n'était pas envers un seul dirigeant, mais envers la grandeur de Noxus. Après une campagne exténuante et stérile dans le Freljord, il revint à la capitale pour trouver l'Empereur Darkwill mort, tué lors du coup d'État mené par Jericho Swain, un acte que son propre frère, Draven, avait soutenu.\r\n\r\nBien que de nombreuses maisons nobles s'attendaient à ce que Darius venge Darkwill, il avait du respect pour Swain. Il écouta la nouvelle vision de Swain pour l'empire. Darius réalisa que Swain était le leader qu'il était prêt à suivre.\r\n\r\nAvec l'établissement du Trifarix (un conseil de trois dirigeants), Darius accepta sa place, incarnant la puissance (Might) de Noxus. Il créa une nouvelle force d'élite, la Légion Trifarian, composée des guerriers les plus prestigieux et les plus loyaux de l'empire, afin de mener les armées noxiennes vers un nouvel âge de conquête.",
+  "tags": [
+    "Fighter",
+    "Tank"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 240,
+    "y": 96,
+    "full": "Darius.png",
+    "group": "champion",
+    "sprite": "champion0.png"
+  },
+  "skins": [
+    {
+      "id": "122000",
+      "num": 0,
+      "name": "default",
+      "chromas": true
+    },
+    {
+      "id": "122001",
+      "num": 1,
+      "name": "Lord Darius",
+      "chromas": false
+    },
+    {
+      "id": "122002",
+      "num": 2,
+      "name": "Darius biosoldat",
+      "chromas": false
+    },
+    {
+      "id": "122003",
+      "num": 3,
+      "name": "Darius roi du Nord",
+      "chromas": false
+    },
+    {
+      "id": "122004",
+      "num": 4,
+      "name": "Darius roi du dunk",
+      "chromas": true
+    },
+    {
+      "id": "122008",
+      "num": 8,
+      "name": "Darius redoublant",
+      "chromas": false
+    },
+    {
+      "id": "122014",
+      "num": 14,
+      "name": "Darius nova d'effroi",
+      "chromas": false
+    },
+    {
+      "id": "122015",
+      "num": 15,
+      "name": "Dieu-roi Darius",
+      "chromas": false
+    },
+    {
+      "id": "122016",
+      "num": 16,
+      "name": "Darius de l'Ouest",
+      "chromas": true
+    },
+    {
+      "id": "122024",
+      "num": 24,
+      "name": "Darius bête lunaire",
+      "chromas": true
+    },
+    {
+      "id": "122033",
+      "num": 33,
+      "name": "Darius cauchemar criminel",
+      "chromas": false
+    },
+    {
+      "id": "122043",
+      "num": 43,
+      "name": "Darius fleur spirituelle",
+      "chromas": false
+    },
+    {
+      "id": "122054",
+      "num": 54,
+      "name": "Darius de porcelaine",
+      "chromas": false
+    },
+    {
+      "id": "122064",
+      "num": 64,
+      "name": "Dieu-roi Darius divin",
+      "chromas": false
+    },
+    {
+      "id": "122065",
+      "num": 65,
+      "name": "Darius général triomphant prestige",
+      "chromas": false
+    },
+    {
+      "id": "122067",
+      "num": 67,
+      "name": "Darius du royaume des mechas",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "DariusCleave",
+      "name": "Décimation",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 144,
+        "full": "DariusCleave.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Darius donne un coup de hache circulaire, infligeant <physicalDamage>{{ bladedamage }} pts de dégâts physiques</physicalDamage> avec la lame et <physicalDamage>{{ handledamage }} pts de dégâts</physicalDamage> avec la hampe. Les ennemis touchés par la hampe ne reçoivent pas d'effet <keywordMajor>Plaie béante</keywordMajor>.<br /><br />Darius récupère <healing>{{ e5 }}% de ses PV manquants</healing> par champion ennemi ou grand monstre de la jungle touché par la lame, jusqu'à un maximum de <healing>{{ e7 }}%</healing>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "25/30/35/40/45",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ratio de dégâts d'attaque totaux",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1",
+      "datavalues": {},
+      "description": "Darius tend tous ses muscles et donne un coup circulaire avec sa hache. Les ennemis touchés par la lame subissent plus de dégâts que ceux touchés par la hampe. Darius récupère des PV en fonction du nombre de champions ennemis et de grands monstres touchés par la lame.",
+      "cooldownBurn": "9/8/7/6/5"
+    },
+    {
+      "id": "DariusNoxianTacticsONH",
+      "name": "Estropiaison",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 144,
+        "full": "DariusNoxianTacticsONH.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "La prochaine attaque de Darius inflige <physicalDamage>{{ empoweredattackdamage }} pts de dégâts physiques</physicalDamage> et <status>ralentit</status> de {{ e2 }}% pendant {{ e5 }} sec.<br /><br />Si cette compétence tue sa cible, son coût en mana est annulé et son délai de récupération est réduit de {{ e3 }}%.<br /><br /><rules>Cette compétence déclenche les effets de sort quand elle inflige des dégâts.</rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Ratio de dégâts d'attaque totaux"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "300",
+      "datavalues": {},
+      "description": "La prochaine attaque de Darius tranche une artère vitale de l'ennemi. Le saignement réduit la vitesse de déplacement de la cible.",
+      "cooldownBurn": "5"
+    },
+    {
+      "id": "DariusAxeGrabCone",
+      "name": "Crampon",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0,
+        "full": "DariusAxeGrabCone.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> Darius gagne +{{ e1 }}% de pénétration d'armure.<br /><br /><spellActive>Active :</spellActive> Darius se sert de sa hache pour <status>attirer</status> un ennemi, le <status>projeter dans les airs</status> et le <status>ralentir</status> de {{ e2 }}% pendant {{ e3 }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/60/50/40/30",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Pourcentage de pénétration d'armure",
+          "Coût en @AbilityResourceName@",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "535",
+      "datavalues": {},
+      "description": "Darius aiguise sa hache, ce qui permet à ses dégâts physiques d'ignorer passivement un pourcentage de l'armure de la cible. À l'activation, Darius attire ses ennemis avec sa hache.",
+      "cooldownBurn": "26/23.5/21/18.5/16"
+    },
+    {
+      "id": "DariusExecute",
+      "name": "Guillotine noxienne",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 0,
+        "full": "DariusExecute.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Darius saute sur un ennemi et donne un coup fatal, infligeant <trueDamage>{{ damage }} pts de dégâts bruts</trueDamage>. Cette compétence inflige {{ rdamagepercentperhemostack*100 }}% de dégâts supplémentaires par effet <keywordMajor>Plaie béante</keywordMajor> sur la cible, jusqu'à un maximum de <trueDamage>{{ maximumdamage }} pts de dégâts</trueDamage>.<br /><br />Si le coup tue la cible, Darius peut <recast>réactiver</recast> cette compétence une fois dans les {{ rrecastduration }} sec. Au rang 3, cette compétence ne coûte pas de mana et son délai de récupération est annulé si elle tue sa cible.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100/100/0",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "460",
+      "datavalues": {},
+      "description": "Darius saute sur un champion ennemi et donne un coup fatal, infligeant des dégâts bruts. Plus vous cumulez de Plaies béantes sur la cible, plus les dégâts augmentent. Si Guillotine noxienne tue la cible, son délai de récupération est annulé pendant un court moment.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive": {
+    "name": "Plaie béante",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 240,
+      "y": 96,
+      "full": "Darius_Icon_Hemorrhage.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Les attaques de Darius et ses compétences infligeant des dégâts font saigner les ennemis, ce qui leur inflige des dégâts physiques en 5 sec (cumulable 5 fois). Darius enrage et gagne un énorme bonus en dégâts d'attaque quand sa cible atteint le nombre max d'effets cumulés."
+  },
+  "created_at": "2025-11-26T15:13:32.649099+00:00",
+  "factions": [
+    "noxus"
+  ],
+  "custom_tags": [
+    "général",
+    "trifarix"
+  ],
+  "gender": "Male",
+  "species": "Human",
+  "title_en": "the Hand of Noxus",
+  "lore_en": "Darius and his brother Draven grew up as orphans in the port city of Basilich, before it was seized by the expanding Noxian Empire. From a young age, Darius constantly fought for their survival, earning more scars than some soldiers do in a lifetime. Their defiance and strength were noticed by a Noxian commander, and the brothers found a home within the army ranks.\r\n\r\nDarius rose steadily through the empire by embodying the Noxian ideal of meritocracy. He always put duty before all else and garnered great respect for his aggression, discipline, and refusal to ever take a backward step. His most famous moment was on the bloodsoaked fields of Dalamor Plain, where, facing a more numerous foe, he beheaded his own general for cowardice after the retreat order. Roaring defiance and hefting his bloodied axe, Darius rallied the scattered warbands and won an unexpected victory.\r\n\r\nHe was rewarded with a senior command but accepted only the strongest and most disciplined recruits. Such was his notoriety that entire cities often surrendered at the first sight of his banners. After a grinding victory against the Varju, Darius was named the Hand of Noxus by Emperor Boram Darkwill himself.\r\n\r\nHowever, Darius's oath was not to any particular ruler, but to the triumph of Noxus. After a grueling and bitter stalemate campaign in the Freljord, he returned to the capital to find Emperor Darkwill dead, killed in a coup led by Jericho Swain, an act supported by many, including his own brother, Draven.\r\n\r\nThough many noble houses expected Darius to avenge Darkwill, he respected Swain. He listened to Swain's new vision for the empire and realized Swain was the leader he was prepared to follow.\r\n\r\nWith the establishment of the Trifarix (a council of three rulers), Darius gladly accepted his place, embodying the principle of Might for Noxus. He pledged to raise a new, elite force—the Trifarian Legion, the empire's most loyal and prestigious warriors—to lead the armies of Noxus into a glorious new age of conquest.",
+  "spells_en": [
+    {
+      "id": "DariusCleave",
+      "name": "Decimate",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 144,
+        "full": "DariusCleave.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Darius hefts his axe then swings it around, dealing <physicalDamage>{{ bladedamage }} physical damage</physicalDamage> with the edge and <physicalDamage>{{ handledamage }} damage</physicalDamage> with the handle. Enemies hit with the handle do not take a <keywordMajor>Hemorrhage</keywordMajor> stack.<br /><br />Darius restores <healing>{{ e5 }}% missing Health</healing> per enemy champion and large jungle monster hit with the edge, up to a max of <healing>{{ e7 }}%</healing>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "25/30/35/40/45",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Total AD Ratio",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1",
+      "datavalues": {},
+      "description": "Darius winds up and swings his axe in a wide circle. Enemies struck by the blade take more damage than those struck by the handle. Darius heals based on enemy champions and large monsters hit by the blade.",
+      "cooldownBurn": "9/8/7/6/5"
+    },
+    {
+      "id": "DariusNoxianTacticsONH",
+      "name": "Crippling Strike",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 144,
+        "full": "DariusNoxianTacticsONH.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Darius' next Attack deals <physicalDamage>{{ empoweredattackdamage }} physical damage</physicalDamage> and <status>Slows</status> by {{ e2 }}% for {{ e5 }} second.<br /><br />This Ability refunds its Mana cost and reduces its Cooldown by {{ e3 }}% if it kills the target.<br /><br /><rules>This Ability triggers spell effects upon dealing damage.</rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Total AD Ratio"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "300",
+      "datavalues": {},
+      "description": "Darius's next attack strikes an enemy's crucial artery. As they bleed out, their Move Speed is slowed.",
+      "cooldownBurn": "5"
+    },
+    {
+      "id": "DariusAxeGrabCone",
+      "name": "Apprehend",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0,
+        "full": "DariusAxeGrabCone.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Darius gains {{ e1 }}% Armor Penetration.<br /><br /><spellActive>Active:</spellActive> Darius hooks with his axe, <status>Pulling</status>, and <status>Knocking Up</status> and <status>Slowing</status> by {{ e2 }}% for {{ e3 }} second.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/60/50/40/30",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Percent Armor Penetration",
+          "@AbilityResourceName@ Cost",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "535",
+      "datavalues": {},
+      "description": "Darius hones his axe, passively causing his physical damage to ignore a percentage of his target's Armor. When activated, Darius sweeps up his enemies with his axe's hook and pulls them to him.",
+      "cooldownBurn": "26/23.5/21/18.5/16"
+    },
+    {
+      "id": "DariusExecute",
+      "name": "Noxian Guillotine",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 0,
+        "full": "DariusExecute.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Darius leaps to an enemy and strikes a lethal blow, dealing <trueDamage>{{ damage }} true damage</trueDamage>. For each <keywordMajor>Hemorrhage</keywordMajor> on the target, this Ability deals an additional {{ rdamagepercentperhemostack*100 }}% damage, up to a max of <trueDamage>{{ maximumdamage }} damage</trueDamage>.<br /><br />If this kills the target, Darius may <recast>Recast</recast> this Ability once within {{ rrecastduration }} seconds. At rank 3, this Ability has no Mana cost and kills refresh the Cooldown completely.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100/100/0",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "460",
+      "datavalues": {},
+      "description": "Darius leaps to an enemy champion and strikes a lethal blow, dealing true damage. This damage is increased for each stack of Hemorrhage on the target. If Noxian Guillotine is a killing blow, its cooldown is refreshed for a brief duration.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Hemorrhage",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 240,
+      "y": 96,
+      "full": "Darius_Icon_Hemorrhage.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Darius' attacks and damaging abilities cause enemies to bleed for physical damage over 5 seconds, stacking up to 5 times. Darius enrages and gains massive Attack Damage when his target reaches max stacks."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Top"
+  ],
+  "skins_en": [
+    {
+      "id": "122000",
+      "num": 0,
+      "name": "default",
+      "chromas": true
+    },
+    {
+      "id": "122001",
+      "num": 1,
+      "name": "Lord Darius",
+      "chromas": false
+    },
+    {
+      "id": "122002",
+      "num": 2,
+      "name": "Bioforge Darius",
+      "chromas": false
+    },
+    {
+      "id": "122003",
+      "num": 3,
+      "name": "Woad King Darius",
+      "chromas": false
+    },
+    {
+      "id": "122004",
+      "num": 4,
+      "name": "Dunkmaster Darius",
+      "chromas": true
+    },
+    {
+      "id": "122008",
+      "num": 8,
+      "name": "Academy Darius",
+      "chromas": false
+    },
+    {
+      "id": "122014",
+      "num": 14,
+      "name": "Dreadnova Darius",
+      "chromas": false
+    },
+    {
+      "id": "122015",
+      "num": 15,
+      "name": "God-King Darius",
+      "chromas": false
+    },
+    {
+      "id": "122016",
+      "num": 16,
+      "name": "High Noon Darius",
+      "chromas": true
+    },
+    {
+      "id": "122024",
+      "num": 24,
+      "name": "Lunar Beast Darius",
+      "chromas": true
+    },
+    {
+      "id": "122033",
+      "num": 33,
+      "name": "Crime City Nightmare Darius",
+      "chromas": false
+    },
+    {
+      "id": "122043",
+      "num": 43,
+      "name": "Spirit Blossom Darius",
+      "chromas": false
+    },
+    {
+      "id": "122054",
+      "num": 54,
+      "name": "Porcelain Darius",
+      "chromas": false
+    },
+    {
+      "id": "122064",
+      "num": 64,
+      "name": "Divine God-King Darius",
+      "chromas": false
+    },
+    {
+      "id": "122065",
+      "num": 65,
+      "name": "Prestige Triumphant General Darius",
+      "chromas": false
+    },
+    {
+      "id": "122067",
+      "num": 67,
+      "name": "Mecha Kingdoms Darius",
+      "chromas": false
+    }
+  ]
+}

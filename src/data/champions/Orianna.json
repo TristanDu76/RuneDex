@@ -1,0 +1,476 @@
+{
+  "id": "Orianna",
+  "key": "61",
+  "name": "Orianna",
+  "title": "Demoiselle mécanique",
+  "version": "15.23.1",
+  "lore": "Orianna était la fille du célèbre artificier Corin Reveck (celui qui, par son génie et sa soif de préserver la vie à tout prix, emprunta la voie des expériences extrêmes qui mènent à la légende de Singed). Originaire de Piltover, Orianna était une apprentie curieuse et passionnée par la danse et le rêve d'explorer le monde.\n\nL'Acte de Sacrifice et la Chute : Suite à une catastrophe chimique dans la ville souterraine de Zaun, Orianna désobéit à son père pour porter secours aux victimes, allant jusqu'à donner son propre masque respiratoire. À son retour, elle tomba gravement malade, ses poumons ravagés par le poison de Zaun.\n\nL'Obsession Chimique et la Transformation : Corin, refusant la mort de sa fille, se lança dans une course effrénée et moralement ambiguë contre la maladie. Il créa des poumons artificiels, puis, au fur et à mesure que le poison se propageait, il remplaça chaque organe défaillant d'Orianna par des prothèses mécaniques perfectionnées. Ce processus long et coûteux non seulement ruina Corin, le forçant à s'installer à Zaun (le terreau des chimistes extrêmes), mais transforma sa fille en une merveille entièrement mécanique, à l'exception de son cœur humain.\n\nL'Effacement de l'Humanité : Orianna commença à se sentir déconnectée de son ancienne identité, ses souvenirs s'estompant. Sa créativité se mua en simple maîtrise technique.\n\nLe Sacrifice Final de la Fille : Des années plus tard, Corin lui-même fut frappé par une maladie cardiaque. Pour le sauver, Orianna obtint un cristal Hextech et réalisa la seule solution logique : elle n'avait plus besoin de son cœur humain. Elle créa un orbite d'horlogerie pour contenir la magie Hextech et procéda à la chirurgie ultime sur elle-même. Elle retira son dernier vestige d'humanité et donna son cœur humain à son père.\n\nL'Acceptation : Orianna se réveilla sans peur ni remords, simplement avec l'acceptation d'être devenue une dame de la mécanique, son orbite Hextech flottant comme son nouveau cœur. Elle laissa derrière elle le père qu'elle venait de sauver par la science extrême, et partit explorer le monde, cherchant sa place dans la vaste machine.\n\nCorin Reveck se réveilla avec un nouveau cœur, un dernier vestige de la fille qu'il avait cherché à sauver par tous les moyens, ce qui l'a peut-être définitivement marqué du sceau de l'alchimiste acharné de Zaun.",
+  "tags": [
+    "Mage",
+    "Support"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 336,
+    "y": 0,
+    "full": "Orianna.png",
+    "group": "champion",
+    "sprite": "champion3.png"
+  },
+  "skins": [
+    {
+      "id": "61000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "61001",
+      "num": 1,
+      "name": "Orianna gothique",
+      "chromas": false
+    },
+    {
+      "id": "61002",
+      "num": 2,
+      "name": "Orianna du chaos",
+      "chromas": false
+    },
+    {
+      "id": "61003",
+      "num": 3,
+      "name": "Orianna assassin",
+      "chromas": false
+    },
+    {
+      "id": "61004",
+      "num": 4,
+      "name": "TPA Orianna",
+      "chromas": false
+    },
+    {
+      "id": "61005",
+      "num": 5,
+      "name": "Orianna merveille hivernale",
+      "chromas": false
+    },
+    {
+      "id": "61006",
+      "num": 6,
+      "name": "Orianna cœur-de-cible",
+      "chromas": false
+    },
+    {
+      "id": "61007",
+      "num": 7,
+      "name": "Orianna du pulsar sombre",
+      "chromas": true
+    },
+    {
+      "id": "61008",
+      "num": 8,
+      "name": "Orianna héroïne de guerre",
+      "chromas": true
+    },
+    {
+      "id": "61011",
+      "num": 11,
+      "name": "Orianna bouée gonflable",
+      "chromas": true
+    },
+    {
+      "id": "61020",
+      "num": 20,
+      "name": "Orianna abeille",
+      "chromas": true
+    },
+    {
+      "id": "61029",
+      "num": 29,
+      "name": "Orianna gardienne des étoiles",
+      "chromas": true
+    },
+    {
+      "id": "61038",
+      "num": 38,
+      "name": "T1 Orianna",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "OrianaIzunaCommand",
+      "name": "Ordre : Attaque",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 0,
+        "full": "OrianaIzunaCommand.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Orianna ordonne à sa <keywordMajor>sphère</keywordMajor> de se déplacer vers une zone, infligeant <magicDamage>{{ totaldamagetooltip }} pts de dégâts magiques</magicDamage> aux ennemis proches et aux ennemis qu'elle traverse. Cela inflige {{ e2 }}% de dégâts en moins aux ennemis au-delà du premier.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "35",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "815",
+      "datavalues": {},
+      "description": "Orianna ordonne à sa sphère de voler vers une zone cible, infligeant des dégâts magiques aux cibles sur son passage (les dégâts diminuent à chaque cible supplémentaire). La sphère reste ensuite dans la zone cible.",
+      "cooldownBurn": "6/5.25/4.5/3.75/3"
+    },
+    {
+      "id": "OrianaDissonanceCommand",
+      "name": "Ordre : Dissonance",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 0,
+        "full": "OrianaDissonanceCommand.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Orianna ordonne à sa <keywordMajor>sphère</keywordMajor> d'émettre une impulsion électrique, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> aux ennemis proches.<br /><br />L'impulsion crée un champ d'énergie qui dure {{ fieldduration }} sec, lequel <status>ralentit</status> les ennemis de {{ slowamount*100 }}% et octroie <speed>+{{ hasteamount*100 }}% de vitesse de déplacement</speed> aux alliés. Ces effets diminuent en {{ slowandhasteduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ralentissement",
+          "Vitesse de déplacement",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "225",
+      "datavalues": {},
+      "description": "Orianna ordonne à sa sphère d'émettre une impulsion énergétique, infligeant des dégâts magiques autour de la sphère. Cela crée une zone qui accélère les alliés et ralentit les ennemis.",
+      "cooldownBurn": "7"
+    },
+    {
+      "id": "OrianaRedactCommand",
+      "name": "Ordre : Protection",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 0,
+        "full": "OrianaRedactCommand.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive : </spellPassive>la <keywordMajor>sphère</keywordMajor> octroie <scaleArmor>+{{ e2 }} armure</scaleArmor> et <scaleMR>+{{ e2 }} résistance magique</scaleMR> au champion allié sur lequel elle est fixée.<br /><br /><spellActive>Active : </spellActive>Orianna ordonne à sa <keywordMajor>sphère</keywordMajor> de se fixer sur un champion allié, ce qui lui octroie un <shield>bouclier de {{ totalshieldtooltip }} PV</shield> pendant {{ e5 }} sec. Les ennemis touchés au passage de la <keywordMajor>sphère</keywordMajor> subissent <magicDamage>{{ totaldamagetooltip }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Bonus d'armure",
+          "Bonus de résistance magique",
+          "PV du bouclier"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1095",
+      "datavalues": {},
+      "description": "Orianna ordonne à sa sphère d'aller se fixer sur un champion allié pour lui octroyer un bouclier, infligeant des dégâts magiques aux ennemis sur son passage. La sphère augmente aussi l'armure et la résistance magique du champion sur lequel elle est fixée.",
+      "cooldownBurn": "9"
+    },
+    {
+      "id": "OrianaDetonateCommand",
+      "name": "Ordre : Onde de choc",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 0,
+        "full": "OrianaDetonateCommand.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Orianna ordonne à sa <keywordMajor>sphère</keywordMajor> d'émettre une onde de choc, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> aux ennemis proches et les <status>projetant</status> vers la <keywordMajor>sphère</keywordMajor>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "410",
+      "datavalues": {},
+      "description": "Orianna ordonne à sa sphère d'émettre une onde de choc, infligeant des dégâts magiques et projetant les ennemis proches vers la sphère après un bref délai.",
+      "cooldownBurn": "110/95/80"
+    }
+  ],
+  "passive": {
+    "name": "Remontoir",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 336,
+      "y": 0,
+      "full": "OriannaPassive.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Les attaques d'Orianna infligent des dégâts magiques supplémentaires. Plus Orianna attaque la même cible, plus les dégâts sont importants."
+  },
+  "created_at": "2025-11-26T15:13:34.38849+00:00",
+  "factions": [
+    "piltover"
+  ],
+  "custom_tags": [
+    "robot",
+    "danseuse"
+  ],
+  "gender": "Female",
+  "species": "Cyborg",
+  "title_en": "the Lady of Clockwork",
+  "lore_en": "Orianna was the daughter of the renowned artificer Corin Reveck (the man whose genius and desperate need to preserve life at all costs led him down the path of extreme experimentation that defines the legend of Singed). Hailing from Piltover, Orianna was an inquisitive apprentice who dreamed of exploring the world.\n\nThe Act of Compassion and the Fall: Following a chemical disaster in the undercity of Zaun, Orianna disobeyed her father to provide aid, even giving away her own respirator mask. Upon her return, she fell gravely ill, her lungs ravaged by Zaun's poison.\n\nChemical Obsession and Transformation: Corin, refusing to accept her death, threw himself into a reckless, morally ambiguous race against the disease. He created artificial lungs, and as the poison spread, he replaced each failing organ in Orianna's body with advanced mechanical prosthetics. This costly process not only ruined Corin, forcing them to relocate to Zaun (the birthplace of extreme chemistry), but also transformed his daughter, piece by piece, into a fully mechanical wonder, save for her human heart.\n\nThe Fading Humanity: Orianna gradually began to feel disconnected from her former self, with old memories feeling like distant stories. Her creativity faded, replaced by pure mechanical mastery.\n\nThe Daughter's Final Sacrifice: Years later, Corin himself fell gravely ill. To save him, Orianna acquired a Hextech crystal and realized the only logical solution: she no longer needed her human heart. She created a clockwork orb to house the Hextech power and performed the ultimate surgery on herself. She removed her last vestige of humanity and gave her human heart to her father.\n\nAcceptance: Orianna awoke with no fear or remorse, only acceptance that she had become the Clockwork Lady, her Hextech orb floating as her new companion and protector. She left behind the father she had just saved through radical science, setting out to explore the world and find her place in its vast machine.\n\nCorin Reveck awoke with a new heart, the last remnant of the daughter he desperately tried to save, forever marking him with the obsessive drive of the relentless Zaunite chemist.",
+  "spells_en": [
+    {
+      "id": "OrianaIzunaCommand",
+      "name": "Command: Attack",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 0,
+        "full": "OrianaIzunaCommand.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Orianna commands her <keywordMajor>Ball</keywordMajor> to move to an area, dealing <magicDamage>{{ totaldamagetooltip }} magic damage</magicDamage> to surrounding enemies and to enemies it passes through. Deals {{ e2 }}% less damage to all enemies after the first.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "35",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "815",
+      "datavalues": {},
+      "description": "Orianna commands her Ball to fire toward a target location, dealing magic damage to targets along the way (deals less damage to subsequent targets). Her Ball remains at the target location after.",
+      "cooldownBurn": "6/5.25/4.5/3.75/3"
+    },
+    {
+      "id": "OrianaDissonanceCommand",
+      "name": "Command: Dissonance",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 0,
+        "full": "OrianaDissonanceCommand.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Orianna commands her <keywordMajor>Ball</keywordMajor> to release an electric pulse, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> to surrounding enemies.<br /><br />The pulse leaves behind an energy field for {{ fieldduration }} seconds, <status>Slowing</status> enemies by {{ slowamount*100 }}% and granting allies <speed>{{ hasteamount*100 }}% Move Speed</speed>, decaying over {{ slowandhasteduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Slow",
+          "Move Speed",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "225",
+      "datavalues": {},
+      "description": "Orianna commands her Ball to release a pulse of energy, dealing magic damage around it. This leaves a field behind that speeds up allies and slows enemies.",
+      "cooldownBurn": "7"
+    },
+    {
+      "id": "OrianaRedactCommand",
+      "name": "Command: Protect",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 0,
+        "full": "OrianaRedactCommand.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive: </spellPassive>The <keywordMajor>Ball</keywordMajor> adds <scaleArmor>{{ e2 }} Armor</scaleArmor> and <scaleMR>{{ e2 }} Magic Resist</scaleMR> to the allied champion it is attached to.<br /><br /><spellActive>Active: </spellActive>Orianna commands her <keywordMajor>Ball</keywordMajor> to attach to an allied champion, granting them <shield>{{ totalshieldtooltip }} Shield</shield> for {{ e5 }} seconds. Enemies the <keywordMajor>Ball</keywordMajor> passes through take <magicDamage>{{ totaldamagetooltip }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Armor Bonus",
+          "Magic Resist Bonus",
+          "Shield Amount"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1095",
+      "datavalues": {},
+      "description": "Orianna commands her Ball to attach to an allied champion, Shielding them and dealing magic damage to any enemies it passes through on the way. Additionally, the Ball grants additional Armor and Magic Resist to the champion it is attached to.",
+      "cooldownBurn": "9"
+    },
+    {
+      "id": "OrianaDetonateCommand",
+      "name": "Command: Shockwave",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 0,
+        "full": "OrianaDetonateCommand.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Orianna commands her <keywordMajor>Ball</keywordMajor> to unleash a shockwave, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> to nearby enemies and <status>Knocking</status> them in the direction of the <keywordMajor>Ball</keywordMajor>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "410",
+      "datavalues": {},
+      "description": "Orianna commands her Ball to unleash a shockwave, dealing magic damage and launching nearby enemies towards the Ball after a short delay.",
+      "cooldownBurn": "110/95/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Clockwork Windup",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 336,
+      "y": 0,
+      "full": "OriannaPassive.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Orianna's Attacks deal additional magic damage. This damage increases the more Orianna Attacks the same target."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Mid"
+  ],
+  "skins_en": [
+    {
+      "id": "61000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "61001",
+      "num": 1,
+      "name": "Gothic Orianna",
+      "chromas": false
+    },
+    {
+      "id": "61002",
+      "num": 2,
+      "name": "Sewn Chaos Orianna",
+      "chromas": false
+    },
+    {
+      "id": "61003",
+      "num": 3,
+      "name": "Bladecraft Orianna",
+      "chromas": false
+    },
+    {
+      "id": "61004",
+      "num": 4,
+      "name": "TPA Orianna",
+      "chromas": false
+    },
+    {
+      "id": "61005",
+      "num": 5,
+      "name": "Winter Wonder Orianna",
+      "chromas": false
+    },
+    {
+      "id": "61006",
+      "num": 6,
+      "name": "Heartseeker Orianna",
+      "chromas": false
+    },
+    {
+      "id": "61007",
+      "num": 7,
+      "name": "Dark Star Orianna",
+      "chromas": true
+    },
+    {
+      "id": "61008",
+      "num": 8,
+      "name": "Victorious Orianna",
+      "chromas": true
+    },
+    {
+      "id": "61011",
+      "num": 11,
+      "name": "Pool Party Orianna",
+      "chromas": true
+    },
+    {
+      "id": "61020",
+      "num": 20,
+      "name": "Orbeeanna",
+      "chromas": true
+    },
+    {
+      "id": "61029",
+      "num": 29,
+      "name": "Star Guardian Orianna",
+      "chromas": true
+    },
+    {
+      "id": "61038",
+      "num": 38,
+      "name": "T1 Orianna",
+      "chromas": true
+    }
+  ]
+}

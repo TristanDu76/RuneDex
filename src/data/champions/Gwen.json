@@ -1,0 +1,388 @@
+{
+  "id": "Gwen",
+  "key": "887",
+  "name": "Gwen",
+  "title": "Couturière sacrée",
+  "version": "15.23.1",
+  "lore": "Gwen était à l'origine une poupée faite main, confectionnée par une humble couturière dans un village du royaume perdu de Camavor (patrie de Viego). Elle garde des souvenirs aimants d'une vie simple, passée à fabriquer des objets, et à jouer à des duels imaginaires sous la table de la cuisine, les ciseaux et les couverts s'entrechoquant.\r\n\r\nLa lumière s'est éteinte avec la maladie de sa créatrice. Les souvenirs s'estompèrent, et Gwen resta inanimée pendant des siècles, oubliée, avec une douleur lancinante liée à un homme dont le nom lui échappait.\r\n\r\nUne nuit, elle s'éveilla sur une plage sombre, loin de chez elle. Par une magie inconnue, elle avait été transformée en une fille vivante, capable de bouger et d'expérimenter le monde avec une joie immense. Sur la plage, elle trouva des débris, dont des outils familiers : ciseaux, aiguilles et fil à coudre — les outils de sa créatrice.\r\n\r\nAu contact de ces outils, une Brume sacrée (Hallowed Mist), scintillante et chaleureuse, émana de ses mains. Cette magie attira une autre brume, la Brume noire (Black Mist), qui formait des spectres féroces attirés par la présence magique de Gwen.\r\n\r\nAlors que les spectres l'attaquaient, Gwen utilisa ses ciseaux. Plus de sa Brume sacrée remplit l'air, enchantant la taille et la force de ses outils, les transformant en magie spectrale. Au milieu du combat, des souvenirs réprimés firent surface : sa créatrice, malade, et l'homme dont le visage et le nom lui revinrent : Viego.\r\n\r\nGwen se rappela alors de sa créatrice. Elle réalisa que ce n'était pas un hasard si les outils qui l'avaient créée étaient maintenant dans ses mains. Elle comprit que sa créatrice était toujours là, se battant à travers elle.\r\n\r\nGwen s'empara des aiguilles et du fil, tissant des nuages de Brume sacrée pour repousser la Brume noire. Ses ciseaux frappèrent avec la vitesse qu'elle avait imaginée lors de ses jeux d'enfance. Les spectres furent vaincus.\r\n\r\nBien que triomphante, Gwen sentit le lien entre les spectres et Viego, comprenant qu'ils étaient responsables de la propagation de la douleur. Elle est désormais résolue à traquer et à arrêter la Brume noire à tout prix. Elle savoure chaque seconde de son existence inattendue, choisissant d'être une force positive et indomptable contre toutes les adversités, déterminée à restaurer la joie dans le monde.",
+  "tags": [
+    "Fighter"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 96,
+    "y": 48,
+    "full": "Gwen.png",
+    "group": "champion",
+    "sprite": "champion1.png"
+  },
+  "skins": [
+    {
+      "id": "887000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "887001",
+      "num": 1,
+      "name": "Gwen astro-groove",
+      "chromas": true
+    },
+    {
+      "id": "887011",
+      "num": 11,
+      "name": "Gwen Café Chouchous",
+      "chromas": true
+    },
+    {
+      "id": "887020",
+      "num": 20,
+      "name": "Gwen combattante spirituelle",
+      "chromas": true
+    },
+    {
+      "id": "887030",
+      "num": 30,
+      "name": "Gwen reine du combat",
+      "chromas": true
+    },
+    {
+      "id": "887039",
+      "num": 39,
+      "name": "Gwen bergère de la pluie",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "GwenQ",
+      "name": "Tchac, tchac !",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 96,
+        "full": "GwenQ.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive</spellPassive> : Gwen cumule 1 effet quand elle touche un ennemi avec une attaque (4 max, dure {{ buffduration }} sec).<br /><br /><spellActive>Active</spellActive> : Gwen consomme ses effets cumulés. Elle coupe une fois avec ses ciseaux, infligeant <magicDamage>{{ miniswipedamage }} pts de dégâts magiques</magicDamage>, puis elle coupe une fois de plus par munition consommée et termine avec une dernière coupe qui inflige <magicDamage>{{ finalswipedamage }} pts de dégâts magiques</magicDamage>. <br /><br />Le centre de chaque coup convertit {{ truedamageconversion*100 }}% de ses dégâts en <trueDamage>dégâts bruts</trueDamage> et applique <spellName>Mille coupures</spellName> sur les ennemis touchés.<br /><rules><br />Inflige {{ minionmod*100 }}% de dégâts aux sbires.<br />Contre les sbires qui ont moins de {{ executethreshold*100 }}% de leurs PV, les dégâts sont augmentés de {{ executebonus }}% au lieu d'être réduits.</rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts du dernier coup"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "450",
+      "datavalues": {},
+      "description": "Gwen coupe jusqu'à 6 fois avec ses ciseaux, infligeant des dégâts magiques dans une zone conique. Gwen inflige des dégâts bruts aux unités au centre de la zone et applique sa compétence passive sur eux à chaque coup de ciseaux.",
+      "cooldownBurn": "6.5/5.75/5/4.25/3.5"
+    },
+    {
+      "id": "GwenW",
+      "name": "Brume sacrée",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 96,
+        "full": "GwenW.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Gwen invoque la Brume sacrée et devient impossible à cibler pour les ennemis en dehors de la zone (sauf les tourelles) pendant {{ zoneduration }} sec ou jusqu'à ce qu'elle en sorte. Dans la brume, Gwen gagne +{{ totalresists }} <scaleArmor>armure</scaleArmor> et +{{ totalresists }} <scaleMR>résistance magique</scaleMR>.<br /><br />Gwen peut <recast>réactiver</recast> une fois cette compétence pour attirer la brume vers elle. La compétence est <recast>réactivée</recast> automatiquement la première fois que Gwen essaie de sortir de la zone.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Résistances supplémentaires",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "0",
+      "datavalues": {},
+      "description": "Gwen invoque une brume qui la protège des ennemis hors de la zone. Elle ne peut être ciblée que par les ennemis qui entrent dans la brume.",
+      "cooldownBurn": "22/21/20/19/18"
+    },
+    {
+      "id": "GwenE",
+      "name": "Élan incisif",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 96,
+        "full": "GwenE.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Gwen effectue une ruée et renforce ses attaques pendant {{ buffduration }} sec.<br /><br />Les attaques renforcées gagnent <attackSpeed>+{{ bonusattackspeed }} vitesse d'attaque</attackSpeed>, <magicDamage>+{{ onhitdamage }} pts de dégâts magiques</magicDamage> %i:OnHit% <OnHit>à l'impact</OnHit> et +{{ bonusattackrange }} portée. De plus, la première de ces attaques qui touche un ennemi réduit de {{ cdrefund*100 }}% le délai de récupération de cette compétence.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "35",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Vitesse d'attaque",
+          "Réduction du délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Gwen effectue une courte ruée, puis gagne de la vitesse d'attaque, de la portée d'attaque et des dégâts magiques <OnHit>à l'impact</OnHit> pendant quelques secondes. Si elle frappe un ennemi pendant cette durée, le délai de récupération de cette compétence est réduit. ",
+      "cooldownBurn": "13/12.5/12/11.5/11"
+    },
+    {
+      "id": "GwenR",
+      "name": "Piqûre",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 96,
+        "full": "GwenR.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellActive>Première activation :</spellActive> Gwen lance une aiguille qui inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>, <status>ralentit</status> les ennemis de {{ initialslow*-100 }}% pendant {{ debuffduration }} sec et applique <spellName>Mille coupures</spellName> sur tous les ennemis touchés. Gwen peut <recast>réactiver</recast> cette compétence 2 fois de plus dans les 6 sec ({{ lockouttime }} sec de récupération entre les activations).<br /><br /><recast>Deuxième activation :</recast> Gwen lance trois aiguilles pour infliger <magicDamage>{{ totaldamage3 }} pts de dégâts magiques</magicDamage>.<br /><recast>Troisième activation :</recast> Gwen lance cinq aiguilles pour infliger <magicDamage>{{ totaldamage5 }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts de base",
+          "Ralentissement"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1200",
+      "datavalues": {},
+      "description": "Gwen lance une aiguille qui ralentit les ennemis touchés, inflige des dégâts magiques et applique Mille coupures sur les champions touchés. <br><br>Cette compétence peut être activée jusqu'à deux fois de plus. Chaque activation lance des aiguilles supplémentaires et inflige plus de dégâts. ",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive": {
+    "name": "Mille coupures",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 96,
+      "y": 48,
+      "full": "Gwen_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Les attaques de Gwen infligent des dégâts magiques supplémentaires selon les PV de la cible. Gwen récupère des PV équivalents à une partie des dégâts que cet effet inflige aux champions. "
+  },
+  "created_at": "2025-11-26T15:13:33.248576+00:00",
+  "factions": [
+    "shadow-isles"
+  ],
+  "custom_tags": [
+    "poupée",
+    "benie"
+  ],
+  "gender": "Female",
+  "species": "Magically Altered Construct",
+  "title_en": "The Hallowed Seamstress",
+  "lore_en": "Gwen was originally a handmade doll, crafted by a humble seamstress in a village of the long-lost kingdom of Camavor (Viego's homeland). She remembers her past with love, recalling a simple life spent crafting and playing make-believe duels under the kitchen table, with the clashing of scissors and silverware.\r\n\r\nThe light faded with the sickness of her maker. Gwen lay still for centuries, quiet and forgotten, with a persistent twinge of pain tied to a man whose name escaped her.\r\n\r\nOne night, her eyes opened. Gwen awoke for the very first time on a shadowy beach, far from home. By magic unknown to her, she had been transformed into a living girl, able to move and experience the world with immense joy. Along the coast, amidst scattered debris, she noticed oddly familiar tools: scissors, needles, and thread—her maker's tools.\r\n\r\nWhen she touched them, a burst of glistening Hallowed Mist flowed from her hands. This magic drew another mist, the Black Mist, which swarmed and formed into fearsome wraiths, hungry for Gwen's newfound presence.\r\n\r\nAs the wraiths came for her, Gwen used her scissors. More of her Hallowed Mist filled the air, enchanting her tools' size and strength and turning them into spectral magic. Amidst the battle, suppressed memories surfaced: her sick maker, and the man whose face and name finally returned to Gwen: Viego.\r\n\r\nGwen remembered her maker. She realized it was no accident that the tools that first sewed her together were now in her hands. She knew her maker was still with her, still fighting through her.\r\n\r\nGrasping the needles and thread, Gwen spun clouds of Hallowed Mist to push back the swarming wraiths. Her scissors slashed hard and fast, reminiscent of those blissful nights of imagined battles under the kitchen table. The wraiths were defeated.\r\n\r\nThough triumphant, Gwen sensed the link between the wraiths and Viego, understanding they were responsible for the spread of immense pain. She is now resolved to track and stop the Black Mist at any cost. She revels in every second of her unexpected existence, choosing to be an indomitable, positive force against all odds, determined to restore joy to those who are suffering.",
+  "spells_en": [
+    {
+      "id": "GwenQ",
+      "name": "Snip Snip!",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 96,
+        "full": "GwenQ.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive</spellPassive>: Gwen gains 1 stack when she hits an enemy with an attack (max 4, lasts {{ buffduration }} seconds).<br /><br /><spellActive>Active</spellActive>: Consumes stacks. Gwen snips once for <magicDamage>{{ miniswipedamage }} magic damage</magicDamage>, snips again for each ammo consumed, and then snips a final time for <magicDamage>{{ finalswipedamage }} magic damage</magicDamage>. <br /><br />The center of each strikes converts {{ truedamageconversion*100 }}% of the damage into <trueDamage>true damage</trueDamage> instead and applies <spellName>A Thousand Cuts</spellName> to enemies hit.<br /><rules><br />Deals {{ minionmod*100 }}% damage to minions.<br />Minions below {{ executethreshold*100 }}% health take {{ executebonus }}% bonus damage instead of reduced damage.</rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Final Strike Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "450",
+      "datavalues": {},
+      "description": "Gwen snips her scissors in a cone up to 6 times dealing magic damage. Gwen deals true damage to units in the center and applies her passive to them on each snip.",
+      "cooldownBurn": "6.5/5.75/5/4.25/3.5"
+    },
+    {
+      "id": "GwenW",
+      "name": "Hallowed Mist",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 96,
+        "full": "GwenW.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Gwen summons the Hallowed Mist, making her Untargetable to all enemies (except towers) outside the zone for {{ zoneduration }} seconds or until she leaves it. While in the Mist, Gwen gains {{ totalresists }} <scaleArmor>Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR>.<br /><br />Gwen can <recast>Recast</recast> this Ability once to call the Mist to her. This will automatically <recast>Recast</recast> the first time Gwen attempts to leave the zone.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Bonus Resistances",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "0",
+      "datavalues": {},
+      "description": "Gwen summons mist that protects her from enemies outside of it. She can only be targeted by enemies who enter the mist.",
+      "cooldownBurn": "22/21/20/19/18"
+    },
+    {
+      "id": "GwenE",
+      "name": "Skip 'n Slash",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 96,
+        "full": "GwenE.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Gwen dashes and empowers her Attacks for {{ buffduration }} seconds.<br /><br />Empowered Attacks gain <attackSpeed>{{ bonusattackspeed }} Attack Speed</attackSpeed>, <magicDamage>{{ onhitdamage }} magic damage</magicDamage> %i:OnHit% <OnHit>On-Hit</OnHit>, {{ bonusattackrange }} range, and the first one to hit an enemy refunds {{ cdrefund*100 }}% of this Ability's Cooldown.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "35",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Attack Speed",
+          "Cooldown Refund"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Gwen dashes a short distance then gains Attack Speed, attack range, and magic damage <OnHit>On-Hit</OnHit> for a few seconds. If she hits an enemy during that time, this Ability's cooldown is partially refunded. ",
+      "cooldownBurn": "13/12.5/12/11.5/11"
+    },
+    {
+      "id": "GwenR",
+      "name": "Needlework",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 96,
+        "full": "GwenR.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellActive>First Cast:</spellActive> Hurl a needle that deals <magicDamage>{{ totaldamage }} magic damage</magicDamage>, <status>Slows</status> by {{ initialslow*-100 }}% for {{ debuffduration }} seconds, and applies <spellName>A Thousand Cuts</spellName> to all enemies hit. Gwen can <recast>Recast</recast> this ability up to 2 additional times within 6 seconds ({{ lockouttime }}s cooldown between casts).<br /><br /><recast>Second Cast:</recast> Fire three needles to deal <magicDamage>{{ totaldamage3 }} magic damage</magicDamage><br /><recast>Third Cast:</recast> Fire five needles to deal <magicDamage>{{ totaldamage5 }} magic damage</magicDamage>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Base Damage",
+          "Slow"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1200",
+      "datavalues": {},
+      "description": "Gwen hurls a needle that slows enemies hit, deals magic damage, and applies A Thousand Cuts to champions hit. <br><br>This ability can be cast up to two more times, with each cast throwing additional needles and dealing more damage. ",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive_en": {
+    "name": "A Thousand Cuts",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 96,
+      "y": 48,
+      "full": "Gwen_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Gwen's attacks deal bonus magic damage based on the targets health. She heals for a portion of the damage dealt to champions by this effect. "
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Top",
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "887000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "887001",
+      "num": 1,
+      "name": "Space Groove Gwen",
+      "chromas": true
+    },
+    {
+      "id": "887011",
+      "num": 11,
+      "name": "Cafe Cuties Gwen",
+      "chromas": true
+    },
+    {
+      "id": "887020",
+      "num": 20,
+      "name": "Soul Fighter Gwen",
+      "chromas": true
+    },
+    {
+      "id": "887030",
+      "num": 30,
+      "name": "Battle Queen Gwen",
+      "chromas": true
+    },
+    {
+      "id": "887039",
+      "num": 39,
+      "name": "Rain Shepherd Gwen",
+      "chromas": true
+    }
+  ]
+}

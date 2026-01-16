@@ -1,0 +1,512 @@
+{
+  "id": "JarvanIV",
+  "key": "59",
+  "name": "Jarvan IV",
+  "title": "Exemple demacien",
+  "version": "15.23.1",
+  "lore": "Jarvan IV est l'héritier du trône de Demacia, né peu après le couronnement de son père, Jarvan III. Sa mère, la Lady Catherine, mourut en couches, et le roi jura de reporter tous ses espoirs pour le royaume sur son fils. Jarvan grandit au sein de la cour, recevant une éducation stricte axée sur la charité, le devoir et l'honneur. Son loyal protecteur, Xin Zhao, un ancien Ionia, l'initia aux arts de la guerre et à des philosophies plus spirituelles.\n\nDurant sa formation militaire, il se lia d'amitié avec Garen Crownguard. Jarvan admirait la détermination de Garen, tandis que Garen respectait l'instinct tactique du prince.\n\nÀ l'âge adulte, le roi Jarvan III lui accorda le grade honoraire de général. Déterminé à faire ses preuves, le prince mena les armées démaciiennes pour stabiliser les frontières contestées par Noxus. Il remporta victoire après victoire, mais, ignorant les conseils de ses lieutenants, il s'enfonça en territoire noxien. Ses bataillons furent encerclés et défaits avant d'atteindre Trevale.\n\nRefusant de se rendre, Jarvan et quelques survivants s'enfuirent. Grièvement blessé, il sombra dans l'inconscience, dévasté par son échec.\n\nIl fut sauvé par une femme à la peau violette, Shyvana, qui le ramena au vieux château de Wrenwall. Pendant sa convalescence, Shyvana révéla sa véritable nature : elle était poursuivie par un dragon élémentaire monstrueux, Yvva.\n\nVoyant une chance de se racheter, Jarvan, malgré ses blessures, rallia la garnison. Il jura de retourner à la Grande Cité avec la tête d'Yvva. La bataille fut rapide et meurtrière. Bien que Shyvana, sous sa forme mi-dragon, ait tué la bête, c'est le leadership de Jarvan qui maintint la ligne. Il réalisa la véritable force des Démaciens unis. Il offrit à Shyvana une place permanente au sein de sa garde.\n\nLe retour de Jarvan en triomphe, avec le crâne du dragon et Shyvana à ses côtés, fut célébré. Néanmoins, certains nobles se méfièrent de la créature qui servait de protectrice au prince.\n\nJarvan reprit ses fonctions, mais le royaume changeait. L'Ordre des Traqueurs de mages (Mageseekers) gagnait en influence, menant à l'emprisonnement des mages et à la rébellion. Lorsque des mages attaquèrent la Grande Cité, Jarvan fut anéanti de découvrir que son père, le roi, avait été tué.\n\nBien que sa position politique se soit considérablement durcie envers les mages depuis, Jarvan n'est pas encore couronné. Il a dû examiner sa propre conscience et ses allégeances, acceptant les conseils de nobles influents comme Garen et Tianna Crownguard, pour prouver qu'il est apte à hériter du trône et à être couronné Roi Jarvan IV de Demacia.",
+  "tags": [
+    "Fighter",
+    "Tank"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 0,
+    "y": 96,
+    "full": "JarvanIV.png",
+    "group": "champion",
+    "sprite": "champion1.png"
+  },
+  "skins": [
+    {
+      "id": "59000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "59001",
+      "num": 1,
+      "name": "Jarvan IV commando",
+      "chromas": false
+    },
+    {
+      "id": "59002",
+      "num": 2,
+      "name": "Jarvan IV tueur de dragons",
+      "chromas": false
+    },
+    {
+      "id": "59003",
+      "num": 3,
+      "name": "Jarvan IV ténébreux",
+      "chromas": false
+    },
+    {
+      "id": "59004",
+      "num": 4,
+      "name": "Jarvan IV héros de guerre",
+      "chromas": false
+    },
+    {
+      "id": "59005",
+      "num": 5,
+      "name": "Jarvan IV du royaume en guerre",
+      "chromas": true
+    },
+    {
+      "id": "59006",
+      "num": 6,
+      "name": "Fnatic Jarvan IV",
+      "chromas": false
+    },
+    {
+      "id": "59007",
+      "num": 7,
+      "name": "Jarvan IV du pulsar sombre",
+      "chromas": true
+    },
+    {
+      "id": "59008",
+      "num": 8,
+      "name": "SSG Jarvan IV",
+      "chromas": true
+    },
+    {
+      "id": "59009",
+      "num": 9,
+      "name": "Jarvan IV Hextech",
+      "chromas": false
+    },
+    {
+      "id": "59011",
+      "num": 11,
+      "name": "Jarvan UV",
+      "chromas": true
+    },
+    {
+      "id": "59021",
+      "num": 21,
+      "name": "Jarvan IV bête lunaire",
+      "chromas": true
+    },
+    {
+      "id": "59030",
+      "num": 30,
+      "name": "Jarvan IV des Worlds 2021",
+      "chromas": false
+    },
+    {
+      "id": "59035",
+      "num": 35,
+      "name": "Jarvan IV héraut de la nuit",
+      "chromas": false
+    },
+    {
+      "id": "59044",
+      "num": 44,
+      "name": "Jarvan IV mythificateur",
+      "chromas": false
+    },
+    {
+      "id": "59054",
+      "num": 54,
+      "name": "Jarvan IV Darkin prestige",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "JarvanIVDragonStrike",
+      "name": "Frappe du dragon",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 48,
+        "full": "JarvanIVDragonStrike.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Jarvan allonge sa lance, infligeant <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> et supprimant <scaleArmor>{{ e2 }}% d'armure</scaleArmor> pendant {{ e3 }} sec.<br /><br />Si la lance touche son <spellName>Étendard demacien</spellName>, Jarvan s'élance jusqu'à son étendard, <status>projetant dans les airs</status> pendant 0.75 sec les ennemis sur son passage.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "45/50/55/60/65",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Réduction d'armure",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "770",
+      "datavalues": {},
+      "description": "Jarvan IV allonge sa lance, infligeant des dégâts physiques et réduisant l'armure des ennemis sur son chemin. En outre, cela peut ramener Jarvan à son Étendard demacien, projetant les ennemis dans les airs au passage.",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "JarvanIVGoldenAegis",
+      "name": "Égide dorée",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 48,
+        "full": "JarvanIVGoldenAegis.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Jarvan invoque une égide, <status>ralentissant</status> les ennemis proches de {{ e2 }}% pendant {{ e5 }} sec et lui octroyant un <shield>bouclier de {{ baseshield }} PV</shield>, augmenté de <shield>{{ bonusshield }}</shield> pour chaque champion ennemi touché.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "PV du bouclier",
+          "Ralentissement"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "625",
+      "datavalues": {},
+      "description": "Jarvan IV implore les anciens rois de Demacia de le protéger et de ralentir les ennemis proches.",
+      "cooldownBurn": "9"
+    },
+    {
+      "id": "JarvanIVDemacianStandard",
+      "name": "Étendard demacien",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 96,
+        "full": "JarvanIVDemacianStandard.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> Jarvan gagne <attackSpeed>+{{ permanentattackspeed*100 }}% de vitesse d'attaque</attackSpeed>.<br /><br /><spellActive>Active :</spellActive> Jarvan plante son étendard dans le sol, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> et octroyant aux alliés proches de l'étendard <attackSpeed>+{{ e3 }}% de vitesse d'attaque</attackSpeed> pendant {{ e4 }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "55",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Vitesse d'attaque passive",
+          "Bonus actif en vitesse d'attaque",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "860",
+      "datavalues": {},
+      "description": "Jarvan IV porte la fierté de Demacia, ce qui lui octroie passivement un bonus en vitesse d'attaque. Activer Étendard demacien permet à Jarvan IV de planter un drapeau demacien, infligeant des dégâts magiques à l'impact et augmentant la vitesse d'attaque des champions alliés proches.",
+      "cooldownBurn": "12/11.5/11/10.5/10"
+    },
+    {
+      "id": "JarvanIVCataclysm",
+      "name": "Cataclysme",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 96,
+        "full": "JarvanIVCataclysm.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Jarvan bondit héroïquement sur un champion ennemi, infligeant <physicalDamage>{{ damagecalc }} pts de dégâts physiques</physicalDamage> à la cible et aux ennemis proches et créant une arène infranchissable pendant {{ wallduration }} sec.<br /><br />Jarvan peut <recast>réactiver</recast> cette compétence pour détruire l'arène.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Jarvan IV bondit héroïquement sur une cible avec une telle force qu'il transforme la zone autour de lui en une arène. Les ennemis proches sont blessés lors de l'impact.",
+      "cooldownBurn": "120/105/90"
+    }
+  ],
+  "passive": {
+    "name": "Cadence martiale",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 0,
+      "y": 96,
+      "full": "JarvanIVP.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "La première attaque de base de Jarvan IV sur un ennemi inflige des dégâts physiques supplémentaires selon un pourcentage des PV actuels de la cible. Cet effet ne peut ensuite plus être infligé au même ennemi pendant quelques secondes."
+  },
+  "created_at": "2025-11-26T15:13:33.462857+00:00",
+  "factions": [
+    "demacia"
+  ],
+  "custom_tags": [
+    "prince",
+    "roi"
+  ],
+  "gender": "Male",
+  "species": "Human",
+  "title_en": "the Exemplar of Demacia",
+  "lore_en": "Jarvan IV is the heir to the throne of Demacia, born shortly after his father, King Jarvan III's coronation. His mother, Lady Catherine, died in childbirth, and the king swore that all his hopes for the kingdom would live on in his son. Jarvan was raised at court, receiving a fine education focused on charity, duty, and honor. His loyal protector, Xin Zhao, an Ionian from a distant land, introduced him to the arts of war and more spiritual philosophies.\n\nDuring his military training, he befriended Garen Crownguard. Jarvan admired Garen's determination, while Garen respected the prince's tactical instincts.\n\nWhen Jarvan came of age, his father rewarded him with the honorary rank of general. Determined to prove himself, the prince led Demacian armies to stabilize the frontiers contested by Noxus. He won victory after victory, but, against the advice of his lieutenants, he pushed deep into Noxian territory. His battalions were encircled and defeated before reaching Trevale.\n\nRefusing to surrender, Jarvan and a handful of survivors fled. Grievously wounded, he collapsed, devastated by his failure.\n\nHe was rescued by a strange, violet-skinned woman, Shyvana, who carried him back to the old castle at Wrenwall. During his recovery, Shyvana revealed her true nature: she was being pursued by a monstrous elemental dragon, Yvva.\n\nSeeing a chance to redeem himself, Jarvan, despite his injuries, marshaled the garrison. He swore they would return to the Great City with Yvva's head, or not at all. The battle was swift and deadly. Although Shyvana, in her half-dragon form, slew the beast, it was Jarvan's leadership that held the line. He realized the true strength of the Demacian people standing together. He promised Shyvana a permanent place among his guard.\n\nJarvan's triumphant return, with the dragon's skull and Shyvana at his side, was celebrated. Nevertheless, some nobles quietly questioned the wisdom of allowing such a creature to serve as his protector.\n\nJarvan resumed his duties, but the kingdom was changing. The Mageseeker order gained support, leading to the imprisonment of those with magical talents and subsequent rebellion. When mages attacked the Great City, Jarvan was distraught to discover that his father, the king, had been killed.\n\nAlthough the prince’s political stance toward mages has hardened significantly since then, he has yet to be crowned. He must carefully examine his own conscience and allegiances, heeding the counsel of prominent nobles like Garen and Tianna Crownguard, to prove he is fit to inherit the throne and be crowned King Jarvan IV of Demacia.",
+  "spells_en": [
+    {
+      "id": "JarvanIVDragonStrike",
+      "name": "Dragon Strike",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 48,
+        "full": "JarvanIVDragonStrike.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Jarvan extends his lance, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> and removing <scaleArmor>{{ e2 }}% Armor</scaleArmor> for {{ e3 }} seconds.<br /><br />If the lance connects with <spellName>Demacian Standard</spellName>, Jarvan will pull himself to it, <status>Knocking Up</status> those in his path for 0.75 seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "45/50/55/60/65",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Armor Reduction",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "770",
+      "datavalues": {},
+      "description": "Jarvan IV extends his lance, dealing physical damage and lowering the Armor of enemies in its path. Additionally, this will pull Jarvan to his Demacian Standard, knocking up enemies in his path.",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "JarvanIVGoldenAegis",
+      "name": "Golden Aegis",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 48,
+        "full": "JarvanIVGoldenAegis.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Jarvan summons an aegis, <status>Slowing</status> nearby enemies by {{ e2 }}% for {{ e5 }} seconds and granting him a <shield>{{ baseshield }} Shield</shield>, increased by <shield>{{ bonusshield }}</shield> for each enemy champion hit.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Shield Amount",
+          "Slow"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "625",
+      "datavalues": {},
+      "description": "Jarvan IV calls upon the ancient kings of Demacia to shield him from harm and slow surrounding enemies.",
+      "cooldownBurn": "9"
+    },
+    {
+      "id": "JarvanIVDemacianStandard",
+      "name": "Demacian Standard",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 96,
+        "full": "JarvanIVDemacianStandard.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Jarvan gains <attackSpeed>{{ permanentattackspeed*100 }}% Attack Speed</attackSpeed>.<br /><br /><spellActive>Active:</spellActive> Jarvan throws a standard into the ground, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> and granting allies near the standard <attackSpeed>{{ e3 }}% Attack Speed</attackSpeed> for {{ e4 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "55",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Passive Attack Speed",
+          "Active Attack Speed",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "860",
+      "datavalues": {},
+      "description": "Jarvan IV carries the pride of Demacia, passively granting him bonus Attack Speed. Activating Demacian Standard allows Jarvan IV to place a Demacian flag that deals magic damage on impact and grants Attack Speed to nearby allied champions.",
+      "cooldownBurn": "12/11.5/11/10.5/10"
+    },
+    {
+      "id": "JarvanIVCataclysm",
+      "name": "Cataclysm",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 96,
+        "full": "JarvanIVCataclysm.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Jarvan heroically leaps to an enemy Champion, dealing <physicalDamage>{{ damagecalc }} physical damage</physicalDamage> to them and surrounding enemies and creating an arena of impassable terrain around them for {{ wallduration }} seconds.<br /><br />Jarvan can <recast>Recast</recast> to collapse the terrain.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Jarvan IV heroically leaps into battle at a target with such force that he terraforms the surrounding area to create an arena around them. Nearby enemies are damaged at the moment of impact.",
+      "cooldownBurn": "120/105/90"
+    }
+  ],
+  "passive_en": {
+    "name": "Martial Cadence",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 0,
+      "y": 96,
+      "full": "JarvanIVP.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Jarvan's first basic attack on an enemy deals bonus physical damage based on their current Health. This effect cannot occur again on the same enemy for a few seconds."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "59000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "59001",
+      "num": 1,
+      "name": "Commando Jarvan IV",
+      "chromas": false
+    },
+    {
+      "id": "59002",
+      "num": 2,
+      "name": "Dragonslayer Jarvan IV",
+      "chromas": false
+    },
+    {
+      "id": "59003",
+      "num": 3,
+      "name": "Darkforge Jarvan IV",
+      "chromas": false
+    },
+    {
+      "id": "59004",
+      "num": 4,
+      "name": "Victorious Jarvan IV",
+      "chromas": false
+    },
+    {
+      "id": "59005",
+      "num": 5,
+      "name": "Warring Kingdoms Jarvan IV",
+      "chromas": true
+    },
+    {
+      "id": "59006",
+      "num": 6,
+      "name": "Fnatic Jarvan IV",
+      "chromas": false
+    },
+    {
+      "id": "59007",
+      "num": 7,
+      "name": "Dark Star Jarvan IV",
+      "chromas": true
+    },
+    {
+      "id": "59008",
+      "num": 8,
+      "name": "SSG Jarvan IV",
+      "chromas": true
+    },
+    {
+      "id": "59009",
+      "num": 9,
+      "name": "Hextech Jarvan IV",
+      "chromas": false
+    },
+    {
+      "id": "59011",
+      "num": 11,
+      "name": "Pool Party Jarvan IV",
+      "chromas": true
+    },
+    {
+      "id": "59021",
+      "num": 21,
+      "name": "Lunar Beast Jarvan IV",
+      "chromas": true
+    },
+    {
+      "id": "59030",
+      "num": 30,
+      "name": "Worlds 2021 Jarvan IV",
+      "chromas": false
+    },
+    {
+      "id": "59035",
+      "num": 35,
+      "name": "Nightbringer Jarvan IV",
+      "chromas": false
+    },
+    {
+      "id": "59044",
+      "num": 44,
+      "name": "Mythmaker Jarvan IV",
+      "chromas": false
+    },
+    {
+      "id": "59054",
+      "num": 54,
+      "name": "Prestige Visions of the Fallen Jarvan IV",
+      "chromas": false
+    }
+  ]
+}

@@ -1,0 +1,485 @@
+{
+  "id": "Pantheon",
+  "key": "80",
+  "name": "Pantheon",
+  "title": "Lance éternelle",
+  "version": "15.23.1",
+  "lore": "Atreus est né sur les pentes hostiles de Targon. Il a grandi en s'entraînant pour le Ra'Horak (l'ordre militaire des Rakkor), bien qu'il ne fût jamais le plus fort. Il fut toujours le plus tenace, se relevant après chaque défaite. Il forgea une fraternité avec un autre guerrier, Pylas.\n\nL'Ascension Forcée : Après que l'Aspect du Soleil eut refusé d'aider son peuple, Atreus et Pylas jurèrent de grimper le Mont Targon pour capturer le pouvoir des Aspects. Pylas mourut d'épuisement au sommet, et Atreus, le seul survivant, devint l'hôte de l'Aspect de la Guerre (Pantheon).\n\nL'Usurpation Divine : Pantheon jugea Atreus indigne (car il n'avait connu que la défaite) et prit le contrôle de son corps pour traquer les Darkin. Atreus fut relégué aux coins les plus reculés de son propre esprit.\n\nLa Mort de l'Aspect : Pantheon fut provoqué en duel par le Darkin Aatrox près du Mont Targon. Leur combat déchira le ciel jusqu'à ce que l'impensable se produise : Aatrox réussit à planter sa lame dans la poitrine de Pantheon, un coup qui effaça la constellation de la Guerre des cieux.\n\nLa Renaissance du Mortel : Alors que l'Aspect s'évanouissait, Atreus, l'homme jugé faible, se réveilla. Empalé sur la lame d'Aatrox, il prit une respiration rauque et cracha au visage du Darkin. Sa volonté de vivre et sa colère face à la trahison étaient assez fortes pour repousser la mort qui avait réclamé la Guerre elle-même.\n\nLe Nouveau Chemin : Soigné par Iula, la veuve de Pylas, Atreus réalisa qu'il avait passé sa vie à regarder les étoiles sans se soucier de ce qui se trouvait sur terre. Les mortels se battaient parce qu'ils le devaient, faisant preuve d'une résilience que les dieux ne connaissaient pas.\n\nLe Vrai Pantheon : Atreus découvrit que les envahisseurs barbares, ses anciens ennemis jurés, étaient en fait sous le siège d'Aatrox – ils étaient des mortels pris dans le conflit des puissances supérieures. Rempli d'une rage froide contre le Darkin et les Aspects, il se plaça entre les barbares et Aatrox.\n\nLe Triomphe de la Volonté : Reconnu et moqué par Aatrox, Atreus ne recula pas. Au son des cris des gens, sa volonté pure ranima les armes éteintes de l'Aspect. D'un bond puissant, il frappa, tranchant le bras de l'épée du Darkin. La constellation de la Guerre se ralluma dans le ciel.\n\nAtreus, qui a forcé un dieu à mourir, rejette désormais son propre nom et est devenu un nouveau Pantheon, maniant les armes divines alimentées par la seule force de sa volonté mortelle. Il a fait le vœu de se dresser contre tous ceux qui manient un pouvoir si grand qu'il ne peut que détruire.",
+  "tags": [
+    "Fighter",
+    "Assassin"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 432,
+    "y": 0,
+    "full": "Pantheon.png",
+    "group": "champion",
+    "sprite": "champion3.png"
+  },
+  "skins": [
+    {
+      "id": "80000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "80001",
+      "num": 1,
+      "name": "Pantheon myrmidon",
+      "chromas": false
+    },
+    {
+      "id": "80002",
+      "num": 2,
+      "name": "Pantheon impitoyable",
+      "chromas": false
+    },
+    {
+      "id": "80003",
+      "num": 3,
+      "name": "Persée Pantheon",
+      "chromas": false
+    },
+    {
+      "id": "80004",
+      "num": 4,
+      "name": "Full Metal Pantheon",
+      "chromas": false
+    },
+    {
+      "id": "80005",
+      "num": 5,
+      "name": "Pantheon dace",
+      "chromas": false
+    },
+    {
+      "id": "80006",
+      "num": 6,
+      "name": "Pantheon tueur de dragons",
+      "chromas": true
+    },
+    {
+      "id": "80007",
+      "num": 7,
+      "name": "Pantheon tueur de zombies",
+      "chromas": false
+    },
+    {
+      "id": "80008",
+      "num": 8,
+      "name": "Pantheon boulanger",
+      "chromas": false
+    },
+    {
+      "id": "80016",
+      "num": 16,
+      "name": "Pantheon Pulsefire",
+      "chromas": true
+    },
+    {
+      "id": "80025",
+      "num": 25,
+      "name": "Pantheon déchu",
+      "chromas": true
+    },
+    {
+      "id": "80026",
+      "num": 26,
+      "name": "Pantheon céleste prestige",
+      "chromas": false
+    },
+    {
+      "id": "80036",
+      "num": 36,
+      "name": "Pantheon conquérant de cendres",
+      "chromas": true
+    },
+    {
+      "id": "80038",
+      "num": 38,
+      "name": "Pantheon de la Chasse éternelle",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "PantheonQ",
+      "name": "Lance astrale",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 48,
+        "full": "PantheonQ.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<span class=\"colorFF8C00\">Toucher :</span> Pantheon donne un coup de lance, infligeant <physicalDamage>{{ tapdamagecalc }} pts de dégâts physiques</physicalDamage> aux ennemis touchés. Rend {{ tapcooldownrefund*100 }}% du délai de récupération de cette compétence.<br /><br /><span class=\"colorFF8C00\">Maintenir :</span> Pantheon jette sa lance, infligeant <physicalDamage>{{ holddamagecalc }} pts de dégâts physiques</physicalDamage> au premier ennemi touché et {{ damagefalloff*100 }}% de moins aux cibles suivantes. <br /><br />Cette compétence est renforcée contre les ennemis qui ont moins de {{ crithealththreshold*100 }}% de leurs PV, leur infligeant <physicalDamage>{{ executedamagecalcmodified }} pts de dégâts physiques</physicalDamage> à la place.<br /><br /><span class=\"colorEDDA74\">Bonus d'Ardeur mortelle :</span> il inflige <physicalDamage>{{ empowereddamagecalc }} pts de dégâts physiques bonus</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "25",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts de base",
+          "Dégâts de base de l'exécution",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "575",
+      "datavalues": {},
+      "description": "Pantheon donne un coup de lance ou jette sa lance dans la direction choisie.",
+      "cooldownBurn": "11/10.25/9.5/8.75/8"
+    },
+    {
+      "id": "PantheonW",
+      "name": "Assaut martial",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 48,
+        "full": "PantheonW.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Pantheon se jette sur sa cible, l'<status>étourdissant</status> pendant {{ stunduration }} sec et infligeant <physicalDamage>{{ maxhealthdamagecalc }} des PV max de la cible en dégâts physiques</physicalDamage>.<br /><br /><keywordMajor>Bonus d'Ardeur mortelle :</keywordMajor> la prochaine attaque de Pantheon frappe {{ empowerednumhits }} fois, infligeant un total de <physicalDamage>{{ empowereddamagemultcalcmodified }} pts de dégâts physiques</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "55",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "% PV max",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Pantheon se rue sur une cible, l'étourdissant et lui infligeant des dégâts.",
+      "cooldownBurn": "13/12/11/10/9"
+    },
+    {
+      "id": "PantheonE",
+      "name": "Égide impénétrable",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 48,
+        "full": "PantheonE.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Pantheon lève son bouclier et fait face aux ennemis dans la direction choisie pendant {{ shieldduration }} sec, devenant immunisé contre les dégâts qui proviennent de cette direction (sauf ceux des tourelles) et infligeant <physicalDamage>{{ damagecalc }} pts de dégâts physiques</physicalDamage> sur la durée. À la fin de la canalisation, Pantheon donne un coup de bouclier qui inflige <physicalDamage>{{ shielddamagecalc }} pts de dégâts physiques</physicalDamage>.<br /><br /><span class=\"colorEDDA74\">Bonus d'Ardeur mortelle :</span> quand Pantheon donne son coup de bouclier, il gagne <scaleArmor>+{{ resistscalc }} armure</scaleArmor> et <scaleMR>+{{ resistscalc }} résistance magique</scaleMR> pendant {{ resistsduration }} sec, et <speed>+{{ speedamount*100 }}% de vitesse de déplacement</speed> pendant {{ speedduration }} sec. <br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts du coup de bouclier"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Pantheon lève son bouclier, devenant invulnérable aux attaques auxquelles il fait face, et donne des coups de lance en succession rapide.",
+      "cooldownBurn": "22/21/20/19/18"
+    },
+    {
+      "id": "PantheonR",
+      "name": "Météore",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 48,
+        "full": "PantheonR.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellPassive>Passive :</spellPassive> Pantheon gagne +{{ armorpenetration*100 }}% de pénétration d'armure.<br /><br /><spellActive>Active :</spellActive> Pantheon rassemble ses forces pour sauter dans les airs. Il jette sa lance depuis les airs, infligeant <physicalDamage>{{ spell.pantheonq:holddamagecalc }} pts de dégâts physiques</physicalDamage> dans une petite zone et <status>ralentissant</status> les ennemis de {{ spearslow*100 }}% pendant {{ spearslowduration }} sec. <br /><br />Pantheon s'écrase ensuite tel un météore sur la zone ciblée. Cela inflige jusqu'à <magicDamage>{{ damagecalc }} pts de dégâts magiques</magicDamage> aux ennemis sur une ligne droite (réduits de {{ edgedamagereduction*100 }}% max aux bords de la zone).<br /><br />Cette compétence active immédiatement <span class=\"colorEDDA74\">Ardeur mortelle</span>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "Pénétration d'armure"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "5500",
+      "datavalues": {},
+      "description": "Pantheon rassemble ses forces pour sauter dans les airs, puis il atterrit tel un météore à l'endroit choisi.",
+      "cooldownBurn": "180/165/150"
+    }
+  ],
+  "passive": {
+    "name": "Ardeur mortelle",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 432,
+      "y": 0,
+      "full": "Pantheon_Passive.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Après un certain nombre de compétences ou d'attaques, la prochaine compétence de Pantheon est renforcée."
+  },
+  "created_at": "2025-11-26T15:13:34.38849+00:00",
+  "factions": [
+    "targon"
+  ],
+  "custom_tags": [
+    "mortel",
+    "guerrier"
+  ],
+  "gender": "Male",
+  "species": "Human",
+  "title_en": "the Unbreakable Spear",
+  "lore_en": "Atreus was born on the hostile slopes of Targon, named after a star in the constellation of War. He trained for the Ra'Horak (the militant order of the Rakkor), never the strongest, but the most unrelenting, always getting back up. He forged a true brotherhood with a fellow recruit, Pylas.\n\nThe Forced Ascension: After the Aspect of the Sun refused to aid their people, Atreus and Pylas swore to climb Mount Targon to capture the power of the Aspects. Pylas died upon reaching the summit, and Atreus, the sole survivor, was made host to a divine Aspect—the Aspect of War (Pantheon).\n\nDivine Usurpation: Pantheon judged Atreus unworthy (a man who knew only defeat) and took control of his body to pursue its own ends, casting Atreus into the furthest corners of his own mind.\n\nThe Death of the Aspect: Pantheon was goaded into battle by the Darkin Aatrox. Their fight raged until the impossible occurred: Aatrox drove his god-killing blade into Pantheon’s chest, a blow that carved the constellation of War from the heavens.\n\nThe Mortal Reawakening: As the Aspect faded, Atreus, the man it considered weak, awoke once more. Impaled on Aatrox’s blade, he took a ragged breath and spat in the Darkin's face. His will to live, and anger at the betrayal, were enough to stave off the death that had claimed War itself.\n\nThe New Path: Nursed back to health, Atreus realized he had spent his life looking to the stars, never considering the resilience of mortals who fought because they must, knowing death awaited.\n\nThe True Pantheon: Atreus found his former sworn enemies (barbarians) under siege by Aatrox—mortals suffering in the conflicts of greater powers. Filled with cold rage at both the Darkin and the Aspects, he placed himself between the barbarians and Aatrox.\n\nThe Triumph of Will: Aatrox mocked him, but Atreus’s sheer will, upon hearing the cries of the people, reignited the Aspect's dull weapons. With a mighty leap, he struck a blow that severed the Darkin’s sword arm. The constellation of War blazed back to life in the heavens.\n\nAtreus, having endured the death of a god, forsakes his own name and is reborn among mortals as a new Pantheon, wielding the divine weapons fueled only by the unwavering power of his mortal will. He vowed to stand against all who wield power so great it can only destroy.",
+  "spells_en": [
+    {
+      "id": "PantheonQ",
+      "name": "Comet Spear",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 48,
+        "full": "PantheonQ.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<span class=\"colorFF8C00\">Tap:</span> Pantheon thrusts his spear, dealing <physicalDamage>{{ tapdamagecalc }} physical damage</physicalDamage> to enemies hit. Refunds {{ tapcooldownrefund*100 }}% of this Ability's Cooldown.<br /><br /><span class=\"colorFF8C00\">Hold:</span> Pantheon hurls his spear, dealing <physicalDamage>{{ holddamagecalc }} physical damage</physicalDamage> to the first enemy hit and {{ damagefalloff*100 }}% less to further targets. <br /><br />This Ability is enhanced against enemies below {{ crithealththreshold*100 }}% Health to deal <physicalDamage>{{ executedamagecalcmodified }} physical damage</physicalDamage> instead.<br /><br /><span class=\"colorEDDA74\">Mortal Will Bonus:</span> Deals an additional <physicalDamage>{{ empowereddamagecalc }} physical damage</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "25",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Base Damage",
+          "Execute Base Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "575",
+      "datavalues": {},
+      "description": "Pantheon either thrusts his spear or throws his spear in the chosen direction.",
+      "cooldownBurn": "11/10.25/9.5/8.75/8"
+    },
+    {
+      "id": "PantheonW",
+      "name": "Shield Vault",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 48,
+        "full": "PantheonW.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Pantheon leaps on his target, <status>Stunning</status> for {{ stunduration }} second and dealing <physicalDamage>{{ maxhealthdamagecalc }} max Health physical damage</physicalDamage>.<br /><br /><keywordMajor>Mortal Will Bonus:</keywordMajor> Pantheon's next Attack strikes {{ empowerednumhits }} times, dealing a total of <physicalDamage>{{ empowereddamagemultcalcmodified }} physical damage</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "55",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Max Health %",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Pantheon dashes to a target, damaging and stunning them.",
+      "cooldownBurn": "13/12/11/10/9"
+    },
+    {
+      "id": "PantheonE",
+      "name": "Aegis Assault",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 48,
+        "full": "PantheonE.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Pantheon braces his shield and engages enemies in a chosen direction for {{ shieldduration }} seconds, becoming immune to non-tower damage from that direction and dealing <physicalDamage>{{ damagecalc }} physical damage</physicalDamage> over the duration. After channeling Pantheon slams with his shield, dealing <physicalDamage>{{ shielddamagecalc }} physical damage</physicalDamage>.<br /><br /><span class=\"colorEDDA74\">Mortal Will Bonus:</span> When Pantheon slams his shield he gains <scaleArmor>{{ resistscalc }} Armor</scaleArmor> and <scaleMR>{{ resistscalc }} Magic Resist</scaleMR> for {{ resistsduration }} seconds, and <speed>{{ speedamount*100 }}% Move Speed</speed> for {{ speedduration }} seconds. <br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Shield Slam Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Pantheon sets his shield, becoming invulnerable to damage from the front and striking repeatedly with his spear.",
+      "cooldownBurn": "22/21/20/19/18"
+    },
+    {
+      "id": "PantheonR",
+      "name": "Grand Starfall",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 48,
+        "full": "PantheonR.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Pantheon gains {{ armorpenetration*100 }}% Armor Penetration.<br /><br /><spellActive>Active:</spellActive> Pantheon gathers his strength to leap high into the air. He throws his spear from above which in a small area deals <physicalDamage>{{ spell.pantheonq:holddamagecalc }} physical damage</physicalDamage> and <status>Slows</status> by {{ spearslow*100 }}% for {{ spearslowduration }} seconds. <br /><br />Pantheon then crashes down as a meteor at the target area. Deals up to <magicDamage>{{ damagecalc }} magic damage</magicDamage> to enemies in a line (decreased by up to {{ edgedamagereduction*100 }}% at the edges of the area).<br /><br />This Ability instantly readies <span class=\"colorEDDA74\">Mortal Will</span>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "Armor Penetration"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "5500",
+      "datavalues": {},
+      "description": "Pantheon composes himself and then leaps into the air, landing at a chosen location as a comet.",
+      "cooldownBurn": "180/165/150"
+    }
+  ],
+  "passive_en": {
+    "name": "Mortal Will",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 432,
+      "y": 0,
+      "full": "Pantheon_Passive.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Every few spells or attacks, Pantheon's next spell is empowered."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Support",
+    "Top"
+  ],
+  "skins_en": [
+    {
+      "id": "80000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "80001",
+      "num": 1,
+      "name": "Myrmidon Pantheon",
+      "chromas": false
+    },
+    {
+      "id": "80002",
+      "num": 2,
+      "name": "Ruthless Pantheon",
+      "chromas": false
+    },
+    {
+      "id": "80003",
+      "num": 3,
+      "name": "Perseus Pantheon",
+      "chromas": false
+    },
+    {
+      "id": "80004",
+      "num": 4,
+      "name": "Full Metal Pantheon",
+      "chromas": false
+    },
+    {
+      "id": "80005",
+      "num": 5,
+      "name": "Glaive Warrior Pantheon",
+      "chromas": false
+    },
+    {
+      "id": "80006",
+      "num": 6,
+      "name": "Dragonslayer Pantheon",
+      "chromas": true
+    },
+    {
+      "id": "80007",
+      "num": 7,
+      "name": "Zombie Slayer Pantheon",
+      "chromas": false
+    },
+    {
+      "id": "80008",
+      "num": 8,
+      "name": "Baker Pantheon",
+      "chromas": false
+    },
+    {
+      "id": "80016",
+      "num": 16,
+      "name": "Pulsefire Pantheon",
+      "chromas": true
+    },
+    {
+      "id": "80025",
+      "num": 25,
+      "name": "Ruined Pantheon",
+      "chromas": true
+    },
+    {
+      "id": "80026",
+      "num": 26,
+      "name": "Prestige Ascended Pantheon",
+      "chromas": false
+    },
+    {
+      "id": "80036",
+      "num": 36,
+      "name": "Ashen Conqueror Pantheon",
+      "chromas": true
+    },
+    {
+      "id": "80038",
+      "num": 38,
+      "name": "Chosen of the Wolf Pantheon",
+      "chromas": true
+    }
+  ]
+}

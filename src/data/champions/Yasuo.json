@@ -1,0 +1,528 @@
+{
+  "id": "Yasuo",
+  "key": "157",
+  "name": "Yasuo",
+  "title": "Disgracié",
+  "version": "15.23.1",
+  "lore": "L'Ionien Yasuo est un épéiste agile et résolu, capable de déchaîner contre ses ennemis la puissance de l'air. Alors qu'il était encore un jeune homme fier, il fut accusé à tort d'avoir assassiné son maître. Incapable de prouver son innocence, il dut fuir et fut finalement contraint de tuer son frère pour se défendre. Même après la découverte du véritable meurtrier de son maître, Yasuo ne parvint pas à faire la paix avec sa conscience. Il erre désormais dans son pays natal, et seul le vent guide sa lame.",
+  "tags": [
+    "Fighter",
+    "Assassin"
+  ],
+  "partype": "Impulsion",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 432,
+    "y": 0,
+    "full": "Yasuo.png",
+    "group": "champion",
+    "sprite": "champion5.png"
+  },
+  "skins": [
+    {
+      "id": "157000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "157001",
+      "num": 1,
+      "name": "Yasuo de l'Ouest",
+      "chromas": true
+    },
+    {
+      "id": "157002",
+      "num": 2,
+      "name": "PROJET : Yasuo",
+      "chromas": false
+    },
+    {
+      "id": "157003",
+      "num": 3,
+      "name": "Yasuo lune de sang",
+      "chromas": false
+    },
+    {
+      "id": "157009",
+      "num": 9,
+      "name": "Yasuo héraut de la nuit",
+      "chromas": true
+    },
+    {
+      "id": "157010",
+      "num": 10,
+      "name": "Yasuo de l'Odyssée",
+      "chromas": true
+    },
+    {
+      "id": "157017",
+      "num": 17,
+      "name": "Yasuo boss de combat",
+      "chromas": true
+    },
+    {
+      "id": "157018",
+      "num": 18,
+      "name": "True Damage Yasuo",
+      "chromas": true
+    },
+    {
+      "id": "157035",
+      "num": 35,
+      "name": "True Damage Yasuo prestige",
+      "chromas": false
+    },
+    {
+      "id": "157036",
+      "num": 36,
+      "name": "Yasuo fleur spirituelle",
+      "chromas": true
+    },
+    {
+      "id": "157045",
+      "num": 45,
+      "name": "Yasuo loup de mer",
+      "chromas": true
+    },
+    {
+      "id": "157054",
+      "num": 54,
+      "name": "Yasuo dragon de la vérité",
+      "chromas": false
+    },
+    {
+      "id": "157055",
+      "num": 55,
+      "name": "Yasuo dragon des rêves",
+      "chromas": false
+    },
+    {
+      "id": "157056",
+      "num": 56,
+      "name": "Yasuo guerrier d'encre",
+      "chromas": true
+    },
+    {
+      "id": "157057",
+      "num": 57,
+      "name": "Yasuo guerrier d'encre prestige",
+      "chromas": false
+    },
+    {
+      "id": "157068",
+      "num": 68,
+      "name": "Yasuo de la prédiction",
+      "chromas": true
+    },
+    {
+      "id": "157077",
+      "num": 77,
+      "name": "Yasuo loup de combat",
+      "chromas": true
+    },
+    {
+      "id": "157087",
+      "num": 87,
+      "name": "Yasuo héraut de la nuit genèse",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "YasuoQ1Wrapper",
+      "name": "Tempête d'acier",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 48,
+        "full": "YasuoQ1Wrapper.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Yasuo donne un coup d'estoc, infligeant <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage>. S'il touche un ennemi, il gagne un effet pendant {{ gatheringstormduration }} sec. Quand il possède 2 effets, la prochaine utilisation de cette compétence lance une tornade à distance, infligeant les mêmes dégâts et <status>projetant dans les airs</status> les ennemis pendant {{ knockupdurationtooltiponly }} sec.<br /><br />Si cette compétence est utilisée pendant une ruée, elle donne un coup circulaire au lieu d'un coup d'estoc.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "475",
+      "datavalues": {},
+      "description": "Donne un coup d'estoc, blessant tous les ennemis sur une ligne.<br><br>À l'impact, octroie un effet Tempête menaçante pendant quelques secondes. Après avoir cumulé 2 effets, Tempête d'acier crée une tornade qui projette <font color='#6655CC'>dans les airs</font>.<br><br>Tempête d'acier est considérée comme une attaque de base et est donc renforcée par les mêmes choses.",
+      "cooldownBurn": "4"
+    },
+    {
+      "id": "YasuoW",
+      "name": "Mur de vent",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 48,
+        "full": "YasuoW.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Yasuo crée un mur de vent mobile qui bloque tous les projectiles ennemis pendant 4 sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Largeur",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Crée un mur mobile qui bloque tous les projectiles ennemis pendant 4 sec.",
+      "cooldownBurn": "25/23/21/19/17"
+    },
+    {
+      "id": "YasuoE",
+      "name": "Cercle tranchant",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 48,
+        "full": "YasuoE.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Yasuo se rue à travers une cible, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. Chaque utilisation de cette compétence augmente les dégâts de la prochaine utilisation de <magicDamage>{{ bonusdamageperstack }}</magicDamage> pendant {{ stackduration }} sec, jusqu'à {{ maxstacks }} fois.<br /><br />Cette compétence a un délai de récupération de {{ e2 }} sec par cible.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération par unité",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "475",
+      "datavalues": {},
+      "description": "Yasuo se rue à travers l'ennemi ciblé, infligeant des dégâts magiques. Chaque utilisation augmente les dégâts de la ruée suivante jusqu'à un montant max.<br><br>Ne peut pas être réutilisé sur le même ennemi pendant quelques secondes.<br><br><font color='#99FF99'>Si Tempête d'acier est lancée pendant cette ruée, elle donne un coup circulaire.</font>",
+      "cooldownBurn": "0.5/0.4/0.3/0.2/0.1"
+    },
+    {
+      "id": "YasuoR",
+      "name": "Dernier soupir",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 48,
+        "full": "YasuoR.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Yasuo se téléporte sur un champion ennemi <status>dans les airs</status>, infligeant <physicalDamage>{{ damage }} pts de dégâts physiques</physicalDamage> et maintenant en l'air pendant {{ rknockupduration }} sec de plus tous les ennemis qui étaient <status>dans les airs</status>. Yasuo gagne également le maximum d'<keywordMajor>Impulsion</keywordMajor>, mais perd tous les effets cumulés de <spellName>Tempête d'acier</spellName>.<br /><br />Ensuite, les coups critiques de Yasuo ignorent <scaleArmor>{{ rpercentarmorpen }}% de l'armure bonus</scaleArmor> pendant {{ rbuffduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "1400",
+      "datavalues": {},
+      "description": "Bondit sur un champion ennemi <factionIonia1>projeté dans les airs</factionIonia1> et lui inflige des dégâts physiques. En outre, tous les ennemis qui étaient <factionIonia1>projetés dans les airs</factionIonia1> dans la zone sont maintenus en l'air. Remplit totalement l'Impulsion mais réinitialise tous les effets cumulés de Tempête menaçante.<br><br>Ensuite, pendant une durée modérée, les coups critiques de Yasuo ont une pénétration du bonus d'armure significativement augmentée.",
+      "cooldownBurn": "70/50/30"
+    }
+  ],
+  "passive": {
+    "name": "Voie du vagabond",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 432,
+      "y": 0,
+      "full": "Yasuo_Passive.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "Les chances de coup critique de Yasuo sont augmentées. De plus, Yasuo génère un bouclier quand il se déplace. Le bouclier se déclenche quand un champion ou un monstre lui inflige des dégâts."
+  },
+  "created_at": "2025-11-26T15:13:35.521432+00:00",
+  "factions": [
+    "ionia"
+  ],
+  "custom_tags": [
+    "épéiste",
+    "vagabond"
+  ],
+  "gender": "Male",
+  "species": "Human",
+  "title_en": "the Unforgiven",
+  "lore_en": "An Ionian of deep resolve, Yasuo is an agile swordsman who wields the air itself against his enemies. As a proud young man, he was falsely accused of murdering his master—unable to prove his innocence, he was forced to slay his own brother in self defense. Even after his master's true killer was revealed, Yasuo still could not forgive himself for all he had done, and now wanders his homeland with only the wind to guide his blade.",
+  "spells_en": [
+    {
+      "id": "YasuoQ1Wrapper",
+      "name": "Steel Tempest",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 48,
+        "full": "YasuoQ1Wrapper.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Yasuo thrusts, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage>. If he hits, he gains a stack for {{ gatheringstormduration }} seconds. While he has 2 stacks, his next use of this Ability fires a whirlwind from range, dealing the same damage and <status>Knocking Up</status> for {{ knockupdurationtooltiponly }} second.<br /><br />If used while dashing, this Ability strikes in a circle rather than a stab.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Damage"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "475",
+      "datavalues": {},
+      "description": "Thrusts forward, damaging all enemies in a line.<br><br>On hit, grants a stack of Gathering Storm for a few seconds. At 2 stacks, Steel Tempest fires a whirlwind that knocks <font color='#6655CC'>Airborne</font>.<br><br>Steel Tempest is treated as a basic attack and scales with all the same things.",
+      "cooldownBurn": "4"
+    },
+    {
+      "id": "YasuoW",
+      "name": "Wind Wall",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 48,
+        "full": "YasuoW.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Yasuo creates a drifting wall of wind that blocks all enemy projectiles for 4 seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Width",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Creates a moving wall that blocks all enemy projectiles for 4 seconds.",
+      "cooldownBurn": "25/23/21/19/17"
+    },
+    {
+      "id": "YasuoE",
+      "name": "Sweeping Blade",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 48,
+        "full": "YasuoE.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Yasuo dashes through a target, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>. Each use of this Ability grants <magicDamage>{{ bonusdamageperstack }}</magicDamage> bonus damage to subsequent uses for {{ stackduration }} seconds, stacking up to {{ maxstacks }} times.<br /><br />This Ability has a {{ e2 }} second per-target Cooldown.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Per Unit Cooldown",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "475",
+      "datavalues": {},
+      "description": "Dashes through target enemy, dealing magic damage. Each cast increases subsequent dash's damage, up to a max amount.<br><br>Cannot be re-cast on the same enemy for a few seconds.<br><br><font color='#99FF99'>If Steel Tempest is cast while dashing, it will strike as a circle.</font>",
+      "cooldownBurn": "0.5/0.4/0.3/0.2/0.1"
+    },
+    {
+      "id": "YasuoR",
+      "name": "Last Breath",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 48,
+        "full": "YasuoR.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Yasuo teleports to an <status>Airborne</status> enemy champion, dealing <physicalDamage>{{ damage }} physical damage</physicalDamage> and holding all nearby <status>Airborne</status> enemies up for an additional {{ rknockupduration }} second. Yasuo also gains maximum <keywordMajor>Flow</keywordMajor>, but loses all <spellName>Steel Tempest</spellName> stacks.<br /><br />Afterwards, Yasuo's critical strikes ignore <scaleArmor>{{ rpercentarmorpen }}% bonus Armor</scaleArmor> for {{ rbuffduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "1400",
+      "datavalues": {},
+      "description": "Blinks to an <factionIonia1>Airborne</factionIonia1> enemy champion, dealing physical damage and holding all <factionIonia1>Airborne</factionIonia1> enemies in the area in the air. Grants maximum Flow but resets all stacks of Gathering Storm.<br><br>For a moderate time afterwards, Yasuo's critical strikes gain significant Bonus Armor Penetration.",
+      "cooldownBurn": "70/50/30"
+    }
+  ],
+  "passive_en": {
+    "name": "Way of the Wanderer",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 432,
+      "y": 0,
+      "full": "Yasuo_Passive.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "Yasuo's Critical Strike Chance is increased. Additionally, Yasuo builds toward a shield whenever he is moving. The shield triggers when he takes damage from a champion or monster."
+  },
+  "partype_en": "Flow",
+  "lanes": [
+    "Mid"
+  ],
+  "skins_en": [
+    {
+      "id": "157000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "157001",
+      "num": 1,
+      "name": "High Noon Yasuo",
+      "chromas": true
+    },
+    {
+      "id": "157002",
+      "num": 2,
+      "name": "PROJECT: Yasuo",
+      "chromas": false
+    },
+    {
+      "id": "157003",
+      "num": 3,
+      "name": "Blood Moon Yasuo",
+      "chromas": false
+    },
+    {
+      "id": "157009",
+      "num": 9,
+      "name": "Nightbringer Yasuo",
+      "chromas": true
+    },
+    {
+      "id": "157010",
+      "num": 10,
+      "name": "Odyssey Yasuo",
+      "chromas": true
+    },
+    {
+      "id": "157017",
+      "num": 17,
+      "name": "Battle Boss Yasuo",
+      "chromas": true
+    },
+    {
+      "id": "157018",
+      "num": 18,
+      "name": "True Damage Yasuo",
+      "chromas": true
+    },
+    {
+      "id": "157035",
+      "num": 35,
+      "name": "Prestige True Damage Yasuo",
+      "chromas": false
+    },
+    {
+      "id": "157036",
+      "num": 36,
+      "name": "Spirit Blossom Yasuo",
+      "chromas": true
+    },
+    {
+      "id": "157045",
+      "num": 45,
+      "name": "Sea Dog Yasuo",
+      "chromas": true
+    },
+    {
+      "id": "157054",
+      "num": 54,
+      "name": "Truth Dragon Yasuo",
+      "chromas": false
+    },
+    {
+      "id": "157055",
+      "num": 55,
+      "name": "Dream Dragon Yasuo",
+      "chromas": false
+    },
+    {
+      "id": "157056",
+      "num": 56,
+      "name": "Inkshadow Yasuo",
+      "chromas": true
+    },
+    {
+      "id": "157057",
+      "num": 57,
+      "name": "Prestige Inkshadow Yasuo",
+      "chromas": false
+    },
+    {
+      "id": "157068",
+      "num": 68,
+      "name": "Foreseen Yasuo",
+      "chromas": true
+    },
+    {
+      "id": "157077",
+      "num": 77,
+      "name": "Battle Wolf Yasuo",
+      "chromas": true
+    },
+    {
+      "id": "157087",
+      "num": 87,
+      "name": "Genesis Nightbringer Yasuo",
+      "chromas": false
+    }
+  ]
+}

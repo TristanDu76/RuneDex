@@ -1,0 +1,481 @@
+{
+  "id": "Ekko",
+  "key": "245",
+  "name": "Ekko",
+  "title": "Fractureur du temps",
+  "version": "15.23.1",
+  "lore": "Ekko est né avec un intellect de niveau génie dans les rues de Zaun. Ses parents, Inna et Wyeth, travaillaient sans relâche dans des conditions dangereuses, rêvant d'offrir à leur fils la richesse et les opportunités de Piltover. Cependant, Ekko voyait les choses différemment : au-delà de ses défauts, Zaun était pour lui un lieu dynamique, débordant d'énergie, de débrouillardise et d'innovation pure, un lieu où les gens prospéraient malgré la catastrophe.\r\n\r\nEkko et ses amis, les « Enfants perdus de Zaun » (Lost Children of Zaun), rejetaient l'éducation formelle pour apprendre de la rue, passant leur jeunesse à des courses folles et des escalades téméraires, libres de toute contrainte.\r\n\r\nLors d'une exploration solitaire dans les ruines d'un laboratoire démoli, Ekko fit une découverte capitale : un fragment de cristal Hextech bleu-vert, pétillant d'énergie magique. Bien qu'il sût que l'objet était convoité (les exécuteurs (enforcers) de Piltover étaient à sa recherche), il réussit à s'échapper.\r\n\r\nIl expérimenta avec le cristal, jusqu'à ce qu'une tentative non scientifique provoque son explosion, créant un vortex et des distorsions temporelles. Ekko se vit entouré de plusieurs versions \"écho\" de lui-même, fixant les réalités fragmentées. Grâce à une coordination tendue avec ses paradoxes, il réussit à contenir et réparer la brèche. Finalement, il canalisa le pouvoir temporel du cristal brisé dans un dispositif qu'il appela la Clepsydre-Zéro (Zero Drive).\r\n\r\nLe jour de son anniversaire, alors qu'il escaladait une ancienne tour d'horloge avec ses amis, un poteau céda et l'un de ses amis chuta vers une mort certaine. Instinctivement, Ekko activa son appareil. Le monde se brisa, et il fut ramené en arrière dans le temps. Après plusieurs tentatives et erreurs, il parvint à sauver la vie de son ami. Pour ses compagnons, l'action d'Ekko apparut comme un réflexe surnaturel qui les avait sauvés avant même qu'ils ne réalisent le danger.\r\n\r\nAvec la Clepsydre-Zéro, dont la seule limite est l'épuisement physique dû aux sauts temporels, Ekko et ses amis se lancèrent dans de nouvelles folies, sachant qu'il pouvait les tirer de n'importe quelle situation.\r\n\r\nL'intérêt d'Ekko pour son invention est clair : il rêve du jour où sa ville natale s'élèvera pour éclipser la Cité du Progrès. Il veut prouver que Zaun, née non pas du privilège, mais de l'audace, peut changer son propre avenir. Il a tout le temps du monde pour y arriver.",
+  "tags": [
+    "Assassin",
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 432,
+    "y": 96,
+    "full": "Ekko.png",
+    "group": "champion",
+    "sprite": "champion0.png"
+  },
+  "skins": [
+    {
+      "id": "245000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "245001",
+      "num": 1,
+      "name": "Ekko du désert",
+      "chromas": true
+    },
+    {
+      "id": "245002",
+      "num": 2,
+      "name": "Ekkolier",
+      "chromas": false
+    },
+    {
+      "id": "245003",
+      "num": 3,
+      "name": "PROJET : Ekko",
+      "chromas": false
+    },
+    {
+      "id": "245011",
+      "num": 11,
+      "name": "SKT T1 Ekko",
+      "chromas": false
+    },
+    {
+      "id": "245012",
+      "num": 12,
+      "name": "Ekkorrifiant",
+      "chromas": true
+    },
+    {
+      "id": "245019",
+      "num": 19,
+      "name": "True Damage Ekko",
+      "chromas": true
+    },
+    {
+      "id": "245028",
+      "num": 28,
+      "name": "Ekko Pulsefire",
+      "chromas": true
+    },
+    {
+      "id": "245036",
+      "num": 36,
+      "name": "Ekko Feu volant d'Arcane",
+      "chromas": true
+    },
+    {
+      "id": "245045",
+      "num": 45,
+      "name": "Ekko gardien des étoiles",
+      "chromas": true
+    },
+    {
+      "id": "245046",
+      "num": 46,
+      "name": "Ekko gardien des étoiles prestige",
+      "chromas": false
+    },
+    {
+      "id": "245056",
+      "num": 56,
+      "name": "Breakout True Damage Ekko",
+      "chromas": false
+    },
+    {
+      "id": "245057",
+      "num": 57,
+      "name": "Ekko résistant d'Arcane",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "EkkoQ",
+      "name": "Rétrobang",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 48,
+        "full": "EkkoQ.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ekko lance un appareil qui inflige <magicDamage>{{ initialdamage }} pts de dégâts magiques</magicDamage>. Quand il touche un champion ou atteint sa portée max, l'appareil s'élargit pour créer un champ de force qui <status>ralentit</status> les ennemis de {{ e2 }}%. Après l'élargissement, Ekko fait revenir l'appareil vers lui, infligeant <magicDamage>{{ recalldamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/60/70/80/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@",
+          "Dégâts à l'aller",
+          "Ralentissement",
+          "Dégâts au retour"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1075",
+      "datavalues": {},
+      "description": "Ekko lance une grenade temporelle qui crée un champ de distorsion quand elle touche un champion ennemi, ralentissant toutes les unités prises à l'intérieur et leur infligeant des dégâts. Ensuite, la grenade se contracte et revient vers Ekko, infligeant des dégâts sur sa route.",
+      "cooldownBurn": "9/8.5/8/7.5/7"
+    },
+    {
+      "id": "EkkoW",
+      "name": "Convergence parallèle",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 48,
+        "full": "EkkoW.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> les attaques d'Ekko contre les ennemis qui ont moins de 30% de leurs PV infligent <magicDamage>{{ missinghealthpercent }} des PV manquants en dégâts magiques</magicDamage>.<br /><br /><spellActive>Active :</spellActive> Ekko lance une chronosphère qui dure 1.5 sec après un délai et qui <status>ralentit</status> les ennemis de {{ e0 }}%. Si Ekko entre dans la sphère, il la fait exploser, <status>étourdissant</status> les ennemis pendant {{ e2 }} sec et gagnant un <shield>bouclier de {{ totalshield }} PV</shield>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30/35/40/45/50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "PV du bouclier",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1600",
+      "datavalues": {},
+      "description": "Les attaques de base d'Ekko infligent des dégâts magiques supplémentaires aux champions dont les PV sont bas. Ekko peut lancer Convergence parallèle pour fracturer la ligne temporelle, créant après quelques secondes une anomalie qui ralentit les ennemis pris à l'intérieur. Si Ekko entre dans l'anomalie, il obtient un bouclier et étourdit les ennemis en suspendant dans le temps leur existence.",
+      "cooldownBurn": "22/20/18/16/14"
+    },
+    {
+      "id": "EkkoE",
+      "name": "Rush déphasé",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 48,
+        "full": "EkkoE.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ekko se rue dans une direction et renforce sa prochaine attaque. Cette attaque a une plus grande portée, le téléporte sur sa cible et inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> supplémentaires.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/45/50/55/60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "325",
+      "datavalues": {},
+      "description": "Ekko esquive tout en chargeant sa clepsydre-zéro. Sa prochaine attaque infligera des dégâts supplémentaires et le téléportera près de sa cible en distordant la réalité.",
+      "cooldownBurn": "9/8.5/8/7.5/7"
+    },
+    {
+      "id": "EkkoR",
+      "name": "Chronofracture",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 48,
+        "full": "EkkoR.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Ekko remonte le temps : il entre en stase tout en se téléportant là où il était 4 sec plus tôt, puis il inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> aux ennemis proches. De plus, Ekko récupère <healing>{{ totalbaseheal }} PV</healing>, et ce montant augmente de {{ percenthealampperpercentmissinghealth }}% tous les 1% de PV qu'il a perdus ces 4 dernières secondes.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Soins",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "850",
+      "datavalues": {},
+      "description": "Ekko fracture sa ligne du temps, ce qui le rend impossible à cibler et lui permet de retourner à un moment qui lui est plus favorable. Il retourne là où il était quelques secondes plus tôt et récupère un pourcentage des PV qu'il a perdus pendant ces quelques secondes. Les ennemis proches de sa zone d'arrivée subissent d'importants dégâts.",
+      "cooldownBurn": "110/80/50"
+    }
+  ],
+  "passive": {
+    "name": "RéZonance",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 432,
+      "y": 96,
+      "full": "Ekko_P.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Toutes les trois attaques ou compétences infligeant des dégâts sur une même cible, Ekko inflige des dégâts magiques supplémentaires. Si la cible est un champion, il gagne en plus un bref bonus en vitesse de déplacement.<br><br>"
+  },
+  "created_at": "2025-11-26T15:13:32.649099+00:00",
+  "factions": [
+    "zaun"
+  ],
+  "custom_tags": [
+    "temps",
+    "inventeur"
+  ],
+  "gender": "Male",
+  "species": "Human",
+  "title_en": "the Boy Who Shattered Time",
+  "lore_en": "Ekko was born with a genius-level intellect in the streets of Zaun. His parents, Inna and Wyeth, toiled relentlessly in dangerous conditions, dreaming of providing their son with the wealth and opportunities of Piltover. However, Ekko saw things differently: beyond its flaws, Zaun was a dynamic place, overflowing with energy, resourcefulness, and pure innovation, a place where people flourished despite catastrophe.\r\n\r\nEkko and his friends, the \"Lost Children of Zaun,\" eschewed formal education to learn from the streets, spending their youth in wild foot races and daring climbs, free from any constraints.\r\n\r\nOn a solo trek into the rubble of a demolished laboratory, Ekko made an astonishing find: a shard of blue-green Hextech crystal, glittering with magical energy. Although he knew the object was coveted (Piltover's enforcers were looking for it), he managed to escape.\r\n\r\nHe experimented madly with the crystal until a less-than-scientific attempt caused it to explode, triggering a vortex and temporal distortions. Ekko saw himself surrounded by several \"echo\" versions of himself, staring back in sheer panic amid the fractured continua. Through tense coordination with his paradoxes, he managed to contain and repair the breach. Eventually, he harnessed the shattered crystal’s temporal powers into a device he dubbed the Zero Drive.\r\n\r\nOn his name day, while climbing an ancient clocktower with his friends, a handhold gave way, sending one of his friends tumbling to certain doom. Instinctively, Ekko activated his device. The world shattered, and he was wrenched backward through time. After several attempts and much error, he finally managed to save his friend's life. To his crew, Ekko's action appeared as a supernatural reflex that saved them before anyone even realized the danger.\r\n\r\nWith the Zero Drive, whose only limit is the physical exhaustion from temporal leaps, Ekko and his friends embraced new levels of foolishness, knowing he had the means to pluck them out of danger.\r\n\r\nEkko's interest in his invention is clear: he dreams of the day when his hometown rises up to dwarf the so-called City of Progress. He wants to prove that Zaun, born not from privilege but from sheer daring, can change its own future. He has all the time in the world to do it.",
+  "spells_en": [
+    {
+      "id": "EkkoQ",
+      "name": "Timewinder",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 48,
+        "full": "EkkoQ.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ekko throws a device dealing <magicDamage>{{ initialdamage }} magic damage</magicDamage>. On hitting a champion or reaching the end of its range, it expands into a field that <status>Slows</status> enemies inside by {{ e2 }}%. After it expands, Ekko recalls it, dealing <magicDamage>{{ recalldamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/60/70/80/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "@AbilityResourceName@ Cost",
+          "Outgoing Damage",
+          "Slow",
+          "Return Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1075",
+      "datavalues": {},
+      "description": "Ekko throws a temporal grenade that expands into a time-distortion field upon hitting an enemy champion, slowing and damaging anyone caught inside. After a delay, the grenade rewinds back to Ekko, dealing damage on its return.",
+      "cooldownBurn": "9/8.5/8/7.5/7"
+    },
+    {
+      "id": "EkkoW",
+      "name": "Parallel Convergence",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 48,
+        "full": "EkkoW.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Ekko's Attacks against enemies below 30% Health deal <magicDamage>{{ missinghealthpercent }} missing Health magic damage</magicDamage>.<br /><br /><spellActive>Active:</spellActive> Ekko launches a chronosphere lasting 1.5 seconds after a delay that <status>Slows</status> enemies inside by {{ e0 }}%. If Ekko enters the sphere, he detonates it, <status>Stunning</status> for {{ e2 }} seconds and gaining <shield>{{ totalshield }} Shield</shield>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30/35/40/45/50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Shield Amount",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1600",
+      "datavalues": {},
+      "description": "Ekko's basic attacks deal bonus magic damage to low health enemies. He can cast Parallel Convergence to split the timeline, creating an anomaly after a few seconds that slows enemies caught inside. If Ekko enters the anomaly, he gains shielding and stuns enemies by suspending them in time.",
+      "cooldownBurn": "22/20/18/16/14"
+    },
+    {
+      "id": "EkkoE",
+      "name": "Phase Dive",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 48,
+        "full": "EkkoE.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ekko dashes and empowers his next Attack to have bonus range, teleport him to his target, and deal an additional <magicDamage>{{ totaldamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/45/50/55/60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "325",
+      "datavalues": {},
+      "description": "Ekko rolls evasively while charging up his Z-Drive. His next attack deals bonus damage and warps reality, teleporting him to his target.",
+      "cooldownBurn": "9/8.5/8/7.5/7"
+    },
+    {
+      "id": "EkkoR",
+      "name": "Chronobreak",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 48,
+        "full": "EkkoR.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Ekko turns back time, entering Stasis while teleporting to where he was 4 seconds ago and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> to nearby enemies. In addition, Ekko restores <healing>{{ totalbaseheal }} Health</healing>, increased by {{ percenthealampperpercentmissinghealth }}% for each 1% Health he lost in last 4 seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Healing",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "850",
+      "datavalues": {},
+      "description": "Ekko shatters his timeline, becoming untargetable and rewinding to a more favorable point in time. He returns to whenever he was a few seconds ago, and heals for a percentage of the damage received in that duration. Enemies near his arrival zone take massive damage.",
+      "cooldownBurn": "110/80/50"
+    }
+  ],
+  "passive_en": {
+    "name": "Z-Drive Resonance",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 432,
+      "y": 96,
+      "full": "Ekko_P.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Every third attack or damaging spell on the same target deals bonus magic damage, and grants Ekko a burst of speed if the target is a champion.<br><br>"
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Jungle",
+    "Mid"
+  ],
+  "skins_en": [
+    {
+      "id": "245000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "245001",
+      "num": 1,
+      "name": "Sandstorm Ekko",
+      "chromas": true
+    },
+    {
+      "id": "245002",
+      "num": 2,
+      "name": "Academy Ekko",
+      "chromas": false
+    },
+    {
+      "id": "245003",
+      "num": 3,
+      "name": "PROJECT: Ekko",
+      "chromas": false
+    },
+    {
+      "id": "245011",
+      "num": 11,
+      "name": "SKT T1 Ekko",
+      "chromas": false
+    },
+    {
+      "id": "245012",
+      "num": 12,
+      "name": "Trick or Treat Ekko",
+      "chromas": true
+    },
+    {
+      "id": "245019",
+      "num": 19,
+      "name": "True Damage Ekko",
+      "chromas": true
+    },
+    {
+      "id": "245028",
+      "num": 28,
+      "name": "Pulsefire Ekko",
+      "chromas": true
+    },
+    {
+      "id": "245036",
+      "num": 36,
+      "name": "Arcane Firelight Ekko",
+      "chromas": true
+    },
+    {
+      "id": "245045",
+      "num": 45,
+      "name": "Star Guardian Ekko",
+      "chromas": true
+    },
+    {
+      "id": "245046",
+      "num": 46,
+      "name": "Prestige Star Guardian Ekko",
+      "chromas": false
+    },
+    {
+      "id": "245056",
+      "num": 56,
+      "name": "Breakout True Damage Ekko",
+      "chromas": false
+    },
+    {
+      "id": "245057",
+      "num": 57,
+      "name": "Arcane Last Stand Ekko",
+      "chromas": true
+    }
+  ]
+}

@@ -1,0 +1,364 @@
+{
+  "id": "Nilah",
+  "key": "895",
+  "name": "Nilah",
+  "title": "Joie incarnée",
+  "version": "15.23.1",
+  "lore": "Nilah est une guerrière disciplinée dont l'arrivée à Bilgewater a provoqué une onde de choc. Elle chasse et détruit les plus grandes menaces mythologiques de Runeterra, maniant une lame-fouet faite d'eau prismatique liquide. Elle salue même ses ennemis les plus redoutables avec une joie et un sourire continus.\n\nL'Enfant Érudite : La femme qui deviendra Nilah était initialement une rat de bibliothèque chétive, issue d'une grande famille de Kathkan (une région qui a connu la paix après la chute de Camavor). Elle était obsédée par les mythes et les légendes des anciens héros et des bêtes gigantesques, regrettant que l'âge des héros soit révolu.\n\nLe Conte Favori : Son histoire préférée était le Cycle d'Ashlesh, qui racontait l'histoire du démoniaque Seigneur de la Joie, Ashlesh, un monstre aux multiples membres qui fut piégé dans le septième cercle du monde souterrain, gardé par un ordre mythique de héros.\n\nL'Effacement : Submergée par l'excitation, elle découvrit que l'ordre mythique de héros se trouvait au cœur de la capitale Kathkani. Elle partit à leur recherche... et puis elle disparut. Pendant dix ans, toute connaissance de la personne qu'elle était — son visage, son nom, sa voix — fut effacée de la mémoire vivante. Les archives s'évaporèrent, comme si elle n'avait jamais existé.\n\nLa Transformation et le Pouvoir : La femme qui réapparut dix ans plus tard était une étrangère, possédant une joie incessante et un sourire étrange. La vérité, connue d'elle seule, est qu'elle a obtenu son pouvoir du démon Ashlesh lui-même, soit en l'affrontant, soit en le piégeant, soit en concluant un pacte avec lui.\n\nLe Prix : Elle ne ressent désormais aucune émotion à part une joie continue. C'est le prix de la force extraordinaire qu'elle possède. Elle canalise la forme liquide du démon dans son épée.\n\nLa Nouvelle Héroïne : Elle s'est rebaptisée Nilah, du nom du fleuve légendaire du destin. Elle s'est lancée dans une croisade pour vaincre les plus grandes menaces mythologiques (comme la Grand-mère Vipère, le géniteur des dragons Camavorans). Son objectif est d'affronter des adversaires toujours plus grands et plus anciens, car elle porte le souvenir de ce qu'elle a perdu et le besoin de protéger ceux qui ne peuvent se défendre.",
+  "tags": [
+    "Fighter",
+    "Assassin"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 144,
+    "y": 0,
+    "full": "Nilah.png",
+    "group": "champion",
+    "sprite": "champion3.png"
+  },
+  "skins": [
+    {
+      "id": "895000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "895001",
+      "num": 1,
+      "name": "Nilah gardienne des étoiles",
+      "chromas": true
+    },
+    {
+      "id": "895011",
+      "num": 11,
+      "name": "Nilah de l'assemblée",
+      "chromas": true
+    },
+    {
+      "id": "895021",
+      "num": 21,
+      "name": "Nilah guerrière d'encre",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "NilahQ",
+      "name": "Lame fluide",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 144,
+        "full": "NilahQ.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> Nilah gagne +{{ critarmorpen }} pénétration d'armure, et ses attaques contre les champions lui rendent des <healing>PV équivalents à {{ critlifesteal }} des dégâts infligés</healing>. Toute surcharge de PV issue de cet effet est convertie en <shield>bouclier</shield> pendant {{ shieldduration }} sec.<br /><br /><spellActive>Active :</spellActive> Nilah donne un coup de lame-fouet, infligeant <physicalDamage>{{ damagecalc }} pts de dégâts physiques</physicalDamage>. Ces dégâts augmentent avec ses chances de coup critique. Si une unité ou un bâtiment ennemis sont touchés, Nilah gagne +125 portée d'attaque et <attackSpeed>+{{ bonusattackspeedcalc }}% de vitesse d'attaque</attackSpeed>, et ses attaques infligent <physicalDamage>{{ attacktotaldamagetooltip }} pts de dégâts physiques</physicalDamage> dans une zone conique pendant {{ buffduration }} sec.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Dégâts : <physicalDamage>@TargetDamage@</physicalDamage> = <scaleLevel>@PercentAD*100@% (%i:scaleAD%)</scaleLevel>"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Nilah donne un coup de lame-fouet dans la direction choisie, infligeant des dégâts aux ennemis sur une ligne droite. Cela augmente sa portée d'attaque pendant un court instant.",
+      "cooldownBurn": "4"
+    },
+    {
+      "id": "NilahW",
+      "name": "Voile de liesse",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 144,
+        "full": "NilahW.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Nilah s'enveloppe de brume pendant {{ baseduration }} sec. Elle devient alors fantomatique, gagne <speed>+{{ movespeedpercent*100 }}% de vitesse de déplacement</speed>, esquive les attaques et réduit de {{ magicdamagereduction*100 }}% les <magicDamage>dégâts magiques</magicDamage> qu'elle subit.<br /><br />Pendant la durée de cet effet, toucher des champions alliés les enveloppe également de brume et leur octroie les mêmes bonus pendant {{ sharebaseduration }} sec.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/45/30/15/0",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Vitesse de déplacement",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "150",
+      "datavalues": {},
+      "description": "Nilah s'enveloppe de brume, ce qui augmente sa vitesse de déplacement et lui permet d'esquiver avec grâce toutes les attaques. Tout allié qu'elle touche pendant la durée de la brume gagne aussi cet effet.",
+      "cooldownBurn": "26/25/24/23/22"
+    },
+    {
+      "id": "NilahE",
+      "name": "Torrent",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 144,
+        "full": "NilahE.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "2",
+      "maxrank": 5,
+      "tooltip": "Nilah se rue à travers une unité en infligeant <physicalDamage>{{ dashdamage }} pts de dégâts physiques</physicalDamage> aux ennemis sur son passage.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de rechargement"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "550",
+      "datavalues": {},
+      "description": "Nilah se rue avec enthousiasme vers sa cible, infligeant des dégâts aux ennemis sur son chemin.",
+      "cooldownBurn": "0.5"
+    },
+    {
+      "id": "NilahR",
+      "name": "Apothéose",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 144,
+        "full": "NilahR.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Nilah fait tournoyer sa lame-fouet, infligeant <physicalDamage>{{ damagepertickcalctooltip }} pts de dégâts physiques</physicalDamage> en 1 sec, avant de donner un coup qui inflige <physicalDamage>{{ damagecalc }} pts de dégâts physiques</physicalDamage> et qui <status>attire</status> les ennemis proches vers elle.<br /><br />Nilah récupère des PV équivalents à <healing>{{ champhealingpercent }} (+{{ spell.nilahq:critlifesteal }} Lame fluide) des dégâts infligés aux champions ennemis ({{ otherhealingpercent*100 }}% contre les non-champions)</healing> et elle rend le même montant aux alliés proches. Toute surcharge de PV issue de cet effet est convertie en <shield>bouclier</shield> pendant {{ duration }} sec.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts",
+          "Dégâts par tic"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Faisant gaiement tournoyer sa lame-fouet, Nilah inflige des dégâts aux ennemis qui l'entourent avant de les attirer vers elle.",
+      "cooldownBurn": "110/95/80"
+    }
+  ],
+  "passive": {
+    "name": "Joie éternelle",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 144,
+      "y": 0,
+      "full": "NIlahP.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Nilah gagne plus d'expérience quand elle tue des sbires. De plus, elle renforce et partage les soins et boucliers des alliés proches."
+  },
+  "created_at": "2025-11-26T15:13:34.38849+00:00",
+  "factions": [
+    "bilgewater"
+  ],
+  "custom_tags": [
+    "joie",
+    "démon"
+  ],
+  "gender": "Female",
+  "species": "Human",
+  "title_en": "the Joy Unbound",
+  "lore_en": "Nilah is a disciplined warrior whose sudden arrival in Bilgewater caused an uproar. She hunts and destroys the biggest, most dangerous mythological threats in Runeterra, wielding a whip-blade formed from glittering, prismatic water. She greets even her deadliest foes with an eerie, ceaseless joy and smile.\n\nThe Bookworm Child: The woman who became Nilah was initially a lanky bookworm from a large family in Kathkan (a region that had known peace since Camavor's collapse). She obsessed over myths and legends of ancient heroes and great beasts, wishing the age of heroes had never ended.\n\nThe Favorite Tale: Her favorite story was The Cycle of Ashlesh, which spoke of the primordial demon Lord of Joy, Ashlesh, trapped in an endless, shimmering lake in the seventh layer of the underworld, guarded by a mythical order of heroes.\n\nThe Erasure: Overcome with excitement, she realized the mythical order was beneath her very feet in the Kathkani capital. She set out to find them... and then she vanished. For ten years, all knowledge of the girl she was—her face, name, and voice—was erased from living memory. Records curled and evaporated, as though she had never been born at all.\n\nThe Transformation and Power: The woman who resurfaced ten years later was a stranger, possessed of a ceaseless joy and strange smile. The truth, known only to Nilah, is that she gained her power from the demon Ashlesh itself, whether by battling it or making a pact.\n\nThe Price: She now feels no emotion other than continuous joy. This is the price paid for the extraordinary strength she now wields, channeling the demon's liquid form into her unique sword.\n\nThe New Hero: She renamed herself Nilah, after the legendary river of fate. She embarked on a crusade to conquer the greatest mythological threats (like Grandmother Viper, the progenitor of Camavoran dragons). Her goal is to face greater and greater ancient opponents, driven by the memory of what she has lost and the knowledge that she must protect those who cannot protect themselves.",
+  "spells_en": [
+    {
+      "id": "NilahQ",
+      "name": "Formless Blade",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 144,
+        "full": "NilahQ.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Nilah gains {{ critarmorpen }} Armor Penetration, and her Attacks against champions restore <healing>{{ critlifesteal }} damage dealt as Health</healing>. Overhealing from this is converted into a <shield>Shield</shield> for {{ shieldduration }} seconds.<br /><br /><spellActive>Active:</spellActive> Nilah cracks her whip-blade, dealing <physicalDamage>{{ damagecalc }} physical damage</physicalDamage>, increased by her Critical Strike Chance. If an enemy unit or structure is hit, Nilah gains 125 Attack Range and <attackSpeed>{{ bonusattackspeedcalc }}% Attack Speed</attackSpeed>, and her Attacks hit in a cone as <physicalDamage>{{ attacktotaldamagetooltip }} physical damage</physicalDamage> for {{ buffduration }} seconds.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Damage: <physicalDamage>@TargetDamage@</physicalDamage> = <scaleLevel>@PercentAD*100@% (%i:scaleAD%)</scaleLevel>"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "With a snap of her whip-blade, Nilah damages any enemies she hits in a straight line in her chosen direction. This action extends her attack range for a short duration.",
+      "cooldownBurn": "4"
+    },
+    {
+      "id": "NilahW",
+      "name": "Jubilant Veil",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 144,
+        "full": "NilahW.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Nilah envelops herself in mist for {{ baseduration }} seconds, becoming Ghosted, gaining <speed>{{ movespeedpercent*100 }}% Move Speed</speed>, dodging Attacks, and reducing <magicDamage>magic damage</magicDamage> taken by {{ magicdamagereduction*100 }}%.<br /><br />While active, touching allied champions envelops them in mist, granting the same benefits for {{ sharebaseduration }} seconds.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/45/30/15/0",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Move Speed",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "150",
+      "datavalues": {},
+      "description": "Nilah envelops herself in mist, increasing her movement speed and allowing her to gracefully dodge all incoming attacks. Any allies she touches during the mist's duration will also gain this effect.",
+      "cooldownBurn": "26/25/24/23/22"
+    },
+    {
+      "id": "NilahE",
+      "name": "Slipstream",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 144,
+        "full": "NilahE.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "2",
+      "maxrank": 5,
+      "tooltip": "Nilah dashes through a unit, dealing <physicalDamage>{{ dashdamage }} physical damage</physicalDamage> to any enemies she passes through.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Recharge Time"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "550",
+      "datavalues": {},
+      "description": "Nilah enthusiastically dashes toward her target, dealing damage to any enemies she passes through on the way.",
+      "cooldownBurn": "0.5"
+    },
+    {
+      "id": "NilahR",
+      "name": "Apotheosis",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 144,
+        "full": "NilahR.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Nilah whirls her whip-blade, dealing <physicalDamage>{{ damagepertickcalctooltip }} physical damage</physicalDamage> over 1 second, then finishes with a burst of <physicalDamage>{{ damagecalc }} physical damage</physicalDamage> that also <status>Pulls</status> nearby enemies toward her.<br /><br />Nilah heals herself and nearby allies by <healing>{{ champhealingpercent }} (+{{ spell.nilahq:critlifesteal }} Formless Blade) of her damage dealt to enemy champions' Health ({{ otherhealingpercent*100 }}% for non-champions)</healing>, converting any overhealing into a <shield>Shield</shield> for {{ duration }} seconds.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage",
+          "Damage per Tick"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Twirling her whip-blade in joyful exuberance, Nilah deals damage to enemies around her before pulling them closer with her weapon.",
+      "cooldownBurn": "110/95/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Joy Unending",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 144,
+      "y": 0,
+      "full": "NIlahP.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Nilah gains increased experience from last-hitting minions along with the ability to enhance and share nearby healing and shielding from her allies."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Adc"
+  ],
+  "skins_en": [
+    {
+      "id": "895000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "895001",
+      "num": 1,
+      "name": "Star Guardian Nilah",
+      "chromas": true
+    },
+    {
+      "id": "895011",
+      "num": 11,
+      "name": "Coven Nilah",
+      "chromas": true
+    },
+    {
+      "id": "895021",
+      "num": 21,
+      "name": "Inkshadow Nilah",
+      "chromas": true
+    }
+  ]
+}

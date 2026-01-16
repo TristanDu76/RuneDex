@@ -1,0 +1,516 @@
+{
+  "id": "Karma",
+  "key": "43",
+  "name": "Karma",
+  "title": "Sagesse incarnée",
+  "version": "15.23.1",
+  "lore": "Karma est l'incarnation vivante d'une âme ionienne ancienne, réincarnée à travers les générations. Sa dernière incarnation est celle d'une fille de 12 ans nommée Darha, élevée dans les hauts plateaux de Shon-Xan.\n\nDès son plus jeune âge, Darha fut assaillie par d'étranges visions et mémoires d'une autre vie, la poussant au bord de la folie. Elle fut reconnue par un groupe de moines du Dernier Autel (Lasting Altar) qui cherchaient la nouvelle incarnation de Karma, l'ancien dirigeant spirituel étant récemment décédé. Les moines comprirent que les visions étaient les vies passées qui se précipitaient pour remplir le nouveau réceptacle.\n\nDarha laissa derrière elle sa vie pour devenir Karma, apprenant à communier avec des milliers d'incarnations précédentes. L'enseignement ancestral prônait la paix et l'harmonie : toute mauvaise action engendrerait ses propres répercussions et ne nécessiterait aucune réponse violente.\n\nCependant, Karma (Darha) remettait en question ces principes. Sa foi fut cruellement testée lorsque Noxus envahit Ionia. Des milliers de personnes furent tuées, et Karma sentit le potentiel destructeur immense qui gonflait dans son âme. Les voix du passé l'exhortaient à rester passive, mais une vérité plus profonde la força à agir.\n\nTiraillée par l'agonie, Karma prit une décision radicale : elle confronta un commandant noxien sur son propre navire de guerre et déchaîna sa fureur divine, oblitérant le navire et son équipage en un instant.\n\nBien que de nombreux Ioniens se soient réjouis, les moines la réprimandèrent sévèrement. Ils croyaient qu'elle avait brisé l'harmonie spirituelle de leur patrie, déshonorant toutes les incarnations précédentes de Karma.\n\nKarma les fit taire, choisissant d'écouter non pas les voix du passé, mais l'Esprit d'Ionia dans son cœur. Elle comprit que leur monde changeait, et que la véritable sagesse résidait dans l'acceptation que l'harmonie nécessitait parfois une action, et que la paix venait à un prix élevé.\n\nBien que la guerre soit finie, Ionia reste divisée, de nombreuses factions répondant désormais à la violence par la violence. Karma s'est engagée à guider son peuple vers un chemin plus éclairé : la paix lorsque c'est possible, mais l'action lorsque c'est nécessaire.",
+  "tags": [
+    "Mage",
+    "Support"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 336,
+    "y": 96,
+    "full": "Karma.png",
+    "group": "champion",
+    "sprite": "champion1.png"
+  },
+  "skins": [
+    {
+      "id": "43000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "43001",
+      "num": 1,
+      "name": "Karma déesse du soleil",
+      "chromas": false
+    },
+    {
+      "id": "43002",
+      "num": 2,
+      "name": "Karma sakura",
+      "chromas": false
+    },
+    {
+      "id": "43003",
+      "num": 3,
+      "name": "Karma classique",
+      "chromas": false
+    },
+    {
+      "id": "43004",
+      "num": 4,
+      "name": "Karma de l'Ordre du lotus",
+      "chromas": false
+    },
+    {
+      "id": "43005",
+      "num": 5,
+      "name": "Karma purificatrice",
+      "chromas": false
+    },
+    {
+      "id": "43006",
+      "num": 6,
+      "name": "Karma merveille hivernale",
+      "chromas": false
+    },
+    {
+      "id": "43007",
+      "num": 7,
+      "name": "Karma conquérante",
+      "chromas": true
+    },
+    {
+      "id": "43008",
+      "num": 8,
+      "name": "Karma du pulsar sombre",
+      "chromas": true
+    },
+    {
+      "id": "43019",
+      "num": 19,
+      "name": "Karma héraut de l'aube",
+      "chromas": false
+    },
+    {
+      "id": "43026",
+      "num": 26,
+      "name": "Karma de l'Odyssée",
+      "chromas": false
+    },
+    {
+      "id": "43027",
+      "num": 27,
+      "name": "Karma déchue",
+      "chromas": true
+    },
+    {
+      "id": "43044",
+      "num": 44,
+      "name": "Karma dragon de la tranquillité",
+      "chromas": false
+    },
+    {
+      "id": "43054",
+      "num": 54,
+      "name": "Karma reine des fæs",
+      "chromas": false
+    },
+    {
+      "id": "43061",
+      "num": 61,
+      "name": "Karma infernale",
+      "chromas": false
+    },
+    {
+      "id": "43070",
+      "num": 70,
+      "name": "Karma fleur spirituelle",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "KarmaQ",
+      "name": "Flamme intérieure",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 0,
+        "full": "KarmaQ.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Karma tire une boule d'énergie qui inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> à la première cible touchée et aux ennemis proches et qui les <status>ralentit</status> de {{ slowamount*-100 }}% pendant {{ slowduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/50/60/70/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "950",
+      "datavalues": {},
+      "description": "Karma envoie une boule d'énergie spirituelle qui explose et inflige des dégâts au contact d'une unité ennemie.<br><br>Bonus Mantra : en plus de l'explosion, Mantra augmente la puissance destructrice de Flamme intérieure, créant un cataclysme qui inflige des dégâts après un court délai.",
+      "cooldownBurn": "9/8/7/6/5"
+    },
+    {
+      "id": "KarmaSpiritBind",
+      "name": "Volonté concentrée",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 0,
+        "full": "KarmaSpiritBind.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Karma se lie à un champion ou à un monstre, infligeant <magicDamage>{{ initialdamage }} pts de dégâts magiques</magicDamage> et le révélant pendant {{ tetherduration }} sec. Si le lien n'est pas brisé, la cible subit à nouveau <magicDamage>{{ initialdamage }} pts de dégâts magiques</magicDamage> et est <status>immobilisée</status> pendant {{ rootduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Durée de l'immobilisation",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "675",
+      "datavalues": {},
+      "description": "Karma se lie à un ennemi, lui infligeant des dégâts et le révélant. Si le lien n'est pas brisé, l'ennemi sera immobilisé et subira de nouveau des dégâts.<br><br>Bonus Mantra : Karma renforce le lien, ce qui la soigne et prolonge la durée de l'immobilisation.",
+      "cooldownBurn": "12"
+    },
+    {
+      "id": "KarmaSolKimShield",
+      "name": "Exaltation",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 0,
+        "full": "KarmaSolKimShield.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Karma octroie à un champion allié un <shield>bouclier de {{ totalshield }} PV</shield> pendant {{ shieldduration }} sec et <speed>+{{ movespeed*100 }}% de vitesse de déplacement</speed> pendant {{ movespeedduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "PV du bouclier",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Karma invoque un bouclier qui absorbe les dégâts et qui augmente la vitesse de déplacement de l'allié protégé.<br><br>Bonus Mantra : de l'énergie se diffuse depuis la cible, renforçant le bouclier initial et octroyant Exaltation aux champions alliés proches.",
+      "cooldownBurn": "10/9.5/9/8.5/8"
+    },
+    {
+      "id": "KarmaMantra",
+      "name": "Mantra",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 0,
+        "full": "KarmaMantra.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 4,
+      "tooltip": "Karma renforce sa prochaine compétence dans les 8 sec.<br /><li><spellName>Flamme intérieure</spellName> : inflige <magicDamage>{{ rqimpactdamage }} pts de dégâts magiques</magicDamage> bonus et laisse un cercle de feu, <status>ralentissant</status> les ennemis et infligeant <magicDamage>{{ rqfielddamage }} pts de dégâts magiques</magicDamage> bonus.<li><spellName>Volonté concentrée</spellName> : Karma récupère <healing>{{ rwhealamount }} de ses PV manquants</healing> au début et à la fin du lien, et <status>immobilise</status> la cible pendant {{ rwbonusroot }} sec de plus.<li><spellName>Exaltation</spellName> : Karma octroie <shield>{{ rebonusshield }} pts de bouclier en plus</shield> à sa cible, et elle protège aussi les alliés proches de la cible, leur octroyant un <shield>bouclier de {{ rebonusshieldarea }} PV</shield> et <speed>+{{ removespeed*100 }}% de vitesse de déplacement</speed>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Impact de Flamme persistante",
+          "Dégâts du cercle de Flamme persistante",
+          "Prolongation d'immobilisation de Renouveau",
+          "Bouclier de Défi",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "1100",
+      "datavalues": {},
+      "description": "Karma renforce sa prochaine compétence pour qu'elle ait un effet supplémentaire. Mantra est disponible au niveau 1 sans nécessiter de point de compétence.",
+      "cooldownBurn": "40/38/36/34"
+    }
+  ],
+  "passive": {
+    "name": "Concentration ardente",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 336,
+      "y": 96,
+      "full": "Karma_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Les compétences de Karma qui infligent des dégâts réduisent le délai de récupération de Mantra."
+  },
+  "created_at": "2025-11-26T15:13:33.462857+00:00",
+  "factions": [
+    "ionia"
+  ],
+  "custom_tags": [
+    "illuminée",
+    "esprit"
+  ],
+  "gender": "Female",
+  "species": "Human",
+  "title_en": "the Enlightened One",
+  "lore_en": "Karma is the living embodiment of an ancient Ionian soul, reincarnated through generations. Her most recent incarnation came in the form of a 12-year-old girl named Darha, raised in the northern highlands of Shon-Xan.\n\nFrom a young age, Darha suffered from strange, fitful visions and memories of past lives, nearly driving her to madness. She was recognized by a group of monks from the Lasting Altar, who were searching for the new incarnation of Karma after the divine leader's passing. The monks realized the visions were past lives rushing to fill the new vessel.\n\nDarha bid farewell to her old life to become Karma, learning to commune with thousands of previous incarnations. The ancient teachings advocated peace and harmony: any evil act would bring its own repercussions and required no violent response.\n\nHowever, Karma (Darha) questioned these principles. Her faith was severely tested when Noxus invaded Ionia. Thousands were killed, and Karma felt the immense destructive potential swelling within her soul. The voices of the past urged her to remain passive, but a deeper truth compelled her to act.\n\nAgonizing over this, Karma took radical action: she confronted a Noxian commander on his war frigate and unleashed her divine fury, obliterating the entire vessel and its crew in a heartbeat.\n\nThough many Ionians rejoiced, the monks severely reprimanded her. They believed she had upset the spiritual harmony of their homeland, disgracing all who had borne the name of Karma before her.\n\nKarma silenced them, choosing to listen not to the voices of the past, but to the Spirit of Ionia in her heart. She understood that their world was changing, and true wisdom lay in accepting that harmony sometimes required action, and that peace came at a great cost.\n\nThough the war is long over, Ionia remains divided, with many factions now meeting violence with violence, even against their own neighbors. Karma has pledged to guide them to a more enlightened path: peace when possible, but action when necessary.",
+  "spells_en": [
+    {
+      "id": "KarmaQ",
+      "name": "Inner Flame",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 0,
+        "full": "KarmaQ.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Karma fires a blast of energy, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> to the first target hit and surrounding enemies, and <status>Slowing</status> them by {{ slowamount*-100 }}% for {{ slowduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/50/60/70/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "950",
+      "datavalues": {},
+      "description": "Karma sends forth a ball of spirit energy that explodes and deals damage upon hitting an enemy unit.<br><br>Mantra Bonus: In addition to the explosion, Mantra increases the destructive power of her Inner Flame, creating a cataclysm which deals damage after a short delay.",
+      "cooldownBurn": "9/8/7/6/5"
+    },
+    {
+      "id": "KarmaSpiritBind",
+      "name": "Focused Resolve",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 0,
+        "full": "KarmaSpiritBind.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Karma tethers herself to a champion or jungle monster, dealing <magicDamage>{{ initialdamage }} magic damage</magicDamage> and revealing them for {{ tetherduration }}s. If the tether remains unbroken, the target takes <magicDamage>{{ initialdamage }} magic damage</magicDamage> again and is <status>Rooted</status> for {{ rootduration }}s.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Root Duration",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "675",
+      "datavalues": {},
+      "description": "Karma creates a tether between herself and a targeted enemy, dealing damage and revealing them. If the tether is not broken, the enemy will be rooted and damaged again.<br><br>Mantra Bonus: Karma strengthens the link, healing herself and extending the root duration.",
+      "cooldownBurn": "12"
+    },
+    {
+      "id": "KarmaSolKimShield",
+      "name": "Inspire",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 0,
+        "full": "KarmaSolKimShield.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Karma grants an allied champion <shield>{{ totalshield }} Shield</shield> for {{ shieldduration }}s and <speed>{{ movespeed*100 }}% Move Speed</speed> for {{ movespeedduration }}s.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Shield Amount",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Karma summons a protective shield that absorbs incoming damage and increases the Move Speed of the protected ally.<br><br>Mantra Bonus: Energy radiates out from her target, strengthening the initial shield and applying Inspire to nearby allied champions.",
+      "cooldownBurn": "10/9.5/9/8.5/8"
+    },
+    {
+      "id": "KarmaMantra",
+      "name": "Mantra",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 0,
+        "full": "KarmaMantra.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 4,
+      "tooltip": "Karma empowers her next Ability used within 8 seconds.<br /><li><spellName>Inner Flame</spellName>: Deals an additional <magicDamage>{{ rqimpactdamage }} magic damage</magicDamage> and leaves behind a circle of flame, <status>Slowing</status> enemies and dealing an additional <magicDamage>{{ rqfielddamage }} magic damage</magicDamage>.<li><spellName>Focused Resolve</spellName>: Karma will restore <healing>{{ rwhealamount }} missing Health</healing> at the beginning and end of the tether, and <status>Root</status> for {{ rwbonusroot }}s longer.<li><spellName>Inspire</spellName>: Karma shields her target for <shield>{{ rebonusshield }} more Shield</shield>, and also shields allies near her target, granting them <shield>{{ rebonusshieldarea }} Shield</shield> and <speed>{{ removespeed*100 }}% Move Speed</speed>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Soulflare Impact",
+          "Soulflare Circle Damage",
+          "Renewal Root Extension",
+          "Defiance Shield",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "1100",
+      "datavalues": {},
+      "description": "Karma empowers her next ability to do an additional effect. Mantra is available at level 1 and does not require a skill point.",
+      "cooldownBurn": "40/38/36/34"
+    }
+  ],
+  "passive_en": {
+    "name": "Gathering Fire",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 336,
+      "y": 96,
+      "full": "Karma_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Karma's damaging abilities will reduce the cooldown of Mantra."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Support"
+  ],
+  "skins_en": [
+    {
+      "id": "43000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "43001",
+      "num": 1,
+      "name": "Sun Goddess Karma",
+      "chromas": false
+    },
+    {
+      "id": "43002",
+      "num": 2,
+      "name": "Sakura Karma",
+      "chromas": false
+    },
+    {
+      "id": "43003",
+      "num": 3,
+      "name": "Traditional Karma",
+      "chromas": false
+    },
+    {
+      "id": "43004",
+      "num": 4,
+      "name": "Order of the Lotus Karma",
+      "chromas": false
+    },
+    {
+      "id": "43005",
+      "num": 5,
+      "name": "Warden Karma",
+      "chromas": false
+    },
+    {
+      "id": "43006",
+      "num": 6,
+      "name": "Winter Wonder Karma",
+      "chromas": false
+    },
+    {
+      "id": "43007",
+      "num": 7,
+      "name": "Conqueror Karma",
+      "chromas": true
+    },
+    {
+      "id": "43008",
+      "num": 8,
+      "name": "Dark Star Karma",
+      "chromas": true
+    },
+    {
+      "id": "43019",
+      "num": 19,
+      "name": "Dawnbringer Karma",
+      "chromas": false
+    },
+    {
+      "id": "43026",
+      "num": 26,
+      "name": "Odyssey Karma",
+      "chromas": false
+    },
+    {
+      "id": "43027",
+      "num": 27,
+      "name": "Ruined Karma",
+      "chromas": true
+    },
+    {
+      "id": "43044",
+      "num": 44,
+      "name": "Tranquility Dragon Karma",
+      "chromas": false
+    },
+    {
+      "id": "43054",
+      "num": 54,
+      "name": "Faerie Queen Karma",
+      "chromas": false
+    },
+    {
+      "id": "43061",
+      "num": 61,
+      "name": "Infernal Karma",
+      "chromas": false
+    },
+    {
+      "id": "43070",
+      "num": 70,
+      "name": "Spirit Blossom Karma",
+      "chromas": false
+    }
+  ]
+}

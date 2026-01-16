@@ -1,0 +1,443 @@
+{
+  "id": "Galio",
+  "key": "3",
+  "name": "Galio",
+  "title": "Colosse",
+  "version": "15.23.1",
+  "lore": "La légende de Galio commence après les Guerres runiques, lorsque des réfugiés fuyant le pouvoir destructeur de la magie se cachèrent dans une ancienne forêt pétrifiée. Ils découvrirent que le bois fossilisé était un amortisseur de magie naturel, rendant toute sorcellerie inefficace. Ce sanctuaire devint le fondement de leur nouveau royaume, Demacia.\r\n\r\nLes colons apprirent à mélanger ce bois enchanté avec de la chaux pour créer la Pétrissite, un matériau doté d'une puissante résistance à la magie. Ces murs de Pétrissite rendaient Demacia sûre, mais son armée était vulnérable à la sorcellerie à l'étranger. Le sculpteur Durand fut alors chargé de créer un bouclier en Pétrissite pour l'armée. Il en résulta la statue ailée, Galio, un chef-d'œuvre qui servit de symbole et de protection.\r\n\r\nTiré sur les champs de bataille, Galio était si impressionnant que les envahisseurs figeaient souvent à sa vue. Cependant, personne ne pensa aux conséquences d'exposer la statue à de telles énergies magiques.\r\n\r\nLors d'une bataille prolongée dans les Monts Croc-vert, l'armée démancienne, bombardée par des mages pendant treize jours, se regroupa près de Galio. Alors que leur moral était au plus bas, Galio s'anima soudainement, parlant et bougeant de lui-même pour la première fois. L'accumulation de la magie absorbée lui avait donné vie. Il se jeta devant les soldats, les protégeant, et écrasa les mages ennemis.\r\n\r\nAussi vite qu'il s'était animé, Galio redevint immobile. Il était entré dans la légende. Cependant, ce que les Démaciens ignoraient, c'est que Galio restait conscient même en étant immobile, désirant ardemment revivre les sensations du combat.\r\n\r\nEn observant les mortels passer devant lui année après année, Galio se posa la question de leur disparition. Il comprit finalement la triste vérité : contrairement à lui, les mortels étaient des créatures fragiles et éphémères qui ne pouvaient pas être simplement « réparées ». Sa passion était le combat, mais son but était la protection de ces êtres qu'il comprenait enfin.\r\n\r\nAu fil des siècles, la magie se raréfiant dans le monde de Demacia, Galio est resté majoritairement dormant. Son plus grand espoir est d'être béni par une magie si puissante qu'il ne sera plus jamais forcé de dormir. Ce n'est qu'alors qu'il pourra véritablement servir son objectif : se tenir prêt à se battre comme le protecteur éternel de Demacia.",
+  "tags": [
+    "Tank",
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 288,
+    "y": 0,
+    "full": "Galio.png",
+    "group": "champion",
+    "sprite": "champion1.png"
+  },
+  "skins": [
+    {
+      "id": "3000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "3001",
+      "num": 1,
+      "name": "Galio l'enchanteur",
+      "chromas": false
+    },
+    {
+      "id": "3002",
+      "num": 2,
+      "name": "Galio Hextech",
+      "chromas": false
+    },
+    {
+      "id": "3003",
+      "num": 3,
+      "name": "Galio commando",
+      "chromas": false
+    },
+    {
+      "id": "3004",
+      "num": 4,
+      "name": "Galio cerbère",
+      "chromas": false
+    },
+    {
+      "id": "3005",
+      "num": 5,
+      "name": "Galio séducteur",
+      "chromas": false
+    },
+    {
+      "id": "3006",
+      "num": 6,
+      "name": "Poulio",
+      "chromas": true
+    },
+    {
+      "id": "3013",
+      "num": 13,
+      "name": "Galio infernal",
+      "chromas": true
+    },
+    {
+      "id": "3019",
+      "num": 19,
+      "name": "Galio gardien des dragons",
+      "chromas": true
+    },
+    {
+      "id": "3028",
+      "num": 28,
+      "name": "Galio mythificateur",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "GalioQ",
+      "name": "Vents de guerre",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 0,
+        "full": "GalioQ.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Galio tire deux rafales qui infligent <magicDamage>{{ qmissiledamage }} pts de dégâts magiques</magicDamage> chacune. Quand les rafales se croisent, elles créent une tornade géante qui inflige <magicDamage>{{ percentsuperqdamagett }}% des PV max en dégâts magiques</magicDamage> en {{ superqduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/75/80/85/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts de la rafale",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "825",
+      "datavalues": {},
+      "description": "Galio tire deux rafales de vent qui convergent pour créer une grande tornade infligeant des dégâts sur la durée.",
+      "cooldownBurn": "11/10/9/8/7"
+    },
+    {
+      "id": "GalioW",
+      "name": "Bouclier de Durand",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 0,
+        "full": "GalioW.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> s'il ne subit pas de dégâts pendant {{ passiveshieldooctimer }} sec, Galio gagne un <shield>bouclier pouvant absorber {{ totalpassiveshield }} pts de dégâts magiques</shield>.<br /><br /><charge>Début de la charge :</charge> Galio réduit les dégâts magiques qu'il subit de {{ magicdamagereduction }} et les dégâts physiques qu'il subit de {{ physicaldamagereduction }}, et il se <status>ralentit</status> lui-même de {{ e3 }}%.<br /><br /><release>Relâchement :</release> Galio <status>provoque</status> les champions ennemis pendant {{ e4 }} à {{ e7 }} sec, inflige de <magicDamage>{{ mintotaldamage }}</magicDamage> à <magicDamage>{{ maxtotaldamage }} pts de dégâts magiques</magicDamage> et relance la réduction des dégâts pendant {{ e8 }} sec. La durée, les dégâts et le rayon de la provocation augmentent avec la durée de la charge.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Ratio de PV du bouclier",
+          "Réduction des dégâts magiques",
+          "Réduction des dégâts physiques",
+          "Dégâts maximum",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "275",
+      "datavalues": {},
+      "description": "Galio canalise une posture défensive, ce qui ralentit ses déplacements. Au relâchement de la canalisation, Galio provoque et blesse les ennemis proches.",
+      "cooldownBurn": "18/17/16/15/14"
+    },
+    {
+      "id": "GalioE",
+      "name": "Horion de la justice",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 0,
+        "full": "GalioE.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Galio se jette en avant pour donner un puissant coup de poing, <status>projetant dans les airs</status> pendant {{ knockupduration }} sec et infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> au premier champion touché. Les autres ennemis sur son chemin subissent <magicDamage>{{ pvedamage }} pts de dégâts magiques</magicDamage>.<br /><br />La ruée de Galio s'arrête au contact d'un élément du terrain.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Galio fait un pas en arrière et charge, projetant en l'air le premier champion ennemi qu'il touche.",
+      "cooldownBurn": "11/10/9/8/7"
+    },
+    {
+      "id": "GalioR",
+      "name": "Entrée héroïque",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 0,
+        "full": "GalioR.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Galio désigne la position d'un champion allié comme zone d'atterrissage. Tous les champions alliés dans la zone reçoivent le <shield>bouclier</shield> passif de <spellName>Bouclier de Durand</spellName> pendant {{ temporarywshieldduration }} sec. Galio vole ensuite vers sa zone d'atterrissage.<br /><br />Quand Galio atterrit, il <status>projette dans les airs</status> pendant {{ stundurationouter }} sec et inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Portée",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "4000/4750/5500",
+      "datavalues": {},
+      "description": "Galio désigne la position d'un allié comme zone d'atterrissage, octroyant un bouclier anti-dégâts magiques à tous les alliés dans la zone. Après un délai, Galio s'abat sur cet emplacement, projetant en l'air les ennemis proches.",
+      "cooldownBurn": "180/160/140"
+    }
+  ],
+  "passive": {
+    "name": "Frappe colossale",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 288,
+      "y": 0,
+      "full": "Galio_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Toutes les quelques secondes, la prochaine attaque de base de Galio inflige des dégâts magiques supplémentaires dans une zone."
+  },
+  "created_at": "2025-11-26T15:13:32.943584+00:00",
+  "factions": [
+    "demacia"
+  ],
+  "custom_tags": [
+    "colosse",
+    "construct"
+  ],
+  "gender": "Male",
+  "species": "Golem",
+  "title_en": "the Colossus",
+  "lore_en": "Galio's legend begins in the aftermath of the Rune Wars, when countless refugees fled the destructive power of magic and found sanctuary in an ancient, petrified forest. They discovered that the fossilized trees were a natural magic-dampener, making any sorcery ineffective. This sanctuary became the foundation for their new kingdom, Demacia.\r\n\r\nThe settlers learned to mix the enchanted wood with ash to create Petricite, a material with a powerful resistance to magic. These Petricite walls made Demacia secure, but its army was vulnerable to sorcery abroad. The sculptor Durand was commissioned to fashion a Petricite shield for the military. The result was the winged statue, Galio, a masterpiece that served as a symbol and defense.\r\n\r\nPulled to battlefields, Galio was so awe-inspiring that invaders often froze at the sight of him. However, no one considered what exposing the statue to such unpredictable energies might do.\r\n\r\nDuring a prolonged battle in the Greenfang Mountains, the Demacian army, bombarded by warmages for thirteen days, huddled close to Galio. Just when their morale was lowest, Galio suddenly came to life, moving and speaking for the first time. The accumulation of absorbed magic had given him life. He threw himself in front of the soldiers, shielding them, and crushed the enemy mages.\r\n\r\nAs quickly as he had come to life, Galio ceased moving, returning to his pedestal. He had passed into legend. However, what the Demacians didn't know was that Galio remained conscious even while immobile, longing to experience the sensations of battle once again.\r\n\r\nWatching mortals pass beneath him year after year, Galio pondered their disappearance. He eventually realized the sorrowful truth: unlike himself, mortals were frail, ephemeral creatures who could not simply be \"repaired.\" Fighting had been his passion, but the people were now his purpose.\r\n\r\nAs centuries passed and magic grew rarer in Demacia's world, Galio remained mostly dormant. His greatest hope is to be blessed by magic so powerful that he will never be forced to sleep again. Only then will he be able to truly serve his purpose: to stand and fight as Demacia's eternal protector.",
+  "spells_en": [
+    {
+      "id": "GalioQ",
+      "name": "Winds of War",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 0,
+        "full": "GalioQ.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Galio fires two windblasts that deal <magicDamage>{{ qmissiledamage }} magic damage</magicDamage> each. When the windblasts meet, they combine into a tornado that deals <magicDamage>{{ percentsuperqdamagett }}% max Health magic damage</magicDamage> over {{ superqduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/75/80/85/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Windblast Damage",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "825",
+      "datavalues": {},
+      "description": "Galio fires two windblasts that converge into a large tornado that deals damage over time.",
+      "cooldownBurn": "11/10/9/8/7"
+    },
+    {
+      "id": "GalioW",
+      "name": "Shield of Durand",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 0,
+        "full": "GalioW.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Galio gains a <shield>{{ totalpassiveshield }} Magic Shield</shield> after not taking damage for {{ passiveshieldooctimer }} seconds.<br /><br /><charge>Begin Charging:</charge> Galio reduces incoming magic damage by {{ magicdamagereduction }} and incoming physical damage by {{ physicaldamagereduction }} and <status>Slows</status> himself by {{ e3 }}%.<br /><br /><release>Release:</release> Galio <status>Taunts</status> enemy champions for between {{ e4 }} to {{ e7 }} seconds, deals between <magicDamage>{{ mintotaldamage }}</magicDamage> and <magicDamage>{{ maxtotaldamage }} magic damage</magicDamage>, and refreshes the damage reduction for {{ e8 }} seconds. Taunt duration, damage, and range increase with charge time.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Shield Health Ratio",
+          "Magic Damage Reduction",
+          "Physical Damage Reduction",
+          "Maximum Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "275",
+      "datavalues": {},
+      "description": "Galio charges a defensive stance, moving slowly. Upon releasing the charge, Galio will taunt and damage nearby enemies.",
+      "cooldownBurn": "18/17/16/15/14"
+    },
+    {
+      "id": "GalioE",
+      "name": "Justice Punch",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 0,
+        "full": "GalioE.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Galio lunges forward with a mighty blow, <status>Knocking Up</status> for {{ knockupduration }} seconds and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> to the first champion hit. Other enemies in the way take <magicDamage>{{ pvedamage }} magic damage</magicDamage>.<br /><br />Galio's dash stops on hitting terrain.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Galio will briefly step back and charge, knocking up the first enemy champion he encounters.",
+      "cooldownBurn": "11/10/9/8/7"
+    },
+    {
+      "id": "GalioR",
+      "name": "Hero's Entrance",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 0,
+        "full": "GalioR.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Galio designates an allied champion's position as his landing spot, granting all allied champions in the area <spellName>Shield of Durand's</spellName> passive <shield>Shield</shield> for {{ temporarywshieldduration }} seconds. Galio then flies to his landing zone.<br /><br />When Galio lands, he <status>Knocks Up</status> for {{ stundurationouter }} seconds and deals <magicDamage>{{ totaldamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Range",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "4000/4750/5500",
+      "datavalues": {},
+      "description": "Galio designates an ally's position as his landing spot, granting all allies in the area a magic shield. After a delay Galio smashes down location, knocking up nearby enemies.",
+      "cooldownBurn": "180/160/140"
+    }
+  ],
+  "passive_en": {
+    "name": "Colossal Smash",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 288,
+      "y": 0,
+      "full": "Galio_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Every few seconds, Galio's next basic attack deals bonus magic damage in an area."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Mid",
+    "Support"
+  ],
+  "skins_en": [
+    {
+      "id": "3000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "3001",
+      "num": 1,
+      "name": "Enchanted Galio",
+      "chromas": false
+    },
+    {
+      "id": "3002",
+      "num": 2,
+      "name": "Hextech Galio",
+      "chromas": false
+    },
+    {
+      "id": "3003",
+      "num": 3,
+      "name": "Commando Galio",
+      "chromas": false
+    },
+    {
+      "id": "3004",
+      "num": 4,
+      "name": "Gatekeeper Galio",
+      "chromas": false
+    },
+    {
+      "id": "3005",
+      "num": 5,
+      "name": "Debonair Galio",
+      "chromas": false
+    },
+    {
+      "id": "3006",
+      "num": 6,
+      "name": "Birdio",
+      "chromas": true
+    },
+    {
+      "id": "3013",
+      "num": 13,
+      "name": "Infernal Galio",
+      "chromas": true
+    },
+    {
+      "id": "3019",
+      "num": 19,
+      "name": "Dragon Guardian Galio",
+      "chromas": true
+    },
+    {
+      "id": "3028",
+      "num": 28,
+      "name": "Mythmaker Galio",
+      "chromas": true
+    }
+  ]
+}

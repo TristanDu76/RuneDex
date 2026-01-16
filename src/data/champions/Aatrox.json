@@ -1,0 +1,474 @@
+{
+  "id": "Aatrox",
+  "key": "266",
+  "name": "Aatrox",
+  "title": "Épée des Darkin",
+  "version": "15.23.1",
+  "lore": "Autrefois, Aatrox était un Transfiguré (dieu-guerrier) de l'Empire de Shurima, un champion héroïque dont la lumière et la justice inspiraient tous ceux qui marchaient à ses côtés. Il fut l'un des piliers qui défendirent Shurima de l'invasion du Néant après la rébellion d'Icathia.\r\n\r\nBien qu'il ait vaincu la menace du Néant, la guerre et les horreurs qu'il a vues l'ont profondément et irrévocablement changé. Lorsque Shurima chuta, Aatrox et les autres Transfiguré survivants (les Darkin) se livrèrent à une guerre civile destructrice, menaçant Runeterra tout entière.\r\n\r\nCraignant que les Darkin ne soient une menace pire que le Néant, les Aspects de Targon intervinrent. Ils fournirent aux mortels la ruse pour piéger Aatrox et ses frères. Une force magique surpuissante emprisonna son essence immortelle dans l'épée qu'il avait portée au combat. L'arme devint une prison de conscience, le scellant dans les ténèbres et l'empêchant même de mourir.\r\n\r\nAprès des siècles d'emprisonnement, Aatrox retrouva sa liberté lorsque des mortels insensés tentèrent de manier la lame. Il s'empara de leur corps, les corrompant et les transformant grossièrement pour rappeler sa stature d'antan. Il parcourt le monde, se nourrissant de l'énergie vitale de ses victimes pour maintenir et renforcer son hôte.\r\n\r\nCependant, il réalisa avec amertume qu'il ne pouvait se libérer de la lame : son nouveau corps n'est qu'une moquerie et une cage à peine plus grande. Dans son désespoir et sa haine, Aatrox a désormais un objectif unique et absolu : l'Oblivion. Il cherche à provoquer une bataille apocalyptique finale où la destruction de toute la création entraînera la destruction de la lame et mettra enfin un terme à sa souffrance.",
+  "tags": [
+    "Fighter"
+  ],
+  "partype": "Puits de sang",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 0,
+    "y": 0,
+    "full": "Aatrox.png",
+    "group": "champion",
+    "sprite": "champion0.png"
+  },
+  "skins": [
+    {
+      "id": "266000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "266001",
+      "num": 1,
+      "name": "Aatrox justicier",
+      "chromas": false
+    },
+    {
+      "id": "266002",
+      "num": 2,
+      "name": "Mecha Aatrox",
+      "chromas": true
+    },
+    {
+      "id": "266003",
+      "num": 3,
+      "name": "Aatrox chasseur marin",
+      "chromas": false
+    },
+    {
+      "id": "266007",
+      "num": 7,
+      "name": "Aatrox lune de sang",
+      "chromas": false
+    },
+    {
+      "id": "266008",
+      "num": 8,
+      "name": "Aatrox lune de sang prestige",
+      "chromas": false
+    },
+    {
+      "id": "266009",
+      "num": 9,
+      "name": "Aatrox héros de guerre",
+      "chromas": true
+    },
+    {
+      "id": "266011",
+      "num": 11,
+      "name": "Aatrox de l'Odyssée",
+      "chromas": true
+    },
+    {
+      "id": "266020",
+      "num": 20,
+      "name": "Aatrox lune de sang prestige (2022)",
+      "chromas": false
+    },
+    {
+      "id": "266021",
+      "num": 21,
+      "name": "Aatrox de l'éclipse lunaire",
+      "chromas": true
+    },
+    {
+      "id": "266030",
+      "num": 30,
+      "name": "DRX Aatrox",
+      "chromas": true
+    },
+    {
+      "id": "266031",
+      "num": 31,
+      "name": "DRX Aatrox prestige",
+      "chromas": false
+    },
+    {
+      "id": "266033",
+      "num": 33,
+      "name": "Aatrox primordien",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "AatroxQ",
+      "name": "Épée des Darkin",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 48,
+        "full": "AatroxQ.png",
+        "group": "spell",
+        "sprite": "spell0.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Aatrox abat son épée, infligeant <physicalDamage>{{ qdamage }} pts de dégâts physiques</physicalDamage>. Si l'ennemi est touché par le tranchant, il est brièvement <status>projeté dans les airs</status> et subit <physicalDamage>{{ qedgedamage }} pts de dégâts</physicalDamage> à la place. Cette compétence peut être <recast>réactivée</recast> deux fois, chaque coup changeant de forme et infligeant 25% de dégâts de plus que la précédente.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts",
+          "Ratio de dégâts d'attaque totaux"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Aatrox abat son épée devant lui, infligeant des dégâts physiques. Il peut frapper jusqu'à 3 fois et chaque coup a une zone d'effet différente.",
+      "cooldownBurn": "14/12/10/8/6"
+    },
+    {
+      "id": "AatroxW",
+      "name": "Chaînes infernales",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 48,
+        "full": "AatroxW.png",
+        "group": "spell",
+        "sprite": "spell0.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Aatrox lance une chaîne, <status>ralentissant</status> le premier ennemi touché de {{ wslowpercentage*-100 }}% pendant {{ wslowduration }} sec et infligeant <physicalDamage>{{ wdamage }} pts de dégâts physiques</physicalDamage>. Les champions et les grands monstres doivent quitter la zone d'effet dans les {{ wslowduration }} sec sous peine d'être <status>ramenés de force</status> au point d'impact et de subir à nouveau les dégâts.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts",
+          "Ralentissement"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "825",
+      "datavalues": {},
+      "description": "Aatrox frappe le sol, blessant le premier ennemi touché. Les champions et les grands monstres doivent vite quitter la zone d'effet sous peine d'être ramenés de force au point d'impact et de subir à nouveau les dégâts.",
+      "cooldownBurn": "20/18/16/14/12"
+    },
+    {
+      "id": "AatroxE",
+      "name": "Ruée obscure",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 96,
+        "full": "AatroxE.png",
+        "group": "spell",
+        "sprite": "spell0.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> Aatrox récupère des PV équivalents à <lifeSteal>{{ totalevamp }}</lifeSteal> des dégâts qu'il inflige aux champions.<br /><br /><spellActive>Active :</spellActive> Aatrox se rue dans une direction. Il peut utiliser cette compétence tout en lançant ses autres compétences.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Passivement, Aatrox se soigne quand il blesse des champions ennemis. À l'activation, il se rue dans une direction.",
+      "cooldownBurn": "9/8/7/6/5"
+    },
+    {
+      "id": "AatroxR",
+      "name": "Fossoyeur des mondes",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 96,
+        "full": "AatroxR.png",
+        "group": "spell",
+        "sprite": "spell0.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Aatrox révèle sa vraie forme démoniaque, <status>effrayant</status> les sbires proches pendant {{ rminionfearduration }} sec et gagnant <speed>+{{ rmovementspeedbonus*100 }}% de vitesse de déplacement</speed> (ce bonus diminue en {{ rduration }} sec). Il gagne aussi <scaleAD>+{{ rtotaladamp*100 }}% de dégâts d'attaque</scaleAD> et augmente ses <healing>soins personnels de {{ rhealingamp*100 }}%</healing> pendant la durée.<br /><br />Participer à l'élimination d'un champion prolonge la durée de cet effet de {{ rextension }} sec et réinitialise le bonus en <speed>vitesse de déplacement</speed>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Total du bonus en dégâts d'attaque",
+          "Augmentation des soins",
+          "Vitesse de déplacement",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Aatrox libère sa forme démoniaque, effrayant les sbires ennemis proches et augmentant ses dégâts d'attaque, ses soins et sa vitesse de déplacement. La durée est prolongée s'il participe à l'élimination d'un champion ennemi.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive": {
+    "name": "Posture du massacreur",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 0,
+      "y": 0,
+      "full": "Aatrox_Passive.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Régulièrement, la prochaine attaque de base d'Aatrox inflige des <magicDamage>dégâts magiques</magicDamage> bonus et le soigne, selon un pourcentage des PV max de la cible. "
+  },
+  "created_at": "2025-11-26T15:13:31.919828+00:00",
+  "factions": [
+    "runeterra",
+    "shurima"
+  ],
+  "custom_tags": [
+    "guerrier"
+  ],
+  "gender": "Male",
+  "species": "Darkin",
+  "title_en": "the Darkin Blade",
+  "lore_en": "Once, Aatrox was an Ascended (god-warrior) of the Shuriman Empire, a heroic champion whose light and justice inspired all who marched beside him. He was one of the pillars who defended Shurima from the invasion of the Void following the Icathian rebellion.\r\n\r\nAlthough he defeated the Void threat, the war and the horrors he witnessed fundamentally and irrevocably changed him. When Shurima fell, Aatrox and the other surviving Ascended (the Darkin) plunged into a destructive civil war, threatening all of Runeterra.\r\n\r\nFearing that the Darkin were a worse threat than the Void, the Aspects of Targon intervened. They provided mortals with the knowledge to trap Aatrox and his brethren. A powerful magical force imprisoned his immortal essence within the very sword he had carried into battle. The weapon became a prison of consciousness, sealing him in darkness and stripping him even of the ability to die.\r\n\r\nAfter centuries of confinement, Aatrox regained his freedom when foolish mortals attempted to wield the blade. He seized their bodies, corrupting and crudely reshaping them to mimic his former stature. He roams the world, feeding on the life energy of his victims to maintain and strengthen his host.\r\n\r\nHowever, he bitterly realized that he can never be free of the blade: his new body is merely a mockery and a cage only slightly larger. In his despair and hatred, Aatrox now has a singular and absolute goal: Oblivion. He seeks to incite a final apocalyptic battle where the destruction of all creation will lead to the destruction of the blade and finally put an end to his suffering.",
+  "spells_en": [
+    {
+      "id": "AatroxQ",
+      "name": "The Darkin Blade",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 48,
+        "full": "AatroxQ.png",
+        "group": "spell",
+        "sprite": "spell0.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Aatrox slams his greatsword, dealing <physicalDamage>{{ qdamage }} physical damage</physicalDamage>. If they are hit on the edge, they are briefly <status>Knocked Up</status> and they take <physicalDamage>{{ qedgedamage }}</physicalDamage> instead. This Ability can be <recast>Recast</recast> twice, each one changing shape and dealing 25% more damage than the previous one.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage",
+          "Total AD Ratio"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Aatrox slams his greatsword down, dealing physical damage. He can swing three times, each with a different area of effect.",
+      "cooldownBurn": "14/12/10/8/6"
+    },
+    {
+      "id": "AatroxW",
+      "name": "Infernal Chains",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 48,
+        "full": "AatroxW.png",
+        "group": "spell",
+        "sprite": "spell0.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Aatrox fires a chain, <status>Slowing</status> the first enemy hit by {{ wslowpercentage*-100 }}% for {{ wslowduration }} seconds and dealing <physicalDamage>{{ wdamage }} physical damage</physicalDamage>. Champions and large jungle monsters have {{ wslowduration }} seconds to leave the impact area or be <status>Pulled</status> back to the center and damaged again for the same amount.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage",
+          "Slow"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "825",
+      "datavalues": {},
+      "description": "Aatrox smashes the ground, dealing damage to the first enemy hit. Champions and large monsters have to leave the impact area quickly or they will be dragged to the center and take the damage again.",
+      "cooldownBurn": "20/18/16/14/12"
+    },
+    {
+      "id": "AatroxE",
+      "name": "Umbral Dash",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 96,
+        "full": "AatroxE.png",
+        "group": "spell",
+        "sprite": "spell0.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Aatrox heals for <lifeSteal>{{ totalevamp }}</lifeSteal> of the damage he deals to Champions.<br /><br /><spellActive>Active:</spellActive> Aatrox dashes. He can use this Ability while winding up his other Abilities.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Passively, Aatrox heals when damaging enemy champions. On activation, he dashes in a direction.",
+      "cooldownBurn": "9/8/7/6/5"
+    },
+    {
+      "id": "AatroxR",
+      "name": "World Ender",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 96,
+        "full": "AatroxR.png",
+        "group": "spell",
+        "sprite": "spell0.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Aatrox reveals his true demonic form, <status>Fearing</status> nearby minions for {{ rminionfearduration }} seconds and gaining <speed>{{ rmovementspeedbonus*100 }}% Move Speed</speed> decaying over {{ rduration }} seconds. He also gains <scaleAD>{{ rtotaladamp*100 }}% Attack Damage</scaleAD> and increases <healing>self-healing by {{ rhealingamp*100 }}%</healing> for the duration.<br /><br />Champion takedowns extend the duration of this effect by {{ rextension }} seconds and refresh the <speed>Move Speed</speed> effect.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Total Attack Damage Increase",
+          "Healing Increase",
+          "Move Speed",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Aatrox unleashes his demonic form, fearing nearby enemy minions and gaining attack damage, increased healing, and Move Speed. If he gets a takedown, this effect is extended.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Deathbringer Stance",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 0,
+      "y": 0,
+      "full": "Aatrox_Passive.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Periodically, Aatrox's next basic attack deals bonus <magicDamage>magic damage</magicDamage> and heals him, based on the target's max health. "
+  },
+  "partype_en": "Blood Well",
+  "lanes": [
+    "Top",
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "266000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "266001",
+      "num": 1,
+      "name": "Justicar Aatrox",
+      "chromas": false
+    },
+    {
+      "id": "266002",
+      "num": 2,
+      "name": "Mecha Aatrox",
+      "chromas": true
+    },
+    {
+      "id": "266003",
+      "num": 3,
+      "name": "Sea Hunter Aatrox",
+      "chromas": false
+    },
+    {
+      "id": "266007",
+      "num": 7,
+      "name": "Blood Moon Aatrox",
+      "chromas": false
+    },
+    {
+      "id": "266008",
+      "num": 8,
+      "name": "Prestige Blood Moon Aatrox",
+      "chromas": false
+    },
+    {
+      "id": "266009",
+      "num": 9,
+      "name": "Victorious Aatrox",
+      "chromas": true
+    },
+    {
+      "id": "266011",
+      "num": 11,
+      "name": "Odyssey Aatrox",
+      "chromas": true
+    },
+    {
+      "id": "266020",
+      "num": 20,
+      "name": "Prestige Blood Moon Aatrox (2022)",
+      "chromas": false
+    },
+    {
+      "id": "266021",
+      "num": 21,
+      "name": "Lunar Eclipse Aatrox",
+      "chromas": true
+    },
+    {
+      "id": "266030",
+      "num": 30,
+      "name": "DRX Aatrox",
+      "chromas": true
+    },
+    {
+      "id": "266031",
+      "num": 31,
+      "name": "Prestige DRX Aatrox",
+      "chromas": false
+    },
+    {
+      "id": "266033",
+      "num": 33,
+      "name": "Primordian Aatrox",
+      "chromas": true
+    }
+  ]
+}

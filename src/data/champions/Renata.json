@@ -1,0 +1,388 @@
+{
+  "id": "Renata",
+  "key": "888",
+  "name": "Renata Glasc",
+  "title": "Baronne de la chimie",
+  "version": "15.23.1",
+  "lore": "Renata Glasc s'extirpa des cendres de sa maison natale avec son nom et les recherches alchimiques de ses parents pour seules possessions. Au cours des décennies suivantes, elle devint la Baronne de la chimie la plus riche de Zaun et un génie des affaires capable de faire converger les intérêts de tous vers les siens. Travaillez avec elle et vous serez généreusement récompensé. Opposez-vous à elle et vous ne manquerez pas d'occasions de le regretter. Sachez seulement que tout le monde finit par se rallier à elle.",
+  "tags": [
+    "Support",
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 384,
+    "y": 48,
+    "full": "Renata.png",
+    "group": "champion",
+    "sprite": "champion3.png"
+  },
+  "skins": [
+    {
+      "id": "888000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "888001",
+      "num": 1,
+      "name": "Amirale Glasc",
+      "chromas": true
+    },
+    {
+      "id": "888010",
+      "num": 10,
+      "name": "Renata Glasc Nuit d'effroi",
+      "chromas": true
+    },
+    {
+      "id": "888020",
+      "num": 20,
+      "name": "Renata Glasc La Ilusión",
+      "chromas": true
+    },
+    {
+      "id": "888021",
+      "num": 21,
+      "name": "Renata Glasc La Ilusión prestige",
+      "chromas": false
+    },
+    {
+      "id": "888031",
+      "num": 31,
+      "name": "Renata Glasc bal masqué de la Rose noire",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "RenataQ",
+      "name": "Poignée de main",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 48,
+        "full": "RenataQ.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Renata tire un projectile qui <status>immobilise</status> le premier ennemi touché pendant {{ rootduration }} sec et qui inflige <magicDamage>{{ totaldamage }}</magicDamage> pts de <magicDamage>dégâts magiques</magicDamage>.<br /><br /><recast>Réactivation :</recast> Renata <status>traîne</status> l'ennemi dans une direction, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> aux ennemis ainsi percutés. Si l'ennemi <status>traîné</status> est un champion, les ennemis percutés sont également <status>étourdis</status> pendant {{ stunduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "900",
+      "datavalues": {},
+      "description": "Renata tire un projectile qui immobilise le premier ennemi touché. Elle peut réactiver cette compétence pour lancer cet ennemi dans une direction.",
+      "cooldownBurn": "16"
+    },
+    {
+      "id": "RenataW",
+      "name": "Patronage",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 48,
+        "full": "RenataW.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Renata renforce un champion allié en lui octroyant <attackSpeed>+{{ ascalc }} vitesse d'attaque</attackSpeed> et <speed>+{{ mscalc }} vitesse de déplacement</speed> vers les ennemis. Ces bonus augmentent à <attackSpeed>+{{ finalascalc }} vitesse d'attaque</attackSpeed> et <speed>+{{ finalmscalc }} vitesse de déplacement</speed> en {{ duration }} sec. Participer à l'élimination d'un champion réinitialise la durée du renforcement.<br /><br />Si cet allié reçoit un coup fatal, il récupère tous ses PV, puis il les perd progressivement en 3 sec.<br /><br />S'il participe à l'élimination d'un champion en étant dans cet état, ses PV sont alors fixés à <healing>{{ triumphpercent }}% de leur maximum</healing> et la perte progressive s'arrête.<br /><br /><rules>Pendant la perte de PV progressive, la mort du champion peut être retardée par les soins et autres effets similaires, mais elle ne peut être empêchée qu'en participant à l'élimination d'un champion. Les champions ne peuvent retarder leur mort qu'une fois.</rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Vitesse d'attaque",
+          "Vitesse de déplacement",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Renata renforce un champion allié ; elle retarde sa mort et lui permet même de survivre s'il participe à l'élimination d'un champion.",
+      "cooldownBurn": "28/27/26/25/24"
+    },
+    {
+      "id": "RenataE",
+      "name": "Programme de fidélité",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 48,
+        "full": "RenataE.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Renata tire deux projectiles techno-chimiques, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> aux ennemis proches et aux ennemis touchés, en plus de les <status>ralentir</status> de 30% pendant {{ slowduration }} sec. Les alliés touchés gagnent un <shield>bouclier de {{ shieldcalc }} PV</shield> pendant {{ shieldduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/80/90/100/110",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "PV du bouclier",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Renata tire deux projectiles techno-chimiques, octroyant un bouclier à ses alliés et infligeant des dégâts ainsi qu'un ralentissement aux ennemis touchés.",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "RenataR",
+      "name": "Prise de contrôle hostile",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 48,
+        "full": "RenataR.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Renata envoie un nuage de produits chimiques, rendant <status>fous furieux</status> les ennemis touchés pendant {{ berserkduration }} sec. Ces ennemis attaquent alors les unités les plus proches d'eux (leurs alliés en priorité).<br /><br />Les ennemis <status>fous furieux</status> gagnent <attackSpeed>+{{ bonusattackspeed*100 }}% de vitesse d'attaque</attackSpeed>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Durée"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "2000",
+      "datavalues": {},
+      "description": "Renata envoie un nuage de produits chimiques, rendant fous furieux tous les ennemis touchés.",
+      "cooldownBurn": "150/130/110"
+    }
+  ],
+  "passive": {
+    "name": "Pression",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 384,
+      "y": 48,
+      "full": "Renata_P.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Les attaques de Renata infligent des dégâts supplémentaires et marquent les ennemis. Les alliés de Renata peuvent infliger des dégâts supplémentaires aux ennemis marqués."
+  },
+  "created_at": "2025-11-26T15:13:34.616021+00:00",
+  "factions": [
+    "zaun"
+  ],
+  "custom_tags": [
+    "chimbaron",
+    "industriel"
+  ],
+  "gender": "Female",
+  "species": "Human",
+  "title_en": "the Chem-Baroness",
+  "lore_en": "Renata Glasc rose from the ashes of her childhood home with nothing but her name and her parents' alchemical research. In the decades since, she has become Zaun's wealthiest chem-baron, a business magnate who built her power by tying everyone's interests to her own. Work with her, and be rewarded beyond measure. Work against her, and live to regret it. But everyone comes to her side, eventually.",
+  "spells_en": [
+    {
+      "id": "RenataQ",
+      "name": "Handshake",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 48,
+        "full": "RenataQ.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Renata sends out a missile from her arm, <status>Rooting</status> the first enemy hit for {{ rootduration }} second and dealing <magicDamage>{{ totaldamage }}</magicDamage> <magicDamage>magic damage</magicDamage>.<br /><br /><recast>Recast:</recast> Renata <status>Pulls</status> the enemy in a direction, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> to enemies they are thrown into and <status>Stunning</status> for {{ stunduration }} seconds if the thrown enemy is a champion.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "900",
+      "datavalues": {},
+      "description": "Renata sends out a missile rooting the first enemy hit, and can recast the ability to throw the unit in a direction.",
+      "cooldownBurn": "16"
+    },
+    {
+      "id": "RenataW",
+      "name": "Bailout",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 48,
+        "full": "RenataW.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Renata infuses an ally champion, granting <attackSpeed>{{ ascalc }} Attack Speed</attackSpeed> and <speed>{{ mscalc }} Move Speed</speed> towards enemies, increasing to <attackSpeed>{{ finalascalc }} Attack Speed</attackSpeed> and <speed>{{ finalmscalc }} Move Speed</speed> over {{ duration }} seconds. Takedowns refresh the duration of the buff.<br /><br />If the ally would die, they instead return to full Health, which then decays over 3 seconds.<br /><br />If they get a Takedown while decaying, they will be set to <healing>{{ triumphpercent }}% max Health</healing> and stop decaying.<br /><br /><rules>The Champion's death can be delayed by healing or similar effects while in the decaying state, but cannot be prevented unless the Champion gets a Takedown. Champions can only delay their death once.</rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Attack Speed",
+          "Move Speed",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Renata buffs an allied champion to fight harder, delaying their death and potentially saving them if they get a takedown.",
+      "cooldownBurn": "28/27/26/25/24"
+    },
+    {
+      "id": "RenataE",
+      "name": "Loyalty Program",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 48,
+        "full": "RenataE.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Renata sends out a pair of chemtech missiles, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> and <status>Slowing</status> surrounding enemies and enemies hit by 30% for {{ slowduration }} seconds. Allies hit gain <shield>{{ shieldcalc }} Shield</shield> for {{ shieldduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/80/90/100/110",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "Shield Amount",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Renata sends out a pair of chemtech missiles, shielding allies and damaging and slowing enemies hit.",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "RenataR",
+      "name": "Hostile Takeover",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 48,
+        "full": "RenataR.png",
+        "group": "spell",
+        "sprite": "spell11.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Renata sends out a wave of chemicals, <status>Berserking</status> enemies for {{ berserkduration }} seconds, causing them to Attack the nearest unit, prioritizing their allies.<br /><br />While <status>Berserk</status>, enemies gain <attackSpeed>{{ bonusattackspeed*100 }}% Attack Speed</attackSpeed>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Duration"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "2000",
+      "datavalues": {},
+      "description": "Renata sends out a wave of chemicals, causing any enemies hit to go Berserk.",
+      "cooldownBurn": "150/130/110"
+    }
+  ],
+  "passive_en": {
+    "name": "Leverage",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 384,
+      "y": 48,
+      "full": "Renata_P.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Renata's Attacks deal bonus damage and mark enemies. Renata's allies can damage marked enemies to deal bonus damage."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Support"
+  ],
+  "skins_en": [
+    {
+      "id": "888000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "888001",
+      "num": 1,
+      "name": "Admiral Glasc",
+      "chromas": true
+    },
+    {
+      "id": "888010",
+      "num": 10,
+      "name": "Fright Night Renata Glasc",
+      "chromas": true
+    },
+    {
+      "id": "888020",
+      "num": 20,
+      "name": "La Ilusión Renata Glasc",
+      "chromas": true
+    },
+    {
+      "id": "888021",
+      "num": 21,
+      "name": "Prestige La Ilusión Renata Glasc",
+      "chromas": false
+    },
+    {
+      "id": "888031",
+      "num": 31,
+      "name": "Masque of the Black Rose Renata Glasc",
+      "chromas": false
+    }
+  ]
+}

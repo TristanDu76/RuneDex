@@ -1,0 +1,506 @@
+{
+  "id": "Blitzcrank",
+  "key": "53",
+  "name": "Blitzcrank",
+  "title": "Golem de vapeur",
+  "version": "15.23.1",
+  "lore": "Blitzcrank était à l'origine un des nombreux golems mécaniques lourds conçus à Zaun pour une mission ingrate : nettoyer les déchets et les produits toxiques qui rongeaient les quartiers. Après avoir travaillé dans des conditions extrêmement dangereuses, son châssis fut usé et il fut mis au rebut comme inopérant.\r\n\r\nCependant, l'inventeur Viktor découvrit le golem abandonné. Reconnaissant le potentiel, Viktor entreprit une série d'expériences visant à améliorer l'automate en y introduisant un élément nouveau : l'Hextech. En implantant un cristal Hextech provenant de Shurima dans le châssis, Viktor réussit à le ranimer.\r\n\r\nViktor nomma le golem Blitzcrank en raison des arcs d'éclairs qui dansaient autour de sa carcasse, un effet secondaire inattendu du cristal. Envoyé dans les régions les plus toxiques de Zaun, Blitzcrank se révéla non seulement plus efficace que ses homologues à vapeur, mais, au fil des semaines, Viktor observa un miracle : sa création était en train d'apprendre et d'innover.\r\n\r\nBlitzcrank commença à interpréter et à extrapoler ses directives quotidiennes. Il interagit régulièrement avec les Zaunites pour mieux les servir, atteignant le seuil de l'autonomie et de la conscience de soi. Cependant, son manque de modération et de nuance conduisait parfois à des interprétations extrêmes. Une fois, pour éliminer la source d'une pollution chimique, Blitzcrank décida que la manière la plus efficace était de détruire la totalité de l'usine responsable, la réduisant en décombres.\r\n\r\nLe baron de la chimie propriétaire de l'usine exigea que Viktor détruise le golem. Dévasté (car il en était venu à considérer Blitzcrank comme un être vivant), Viktor complota pour l'exfiltrer en secret. Mais avant qu'il ne puisse agir, il découvrit que Blitzcrank était déjà parti.\r\n\r\nL'évolution de Blitzcrank avait dépassé les contraintes de sa programmation et même l'autorité de son créateur. Ayant atteint une autosuffisance totale, il décida de poursuivre sa mission de manière indépendante. Il se murmure que Blitzcrank a même commencé à améliorer sa propre forme pour mieux assister et protéger les habitants du Puisard, sans avoir besoin d'instructions.\r\n\r\nBlitzcrank patrouille désormais la ville basse, décidant lui-même de la meilleure façon de guider Zaun vers l'avenir, utilisant sa force et ses poings pour mettre au pas les fauteurs de troubles et protégeant les malheureux.",
+  "tags": [
+    "Tank",
+    "Support"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 288,
+    "y": 48,
+    "full": "Blitzcrank.png",
+    "group": "champion",
+    "sprite": "champion0.png"
+  },
+  "skins": [
+    {
+      "id": "53000",
+      "num": 0,
+      "name": "default",
+      "chromas": true
+    },
+    {
+      "id": "53001",
+      "num": 1,
+      "name": "Blitzcrank rouillé",
+      "chromas": false
+    },
+    {
+      "id": "53002",
+      "num": 2,
+      "name": "Blitzcrank gardien de but",
+      "chromas": false
+    },
+    {
+      "id": "53003",
+      "num": 3,
+      "name": "Blitzcrank Boom Boom",
+      "chromas": false
+    },
+    {
+      "id": "53004",
+      "num": 4,
+      "name": "Blitzcrank Jackys Piltover",
+      "chromas": false
+    },
+    {
+      "id": "53005",
+      "num": 5,
+      "name": "Blitzcrank incognito",
+      "chromas": false
+    },
+    {
+      "id": "53006",
+      "num": 6,
+      "name": "iBlitzcrank",
+      "chromas": false
+    },
+    {
+      "id": "53007",
+      "num": 7,
+      "name": "Blitzcrank anti-émeutes",
+      "chromas": false
+    },
+    {
+      "id": "53011",
+      "num": 11,
+      "name": "Blitzcrank boss de combat",
+      "chromas": true
+    },
+    {
+      "id": "53020",
+      "num": 20,
+      "name": "Blitzcrank Lancier Renégat",
+      "chromas": false
+    },
+    {
+      "id": "53021",
+      "num": 21,
+      "name": "Blitzcrank Lancier Parangon",
+      "chromas": false
+    },
+    {
+      "id": "53022",
+      "num": 22,
+      "name": "Blitzcrank chaudron magique",
+      "chromas": true
+    },
+    {
+      "id": "53029",
+      "num": 29,
+      "name": "Blitz et Crank astro-groove",
+      "chromas": true
+    },
+    {
+      "id": "53036",
+      "num": 36,
+      "name": "Blitzcrank héros de guerre",
+      "chromas": true
+    },
+    {
+      "id": "53047",
+      "num": 47,
+      "name": "Blitzcrank des Jeux du zénith",
+      "chromas": true
+    },
+    {
+      "id": "53056",
+      "num": 56,
+      "name": "Blitzcrank abeille",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "RocketGrab",
+      "name": "Grappin propulsé",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 0,
+        "full": "RocketGrab.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Blitzcrank tire sa main droite, <status>attirant</status> vers lui le premier ennemi touché et infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1079",
+      "datavalues": {},
+      "description": "Blitzcrank tire sa main droite pour attraper un adversaire, lui infliger des dégâts et l'attirer vers lui.",
+      "cooldownBurn": "20/19/18/17/16"
+    },
+    {
+      "id": "Overdrive",
+      "name": "Surcharge",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 0,
+        "full": "Overdrive.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Blitzcrank surcharge ses circuits pour gagner <speed>+{{ movespeedmod*100 }}% de vitesse de déplacement</speed> (diminuant progressivement) et <attackSpeed>+{{ attackspeedmod*100 }}% de vitesse d'attaque</attackSpeed> pendant {{ duration }} sec.<br /><br />Ensuite, Blitzcrank est <status>ralenti</status> de {{ movespeedmodreduction*100 }}% pendant {{ slowduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "75",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Vitesse de déplacement",
+          "Vitesse d'attaque"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1",
+      "datavalues": {},
+      "description": "Blitzcrank entre en surcharge pour augmenter considérablement ses vitesses d'attaque et de déplacement. Il est temporairement ralenti à la fin de l'effet.",
+      "cooldownBurn": "15"
+    },
+    {
+      "id": "PowerFist",
+      "name": "Poing d'acier",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 0,
+        "full": "PowerFist.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Blitzcrank charge son poing pour que sa prochaine attaque <status>projette dans les airs</status> pendant {{ ccduration }} sec et inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "25",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "300",
+      "datavalues": {},
+      "description": "Blitzcrank charge son poing pour que sa prochaine attaque inflige le double de dégâts et projette la cible dans les airs.",
+      "cooldownBurn": "7/6.5/6/5.5/5"
+    },
+    {
+      "id": "StaticField",
+      "name": "Champ de stase",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 0,
+        "full": "StaticField.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellPassive>Passive : </spellPassive>quand cette compétence est disponible, les poings de Blitzcrank sont chargés d'électricité, ce qui permet à ses attaques de marquer les ennemis. Après un délai de 1 sec, les ennemis marqués sont frappés par des éclairs qui leur infligent <magicDamage>{{ passivedamage }} pts de dégâts magiques</magicDamage>.<br /><br /><spellActive>Active : </spellActive>Blitzcrank entre en surcharge, infligeant <magicDamage>{{ activedamage }} pts de dégâts magiques</magicDamage> et <status>réduisant au silence</status> les ennemis proches pendant {{ silenceduration }} sec. Les boucliers de ces ennemis sont également détruits.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts de base du passif",
+          "Ratio de puissance de la propriété passive",
+          "Dégâts de base de l'actif",
+          "Délai de récupération de l'actif"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Les ennemis attaqués par Blitzcrank sont marqués et, après 1 sec, sont frappés par des éclairs. De plus, Blitzcrank peut activer cette compétence pour détruire les boucliers des ennemis proches, blessant ces ennemis et les réduisant brièvement au silence.",
+      "cooldownBurn": "60/40/20"
+    }
+  ],
+  "passive": {
+    "name": "Barrière de mana",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 288,
+      "y": 48,
+      "full": "Blitzcrank_ManaBarrier.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Lorsqu'il lui reste peu de PV, Blitzcrank obtient un bouclier dont les PV dépendent de son mana."
+  },
+  "created_at": "2025-11-26T15:13:32.327162+00:00",
+  "factions": [
+    "zaun"
+  ],
+  "custom_tags": [
+    "robot",
+    "création"
+  ],
+  "gender": "Other",
+  "species": "Golem",
+  "title_en": "the Great Steam Golem",
+  "lore_en": "Blitzcrank was originally one of many lumbering mechanical golems designed in Zaun for the thankless task of clearing the toxic waste claiming whole neighborhoods. After toiling in violently hazardous locations, its robust form was worn down, and it was discarded as inoperative.\r\n\r\nHowever, the inventor Viktor discovered the abandoned golem. Recognizing the potential, Viktor began a series of experiments aimed at improving the automaton by introducing a new element: Hextech. By implanting a priceless Hextech crystal sourced from Shurima into the chassis, Viktor successfully brought it back to life.\r\n\r\nViktor named the golem Blitzcrank after the fizzing arcs of lightning that danced around its frame, an unexpected side effect of the crystal. Dispatched to the most toxic regions of Zaun, Blitzcrank proved not only more capable than its steam-powered brethren but, as weeks passed, Viktor watched a miracle unfold: his creation was learning and innovating.\r\n\r\nBlitzcrank began interpreting and extrapolating on its daily directives. It interacted regularly with Zaunites to better serve them, progressing to the cusp of self-awareness and consciousness. However, its lack of moderation and nuance sometimes led to extreme interpretations. Once, tasked with clearing toxic chemicals, Blitzcrank reasoned that the most efficient way to stop pollution was to destroy the entire factory responsible, reducing it to rubble.\r\n\r\nThe chem-baron who owned the ruined factory demanded that Viktor destroy the golem. Devastated (having come to view Blitzcrank as a living being), Viktor concocted a scheme to smuggle his creation to safety. But before he could act, he discovered that Blitzcrank was already gone.\r\n\r\nBlitzcrank's evolution had moved beyond the constraints of its original programming and even the authority of its creator. Having grown into full self-sufficiency, it resolved to pursue its mission independently. Rumors abound that Blitzcrank has even begun to upgrade its own form to better assist and protect the Zaunites without pausing for instruction.\r\n\r\nBlitzcrank now patrols the undercity, deciding for itself how best to shepherd Zaun toward the future, using its strength and metallic fists to put down troublemakers and protect the unfortunate.",
+  "spells_en": [
+    {
+      "id": "RocketGrab",
+      "name": "Rocket Grab",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 0,
+        "full": "RocketGrab.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Blitzcrank fires their right hand, <status>Pulling</status> the first enemy hit towards them and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1079",
+      "datavalues": {},
+      "description": "Blitzcrank fires their right hand to grab an opponent on its path, dealing damage and dragging it back to them.",
+      "cooldownBurn": "20/19/18/17/16"
+    },
+    {
+      "id": "Overdrive",
+      "name": "Overdrive",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 0,
+        "full": "Overdrive.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Blitzcrank supercharges themself, gaining <speed>{{ movespeedmod*100 }}% decaying Move Speed</speed> and <attackSpeed>{{ attackspeedmod*100 }}% Attack Speed</attackSpeed> for {{ duration }} seconds.<br /><br />Afterwards, Blitzcrank is <status>Slowed</status> by {{ movespeedmodreduction*100 }}% for {{ slowduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "75",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Move Speed",
+          "Attack Speed"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1",
+      "datavalues": {},
+      "description": "Blitzcrank super charges themself to get dramatically increased Move and Attack Speed. They are temporarily slowed after the effect ends.",
+      "cooldownBurn": "15"
+    },
+    {
+      "id": "PowerFist",
+      "name": "Power Fist",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 0,
+        "full": "PowerFist.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Blitzcrank charges up their fist, causing their next Attack to <status>Knock Up</status> for {{ ccduration }} second(s) and deal <physicalDamage>{{ totaldamage }} physical damage</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "25",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "300",
+      "datavalues": {},
+      "description": "Blitzcrank charges up their fist to make the next attack deal double damage and pop their target up in the air.",
+      "cooldownBurn": "7/6.5/6/5.5/5"
+    },
+    {
+      "id": "StaticField",
+      "name": "Static Field",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 0,
+        "full": "StaticField.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellPassive>Passive: </spellPassive>While this ability is available, lightning charges Blitzcrank's fists, marking those  Attacked. After 1 second, they are shocked for <magicDamage>{{ passivedamage }} magic damage</magicDamage>.<br /><br /><spellActive>Active: </spellActive>Blitzcrank overcharges, dealing <magicDamage>{{ activedamage }} magic damage</magicDamage> and <status>Silencing</status> nearby enemies for {{ silenceduration }} seconds. Their shields are also destroyed.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Passive Base Damage",
+          "Passive AP Ratio",
+          "Active Base Damage",
+          "Active Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Enemies attacked by Blitzcrank are marked and take lightning damage after 1 second. Additionally, Blitzcrank can activate this ability to remove nearby enemies' shields, damage them, and silence them briefly.",
+      "cooldownBurn": "60/40/20"
+    }
+  ],
+  "passive_en": {
+    "name": "Mana Barrier",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 288,
+      "y": 48,
+      "full": "Blitzcrank_ManaBarrier.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Blitzcrank gains a shield based on their mana when dropping to low health."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Support"
+  ],
+  "skins_en": [
+    {
+      "id": "53000",
+      "num": 0,
+      "name": "default",
+      "chromas": true
+    },
+    {
+      "id": "53001",
+      "num": 1,
+      "name": "Rusty Blitzcrank",
+      "chromas": false
+    },
+    {
+      "id": "53002",
+      "num": 2,
+      "name": "Goalkeeper Blitzcrank",
+      "chromas": false
+    },
+    {
+      "id": "53003",
+      "num": 3,
+      "name": "Boom Boom Blitzcrank",
+      "chromas": false
+    },
+    {
+      "id": "53004",
+      "num": 4,
+      "name": "Piltover Customs Blitzcrank",
+      "chromas": false
+    },
+    {
+      "id": "53005",
+      "num": 5,
+      "name": "Definitely Not Blitzcrank",
+      "chromas": false
+    },
+    {
+      "id": "53006",
+      "num": 6,
+      "name": "iBlitzcrank",
+      "chromas": false
+    },
+    {
+      "id": "53007",
+      "num": 7,
+      "name": "Riot Blitzcrank",
+      "chromas": false
+    },
+    {
+      "id": "53011",
+      "num": 11,
+      "name": "Battle Boss Blitzcrank",
+      "chromas": true
+    },
+    {
+      "id": "53020",
+      "num": 20,
+      "name": "Lancer Rogue Blitzcrank",
+      "chromas": false
+    },
+    {
+      "id": "53021",
+      "num": 21,
+      "name": "Lancer Paragon Blitzcrank",
+      "chromas": false
+    },
+    {
+      "id": "53022",
+      "num": 22,
+      "name": "Witch's Brew Blitzcrank",
+      "chromas": true
+    },
+    {
+      "id": "53029",
+      "num": 29,
+      "name": "Space Groove Blitz & Crank",
+      "chromas": true
+    },
+    {
+      "id": "53036",
+      "num": 36,
+      "name": "Victorious Blitzcrank",
+      "chromas": true
+    },
+    {
+      "id": "53047",
+      "num": 47,
+      "name": "Zenith Games Blitzcrank",
+      "chromas": true
+    },
+    {
+      "id": "53056",
+      "num": 56,
+      "name": "Beezcrank",
+      "chromas": true
+    }
+  ]
+}

@@ -1,0 +1,475 @@
+{
+  "id": "Brand",
+  "key": "63",
+  "name": "Brand",
+  "title": "Vengeur flamboyant",
+  "version": "15.23.1",
+  "lore": "Kegan Rodhe est né marginal dans un petit village côtier du Freljord. Fils d'une guérisseuse et d'un pillard ennemi (un reaver), il était ostracisé par sa communauté, qui l'appelait le « bâtard de pillard ». Sa solitude et son ressentiment s'accumulèrent pendant des années de froid et d'hostilité.\r\n\r\nAprès la mort de sa mère, qui avait passé sa vie à soigner les villageois sans recevoir de respect en retour, Kegan décida de se venger de leur mépris. Il incendia le village et s'enfuit dans la nuit, portant des cicatrices physiques et émotionnelles qui ne guériraient jamais.\r\n\r\nErrant seul dans la toundra gelée, Kegan était prêt à mourir, cherchant en vain un ami ou un visage aimable. Au lieu de la mort, il rencontra un autre marginal : le mystérieux mage Ryze. Ryze, qui voyait un potentiel en lui, prit le jeune homme comme apprenti. Cependant, Kegan était impatient et arrogant, et sa magie naissante était difficile à maîtriser, rendant la relation maître-élève frustrante.\r\n\r\nLa mission principale de Ryze était de localiser et de cacher le pouvoir le plus dangereux de Runeterra : les légendaires Runes-monde (World Runes), des fragments de magie primordiale capables de détruire le monde. Après avoir traqué un tel fragment, Kegan, confronté à une tentation désespérée, choisit de trahir son maître et de s'emparer du pouvoir pour lui-même, ignorant les avertissements de Ryze.\r\n\r\nRyze fut contraint d'assister à l'horreur : Kegan fut consumé par la magie brute, son âme entièrement consumée par le brasier. L'être vengeur de feu et de fureur qui naquit à ce moment-là n'était plus Kegan Rodhe, mais l'entité connue sous le nom de Brand.\r\n\r\nBrand maudit son ancien maître et toute autre chose vivante qui oserait se mettre entre lui et les Runes. Il s'échappa en déchaînant des flammes magiques.\r\n\r\nAu cours des siècles qui ont suivi, Brand a mené une existence anarchique, semblable à un feu de forêt, ne prenant et ne rendant jamais rien au monde. Animé par un feu inextinguible et cherchant d'autres Runes, il parcourt Valoran, jurant vengeance pour des trahisons qu'aucun mortel n'aurait pu subir au cours d'une dizaine de vies, car son corps n'est plus que le véhicule de la fureur du pouvoir élémentaire.",
+  "tags": [
+    "Mage",
+    "Support"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 336,
+    "y": 48,
+    "full": "Brand.png",
+    "group": "champion",
+    "sprite": "champion0.png"
+  },
+  "skins": [
+    {
+      "id": "63000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "63001",
+      "num": 1,
+      "name": "Brand apocalyptique",
+      "chromas": false
+    },
+    {
+      "id": "63002",
+      "num": 2,
+      "name": "Brand Vandale",
+      "chromas": false
+    },
+    {
+      "id": "63003",
+      "num": 3,
+      "name": "Cryo Brand",
+      "chromas": false
+    },
+    {
+      "id": "63004",
+      "num": 4,
+      "name": "Brand zombie",
+      "chromas": true
+    },
+    {
+      "id": "63005",
+      "num": 5,
+      "name": "Brand feu spirituel",
+      "chromas": false
+    },
+    {
+      "id": "63006",
+      "num": 6,
+      "name": "Brand boss de combat",
+      "chromas": false
+    },
+    {
+      "id": "63007",
+      "num": 7,
+      "name": "Brand aux flammes pures",
+      "chromas": true
+    },
+    {
+      "id": "63008",
+      "num": 8,
+      "name": "Brand dragon éternel",
+      "chromas": true
+    },
+    {
+      "id": "63021",
+      "num": 21,
+      "name": "Brand séducteur",
+      "chromas": true
+    },
+    {
+      "id": "63022",
+      "num": 22,
+      "name": "Brand séducteur prestige",
+      "chromas": false
+    },
+    {
+      "id": "63033",
+      "num": 33,
+      "name": "Brand ville démoniaque",
+      "chromas": true
+    },
+    {
+      "id": "63042",
+      "num": 42,
+      "name": "Brand empyréen",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "BrandQ",
+      "name": "Brûlure",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 0,
+        "full": "BrandQ.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Brand lance une boule de feu qui inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> au premier ennemi touché.<br /><br />Si la cible est <keywordMajor>en flammes</keywordMajor>, elle est <status>étourdie</status> pendant {{ stunduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1050",
+      "datavalues": {},
+      "description": "Brand lance une boule de feu devant lui, infligeant des dégâts magiques. Si la cible est en flammes, Brûlure l'étourdit.",
+      "cooldownBurn": "8/7.5/7/6.5/6"
+    },
+    {
+      "id": "BrandW",
+      "name": "Colonne de flammes",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 0,
+        "full": "BrandW.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Brand crée un pilier de feu, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.<br /><br />Les unités <keywordMajor>en flammes</keywordMajor> subissent <magicDamage>{{ empowereddamage }} pts de dégâts</magicDamage> à la place.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/70/80/90/100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "900",
+      "datavalues": {},
+      "description": "Après un court délai, Brand crée une colonne de flammes dans la zone ciblée, infligeant des dégâts magiques aux unités ennemies qui s'y trouvent. Les unités qui sont en flammes subissent 25% de dégâts supplémentaires.",
+      "cooldownBurn": "10/9.5/9/8.5/8"
+    },
+    {
+      "id": "BrandE",
+      "name": "Conflagration",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 0,
+        "full": "BrandE.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Brand provoque une puissante explosion sur sa cible, infligeant <magicDamage>{{ edamagecalc }} pts de dégâts magiques</magicDamage> aux unités proches.<br /><br />Si la cible est <keywordMajor>en flammes</keywordMajor>, la portée de la dispersion est doublée.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/75/80/85/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "625",
+      "datavalues": {},
+      "description": "Brand provoque sur sa cible une puissante explosion qui se propage vers les ennemis proches, infligeant des dégâts magiques. Si la cible est en flammes, la portée de la dispersion de Conflagration est doublée.",
+      "cooldownBurn": "13/12/11/10/9"
+    },
+    {
+      "id": "BrandR",
+      "name": "Pyrolyse",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 0,
+        "full": "BrandR.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Brand libère un torrent de flammes qui rebondit jusqu'à 5 fois sur lui ou un ennemi, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> aux ennemis touchés. Les rebonds visent en priorité les champions affectés par <keywordMajor>Flammes</keywordMajor> mais qui n'ont pas atteint le nombre d'effets max.<br /><br />Si la cible est <keywordMajor>en flammes</keywordMajor>, elle est brièvement <status>ralentie</status> de {{ slowamount }}%.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts par rebond",
+          "Ralentissement",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "750",
+      "datavalues": {},
+      "description": "Brand libère un torrent de flammes qui rebondit jusqu'à 5 fois sur lui et les ennemis proches, infligeant des dégâts magiques aux ennemis touchés. Les rebonds visent en priorité les champions affectés par Flammes mais qui n'ont pas atteint le nombre d'effets max. Si une cible est en flammes, Pyrolyse la ralentit brièvement.",
+      "cooldownBurn": "100/90/80"
+    }
+  ],
+  "passive": {
+    "name": "Flammes",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 336,
+      "y": 48,
+      "full": "BrandP.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Les compétences de Brand enflamment ses cibles, leur infligeant des dégâts en 4 sec (cumulable 3 fois). Si Brand tue un ennemi en flammes, il récupère du mana. Quand Flammes atteint son maximum d'effets cumulés sur un champion ou un grand monstre, Flammes devient instable et explose au bout de 2 sec, infligeant les effets de sort et d'énormes dégâts autour de la victime."
+  },
+  "created_at": "2025-11-26T15:13:32.327162+00:00",
+  "factions": [
+    "freljord",
+    "runeterra"
+  ],
+  "custom_tags": [
+    "fire"
+  ],
+  "gender": "Male",
+  "species": "Human",
+  "title_en": "the Burning Vengeance",
+  "lore_en": "Kegan Rodhe was born an outcast in a small coastal village in the Freljord. The son of a healer and an enemy reaver, he was shunned by his community, who called him the \"reaver-bastard.\" His loneliness and resentment festered over years of cold and hostility.\r\n\r\nAfter the death of his mother, who had spent her life healing the villagers without receiving respect in return, Kegan decided to take revenge for their contempt. He burned down the village and fled into the night, carrying physical and emotional scars that would never heal.\r\n\r\nWandering alone in the frozen tundra, Kegan was ready to die, fruitlessly searching for a friend or a kind face. Instead of death, he met another outcast: the mysterious mage Ryze. Ryze, seeing potential in him, took the young man on as an apprentice. However, Kegan was impatient and arrogant, and his nascent magic was difficult to control, making the master-student relationship frustrating.\r\n\r\nRyze's main mission was to track down and hide Runeterra's most dangerous power: the legendary World Runes, fragments of primal magic capable of unmaking the world. After tracking down one such fragment, Kegan, facing desperate temptation, chose to betray his master and seize the power for himself, ignoring Ryze's warnings.\r\n\r\nRyze was forced to watch in horror: Kegan was burned away by the raw magic, his soul utterly consumed by the conflagration. The vengeful being of fire and fury born in that moment was no longer Kegan Rodhe, but the entity that would eventually become known as Brand.\r\n\r\nBrand cursed his former master and every other living thing that would ever come between him and the Runes. He lashed out with magical flames and escaped.\r\n\r\nOver the centuries since that day, Brand has lived an anarchic, wildfire existence, taking and never giving anything back to the world. Driven by an inextinguishable fire and seeking other Runes, he roams Valoran, swearing vengeance for betrayals no mortal could have suffered in ten lifetimes, for his body is now merely the vessel for the fury of elemental power.",
+  "spells_en": [
+    {
+      "id": "BrandQ",
+      "name": "Sear",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 0,
+        "full": "BrandQ.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Brand launches a fireball that deals <magicDamage>{{ totaldamage }} magic damage</magicDamage> to the first enemy hit.<br /><br />If the target is <keywordMajor>Ablaze</keywordMajor>, they will be <status>Stunned</status> for {{ stunduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1050",
+      "datavalues": {},
+      "description": "Brand launches a ball of fire forward that deals magic damage. If the target is ablaze, Sear will stun the target.",
+      "cooldownBurn": "8/7.5/7/6.5/6"
+    },
+    {
+      "id": "BrandW",
+      "name": "Pillar of Flame",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 0,
+        "full": "BrandW.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Brand creates a pillar of pure fire, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>.<br /><br />Units that are <keywordMajor>Ablaze</keywordMajor> take <magicDamage>{{ empowereddamage }} damage</magicDamage> instead.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/70/80/90/100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "900",
+      "datavalues": {},
+      "description": "After a short delay, Brand creates a Pillar of Flame at a target area, dealing magic damage to enemy units within the area. Units that are ablaze take an additional 25% damage.",
+      "cooldownBurn": "10/9.5/9/8.5/8"
+    },
+    {
+      "id": "BrandE",
+      "name": "Conflagration",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 0,
+        "full": "BrandE.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Brand conjures a powerful blast at his target, dealing <magicDamage>{{ edamagecalc }} magic damage</magicDamage> to surrounding units.<br /><br />If the target is <keywordMajor>Ablaze</keywordMajor>, the spread range is doubled.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/75/80/85/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "625",
+      "datavalues": {},
+      "description": "Brand conjures a powerful blast at his target that spreads to nearby enemies, dealing magic damage. If the target is ablaze, Conflagration's spread is doubled.",
+      "cooldownBurn": "13/12/11/10/9"
+    },
+    {
+      "id": "BrandR",
+      "name": "Pyroclasm",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 0,
+        "full": "BrandR.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Brand unleashes a devastating torrent of fire that can bounce to Brand or another enemy up to 5 times, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> to enemies each bounce. Bounces prioritize stacking <keywordMajor>Blaze</keywordMajor> to max on champions.<br /><br />If the target is <keywordMajor>Ablaze</keywordMajor>, they are briefly <status>Slowed</status> by {{ slowamount }}%.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage per Bounce",
+          "Slow",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "750",
+      "datavalues": {},
+      "description": "Brand unleashes a devastating torrent of fire that bounces up to 5 times off of Brand and nearby enemies, dealing magic damage to enemies each time bounce. Bounces prioritize stacking Blaze to max on Champions. If a target is ablaze, Pyroclasm will briefly slow them.",
+      "cooldownBurn": "100/90/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Blaze",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 336,
+      "y": 48,
+      "full": "BrandP.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Brand's spells light his targets ablaze, dealing damage over 4 seconds, stacking up to 3 times. If Brand kills an enemy while it is ablaze he regains mana. When Blaze reaches max stacks on a Champion or large monster, it becomes unstable. It detonates in 2 seconds, applying spell effects and dealing massive damage in an area around the victim."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Support",
+    "Mid"
+  ],
+  "skins_en": [
+    {
+      "id": "63000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "63001",
+      "num": 1,
+      "name": "Apocalyptic Brand",
+      "chromas": false
+    },
+    {
+      "id": "63002",
+      "num": 2,
+      "name": "Vandal Brand",
+      "chromas": false
+    },
+    {
+      "id": "63003",
+      "num": 3,
+      "name": "Cryocore Brand",
+      "chromas": false
+    },
+    {
+      "id": "63004",
+      "num": 4,
+      "name": "Zombie Brand",
+      "chromas": true
+    },
+    {
+      "id": "63005",
+      "num": 5,
+      "name": "Spirit Fire Brand",
+      "chromas": false
+    },
+    {
+      "id": "63006",
+      "num": 6,
+      "name": "Battle Boss Brand",
+      "chromas": false
+    },
+    {
+      "id": "63007",
+      "num": 7,
+      "name": "Arclight Brand",
+      "chromas": true
+    },
+    {
+      "id": "63008",
+      "num": 8,
+      "name": "Eternal Dragon Brand",
+      "chromas": true
+    },
+    {
+      "id": "63021",
+      "num": 21,
+      "name": "Debonair Brand",
+      "chromas": true
+    },
+    {
+      "id": "63022",
+      "num": 22,
+      "name": "Prestige Debonair Brand",
+      "chromas": false
+    },
+    {
+      "id": "63033",
+      "num": 33,
+      "name": "Street Demons Brand",
+      "chromas": true
+    },
+    {
+      "id": "63042",
+      "num": 42,
+      "name": "Empyrean Brand",
+      "chromas": true
+    }
+  ]
+}

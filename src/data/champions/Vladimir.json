@@ -1,0 +1,484 @@
+{
+  "id": "Vladimir",
+  "key": "8",
+  "name": "Vladimir",
+  "title": "Saigneur pourpre",
+  "version": "15.23.1",
+  "lore": "Assoiffé de sang humain, Vladimir influe sur la politique de Noxus depuis les premiers jours de l'empire. En plus d'allonger surnaturellement sa vie, sa maîtrise de l'hémomancie lui permet de contrôler les esprits et les corps des autres aussi aisément que les siens. Dans les flamboyants salons de l'aristocratie noxienne, cela lui a permis de créer autour de lui un culte de la personnalité. Cependant, dans les bas-fonds, il saigne littéralement ses ennemis à blanc.",
+  "tags": [
+    "Mage",
+    "Fighter"
+  ],
+  "partype": "Afflux sanguin",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 144,
+    "y": 0,
+    "full": "Vladimir.png",
+    "group": "champion",
+    "sprite": "champion5.png"
+  },
+  "skins": [
+    {
+      "id": "8000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "8001",
+      "num": 1,
+      "name": "Comte Vladimir",
+      "chromas": false
+    },
+    {
+      "id": "8002",
+      "num": 2,
+      "name": "Marquis Vladimir",
+      "chromas": false
+    },
+    {
+      "id": "8003",
+      "num": 3,
+      "name": "Vladimir nosferatu",
+      "chromas": false
+    },
+    {
+      "id": "8004",
+      "num": 4,
+      "name": "Vladimir biker",
+      "chromas": false
+    },
+    {
+      "id": "8005",
+      "num": 5,
+      "name": "Vladimir sanguinaire",
+      "chromas": false
+    },
+    {
+      "id": "8006",
+      "num": 6,
+      "name": "Vladimir voleur d'âmes",
+      "chromas": false
+    },
+    {
+      "id": "8007",
+      "num": 7,
+      "name": "Vladiplômé",
+      "chromas": false
+    },
+    {
+      "id": "8008",
+      "num": 8,
+      "name": "Vladimir des eaux sombres",
+      "chromas": true
+    },
+    {
+      "id": "8014",
+      "num": 14,
+      "name": "Vladimir héraut de la nuit",
+      "chromas": true
+    },
+    {
+      "id": "8021",
+      "num": 21,
+      "name": "Vladimir dévoreur cosmique",
+      "chromas": true
+    },
+    {
+      "id": "8030",
+      "num": 30,
+      "name": "Vladimir Café Chouchous",
+      "chromas": true
+    },
+    {
+      "id": "8039",
+      "num": 39,
+      "name": "Vladimir de l'Alliance brisée",
+      "chromas": true
+    },
+    {
+      "id": "8048",
+      "num": 48,
+      "name": "Vladimir bal masqué de la Rose noire",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "VladimirQ",
+      "name": "Transfusion",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 144,
+        "full": "VladimirQ.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Vladimir draine l'essence vitale de sa cible, lui infligeant <magicDamage>{{ basedamagetooltip }} pts de dégâts magiques</magicDamage> et récupérant <healing>{{ basehealtooltip }} PV</healing>. Après avoir utilisé cette compétence deux fois, Vladimir gagne <speed>+{{ movementspeedonq2 }}% de vitesse de déplacement</speed> pendant 0.5 sec et renforce la prochaine utilisation de cette compétence pendant {{ e8 }} sec.<br /><br />La version renforcée inflige à la place <magicDamage>{{ empowereddamagetooltip }} pts de dégâts magiques</magicDamage> et rend <healing>{{ empoweredhealtooltip }} PV supplémentaires plus {{ empoweredhealpercenttooltip }} des PV manquants</healing>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Soins",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Vladimir vole les PV de l'ennemi ciblé. Quand la jauge de ressource de Vladimir est pleine, Transfusion infligera beaucoup plus de dégâts et rendra beaucoup plus de PV pendant un court instant.",
+      "cooldownBurn": "9/7.9/6.8/5.7/4.6"
+    },
+    {
+      "id": "VladimirSanguinePool",
+      "name": "Bain de sang",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 144,
+        "full": "VladimirSanguinePool.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Vladimir plonge dans une flaque de sang pendant 2 sec, gagnant <speed>+{{ hasteboost*100 }}% de vitesse de déplacement</speed> (ce bonus diminue progressivement) pendant {{ hasteduration }} sec, devenant <keyword>impossible à cibler</keyword> et <keyword>fantomatique</keyword> et <status>ralentissant</status> de {{ movespeedmod*-100 }}% les ennemis dans la flaque.<br /><br />Vladimir inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> et récupère <healing>{{ totalheal }} PV</healing> par ennemi sur la durée.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "% des PV actuels",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Coûte {{ healthcost*100 }}% des PV actuels",
+      "rangeBurn": "350",
+      "datavalues": {},
+      "description": "Vladimir plonge dans une flaque de sang, devenant impossible à cibler pendant 2 sec. Les ennemis dans la flaque sont ralentis et Vladimir peut aspirer leur vie.",
+      "cooldownBurn": "28/25/22/19/16"
+    },
+    {
+      "id": "VladimirE",
+      "name": "Vagues de sang",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 144,
+        "full": "VladimirE.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<charge>Début de la charge : </charge>Vladimir charge un orbe de sang, dépensant jusqu'à <span class=\"colorCC3300\">{{ chargehealthtooltip }} PV</span>. Quand l'orbe est pleinement chargé, Vladimir est <status>ralenti</status> de 20%.<br /><br /><release>Relâcher : </release>Vladimir lance des projectiles de sang sur les ennemis proches, leur infligeant entre <magicDamage>{{ mindamagetooltip }}</magicDamage> et <magicDamage>{{ maxdamagetooltip }} pts de dégâts magiques</magicDamage> selon la durée de la charge. Si cette compétence a été chargée pendant au moins 1 sec, elle <status>ralentit</status> également les cibles de {{ slowpercent }}% pendant 0.5 sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "% des PV max ({{ chargehealthtooltip }})",
+      "leveltip": {
+        "label": [
+          "Dégâts minimum",
+          "Dégâts maximum",
+          "Ralentissement",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Coût de canalisation : {{ e2 }}% des PV max ({{ chargehealthtooltip }})",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Vladimir dépense ses propres PV pour charger un orbe de sang qui, une fois lâché, infligera des dégâts de zone autour de lui. Les Vagues de sang peuvent être bloquées par les unités ennemies.",
+      "cooldownBurn": "13/11/9/7/5"
+    },
+    {
+      "id": "VladimirHemoplague",
+      "name": "Peste sanguine",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 144,
+        "full": "VladimirHemoplague.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Vladimir crée une peste virulente. Les ennemis infectés subissent {{ e2 }}% de dégâts supplémentaires (toutes sources confondues) pendant {{ e4 }} sec. Lorsque l'effet expire, Vladimir inflige <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage> à toutes les cibles infectées. Vladimir récupère <healing>{{ damage }} PV</healing> s'il touche un champion, et <healing>{{ secondaryhealingtooltip }} PV</healing> de plus pour chaque champion touché au-delà du premier.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "625",
+      "datavalues": {},
+      "description": "Vladimir contamine une zone avec une peste virulente. Les ennemis infectés subissent plus de dégâts pendant la durée de la compétence. Après quelques secondes, Peste sanguine inflige des dégâts magiques aux ennemis infectés et rend des PV à Vladimir pour chaque champion ennemi touché.",
+      "cooldownBurn": "120"
+    }
+  ],
+  "passive": {
+    "name": "Pacte de sang",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 144,
+      "y": 0,
+      "full": "VladimirP.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "Vladimir gagne 1 pt de puissance tous les 30 PV bonus, et 1.6 PV bonus tous les 1 pt de puissance (ces effets ne se cumulent pas entre eux)."
+  },
+  "created_at": "2025-11-26T15:13:35.521432+00:00",
+  "factions": [
+    "noxus"
+  ],
+  "custom_tags": [
+    "hémomancien"
+  ],
+  "gender": "Male",
+  "species": "Human",
+  "title_en": "the Crimson Reaper",
+  "lore_en": "A fiend with a thirst for mortal blood, Vladimir has influenced the affairs of Noxus since the empire's earliest days. In addition to unnaturally extending his life, his mastery of hemomancy allows him to control the minds and bodies of others as easily as his own. In the flamboyant salons of the Noxian aristocracy, this has enabled him to build a fanatical cult of personality around himself—while in the lowest back alleys, it allows him to bleed his enemies dry.",
+  "spells_en": [
+    {
+      "id": "VladimirQ",
+      "name": "Transfusion",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 144,
+        "full": "VladimirQ.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Vladimir drains his target's lifeforce, dealing <magicDamage>{{ basedamagetooltip }} magic damage</magicDamage> and restoring <healing>{{ basehealtooltip }} Health</healing>. After using this Ability twice, Vladimir gains <speed>{{ movementspeedonq2 }}% Move Speed</speed> for 0.5 seconds and empowers the next use of this Ability for {{ e8 }} seconds.<br /><br />The empowered version of this Ability deals <magicDamage>{{ empowereddamagetooltip }} magic damage</magicDamage> instead and restores an additional <healing>{{ empoweredhealtooltip }} plus {{ empoweredhealpercenttooltip }} missing Health</healing>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Healing",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Vladimir steals life from the target enemy. When Vladimir's resource is full, Transfusion will benefit from massively increased damage and healing for a brief time.",
+      "cooldownBurn": "9/7.9/6.8/5.7/4.6"
+    },
+    {
+      "id": "VladimirSanguinePool",
+      "name": "Sanguine Pool",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 144,
+        "full": "VladimirSanguinePool.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Vladimir sinks into a pool of blood for 2 seconds, gaining <speed>{{ hasteboost*100 }}% decaying Move Speed</speed> for {{ hasteduration }} second and becoming <keyword>Untargetable</keyword> and <keyword>Ghosted</keyword> while <status>Slowing</status> enemies in the pool by {{ movespeedmod*-100 }}%.<br /><br />Vladimir deals <magicDamage>{{ totaldamage }} magic damage</magicDamage> and restores <healing>{{ totalheal }} Health</healing> per enemy over the duration.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "% of current Health",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ healthcost*100 }}% of current Health",
+      "rangeBurn": "350",
+      "datavalues": {},
+      "description": "Vladimir sinks into a pool of blood, becoming untargetable for 2 seconds. Additionally, enemies on the pool are slowed and Vladimir siphons life from them.",
+      "cooldownBurn": "28/25/22/19/16"
+    },
+    {
+      "id": "VladimirE",
+      "name": "Tides of Blood",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 144,
+        "full": "VladimirE.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<charge>Begin Charging: </charge>Vladimir charges up a reservoir of blood, spending up to <span class=\"colorCC3300\">{{ chargehealthtooltip }} Health</span>. While at full charge, Vladimir is <status>Slowed</status> by 20%.<br /><br /><release>Release: </release>Vladimir unleashes a torrent of blood missiles at surrounding enemies, dealing between <magicDamage>{{ mindamagetooltip }}</magicDamage> and <magicDamage>{{ maxdamagetooltip }} magic damage</magicDamage> based on charge time. If this Ability was charged for at least 1 second, it also <status>Slows</status> targets by {{ slowpercent }}% for 0.5 seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "% of max Health ({{ chargehealthtooltip }})",
+      "leveltip": {
+        "label": [
+          "Minimum Damage",
+          "Maximum Damage",
+          "Slow",
+          "Cooldown"
+        ]
+      },
+      "resource": "Channeling Cost {{ e2 }}% of max Health ({{ chargehealthtooltip }})",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Vladimir pays his own health to charge up a reservoir of blood which, when released, deals damage in the area around him but can be blocked by enemy units.",
+      "cooldownBurn": "13/11/9/7/5"
+    },
+    {
+      "id": "VladimirHemoplague",
+      "name": "Hemoplague",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 144,
+        "full": "VladimirHemoplague.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Vladimir creates a virulent plague, causing its victims to take {{ e2 }}% increased damage from all sources for {{ e4 }} seconds. After it expires, Vladimir deals <magicDamage>{{ damage }} magic damage</magicDamage> to all infected targets. Vladimir restores <healing>{{ damage }} Health</healing> if he hits a champion, and restores an additional <healing>{{ secondaryhealingtooltip }} Health</healing> for each champion beyond the first.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Damage"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "625",
+      "datavalues": {},
+      "description": "Vladimir infects an area with a virulent plague. Affected enemies take increased damage for the duration. After a few seconds, Hemoplague deals magic damage to infected enemies and heals Vladimir for each enemy Champion hit.",
+      "cooldownBurn": "120"
+    }
+  ],
+  "passive_en": {
+    "name": "Crimson Pact",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 144,
+      "y": 0,
+      "full": "VladimirP.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "Every 30 points of bonus Health gives Vladimir 1 Ability Power and every 1 point of Ability Power gives Vladimir 1.6 bonus Health (does not stack with itself)."
+  },
+  "partype_en": "Crimson Rush",
+  "lanes": [
+    "Mid",
+    "Top"
+  ],
+  "skins_en": [
+    {
+      "id": "8000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "8001",
+      "num": 1,
+      "name": "Count Vladimir",
+      "chromas": false
+    },
+    {
+      "id": "8002",
+      "num": 2,
+      "name": "Marquis Vladimir",
+      "chromas": false
+    },
+    {
+      "id": "8003",
+      "num": 3,
+      "name": "Nosferatu Vladimir",
+      "chromas": false
+    },
+    {
+      "id": "8004",
+      "num": 4,
+      "name": "Vandal Vladimir",
+      "chromas": false
+    },
+    {
+      "id": "8005",
+      "num": 5,
+      "name": "Blood Lord Vladimir",
+      "chromas": false
+    },
+    {
+      "id": "8006",
+      "num": 6,
+      "name": "Soulstealer Vladimir",
+      "chromas": false
+    },
+    {
+      "id": "8007",
+      "num": 7,
+      "name": "Academy Vladimir",
+      "chromas": false
+    },
+    {
+      "id": "8008",
+      "num": 8,
+      "name": "Dark Waters Vladimir",
+      "chromas": true
+    },
+    {
+      "id": "8014",
+      "num": 14,
+      "name": "Nightbringer Vladimir",
+      "chromas": true
+    },
+    {
+      "id": "8021",
+      "num": 21,
+      "name": "Cosmic Devourer Vladimir",
+      "chromas": true
+    },
+    {
+      "id": "8030",
+      "num": 30,
+      "name": "Cafe Cuties Vladimir",
+      "chromas": true
+    },
+    {
+      "id": "8039",
+      "num": 39,
+      "name": "Broken Covenant Vladimir",
+      "chromas": true
+    },
+    {
+      "id": "8048",
+      "num": 48,
+      "name": "Masque of the Black Rose Vladimir",
+      "chromas": false
+    }
+  ]
+}

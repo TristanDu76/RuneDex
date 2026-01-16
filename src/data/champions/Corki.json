@@ -1,0 +1,459 @@
+{
+  "id": "Corki",
+  "key": "42",
+  "name": "Corki",
+  "title": "Artilleur téméraire",
+  "version": "15.23.1",
+  "lore": "Corki est un Yordle qui, avec d'autres collègues comme Heimerdinger, a migré vers Piltover et a rapidement contribué à la communauté techmaturgique de la ville. Les Yordles, bien que petits en stature, compensent par leur application et leur sens de l'industrie.\r\n\r\nCorki a obtenu son titre de Bombardier Audacieux en pilotant l'un de ces développements : la conception originale du Reconnaissance Operations Front-Line Copter (Hélicoptère de première ligne pour les opérations de reconnaissance), un véhicule d'assaut aérien qui est devenu l'épine dorsale de la Force expéditionnaire de la Cité de Bandle (BCEF).\r\n\r\nAvec son escadron, les Serpents volants (Screaming Yipsnakes), Corki parcourait le ciel de Valoran, effectuant des acrobaties aériennes et des missions de surveillance. Corki était le plus célèbre de son escadron, connu pour rester calme sous le feu et faire preuve d'une bravoure frisant la folie. Il se porta volontaire pour de nombreuses missions derrière les lignes ennemies, qu'il s'agisse de collecte de renseignements ou de livraison de messages dans des zones dangereuses.\r\n\r\nIl s'épanouissait dans le danger et n'aimait rien tant qu'un bon combat aérien le matin. Bien plus qu'un pilote d'as, Corki a également apporté de nombreuses modifications à son hélicoptère, l'équipant d'un arsenal d'armes dont certains spéculent qu'elles étaient plus pour le spectacle que pour la fonctionnalité.\r\n\r\nLorsque les hostilités ouvertes cessèrent, Corki fut contraint à une retraite qu'il ressentit comme une coupure des moteurs. Il tenta de se contenter de vols acrobatiques et de courses de canyon, mais ce n'était plus la même chose sans l'odeur rafraîchissante de la poudre à canon.\r\n\r\nAujourd'hui, même si le contexte de guerre a disparu, Corki patrouille toujours dans l'espace aérien de sa patrie d'adoption, Piltover, avec la conviction qu'aucun problème n'est trop grand pour ne pas être résolu par un bon gros missile, cherchant toujours, même dans la paix, l'excitation et les sensations fortes du vol et du combat.",
+  "tags": [
+    "Marksman",
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 192,
+    "y": 96,
+    "full": "Corki.png",
+    "group": "champion",
+    "sprite": "champion0.png"
+  },
+  "skins": [
+    {
+      "id": "42000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "42001",
+      "num": 1,
+      "name": "Corki OVNI",
+      "chromas": false
+    },
+    {
+      "id": "42002",
+      "num": 2,
+      "name": "Corki toboggan",
+      "chromas": false
+    },
+    {
+      "id": "42003",
+      "num": 3,
+      "name": "Corki le baron rouge",
+      "chromas": false
+    },
+    {
+      "id": "42004",
+      "num": 4,
+      "name": "Corki Hot Rod",
+      "chromas": false
+    },
+    {
+      "id": "42005",
+      "num": 5,
+      "name": "Corki Urfrider",
+      "chromas": false
+    },
+    {
+      "id": "42006",
+      "num": 6,
+      "name": "Corki ailes du dragon",
+      "chromas": true
+    },
+    {
+      "id": "42007",
+      "num": 7,
+      "name": "Fnatic Corki",
+      "chromas": false
+    },
+    {
+      "id": "42008",
+      "num": 8,
+      "name": "Corki arcade",
+      "chromas": true
+    },
+    {
+      "id": "42018",
+      "num": 18,
+      "name": "Corki corgi",
+      "chromas": true
+    },
+    {
+      "id": "42026",
+      "num": 26,
+      "name": "Corki astronaute",
+      "chromas": true
+    },
+    {
+      "id": "42036",
+      "num": 36,
+      "name": "Corki jouet",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "PhosphorusBomb",
+      "name": "Bombe au phosphore",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 144,
+        "full": "PhosphorusBomb.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Corki lance une bombe qui inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. La zone et les champions touchés sont révélés pendant {{ revealduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "825",
+      "datavalues": {},
+      "description": "Corki tire une bombe éclairante à l'endroit visé, infligeant des dégâts magiques aux ennemis dans la zone. Cette attaque révèle pendant un temps les unités dans la zone.",
+      "cooldownBurn": "9/8.5/8/7.5/7"
+    },
+    {
+      "id": "CarpetBomb",
+      "name": "Valkyrie",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 144,
+        "full": "CarpetBomb.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Corki survole une zone en brûlant le sol sur son passage pendant {{ trailduration }} sec. Les ennemis pris dans le feu subissent jusqu'à <magicDamage>{{ maximumdamage }} pts de dégâts magiques</magicDamage> sur la durée.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80/85/90/95/100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts sur la durée",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Corki franchit une courte distance, lâchant des bombes et créant une traînée de feu qui inflige des dégâts aux ennemis.",
+      "cooldownBurn": "20/18/16/14/12"
+    },
+    {
+      "id": "GGun",
+      "name": "Gatling",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 144,
+        "full": "GGun.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Corki tire devant lui avec sa mitrailleuse. Il inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> en {{ sprayduration }} sec, en plus de réduire l'<scaleArmor>armure</scaleArmor> et la <scaleMR>résistance magique</scaleMR> des ennemis touchés d'un maximum de {{ shredmax*-1 }}.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Réduction des défenses",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "La mitrailleuse de Corki tire rapidement dans une zone conique face à lui, infligeant des dégâts et réduisant l'armure et la résistance magique de l'ennemi.",
+      "cooldownBurn": "12"
+    },
+    {
+      "id": "MissileBarrage",
+      "name": "Barrage de projectiles",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 144,
+        "full": "MissileBarrage.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "4",
+      "maxrank": 3,
+      "tooltip": "Corki tire un projectile qui explose au contact du premier ennemi touché, infligeant <physicalDamage>{{ rsmallmissiledamage }} pts de dégâts physiques</physicalDamage> aux ennemis proches. Tous les 3 tirs, le projectile inflige à la place <physicalDamage>{{ rbigmissiledamage }} pts de dégâts physiques</physicalDamage>.<br /><br />Cette compétence a jusqu'à {{ maxammotooltip }} charges. À l'impact, les attaques de base contre les champions réduisent de <attention>{{ attackrefund }}</attention> sec le délai entre les charges.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "35",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1225",
+      "datavalues": {},
+      "description": "Corki tire un projectile dans une direction. Il explose à l'impact et inflige des dégâts aux ennemis dans la zone. Corki stocke des projectiles sur la durée, jusqu'à un maximum donné. Un projectile sur 3 est une grosse Bertha qui inflige plus de dégâts.",
+      "cooldownBurn": "2"
+    }
+  ],
+  "passive": {
+    "name": "Munitions Hextech",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 192,
+      "y": 96,
+      "full": "Corki_RapidReload.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Corki inflige des <trueDamage>dégâts bruts</trueDamage> bonus équivalents à un pourcentage des dégâts de ses attaques de base."
+  },
+  "created_at": "2025-11-26T15:13:32.649099+00:00",
+  "factions": [
+    "bandle-city"
+  ],
+  "custom_tags": [
+    "pilote"
+  ],
+  "gender": "Male",
+  "species": "Yordle",
+  "title_en": "the Daring Bombardier",
+  "lore_en": "Corki is a Yordle who, along with colleagues like Heimerdinger, migrated to Piltover and quickly made several groundbreaking contributions to the city's techmaturgical community. What Yordles lack in stature, they make up for with industriousness.\r\n\r\nCorki earned his title as the Daring Bombardier by test-piloting one of these developments: the original design for the Reconnaissance Operations Front-Line Copter, an aerial assault vehicle that became the backbone of the Bandle City Expeditionary Force (BCEF).\r\n\r\nTogether with his squadron—the Screaming Yipsnakes—Corki soared over Valoran, performing aerial acrobatics and surveillance missions. Corki was the most renowned of his squadron, known for remaining cool under fire and exhibiting bravery to the point of madness. He volunteered for many missions behind enemy lines, whether gathering intelligence or delivering messages through hot zones.\r\n\r\nHe thrived on danger and enjoyed nothing more than a good dogfight in the morning. More than just an ace pilot, Corki also made several modifications to his copter, outfitting it with an arsenal of weapons that some speculate were more for show than functionality.\r\n\r\nWhen open hostilities ceased, Corki was forced into a retirement that he felt \"cut the engines and clipped the wings.\" He tried to make do with stunt flying and canyon running, but it was never the same without the refreshing smell of gunpowder streaking through the air around him.\r\n\r\nToday, even though the context of war is gone, Corki still patrols the airspace of his adopted homeland, Piltover, with the conviction that no problem is too great to be solved by a good big missile, always seeking, even in peace, the excitement and thrill of flying and fighting.",
+  "spells_en": [
+    {
+      "id": "PhosphorusBomb",
+      "name": "Phosphorus Bomb",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 144,
+        "full": "PhosphorusBomb.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Corki lobs a bomb, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>. The area and champions hit are revealed for {{ revealduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "825",
+      "datavalues": {},
+      "description": "Corki fires a flash bomb at a target location, dealing magic damage to enemies in the area. This attack additionally reveals units in the area for a duration.",
+      "cooldownBurn": "9/8.5/8/7.5/7"
+    },
+    {
+      "id": "CarpetBomb",
+      "name": "Valkyrie",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 144,
+        "full": "CarpetBomb.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Corki flies over and scorches a path, burning it for {{ trailduration }} seconds. Enemies in the fire take up to <magicDamage>{{ maximumdamage }} magic damage</magicDamage> over the duration.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80/85/90/95/100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage Over Time",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Corki flies a short distance, dropping bombs that create a trail of fire that damages opponents who remain in it.",
+      "cooldownBurn": "20/18/16/14/12"
+    },
+    {
+      "id": "GGun",
+      "name": "Gatling Gun",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 144,
+        "full": "GGun.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Corki fires a gatling gun in front of him, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> over {{ sprayduration }} seconds and shredding up to <scaleArmor>{{ shredmax*-1 }} Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Defense Reduction",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Corki's gatling gun rapidly fires in a cone in front of him, dealing damage and reducing enemy Armor and Magic Resist.",
+      "cooldownBurn": "12"
+    },
+    {
+      "id": "MissileBarrage",
+      "name": "Missile Barrage",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 144,
+        "full": "MissileBarrage.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "4",
+      "maxrank": 3,
+      "tooltip": "Corki fires a missile that explodes on the first enemy hit, dealing <physicalDamage>{{ rsmallmissiledamage }} physical damage</physicalDamage> to surrounding enemies. Every third missile instead deals <physicalDamage>{{ rbigmissiledamage }} physical damage</physicalDamage>.<br /><br />This Ability has up to {{ maxammotooltip }} charges. Basic attacks against champions reduce the time between charges by <attention>{{ attackrefund }}</attention> seconds on hit.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "35",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1225",
+      "datavalues": {},
+      "description": "Corki fires a missile toward his target location that explodes on impact, dealing damage to enemies in an area. Corki stores missiles over time, up to a maximum. Every 3rd missile fired will be a Big One, dealing extra damage.",
+      "cooldownBurn": "2"
+    }
+  ],
+  "passive_en": {
+    "name": "Hextech Munitions",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 192,
+      "y": 96,
+      "full": "Corki_RapidReload.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "A percentage of Corki's basic attack damage is dealt as bonus <trueDamage>true damage</trueDamage>."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Adc"
+  ],
+  "skins_en": [
+    {
+      "id": "42000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "42001",
+      "num": 1,
+      "name": "UFO Corki",
+      "chromas": false
+    },
+    {
+      "id": "42002",
+      "num": 2,
+      "name": "Ice Toboggan Corki",
+      "chromas": false
+    },
+    {
+      "id": "42003",
+      "num": 3,
+      "name": "Red Baron Corki",
+      "chromas": false
+    },
+    {
+      "id": "42004",
+      "num": 4,
+      "name": "Hot Rod Corki",
+      "chromas": false
+    },
+    {
+      "id": "42005",
+      "num": 5,
+      "name": "Urfrider Corki",
+      "chromas": false
+    },
+    {
+      "id": "42006",
+      "num": 6,
+      "name": "Dragonwing Corki",
+      "chromas": true
+    },
+    {
+      "id": "42007",
+      "num": 7,
+      "name": "Fnatic Corki",
+      "chromas": false
+    },
+    {
+      "id": "42008",
+      "num": 8,
+      "name": "Arcade Corki",
+      "chromas": true
+    },
+    {
+      "id": "42018",
+      "num": 18,
+      "name": "Corgi Corki",
+      "chromas": true
+    },
+    {
+      "id": "42026",
+      "num": 26,
+      "name": "Astronaut Corki",
+      "chromas": true
+    },
+    {
+      "id": "42036",
+      "num": 36,
+      "name": "Brick Toy Corki",
+      "chromas": true
+    }
+  ]
+}

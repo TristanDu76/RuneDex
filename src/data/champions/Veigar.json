@@ -1,0 +1,510 @@
+{
+  "id": "Veigar",
+  "key": "45",
+  "name": "Veigar",
+  "title": "Seigneur des maléfices",
+  "version": "15.23.1",
+  "lore": "Maître enthousiaste de la magie noire, Veigar s'est approprié des pouvoirs que peu de mortels osent approcher. Habitant de Bandle à l'esprit libre, il veut repousser les limites de la magie yordle et se tourner vers les textes arcaniques qui sont restés cachés des millénaires. Fasciné jusqu'à l'obstination par les mystères de l'univers, Veigar est souvent sous-estimé par les gens qui l'entourent. Bien qu'il se croie fondamentalement maléfique, il possède une moralité qui le mène à s'interroger sur ses motivations.",
+  "tags": [
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 336,
+    "y": 96,
+    "full": "Veigar.png",
+    "group": "champion",
+    "sprite": "champion4.png"
+  },
+  "skins": [
+    {
+      "id": "45000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "45001",
+      "num": 1,
+      "name": "Veigar le mage blanc",
+      "chromas": false
+    },
+    {
+      "id": "45002",
+      "num": 2,
+      "name": "Veigar curling",
+      "chromas": false
+    },
+    {
+      "id": "45003",
+      "num": 3,
+      "name": "Veigar barbe grise",
+      "chromas": false
+    },
+    {
+      "id": "45004",
+      "num": 4,
+      "name": "Veigar lutin",
+      "chromas": false
+    },
+    {
+      "id": "45005",
+      "num": 5,
+      "name": "Baron von Veigar",
+      "chromas": false
+    },
+    {
+      "id": "45006",
+      "num": 6,
+      "name": "Veigar classieux",
+      "chromas": false
+    },
+    {
+      "id": "45007",
+      "num": 7,
+      "name": "Maléfique père Veigar",
+      "chromas": false
+    },
+    {
+      "id": "45008",
+      "num": 8,
+      "name": "Veigar boss de fin",
+      "chromas": true
+    },
+    {
+      "id": "45009",
+      "num": 9,
+      "name": "Veigar de la section Oméga",
+      "chromas": true
+    },
+    {
+      "id": "45013",
+      "num": 13,
+      "name": "Veigar sylvestre",
+      "chromas": true
+    },
+    {
+      "id": "45023",
+      "num": 23,
+      "name": "Veigar cosplay Corgnon",
+      "chromas": true
+    },
+    {
+      "id": "45032",
+      "num": 32,
+      "name": "Veigar astronaute",
+      "chromas": true
+    },
+    {
+      "id": "45041",
+      "num": 41,
+      "name": "Veigar dresseur de monstres",
+      "chromas": true
+    },
+    {
+      "id": "45051",
+      "num": 51,
+      "name": "Veigar abeille",
+      "chromas": true
+    },
+    {
+      "id": "45060",
+      "num": 60,
+      "name": "Veigar Nuit d'effroi",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "VeigarBalefulStrike",
+      "name": "Coup malin",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 0,
+        "full": "VeigarBalefulStrike.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Veigar lance une boule d'énergie maléfique qui inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> aux deux premiers ennemis touchés.<br /><br />Si Veigar tue un ennemi avec cette compétence, il gagne {{ spell.veigarpassive:dqkillstacks }} effet <keywordMajor>Pouvoir phénoménal</keywordMajor>. Les grands sbires et les grands monstres en octroient {{ spell.veigarpassive:dqkillstackslarge }} à la place.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30/35/40/45/50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ratio de puissance total",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Veigar lance une boule d'énergie des ténèbres, infligeant des dégâts magiques aux deux premiers ennemis touchés. Les unités tuées par cette compétence confèrent à Veigar un gain de puissance permanent.",
+      "cooldownBurn": "6/5.5/5/4.5/4"
+    },
+    {
+      "id": "VeigarDarkMatter",
+      "name": "Matière noire",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 0,
+        "full": "VeigarDarkMatter.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Veigar fait tomber de la matière noire du ciel, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.<br /><br />Tous les {{ spell.veigarpassive:pstacksperdarkmattercdr }} effets <keywordMajor>Pouvoir phénoménal</keywordMajor> cumulés, le délai de récupération de cette compétence est réduit de {{ spell.veigarpassive:darkmattercdrincrement*100 }}%.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ratio de puissance total",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "950",
+      "datavalues": {},
+      "description": "Veigar fait tomber de la matière noire pour infliger des dégâts magiques à ses adversaires. Les effets Pouvoir maléfique phénoménal cumulés réduisent le délai de récupération de Matière noire.",
+      "cooldownBurn": "0"
+    },
+    {
+      "id": "VeigarEventHorizon",
+      "name": "Profanation",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 0,
+        "full": "VeigarEventHorizon.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Veigar distord l'espace dans la zone ciblée, créant une cage qui <status>étourdit</status> pendant {{ e1 }} sec les ennemis qui la traversent. La cage dure 3 sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/75/80/85/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Durée de l'étourdissement :",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "725",
+      "datavalues": {},
+      "description": "Veigar distord l'espace dans la zone ciblée, créant une cage qui étourdit les ennemis qui la traversent.",
+      "cooldownBurn": "20/18.5/17/15.5/14"
+    },
+    {
+      "id": "VeigarR",
+      "name": "Explosion primordiale",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 0,
+        "full": "VeigarR.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Veigar lance une boule d'énergie sur un champion ennemi, infligeant de <magicDamage>{{ mindamage }} à {{ maxdamage }} pts de dégâts magiques</magicDamage>, selon les PV manquants de la cible. Les dégâts atteignent leur maximum contre les ennemis qui ont moins de 33% de leurs PV.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ratio de puissance total",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Lance de l'énergie explosive sur le champion ennemi ciblé, infligeant d'importants dégâts magiques qui augmentent avec les PV manquants de la cible.",
+      "cooldownBurn": "100/80/60"
+    }
+  ],
+  "passive": {
+    "name": "Pouvoir maléfique phénoménal",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 336,
+      "y": 96,
+      "full": "VeigarEntropy.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "Veigar est le plus grand mal qui ait jamais frappé Runeterra, et son pouvoir est encore en pleine croissance ! Frapper un champion ennemi avec une compétence, tuer un champion ou effectuer une assistance octroie à Veigar un bonus permanent en puissance."
+  },
+  "created_at": "2025-11-26T15:13:35.367127+00:00",
+  "factions": [
+    "bandle-city"
+  ],
+  "custom_tags": [],
+  "gender": "Male",
+  "species": "Yordle",
+  "title_en": "the Tiny Master of Evil",
+  "lore_en": "An enthusiastic master of dark sorcery, Veigar has embraced powers that few mortals dare approach. As a free-spirited inhabitant of Bandle City, he longed to push beyond the limitations of yordle magic, and turned instead to arcane texts that had been hidden away for thousands of years. Now a stubborn creature with an endless fascination for the mysteries of the universe, Veigar is often underestimated by others—but even though he believes himself truly evil, he possesses an inner morality that leads some to question his deeper motivations.",
+  "spells_en": [
+    {
+      "id": "VeigarBalefulStrike",
+      "name": "Baleful Strike",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 0,
+        "full": "VeigarBalefulStrike.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Veigar unleashes a bolt of dark energy, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> to the first two enemies hit.<br /><br />If Veigar kills an enemy with this Ability, he gains {{ spell.veigarpassive:dqkillstacks }} stack of <keywordMajor>Phenomenal Evil</keywordMajor>. Large minions and large monsters grant {{ spell.veigarpassive:dqkillstackslarge }} stacks instead.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30/35/40/45/50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Total AP Ratio",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Veigar unleashes a bolt of dark energy that deals magic damage to the first two enemies hit. Units killed by this bolt grant Veigar some ability power permanently.",
+      "cooldownBurn": "6/5.5/5/4.5/4"
+    },
+    {
+      "id": "VeigarDarkMatter",
+      "name": "Dark Matter",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 0,
+        "full": "VeigarDarkMatter.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Veigar summons dark matter from the sky, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>.<br /><br />Every {{ spell.veigarpassive:pstacksperdarkmattercdr }} stacks of <keywordMajor>Phenomenal Evil</keywordMajor> reduce this Ability's Cooldown by {{ spell.veigarpassive:darkmattercdrincrement*100 }}%.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Total AP Ratio",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "950",
+      "datavalues": {},
+      "description": "Veigar calls a great mass of dark matter to fall from the sky to the target location, dealing magic damage when it lands. Stacks of Phenomenal Evil reduce Dark Matter's cooldown.",
+      "cooldownBurn": "0"
+    },
+    {
+      "id": "VeigarEventHorizon",
+      "name": "Event Horizon",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 0,
+        "full": "VeigarEventHorizon.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Veigar twists the edges of space, creating a cage that <status>Stuns</status> enemies that pass through for {{ e1 }} seconds. The cage lasts for 3 seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/75/80/85/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Stun Duration:",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "725",
+      "datavalues": {},
+      "description": "Veigar twists the edges of space, creating a cage that Stuns enemies that pass through.",
+      "cooldownBurn": "20/18.5/17/15.5/14"
+    },
+    {
+      "id": "VeigarR",
+      "name": "Primordial Burst",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 0,
+        "full": "VeigarR.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Veigar blasts an enemy champion with primal magic to deal between <magicDamage>{{ mindamage }} and {{ maxdamage }} magic damage</magicDamage>, increasing with the target's missing Health. Damage is maximized against enemies below 33% Health.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Total AP Ratio",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Blasts target enemy champion, dealing a large amount of magic damage, increasing based on the target's missing health.",
+      "cooldownBurn": "100/80/60"
+    }
+  ],
+  "passive_en": {
+    "name": "Phenomenal Evil Power",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 336,
+      "y": 96,
+      "full": "VeigarEntropy.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "Veigar is the greatest Evil to ever strike at the hearts of Runeterra - and he's only getting bigger! Striking an enemy Champion with a spell or scoring a takedown grants Veigar permanently increased Ability Power."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Mid"
+  ],
+  "skins_en": [
+    {
+      "id": "45000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "45001",
+      "num": 1,
+      "name": "White Mage Veigar",
+      "chromas": false
+    },
+    {
+      "id": "45002",
+      "num": 2,
+      "name": "Curling Veigar",
+      "chromas": false
+    },
+    {
+      "id": "45003",
+      "num": 3,
+      "name": "Veigar Greybeard",
+      "chromas": false
+    },
+    {
+      "id": "45004",
+      "num": 4,
+      "name": "Leprechaun Veigar",
+      "chromas": false
+    },
+    {
+      "id": "45005",
+      "num": 5,
+      "name": "Baron Von Veigar",
+      "chromas": false
+    },
+    {
+      "id": "45006",
+      "num": 6,
+      "name": "Superb Villain Veigar",
+      "chromas": false
+    },
+    {
+      "id": "45007",
+      "num": 7,
+      "name": "Bad Santa Veigar",
+      "chromas": false
+    },
+    {
+      "id": "45008",
+      "num": 8,
+      "name": "Final Boss Veigar",
+      "chromas": true
+    },
+    {
+      "id": "45009",
+      "num": 9,
+      "name": "Omega Squad Veigar",
+      "chromas": true
+    },
+    {
+      "id": "45013",
+      "num": 13,
+      "name": "Elderwood Veigar",
+      "chromas": true
+    },
+    {
+      "id": "45023",
+      "num": 23,
+      "name": "Furyhorn Cosplay Veigar",
+      "chromas": true
+    },
+    {
+      "id": "45032",
+      "num": 32,
+      "name": "Astronaut Veigar",
+      "chromas": true
+    },
+    {
+      "id": "45041",
+      "num": 41,
+      "name": "Monster Tamer Veigar",
+      "chromas": true
+    },
+    {
+      "id": "45051",
+      "num": 51,
+      "name": "King Beegar",
+      "chromas": true
+    },
+    {
+      "id": "45060",
+      "num": 60,
+      "name": "Fright Night Veigar",
+      "chromas": true
+    }
+  ]
+}

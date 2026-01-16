@@ -1,0 +1,500 @@
+{
+  "id": "Jinx",
+  "key": "222",
+  "name": "Jinx",
+  "title": "Gâchette folle",
+  "version": "15.23.1",
+  "lore": "Jinx (autrefois connue sous le nom de Powder) est une criminelle dérangée de Zaun. Initialement une jeune bricoleuse pleine d'idées, on ignore les circonstances exactes qui ont brisé son esprit, mais elle est devenue une force de destruction anarchique. Son talent unique pour semer le chaos à Piltover est rapidement devenu légendaire.\n\nElle gagna en notoriété par des « farces » criminelles visant l'élite de Piltover, dont le seul but était de paralyser l'ordre et le fonctionnement de la ville. Frustrée que ses actions soient attribuées à des gangs anonymes, Jinx commença à laisser sa signature : des graffitis vifs et des messages de défi.\n\nSon obsession pour l'Enforcer Vi était évidente, car elle ciblait spécifiquement la nouvelle alliée du shérif Caitlyn par des moqueries et des menaces peintes. Cette obsession est en réalité le produit d'un passé familial brisé et douloureux : Jinx et Vi sont sœurs. Leur conflit n'est pas celui d'un flic et d'un criminel ordinaire, mais la conséquence tragique de la rupture qui a séparé les deux sœurs dans leur jeunesse à Zaun.\n\nL'escalade de ses crimes culmina avec l'annonce publique de son intention de voler le très sécurisé Coffre Écliptique de Piltover. Elle réussit à tromper les Gardiens, et la confrontation laissa le coffre en ruine, Jinx réussissant une fois de plus à échapper à la capture de Vi et Caitlyn.\n\nJinx reste en fuite, une épine constante dans le flanc de Piltover. Son chaos coloré, mené avec son arsenal d'armes bricolées (dont son lance-roquettes à tête de requin), inspire la rébellion et la résistance chez les laissés-pour-compte de Zaun.\n\nSon véritable but n'est pas seulement la destruction, mais de défier l'ordre que sa sœur est venue défendre. Elle est hantée par les conséquences de son passé et par la douleur de la séparation, choisissant de vivre dans une frénésie permanente pour échapper à la tragédie de son ancienne vie.",
+  "tags": [
+    "Marksman"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 192,
+    "y": 96,
+    "full": "Jinx.png",
+    "group": "champion",
+    "sprite": "champion1.png"
+  },
+  "skins": [
+    {
+      "id": "222000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "222001",
+      "num": 1,
+      "name": "Donna Jinx",
+      "chromas": false
+    },
+    {
+      "id": "222002",
+      "num": 2,
+      "name": "Jinx pyrotechnicienne",
+      "chromas": true
+    },
+    {
+      "id": "222003",
+      "num": 3,
+      "name": "Jinx tueuse de zombies",
+      "chromas": true
+    },
+    {
+      "id": "222004",
+      "num": 4,
+      "name": "Jinx gardienne des étoiles",
+      "chromas": true
+    },
+    {
+      "id": "222012",
+      "num": 12,
+      "name": "Jinx l'elfe arriviste",
+      "chromas": false
+    },
+    {
+      "id": "222013",
+      "num": 13,
+      "name": "Jinx de l'Odyssée",
+      "chromas": true
+    },
+    {
+      "id": "222020",
+      "num": 20,
+      "name": "PROJET : Jinx",
+      "chromas": true
+    },
+    {
+      "id": "222029",
+      "num": 29,
+      "name": "Jinx cœur-de-cible",
+      "chromas": true
+    },
+    {
+      "id": "222037",
+      "num": 37,
+      "name": "Jinx ennemie d'Arcane",
+      "chromas": false
+    },
+    {
+      "id": "222038",
+      "num": 38,
+      "name": "Jinx chat de combat",
+      "chromas": true
+    },
+    {
+      "id": "222040",
+      "num": 40,
+      "name": "Jinx chat de combat prestige",
+      "chromas": false
+    },
+    {
+      "id": "222051",
+      "num": 51,
+      "name": "Jinx Café Chouchous",
+      "chromas": true
+    },
+    {
+      "id": "222060",
+      "num": 60,
+      "name": "Jinx fracturée d'Arcane",
+      "chromas": false
+    },
+    {
+      "id": "222062",
+      "num": 62,
+      "name": "T1 Jinx",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "JinxQ",
+      "name": "Flip flap !",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 144,
+        "full": "JinxQ.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Jinx passe de Poiscaille, le lance-roquettes, à Bang-Bang, le minigun (ou inversement).<br /><br />Avec le lance-roquettes, les attaques de Jinx infligent <physicalDamage>{{ rocketdamage }} pts de dégâts physiques</physicalDamage> à la cible et aux ennemis proches, ont une portée augmentée de {{ rocketbonusrange }}, consomment du mana et sont accélérées {{ rocketaspdpenalty*100 }}% moins efficacement par les bonus en vitesse d'attaque.<br /><br />Avec le minigun, les attaques de Jinx augmentent sa <attackSpeed>vitesse d'attaque</attackSpeed> pendant {{ minigunattackspeedduration }} sec. Cet effet peut se cumuler jusqu'à {{ minigunattackspeedstacks }} fois (<attackSpeed>max : +{{ minigunattackspeedmax }}% %i:scaleAS%</attackSpeed>).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "20",
+      "costType": " pts de mana par roquette",
+      "leveltip": {
+        "label": [
+          "Portée bonus (roquette)",
+          "Vitesse d'attaque totale (minigun)"
+        ]
+      },
+      "resource": "{{ cost }} pts de mana par roquette",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Jinx modifie ses attaques de base en optant pour Bang-Bang, son minigun, ou Poiscaille, son lance-roquettes. Les attaques avec Bang-Bang augmentent la vitesse d'attaque, tandis que les attaques avec Poiscaille infligent des dégâts de zone et ont une plus grande portée, mais drainent du mana et sont plus lentes.",
+      "cooldownBurn": "0.9"
+    },
+    {
+      "id": "JinxW",
+      "name": "Zap !",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 144,
+        "full": "JinxW.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Jinx tire un rayon électrique qui inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> au premier ennemi touché, le <status>ralentit</status> de {{ slowpercent }}% et le révèle pendant {{ slowduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/45/50/55/60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ralentissement",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1450",
+      "datavalues": {},
+      "description": "Jinx utilise Zapper, son pistolet, pour tirer un rayon qui inflige des dégâts au premier ennemi touché, le ralentit et le révèle.",
+      "cooldownBurn": "8/7/6/5/4"
+    },
+    {
+      "id": "JinxE",
+      "name": "Pyromâcheurs !",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 144,
+        "full": "JinxE.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Jinx lance 3 Pyromâcheurs qui durent {{ grenadeduration }} sec. Ils explosent au contact des champions ennemis, les <status>immobilisant</status> pendant {{ rootduration }} sec et infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> aux ennemis proches.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "925",
+      "datavalues": {},
+      "description": "Jinx lance des grenades immobilisantes qui explosent au bout de 5 sec et mettent le feu aux ennemis. Les Pyromâcheurs mordent les champions ennemis qui leur marchent dessus, les immobilisant.",
+      "cooldownBurn": "24/20.5/17/13.5/10"
+    },
+    {
+      "id": "JinxR",
+      "name": "Super roquette de la mort !",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 144,
+        "full": "JinxR.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Jinx tire une roquette qui explose sur le premier champion ennemi touché, infligeant de <physicalDamage>{{ damagefloor }} à {{ damagemax }} pts de dégâts physiques + {{ percentdamage }}% des PV manquants de l'ennemi</physicalDamage>. Les dégâts augmentent pendant la première seconde de trajet. Les ennemis proches subissent {{ aoedamagemult*100 }}% de dégâts.<br /><br /><rules>Les dégâts selon les PV manquants ne peuvent pas dépasser {{ monsterexecutemax }} contre les monstres.</rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts minimum",
+          "Dégâts maximum",
+          "Pourcentage des PV manquants en dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Jinx tire une super roquette qui traverse la carte et dont les dégâts augmentent pendant le trajet. La roquette explose au contact d'un champion ennemi, infligeant des dégâts à ce champion et aux ennemis proches en fonction de leurs PV manquants.",
+      "cooldownBurn": "85/65/45"
+    }
+  ],
+  "passive": {
+    "name": "Enthousiasme !",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 192,
+      "y": 96,
+      "full": "Jinx_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Jinx reçoit un énorme bonus en vitesse de déplacement et en vitesse d'attaque quand elle participe à l'élimination/destruction d'un champion, d'un monstre épique de la jungle ou d'un bâtiment."
+  },
+  "created_at": "2025-11-26T15:13:33.462857+00:00",
+  "factions": [
+    "zaun",
+    "piltover"
+  ],
+  "custom_tags": [
+    "chaos",
+    "criminel"
+  ],
+  "gender": "Female",
+  "species": "Human",
+  "title_en": "the Loose Cannon",
+  "lore_en": "Jinx (formerly known as Powder) is a deranged criminal from Zaun. Originally a tinkering girl with big ideas, the exact circumstances that broke her mind are unknown, but she became an anarchic force of destruction. Her unique talent for sowing chaos in Piltover swiftly became legendary.\n\nShe gained notoriety through criminal \"pranks\" targeting Piltover's elite, whose sole purpose was to bring the city's orderly bustle to a screeching halt. Frustrated that her actions were attributed to anonymous gangs, Jinx began tagging her scenes of destruction with vivid graffiti and taunting messages.\n\nHer obsession with Enforcer Vi was obvious, as she specifically targeted Sheriff Caitlyn's newest ally with mockery and painted threats. This obsession is, in fact, the product of a shattered and painful family past: Jinx and Vi are sisters. Their conflict is not that of a typical cop and criminal, but the tragic consequence of the break that separated the two sisters in their youth in Zaun.\n\nThe escalation of her crimes culminated with the public announcement of her intent to rob Piltover's highly secure Ecliptic Vaults. She managed to outsmart the Wardens, and the resulting confrontation left the Vaults a smoldering ruin, with Jinx once again escaping capture from Vi and Caitlyn.\n\nJinx remains at large, a constant thorn in Piltover's side. Her colorful chaos, executed with her arsenal of custom-made weapons (including her shark-mouthed rocket launcher), inspires rebellion and resistance among the down-trodden of Zaun.\n\nHer true goal is not just destruction, but to challenge the order her sister has come to defend. She is haunted by the consequences of her past and the pain of separation, choosing to live in a permanent frenzy to escape the tragedy of her former life.",
+  "spells_en": [
+    {
+      "id": "JinxQ",
+      "name": "Switcheroo!",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 144,
+        "full": "JinxQ.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Jinx swaps weapons between Fishbones the rocket launcher and Pow-Pow the minigun.<br /><br />While using the rocket launcher, Jinx's Attacks deal <physicalDamage>{{ rocketdamage }} physical damage</physicalDamage> to the target and nearby enemies, gain {{ rocketbonusrange }} range, cost Mana, and scale {{ rocketaspdpenalty*100 }}% less with bonus Attack Speed.<br /><br />While using the minigun, Jinx's Attacks grant <attackSpeed>Attack Speed</attackSpeed> for {{ minigunattackspeedduration }} seconds, stacking up to {{ minigunattackspeedstacks }} times (<attackSpeed>+{{ minigunattackspeedmax }}% %i:scaleAS% max</attackSpeed>).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "20",
+      "costType": " Mana Per Rocket",
+      "leveltip": {
+        "label": [
+          "Rocket Bonus Range",
+          "Minigun Total Attack Speed"
+        ]
+      },
+      "resource": "{{ cost }} Mana Per Rocket",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Jinx modifies her basic attacks by swapping between Pow-Pow, her minigun and Fishbones, her rocket launcher. Attacks with Pow-Pow grant Attack Speed, while attacks with Fishbones deal area of effect damage, gain increased range, but drain Mana and attack slower.",
+      "cooldownBurn": "0.9"
+    },
+    {
+      "id": "JinxW",
+      "name": "Zap!",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 144,
+        "full": "JinxW.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Jinx fires a shock blast that deals <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> to the first enemy hit, <status>Slows</status> them by {{ slowpercent }}%, and reveals them for {{ slowduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/45/50/55/60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Slow",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1450",
+      "datavalues": {},
+      "description": "Jinx uses Zapper, her shock pistol, to fire a blast that deals damage to the first enemy hit, slowing and revealing it.",
+      "cooldownBurn": "8/7/6/5/4"
+    },
+    {
+      "id": "JinxE",
+      "name": "Flame Chompers!",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 144,
+        "full": "JinxE.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Jinx tosses out 3 chompers that last for {{ grenadeduration }} seconds. They explode on contact with enemy champions, <status>Rooting</status> them for {{ rootduration }} seconds and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> to nearby enemies.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "925",
+      "datavalues": {},
+      "description": "Jinx throws out a line of snare grenades that explode after 5 seconds, lighting enemies on fire. Flame Chompers will bite enemy champions who walk over them, rooting them in place.",
+      "cooldownBurn": "24/20.5/17/13.5/10"
+    },
+    {
+      "id": "JinxR",
+      "name": "Super Mega Death Rocket!",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 144,
+        "full": "JinxR.png",
+        "group": "spell",
+        "sprite": "spell5.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Jinx fires a rocket that explodes on the first enemy champion hit, dealing <physicalDamage>{{ damagefloor }} to {{ damagemax }} + {{ percentdamage }}% missing Health physical damage</physicalDamage>, gaining damage over the first second of travel time. Nearby enemies take {{ aoedamagemult*100 }}% Damage.<br /><br /><rules>Missing Health damage cannot exceed {{ monsterexecutemax }} against Monsters.</rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Minimum Damage",
+          "Maximum Damage",
+          "Percent Missing Health Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Jinx fires a super rocket across the map that gains damage as it travels. The rocket will explode upon colliding with an enemy champion, dealing damage to it and surrounding enemies based on their missing Health.",
+      "cooldownBurn": "85/65/45"
+    }
+  ],
+  "passive_en": {
+    "name": "Get Excited!",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 192,
+      "y": 96,
+      "full": "Jinx_Passive.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Jinx receives massively increased Move Speed and Attack Speed whenever she helps kill or destroy an enemy champions epic jungle monster, or structure."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Adc"
+  ],
+  "skins_en": [
+    {
+      "id": "222000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "222001",
+      "num": 1,
+      "name": "Crime City Jinx",
+      "chromas": false
+    },
+    {
+      "id": "222002",
+      "num": 2,
+      "name": "Firecracker Jinx",
+      "chromas": true
+    },
+    {
+      "id": "222003",
+      "num": 3,
+      "name": "Zombie Slayer Jinx",
+      "chromas": true
+    },
+    {
+      "id": "222004",
+      "num": 4,
+      "name": "Star Guardian Jinx",
+      "chromas": true
+    },
+    {
+      "id": "222012",
+      "num": 12,
+      "name": "Ambitious Elf Jinx",
+      "chromas": false
+    },
+    {
+      "id": "222013",
+      "num": 13,
+      "name": "Odyssey Jinx",
+      "chromas": true
+    },
+    {
+      "id": "222020",
+      "num": 20,
+      "name": "PROJECT: Jinx",
+      "chromas": true
+    },
+    {
+      "id": "222029",
+      "num": 29,
+      "name": "Heartseeker Jinx",
+      "chromas": true
+    },
+    {
+      "id": "222037",
+      "num": 37,
+      "name": "Arcane Enemy Jinx",
+      "chromas": false
+    },
+    {
+      "id": "222038",
+      "num": 38,
+      "name": "Battle Cat Jinx",
+      "chromas": true
+    },
+    {
+      "id": "222040",
+      "num": 40,
+      "name": "Prestige Battle Cat Jinx",
+      "chromas": false
+    },
+    {
+      "id": "222051",
+      "num": 51,
+      "name": "Cafe Cuties Jinx",
+      "chromas": true
+    },
+    {
+      "id": "222060",
+      "num": 60,
+      "name": "Arcane Fractured Jinx",
+      "chromas": false
+    },
+    {
+      "id": "222062",
+      "num": 62,
+      "name": "T1 Jinx",
+      "chromas": false
+    }
+  ]
+}

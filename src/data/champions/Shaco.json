@@ -1,0 +1,509 @@
+{
+  "id": "Shaco",
+  "key": "35",
+  "name": "Shaco",
+  "title": "Bouffon des ténèbres",
+  "version": "15.23.1",
+  "lore": "Fabriqué il y a longtemps pour servir de jouet à un prince qui se sentait seul, Shaco est une marionnette enchantée qui se repaît désormais de meurtres et de chaos. Corrompu par la magie noire et la perte de sa chère mission, le pantin autrefois gentil ne se réjouit plus que du malheur des âmes qu'il tourmente. Il utilise ses jouets et ses mauvais tours pour répandre la mort et le sang, ce qui le fait follement rire. Tous ceux qui, la nuit venue, entendent un odieux ricanement savent qu'ils sont la prochaine cible du Bouffon des ténèbres.",
+  "tags": [
+    "Assassin"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 432,
+    "y": 96,
+    "full": "Shaco.png",
+    "group": "champion",
+    "sprite": "champion3.png"
+  },
+  "skins": [
+    {
+      "id": "35000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "35001",
+      "num": 1,
+      "name": "Shaco le fou",
+      "chromas": false
+    },
+    {
+      "id": "35002",
+      "num": 2,
+      "name": "Shaco royal",
+      "chromas": false
+    },
+    {
+      "id": "35003",
+      "num": 3,
+      "name": "Shac-noisettes",
+      "chromas": false
+    },
+    {
+      "id": "35004",
+      "num": 4,
+      "name": "Shaco mécanique",
+      "chromas": false
+    },
+    {
+      "id": "35005",
+      "num": 5,
+      "name": "Shaco aliéné",
+      "chromas": false
+    },
+    {
+      "id": "35006",
+      "num": 6,
+      "name": "Shaco masqué",
+      "chromas": false
+    },
+    {
+      "id": "35007",
+      "num": 7,
+      "name": "Shaco joker",
+      "chromas": false
+    },
+    {
+      "id": "35008",
+      "num": 8,
+      "name": "Shaco du pulsar sombre",
+      "chromas": true
+    },
+    {
+      "id": "35015",
+      "num": 15,
+      "name": "Shaco arcaniste",
+      "chromas": true
+    },
+    {
+      "id": "35023",
+      "num": 23,
+      "name": "Shaco cauchemar criminel",
+      "chromas": true
+    },
+    {
+      "id": "35033",
+      "num": 33,
+      "name": "Shaco élu de l'hiver",
+      "chromas": true
+    },
+    {
+      "id": "35043",
+      "num": 43,
+      "name": "Shaco combattant spirituel",
+      "chromas": true
+    },
+    {
+      "id": "35044",
+      "num": 44,
+      "name": "Shaco combattant spirituel prestige",
+      "chromas": false
+    },
+    {
+      "id": "35054",
+      "num": 54,
+      "name": "Shaco Nuit d'effroi",
+      "chromas": true
+    },
+    {
+      "id": "35064",
+      "num": 64,
+      "name": "Chatco",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "Deceive",
+      "name": "Tromperie",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 48,
+        "full": "Deceive.png",
+        "group": "spell",
+        "sprite": "spell12.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Shaco se téléporte et devient <keywordStealth>invisible</keywordStealth> pendant {{ stealthduration }} sec. Utiliser <spellName>Boîte surprise</spellName> ou <spellName>Hallucination</spellName> ne brise pas l'<keywordStealth>invisibilité</keywordStealth>.<br /><br />Quand Shaco est <keywordStealth>invisible</keywordStealth>, sa prochaine attaque inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> supplémentaires. Si cette attaque frappe le dos d'un ennemi, le coup est critique et inflige {{ qcritdamagemod }} de dégâts.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Durée de la furtivité",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Shaco devient invisible et se téléporte vers la position ciblée.<br><br>Sa première attaque en étant invisible est renforcée : elle inflige des dégâts supplémentaires et, si Shaco frappe dans le dos d'un ennemi, un coup critique.",
+      "cooldownBurn": "13/12.5/12/11.5/11"
+    },
+    {
+      "id": "JackInTheBox",
+      "name": "Boîte surprise",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 48,
+        "full": "JackInTheBox.png",
+        "group": "spell",
+        "sprite": "spell12.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Shaco crée un piège qui devient furtif au bout de {{ e5 }} sec et qui dure {{ trapduration }} sec. Il s'active quand un ennemi approche ou quand il est révélé, <status>effrayant</status> les champions ennemis proches pendant {{ fearduration }} sec, ou pendant {{ minionfearduration }} sec pour les sbires et les monstres de la jungle.<br /><br />Une fois activé, le piège tire sur les ennemis proches pendant 5 sec, infligeant <magicDamage>{{ aoedamage }} pts de dégâts magiques</magicDamage>, ou <magicDamage>{{ stdamage }} pts de dégâts</magicDamage> s'il se concentre sur une seule cible.<br /><br />Les attaques de Boîte surprise infligent <magicDamage>{{ monsterbonusdamage }}</magicDamage> pts de dégâts supplémentaires aux monstres.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/65/60/55/50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Durée de peur",
+          "Dégâts supplémentaires aux monstres",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "500",
+      "datavalues": {},
+      "description": "Shaco pose une boîte cachée. Quand elle est déclenchée, elle effraie puis attaque les ennemis proches.",
+      "cooldownBurn": "15"
+    },
+    {
+      "id": "TwoShivPoison",
+      "name": "Poison double",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 48,
+        "full": "TwoShivPoison.png",
+        "group": "spell",
+        "sprite": "spell12.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> quand cette compétence n'est pas en récupération, les attaques de Shaco <status>ralentissent</status> la cible de {{ slowamount*-100 }}% pendant {{ slowdurationpassive }} sec.<br /><br /><spellActive>Active :</spellActive> Shaco lance un poignard, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> et <status>ralentissant</status> la cible de {{ slowamount*-100 }}% pendant {{ slowdurationactive }} sec. Si la cible a moins de {{ executehealththreshold*100 }}% de ses PV, le poignard inflige à la place <magicDamage>{{ totalexecutedamage }} pts de dégâts</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "75",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ralentissement"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "625",
+      "datavalues": {},
+      "description": "Passivement, Shaco empoisonne les cibles qu'il touche, réduisant leur vitesse de déplacement. Shaco peut lancer son arme pour infliger des dégâts et empoisonner sa cible. Le poignard lancé inflige des dégâts supplémentaires si la cible a moins de 30% de ses PV.",
+      "cooldownBurn": "8"
+    },
+    {
+      "id": "HallucinateFull",
+      "name": "Hallucination",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 48,
+        "full": "HallucinateFull.png",
+        "group": "spell",
+        "sprite": "spell12.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Shaco disparaît brièvement et réapparaît avec un clone qui dure {{ clonelifetime }} sec et explose quand il meurt, infligeant <magicDamage>{{ explosiontotaldamage }} pts de dégâts magiques</magicDamage> et faisant apparaître trois mini-<spellName>Boîtes surprises</spellName> qui se déclenchent immédiatement. Le clone inflige {{ cloneaadamagepercent*100 }}% des dégâts de Shaco et subit des dégâts augmentés de {{ cloneincomingdamagepercent*100 }}%.<br /><br />Les mini-<spellName>Boîtes surprises</spellName> infligent <magicDamage>{{ aoedamage }} pts de dégâts magiques</magicDamage>, ou <magicDamage>{{ stdamage }} pts de dégâts magiques</magicDamage> si elles ne tirent que sur un seul ennemi, et elles <status>effraient</status> les ennemis pendant {{ boxfearduration }} sec.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts en mourant",
+          "Dégâts de la mini-boîte",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "200",
+      "datavalues": {},
+      "description": "Shaco crée un double de lui-même à ses côtés qui peut attaquer les ennemis proches (inflige des dégâts réduits aux tourelles). En mourant, il explose, faisant apparaître trois mini-boîtes surprises et blessant les ennemis à portée.",
+      "cooldownBurn": "100/90/80"
+    }
+  ],
+  "passive": {
+    "name": "Traîtrise",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 432,
+      "y": 96,
+      "full": "Jester_CarefulStrikes.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Les attaques de base et la compétence Poison double de Shaco infligent des dégâts supplémentaires lorsqu'elles frappent dans le dos d'un ennemi."
+  },
+  "created_at": "2025-11-26T15:13:34.800791+00:00",
+  "factions": [
+    "runeterra"
+  ],
+  "custom_tags": null,
+  "gender": "Male",
+  "species": "Magically Altered Construct",
+  "title_en": "the Demon Jester",
+  "lore_en": "Crafted long ago as a plaything for a lonely prince, the enchanted marionette Shaco now delights in murder and mayhem. Corrupted by dark magic and the loss of his beloved charge, the once-kind puppet finds pleasure only in the misery of the poor souls he torments. He uses toys and simple tricks to deadly effect, finding the results of his bloody “games” hilarious—and for those who hear a dark chuckle in the dead of night, the Demon Jester may have marked them as his next plaything.",
+  "spells_en": [
+    {
+      "id": "Deceive",
+      "name": "Deceive",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 48,
+        "full": "Deceive.png",
+        "group": "spell",
+        "sprite": "spell12.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Shaco teleports and becomes <keywordStealth>Invisible</keywordStealth> for {{ stealthduration }} seconds. Using <spellName>Jack In The Box</spellName> or <spellName>Hallucinate</spellName> does not break <keywordStealth>Invisibility</keywordStealth>.<br /><br />Shaco's next Attack while <keywordStealth>Invisible</keywordStealth> deals an additional <physicalDamage>{{ totaldamage }} physical damage</physicalDamage>. If striking from behind, this Attack critically strikes for {{ qcritdamagemod }} damage.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Stealth Duration",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Shaco becomes Invisible and teleports to target location.<br><br>His first attack while Invisible is empowered, dealing bonus damage and critically striking if he attacks from behind.",
+      "cooldownBurn": "13/12.5/12/11.5/11"
+    },
+    {
+      "id": "JackInTheBox",
+      "name": "Jack In The Box",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 48,
+        "full": "JackInTheBox.png",
+        "group": "spell",
+        "sprite": "spell12.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Shaco creates a trap that stealths itself after {{ e5 }} seconds and lasts for {{ trapduration }} seconds. It activates when an enemy comes near or when revealed, <status>Fearing</status> nearby enemy Champions for {{ fearduration }} seconds, or {{ minionfearduration }} seconds for minions and jungle monsters.<br /><br />Once activated, the trap fires at all nearby enemies for 5 seconds, dealing <magicDamage>{{ aoedamage }} magic damage</magicDamage>, or <magicDamage>{{ stdamage }} damage</magicDamage> if focused on a single target.<br /><br />Jack in the Box's attacks deal an additional <magicDamage>{{ monsterbonusdamage }}</magicDamage> damage to monsters.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/65/60/55/50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Fear Duration",
+          "Bonus Monster Damage",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "500",
+      "datavalues": {},
+      "description": "Shaco creates a hidden animated Jack-in-the-Box. When triggered, it will fear and attack nearby enemies.",
+      "cooldownBurn": "15"
+    },
+    {
+      "id": "TwoShivPoison",
+      "name": "Two-Shiv Poison",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 48,
+        "full": "TwoShivPoison.png",
+        "group": "spell",
+        "sprite": "spell12.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> While this Ability is off Cooldown, Shaco's Attacks <status>Slow</status> the target by {{ slowamount*-100 }}% for {{ slowdurationpassive }} seconds.<br /><br /><spellActive>Active:</spellActive> Shaco throws a shiv, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> and <status>Slowing</status> by {{ slowamount*-100 }}% for {{ slowdurationactive }} seconds. If the target has less than {{ executehealththreshold*100 }}% Health, the shiv deals <magicDamage>{{ totalexecutedamage }} damage</magicDamage> instead.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "75",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Slow"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "625",
+      "datavalues": {},
+      "description": "Shaco's Shivs passively poison targets on hit, slowing their Move Speed. He can throw his Shivs to deal damage and poison the target. The thrown Shiv deals bonus damage if the target is below 30% health.",
+      "cooldownBurn": "8"
+    },
+    {
+      "id": "HallucinateFull",
+      "name": "Hallucinate",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 48,
+        "full": "HallucinateFull.png",
+        "group": "spell",
+        "sprite": "spell12.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Shaco briefly disappears, then reappears with a clone that lasts {{ clonelifetime }} seconds and detonates when it dies, dealing <magicDamage>{{ explosiontotaldamage }} magic damage</magicDamage> and spawning three mini <spellName>Jack in the Boxes</spellName> that trigger immediately. The clone deals {{ cloneaadamagepercent*100 }}% of Shaco's damage and receives {{ cloneincomingdamagepercent*100 }}% increased damage.<br /><br />Mini <spellName>Jack in the Boxes</spellName> deal <magicDamage>{{ aoedamage }} magic damage</magicDamage>, or <magicDamage>{{ stdamage }} magic damage</magicDamage> if firing at only one enemy, and <status>Fear</status> for {{ boxfearduration }} second.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "On Death Damage",
+          "Mini Box Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "200",
+      "datavalues": {},
+      "description": "Shaco creates an illusion of himself near him, which can attack nearby enemies (Deals reduced damage to turrets).  Upon death, it explodes, spawning three mini Jack in the Boxes and dealing damage to nearby enemies.",
+      "cooldownBurn": "100/90/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Backstab",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 432,
+      "y": 96,
+      "full": "Jester_CarefulStrikes.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Shaco's basic attacks and Two-Shiv Poison deal additional damage when striking from behind."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Jungle",
+    "Support"
+  ],
+  "skins_en": [
+    {
+      "id": "35000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "35001",
+      "num": 1,
+      "name": "Mad Hatter Shaco",
+      "chromas": false
+    },
+    {
+      "id": "35002",
+      "num": 2,
+      "name": "Royal Shaco",
+      "chromas": false
+    },
+    {
+      "id": "35003",
+      "num": 3,
+      "name": "Nutcracko",
+      "chromas": false
+    },
+    {
+      "id": "35004",
+      "num": 4,
+      "name": "Workshop Shaco",
+      "chromas": false
+    },
+    {
+      "id": "35005",
+      "num": 5,
+      "name": "Asylum Shaco",
+      "chromas": false
+    },
+    {
+      "id": "35006",
+      "num": 6,
+      "name": "Masked Shaco",
+      "chromas": false
+    },
+    {
+      "id": "35007",
+      "num": 7,
+      "name": "Wild Card Shaco",
+      "chromas": false
+    },
+    {
+      "id": "35008",
+      "num": 8,
+      "name": "Dark Star Shaco",
+      "chromas": true
+    },
+    {
+      "id": "35015",
+      "num": 15,
+      "name": "Arcanist Shaco",
+      "chromas": true
+    },
+    {
+      "id": "35023",
+      "num": 23,
+      "name": "Crime City Nightmare Shaco",
+      "chromas": true
+    },
+    {
+      "id": "35033",
+      "num": 33,
+      "name": "Winterblessed Shaco",
+      "chromas": true
+    },
+    {
+      "id": "35043",
+      "num": 43,
+      "name": "Soul Fighter Shaco",
+      "chromas": true
+    },
+    {
+      "id": "35044",
+      "num": 44,
+      "name": "Prestige Soul Fighter Shaco",
+      "chromas": false
+    },
+    {
+      "id": "35054",
+      "num": 54,
+      "name": "Fright Night Shaco",
+      "chromas": true
+    },
+    {
+      "id": "35064",
+      "num": 64,
+      "name": "Cat-in-the-Box Shaco",
+      "chromas": true
+    }
+  ]
+}

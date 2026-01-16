@@ -1,0 +1,537 @@
+{
+  "id": "Annie",
+  "key": "1",
+  "name": "Annie",
+  "title": "Enfant des ténèbres",
+  "version": "15.23.1",
+  "lore": "Annie est une enfant mage prodige aux pouvoirs de pyrokinésie extraordinaires, née dans les régions frontalières au nord des montagnes Ironspike de Noxus. Ses parents étaient Gregori le Gris et Amoline la sorcière, qui avaient fui les intrigues politiques de la capitale pour apprivoiser les terres sauvages. La veille de la naissance d'Annie, Amoline finit de coudre un ours en peluche, Tibbers, inspiré par les légendaires ours fantômes de la région.\r\n\r\nAlors qu'Annie n'était encore qu'une enfant, elle et son père tombèrent malades. Pendant la nuit, Annie commença à brûler de fièvre, devenant si chaude qu'elle ne pouvait plus être tenue dans les bras. Dans le désespoir, sa mère, Amoline, partit chercher de l'eau glacée à la rivière. Le matin, Gregori se réveilla guéri, Annie était en pleine forme et jouait avec Tibbers, mais Amoline avait disparu. Naïvement, Annie crut que sa mère reviendrait un jour.\r\n\r\nLes années passèrent, et Gregori rencontra Leanna, une femme qui arriva dans la région avec sa propre fille, Daisy. Annie, habituée à être enfant unique, eut du mal à s'adapter à cette nouvelle famille. Les accès de colère d'Annie mettaient Leanna mal à l'aise, et il incombait à Gregori de maintenir une paix fragile.\r\n\r\nLa tragédie frappa lorsque Daisy, inexpérimentée face aux dangers de la région sauvage, fit une erreur de jeu qui se termina par une catastrophe familiale (sa mort, implicitement). Dans son chagrin et sa rage, Leanna accusa Annie et s'en prit à son bien le plus précieux : Tibbers, le dernier souvenir physique de sa mère.\r\n\r\nLa terreur d'Annie face à la menace de perdre Tibbers se transforma en une fureur incontrôlée. Cette vague d'émotion libéra sa puissante pyromancie latente, donnant vie à l'ours en peluche dans un maelstrom de feu protecteur.\r\n\r\nLorsque les flammes s'éteignirent, Annie se retrouva orpheline et seule une fois de plus (impliquant la mort de Gregori et Leanna dans la décharge de magie).\r\n\r\nDésormais, Annie erre dans les forêts obscures de Noxus, protégée par Tibbers, devenu un gardien enflammé. Elle est inconsciente du danger qui l'entoure et du danger qu'elle représente elle-même par son pouvoir incontrôlé. Elle s'approche occasionnellement des familles de pionniers pour obtenir des repas ou de nouveaux vêtements, mais la mort attend quiconque serait assez fou pour tenter de la séparer de Tibbers, son seul et précieux ami. Perdue dans l'innocence perpétuelle de l'enfance, elle cherche désespérément quelqu'un de similaire avec qui jouer.",
+  "tags": [
+    "Mage",
+    "Support"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 384,
+    "y": 0,
+    "full": "Annie.png",
+    "group": "champion",
+    "sprite": "champion0.png"
+  },
+  "skins": [
+    {
+      "id": "1000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "1001",
+      "num": 1,
+      "name": "Annie gothique",
+      "chromas": false
+    },
+    {
+      "id": "1002",
+      "num": 2,
+      "name": "Annie chaperon rouge",
+      "chromas": false
+    },
+    {
+      "id": "1003",
+      "num": 3,
+      "name": "Annie au pays des merveilles",
+      "chromas": false
+    },
+    {
+      "id": "1004",
+      "num": 4,
+      "name": "Annie reine du bal",
+      "chromas": false
+    },
+    {
+      "id": "1005",
+      "num": 5,
+      "name": "Annie polaire",
+      "chromas": false
+    },
+    {
+      "id": "1006",
+      "num": 6,
+      "name": "Annie nounours",
+      "chromas": false
+    },
+    {
+      "id": "1007",
+      "num": 7,
+      "name": "Annie Frankentibbers",
+      "chromas": false
+    },
+    {
+      "id": "1008",
+      "num": 8,
+      "name": "Annie panda",
+      "chromas": false
+    },
+    {
+      "id": "1009",
+      "num": 9,
+      "name": "Annie cœur tendre",
+      "chromas": false
+    },
+    {
+      "id": "1010",
+      "num": 10,
+      "name": "Annie Hextech",
+      "chromas": false
+    },
+    {
+      "id": "1011",
+      "num": 11,
+      "name": "Super Annie intergalactique",
+      "chromas": false
+    },
+    {
+      "id": "1012",
+      "num": 12,
+      "name": "Annie-versaire",
+      "chromas": false
+    },
+    {
+      "id": "1013",
+      "num": 13,
+      "name": "Annie bête lunaire",
+      "chromas": true
+    },
+    {
+      "id": "1022",
+      "num": 22,
+      "name": "Annie Café Chouchous",
+      "chromas": false
+    },
+    {
+      "id": "1031",
+      "num": 31,
+      "name": "Annie Nuit d'effroi",
+      "chromas": false
+    },
+    {
+      "id": "1040",
+      "num": 40,
+      "name": "Annie élue de l'hiver",
+      "chromas": false
+    },
+    {
+      "id": "1050",
+      "num": 50,
+      "name": "Annie princesse du combat",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "AnnieQ",
+      "name": "Désintégration",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 48,
+        "full": "AnnieQ.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Annie lance une boule de feu, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. Si la cible meurt, Annie récupère le coût en mana de la compétence et son délai de récupération est réduit de 50%.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "625",
+      "datavalues": {},
+      "description": "Annie projette une boule d'énergie magique qui inflige des dégâts ; le coût en mana lui est rendu si l'attaque détruit la cible.",
+      "cooldownBurn": "4"
+    },
+    {
+      "id": "AnnieW",
+      "name": "Incinération",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 48,
+        "full": "AnnieW.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Annie projette une vague de feu qui inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/75/80/85/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Annie projette un cône de flammes, infligeant des dégâts à tous les ennemis dans la zone.",
+      "cooldownBurn": "7"
+    },
+    {
+      "id": "AnnieE",
+      "name": "Bouclier en fusion",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 48,
+        "full": "AnnieE.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Annie octroie à un champion allié un <shield>bouclier de {{ shieldblocktotal }} PV</shield> pendant {{ shieldduration }} sec et <speed>+{{ movespeedcalc }} vitesse de déplacement</speed> (diminuant progressivement) pendant {{ movementspeedduration }} sec. Tant que le bouclier est actif, les ennemis qui lancent une attaque ou une compétence sur l'allié protégé subissent <magicDamage>{{ damagereturn }} pts de dégâts magiques</magicDamage> (une fois par bouclier).<br /><br />Tibbers gagne toujours les effets de <spellName>Bouclier en fusion</spellName> quand il est invoqué.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "PV du bouclier",
+          "Dégâts renvoyés",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Octroie à Annie ou à un allié un bonus en vitesse de déplacement et un bouclier, lequel blesse les ennemis qui lui lancent des attaques ou des compétences.",
+      "cooldownBurn": "12/11.5/11/10.5/10"
+    },
+    {
+      "id": "AnnieR",
+      "name": "Invocation : Tibbers",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 48,
+        "full": "AnnieR.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellPassive>Passive :</spellPassive> Annie gagne +{{ rpercentpenbuff*100 }}% de pénétration magique.<br /><br />Annie invoque son ours Tibbers, infligeant <magicDamage>{{ initialburstdamage }} pts de dégâts magiques</magicDamage>. Pendant les {{ tibberslifetime }} prochaines secondes, Tibbers brûle les ennemis proches en leur infligeant <magicDamage>{{ tibbersauradamage }} pts de dégâts magiques par seconde</magicDamage>.<br /><br />Tibbers devient enragé quand il est invoqué, quand Annie étourdit un champion ennemi et quand Annie meurt. Il gagne alors <attackSpeed>+275% de vitesse d'attaque</attackSpeed> et <speed>+100% de vitesse de déplacement</speed> (ce bonus diminue en 3 sec).<br /><br /><recast>Réactivation</recast> : permet de donner des ordres manuellement à Tibbers.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts initiaux",
+          "Dégâts du halo",
+          "Dégâts d'attaque",
+          "Vitesse de déplacement bonus",
+          "Délai de récupération",
+          "Pénétration magique"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Annie insuffle la vie à son ours Tibbers et inflige des dégâts aux unités dans la zone d'effet. Tibbers peut attaquer et brûle les ennemis proches de lui.",
+      "cooldownBurn": "130/115/100"
+    }
+  ],
+  "passive": {
+    "name": "Pyromanie",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 384,
+      "y": 0,
+      "full": "Annie_Passive.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Après qu'Annie a utilisé 4 compétences, sa prochaine compétence offensive étourdit sa cible.<br><br>Annie commence la partie et réapparaît avec Pyromanie disponible."
+  },
+  "created_at": "2025-11-26T15:13:31.919828+00:00",
+  "factions": [
+    "noxus"
+  ],
+  "custom_tags": null,
+  "gender": "Female",
+  "species": "Human",
+  "title_en": "the Dark Child",
+  "lore_en": "Annie is a dangerously precocious child mage with extraordinary pyrokinesis powers, born in the frontier regions north of the Ironspike Mountains in Noxus. Her parents were Gregori the Gray and Amoline the witch, who had fled the political intrigues of the capital to tame the wildlands. On the eve of Annie's birth, Amoline finished sewing a stuffed bear, Tibbers, inspired by the region's legendary shadow bears.\r\n\r\nWhen Annie was still a toddler, she and her father fell ill. Overnight, Annie began to burn with fever, becoming so hot she could no longer be held. In desperation, her mother, Amoline, left to fetch icy water from the river. The next morning, Gregori awoke, cured; Annie was healthy and playing with Tibbers, but Amoline was gone. Naively, Annie believed her mother would one day return.\r\n\r\nYears passed, and Gregori met Leanna, a woman who came to the region with her own young daughter, Daisy. Annie, spoiled as an only child, found it difficult to adjust to her new stepfamily. Annie's fiery outbursts made Leanna uneasy, and it fell to Gregori to keep an uneasy peace.\r\n\r\nTragedy struck when Daisy, unused to the dangers of the untamed borderlands, suffered a playing catastrophe (implicitly, her death). In her grief and rage, Leanna blamed Annie and focused her anger on her stepdaughter's most prized possession: Tibbers, the last physical memory of her mother.\r\n\r\nAnnie's terror at the thought of losing Tibbers grew into an unbridled rage. This emotional surge released her powerful latent pyromancy, bringing the stuffed bear to life in a maelstrom of protective fire.\r\n\r\nWhen the flames died down, Annie was left orphaned and alone once more (implying the death of Gregori and Leanna in the magical discharge).\r\n\r\nNow, Annie wanders the dark forests of Noxus, protected by Tibbers, who has become an inflamed guardian. She is oblivious to the dangers around her, and the danger her own unchecked power poses to others. She occasionally uses her disarmingly adorable exterior to be taken in by pioneer families for meals or new clothes, but fire and death await anyone foolish enough to try parting her from Tibbers, her only cherished friend. Lost in perpetual childhood innocence, she desperately seeks someone similar to play with.",
+  "spells_en": [
+    {
+      "id": "AnnieQ",
+      "name": "Disintegrate",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 48,
+        "full": "AnnieQ.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Annie hurls a fireball, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>. If the target dies, Annie refunds the Mana cost and reduces the Cooldown by 50%.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "625",
+      "datavalues": {},
+      "description": "Annie hurls a Mana infused fireball, dealing damage and refunding the Mana cost if it destroys the target.",
+      "cooldownBurn": "4"
+    },
+    {
+      "id": "AnnieW",
+      "name": "Incinerate",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 48,
+        "full": "AnnieW.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Annie projects a wave of fire, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/75/80/85/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Annie casts a blazing cone of fire, dealing damage to all enemies in the area.",
+      "cooldownBurn": "7"
+    },
+    {
+      "id": "AnnieE",
+      "name": "Molten Shield",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 48,
+        "full": "AnnieE.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Annie grants an ally champion <shield>{{ shieldblocktotal }} Shield</shield> for {{ shieldduration }} seconds and <speed>{{ movespeedcalc }} Decaying Move Speed</speed> for {{ movementspeedduration }} seconds. While the shield holds, enemies who hit the shielded ally with an Attack or Ability receive <magicDamage>{{ damagereturn }} magic damage</magicDamage> once per shield.<br /><br />Tibbers always gains the effects of <spellName>Molten Shield</spellName> when summoned.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Shield Health",
+          "Damage Reflection",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Grants Annie or an ally a shield, a burst of Move Speed, and damages enemies who strike her with attacks or spells.",
+      "cooldownBurn": "12/11.5/11/10.5/10"
+    },
+    {
+      "id": "AnnieR",
+      "name": "Summon: Tibbers",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 48,
+        "full": "AnnieR.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Annie gains {{ rpercentpenbuff*100 }}% Magic Penetration.<br /><br />Annie summons her bear Tibbers, dealing <magicDamage>{{ initialburstdamage }} magic damage</magicDamage>. For the next {{ tibberslifetime }} seconds, Tibbers burns nearby enemies for <magicDamage>{{ tibbersauradamage }} magic damage per second</magicDamage>.<br /><br />Tibbers becomes enraged when summoned, if Annie stuns an enemy champion, and if Annie dies. When enraged, Tibbers gains <attackSpeed>275% Attack Speed</attackSpeed> and <speed>100% Move Speed</speed> decaying over 3 seconds.<br /><br /><recast>Recast:</recast> Manually issue orders to Tibbers.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Initial Damage",
+          "Aura Damage",
+          "Attack Damage",
+          "Bonus Move Speed",
+          "Cooldown",
+          "Magic Penetration"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Annie wills her bear Tibbers to life, dealing damage to units in the area. Tibbers can attack and also burns enemies that stand near him.",
+      "cooldownBurn": "130/115/100"
+    }
+  ],
+  "passive_en": {
+    "name": "Pyromania",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 384,
+      "y": 0,
+      "full": "Annie_Passive.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "After casting 4 spells, Annie's next offensive spell will stun the target.<br><br>Annie begins the game and respawns with Pyromania available."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Mid"
+  ],
+  "skins_en": [
+    {
+      "id": "1000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "1001",
+      "num": 1,
+      "name": "Goth Annie",
+      "chromas": false
+    },
+    {
+      "id": "1002",
+      "num": 2,
+      "name": "Red Riding Annie",
+      "chromas": false
+    },
+    {
+      "id": "1003",
+      "num": 3,
+      "name": "Annie in Wonderland",
+      "chromas": false
+    },
+    {
+      "id": "1004",
+      "num": 4,
+      "name": "Prom Queen Annie",
+      "chromas": false
+    },
+    {
+      "id": "1005",
+      "num": 5,
+      "name": "Frostfire Annie",
+      "chromas": false
+    },
+    {
+      "id": "1006",
+      "num": 6,
+      "name": "Reverse Annie",
+      "chromas": false
+    },
+    {
+      "id": "1007",
+      "num": 7,
+      "name": "FrankenTibbers Annie",
+      "chromas": false
+    },
+    {
+      "id": "1008",
+      "num": 8,
+      "name": "Panda Annie",
+      "chromas": false
+    },
+    {
+      "id": "1009",
+      "num": 9,
+      "name": "Sweetheart Annie",
+      "chromas": false
+    },
+    {
+      "id": "1010",
+      "num": 10,
+      "name": "Hextech Annie",
+      "chromas": false
+    },
+    {
+      "id": "1011",
+      "num": 11,
+      "name": "Super Galaxy Annie",
+      "chromas": false
+    },
+    {
+      "id": "1012",
+      "num": 12,
+      "name": "Annie-Versary",
+      "chromas": false
+    },
+    {
+      "id": "1013",
+      "num": 13,
+      "name": "Lunar Beast Annie",
+      "chromas": true
+    },
+    {
+      "id": "1022",
+      "num": 22,
+      "name": "Cafe Cuties Annie",
+      "chromas": false
+    },
+    {
+      "id": "1031",
+      "num": 31,
+      "name": "Fright Night Annie",
+      "chromas": false
+    },
+    {
+      "id": "1040",
+      "num": 40,
+      "name": "Winterblessed Annie",
+      "chromas": false
+    },
+    {
+      "id": "1050",
+      "num": 50,
+      "name": "Battle Princess Annie",
+      "chromas": false
+    }
+  ]
+}

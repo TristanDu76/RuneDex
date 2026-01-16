@@ -1,0 +1,426 @@
+{
+  "id": "Trundle",
+  "key": "48",
+  "name": "Trundle",
+  "title": "Roi des trolls",
+  "version": "15.23.1",
+  "lore": "Trundle est un troll massif, sournois et malicieux. Il n'y a rien qu'il ne puisse soumettre à sa volonté avec son gourdin, pas même Freljord. Extrêmement territorial, Trundle traque tous ceux qui sont assez fous pour pénétrer sur ses terres. Ensuite, armé de son imposante massue en glace pure, il fait trembler ses ennemis avant de leur planter des éclats de glace dans le corps et de se moquer d'eux tandis que la toundra absorbe leur sang.",
+  "tags": [
+    "Fighter",
+    "Tank"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 432,
+    "y": 48,
+    "full": "Trundle.png",
+    "group": "champion",
+    "sprite": "champion4.png"
+  },
+  "skins": [
+    {
+      "id": "48000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "48001",
+      "num": 1,
+      "name": "Trundle batteur",
+      "chromas": false
+    },
+    {
+      "id": "48002",
+      "num": 2,
+      "name": "Trundle ferrailleur",
+      "chromas": false
+    },
+    {
+      "id": "48003",
+      "num": 3,
+      "name": "Trundle classique",
+      "chromas": false
+    },
+    {
+      "id": "48004",
+      "num": 4,
+      "name": "Constable Trundle",
+      "chromas": false
+    },
+    {
+      "id": "48005",
+      "num": 5,
+      "name": "Trundle brise-monde",
+      "chromas": false
+    },
+    {
+      "id": "48006",
+      "num": 6,
+      "name": "Trundle tueur de dragons",
+      "chromas": true
+    },
+    {
+      "id": "48012",
+      "num": 12,
+      "name": "Trundle Nuit d'effroi",
+      "chromas": true
+    },
+    {
+      "id": "48021",
+      "num": 21,
+      "name": "Trundle fan d'e-sport",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "TrundleTrollSmash",
+      "name": "Morsure",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 48,
+        "full": "TrundleTrollSmash.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "La prochaine attaque de Trundle inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> et <status>ralentit</status> brièvement sa cible de {{ slowamount*100 }}%. Ensuite, Trundle gagne <physicalDamage>+{{ bonusad }} dégâts d'attaque</physicalDamage> pendant {{ sapdebuffduration }} sec et la cible perd <physicalDamage>{{ sappedad*-1 }} dégâts d'attaque</physicalDamage> pendant la même durée.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "20",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ratio de dégâts d'attaque",
+          "Dégâts d'attaque",
+          "Dégâts d'attaque supprimés"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "300",
+      "datavalues": {},
+      "description": "Trundle mord un ennemi, lui infligeant des dégâts, le ralentissant un court instant et drainant ses dégâts d'attaque.",
+      "cooldownBurn": "3.5"
+    },
+    {
+      "id": "trundledesecrate",
+      "name": "Royaume gelé",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 48,
+        "full": "trundledesecrate.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Trundle gèle une zone pendant {{ e4 }} sec. Dans cette zone, il gagne <speed>+{{ e1 }}% de vitesse de déplacement</speed> et <attackSpeed>+{{ e2 }}% de vitesse d'attaque</attackSpeed>, et les soins qu'il reçoit sont augmentés de {{ e3 }}%.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Vitesse de déplacement",
+          "Vitesse d'attaque",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "750",
+      "datavalues": {},
+      "description": "Trundle s'approprie la zone cible, augmentant sa vitesse d'attaque, sa vitesse de déplacement et les soins qu'il reçoit de toutes les sources.",
+      "cooldownBurn": "18/17/16/15/14"
+    },
+    {
+      "id": "TrundleCircle",
+      "name": "Montagne de glace",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 48,
+        "full": "TrundleCircle.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Trundle crée une montagne de glace pendant {{ e1 }} sec, <status>repoussant</status> brièvement les ennemis qui se trouvaient au même endroit et <status>ralentissant</status> les ennemis proches de {{ e2 }}%.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "75",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Ralentissement"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Trundle crée une montagne de glace sur la zone cible, ce qui bloque le passage et ralentit les unités ennemies proches.",
+      "cooldownBurn": "21/19.5/18/16.5/15"
+    },
+    {
+      "id": "TrundlePain",
+      "name": "Soumission",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 48,
+        "full": "TrundlePain.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Trundle siphonne la force vitale d'un champion ennemi, infligeant <magicDamage>{{ totalpercenthpdamage }} des PV max en dégâts magiques</magicDamage> et volant <scaleArmor>{{ armormrshred*100 }}% de l'armure</scaleArmor> et de la <scaleMR>résistance magique</scaleMR> de cet ennemi en {{ actualdurationofdrainbuff }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Drain de PV",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Trundle vole immédiatement un pourcentage des PV, de l'armure et de la résistance magique de sa cible. Ensuite, le nombre de PV, de points d'armure et de résistance magique volés double en 4 sec.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive": {
+    "name": "Tribut du roi",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 432,
+      "y": 48,
+      "full": "Trundle_Passive.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "Quand une unité ennemie meurt près de Trundle, il récupère un pourcentage des PV max de celle-ci."
+  },
+  "created_at": "2025-11-26T15:13:35.212437+00:00",
+  "factions": [
+    "freljord"
+  ],
+  "custom_tags": [
+    "roi"
+  ],
+  "gender": "Male",
+  "species": "Troll",
+  "title_en": "the Troll King",
+  "lore_en": "Trundle is a hulking and devious troll with a particularly vicious streak, and there is nothing he cannot bludgeon into submission—not even the Freljord itself. Fiercely territorial, he chases down anyone foolish enough to enter his domain. Then, his massive club of True Ice at the ready, he chills his enemies to the bone and impales them with jagged, frozen pillars, laughing as they bleed out onto the tundra.",
+  "spells_en": [
+    {
+      "id": "TrundleTrollSmash",
+      "name": "Chomp",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 48,
+        "full": "TrundleTrollSmash.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Trundle's next Attack deals <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> and briefly <status>Slows</status> by {{ slowamount*100 }}%, then Trundle gains <physicalDamage>{{ bonusad }} Attack Damage</physicalDamage> for {{ sapdebuffduration }} seconds and the enemy loses <physicalDamage>{{ sappedad*-1 }} Attack Damage</physicalDamage> for the same duration.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "20",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Attack Damage Ratio",
+          "Attack Damage",
+          "Attack Damage Removed"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "300",
+      "datavalues": {},
+      "description": "Trundle bites his opponent, dealing damage, briefly slowing and sapping some of their Attack Damage.",
+      "cooldownBurn": "3.5"
+    },
+    {
+      "id": "trundledesecrate",
+      "name": "Frozen Domain",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 48,
+        "full": "trundledesecrate.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Trundle freezes an area for {{ e4 }} seconds. While inside he gains <speed>{{ e1 }}% Move Speed</speed>, <attackSpeed>{{ e2 }}% Attack Speed</attackSpeed>, and {{ e3 }}% increased healing.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Move Speed",
+          "Attack Speed",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "750",
+      "datavalues": {},
+      "description": "Trundle turns target location into his domain, gaining Attack Speed, Move Speed, and increased healing from all sources while on it.",
+      "cooldownBurn": "18/17/16/15/14"
+    },
+    {
+      "id": "TrundleCircle",
+      "name": "Pillar of Ice",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 48,
+        "full": "TrundleCircle.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Trundle creates an icy pillar for {{ e1 }} seconds, briefly <status>Knocking Back</status> enemies directly over it and <status>Slowing</status> nearby enemies by {{ e2 }}%.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "75",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Slow"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Trundle creates an ice pillar at target location, becoming impassable terrain and slowing all nearby enemy units.",
+      "cooldownBurn": "21/19.5/18/16.5/15"
+    },
+    {
+      "id": "TrundlePain",
+      "name": "Subjugate",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 48,
+        "full": "TrundlePain.png",
+        "group": "spell",
+        "sprite": "spell14.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Trundle drains the lifeforce of an enemy champion, dealing <magicDamage>{{ totalpercenthpdamage }} max Health magic damage</magicDamage> and stealing <scaleArmor>{{ armormrshred*100 }}% Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR> over {{ actualdurationofdrainbuff }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Health Drain",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Trundle immediately steals a percent of his target's Health, Armor and Magic Resistance. Over the next 4 seconds the amount of Health, Armor, and Magic Resistance stolen is doubled.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive_en": {
+    "name": "King's Tribute",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 432,
+      "y": 48,
+      "full": "Trundle_Passive.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "When an enemy unit dies near Trundle, he heals for a percent of its maximum Health."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Jungle",
+    "Top"
+  ],
+  "skins_en": [
+    {
+      "id": "48000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "48001",
+      "num": 1,
+      "name": "Lil' Slugger Trundle",
+      "chromas": false
+    },
+    {
+      "id": "48002",
+      "num": 2,
+      "name": "Junkyard Trundle",
+      "chromas": false
+    },
+    {
+      "id": "48003",
+      "num": 3,
+      "name": "Traditional Trundle",
+      "chromas": false
+    },
+    {
+      "id": "48004",
+      "num": 4,
+      "name": "Constable Trundle",
+      "chromas": false
+    },
+    {
+      "id": "48005",
+      "num": 5,
+      "name": "Worldbreaker Trundle",
+      "chromas": false
+    },
+    {
+      "id": "48006",
+      "num": 6,
+      "name": "Dragonslayer Trundle",
+      "chromas": true
+    },
+    {
+      "id": "48012",
+      "num": 12,
+      "name": "Fright Night Trundle",
+      "chromas": true
+    },
+    {
+      "id": "48021",
+      "num": 21,
+      "name": "Esports Fan Trundle",
+      "chromas": true
+    }
+  ]
+}

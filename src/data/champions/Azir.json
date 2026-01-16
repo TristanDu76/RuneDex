@@ -1,0 +1,418 @@
+{
+  "id": "Azir",
+  "key": "268",
+  "name": "Azir",
+  "title": "Empereur des sables",
+  "version": "15.23.1",
+  "lore": "Azir était l'héritier le moins favorisé de l'ancien Empire de Shurima, une terre régnée par des empereurs ambitieux et protégée par de puissants guerriers appelés les Transfigurés (Ascended). Azir était un jeune homme studieux, plus intéressé par les textes que par la guerre, et il ne devait jamais devenir empereur. Il se lia d'amitié avec un jeune esclave, qu'il nomma Xerath (\"celui qui partage\"), le nommant son esclave personnel pour ne pas l'exposer publiquement.\r\n\r\nLors d'une attaque d'assassins, Xerath sauva la vie d'Azir en s'interposant. Devenu l'unique héritier, Azir monta sur le trône et fit de Xerath son unique confident et bras droit, le chargeant de rassembler des connaissances. Azir régnait avec une main juste et œuvrait secrètement à un plan pour abolir l'esclavage après des millénaires de tradition. Il ne pouvait pas faire de Xerath son frère, comme promis, avant d'avoir libéré tous les esclaves.\r\n\r\nCependant, Xerath, bien qu'il ait conseillé Azir pendant des années, nourrissait une haine croissante due à son esclavage et à la lenteur d'Azir à le libérer. Xerath convainquit l'empereur de la nécessité de devenir invincible et d'entreprendre le rituel de la Transfiguration (Ascension), une cérémonie normalement réservée aux héros en fin de vie.\r\n\r\nLe jour du rituel, l'arrogance d'Azir était à son comble. Juste avant que les prêtres ne commencent, Azir libéra Xerath, ainsi que tous les esclaves de Shurima, et le nomma son frère éternel. Cependant, il était trop tard. Xerath, qui avait secrètement étudié la magie noire, trahit Azir.\r\n\r\nAu lieu de permettre à Azir d'être Transfiguré, Xerath libéra ses propres pouvoirs et prit la place d'Azir sur l'estrade. La puissance céleste du rituel, détournée, explosa, détruisant Shurima instantanément et réduisant la cité et son peuple en cendres. Azir, frappé par le feu solaire, fut consumé par la douleur et sombra dans un oubli intemporel.\r\n\r\nDes millénaires plus tard, le sang de son dernier descendant mortel se répandit sur les ruines du temple, ressuscitant Azir. Il revint comme un être incomplet, fait de poussière animée. Il trouva le cadavre de la femme, sa lointaine descendante, et dans un acte désintéressé d'amour et de deuil, la porta jusqu'à l'Oasis de l'Aube.\r\n\r\nCet acte de pure abnégation compléta sa Transfiguration. Azir ressuscita sous sa forme magnifique de guerrier-faucon, gagnant le pouvoir de commander au sable. D'un simple geste, sa cité ensevelie ressurgit des sables. En reconstituant les derniers instants de la ville avec le sable, Azir vit l'horreur de la trahison de Xerath.\r\n\r\nAujourd'hui, Azir, à la tête d'une armée de guerriers de sable, a juré de retrouver Xerath, de récupérer ce qui lui a été volé et de rendre à Shurima sa gloire et sa puissance passées.",
+  "tags": [
+    "Mage",
+    "Marksman"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 144,
+    "y": 48,
+    "full": "Azir.png",
+    "group": "champion",
+    "sprite": "champion0.png"
+  },
+  "skins": [
+    {
+      "id": "268000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "268001",
+      "num": 1,
+      "name": "Azir galactique",
+      "chromas": false
+    },
+    {
+      "id": "268002",
+      "num": 2,
+      "name": "Azir nécromancien",
+      "chromas": false
+    },
+    {
+      "id": "268003",
+      "num": 3,
+      "name": "SKT T1 Azir",
+      "chromas": false
+    },
+    {
+      "id": "268004",
+      "num": 4,
+      "name": "Azir du royaume en guerre",
+      "chromas": false
+    },
+    {
+      "id": "268005",
+      "num": 5,
+      "name": "Azir sylvestre",
+      "chromas": true
+    },
+    {
+      "id": "268014",
+      "num": 14,
+      "name": "Azir des Worlds 2022",
+      "chromas": true
+    },
+    {
+      "id": "268019",
+      "num": 19,
+      "name": "Azir avocat",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "AzirQWrapper",
+      "name": "Sables conquérants",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 144,
+        "full": "AzirQWrapper.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Azir envoie tous ses <keywordMajor>soldats de sable</keywordMajor> dans une zone, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> aux ennemis qu'ils traversent et les <status>ralentissant</status> de {{ e2 }}% pendant 1 sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/80/90/100/110",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "740",
+      "datavalues": {},
+      "description": "Azir envoie tous les soldats de sable vers une zone. Les soldats infligent des dégâts magiques aux ennemis qu'ils traversent et appliquent un ralentissement pendant 1 seconde.",
+      "cooldownBurn": "14/12/10/8/6"
+    },
+    {
+      "id": "AzirW",
+      "name": "Dresse-toi !",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 144,
+        "full": "AzirW.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "2",
+      "maxrank": 5,
+      "tooltip": "Azir invoque un <keywordMajor>soldat de sable</keywordMajor> pendant {{ e1 }} sec. Quand Azir attaque un ennemi proche d'un <keywordMajor>soldat de sable</keywordMajor>, il ordonne à la place à ce soldat de donner un coup de lance vers cet ennemi, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.<br /><br />Cette compétence a {{ maxammo }} charges.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/35/30/25/20",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts de l'attaque du soldat",
+          "Ratio de puissance total",
+          "Délai de rechargement",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "525",
+      "datavalues": {},
+      "description": "Azir invoque un soldat de sable qui attaque les cibles proches à sa place, remplaçant son attaque de base contre les cibles situées à portée du soldat. Les attaques du soldat infligent des dégâts magiques aux ennemis sur une même ligne.",
+      "cooldownBurn": "1.5"
+    },
+    {
+      "id": "AzirEWrapper",
+      "name": "Sables mouvants",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 144,
+        "full": "AzirEWrapper.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Azir s'octroie un <shield>bouclier de {{ totalshield }} PV</shield> pendant {{ e6 }} sec et se rue vers l'un de ses <keywordMajor>soldats de sable</keywordMajor>, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> aux ennemis qu'il traverse.<br /><br />Si Azir touche un champion ennemi, il s'arrête et gagne une charge de <keywordMajor>soldat de sable</keywordMajor>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "PV du bouclier",
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1100",
+      "datavalues": {},
+      "description": "Azir s'entoure brièvement d'un bouclier et fonce vers un de ses soldats de sable, blessant les ennemis touchés. S'il touche un champion ennemi, il prépare instantanément un nouveau soldat de sable et la ruée s'arrête.",
+      "cooldownBurn": "22/20.5/19/17.5/16"
+    },
+    {
+      "id": "AzirR",
+      "name": "Partition impériale",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 144,
+        "full": "AzirR.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Azir invoque un mur de soldats dotés de boucliers qui chargent vers l'avant, <status>repoussant</status> les ennemis et infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. Les soldats conservent ensuite leur formation en mur pendant {{ e4 }} sec et empêchent les ennemis de passer.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Nombre de soldats",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "250",
+      "datavalues": {},
+      "description": "Azir invoque un mur de soldats qui chargent vers l'avant, repoussant et blessant les ennemis.",
+      "cooldownBurn": "120/105/90"
+    }
+  ],
+  "passive": {
+    "name": "Héritage de Shurima",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 144,
+      "y": 48,
+      "full": "Azir_Passive.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Azir peut invoquer le Disque solaire depuis les ruines des tourelles ennemies ou alliées."
+  },
+  "created_at": "2025-11-26T15:13:32.327162+00:00",
+  "factions": [
+    "shurima"
+  ],
+  "custom_tags": [
+    "ascensionne",
+    "empereur"
+  ],
+  "gender": "Male",
+  "species": "Ascended",
+  "title_en": "the Emperor of the Sands",
+  "lore_en": "Azir was the least-favored son of the ancient Shuriman Empire, a land ruled by ambitious emperors and protected by powerful warriors known as the Ascended (Transfigured). Azir was a studious young man, more interested in texts than warfare, and was never meant to be emperor. He befriended a young slave whom he named Xerath (\"one who shares\"), appointing him his personal slave to avoid publicly endangering him.\r\n\r\nDuring an attack by assassins, Xerath saved Azir's life by intervening. Now the sole heir, Azir ascended the throne and made Xerath his only trusted confidant and right-hand man, tasking him with seeking out knowledge. Azir ruled with a harsh but just hand and secretly developed a plan to overturn slavery, a millennia-old tradition. He could not publicly name Xerath his brother, as he had promised, until all Shurima's slaves were free.\r\n\r\nHowever, Xerath, though he advised Azir for years, harbored a growing hatred stemming from his enslavement and Azir's slowness in freeing him. Xerath convinced the emperor of the necessity of becoming invincible and undertaking the Ascension ritual, a ceremony normally reserved for heroes near the end of their lives.\r\n\r\nOn the day of the ritual, Azir’s arrogance was at its height. Just before the priests began, Azir freed Xerath, along with all the slaves of Shurima, and named him his eternal brother. However, it was too late. Xerath, who had secretly studied dark sorcery, betrayed Azir.\r\n\r\nInstead of allowing Azir to Ascend, Xerath unleashed his own powers and blasted Azir from his place on the dais, taking his spot. The celestial power of the ritual, being diverted, exploded, devastating Shurima instantly and reducing the city and its people to ash. Azir, consumed by the sun fire, fell into a timeless oblivion.\r\n\r\nMillennia later, the blood of his last mortal descendant spilled onto the temple ruins, resurrecting Azir. He returned as an incomplete being, animated dust held together by sheer will. He found the corpse of the woman, his distant descendant, and in a selfless act of love and mourning, carried her to the Oasis of the Dawn.\r\n\r\nThis act of pure selflessness completed his Ascension. Azir was remade into his magnificent, hawk-armored form, gaining the power to command the sand itself. With a single command, his buried city shrugged off the dust of centuries to rise anew. By weaving the city's last moments using sand, Azir watched in horror as Xerath's treachery unfolded.\r\n\r\nToday, Azir, leading an army of sand warriors, has sworn to find Xerath, reclaim what was stolen from him, and restore Shurima to its former glory and power.",
+  "spells_en": [
+    {
+      "id": "AzirQWrapper",
+      "name": "Conquering Sands",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 144,
+        "full": "AzirQWrapper.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Azir orders all <keywordMajor>Sand Soldiers</keywordMajor> to an area, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> to enemies they pass through and <status>Slowing</status> them by {{ e2 }}% for 1 second.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/80/90/100/110",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "740",
+      "datavalues": {},
+      "description": "Azir sends all Sand Soldiers towards a location. Sand Soldiers deal magic damage to enemies they pass through and apply a slow for 1 second.",
+      "cooldownBurn": "14/12/10/8/6"
+    },
+    {
+      "id": "AzirW",
+      "name": "Arise!",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 144,
+        "full": "AzirW.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "2",
+      "maxrank": 5,
+      "tooltip": "Azir summons a <keywordMajor>Sand Soldier</keywordMajor> for {{ e1 }} seconds. When Azir Attacks an enemy near a <keywordMajor>Sand Soldier</keywordMajor>, he instead orders the soldiers to stab, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> in their direction.<br /><br />This Ability has {{ maxammo }} charges.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/35/30/25/20",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Solder Attack Damage",
+          "Total AP Ratio",
+          "Recharge Time",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "525",
+      "datavalues": {},
+      "description": "Azir summons a Sand Soldier to attack nearby targets for him, replacing his basic attack against targets within the soldier's range. Their attacks deal magic damage to enemies in a line.",
+      "cooldownBurn": "1.5"
+    },
+    {
+      "id": "AzirEWrapper",
+      "name": "Shifting Sands",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 144,
+        "full": "AzirEWrapper.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Azir grants himself <shield>{{ totalshield }} Shield</shield> for {{ e6 }} seconds and dashes to one of his <keywordMajor>Sand Soldiers</keywordMajor>, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> to enemies he passes through.<br /><br />If Azir hits an enemy champion, he stops and gains a <keywordMajor>Sand Soldier</keywordMajor> charge.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Shield Amount",
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1100",
+      "datavalues": {},
+      "description": "Azir shields himself briefly and dashes to one of his Sand Soldiers, damaging enemies. If he hits an enemy champion, he instantly readies a new Sand Soldier for deployment and halts his dash.",
+      "cooldownBurn": "22/20.5/19/17.5/16"
+    },
+    {
+      "id": "AzirR",
+      "name": "Emperor's Divide",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 144,
+        "full": "AzirR.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Azir summons a wall of armored soldiers that charges forward, <status>Knocking Back</status> enemies and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>. The soldiers remain, blocking enemy paths for {{ e4 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Number of Soldiers",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "250",
+      "datavalues": {},
+      "description": "Azir summons a wall of soldiers which charge forward, knocking back and damaging enemies.",
+      "cooldownBurn": "120/105/90"
+    }
+  ],
+  "passive_en": {
+    "name": "Shurima's Legacy",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 144,
+      "y": 48,
+      "full": "Azir_Passive.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Azir can summon the Disc of the Sun from the ruins of allied or enemy turrets."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Mid"
+  ],
+  "skins_en": [
+    {
+      "id": "268000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "268001",
+      "num": 1,
+      "name": "Galactic Azir",
+      "chromas": false
+    },
+    {
+      "id": "268002",
+      "num": 2,
+      "name": "Gravelord Azir",
+      "chromas": false
+    },
+    {
+      "id": "268003",
+      "num": 3,
+      "name": "SKT T1 Azir",
+      "chromas": false
+    },
+    {
+      "id": "268004",
+      "num": 4,
+      "name": "Warring Kingdoms Azir",
+      "chromas": false
+    },
+    {
+      "id": "268005",
+      "num": 5,
+      "name": "Elderwood Azir",
+      "chromas": true
+    },
+    {
+      "id": "268014",
+      "num": 14,
+      "name": "Worlds 2022 Azir",
+      "chromas": true
+    },
+    {
+      "id": "268019",
+      "num": 19,
+      "name": "Attorney Azir",
+      "chromas": true
+    }
+  ]
+}

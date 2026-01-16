@@ -1,0 +1,401 @@
+{
+  "id": "Skarner",
+  "key": "72",
+  "name": "Skarner",
+  "title": "Souverain originel",
+  "version": "15.23.1",
+  "lore": "L'antique Brackern Skarner est vénéré à Ixtal comme l'un des membres fondateurs de la caste dirigeante, les Yun Tal. Il protège farouchement sa nation du reste du monde en écoutant les vibrations de la terre pour détecter de potentielles menaces depuis son antre sous Ixaocan. Alors que de plus en plus de membres des Yun Tal commencent à remettre en question leur isolement, Skarner se montre chaque jour un peu plus paranoïaque et prêt à tout pour assurer la sécurité d'Ixtal et de ses habitants, quel qu'en soit le prix.",
+  "tags": [
+    "Tank",
+    "Fighter"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 240,
+    "y": 0,
+    "full": "Skarner.png",
+    "group": "champion",
+    "sprite": "champion4.png"
+  },
+  "skins": [
+    {
+      "id": "72000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "72001",
+      "num": 1,
+      "name": "Skarner fléau des sables",
+      "chromas": false
+    },
+    {
+      "id": "72002",
+      "num": 2,
+      "name": "Skarner tellurique",
+      "chromas": false
+    },
+    {
+      "id": "72003",
+      "num": 3,
+      "name": "Proto Skarner Alpha",
+      "chromas": false
+    },
+    {
+      "id": "72004",
+      "num": 4,
+      "name": "Skarner gardien des sables",
+      "chromas": false
+    },
+    {
+      "id": "72005",
+      "num": 5,
+      "name": "Skarner dard cosmique",
+      "chromas": true
+    },
+    {
+      "id": "72014",
+      "num": 14,
+      "name": "Skarner du royaume des mechas",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "SkarnerQ",
+      "name": "Terre brisée/Soulèvement",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 144,
+        "full": "SkarnerQ.png",
+        "group": "spell",
+        "sprite": "spell12.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Skarner arrache un rocher du sol, gagnant <attackSpeed>+{{ attackspeed*100 }}% de vitesse d'attaque</attackSpeed> pour ses 3 prochaines attaques et infligeant <physicalDamage>{{ abilitydamage }} pts de dégâts physiques</physicalDamage> aux ennemis proches. Sa dernière attaque inflige des <physicalDamage>dégâts physiques bonus équivalents à {{ maxhppercent*100 }}% des PV max</physicalDamage> et <status>ralentit</status> les ennemis affectés de {{ slowpercent*100 }}% pendant {{ slowduration }} sec.<br /><br /><recast>Réactivation :</recast> Skarner met un terme à cette compétence et lance son rocher, infligeant des <physicalDamage>dégâts physiques équivalents à {{ spell.skarnerq:abilitydamage }} + {{ spell.skarnerq:maxhppercent*100 }}% des PV max</physicalDamage>. Le premier ennemi touché et les autres ennemis proches sont aussi <status>ralentis</status> de {{ spell.skarnerq:slowpercent*100 }}% pendant {{ spell.skarnerq:slowduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "45",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Vitesse d'attaque",
+          "Limite contre les monstres",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Skarner arrache du sol un rocher qui renforce ses attaques et peut être lancé comme un puissant projectile.",
+      "cooldownBurn": "8/6.75/5.5/4.25/3"
+    },
+    {
+      "id": "SkarnerW",
+      "name": "Bastion sismique",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 144,
+        "full": "SkarnerW.png",
+        "group": "spell",
+        "sprite": "spell12.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Skarner gagne un <shield>bouclier de {{ initialshield }} PV</shield> pendant {{ shieldduration }} sec et provoque un séisme qui inflige <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage> et qui <status>ralentit</status> les ennemis proches de {{ sloweffect*-100 }}% pendant {{ slowduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Skarner gagne un bouclier et provoque un séisme dont l'onde de choc blesse et ralentit les ennemis.",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "SkarnerE",
+      "name": "Impact d'Ixtal",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0,
+        "full": "SkarnerE.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Skarner charge vers l'avant en tournant dans la direction choisie et en ignorant les obstacles. S'il percute un champion ou un grand monstre, Skarner le repousse jusqu'à la fin de la charge.<br /><br />S'il percute un mur en repoussant un ennemi, celui-ci subit <physicalDamage>{{ pindamage }} pts de dégâts physiques</physicalDamage> et est <status>étourdi</status> pendant {{ stunduration }} sec.<br /><br />Skarner peut <recast>réactiver</recast> cette compétence pour mettre fin à sa charge prématurément.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1700",
+      "datavalues": {},
+      "description": "Skarner charge vers l'avant en traversant les obstacles. S'il percute un champion ou un grand monstre, il l'écrase contre le prochain mur rencontré pour lui infliger des dégâts et l'étourdir.",
+      "cooldownBurn": "22/21/20/19/18"
+    },
+    {
+      "id": "SkarnerR",
+      "name": "Empalement",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 0,
+        "full": "SkarnerR.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Skarner frappe avec ses queues devant lui, infligeant <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage> et <status>neutralisant</status> pendant {{ duration }} sec les 3 premiers champions touchés. Il peut ensuite se déplacer librement en traînant les ennemis neutralisés jusqu'à la fin de cette compétence.<br /><br />Si Skarner touche au moins un champion, il gagne <speed>+{{ speedboostamount*100 }}% de vitesse de déplacement</speed> pendant {{ speedboostduration }} sec.<br /><br />Si <spellName>Terre brisée</spellName> est active, Skarner lance d'abord <spellName>Soulèvement</spellName>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "625",
+      "datavalues": {},
+      "description": "Skarner frappe avec ses queues devant lui pour neutraliser des champions ennemis. Il peut ensuite se déplacer librement en traînant les ennemis ainsi neutralisés.",
+      "cooldownBurn": "120/105/90"
+    }
+  ],
+  "passive": {
+    "name": "Échos des vibrations",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 240,
+      "y": 0,
+      "full": "Skarner_Passive.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "Les attaques de Skarner, Terre brisée, Soulèvement et Empalement appliquent Tectonique. Au maximum d'effets Tectonique cumulés, les ennemis subissent des dégâts magiques selon leurs PV max sur la durée."
+  },
+  "created_at": "2025-11-26T15:13:35.01772+00:00",
+  "factions": [
+    "ixtal"
+  ],
+  "custom_tags": [],
+  "gender": "Male",
+  "species": "Brackern",
+  "title_en": "the Primordial Sovereign",
+  "lore_en": "The ancient, colossal brackern Skarner is revered in Ixtal as one of the founding members of its ruling caste, the Yun Tal. Devoted to keeping his nation safe from the rest of the world, Skarner dwells in a chamber beneath Ixaocan where he can hear the vibrations of the earth and detect potential threats. As more members of the Yun Tal begin questioning Ixtal's self-isolation, Skarner grows increasingly paranoid and will do anything to keep Ixtal and its people safe—no matter the cost.",
+  "spells_en": [
+    {
+      "id": "SkarnerQ",
+      "name": "Shattered Earth / Upheaval",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 144,
+        "full": "SkarnerQ.png",
+        "group": "spell",
+        "sprite": "spell12.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Skarner rips a boulder from the ground, empowering his next 3 Attacks with <attackSpeed>{{ attackspeed*100 }}% Attack Speed</attackSpeed> and dealing <physicalDamage>{{ abilitydamage }} physical damage</physicalDamage> to surrounding enemies. His final Attack will deal an additional <physicalDamage>{{ maxhppercent*100 }}% max Health physical damage</physicalDamage> and <status>Slow</status> affected foes by {{ slowpercent*100 }}% for {{ slowduration }}s.<br /><br /><recast>Recast:</recast> Skarner ends this Ability and throws his boulder, dealing <physicalDamage>{{ spell.skarnerq:abilitydamage }} + {{ spell.skarnerq:maxhppercent*100 }}% max Health physical damage</physicalDamage>, and additionally <status>Slowing</status> the first enemy hit — and any other surrounding enemies — by {{ spell.skarnerq:slowpercent*100 }}% for {{ spell.skarnerq:slowduration }}s.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "45",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Attack Speed",
+          "Monster Cap",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "400",
+      "datavalues": {},
+      "description": "Skarner rips a boulder from the earth that empowers his attacks and can be thrown as a powerful projectile.",
+      "cooldownBurn": "8/6.75/5.5/4.25/3"
+    },
+    {
+      "id": "SkarnerW",
+      "name": "Seismic Bastion",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 144,
+        "full": "SkarnerW.png",
+        "group": "spell",
+        "sprite": "spell12.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Skarner gains <shield>{{ initialshield }} Shield</shield> for {{ shieldduration }}s and triggers an earthquake that deals <magicDamage>{{ damage }} magic damage</magicDamage> and <status>Slows</status> nearby enemies by {{ sloweffect*-100 }}% for {{ slowduration }}s.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Skarner gains a shield and creates an earthquake whose shockwave damages and slows foes.",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "SkarnerE",
+      "name": "Ixtal's Impact",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0,
+        "full": "SkarnerE.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Skarner charges forward, steering toward the chosen direction and ignoring terrain. If he runs into a champion or large monster, Skarner drags them along for the rest of his charge.<br /><br />Colliding into a wall with an enemy in tow deals <physicalDamage>{{ pindamage }} physical damage</physicalDamage> to the enemy and <status>Stuns</status> them for {{ stunduration }}s.<br /><br />Skarner can <recast>Recast</recast> this Ability to end his charge early.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1700",
+      "datavalues": {},
+      "description": "Skarner charges forward and passes through terrain. If he collides with a champion or large monster, he'll slam them into the next wall he hits to damage and stun them.",
+      "cooldownBurn": "22/21/20/19/18"
+    },
+    {
+      "id": "SkarnerR",
+      "name": "Impale",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 0,
+        "full": "SkarnerR.png",
+        "group": "spell",
+        "sprite": "spell13.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Skarner's tails lash forward, dealing <magicDamage>{{ damage }} magic damage</magicDamage> and <status>Suppressing</status> the first 3 champions he hits for {{ duration }}s. Those hit are dragged along by Skarner for the duration of this Ability.<br /><br />If Skarner hits at least one champion he gains <speed>{{ speedboostamount*100 }}% Move Speed</speed> for {{ speedboostduration }} seconds.<br /><br />If <spellName>Shattered Earth</spellName> is active, Skarner will cast <spellName>Upheaval</spellName> first.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "625",
+      "datavalues": {},
+      "description": "Skarner's tails lash forward to suppress enemy champions. Once suppressed, the victims will be dragged along by Skarner as he moves around.",
+      "cooldownBurn": "120/105/90"
+    }
+  ],
+  "passive_en": {
+    "name": "Threads of Vibration",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 240,
+      "y": 0,
+      "full": "Skarner_Passive.png",
+      "group": "passive",
+      "sprite": "passive4.png"
+    },
+    "description": "Skarner's Attacks, Shattered Earth, Upheaval, and Impale, apply Quaking. At max stacks of Quaking, enemies take max Health magic damage over its duration."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "72000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "72001",
+      "num": 1,
+      "name": "Sandscourge Skarner",
+      "chromas": false
+    },
+    {
+      "id": "72002",
+      "num": 2,
+      "name": "Earthrune Skarner",
+      "chromas": false
+    },
+    {
+      "id": "72003",
+      "num": 3,
+      "name": "Battlecast Alpha Skarner",
+      "chromas": false
+    },
+    {
+      "id": "72004",
+      "num": 4,
+      "name": "Guardian of the Sands Skarner",
+      "chromas": false
+    },
+    {
+      "id": "72005",
+      "num": 5,
+      "name": "Cosmic Sting Skarner",
+      "chromas": true
+    },
+    {
+      "id": "72014",
+      "num": 14,
+      "name": "Mecha Kingdoms Skarner",
+      "chromas": false
+    }
+  ]
+}

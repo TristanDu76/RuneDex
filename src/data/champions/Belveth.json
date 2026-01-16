@@ -1,0 +1,374 @@
+{
+  "id": "Belveth",
+  "key": "200",
+  "name": "Bel'Veth",
+  "title": "Impératrice du Néant",
+  "version": "15.23.1",
+  "lore": "Bel'Veth n'est pas une simple entité du Néant (Void) ; elle est le produit d'une réaction allergique entre le Néant, dimension de néant paisible, et la réalité de l'existence. Pendant des millénaires, les créatures du Néant (Voidborn), en réaction à l'agitation et à la douleur de l'existence, ont dévoré la réalité, ne laissant derrière elles qu'un vide. Cependant, à chaque incursion, les Voidborn et le Néant lui-même se sont lentement mutés, passant de leurs formes parfaites à des êtres violents et hédonistes.\r\n\r\nProfondément enfouie dans les tunnels du Néant, une nouvelle poche de \"non-création\" grandissait, alimentée par les interférences humaines et les tentatives des Guetteurs (Watchers) d'envahir le Freljord. Ce lieu blasphématoire commença à manifester les opposés du Vieux Néant : le désir, la soif et le besoin.\r\n\r\nCette nouvelle entité avait besoin d'un chef, capable d'interagir avec les humains, de récolter leurs émotions et leurs souvenirs, et de diriger l'anéantissement pour faire naître une nouvelle ère.\r\n\r\nC'est ainsi qu'est née Bel'Veth, l'Impératrice de Cauchemar. Elle est l'aboutissement des souvenirs, expériences et émotions combinés d'une ville portuaire entière et de son océan périphérique, qu'elle a dévorés. Son esprit détient des millions d'années de connaissances parfaitement préservées, lui conférant une quasi-omniscience.\r\n\r\nBel'Veth représente la fin de Runeterra. Elle consume des villes et leurs populations, transformant l'information et la matière en un paysage tentaculaire et étranger qu'elle nomme la Mer de Lavande (Lavender Sea). Son ambition est de dévorer et de reconstruire Runeterra à sa propre image tordue.\r\n\r\nPour ceux qu'elle juge utiles, Bel'Veth ne ment jamais, se contentant d'énoncer la nature des choses, car elle considère la victoire comme assurée. Cependant, sa forme humaine est simplement une adaptation faite de nerfs, de muscles et de pédoncules oculaires. Lorsqu'elle est mécontente ou se prépare à l'action, elle se déploie pour révéler sa véritable figure monstrueuse aux ailes titanesques.\r\n\r\nIroniquement, son nom provient d'un mythe des anciens Shurimiens sur un \"Dieu de l'Oubli\" qui effacerait tout sans haine pour se remplacer lui-même.\r\n\r\nBel'Veth ne se contentera pas de Runeterra. Son regard avide se tourne également vers ses propres progéniteurs, les Guetteurs, car elle a l'intention de détruire à la fois le monde du dessus et le domaine de ceux qu'elle considère comme les maîtres dépassés du Néant.",
+  "tags": [
+    "Fighter"
+  ],
+  "partype": "Aucune",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 240,
+    "y": 48,
+    "full": "Belveth.png",
+    "group": "champion",
+    "sprite": "champion0.png"
+  },
+  "skins": [
+    {
+      "id": "200000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "200001",
+      "num": 1,
+      "name": "Bel'Veth boss de combat",
+      "chromas": true
+    },
+    {
+      "id": "200010",
+      "num": 10,
+      "name": "Bel'Veth matriarche cosmique",
+      "chromas": true
+    },
+    {
+      "id": "200019",
+      "num": 19,
+      "name": "Bel'Veth primordienne",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "BelvethQ",
+      "name": "Charge du Néant",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 144,
+        "full": "BelvethQ.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Bel'Veth se rue dans une direction, infligeant <physicalDamage>{{ basedamage }} pts de dégâts physiques</physicalDamage> aux ennemis qu'elle traverse.<br /><br />Chaque direction a son propre délai de récupération de {{ f1 }} sec, lequel diminue à mesure que la <attackSpeed>vitesse d'attaque</attackSpeed> augmente.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération par direction",
+          "Dégâts aux monstres",
+          "Dégâts aux sbires"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "450",
+      "datavalues": {},
+      "description": "Bel'Veth se rue dans la direction choisie et blesse tous les ennemis qu'elle traverse.",
+      "cooldownBurn": "1"
+    },
+    {
+      "id": "BelvethW",
+      "name": "Projection cinglante",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 144,
+        "full": "BelvethW.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Bel'Veth donne un coup de queue, infligeant <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage>, <status>projetant dans les airs</status> les ennemis pendant {{ duration }} sec et les <status>ralentissant</status> de {{ slowpercent*100 }}% pendant {{ slowduration }} sec. Si Bel'Veth touche un champion, le délai de récupération de <spellName>Charge du Néant</spellName> est réinitialisé pour cette direction.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Durée de ralentissement",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "715",
+      "datavalues": {},
+      "description": "Bel'Veth donne un coup de queue au sol, ce qui blesse, projette dans les airs et ralentit les ennemis.",
+      "cooldownBurn": "12/11/10/9/8"
+    },
+    {
+      "id": "BelvethE",
+      "name": "Maelström impérial",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0,
+        "full": "BelvethE.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Bel'Veth canalise une tempête de coups autour d'elle. Elle gagne alors +{{ drpercent*100 }}% de réduction des dégâts et +{{ totallifesteal }} vol de vie, et elle attaque {{ f2.0 }} fois en {{ totalduration }} sec (le nombre d'attaques augmente avec la <attackSpeed>vitesse d'attaque</attackSpeed>). Chaque attaque frappe l'ennemi qui a le moins de PV, lui infligeant <physicalDamage>{{ damageperstrike }}</physicalDamage> - <physicalDamage>{{ maxdamageperstriketooltip }} pts de dégâts physiques</physicalDamage> selon les PV manquants de la cible.<br /><br />Lancer une autre compétence ou <recast>réactiver</recast> cette compétence y met fin prématurément.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Réduction des dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "500",
+      "datavalues": {},
+      "description": "Bel'Veth s'immobilise et canalise une tempête de coups autour d'elle qui cible l'ennemi ayant le moins de PV. De plus, elle gagne du vol de vie et de la réduction des dégâts.",
+      "cooldownBurn": "20/19/18/17/16"
+    },
+    {
+      "id": "BelvethR",
+      "name": "Banquet infini",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 0,
+        "full": "BelvethR.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellPassive>Passive :</spellPassive> toutes les deux attaques contre une même cible, Bel'Veth inflige <trueDamage>{{ finalonhitdamage }} pts de dégâts bruts</trueDamage> supplémentaires (cumulable à l'infini). Participer à l'élimination de champions et de monstres épiques génère des coraux du Néant.<br /><br /><spellActive>Active :</spellActive> consommer un corail du Néant octroie <keywordMajor>{{ passivestacksondevour }} effet Lavande</keywordMajor> et active la véritable forme de Bel'Veth pendant {{ steroidduration }} sec. Les coraux du Néant générés par des monstres épiques du Néant augmentent la durée à {{ voidduration }} sec et transforment en rémoras du Néant les sbires tués à proximité. Pendant l'incantation, Bel'Veth <status>ralentit</status> les ennemis proches avant d'exploser, infligeant des <trueDamage>dégâts bruts équivalents à {{ totalexplosiondamage }} + {{ missinghealthdamage*100 }}% des PV manquants de la cible</trueDamage>.<br /><br />Dans sa véritable forme, Bel'Veth gagne <healing>+{{ maxhealthondevour }} PV max</healing>, <speed>+{{ oocms }} vitesse de déplacement</speed> en dehors des combats, +{{ bonusaarange }} portée d'attaque et <attackSpeed>+{{ totalasmod*100 }}% de vitesse d'attaque totale</attackSpeed>, et <spellName>Charge du Néant</spellName> peut traverser les murs.<br /><br /><br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts à l'impact",
+          "Dégâts de l'explosion",
+          "PV supplémentaires",
+          "Vitesse de déplacement",
+          "Vitesse d'attaque",
+          "PV des rémoras du Néant"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "450",
+      "datavalues": {},
+      "description": "Bel'Veth consomme du corail du Néant ; elle prend alors sa véritable forme, ce qui augmente ses PV max, sa portée d'attaque, sa vitesse d'attaque et sa vitesse de déplacement en dehors des combats. Consommer du corail du Néant généré par un monstre épique du Néant prolonge la durée de son ultime et lui donne le pouvoir d'invoquer des rémoras du Néant.",
+      "cooldownBurn": "1"
+    }
+  ],
+  "passive": {
+    "name": "Mer de lavande ",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 240,
+      "y": 48,
+      "full": "Belveth_Passive.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Bel'Veth gagne définitivement des bonus cumulables en vitesse d'attaque après avoir tué des grands monstres, des grands sbires et des champions. Elle gagne aussi un bonus temporaire en vitesse d'attaque après avoir utilisé une compétence."
+  },
+  "created_at": "2025-11-26T15:13:32.327162+00:00",
+  "factions": [
+    "void"
+  ],
+  "custom_tags": [
+    "impératrice"
+  ],
+  "gender": "Female",
+  "species": "Voidborn",
+  "title_en": "the Empress of the Void",
+  "lore_en": "Bel'Veth is not a simple Void entity; she is the product of an allergic reaction between the Void, a dimension of peaceful nothingness, and the reality of existence. For millennia, the Voidborn, reacting to the shock and pain of existence, devoured reality, leaving behind only a void. However, with every incursion, the Voidborn and the Void itself slowly mutated, shifting from their once-perfect forms into violent and hedonistic animals.\r\n\r\nDeep inside the darkest recesses of the Voidborn tunnels, a new pocket of \"un-creation\" grew, fueled by human interference and the Watchers' attempts to invade the Freljord. This blasphemous pocket began to manifest the opposites of the Old Void: desire, want, and need.\r\n\r\nThis new entity craved a leader, someone who could interface with humans, harvest their emotions and memories, and direct the annihilation to usher in a new era.\r\n\r\nThus, Bel'Veth, the Nightmare Empress, was born. She is the culmination of the combined memories, experiences, and emotions of an entire devoured port city and its outlying ocean. Her mind contains millions of years of perfectly preserved knowledge, granting her near-omniscience.\r\n\r\nBel'Veth represents the end of Runeterra. She consumes cities and their populations, repurposing the information and matter into a sprawling, alien landscape she calls the Lavender Sea. Her ambition is to devour and rebuild Runeterra in her own twisted image.\r\n\r\nTo those she deems of strategic value, Bel'Veth never lies, simply stating the nature of things, as she considers victory all but assured. However, her human form is merely an adaptation made of nerve endings, muscles, and eyestalks. When displeased or preparing for action, she unfurls her titanic wings to reveal her true, monstrous figure.\r\n\r\nIronically, her name comes from an ancient Shuriman myth about a \"God of Oblivion\" who would erase all things without hatred, replacing them with itself.\r\n\r\nBel'Veth will not be satisfied with Runeterra alone. Her greedy gaze is also fixed upon her own progenitors, the Watchers, as she intends to destroy both the world above and the domain of those she views as the outdated masters of the Void.",
+  "spells_en": [
+    {
+      "id": "BelvethQ",
+      "name": "Void Surge",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 144,
+        "full": "BelvethQ.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Bel'Veth dashes, dealing <physicalDamage>{{ basedamage }} physical damage</physicalDamage> to enemies she passes through.<br /><br />Each direction has an unique Cooldown of {{ f1 }} seconds that scales down based on her <attackSpeed>Attack Speed</attackSpeed>.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown Per Direction",
+          "Monster Damage",
+          "Minion Damage"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "450",
+      "datavalues": {},
+      "description": "Bel'Veth dashes in a chosen direction and damages all enemies she passes through.",
+      "cooldownBurn": "1"
+    },
+    {
+      "id": "BelvethW",
+      "name": "Above and Below",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 144,
+        "full": "BelvethW.png",
+        "group": "spell",
+        "sprite": "spell1.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Bel'Veth slams her tail, dealing <magicDamage>{{ damage }} magic damage</magicDamage>, <status>Knocking Up</status> foes for {{ duration }} seconds, and <status>Slowing</status> them by {{ slowpercent*100 }}% for {{ slowduration }} seconds. If a champion is hit, this refreshes the Cooldown of <spellName>Void Surge</spellName> in that direction.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Slow Duration",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "715",
+      "datavalues": {},
+      "description": "Bel'Veth slams her tail to the ground, damaging, knocking up, and slowing her enemies.",
+      "cooldownBurn": "12/11/10/9/8"
+    },
+    {
+      "id": "BelvethE",
+      "name": "Royal Maelstrom",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0,
+        "full": "BelvethE.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Bel'Veth channels and slashes around herself, gaining {{ drpercent*100 }}% Damage Reduction, {{ totallifesteal }} Life Steal, and Attacking {{ f2.0 }} times over {{ totalduration }} seconds with the number of Attacks increasing based on her <attackSpeed>Attack Speed</attackSpeed>. Each Attack strikes the lowest-health enemy, dealing <physicalDamage>{{ damageperstrike }}</physicalDamage> to <physicalDamage>{{ maxdamageperstriketooltip }} physical damage</physicalDamage> based on the target's missing Health.<br /><br />Using another Ability or <recast>Recasting</recast> ends this Ability early.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Damage Reduction",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "500",
+      "datavalues": {},
+      "description": "Bel'Veth roots herself in place, channeling a storm of slashes around her that targets the lowest-health enemy and grants her lifesteal and damage reduction.",
+      "cooldownBurn": "20/19/18/17/16"
+    },
+    {
+      "id": "BelvethR",
+      "name": "Endless Banquet",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 0,
+        "full": "BelvethR.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Every second Attack against the same target deals an additional <trueDamage>{{ finalonhitdamage }} true damage</trueDamage>, stacking infinitely. Takedowns against champions and epic monsters leave behind a piece of Void Coral.<br /><br /><spellActive>Active:</spellActive> Consuming Void Coral grants <keywordMajor>{{ passivestacksondevour }} Lavender</keywordMajor> stack and activates Bel'Veth's true form for {{ steroidduration }} seconds. Void Coral from Void epic monsters increases the duration to {{ voidduration }} seconds and causes minions that die nearby to become Void Remora. While casting, Bel'Veth <status>Slows</status> nearby enemies before exploding, dealing <trueDamage>{{ totalexplosiondamage }} + {{ missinghealthdamage*100 }}% missing-Health true damage</trueDamage>.<br /><br />In her true form, Bel'Veth gains <healing>{{ maxhealthondevour }} max Health</healing>, <speed>{{ oocms }} Move Speed</speed> out of combat, {{ bonusaarange }} Attack range, <attackSpeed>{{ totalasmod*100 }}% Total Attack Speed</attackSpeed>, and <spellName>Void Surge</spellName> can pass through walls.<br /><br /><br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "On-Hit Damage",
+          "Explosion Damage",
+          "Bonus Health",
+          "Move Speed",
+          "Attack Speed",
+          "Void Remora Health"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "450",
+      "datavalues": {},
+      "description": "Bel'Veth consumes Void coral remnants, transforming into her true form and increasing her max health, attack range, attack speed, and out-of-combat move speed. Consuming the Void coral remnants of a Void epic monster will grant her a longer ultimate duration, as well as the power to summon Void remora.",
+      "cooldownBurn": "1"
+    }
+  ],
+  "passive_en": {
+    "name": "Death in Lavender ",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 240,
+      "y": 48,
+      "full": "Belveth_Passive.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Bel'Veth gains permanent attack speed stacks after taking down large minions and monsters and champions. She also gains temporary bonus attack speed after using an ability."
+  },
+  "partype_en": "None",
+  "lanes": [
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "200000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "200001",
+      "num": 1,
+      "name": "Battle Boss Bel'Veth",
+      "chromas": true
+    },
+    {
+      "id": "200010",
+      "num": 10,
+      "name": "Cosmic Matriarch Bel'Veth",
+      "chromas": true
+    },
+    {
+      "id": "200019",
+      "num": 19,
+      "name": "Primordian Bel'Veth",
+      "chromas": true
+    }
+  ]
+}

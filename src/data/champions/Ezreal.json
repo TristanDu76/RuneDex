@@ -1,0 +1,575 @@
+{
+  "id": "Ezreal",
+  "key": "81",
+  "name": "Ezreal",
+  "title": "Explorateur prodigue",
+  "version": "15.23.1",
+  "lore": "Ezreal est né dans un quartier riche de Piltover. Ses parents, des archéologues de renom, étaient souvent absents, ce qui alimenta les fantasmes d'aventure du jeune garçon. Il fut confié à son oncle, le professeur Lymere, qui le confia à des tuteurs stricts. Cependant, Ezreal, doté d'une facilité déconcertante à absorber l'information, considérait l'étude comme une perte de temps. Il excellait à esquiver les gardiens du campus, pratiquant le crochetage de serrure et s'amusant à réarranger les affaires de ses professeurs.\r\n\r\nLe moment le plus important était le retour de ses parents, qui lui racontaient leurs exploits, notamment leur recherche de la tombe perdue de Ne’Zuk, un tyran shurimien réputé pour sa capacité à se téléporter instantanément.\r\n\r\nUn jour, le temps entre les visites de ses parents s'allongea jusqu'à ce qu'ils ne reviennent plus. Son oncle accepta qu'ils avaient péri, mais Ezreal refusa cette conclusion : ils devaient être en vie, quelque part.\r\n\r\nEzreal abandonna ses études et se lança seul à la recherche de ses parents, commençant par la tombe de Ne'Zuk. Il rassembla secrètement des fournitures à l'université et s'embarqua pour Nashramae. Pendant des mois, il suivit les notes méticuleuses de sa mère, s'enfonçant dans des ruines sous le désert de Shurima, affrontant des horreurs et se délectant de la liberté.\r\n\r\nIl réussit finalement là où ses parents avaient échoué : il découvrit la tombe de Ne'Zuk. Le sarcophage était vide, à l'exception d'un gantelet de bronze étincelant avec une matrice cristalline au centre. Dès qu'Ezreal l'enfila, la tombe se referma sur lui. Il découvrit que le gantelet canalisait et amplifiait son essence. Avec un geste instinctif, il se téléporta hors de la structure avant qu'elle ne s'effondre.\r\n\r\nEzreal réalisa que l'arme était un formidable artefact de l'Âge d'Or de Shurima.\r\n\r\nDe retour à Piltover, il se lança d'aventure en aventure, résolvant des énigmes historiques et découvrant des artefacts perdus. Pour Ezreal, ces exploits avaient un but caché : s'il devenait l'aventurier le plus célèbre du monde, ses parents finiraient sûrement par le retrouver. Bien que certains remettent en question les détails de ses anecdotes, Ezreal ne répond pas à ses critiques, convaincu qu'ils sont simplement jaloux.",
+  "tags": [
+    "Marksman",
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 96,
+    "y": 0,
+    "full": "Ezreal.png",
+    "group": "champion",
+    "sprite": "champion1.png"
+  },
+  "skins": [
+    {
+      "id": "81000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "81001",
+      "num": 1,
+      "name": "Ezreal de Nottingham",
+      "chromas": false
+    },
+    {
+      "id": "81002",
+      "num": 2,
+      "name": "Ezreal buteur",
+      "chromas": false
+    },
+    {
+      "id": "81003",
+      "num": 3,
+      "name": "Ezreal de glace",
+      "chromas": true
+    },
+    {
+      "id": "81004",
+      "num": 4,
+      "name": "Ezreal spéléologue",
+      "chromas": false
+    },
+    {
+      "id": "81005",
+      "num": 5,
+      "name": "Ezreal Pulsefire",
+      "chromas": false
+    },
+    {
+      "id": "81006",
+      "num": 6,
+      "name": "TPA Ezreal",
+      "chromas": false
+    },
+    {
+      "id": "81007",
+      "num": 7,
+      "name": "Ezreal séducteur",
+      "chromas": true
+    },
+    {
+      "id": "81008",
+      "num": 8,
+      "name": "Ezreal as de pique",
+      "chromas": false
+    },
+    {
+      "id": "81009",
+      "num": 9,
+      "name": "Ezreal arcade",
+      "chromas": false
+    },
+    {
+      "id": "81018",
+      "num": 18,
+      "name": "Ezreal gardien des étoiles",
+      "chromas": false
+    },
+    {
+      "id": "81019",
+      "num": 19,
+      "name": "SSG Ezreal",
+      "chromas": true
+    },
+    {
+      "id": "81020",
+      "num": 20,
+      "name": "Ezreal gardien des pyjamas",
+      "chromas": false
+    },
+    {
+      "id": "81021",
+      "num": 21,
+      "name": "Ezreal de l'Académie du combat",
+      "chromas": true
+    },
+    {
+      "id": "81022",
+      "num": 22,
+      "name": "Ezreal psychoguerrier",
+      "chromas": false
+    },
+    {
+      "id": "81023",
+      "num": 23,
+      "name": "Ezreal psychoguerrier prestige",
+      "chromas": false
+    },
+    {
+      "id": "81025",
+      "num": 25,
+      "name": "Ezreal protecteur de porcelaine",
+      "chromas": false
+    },
+    {
+      "id": "81033",
+      "num": 33,
+      "name": "Ezreal de la cour féérique",
+      "chromas": false
+    },
+    {
+      "id": "81043",
+      "num": 43,
+      "name": "HEARTSTEEL Ezreal",
+      "chromas": false
+    },
+    {
+      "id": "81044",
+      "num": 44,
+      "name": "Ezreal écailles célestes",
+      "chromas": true
+    },
+    {
+      "id": "81054",
+      "num": 54,
+      "name": "Ezreal écailles célestes prestige",
+      "chromas": false
+    },
+    {
+      "id": "81065",
+      "num": 65,
+      "name": "Ezreal bal masqué de la Rose noire",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "EzrealQ",
+      "name": "Tir mystique",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 96,
+        "full": "EzrealQ.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ezreal tire un projectile d'énergie, infligeant <physicalDamage>{{ damage }} pts de dégâts physiques</physicalDamage> au premier ennemi touché et réduisant de {{ cdrefund }} sec les délais de récupération de ses compétences.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "28/31/34/37/40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@",
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1150",
+      "datavalues": {},
+      "description": "Ezreal tire un trait d'énergie blessant qui, s'il touche un ennemi, réduit légèrement tous les délais de récupération d'Ezreal.",
+      "cooldownBurn": "5.5/5.25/5/4.75/4.5"
+    },
+    {
+      "id": "EzrealW",
+      "name": "Flux essentiel",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 96,
+        "full": "EzrealW.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ezreal tire un orbe magique qui se colle pendant {{ detonationtimeout }} sec au premier champion, bâtiment ou monstre épique de la jungle touché. Si Ezreal frappe cette cible avec une attaque ou une compétence, l'orbe explose, infligeant <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage>. Si Ezreal fait exploser l'orbe avec une compétence, il récupère le coût en mana de cette compétence plus <scaleMana>{{ manareturn }} pts de mana</scaleMana>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ratio de puissance total"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1150",
+      "datavalues": {},
+      "description": "Ezreal tire un orbe qui se colle au premier champion ou objectif touché. Si Ezreal frappe un ennemi affecté par un orbe, ce dernier explose et inflige des dégâts.",
+      "cooldownBurn": "8"
+    },
+    {
+      "id": "EzrealE",
+      "name": "Transfert arcanique",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 96,
+        "full": "EzrealE.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ezreal se téléporte et tire un projectile sur l'ennemi le plus proche, infligeant <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage>. Le projectile vise en priorité les ennemis affectés par <spellName>Flux essentiel</spellName>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "475",
+      "datavalues": {},
+      "description": "Ezreal se téléporte dans une zone ciblée et tire un projectile autoguidé qui frappe l'ennemi le plus proche. Le tir vise en priorité les ennemis affectés par Flux essentiel.",
+      "cooldownBurn": "26/23/20/17/14"
+    },
+    {
+      "id": "EzrealR",
+      "name": "Arc térébrant",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 96,
+        "full": "EzrealR.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Ezreal tire une énorme vague d'énergie qui inflige <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage>. La vague inflige {{ damagereductionwaveclear.0*100 }}% de dégâts aux sbires et aux monstres non épiques de la jungle.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Ezreal se concentre avant de tirer une puissante vague d'énergie qui inflige d'importants dégâts à chaque unité traversée (les dégâts sont réduits pour les sbires et les monstres non épiques).",
+      "cooldownBurn": "120/105/90"
+    }
+  ],
+  "passive": {
+    "name": "Force grandissante",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 96,
+      "y": 0,
+      "full": "Ezreal_RisingSpellForce.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Ezreal augmente sa vitesse d'attaque chaque fois qu'il touche un ennemi avec une compétence (cumulable jusqu'à 5 fois)."
+  },
+  "created_at": "2025-11-26T15:13:32.943584+00:00",
+  "factions": [
+    "piltover"
+  ],
+  "custom_tags": null,
+  "gender": "Male",
+  "species": "Human",
+  "title_en": "the Prodigal Explorer",
+  "lore_en": "Ezreal was born into a wealthy neighborhood of Piltover. His parents, renowned archaeologists, were often absent, which fueled the young boy's fantasies of adventure. He was left in the care of his uncle, Professor Lymere, who assigned him strict tutors. However, Ezreal, with an unnerving knack for absorbing information easily, considered studying a waste of time. He excelled at evading campus wardens, practicing lockpicking and navigating the campus unseen.\r\n\r\nThe most important time was when his parents returned, telling him of their exploits, particularly their search for the lost tomb of Ne’Zuk, a Shuriman tyrant rumored to be able to jump instantly from one place to another.\r\n\r\nOne year, the time between his parents' visits grew longer until they did not return at all. His uncle accepted that they had most likely perished, but Ezreal refused this conclusion: they must still be out there somewhere.\r\n\r\nEzreal abandoned his studies and struck out on his own to find his parents, starting with Ne'Zuk's final resting place. He secretly gathered supplies and snuck onto a ship bound for Nashramae. For many months, he followed his mother’s meticulous field notes, delving into ruins beneath the Shuriman desert, facing horrors and relishing the freedom.\r\n\r\nHe finally succeeded where his parents evidently had not: he uncovered Ne'Zuk's tomb. The sarcophagus lay empty, save for a gleaming bronze gauntlet with a crystalline matrix at its center. As soon as Ezreal laid his hands upon it, the tomb turned upon him. He discovered the gauntlet siphoned and amplified his own essence. With an instinctive move, he teleported his way out before the whole structure collapsed.\r\n\r\nEzreal realized the weapon was a fearsome artifact from Shurima's previous age.\r\n\r\nReturning to Piltover, he bounced from adventure to adventure, solving historical riddles and uncovering lost artifacts. For Ezreal, these exploits had a hidden purpose: if he could make a name for himself as the greatest adventurer in the world, his parents would surely return and seek him out in person. While some may dispute the details of his anecdotes, Ezreal never answers his critics, convinced they are merely jealous.",
+  "spells_en": [
+    {
+      "id": "EzrealQ",
+      "name": "Mystic Shot",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 96,
+        "full": "EzrealQ.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ezreal fires a bolt of energy, dealing <physicalDamage>{{ damage }} physical damage</physicalDamage> to the first enemy hit and reducing his Ability Cooldowns by {{ cdrefund }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "28/31/34/37/40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "@AbilityResourceName@ Cost",
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1150",
+      "datavalues": {},
+      "description": "Ezreal fires a damaging bolt of energy which reduces all of his cooldowns slightly if it strikes an enemy unit.",
+      "cooldownBurn": "5.5/5.25/5/4.75/4.5"
+    },
+    {
+      "id": "EzrealW",
+      "name": "Essence Flux",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 96,
+        "full": "EzrealW.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ezreal fires a magical orb that sticks to the first champion, structure, or epic jungle monster hit for {{ detonationtimeout }} seconds. If Ezreal hits that target with an Attack or Ability, it detonates, dealing <magicDamage>{{ damage }} magic damage</magicDamage>. Detonating with an Ability refunds the Mana cost of that Ability plus <scaleMana>{{ manareturn }} Mana</scaleMana>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Total AP Ratio"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1150",
+      "datavalues": {},
+      "description": "Ezreal fires an orb that sticks to the first champion or objective hit. If Ezreal hits an enemy with the orb, it detonates and deals damage.",
+      "cooldownBurn": "8"
+    },
+    {
+      "id": "EzrealE",
+      "name": "Arcane Shift",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 96,
+        "full": "EzrealE.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Ezreal teleports then fires a bolt at the nearest enemy, dealing <magicDamage>{{ damage }} magic damage</magicDamage>. The bolt prioritizes enemies affected by <spellName>Essence Flux</spellName>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "475",
+      "datavalues": {},
+      "description": "Ezreal teleports to a target nearby location and fires a homing bolt which strikes the nearest enemy unit. Prioritizes enemies stuck with Essence Flux.",
+      "cooldownBurn": "26/23/20/17/14"
+    },
+    {
+      "id": "EzrealR",
+      "name": "Trueshot Barrage",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 96,
+        "full": "EzrealR.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Ezreal fires a massive energy arc that deals <magicDamage>{{ damage }} magic damage</magicDamage>. The arc deals {{ damagereductionwaveclear.0*100 }}% damage to minions and non-epic jungle monsters.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Ezreal winds up before firing a powerful barrage of energy that deals massive damage to each unit it passes through (damage is reduced for minions and non-epic monsters).",
+      "cooldownBurn": "120/105/90"
+    }
+  ],
+  "passive_en": {
+    "name": "Rising Spell Force",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 96,
+      "y": 0,
+      "full": "Ezreal_RisingSpellForce.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Ezreal gains increasing Attack Speed each time he successfully hits a spell, stacking up to 5 times."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Adc"
+  ],
+  "skins_en": [
+    {
+      "id": "81000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "81001",
+      "num": 1,
+      "name": "Nottingham Ezreal",
+      "chromas": false
+    },
+    {
+      "id": "81002",
+      "num": 2,
+      "name": "Striker Ezreal",
+      "chromas": false
+    },
+    {
+      "id": "81003",
+      "num": 3,
+      "name": "Frosted Ezreal",
+      "chromas": true
+    },
+    {
+      "id": "81004",
+      "num": 4,
+      "name": "Explorer Ezreal",
+      "chromas": false
+    },
+    {
+      "id": "81005",
+      "num": 5,
+      "name": "Pulsefire Ezreal",
+      "chromas": false
+    },
+    {
+      "id": "81006",
+      "num": 6,
+      "name": "TPA Ezreal",
+      "chromas": false
+    },
+    {
+      "id": "81007",
+      "num": 7,
+      "name": "Debonair Ezreal",
+      "chromas": true
+    },
+    {
+      "id": "81008",
+      "num": 8,
+      "name": "Ace of Spades Ezreal",
+      "chromas": false
+    },
+    {
+      "id": "81009",
+      "num": 9,
+      "name": "Arcade Ezreal",
+      "chromas": false
+    },
+    {
+      "id": "81018",
+      "num": 18,
+      "name": "Star Guardian Ezreal",
+      "chromas": false
+    },
+    {
+      "id": "81019",
+      "num": 19,
+      "name": "SSG Ezreal",
+      "chromas": true
+    },
+    {
+      "id": "81020",
+      "num": 20,
+      "name": "Pajama Guardian Ezreal",
+      "chromas": false
+    },
+    {
+      "id": "81021",
+      "num": 21,
+      "name": "Battle Academia Ezreal",
+      "chromas": true
+    },
+    {
+      "id": "81022",
+      "num": 22,
+      "name": "PsyOps Ezreal",
+      "chromas": false
+    },
+    {
+      "id": "81023",
+      "num": 23,
+      "name": "Prestige PsyOps Ezreal",
+      "chromas": false
+    },
+    {
+      "id": "81025",
+      "num": 25,
+      "name": "Porcelain Protector Ezreal",
+      "chromas": false
+    },
+    {
+      "id": "81033",
+      "num": 33,
+      "name": "Faerie Court Ezreal",
+      "chromas": false
+    },
+    {
+      "id": "81043",
+      "num": 43,
+      "name": "HEARTSTEEL Ezreal",
+      "chromas": false
+    },
+    {
+      "id": "81044",
+      "num": 44,
+      "name": "Heavenscale Ezreal",
+      "chromas": true
+    },
+    {
+      "id": "81054",
+      "num": 54,
+      "name": "Prestige Heavenscale Ezreal",
+      "chromas": false
+    },
+    {
+      "id": "81065",
+      "num": 65,
+      "name": "Masque of the Black Rose Ezreal",
+      "chromas": false
+    }
+  ]
+}

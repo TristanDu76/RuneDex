@@ -1,0 +1,492 @@
+{
+  "id": "Gragas",
+  "key": "79",
+  "name": "Gragas",
+  "title": "Agitateur",
+  "version": "15.23.1",
+  "lore": "Pour Gragas, la seule chose plus importante que se battre est boire. Sa soif inextinguible d'une bière toujours plus forte l'a poussé à rechercher les ingrédients les plus puissants et les plus originaux pour ses concoctions. Impulsif, imprévisible et bagarreur, ce joyeux luron aime autant fracasser les têtes que les tonneaux.\r\n\r\nAvec une constitution massive qui l'empêchait d'atteindre un état d'ivresse vraiment satisfaisant, Gragas eut une illumination : il devait brasser l'ale suprême qui lui permettrait enfin de devenir vraiment ivre.\r\n\r\nSa quête le mena finalement au Freljord, à la recherche de l'eau arctique la plus pure. Perdu dans un blizzard tenace, il trébucha sur un grand abîme hurlant. Il y trouva ce qu'il cherchait : un fragment de glace sans défaut d'une nature unique. Non seulement ce fragment non fondant conféra à sa bière des propriétés incroyables, mais il eut aussi l'effet secondaire pratique de maintenir le mélange à la température de service idéale.\r\n\r\nSous l'emprise de sa nouvelle concoction, Gragas se dirigea vers la civilisation, désireux de partager les fruits fermentés de son labeur. Le hasard voulut que le premier rassemblement qu'il croisa allait décider de l'avenir du Freljord : une négociation enlisée entre deux tribus qui discutaient d'une alliance avec la Gardienne de Guerre Ashe.\r\n\r\nBien qu'Ashe ait accueilli volontiers cette pause dans la tension, les autres guerriers furent irrités par l'intrusion et insultèrent l'ivrogne. Fidèle à sa nature, Gragas répliqua par une « Percée » (Body Slam) diplomatique, déclenchant une rixe digne des légendes du Freljord.\r\n\r\nLorsque les guerriers tombés se réveillèrent, Ashe proposa de se battre d'une autre manière : par un verre amical. Les deux tribus, qui étaient au bord de la guerre, se lièrent autour d'un amour commun pour la bière de Gragas. La discorde fut évitée et Gragas fut salué comme un héros, même s'il n'avait toujours pas atteint son rêve d'ivresse absolue. Il est donc reparti errer dans la toundra, à la recherche d'ingrédients pour la pinte parfaite de Runeterra.\r\n\r\nToute apparition de Gragas annonce désormais la bamboche et la destruction... dans cet ordre.",
+  "tags": [
+    "Fighter",
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 0,
+    "y": 48,
+    "full": "Gragas.png",
+    "group": "champion",
+    "sprite": "champion1.png"
+  },
+  "skins": [
+    {
+      "id": "79000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "79001",
+      "num": 1,
+      "name": "Gragas plongeur",
+      "chromas": false
+    },
+    {
+      "id": "79002",
+      "num": 2,
+      "name": "Gragas péon",
+      "chromas": false
+    },
+    {
+      "id": "79003",
+      "num": 3,
+      "name": "Père Gragas",
+      "chromas": false
+    },
+    {
+      "id": "79004",
+      "num": 4,
+      "name": "Gragas la classe",
+      "chromas": false
+    },
+    {
+      "id": "79005",
+      "num": 5,
+      "name": "Gragas Vandale",
+      "chromas": false
+    },
+    {
+      "id": "79006",
+      "num": 6,
+      "name": "Gragas Oktoberfest",
+      "chromas": false
+    },
+    {
+      "id": "79007",
+      "num": 7,
+      "name": "Gragas superfan",
+      "chromas": false
+    },
+    {
+      "id": "79008",
+      "num": 8,
+      "name": "Fnatic Gragas",
+      "chromas": false
+    },
+    {
+      "id": "79009",
+      "num": 9,
+      "name": "Gragas brasseur solaire",
+      "chromas": false
+    },
+    {
+      "id": "79010",
+      "num": 10,
+      "name": "Gragas arctique",
+      "chromas": false
+    },
+    {
+      "id": "79011",
+      "num": 11,
+      "name": "Gragas purificateur",
+      "chromas": true
+    },
+    {
+      "id": "79020",
+      "num": 20,
+      "name": "Gragas astro-groove",
+      "chromas": true
+    },
+    {
+      "id": "79029",
+      "num": 29,
+      "name": "Gragas de l'Ouest",
+      "chromas": true
+    },
+    {
+      "id": "79039",
+      "num": 39,
+      "name": "Gragas mélomane",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "GragasQ",
+      "name": "Fût roulant",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 48,
+        "full": "GragasQ.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Gragas fait rouler un fût qui explose au bout de {{ e4 }} sec, infligeant de <magicDamage>{{ mindamage }}</magicDamage> à <magicDamage>{{ maxdamage }} pts de dégâts magiques</magicDamage> et <status>ralentissant</status> de {{ e2 }} à {{ effect2amount*1.5 }}% pendant {{ e3 }} sec. Les dégâts et le <status>ralentissement</status> augmentent avec la durée du fût avant explosion. <br /><br />Gragas peut <recast>réactiver</recast> cette compétence pour faire exploser le fût prématurément.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ralentissement",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "850",
+      "datavalues": {},
+      "description": "Gragas fait rouler son fût vers une zone ciblée ; le fût explose automatiquement au bout de 4 sec (vous pouvez activer l'explosion manuellement). La puissance de l'explosion augmente sur la durée. La vitesse de déplacement des ennemis touchés est réduite.",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "GragasW",
+      "name": "Rage d'ivrogne",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 48,
+        "full": "GragasW.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Gragas boit sa concoction, ce qui réduit les dégâts qu'il subit de {{ damagereduction }} pendant {{ defenseduration }} sec et permet à sa prochaine attaque d'infliger <magicDamage>{{ totaldamage }}</magicDamage> plus <magicDamage>{{ maxhppercentdamage }}% des PV max en dégâts magiques</magicDamage> bonus à la cible et aux ennemis proches.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Réduction des dégâts",
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "20",
+      "datavalues": {},
+      "description": "Gragas boit pendant 1 sec. Il devient alors turbulent et querelleur, ce qui lui permet d'infliger des dégâts magiques à tous les ennemis proches avec sa prochaine attaque de base et de subir moins de dégâts.",
+      "cooldownBurn": "5"
+    },
+    {
+      "id": "GragasE",
+      "name": "Coup de bidon",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 96,
+        "full": "GragasE.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Gragas se rue en avant, percutant le premier ennemi rencontré, <status>projetant dans les airs</status> les ennemis proches pendant {{ stunduration }} sec et leur infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.<br /><br />Le délai de récupération de cette compétence est réduit de {{ cooldownrefund*100 }}% si Gragas percute un ennemi.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Gragas charge vers une zone ciblée et percute le premier ennemi rencontré, infligeant des dégâts à tous les ennemis proches et les étourdissant.",
+      "cooldownBurn": "14/13.5/13/12.5/12"
+    },
+    {
+      "id": "GragasR",
+      "name": "Fût explosif",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 96,
+        "full": "GragasR.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Gragas lance son fût, infligeant <magicDamage>{{ damagedone }} pts de dégâts magiques</magicDamage> et <status>repoussant</status> les ennemis loin de la zone d'impact.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Gragas lance son fût, infligeant des dégâts et repoussant les ennemis touchés par l'explosion.",
+      "cooldownBurn": "100/85/70"
+    }
+  ],
+  "passive": {
+    "name": "Tournée",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 0,
+      "y": 48,
+      "full": "GragasPassiveHeal.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Gragas récupère des PV quand il utilise une compétence."
+  },
+  "created_at": "2025-11-26T15:13:33.248576+00:00",
+  "factions": [
+    "freljord"
+  ],
+  "custom_tags": null,
+  "gender": "Male",
+  "species": "Human",
+  "title_en": "the Rabble Rouser",
+  "lore_en": "For Gragas, the only thing more important than fighting is drinking. His unquenchable thirst for stronger ale has led him in search of the most potent and unconventional ingredients for his concoctions. Impulsive, unpredictable, and rowdy, this boisterous carouser loves cracking kegs as much as cracking heads.\r\n\r\nWith a massive constitution that prevented him from reaching a truly satisfying state of intoxication, Gragas was struck by a thought: why couldn't he brew himself something that would finally get him truly drunk? It was then that he vowed to create the ultimate ale.\r\n\r\nHis quest eventually brought him to the Freljord, in search of the purest arctic water. Lost in a relentless blizzard, he stumbled upon a great howling abyss. There he found it: a flawless shard of ice unlike anything he had ever seen. Not only did this unmelting shard imbue his lager with incredible properties, but it also had the handy side effect of keeping the mixture chilled at the perfect serving temperature.\r\n\r\nUnder the spell of his new concoction, Gragas headed for civilization, eager to share the fermented fruits of his labor. As fate would have it, the first gathering to catch his bleary eyes would shape the future of the Freljord: a deteriorating negotiation between two tribes discussing an alliance with Warmother Ashe.\r\n\r\nThough Ashe welcomed the break in tension, the other warriors bristled at the intrusion and hurled insults at the drunken oaf. True to his nature, Gragas replied with a diplomatic Body Slam, setting off a brawl matched only in the legends of the Freljord.\r\n\r\nWhen the fallen from that great melee finally awoke, Ashe proposed a friendly drink as an alternative to fighting. With their tempers doused in suds, the two tribes, formerly on the brink of war, bonded over a common love of Gragas' brew. Although strife was averted and Gragas hailed a hero, he still had not achieved his dream of drunken blissfulness. So once more, he set off to wander the tundra in search of ingredients for Runeterra's perfect pint.\r\n\r\nAny appearance of Gragas now portends revelry and destruction... in that order.",
+  "spells_en": [
+    {
+      "id": "GragasQ",
+      "name": "Barrel Roll",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 48,
+        "full": "GragasQ.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Gragas rolls a cask that explodes after {{ e4 }} seconds, dealing between <magicDamage>{{ mindamage }} magic damage</magicDamage> and <magicDamage>{{ maxdamage }} magic damage</magicDamage> and <status>Slowing</status> for between {{ e2 }} and {{ effect2amount*1.5 }}% for {{ e3 }} seconds. The damage and <status>Slow</status> increase with time the cask spent before exploding. <br /><br />Gragas can <recast>Recast</recast> to detonate the cask early.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Slow",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "850",
+      "datavalues": {},
+      "description": "Gragas rolls his cask to a location, which can be activated to explode or will explode on its own after 4 seconds. The potency of the explosion increases over time. Enemies struck by the blast have their Move Speed slowed.",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "GragasW",
+      "name": "Drunken Rage",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 48,
+        "full": "GragasW.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Gragas samples his brew, reducing incoming damage by {{ damagereduction }} for {{ defenseduration }} seconds and empowering his next Attack to deal an additional <magicDamage>{{ totaldamage }}</magicDamage> plus <magicDamage>{{ maxhppercentdamage }}% max Health magic damage</magicDamage> to the target and surrounding enemies.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage Reduction",
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "20",
+      "datavalues": {},
+      "description": "Gragas samples his latest brew for 1 second. After finishing, he becomes boisterous and belligerent, dealing magic damage to all nearby enemies on his next basic attack and reducing damage received.",
+      "cooldownBurn": "5"
+    },
+    {
+      "id": "GragasE",
+      "name": "Body Slam",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 96,
+        "full": "GragasE.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Gragas charges forward, colliding with the first enemy, <status>Knocking Up</status> nearby enemies for {{ stunduration }} second and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> to them.<br /><br />This Ability's Cooldown is reduced by {{ cooldownrefund*100 }}% if Gragas collides with an enemy.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "600",
+      "datavalues": {},
+      "description": "Gragas charges to a location and collides with the first enemy unit he comes across, dealing damage to all nearby enemy units and stunning them.",
+      "cooldownBurn": "14/13.5/13/12.5/12"
+    },
+    {
+      "id": "GragasR",
+      "name": "Explosive Cask",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 96,
+        "full": "GragasR.png",
+        "group": "spell",
+        "sprite": "spell4.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Gragas hurls his cask, dealing <magicDamage>{{ damagedone }} magic damage</magicDamage> and <status>Knocking Away</status> enemies from the impact zone.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Gragas hurls his cask to a location, dealing damage and knocking back enemies caught in the blast radius.",
+      "cooldownBurn": "100/85/70"
+    }
+  ],
+  "passive_en": {
+    "name": "Happy Hour",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 0,
+      "y": 48,
+      "full": "GragasPassiveHeal.png",
+      "group": "passive",
+      "sprite": "passive1.png"
+    },
+    "description": "Gragas periodically heals upon using a skill."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Top",
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "79000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "79001",
+      "num": 1,
+      "name": "Scuba Gragas",
+      "chromas": false
+    },
+    {
+      "id": "79002",
+      "num": 2,
+      "name": "Hillbilly Gragas",
+      "chromas": false
+    },
+    {
+      "id": "79003",
+      "num": 3,
+      "name": "Santa Gragas",
+      "chromas": false
+    },
+    {
+      "id": "79004",
+      "num": 4,
+      "name": "Gragas, Esq.",
+      "chromas": false
+    },
+    {
+      "id": "79005",
+      "num": 5,
+      "name": "Vandal Gragas",
+      "chromas": false
+    },
+    {
+      "id": "79006",
+      "num": 6,
+      "name": "Oktoberfest Gragas",
+      "chromas": false
+    },
+    {
+      "id": "79007",
+      "num": 7,
+      "name": "Superfan Gragas",
+      "chromas": false
+    },
+    {
+      "id": "79008",
+      "num": 8,
+      "name": "Fnatic Gragas",
+      "chromas": false
+    },
+    {
+      "id": "79009",
+      "num": 9,
+      "name": "Gragas Caskbreaker",
+      "chromas": false
+    },
+    {
+      "id": "79010",
+      "num": 10,
+      "name": "Arctic Ops Gragas",
+      "chromas": false
+    },
+    {
+      "id": "79011",
+      "num": 11,
+      "name": "Warden Gragas",
+      "chromas": true
+    },
+    {
+      "id": "79020",
+      "num": 20,
+      "name": "Space Groove Gragas",
+      "chromas": true
+    },
+    {
+      "id": "79029",
+      "num": 29,
+      "name": "High Noon Gragas",
+      "chromas": true
+    },
+    {
+      "id": "79039",
+      "num": 39,
+      "name": "Music Fan Gragas",
+      "chromas": true
+    }
+  ]
+}

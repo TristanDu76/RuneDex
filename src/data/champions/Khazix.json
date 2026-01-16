@@ -1,0 +1,418 @@
+{
+  "id": "Khazix",
+  "key": "121",
+  "name": "Kha'Zix",
+  "title": "Faucheur du Néant",
+  "version": "15.23.1",
+  "lore": "Kha'Zix est un prédateur vicieux du Néant (Void). Il s'est infiltré en Valoran avec un seul but : dévorer les créatures les plus prometteuses de cette terre. À chaque mise à mort, il absorbe la force de sa proie, évoluant physiquement pour devenir plus puissant et s'adapter, se créant de nouveaux moyens efficaces d'abattre sa proie. Son intelligence s'est développée autant que sa forme physique, et chacune de ses chasses est désormais planifiée.\n\nLorsqu'il est arrivé dans ce monde, il était fragile et affamé. Les premières proies étaient trop petites pour alimenter l'évolution rapide qu'il recherchait. Il se concentra alors sur les créatures les plus dangereuses qu'il pouvait trouver, chassant avec une agressivité débridée, convaincu d'être invincible.\n\nUn jour, alors qu'il savourait une proie fraîchement tuée, le prédateur devint la proie. Une créature bondit de sa cachette dans un flou de crocs et d'acier, le plaquant au sol. Cette bête, nommée Rengar, rugissait et lacérait. Pour la première fois, Kha'Zix sentit son propre sang couler. Hurlant de fureur, il parvint à lacérer l'œil de Rengar, le repoussant.\n\nIls se battirent du coucher du soleil à l'aube. Finalement, proches de la mort, ils se séparèrent à contrecœur. Tandis que ses blessures guérissaient, Kha'Zix fut rempli d'une anticipation brûlante : l'idée de dévorer une créature capable d'égaler la force du Néant. Il reprit sa quête de proies puissantes avec une vigueur renouvelée.\n\nL'objectif principal et l'obsession de Kha'Zix est de conquérir et de dévorer Rengar, la seule bête qu'il considère comme son égal, afin de compléter son évolution.",
+  "tags": [
+    "Assassin"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 192,
+    "y": 0,
+    "full": "Khazix.png",
+    "group": "champion",
+    "sprite": "champion2.png"
+  },
+  "skins": [
+    {
+      "id": "121000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "121001",
+      "num": 1,
+      "name": "Mecha Kha'Zix",
+      "chromas": true
+    },
+    {
+      "id": "121002",
+      "num": 2,
+      "name": "Kha'Zix gardien des sables",
+      "chromas": false
+    },
+    {
+      "id": "121003",
+      "num": 3,
+      "name": "Kha'Zix du lotus mortel",
+      "chromas": false
+    },
+    {
+      "id": "121004",
+      "num": 4,
+      "name": "Kha'Zix du pulsar sombre",
+      "chromas": false
+    },
+    {
+      "id": "121011",
+      "num": 11,
+      "name": "Kha'Zix des Worlds 2018",
+      "chromas": true
+    },
+    {
+      "id": "121060",
+      "num": 60,
+      "name": "Kha'Zix de l'Odyssée",
+      "chromas": false
+    },
+    {
+      "id": "121069",
+      "num": 69,
+      "name": "Kha'Zix gardien lunaire",
+      "chromas": false
+    },
+    {
+      "id": "121079",
+      "num": 79,
+      "name": "Kha'Zix Crystalis Indomitus",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "KhazixQ",
+      "name": "Goût de la peur",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 144,
+        "full": "KhazixQ.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Kha'Zix taillade un ennemi proche, infligeant <physicalDamage>{{ spell.khazixq:basedamage }} pts de dégâts physiques</physicalDamage>. Contre les ennemis <keywordMajor>isolés</keywordMajor>, cette taillade inflige à la place <physicalDamage>{{ spell.khazixq:isodamage }} pts de dégâts</physicalDamage>. {{ spellmodifierdescriptionappend }}",
+      "costBurn": "20",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "325",
+      "datavalues": {},
+      "description": "Kha'Zix inflige des dégâts physiques à sa cible. Les dégâts sont augmentés contre les cibles <font color='#FFF673'>isolées</font>. S'il choisit l'<font color='#00DD33'>évolution Griffes de faucheur</font>, Goût de la peur a un délai de récupération réduit s'il est utilisé contre une cible <font color='#FFF673'>isolée</font>. Kha'Zix augmente aussi la portée de ses attaques de base et de Goût de la peur.",
+      "cooldownBurn": "4"
+    },
+    {
+      "id": "KhazixW",
+      "name": "Pique du Néant",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 144,
+        "full": "KhazixW.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Kha'Zix tire une pique qui inflige <physicalDamage>{{ basedamage }} pts de dégâts physiques</physicalDamage> au premier ennemi touché dans une petite zone. Si Kha'Zix est dans la zone de l'explosion, il récupère <healing>{{ healamount }} PV</healing>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "55/60/65/70/75",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Soins",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Kha'Zix projette des piques qui infligent des dégâts physiques aux ennemis touchés. Kha'Zix est soigné s'il se trouve dans le rayon de l'explosion. S'il choisit l'<font color='#00DD33'>évolution Batterie de piques</font>, 3 piques sont projetées dans une zone conique, les ennemis touchés sont ralentis et les champions ennemis touchés sont révélés pendant 2 sec. Les cibles <font color='#FFF673'>isolées</font> sont ralenties davantage.",
+      "cooldownBurn": "9"
+    },
+    {
+      "id": "KhazixE",
+      "name": "Bond",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 144,
+        "full": "KhazixE.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Kha'Zix bondit, infligeant <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> à l'atterrissage.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Kha'Zix bondit sur une zone, infligeant des dégâts physiques aux ennemis autour de son point de chute. S'il choisit l'<font color='#00DD33'>évolution Ailes</font>, la portée de Bond augmente de 200 et le délai de récupération est annulé quand il tue un champion ou réussit une assistance.",
+      "cooldownBurn": "20/18/16/14/12"
+    },
+    {
+      "id": "KhazixR",
+      "name": "Assaut du Néant",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 144,
+        "full": "KhazixR.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellActive>Active :</spellActive> Kha'Zix devient <keywordStealth>invisible</keywordStealth> pendant {{ stealthduration }} sec et gagne <speed>+{{ bonusmovementspeedpercent*100 }}% de vitesse de déplacement</speed>. Kha'Zix peut <recast>réactiver</recast> cette compétence une fois dans les {{ recastwindow }} sec qui suivent.<br /><br /><spellPassive>Passive :</spellPassive> augmenter le rang de cette compétence permet à Kha'Zix de faire <evolve>évoluer</evolve> l'une de ses compétences pour lui octroyer des effets supplémentaires.<li><spellName>Goût de la peur :</spellName> augmente la portée de cette compétence et des attaques de Kha'Zix et réduit son délai de récupération de {{ spell.khazixq:effect4amount }}% contre les cibles <keywordMajor>isolées</keywordMajor>.<li><spellName>Pique du Néant :</spellName> tire 3 piques et <status>ralentit</status> les ennemis de {{ spell.khazixw:effect3amount }}% (encore plus contre les cibles <keywordMajor>isolées</keywordMajor>).<li><spellName>Bond :</spellName> augmente sa portée et annule son délai de récupération en participant à l'élimination d'un champion.<li><spellName>Assaut du Néant :</spellName> l'<keywordStealth>invisibilité</keywordStealth> dure {{ evolvedstealthduration }} sec et gagne une deuxième <recast>réactivation</recast>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Évolutions disponibles",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Chaque rang permet à Kha'Zix de faire évoluer l'une de ses compétences, ce qui lui confère un effet supplémentaire unique. Quand Assaut du Néant est activé, Kha'Zix devient <font color='#91d7ee'>invisible</font>, ce qui déclenche Menace invisible et augmente sa vitesse de déplacement. S'il choisit l'<font color='#00DD33'>évolution Occultation adaptative</font>, Assaut du Néant augmente la durée de son <font color='#91d7ee'>invisibilité</font> et peut être utilisé une fois de plus.",
+      "cooldownBurn": "100/85/70"
+    }
+  ],
+  "passive": {
+    "name": "Menace invisible",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 192,
+      "y": 0,
+      "full": "Khazix_P.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Les ennemis proches qui sont <font color='#FFF673'>isolés</font> sont marqués. Les compétences de Kha'Zix profitent d'interactions avec les cibles <font color='#FFF673'>isolées</font>.<br><br>Lorsque Kha'Zix n'est pas visible par l'équipe ennemie, il gagne Menace invisible, qui permet à sa prochaine attaque de base contre un champion ennemi d'infliger des dégâts magiques supplémentaires et de le ralentir pendant quelques secondes."
+  },
+  "created_at": "2025-11-26T15:13:33.670998+00:00",
+  "factions": [
+    "void"
+  ],
+  "custom_tags": [
+    "chasseur"
+  ],
+  "gender": "Male",
+  "species": "Voidborn",
+  "title_en": "the Voidreaver",
+  "lore_en": "Kha'Zix is a vicious Void predator who infiltrated Valoran with one goal: to devour the land's most promising creatures. With each kill, he absorbs his prey's strength, evolving to grow more powerful and creating new, more efficient ways to defeat his targets. His intelligence has developed as much as his physical form, and now, each hunt is planned and benefits from the visceral fear he instills.\n\nWhen Kha'Zix crossed over into this world, he was fragile and ravenous. The first animals he encountered were too small to fuel the rapid evolution he craved. He focused his hunger on the most dangerous creatures he could find, hunting with unrestrained aggression, believing he was unstoppable.\n\nOne day, while savoring a fresh kill, the predator became the prey. A creature pounced from cover in a blur of fangs and steel, tackling him to the ground. This beast, named Rengar, roared and slashed, and Kha'Zix felt his own blood spill for the first time. Screeching in fury, he managed to slash the brute's eye, driving it back.\n\nThey fought from sunset to sunrise. Finally, near death, they reluctantly separated. As his wounds closed, Kha'Zix burned with anticipation at the idea of devouring one who could match the Void's strength. He resumed his search for powerful prey with renewed vigor.\n\nKha'Zix's primary goal and obsession is to conquer and consume Rengar, the one beast he considers his equal, in order to complete his evolution.",
+  "spells_en": [
+    {
+      "id": "KhazixQ",
+      "name": "Taste Their Fear",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 144,
+        "full": "KhazixQ.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Kha'Zix slashes a nearby enemy, dealing <physicalDamage>{{ spell.khazixq:basedamage }} physical damage</physicalDamage>. This deals <physicalDamage>{{ spell.khazixq:isodamage }} damage</physicalDamage> instead to enemies <keywordMajor>Isolated</keywordMajor> from their allies. {{ spellmodifierdescriptionappend }}",
+      "costBurn": "20",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "325",
+      "datavalues": {},
+      "description": "Deals physical damage to the target. Damage increased on <font color='#FFF673'>Isolated</font> targets. If he chooses to <font color='#00DD33'>Evolve Reaper Claws</font>, this refunds a percent of it's cooldown against <font color='#FFF673'>Isolated</font> targets. Kha'Zix also gains increased range on his basic attacks and Taste Their Fear.",
+      "cooldownBurn": "4"
+    },
+    {
+      "id": "KhazixW",
+      "name": "Void Spike",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 144,
+        "full": "KhazixW.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Kha'Zix fires a spike dealing <physicalDamage>{{ basedamage }} physical damage</physicalDamage> to the first enemy hit in a small area. If Kha'Zix is inside the area, he restores <healing>{{ healamount }} Health</healing>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "55/60/65/70/75",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Healing",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Kha'Zix fires exploding spikes that deal physical damage to enemies hit. Kha'Zix is healed if he is also within the explosion radius. If he chooses to <font color='#00DD33'>Evolve Spike Racks</font>, Void Spike now fires three spikes in a cone, slow enemies hit, and reveals enemy champions hit for 2 seconds. <font color='#FFF673'>Isolated</font> targets are slowed for extra.",
+      "cooldownBurn": "9"
+    },
+    {
+      "id": "KhazixE",
+      "name": "Leap",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 144,
+        "full": "KhazixE.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Kha'Zix leaps, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> upon landing.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Kha'Zix leaps to an area, dealing physical damage upon landing. If he chooses to <font color='#00DD33'>Evolve Wings</font>, Leap's range increases by 200 and the cooldown resets on champion kill or assist.",
+      "cooldownBurn": "20/18/16/14/12"
+    },
+    {
+      "id": "KhazixR",
+      "name": "Void Assault",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 144,
+        "full": "KhazixR.png",
+        "group": "spell",
+        "sprite": "spell6.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellActive>Active:</spellActive> Kha'Zix becomes <keywordStealth>Invisible</keywordStealth> for {{ stealthduration }} seconds and gains <speed>{{ bonusmovementspeedpercent*100 }}% Move Speed</speed>. Kha'zix may <recast>Recast</recast> this Ability once within {{ recastwindow }} seconds.<br /><br /><spellPassive>Passive:</spellPassive> Leveling up this Ability allows Kha'zix to <evolve>Evolve</evolve> one of his Abilities, granting it additional effects.<li><spellName>Taste Their Fear:</spellName> Gain Ability range, Attack range, and lowers Cooldown by {{ spell.khazixq:effect4amount }}% against <keywordMajor>Isolated</keywordMajor> targets.<li><spellName>Void Spike:</spellName> Fires 3 spikes and <status>Slows</status> by {{ spell.khazixw:effect3amount }}%, increased against <keywordMajor>Isolated</keywordMajor> targets.<li><spellName>Leap:</spellName> Increased range and refreshes Cooldown on champion takedown.<li><spellName>Void Assault:</spellName> <keywordStealth>Invisibility</keywordStealth> duration lasts {{ evolvedstealthduration }} seconds and gains second <recast>Recast</recast>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Evolutions Available",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Each rank allows Kha'Zix to evolve one of his abilities, giving it a unique additional effect. When activated, Kha'Zix becomes <font color='#91d7ee'>Invisible</font>, triggering Unseen Threat and increasing Move Speed. If he chooses to <font color='#00DD33'>Evolve Adaptive Cloaking</font>, Void Assault gains increased <font color='#91d7ee'>Invisibility</font> duration, and an additional use.",
+      "cooldownBurn": "100/85/70"
+    }
+  ],
+  "passive_en": {
+    "name": "Unseen Threat",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 192,
+      "y": 0,
+      "full": "Khazix_P.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Nearby enemies that are <font color='#FFF673'>Isolated</font> from their allies are marked. Kha'Zix's abilities have interactions with <font color='#FFF673'>Isolated</font> targets.<br><br>When Kha'Zix is not visible to the enemy team, he gains Unseen Threat, causing his next basic attack against an enemy champion to deal bonus magic damage and slow them for a few seconds."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "121000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "121001",
+      "num": 1,
+      "name": "Mecha Kha'Zix",
+      "chromas": true
+    },
+    {
+      "id": "121002",
+      "num": 2,
+      "name": "Guardian of the Sands Kha'Zix",
+      "chromas": false
+    },
+    {
+      "id": "121003",
+      "num": 3,
+      "name": "Death Blossom Kha'Zix",
+      "chromas": false
+    },
+    {
+      "id": "121004",
+      "num": 4,
+      "name": "Dark Star Kha'Zix",
+      "chromas": false
+    },
+    {
+      "id": "121011",
+      "num": 11,
+      "name": "Worlds 2018 Kha'Zix",
+      "chromas": true
+    },
+    {
+      "id": "121060",
+      "num": 60,
+      "name": "Odyssey Kha'Zix",
+      "chromas": false
+    },
+    {
+      "id": "121069",
+      "num": 69,
+      "name": "Lunar Guardian Kha'Zix",
+      "chromas": false
+    },
+    {
+      "id": "121079",
+      "num": 79,
+      "name": "Crystalis Indomitus Kha'Zix",
+      "chromas": false
+    }
+  ]
+}

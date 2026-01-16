@@ -1,0 +1,457 @@
+{
+  "id": "Volibear",
+  "key": "106",
+  "name": "Volibear",
+  "title": "Tempête impitoyable",
+  "version": "15.23.1",
+  "lore": "Pour ceux qui le vénèrent encore, Volibear est l'incarnation de la tempête. Destructeur, sauvage et déterminé, il existait bien avant que les mortels n'arpentent la toundra de Freljord ; désormais, il défend férocement les terres qu'il a créées avec sa famille de demi-dieux. Habité d'une haine profonde envers la civilisation et la faiblesse qu'elle a engendrée, il se bat à coups de crocs et de griffes pour restaurer les traditions d'autrefois, celles du temps où la terre était sauvage et où le sang coulait librement.",
+  "tags": [
+    "Fighter",
+    "Tank"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 192,
+    "y": 0,
+    "full": "Volibear.png",
+    "group": "champion",
+    "sprite": "champion5.png"
+  },
+  "skins": [
+    {
+      "id": "106000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "106001",
+      "num": 1,
+      "name": "Fulguro Volibear",
+      "chromas": false
+    },
+    {
+      "id": "106002",
+      "num": 2,
+      "name": "Volibear nordique",
+      "chromas": false
+    },
+    {
+      "id": "106003",
+      "num": 3,
+      "name": "Volibear runique",
+      "chromas": false
+    },
+    {
+      "id": "106004",
+      "num": 4,
+      "name": "Capitaine Volibear",
+      "chromas": false
+    },
+    {
+      "id": "106005",
+      "num": 5,
+      "name": "Volibear El Rayo",
+      "chromas": false
+    },
+    {
+      "id": "106006",
+      "num": 6,
+      "name": "Volibear aux mille piques",
+      "chromas": false
+    },
+    {
+      "id": "106007",
+      "num": 7,
+      "name": "Volibear dragon de la dualité",
+      "chromas": true
+    },
+    {
+      "id": "106009",
+      "num": 9,
+      "name": "Volibear dragon de la dualité prestige",
+      "chromas": false
+    },
+    {
+      "id": "106019",
+      "num": 19,
+      "name": "Volibear esprit d'encre",
+      "chromas": false
+    },
+    {
+      "id": "106029",
+      "num": 29,
+      "name": "Volibear fleur spirituelle onsen",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "VolibearQ",
+      "name": "Coup fulgurant",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 144,
+        "full": "VolibearQ.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Volibear gagne <speed>+{{ minspeedcalc }} vitesse de déplacement</speed>, et ce bonus est doublé à <speed>+{{ maxspeedcalc }}</speed> en direction des champions ennemis pendant {{ duration }} sec. Quand la compétence est activée, la prochaine attaque de Volibear inflige <physicalDamage>{{ calculateddamage }} pts de dégâts physiques</physicalDamage> et <status>étourdit</status> la cible pendant {{ stunduration }} sec.<br /><br />Volibear enrage si un ennemi l'<status>immobilise</status> avant qu'il n'ait <status>étourdi</status> une cible, ce qui interrompt la compétence prématurément, mais réinitialise son délai de récupération.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Vitesse de déplacement",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "300",
+      "datavalues": {},
+      "description": "Volibear gagne de la vitesse en direction des ennemis, <status>étourdissant</status> et blessant le premier qu'il attaque.",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "VolibearW",
+      "name": "Folie mutilatrice",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 144,
+        "full": "VolibearW.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Volibear blesse grièvement un ennemi, infligeant <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> et le marquant pendant {{ markduration }} sec.<br /><br />Si cette compétence est utilisée sur une cible marquée, ses dégâts sont augmentés à <physicalDamage>{{ empowereddamage }}</physicalDamage> et Volibear récupère <healing>{{ baseheal }} PV plus {{ percentmissinghealthhealingratio }} de ses PV manquants</healing>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30/35/40/45/50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Soins de base",
+          "Pourcentage des PV manquants",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "325",
+      "datavalues": {},
+      "description": "Volibear blesse grièvement un ennemi, appliquant ses effets à l'impact et le marquant.  Relancer cette compétence sur la même cible inflige des dégâts supplémentaires et soigne Volibear.",
+      "cooldownBurn": "5"
+    },
+    {
+      "id": "VolibearE",
+      "name": "Foudroiement",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 144,
+        "full": "VolibearE.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Volibear fait tomber la foudre à l'endroit ciblé, infligeant <magicDamage>{{ totaldamagetooltip }} plus {{ percentdamage*100 }}% des PV max en dégâts magiques</magicDamage> et <status>ralentissant</status> les ennemis de {{ slowamount*100 }}% pendant {{ slowduration }} sec.<br /><br />Si Volibear est dans le rayon de l'explosion, il gagne un <shield>bouclier de {{ shieldapratiotooltip }} PV plus {{ shieldamount*100 }}% des PV max</shield> pendant {{ shieldduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Pourcentage des dégâts",
+          "Dégâts max aux monstres"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1200",
+      "datavalues": {},
+      "description": "Volibear fait tomber la foudre à l'endroit ciblé, blessant et ralentissant les ennemis tout en obtenant un bouclier s'il est dans le rayon de l'explosion.",
+      "cooldownBurn": "14"
+    },
+    {
+      "id": "VolibearR",
+      "name": "Tempête incarnée",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 144,
+        "full": "VolibearR.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Volibear se transforme et bondit vers l'endroit ciblé, gagnant <healing>+{{ healthamount }} PV</healing> et +{{ bonusattackrange }} portée d'attaque pendant {{ transformduration }} sec.<br /><br />À l'atterrissage, Volibear fracasse le sol, <status>désactivant</status> les tourelles proches pendant {{ towerdisableduration }} sec et leur infligeant <physicalDamage>{{ towerdamagetooltip }} pts de dégâts physiques</physicalDamage>. Les ennemis proches sont <status>ralentis</status> de {{ slowamount*100 }}%, et ce ralentissement diminue en 1 sec. Les ennemis directement sous Volibear subissent <physicalDamage>{{ sweetspotdamagetooltip }} pts de dégâts physiques</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "PV supplémentaires",
+          "Durée de la désactivation des tourelles",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "550",
+      "datavalues": {},
+      "description": "Volibear bondit vers l'endroit ciblé, ralentissant et blessant les ennemis sous lui tout en gagnant des PV supplémentaires.  Les tourelles ennemies proches de son point d'atterrissage sont temporairement désactivées.",
+      "cooldownBurn": "160/135/110"
+    }
+  ],
+  "passive": {
+    "name": "Tempête impitoyable",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 192,
+      "y": 0,
+      "full": "Volibear_Icon_P.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "Les attaques et les compétences de Volibear augmentent sa vitesse d'attaque. Au bout d'un moment, ses attaques infligent des dégâts magiques supplémentaires aux ennemis proches."
+  },
+  "created_at": "2025-11-26T15:13:35.521432+00:00",
+  "factions": [
+    "freljord"
+  ],
+  "custom_tags": [
+    "demi-dieu",
+    "ancien"
+  ],
+  "gender": "Male",
+  "species": "Spirit",
+  "title_en": "the Relentless Storm",
+  "lore_en": "To those who still revere him, the Volibear is the storm made manifest. Destructive, wild, and stubbornly resolute, he existed before mortals walked the Freljord's tundra, and is fiercely protective of the lands that he and his demi-god kin created. Cultivating a deep hatred of civilization and the weakness it brought with it, he now fights to return to the old ways—when the land was untamed, and blood spilled freely—and eagerly battles all who oppose him, with tooth, claw, and thundering domination.",
+  "spells_en": [
+    {
+      "id": "VolibearQ",
+      "name": "Thundering Smash",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 144,
+        "full": "VolibearQ.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Volibear gains <speed>{{ minspeedcalc }} Move Speed</speed>, doubled to <speed>{{ maxspeedcalc }}</speed> towards enemy champions for the next {{ duration }} seconds. While active, Volibear's next Attack deals <physicalDamage>{{ calculateddamage }} physical damage</physicalDamage> and <status>Stuns</status> the target for {{ stunduration }} second.<br /><br />Volibear becomes enraged if an enemy <status>Immobilizes</status> him before he <status>Stuns</status> a target, ending the Ability early but refreshing its Cooldown.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Move Speed",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "300",
+      "datavalues": {},
+      "description": "Volibear gains speed towards enemies, <status>Stunning</status> and damaging the first one he Attacks.",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "VolibearW",
+      "name": "Frenzied Maul",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 144,
+        "full": "VolibearW.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Volibear mauls an enemy, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> and marking them for {{ markduration }} seconds.<br /><br />If this Ability is used on a marked target, its damage is increased to <physicalDamage>{{ empowereddamage }}</physicalDamage> and Volibear restores <healing>{{ baseheal }} plus {{ percentmissinghealthhealingratio }} missing Health</healing>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30/35/40/45/50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Base Heal",
+          "Missing Health Percent",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "325",
+      "datavalues": {},
+      "description": "Volibear damages an enemy, applying on-hit effects and marking them.  Casting this ability again on the same target deals bonus damage and Heals Volibear.",
+      "cooldownBurn": "5"
+    },
+    {
+      "id": "VolibearE",
+      "name": "Sky Splitter",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 144,
+        "full": "VolibearE.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Volibear summons a thundercloud that fires a lightning bolt, dealing <magicDamage>{{ totaldamagetooltip }} plus {{ percentdamage*100 }}% max Health magic damage</magicDamage> and <status>Slowing</status> by {{ slowamount*100 }}% for {{ slowduration }} seconds.<br /><br />If Volibear is inside the blast zone, he gains a <shield>{{ shieldapratiotooltip }} plus {{ shieldamount*100 }}% max Health Shield</shield> for {{ shieldduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Percentage Damage",
+          "Monster Damage Cap"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1200",
+      "datavalues": {},
+      "description": "Volibear summons a lightning bolt at a location, dealing damage and Slowing enemies while granting Volibear a Shield if he's inside the blast radius.",
+      "cooldownBurn": "14"
+    },
+    {
+      "id": "VolibearR",
+      "name": "Stormbringer",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 144,
+        "full": "VolibearR.png",
+        "group": "spell",
+        "sprite": "spell15.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Volibear transforms and leaps, gaining <healing>{{ healthamount }} Health</healing> and {{ bonusattackrange }} Attack Range for the next {{ transformduration }} seconds.<br /><br />Upon landing, Volibear cracks the earth, <status>Disabling</status> nearby towers for {{ towerdisableduration }} seconds and dealing <physicalDamage>{{ towerdamagetooltip }} physical damage to them</physicalDamage>. Nearby enemies are <status>Slowed</status> by {{ slowamount*100 }}%, decaying over 1 second. Enemies directly underneath Volibear suffer <physicalDamage>{{ sweetspotdamagetooltip }} physical damage</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Bonus Health",
+          "Tower Disable Duration",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "550",
+      "datavalues": {},
+      "description": "Volibear leaps to a target location, Slowing and damaging enemies beneath him while gaining bonus Health.  Enemy towers near his landing location become temporarily disabled.",
+      "cooldownBurn": "160/135/110"
+    }
+  ],
+  "passive_en": {
+    "name": "The Relentless Storm",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 192,
+      "y": 0,
+      "full": "Volibear_Icon_P.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "Volibear's Attacks and abilities grant Attack Speed, and eventually cause his Attacks to deal bonus magic damage to nearby enemies."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Top",
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "106000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "106001",
+      "num": 1,
+      "name": "Thunder Lord Volibear",
+      "chromas": false
+    },
+    {
+      "id": "106002",
+      "num": 2,
+      "name": "Northern Storm Volibear",
+      "chromas": false
+    },
+    {
+      "id": "106003",
+      "num": 3,
+      "name": "Runeguard Volibear",
+      "chromas": false
+    },
+    {
+      "id": "106004",
+      "num": 4,
+      "name": "Captain Volibear",
+      "chromas": false
+    },
+    {
+      "id": "106005",
+      "num": 5,
+      "name": "El Rayo Volibear",
+      "chromas": false
+    },
+    {
+      "id": "106006",
+      "num": 6,
+      "name": "The Thousand-Pierced Bear",
+      "chromas": false
+    },
+    {
+      "id": "106007",
+      "num": 7,
+      "name": "Duality Dragon Volibear",
+      "chromas": true
+    },
+    {
+      "id": "106009",
+      "num": 9,
+      "name": "Prestige Duality Dragon Volibear",
+      "chromas": false
+    },
+    {
+      "id": "106019",
+      "num": 19,
+      "name": "Inkshadow Volibear",
+      "chromas": false
+    },
+    {
+      "id": "106029",
+      "num": 29,
+      "name": "Spirit Blossom Springs Volibear",
+      "chromas": false
+    }
+  ]
+}

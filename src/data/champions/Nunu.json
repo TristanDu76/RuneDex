@@ -1,0 +1,475 @@
+{
+  "id": "Nunu",
+  "key": "20",
+  "name": "Nunu et Willump",
+  "title": "Le Garçon et son yéti",
+  "version": "15.23.1",
+  "lore": "L'histoire est divisée en deux personnages qui convergent : Nunu, un garçon Notai orphelin et imaginatif, et Willump, le dernier yéti magique.\n\nPartie I : Nunu, le Conte de l'Orphelin\nEnfance : Nunu, issu des Notai (une tribu nomade du Freljord), a appris de sa mère, Layka, qu'il y avait une histoire derrière toute chose. Layka transformait ces histoires en chansons, notant leurs voyages sur une corde nouée (heart-song).\n\nPerte et Désir d'Héroïsme : Nunu fut séparé de Layka lors d'une attaque de pillards. Désespéré, il s'échappa dans les chansons de sa mère, rêvant d'être un héros qui aurait pu la sauver. Il rencontra même Lissandra, qui posait beaucoup de questions sur les histoires de Layka (cherchant une chanson en particulier).\n\nLa Quête : Rejeté par les autres, Nunu décida de prouver sa valeur en s'attaquant au monstre féroce des rumeurs locales. Il utilisa sa flûte (Svellsongur, le nom d'une lame imaginaire) pour s'enfuir seul dans la neige, enfin prêt à vivre sa légende.\n\nPartie II : Willump, le Gardien Oublié\nLe Dernier Yéti : Willump (le yéti sans nom initial) était le dernier d'une race ancienne, détruite par un cataclysme de glace. Il avait juré de protéger ce qui restait de leur pouvoir : une gemme qui faisait tournoyer les rêves gelés des mortels.\n\nLa Malédiction : Le yéti était façonné par la perception : comme les hommes qui s'introduisaient n'avaient que de la malice en eux, le yéti les accueillait comme un monstre avec crocs et griffes. Il avait oublié son nom et les chansons.\n\nLa Rencontre : Lorsque Nunu pénétra dans les ruines, le monstre s'apprêta à le tuer. Mais la gemme fit naître dans l'esprit du yéti des images de héros qui se battaient, provenant de l'imagination de l'enfant. Nunu, reconnaissant les vérités profondes des chansons de sa mère, réalisa que la créature avait seulement besoin d'un ami.\n\nLa Révélation : Ils se lancèrent dans une bataille de boules de neige joyeuse. Lorsque le yéti brisa accidentellement la flûte de Nunu, la peine du garçon toucha le yéti. Il vit dans l'esprit de l'enfant un amour luttant contre le désespoir (un sentiment qu'il n'avait jamais ressenti chez un humain).\n\nLe Transfert de Magie : Le yéti comprit que le véritable espoir du Freljord résidait dans le cœur de l'enfant. Il transféra la magie de la gemme dans Nunu, lui donnant le pouvoir de rendre son imagination réelle. Nunu répara sa flûte, la gelant en Vraie Glace (True Ice), et il imagina un meilleur ami nommé « Willump ».\n\nPartie III : L'Aventure\nNunu et Willump voyagent désormais à travers le Freljord, le cœur de Nunu et la force de Willump leur permettant d'accomplir leur aventure. Ils suivent la piste des chansons de Layka, espérant la retrouver. Willump sait que les jeux prendront fin lorsque la glace noire (la menace des Veilleurs, Watchers) commencera à fondre, un signe que les responsabilités se rapprochent.",
+  "tags": [
+    "Tank",
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 240,
+    "y": 0,
+    "full": "Nunu.png",
+    "group": "champion",
+    "sprite": "champion3.png"
+  },
+  "skins": [
+    {
+      "id": "20000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "20001",
+      "num": 1,
+      "name": "Nunu et Willump Sasquatch",
+      "chromas": false
+    },
+    {
+      "id": "20002",
+      "num": 2,
+      "name": "Nunu et Willump du Solstice",
+      "chromas": false
+    },
+    {
+      "id": "20003",
+      "num": 3,
+      "name": "Nunu et Willump peluche",
+      "chromas": false
+    },
+    {
+      "id": "20004",
+      "num": 4,
+      "name": "Nunu et Bot Willump",
+      "chromas": false
+    },
+    {
+      "id": "20005",
+      "num": 5,
+      "name": "Nunu et Willump blindés",
+      "chromas": false
+    },
+    {
+      "id": "20006",
+      "num": 6,
+      "name": "TPA Nunu et Willump",
+      "chromas": false
+    },
+    {
+      "id": "20007",
+      "num": 7,
+      "name": "Nunu et Willump zombies",
+      "chromas": false
+    },
+    {
+      "id": "20008",
+      "num": 8,
+      "name": "Nunu et Willump origami",
+      "chromas": true
+    },
+    {
+      "id": "20016",
+      "num": 16,
+      "name": "Nunu et Willump astro-groove",
+      "chromas": true
+    },
+    {
+      "id": "20026",
+      "num": 26,
+      "name": "Nunu et Willump abeille",
+      "chromas": true
+    },
+    {
+      "id": "20035",
+      "num": 35,
+      "name": "Nunu et Willump paladins cosmiques",
+      "chromas": true
+    },
+    {
+      "id": "20044",
+      "num": 44,
+      "name": "Nunu et Willump Nuit d'effroi",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "NunuQ",
+      "name": "Voracité",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 144,
+        "full": "NunuQ.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Nunu demande à Willump de mordre un ennemi, infligeant <trueDamage>{{ monsterminiondamage }} pts de dégâts bruts</trueDamage> et récupérant <healing>{{ monsterhealing }} PV</healing> si la cible est un sbire ou un monstre de la jungle. Contre un champion, cette compétence inflige à la place <magicDamage>{{ totalchampiondamage }} pts de dégâts magiques</magicDamage> et rend <healing>{{ championhealing }} PV</healing>.<br /><br />Les <healing>soins</healing> sont augmentés de {{ lowhealthhealingscalar*100 }}% quand Nunu et Willump ont moins de {{ lowhealththreshhold*100 }}% de leurs PV.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " pts de mana",
+      "leveltip": {
+        "label": [
+          "Dégâts aux monstres",
+          "Dégâts aux champions",
+          "Soins",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} pts de mana",
+      "rangeBurn": "125",
+      "datavalues": {},
+      "description": "Willump mord un sbire, un monstre ou un champion ennemi, lui infligeant d'importants dégâts et récupérant des PV.",
+      "cooldownBurn": "12/11/10/9/8"
+    },
+    {
+      "id": "NunuW",
+      "name": "Boule de neige géante !",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 144,
+        "full": "NunuW.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Nunu et Willump créent une boule de neige dont la taille et la vitesse augmentent à mesure qu'ils la font rouler. Ils changent de direction plus lentement en la poussant, mais ils peuvent accélérer leurs virages en tournant continuellement dans la même direction.<br /><br />La boule de neige inflige de <magicDamage>{{ noimpactsnowballdamage }}</magicDamage> à <magicDamage>{{ maximumsnowballdamage }} pts de dégâts magiques</magicDamage> et <status>projette dans les airs</status> pendant {{ baseknockupduration }} à {{ maximumstunduration }} sec lorsqu'elle entre en collision avec un champion, un grand monstre ou un mur. Ces valeurs augmentent avec la distance parcourue par la boule de neige.<br /><br />Nunu et Willump peuvent <recast>réactiver</recast> la compétence pour laisser la boule de neige partir plus tôt.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts de base",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "7500",
+      "datavalues": {},
+      "description": "Willump crée une boule de neige qui grossit et accélère à mesure qu'il la fait rouler.  La boule de neige blesse et projette en l'air les ennemis.",
+      "cooldownBurn": "14"
+    },
+    {
+      "id": "NunuE",
+      "name": "Rafale de boules de neige",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0,
+        "full": "NunuE.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Nunu lance trois boules de neige, infligeant <magicDamage>{{ totalsnowballdamage }} pts de dégâts magiques</magicDamage> par boule de neige et <status>ralentissant</status> les ennemis touchés par les trois projectiles de {{ slowamount*-100 }}% pendant {{ slowduration }} sec. Nunu peut <recast>réactiver</recast> cette compétence jusqu'à deux fois de plus.<br /><br />Après {{ totalspellduration }} sec, Nunu <status>immobilise</status> pendant {{ rootduration }} sec tous les ennemis proches qui ont été <status>ralentis</status> par les boules de neige et inflige <magicDamage>{{ totalrootdamage }} pts de dégâts magiques</magicDamage> supplémentaires.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Coût en mana",
+          "Ralentissement",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "625",
+      "datavalues": {},
+      "description": "Nunu lance plusieurs boules de neige qui blessent les ennemis.  Ensuite, Willump immobilise les champions et les grands monstres qui ont été touchés par une boule de neige.",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "NunuR",
+      "name": "Zéro absolu",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 0,
+        "full": "NunuR.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Nunu et Willump canalisent un puissant blizzard pendant un maximum de {{ channelduration }} sec. Les ennemis dans la zone sont <status>ralentis</status> de {{ slowstartamount*-100 }}%, et ce ralentissement augmente jusqu'à {{ maxslowamount*-100 }}% sur la durée. Nunu et Willump gagnent aussi un <shield>bouclier de {{ totalshieldamount }} PV</shield> pendant cette durée. Le bouclier se désagrège ensuite en {{ shielddecayduration }} sec.<br /><br />À la fin du blizzard, celui-ci explose et inflige jusqu'à <magicDamage>{{ maximumdamage }} pts de dégâts magiques</magicDamage>, selon la durée de la canalisation. Nunu et Willump peuvent <recast>réactiver</recast> cette compétence pour mettre fin prématurément au blizzard.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "PV du bouclier",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Nunu et Willump créent un puissant blizzard dans une zone, ce qui ralentit les ennemis et inflige d'importants dégâts à la fin du sort.",
+      "cooldownBurn": "110/100/90"
+    }
+  ],
+  "passive": {
+    "name": "Appel de Freljord",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 240,
+      "y": 0,
+      "full": "NunuPassive.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Nunu augmente les vitesses d'attaque et de déplacement de Willump et d'un allié proche, et les attaques de base de Willump infligent des dégâts aux ennemis proches de la cible."
+  },
+  "created_at": "2025-11-26T15:13:34.38849+00:00",
+  "factions": [
+    "freljord"
+  ],
+  "custom_tags": null,
+  "gender": "Male",
+  "species": "Human",
+  "title_en": "the Boy and His Yeti",
+  "lore_en": "This is a heartwarming story about the unlikely friendship between an imaginative orphaned boy and the last magical guardian of an extinct race, united by the search for a missing mother and the threat of an ancient tragedy.\n\nPart I: Nunu, the Orphan's Tale\nChildhood: Nunu, from the nomadic Notai tribe in the Freljord, learned from his mother, Layka, that behind everything is a story. Layka turned these tales into songs, recording their journeys on a knotted string (heart-song).\n\nLoss and Yearning for Heroism: Nunu was separated from Layka during a raider attack. Desperate, he escaped into his mother’s songs and the legends of heroes. He yearned to be a hero who could have saved her. He even met Lissandra, who questioned him endlessly about Layka's stories (seeking one particular song).\n\nThe Quest: Teased by others, Nunu decided to prove himself by facing the local rumored fierce monster. He used his flute (Svellsongur, the name of an imaginary blade) to sneak out alone, ready to live out a legend.\n\nPart II: Willump, the Forgotten Guardian\nThe Last Yeti: Willump (the initially unnamed yeti) was the last of an ancient race, destroyed in an ice cataclysm. He swore to protect the remnants of their power: a gem that swirled with the frozen dreams of nearby mortals.\n\nThe Curse: The yeti was shaped by perception: since intruders had only malice in their hearts, the yeti greeted them as a monster with fang and claw. He had forgotten his name and the songs.\n\nThe Encounter: When Nunu stumbled into the ruins, the monster prepared to kill him. Unexpectedly, the gem brought forth images of heroes from the boy's mind. Nunu, recognizing the deeper truths in his mother's songs, realized the creature only needed a friend.\n\nThe Revelation: They engaged in a joyful snowball fight. When the yeti accidentally broke Nunu's flute, the boy’s grief resonated with the yeti. He saw in the child's spirit love fighting back despair (a feeling he had never sensed in a human).\n\nThe Magic Transfer: The guardian realized the Freljord's only hope lay in the power already within this child. He transferred the magic from the gem into Nunu, granting him the ability to make his imagination real. Nunu repaired his flute, freezing it in True Ice, and imagined a best friend named \"Willump.\"\n\nPart III: The Adventure\nNunu and Willump now travel the Freljord, Nunu's heart and Willump's strength enabling their adventure. They follow the trail of Layka's songs, hoping to find her. Willump knows that the games will end as the dark ice (the threat of the Watchers) thaws, signaling that their responsibilities are drawing closer.",
+  "spells_en": [
+    {
+      "id": "NunuQ",
+      "name": "Consume",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 144,
+        "full": "NunuQ.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Nunu asks Willump to take a bite of an enemy, dealing <trueDamage>{{ monsterminiondamage }} true damage</trueDamage> and restoring <healing>{{ monsterhealing }} Health</healing> when used against a minion or jungle monster. Against a champion, it instead deals <magicDamage>{{ totalchampiondamage }} magic damage</magicDamage> and restores <healing>{{ championhealing }} Health</healing>.<br /><br />The <healing>healing</healing> is increased by {{ lowhealthhealingscalar*100 }}% when Nunu and Willump are below {{ lowhealththreshhold*100 }}% Health.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
+      "costType": " Mana",
+      "leveltip": {
+        "label": [
+          "Monster Damage",
+          "Champion Damage",
+          "Heal",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} Mana",
+      "rangeBurn": "125",
+      "datavalues": {},
+      "description": "Willump takes a bite out of a minion, monster, or enemy champion, dealing damage and healing himself.",
+      "cooldownBurn": "12/11/10/9/8"
+    },
+    {
+      "id": "NunuW",
+      "name": "Biggest Snowball Ever!",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 144,
+        "full": "NunuW.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Nunu and Willump create a snowball that grows in size and speed as they roll it. They turn slower while rolling it, but can increase turning speed by holding the turn.<br /><br />The snowball does between <magicDamage>{{ noimpactsnowballdamage }}</magicDamage> and <magicDamage>{{ maximumsnowballdamage }} magic damage</magicDamage>, and <status>Knocks Up</status> for between {{ baseknockupduration }} and {{ maximumstunduration }} seconds when it collides with a champion, large monster or wall. These values scale up with distance rolled.<br /><br />Nunu and Willump can <recast>Recast</recast> to let the snowball go early.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Base Damage",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "7500",
+      "datavalues": {},
+      "description": "Willump creates a snowball that grows in size and speed as he rolls it.  The snowball damages and knocks up enemies.",
+      "cooldownBurn": "14"
+    },
+    {
+      "id": "NunuE",
+      "name": "Snowball Barrage",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0,
+        "full": "NunuE.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Nunu throws three snowballs, dealing <magicDamage>{{ totalsnowballdamage }} magic damage</magicDamage> per snowball and <status>Slowing</status> enemies hit by all three by {{ slowamount*-100 }}% for {{ slowduration }} second. Nunu can <recast>Recast</recast> this up to twice more.<br /><br />After {{ totalspellduration }} seconds, Nunu <status>Roots</status> all nearby enemies that had been <status>Slowed</status> by the snowballs for {{ rootduration }} seconds and deals an additional <magicDamage>{{ totalrootdamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Mana Cost",
+          "Movement Slow",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "625",
+      "datavalues": {},
+      "description": "Nunu throws multiple snowballs that damage enemies.  When he's finished, Willump roots any champions or large monsters that were hit by a snowball.",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "NunuR",
+      "name": "Absolute Zero",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 0,
+        "full": "NunuR.png",
+        "group": "spell",
+        "sprite": "spell10.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Nunu and Willump channel a powerful blizzard for up to {{ channelduration }} seconds. Enemies inside are <status>Slowed</status> by {{ slowstartamount*-100 }}%, increasing to {{ maxslowamount*-100 }}% over the duration. Nunu and Willump also gain <shield>{{ totalshieldamount }} Shield</shield> for the duration before decaying over {{ shielddecayduration }} seconds afterwards.<br /><br />When the blizzard ends, it detonates, dealing up to <magicDamage>{{ maximumdamage }} magic damage</magicDamage> based on channel time. Nunu and Willump can <recast>Recast</recast> to end the blizzard early.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Shield Amount",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "650",
+      "datavalues": {},
+      "description": "Nunu & Willump create a powerful blizzard in an area that slows enemies and deals massive damage at the end.",
+      "cooldownBurn": "110/100/90"
+    }
+  ],
+  "passive_en": {
+    "name": "Call of the Freljord",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 240,
+      "y": 0,
+      "full": "NunuPassive.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Nunu increases the attack speed and Move Speed of Willump and a nearby ally, and causes Willump's basic attacks to damage enemies around the target."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "20000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "20001",
+      "num": 1,
+      "name": "Sasquatch Nunu & Willump",
+      "chromas": false
+    },
+    {
+      "id": "20002",
+      "num": 2,
+      "name": "Workshop Nunu & Willump",
+      "chromas": false
+    },
+    {
+      "id": "20003",
+      "num": 3,
+      "name": "Grungy Nunu & Willump",
+      "chromas": false
+    },
+    {
+      "id": "20004",
+      "num": 4,
+      "name": "Nunu & Willump Bot",
+      "chromas": false
+    },
+    {
+      "id": "20005",
+      "num": 5,
+      "name": "Demolisher Nunu & Willump",
+      "chromas": false
+    },
+    {
+      "id": "20006",
+      "num": 6,
+      "name": "TPA Nunu & Willump",
+      "chromas": false
+    },
+    {
+      "id": "20007",
+      "num": 7,
+      "name": "Zombie Nunu & Willump",
+      "chromas": false
+    },
+    {
+      "id": "20008",
+      "num": 8,
+      "name": "Papercraft Nunu & Willump",
+      "chromas": true
+    },
+    {
+      "id": "20016",
+      "num": 16,
+      "name": "Space Groove Nunu & Willump",
+      "chromas": true
+    },
+    {
+      "id": "20026",
+      "num": 26,
+      "name": "Nunu & Beelump",
+      "chromas": true
+    },
+    {
+      "id": "20035",
+      "num": 35,
+      "name": "Cosmic Paladins Nunu & Willump",
+      "chromas": true
+    },
+    {
+      "id": "20044",
+      "num": 44,
+      "name": "Fright Night Nunu & Willump",
+      "chromas": true
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+{
+  "id": "Nocturne",
+  "key": "56",
+  "name": "Nocturne",
+  "title": "Éternel cauchemar",
+  "version": "15.23.1",
+  "lore": "Nocturne est l'expression démoniaque et primordiale des cauchemars qui hantent les êtres doués d'intelligence. Il est le pire des horreurs que la magie des ombres a engendrées et qui fut pratiquée par des mages et des sorciers cherchant un avantage durant les Guerres runiques.\n\nLa Naissance dans le Royaume des Esprits : Vers la fin des Guerres runiques, des cabales de mages-guerriers se sont affrontées non seulement sur le champ de bataille, mais aussi dans le royaume des esprits, où leurs pensées et émotions subconscientes façonnaient le paysage. Les mages des ombres excellaient à conjurer des assassins éthérés.\n\nLa Manifestation de la Peur : Nul ne sait si les souffrances infligées (le moral sapé, les rêves infectés par la peur) ont créé Nocturne à partir de rien, ou s'il a corrompu un constructe-assassin mineur. Le résultat fut une créature insubstantielle et d'une terreur insondable.\n\nLe Goût de l'Angoisse : Nocturne était la terreur faite manifeste. Il a hurlé et s'est acharné sur les mages qui lui avaient donné vie, cherchant à mettre fin à sa propre souffrance. Il acquit rapidement un goût prononcé pour la peur mortelle, prolongeant chaque poursuite pour savourer l'angoisse de sa proie avant de couper le fil d'argent de sa vie.\n\nL'Évasion vers le Monde Éveillé : Une fois le royaume des esprits purgé de ses intrus, Nocturne commença à mourir de faim. La seule chose qui pouvait le sustenter étaient les esprits mortels qui s'égaraient inconsciemment dans l'éther pendant leur sommeil.\n\nLe Chasseur des Ténèbres : Attiré par les courants magiques où les deux royaumes se rencontrent, Nocturne a trouvé un moyen de se manifester dans le monde éveillé. Il existe désormais comme une ombre liquide, sans visage et aux yeux glacés, se nourrissant de la terreur. Des rois aux paysans, il est attiré par toute faiblesse d'esprit qu'il peut transformer en terreur mortelle et en ténèbres éternelles.",
+  "tags": [
+    "Fighter",
+    "Assassin"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 192,
+    "y": 0,
+    "full": "Nocturne.png",
+    "group": "champion",
+    "sprite": "champion3.png"
+  },
+  "skins": [
+    {
+      "id": "56000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "56001",
+      "num": 1,
+      "name": "Nocturne terreur glaciale",
+      "chromas": false
+    },
+    {
+      "id": "56002",
+      "num": 2,
+      "name": "Nocturne du Néant",
+      "chromas": false
+    },
+    {
+      "id": "56003",
+      "num": 3,
+      "name": "Nocturne ravageur",
+      "chromas": false
+    },
+    {
+      "id": "56004",
+      "num": 4,
+      "name": "Nocturne revenant",
+      "chromas": false
+    },
+    {
+      "id": "56005",
+      "num": 5,
+      "name": "Nocturne eternum",
+      "chromas": false
+    },
+    {
+      "id": "56006",
+      "num": 6,
+      "name": "Nocturne spectre maudit",
+      "chromas": false
+    },
+    {
+      "id": "56007",
+      "num": 7,
+      "name": "Nocturne dieu ancien",
+      "chromas": true
+    },
+    {
+      "id": "56016",
+      "num": 16,
+      "name": "Nocturne Hextech",
+      "chromas": false
+    },
+    {
+      "id": "56017",
+      "num": 17,
+      "name": "Nocturne de l'Alliance brisée",
+      "chromas": true
+    },
+    {
+      "id": "56026",
+      "num": 26,
+      "name": "Nocturne empyréen",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "NocturneDuskbringer",
+      "name": "Crépuscule",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 144,
+        "full": "NocturneDuskbringer.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Nocturne lance une lame d'ombre qui inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> et laisse une traînée crépusculaire pendant {{ e3 }} sec. Les champions ennemis touchés laissent également une traînée crépusculaire derrière eux. <br /><br />Quand il est dans cette traînée, Nocturne est fantomatique et gagne <speed>+{{ movespeed }}% de vitesse de déplacement</speed> et <physicalDamage>+{{ bonustrailad }} dégâts d'attaque</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Vitesse de déplacement",
+          "Dégâts d'attaque supplémentaires",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1125",
+      "datavalues": {},
+      "description": "Nocturne projette une lame noire qui inflige des dégâts et laisse une Lueur crépusculaire derrière elle. Les champions ennemis touchés émettent également une Lueur crépusculaire. Quand il est dans la lueur, Nocturne peut traverser les unités et profite d'un bonus en vitesse de déplacement et en dégâts d'attaque.",
+      "cooldownBurn": "8"
+    },
+    {
+      "id": "NocturneShroudofDarkness",
+      "name": "Linceul des ténèbres",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 144,
+        "full": "NocturneShroudofDarkness.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> Nocturne gagne <attackSpeed>+{{ e1 }}% de vitesse d'attaque</attackSpeed>.<br /><br /><spellActive>Active :</spellActive> Nocturne crée pendant 1.5 sec une barrière d'ombre qui bloque la prochaine compétence ennemie. Si une compétence est bloquée, la propriété passive de cette compétence est augmentée à <attackSpeed>+{{ e1 }}% de vitesse d'attaque</attackSpeed> pendant {{ e4 }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Vitesse d'attaque supplémentaire",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "20",
+      "datavalues": {},
+      "description": "Nocturne renforce ses lames, ce qui augmente passivement sa vitesse d'attaque. En lançant Linceul des ténèbres, Nocturne se fond dans l'obscurité, ce qui crée une barrière magique capable de bloquer une compétence ennemie et de doubler le bonus passif en vitesse d'attaque en cas de blocage.",
+      "cooldownBurn": "20/18/16/14/12"
+    },
+    {
+      "id": "NocturneUnspeakableHorror",
+      "name": "Horreur indicible",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 144,
+        "full": "NocturneUnspeakableHorror.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> Nocturne gagne <speed>+{{ tooltipfearms*100 }}% de vitesse de déplacement</speed> vers les ennemis <status>effrayés</status>.<br /><br /><spellActive>Active :</spellActive> Nocturne se lie à sa cible pour lui faire vivre un cauchemar, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> en {{ e3 }} sec. Si le lien n'est pas brisé, la cible est <status>effrayée</status> pendant {{ e2 }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Durée de peur",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "425",
+      "datavalues": {},
+      "description": "Nocturne implante un cauchemar dans l'esprit de sa cible, infligeant des dégâts chaque seconde et terrifiant la cible si elle reste à portée pendant toute la durée du sort.",
+      "cooldownBurn": "15/14/13/12/11"
+    },
+    {
+      "id": "NocturneParanoia",
+      "name": "Paranoïa",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 144,
+        "full": "NocturneParanoia.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Nocturne plonge la carte dans l'obscurité, réduisant le champ de vision de tous les champions ennemis et supprimant la vision qu'ils ont de leurs alliés pendant {{ paranoiaduration }} sec. Nocturne peut <recast>réactiver</recast> cette compétence pour se jeter sur un champion ennemi et lui infliger <physicalDamage>{{ damage }} pts de dégâts physiques</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Portée",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "2500/3250/4000",
+      "datavalues": {},
+      "description": "Nocturne réduit le champ de vision de tous les champions ennemis et supprime la vision qu'ils ont de leurs alliés. Il peut ensuite se projeter vers un champion ennemi proche.",
+      "cooldownBurn": "140/115/90"
+    }
+  ],
+  "passive": {
+    "name": "Lames d'ombre",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 192,
+      "y": 0,
+      "full": "Nocturne_UmbraBlades.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Toutes les quelques secondes, la prochaine attaque de Nocturne frappe les ennemis proches, infligeant des dégâts physiques supplémentaires et lui rendant des PV. <br><br>Les attaques de base de Nocturne réduisent ce délai."
+  },
+  "created_at": "2025-11-26T15:13:34.38849+00:00",
+  "factions": [
+    "runeterra"
+  ],
+  "custom_tags": [
+    "démon",
+    "cauchemar"
+  ],
+  "gender": "Male",
+  "species": "Demon",
+  "title_en": "the Eternal Nightmare",
+  "lore_en": "Nocturne is the demonic, primordial expression of the nightmares that haunt all intelligent beings. He is the greatest horror unleashed by \"shadow magic,\" a discipline shunned even by the most skilled mages.\n\nThe Birth in the Spirit Realm: Towards the end of the Rune Wars, desperate warrior-mages fought not only on the battlefield but also in the spirit realm, where their subconscious thoughts and emotions shaped the landscape. Shadow mages excelled at conjuring etheric assassins.\n\nThe Manifestation of Dread: No one can say for certain if the suffering caused (sapped morale, dreams infected with nameless fears) created Nocturne from nothing or merely corrupted a lesser assassin-construct. The result was a creature of insubstantial form and fathomless dread.\n\nThe Acquired Taste: Nocturne was terror made manifest. It howled and set upon the mages who had given it life, thrashing in pain. It quickly acquired a taste for mortal fear, dragging out every pursuit to savor the prey's anguish before cutting their life's silvery thread.\n\nThe Escape to the Waking World: Trapped in the spirit realm with few intruders to sustain it, Nocturne began to starve. The only thing close to the delectable feasts of fear it had once tasted was when mortal minds unknowingly drifted through the ether in sleep.\n\nThe Darkness Hunter: Drawn on currents of magic to where the two realms divide, Nocturne found a way to manifest itself into the waking world. Existing now as a liquid shade, armed with frightening blades, it is a sinister reflection of the most primal fears of Runeterra's peoples. The demon is drawn to any weakness of spirit it can twist into mortal terror and everlasting darkness.",
+  "spells_en": [
+    {
+      "id": "NocturneDuskbringer",
+      "name": "Duskbringer",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 144,
+        "full": "NocturneDuskbringer.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Nocturne throws a shadow blade, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> and leaving a dusk trail for {{ e3 }} seconds. Enemy champions hit also leave a trail. <br /><br />While on the trail, Nocturne is Ghosted and gains <speed>{{ movespeed }}% Move Speed</speed> and <physicalDamage>{{ bonustrailad }} Attack Damage</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Move Speed",
+          "Bonus Attack Damage",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1125",
+      "datavalues": {},
+      "description": "Nocturne throws a shadow blade that deals damage, leaves a Dusk Trail, and causes champions to leave a Dusk Trail. While on the trail, Nocturne can move through units and has increased Move Speed and Attack Damage.",
+      "cooldownBurn": "8"
+    },
+    {
+      "id": "NocturneShroudofDarkness",
+      "name": "Shroud of Darkness",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 144,
+        "full": "NocturneShroudofDarkness.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Nocturne gains <attackSpeed>{{ e1 }}% Attack Speed</attackSpeed>.<br /><br /><spellActive>Active:</spellActive> Nocturne creates a shadow barrier for 1.5 seconds that blocks the next enemy Ability. If an Ability is blocked, this Ability's passive effect is increased to <attackSpeed>{{ e1 }}% Attack Speed</attackSpeed> for {{ e4 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Bonus Attack Speed",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "20",
+      "datavalues": {},
+      "description": "Nocturne empowers his blades, passively gaining Attack Speed. Activating Shroud of Darkness allows Nocturne to fade into the shadows, creating a magical barrier which blocks a single enemy ability and doubles his passive Attack Speed if successful.",
+      "cooldownBurn": "20/18/16/14/12"
+    },
+    {
+      "id": "NocturneUnspeakableHorror",
+      "name": "Unspeakable Horror",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 144,
+        "full": "NocturneUnspeakableHorror.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Nocturne gains <speed>{{ tooltipfearms*100 }}% Move Speed</speed> toward <status>Feared</status> enemies.<br /><br /><spellActive>Active:</spellActive> Nocturne plants a nightmare tether into his target, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> over {{ e3 }} seconds. If the tether remains unbroken, the target is <status>Feared</status> for {{ e2 }} second(s).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60/65/70/75/80",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Fear Duration",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "425",
+      "datavalues": {},
+      "description": "Nocturne plants a nightmare into his target's mind, dealing damage each second and applying fear to the target if they do not get out of range by the end of the duration.",
+      "cooldownBurn": "15/14/13/12/11"
+    },
+    {
+      "id": "NocturneParanoia",
+      "name": "Paranoia",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 144,
+        "full": "NocturneParanoia.png",
+        "group": "spell",
+        "sprite": "spell9.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Nocturne darkens the map, reducing the sight radius of all enemy champions and removing their vision of allies for {{ paranoiaduration }} seconds. Nocturne can <recast>Recast</recast> this Ability during the duration to launch himself at an enemy champion dealing <physicalDamage>{{ damage }} physical damage</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Range",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "2500/3250/4000",
+      "datavalues": {},
+      "description": "Nocturne reduces the sight radius of all enemy champions and removes their ally vision in the process. He can then launch himself at a nearby enemy champion.",
+      "cooldownBurn": "140/115/90"
+    }
+  ],
+  "passive_en": {
+    "name": "Umbra Blades",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 192,
+      "y": 0,
+      "full": "Nocturne_UmbraBlades.png",
+      "group": "passive",
+      "sprite": "passive3.png"
+    },
+    "description": "Every few seconds, Nocturne's next attack strikes surrounding enemies for bonus physical damage and heals himself. <br><br>Nocturne's basic attacks reduce this cooldown."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "56000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "56001",
+      "num": 1,
+      "name": "Frozen Terror Nocturne",
+      "chromas": false
+    },
+    {
+      "id": "56002",
+      "num": 2,
+      "name": "Void Nocturne",
+      "chromas": false
+    },
+    {
+      "id": "56003",
+      "num": 3,
+      "name": "Ravager Nocturne",
+      "chromas": false
+    },
+    {
+      "id": "56004",
+      "num": 4,
+      "name": "Haunting Nocturne",
+      "chromas": false
+    },
+    {
+      "id": "56005",
+      "num": 5,
+      "name": "Eternum Nocturne",
+      "chromas": false
+    },
+    {
+      "id": "56006",
+      "num": 6,
+      "name": "Cursed Revenant Nocturne",
+      "chromas": false
+    },
+    {
+      "id": "56007",
+      "num": 7,
+      "name": "Old God Nocturne",
+      "chromas": true
+    },
+    {
+      "id": "56016",
+      "num": 16,
+      "name": "Hextech Nocturne",
+      "chromas": false
+    },
+    {
+      "id": "56017",
+      "num": 17,
+      "name": "Broken Covenant Nocturne",
+      "chromas": true
+    },
+    {
+      "id": "56026",
+      "num": 26,
+      "name": "Empyrean Nocturne",
+      "chromas": true
+    }
+  ]
+}

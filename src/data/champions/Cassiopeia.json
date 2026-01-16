@@ -1,0 +1,439 @@
+{
+  "id": "Cassiopeia",
+  "key": "69",
+  "name": "Cassiopeia",
+  "title": "Étreinte du serpent",
+  "version": "15.23.1",
+  "lore": "Cassiopeia est la plus jeune fille du Général Du Couteau, issue d'une noble famille noxienne. Elle a grandi dans le privilège, mais à l'ombre de sa sœur guerrière, Katarina. Cassiopeia suivit les traces de sa mère, Soreana, apprenant l'art de la politique, de la diplomatie et de l'influence subtile lorsque la famille fut envoyée à Urzeris, une ville côtière de Shurima.\r\n\r\nUn événement marqua sa jeunesse : Soreana fut empoisonnée par un inconnu, la laissant au bord de la mort. Cassiopeia resta à son chevet pendant de longs mois, renforçant leur lien. Lorsque son père et sa sœur furent rappelés à Noxus, Soreana se confia à Cassiopeia, révélant qu'elle appartenait à la Rose noire, une cabale secrète œuvrant pour guider l'empire.\r\n\r\nSous la tutelle de sa mère, Cassiopeia devint une jeune femme d'une grande beauté et d'une intelligence remarquable, mais manquant cruellement d'empathie, considérant les gens comme des outils à utiliser. Elle fut initiée à la Rose noire en traquant et en éliminant ceux qui avaient tenté de tuer sa mère, faisant preuve d'une vitesse et d'une efficacité qui surprirent même Soreana.\r\n\r\nAlors que l'Empire noxien était secoué par le coup d'État de Swain contre Darkwill (un coup de poignard dans le dos pour le clan Du Couteau), Soreana, craignant pour la Rose noire, chargea Cassiopeia d'une mission urgente : trouver le pouvoir divin qui avait fait la suprématie de Shurima dans le passé. Cassiopeia, utilisant les ressources de sa famille, entreprit des expéditions dans le désert, faisant équipe avec la mercenaire locale Sivir.\r\n\r\nSon serment la changea à jamais. En déterrant un ancien tombeau des Transfigurés, elle crut avoir atteint la source du pouvoir. Déterminée à éliminer tous les témoins, elle frappa d'abord Sivir. Mais un ancien gardien de tombe de pierre se dressa et l'enterra de ses crocs.\r\n\r\nSubmergée par les toxines arcaniques, Cassiopeia fut ramenée du désert, son corps se transformant en une créature reptilienne monstrueuse et ondulante, crachant du poison et capable de pétrifier d'un simple regard.\r\n\r\nAprès des semaines de désespoir et de deuil dans une crypte abandonnée, Cassiopeia se résolut à accepter son sort. Elle n'avait pas obtenu l'Ascension, mais elle détenait la magie des dieux Shurimiens morts, un pouvoir qui grandissait en elle jour après jour. Elle est maintenant déterminée à utiliser sa nouvelle forme et sa puissance pour les plans de la Rose noire, bien qu'elle ignore encore tout ce qu'elle est destinée à devenir.",
+  "tags": [
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 96,
+    "y": 96,
+    "full": "Cassiopeia.png",
+    "group": "champion",
+    "sprite": "champion0.png"
+  },
+  "skins": [
+    {
+      "id": "69000",
+      "num": 0,
+      "name": "default",
+      "chromas": true
+    },
+    {
+      "id": "69001",
+      "num": 1,
+      "name": "Cassiopeia desperada",
+      "chromas": false
+    },
+    {
+      "id": "69002",
+      "num": 2,
+      "name": "Cassiopeia sirène",
+      "chromas": false
+    },
+    {
+      "id": "69003",
+      "num": 3,
+      "name": "Cassiopeia mythologique",
+      "chromas": false
+    },
+    {
+      "id": "69004",
+      "num": 4,
+      "name": "Cassiopeia crochets de jade",
+      "chromas": false
+    },
+    {
+      "id": "69008",
+      "num": 8,
+      "name": "Cassiopeia eternum",
+      "chromas": false
+    },
+    {
+      "id": "69009",
+      "num": 9,
+      "name": "Cassiopeia fleur spirituelle",
+      "chromas": true
+    },
+    {
+      "id": "69018",
+      "num": 18,
+      "name": "Cassiopeia de l'assemblée",
+      "chromas": true
+    },
+    {
+      "id": "69028",
+      "num": 28,
+      "name": "Cassiopeia sorcière",
+      "chromas": true
+    },
+    {
+      "id": "69038",
+      "num": 38,
+      "name": "Cassiopeia mythificatrice prestige",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "CassiopeiaQ",
+      "name": "Bombe nocive",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 96,
+        "full": "CassiopeiaQ.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Cassiopeia projette un gaz toxique, <keywordMajor>empoisonnant</keywordMajor> les ennemis et infligeant <magicDamage>{{ tooltiptotaldamage }} pts de dégâts magiques</magicDamage> en {{ e2 }} sec. Toucher un champion octroie <speed>+{{ e3 }}% de vitesse de déplacement</speed> à Cassiopeia (ce bonus diminue en {{ e4 }} sec).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Vitesse de déplacement",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "850",
+      "datavalues": {},
+      "description": "Cassiopeia projette du poison dans une zone après un court délai, augmentant sa vitesse de déplacement si elle touche un champion ennemi.",
+      "cooldownBurn": "3.5"
+    },
+    {
+      "id": "CassiopeiaW",
+      "name": "Miasmes",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 96,
+        "full": "CassiopeiaW.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Cassiopeia crache du venin qui laisse des nuages toxiques pendant {{ e4 }} sec. Les ennemis dans les nuages subissent <magicDamage>{{ damagepersecond }} pts de dégâts magiques</magicDamage> par seconde et sont <keywordMajor>empoisonnés</keywordMajor>, <status>inertes</status> et <status>ralentis</status> de {{ e2 }}%.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/75/80/85/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ralentissement",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Cassiopeia génère plusieurs nuages de poison, ralentissant, rendant inertes et blessant légèrement les ennemis qui les traversent. Les ennemis inertes ne peuvent pas utiliser de compétence de déplacement.",
+      "cooldownBurn": "24/22/20/18/16"
+    },
+    {
+      "id": "CassiopeiaE",
+      "name": "Morsure fatale",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 96,
+        "full": "CassiopeiaE.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Cassiopeia lance des crochets mortels, infligeant <magicDamage>{{ basicdamage }} pts de dégâts magiques</magicDamage>. Si l'ennemi est <keywordMajor>empoisonné</keywordMajor>, il subit <magicDamage>{{ bonuspoisoneddamage }} pts de dégâts magiques</magicDamage> bonus et Cassiopeia récupère <healing>{{ healcalc }} PV</healing> (cet effet est réduit à <healing>{{ healcalcminion }} PV</healing> contre les sbires et les petits monstres).<br /><br />Si cette compétence tue la cible, Cassiopeia récupère <scaleMana>{{ cost }} pts de mana</scaleMana>.<br /><br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts supplémentaires du poison",
+          "Soins selon la puissance"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Cassiopeia lance une attaque qui inflige plus de dégâts aux cibles empoisonnées et qui lui rend des PV équivalents à un pourcentage des dégâts infligés. Si cette attaque tue sa cible, Cassiopeia regagne du mana.",
+      "cooldownBurn": "0.75"
+    },
+    {
+      "id": "CassiopeiaR",
+      "name": "Regard de la Méduse",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 96,
+        "full": "CassiopeiaR.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Cassiopeia lance un regard pétrifiant, infligeant <magicDamage>{{ rdamage }} pts de dégâts magiques</magicDamage> et <status>étourdissant</status> les ennemis qui lui font face pendant {{ rccduration }} sec. Les ennemis qui lui tournent le dos sont à la place <status>ralentis</status> de {{ rslowpercent }}% (ce ralentissement diminue sur la même durée).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "825",
+      "datavalues": {},
+      "description": "Les yeux de Cassiopeia déchaînent un tourbillon d'énergie magique qui étourdit les ennemis qui lui font face et ralentit ceux qui lui tournent le dos.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive": {
+    "name": "Grâce serpentine",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 96,
+      "y": 96,
+      "full": "Cassiopeia_Passive.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Cassiopeia gagne de la vitesse de déplacement par niveau, mais elle ne peut pas acheter de bottes."
+  },
+  "created_at": "2025-11-26T15:13:32.649099+00:00",
+  "factions": [
+    "noxus",
+    "shurima"
+  ],
+  "custom_tags": [
+    "serpent",
+    "exploratrice"
+  ],
+  "gender": "Female",
+  "species": "Human",
+  "title_en": "the Serpent's Embrace",
+  "lore_en": "Cassiopeia is the youngest daughter of General Du Couteau, born into a life of privilege among the Noxian noble houses. While her sister Katarina trained as a warrior, Cassiopeia followed in the footsteps of her mother, Soreana, learning the art of politics, diplomacy, and subtle influence when the family relocated to Urzeris, a coastal city in Shurima.\r\n\r\nA pivotal event in her youth occurred when Soreana was poisoned by an unknown hand. Cassiopeia stayed at her bedside for many months, strengthening their bond. When her father and sister were recalled to Noxus, Soreana confided in Cassiopeia, revealing she belonged to the Black Rose, a clandestine cabal working to guide the empire.\r\n\r\nUnder her mother’s tutelage, Cassiopeia blossomed into a woman of great beauty and intelligence, though lacking in empathy, seeing people as tools to be used. She was initiated into the Black Rose by tracking down and eliminating those who had sought her mother's death, showing surprising speed and efficiency.\r\n\r\nAs the Noxian Empire was shaken by Swain's coup against Darkwill (a betrayal that impacted Clan Du Couteau), Soreana, fearing for the Black Rose, dispatched Cassiopeia on an urgent mission: to seek out the godlike power that was key to Shurima's supremacy in ages past. Cassiopeia, using her family's resources, undertook deep desert expeditions, partnering with the local mercenary Sivir.\r\n\r\nHer oath left her changed forever. Upon unearthing a long-lost Ascended tomb, she believed she had reached the source of power. Determined to eliminate all witnesses, she first struck Sivir. But an ancient stone tomb guardian reared up and buried its fangs into her flesh.\r\n\r\nOvercome by the arcane toxins, Cassiopeia was carried back through the desert, her body twisting into a monstrous, slithering reptilian creature, spitting poison and able to crush stone as easily as glass.\r\n\r\nAfter weeks of despair and grieving in a disused crypt, Cassiopeia resolved to accept—maybe even embrace—her fate. She had not achieved Ascension, but she possessed the magic of the dead Shuriman gods, a power that was growing within her day by day. She is now determined to turn her new form and power toward the Black Rose's schemes, though even she cannot guess what she is destined to become.",
+  "spells_en": [
+    {
+      "id": "CassiopeiaQ",
+      "name": "Noxious Blast",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 96,
+        "full": "CassiopeiaQ.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Cassiopeia blasts noxious gas, <keywordMajor>Poisoning</keywordMajor> enemies and dealing <magicDamage>{{ tooltiptotaldamage }} magic damage</magicDamage> over {{ e2 }} seconds. Hitting a champion grants Cassiopeia <speed>{{ e3 }}% Move Speed</speed> decaying over {{ e4 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Move Speed",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "850",
+      "datavalues": {},
+      "description": "Cassiopeia blasts an area with Poison after a brief delay, granting her increased Move Speed if she hits an enemy champion.",
+      "cooldownBurn": "3.5"
+    },
+    {
+      "id": "CassiopeiaW",
+      "name": "Miasma",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 96,
+        "full": "CassiopeiaW.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Cassiopeia spews venom, leaving toxic clouds for {{ e4 }} seconds. Enemies in the clouds take <magicDamage>{{ damagepersecond }} magic damage</magicDamage> per second, are <keywordMajor>Poisoned</keywordMajor>, <status>Grounded</status>, and <status>Slowed</status> by {{ e2 }}%.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/75/80/85/90",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Slow",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Cassiopeia releases several clouds of poison, slowing, grounding, and lightly damaging enemies that pass through them. Grounded enemies cannot use Movement abilities.",
+      "cooldownBurn": "24/22/20/18/16"
+    },
+    {
+      "id": "CassiopeiaE",
+      "name": "Twin Fang",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 96,
+        "full": "CassiopeiaE.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Cassiopeia launches deadly fangs, dealing <magicDamage>{{ basicdamage }} magic damage</magicDamage>. If the enemy is <keywordMajor>Poisoned</keywordMajor>, they take an additional <magicDamage>{{ bonuspoisoneddamage }} magic damage</magicDamage> and Cassiopeia restores <healing>{{ healcalc }} Health</healing>, reduced to <healing>{{ healcalcminion }} Health</healing> against lane minions and small monsters.<br /><br />If this kills the target, Cassiopeia restores <scaleMana>{{ cost }} Mana</scaleMana>.<br /><br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Bonus Poison Damage",
+          "Healing from Ability Power"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Cassiopeia lets loose an attack that deals increased damage to Poisoned targets and heals her for a percentage of the damage dealt. If the target dies from this attack, Cassiopeia regains Mana.",
+      "cooldownBurn": "0.75"
+    },
+    {
+      "id": "CassiopeiaR",
+      "name": "Petrifying Gaze",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 96,
+        "full": "CassiopeiaR.png",
+        "group": "spell",
+        "sprite": "spell2.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Cassiopeia unleashes a petrifying gaze, dealing <magicDamage>{{ rdamage }} magic damage</magicDamage> and <status>Stunning</status> enemies facing her for {{ rccduration }} seconds. Enemies facing away are <status>Slowed</status> by {{ rslowpercent }}% decaying over the same duration instead.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "825",
+      "datavalues": {},
+      "description": "Cassiopeia releases a swirl of magical energy from her eyes, stunning any enemies in front of her that are facing her and slowing any others with their back turned.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Serpentine Grace",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 96,
+      "y": 96,
+      "full": "Cassiopeia_Passive.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Cassiopeia gains Move Speed per level, but she cannot purchase Boots items."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Mid",
+    "Top"
+  ],
+  "skins_en": [
+    {
+      "id": "69000",
+      "num": 0,
+      "name": "default",
+      "chromas": true
+    },
+    {
+      "id": "69001",
+      "num": 1,
+      "name": "Desperada Cassiopeia",
+      "chromas": false
+    },
+    {
+      "id": "69002",
+      "num": 2,
+      "name": "Siren Cassiopeia",
+      "chromas": false
+    },
+    {
+      "id": "69003",
+      "num": 3,
+      "name": "Mythic Cassiopeia",
+      "chromas": false
+    },
+    {
+      "id": "69004",
+      "num": 4,
+      "name": "Jade Fang Cassiopeia",
+      "chromas": false
+    },
+    {
+      "id": "69008",
+      "num": 8,
+      "name": "Eternum Cassiopeia",
+      "chromas": false
+    },
+    {
+      "id": "69009",
+      "num": 9,
+      "name": "Spirit Blossom Cassiopeia",
+      "chromas": true
+    },
+    {
+      "id": "69018",
+      "num": 18,
+      "name": "Coven Cassiopeia",
+      "chromas": true
+    },
+    {
+      "id": "69028",
+      "num": 28,
+      "name": "Bewitching Cassiopeia",
+      "chromas": true
+    },
+    {
+      "id": "69038",
+      "num": 38,
+      "name": "Prestige Mythmaker Cassiopeia",
+      "chromas": false
+    }
+  ]
+}

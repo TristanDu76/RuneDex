@@ -1,0 +1,486 @@
+{
+  "id": "Draven",
+  "key": "119",
+  "name": "Draven",
+  "title": "Glorieux exécuteur",
+  "version": "15.23.1",
+  "lore": "Draven et son frère Darius ont grandi orphelins dans les rues de Basilich. Draven était têtu et plein de bravade, se lançant constamment dans des bagarres, mais il ne devait sa survie qu'à son frère aîné, qui terminait toujours les combats qu'il avait commencés. Lorsque la ville fut conquise par Noxus, les deux frères furent enrôlés dans l'armée.\r\n\r\nSi Darius s'épanouissait dans la discipline, Draven s'ennuyait de plus en plus. Ses compétences martiales étaient incontestables, mais le labeur quotidien du soldat n'offrait pas assez de récompenses ou de gloire personnelle. Après avoir quitté (ou avoir été forcé de quitter) le commandement de son frère, il fut engagé comme champion et duelliste pour plusieurs campagnes, avant d'être attiré par les Fosses de la Revanche (Reckoning pits) de la capitale noxienne.\r\n\r\nCes jeux de gladiateurs, qui servaient à punir les criminels et à régler les différends, perdaient de leur attrait pour le public. Draven, obsédé par la richesse et l'adulation qu'il estimait mériter, sombra dans une période de stagnation.\r\n\r\nIl fut contacté par l'ancien général Jericho Swain, qui avait besoin de lui pour son plan de destituer le Grand Général Boram Darkwill. Draven joua un rôle clé dans le coup d'État, et pour la première fois depuis longtemps, il sourit en entendant les acclamations du peuple noxien le couvrir.\r\n\r\nDans les jours qui suivirent le coup d'État, les nobles réfractaires furent condamnés à mort dans l'arène. Un homme s'échappa, et par pur instinct, Draven sauta du balcon, lançant une paire de haches qui abattirent le fugitif. Le public, stupéfait, explosa de joie. Draven, savourant l'instant, récupéra ses haches et les fit tournoyer en l'air, jouant avec ses nouveaux fans.\r\n\r\nC'est ainsi que Draven devint l'Exécuteur Magnifique, transformant les combats de routine en grands spectacles. Un promoteur inventif approcha Draven avec une idée : combiner le drame des combats classiques avec le sens inné du spectacle de Draven.\r\n\r\nLes combattants de la Revanche devinrent des artistes autant que des combattants, avec des histoires personnelles et des styles flamboyants. Les combats étaient moins mortels mais remplis de rivalités mises en scène et d'intrigues, faisant de Draven la figure la plus discutée de l'empire. Il vécut une vie fastueuse, se réconcilia même avec son frère Darius, et mena occasionnellement des guerres.\r\n\r\nCependant, Draven recommence à s'ennuyer. Bien qu'il ait atteint tout ce qu'il pouvait imaginer, il rêve désormais du jour où le monde entier connaîtra son nom.",
+  "tags": [
+    "Marksman"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 336,
+    "y": 96,
+    "full": "Draven.png",
+    "group": "champion",
+    "sprite": "champion0.png"
+  },
+  "skins": [
+    {
+      "id": "119000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "119001",
+      "num": 1,
+      "name": "Draven faucheur",
+      "chromas": false
+    },
+    {
+      "id": "119002",
+      "num": 2,
+      "name": "Draven gladiateur",
+      "chromas": false
+    },
+    {
+      "id": "119003",
+      "num": 3,
+      "name": "Draven prime time",
+      "chromas": true
+    },
+    {
+      "id": "119004",
+      "num": 4,
+      "name": "Draven glorieux nageur",
+      "chromas": false
+    },
+    {
+      "id": "119005",
+      "num": 5,
+      "name": "Draven chasseur de bêtes",
+      "chromas": false
+    },
+    {
+      "id": "119006",
+      "num": 6,
+      "name": "Draven Draven",
+      "chromas": false
+    },
+    {
+      "id": "119012",
+      "num": 12,
+      "name": "Père Draven",
+      "chromas": false
+    },
+    {
+      "id": "119013",
+      "num": 13,
+      "name": "Draven du royaume des mechas",
+      "chromas": true
+    },
+    {
+      "id": "119020",
+      "num": 20,
+      "name": "Draven déchu",
+      "chromas": true
+    },
+    {
+      "id": "119029",
+      "num": 29,
+      "name": "Draven séducteur",
+      "chromas": true
+    },
+    {
+      "id": "119039",
+      "num": 39,
+      "name": "Draven Nuit d'effroi",
+      "chromas": true
+    },
+    {
+      "id": "119048",
+      "num": 48,
+      "name": "Draven La Ilusión",
+      "chromas": true
+    },
+    {
+      "id": "119058",
+      "num": 58,
+      "name": "Draven arénaire",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "DravenSpinning",
+      "name": "Hache tournoyante",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 0,
+        "full": "DravenSpinning.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Draven prépare une <keywordMajor>Hache tournoyante</keywordMajor>. Sa prochaine attaque inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> supplémentaires et la hache ricoche dans les airs. Si Draven rattrape cette hache, il prépare une autre <keywordMajor>Hache tournoyante</keywordMajor>.<br /><br />Draven peut avoir deux <keywordMajor>Haches tournoyantes</keywordMajor> simultanément.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "45",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Pourcentage des dégâts d'attaque supplémentaires",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "300",
+      "datavalues": {},
+      "description": "La prochaine attaque de Draven infligera des dégâts physiques supplémentaires. Cette hache ricochera sur la cible et sera propulsée dans les airs. Si Draven l'attrape, il prépare automatiquement une autre Hache tournoyante. Draven peut avoir deux Haches tournoyantes simultanément.",
+      "cooldownBurn": "12/11/10/9/8"
+    },
+    {
+      "id": "DravenFury",
+      "name": "Pulsion sanguinaire",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 0,
+        "full": "DravenFury.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Draven devient fantomatique et gagne <speed>+{{ e2 }}% de vitesse de déplacement</speed> (ce bonus diminue en {{ e3 }} sec) et <attackSpeed>+{{ e4 }}% de vitesse d'attaque</attackSpeed> pendant {{ e5 }} sec.<br /><br />Quand Draven rattrape une <keywordMajor>Hache tournoyante</keywordMajor>, le délai de récupération de la compétence est annulé.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/35/30/25/20",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Vitesse d'attaque",
+          "Coût en @AbilityResourceName@",
+          "Vitesse de déplacement"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Draven gagne des bonus en vitesse de déplacement et en vitesse d'attaque. Le bonus en vitesse de déplacement diminue rapidement sur la durée. Attraper une Hache tournoyante met fin au délai de récupération de Pulsion sanguinaire.",
+      "cooldownBurn": "12"
+    },
+    {
+      "id": "DravenDoubleShot",
+      "name": "Division",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 0,
+        "full": "DravenDoubleShot.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Draven lance horizontalement une hache qui inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage>, <status>repousse</status> et <status>ralentit</status> de {{ e2 }}% pendant {{ e3 }} sec.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ralentissement",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1050",
+      "datavalues": {},
+      "description": "Draven lance ses haches, infligeant des dégâts physiques aux cibles touchées et les repoussant sur le côté. Les cibles touchées sont ralenties.",
+      "cooldownBurn": "18/17/16/15/14"
+    },
+    {
+      "id": "DravenRCast",
+      "name": "Volée mortelle",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 0,
+        "full": "DravenRCast.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Draven lance deux gigantesques haches qui infligent <physicalDamage>{{ rcalculateddamage }} pts de dégâts physiques</physicalDamage>. Si elles touchent un champion ou si Draven <recast>réactive</recast> cette compétence, elles reviennent vers lui. Les haches infligent {{ rdamagereductionperhit*100 }}% de dégâts en moins par ennemi touché, jusqu'à un minimum de {{ rmindamagepercent }}%.<br /><br />Si <keywordMajor>Volée mortelle</keywordMajor> est censée laisser un champion ennemi avec un nombre de PV inférieur à {{ rpassivestackscoefficient*100 }}% des effets actuels <keywordMajor>League of Draven</keywordMajor> cumulés ({{ rpassivetruedamage }}) par Draven, ce dernier exécute le champion.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "Ratio de dégâts d'attaque bonus"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "20000",
+      "datavalues": {},
+      "description": "Draven lance deux énormes haches pour infliger des dégâts physiques aux unités touchées. Volée mortelle fait demi-tour et revient vers Draven après avoir frappé un champion ennemi. Draven peut aussi réactiver cette compétence quand les haches sont en vol pour les faire revenir plus tôt. La compétence inflige moins de dégâts par unité touchée et est réinitialisée quand les haches font demi-tour. De plus, elle exécute les ennemis dont les PV sont inférieurs au nombre d'effets Adoration cumulés par Draven.",
+      "cooldownBurn": "100/90/80"
+    }
+  ],
+  "passive": {
+    "name": "League of Draven",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 336,
+      "y": 96,
+      "full": "Draven_passive.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Draven obtient l'Adoration de ses fans quand il rattrape une Hache tournoyante, quand il tue un sbire ou un monstre et quand il détruit une tourelle. Quand il tue des champions ennemis, Draven gagne des PO supplémentaires en fonction de l'Adoration cumulée."
+  },
+  "created_at": "2025-11-26T15:13:32.649099+00:00",
+  "factions": [
+    "noxus"
+  ],
+  "custom_tags": [
+    "gladiateur"
+  ],
+  "gender": "Male",
+  "species": "Human",
+  "title_en": "the Glorious Executioner",
+  "lore_en": "Draven and his brother Darius grew up as orphans on the streets of Basilich. Draven was headstrong and full of bravado, frequently getting into vicious brawls, but he only survived childhood thanks to his older brother, who invariably finished the fights Draven started. When the city fell to Noxus, both brothers were enlisted in the military.\r\n\r\nWhile Darius thrived on discipline, Draven grew steadily more bored. His martial skill was beyond question, but the daily drudgery of soldiering offered too little reward and not enough personal glory. After leaving (or being forced out of) his brother's command, he fought as a champion and duelist in various campaigns before being lured to the Reckoning pits in the Noxian capital.\r\n\r\nThese gladiatorial games, used to punish criminals and settle disputes, were losing their appeal to the common citizen. Draven, obsessed with the riches and adoration he felt he deserved, fell into a slump.\r\n\r\nHe was found by the former General Jericho Swain, who needed him for his plan to depose Grand General Boram Darkwill. Draven proved integral to the coup, and for the first time in months, he smiled as the cheers of the Noxian people washed over him.\r\n\r\nIn the days following the coup, refractory nobles were sentenced to death in the arena. One condemned man escaped his handlers. Operating on pure instinct, Draven leapt from the high balcony, hurling a pair of axes that cut the fleeing man down in a heartbeat. The stunned crowd roared their approval. Draven retrieved his axes and spun them high in the air, playing to his new fans and savoring their rapturous applause.\r\n\r\nThus Draven became the Glorious Executioner, turning routine bouts into grand spectacles. An inventive promoter approached Draven with an idea: to combine the drama of classic pit fights with Draven's natural showmanship.\r\n\r\nThe Reckoners quickly became entertainers as much as combatants, with carefully constructed backstories and flamboyant styles. The fights were less often fatal but filled with staged rivalries and intrigue, making Draven the most talked-about figure in the empire. He lived the high life, even reconciling with his brother Darius, and occasionally marched out with the warhosts.\r\n\r\nHowever, Draven has started to grow restless once again. Though he has achieved everything he could have imagined, he now dreams of the day when the whole world knows his name.",
+  "spells_en": [
+    {
+      "id": "DravenSpinning",
+      "name": "Spinning Axe",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 0,
+        "full": "DravenSpinning.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Draven readies a <keywordMajor>Spinning Axe</keywordMajor>, causing his next Attack to deal an additional <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> and ricochet into the air. If Draven catches it, he readies another <keywordMajor>Spinning Axe</keywordMajor>.<br /><br />Draven can hold two <keywordMajor>Spinning Axes</keywordMajor> at once.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "45",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Bonus AD Percentage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "300",
+      "datavalues": {},
+      "description": "Draven's next attack will deal bonus physical damage. This axe will ricochet off the target high up into the air. If Draven catches it, he automatically readies another Spinning Axe. Draven can have two Spinning Axes at once.",
+      "cooldownBurn": "12/11/10/9/8"
+    },
+    {
+      "id": "DravenFury",
+      "name": "Blood Rush",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 0,
+        "full": "DravenFury.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Draven becomes Ghosted, gains <speed>{{ e2 }}% Move Speed</speed> decaying over {{ e3 }} seconds and <attackSpeed>{{ e4 }}% Attack Speed</attackSpeed> for {{ e5 }} seconds.<br /><br />When Draven catches a <keywordMajor>Spinning Axe</keywordMajor>, this Ability's Cooldown is refreshed.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40/35/30/25/20",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Attack Speed",
+          "@AbilityResourceName@ Cost",
+          "Move Speed"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Draven gains increased Move Speed and Attack Speed. The Move Speed bonus decreases rapidly over its duration. Catching a Spinning Axe will refresh the cooldown of Blood Rush.",
+      "cooldownBurn": "12"
+    },
+    {
+      "id": "DravenDoubleShot",
+      "name": "Stand Aside",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 0,
+        "full": "DravenDoubleShot.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Draven chucks a sideways axe that deals <physicalDamage>{{ totaldamage }} physical damage</physicalDamage>, <status>Knocks Back</status>, and <status>Slows</status> by {{ e2 }}% for {{ e3 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Slow",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1050",
+      "datavalues": {},
+      "description": "Draven throws his axes, dealing physical damage to targets hit and knocking them aside. Targets hit are slowed.",
+      "cooldownBurn": "18/17/16/15/14"
+    },
+    {
+      "id": "DravenRCast",
+      "name": "Whirling Death",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 0,
+        "full": "DravenRCast.png",
+        "group": "spell",
+        "sprite": "spell3.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Draven hurls two massive axes that deal <physicalDamage>{{ rcalculateddamage }} physical damage</physicalDamage>. Upon hitting a champion or <recast>Recasting</recast>, they reverse direction and return to Draven. The axes deal {{ rdamagereductionperhit*100 }}% less damage for each enemy hit, down to a minimum of {{ rmindamagepercent }}%.<br /><br />If <keywordMajor>Whirling Death</keywordMajor> would leave an enemy champion with less health than {{ rpassivestackscoefficient*100 }}% of Draven's current <keywordMajor>League of Draven</keywordMajor> stacks ({{ rpassivetruedamage }}), he will execute them.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "Bonus AD Ratio"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "20000",
+      "datavalues": {},
+      "description": "Draven hurls two massive axes to deal physical damage to each unit struck. Whirling Death slowly reverses direction and returns to Draven after striking an enemy champion. Draven may also activate this ability while the axes are in flight to cause it to return early. Deals less damage for each unit hit and resets when the axes reverse direction. Executes enemies who have less health than Draven's number of Adoration stacks.",
+      "cooldownBurn": "100/90/80"
+    }
+  ],
+  "passive_en": {
+    "name": "League of Draven",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 336,
+      "y": 96,
+      "full": "Draven_passive.png",
+      "group": "passive",
+      "sprite": "passive0.png"
+    },
+    "description": "Draven gains his fans' Adoration when he catches a Spinning Axe or kills a minion, monster, or tower. Killing enemy champions grants Draven bonus gold based on how much Adoration he has."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Adc"
+  ],
+  "skins_en": [
+    {
+      "id": "119000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "119001",
+      "num": 1,
+      "name": "Soul Reaver Draven",
+      "chromas": false
+    },
+    {
+      "id": "119002",
+      "num": 2,
+      "name": "Gladiator Draven",
+      "chromas": false
+    },
+    {
+      "id": "119003",
+      "num": 3,
+      "name": "Primetime Draven",
+      "chromas": true
+    },
+    {
+      "id": "119004",
+      "num": 4,
+      "name": "Pool Party Draven",
+      "chromas": false
+    },
+    {
+      "id": "119005",
+      "num": 5,
+      "name": "Beast Hunter Draven",
+      "chromas": false
+    },
+    {
+      "id": "119006",
+      "num": 6,
+      "name": "Draven Draven",
+      "chromas": false
+    },
+    {
+      "id": "119012",
+      "num": 12,
+      "name": "Santa Draven",
+      "chromas": false
+    },
+    {
+      "id": "119013",
+      "num": 13,
+      "name": "Mecha Kingdoms Draven",
+      "chromas": true
+    },
+    {
+      "id": "119020",
+      "num": 20,
+      "name": "Ruined Draven",
+      "chromas": true
+    },
+    {
+      "id": "119029",
+      "num": 29,
+      "name": "Debonair Draven",
+      "chromas": true
+    },
+    {
+      "id": "119039",
+      "num": 39,
+      "name": "Fright Night Draven",
+      "chromas": true
+    },
+    {
+      "id": "119048",
+      "num": 48,
+      "name": "La Ilusión Draven",
+      "chromas": true
+    },
+    {
+      "id": "119058",
+      "num": 58,
+      "name": "Grand Reckoning Draven",
+      "chromas": true
+    }
+  ]
+}

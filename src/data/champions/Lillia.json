@@ -1,0 +1,388 @@
+{
+  "id": "Lillia",
+  "key": "876",
+  "name": "Lillia",
+  "title": "Fleur timide",
+  "version": "15.23.1",
+  "lore": "Lillia est née dans le Jardin de l'Oubli en Ionia, un endroit caché où l'Arbre des Rêves (Dreaming Tree) recueillait les rêves de l'humanité dans ses bourgeons. L'Arbre des Rêves avait poussé à partir d'une graine du Saule divin (Omikayalan, l'arbre qu'Ivern a abattu puis restauré).\n\nLillia elle-même est née lorsqu'un des rêves de l'arbre, son propre rêve, a été capturé dans un bourgeon qui est tombé au sol avant d'éclore. Elle a germé en une créature maladroite, un faon, portant encore le bourgeon de fleur sur sa tête. Elle a appris l'humanité à travers les rêves qui dérivaient dans le jardin chaque nuit, s'enchantant des émotions et des désirs des mortels, qu'elle considérait comme de nouveaux amis.\n\nCependant, le monde extérieur changeait : la guerre ravageait Ionia, et de moins en moins de rêves parvenaient à l'arbre, qui tomba malade, infecté par des excroissances (burl) suintant l'obscurité.\n\nUn soir, la violence du monde extérieur pénétra dans le jardin : des guerriers poursuivaient une personne seule jusqu'à l'Arbre des Rêves. Le chaos fit tomber et briser la branche qui portait le rêve non réalisé de Lillia. Prise de panique, Lillia força les mortels à dormir, horrifiée par la différence entre les humains des rêves et ceux qu'elle avait trouvés, remplis de peur (plus d'enchevêtrements que d'éclat).\n\nAlors que Lillia pleurait, un rêve émergea faiblement de la figure qu'ils poursuivaient. Il flotta vers le bourgeon de la branche brisée et y pénétra. En murmurant et en apaisant ce rêve, il devint plus lumineux, et la fleur sur la tête de Lillia s'épanouit. Elle-même épanouie dans un tourbillon de magie, elle éternua, envoyant la magie se répandre dans la forêt environnante.\n\nLes humains se réveillèrent sans aucun souvenir de leur présence. Lillia les regarda s'éloigner, toujours confus et peureux, mais elle savait maintenant qu'un « éclat » (sparkle) subsistait sous leurs « enchevêtrements » (tangles).\n\nPrenant sa branche magique, Lillia décida que si les rêves ne venaient plus à l'arbre, elle devait apporter l'arbre aux rêveurs. Elle est partie, nerveuse et timide, dans le monde des mortels qui l'intimide, se cachant juste hors de vue.\n\nAujourd'hui, Lillia parcourt l'Ionia pour aider les gens à réaliser leurs rêves inassouvis, à démêler leurs peurs et à trouver l'étincelle qui se cache au fond d'eux. Ce n'est qu'en aidant les autres à s'épanouir qu'elle pourra elle-même s'épanouir pleinement.",
+  "tags": [
+    "Fighter",
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 96,
+    "y": 48,
+    "full": "Lillia.png",
+    "group": "champion",
+    "sprite": "champion2.png"
+  },
+  "skins": [
+    {
+      "id": "876000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "876001",
+      "num": 1,
+      "name": "Lillia fleur spirituelle",
+      "chromas": true
+    },
+    {
+      "id": "876010",
+      "num": 10,
+      "name": "Lillia héraut de la nuit",
+      "chromas": true
+    },
+    {
+      "id": "876019",
+      "num": 19,
+      "name": "Lillia des rouleaux de Shan Hai",
+      "chromas": true
+    },
+    {
+      "id": "876028",
+      "num": 28,
+      "name": "Lillia de la cour féérique",
+      "chromas": true
+    },
+    {
+      "id": "876037",
+      "num": 37,
+      "name": "Lillia joueuse de bowling",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "LilliaQ",
+      "name": "Frappe fleurie",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 96,
+        "full": "LilliaQ.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> toucher des ennemis avec les compétences de Lillia lui octroie <speed>+{{ prancespeed }} vitesse de déplacement</speed> pendant {{ pranceduration }} sec (cumulable {{ prancemaxstacks }} fois).<br /><br /><spellActive>Active :</spellActive> Lillia attaque avec son encensoir, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>, plus <trueDamage>{{ bonustruedamage }} pts de dégâts bruts</trueDamage> supplémentaires en bordure de la zone.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "65",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Vitesse de déplacement",
+          "Dégâts magiques",
+          "Dégâts bruts"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "450",
+      "datavalues": {},
+      "description": "Passivement, Lillia gagne des bonus cumulables en vitesse de déplacement quand elle touche des ennemis avec ses compétences. Elle peut activer cette compétence pour infliger des dégâts magiques aux ennemis proches, ainsi que des dégâts bruts supplémentaires en bordure de la zone.",
+      "cooldownBurn": "6/5.5/5/4.5/4"
+    },
+    {
+      "id": "LilliaW",
+      "name": "Attention, désolée !",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 96,
+        "full": "LilliaW.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Lillia lance une puissante attaque qui inflige <magicDamage>{{ flatdamage }} pts de dégâts magiques</magicDamage>. Les ennemis au centre de la zone subissent <magicDamage>{{ flatdamagesweetspot }} pts de dégâts</magicDamage> à la place.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "500",
+      "datavalues": {},
+      "description": "Lillia lance une attaque dans une zone proche, infligeant d'importants dégâts au centre de la zone.",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "LilliaE",
+      "name": "Graine tournoyante",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 96,
+        "full": "LilliaE.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Lillia lance une Graine tournoyante dans les airs, infligeant <magicDamage>{{ impactdamagetotal }} pts de dégâts magiques</magicDamage> aux ennemis à l'atterrissage en plus de les révéler et de les <status>ralentir</status> de {{ slowamount*100 }}% pendant {{ slowduration }} sec. Si aucun ennemi n'est touché, la graine roule jusqu'à toucher un ennemi ou un obstacle.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Lillia lance une graine qui blesse et ralentit ceux qu'elle touche. Si la graine ne touche rien, elle continue de rouler jusqu'à toucher un mur ou une cible.",
+      "cooldownBurn": "12"
+    },
+    {
+      "id": "LilliaR",
+      "name": "Douce berceuse",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 96,
+        "full": "LilliaR.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Lillia provoque un effet de <status>somnolence</status> chez tous les ennemis affectés par <keywordMajor>Poussière de rêve</keywordMajor> pendant {{ drowsyduration }} sec. Ils <status>s'endorment</status> ensuite pendant {{ sleepduration }} sec.<br /><br />S'ils sont réveillés par des dégâts, ils subissent <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> supplémentaires.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts au réveil"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1600",
+      "datavalues": {},
+      "description": "Lillia provoque un effet de somnolence chez tous les ennemis affectés par Poussière de rêve, qui finissent par s'endormir. Ces ennemis subiront des dégâts supplémentaires s'ils sont réveillés de force.",
+      "cooldownBurn": "140/120/100"
+    }
+  ],
+  "passive": {
+    "name": "Bâton chargé de rêves",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 96,
+      "y": 48,
+      "full": "Lillia_Icon_Passive.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Toucher un champion ou un monstre avec une compétence lui inflige des dégâts supplémentaires sur la durée équivalents à un pourcentage de ses PV max."
+  },
+  "created_at": "2025-11-26T15:13:33.959475+00:00",
+  "factions": [
+    "ionia"
+  ],
+  "custom_tags": [
+    "vastaya",
+    "rêve"
+  ],
+  "gender": "Female",
+  "species": "Spirit",
+  "title_en": "the Bashful Bloom",
+  "lore_en": "Lillia was born in the Garden of Forgetting in Ionia, a hidden place where the Dreaming Tree gathered humanity's dreams in its blooms. The Dreaming Tree grew from a seed of the God-Willow (the tree that Ivern felled and nurtured back).\n\nLillia herself was born when one of the tree's own dreams was captured in a bud that fell to the ground before it could bloom. She sprouted into an awkward fawn creature, still bearing the flower bud on her head. She learned about humanity by tending to the dream buds, experiencing the swirl of mortal emotions and desires, which led her to view each dreamer as a potential friend.\n\nHowever, the outside world was changing: war raged through Ionia, and fewer dreams reached the tree, which grew sick, infected with dark, oozing burls (writhing tangles).\n\nOne night, the violence spilled into the garden: warriors chased a lone figure to the Dreaming Tree, and the chaos caused the branch containing Lillia's unrealized dream to fall. Panicked, Lillia forced the mortals to sleep, horrified by the difference between the humans she knew from dreams and the ones she found, who were filled with fear (more tangle than sparkle).\n\nAs Lillia wept, a dream weakly emerged from the figure the others had been chasing. It floated into the fallen bud. As she soothed it, the dream glowed brighter, and the bud upon Lillia’s head unfurled. Lillia herself bloomed in a swirl of magic, and with a sneeze, sent the magic curling into the surrounding forest.\n\nThe humans awoke with no memory of what happened. Lillia, hiding out of sight, realized that though they were tangled in fear, a \"sparkle\" remained beneath it all.\n\nTaking up her magical branch, Lillia decided that if their dreams would not come to the tree, she would have to bring the tree to them. She nervously left the garden for the world of mortals, which now frightened her more than anything.\n\nToday, Lillia shyly travels Ionia to help people's unfulfilled dreams be born, helping them untangle their fears and find the spark within. Only by helping others realize their deepest wishes can Lillia truly bloom herself.",
+  "spells_en": [
+    {
+      "id": "LilliaQ",
+      "name": "Blooming Blows",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 288,
+        "y": 96,
+        "full": "LilliaQ.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Lillia's Ability hits grant <speed>{{ prancespeed }} Move Speed</speed> for {{ pranceduration }} seconds, stacking up to {{ prancemaxstacks }} times.<br /><br /><spellActive>Active:</spellActive> Lillia whirls her censer, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>, plus an additional <trueDamage>{{ bonustruedamage }} true damage</trueDamage> at the outer edge.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "65",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Move Speed",
+          "Magic Damage",
+          "True Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "450",
+      "datavalues": {},
+      "description": "Passively, Lillia gains stacking Move Speed when hitting enemies with spells. She can activate this to deal magic damage to nearby enemies, dealing extra true damage on the edge.",
+      "cooldownBurn": "6/5.5/5/4.5/4"
+    },
+    {
+      "id": "LilliaW",
+      "name": "Watch Out! Eep!",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 336,
+        "y": 96,
+        "full": "LilliaW.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Lillia winds up a huge strike, dealing <magicDamage>{{ flatdamage }} magic damage</magicDamage>. Enemies in the center take <magicDamage>{{ flatdamagesweetspot }} damage</magicDamage> instead.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "500",
+      "datavalues": {},
+      "description": "Lillia deals damage in a nearby area, dealing heavy damage in the center.",
+      "cooldownBurn": "14/13/12/11/10"
+    },
+    {
+      "id": "LilliaE",
+      "name": "Swirlseed",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 96,
+        "full": "LilliaE.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Lillia lobs a swirlseed overhead, dealing <magicDamage>{{ impactdamagetotal }} magic damage</magicDamage> where it lands and revealing and <status>Slowing</status> them by {{ slowamount*100 }}% for {{ slowduration }} seconds. If no enemies are hit, the seed rolls until it hits an enemy or collides with terrain.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Lillia hurls a seed that damages and slows those it lands on. If it doesn't hit anything, it will continue rolling until it hits a wall or target.",
+      "cooldownBurn": "12"
+    },
+    {
+      "id": "LilliaR",
+      "name": "Lilting Lullaby",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 96,
+        "full": "LilliaR.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Lillia causes all enemy champions with <keywordMajor>Dream Dust</keywordMajor> to become <status>Drowsy</status> for {{ drowsyduration }} seconds. Afterward, they fall <status>Asleep</status> for {{ sleepduration }} seconds.<br /><br />When awakened by damage, they take an additional <magicDamage>{{ totaldamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Break Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1600",
+      "datavalues": {},
+      "description": "Lillia causes all enemies with Dream Dust on them to become Drowsy before falling asleep. Those enemies will take extra damage on being forcibly woken up.",
+      "cooldownBurn": "140/120/100"
+    }
+  ],
+  "passive_en": {
+    "name": "Dream-Laden Bough",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 96,
+      "y": 48,
+      "full": "Lillia_Icon_Passive.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Hitting a champion or monster with a skill will deal additional max Health damage over time."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "876000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "876001",
+      "num": 1,
+      "name": "Spirit Blossom Lillia",
+      "chromas": true
+    },
+    {
+      "id": "876010",
+      "num": 10,
+      "name": "Nightbringer Lillia",
+      "chromas": true
+    },
+    {
+      "id": "876019",
+      "num": 19,
+      "name": "Shan Hai Scrolls Lillia",
+      "chromas": true
+    },
+    {
+      "id": "876028",
+      "num": 28,
+      "name": "Faerie Court Lillia",
+      "chromas": true
+    },
+    {
+      "id": "876037",
+      "num": 37,
+      "name": "Bowling League Lillia",
+      "chromas": true
+    }
+  ]
+}

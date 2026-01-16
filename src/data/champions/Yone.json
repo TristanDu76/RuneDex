@@ -1,0 +1,455 @@
+{
+  "id": "Yone",
+  "key": "777",
+  "name": "Yone",
+  "title": "Inoublié",
+  "version": "15.23.1",
+  "lore": "Au cours de sa vie, Yone fut le demi-frère de Yasuo et un disciple renommé de l'école d'armes de son village. Mais après avoir été tué par son propre frère, il se retrouva hanté par une entité malveillante dans le royaume spirituel. Il dut la tuer avec sa propre épée. Désormais maudit et forcé de porter le masque de l'azakana, Yone chasse inlassablement ces créatures démoniaques afin de comprendre ce qu'il est devenu.",
+  "tags": [
+    "Fighter",
+    "Assassin"
+  ],
+  "partype": "Impulsion",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 0,
+    "y": 48,
+    "full": "Yone.png",
+    "group": "champion",
+    "sprite": "champion5.png"
+  },
+  "skins": [
+    {
+      "id": "777000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "777001",
+      "num": 1,
+      "name": "Yone fleur spirituelle",
+      "chromas": true
+    },
+    {
+      "id": "777010",
+      "num": 10,
+      "name": "Yone de l'Académie du combat",
+      "chromas": true
+    },
+    {
+      "id": "777019",
+      "num": 19,
+      "name": "Yone héraut de l'aube",
+      "chromas": true
+    },
+    {
+      "id": "777026",
+      "num": 26,
+      "name": "Yone du Chant de l'océan",
+      "chromas": true
+    },
+    {
+      "id": "777035",
+      "num": 35,
+      "name": "Yone guerrier d'encre",
+      "chromas": true
+    },
+    {
+      "id": "777045",
+      "num": 45,
+      "name": "HEARTSTEEL Yone",
+      "chromas": true
+    },
+    {
+      "id": "777046",
+      "num": 46,
+      "name": "HEARTSTEEL Yone prestige",
+      "chromas": false
+    },
+    {
+      "id": "777055",
+      "num": 55,
+      "name": "Yone de l'Ouest",
+      "chromas": true
+    },
+    {
+      "id": "777058",
+      "num": 58,
+      "name": "Yone de l'Ouest pacificateur",
+      "chromas": false
+    },
+    {
+      "id": "777065",
+      "num": 65,
+      "name": "Yone justice masquée",
+      "chromas": false
+    },
+    {
+      "id": "777074",
+      "num": 74,
+      "name": "T1 Yone",
+      "chromas": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "YoneQ",
+      "name": "Acier mortel",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 48,
+        "full": "YoneQ.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Yone donne un coup d'estoc, infligeant <physicalDamage>{{ qdamage }} pts de dégâts physiques</physicalDamage>.<br /><br />À l'impact, octroie un effet cumulé pendant {{ buffduration }} sec. À 2 effets cumulés, cette compétence permet à Yone de se ruer vers l'avant dans une rafale de vent qui <status>projette les ennemis dans les airs</status> pendant {{ q3knockupduration }} sec et inflige <physicalDamage>{{ qdamage }} pts de dégâts physiques</physicalDamage>. {{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts de base"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "450",
+      "datavalues": {},
+      "description": "Yone donne un coup d'estoc devant lui, blessant tous les ennemis sur une ligne.<br><br>À l'impact, cela lui octroie un effet Tempête menaçante pendant quelques secondes. À 2 effets cumulés, Acier mortel permet à Yone de se ruer vers l'avant dans une rafale de vent qui <status>projette les ennemis dans les airs</status>.",
+      "cooldownBurn": "4"
+    },
+    {
+      "id": "YoneW",
+      "name": "Fendoir spirituel",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 48,
+        "full": "YoneW.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Yone frappe dans une zone conique devant lui, infligeant des dégâts physiques équivalents à <physicalDamage>{{ basedamage*0.5 }} + {{ maxhealthdamage*50 }}% des PV max de l'ennemi</physicalDamage> et des dégâts magiques équivalents à <magicDamage>{{ basedamage*0.5 }} + {{ maxhealthdamage*50 }}% des PV max de l'ennemi</magicDamage>.<br /><br />Si Yone touche un ennemi, il gagne un <shield>bouclier de {{ wshield }} PV</shield> pendant {{ shieldduration }} sec. Les PV du <shield>bouclier</shield> augmentent avec le nombre de champions touchés. {{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts de base",
+          "PV max en dégâts"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Yone frappe devant lui en blessant tous les ennemis dans une zone conique. Yone obtient un bouclier dont les PV augmentent avec le nombre de champions touchés.<br><br>Les délais de récupération et d'incantation de Fendoir spirituel sont réduits par la vitesse d'attaque.",
+      "cooldownBurn": "14"
+    },
+    {
+      "id": "YoneE",
+      "name": "Libération spirituelle",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 96,
+        "full": "YoneE.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Yone prend une forme spirituelle pendant {{ returntimer }} sec, laissant son corps derrière lui pendant la durée de la compétence et augmentant progressivement sa vitesse de déplacement (le bonus va de <speed>{{ startingms*100 }}%</speed> à <speed>{{ movementspeed*100 }}%</speed>). <br /><br />Quand la forme spirituelle se dissipe, Yone retourne dans son corps et répète {{ deathmarkpercent*100 }}% de tous les dégâts (attaques et compétences) qu'il a infligés à des champions pendant cette durée. Vous pouvez <recast>réactiver</recast> cette compétence sous votre forme spirituelle.<br /><br /><recast>Réactivation : </recast>met fin prématurément à la forme spirituelle.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts répétés",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "L'esprit de Yone quitte son corps et gagne en vitesse de déplacement. Quand cette compétence prend fin, Yone est renvoyé de force dans son corps et une partie des dégâts qu'il a infligés sous forme d'esprit est répétée.",
+      "cooldownBurn": "22/19/16/13/10"
+    },
+    {
+      "id": "YoneR",
+      "name": "Destin scellé",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 96,
+        "full": "YoneR.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Yone frappe tous les ennemis sur une ligne et leur inflige <physicalDamage>{{ tooltipdamage }} pts de dégâts physiques</physicalDamage> et <magicDamage>{{ tooltipdamage }} pts de dégâts magiques</magicDamage>, en plus de se téléporter derrière le dernier champion touché. Les ennemis touchés sont <status>projetés dans les airs</status> dans la direction de Yone.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Dégâts de base",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Yone se téléporte derrière le dernier champion sur une ligne en donnant un coup si puissant qu'il attire vers lui tous les ennemis touchés.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive": {
+    "name": "Voie du chasseur",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 0,
+      "y": 48,
+      "full": "YonePassive.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "Une attaque de Yone sur deux inflige des dégâts magiques. De plus, ses chances de coup critique sont augmentées."
+  },
+  "created_at": "2025-11-26T15:13:35.674409+00:00",
+  "factions": [
+    "ionia"
+  ],
+  "custom_tags": [
+    "épéiste",
+    "azakana"
+  ],
+  "gender": "Male",
+  "species": "Undead",
+  "title_en": "the Unforgotten",
+  "lore_en": "In life, he was Yone—half-brother of Yasuo, and renowned student of his village's sword school. But upon his death at the hands of his brother, he found himself hunted by a malevolent entity of the spirit realm, and was forced to slay it with its own sword. Now, cursed to wear its demonic mask upon his face, Yone tirelessly hunts all such creatures in order to understand what he has become.",
+  "spells_en": [
+    {
+      "id": "YoneQ",
+      "name": "Mortal Steel",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 384,
+        "y": 48,
+        "full": "YoneQ.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Yone thrusts forward, dealing <physicalDamage>{{ qdamage }} physical damage</physicalDamage>.<br /><br />On hit, grants a stack for {{ buffduration }} seconds. At 2 stacks, this ability causes Yone to dash forward with a wave of wind that <status>Knocks Up</status> for {{ q3knockupduration }} seconds and deals <physicalDamage>{{ qdamage }} physical damage</physicalDamage>. {{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Base Damage"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "450",
+      "datavalues": {},
+      "description": "Thrusts forward, damaging all enemies in a line.<br><br>On hit, grants a stack of Gathering Storm for a few seconds. At 2 stacks, Mortal Steel dashes Yone forward with a gust of wind knocking enemies <status>Airborne</status>.",
+      "cooldownBurn": "4"
+    },
+    {
+      "id": "YoneW",
+      "name": "Spirit Cleave",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 432,
+        "y": 48,
+        "full": "YoneW.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Yone cleaves forward, dealing <physicalDamage>{{ basedamage*0.5 }} + {{ maxhealthdamage*50 }}% max Health physical damage</physicalDamage> and <magicDamage>{{ basedamage*0.5 }} + {{ maxhealthdamage*50 }}% max Health magic damage</magicDamage>.<br /><br />If Yone hits, he gains <shield>{{ wshield }} Shield</shield> for {{ shieldduration }} seconds. The amount of <shield>Shield</shield> increases for each champion struck. {{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Base Damage",
+          "Total Max Health Damage"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "700",
+      "datavalues": {},
+      "description": "Cleaves forward, damaging all enemies in a cone. Grants a shield to Yone, the value is increased by the number of champions hit by the swipe.<br><br>Spirit Cleave's cooldown and cast time scale with attack speed.",
+      "cooldownBurn": "14"
+    },
+    {
+      "id": "YoneE",
+      "name": "Soul Unbound",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 96,
+        "full": "YoneE.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Yone enters a spirit form for {{ returntimer }} seconds, leaving his body behind for the duration and gaining <speed>{{ startingms*100 }}%</speed> to <speed>{{ movementspeed*100 }}% ramping Move Speed</speed>. <br /><br />When the spirit form ends, Yone snaps back to his body and repeats {{ deathmarkpercent*100 }}% of all Attack and Ability damage he dealt to champions during this time. You may <recast>Recast</recast> this ability during spirit form.<br /><br /><recast>Recast: </recast>End spirit form early.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Repeated Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Yone's spirit leaves his body behind, gaining Move Speed. When this ability ends, Yone's spirit is forced back to his body and he repeats a portion of the damage he dealt as a spirit.",
+      "cooldownBurn": "22/19/16/13/10"
+    },
+    {
+      "id": "YoneR",
+      "name": "Fate Sealed",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 96,
+        "full": "YoneR.png",
+        "group": "spell",
+        "sprite": "spell16.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Yone strikes all enemies along a path for <physicalDamage>{{ tooltipdamage }} physical damage</physicalDamage> and <magicDamage>{{ tooltipdamage }} magic damage</magicDamage>, teleporting behind the last champion hit and <status>Knocking Up</status> victims towards Yone.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Base Damage",
+          "Cooldown"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Yone blinks behind the last champion in a line with a slash so powerful it pulls all enemies hit towards him.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Way of the Hunter",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 0,
+      "y": 48,
+      "full": "YonePassive.png",
+      "group": "passive",
+      "sprite": "passive5.png"
+    },
+    "description": "Yone deals magic damage with every second Attack. In addition, his critical strike chance is increased."
+  },
+  "partype_en": "Flow",
+  "lanes": [
+    "Mid",
+    "Top"
+  ],
+  "skins_en": [
+    {
+      "id": "777000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "777001",
+      "num": 1,
+      "name": "Spirit Blossom Yone",
+      "chromas": true
+    },
+    {
+      "id": "777010",
+      "num": 10,
+      "name": "Battle Academia Yone",
+      "chromas": true
+    },
+    {
+      "id": "777019",
+      "num": 19,
+      "name": "Dawnbringer Yone",
+      "chromas": true
+    },
+    {
+      "id": "777026",
+      "num": 26,
+      "name": "Ocean Song Yone",
+      "chromas": true
+    },
+    {
+      "id": "777035",
+      "num": 35,
+      "name": "Inkshadow Yone",
+      "chromas": true
+    },
+    {
+      "id": "777045",
+      "num": 45,
+      "name": "HEARTSTEEL Yone",
+      "chromas": true
+    },
+    {
+      "id": "777046",
+      "num": 46,
+      "name": "Prestige HEARTSTEEL Yone",
+      "chromas": false
+    },
+    {
+      "id": "777055",
+      "num": 55,
+      "name": "High Noon Yone",
+      "chromas": true
+    },
+    {
+      "id": "777058",
+      "num": 58,
+      "name": "Peacemaker High Noon Yone",
+      "chromas": false
+    },
+    {
+      "id": "777065",
+      "num": 65,
+      "name": "Masked Justice Yone",
+      "chromas": false
+    },
+    {
+      "id": "777074",
+      "num": 74,
+      "name": "T1 Yone",
+      "chromas": false
+    }
+  ]
+}

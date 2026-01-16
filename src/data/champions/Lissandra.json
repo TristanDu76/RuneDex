@@ -1,0 +1,443 @@
+{
+  "id": "Lissandra",
+  "key": "127",
+  "name": "Lissandra",
+  "title": "Sorcière de glace",
+  "version": "15.23.1",
+  "lore": "Lissandra est née à une époque oubliée, avec ses sœurs, Serylda et Avarosa, où la magie ancienne était sauvage. Chacune a cherché à maîtriser les pouvoirs en guerre et en a payé le prix : Lissandra est devenue aveugle en défiant la magie du monde.\n\nSur les champs de bataille gelés, les trois sœurs unies étaient inarrêtables. Cependant, Lissandra, marchant désormais dans les rêves, réalisa que l'abîme qui les menaçait — le Néant — n'était pas seulement une fin, mais une infinité pleine de potentiel. À l'insu de ses sœurs, elle conclut un pacte avec les Veilleurs (Watchers), des entités divines du Néant : en échange d'une quasi-immortalité, elle préparerait Runeterra à leur venue.\n\nLes trois sœurs et leurs puissants fidèles furent nommés les Glaçanés (Iceborn), capables de résister aux pires froids.\n\nLissandra dut faire face au mécontentement de ses sœurs, qui voyaient dans cette servitude une chose pire que la mort. Mais les Veilleurs firent irruption dans le monde mortel, au nord, rendant l'allégeance cachée de Lissandra indéniable.\n\nFace à la consommation totale du monde, Lissandra fit un choix terrible : elle sacrifia ses sœurs (Avarosa et Serylda) et leurs alliés, et emprisonna les Veilleurs sous une barrière de Glace noire (True Ice), un glacier magique qui ne pouvait fondre.\n\nLissandra découvrit que ce pouvoir n'était pas suffisant : les monstres gelés étaient seulement endormis et corrompaient lentement la Vraie Glace en quelque chose d'encore plus sombre. Ils erraient dans ses rêves, lui professant leur loyauté à l'éternité glaciale qu'ils promettaient.\n\nSurvivante, elle rassembla ses fidèles, les Gardiens de givre (Frostguard), et se lança dans une entreprise pour réécrire l'histoire, détruisant tous les documents sur ce qui s'était réellement passé. Elle forgea une nouvelle religion autour d'elle et de ses sœurs disparues, et fit tuer en secret ceux qui étaient salués comme les réincarnations d'Avarosa et de Serylda.\n\nMalgré tous ses efforts, les légendes de ses sœurs ont persisté, se manifestant dans le Freljord par deux puissantes Glaçanées : une idéaliste et une conquérante (Ashe et Sejuani, bien que non nommées). Lissandra les observe attentivement, cherchant à les monter l'une contre l'autre, tout en redoublant d'efforts pour dissimuler les terribles secrets enfouis sous sa citadelle.\n\nElle doit se dépêcher, car la glace commence à fondre.",
+  "tags": [
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 144,
+    "y": 48,
+    "full": "Lissandra.png",
+    "group": "champion",
+    "sprite": "champion2.png"
+  },
+  "skins": [
+    {
+      "id": "127000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "127001",
+      "num": 1,
+      "name": "Lissandra hémolithe",
+      "chromas": false
+    },
+    {
+      "id": "127002",
+      "num": 2,
+      "name": "Lissandra reine des lames",
+      "chromas": false
+    },
+    {
+      "id": "127003",
+      "num": 3,
+      "name": "Programme Lissandra",
+      "chromas": false
+    },
+    {
+      "id": "127004",
+      "num": 4,
+      "name": "Lissandra de l'assemblée",
+      "chromas": true
+    },
+    {
+      "id": "127012",
+      "num": 12,
+      "name": "Lissandra démiurge cosmique",
+      "chromas": true
+    },
+    {
+      "id": "127023",
+      "num": 23,
+      "name": "Lissandra de porcelaine",
+      "chromas": true
+    },
+    {
+      "id": "127033",
+      "num": 33,
+      "name": "Lissandra de porcelaine prestige",
+      "chromas": false
+    },
+    {
+      "id": "127034",
+      "num": 34,
+      "name": "Lissandra astro-groove",
+      "chromas": true
+    },
+    {
+      "id": "127043",
+      "num": 43,
+      "name": "Lissandra flora fatalis",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "LissandraQ",
+      "name": "Éclat de glace",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 144,
+        "full": "LissandraQ.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Lissandra jette une lance de glace qui éclate au contact du premier ennemi touché, lui infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> et le <status>ralentissant</status> de {{ e3 }}% pendant {{ e2 }} sec. Les ennemis derrière la cible sont également blessés et ralentis.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "55/60/65/70/75",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ralentissement",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "725",
+      "datavalues": {},
+      "description": "Projette une lance de glace qui se brise au contact du premier ennemi touché, lui infligeant des dégâts magiques et réduisant sa vitesse de déplacement. Des éclats traversent la cible, infligeant les mêmes dégâts aux autres ennemis touchés.",
+      "cooldownBurn": "8/7/6/5/4"
+    },
+    {
+      "id": "LissandraW",
+      "name": "Cercle de givre",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 144,
+        "full": "LissandraW.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Lissandra crée un champ de glace qui <status>immobilise</status> les ennemis proches pendant {{ e2 }} sec et leur inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Durée de l'immobilisation",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "450",
+      "datavalues": {},
+      "description": "Congèle les ennemis proches, leur infligeant des dégâts magiques et les immobilisant.",
+      "cooldownBurn": "10/9.5/9/8.5/8"
+    },
+    {
+      "id": "LissandraE",
+      "name": "Chemin glacial",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 144,
+        "full": "LissandraE.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Lissandra lance une griffe de glace qui inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. Lissandra peut <recast>réactiver</recast> cette compétence pendant le trajet de la griffe pour se téléporter à l'emplacement de la griffe.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80/85/90/95/100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1050",
+      "datavalues": {},
+      "description": "Lissandra lance une griffe de glace qui inflige des dégâts magiques. Si vous réactivez la compétence, Lissandra est transportée à l'endroit où se situe sa griffe.",
+      "cooldownBurn": "24/21/18/15/12"
+    },
+    {
+      "id": "LissandraR",
+      "name": "Tombeau polaire",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 144,
+        "full": "LissandraR.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Lissandra congèle un champion ennemi ou se congèle elle-même. Les ennemis sont <status>étourdis</status> pendant {{ enemycastduration }} sec. Si Lissandra se congèle, elle entre en stase pendant {{ selfcastduration }} sec et récupère <healing>{{ healamount }} PV</healing>, plus {{ selfcastmissinghpratio }}% tous les {{ selfcastmissinghpperabove }}% de PV manquants.<br /><br />Dans tous les cas, de la glace obscure émane de la cible, infligeant <magicDamage>{{ calculateddamage }} pts de dégâts magiques</magicDamage>. La glace persiste pendant {{ slowduration }} sec et <status>ralentit</status> les ennemis de {{ slowamount*-100 }}%.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Ralentissement",
+          "Soins",
+          "Délai de récupération"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "550",
+      "datavalues": {},
+      "description": "Si le sort est lancé sur un champion ennemi, la cible est congelée, ce qui l'étourdit. Si le sort est lancé sur Lissandra, elle s'immobilise dans la glace, ce qui la soigne en plus de la rendre impossible à cibler et insensible aux dégâts. De la glace obscure émane de la cible, infligeant des dégâts magiques aux ennemis et réduisant leur vitesse de déplacement.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive": {
+    "name": "Emprise de la Sublimée",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 144,
+      "y": 48,
+      "full": "Lissandra_Passive.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Lorsqu'un champion ennemi meurt à proximité de Lissandra, il se transforme en Serviteur de glace. Les Serviteurs de glace ralentissent les ennemis proches et, après un délai, le froid les fait exploser, infligeant des dégâts magiques aux cibles proches."
+  },
+  "created_at": "2025-11-26T15:13:33.959475+00:00",
+  "factions": [
+    "freljord"
+  ],
+  "custom_tags": [
+    "sorcière-glace",
+    "observateur-servante"
+  ],
+  "gender": "Female",
+  "species": "Human",
+  "title_en": "the Ice Witch",
+  "lore_en": "Lissandra was born in a time long forgotten, alongside her sisters, Serylda and Avarosa. Each sought to harness the powers at war and paid a terrible price: Lissandra was blinded by defying the wild magic of the world.\n\nOn the frozen fields of her many battles, the three sisters were unstoppable. However, Lissandra, now walking in dreams, realized that the looming abyss—the Void—promised not only an ending but infinity. Unknown to her sisters, she struck a deal with the god-like entities she communed with—the Watchers would grant them near-immortality in exchange for preparing Runeterra for the coming of the Void.\n\nThe three sisters and their most powerful followers were named Iceborn, capable of withstanding the worst of the numbing frost.\n\nLissandra faced her sisters' displeasure, who viewed this servitude as worse than death. But the Void erupted into the mortal world in the far north, making Lissandra's hidden allegiance undeniable.\n\nFaced with the total consumption of the world, Lissandra made a terrible choice: she sacrificed her sisters (Avarosa and Serylda) and their allies, entombing the Watchers beneath a glacial barrier of True Ice that could never be melted.\n\nLissandra soon discovered that even this elemental power was not enough: the monstrous beings were merely slumbering and slowly tainting the True Ice into something darker. They now wandered through her dreams, terrifying her.\n\nEver the survivor, she gathered her remaining followers, the Frostguard, and did everything in her power to rewrite history, seizing all records of what truly happened. She fostered veneration for her and her departed sisters and quietly killed any hailed as their reincarnations.\n\nDespite her efforts, her sisters' legends persisted, manifesting once more in two powerful Iceborn—an idealist and a conqueror (Ashe and Sejuani, though unnamed). Lissandra watches them carefully, seeking any opportunity to pit them against one another, all the while redoubling her efforts to lock away the terrible secrets she has buried deep under her citadel.\n\nShe must hurry, for the ice is beginning to melt.",
+  "spells_en": [
+    {
+      "id": "LissandraQ",
+      "name": "Ice Shard",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 144,
+        "full": "LissandraQ.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Lissandra throws a spear of ice that shatters on the first enemy hit, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>, <status>Slowing</status> them by {{ e3 }}% for {{ e2 }} seconds, and also damaging and slowing the enemies behind them.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "55/60/65/70/75",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Slow",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "725",
+      "datavalues": {},
+      "description": "Throws a spear of ice that shatters when it hits an enemy, dealing magic damage and slowing Move Speed. Shards pass through the target, dealing the same damage to other enemies hit.",
+      "cooldownBurn": "8/7/6/5/4"
+    },
+    {
+      "id": "LissandraW",
+      "name": "Ring of Frost",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 144,
+        "full": "LissandraW.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Lissandra creates an ice field, <status>Rooting</status> nearby enemies for {{ e2 }} seconds and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "40",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Root Duration",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "450",
+      "datavalues": {},
+      "description": "Freezes nearby enemies in ice, dealing magic damage and rooting them.",
+      "cooldownBurn": "10/9.5/9/8.5/8"
+    },
+    {
+      "id": "LissandraE",
+      "name": "Glacial Path",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 144,
+        "full": "LissandraE.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Lissandra casts forth an ice claw that deals <magicDamage>{{ totaldamage }} magic damage</magicDamage>. Lissandra can <recast>Recast</recast> while the claw travels to teleport to its location.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80/85/90/95/100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1050",
+      "datavalues": {},
+      "description": "Lissandra creates an ice claw that deals magic damage. Reactivating this ability transports Lissandra to the claw's current location.",
+      "cooldownBurn": "24/21/18/15/12"
+    },
+    {
+      "id": "LissandraR",
+      "name": "Frozen Tomb",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 144,
+        "full": "LissandraR.png",
+        "group": "spell",
+        "sprite": "spell7.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Lissandra encases herself or an enemy champion in ice. Enemies are <status>Stunned</status> for {{ enemycastduration }} seconds. When self cast, Lissandra enters Stasis for {{ selfcastduration }} seconds and restores <healing>{{ healamount }} Health</healing>, increased by {{ selfcastmissinghpratio }}% for each {{ selfcastmissinghpperabove }}% missing Health.<br /><br />In either case, dark ice eminates from the target, dealing <magicDamage>{{ calculateddamage }} magic damage</magicDamage>. The ice persists for {{ slowduration }} seconds, <status>Slowing</status> enemies by {{ slowamount*-100 }}%.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Slow",
+          "Healing",
+          "Cooldown"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "550",
+      "datavalues": {},
+      "description": "If cast on an enemy champion, the target is frozen solid, stunning it. If cast on Lissandra, she encases herself in dark ice, healing herself while becoming untargetable and invulnerable. Dark ice then emanates from the target dealing magic damage to enemies and slowing Move Speed.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Iceborn Subjugation",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 144,
+      "y": 48,
+      "full": "Lissandra_Passive.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "When an enemy champion dies near Lissandra they become a Frozen Thrall. Frozen Thralls slow nearby enemies and then, after a delay, shatter from the intense cold, dealing magic damage to nearby targets."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Mid"
+  ],
+  "skins_en": [
+    {
+      "id": "127000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "127001",
+      "num": 1,
+      "name": "Bloodstone Lissandra",
+      "chromas": false
+    },
+    {
+      "id": "127002",
+      "num": 2,
+      "name": "Blade Queen Lissandra",
+      "chromas": false
+    },
+    {
+      "id": "127003",
+      "num": 3,
+      "name": "Program Lissandra",
+      "chromas": false
+    },
+    {
+      "id": "127004",
+      "num": 4,
+      "name": "Coven Lissandra",
+      "chromas": true
+    },
+    {
+      "id": "127012",
+      "num": 12,
+      "name": "Dark Cosmic Lissandra",
+      "chromas": true
+    },
+    {
+      "id": "127023",
+      "num": 23,
+      "name": "Porcelain Lissandra",
+      "chromas": true
+    },
+    {
+      "id": "127033",
+      "num": 33,
+      "name": "Prestige Porcelain Lissandra",
+      "chromas": false
+    },
+    {
+      "id": "127034",
+      "num": 34,
+      "name": "Space Groove Lissandra",
+      "chromas": true
+    },
+    {
+      "id": "127043",
+      "num": 43,
+      "name": "Flora Fatalis Lissandra",
+      "chromas": true
+    }
+  ]
+}

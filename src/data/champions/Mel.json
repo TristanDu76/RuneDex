@@ -1,0 +1,356 @@
+{
+  "id": "Mel",
+  "key": "800",
+  "name": "Mel",
+  "title": "Reflet de l'âme",
+  "version": "15.23.1",
+  "lore": "Mel Medarda est la fille de la puissante aristocrate noxienne Ambessa Medarda. Son histoire est racontée à travers une lettre qu'elle écrit à sa mère après la mort de celle-ci, révélant une relation tendue et complexe, pleine de secrets et d'exil.\n\nL'Exil et l'Ambition :\n\nIl y a plus de dix ans, Mel a été exilée de Noxus par sa mère, Ambessa, qui l'a \"livrée\" à son cousin Jago à Piltover. Mel a toujours ressenti cet abandon, luttant pour gagner l'amour de sa mère malgré tout ce qu'elle lui avait fait.\n\nEn réponse à l'attente de sa mère (de devenir le « Loup », symbole de la force noxienne), Mel s'est forgée en devenant le « Renard » : rapide, rusée et politicienne. Elle a réussi à gagner la confiance du Conseil de Piltover, acquérant une influence immense dans la cité du progrès.\n\nLa Découverte des Secrets :\n\nLa mort d'Ambessa (suite à une bataille) oblige Mel à revenir à Noxus. Ce n'est qu'après la disparition de sa mère qu'elle commence à comprendre l'ampleur des secrets familiaux.\n\nMel découvre qu'elle possède des pouvoirs magiques qu'elle ignorait et que sa mère tentait de la protéger d'une menace ancienne.\n\nAmbessa était traquée par la Rose noire (Black Rose) depuis des années. Mel réalise que son propre succès et son choix de protéger Piltover sont devenus le facteur de la perte d'Ambessa (\"J'ai été ta perte\").\n\nElle est confrontée à une situation qui dépasse son contrôle et qui l'entrave désormais : la vendetta de la Rose noire qui l'implique maintenant.\n\nLe Retour et la Résolution :\n\nMel jure de découvrir tous les secrets que sa mère lui a cachés : la vérité sur son père, l'identité du meurtrier de Kino (un autre membre de la famille, ou un proche), et la raison de la vendetta de la Rose noire.\n\nElle rentre à Noxus en tant qu'étrangère, méprisée par les gardes qui ne la voient pas comme une véritable Medarda.\n\nElle rejette les valeurs sanguinaires de Noxus et refuse d'assister passivement au chaos.\n\nElle conclut que si sa mère lui a appris à survivre (le Loup), elle s'est enseignée à elle-même comment vivre (le Renard). Elle jure de ne jamais abandonner la voie de l'intelligence et de la stratégie.\n\nMel revient à Noxus, non pas pour assumer le rôle que sa mère voulait, mais pour faire la différence et façonner l'avenir du royaume selon ses propres termes.",
+  "tags": [
+    "Mage",
+    "Support"
+  ],
+  "partype": "Mana",
+  "image": {
+    "h": 48,
+    "w": 48,
+    "x": 48,
+    "y": 96,
+    "full": "Mel.png",
+    "group": "champion",
+    "sprite": "champion2.png"
+  },
+  "skins": [
+    {
+      "id": "800000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "800001",
+      "num": 1,
+      "name": "Mel conseillère d'Arcane",
+      "chromas": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "MelQ",
+      "name": "Salve radieuse",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 96,
+        "full": "MelQ.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Mel tire une rafale de {{ explosioncount }} projectiles qui explosent sur une zone autour d'un endroit ciblé.<br /><br />Chaque explosion inflige <magicDamage>{{ totalexplosiondamage }} pts de dégâts magiques</magicDamage> (max <magicDamage>{{ alldamagehit }} pts de dégâts magiques</magicDamage> au total).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/80/90/100/110",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts de l'explosion",
+          "Nombre d'explosions",
+          "Délai de récupération",
+          "Coût en mana"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "950",
+      "datavalues": {},
+      "description": "Mel tire une rafale de projectiles qui explosent sur une zone et infligent des dégâts répétés aux ennemis qui s'y trouvent.",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "MelW",
+      "name": "Réfutation",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 96,
+        "full": "MelW.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Mel crée une barrière autour d'elle qui renvoie les projectiles des champions ennemis à l'envoyeur. Cela la protège des dégâts et lui octroie <speed>+{{ movespeed*100 }}% de vitesse de déplacement</speed> (diminuant progressivement) pendant {{ duration }} sec.<br /><br />Les projectiles renvoyés infligent des <magicDamage>dégâts magiques équivalents à {{ damagepercent }} des dégâts d'origine</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80/60/40/20/0",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts renvoyés",
+          "Délai de récupération",
+          "Coût en mana"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "250",
+      "datavalues": {},
+      "description": "Mel crée une barrière autour d'elle qui renvoie les projectiles ennemis à l'envoyeur. Cela la protège des dégâts et augmente sa vitesse de déplacement.",
+      "cooldownBurn": "35/32/29/26/23"
+    },
+    {
+      "id": "MelE",
+      "name": "Piège solaire",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 96,
+        "full": "MelE.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Mel lance un orbe brillant qui <status>immobilise</status> les ennemis touchés par le centre du projectile pendant {{ rootduration }} sec et qui inflige <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage>.<br /><br />L'orbe génère une aura néfaste autour de lui qui <status>ralentit</status> les ennemis de {{ areaslowamount*100 }}% et inflige <magicDamage>{{ areadamagepersecond }} pts de dégâts magiques par seconde</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Durée de l'immobilisation",
+          "Dégâts par seconde",
+          "Délai de récupération",
+          "Coût en @AbilityResourceName@"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1050",
+      "datavalues": {},
+      "description": "Mel lance un orbe brillant qui immobilise les ennemis touchés par le centre du projectile et qui ralentit ceux qui se trouvent en périphérie tout en leur infligeant des dégâts sur la durée.",
+      "cooldownBurn": "12/11.5/11/10.5/10"
+    },
+    {
+      "id": "MelR",
+      "name": "Éclipse dorée",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 96,
+        "full": "MelR.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellPassive>Passive</spellPassive> : les dégâts d'<keywordMajor>Accablement</keywordMajor> sont augmentés à <magicDamage>{{ passiveflatdamage }} pts de dégâts magiques + {{ passivestackdamage }} pts de dégâts magiques par effet cumulé</magicDamage>.<br /><br /><spellActive>Active</spellActive> : Mel libère sa puissance sur tous les ennemis affectés par <keywordMajor>Accablement</keywordMajor>, leur infligeant <magicDamage>{{ ultflatdamage }} pts de dégâts magiques + {{ ultstackdamage }} pts de dégâts magiques par effet <keywordMajor>Accablement</keywordMajor></magicDamage>.<br /><br /><rules>Cette compétence ne peut être lancée que si au moins un champion ennemi est affecté par <keywordMajor>Accablement</keywordMajor>.</rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts fixes d'<spellName>Éclipse dorée</spellName>",
+          "Dégâts des effets cumulés avec <spellName>Éclipse dorée</spellName>",
+          "Délai de récupération",
+          "Dégâts fixes d'<keywordMajor>Accablement</keywordMajor>",
+          "Dégâts des effets cumulés d'<keywordMajor>Accablement</keywordMajor>"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Mel frappe tous les ennemis marqués par Accablement sans tenir compte de la distance qui les sépare d'elle. Cela leur inflige des dégâts bonus pour chaque effet d'Accablement cumulé.<br><br>Plus la compétence Éclipse dorée a un niveau élevé, plus les dégâts d'Accablement sont importants.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive": {
+    "name": "Luminescence incandescente",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 48,
+      "y": 96,
+      "full": "Mel_Passive.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Chaque fois que Mel utilise une compétence, elle gagne trois projectiles bonus (neuf max) pour sa prochaine attaque.<br><br>Lorsque Mel inflige des dégâts grâce à une compétence ou une attaque, elle applique Accablement (cumulable à l'infini). S'il y a suffisamment d'effets cumulés sur un ennemi quand Mel le touche, les effets sont consommés pour exécuter la cible."
+  },
+  "created_at": "2025-11-26T15:13:34.174598+00:00",
+  "factions": [
+    "piltover",
+    "noxus"
+  ],
+  "custom_tags": [
+    "diplomate",
+    "pnj"
+  ],
+  "gender": "Female",
+  "species": "Human",
+  "title_en": "the Soul's Reflection",
+  "lore_en": "Mel Medarda is the daughter of the powerful Noxian aristocrat Ambessa Medarda. Her story is told through a letter written to her mother after Ambessa's death, revealing a tense and complex relationship, full of secrets and exile.\n\nExile and Ambition:\n\nOver ten years ago, Mel was exiled from Noxus by her mother, Ambessa, who \"handed her off\" to her cousin Jago in Piltover. Mel always felt this abandonment, struggling to earn her mother's love despite everything.\n\nIn response to her mother's expectation (to become the \"Wolf,\" a symbol of Noxian strength), Mel forged herself into the \"Fox\": swift, cunning, and a seasoned politician. She successfully earned the trust of the Piltover Council, gaining immense influence in the City of Progress.\n\nThe Discovery of Secrets:\n\nAmbessa's death (following a battle) forces Mel to return to Noxus. Only after her passing does Mel begin to grasp the scale of the family secrets.\n\nMel discovers she possesses magical powers she was unaware of and that her mother was attempting to protect her from an ancient threat.\n\nAmbessa had been hunted by the Black Rose for years. Mel realizes that her own success and her choice to protect Piltover were factors in Ambessa's downfall (\"I was your undoing\").\n\nShe is confronted with a situation beyond her control: the Black Rose's vendetta now entangles her.\n\nThe Return and Resolution:\n\nMel vows to uncover all the secrets her mother hid from her: the truth about her father, the identity of Kino's murderer (another family member or close acquaintance), and the reason for the Black Rose's vendetta.\n\nShe returns to Noxus as an outsider, viewed with distrust by the guards who do not see her as a true Medarda.\n\nShe rejects Noxus's bloodthirsty values and refuses to stand idly by the ensuing chaos.\n\nShe concludes that while her mother taught her how to survive (the Wolf), she taught herself how to live (the Fox). She vows never to abandon the path of intelligence and strategy.\n\nMel returns to Noxus, not to fulfill the role her mother intended, but to make a difference and shape the future of the kingdom on her own terms.",
+  "spells_en": [
+    {
+      "id": "MelQ",
+      "name": "Radiant Volley",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 96,
+        "full": "MelQ.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Mel unleashes a barrage of {{ explosioncount }} projectiles that explode in the area around a target location.<br /><br />Each explosion deals <magicDamage>{{ totalexplosiondamage }} magic damage</magicDamage>, adding up to <magicDamage>{{ alldamagehit }} magic damage</magicDamage> total.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70/80/90/100/110",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Explosion Damage",
+          "Explosion Count",
+          "Cooldown",
+          "Mana Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "950",
+      "datavalues": {},
+      "description": "Mel fires a barrage of projectiles that explode around a target location, dealing damage repeatedly to enemies within the area.",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "MelW",
+      "name": "Rebuttal",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 96,
+        "full": "MelW.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Mel forms a barrier around herself that reflects projectiles from enemy champions, prevents her from taking damage, and gives her <speed>{{ movespeed*100 }}% decaying Move Speed</speed> for {{ duration }} second(s).<br /><br />Reflected projectiles deal <magicDamage>{{ damagepercent }} original damage as magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "80/60/40/20/0",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Reflected Damage",
+          "Cooldown",
+          "Mana Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "250",
+      "datavalues": {},
+      "description": "Mel forms a barrier around herself that reflects enemy projectiles back at the attacker, prevents her from taking damage, and grants her movement speed.",
+      "cooldownBurn": "35/32/29/26/23"
+    },
+    {
+      "id": "MelE",
+      "name": "Solar Snare",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 192,
+        "y": 96,
+        "full": "MelE.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Mel fires a radiating orb, <status>Rooting</status> enemies at its center for {{ rootduration }} seconds and dealing <magicDamage>{{ damage }} magic damage</magicDamage>.<br /><br />The orb builds up a hostile area around it that <status>Slows</status> enemies by {{ areaslowamount*100 }}% and deals <magicDamage>{{ areadamagepersecond }} magic damage per second</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Root Duration",
+          "Damage Per Second",
+          "Cooldown",
+          "@AbilityResourceName@ Cost"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1050",
+      "datavalues": {},
+      "description": "Mel fires a radiant orb forward, rooting those at its center while the area around it slows enemies and deals damage over time.",
+      "cooldownBurn": "12/11.5/11/10.5/10"
+    },
+    {
+      "id": "MelR",
+      "name": "Golden Eclipse",
+      "vars": [],
+      "image": {
+        "h": 48,
+        "w": 48,
+        "x": 240,
+        "y": 96,
+        "full": "MelR.png",
+        "group": "spell",
+        "sprite": "spell8.png"
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellPassive>Passive</spellPassive>: <keywordMajor>Overwhelm</keywordMajor> damage is increased to <magicDamage>{{ passiveflatdamage }} magic damage plus {{ passivestackdamage }} magic damage per stack</magicDamage>.<br /><br /><spellActive>Active</spellActive>: Mel unleashes her power on all enemies affected by <keywordMajor>Overwhelm</keywordMajor>, dealing <magicDamage>{{ ultflatdamage }} magic damage plus {{ ultstackdamage }} magic damage per <keywordMajor>Overwhelm</keywordMajor> stack</magicDamage>.<br /><br /><rules>Can only be cast when an enemy champion is affected by <keywordMajor>Overwhelm</keywordMajor>.</rules>{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "<spellName>Golden Eclipse</spellName> Flat Damage",
+          "<spellName>Golden Eclipse</spellName> Stack Damage",
+          "Cooldown",
+          "<keywordMajor>Overwhelm</keywordMajor> Flat Damage",
+          "<keywordMajor>Overwhelm</keywordMajor> Stack Damage"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Mel strikes all enemies marked with Overwhelm regardless of their distance from her, dealing additional damage for each stack of Overwhelm.<br><br>Ranks of Golden Eclipse increase Overwhelm's damage.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Searing Brilliance",
+    "image": {
+      "h": 48,
+      "w": 48,
+      "x": 48,
+      "y": 96,
+      "full": "Mel_Passive.png",
+      "group": "passive",
+      "sprite": "passive2.png"
+    },
+    "description": "Whenever Mel uses an ability, she gains three bonus projectiles (up to nine maximum) on her next attack.<br><br>When Mel deals damage through an ability or attack, she applies Overwhelm, which can stack infinitely. If the enemy is hit by Mel with enough Overwhelm damage, the stacks are consumed to execute the target."
+  },
+  "partype_en": "Mana",
+  "lanes": [
+    "Mid",
+    "Support"
+  ],
+  "skins_en": [
+    {
+      "id": "800000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "800001",
+      "num": 1,
+      "name": "Arcane Councilor Mel",
+      "chromas": true
+    }
+  ]
+}
