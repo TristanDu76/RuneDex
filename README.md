@@ -46,8 +46,16 @@ RuneDex is an interactive web application dedicated to exploring the rich lore o
 - **next-intl** - Internationalization (i18n)
 
 ### Data Architecture
-- **JSON Files** - Static data stored in `src/data/` for easy community contributions
-- **Next.js Cache** - Optimized data caching strategy
+- **JSON Files** - Static data organized in `src/data/` for easy community contributions
+  - `champions/` - One JSON file per champion
+  - `lore-characters/` - One JSON file per lore character
+  - `artifacts/` - One JSON file per legendary artifact
+  - `runes/` - One JSON file per world rune
+- **Relation Files** - Links between entities
+  - `relations.json` - Character relationships
+  - `artifact-owners.json` - Artifact ownership data
+  - `rune-owners.json` - Rune ownership data
+- **Next.js Cache** - Optimized caching strategy for performance
 - **Git-based** - All data is version-controlled and open for contributions
 
 ### Tools & Libraries
@@ -88,20 +96,31 @@ npm run dev
 ```
 runedex/
 ├── src/
-│   ├── app/              # Next.js App Router pages
-│   ├── components/       # React components
-│   │   ├── champions/    # Champion-related components
-│   │   ├── quiz/         # Quiz game components
-│   │   ├── map/          # Interactive map components
-│   │   ├── layout/       # Layout components (Navbar, etc.)
-│   │   └── ui/           # Reusable UI components
-│   ├── lib/              # Utility functions and data fetching
-│   │   ├── data.ts       # Supabase queries
-│   │   ├── cache.ts      # Caching utilities
-│   │   └── translations/ # i18n translation files
-│   ├── types/            # TypeScript type definitions
-│   └── utils/            # Helper functions
-├── public/               # Static assets
+│   ├── app/                    # Next.js App Router pages
+│   │   └── [locale]/           # Internationalized routes
+│   ├── components/             # React components
+│   │   ├── champions/          # Champion-related components
+│   │   ├── quiz/               # Quiz game components
+│   │   ├── map/                # Interactive map components
+│   │   ├── layout/             # Layout components (Navbar, etc.)
+│   │   └── ui/                 # Reusable UI components
+│   ├── data/                   # Project JSON data
+│   │   ├── champions/          # One JSON file per champion
+│   │   ├── lore-characters/    # One JSON file per lore character
+│   │   ├── artifacts/          # One JSON file per artifact
+│   │   ├── runes/              # One JSON file per rune
+│   │   ├── relations.json      # Character relationships
+│   │   ├── artifact-owners.json # Artifact ownership data
+│   │   └── rune-owners.json    # Rune ownership data
+│   ├── lib/                    # Utility functions and data fetching
+│   │   ├── data.ts             # Data loading functions
+│   │   └── cache.ts            # Caching utilities
+│   ├── i18n/                   # Internationalization config
+│   ├── types/                  # TypeScript type definitions
+│   └── utils/                  # Helper functions
+├── public/                     # Static assets
+│   ├── images/                 # Project images
+│   └── ...
 └── ...config files
 ```
 
@@ -143,13 +162,20 @@ Contributions are welcome! This project uses a JSON-based data architecture, mak
 
 All game data is stored in `src/data/` as JSON files:
 
-- `champions.json` - Champion information
-- `lore-characters.json` - Non-playable lore characters
-- `artifacts.json` - Legendary artifacts
-- `runes.json` - World runes
-- `relations.json` - Character relationships
+#### Data Structure
+- `champions/` - One JSON file per champion (e.g., `Ahri.json`, `Yasuo.json`)
+- `lore-characters/` - One JSON file per lore character
+- `artifacts/` - One JSON file per legendary artifact
+- `runes/` - One JSON file per world rune
+- `relations.json` - Relationships between all characters
 - `artifact-owners.json` - Artifact ownership data
 - `rune-owners.json` - Rune ownership data
+
+#### Name-based Identifiers
+Entity `id`s are generated from their names (without accents or special characters):
+- Example: "Ahri" → `id: "ahri"`
+- Example: "Rek'Sai" → `id: "reksai"`
+- The filename matches the entity's `id`
 
 ### Contribution Process
 
@@ -187,8 +213,6 @@ All game data is stored in `src/data/` as JSON files:
 
 All contributions will be reviewed before merging. Thank you for helping improve RuneDex! 🙏
 
-## 🌐 Deployment
-
 ## 📜 License
 
 **All Rights Reserved** - This project is made publicly available for portfolio and educational purposes only. See [LICENSE](./LICENSE) for details.
@@ -199,13 +223,13 @@ All contributions will be reviewed before merging. Thank you for helping improve
 
 - GitHub: [@TristanDu76](https://github.com/TristanDu76)
 
-## � Community
+## 💬 Community
 
 Join the RuneDex Discord community to discuss the project, suggest features, and stay updated:
 
 [![Discord](https://img.shields.io/badge/Discord-Join%20Server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/R2VX8KnFwP)
 
-## �🙏 Acknowledgments
+## 🙏 Acknowledgments
 
 - League of Legends and Runeterra lore by Riot Games
 - Community Data Dragon for champion assets
