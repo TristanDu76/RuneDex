@@ -5,7 +5,6 @@
 [![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red.svg)](./LICENSE)
 [![Next.js](https://img.shields.io/badge/Next.js-16.0.7-black)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)](https://www.typescriptlang.org/)
-[![Supabase](https://img.shields.io/badge/Supabase-Database-green)](https://supabase.com/)
 
 ## 🚧 Status
 
