@@ -10,6 +10,8 @@ import runesIndex from '@/data/runes/index.json';
 import relationsData from '@/data/relations.json';
 import artifactOwnersData from '@/data/artifact-owners.json';
 import runeOwnersData from '@/data/rune-owners.json';
+import type { Relation } from '@/types/relations';
+import { getInverseRelationType } from '@/types/relations';
 
 /**
  * Load a single lore character's data from individual file
@@ -60,36 +62,43 @@ const loadChampionData = async (championId: string): Promise<ChampionData | null
 };
 
 /**
+ * Internal helper to load all champion data without caching.
+ * Used by other functions that will cache their specific (smaller) results.
+ */
+const loadAllChampionsRaw = async (locale: string = 'fr_FR') => {
+  const index = championsIndex as Array<{ id: string; name: string; key: string; image: any }>;
+
+  // Load all champion data files
+  const championsPromises = index.map(champ => loadChampionData(champ.id));
+  const championsData = await Promise.all(championsPromises);
+  const champions = championsData.filter(c => c !== null) as ChampionData[];
+
+  if (locale.startsWith('en')) {
+    return champions.map(c => ({
+      ...c,
+      title: c.title_en || c.title,
+      lore: c.lore_en || c.lore,
+      spells: c.spells_en || c.spells,
+      passive: c.passive_en || c.passive,
+      tags: c.tags_en || c.tags,
+      skins: c.skins_en || c.skins
+    }));
+  }
+
+  return champions;
+};
+
+/**
  * Fetches all champions (full data).
  * @deprecated Use fetchAllChampionsLight or fetchAllChampionsGrid to improve performance.
+ * Warning: This functionality is too heavy for Next.js cache (>2MB).
  */
 export const fetchAllChampions = async (locale: string = 'fr_FR') => {
-  return cachedQuery(
-    async () => {
-      const index = championsIndex as Array<{ id: string; name: string; key: string; image: any }>;
-
-      // Load all champion data files
-      const championsPromises = index.map(champ => loadChampionData(champ.id));
-      const championsData = await Promise.all(championsPromises);
-      const champions = championsData.filter(c => c !== null) as ChampionData[];
-
-      if (locale.startsWith('en')) {
-        return champions.map(c => ({
-          ...c,
-          title: c.title_en || c.title,
-          lore: c.lore_en || c.lore,
-          spells: c.spells_en || c.spells,
-          passive: c.passive_en || c.passive,
-          tags: c.tags_en || c.tags,
-          skins: c.skins_en || c.skins
-        }));
-      }
-
-      return champions;
-    },
-    ['all-champions', locale],
-    ['champions']
-  );
+  // We prefer NOT to cache the huge full list to avoid "items over 2MB" error.
+  // If this is needed cached, it must be broken down.
+  // For now, we return the raw data directly to avoid the error,
+  // assuming callers handle the performance hit or use the optimized functions below.
+  return loadAllChampionsRaw(locale);
 };
 
 /**
@@ -99,7 +108,7 @@ export const fetchAllChampions = async (locale: string = 'fr_FR') => {
 export const fetchAllChampionsLight = async (locale: string = 'fr_FR') => {
   return cachedQuery(
     async () => {
-      const champions = await fetchAllChampions(locale);
+      const champions = await loadAllChampionsRaw(locale);
       return champions.map((c: ChampionData): ChampionLight => ({
         id: c.id,
         key: c.key,
@@ -121,7 +130,7 @@ export const fetchAllChampionsLight = async (locale: string = 'fr_FR') => {
 export const fetchAllChampionsGrid = async (locale: string = 'fr_FR') => {
   return cachedQuery(
     async () => {
-      const champions = await fetchAllChampions(locale);
+      const champions = await loadAllChampionsRaw(locale);
       return champions.map((c: ChampionData): ChampionGridData => ({
         id: c.id,
         key: c.key,
@@ -157,20 +166,29 @@ export const fetchChampionDetails = async (championId: string, locale: string = 
 
         const champion = { ...championData };
 
-        // Get relations for this champion
-        const championRelations = (relationsData as any[]).filter(
-          (rel: any) => rel.source_champion_id === champion.id
-        );
+        // Import the new relations utilities
+        const { getRelationsForEntity, getRelationNote } = await import('@/lib/relations-utils');
+
+        // Get relations for this champion using the new system
+        const allRelations = relationsData as Relation[];
+        const championRelations = getRelationsForEntity(allRelations, champion.id, 'champion');
 
         // Enrich relations with target data
-        const enrichedRelations = await Promise.all(championRelations.map(async (rel: any) => {
-          const targetChampion = rel.target_champion_id ? await loadChampionData(rel.target_champion_id) : null;
-          const targetLore = rel.target_lore_id ? await loadLoreCharacterData(rel.target_lore_id) : null;
+        const enrichedRelations = await Promise.all(championRelations.map(async (relInfo) => {
+          const { relation, isEntityA, relationType, targetId, targetType } = relInfo;
+
+          const targetChampion = targetType === 'champion' ? await loadChampionData(targetId) : null;
+          const targetLore = targetType === 'lore' ? await loadLoreCharacterData(targetId) : null;
+
+          // IMPORTANT: Always show the ORIGINAL relation type (what entity_a is)
+          // If Lissandra (entity_a) is "master" and Trundle (entity_b) views her, show "master"
+          // The relation type describes what entity_a IS, not what entity_b is
+          const displayType = relation.relation_type;
 
           return {
-            type: rel.type,
-            note_fr: rel.note_fr,
-            note_en: rel.note_en,
+            type: displayType,
+            note_fr: getRelationNote(relation, isEntityA, relationType, 'fr_FR'),
+            note_en: getRelationNote(relation, isEntityA, relationType, 'en_US'),
             target_champion: targetChampion ? { name: targetChampion.name, image: targetChampion.image } : null,
             target_lore: targetLore ? { name: targetLore.name, image: targetLore.image } : null
           };
@@ -249,20 +267,27 @@ export const fetchLoreCharacter = async (name: string, locale: string = 'fr_FR')
 // Helper function to enrich lore character with relations
 const enrichLoreCharacter = async (character: LoreCharacter, locale: string) => {
 
-  // Get relations for this lore character
-  const loreRelations = (relationsData as any[]).filter(
-    (rel: any) => rel.source_lore_id === character.id
-  );
+  // Import the new relations utilities
+  const { getRelationsForEntity, getRelationNote } = await import('@/lib/relations-utils');
+
+  // Get relations for this lore character using the new system
+  const allRelations = relationsData as Relation[];
+  const loreRelations = getRelationsForEntity(allRelations, character.id, 'lore');
 
   // Enrich relations with target data
-  const enrichedRelations = await Promise.all(loreRelations.map(async (rel: any) => {
-    const targetChampion = rel.target_champion_id ? await loadChampionData(rel.target_champion_id) : null;
-    const targetLore = rel.target_lore_id ? await loadLoreCharacterData(rel.target_lore_id) : null;
+  const enrichedRelations = await Promise.all(loreRelations.map(async (relInfo) => {
+    const { relation, isEntityA, relationType, targetId, targetType } = relInfo;
+
+    const targetChampion = targetType === 'champion' ? await loadChampionData(targetId) : null;
+    const targetLore = targetType === 'lore' ? await loadLoreCharacterData(targetId) : null;
+
+    // IMPORTANT: Always show the ORIGINAL relation type (what entity_a is)
+    const displayType = relation.relation_type;
 
     return {
-      type: rel.type,
-      note_fr: rel.note_fr,
-      note_en: rel.note_en,
+      type: displayType,
+      note_fr: getRelationNote(relation, isEntityA, relationType, 'fr_FR'),
+      note_en: getRelationNote(relation, isEntityA, relationType, 'en_US'),
       target_champion: targetChampion ? { name: targetChampion.name, image: targetChampion.image } : null,
       target_lore: targetLore ? { name: targetLore.name, image: targetLore.image } : null
     };

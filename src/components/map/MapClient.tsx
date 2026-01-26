@@ -406,7 +406,7 @@ export default function MapClient({ locale }: MapClientProps) {
                     onMouseUp={handlePointMouseUp}
                 >
                     {regions.map((region) => (
-                        <>
+                        <g key={region.id}>
                             {/* Render polygons if they exist */}
                             {region.polygons?.map((polygon, index) => (
                                 <motion.polygon
@@ -457,7 +457,7 @@ export default function MapClient({ locale }: MapClientProps) {
                                     />
                                 );
                             })}
-                        </>
+                        </g>
                     ))}
 
                     {/* Render region icons/logos */}
