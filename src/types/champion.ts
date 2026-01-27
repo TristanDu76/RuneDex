@@ -154,5 +154,5 @@ export interface ChampionGridData extends ChampionLight {
 export interface LoreCharacterLight {
     id: string;
     name: string;
-    image?: string;
+    image?: string | null;
 }
