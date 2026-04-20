@@ -60,7 +60,8 @@ export default async function LorePage({ params }: LorePageProps) {
     const speciesValue = pickFirst(character.species as string | string[] | null);
     const genderValue = pickFirst(character.gender as string | string[] | null);
     const statusValue = character.status ? character.status.toLowerCase() : null;
-    const speciesI18nKey = speciesValue.toLowerCase().replace(/\s+/g, '-');
+    const formatSpecies = (s: string) => s.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join(' ');
+    const speciesI18nKey = speciesValue ? formatSpecies(speciesValue) : '';
     const genderI18nKey = genderValue.toLowerCase();
 
     // Sort lore characters alphabetically
@@ -99,11 +100,11 @@ export default async function LorePage({ params }: LorePageProps) {
                 nextLoreName={nextLore.id || nextLore.name}
             />
 
-            <div className="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8 pt-20">
+            <div className="max-w-6xl mx-auto p-4 sm:p-6 lg:p-8 pt-20">
 
                 {/* Header */}
                 <div className="text-center mb-12">
-                    <div className="relative w-72 h-72 mx-auto mb-8 rounded-3xl overflow-hidden border-2 border-hextech-gold shadow-[0_0_30px_rgba(212,175,55,0.4)] group hover:shadow-[0_0_50px_rgba(0,229,255,0.4)] hover:border-hextech-cyan transition-all duration-500">
+                    <div className="relative w-[600px] h-[320px] max-w-full mx-auto mb-8 rounded-3xl overflow-hidden border-2 border-hextech-gold shadow-[0_0_30px_rgba(212,175,55,0.4)] group hover:shadow-[0_0_50px_rgba(0,229,255,0.4)] hover:border-hextech-cyan transition-all duration-500">
                         {character.image ? (
                             <img
                                 src={character.image}

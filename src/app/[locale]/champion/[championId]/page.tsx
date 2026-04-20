@@ -93,7 +93,7 @@ export default async function ChampionPage({ params }: ChampionPageProps) {
         nextChampionId={nextChampion.id}
       />
 
-      <div className="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 space-y-12">
+      <div className="max-w-6xl mx-auto p-4 sm:p-6 lg:p-8 space-y-12">
         {/* Header Section */}
         <div className="text-center">
           <h1 className="text-6xl mb-2 hex-title">{name}</h1>
@@ -227,7 +227,7 @@ export default async function ChampionPage({ params }: ChampionPageProps) {
             <div className="flex items-center gap-2 hex-panel border border-hextech-gold/30 px-4 py-2 rounded-full shadow-[inset_0_0_10px_rgba(212,175,55,0.1)]">
               <span className="text-hextech-cyan text-sm uppercase tracking-wider font-semibold">{t('champion.species')}</span>
               <span className={`font-medium ${getSpeciesColor(species)}`}>
-                {translateFallback(`species.${species.toLowerCase().replace(/\s+/g, '-')}`, species)}
+                {translateFallback(`species.${species.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join(' ')}`, species)}
               </span>
             </div>
           )}
