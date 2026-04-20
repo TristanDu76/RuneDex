@@ -3,126 +3,34 @@
   "key": "222",
   "name": "Jinx",
   "title": "Gâchette folle",
-  "version": "15.23.1",
-  "lore": "Jinx (autrefois connue sous le nom de Powder) est une criminelle dérangée de Zaun. Initialement une jeune bricoleuse pleine d'idées, on ignore les circonstances exactes qui ont brisé son esprit, mais elle est devenue une force de destruction anarchique. Son talent unique pour semer le chaos à Piltover est rapidement devenu légendaire.\n\nElle gagna en notoriété par des « farces » criminelles visant l'élite de Piltover, dont le seul but était de paralyser l'ordre et le fonctionnement de la ville. Frustrée que ses actions soient attribuées à des gangs anonymes, Jinx commença à laisser sa signature : des graffitis vifs et des messages de défi.\n\nSon obsession pour l'Enforcer Vi était évidente, car elle ciblait spécifiquement la nouvelle alliée du shérif Caitlyn par des moqueries et des menaces peintes. Cette obsession est en réalité le produit d'un passé familial brisé et douloureux : Jinx et Vi sont sœurs. Leur conflit n'est pas celui d'un flic et d'un criminel ordinaire, mais la conséquence tragique de la rupture qui a séparé les deux sœurs dans leur jeunesse à Zaun.\n\nL'escalade de ses crimes culmina avec l'annonce publique de son intention de voler le très sécurisé Coffre Écliptique de Piltover. Elle réussit à tromper les Gardiens, et la confrontation laissa le coffre en ruine, Jinx réussissant une fois de plus à échapper à la capture de Vi et Caitlyn.\n\nJinx reste en fuite, une épine constante dans le flanc de Piltover. Son chaos coloré, mené avec son arsenal d'armes bricolées (dont son lance-roquettes à tête de requin), inspire la rébellion et la résistance chez les laissés-pour-compte de Zaun.\n\nSon véritable but n'est pas seulement la destruction, mais de défier l'ordre que sa sœur est venue défendre. Elle est hantée par les conséquences de son passé et par la douleur de la séparation, choisissant de vivre dans une frénésie permanente pour échapper à la tragédie de son ancienne vie.",
+  "version": "16.8.1",
+  "lore": "Criminelle dérangée et impulsive de la basse-ville, Jinx est hantée par les conséquences de son passé. Mais cela ne l'empêche jamais d'apporter sa touche de chaos à Piltover comme à Zaun. Elle utilise son arsenal d'armes bricolées de façon dévastatrice, déclenchant des torrents d'explosions et de tirs colorés, et la pagaille qu'elle laisse derrière elle finit par inciter les laissés-pour-compte à la rébellion et à la résistance.",
   "tags": [
     "Marksman"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Jinx.png",
+    "sprite": "champion1.png",
+    "group": "champion",
     "x": 192,
     "y": 96,
-    "full": "Jinx.png",
-    "group": "champion",
-    "sprite": "champion1.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "222000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "222001",
-      "num": 1,
-      "name": "Donna Jinx",
-      "chromas": false
-    },
-    {
-      "id": "222002",
-      "num": 2,
-      "name": "Jinx pyrotechnicienne",
-      "chromas": true
-    },
-    {
-      "id": "222003",
-      "num": 3,
-      "name": "Jinx tueuse de zombies",
-      "chromas": true
-    },
-    {
-      "id": "222004",
-      "num": 4,
-      "name": "Jinx gardienne des étoiles",
-      "chromas": true
-    },
-    {
-      "id": "222012",
-      "num": 12,
-      "name": "Jinx l'elfe arriviste",
-      "chromas": false
-    },
-    {
-      "id": "222013",
-      "num": 13,
-      "name": "Jinx de l'Odyssée",
-      "chromas": true
-    },
-    {
-      "id": "222020",
-      "num": 20,
-      "name": "PROJET : Jinx",
-      "chromas": true
-    },
-    {
-      "id": "222029",
-      "num": 29,
-      "name": "Jinx cœur-de-cible",
-      "chromas": true
-    },
-    {
-      "id": "222037",
-      "num": 37,
-      "name": "Jinx ennemie d'Arcane",
-      "chromas": false
-    },
-    {
-      "id": "222038",
-      "num": 38,
-      "name": "Jinx chat de combat",
-      "chromas": true
-    },
-    {
-      "id": "222040",
-      "num": 40,
-      "name": "Jinx chat de combat prestige",
-      "chromas": false
-    },
-    {
-      "id": "222051",
-      "num": 51,
-      "name": "Jinx Café Chouchous",
-      "chromas": true
-    },
-    {
-      "id": "222060",
-      "num": 60,
-      "name": "Jinx fracturée d'Arcane",
-      "chromas": false
-    },
-    {
-      "id": "222062",
-      "num": 62,
-      "name": "T1 Jinx",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "JinxQ",
       "name": "Flip flap !",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "JinxQ.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 192,
         "y": 144,
-        "full": "JinxQ.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -133,6 +41,10 @@
         "label": [
           "Portée bonus (roquette)",
           "Vitesse d'attaque totale (minigun)"
+        ],
+        "effect": [
+          "{{ rocketbonusrange }} -> {{ rocketbonusrangeNL }}",
+          "{{ minigunattackspeedmax }}% -> {{ minigunattackspeedmaxNL }}%"
         ]
       },
       "resource": "{{ cost }} pts de mana par roquette",
@@ -146,13 +58,13 @@
       "name": "Zap !",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "JinxW.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 240,
         "y": 144,
-        "full": "JinxW.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -165,6 +77,12 @@
           "Ralentissement",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ slowpercent }}% -> {{ slowpercentNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -178,13 +96,13 @@
       "name": "Pyromâcheurs !",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "JinxE.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 288,
         "y": 144,
-        "full": "JinxE.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -195,6 +113,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -208,13 +130,13 @@
       "name": "Super roquette de la mort !",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "JinxR.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 336,
         "y": 144,
-        "full": "JinxR.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -227,6 +149,12 @@
           "Dégâts maximum",
           "Pourcentage des PV manquants en dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ maxdamage }} -> {{ maxdamageNL }}",
+          "{{ percentdamage }}% -> {{ percentdamageNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -239,20 +167,19 @@
   "passive": {
     "name": "Enthousiasme !",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Jinx_Passive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 192,
       "y": 96,
-      "full": "Jinx_Passive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Jinx reçoit un énorme bonus en vitesse de déplacement et en vitesse d'attaque quand elle participe à l'élimination/destruction d'un champion, d'un monstre épique de la jungle ou d'un bâtiment."
   },
   "created_at": "2025-11-26T15:13:33.462857+00:00",
   "factions": [
-    "zaun",
-    "piltover"
+    "zaun"
   ],
   "custom_tags": [
     "chaos",
@@ -261,20 +188,20 @@
   "gender": "Female",
   "species": "Human",
   "title_en": "the Loose Cannon",
-  "lore_en": "Jinx (formerly known as Powder) is a deranged criminal from Zaun. Originally a tinkering girl with big ideas, the exact circumstances that broke her mind are unknown, but she became an anarchic force of destruction. Her unique talent for sowing chaos in Piltover swiftly became legendary.\n\nShe gained notoriety through criminal \"pranks\" targeting Piltover's elite, whose sole purpose was to bring the city's orderly bustle to a screeching halt. Frustrated that her actions were attributed to anonymous gangs, Jinx began tagging her scenes of destruction with vivid graffiti and taunting messages.\n\nHer obsession with Enforcer Vi was obvious, as she specifically targeted Sheriff Caitlyn's newest ally with mockery and painted threats. This obsession is, in fact, the product of a shattered and painful family past: Jinx and Vi are sisters. Their conflict is not that of a typical cop and criminal, but the tragic consequence of the break that separated the two sisters in their youth in Zaun.\n\nThe escalation of her crimes culminated with the public announcement of her intent to rob Piltover's highly secure Ecliptic Vaults. She managed to outsmart the Wardens, and the resulting confrontation left the Vaults a smoldering ruin, with Jinx once again escaping capture from Vi and Caitlyn.\n\nJinx remains at large, a constant thorn in Piltover's side. Her colorful chaos, executed with her arsenal of custom-made weapons (including her shark-mouthed rocket launcher), inspires rebellion and resistance among the down-trodden of Zaun.\n\nHer true goal is not just destruction, but to challenge the order her sister has come to defend. She is haunted by the consequences of her past and the pain of separation, choosing to live in a permanent frenzy to escape the tragedy of her former life.",
+  "lore_en": "An unhinged and impulsive criminal from the undercity, Jinx is haunted by the consequences of her past—but that doesn't stop her from bringing her own chaotic brand of pandemonium to Piltover and Zaun. She uses her arsenal of DIY weapons to devastating effect, unleashing torrents of colorful explosions and gunfire, inspiring the disenfranchised to rebellion and resistance with the mayhem she leaves in her wake.",
   "spells_en": [
     {
       "id": "JinxQ",
       "name": "Switcheroo!",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "JinxQ.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 192,
         "y": 144,
-        "full": "JinxQ.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -285,6 +212,10 @@
         "label": [
           "Rocket Bonus Range",
           "Minigun Total Attack Speed"
+        ],
+        "effect": [
+          "{{ rocketbonusrange }} -> {{ rocketbonusrangeNL }}",
+          "{{ minigunattackspeedmax }}% -> {{ minigunattackspeedmaxNL }}%"
         ]
       },
       "resource": "{{ cost }} Mana Per Rocket",
@@ -298,13 +229,13 @@
       "name": "Zap!",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "JinxW.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 240,
         "y": 144,
-        "full": "JinxW.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -317,6 +248,12 @@
           "Slow",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ slowpercent }}% -> {{ slowpercentNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -330,13 +267,13 @@
       "name": "Flame Chompers!",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "JinxE.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 288,
         "y": 144,
-        "full": "JinxE.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -347,6 +284,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -360,13 +301,13 @@
       "name": "Super Mega Death Rocket!",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "JinxR.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 336,
         "y": 144,
-        "full": "JinxR.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -379,6 +320,12 @@
           "Maximum Damage",
           "Percent Missing Health Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ maxdamage }} -> {{ maxdamageNL }}",
+          "{{ percentdamage }}% -> {{ percentdamageNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -391,13 +338,13 @@
   "passive_en": {
     "name": "Get Excited!",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Jinx_Passive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 192,
       "y": 96,
-      "full": "Jinx_Passive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Jinx receives massively increased Move Speed and Attack Speed whenever she helps kill or destroy an enemy champions epic jungle monster, or structure."
   },
@@ -495,6 +442,123 @@
       "num": 62,
       "name": "T1 Jinx",
       "chromas": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "222000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "222001",
+      "num": 1,
+      "name": "Donna Jinx",
+      "chromas": false
+    },
+    {
+      "id": "222002",
+      "num": 2,
+      "name": "Jinx pyrotechnicienne",
+      "chromas": true
+    },
+    {
+      "id": "222003",
+      "num": 3,
+      "name": "Jinx tueuse de zombies",
+      "chromas": true
+    },
+    {
+      "id": "222004",
+      "num": 4,
+      "name": "Jinx gardienne des étoiles",
+      "chromas": true
+    },
+    {
+      "id": "222012",
+      "num": 12,
+      "name": "Jinx l'elfe arriviste",
+      "chromas": false
+    },
+    {
+      "id": "222013",
+      "num": 13,
+      "name": "Jinx de l'Odyssée",
+      "chromas": true
+    },
+    {
+      "id": "222020",
+      "num": 20,
+      "name": "PROJET : Jinx",
+      "chromas": true
+    },
+    {
+      "id": "222029",
+      "num": 29,
+      "name": "Jinx cœur-de-cible",
+      "chromas": true
+    },
+    {
+      "id": "222037",
+      "num": 37,
+      "name": "Jinx ennemie d'Arcane",
+      "chromas": false
+    },
+    {
+      "id": "222038",
+      "num": 38,
+      "name": "Jinx chat de combat",
+      "chromas": true
+    },
+    {
+      "id": "222040",
+      "num": 40,
+      "name": "Jinx chat de combat prestige",
+      "chromas": false
+    },
+    {
+      "id": "222051",
+      "num": 51,
+      "name": "Jinx Café Chouchous",
+      "chromas": true
+    },
+    {
+      "id": "222060",
+      "num": 60,
+      "name": "Jinx fracturée d'Arcane",
+      "chromas": false
+    },
+    {
+      "id": "222062",
+      "num": 62,
+      "name": "T1 Jinx",
+      "chromas": false
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "silco",
+      "type": "lore",
+      "relation": "adoptive-daughter"
+    },
+    {
+      "id": "vander",
+      "type": "lore",
+      "relation": "adoptive-father"
+    },
+    {
+      "id": "Vi",
+      "type": "champion",
+      "relation": "sister",
+      "note_fr": "Soeur"
+    },
+    {
+      "id": "Ekko",
+      "type": "champion",
+      "relation": "friend",
+      "note_fr": "Amour d'enfance (Passé)",
+      "note_en": "Childhood crush (Past)"
     }
   ]
 }

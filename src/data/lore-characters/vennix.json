@@ -1,11 +1,28 @@
 {
   "id": "vennix",
   "name": "Vennix",
-  "faction": null,
-  "gender": null,
-  "species": null,
-  "description": "Personnage du lore de League of Legends",
-  "image": null,
-  "created_at": "2026-01-26T13:41:34.763Z",
-  "description_en": "League of Legends lore character"
+  "origin_region": "independent",
+  "region": "independent",
+  "faction": [
+    "independent"
+  ],
+  "universe": [
+    "runeterra-prime"
+  ],
+  "gender": "unknown",
+  "species": [
+    "otter",
+    "vastaya"
+  ],
+  "status": "unknown",
+  "power_source": "unknown",
+  "image": "https://wiki.leagueoflegends.com/en-us/images/Vennix_Ruination.jpg?d88d8",
+  "created_at": "2026-03-31T19:33:44.664350+00:00",
+  "description_en": "The Camavoran Captain of the Dagger Hawk. Joining Jenda'kaya in recruiting new Sentinels into Order. She helped Kalista reach the Blessed Isles, bonding with the Camavoran princess in the process.",
+  "related_characters": [
+    "Jenda'kaya",
+    "Kalista",
+    "Viego"
+  ],
+  "description_fr": "Le capitaine camavoran du Dagger Hawk. Rejoindre Jenda'kaya pour recruter de nouvelles Sentinelles dans l'Ordre. Elle a aidé Kalista à atteindre les Îles Bénies, créant ainsi des liens avec la princesse Camavoran."
 }

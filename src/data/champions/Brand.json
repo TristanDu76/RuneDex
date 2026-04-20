@@ -3,115 +3,35 @@
   "key": "63",
   "name": "Brand",
   "title": "Vengeur flamboyant",
-  "version": "15.23.1",
-  "lore": "Kegan Rodhe est né marginal dans un petit village côtier du Freljord. Fils d'une guérisseuse et d'un pillard ennemi (un reaver), il était ostracisé par sa communauté, qui l'appelait le « bâtard de pillard ». Sa solitude et son ressentiment s'accumulèrent pendant des années de froid et d'hostilité.\r\n\r\nAprès la mort de sa mère, qui avait passé sa vie à soigner les villageois sans recevoir de respect en retour, Kegan décida de se venger de leur mépris. Il incendia le village et s'enfuit dans la nuit, portant des cicatrices physiques et émotionnelles qui ne guériraient jamais.\r\n\r\nErrant seul dans la toundra gelée, Kegan était prêt à mourir, cherchant en vain un ami ou un visage aimable. Au lieu de la mort, il rencontra un autre marginal : le mystérieux mage Ryze. Ryze, qui voyait un potentiel en lui, prit le jeune homme comme apprenti. Cependant, Kegan était impatient et arrogant, et sa magie naissante était difficile à maîtriser, rendant la relation maître-élève frustrante.\r\n\r\nLa mission principale de Ryze était de localiser et de cacher le pouvoir le plus dangereux de Runeterra : les légendaires Runes-monde (World Runes), des fragments de magie primordiale capables de détruire le monde. Après avoir traqué un tel fragment, Kegan, confronté à une tentation désespérée, choisit de trahir son maître et de s'emparer du pouvoir pour lui-même, ignorant les avertissements de Ryze.\r\n\r\nRyze fut contraint d'assister à l'horreur : Kegan fut consumé par la magie brute, son âme entièrement consumée par le brasier. L'être vengeur de feu et de fureur qui naquit à ce moment-là n'était plus Kegan Rodhe, mais l'entité connue sous le nom de Brand.\r\n\r\nBrand maudit son ancien maître et toute autre chose vivante qui oserait se mettre entre lui et les Runes. Il s'échappa en déchaînant des flammes magiques.\r\n\r\nAu cours des siècles qui ont suivi, Brand a mené une existence anarchique, semblable à un feu de forêt, ne prenant et ne rendant jamais rien au monde. Animé par un feu inextinguible et cherchant d'autres Runes, il parcourt Valoran, jurant vengeance pour des trahisons qu'aucun mortel n'aurait pu subir au cours d'une dizaine de vies, car son corps n'est plus que le véhicule de la fureur du pouvoir élémentaire.",
+  "version": "16.8.1",
+  "lore": "Autrefois membre d'une tribu de Freljord, Kegan Rodhe est devenu l'être que l'on connaît sous le nom de Brand à force de convoiter des pouvoirs toujours plus grands. Alors qu'il recherchait l'une des légendaires Runes telluriques, Kegan trahit ses compagnons et s'en empara ; en un instant, son âme fut consumée par un brasier qui le changea à jamais. Désormais animé d'un feu inextinguible, Brand parcourt Valoran en quête d'autres runes, jurant vengeance pour des trahisons qu'aucun mortel n'aurait pu subir au cours d'une dizaine de vies.",
   "tags": [
     "Mage",
     "Support"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Brand.png",
+    "sprite": "champion0.png",
+    "group": "champion",
     "x": 336,
     "y": 48,
-    "full": "Brand.png",
-    "group": "champion",
-    "sprite": "champion0.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "63000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "63001",
-      "num": 1,
-      "name": "Brand apocalyptique",
-      "chromas": false
-    },
-    {
-      "id": "63002",
-      "num": 2,
-      "name": "Brand Vandale",
-      "chromas": false
-    },
-    {
-      "id": "63003",
-      "num": 3,
-      "name": "Cryo Brand",
-      "chromas": false
-    },
-    {
-      "id": "63004",
-      "num": 4,
-      "name": "Brand zombie",
-      "chromas": true
-    },
-    {
-      "id": "63005",
-      "num": 5,
-      "name": "Brand feu spirituel",
-      "chromas": false
-    },
-    {
-      "id": "63006",
-      "num": 6,
-      "name": "Brand boss de combat",
-      "chromas": false
-    },
-    {
-      "id": "63007",
-      "num": 7,
-      "name": "Brand aux flammes pures",
-      "chromas": true
-    },
-    {
-      "id": "63008",
-      "num": 8,
-      "name": "Brand dragon éternel",
-      "chromas": true
-    },
-    {
-      "id": "63021",
-      "num": 21,
-      "name": "Brand séducteur",
-      "chromas": true
-    },
-    {
-      "id": "63022",
-      "num": 22,
-      "name": "Brand séducteur prestige",
-      "chromas": false
-    },
-    {
-      "id": "63033",
-      "num": 33,
-      "name": "Brand ville démoniaque",
-      "chromas": true
-    },
-    {
-      "id": "63042",
-      "num": 42,
-      "name": "Brand empyréen",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "BrandQ",
       "name": "Brûlure",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BrandQ.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 288,
         "y": 0,
-        "full": "BrandQ.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -122,6 +42,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -135,13 +59,13 @@
       "name": "Colonne de flammes",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BrandW.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 336,
         "y": 0,
-        "full": "BrandW.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -153,6 +77,11 @@
           "Dégâts",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -166,13 +95,13 @@
       "name": "Conflagration",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BrandE.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 384,
         "y": 0,
-        "full": "BrandE.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -184,6 +113,11 @@
           "Dégâts",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -197,13 +131,13 @@
       "name": "Pyrolyse",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BrandR.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 432,
         "y": 0,
-        "full": "BrandR.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -215,6 +149,11 @@
           "Dégâts par rebond",
           "Ralentissement",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ slowamount }}% -> {{ slowamountNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -227,13 +166,13 @@
   "passive": {
     "name": "Flammes",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "BrandP.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 336,
       "y": 48,
-      "full": "BrandP.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Les compétences de Brand enflamment ses cibles, leur infligeant des dégâts en 4 sec (cumulable 3 fois). Si Brand tue un ennemi en flammes, il récupère du mana. Quand Flammes atteint son maximum d'effets cumulés sur un champion ou un grand monstre, Flammes devient instable et explose au bout de 2 sec, infligeant les effets de sort et d'énormes dégâts autour de la victime."
   },
@@ -248,20 +187,20 @@
   "gender": "Male",
   "species": "Human",
   "title_en": "the Burning Vengeance",
-  "lore_en": "Kegan Rodhe was born an outcast in a small coastal village in the Freljord. The son of a healer and an enemy reaver, he was shunned by his community, who called him the \"reaver-bastard.\" His loneliness and resentment festered over years of cold and hostility.\r\n\r\nAfter the death of his mother, who had spent her life healing the villagers without receiving respect in return, Kegan decided to take revenge for their contempt. He burned down the village and fled into the night, carrying physical and emotional scars that would never heal.\r\n\r\nWandering alone in the frozen tundra, Kegan was ready to die, fruitlessly searching for a friend or a kind face. Instead of death, he met another outcast: the mysterious mage Ryze. Ryze, seeing potential in him, took the young man on as an apprentice. However, Kegan was impatient and arrogant, and his nascent magic was difficult to control, making the master-student relationship frustrating.\r\n\r\nRyze's main mission was to track down and hide Runeterra's most dangerous power: the legendary World Runes, fragments of primal magic capable of unmaking the world. After tracking down one such fragment, Kegan, facing desperate temptation, chose to betray his master and seize the power for himself, ignoring Ryze's warnings.\r\n\r\nRyze was forced to watch in horror: Kegan was burned away by the raw magic, his soul utterly consumed by the conflagration. The vengeful being of fire and fury born in that moment was no longer Kegan Rodhe, but the entity that would eventually become known as Brand.\r\n\r\nBrand cursed his former master and every other living thing that would ever come between him and the Runes. He lashed out with magical flames and escaped.\r\n\r\nOver the centuries since that day, Brand has lived an anarchic, wildfire existence, taking and never giving anything back to the world. Driven by an inextinguishable fire and seeking other Runes, he roams Valoran, swearing vengeance for betrayals no mortal could have suffered in ten lifetimes, for his body is now merely the vessel for the fury of elemental power.",
+  "lore_en": "Once a tribesman of the icy Freljord named Kegan Rodhe, the creature known as Brand is a lesson in the temptation of greater power. Seeking one of the legendary World Runes, Kegan betrayed his companions and seized it for himself—and, in an instant, the man was no more. His soul burned away, his body a vessel of living flame, Brand now roams Valoran in search of other Runes, swearing revenge for wrongs he could never possibly have suffered in a dozen mortal lifetimes.",
   "spells_en": [
     {
       "id": "BrandQ",
       "name": "Sear",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BrandQ.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 288,
         "y": 0,
-        "full": "BrandQ.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -272,6 +211,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -285,13 +228,13 @@
       "name": "Pillar of Flame",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BrandW.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 336,
         "y": 0,
-        "full": "BrandW.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -303,6 +246,11 @@
           "Damage",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -316,13 +264,13 @@
       "name": "Conflagration",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BrandE.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 384,
         "y": 0,
-        "full": "BrandE.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -334,6 +282,11 @@
           "Damage",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -347,13 +300,13 @@
       "name": "Pyroclasm",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BrandR.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 432,
         "y": 0,
-        "full": "BrandR.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -365,6 +318,11 @@
           "Damage per Bounce",
           "Slow",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ slowamount }}% -> {{ slowamountNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -377,13 +335,13 @@
   "passive_en": {
     "name": "Blaze",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "BrandP.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 336,
       "y": 48,
-      "full": "BrandP.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Brand's spells light his targets ablaze, dealing damage over 4 seconds, stacking up to 3 times. If Brand kills an enemy while it is ablaze he regains mana. When Blaze reaches max stacks on a Champion or large monster, it becomes unstable. It detonates in 2 seconds, applying spell effects and dealing massive damage in an area around the victim."
   },
@@ -470,6 +428,95 @@
       "num": 42,
       "name": "Empyrean Brand",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "63000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "63001",
+      "num": 1,
+      "name": "Brand apocalyptique",
+      "chromas": false
+    },
+    {
+      "id": "63002",
+      "num": 2,
+      "name": "Brand Vandale",
+      "chromas": false
+    },
+    {
+      "id": "63003",
+      "num": 3,
+      "name": "Cryo Brand",
+      "chromas": false
+    },
+    {
+      "id": "63004",
+      "num": 4,
+      "name": "Brand zombie",
+      "chromas": true
+    },
+    {
+      "id": "63005",
+      "num": 5,
+      "name": "Brand feu spirituel",
+      "chromas": false
+    },
+    {
+      "id": "63006",
+      "num": 6,
+      "name": "Brand boss de combat",
+      "chromas": false
+    },
+    {
+      "id": "63007",
+      "num": 7,
+      "name": "Brand aux flammes pures",
+      "chromas": true
+    },
+    {
+      "id": "63008",
+      "num": 8,
+      "name": "Brand dragon éternel",
+      "chromas": true
+    },
+    {
+      "id": "63021",
+      "num": 21,
+      "name": "Brand séducteur",
+      "chromas": true
+    },
+    {
+      "id": "63022",
+      "num": 22,
+      "name": "Brand séducteur prestige",
+      "chromas": false
+    },
+    {
+      "id": "63033",
+      "num": 33,
+      "name": "Brand ville démoniaque",
+      "chromas": true
+    },
+    {
+      "id": "63042",
+      "num": 42,
+      "name": "Brand empyréen",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Ryze",
+      "type": "champion",
+      "relation": "student",
+      "note_fr": "Ancien élève (Kegan Rodhe)",
+      "note_en": "Former student (Kegan Rodhe)"
     }
   ]
 }

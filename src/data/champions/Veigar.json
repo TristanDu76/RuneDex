@@ -3,132 +3,34 @@
   "key": "45",
   "name": "Veigar",
   "title": "Seigneur des maléfices",
-  "version": "15.23.1",
+  "version": "16.8.1",
   "lore": "Maître enthousiaste de la magie noire, Veigar s'est approprié des pouvoirs que peu de mortels osent approcher. Habitant de Bandle à l'esprit libre, il veut repousser les limites de la magie yordle et se tourner vers les textes arcaniques qui sont restés cachés des millénaires. Fasciné jusqu'à l'obstination par les mystères de l'univers, Veigar est souvent sous-estimé par les gens qui l'entourent. Bien qu'il se croie fondamentalement maléfique, il possède une moralité qui le mène à s'interroger sur ses motivations.",
   "tags": [
     "Mage"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Veigar.png",
+    "sprite": "champion4.png",
+    "group": "champion",
     "x": 336,
     "y": 96,
-    "full": "Veigar.png",
-    "group": "champion",
-    "sprite": "champion4.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "45000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "45001",
-      "num": 1,
-      "name": "Veigar le mage blanc",
-      "chromas": false
-    },
-    {
-      "id": "45002",
-      "num": 2,
-      "name": "Veigar curling",
-      "chromas": false
-    },
-    {
-      "id": "45003",
-      "num": 3,
-      "name": "Veigar barbe grise",
-      "chromas": false
-    },
-    {
-      "id": "45004",
-      "num": 4,
-      "name": "Veigar lutin",
-      "chromas": false
-    },
-    {
-      "id": "45005",
-      "num": 5,
-      "name": "Baron von Veigar",
-      "chromas": false
-    },
-    {
-      "id": "45006",
-      "num": 6,
-      "name": "Veigar classieux",
-      "chromas": false
-    },
-    {
-      "id": "45007",
-      "num": 7,
-      "name": "Maléfique père Veigar",
-      "chromas": false
-    },
-    {
-      "id": "45008",
-      "num": 8,
-      "name": "Veigar boss de fin",
-      "chromas": true
-    },
-    {
-      "id": "45009",
-      "num": 9,
-      "name": "Veigar de la section Oméga",
-      "chromas": true
-    },
-    {
-      "id": "45013",
-      "num": 13,
-      "name": "Veigar sylvestre",
-      "chromas": true
-    },
-    {
-      "id": "45023",
-      "num": 23,
-      "name": "Veigar cosplay Corgnon",
-      "chromas": true
-    },
-    {
-      "id": "45032",
-      "num": 32,
-      "name": "Veigar astronaute",
-      "chromas": true
-    },
-    {
-      "id": "45041",
-      "num": 41,
-      "name": "Veigar dresseur de monstres",
-      "chromas": true
-    },
-    {
-      "id": "45051",
-      "num": 51,
-      "name": "Veigar abeille",
-      "chromas": true
-    },
-    {
-      "id": "45060",
-      "num": 60,
-      "name": "Veigar Nuit d'effroi",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "VeigarBalefulStrike",
       "name": "Coup malin",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "VeigarBalefulStrike.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 288,
         "y": 0,
-        "full": "VeigarBalefulStrike.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -141,6 +43,12 @@
           "Ratio de puissance total",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ apratio*100.000000 }}% -> {{ aprationl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -154,13 +62,13 @@
       "name": "Matière noire",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "VeigarDarkMatter.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 336,
         "y": 0,
-        "full": "VeigarDarkMatter.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -172,6 +80,11 @@
           "Dégâts",
           "Ratio de puissance total",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ apratio*100.000000 }}% -> {{ aprationl*100.000000 }}%",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -185,13 +98,13 @@
       "name": "Profanation",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "VeigarEventHorizon.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 384,
         "y": 0,
-        "full": "VeigarEventHorizon.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -203,6 +116,11 @@
           "Durée de l'étourdissement :",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -216,13 +134,13 @@
       "name": "Explosion primordiale",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "VeigarR.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 432,
         "y": 0,
-        "full": "VeigarR.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -234,25 +152,30 @@
           "Dégâts",
           "Ratio de puissance total",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ apratio*100.000000 }}% -> {{ aprationl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
       "rangeBurn": "650",
       "datavalues": {},
       "description": "Lance de l'énergie explosive sur le champion ennemi ciblé, infligeant d'importants dégâts magiques qui augmentent avec les PV manquants de la cible.",
-      "cooldownBurn": "100/80/60"
+      "cooldownBurn": "120/90/60"
     }
   ],
   "passive": {
     "name": "Pouvoir maléfique phénoménal",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "VeigarEntropy.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 336,
       "y": 96,
-      "full": "VeigarEntropy.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Veigar est le plus grand mal qui ait jamais frappé Runeterra, et son pouvoir est encore en pleine croissance ! Frapper un champion ennemi avec une compétence, tuer un champion ou effectuer une assistance octroie à Veigar un bonus permanent en puissance."
   },
@@ -271,13 +194,13 @@
       "name": "Baleful Strike",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "VeigarBalefulStrike.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 288,
         "y": 0,
-        "full": "VeigarBalefulStrike.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -290,6 +213,12 @@
           "Total AP Ratio",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ apratio*100.000000 }}% -> {{ aprationl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -303,13 +232,13 @@
       "name": "Dark Matter",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "VeigarDarkMatter.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 336,
         "y": 0,
-        "full": "VeigarDarkMatter.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -321,6 +250,11 @@
           "Damage",
           "Total AP Ratio",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ apratio*100.000000 }}% -> {{ aprationl*100.000000 }}%",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -334,13 +268,13 @@
       "name": "Event Horizon",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "VeigarEventHorizon.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 384,
         "y": 0,
-        "full": "VeigarEventHorizon.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -352,6 +286,11 @@
           "Stun Duration:",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -365,13 +304,13 @@
       "name": "Primordial Burst",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "VeigarR.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 432,
         "y": 0,
-        "full": "VeigarR.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -383,25 +322,30 @@
           "Damage",
           "Total AP Ratio",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ apratio*100.000000 }}% -> {{ aprationl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
       "rangeBurn": "650",
       "datavalues": {},
       "description": "Blasts target enemy champion, dealing a large amount of magic damage, increasing based on the target's missing health.",
-      "cooldownBurn": "100/80/60"
+      "cooldownBurn": "120/90/60"
     }
   ],
   "passive_en": {
     "name": "Phenomenal Evil Power",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "VeigarEntropy.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 336,
       "y": 96,
-      "full": "VeigarEntropy.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Veigar is the greatest Evil to ever strike at the hearts of Runeterra - and he's only getting bigger! Striking an enemy Champion with a spell or scoring a takedown grants Veigar permanently increased Ability Power."
   },
@@ -505,6 +449,113 @@
       "num": 60,
       "name": "Fright Night Veigar",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "45000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "45001",
+      "num": 1,
+      "name": "Veigar le mage blanc",
+      "chromas": false
+    },
+    {
+      "id": "45002",
+      "num": 2,
+      "name": "Veigar curling",
+      "chromas": false
+    },
+    {
+      "id": "45003",
+      "num": 3,
+      "name": "Veigar barbe grise",
+      "chromas": false
+    },
+    {
+      "id": "45004",
+      "num": 4,
+      "name": "Veigar lutin",
+      "chromas": false
+    },
+    {
+      "id": "45005",
+      "num": 5,
+      "name": "Baron von Veigar",
+      "chromas": false
+    },
+    {
+      "id": "45006",
+      "num": 6,
+      "name": "Veigar classieux",
+      "chromas": false
+    },
+    {
+      "id": "45007",
+      "num": 7,
+      "name": "Maléfique père Veigar",
+      "chromas": false
+    },
+    {
+      "id": "45008",
+      "num": 8,
+      "name": "Veigar boss de fin",
+      "chromas": true
+    },
+    {
+      "id": "45009",
+      "num": 9,
+      "name": "Veigar de la section Oméga",
+      "chromas": true
+    },
+    {
+      "id": "45013",
+      "num": 13,
+      "name": "Veigar sylvestre",
+      "chromas": true
+    },
+    {
+      "id": "45023",
+      "num": 23,
+      "name": "Veigar cosplay Corgnon",
+      "chromas": true
+    },
+    {
+      "id": "45032",
+      "num": 32,
+      "name": "Veigar astronaute",
+      "chromas": true
+    },
+    {
+      "id": "45041",
+      "num": 41,
+      "name": "Veigar dresseur de monstres",
+      "chromas": true
+    },
+    {
+      "id": "45051",
+      "num": 51,
+      "name": "Veigar abeille",
+      "chromas": true
+    },
+    {
+      "id": "45060",
+      "num": 60,
+      "name": "Veigar Nuit d'effroi",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Lulu",
+      "type": "champion",
+      "relation": "friend",
+      "note_fr": "Seule amie tolérée",
+      "note_en": "Only tolerated friend"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "key": "83",
   "name": "Yorick",
   "title": "Berger des âmes",
-  "version": "15.23.1",
+  "version": "16.8.1",
   "lore": "Yorick est le dernier survivant d'un ordre religieux disparu depuis longtemps et son pouvoir sur les morts est à la fois une bénédiction et une malédiction. Prisonnier des Îles obscures, il n'a pour compagnons que les cadavres pourrissants et les spectres hurlants qu'il rassemble. Les actes monstrueux de Yorick trahissent son noble objectif : libérer sa terre natale de la malédiction de la Ruine.",
   "tags": [
     "Fighter",
@@ -11,89 +11,27 @@
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Yorick.png",
+    "sprite": "champion5.png",
+    "group": "champion",
     "x": 48,
     "y": 48,
-    "full": "Yorick.png",
-    "group": "champion",
-    "sprite": "champion5.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "83000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "83001",
-      "num": 1,
-      "name": "Yorick ensevelisseur",
-      "chromas": false
-    },
-    {
-      "id": "83002",
-      "num": 2,
-      "name": "Yorick Pentakill",
-      "chromas": false
-    },
-    {
-      "id": "83003",
-      "num": 3,
-      "name": "Yorick à la pelle pure",
-      "chromas": false
-    },
-    {
-      "id": "83004",
-      "num": 4,
-      "name": "Miaourick",
-      "chromas": true
-    },
-    {
-      "id": "83012",
-      "num": 12,
-      "name": "Yorick résistant",
-      "chromas": true
-    },
-    {
-      "id": "83021",
-      "num": 21,
-      "name": "Yorick Pentakill III : Lost Chapter",
-      "chromas": true
-    },
-    {
-      "id": "83030",
-      "num": 30,
-      "name": "Yorick fleur spirituelle",
-      "chromas": true
-    },
-    {
-      "id": "83040",
-      "num": 40,
-      "name": "Yorick du pulsar sombre",
-      "chromas": true
-    },
-    {
-      "id": "83050",
-      "num": 50,
-      "name": "Yorick de l'Ouest",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "YorickQ",
       "name": "Derniers sacrements",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YorickQ.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 96,
         "y": 96,
-        "full": "YorickQ.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -102,9 +40,14 @@
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
-          "Dégâts supplémentaires",
+          "Dégâts bonus :",
           "Soins",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ missinghealthratio }}% -> {{ missinghealthratioNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -118,13 +61,13 @@
       "name": "Sombre cortège",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YorickW.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 144,
         "y": 96,
-        "full": "YorickW.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -135,6 +78,10 @@
         "label": [
           "Délai de récupération",
           "PV"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ wallhealthtooltip }} -> {{ wallhealthtooltipNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -148,13 +95,13 @@
       "name": "Brume endeuillée",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YorickE.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 192,
         "y": 96,
-        "full": "YorickE.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -168,6 +115,13 @@
           "Délai de récupération",
           "Coût en @AbilityResourceName@",
           "Pourcentage des PV max en dégâts"
+        ],
+        "effect": [
+          "{{ armorshred*100.000000 }}% -> {{ armorshrednl*100.000000 }}%",
+          "{{ hasteamount*100.000000 }}% -> {{ hasteamountnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ healthdamage }}% -> {{ healthdamageNL }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -181,13 +135,13 @@
       "name": "Élégie des Îles",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YorickR.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 240,
         "y": 96,
-        "full": "YorickR.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -200,6 +154,12 @@
           "Dégâts de la marque",
           "Goules de Brume",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ rbigghoulbonusad }} -> {{ rbigghoulbonusadNL }}",
+          "{{ rmarkdamagepercent }}% -> {{ rmarkdamagepercentNL }}%",
+          "{{ rghoulnumbers }} -> {{ rghoulnumbersNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -212,13 +172,13 @@
   "passive": {
     "name": "Berger des âmes",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Yorick_P.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 48,
       "y": 48,
-      "full": "Yorick_P.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "<font color='#FF9900'>Horde maudite :</font> Yorick peut invoquer des Goules de Brume pour attaquer les ennemis proches."
   },
@@ -240,13 +200,13 @@
       "name": "Last Rites",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YorickQ.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 96,
         "y": 96,
-        "full": "YorickQ.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -255,9 +215,14 @@
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
-          "Bonus Damage",
+          "Bonus Damage:",
           "Healing",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ missinghealthratio }}% -> {{ missinghealthratioNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -271,13 +236,13 @@
       "name": "Dark Procession",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YorickW.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 144,
         "y": 96,
-        "full": "YorickW.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -288,6 +253,10 @@
         "label": [
           "Cooldown",
           "Health"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ wallhealthtooltip }} -> {{ wallhealthtooltipNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -301,13 +270,13 @@
       "name": "Mourning Mist",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YorickE.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 192,
         "y": 96,
-        "full": "YorickE.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -321,6 +290,13 @@
           "Cooldown",
           "@AbilityResourceName@ Cost",
           "Maximum Health Damage"
+        ],
+        "effect": [
+          "{{ armorshred*100.000000 }}% -> {{ armorshrednl*100.000000 }}%",
+          "{{ hasteamount*100.000000 }}% -> {{ hasteamountnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ healthdamage }}% -> {{ healthdamageNL }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -334,13 +310,13 @@
       "name": "Eulogy of the Isles",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YorickR.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 240,
         "y": 96,
-        "full": "YorickR.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -353,6 +329,12 @@
           "Mark Damage",
           "Mist Walkers",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ rbigghoulbonusad }} -> {{ rbigghoulbonusadNL }}",
+          "{{ rmarkdamagepercent }}% -> {{ rmarkdamagepercentNL }}%",
+          "{{ rghoulnumbers }} -> {{ rghoulnumbersNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -365,13 +347,13 @@
   "passive_en": {
     "name": "Shepherd of Souls",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Yorick_P.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 48,
       "y": 48,
-      "full": "Yorick_P.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "<font color='#FF9900'>The Cursed Horde:</font> Yorick can summon Mist Walkers to swarm and attack nearby enemies."
   },
@@ -439,6 +421,77 @@
       "num": 50,
       "name": "High Noon Yorick",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "83000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "83001",
+      "num": 1,
+      "name": "Yorick ensevelisseur",
+      "chromas": false
+    },
+    {
+      "id": "83002",
+      "num": 2,
+      "name": "Yorick Pentakill",
+      "chromas": false
+    },
+    {
+      "id": "83003",
+      "num": 3,
+      "name": "Yorick à la pelle pure",
+      "chromas": false
+    },
+    {
+      "id": "83004",
+      "num": 4,
+      "name": "Miaourick",
+      "chromas": true
+    },
+    {
+      "id": "83012",
+      "num": 12,
+      "name": "Yorick résistant",
+      "chromas": true
+    },
+    {
+      "id": "83021",
+      "num": 21,
+      "name": "Yorick Pentakill III : Lost Chapter",
+      "chromas": true
+    },
+    {
+      "id": "83030",
+      "num": 30,
+      "name": "Yorick fleur spirituelle",
+      "chromas": true
+    },
+    {
+      "id": "83040",
+      "num": 40,
+      "name": "Yorick du pulsar sombre",
+      "chromas": true
+    },
+    {
+      "id": "83050",
+      "num": 50,
+      "name": "Yorick de l'Ouest",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "isolde",
+      "type": "lore",
+      "relation": "ally",
+      "note_fr": "Protecteur de la Vierge",
+      "note_en": "Protector of the Maiden"
     }
   ]
 }

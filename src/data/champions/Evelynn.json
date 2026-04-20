@@ -3,139 +3,35 @@
   "key": "28",
   "name": "Evelynn",
   "title": "Démon sadique",
-  "version": "15.23.1",
-  "lore": "Evelynn n'a pas toujours été une chasseresse habile. Elle commença il y a des éons comme une entité primordiale, informe et à peine consciente, qui flottait dans l'insensibilité. Son existence fut éveillée par les Guerres Runiques, une époque de souffrance massive et généralisée sur tout Runeterra.\r\n\r\nAlors que les mortels expérimentaient la douleur, l'angoisse et la perte, l'ombre se mit à frémir. Le silence qu'elle avait connu fut remplacé par les vibrations maniaques d'un monde agonisant. L'entité absorba toute cette douleur, qu'elle perçut comme un plaisir sans bornes. Cette sensation la nourrit et, avec le temps, la transforma en quelque chose de plus : un démon, un parasite spirituel avide qui se nourrit des émotions humaines les plus viles.\r\n\r\nLorsque les guerres cessèrent, la souffrance du monde diminua. Le démon sombra dans le désespoir, réalisant que le seul plaisir qu'il ait jamais connu naissait de la misère des autres. Sans douleur, il ne sentait plus rien. Il comprit alors que s'il ne pouvait pas obtenir la souffrance nécessaire pour prospérer, il devrait la créer lui-même en l'infligeant aux autres.\r\n\r\nAu début, la chasse était difficile. Le démon pouvait se déplacer sans être détecté sous sa forme d'ombre, mais pour toucher un humain, il devait se manifester physiquement. Ses premières tentatives pour se façonner un corps étaient monstrueuses, ce qui effrayait sa proie.\r\n\r\nLe démon comprit qu'il lui fallait une forme qui soit agréable aux humains, qui non seulement les attirerait dans ses griffes, mais qui leur offrirait l'extase née de leurs propres désirs. Cela rendrait leur douleur d'autant plus douce.\r\n\r\nLe démon se mit à étudier ses proies, perfectionnant sa silhouette, apprenant à dire ce qu'elles voulaient entendre et à marcher de manière séduisante. En quelques semaines, il perfectionna son physique, menant des dizaines de victimes amoureuses à une torture mortelle. Bien qu'elle se délecte de leur douleur exquise, Evelynn en veut toujours plus. Les désirs humains sont si petits, et les victimes meurent trop tôt. Leur douleur est trop éphémère.\r\n\r\nEvelynn aspire au jour où elle pourra plonger le monde dans un chaos total, lui permettant de retrouver une existence d'extase pure et raptueuse en se nourrissant du chaos de masse.",
+  "version": "16.8.1",
+  "lore": "Dans les sombres failles de Runeterra, le démon nommé Evelynn cherche sa prochaine victime. Elle attire sa proie en se faisant passer pour une femme voluptueuse, et dès que sa cible succombe à ses charmes, Evelynn révèle sa véritable nature. Elle inflige alors à sa victime des tourments indicibles et se repaît de sa douleur. Pour un démon, ce ne sont que des plaisirs innocents. Aux yeux du reste de Runeterra, ce sont des contes terrifiants, qui rappellent les dangers du désir et de la luxure.",
   "tags": [
     "Assassin",
     "Mage"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Evelynn.png",
+    "sprite": "champion1.png",
+    "group": "champion",
     "x": 48,
     "y": 0,
-    "full": "Evelynn.png",
-    "group": "champion",
-    "sprite": "champion1.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "28000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "28001",
-      "num": 1,
-      "name": "Evelynn noire",
-      "chromas": false
-    },
-    {
-      "id": "28002",
-      "num": 2,
-      "name": "Evelynn masquée",
-      "chromas": false
-    },
-    {
-      "id": "28003",
-      "num": 3,
-      "name": "Evelynn tango",
-      "chromas": false
-    },
-    {
-      "id": "28004",
-      "num": 4,
-      "name": "Evelynn perceuse de coffres",
-      "chromas": false
-    },
-    {
-      "id": "28005",
-      "num": 5,
-      "name": "Evelynn lune de sang",
-      "chromas": false
-    },
-    {
-      "id": "28006",
-      "num": 6,
-      "name": "K/DA Evelynn",
-      "chromas": false
-    },
-    {
-      "id": "28007",
-      "num": 7,
-      "name": "K/DA Evelynn prestige",
-      "chromas": false
-    },
-    {
-      "id": "28008",
-      "num": 8,
-      "name": "Evelynn folie sucrée",
-      "chromas": true
-    },
-    {
-      "id": "28015",
-      "num": 15,
-      "name": "K/DA ALL OUT Evelynn",
-      "chromas": true
-    },
-    {
-      "id": "28024",
-      "num": 24,
-      "name": "Evelynn de l'assemblée",
-      "chromas": true
-    },
-    {
-      "id": "28031",
-      "num": 31,
-      "name": "K/DA Evelynn prestige (2022)",
-      "chromas": false
-    },
-    {
-      "id": "28032",
-      "num": 32,
-      "name": "Evelynn fleur spirituelle",
-      "chromas": true
-    },
-    {
-      "id": "28042",
-      "num": 42,
-      "name": "Evelynn combattante spirituelle",
-      "chromas": true
-    },
-    {
-      "id": "28052",
-      "num": 52,
-      "name": "Evelynn de l'Ouest",
-      "chromas": true
-    },
-    {
-      "id": "28053",
-      "num": 53,
-      "name": "Evelynn de l'Ouest prestige",
-      "chromas": false
-    },
-    {
-      "id": "28064",
-      "num": 64,
-      "name": "Evelynn héraut de la nuit",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "EvelynnQ",
       "name": "Piques de haine",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "EvelynnQ.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 96,
         "y": 96,
-        "full": "EvelynnQ.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -145,8 +41,13 @@
       "leveltip": {
         "label": [
           "Dégâts du cirre et des piques",
-          "Dégâts supplémentaires",
+          "Dégâts bonus :",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ hatespikebasedamage }} -> {{ hatespikebasedamageNL }}",
+          "{{ bonusdamagebase }} -> {{ bonusdamagebaseNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -160,13 +61,13 @@
       "name": "Séduction",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "EvelynnW.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 144,
         "y": 96,
-        "full": "EvelynnW.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -181,6 +82,14 @@
           "Dégâts aux monstres",
           "Délai de récupération",
           "Portée"
+        ],
+        "effect": [
+          "{{ e2 }} -> {{ e2NL }}",
+          "{{ monstercharm }} -> {{ monstercharmNL }}",
+          "{{ effect9amount*100.000000 }}% -> {{ effect9amountnl*100.000000 }}%",
+          "{{ e7 }} -> {{ e7NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ castrange }} -> {{ castrangeNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -194,13 +103,13 @@
       "name": "Coup de fouet",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "EvelynnE.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 192,
         "y": 96,
-        "full": "EvelynnE.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -213,6 +122,12 @@
           "Dégâts renforcés",
           "Vitesse de déplacement",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ empowereddamage }} -> {{ empowereddamageNL }}",
+          "{{ speedamount*100.000000 }}% -> {{ speedamountnl*100.000000 }}%",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -226,13 +141,13 @@
       "name": "Faiseuse de veuves",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "EvelynnR.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 240,
         "y": 96,
-        "full": "EvelynnR.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -244,6 +159,11 @@
           "Dégâts",
           "Dégâts renforcés",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ effect1amount*2.400000 }} -> {{ effect1amountnl*2.400000 }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -256,13 +176,13 @@
   "passive": {
     "name": "Ombre démoniaque",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Evelynn_Passive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 48,
       "y": 0,
-      "full": "Evelynn_Passive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "En dehors des combats, Evelynn se plonge dans une Ombre démoniaque. Ombre démoniaque soigne Evelynn quand ses PV sont bas et lui octroie un camouflage à partir du niveau 6."
   },
@@ -278,20 +198,20 @@
   "gender": "Female",
   "species": "Demon",
   "title_en": "Agony's Embrace",
-  "lore_en": "Evelynn was not always a skilled huntress. She began eons ago as something primordial, shapeless, and barely sentient, drifting in numbness. Her existence was roused by the Rune Wars, an era of mass suffering across Runeterra.\r\n\r\nAs mortals began to experience vast amounts of pain, anguish, and loss, the shadow stirred. The silence it had known was replaced by the manic vibrations of an agonized world. The entity drank in all of Runeterra's pain, which it experienced as boundless pleasure. This sensation nourished it, and over time, it transformed into something more: a demon, a ravenous spiritual parasite that fed on the basest of human emotions.\r\n\r\nWhen the wars finally ended, the world's suffering waned. The demon found itself growing desperate, realizing that the only pleasure it had ever known was born of others' misery. Without pain, it felt nothing. It understood then that if the world would not provide the suffering it needed to thrive, it would have to create it by inflicting it upon others.\r\n\r\nAt first, catching prey was a challenge. The demon could move undetected in its shadow form, but to touch a human, it needed to manifest physically. Its early attempts to fashion a body were monstrous, scaring off her prey.\r\n\r\nThe demon realized it needed a shape that was pleasing to humans, one that would not only lure them into its claws but would offer them ecstasy born of their own desires. This would make their pain all the sweeter.\r\n\r\nThe demon began to study its intended prey, perfecting her physique, learning to say what they wanted to hear, and to walk in a manner they found alluring. In a matter of weeks, she perfected her form, leading dozens of enamored victims to be tortured to death at her hands. Though she relishes the exquisite pain of each victim, Evelynn always finds herself wanting more. Human desires are so small, and they always expire too soon. Their pain is too fleeting.\r\n\r\nEvelynn yearns for the day she can plunge the world into utter chaos, allowing her to return to an existence of pure, rapturous ecstasy by feeding on mass suffering.",
+  "lore_en": "Within the dark seams of Runeterra, the demon Evelynn searches for her next victim. She lures in prey with the voluptuous façade of a human female, but once a person succumbs to her charms, Evelynn's true form is unleashed. She then subjects her victim to unspeakable torment, gratifying herself with their pain. To the demon, these liaisons are innocent flings. To the rest of Runeterra, they are ghoulish tales of lust gone awry and horrific reminders of the cost of wanton desire.",
   "spells_en": [
     {
       "id": "EvelynnQ",
       "name": "Hate Spike",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "EvelynnQ.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 96,
         "y": 96,
-        "full": "EvelynnQ.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -301,8 +221,13 @@
       "leveltip": {
         "label": [
           "Lasher and Spike Damage",
-          "Bonus Damage",
+          "Bonus Damage:",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ hatespikebasedamage }} -> {{ hatespikebasedamageNL }}",
+          "{{ bonusdamagebase }} -> {{ bonusdamagebaseNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -316,13 +241,13 @@
       "name": "Allure",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "EvelynnW.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 144,
         "y": 96,
-        "full": "EvelynnW.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -337,6 +262,14 @@
           "Monster Damage",
           "Cooldown",
           "Range"
+        ],
+        "effect": [
+          "{{ e2 }} -> {{ e2NL }}",
+          "{{ monstercharm }} -> {{ monstercharmNL }}",
+          "{{ effect9amount*100.000000 }}% -> {{ effect9amountnl*100.000000 }}%",
+          "{{ e7 }} -> {{ e7NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ castrange }} -> {{ castrangeNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -350,13 +283,13 @@
       "name": "Whiplash",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "EvelynnE.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 192,
         "y": 96,
-        "full": "EvelynnE.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -369,6 +302,12 @@
           "Empowered Damage",
           "Move Speed",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ empowereddamage }} -> {{ empowereddamageNL }}",
+          "{{ speedamount*100.000000 }}% -> {{ speedamountnl*100.000000 }}%",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -382,13 +321,13 @@
       "name": "Last Caress",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "EvelynnR.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 240,
         "y": 96,
-        "full": "EvelynnR.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -400,6 +339,11 @@
           "Damage",
           "Empowered Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ effect1amount*2.400000 }} -> {{ effect1amountnl*2.400000 }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -412,13 +356,13 @@
   "passive_en": {
     "name": "Demon Shade",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Evelynn_Passive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 48,
       "y": 0,
-      "full": "Evelynn_Passive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "When out of combat, Evelynn enters Demon Shade. Demon Shade heals Evelynn when she is low on health and grants Camouflage after level 6."
   },
@@ -528,6 +472,119 @@
       "num": 64,
       "name": "Nightbringer Evelynn",
       "chromas": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "28000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "28001",
+      "num": 1,
+      "name": "Evelynn noire",
+      "chromas": false
+    },
+    {
+      "id": "28002",
+      "num": 2,
+      "name": "Evelynn masquée",
+      "chromas": false
+    },
+    {
+      "id": "28003",
+      "num": 3,
+      "name": "Evelynn tango",
+      "chromas": false
+    },
+    {
+      "id": "28004",
+      "num": 4,
+      "name": "Evelynn perceuse de coffres",
+      "chromas": false
+    },
+    {
+      "id": "28005",
+      "num": 5,
+      "name": "Evelynn lune de sang",
+      "chromas": false
+    },
+    {
+      "id": "28006",
+      "num": 6,
+      "name": "K/DA Evelynn",
+      "chromas": false
+    },
+    {
+      "id": "28007",
+      "num": 7,
+      "name": "K/DA Evelynn prestige",
+      "chromas": false
+    },
+    {
+      "id": "28008",
+      "num": 8,
+      "name": "Evelynn folie sucrée",
+      "chromas": true
+    },
+    {
+      "id": "28015",
+      "num": 15,
+      "name": "K/DA ALL OUT Evelynn",
+      "chromas": true
+    },
+    {
+      "id": "28024",
+      "num": 24,
+      "name": "Evelynn de l'assemblée",
+      "chromas": true
+    },
+    {
+      "id": "28031",
+      "num": 31,
+      "name": "K/DA Evelynn prestige (2022)",
+      "chromas": false
+    },
+    {
+      "id": "28032",
+      "num": 32,
+      "name": "Evelynn fleur spirituelle",
+      "chromas": true
+    },
+    {
+      "id": "28042",
+      "num": 42,
+      "name": "Evelynn combattante spirituelle",
+      "chromas": true
+    },
+    {
+      "id": "28052",
+      "num": 52,
+      "name": "Evelynn de l'Ouest",
+      "chromas": true
+    },
+    {
+      "id": "28053",
+      "num": 53,
+      "name": "Evelynn de l'Ouest prestige",
+      "chromas": false
+    },
+    {
+      "id": "28064",
+      "num": 64,
+      "name": "Evelynn héraut de la nuit",
+      "chromas": false
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Vayne",
+      "type": "champion",
+      "relation": "killer",
+      "note_fr": "A tué ses parents",
+      "note_en": "Killed her parents"
     }
   ]
 }

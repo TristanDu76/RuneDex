@@ -3,120 +3,34 @@
   "key": "134",
   "name": "Syndra",
   "title": "Souveraine obscure",
-  "version": "15.23.1",
-  "lore": "Enfant de Navori, Syndra était une petite fille distraite et incomprise, souvent blâmée pour les malheurs de sa famille. Son seul refuge était un saule-fantôme sacré. C'est sous cet arbre, alors qu'elle était humiliée par son frère, que sa magie s'éveilla brutalement : des orbes sombres jaillirent d'elle, drainant l'essence vitale de l'arbre et le flétrissant instantanément.\n\n Le Temple de Fae'lor : Sa famille, terrifiée, la confia au prêtre Konigen sur l'île de Fae'lor. Syndra passa des années à essayer de tempérer ses émotions, mais elle finit par découvrir que son maître ne l'aidait pas à progresser : il étouffait délibérément sa puissance, craignant sa nature instable.\n\n L'Éveil Meurtrier : Se sentant trahie, la rage de Syndra explosa. Elle tua Konigen avec ses orbes et détruisit le temple. L'Esprit d'Ionia lui-même intervint pour stopper cette accumulation sans précédent d'énergie négative, l'entraînant dans les profondeurs de l'île pour la plonger dans un sommeil magique éternel.\n\n La Libération : Des siècles plus tard, pendant l'invasion de Noxus, Syndra fut réveillée par les protecteurs de l'île. Refusant d'être utilisée comme une arme ou d'être à nouveau emprisonnée, elle déchaîna le chaos.\n\n La Forteresse Volante : Dans un acte de puissance pure, elle arracha les fondations de la forteresse qui la surplombait et la fit s'élever dans les cieux. Depuis ce bastion volant, elle règne seule, refusant de se soumettre aux lois des hommes ou de l'esprit d'Ionia.",
+  "version": "16.8.1",
+  "lore": "Syndra est une effrayante magicienne originaire d'Ionia, aux pouvoirs impressionnants. Enfant, elle perturba les anciens de son village avec sa magie sauvage et incontrôlée. Elle fut confiée à un maître dans l'espoir qu'elle apprendrait à se contrôler, mais elle finit par découvrir que son prétendu mentor limitait ses capacités. Créant des sphères d'énergie noire avec ses sentiments de douleur et de trahison, Syndra jura de détruire quiconque tenterait de la contrôler.",
   "tags": [
     "Mage"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Syndra.png",
+    "sprite": "champion4.png",
+    "group": "champion",
     "x": 48,
     "y": 48,
-    "full": "Syndra.png",
-    "group": "champion",
-    "sprite": "champion4.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "134000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "134001",
-      "num": 1,
-      "name": "Syndra justicière",
-      "chromas": false
-    },
-    {
-      "id": "134002",
-      "num": 2,
-      "name": "Syndra de l'Atlantide",
-      "chromas": false
-    },
-    {
-      "id": "134003",
-      "num": 3,
-      "name": "Syndra dame de carreau",
-      "chromas": false
-    },
-    {
-      "id": "134004",
-      "num": 4,
-      "name": "Syndra des neiges",
-      "chromas": false
-    },
-    {
-      "id": "134005",
-      "num": 5,
-      "name": "SKT T1 Syndra",
-      "chromas": true
-    },
-    {
-      "id": "134006",
-      "num": 6,
-      "name": "Syndra gardienne des étoiles",
-      "chromas": true
-    },
-    {
-      "id": "134007",
-      "num": 7,
-      "name": "Syndra beach-volley",
-      "chromas": true
-    },
-    {
-      "id": "134016",
-      "num": 16,
-      "name": "Syndra rose fanée",
-      "chromas": true
-    },
-    {
-      "id": "134025",
-      "num": 25,
-      "name": "Syndra sorcière",
-      "chromas": true
-    },
-    {
-      "id": "134034",
-      "num": 34,
-      "name": "Syndra gardienne des étoiles prestige",
-      "chromas": false
-    },
-    {
-      "id": "134044",
-      "num": 44,
-      "name": "Syndra fleur spirituelle",
-      "chromas": true
-    },
-    {
-      "id": "134054",
-      "num": 54,
-      "name": "Syndra de l'assemblée",
-      "chromas": true
-    },
-    {
-      "id": "134065",
-      "num": 65,
-      "name": "Syndra ravioles adorées",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "SyndraQ",
       "name": "Sphère noire",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SyndraQ.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 96,
         "y": 96,
-        "full": "SyndraQ.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -127,6 +41,10 @@
         "label": [
           "Coût en @AbilityResourceName@",
           "Dégâts"
+        ],
+        "effect": [
+          "{{ cost }} -> {{ costNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -140,13 +58,13 @@
       "name": "Force de la volonté",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SyndraW.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 144,
         "y": 96,
-        "full": "SyndraW.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -158,6 +76,11 @@
           "Délai de récupération",
           "Coût en @AbilityResourceName@",
           "Dégâts"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -171,13 +94,13 @@
       "name": "Dispersion des faibles",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SyndraE.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 192,
         "y": 96,
-        "full": "SyndraE.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -187,6 +110,9 @@
       "leveltip": {
         "label": [
           "Dégâts"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -200,13 +126,13 @@
       "name": "Déchaînement de puissance",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SyndraR.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 240,
         "y": 96,
-        "full": "SyndraR.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -218,6 +144,11 @@
           "Dégâts",
           "Délai de récupération",
           "Accélération de compétence de Sphère noire"
+        ],
+        "effect": [
+          "{{ damagepersphere }} -> {{ damagepersphereNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ tooltiponlytotalqhaste }} -> {{ tooltipoNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -230,13 +161,13 @@
   "passive": {
     "name": "Transcendance",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "SyndraPassive.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 48,
       "y": 48,
-      "full": "SyndraPassive.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Syndra collecte des éclats de courroux quand elle gagne des niveaux et quand elle blesse des ennemis, ce qui améliore ses compétences.<br><br><font color='#FF9900'>Sphère noire</font> : Syndra peut stocker une charge supplémentaire.<br><font color='#FF9900'>Force de la volonté</font> : dégâts bruts supplémentaires.<br><font color='#FF9900'>Dispersion des faibles</font> : largeur augmentée et ralentit toutes les cibles.<br><font color='#FF9900'>Déchaînement de puissance</font> : exécute les cibles dont les PV sont bas."
   },
@@ -250,20 +181,20 @@
   "gender": "Female",
   "species": "Human",
   "title_en": "the Dark Sovereign",
-  "lore_en": "A child of Navori, Syndra was often blamed for her family's misfortunes due to her lack of focus. Her only solace was a sacred ghost-willow tree. There, under the pressure of her brother's bullying, her magic erupted: dark orbs of negative energy burst forth, draining the life from the ancient tree and turning it to black tar.\n\n The Temple of Fae'lor: Terrified, her family sent her to the priest Konigen on the island of Fae'lor. Syndra spent years trying to control her emotions, only to discover that her mentor was deliberately dampening her power, fearing the unpredictable nature of her negativity.\n\n The Murderous Awakening: Feeling betrayed, Syndra's fury peaked. She killed Konigen and demolished the temple. The Spirit of Ionia reacted to this concentration of negative energy by dragging her deep underground, trapping her in a magical slumber to suppress her power.\n\n The Freedom of Chaos: Centuries later, during the war with Noxus, Syndra was awakened. She refused to be a pawn for the Ionians or the invaders. Unleashing her pent-up rage, she destroyed those who sought to control her.\n\n The Flying Fortress: In a display of absolute sovereignty, she ripped the stone fortress from the island's surface and raised it into the sky. From her floating tower, she remains a free and terrifying force, vowed to never be controlled again.",
+  "lore_en": "Syndra is a fearsome Ionian mage with incredible power at her command. As a child, she disturbed the village elders with her reckless and wild magic. She was sent away to be taught greater control, but eventually discovered her supposed mentor was restraining her abilities. Forming her feelings of betrayal and hurt into dark spheres of energy, Syndra has sworn to destroy all who would try to control her.",
   "spells_en": [
     {
       "id": "SyndraQ",
       "name": "Dark Sphere",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SyndraQ.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 96,
         "y": 96,
-        "full": "SyndraQ.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -274,6 +205,10 @@
         "label": [
           "@AbilityResourceName@ Cost",
           "Damage"
+        ],
+        "effect": [
+          "{{ cost }} -> {{ costNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -287,13 +222,13 @@
       "name": "Force of Will",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SyndraW.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 144,
         "y": 96,
-        "full": "SyndraW.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -305,6 +240,11 @@
           "Cooldown",
           "@AbilityResourceName@ Cost",
           "Damage"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -318,13 +258,13 @@
       "name": "Scatter the Weak",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SyndraE.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 192,
         "y": 96,
-        "full": "SyndraE.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -334,6 +274,9 @@
       "leveltip": {
         "label": [
           "Damage"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -347,13 +290,13 @@
       "name": "Unleashed Power",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SyndraR.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 240,
         "y": 96,
-        "full": "SyndraR.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -365,6 +308,11 @@
           "Damage",
           "Cooldown",
           "Dark Sphere Ability Haste"
+        ],
+        "effect": [
+          "{{ damagepersphere }} -> {{ damagepersphereNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ tooltiponlytotalqhaste }} -> {{ tooltipoNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -377,13 +325,13 @@
   "passive_en": {
     "name": "Transcendent",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "SyndraPassive.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 48,
       "y": 48,
-      "full": "SyndraPassive.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Syndra collects Splinters of Wrath from gaining levels and damaging enemies which upgrade her abilities.<br><br><font color='#FF9900'>Dark Sphere</font>: Syndra can hold an additional charge<br><font color='#FF9900'>Force of Will</font>: Bonus true damage.<br><font color='#FF9900'>Scatter the Weak</font>: Increased width and slows all targets<br><font color='#FF9900'>Unleashed Power</font>: Executes low health targets"
   },
@@ -476,5 +424,92 @@
       "name": "Dumpling Darlings Syndra",
       "chromas": true
     }
-  ]
+  ],
+  "skins": [
+    {
+      "id": "134000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "134001",
+      "num": 1,
+      "name": "Syndra justicière",
+      "chromas": false
+    },
+    {
+      "id": "134002",
+      "num": 2,
+      "name": "Syndra de l'Atlantide",
+      "chromas": false
+    },
+    {
+      "id": "134003",
+      "num": 3,
+      "name": "Syndra dame de carreau",
+      "chromas": false
+    },
+    {
+      "id": "134004",
+      "num": 4,
+      "name": "Syndra des neiges",
+      "chromas": false
+    },
+    {
+      "id": "134005",
+      "num": 5,
+      "name": "SKT T1 Syndra",
+      "chromas": true
+    },
+    {
+      "id": "134006",
+      "num": 6,
+      "name": "Syndra gardienne des étoiles",
+      "chromas": true
+    },
+    {
+      "id": "134007",
+      "num": 7,
+      "name": "Syndra beach-volley",
+      "chromas": true
+    },
+    {
+      "id": "134016",
+      "num": 16,
+      "name": "Syndra rose fanée",
+      "chromas": true
+    },
+    {
+      "id": "134025",
+      "num": 25,
+      "name": "Syndra sorcière",
+      "chromas": true
+    },
+    {
+      "id": "134034",
+      "num": 34,
+      "name": "Syndra gardienne des étoiles prestige",
+      "chromas": false
+    },
+    {
+      "id": "134044",
+      "num": 44,
+      "name": "Syndra fleur spirituelle",
+      "chromas": true
+    },
+    {
+      "id": "134054",
+      "num": 54,
+      "name": "Syndra de l'assemblée",
+      "chromas": true
+    },
+    {
+      "id": "134065",
+      "num": 65,
+      "name": "Syndra ravioles adorées",
+      "chromas": true
+    }
+  ],
+  "related_characters": []
 }

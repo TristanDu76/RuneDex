@@ -3,97 +3,35 @@
   "key": "62",
   "name": "Wukong",
   "title": "Roi des singes",
-  "version": "15.23.1",
-  "lore": "Wukong est un Vastaya (au nom de naissance Kong de la tribu Shimon), connu pour son mélange de force, d'agilité et d'intelligence.\n\nSon histoire est intrinsèquement liée à celle de son maître :\n\nLe Défi au Maître : Après la destruction du village de Wuju par Noxus, Maître Yi, le dernier survivant de cet art martial, s'était isolé, brisé par le chagrin et la culpabilité. Kong, le Vastaya, défia Yi en duel.\n\nL'Apprentissage : Bien que facilement vaincu la première fois, Kong revint jour après jour, utilisant des ruses et des tours de plus en plus intelligents. Ces défis forcèrent Yi à se remettre en question et à improviser, ravivant ainsi l'esprit du Wuju en lui.\n\nL'Héritage du Wuju : Impressionné par sa détermination et son potentiel, Maître Yi accepta Kong comme son élève. Il lui enseigna le Wuju, l'art martial ionien sacré axé sur l'union entre la pensée et l'action.\n\nLe Nouveau Nom et l'Arme : Yi donna à Kong le titre honorifique de Wukong et lui fit don de son bâton enchanté (staff). Ce nom et cet art le transforment en plus qu'un simple guerrier, faisant de lui l'héritier direct de cette tradition.\n\nMission Actuelle :\n\nEn tant que dernier tenant du Wuju (avec Yi), Wukong utilise son style de combat pour semer la confusion chez ses adversaires. Il est déterminé à combattre toute menace qui pourrait transformer son foyer, l'Ionia, en ruines et décombres.\n\nWukong combine donc l'agilité et la malice de sa nature Vastaya avec la discipline du Wuju pour devenir un protecteur puissant.",
+  "version": "16.8.1",
+  "lore": "Wukong est un Vastaya qui utilise sa force, son agilité et son intelligence pour semer la confusion parmi ses adversaires et prendre sur eux l'avantage. Après s'être fait un ami en la personne d'un guerrier nommé Maître Yi, Wukong est devenu le dernier tenant d'un art martial antique connu sous le nom de Wuju. Armé de son bâton enchanté, Wukong veut empêcher Ionia de devenir ruines et décombres.",
   "tags": [
     "Fighter",
     "Tank"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "MonkeyKing.png",
+    "sprite": "champion2.png",
+    "group": "champion",
     "x": 192,
     "y": 96,
-    "full": "MonkeyKing.png",
-    "group": "champion",
-    "sprite": "champion2.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "62000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "62001",
-      "num": 1,
-      "name": "Wukong volcanique",
-      "chromas": false
-    },
-    {
-      "id": "62002",
-      "num": 2,
-      "name": "Général Wukong",
-      "chromas": false
-    },
-    {
-      "id": "62003",
-      "num": 3,
-      "name": "Wukong dragon de jade",
-      "chromas": true
-    },
-    {
-      "id": "62004",
-      "num": 4,
-      "name": "Wukong des enfers",
-      "chromas": true
-    },
-    {
-      "id": "62005",
-      "num": 5,
-      "name": "Wukong radieux",
-      "chromas": false
-    },
-    {
-      "id": "62006",
-      "num": 6,
-      "name": "Wukong Lancier Stratus",
-      "chromas": false
-    },
-    {
-      "id": "62007",
-      "num": 7,
-      "name": "Wukong de l'Académie du combat",
-      "chromas": true
-    },
-    {
-      "id": "62016",
-      "num": 16,
-      "name": "Wukong sylvestre",
-      "chromas": true
-    },
-    {
-      "id": "62026",
-      "num": 26,
-      "name": "Wukong du royaume des mechas",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "MonkeyKingDoubleAttack",
       "name": "Écrasement",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MonkeyKingDoubleAttack.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 192,
         "y": 144,
-        "full": "MonkeyKingDoubleAttack.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -106,6 +44,12 @@
           "% réduction d'armure",
           "Portée",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ armorshredpercent*100.000000 }}% -> {{ armorshredpercentnl*100.000000 }}%",
+          "{{ attackrangebonus }} -> {{ attackrangebonusNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -119,13 +63,13 @@
       "name": "Guerrier espiègle",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MonkeyKingDecoy.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 240,
         "y": 144,
-        "full": "MonkeyKingDecoy.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -137,6 +81,11 @@
           "Pourcentage de dégâts",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ clonedamagemod*100.000000 }}% -> {{ clonedamagemodnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -150,13 +99,13 @@
       "name": "Nimbus",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MonkeyKingNimbus.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 288,
         "y": 144,
-        "full": "MonkeyKingNimbus.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -169,6 +118,12 @@
           "Vitesse d'attaque",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ attackspeed*100.000000 }}% -> {{ attackspeednl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -182,13 +137,13 @@
       "name": "Cyclone",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MonkeyKingSpinToWin.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 336,
         "y": 144,
-        "full": "MonkeyKingSpinToWin.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -199,6 +154,10 @@
         "label": [
           "Pourcentage des PV max en dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basepercentmaxhpdmgpersec*200.000000 }}% -> {{ basepercentmaxhpdmgpersecnl*200.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -211,13 +170,13 @@
   "passive": {
     "name": "Peau de pierre",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "MonkeyKingStoneSkin.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 192,
       "y": 96,
-      "full": "MonkeyKingStoneSkin.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Wukong augmente son armure et la régénération de ses PV lorsqu'il est en combat avec des champions ou des monstres (effet cumulable)."
   },
@@ -232,20 +191,20 @@
   "gender": "Male",
   "species": "Vastaya",
   "title_en": "the Monkey King",
-  "lore_en": "Wukong (born Kong of the Shimon tribe) is a Vastaya known for using his unique blend of strength, agility, and intelligence to sow confusion among his opponents and gain the upper hand.\n\nHis story is intrinsically linked to that of his master:\n\nThe Challenge to the Master: Following the destruction of the Wuju village by Noxus, Master Yi, the sole survivor of the martial art, had retreated into broken isolation. Kong, the Vastaya, challenged Yi to a duel.\n\nThe Apprenticeship: Though easily defeated the first time, Kong returned day after day, using increasingly clever tricks and schemes. These challenges forced Yi to react and improvise, reviving the spirit of Wuju within him.\n\nThe Wuju Legacy: Impressed by his determination and potential, Master Yi accepted Kong as his student. He taught him Wuju, the sacred Ionian martial art focused on uniting thought and action.\n\nThe New Name and Weapon: Yi gifted Kong the honorific title of Wukong and gave him an enchanted staff. This name and art transformed him into more than just a warrior, making him the direct heir to this tradition.\n\nCurrent Mission:\n\nAs the last inheritor of Wuju (alongside Yi), Wukong uses his fighting style to sow confusion among his adversaries. He is determined to fight any threat that might turn his home, Ionia, into ruins and rubble.\n\nWukong thus combines the agility and cunning of his Vastaya nature with the discipline of Wuju to become a powerful protector.",
+  "lore_en": "Wukong is a vastayan trickster who uses his strength, agility, and intelligence to confuse his opponents and gain the upper hand. After finding a lifelong friend in the warrior known as Master Yi, Wukong became the last student of the ancient martial art known as Wuju. Armed with an enchanted staff, Wukong seeks to prevent Ionia from falling to ruin.",
   "spells_en": [
     {
       "id": "MonkeyKingDoubleAttack",
       "name": "Crushing Blow",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MonkeyKingDoubleAttack.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 192,
         "y": 144,
-        "full": "MonkeyKingDoubleAttack.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -258,6 +217,12 @@
           "Armor Reduction %",
           "Range",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ armorshredpercent*100.000000 }}% -> {{ armorshredpercentnl*100.000000 }}%",
+          "{{ attackrangebonus }} -> {{ attackrangebonusNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -271,13 +236,13 @@
       "name": "Warrior Trickster",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MonkeyKingDecoy.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 240,
         "y": 144,
-        "full": "MonkeyKingDecoy.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -289,6 +254,11 @@
           "Damage Percent",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ clonedamagemod*100.000000 }}% -> {{ clonedamagemodnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -302,13 +272,13 @@
       "name": "Nimbus Strike",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MonkeyKingNimbus.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 288,
         "y": 144,
-        "full": "MonkeyKingNimbus.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -321,6 +291,12 @@
           "Attack Speed",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ attackspeed*100.000000 }}% -> {{ attackspeednl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -334,13 +310,13 @@
       "name": "Cyclone",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MonkeyKingSpinToWin.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 336,
         "y": 144,
-        "full": "MonkeyKingSpinToWin.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -351,6 +327,10 @@
         "label": [
           "Maximum Health Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basepercentmaxhpdmgpersec*200.000000 }}% -> {{ basepercentmaxhpdmgpersecnl*200.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -363,13 +343,13 @@
   "passive_en": {
     "name": "Stone Skin",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "MonkeyKingStoneSkin.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 192,
       "y": 96,
-      "full": "MonkeyKingStoneSkin.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Wukong gains stacking armor and max health regeneration while fighting champions and monsters."
   },
@@ -438,6 +418,84 @@
       "num": 26,
       "name": "Mecha Kingdoms Wukong",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "62000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "62001",
+      "num": 1,
+      "name": "Wukong volcanique",
+      "chromas": false
+    },
+    {
+      "id": "62002",
+      "num": 2,
+      "name": "Général Wukong",
+      "chromas": false
+    },
+    {
+      "id": "62003",
+      "num": 3,
+      "name": "Wukong dragon de jade",
+      "chromas": true
+    },
+    {
+      "id": "62004",
+      "num": 4,
+      "name": "Wukong des enfers",
+      "chromas": true
+    },
+    {
+      "id": "62005",
+      "num": 5,
+      "name": "Wukong radieux",
+      "chromas": false
+    },
+    {
+      "id": "62006",
+      "num": 6,
+      "name": "Wukong Lancier Stratus",
+      "chromas": false
+    },
+    {
+      "id": "62007",
+      "num": 7,
+      "name": "Wukong de l'Académie du combat",
+      "chromas": true
+    },
+    {
+      "id": "62016",
+      "num": 16,
+      "name": "Wukong sylvestre",
+      "chromas": true
+    },
+    {
+      "id": "62026",
+      "num": 26,
+      "name": "Wukong du royaume des mechas",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "MasterYi",
+      "type": "champion",
+      "relation": "mentor",
+      "note_fr": "Maître Wuju",
+      "note_en": "Wuju Master"
+    },
+    {
+      "id": "Ahri",
+      "type": "champion",
+      "relation": "friend",
+      "note_fr": "Ami Vastaya",
+      "note_en": "Vastaya friend"
     }
   ]
 }

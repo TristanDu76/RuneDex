@@ -1,0 +1,4141 @@
+[
+  {
+    "id": "ambessa",
+    "name": "Ambessa",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Ambessa.png",
+    "factionKey": "noxus",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "amara",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "azizi-medarda",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "boram-darkwill",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "caprian",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "elora",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "gert",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "gorgeous-man",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "huck",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "isha",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "jago",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kino-medarda",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "lest",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "loris-the-shield-of-piltover",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "maddie",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "medarda-jago",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "menelik-medarda",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "mion-of-binan",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "renni",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rennis-son",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rictus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rudo",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "salo",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "scar-the-blazing-firelight",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "scar",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "sevika",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "steb-the-silent-guardian",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "steb",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tora",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "valif",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "vander",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "warden-of-stillwater",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "annie",
+    "name": "Annie",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Annie.png",
+    "factionKey": "noxus",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "amumu",
+        "type": "champion",
+        "relation": "friend",
+        "auto_generated": false,
+        "note_fr": "Veut être son ami",
+        "note_en": "Wants to be friends"
+      },
+      {
+        "id": "tybaulk",
+        "type": "lore",
+        "relation": "ally",
+        "auto_generated": false,
+        "note_fr": "Hôte",
+        "note_en": "Host"
+      },
+      {
+        "id": "amoline-kiosar-hastur",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "daani",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "daisy-hastur",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "faye",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "fynn-retrick",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "gregori-hastur",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "leanna-hastur",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "sydell-kythera",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "telsi",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "briar",
+    "name": "Briar",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Briar.png",
+    "factionKey": "noxus",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": []
+  },
+  {
+    "id": "cassiopeia",
+    "name": "Cassiopeia",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Cassiopeia.png",
+    "factionKey": "noxus",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "marcus_soreana_du_couteau",
+        "type": "lore",
+        "relation": "parent",
+        "auto_generated": false
+      },
+      {
+        "id": "katarina",
+        "type": "champion",
+        "relation": "sister",
+        "auto_generated": false
+      },
+      {
+        "id": "marcus-du-couteau",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "soreana-du-couteau",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "darius",
+    "name": "Darius",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Darius.png",
+    "factionKey": "noxus",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "draven",
+        "type": "champion",
+        "relation": "brother",
+        "auto_generated": false
+      },
+      {
+        "id": "swain",
+        "type": "champion",
+        "relation": "ally",
+        "auto_generated": false,
+        "note_fr": "Grand Général",
+        "note_en": "Grand General"
+      },
+      {
+        "id": "benn-farron",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "boram-darkwill",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "commander-emystan",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "cyrus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "erzsi",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "farron",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "guile",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "invetia-varn",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "quilletta-varn",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tamara",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "draven",
+    "name": "Draven",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Draven.png",
+    "factionKey": "noxus",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "darius",
+        "type": "champion",
+        "relation": "brother",
+        "auto_generated": false
+      },
+      {
+        "id": "beryn",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "boram-darkwill",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "cyrus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "invetia-varn",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "karl",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kato-the-arm",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "quilletta-varn",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "shiraza-the-blade",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tamara",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "thea",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "vessid",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "karthus",
+    "name": "Karthus",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Karthus.png",
+    "factionKey": "noxus",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": []
+  },
+  {
+    "id": "katarina",
+    "name": "Katarina",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Katarina.png",
+    "factionKey": "noxus",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "swain",
+        "type": "champion",
+        "relation": "ally",
+        "auto_generated": false,
+        "note_fr": "Grand Général",
+        "note_en": "Grand General"
+      },
+      {
+        "id": "marcus_soreana_du_couteau",
+        "type": "lore",
+        "relation": "parent",
+        "auto_generated": false
+      },
+      {
+        "id": "cassiopeia",
+        "type": "champion",
+        "relation": "sister",
+        "auto_generated": false
+      },
+      {
+        "id": "talon",
+        "type": "champion",
+        "relation": "adoptive-brother",
+        "auto_generated": false,
+        "note_fr": "Frère adoptif",
+        "note_en": "Adoptive brother"
+      },
+      {
+        "id": "arrika",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "drann-hagarr",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "jaredan",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "jarvan-iii",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "marcus-du-couteau",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rache",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "soreana-du-couteau",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "warmason-khogan",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "kayn",
+    "name": "Kayn",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Kayn.png",
+    "factionKey": "noxus",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "zed",
+        "type": "champion",
+        "relation": "student",
+        "auto_generated": false,
+        "note_fr": "Élève favori / Successeur",
+        "note_en": "Favorite student / Successor"
+      },
+      {
+        "id": "rhaast",
+        "type": "lore",
+        "relation": "host",
+        "auto_generated": false,
+        "note_fr": "Tente de contrôler Kayn.",
+        "note_en": "Attempts to control Kayn."
+      },
+      {
+        "id": "jun",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kusho",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "lui",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "mihira",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "ren-shadowblade",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "royce",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "shi",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "ting",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "xolaani",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "ysdra",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "yusari",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "kled",
+    "name": "Kled",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Kled.png",
+    "factionKey": "noxus",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "skaarl",
+        "type": "lore",
+        "relation": "friend",
+        "auto_generated": false,
+        "note_fr": "Cavalier",
+        "note_en": "Rider"
+      }
+    ]
+  },
+  {
+    "id": "leblanc",
+    "name": "LeBlanc",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Leblanc.png",
+    "factionKey": "noxus",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "rell",
+        "type": "champion",
+        "relation": "nemesis",
+        "auto_generated": false,
+        "note_fr": "Ancienne tortionnaire cruelle",
+        "note_en": "Cruel former tormentor"
+      },
+      {
+        "id": "swain",
+        "type": "champion",
+        "relation": "rival/secret",
+        "auto_generated": false,
+        "note_fr": "Rival pour le contrôle de Noxus",
+        "note_en": "Rival for control of Noxus"
+      },
+      {
+        "id": "elise",
+        "type": "champion",
+        "relation": "leader/black-rose",
+        "auto_generated": false
+      },
+      {
+        "id": "vladimir",
+        "type": "champion",
+        "relation": "leader/black-rose",
+        "auto_generated": false
+      },
+      {
+        "id": "samira",
+        "type": "champion",
+        "relation": "nemesis",
+        "auto_generated": false,
+        "note_fr": "Leader de la Rose Noire",
+        "note_en": "leader of the black rose"
+      },
+      {
+        "id": "aelana",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "amara",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "amoline-kiosar-hastur",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "auvray",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "berholdt-zaavan",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "boram-darkwill",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "brannin-granth",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "edvin-cortain",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "elora",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "faris-noradi",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "guile",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "hargold-crownguard",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "indari",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "mallat",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "marcus-du-couteau",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "menelik-medarda",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "merrek",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "mion-of-binan",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "no-face-nyam",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "nyam",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "ophelia-noradi",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rictus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rudo",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "shield-sergeant-merrek",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "soreana-du-couteau",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tifalenji",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tora",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tyrus-of-helia",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "valif",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "mordekaiser",
+    "name": "Mordekaiser",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Mordekaiser.png",
+    "factionKey": "noxus",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "rell",
+        "type": "champion",
+        "relation": "enemy/shared",
+        "auto_generated": false,
+        "note_fr": "Créée pour le détruire",
+        "note_en": "Created to destroy him"
+      },
+      {
+        "id": "kindred",
+        "type": "champion",
+        "relation": "rival",
+        "auto_generated": false,
+        "note_fr": "Triche la mort",
+        "note_en": "Cheats death"
+      },
+      {
+        "id": "amoline-kiosar-hastur",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "januk",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "mallat",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "telsi",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "vikrash-the-exuberant",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "rell",
+    "name": "Rell",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Rell.png",
+    "factionKey": "noxus",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "mordekaiser",
+        "type": "champion",
+        "relation": "enemy/shared",
+        "auto_generated": false,
+        "note_fr": "Créée pour le détruire",
+        "note_en": "Created to destroy him"
+      },
+      {
+        "id": "leblanc",
+        "type": "champion",
+        "relation": "nemesis",
+        "auto_generated": false,
+        "note_fr": "Ancienne tortionnaire cruelle",
+        "note_en": "Cruel former tormentor"
+      },
+      {
+        "id": "boram-darkwill",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "caprian",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "indari",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rictus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rudo",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tora",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "valif",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "riven",
+    "name": "Riven",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Riven.png",
+    "factionKey": "noxus",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "arrel-the-tracker",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "asa-konte",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "beryn",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "boram-darkwill",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "commander-emystan",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "erath",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "marit",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "shava-konte",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "souma",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "teneff",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "thea",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tifalenji",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "samira",
+    "name": "Samira",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Samira.png",
+    "factionKey": "noxus",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "leblanc",
+        "type": "champion",
+        "relation": "nemesis",
+        "auto_generated": false,
+        "note_fr": "Leader de la Rose Noire",
+        "note_en": "leader of the black rose"
+      },
+      {
+        "id": "dame-the-despoiler",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "indari",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "inferna",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "jack",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "lani",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "miel",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "smeek",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "sion",
+    "name": "Sion",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Sion.png",
+    "factionKey": "noxus",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "swain",
+        "type": "champion",
+        "relation": "ally",
+        "auto_generated": false,
+        "note_fr": "Arme ressuscitée",
+        "note_en": "Resurrected weapon"
+      },
+      {
+        "id": "boram-darkwill",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "dr-esslanger",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "faris-noradi",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "smolder",
+    "name": "Smolder",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Smolder.png",
+    "factionKey": "noxus",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "erastin-the-disgraced",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "marinos",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "swain",
+    "name": "Swain",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Swain.png",
+    "factionKey": "noxus",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "urgot",
+        "type": "champion",
+        "relation": "nemesis",
+        "auto_generated": false,
+        "note_fr": "L'a trahi et exilé",
+        "note_en": "Betrayed and exiled him"
+      },
+      {
+        "id": "darius",
+        "type": "champion",
+        "relation": "ally",
+        "auto_generated": false,
+        "note_fr": "Grand Général",
+        "note_en": "Grand General"
+      },
+      {
+        "id": "katarina",
+        "type": "champion",
+        "relation": "ally",
+        "auto_generated": false,
+        "note_fr": "Grand Général",
+        "note_en": "Grand General"
+      },
+      {
+        "id": "sion",
+        "type": "champion",
+        "relation": "ally",
+        "auto_generated": false,
+        "note_fr": "Arme ressuscitée",
+        "note_en": "Resurrected weapon"
+      },
+      {
+        "id": "irelia",
+        "type": "champion",
+        "relation": "nemesis/war",
+        "auto_generated": false
+      },
+      {
+        "id": "leblanc",
+        "type": "champion",
+        "relation": "rival/secret",
+        "auto_generated": false,
+        "note_fr": "Rival pour le contrôle de Noxus",
+        "note_en": "Rival for control of Noxus"
+      },
+      {
+        "id": "aurok-glinthorn",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "boram-darkwill",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "brannin-granth",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "guile",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "jarvan-iii",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kalan",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "marcus-du-couteau",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "marit",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "no-face-nyam",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "nyam",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "oditz",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rache",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "royce",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "soreana-du-couteau",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "teneff",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "warmason-khogan",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "ysard-tomyri",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "talon",
+    "name": "Talon",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Talon.png",
+    "factionKey": "noxus",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "marcus_soreana_du_couteau",
+        "type": "lore",
+        "relation": "student/ally",
+        "auto_generated": false,
+        "note_fr": "Apprenti/Allié",
+        "note_en": "Apprentice/Ally"
+      },
+      {
+        "id": "katarina",
+        "type": "champion",
+        "relation": "adoptive-brother",
+        "auto_generated": false,
+        "note_fr": "Frère adoptif",
+        "note_en": "Adoptive brother"
+      },
+      {
+        "id": "drann-hagarr",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "marcus-du-couteau",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rache",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "soreana-du-couteau",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "vladimir",
+    "name": "Vladimir",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Vladimir.png",
+    "factionKey": "noxus",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "leblanc",
+        "type": "champion",
+        "relation": "leader/black-rose",
+        "auto_generated": false
+      },
+      {
+        "id": "clara",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "dr-esslanger",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "edvin-cortain",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "faris-noradi",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kye",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "ophelia-noradi",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "amoline-kiosar-hastur",
+    "name": "Amoline Kiosar-Hastur",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Amoline_Hastur_Render.png?0d24d",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "annie",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "fynn-retrick",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "gregori-hastur",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "leblanc",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "mordekaiser",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "ran",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "telsi",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "arrel-the-tracker",
+    "name": "Arrel the Tracker",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03NX002-full.png?10d61",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "erath",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "marit",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "riven",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "singed",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "teneff",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "tifalenji",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "commander-emystan",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "aurok-glinthorn",
+    "name": "Aurok Glinthorn",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/02NX002-full.png?6078f",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "irelia",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "swain",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "zinneia",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "auvray",
+    "name": "Lady Auvray",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/04NX006-full.png?f6a18",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "aelana",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "ekko",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "leblanc",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "mallat",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "azizi-medarda",
+    "name": "Azizi Medarda",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Ambessa_Mel_Kino_Arcane_Render.jpg?e086a",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "ambessa",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kino-medarda",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "mel",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "wolf",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "menelik-medarda",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rictus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "valif",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "benn-farron",
+    "name": "Benn Farron",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/01NX051-full.png?fdf52",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "darius",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "erzsi",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "farron",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "berholdt-zaavan",
+    "name": "Berholdt Zaavan",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "elise",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "leblanc",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "beryn",
+    "name": "Beryn",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/04NX021-full.png?65846",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "aelana",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "draven",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "riven",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "thea",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "viego",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "brannin-granth",
+    "name": "Brannin Granth",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/LeBlanc_Thorns_of_the_Black_Rose.jpg?b6b60",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "leblanc",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "swain",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "broadmane",
+    "name": "Lord Broadmane",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06NX024-full.png?aeb15",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "jhin",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "clara",
+    "name": "Clara",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/01NX030-full.png?170e5",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "edvin-cortain",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kye",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "ophelia-noradi",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vladimir",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "commander-emystan",
+    "name": "Commander Emystan",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "arrel-the-tracker",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "boram-darkwill",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "cyrus",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "darius",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "marit",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "quilletta-varn",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "riven",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "singed",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "teneff",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "yi",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "cyrus",
+    "name": "Cyrus",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Cyrus_Lord_Commander.jpg?a0b52",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "boram-darkwill",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "darius",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "draven",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "quilletta-varn",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "singed",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "commander-emystan",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "daani",
+    "name": "Daani",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06NX015-full.png?a9f2b",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "annie",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "faye",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "fynn-retrick",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "sydell-kythera",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "telsi",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "daisy-hastur",
+    "name": "Daisy Hastur",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Daisy_Hastur_Render.png?290ef",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "annie",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "gregori-hastur",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "leanna-hastur",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "dame-the-despoiler",
+    "name": "Dame the Despoiler",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/07NX015-full.png?353dc",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "kolo-the-killer",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "samira",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "setts-mother",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "dr-esslanger",
+    "name": "Dr. Esslanger",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05NX004-full.png?53dd4",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "faris-noradi",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "sion",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vladimir",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "drann-hagarr",
+    "name": "Drann Hagarr",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Drann_Image.png?8c283",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "katarina",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "talon",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "edvin-cortain",
+    "name": "Edvin Cortain",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/01NX048-full.png?30579",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "clara",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kye",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "leblanc",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "ophelia-noradi",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vladimir",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "emet-sassen",
+    "name": "Emet Sassen",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/01SI043-full.png?57c9b",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "elise",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "erath",
+    "name": "Erath",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Noxus_Sisterhood_of_War_01.jpg?13548",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "arrel-the-tracker",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "marit",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "riven",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "singed",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "teneff",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "tifalenji",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "erzsi",
+    "name": "Erzsi",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/01NX031-full.png?b838a",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "darius",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "farron",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "benn-farron",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "faris-noradi",
+    "name": "Lady Faris Noradi",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05NX016-full.png?40331",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "leblanc",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "ophelia-noradi",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "sion",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vladimir",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "dr-esslanger",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "faye",
+    "name": "Faye",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06NX008-full.png?d62d3",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "annie",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "daani",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "sydell-kythera",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "fynn-retrick",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "telsi",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "fynn-retrick",
+    "name": "Fynn Retrick",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06NX012-full.png?050c8",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "amoline-kiosar-hastur",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "annie",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "daani",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "faye",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "sydell-kythera",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "telsi",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "gregori-hastur",
+    "name": "Gregori Hastur",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Gregori_Hastur_Render.png?53cc9",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "amoline-kiosar-hastur",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "annie",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "boram-darkwill",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "leanna-hastur",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "ran",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "daisy-hastur",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "guile",
+    "name": "Guile",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "darius",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "leblanc",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "swain",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "indari",
+    "name": "Indari",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/07NX005-full.png?b0c95",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "lani",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "leblanc",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "miel",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "rell",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "samira",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "inferna",
+    "name": "Inferna",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/07BW025-full.png?5b7e0",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "jack",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "lani",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "miel",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "samira",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "invetia-varn",
+    "name": "Invetia Varn",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Invetia_Varn_Steward.jpg?63881",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "darius",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "draven",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "quilletta-varn",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "jaredan",
+    "name": "Jaredan",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Captain_Jaredan.jpg?fe70a",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "katarina",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "lux",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "marcus-du-couteau",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "soreana-du-couteau",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "kalrix",
+    "name": "Captain Kalrix",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/07NX028-full.png?a37da",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": []
+  },
+  {
+    "id": "kato-the-arm",
+    "name": "Kato the Arm",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/01NX024-hd-full.jpg?aeac6",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "draven",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "karl",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "shiraza-the-blade",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vessid",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "kino-medarda",
+    "name": "Kino Medarda",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Kino_Medarda_Render.png?af038",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "ambessa",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "mel",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "amara",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "azizi-medarda",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "elora",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "menelik-medarda",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rictus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rukko",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "valif",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "kye",
+    "name": "Kye",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/01NX032-hd-full.jpg?b9f65",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "clara",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "edvin-cortain",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "ophelia-noradi",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vladimir",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "lani",
+    "name": "Lani",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/07NX001-full.png?142d1",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "indari",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "meg",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "miel",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "samira",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "inferna",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "leanna-hastur",
+    "name": "Leanna Hastur",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Leanna_Hastur_Render.png?73b22",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "annie",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "gregori-hastur",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "daisy-hastur",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "mallat",
+    "name": "Mallat",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/04NX008-full.png?47d49",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "aelana",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "auvray",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "ekko",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "leblanc",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "mordekaiser",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "nilah",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "marcus-du-couteau",
+    "name": "Marcus Du Couteau",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Marcus_and_Soreana_Image.png?49320",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "cassiopeia",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jaredan",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "katarina",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "leblanc",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "soreana-du-couteau",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "swain",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "talon",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "rache",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "warmason-khogan",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "marinos",
+    "name": "Marinos",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "smolder",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "viego",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "marit",
+    "name": "Marit",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03NX009-full.png?89cbf",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "arrel-the-tracker",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "boram-darkwill",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "erath",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "riven",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "singed",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "swain",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "teneff",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "tifalenji",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "commander-emystan",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "menelik-medarda",
+    "name": "Menelik Medarda",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "ambessa",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "azizi-medarda",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "boram-darkwill",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kindred",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kino-medarda",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "leblanc",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "mel",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "rudo",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "miel",
+    "name": "Miel",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/07NX004-full.png?18376",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "indari",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "lani",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "meg",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "samira",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "inferna",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "niander-ordylon",
+    "name": "Niander Ordylon",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Noxus_The_Great_River.jpg?ffabb",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "oditz",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "ysard-tomyri",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "oditz",
+    "name": "Captain Oditz",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Noxus_Chains_Of_Command.jpg?954aa",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "swain",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "ysard-tomyri",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "niander-ordylon",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "quilletta-varn",
+    "name": "Quilletta Varn",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Quilletta_Varn_Steward.jpg?23045",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "darius",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "draven",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "tamara",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "commander-emystan",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "cyrus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "invetia-varn",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "rache",
+    "name": "General Rache",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Rache_Image.png?f6825",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "katarina",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "marcus-du-couteau",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "swain",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "talon",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "shiraza-the-blade",
+    "name": "Shiraza the Blade",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/01NX014-hd-full.jpg?7cd84",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "draven",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "karl",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kato-the-arm",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vessid",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "skaarl",
+    "name": "Skaarl",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Kled_OriginalSkin.jpg?4602f",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "kled",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "soreana-du-couteau",
+    "name": "Soreana Du Couteau",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Marcus_and_Soreana_Image.png?49320",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "cassiopeia",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jaredan",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "katarina",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "leblanc",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "marcus-du-couteau",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "swain",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "talon",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "sydell-kythera",
+    "name": "Sydell Kythera",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06NX013-full.png?4affa",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "annie",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "daani",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "elise",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "faye",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "telsi",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "fynn-retrick",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "telsi",
+    "name": "Telsi",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/08NX014-full.png?db043",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "amoline-kiosar-hastur",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "annie",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "daani",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "faye",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "fynn-retrick",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "mordekaiser",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "sydell-kythera",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "teneff",
+    "name": "Teneff",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03NX005-full.png?190e5",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "arrel-the-tracker",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "erath",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "marit",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "riven",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "singed",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "swain",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "syndra",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "tifalenji",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "commander-emystan",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "thea",
+    "name": "Thea",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/04NX022-full.png?cd5c2",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "beryn",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "draven",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "riven",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "viego",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "tifalenji",
+    "name": "Tifalenji",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03NX001-full.png?fe0b7",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "arrel-the-tracker",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "erath",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "leblanc",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "marit",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "riven",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "teneff",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "tora",
+    "name": "Tora",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "ambessa",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "boram-darkwill",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "leblanc",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "rell",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "rictus",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "vessid",
+    "name": "Vessid",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/01NX009-hd-full.jpg?26b3e",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "draven",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "karl",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kato-the-arm",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "shiraza-the-blade",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "warmason-khogan",
+    "name": "Warmason Khogan",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Khogan_Image.png?df86e",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "katarina",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "marcus-du-couteau",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "swain",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "ysard-tomyri",
+    "name": "Ysard Tomyri",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Noxus_Their_Darkest_Hour.jpg?80430",
+    "factionKey": "noxus",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "oditz",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "swain",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "niander-ordylon",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  }
+]

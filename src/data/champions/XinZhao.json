@@ -3,7 +3,7 @@
   "key": "5",
   "name": "Xin Zhao",
   "title": "Sénéchal de Demacia",
-  "version": "15.23.1",
+  "version": "16.8.1",
   "lore": "Xin Zhao est un guerrier résolu qui sert fidèlement la dynastie régnante des Lightshield. Naguère condamné à se battre dans les arènes de combat de Noxus, il survécut à d'innombrables rencontres de gladiateurs. Mais après avoir été libéré par les forces de Demacia, il jura allégeance à ses braves libérateurs. Armé de sa lance à trois pointes, Xin Zhao combat désormais pour son royaume, défiant ses ennemis avec audace, quelles que soient ses chances de succès.",
   "tags": [
     "Fighter",
@@ -11,101 +11,27 @@
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "XinZhao.png",
+    "sprite": "champion5.png",
+    "group": "champion",
     "x": 384,
     "y": 0,
-    "full": "XinZhao.png",
-    "group": "champion",
-    "sprite": "champion5.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "5000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "5001",
-      "num": 1,
-      "name": "Xin Zhao commando",
-      "chromas": false
-    },
-    {
-      "id": "5002",
-      "num": 2,
-      "name": "Xin Zhao impérial",
-      "chromas": false
-    },
-    {
-      "id": "5003",
-      "num": 3,
-      "name": "Xin Zhao Viscero",
-      "chromas": false
-    },
-    {
-      "id": "5004",
-      "num": 4,
-      "name": "Xin Zhao hussard ailé",
-      "chromas": false
-    },
-    {
-      "id": "5005",
-      "num": 5,
-      "name": "Xin Zhao du royaume en guerre",
-      "chromas": true
-    },
-    {
-      "id": "5006",
-      "num": 6,
-      "name": "Xin Zhao agent secret",
-      "chromas": false
-    },
-    {
-      "id": "5013",
-      "num": 13,
-      "name": "Xin Zhao tueur de dragons",
-      "chromas": true
-    },
-    {
-      "id": "5020",
-      "num": 20,
-      "name": "Xin Zhao défenseur cosmique",
-      "chromas": true
-    },
-    {
-      "id": "5027",
-      "num": 27,
-      "name": "Xin Zhao maraudeur",
-      "chromas": true
-    },
-    {
-      "id": "5036",
-      "num": 36,
-      "name": "Xin Zhao pyrotechnicien",
-      "chromas": true
-    },
-    {
-      "id": "5047",
-      "num": 47,
-      "name": "Xin Zhao des Épreuves du crépuscule",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "XinZhaoQ",
       "name": "Frappe des trois serres",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "XinZhaoQ.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 0,
         "y": 48,
-        "full": "XinZhaoQ.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -114,8 +40,12 @@
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
-          "Dégâts supplémentaires",
+          "Dégâts bonus :",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -129,13 +59,13 @@
       "name": "Vent et foudre",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "XinZhaoW.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 48,
         "y": 48,
-        "full": "XinZhaoW.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -148,6 +78,12 @@
           "Dégâts d'estoc",
           "Coût en @AbilityResourceName@",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ slashbasedamage }} -> {{ slashbasedamageNL }}",
+          "{{ thrustbasedamage }} -> {{ thrustbasedamageNL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -161,13 +97,13 @@
       "name": "Charge audacieuse",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "XinZhaoE.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 96,
         "y": 48,
-        "full": "XinZhaoE.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -178,6 +114,10 @@
         "label": [
           "Dégâts",
           "Vitesse d'attaque"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ effect3amount*100.000000 }}% -> {{ effect3amountnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -191,13 +131,13 @@
       "name": "Garde circulaire",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "XinZhaoR.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 144,
         "y": 48,
-        "full": "XinZhaoR.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -208,6 +148,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -220,13 +164,13 @@
   "passive": {
     "name": "Détermination",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "XinZhaoReworkP.XinZhaoRework.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 384,
       "y": 0,
-      "full": "XinZhaoReworkP.XinZhaoRework.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Toutes les 3 attaques, Xin Zhao inflige des dégâts supplémentaires et récupère des PV."
   },
@@ -248,13 +192,13 @@
       "name": "Three Talon Strike",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "XinZhaoQ.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 0,
         "y": 48,
-        "full": "XinZhaoQ.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -263,8 +207,12 @@
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
-          "Bonus Damage",
+          "Bonus Damage:",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -278,13 +226,13 @@
       "name": "Wind Becomes Lightning",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "XinZhaoW.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 48,
         "y": 48,
-        "full": "XinZhaoW.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -297,6 +245,12 @@
           "Thrust Damage",
           "@AbilityResourceName@ Cost",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ slashbasedamage }} -> {{ slashbasedamageNL }}",
+          "{{ thrustbasedamage }} -> {{ thrustbasedamageNL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -310,13 +264,13 @@
       "name": "Audacious Charge",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "XinZhaoE.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 96,
         "y": 48,
-        "full": "XinZhaoE.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -327,6 +281,10 @@
         "label": [
           "Damage",
           "Attack Speed"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ effect3amount*100.000000 }}% -> {{ effect3amountnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -340,13 +298,13 @@
       "name": "Crescent Guard",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "XinZhaoR.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 144,
         "y": 48,
-        "full": "XinZhaoR.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -357,6 +315,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -369,13 +331,13 @@
   "passive_en": {
     "name": "Determination",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "XinZhaoReworkP.XinZhaoRework.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 384,
       "y": 0,
-      "full": "XinZhaoReworkP.XinZhaoRework.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Every third attack deals bonus damage and heals Xin Zhao."
   },
@@ -456,5 +418,80 @@
       "name": "Trials of Twilight Xin Zhao",
       "chromas": false
     }
-  ]
+  ],
+  "skins": [
+    {
+      "id": "5000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "5001",
+      "num": 1,
+      "name": "Xin Zhao commando",
+      "chromas": false
+    },
+    {
+      "id": "5002",
+      "num": 2,
+      "name": "Xin Zhao impérial",
+      "chromas": false
+    },
+    {
+      "id": "5003",
+      "num": 3,
+      "name": "Xin Zhao Viscero",
+      "chromas": false
+    },
+    {
+      "id": "5004",
+      "num": 4,
+      "name": "Xin Zhao hussard ailé",
+      "chromas": false
+    },
+    {
+      "id": "5005",
+      "num": 5,
+      "name": "Xin Zhao du royaume en guerre",
+      "chromas": true
+    },
+    {
+      "id": "5006",
+      "num": 6,
+      "name": "Xin Zhao agent secret",
+      "chromas": false
+    },
+    {
+      "id": "5013",
+      "num": 13,
+      "name": "Xin Zhao tueur de dragons",
+      "chromas": true
+    },
+    {
+      "id": "5020",
+      "num": 20,
+      "name": "Xin Zhao défenseur cosmique",
+      "chromas": true
+    },
+    {
+      "id": "5027",
+      "num": 27,
+      "name": "Xin Zhao maraudeur",
+      "chromas": true
+    },
+    {
+      "id": "5036",
+      "num": 36,
+      "name": "Xin Zhao pyrotechnicien",
+      "chromas": true
+    },
+    {
+      "id": "5047",
+      "num": 47,
+      "name": "Xin Zhao des Épreuves du crépuscule",
+      "chromas": false
+    }
+  ],
+  "related_characters": []
 }

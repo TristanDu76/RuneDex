@@ -3,169 +3,35 @@
   "key": "81",
   "name": "Ezreal",
   "title": "Explorateur prodigue",
-  "version": "15.23.1",
-  "lore": "Ezreal est né dans un quartier riche de Piltover. Ses parents, des archéologues de renom, étaient souvent absents, ce qui alimenta les fantasmes d'aventure du jeune garçon. Il fut confié à son oncle, le professeur Lymere, qui le confia à des tuteurs stricts. Cependant, Ezreal, doté d'une facilité déconcertante à absorber l'information, considérait l'étude comme une perte de temps. Il excellait à esquiver les gardiens du campus, pratiquant le crochetage de serrure et s'amusant à réarranger les affaires de ses professeurs.\r\n\r\nLe moment le plus important était le retour de ses parents, qui lui racontaient leurs exploits, notamment leur recherche de la tombe perdue de Ne’Zuk, un tyran shurimien réputé pour sa capacité à se téléporter instantanément.\r\n\r\nUn jour, le temps entre les visites de ses parents s'allongea jusqu'à ce qu'ils ne reviennent plus. Son oncle accepta qu'ils avaient péri, mais Ezreal refusa cette conclusion : ils devaient être en vie, quelque part.\r\n\r\nEzreal abandonna ses études et se lança seul à la recherche de ses parents, commençant par la tombe de Ne'Zuk. Il rassembla secrètement des fournitures à l'université et s'embarqua pour Nashramae. Pendant des mois, il suivit les notes méticuleuses de sa mère, s'enfonçant dans des ruines sous le désert de Shurima, affrontant des horreurs et se délectant de la liberté.\r\n\r\nIl réussit finalement là où ses parents avaient échoué : il découvrit la tombe de Ne'Zuk. Le sarcophage était vide, à l'exception d'un gantelet de bronze étincelant avec une matrice cristalline au centre. Dès qu'Ezreal l'enfila, la tombe se referma sur lui. Il découvrit que le gantelet canalisait et amplifiait son essence. Avec un geste instinctif, il se téléporta hors de la structure avant qu'elle ne s'effondre.\r\n\r\nEzreal réalisa que l'arme était un formidable artefact de l'Âge d'Or de Shurima.\r\n\r\nDe retour à Piltover, il se lança d'aventure en aventure, résolvant des énigmes historiques et découvrant des artefacts perdus. Pour Ezreal, ces exploits avaient un but caché : s'il devenait l'aventurier le plus célèbre du monde, ses parents finiraient sûrement par le retrouver. Bien que certains remettent en question les détails de ses anecdotes, Ezreal ne répond pas à ses critiques, convaincu qu'ils sont simplement jaloux.",
+  "version": "16.8.1",
+  "lore": "Aventurier audacieux, doué sans le savoir pour les arts magiques, Ezreal poursuit ses expéditions dans les catacombes oubliées, se bat avec d'antiques malédictions et contourne avec aisance les obstacles les plus impossibles. Son courage et son panache sont sans borne, et il préfère improviser son salut dans les situations critiques, avec pour armes principales sa vivacité d'esprit et son gantelet mystique shurimien, qu'il utilise pour déchaîner de puissants projectiles arcaniques. Une chose est sûre : quand Ezreal est dans les parages, les problèmes ne sont pas loin. Et ils sont partout. Absolument partout.",
   "tags": [
     "Marksman",
     "Mage"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Ezreal.png",
+    "sprite": "champion1.png",
+    "group": "champion",
     "x": 96,
     "y": 0,
-    "full": "Ezreal.png",
-    "group": "champion",
-    "sprite": "champion1.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "81000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "81001",
-      "num": 1,
-      "name": "Ezreal de Nottingham",
-      "chromas": false
-    },
-    {
-      "id": "81002",
-      "num": 2,
-      "name": "Ezreal buteur",
-      "chromas": false
-    },
-    {
-      "id": "81003",
-      "num": 3,
-      "name": "Ezreal de glace",
-      "chromas": true
-    },
-    {
-      "id": "81004",
-      "num": 4,
-      "name": "Ezreal spéléologue",
-      "chromas": false
-    },
-    {
-      "id": "81005",
-      "num": 5,
-      "name": "Ezreal Pulsefire",
-      "chromas": false
-    },
-    {
-      "id": "81006",
-      "num": 6,
-      "name": "TPA Ezreal",
-      "chromas": false
-    },
-    {
-      "id": "81007",
-      "num": 7,
-      "name": "Ezreal séducteur",
-      "chromas": true
-    },
-    {
-      "id": "81008",
-      "num": 8,
-      "name": "Ezreal as de pique",
-      "chromas": false
-    },
-    {
-      "id": "81009",
-      "num": 9,
-      "name": "Ezreal arcade",
-      "chromas": false
-    },
-    {
-      "id": "81018",
-      "num": 18,
-      "name": "Ezreal gardien des étoiles",
-      "chromas": false
-    },
-    {
-      "id": "81019",
-      "num": 19,
-      "name": "SSG Ezreal",
-      "chromas": true
-    },
-    {
-      "id": "81020",
-      "num": 20,
-      "name": "Ezreal gardien des pyjamas",
-      "chromas": false
-    },
-    {
-      "id": "81021",
-      "num": 21,
-      "name": "Ezreal de l'Académie du combat",
-      "chromas": true
-    },
-    {
-      "id": "81022",
-      "num": 22,
-      "name": "Ezreal psychoguerrier",
-      "chromas": false
-    },
-    {
-      "id": "81023",
-      "num": 23,
-      "name": "Ezreal psychoguerrier prestige",
-      "chromas": false
-    },
-    {
-      "id": "81025",
-      "num": 25,
-      "name": "Ezreal protecteur de porcelaine",
-      "chromas": false
-    },
-    {
-      "id": "81033",
-      "num": 33,
-      "name": "Ezreal de la cour féérique",
-      "chromas": false
-    },
-    {
-      "id": "81043",
-      "num": 43,
-      "name": "HEARTSTEEL Ezreal",
-      "chromas": false
-    },
-    {
-      "id": "81044",
-      "num": 44,
-      "name": "Ezreal écailles célestes",
-      "chromas": true
-    },
-    {
-      "id": "81054",
-      "num": 54,
-      "name": "Ezreal écailles célestes prestige",
-      "chromas": false
-    },
-    {
-      "id": "81065",
-      "num": 65,
-      "name": "Ezreal bal masqué de la Rose noire",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "EzrealQ",
       "name": "Tir mystique",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "EzrealQ.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 288,
         "y": 96,
-        "full": "EzrealQ.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -177,6 +43,11 @@
           "Délai de récupération",
           "Coût en @AbilityResourceName@",
           "Dégâts"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -190,13 +61,13 @@
       "name": "Flux essentiel",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "EzrealW.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 336,
         "y": 96,
-        "full": "EzrealW.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -207,6 +78,10 @@
         "label": [
           "Dégâts",
           "Ratio de puissance total"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ apratio*100.000000 }}% -> {{ aprationl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -220,13 +95,13 @@
       "name": "Transfert arcanique",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "EzrealE.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 384,
         "y": 96,
-        "full": "EzrealE.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -237,6 +112,10 @@
         "label": [
           "Délai de récupération",
           "Dégâts"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ e1 }} -> {{ e1NL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -250,13 +129,13 @@
       "name": "Arc térébrant",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "EzrealR.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 432,
         "y": 96,
-        "full": "EzrealR.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -267,6 +146,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -279,13 +162,13 @@
   "passive": {
     "name": "Force grandissante",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Ezreal_RisingSpellForce.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 96,
       "y": 0,
-      "full": "Ezreal_RisingSpellForce.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Ezreal augmente sa vitesse d'attaque chaque fois qu'il touche un ennemi avec une compétence (cumulable jusqu'à 5 fois)."
   },
@@ -297,20 +180,20 @@
   "gender": "Male",
   "species": "Human",
   "title_en": "the Prodigal Explorer",
-  "lore_en": "Ezreal was born into a wealthy neighborhood of Piltover. His parents, renowned archaeologists, were often absent, which fueled the young boy's fantasies of adventure. He was left in the care of his uncle, Professor Lymere, who assigned him strict tutors. However, Ezreal, with an unnerving knack for absorbing information easily, considered studying a waste of time. He excelled at evading campus wardens, practicing lockpicking and navigating the campus unseen.\r\n\r\nThe most important time was when his parents returned, telling him of their exploits, particularly their search for the lost tomb of Ne’Zuk, a Shuriman tyrant rumored to be able to jump instantly from one place to another.\r\n\r\nOne year, the time between his parents' visits grew longer until they did not return at all. His uncle accepted that they had most likely perished, but Ezreal refused this conclusion: they must still be out there somewhere.\r\n\r\nEzreal abandoned his studies and struck out on his own to find his parents, starting with Ne'Zuk's final resting place. He secretly gathered supplies and snuck onto a ship bound for Nashramae. For many months, he followed his mother’s meticulous field notes, delving into ruins beneath the Shuriman desert, facing horrors and relishing the freedom.\r\n\r\nHe finally succeeded where his parents evidently had not: he uncovered Ne'Zuk's tomb. The sarcophagus lay empty, save for a gleaming bronze gauntlet with a crystalline matrix at its center. As soon as Ezreal laid his hands upon it, the tomb turned upon him. He discovered the gauntlet siphoned and amplified his own essence. With an instinctive move, he teleported his way out before the whole structure collapsed.\r\n\r\nEzreal realized the weapon was a fearsome artifact from Shurima's previous age.\r\n\r\nReturning to Piltover, he bounced from adventure to adventure, solving historical riddles and uncovering lost artifacts. For Ezreal, these exploits had a hidden purpose: if he could make a name for himself as the greatest adventurer in the world, his parents would surely return and seek him out in person. While some may dispute the details of his anecdotes, Ezreal never answers his critics, convinced they are merely jealous.",
+  "lore_en": "A dashing adventurer, unknowingly gifted in the magical arts, Ezreal raids long-lost catacombs, tangles with ancient curses, and overcomes seemingly impossible odds with ease. His courage and bravado knowing no bounds, he prefers to improvise his way out of any situation, relying partially on his wits, but mostly on his mystical Shuriman gauntlet, which he uses to unleash devastating arcane blasts. One thing is for sure—whenever Ezreal is around, trouble isn't too far behind. Or ahead. Probably everywhere.",
   "spells_en": [
     {
       "id": "EzrealQ",
       "name": "Mystic Shot",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "EzrealQ.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 288,
         "y": 96,
-        "full": "EzrealQ.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -322,6 +205,11 @@
           "Cooldown",
           "@AbilityResourceName@ Cost",
           "Damage"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -335,13 +223,13 @@
       "name": "Essence Flux",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "EzrealW.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 336,
         "y": 96,
-        "full": "EzrealW.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -352,6 +240,10 @@
         "label": [
           "Damage",
           "Total AP Ratio"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ apratio*100.000000 }}% -> {{ aprationl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -365,13 +257,13 @@
       "name": "Arcane Shift",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "EzrealE.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 384,
         "y": 96,
-        "full": "EzrealE.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -382,6 +274,10 @@
         "label": [
           "Cooldown",
           "Damage"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ e1 }} -> {{ e1NL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -395,13 +291,13 @@
       "name": "Trueshot Barrage",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "EzrealR.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 432,
         "y": 96,
-        "full": "EzrealR.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -412,6 +308,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -424,13 +324,13 @@
   "passive_en": {
     "name": "Rising Spell Force",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Ezreal_RisingSpellForce.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 96,
       "y": 0,
-      "full": "Ezreal_RisingSpellForce.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Ezreal gains increasing Attack Speed each time he successfully hits a spell, stacking up to 5 times."
   },
@@ -570,6 +470,147 @@
       "num": 65,
       "name": "Masque of the Black Rose Ezreal",
       "chromas": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "81000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "81001",
+      "num": 1,
+      "name": "Ezreal de Nottingham",
+      "chromas": false
+    },
+    {
+      "id": "81002",
+      "num": 2,
+      "name": "Ezreal buteur",
+      "chromas": false
+    },
+    {
+      "id": "81003",
+      "num": 3,
+      "name": "Ezreal de glace",
+      "chromas": true
+    },
+    {
+      "id": "81004",
+      "num": 4,
+      "name": "Ezreal spéléologue",
+      "chromas": false
+    },
+    {
+      "id": "81005",
+      "num": 5,
+      "name": "Ezreal Pulsefire",
+      "chromas": false
+    },
+    {
+      "id": "81006",
+      "num": 6,
+      "name": "TPA Ezreal",
+      "chromas": false
+    },
+    {
+      "id": "81007",
+      "num": 7,
+      "name": "Ezreal séducteur",
+      "chromas": true
+    },
+    {
+      "id": "81008",
+      "num": 8,
+      "name": "Ezreal as de pique",
+      "chromas": false
+    },
+    {
+      "id": "81009",
+      "num": 9,
+      "name": "Ezreal arcade",
+      "chromas": false
+    },
+    {
+      "id": "81018",
+      "num": 18,
+      "name": "Ezreal gardien des étoiles",
+      "chromas": false
+    },
+    {
+      "id": "81019",
+      "num": 19,
+      "name": "SSG Ezreal",
+      "chromas": true
+    },
+    {
+      "id": "81020",
+      "num": 20,
+      "name": "Ezreal gardien des pyjamas",
+      "chromas": false
+    },
+    {
+      "id": "81021",
+      "num": 21,
+      "name": "Ezreal de l'Académie du combat",
+      "chromas": true
+    },
+    {
+      "id": "81022",
+      "num": 22,
+      "name": "Ezreal psychoguerrier",
+      "chromas": false
+    },
+    {
+      "id": "81023",
+      "num": 23,
+      "name": "Ezreal psychoguerrier prestige",
+      "chromas": false
+    },
+    {
+      "id": "81025",
+      "num": 25,
+      "name": "Ezreal protecteur de porcelaine",
+      "chromas": false
+    },
+    {
+      "id": "81033",
+      "num": 33,
+      "name": "Ezreal de la cour féérique",
+      "chromas": false
+    },
+    {
+      "id": "81043",
+      "num": 43,
+      "name": "HEARTSTEEL Ezreal",
+      "chromas": false
+    },
+    {
+      "id": "81044",
+      "num": 44,
+      "name": "Ezreal écailles célestes",
+      "chromas": true
+    },
+    {
+      "id": "81054",
+      "num": 54,
+      "name": "Ezreal écailles célestes prestige",
+      "chromas": false
+    },
+    {
+      "id": "81065",
+      "num": 65,
+      "name": "Ezreal bal masqué de la Rose noire",
+      "chromas": false
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Zoe",
+      "type": "champion",
+      "relation": "lover"
     }
   ]
 }

@@ -3,114 +3,34 @@
   "key": "34",
   "name": "Anivia",
   "title": "Cryophénix",
-  "version": "15.23.1",
-  "lore": "Anivia est un ancien demi-dieu du Freljord, représentant le cycle éternel de la vie, de la mort et de la renaissance. Elle est l'âme élémentaire du Freljord lui-même, un symbole d'espoir et un catalyseur de changement pour les tribus du Nord, qui la vénèrent sous le nom de Cryophénix.\r\n\r\nLes mythes racontent qu'Anivia est née de la glace et des vents les plus froids. Sa naissance aurait apporté la neige dans le monde, ses ailes sont l'origine des vents glaciaux, et son plus grand don fut la création de la Vraie Glace, une substance élémentaire non fondante et extrêmement puissante convoitée par les mages et les guerriers.\r\n\r\nLorsque les premiers mortels arrivèrent au Freljord, Anivia les accueillit. Elle les guida vers des vallées abritées, les aidant à s'établir et à s'endurcir contre les éléments. Elle les surveilla pendant des siècles, et ils la vénérèrent en retour. Elle espérait que ces tribus resteraient unies, mais fut déçue par les luttes intestines et les querelles de sang.\r\n\r\nFace aux menaces extérieures, sa colère est redoutable :\r\n\r\n    La légende raconte qu'un roi du sud ayant tenté de s'emparer des terres du nord fut balayé par une tempête de neige qu'Anivia provoqua et qui dura cent ans et un jour.\r\n\r\n    Une autre saga parle d'un sacrifice qu'elle fit contre une armée de gigantesques Balestriders : sachant qu'elle ne pouvait les tuer, elle se fracassa dans la glace sous leurs pieds pour les ensevelir.\r\n\r\nLe don le plus fondamental d'Anivia est son immortalité cyclique. Les sagas décrivent qu'elle a été abattue et tuée plusieurs fois au cours de l'histoire, mais elle renaît toujours de son œuf de glace tant que le Freljord existe. Chaque renaissance coïncide avec l'aube d'une nouvelle ère. Par conséquent, si son apparition est considérée comme une bénédiction, elle est aussi le signe avant-coureur d'une grande menace qui se profile à l'horizon.\r\n\r\nRécemment, des chamans et des marcheurs des esprits affirment qu'Anivia a éclos de nouveau et qu'elle est apparue devant la nouvelle chef des Avarosans, la Gardienne de Guerre Ashe. Certains y voient un signe qu'Anivia croit qu'Ashe est celle qui pourrait enfin réunir le Freljord. Son retour, cependant, pose la question cruciale : quelle terrible menace l'a obligée à se manifester à nouveau ?",
+  "version": "16.8.1",
+  "lore": "Anivia est un esprit ailé bienveillant qui subit des cycles sans fin de vie, de mort et de renaissance pour protéger Freljord. Demi-déesse née de la glace la plus froide et des vents les plus coupants, elle utilise ses pouvoirs élémentaires contre quiconque prétend troubler la paix de sa terre natale. Anivia guide et protège les tribus du Nord, qui la vénèrent comme un symbole d'espoir et la promesse de grands changements. Elle combat de tout son être, sachant que son sacrifice fera vivre sa légende et qu'elle renaîtra dans un lendemain nouveau.",
   "tags": [
     "Mage"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Anivia.png",
+    "sprite": "champion0.png",
+    "group": "champion",
     "x": 336,
     "y": 0,
-    "full": "Anivia.png",
-    "group": "champion",
-    "sprite": "champion0.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "34000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "34001",
-      "num": 1,
-      "name": "Anivia Esprit d'équipe",
-      "chromas": false
-    },
-    {
-      "id": "34002",
-      "num": 2,
-      "name": "Anivia oiseau de proie",
-      "chromas": false
-    },
-    {
-      "id": "34003",
-      "num": 3,
-      "name": "Anivia chasseresse de Noxus",
-      "chromas": false
-    },
-    {
-      "id": "34004",
-      "num": 4,
-      "name": "Anivia Hextech",
-      "chromas": false
-    },
-    {
-      "id": "34005",
-      "num": 5,
-      "name": "Anivia des glaces noires",
-      "chromas": false
-    },
-    {
-      "id": "34006",
-      "num": 6,
-      "name": "Anivia préhistorique",
-      "chromas": false
-    },
-    {
-      "id": "34007",
-      "num": 7,
-      "name": "Anivia reine du carnaval",
-      "chromas": false
-    },
-    {
-      "id": "34008",
-      "num": 8,
-      "name": "Anivia origami",
-      "chromas": true
-    },
-    {
-      "id": "34017",
-      "num": 17,
-      "name": "Anivia oiseau cosmique",
-      "chromas": true
-    },
-    {
-      "id": "34027",
-      "num": 27,
-      "name": "Anivia phénix divin",
-      "chromas": true
-    },
-    {
-      "id": "34037",
-      "num": 37,
-      "name": "Anivamp sorcière",
-      "chromas": true
-    },
-    {
-      "id": "34046",
-      "num": 46,
-      "name": "Anivia héroïne de guerre",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "FlashFrost",
       "name": "Lance de glace",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "FlashFrost.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 288,
         "y": 0,
-        "full": "FlashFrost.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -124,6 +44,13 @@
           "Durée de l'étourdissement :",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ passthroughbasedamage }} -> {{ passthroughbasedamageNL }}",
+          "{{ explosionbasedamage }} -> {{ explosionbasedamageNL }}",
+          "{{ stunduration }} -> {{ stundurationNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -137,13 +64,13 @@
       "name": "Cristallisation",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "Crystallize.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 336,
         "y": 0,
-        "full": "Crystallize.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -153,6 +80,9 @@
       "leveltip": {
         "label": [
           "Largeur"
+        ],
+        "effect": [
+          "{{ e2 }} -> {{ e2NL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -166,13 +96,13 @@
       "name": "Gelure",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "Frostbite.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 384,
         "y": 0,
-        "full": "Frostbite.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -182,6 +112,9 @@
       "leveltip": {
         "label": [
           "Dégâts"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -195,13 +128,13 @@
       "name": "Tempête glaciale",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GlacialStorm.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 432,
         "y": 0,
-        "full": "GlacialStorm.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -215,6 +148,13 @@
           "Ralentissement du gel",
           "Coût en mana par seconde",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ damagepersecond }} -> {{ damagepersecondNL }}",
+          "{{ slowamount }}% -> {{ slowamountNL }}%",
+          "{{ slowpercentempoweredtt }}% -> {{ slowpercentempoweredttNL }}%",
+          "{{ manacostpersecond }} -> {{ manacostpersecondNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} + {{ manacostpersecond }} pts de mana par sec",
@@ -227,13 +167,13 @@
   "passive": {
     "name": "Renaissance",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Anivia_P.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 336,
       "y": 0,
-      "full": "Anivia_P.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Quand elle subit des dégâts mortels, Anivia se transforme en œuf et revient à la vie avec tous ses PV."
   },
@@ -247,20 +187,20 @@
   "gender": "Female",
   "species": "Spirit",
   "title_en": "the Cryophoenix",
-  "lore_en": "Anivia is an ancient Freljordian demi-god, representing the eternal cycle of life, death, and rebirth. She is the elemental soul of the Freljord itself, a symbol of hope, and a sacred catalyst for change for the northern tribes, who venerate her as the Cryophoenix.\r\n\r\nMyths say Anivia was born from the coldest ice and the sharpest winds. Her birth supposedly brought snow into the world, her wings are the source of the frigid winds, and her greatest gift was the creation of True Ice, a pure, unmelting, and extremely potent elemental substance coveted by mages and warriors.\r\n\r\nWhen mortals first arrived in the Freljord, Anivia welcomed them. She guided them to sheltered valleys, helping them establish themselves and slowly harden themselves against the elements. She watched over them for centuries, and they, in turn, worshipped her. She hoped these tribes would remain unified, but was disappointed by the rising infighting and blood-feuds.\r\n\r\nAgainst outside threats, her anger is formidable:\r\n\r\n    Legend tells of a greedy southern king who sought dominion over the northlands; Anivia blasted them with a snowstorm that lasted a century and a day.\r\n\r\n    Another saga speaks of a sacrifice she made against an army of colossal Balestriders: knowing she could not slay them, she shattered her own body into the ice beneath their feet to entomb them.\r\n\r\nAnivia's most fundamental gift is her cyclical immortality. Sagas describe that she has been struck down and slain a handful of times throughout history, but she is always reborn from her ice egg as long as the Freljord exists. Each rebirth coincides with the dawning of a new era. Consequently, while her appearance is regarded as a wondrous blessing, it is also the harbinger of a great threat looming on the horizon.\r\n\r\nRecently, shamans and spirit walkers claim that Anivia has hatched once more and appeared before the new leader of the Avarosan, the Warmother Ashe. Some see this as a sign that Anivia believes Ashe may be the one who can finally reunite the Freljord. Her return, however, poses the crucial question: what terrible threat has compelled her to manifest again?",
+  "lore_en": "Anivia is a benevolent winged spirit who endures endless cycles of life, death, and rebirth to protect the Freljord. A demigod born of unforgiving ice and bitter winds, she wields those elemental powers to thwart any who dare disturb her homeland. Anivia guides and protects the tribes of the harsh north, who revere her as a symbol of hope, and a portent of great change. She fights with every ounce of her being, knowing that through her sacrifice, her memory will endure, and she will be reborn into a new tomorrow.",
   "spells_en": [
     {
       "id": "FlashFrost",
       "name": "Flash Frost",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "FlashFrost.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 288,
         "y": 0,
-        "full": "FlashFrost.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -274,6 +214,13 @@
           "Stun Duration:",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ passthroughbasedamage }} -> {{ passthroughbasedamageNL }}",
+          "{{ explosionbasedamage }} -> {{ explosionbasedamageNL }}",
+          "{{ stunduration }} -> {{ stundurationNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -287,13 +234,13 @@
       "name": "Crystallize",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "Crystallize.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 336,
         "y": 0,
-        "full": "Crystallize.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -303,6 +250,9 @@
       "leveltip": {
         "label": [
           "Width"
+        ],
+        "effect": [
+          "{{ e2 }} -> {{ e2NL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -316,13 +266,13 @@
       "name": "Frostbite",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "Frostbite.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 384,
         "y": 0,
-        "full": "Frostbite.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -332,6 +282,9 @@
       "leveltip": {
         "label": [
           "Damage"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -345,13 +298,13 @@
       "name": "Glacial Storm",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GlacialStorm.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 432,
         "y": 0,
-        "full": "GlacialStorm.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -365,6 +318,13 @@
           "Chilled Slow Amount",
           "Mana Cost Per Second",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ damagepersecond }} -> {{ damagepersecondNL }}",
+          "{{ slowamount }}% -> {{ slowamountNL }}%",
+          "{{ slowpercentempoweredtt }}% -> {{ slowpercentempoweredttNL }}%",
+          "{{ manacostpersecond }} -> {{ manacostpersecondNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} + {{ manacostpersecond }} Mana per second",
@@ -377,13 +337,13 @@
   "passive_en": {
     "name": "Rebirth",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Anivia_P.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 336,
       "y": 0,
-      "full": "Anivia_P.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Upon taking fatal damage, Anivia reverts to an egg and is reborn with full health."
   },
@@ -469,6 +429,100 @@
       "num": 46,
       "name": "Victorious Anivia",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "34000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "34001",
+      "num": 1,
+      "name": "Anivia Esprit d'équipe",
+      "chromas": false
+    },
+    {
+      "id": "34002",
+      "num": 2,
+      "name": "Anivia oiseau de proie",
+      "chromas": false
+    },
+    {
+      "id": "34003",
+      "num": 3,
+      "name": "Anivia chasseresse de Noxus",
+      "chromas": false
+    },
+    {
+      "id": "34004",
+      "num": 4,
+      "name": "Anivia Hextech",
+      "chromas": false
+    },
+    {
+      "id": "34005",
+      "num": 5,
+      "name": "Anivia des glaces noires",
+      "chromas": false
+    },
+    {
+      "id": "34006",
+      "num": 6,
+      "name": "Anivia préhistorique",
+      "chromas": false
+    },
+    {
+      "id": "34007",
+      "num": 7,
+      "name": "Anivia reine du carnaval",
+      "chromas": false
+    },
+    {
+      "id": "34008",
+      "num": 8,
+      "name": "Anivia origami",
+      "chromas": true
+    },
+    {
+      "id": "34017",
+      "num": 17,
+      "name": "Anivia oiseau cosmique",
+      "chromas": true
+    },
+    {
+      "id": "34027",
+      "num": 27,
+      "name": "Anivia phénix divin",
+      "chromas": true
+    },
+    {
+      "id": "34037",
+      "num": 37,
+      "name": "Anivamp sorcière",
+      "chromas": true
+    },
+    {
+      "id": "34046",
+      "num": 46,
+      "name": "Anivia héroïne de guerre",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Volibear",
+      "type": "champion",
+      "relation": "brother/opposed",
+      "note_fr": "Frère et opposée",
+      "note_en": "Brother and opposite"
+    },
+    {
+      "id": "Ornn",
+      "type": "champion",
+      "relation": "sister/ally"
     }
   ]
 }

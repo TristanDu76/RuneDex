@@ -3,96 +3,34 @@
   "key": "142",
   "name": "Zoé",
   "title": "Manifestation du Crépuscule",
-  "version": "15.23.1",
+  "version": "16.8.1",
   "lore": "Incarnation de l'espièglerie, de l'imagination et de l'inconstance, Zoé est une messagère cosmique de Targon, annonciatrice des grands événements qui chamboulent les mondes. Sa simple présence distord les règles mathématiques qui gouvernent dans l'ombre les réalités et, sans pour autant le vouloir, peut même provoquer des cataclysmes. Cela explique peut-être la nonchalance désinvolte avec laquelle Zoé traite ses tâches, préférant consacrer le plus clair de son temps à s'amuser, à jouer des tours aux mortels, bref, à faire tout ce qui lui plaît. Une rencontre avec Zoé peut se révéler joyeuse et porteuse d'optimisme, mais ce n'est souvent qu'une apparence, cachant une vérité extrêmement dangereuse.",
   "tags": [
     "Mage"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Zoe.png",
+    "sprite": "champion5.png",
+    "group": "champion",
     "x": 0,
     "y": 96,
-    "full": "Zoe.png",
-    "group": "champion",
-    "sprite": "champion5.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "142000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "142001",
-      "num": 1,
-      "name": "Zoé cyberpop",
-      "chromas": false
-    },
-    {
-      "id": "142002",
-      "num": 2,
-      "name": "Zoé du petit bain",
-      "chromas": true
-    },
-    {
-      "id": "142009",
-      "num": 9,
-      "name": "Zoé gardienne des étoiles",
-      "chromas": true
-    },
-    {
-      "id": "142018",
-      "num": 18,
-      "name": "Zoé arcaniste",
-      "chromas": false
-    },
-    {
-      "id": "142019",
-      "num": 19,
-      "name": "Zoé arcaniste prestige",
-      "chromas": false
-    },
-    {
-      "id": "142020",
-      "num": 20,
-      "name": "EDG Zoé",
-      "chromas": true
-    },
-    {
-      "id": "142022",
-      "num": 22,
-      "name": "Zoé élue de l'hiver",
-      "chromas": true
-    },
-    {
-      "id": "142033",
-      "num": 33,
-      "name": "Zoé du pulsar sombre",
-      "chromas": true
-    },
-    {
-      "id": "142043",
-      "num": 43,
-      "name": "Zoé manifestation éternelle prestige",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "ZoeQ",
       "name": "Astro-pong !",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZoeQ.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 384,
         "y": 48,
-        "full": "ZoeQ.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -104,6 +42,11 @@
           "Dégâts de base",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -117,13 +60,13 @@
       "name": "Voleuse de sorts",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZoeW.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 432,
         "y": 48,
-        "full": "ZoeW.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -135,6 +78,11 @@
           "Total des dégâts",
           "Vitesse de déplacement",
           "Durée du bonus de vitesse"
+        ],
+        "effect": [
+          "{{ totalbasedamage*3.000000 }} -> {{ totalbasedamagenl*3.000000 }}",
+          "{{ movespeedmod*100.000000 }}% -> {{ movespeedmodnl*100.000000 }}%",
+          "{{ movespeedduration }} -> {{ movespeeddurationNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -148,13 +96,13 @@
       "name": "Bulle soporifique",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZoeE.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 0,
         "y": 96,
-        "full": "ZoeE.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -166,6 +114,11 @@
           "Dégâts",
           "Dégâts supplémentaires max",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -179,13 +132,13 @@
       "name": "Bond dimensionnel",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZoeR.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 48,
         "y": 96,
-        "full": "ZoeR.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -195,6 +148,9 @@
       "leveltip": {
         "label": [
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -207,13 +163,13 @@
   "passive": {
     "name": "Plus d'étincelles !",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Zoe_P.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 0,
       "y": 96,
-      "full": "Zoe_P.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Après avoir lancé une compétence, la prochaine attaque de base de Zoé inflige des dégâts magiques supplémentaires."
   },
@@ -236,13 +192,13 @@
       "name": "Paddle Star!",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZoeQ.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 384,
         "y": 48,
-        "full": "ZoeQ.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -254,6 +210,11 @@
           "Base Damage",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -267,13 +228,13 @@
       "name": "Spell Thief",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZoeW.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 432,
         "y": 48,
-        "full": "ZoeW.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -285,6 +246,11 @@
           "Total Damage",
           "Move Speed",
           "Speed Duration"
+        ],
+        "effect": [
+          "{{ totalbasedamage*3.000000 }} -> {{ totalbasedamagenl*3.000000 }}",
+          "{{ movespeedmod*100.000000 }}% -> {{ movespeedmodnl*100.000000 }}%",
+          "{{ movespeedduration }} -> {{ movespeeddurationNL }}"
         ]
       },
       "resource": "No Cost",
@@ -298,13 +264,13 @@
       "name": "Sleepy Trouble Bubble",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZoeE.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 0,
         "y": 96,
-        "full": "ZoeE.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -316,6 +282,11 @@
           "Damage",
           "Bonus Damage Cap",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -329,13 +300,13 @@
       "name": "Portal Jump",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZoeR.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 48,
         "y": 96,
-        "full": "ZoeR.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -345,6 +316,9 @@
       "leveltip": {
         "label": [
           "Cooldown"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -357,13 +331,13 @@
   "passive_en": {
     "name": "More Sparkles!",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Zoe_P.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 0,
       "y": 96,
-      "full": "Zoe_P.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Zoe's next basic attack after casting a spell deals bonus magic damage."
   },
@@ -431,6 +405,82 @@
       "num": 43,
       "name": "Prestige Eternal Aspect Zoe",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "142000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "142001",
+      "num": 1,
+      "name": "Zoé cyberpop",
+      "chromas": false
+    },
+    {
+      "id": "142002",
+      "num": 2,
+      "name": "Zoé du petit bain",
+      "chromas": true
+    },
+    {
+      "id": "142009",
+      "num": 9,
+      "name": "Zoé gardienne des étoiles",
+      "chromas": true
+    },
+    {
+      "id": "142018",
+      "num": 18,
+      "name": "Zoé arcaniste",
+      "chromas": false
+    },
+    {
+      "id": "142019",
+      "num": 19,
+      "name": "Zoé arcaniste prestige",
+      "chromas": false
+    },
+    {
+      "id": "142020",
+      "num": 20,
+      "name": "EDG Zoé",
+      "chromas": true
+    },
+    {
+      "id": "142022",
+      "num": 22,
+      "name": "Zoé élue de l'hiver",
+      "chromas": true
+    },
+    {
+      "id": "142033",
+      "num": 33,
+      "name": "Zoé du pulsar sombre",
+      "chromas": true
+    },
+    {
+      "id": "142043",
+      "num": 43,
+      "name": "Zoé manifestation éternelle prestige",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Ezreal",
+      "type": "champion",
+      "relation": "lover"
+    },
+    {
+      "id": "AurelionSol",
+      "type": "champion",
+      "relation": "nemesis",
+      "note_fr": "Ennuyeuse cosmique",
+      "note_en": "Cosmic annoyance"
     }
   ]
 }

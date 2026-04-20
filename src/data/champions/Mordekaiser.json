@@ -3,115 +3,35 @@
   "key": "82",
   "name": "Mordekaiser",
   "title": "Revenant de fer",
-  "version": "15.23.1",
-  "lore": "Mordekaiser a commencé sa vie mortelle sous le nom de Sahn-Uzal, un féroce chef de guerre qui a ravagé le nord. Poussé par une foi obscure, il a forgé un empire dans le sang et la mort, croyant qu'il gagnerait une place éternelle au Temple de la Gloire des dieux.\n\nLa Trahison de la Mort : À sa mort, il ne trouva ni gloire ni temple, mais un désert gris et vide (l'au-delà), rempli de murmures discordants. Furieux, il refusa de s'éteindre. Sa volonté, trempée par la rage, le maintint.\n\nLa Première Renaissance : Le murmure de l'au-delà s'est cristallisé en une langue profane (Ochnun). Sahn-Uzal susurra des tentations à travers le voile, promettant sa force à ceux qui l'écouteraient. Un coven de sorciers réussit à le ramener. N'ayant ni chair ni os, ils lièrent son esprit à des plaques de métal sombre forgées à l'image de son ancienne armure. Il se releva, un revenant de fer et de haine.\n\nLe Deuxième Empire : Au lieu de servir les sorciers, il les tua et forgea leurs âmes en une arme adaptée à un empereur de la mort : sa brutale masse, Crépuscule (Nightfall). Il se nomma Mordekaiser. Il érigea la Bastion Immortelle (Immortal Bastion) au centre de son empire. Il ne cherchait pas seulement la conquête, mais la connaissance interdite des esprits et des royaumes au-delà.\n\nLa Trahison : La tyrannie de Mordekaiser lui valut des ennemis. Il fut vaincu par une alliance des tribus Noxii et une trahison de l'intérieur de son propre cercle rapproché (impliquant LeBlanc et la Rose noire). Cette cabale réussit à séparer son âme de son armure, scellant la coquille de fer vide dans un lieu secret.\n\nL'Empire de l'Au-delà : Le fait d'être banni n'était pas une erreur, mais une partie cruciale de son plan. Dans ce désert autrefois vide de l'au-delà, toutes les âmes qui étaient mortes sous son règne l'attendaient, perverties par la magie noire. Il les empêcha de s'éteindre. Les plus forts devinrent son armée éternelle dévouée ; les plus faibles devinrent les matériaux de construction de son Empire de l'Au-delà.\n\nLe Futur : Des siècles se sont écoulés, et un autre empire (Noxus) a émergé autour de la Bastion Immortelle. Ceux qui se souviennent craignent le jour où Mordekaiser trouvera le moyen de revenir définitivement pour régner sur les vivants et les morts, car ils ne connaissent aucun moyen de l'arrêter.",
+  "version": "16.8.1",
+  "lore": "Deux fois abattu et trois fois né, Mordekaiser est un chef de guerre brutal venu d'un lointain passé. Il utilise ses pouvoirs nécromantiques pour lier les âmes à une éternité de servitude. Il n'y a plus guère de gens pour se souvenir de ses anciennes conquêtes ou pour connaître l'étendue de ses vrais pouvoirs. Pourtant, certaines âmes antiques en ont gardé la mémoire et craignent le jour où il prétendra de nouveau régner sur les vivants et les morts.",
   "tags": [
     "Fighter",
     "Mage"
   ],
   "partype": "Bouclier",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Mordekaiser.png",
+    "sprite": "champion2.png",
+    "group": "champion",
     "x": 240,
     "y": 96,
-    "full": "Mordekaiser.png",
-    "group": "champion",
-    "sprite": "champion2.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "82000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "82001",
-      "num": 1,
-      "name": "Mordekaiser le dragonnier",
-      "chromas": false
-    },
-    {
-      "id": "82002",
-      "num": 2,
-      "name": "Mordekaiser infernal",
-      "chromas": false
-    },
-    {
-      "id": "82003",
-      "num": 3,
-      "name": "Mordekaiser Pentakill",
-      "chromas": false
-    },
-    {
-      "id": "82004",
-      "num": 4,
-      "name": "Lord Mordekaiser",
-      "chromas": false
-    },
-    {
-      "id": "82005",
-      "num": 5,
-      "name": "Mordekaiser roi de trèfle",
-      "chromas": false
-    },
-    {
-      "id": "82006",
-      "num": 6,
-      "name": "Mordekaiser du pulsar sombre",
-      "chromas": true
-    },
-    {
-      "id": "82013",
-      "num": 13,
-      "name": "PROJET : Mordekaiser",
-      "chromas": true
-    },
-    {
-      "id": "82023",
-      "num": 23,
-      "name": "Mordekaiser Pentakill III : Lost Chapter",
-      "chromas": true
-    },
-    {
-      "id": "82032",
-      "num": 32,
-      "name": "Mordekaiser de l'Ouest",
-      "chromas": true
-    },
-    {
-      "id": "82042",
-      "num": 42,
-      "name": "Mordekaiser ravageur de cendres",
-      "chromas": true
-    },
-    {
-      "id": "82044",
-      "num": 44,
-      "name": "Mordekaiser dieu ancien",
-      "chromas": true
-    },
-    {
-      "id": "82054",
-      "num": 54,
-      "name": "Mordekaiser Sahn-Uzal",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "MordekaiserQ",
       "name": "Oblitération",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MordekaiserQ.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 384,
         "y": 144,
-        "full": "MordekaiserQ.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -123,6 +43,11 @@
           "Dégâts",
           "Dégâts sur cible unique",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ qbasedamage }} -> {{ qbasedamageNL }}",
+          "{{ isolationscalar*100.000000 }}% -> {{ isolationscalarnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -136,13 +61,13 @@
       "name": "Indestructible",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MordekaiserW.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 432,
         "y": 144,
-        "full": "MordekaiserW.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -153,6 +78,10 @@
         "label": [
           "Pourcentage de soins",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ healingpercent*100.000000 }}% -> {{ healingpercentnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -166,13 +95,13 @@
       "name": "Emprise funeste",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MordekaiserE.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 0,
         "y": 0,
-        "full": "MordekaiserE.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -184,6 +113,11 @@
           "Pourcentage de pénétration magique",
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ magicpen*100.000000 }}% -> {{ magicpennl*100.000000 }}%",
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -197,13 +131,13 @@
       "name": "Royaume des morts",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MordekaiserR.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 48,
         "y": 0,
-        "full": "MordekaiserR.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -213,6 +147,9 @@
       "leveltip": {
         "label": [
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -225,13 +162,13 @@
   "passive": {
     "name": "Vortex de ténèbres",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "MordekaiserPassive.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 240,
       "y": 96,
-      "full": "MordekaiserPassive.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Après 3 attaques ou compétences contre des champions ou des monstres, Mordekaiser gagne un puissant halo de dégâts et augmente sa vitesse de déplacement."
   },
@@ -247,20 +184,20 @@
   "gender": "Male",
   "species": "Undead",
   "title_en": "the Iron Revenant",
-  "lore_en": "Mordekaiser began his mortal life as Sahn-Uzal, a fierce warlord who rampaged across the northern wildlands. Driven by a dark faith, he forged an empire in blood, believing he had earned an eternal seat in the gods' Hall of Bones.\n\nThe Betrayal of Death: When he died, he found no halls or glory, only an empty, gray wasteland (the afterlife) plagued by discordant whispers. Consumed by rage, he refused to fade. His will held him together.\n\nThe First Rebirth: The whispering in the afterlife crystallized into Ochnun, a profane tongue. Sahn-Uzal whispered temptations across the veil, promising his strength to anyone who listened. A coven of sorcerers brought him back. Lacking flesh, they bound his spirit to dark metal plates forged in the likeness of his old armor. He rose, an iron revenant of hate.\n\nThe Second Empire: Instead of serving the sorcerers, he slew them and forged their souls into a weapon fit for an emperor of death: his brutal mace, Nightfall. He named himself Mordekaiser. He raised the Immortal Bastion at the center of his empire, hungering for all forbidden knowledge of spirits and the realms beyond.\n\nThe Betrayal: Mordekaiser's tyranny brought him enemies. He was defeated by an alliance of the Noxii tribes and betrayal from within his inner circle (involving LeBlanc and the Black Rose). This cabal severed the anchors of his soul from his armor, sealing the empty iron shell away.\n\nThe Afterworld Empire: Being cast out was a pivotal part of his plan. In the once-empty wasteland, all the souls who had died under his latest reign were waiting, perverted by dark sorcery. He prevented them from fading. The strongest became his eternal army; the weak became the building blocks and mortar of his Afterworld empire.\n\nThe Future: Centuries have passed. Mordekaiser's name is still whispered in fear by those who study history. The ancient souls who remember him fear the day Mordekaiser finds his own way to return permanently to rule over the living and the dead, knowing of no way to stop him.",
+  "lore_en": "Twice slain and thrice born, Mordekaiser is a brutal warlord from a foregone epoch who uses his necromantic sorcery to bind souls into an eternity of servitude. Few now remain who remember his earlier conquests, or know the true extent of his powers—but there are some ancient souls that do, and they fear the day when he may return to claim dominion over both the living and the dead.",
   "spells_en": [
     {
       "id": "MordekaiserQ",
       "name": "Obliterate",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MordekaiserQ.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 384,
         "y": 144,
-        "full": "MordekaiserQ.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -272,6 +209,11 @@
           "Damage",
           "Isolation Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ qbasedamage }} -> {{ qbasedamageNL }}",
+          "{{ isolationscalar*100.000000 }}% -> {{ isolationscalarnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -285,13 +227,13 @@
       "name": "Indestructible",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MordekaiserW.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 432,
         "y": 144,
-        "full": "MordekaiserW.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -302,6 +244,10 @@
         "label": [
           "Healing Percent",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ healingpercent*100.000000 }}% -> {{ healingpercentnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -315,13 +261,13 @@
       "name": "Death's Grasp",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MordekaiserE.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 0,
         "y": 0,
-        "full": "MordekaiserE.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -333,6 +279,11 @@
           "Percent Magic Penetration",
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ magicpen*100.000000 }}% -> {{ magicpennl*100.000000 }}%",
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -346,13 +297,13 @@
       "name": "Realm of Death",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MordekaiserR.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 48,
         "y": 0,
-        "full": "MordekaiserR.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -362,6 +313,9 @@
       "leveltip": {
         "label": [
           "Cooldown"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -374,13 +328,13 @@
   "passive_en": {
     "name": "Darkness Rise",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "MordekaiserPassive.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 240,
       "y": 96,
-      "full": "MordekaiserPassive.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Mordekaiser gains a powerful damage aura and Move Speed after landing 3 attacks or spells against champions or monsters."
   },
@@ -466,6 +420,114 @@
       "num": 54,
       "name": "Sahn-Uzal Mordekaiser",
       "chromas": false
+    },
+    {
+      "id": "82055",
+      "num": 55,
+      "name": "Prestige Money Miser Mordekaiser",
+      "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "82000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "82001",
+      "num": 1,
+      "name": "Mordekaiser le dragonnier",
+      "chromas": false
+    },
+    {
+      "id": "82002",
+      "num": 2,
+      "name": "Mordekaiser infernal",
+      "chromas": false
+    },
+    {
+      "id": "82003",
+      "num": 3,
+      "name": "Mordekaiser Pentakill",
+      "chromas": false
+    },
+    {
+      "id": "82004",
+      "num": 4,
+      "name": "Lord Mordekaiser",
+      "chromas": false
+    },
+    {
+      "id": "82005",
+      "num": 5,
+      "name": "Mordekaiser roi de trèfle",
+      "chromas": false
+    },
+    {
+      "id": "82006",
+      "num": 6,
+      "name": "Mordekaiser du pulsar sombre",
+      "chromas": true
+    },
+    {
+      "id": "82013",
+      "num": 13,
+      "name": "PROJET : Mordekaiser",
+      "chromas": true
+    },
+    {
+      "id": "82023",
+      "num": 23,
+      "name": "Mordekaiser Pentakill III : Lost Chapter",
+      "chromas": true
+    },
+    {
+      "id": "82032",
+      "num": 32,
+      "name": "Mordekaiser de l'Ouest",
+      "chromas": true
+    },
+    {
+      "id": "82042",
+      "num": 42,
+      "name": "Mordekaiser ravageur de cendres",
+      "chromas": true
+    },
+    {
+      "id": "82044",
+      "num": 44,
+      "name": "Mordekaiser dieu ancien",
+      "chromas": true
+    },
+    {
+      "id": "82054",
+      "num": 54,
+      "name": "Mordekaiser Sahn-Uzal",
+      "chromas": false
+    },
+    {
+      "id": "82055",
+      "num": 55,
+      "name": "Mordekaiser démon d'affaires prestige",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Rell",
+      "type": "champion",
+      "relation": "enemy/shared",
+      "note_fr": "Créée pour le détruire",
+      "note_en": "Created to destroy him"
+    },
+    {
+      "id": "Kindred",
+      "type": "champion",
+      "relation": "rival",
+      "note_fr": "Triche la mort",
+      "note_en": "Cheats death"
     }
   ]
 }

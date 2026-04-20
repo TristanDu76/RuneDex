@@ -1,11 +1,27 @@
 {
   "id": "pim",
   "name": "Pim",
-  "faction": null,
-  "gender": null,
-  "species": null,
-  "description": "Personnage du lore de League of Legends",
-  "image": null,
-  "created_at": "2026-01-26T13:41:34.761Z",
-  "description_en": "League of Legends lore character"
+  "origin_region": "zaun",
+  "region": "zaun",
+  "faction": [
+    "zaun"
+  ],
+  "universe": [
+    "runeterra-prime"
+  ],
+  "gender": "unknown",
+  "species": [
+    "human"
+  ],
+  "status": "unknown",
+  "power_source": "unknown",
+  "image": "https://wiki.leagueoflegends.com/en-us/images/Pim_Arcane_Render.png?51130",
+  "created_at": "2026-03-31T19:31:18.618696+00:00",
+  "description_en": "Pim is a masked, male patron of Babette's brothel. Vi roped him into a conversation with Caitlyn, whom she introduced as an escort named Matilda. Caitlyn clumsily played the persona Vi made up for her while Vi snuck away. The conversation didn't last as the two seemed very awkward with one another and Caitlyn is last seen talking to a female, masked patron.",
+  "related_characters": [
+    "Babette",
+    "Caitlyn",
+    "Vi"
+  ],
+  "description_fr": "Pim est un patron masculin masqué du bordel de Babette. Vi l'a entraîné dans une conversation avec Caitlyn, qu'elle a présentée comme une escorte nommée Matilda. Caitlyn a maladroitement joué le personnage que Vi a inventé pour elle pendant que Vi s'enfuyait. La conversation n'a pas duré car les deux semblaient très gênés l'un avec l'autre et Caitlyn est vue pour la dernière fois en train de parler à une cliente masquée."
 }

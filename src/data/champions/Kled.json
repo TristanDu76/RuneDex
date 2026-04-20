@@ -3,66 +3,34 @@
   "key": "240",
   "name": "Kled",
   "title": "Cavalier colérique",
-  "version": "15.23.1",
-  "lore": "Kled est un Yordle grincheux originaire de la Cité de Bandle. Il s'est installé parmi les tribus Noxiennes après les Guerres runiques. Il est un véritable symbole et une idole pour les soldats de l'empire, bien que ses exploits soient en grande partie mythifiés par des contes populaires (comme le « Retour du Haut Général Maréchal-Sergent »).\n\nLes légendes racontent que Kled a participé à toutes les campagnes de Noxus, qu'il a obtenu tous les titres et qu'il n'a jamais reculé. La vérité est qu'il est un anarchiste qui se bat pour protéger ce qu'il considère comme sa propriété et s'emparer de tout le reste, chargeant sur le dos de sa monture lâche, Skaarl (un drakalops du désert).\n\nLa première mention historique de Kled se situe à la Première Bataille de Drugne. L'armée noxienne, menée par le général Zaavan, était en déroute face aux barbares, le moral au plus bas.\n\nAu lever du soleil, Kled apparut seul sur la colline. Malgré son armure usée et son unique bon œil brûlant de rage, il hurla un ultimatum à la horde barbare, exigeant qu'ils quittent ses terres. Sans attendre de réponse, il chargea en criant. L'acte de bravoure folle de Kled ralluma la fureur désespérée de l'armée noxienne, qui se lança à sa suite dans une mêlée sanglante.\n\nKled se battit avec une ferveur incroyable même après avoir été désarçonné et abandonné par Skaarl. Il était au cœur de la bataille, donnant des coups de pied, mordant et découpant ses ennemis. Son courage, contagieux, inspira les Noxiens à se battre jusqu'au bout.\n\nSkaarl revint finalement, s'écrasant dans l'arrière-garde barbare pour libérer son maître. Une fois remonté, Kled devint un tourbillon de mort, forçant les barbares à fuir.\n\nBien que peu de soldats noxiens aient survécu (ce qui en fait plus une bataille contestée qu'une victoire), cette résistance permit l'arrivée de renforts. Le corps du général Zaavan ne fut jamais retrouvé.\n\nAujourd'hui, il est dit que Kled chevauche partout où les Noxiens marchent. Partout où il passe, on peut trouver des panneaux humoristiques déclarant le nouveau territoire comme « Propriété de Kled ».",
+  "version": "16.8.1",
+  "lore": "Guerrier aussi intrépide que grincheux, Kled est la plus pure incarnation de la fureur de Noxus. C'est un symbole que les soldats de l'empire adorent, dont les officiers se méfient et que la noblesse déteste. Beaucoup affirment que Kled a participé à toutes les campagnes des légions, qu'il a obtenu toutes les distinctions militaires et qu'il n'a jamais reculé devant un combat. Si la véracité des détails est souvent douteuse, une partie de sa légende reste indéniable : quand il charge sur le dos de Skaarl, sa monture un peu froussarde, Kled se bat pour protéger ce qui lui appartient... et s'emparer de tout le reste !",
   "tags": [
     "Fighter"
   ],
   "partype": "Courage",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Kled.png",
+    "sprite": "champion2.png",
+    "group": "champion",
     "x": 288,
     "y": 0,
-    "full": "Kled.png",
-    "group": "champion",
-    "sprite": "champion2.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "240000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "240001",
-      "num": 1,
-      "name": "Sir Kled",
-      "chromas": false
-    },
-    {
-      "id": "240002",
-      "num": 2,
-      "name": "Comte Kledula",
-      "chromas": true
-    },
-    {
-      "id": "240009",
-      "num": 9,
-      "name": "Kled maraudeur",
-      "chromas": true
-    },
-    {
-      "id": "240018",
-      "num": 18,
-      "name": "Kled Croquette",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "KledQ",
       "name": "Piège à ours en laisse",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KledQ.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 96,
         "y": 0,
-        "full": "KledQ.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -75,6 +43,12 @@
           "Dégâts de l'arrachage",
           "Ralentissement",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ firsthitbasedamage }} -> {{ firsthitbasedamageNL }}",
+          "{{ firsthitbasedamage*2.000000 }} -> {{ firsthitbasedamagenl*2.000000 }}",
+          "{{ slowamount*-100.000000 }}% -> {{ slowamountnl*-100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -88,13 +62,13 @@
       "name": "Penchant pour la violence",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KledW.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 144,
         "y": 0,
-        "full": "KledW.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -106,6 +80,11 @@
           "Dégâts fixes",
           "Pourcentage des dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ baseflatdamage }} -> {{ baseflatdamageNL }}",
+          "{{ 4hitmaxhealthdamage }}% -> {{ 4hitmaxhealthdamageNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -119,13 +98,13 @@
       "name": "Joute",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KledE.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 192,
         "y": 0,
-        "full": "KledE.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -136,6 +115,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -149,13 +132,13 @@
       "name": "Chaaaaaaaargez !!!",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KledR.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 240,
         "y": 0,
-        "full": "KledR.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -168,6 +151,12 @@
           "PV max du bouclier",
           "Portée",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ percenthpbase*3.000000 }}% -> {{ percenthpbasenl*3.000000 }}%",
+          "{{ shieldcapbase }} -> {{ shieldcapbaseNL }}",
+          "{{ tooltiprange }} -> {{ tooltiprangeNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -180,13 +169,13 @@
   "passive": {
     "name": "Skaarl, le Lézard froussard",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Kled_P.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 288,
       "y": 0,
-      "full": "Kled_P.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Kled chevauche sa fidèle monture, Skaarl, qui subit les dégâts à sa place. Quand les PV de Skaarl tombent à zéro, Kled est désarçonné.<br><br>Sans monture, les compétences de Kled changent et il inflige moins de dégâts aux champions. Kled peut restaurer le courage de Skaarl en combattant des ennemis. Quand le courage atteint son maximum, Kled se remet en selle avec une partie des PV de Skaarl."
   },
@@ -200,20 +189,20 @@
   "gender": "Male",
   "species": "Yordle",
   "title_en": "the Cantankerous Cavalier",
-  "lore_en": "Kled is a cantankerous Yordle hailing from Bandle City, who made his home among the proud Noxii tribes after the Rune Wars. He is a fierce warrior and an idol for the common soldiery, despite the fact that his exploits are largely mythologized by popular tales (such as \"The Return of the High General Marshal-Sergeant\").\n\nThe legends claim Kled has fought in every Noxian campaign, acquired every military title, and never backed down. The truth is that he is an anarchist who fights to protect what he claims is his own and takes whatever else he can get, charging into battle on his cowardly mount, Skaarl (a desert drakalops).\n\nKled's earliest mention in historical records was at the First Battle of Drugne. The Noxian army, led by General Zaavan, was in rout against barbarian foes, with morale at an all-time low.\n\nAt sunrise, Kled appeared alone on the hilltop. Despite his rusted armor and one good eye burning with contempt, he bellowed an ultimatum to the barbarian horde, demanding they leave his lands. Without waiting for a response, he spurred his steed and screamed the charge. Kled's act of mad bravado ignited the desperate fury of the Noxian warhost, which rushed after him into a bloody melee.\n\nKled fought with unbelievable zeal, even after he was thrown from his saddle and abandoned by Skaarl. He was always at the heart of the battle, kicking, biting, and chopping down foes. His courage was infectious, inspiring the Noxians to make one last stand.\n\nSkaarl eventually returned, crashing into the barbarian rearguard to free its master. With his mount beneath him again, Kled became a whirlwind of death, causing the barbarians to break and run.\n\nThough too few Noxian soldiers survived to call it a victory, the engagement was contested long enough for reinforcements to arrive. General Zaavan's body was never found.\n\nTo this day, it is said Kled rides wherever Noxians march, claiming the spoils of war for himself. Good-humored signs can often be found in his wake proclaiming each new territory \"Property of Kled\".",
+  "lore_en": "A warrior as fearless as he is ornery, the yordle Kled embodies the furious bravado of Noxus. He is an icon beloved by the empire's soldiers, distrusted by its officers, and loathed by the nobility. Many claim Kled has fought in every campaign the legions have waged, has “acquired” every military title, and has never once backed down from a fight. Though the truth of the matter is often questionable, one part of his legend is undeniable: Charging into battle on his un-trusty steed, Skaarl, Kled fights to protect what's his… and to take whatever he can get.",
   "spells_en": [
     {
       "id": "KledQ",
       "name": "Bear Trap on a Rope",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KledQ.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 96,
         "y": 0,
-        "full": "KledQ.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -226,6 +215,12 @@
           "Rip Damage",
           "Slow",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ firsthitbasedamage }} -> {{ firsthitbasedamageNL }}",
+          "{{ firsthitbasedamage*2.000000 }} -> {{ firsthitbasedamagenl*2.000000 }}",
+          "{{ slowamount*-100.000000 }}% -> {{ slowamountnl*-100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -239,13 +234,13 @@
       "name": "Violent Tendencies",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KledW.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 144,
         "y": 0,
-        "full": "KledW.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -257,6 +252,11 @@
           "Flat Damage",
           "Percentage Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ baseflatdamage }} -> {{ baseflatdamageNL }}",
+          "{{ 4hitmaxhealthdamage }}% -> {{ 4hitmaxhealthdamageNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -270,13 +270,13 @@
       "name": "Jousting",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KledE.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 192,
         "y": 0,
-        "full": "KledE.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -287,6 +287,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -300,13 +304,13 @@
       "name": "Chaaaaaaaarge!!!",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KledR.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 240,
         "y": 0,
-        "full": "KledR.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -319,6 +323,12 @@
           "Maximum Shield Health",
           "Range",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ percenthpbase*3.000000 }}% -> {{ percenthpbasenl*3.000000 }}%",
+          "{{ shieldcapbase }} -> {{ shieldcapbaseNL }}",
+          "{{ tooltiprange }} -> {{ tooltiprangeNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -331,13 +341,13 @@
   "passive_en": {
     "name": "Skaarl, the Cowardly Lizard",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Kled_P.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 288,
       "y": 0,
-      "full": "Kled_P.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Kled rides his trusty steed, Skaarl, who takes damage for him. When Skaarl's health depletes, Kled dismounts.<br><br>While dismounted, Kled's abilities change and he deals less damage to champions. Kled can restore Skaarl's courage by fighting enemies. At maximum courage, Kled remounts with a portion of Skaarl's health."
   },
@@ -375,6 +385,47 @@
       "num": 18,
       "name": "Kibble-Head Kled",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "240000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "240001",
+      "num": 1,
+      "name": "Sir Kled",
+      "chromas": false
+    },
+    {
+      "id": "240002",
+      "num": 2,
+      "name": "Comte Kledula",
+      "chromas": true
+    },
+    {
+      "id": "240009",
+      "num": 9,
+      "name": "Kled maraudeur",
+      "chromas": true
+    },
+    {
+      "id": "240018",
+      "num": 18,
+      "name": "Kled Croquette",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "skaarl",
+      "type": "lore",
+      "relation": "friend",
+      "note_fr": "Cavalier",
+      "note_en": "Rider"
     }
   ]
 }

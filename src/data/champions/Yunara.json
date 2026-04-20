@@ -3,48 +3,34 @@
   "key": "804",
   "name": "Yunara",
   "title": "Foi inébranlable",
-  "version": "15.23.1",
+  "version": "16.8.1",
   "lore": "Par son dévouement inébranlable envers Ionia, Yunara a passé des siècles retirée dans le royaume spirituel pour perfectionner sa maîtrise des Aion Er'na, une relique légendaire du Kinkou. Malgré tous les sacrifices qu'elle a accomplis, Yunara a su garder la foi et conserver son objectif : purger le monde de la discorde et du conflit. Mais le monde qui l'attend désormais, assombri par le retour d'une ancienne menace, va mettre sa détermination à rude épreuve.",
   "tags": [
     "Marksman"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Yunara.png",
+    "sprite": "champion5.png",
+    "group": "champion",
     "x": 96,
     "y": 48,
-    "full": "Yunara.png",
-    "group": "champion",
-    "sprite": "champion5.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "804000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "804001",
-      "num": 1,
-      "name": "Yunara fleur spirituelle onsen",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "YunaraQ",
       "name": "Déchaînement spirituel",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YunaraQ.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 288,
         "y": 96,
-        "full": "YunaraQ.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -56,6 +42,11 @@
           "Dégâts à l'impact du passif",
           "Vitesse d'attaque",
           "Dégâts à l'impact de l'actif"
+        ],
+        "effect": [
+          "{{ damage_passive }} -> {{ damage_passiveNL }}",
+          "{{ attack_speed*100.000000 }}% -> {{ attack_speednl*100.000000 }}%",
+          "{{ damage }} -> {{ damageNL }}"
         ]
       },
       "resource": "{{ basecost }} mana",
@@ -69,13 +60,13 @@
       "name": "Arc du jugement | Arc de la ruine",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YunaraW.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 336,
         "y": 96,
-        "full": "YunaraW.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -86,6 +77,10 @@
         "label": [
           "Dégâts",
           "Dégâts par seconde"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ damage*0.600000 }} -> {{ damagenl*0.600000 }}"
         ]
       },
       "resource": "{{ f2.0 }} mana",
@@ -99,13 +94,13 @@
       "name": "Célérité des kanmei | Ombres ineffables",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YunaraE.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 384,
         "y": 96,
-        "full": "YunaraE.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -116,12 +111,16 @@
         "label": [
           "Vitesse de déplacement",
           "Vitesse de déplacement maximum"
+        ],
+        "effect": [
+          "{{ move_speed*100.000000 }}% -> {{ move_speednl*100.000000 }}%",
+          "{{ move_speed*150.000000 }}% -> {{ move_speednl*150.000000 }}%"
         ]
       },
       "resource": "{{ f2.0 }} mana",
       "rangeBurn": "0",
       "datavalues": {},
-      "description": "Yunara gagne de la vitesse de déplacement (ce bonus diminue progressivement) et devient fantomatique. Si elle est en état de transe, elle fait une ruée à la place.",
+      "description": "Yunara gagne de la vitesse de déplacement et devient fantomatique. Si elle est en état de transe, elle fait une ruée à la place.",
       "cooldownBurn": "9"
     },
     {
@@ -129,13 +128,13 @@
       "name": "Transe",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YunaraR.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 432,
         "y": 96,
-        "full": "YunaraR.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -147,6 +146,11 @@
           "Délai de récupération",
           "Arc de la ruine | Dégâts",
           "Ombres ineffables | Vitesse de la ruée"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ rw_damage_base }} -> {{ rw_damage_baseNL }}",
+          "{{ re_dash_speed }} -> {{ re_dash_speedNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -159,13 +163,13 @@
   "passive": {
     "name": "Serment aux Terres premières",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Yunara_Passive.Yunara.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 96,
       "y": 48,
-      "full": "Yunara_Passive.Yunara.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Les coups critiques de Yunara infligent des dégâts magiques bonus."
   },
@@ -188,13 +192,13 @@
       "name": "Cultivation of Spirit",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YunaraQ.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 288,
         "y": 96,
-        "full": "YunaraQ.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -206,6 +210,11 @@
           "Passive On-Hit Damage",
           "Attack Speed",
           "Active On-Hit Damage"
+        ],
+        "effect": [
+          "{{ damage_passive }} -> {{ damage_passiveNL }}",
+          "{{ attack_speed*100.000000 }}% -> {{ attack_speednl*100.000000 }}%",
+          "{{ damage }} -> {{ damageNL }}"
         ]
       },
       "resource": "{{ basecost }} Mana",
@@ -219,13 +228,13 @@
       "name": "Arc of Judgment | Arc of Ruin",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YunaraW.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 336,
         "y": 96,
-        "full": "YunaraW.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -236,6 +245,10 @@
         "label": [
           "Damage",
           "Damage Per Second"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ damage*0.600000 }} -> {{ damagenl*0.600000 }}"
         ]
       },
       "resource": "{{ f2.0 }} Mana",
@@ -249,13 +262,13 @@
       "name": "Kanmei's Steps | Untouchable Shadow",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YunaraE.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 384,
         "y": 96,
-        "full": "YunaraE.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -266,12 +279,16 @@
         "label": [
           "Move Speed",
           "Max Move Speed"
+        ],
+        "effect": [
+          "{{ move_speed*100.000000 }}% -> {{ move_speednl*100.000000 }}%",
+          "{{ move_speed*150.000000 }}% -> {{ move_speednl*150.000000 }}%"
         ]
       },
       "resource": "{{ f2.0 }} Mana",
       "rangeBurn": "0",
       "datavalues": {},
-      "description": "Yunara gains decaying Move Speed and becomes Ghosted. While in her Transcendent State she instead dashes in a direction.",
+      "description": "Yunara gains Move Speed and becomes Ghosted. While in her Transcendent State she instead dashes in a direction.",
       "cooldownBurn": "9"
     },
     {
@@ -279,13 +296,13 @@
       "name": "Transcend One's Self",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YunaraR.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 432,
         "y": 96,
-        "full": "YunaraR.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -297,6 +314,11 @@
           "Cooldown",
           "Arc of Ruin | Damage",
           "Untouchable Shadow | Dash Speed"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ rw_damage_base }} -> {{ rw_damage_baseNL }}",
+          "{{ re_dash_speed }} -> {{ re_dash_speedNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -309,13 +331,13 @@
   "passive_en": {
     "name": "Vow of the First Lands",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Yunara_Passive.Yunara.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 96,
       "y": 48,
-      "full": "Yunara_Passive.Yunara.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Yunara's Critical Strikes deal bonus magic damage."
   },
@@ -336,5 +358,20 @@
       "name": "Spirit Blossom Springs Yunara",
       "chromas": true
     }
-  ]
+  ],
+  "skins": [
+    {
+      "id": "804000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "804001",
+      "num": 1,
+      "name": "Yunara fleur spirituelle onsen",
+      "chromas": true
+    }
+  ],
+  "related_characters": []
 }

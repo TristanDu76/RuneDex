@@ -3,121 +3,35 @@
   "key": "80",
   "name": "Pantheon",
   "title": "Lance éternelle",
-  "version": "15.23.1",
-  "lore": "Atreus est né sur les pentes hostiles de Targon. Il a grandi en s'entraînant pour le Ra'Horak (l'ordre militaire des Rakkor), bien qu'il ne fût jamais le plus fort. Il fut toujours le plus tenace, se relevant après chaque défaite. Il forgea une fraternité avec un autre guerrier, Pylas.\n\nL'Ascension Forcée : Après que l'Aspect du Soleil eut refusé d'aider son peuple, Atreus et Pylas jurèrent de grimper le Mont Targon pour capturer le pouvoir des Aspects. Pylas mourut d'épuisement au sommet, et Atreus, le seul survivant, devint l'hôte de l'Aspect de la Guerre (Pantheon).\n\nL'Usurpation Divine : Pantheon jugea Atreus indigne (car il n'avait connu que la défaite) et prit le contrôle de son corps pour traquer les Darkin. Atreus fut relégué aux coins les plus reculés de son propre esprit.\n\nLa Mort de l'Aspect : Pantheon fut provoqué en duel par le Darkin Aatrox près du Mont Targon. Leur combat déchira le ciel jusqu'à ce que l'impensable se produise : Aatrox réussit à planter sa lame dans la poitrine de Pantheon, un coup qui effaça la constellation de la Guerre des cieux.\n\nLa Renaissance du Mortel : Alors que l'Aspect s'évanouissait, Atreus, l'homme jugé faible, se réveilla. Empalé sur la lame d'Aatrox, il prit une respiration rauque et cracha au visage du Darkin. Sa volonté de vivre et sa colère face à la trahison étaient assez fortes pour repousser la mort qui avait réclamé la Guerre elle-même.\n\nLe Nouveau Chemin : Soigné par Iula, la veuve de Pylas, Atreus réalisa qu'il avait passé sa vie à regarder les étoiles sans se soucier de ce qui se trouvait sur terre. Les mortels se battaient parce qu'ils le devaient, faisant preuve d'une résilience que les dieux ne connaissaient pas.\n\nLe Vrai Pantheon : Atreus découvrit que les envahisseurs barbares, ses anciens ennemis jurés, étaient en fait sous le siège d'Aatrox – ils étaient des mortels pris dans le conflit des puissances supérieures. Rempli d'une rage froide contre le Darkin et les Aspects, il se plaça entre les barbares et Aatrox.\n\nLe Triomphe de la Volonté : Reconnu et moqué par Aatrox, Atreus ne recula pas. Au son des cris des gens, sa volonté pure ranima les armes éteintes de l'Aspect. D'un bond puissant, il frappa, tranchant le bras de l'épée du Darkin. La constellation de la Guerre se ralluma dans le ciel.\n\nAtreus, qui a forcé un dieu à mourir, rejette désormais son propre nom et est devenu un nouveau Pantheon, maniant les armes divines alimentées par la seule force de sa volonté mortelle. Il a fait le vœu de se dresser contre tous ceux qui manient un pouvoir si grand qu'il ne peut que détruire.",
+  "version": "16.8.1",
+  "lore": "Autrefois l'hôte réticent de la Manifestation de la Guerre, Atreus a survécu à la mort de la puissance céleste qui l'habitait, refusant de succomber au coup qui arracha les étoiles mêmes des cieux. Avec le temps, il apprit à accepter le pouvoir de sa mortalité, et la résistance bornée qui y est associée. Atreus s'oppose désormais aux entités divines en tant que Pantheon, ressuscité parmi les mortels, et manie les armes de la Manifestation animées par sa volonté inébranlable sur le champ de bataille.",
   "tags": [
     "Fighter",
     "Assassin"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Pantheon.png",
+    "sprite": "champion3.png",
+    "group": "champion",
     "x": 432,
     "y": 0,
-    "full": "Pantheon.png",
-    "group": "champion",
-    "sprite": "champion3.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "80000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "80001",
-      "num": 1,
-      "name": "Pantheon myrmidon",
-      "chromas": false
-    },
-    {
-      "id": "80002",
-      "num": 2,
-      "name": "Pantheon impitoyable",
-      "chromas": false
-    },
-    {
-      "id": "80003",
-      "num": 3,
-      "name": "Persée Pantheon",
-      "chromas": false
-    },
-    {
-      "id": "80004",
-      "num": 4,
-      "name": "Full Metal Pantheon",
-      "chromas": false
-    },
-    {
-      "id": "80005",
-      "num": 5,
-      "name": "Pantheon dace",
-      "chromas": false
-    },
-    {
-      "id": "80006",
-      "num": 6,
-      "name": "Pantheon tueur de dragons",
-      "chromas": true
-    },
-    {
-      "id": "80007",
-      "num": 7,
-      "name": "Pantheon tueur de zombies",
-      "chromas": false
-    },
-    {
-      "id": "80008",
-      "num": 8,
-      "name": "Pantheon boulanger",
-      "chromas": false
-    },
-    {
-      "id": "80016",
-      "num": 16,
-      "name": "Pantheon Pulsefire",
-      "chromas": true
-    },
-    {
-      "id": "80025",
-      "num": 25,
-      "name": "Pantheon déchu",
-      "chromas": true
-    },
-    {
-      "id": "80026",
-      "num": 26,
-      "name": "Pantheon céleste prestige",
-      "chromas": false
-    },
-    {
-      "id": "80036",
-      "num": 36,
-      "name": "Pantheon conquérant de cendres",
-      "chromas": true
-    },
-    {
-      "id": "80038",
-      "num": 38,
-      "name": "Pantheon de la Chasse éternelle",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "PantheonQ",
       "name": "Lance astrale",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PantheonQ.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 192,
         "y": 48,
-        "full": "PantheonQ.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -129,6 +43,11 @@
           "Dégâts de base",
           "Dégâts de base de l'exécution",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ tapdamage }} -> {{ tapdamageNL }}",
+          "{{ executebasedamage }} -> {{ executebasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -142,13 +61,13 @@
       "name": "Assaut martial",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PantheonW.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 240,
         "y": 48,
-        "full": "PantheonW.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -159,6 +78,10 @@
         "label": [
           "% PV max",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ maxhealthdamage*100.000000 }}% -> {{ maxhealthdamagenl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -172,13 +95,13 @@
       "name": "Égide impénétrable",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PantheonE.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 288,
         "y": 48,
-        "full": "PantheonE.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -189,6 +112,10 @@
         "label": [
           "Délai de récupération",
           "Dégâts du coup de bouclier"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ shieldbasedamage }} -> {{ shieldbasedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -202,13 +129,13 @@
       "name": "Météore",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PantheonR.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 336,
         "y": 48,
-        "full": "PantheonR.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -220,6 +147,11 @@
           "Dégâts",
           "Délai de récupération",
           "Pénétration d'armure"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ armorpenetration*100.000000 }}% -> {{ armorpenetrationnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -232,13 +164,13 @@
   "passive": {
     "name": "Ardeur mortelle",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Pantheon_Passive.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 432,
       "y": 0,
-      "full": "Pantheon_Passive.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Après un certain nombre de compétences ou d'attaques, la prochaine compétence de Pantheon est renforcée."
   },
@@ -253,20 +185,20 @@
   "gender": "Male",
   "species": "Human",
   "title_en": "the Unbreakable Spear",
-  "lore_en": "Atreus was born on the hostile slopes of Targon, named after a star in the constellation of War. He trained for the Ra'Horak (the militant order of the Rakkor), never the strongest, but the most unrelenting, always getting back up. He forged a true brotherhood with a fellow recruit, Pylas.\n\nThe Forced Ascension: After the Aspect of the Sun refused to aid their people, Atreus and Pylas swore to climb Mount Targon to capture the power of the Aspects. Pylas died upon reaching the summit, and Atreus, the sole survivor, was made host to a divine Aspect—the Aspect of War (Pantheon).\n\nDivine Usurpation: Pantheon judged Atreus unworthy (a man who knew only defeat) and took control of his body to pursue its own ends, casting Atreus into the furthest corners of his own mind.\n\nThe Death of the Aspect: Pantheon was goaded into battle by the Darkin Aatrox. Their fight raged until the impossible occurred: Aatrox drove his god-killing blade into Pantheon’s chest, a blow that carved the constellation of War from the heavens.\n\nThe Mortal Reawakening: As the Aspect faded, Atreus, the man it considered weak, awoke once more. Impaled on Aatrox’s blade, he took a ragged breath and spat in the Darkin's face. His will to live, and anger at the betrayal, were enough to stave off the death that had claimed War itself.\n\nThe New Path: Nursed back to health, Atreus realized he had spent his life looking to the stars, never considering the resilience of mortals who fought because they must, knowing death awaited.\n\nThe True Pantheon: Atreus found his former sworn enemies (barbarians) under siege by Aatrox—mortals suffering in the conflicts of greater powers. Filled with cold rage at both the Darkin and the Aspects, he placed himself between the barbarians and Aatrox.\n\nThe Triumph of Will: Aatrox mocked him, but Atreus’s sheer will, upon hearing the cries of the people, reignited the Aspect's dull weapons. With a mighty leap, he struck a blow that severed the Darkin’s sword arm. The constellation of War blazed back to life in the heavens.\n\nAtreus, having endured the death of a god, forsakes his own name and is reborn among mortals as a new Pantheon, wielding the divine weapons fueled only by the unwavering power of his mortal will. He vowed to stand against all who wield power so great it can only destroy.",
+  "lore_en": "Once an unwilling host to the Aspect of War, Atreus survived when the celestial power within him was slain, refusing to succumb to a blow that tore stars from the heavens. In time, he learned to embrace the power of his own mortality, and the stubborn resilience that goes along with it. Atreus now opposes the divine as Pantheon reborn, his unbreakable will fueling the fallen Aspect's weapons on the field of battle.",
   "spells_en": [
     {
       "id": "PantheonQ",
       "name": "Comet Spear",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PantheonQ.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 192,
         "y": 48,
-        "full": "PantheonQ.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -278,6 +210,11 @@
           "Base Damage",
           "Execute Base Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ tapdamage }} -> {{ tapdamageNL }}",
+          "{{ executebasedamage }} -> {{ executebasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -291,13 +228,13 @@
       "name": "Shield Vault",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PantheonW.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 240,
         "y": 48,
-        "full": "PantheonW.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -308,6 +245,10 @@
         "label": [
           "Max Health %",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ maxhealthdamage*100.000000 }}% -> {{ maxhealthdamagenl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -321,13 +262,13 @@
       "name": "Aegis Assault",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PantheonE.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 288,
         "y": 48,
-        "full": "PantheonE.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -338,6 +279,10 @@
         "label": [
           "Cooldown",
           "Shield Slam Damage"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ shieldbasedamage }} -> {{ shieldbasedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -351,13 +296,13 @@
       "name": "Grand Starfall",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PantheonR.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 336,
         "y": 48,
-        "full": "PantheonR.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -369,6 +314,11 @@
           "Damage",
           "Cooldown",
           "Armor Penetration"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ armorpenetration*100.000000 }}% -> {{ armorpenetrationnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -381,13 +331,13 @@
   "passive_en": {
     "name": "Mortal Will",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Pantheon_Passive.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 432,
       "y": 0,
-      "full": "Pantheon_Passive.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Every few spells or attacks, Pantheon's next spell is empowered."
   },
@@ -480,6 +430,108 @@
       "num": 38,
       "name": "Chosen of the Wolf Pantheon",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "80000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "80001",
+      "num": 1,
+      "name": "Pantheon myrmidon",
+      "chromas": false
+    },
+    {
+      "id": "80002",
+      "num": 2,
+      "name": "Pantheon impitoyable",
+      "chromas": false
+    },
+    {
+      "id": "80003",
+      "num": 3,
+      "name": "Persée Pantheon",
+      "chromas": false
+    },
+    {
+      "id": "80004",
+      "num": 4,
+      "name": "Full Metal Pantheon",
+      "chromas": false
+    },
+    {
+      "id": "80005",
+      "num": 5,
+      "name": "Pantheon dace",
+      "chromas": false
+    },
+    {
+      "id": "80006",
+      "num": 6,
+      "name": "Pantheon tueur de dragons",
+      "chromas": true
+    },
+    {
+      "id": "80007",
+      "num": 7,
+      "name": "Pantheon tueur de zombies",
+      "chromas": false
+    },
+    {
+      "id": "80008",
+      "num": 8,
+      "name": "Pantheon boulanger",
+      "chromas": false
+    },
+    {
+      "id": "80016",
+      "num": 16,
+      "name": "Pantheon Pulsefire",
+      "chromas": true
+    },
+    {
+      "id": "80025",
+      "num": 25,
+      "name": "Pantheon déchu",
+      "chromas": true
+    },
+    {
+      "id": "80026",
+      "num": 26,
+      "name": "Pantheon céleste prestige",
+      "chromas": false
+    },
+    {
+      "id": "80036",
+      "num": 36,
+      "name": "Pantheon conquérant de cendres",
+      "chromas": true
+    },
+    {
+      "id": "80038",
+      "num": 38,
+      "name": "Pantheon de la Chasse éternelle",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Aatrox",
+      "type": "champion",
+      "relation": "nemesis",
+      "note_fr": "Menace la survie de Runeterra",
+      "note_en": "Threatens runeterra's survival"
+    },
+    {
+      "id": "AurelionSol",
+      "type": "champion",
+      "relation": "nemesis",
+      "note_fr": "Hait les Aspects pour son asservissement",
+      "note_en": "hates the aspects for his enslavement"
     }
   ]
 }

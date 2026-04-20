@@ -3,133 +3,35 @@
   "key": "122",
   "name": "Darius",
   "title": "Main de Noxus",
-  "version": "15.23.1",
-  "lore": "Darius et son frère Draven ont grandi orphelins dans la ville portuaire de Basilich, avant que celle-ci ne soit annexée par l'Empire Noxien. Dès son plus jeune âge, Darius a dû se battre constamment pour leur survie, accumulant les cicatrices. Leur force et leur esprit de défi furent remarqués par un commandant noxien, et les frères trouvèrent leur place au sein de l'armée.\r\n\r\nDarius s'est élevé dans les rangs de l'empire en incarnant l'idéal noxien : la méritocratie. Il mettait toujours le devoir au-dessus de tout, et se fit respecter pour son agressivité, sa discipline et son refus de jamais reculer. Son moment le plus célèbre fut sur la plaine de Dalamor, où, face à un ennemi supérieur, il décapita son propre général pour lâcheté après que celui-ci eut ordonné la retraite. Brandissant sa hache ensanglantée, Darius rallia les troupes et remporta une victoire inattendue.\r\n\r\nIl fut récompensé par un commandement senior, mais n'accepta que les recrues les plus fortes et les plus disciplinées. Sa réputation était telle que des cités entières se rendaient souvent à la seule vue de ses bannières. Après une victoire difficile contre les Varju, Darius fut nommé la Main de Noxus par l'Empereur Boram Darkwill.\r\n\r\nCependant, la loyauté de Darius n'était pas envers un seul dirigeant, mais envers la grandeur de Noxus. Après une campagne exténuante et stérile dans le Freljord, il revint à la capitale pour trouver l'Empereur Darkwill mort, tué lors du coup d'État mené par Jericho Swain, un acte que son propre frère, Draven, avait soutenu.\r\n\r\nBien que de nombreuses maisons nobles s'attendaient à ce que Darius venge Darkwill, il avait du respect pour Swain. Il écouta la nouvelle vision de Swain pour l'empire. Darius réalisa que Swain était le leader qu'il était prêt à suivre.\r\n\r\nAvec l'établissement du Trifarix (un conseil de trois dirigeants), Darius accepta sa place, incarnant la puissance (Might) de Noxus. Il créa une nouvelle force d'élite, la Légion Trifarian, composée des guerriers les plus prestigieux et les plus loyaux de l'empire, afin de mener les armées noxiennes vers un nouvel âge de conquête.",
+  "version": "16.8.1",
+  "lore": "Il n'est pas de plus grand symbole de la puissance de Noxus que Darius, le commandant le plus craint et le plus endurci de la nation. D'origine modeste, celui qui s'est élevé jusqu'à devenir la Main de Noxus pourfend aujourd'hui les ennemis de l'empire, dont certains sont eux-mêmes des Noxiens. Il ne doute jamais de la justesse de sa cause et ne montre pas la moindre hésitation lorsque sa hache est levée. Ceux qui s'opposent au chef de la Légion Trifarian ne doivent s'attendre à aucune pitié.",
   "tags": [
     "Fighter",
     "Tank"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Darius.png",
+    "sprite": "champion0.png",
+    "group": "champion",
     "x": 240,
     "y": 96,
-    "full": "Darius.png",
-    "group": "champion",
-    "sprite": "champion0.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "122000",
-      "num": 0,
-      "name": "default",
-      "chromas": true
-    },
-    {
-      "id": "122001",
-      "num": 1,
-      "name": "Lord Darius",
-      "chromas": false
-    },
-    {
-      "id": "122002",
-      "num": 2,
-      "name": "Darius biosoldat",
-      "chromas": false
-    },
-    {
-      "id": "122003",
-      "num": 3,
-      "name": "Darius roi du Nord",
-      "chromas": false
-    },
-    {
-      "id": "122004",
-      "num": 4,
-      "name": "Darius roi du dunk",
-      "chromas": true
-    },
-    {
-      "id": "122008",
-      "num": 8,
-      "name": "Darius redoublant",
-      "chromas": false
-    },
-    {
-      "id": "122014",
-      "num": 14,
-      "name": "Darius nova d'effroi",
-      "chromas": false
-    },
-    {
-      "id": "122015",
-      "num": 15,
-      "name": "Dieu-roi Darius",
-      "chromas": false
-    },
-    {
-      "id": "122016",
-      "num": 16,
-      "name": "Darius de l'Ouest",
-      "chromas": true
-    },
-    {
-      "id": "122024",
-      "num": 24,
-      "name": "Darius bête lunaire",
-      "chromas": true
-    },
-    {
-      "id": "122033",
-      "num": 33,
-      "name": "Darius cauchemar criminel",
-      "chromas": false
-    },
-    {
-      "id": "122043",
-      "num": 43,
-      "name": "Darius fleur spirituelle",
-      "chromas": false
-    },
-    {
-      "id": "122054",
-      "num": 54,
-      "name": "Darius de porcelaine",
-      "chromas": false
-    },
-    {
-      "id": "122064",
-      "num": 64,
-      "name": "Dieu-roi Darius divin",
-      "chromas": false
-    },
-    {
-      "id": "122065",
-      "num": 65,
-      "name": "Darius général triomphant prestige",
-      "chromas": false
-    },
-    {
-      "id": "122067",
-      "num": 67,
-      "name": "Darius du royaume des mechas",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "DariusCleave",
       "name": "Décimation",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "DariusCleave.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 384,
         "y": 144,
-        "full": "DariusCleave.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -142,6 +44,12 @@
           "Ratio de dégâts d'attaque totaux",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ e2 }} -> {{ e2NL }}",
+          "{{ e1 }}% -> {{ e1NL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -155,13 +63,13 @@
       "name": "Estropiaison",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "DariusNoxianTacticsONH.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 432,
         "y": 144,
-        "full": "DariusNoxianTacticsONH.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -171,6 +79,9 @@
       "leveltip": {
         "label": [
           "Ratio de dégâts d'attaque totaux"
+        ],
+        "effect": [
+          "{{ effect4amount*100.000000 }} -> {{ effect4amountnl*100.000000 }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -184,13 +95,13 @@
       "name": "Crampon",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "DariusAxeGrabCone.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 0,
         "y": 0,
-        "full": "DariusAxeGrabCone.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -202,6 +113,11 @@
           "Pourcentage de pénétration d'armure",
           "Coût en @AbilityResourceName@",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -215,13 +131,13 @@
       "name": "Guillotine noxienne",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "DariusExecute.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 48,
         "y": 0,
-        "full": "DariusExecute.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -232,6 +148,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ rbasedamage }} -> {{ rbasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -244,13 +164,13 @@
   "passive": {
     "name": "Plaie béante",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Darius_Icon_Hemorrhage.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 240,
       "y": 96,
-      "full": "Darius_Icon_Hemorrhage.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Les attaques de Darius et ses compétences infligeant des dégâts font saigner les ennemis, ce qui leur inflige des dégâts physiques en 5 sec (cumulable 5 fois). Darius enrage et gagne un énorme bonus en dégâts d'attaque quand sa cible atteint le nombre max d'effets cumulés."
   },
@@ -265,20 +185,20 @@
   "gender": "Male",
   "species": "Human",
   "title_en": "the Hand of Noxus",
-  "lore_en": "Darius and his brother Draven grew up as orphans in the port city of Basilich, before it was seized by the expanding Noxian Empire. From a young age, Darius constantly fought for their survival, earning more scars than some soldiers do in a lifetime. Their defiance and strength were noticed by a Noxian commander, and the brothers found a home within the army ranks.\r\n\r\nDarius rose steadily through the empire by embodying the Noxian ideal of meritocracy. He always put duty before all else and garnered great respect for his aggression, discipline, and refusal to ever take a backward step. His most famous moment was on the bloodsoaked fields of Dalamor Plain, where, facing a more numerous foe, he beheaded his own general for cowardice after the retreat order. Roaring defiance and hefting his bloodied axe, Darius rallied the scattered warbands and won an unexpected victory.\r\n\r\nHe was rewarded with a senior command but accepted only the strongest and most disciplined recruits. Such was his notoriety that entire cities often surrendered at the first sight of his banners. After a grinding victory against the Varju, Darius was named the Hand of Noxus by Emperor Boram Darkwill himself.\r\n\r\nHowever, Darius's oath was not to any particular ruler, but to the triumph of Noxus. After a grueling and bitter stalemate campaign in the Freljord, he returned to the capital to find Emperor Darkwill dead, killed in a coup led by Jericho Swain, an act supported by many, including his own brother, Draven.\r\n\r\nThough many noble houses expected Darius to avenge Darkwill, he respected Swain. He listened to Swain's new vision for the empire and realized Swain was the leader he was prepared to follow.\r\n\r\nWith the establishment of the Trifarix (a council of three rulers), Darius gladly accepted his place, embodying the principle of Might for Noxus. He pledged to raise a new, elite force—the Trifarian Legion, the empire's most loyal and prestigious warriors—to lead the armies of Noxus into a glorious new age of conquest.",
+  "lore_en": "There is no greater symbol of Noxian might than Darius, the nation's most feared and battle-hardened commander. Rising from humble origins to become the Hand of Noxus, he cleaves through the empire's enemies—many of them Noxians themselves. Knowing that he never doubts his cause is just, and never hesitates once his axe is raised, those who stand against the leader of the Trifarian Legion can expect no mercy.",
   "spells_en": [
     {
       "id": "DariusCleave",
       "name": "Decimate",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "DariusCleave.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 384,
         "y": 144,
-        "full": "DariusCleave.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -291,6 +211,12 @@
           "Total AD Ratio",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ e2 }} -> {{ e2NL }}",
+          "{{ e1 }}% -> {{ e1NL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -304,13 +230,13 @@
       "name": "Crippling Strike",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "DariusNoxianTacticsONH.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 432,
         "y": 144,
-        "full": "DariusNoxianTacticsONH.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -320,6 +246,9 @@
       "leveltip": {
         "label": [
           "Total AD Ratio"
+        ],
+        "effect": [
+          "{{ effect4amount*100.000000 }} -> {{ effect4amountnl*100.000000 }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -333,13 +262,13 @@
       "name": "Apprehend",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "DariusAxeGrabCone.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 0,
         "y": 0,
-        "full": "DariusAxeGrabCone.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -351,6 +280,11 @@
           "Percent Armor Penetration",
           "@AbilityResourceName@ Cost",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -364,13 +298,13 @@
       "name": "Noxian Guillotine",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "DariusExecute.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 48,
         "y": 0,
-        "full": "DariusExecute.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -381,6 +315,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ rbasedamage }} -> {{ rbasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -393,13 +331,13 @@
   "passive_en": {
     "name": "Hemorrhage",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Darius_Icon_Hemorrhage.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 240,
       "y": 96,
-      "full": "Darius_Icon_Hemorrhage.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Darius' attacks and damaging abilities cause enemies to bleed for physical damage over 5 seconds, stacking up to 5 times. Darius enrages and gains massive Attack Damage when his target reaches max stacks."
   },
@@ -503,6 +441,118 @@
       "num": 67,
       "name": "Mecha Kingdoms Darius",
       "chromas": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "122000",
+      "num": 0,
+      "name": "default",
+      "chromas": true
+    },
+    {
+      "id": "122001",
+      "num": 1,
+      "name": "Lord Darius",
+      "chromas": false
+    },
+    {
+      "id": "122002",
+      "num": 2,
+      "name": "Darius biosoldat",
+      "chromas": false
+    },
+    {
+      "id": "122003",
+      "num": 3,
+      "name": "Darius roi du Nord",
+      "chromas": false
+    },
+    {
+      "id": "122004",
+      "num": 4,
+      "name": "Darius roi du dunk",
+      "chromas": true
+    },
+    {
+      "id": "122008",
+      "num": 8,
+      "name": "Darius redoublant",
+      "chromas": false
+    },
+    {
+      "id": "122014",
+      "num": 14,
+      "name": "Darius nova d'effroi",
+      "chromas": false
+    },
+    {
+      "id": "122015",
+      "num": 15,
+      "name": "Dieu-roi Darius",
+      "chromas": false
+    },
+    {
+      "id": "122016",
+      "num": 16,
+      "name": "Darius de l'Ouest",
+      "chromas": true
+    },
+    {
+      "id": "122024",
+      "num": 24,
+      "name": "Darius bête lunaire",
+      "chromas": true
+    },
+    {
+      "id": "122033",
+      "num": 33,
+      "name": "Darius cauchemar criminel",
+      "chromas": false
+    },
+    {
+      "id": "122043",
+      "num": 43,
+      "name": "Darius fleur spirituelle",
+      "chromas": false
+    },
+    {
+      "id": "122054",
+      "num": 54,
+      "name": "Darius de porcelaine",
+      "chromas": false
+    },
+    {
+      "id": "122064",
+      "num": 64,
+      "name": "Dieu-roi Darius divin",
+      "chromas": false
+    },
+    {
+      "id": "122065",
+      "num": 65,
+      "name": "Darius général triomphant prestige",
+      "chromas": false
+    },
+    {
+      "id": "122067",
+      "num": 67,
+      "name": "Darius du royaume des mechas",
+      "chromas": false
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Draven",
+      "type": "champion",
+      "relation": "brother"
+    },
+    {
+      "id": "Swain",
+      "type": "champion",
+      "relation": "ally",
+      "note_fr": "Grand Général",
+      "note_en": "Grand General"
     }
   ]
 }

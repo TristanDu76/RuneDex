@@ -3,91 +3,35 @@
   "key": "48",
   "name": "Trundle",
   "title": "Roi des trolls",
-  "version": "15.23.1",
-  "lore": "Les trolls sont des créatures massives dotées d'une constitution robuste et d'une capacité de régénération exceptionnelle. Trundle est né dans une portée de quinze frères et sœurs, mais seuls trois survécurent à leur premier hiver. Contrairement à ses congénères, Trundle possédait une vision stratégique : il s'opposa à son chef qui voulait piller à nouveau des terres déjà dévastées, suggérant d'attendre que les ressources se renouvellent.\n\n L'Exil et l'Abîme : Jugé lâche et stupide par son chef, Trundle fut battu et banni. En errant, il tomba dans les canyons profonds des Abîmes Hurlants. C'est là, au plus profond de la terre, qu'il rencontra la Sorcière de Glace (Lissandra).\n\n Le Pacte de Glace : La Sorcière reconnut en Trundle un \"Sublimé\" (Iceborn). Elle lui offrit une massue de glace pure nommée Boneshiver (Mutilatrice). En échange de cette arme capable de geler et de briser n'importe quel ennemi, Trundle promit de former une alliance entre les trolls et la tribu humaine de la Sorcière (les Gardiens du Givre).\n\n Le Sacre du Roi : De retour dans sa tribu, Trundle utilisa Boneshiver pour transformer son ancien chef en bloc de glace avant de le pulvériser. Impressionnés par sa force et sa \"sagesse\" apparente, les trolls le reconnurent comme leur roi légitime.\n\n L'Avenir des Trolls : Trundle mène désormais ses guerriers avec une intelligence malveillante. Il sait que la force brute associée à la magie du givre et à une alliance stratégique fera des trolls les nouveaux maîtres du Freljord.",
+  "version": "16.8.1",
+  "lore": "Trundle est un troll massif, sournois et malicieux. Il n'y a rien qu'il ne puisse soumettre à sa volonté avec son gourdin, pas même Freljord. Extrêmement territorial, Trundle traque tous ceux qui sont assez fous pour pénétrer sur ses terres. Ensuite, armé de son imposante massue en glace pure, il fait trembler ses ennemis avant de leur planter des éclats de glace dans le corps et de se moquer d'eux tandis que la toundra absorbe leur sang.",
   "tags": [
     "Fighter",
     "Tank"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Trundle.png",
+    "sprite": "champion4.png",
+    "group": "champion",
     "x": 432,
     "y": 48,
-    "full": "Trundle.png",
-    "group": "champion",
-    "sprite": "champion4.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "48000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "48001",
-      "num": 1,
-      "name": "Trundle batteur",
-      "chromas": false
-    },
-    {
-      "id": "48002",
-      "num": 2,
-      "name": "Trundle ferrailleur",
-      "chromas": false
-    },
-    {
-      "id": "48003",
-      "num": 3,
-      "name": "Trundle classique",
-      "chromas": false
-    },
-    {
-      "id": "48004",
-      "num": 4,
-      "name": "Constable Trundle",
-      "chromas": false
-    },
-    {
-      "id": "48005",
-      "num": 5,
-      "name": "Trundle brise-monde",
-      "chromas": false
-    },
-    {
-      "id": "48006",
-      "num": 6,
-      "name": "Trundle tueur de dragons",
-      "chromas": true
-    },
-    {
-      "id": "48012",
-      "num": 12,
-      "name": "Trundle Nuit d'effroi",
-      "chromas": true
-    },
-    {
-      "id": "48021",
-      "num": 21,
-      "name": "Trundle fan d'e-sport",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "TrundleTrollSmash",
       "name": "Morsure",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TrundleTrollSmash.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 192,
         "y": 48,
-        "full": "TrundleTrollSmash.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -100,6 +44,12 @@
           "Ratio de dégâts d'attaque",
           "Dégâts d'attaque",
           "Dégâts d'attaque supprimés"
+        ],
+        "effect": [
+          "{{ bonusdamage }} -> {{ bonusdamageNL }}",
+          "{{ adscaling*100.000000 }}% -> {{ adscalingnl*100.000000 }}%",
+          "{{ bonusad }} -> {{ bonusadNL }}",
+          "{{ sappedad*-1.000000 }} -> {{ sappedadnl*-1.000000 }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -113,13 +63,13 @@
       "name": "Royaume gelé",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "trundledesecrate.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 240,
         "y": 48,
-        "full": "trundledesecrate.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -131,6 +81,11 @@
           "Vitesse de déplacement",
           "Vitesse d'attaque",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ effect1amount*100.000000 }}% -> {{ effect1amountnl*100.000000 }}%",
+          "{{ effect2amount*100.000000 }}% -> {{ effect2amountnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -144,13 +99,13 @@
       "name": "Montagne de glace",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TrundleCircle.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 288,
         "y": 48,
-        "full": "TrundleCircle.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -161,6 +116,10 @@
         "label": [
           "Délai de récupération",
           "Ralentissement"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ e2 }}% -> {{ e2NL }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -174,13 +133,13 @@
       "name": "Soumission",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TrundlePain.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 336,
         "y": 48,
-        "full": "TrundlePain.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -191,6 +150,10 @@
         "label": [
           "Drain de PV",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ percenthpdamage*100.000000 }}% -> {{ percenthpdamagenl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -203,13 +166,13 @@
   "passive": {
     "name": "Tribut du roi",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Trundle_Passive.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 432,
       "y": 48,
-      "full": "Trundle_Passive.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Quand une unité ennemie meurt près de Trundle, il récupère un pourcentage des PV max de celle-ci."
   },
@@ -223,20 +186,20 @@
   "gender": "Male",
   "species": "Troll",
   "title_en": "the Troll King",
-  "lore_en": "Trolls are hulking creatures blessed with a hardy constitution and rapid healing abilities. Trundle was one of fifteen siblings, but only three survived their first winter of raiding. Unlike his peers, Trundle possessed a keen mind; he challenged his chieftain's plan to raid barren lands, suggesting they wait for the livestock and granaries to replenish.\n\n Exile and the Abyss: Branded a coward and a fool, Trundle was beaten and cast out. He wandered into the Howling Abyss, deep beneath the Freljordian mountains. At the bottom, he encountered the Ice Witch (Lissandra) on a lake of dark, magical ice.\n\n The Bargain: The Witch identified Trundle as \"Iceborn\" and offered him a powerful weapon: a club of True Ice called Boneshiver. In exchange for the strength to rule his kind, Trundle agreed to form a grand alliance between the trolls and her human followers, the Frostguard.\n\n The King Returns: Trundle returned to his warband and used Boneshiver to freeze the old chieftain solid before shattering him into pieces. Awed by his magical weapon and his cleverness, the trolls bowed to him as their new King.\n\n The Rise of a Legend: Under Trundle's leadership, the trolls are no longer just mindless brutes. Armed with ancient power and guided by the Ice Witch's dark influence, Trundle believes the time of the trolls has finally come to dominate the north.",
+  "lore_en": "Trundle is a hulking and devious troll with a particularly vicious streak, and there is nothing he cannot bludgeon into submission—not even the Freljord itself. Fiercely territorial, he chases down anyone foolish enough to enter his domain. Then, his massive club of True Ice at the ready, he chills his enemies to the bone and impales them with jagged, frozen pillars, laughing as they bleed out onto the tundra.",
   "spells_en": [
     {
       "id": "TrundleTrollSmash",
       "name": "Chomp",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TrundleTrollSmash.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 192,
         "y": 48,
-        "full": "TrundleTrollSmash.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -249,6 +212,12 @@
           "Attack Damage Ratio",
           "Attack Damage",
           "Attack Damage Removed"
+        ],
+        "effect": [
+          "{{ bonusdamage }} -> {{ bonusdamageNL }}",
+          "{{ adscaling*100.000000 }}% -> {{ adscalingnl*100.000000 }}%",
+          "{{ bonusad }} -> {{ bonusadNL }}",
+          "{{ sappedad*-1.000000 }} -> {{ sappedadnl*-1.000000 }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -262,13 +231,13 @@
       "name": "Frozen Domain",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "trundledesecrate.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 240,
         "y": 48,
-        "full": "trundledesecrate.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -280,6 +249,11 @@
           "Move Speed",
           "Attack Speed",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ effect1amount*100.000000 }}% -> {{ effect1amountnl*100.000000 }}%",
+          "{{ effect2amount*100.000000 }}% -> {{ effect2amountnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -293,13 +267,13 @@
       "name": "Pillar of Ice",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TrundleCircle.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 288,
         "y": 48,
-        "full": "TrundleCircle.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -310,6 +284,10 @@
         "label": [
           "Cooldown",
           "Slow"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ e2 }}% -> {{ e2NL }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -323,13 +301,13 @@
       "name": "Subjugate",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TrundlePain.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 336,
         "y": 48,
-        "full": "TrundlePain.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -340,6 +318,10 @@
         "label": [
           "Health Drain",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ percenthpdamage*100.000000 }}% -> {{ percenthpdamagenl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -352,13 +334,13 @@
   "passive_en": {
     "name": "King's Tribute",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Trundle_Passive.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 432,
       "y": 48,
-      "full": "Trundle_Passive.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "When an enemy unit dies near Trundle, he heals for a percent of its maximum Health."
   },
@@ -421,6 +403,71 @@
       "num": 21,
       "name": "Esports Fan Trundle",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "48000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "48001",
+      "num": 1,
+      "name": "Trundle batteur",
+      "chromas": false
+    },
+    {
+      "id": "48002",
+      "num": 2,
+      "name": "Trundle ferrailleur",
+      "chromas": false
+    },
+    {
+      "id": "48003",
+      "num": 3,
+      "name": "Trundle classique",
+      "chromas": false
+    },
+    {
+      "id": "48004",
+      "num": 4,
+      "name": "Constable Trundle",
+      "chromas": false
+    },
+    {
+      "id": "48005",
+      "num": 5,
+      "name": "Trundle brise-monde",
+      "chromas": false
+    },
+    {
+      "id": "48006",
+      "num": 6,
+      "name": "Trundle tueur de dragons",
+      "chromas": true
+    },
+    {
+      "id": "48012",
+      "num": 12,
+      "name": "Trundle Nuit d'effroi",
+      "chromas": true
+    },
+    {
+      "id": "48021",
+      "num": 21,
+      "name": "Trundle fan d'e-sport",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Lissandra",
+      "type": "champion",
+      "relation": "servant",
+      "note_fr": "Sorcière des glaces (Maître)",
+      "note_en": "Ice Witch (Master)"
     }
   ]
 }

@@ -3,145 +3,35 @@
   "key": "89",
   "name": "Leona",
   "title": "Aube radieuse",
-  "version": "15.23.1",
-  "lore": "Leona est une guerrière sainte des Solaris, le culte du soleil qui domine le Mont Targon. Elle est l'hôte vivant d'une Manifestation (Aspect) céleste.\n\nElle combat avec sa Lame du zénith et son Bouclier de l'aube. Son corps est imprégné par l'énergie du soleil : sa peau brûle d'éclats ardents et ses yeux crépitent d'une puissance divine. Elle est vêtue d'une armure d'or.\n\nLeona a reçu le terrible fardeau des connaissances antiques de l'Aspect qu'elle incarne. Elle utilise ce pouvoir pour défendre le Mont Targon, combattant l'ennemi avec une ferveur religieuse.\n\nSon rôle est d'apporter :\n\nL'illumination à certains (ceux qui adhèrent à la lumière et à la foi des Solaris).\n\nLa mort aux autres (ceux qui menacent le Mont Targon ou qui s'opposent aux Solaris).\n\nElle est une figure de lumière et de conviction inébranlable, entièrement dédiée à la défense de son foyer et des principes du soleil.",
+  "version": "16.8.1",
+  "lore": "Imprégnée de l'énergie du soleil, Leona est une guerrière sainte des Solaris qui défend le Mont Targon ; elle combat avec sa Lame du zénith et son Bouclier de l'aube. Sa peau brûle d'éclats ardents et ses yeux crépitent au rythme de la Manifestation céleste qui l'habite. Équipée d'une armure d'or et affligée par le terrible fardeau de connaissances antiques, Leona apporte à certains l'illumination, à d'autres la mort.",
   "tags": [
     "Tank",
     "Support"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Leona.png",
+    "sprite": "champion2.png",
+    "group": "champion",
     "x": 48,
     "y": 48,
-    "full": "Leona.png",
-    "group": "champion",
-    "sprite": "champion2.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "89000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "89001",
-      "num": 1,
-      "name": "Leona valkyrie",
-      "chromas": false
-    },
-    {
-      "id": "89002",
-      "num": 2,
-      "name": "Leona protectrice",
-      "chromas": false
-    },
-    {
-      "id": "89003",
-      "num": 3,
-      "name": "Leona de l'Iron Solari",
-      "chromas": false
-    },
-    {
-      "id": "89004",
-      "num": 4,
-      "name": "Leona bain de soleil",
-      "chromas": true
-    },
-    {
-      "id": "89008",
-      "num": 8,
-      "name": "PROJET : Leona",
-      "chromas": false
-    },
-    {
-      "id": "89009",
-      "num": 9,
-      "name": "Leona reine du grill",
-      "chromas": false
-    },
-    {
-      "id": "89010",
-      "num": 10,
-      "name": "Leona de l'éclipse solaire",
-      "chromas": false
-    },
-    {
-      "id": "89011",
-      "num": 11,
-      "name": "Leona de l'éclipse lunaire",
-      "chromas": false
-    },
-    {
-      "id": "89012",
-      "num": 12,
-      "name": "Leona du royaume des mechas",
-      "chromas": true
-    },
-    {
-      "id": "89021",
-      "num": 21,
-      "name": "Leona de l'Académie du combat",
-      "chromas": true
-    },
-    {
-      "id": "89022",
-      "num": 22,
-      "name": "DWG Leona",
-      "chromas": true
-    },
-    {
-      "id": "89023",
-      "num": 23,
-      "name": "Leona de l'Académie du combat prestige",
-      "chromas": false
-    },
-    {
-      "id": "89033",
-      "num": 33,
-      "name": "Leona séductrice",
-      "chromas": true
-    },
-    {
-      "id": "89034",
-      "num": 34,
-      "name": "Leona de l'Ouest",
-      "chromas": true
-    },
-    {
-      "id": "89050",
-      "num": 50,
-      "name": "Leona Crystalis",
-      "chromas": true
-    },
-    {
-      "id": "89052",
-      "num": 52,
-      "name": "Leona lion de combat",
-      "chromas": true
-    },
-    {
-      "id": "89053",
-      "num": 53,
-      "name": "Leona lion de combat prestige",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "LeonaShieldOfDaybreak",
       "name": "Bouclier de l'aube",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "LeonaShieldOfDaybreak.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 96,
         "y": 96,
-        "full": "LeonaShieldOfDaybreak.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -152,6 +42,10 @@
         "label": [
           "Dégâts",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ e2 }} -> {{ e2NL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -165,13 +59,13 @@
       "name": "Éclipse",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "LeonaSolarBarrier.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 144,
         "y": 96,
-        "full": "LeonaSolarBarrier.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -184,6 +78,12 @@
           "Armure et résistance magique",
           "Réduction des dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ e4 }} -> {{ e4NL }}",
+          "{{ flatdamagereduction }} -> {{ flatdamagereductionNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -197,13 +97,13 @@
       "name": "Lame du zénith",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "LeonaZenithBlade.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 192,
         "y": 96,
-        "full": "LeonaZenithBlade.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -215,6 +115,11 @@
           "Dégâts",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -228,13 +133,13 @@
       "name": "Éruption solaire",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "LeonaSolarFlare.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 240,
         "y": 96,
-        "full": "LeonaSolarFlare.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -245,6 +150,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ explosionbasedamage }} -> {{ explosionbasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -257,13 +166,13 @@
   "passive": {
     "name": "Rayon de soleil",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "LeonaSunlight.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 48,
       "y": 48,
-      "full": "LeonaSunlight.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Les sorts marquent les ennemis d'un Rayon de soleil pendant 1.5 sec. Si des champions alliés blessent ces ennemis, ils dissipent Rayon de soleil et infligent des dégâts magiques supplémentaires."
   },
@@ -277,20 +186,20 @@
   "gender": "Female",
   "species": "Aspect",
   "title_en": "the Radiant Dawn",
-  "lore_en": "Leona is a holy warrior of the Solaris, the sun worshiping cult that dominates Mount Targon. She is the living host of a celestial Aspect.\n\nShe fights with her Blade of the Zenith and her Shield of Daybreak. Her body is imbued with the sun's energy: her skin burns with ardent light, and her eyes crackle with the celestial power she wields. She is clad in golden armor.\n\nLeona has been afflicted by the terrible burden of ancient knowledge carried by the Aspect she embodies. She uses this power to defend Mount Targon, fighting the enemy with religious fervor.\n\nHer role is to bring:\n\nEnlightenment to some (those who adhere to the light and faith of the Solaris).\n\nDeath to others (those who threaten Mount Targon or oppose the Solaris).\n\nShe is a figure of light and unwavering conviction, entirely dedicated to the defense of her home and the principles of the sun.",
+  "lore_en": "Imbued with the fire of the sun, Leona is a holy warrior of the Solari who defends Mount Targon with her Zenith Blade and the Shield of Daybreak. Her skin shimmers with starfire while her eyes burn with the power of the celestial Aspect within her. Armored in gold and bearing a terrible burden of ancient knowledge, Leona brings enlightenment to some, death to others.",
   "spells_en": [
     {
       "id": "LeonaShieldOfDaybreak",
       "name": "Shield of Daybreak",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "LeonaShieldOfDaybreak.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 96,
         "y": 96,
-        "full": "LeonaShieldOfDaybreak.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -301,6 +210,10 @@
         "label": [
           "Damage",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ e2 }} -> {{ e2NL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -314,13 +227,13 @@
       "name": "Eclipse",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "LeonaSolarBarrier.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 144,
         "y": 96,
-        "full": "LeonaSolarBarrier.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -333,6 +246,12 @@
           "Armor and Magic Resist",
           "Damage Reduction",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ e4 }} -> {{ e4NL }}",
+          "{{ flatdamagereduction }} -> {{ flatdamagereductionNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -346,13 +265,13 @@
       "name": "Zenith Blade",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "LeonaZenithBlade.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 192,
         "y": 96,
-        "full": "LeonaZenithBlade.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -364,6 +283,11 @@
           "Damage",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -377,13 +301,13 @@
       "name": "Solar Flare",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "LeonaSolarFlare.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 240,
         "y": 96,
-        "full": "LeonaSolarFlare.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -394,6 +318,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ explosionbasedamage }} -> {{ explosionbasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -406,13 +334,13 @@
   "passive_en": {
     "name": "Sunlight",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "LeonaSunlight.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 48,
       "y": 48,
-      "full": "LeonaSunlight.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Damaging spells afflict enemies with Sunlight for 1.5 seconds. When allied Champions deal damage to those targets, they consume the Sunlight to deal additional magic damage."
   },
@@ -528,6 +456,125 @@
       "num": 53,
       "name": "Prestige Battle Lion Leona",
       "chromas": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "89000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "89001",
+      "num": 1,
+      "name": "Leona valkyrie",
+      "chromas": false
+    },
+    {
+      "id": "89002",
+      "num": 2,
+      "name": "Leona protectrice",
+      "chromas": false
+    },
+    {
+      "id": "89003",
+      "num": 3,
+      "name": "Leona de l'Iron Solari",
+      "chromas": false
+    },
+    {
+      "id": "89004",
+      "num": 4,
+      "name": "Leona bain de soleil",
+      "chromas": true
+    },
+    {
+      "id": "89008",
+      "num": 8,
+      "name": "PROJET : Leona",
+      "chromas": false
+    },
+    {
+      "id": "89009",
+      "num": 9,
+      "name": "Leona reine du grill",
+      "chromas": false
+    },
+    {
+      "id": "89010",
+      "num": 10,
+      "name": "Leona de l'éclipse solaire",
+      "chromas": false
+    },
+    {
+      "id": "89011",
+      "num": 11,
+      "name": "Leona de l'éclipse lunaire",
+      "chromas": false
+    },
+    {
+      "id": "89012",
+      "num": 12,
+      "name": "Leona du royaume des mechas",
+      "chromas": true
+    },
+    {
+      "id": "89021",
+      "num": 21,
+      "name": "Leona de l'Académie du combat",
+      "chromas": true
+    },
+    {
+      "id": "89022",
+      "num": 22,
+      "name": "DWG Leona",
+      "chromas": true
+    },
+    {
+      "id": "89023",
+      "num": 23,
+      "name": "Leona de l'Académie du combat prestige",
+      "chromas": false
+    },
+    {
+      "id": "89033",
+      "num": 33,
+      "name": "Leona séductrice",
+      "chromas": true
+    },
+    {
+      "id": "89034",
+      "num": 34,
+      "name": "Leona de l'Ouest",
+      "chromas": true
+    },
+    {
+      "id": "89050",
+      "num": 50,
+      "name": "Leona Crystalis",
+      "chromas": true
+    },
+    {
+      "id": "89052",
+      "num": 52,
+      "name": "Leona lion de combat",
+      "chromas": true
+    },
+    {
+      "id": "89053",
+      "num": 53,
+      "name": "Leona lion de combat prestige",
+      "chromas": false
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Diana",
+      "type": "champion",
+      "relation": "lover",
+      "note_fr": "Amante et Rivale",
+      "note_en": "Lover and Rival"
     }
   ]
 }

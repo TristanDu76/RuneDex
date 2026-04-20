@@ -3,49 +3,35 @@
   "key": "799",
   "name": "Ambessa",
   "title": "Matriarche de guerre",
-  "version": "15.23.1",
-  "lore": "Ambessa Medarda est la matriarche de l'une des familles les plus puissantes du Noxus moderne. Née dans la haute société, sa jeunesse fut imprégnée de la culture de la force et de l'honneur noxiens. Dès son plus jeune âge, elle observa les gladiateurs des Arènes de la Revanche et, après avoir été envoyée sur un champ de bataille pour collecter des armes, elle développa une conviction profonde : la mort et le sacrifice devaient être respectés, car la grandeur l'exigeait.\r\n\r\nGuidée par le code familial des Medarda, qui prône à la fois la ruse du Renard du désert et la force implacable du Loup, Ambessa choisit la vie militaire et devint rapidement une Générale respectée. Elle était l'une des favorites de son grand-père, le patriarche Menelik. Cependant, elle était également une femme, une amante et une mère.\r\n\r\nLa naissance de son fils, Kino, lui révéla la dévotion inconditionnelle, mais elle réalisa avec déception qu'il ne posséderait jamais la force d'un guerrier. Plus tard, alors qu'elle était enceinte de sa fille, Mel, elle frôla la mort en défendant son foyer ancestral. Cette expérience près du trépas la marqua profondément et forgea son ambition de manière quasi-totale. Elle jura de plier le monde à sa volonté afin qu'aucune faiblesse chez ses enfants ne puisse être exploitée par ses ennemis.\r\n\r\nDès lors, l'ascension d'Ambessa fut fulgurante. Elle devint impitoyable, sans peur, et dirigeait ses troupes en première ligne. Après la mort de Menelik, elle défit ses rivaux pour devenir la nouvelle matriarche, se jurant de forger un héritage digne du nom Medarda et de l'héritage de ses propres enfants.\r\n\r\nEn tant que matriarche, elle fit de son mantra personnel, « En toutes choses, sois le Loup », une loi absolue, n'acceptant aucune faiblesse ou dissidence, car cela pourrait menacer toute la famille. C'est pour cette raison, ainsi que par ambition, qu'elle exila sa fille Mel à Piltover.\r\n\r\nDes années plus tard, intriguée par les rumeurs d'une nouvelle et puissante invention appelée Hextech (créée par les « idéalistes à l'échine molle de Piltover »), Ambessa se rendit dans la cité dorée pour rendre visite à sa fille. Son objectif : déterminer si cette technologie pouvait être exploitée pour conférer encore plus de puissance et d'influence à la Maison Medarda, quitte à sacrifier l'amour de ses enfants pour assurer la pérennité de leur héritage.",
+  "version": "16.8.1",
+  "lore": "Tous ceux qui connaissent le nom de Medarda savent qu'il faut craindre et respecter sa matriarche, Ambessa. En tant que générale noxienne, elle incarne la force impitoyable et la détermination sans peur. Son rôle de matriarche n'est pas bien différent. Elle se doit de faire preuve d'une grande ruse tout en ne laissant aucune place à l'échec ou à la compassion. Dédiée à la voie du Loup, Ambessa fera tout ce qui est en son pouvoir pour protéger l'héritage de sa famille, même si cela doit lui coûter l'amour de ses enfants.",
   "tags": [
     "Fighter",
     "Assassin"
   ],
   "partype": "Énergie",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Ambessa.png",
+    "sprite": "champion0.png",
+    "group": "champion",
     "x": 240,
     "y": 0,
-    "full": "Ambessa.png",
-    "group": "champion",
-    "sprite": "champion0.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "799000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "799001",
-      "num": 1,
-      "name": "Ambessa de la Chasse éternelle",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "AmbessaQ",
       "name": "Frappe fourbe / Frappe fracassante",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AmbessaQ.png",
+        "sprite": "spell0.png",
+        "group": "spell",
         "x": 384,
         "y": 144,
-        "full": "AmbessaQ.png",
-        "group": "spell",
-        "sprite": "spell0.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -59,6 +45,13 @@
           "Délai de récupération",
           "Frappe fracassante | Dégâts",
           "Frappe fracassante | PV max en dégâts"
+        ],
+        "effect": [
+          "{{ damage_1_base }} -> {{ damage_1_baseNL }}",
+          "{{ damage_1_percent*100.000000 }}% -> {{ damage_1_percentnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ damage_2_base }} -> {{ damage_2_baseNL }}",
+          "{{ damage_1_percent*100.000000 }}% -> {{ damage_1_percentnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -72,13 +65,13 @@
       "name": "Égide dévastatrice",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AmbessaW.png",
+        "sprite": "spell0.png",
+        "group": "spell",
         "x": 432,
         "y": 144,
-        "full": "AmbessaW.png",
-        "group": "spell",
-        "sprite": "spell0.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -89,6 +82,10 @@
         "label": [
           "Délai de récupération",
           "Dégâts"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -102,13 +99,13 @@
       "name": "Lacération",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AmbessaE.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 0,
         "y": 0,
-        "full": "AmbessaE.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -118,8 +115,11 @@
       "leveltip": {
         "label": [
           "Délai de récupération",
-          "Dégâts",
-          "Ratio de dégâts d'attaque"
+          "Dégâts"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ damage_flat_base }} -> {{ damage_flat_baseNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -133,13 +133,13 @@
       "name": "Exécution publique",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AmbessaR.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 48,
         "y": 0,
-        "full": "AmbessaR.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -152,6 +152,12 @@
           "Pénétration d'armure",
           "Soins",
           "Dégâts"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ armor_penetration*100.000000 }}% -> {{ armor_penetrationnl*100.000000 }}%",
+          "{{ omnivamp*100.000000 }}% -> {{ omnivampnl*100.000000 }}%",
+          "{{ damage }} -> {{ damageNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -164,13 +170,13 @@
   "passive": {
     "name": "Ruée des chiens-dragons",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Icon_Ambessa_Passive.Domina.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 240,
       "y": 0,
-      "full": "Icon_Ambessa_Passive.Domina.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Déclencher un déplacement ou une attaque lorsqu'elle lance une compétence permet à Ambessa de se ruer sur une courte distance une fois la compétence lancée. Cela octroie à sa prochaine attaque de la portée bonus, des dégâts bonus, de la vitesse d'attaque bonus, et lui rend de l'énergie."
   },
@@ -186,20 +192,20 @@
   "gender": "Female",
   "species": "Human",
   "title_en": "Matriarch of War",
-  "lore_en": "Ambessa Medarda is the matriarch of one of the most powerful families in modern Noxus. Born into high society, her youth was steeped in the Noxian culture of strength and honor. From a young age, she observed the gladiators in the Reckoning arenas and, after being sent to a battlefield to collect weapons, she developed a deep conviction: death and sacrifice must be respected, as greatness demands it.\r\n\r\nGuided by the Medarda family code, which advocates both the cunning of the Desert Fox and the ruthless strength of the Wolf, Ambessa chose a military life and quickly became a respected General. She was one of her grandfather Menelik's favorites, the patriarch. However, she was also a woman, a lover, and a mother.\r\n\r\nThe birth of her son, Kino, revealed unconditional devotion to her, but she realized with disappointment that he would never possess the strength of a warrior. Later, while pregnant with her daughter, Mel, she came close to death defending her ancestral home. This near-death experience profoundly marked her and alloyed her ambition absolutely. She vowed to bend the world to her will so that any weakness in her children could not be exploited by her enemies.\r\n\r\nFrom that moment, Ambessa's rise was meteoric. She became ruthless, fearless, and led her troops from the front. After Menelik's death, she defeated her rivals to become the new matriarch, vowing to forge a legacy worthy of the Medarda name and her own children's inheritance.\r\n\r\nAs matriarch, she made her personal mantra, \"In all things, be the Wolf,\" an absolute law, tolerating no weakness or dissent, lest that weakness spill over into her family. It was for this reason, as well as ambition, that she exiled her daughter Mel to Piltover.\r\n\r\nYears later, intrigued by rumors of a powerful new invention called Hextech (created by the \"soft-spined idealists of Piltover\"), Ambessa traveled to the gilded city to visit her daughter. Her goal: to determine if this technology could be leveraged to gain even more power and influence for the Medarda House, even if it meant sacrificing her children's love to ensure the continuation of their legacy.",
+  "lore_en": "All who know the name Medarda respect and fear the family's leader, Ambessa. As a Noxian general, she embodies a deadly combination of ruthless strength and fearless resolve in battle. Her role as matriarch is no different, requiring great cunning to empower the Medardas while leaving no room for failure or compassion. Embracing the merciless ways of the Wolf, Ambessa will do whatever it takes to protect her family's legacy, even at the cost of her own children's love.",
   "spells_en": [
     {
       "id": "AmbessaQ",
       "name": "Cunning Sweep / Sundering Slam",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AmbessaQ.png",
+        "sprite": "spell0.png",
+        "group": "spell",
         "x": 384,
         "y": 144,
-        "full": "AmbessaQ.png",
-        "group": "spell",
-        "sprite": "spell0.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -213,6 +219,13 @@
           "Cooldown",
           "Sundering Slam | Damage",
           "Sundering Slam | Max Health Damage"
+        ],
+        "effect": [
+          "{{ damage_1_base }} -> {{ damage_1_baseNL }}",
+          "{{ damage_1_percent*100.000000 }}% -> {{ damage_1_percentnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ damage_2_base }} -> {{ damage_2_baseNL }}",
+          "{{ damage_1_percent*100.000000 }}% -> {{ damage_1_percentnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -226,13 +239,13 @@
       "name": "Repudiation",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AmbessaW.png",
+        "sprite": "spell0.png",
+        "group": "spell",
         "x": 432,
         "y": 144,
-        "full": "AmbessaW.png",
-        "group": "spell",
-        "sprite": "spell0.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -243,6 +256,10 @@
         "label": [
           "Cooldown",
           "Damage"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -256,13 +273,13 @@
       "name": "Lacerate",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AmbessaE.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 0,
         "y": 0,
-        "full": "AmbessaE.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -272,8 +289,11 @@
       "leveltip": {
         "label": [
           "Cooldown",
-          "Damage",
-          "Attack Damage Ratio"
+          "Damage"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ damage_flat_base }} -> {{ damage_flat_baseNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -287,13 +307,13 @@
       "name": "Public Execution",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AmbessaR.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 48,
         "y": 0,
-        "full": "AmbessaR.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -306,6 +326,12 @@
           "Armor Penetration",
           "Healing",
           "Damage"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ armor_penetration*100.000000 }}% -> {{ armor_penetrationnl*100.000000 }}%",
+          "{{ omnivamp*100.000000 }}% -> {{ omnivampnl*100.000000 }}%",
+          "{{ damage }} -> {{ damageNL }}"
         ]
       },
       "resource": "No cost",
@@ -318,13 +344,13 @@
   "passive_en": {
     "name": "Drakehound's Step",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Icon_Ambessa_Passive.Domina.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 240,
       "y": 0,
-      "full": "Icon_Ambessa_Passive.Domina.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Entering an attack or movement command while casting an ability will cause Ambessa to dash a short distance once the ability is cast, granting her next attack bonus range, damage, and attack speed, and refunding energy."
   },
@@ -346,5 +372,20 @@
       "name": "Chosen of the Wolf Ambessa",
       "chromas": true
     }
-  ]
+  ],
+  "skins": [
+    {
+      "id": "799000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "799001",
+      "num": 1,
+      "name": "Ambessa de la Chasse éternelle",
+      "chromas": true
+    }
+  ],
+  "related_characters": []
 }

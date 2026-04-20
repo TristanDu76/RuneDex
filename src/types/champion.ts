@@ -8,18 +8,25 @@ export interface ChampionSkin {
 export interface LoreCharacter {
     id: string;
     name: string;
-    faction: string;
-    gender?: string;
-    species?: string;
+    faction: string | string[];
+    origin_region?: string;
+    region?: string;
+    gender?: string | string[];
+    species?: string | string[];
+    status?: string;
     description?: string;
     image?: string;
+    description_fr?: string;
     description_en?: string;
+    lore_fr?: string;
+    lore_en?: string;
     related_champions?: {
         champion: string;
         type: string;
         note?: string;
         image?: string;
     }[];
+    related_characters?: string[];
 }
 
 export interface ChampionImage {
@@ -155,4 +162,9 @@ export interface LoreCharacterLight {
     id: string;
     name: string;
     image?: string | null;
+    // Optionnel : présent dans le type complet, absent dans l'index light
+    faction?: string | string[];
+    factions?: string[];
+    species?: string | string[];
+    related_characters?: string[];
 }

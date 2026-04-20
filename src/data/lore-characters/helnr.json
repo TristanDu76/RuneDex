@@ -1,11 +1,29 @@
 {
   "id": "helnr",
   "name": "Helnr",
-  "faction": null,
-  "gender": null,
-  "species": null,
-  "description": "Personnage du lore de League of Legends",
-  "image": null,
-  "created_at": "2026-01-26T13:41:34.757Z",
-  "description_en": "League of Legends lore character"
+  "origin_region": "freljord",
+  "region": "freljord",
+  "faction": [
+    "freljord"
+  ],
+  "universe": [
+    "runeterra-prime"
+  ],
+  "gender": "unknown",
+  "species": [
+    "human",
+    "iceborn"
+  ],
+  "status": "dead",
+  "power_source": "unknown",
+  "image": "https://wiki.leagueoflegends.com/en-us/images/Helnr_Image.png?7db3b",
+  "created_at": "2026-03-31T19:28:58.009139+00:00",
+  "description_en": "Helnr was Ashe's aunt and Grena's younger sister. She challenged Grena to rule the tribe, but lost and nearly died. She was the leader of the Hearthbound in the Avarosan tribe.",
+  "related_characters": [
+    "Ashe",
+    "Grena",
+    "Maalcrom",
+    "Yrael"
+  ],
+  "description_fr": "Helnr était la tante d'Ashe et la sœur cadette de Grena. Elle a défié Grena de diriger la tribu, mais a perdu et a failli mourir. Elle était le chef des Hearthbound dans la tribu Avarosan."
 }

@@ -3,97 +3,35 @@
   "key": "38",
   "name": "Kassadin",
   "title": "Chasseur du Néant",
-  "version": "15.23.1",
-  "lore": "Kassadin a commencé sa vie modestement comme un paria, guidant les caravanes de marchands à travers le désert du Grand Sai en Shurima et les protégeant des prédateurs. Les étrangers le surnommaient affectueusement « Kassadin » (déformation de « Kas sai a dyn ? », ou « Qui le désert connaît-il ? »). Il fit fortune en explorant les ruines antiques de sa patrie.\n\nPrès de Zirima, il trouva un trésor personnel : il tomba amoureux d'une femme d'une tribu du désert. Il s'installa avec elle et leur fille, Kaisa (qui deviendra plus tard Kai'Sa), dans un petit village au sud. Il continuait ses voyages, revenant toujours avec des récits passionnants.\n\nSon voyage de retour de Piltover fut interrompu lorsqu'il rencontra des survivants terrifiés qui racontaient qu'une gueule des enfers avait dévoré leurs maisons. Craignant pour sa famille, Kassadin rentra chez lui au galop, pour ne trouver que du sable mouvant et des décombres. Il creusa jusqu'à ce que ses mains saignent, en vain. Des jours plus tard, il n'était plus qu'un homme brisé et vide, pleurant sous le soleil.\n\nRéduit à l'état de vagabond pendant des années, il fut éveillé par la rumeur du « Prophète » qui exigeait des sacrifices aux puissances obscures. Kassadin, qui connaissait les légendes de la chute d'Icathia (ravagée par le Néant), comprit que l'abîme avait été délibérément rouvert. Le Néant avait tué sa famille.\n\nKassadin fit le serment de venger sa femme et sa fille en détruisant ce Prophète, Malzahar, et la source de son pouvoir abyssal.\n\nIl décida de s'armer des armes les plus ésotériques et arcaniques de Valoran :\n\nIl fit appel à des faveurs pour obtenir des technologies interdites, souvent de l'ingéniosité zaunienne.\n\nIl s'allia à des guérisseurs spirituels ioniens.\n\nEnfin, il vola l'infâme Lame du Néant de Horok (Nether Blade), une épée légendaire.\n\nIl ne se souciait plus de sa propre mortalité, n'ayant plus rien à perdre. Sous l'apparence d'un pèlerin, Kassadin se rendit aux ruines d'Icathia. Il allait là où aucun homme n'était censé aller, prêt à affronter les monstres du Néant, même si cela devait le tuer.",
+  "version": "16.8.1",
+  "lore": "Kassadin se fraye un chemin brûlant dans les lieux les plus sombres du monde ; il sait que ses jours sont comptés. Guide et aventurier shurimien accompli, il avait choisi de fonder une famille parmi les tribus pacifiques du sud, jusqu'au jour où son village fut ravagé par le Néant. Il jura de se venger et s'arma de reliques arcaniques qu'il combina à l'aide de technologies interdites. Enfin, Kassadin se dirigea vers les ruines d'Icathia à la recherche du prophète autoproclamé, Malzahar, prêt à affronter les monstres du Néant.",
   "tags": [
     "Assassin",
     "Mage"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Kassadin.png",
+    "sprite": "champion1.png",
+    "group": "champion",
     "x": 432,
     "y": 96,
-    "full": "Kassadin.png",
-    "group": "champion",
-    "sprite": "champion1.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "38000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "38001",
-      "num": 1,
-      "name": "Kassadin du Festival",
-      "chromas": false
-    },
-    {
-      "id": "38002",
-      "num": 2,
-      "name": "Kassadin des profondeurs",
-      "chromas": false
-    },
-    {
-      "id": "38003",
-      "num": 3,
-      "name": "Kassadin humain",
-      "chromas": false
-    },
-    {
-      "id": "38004",
-      "num": 4,
-      "name": "Kassadin héraut",
-      "chromas": false
-    },
-    {
-      "id": "38005",
-      "num": 5,
-      "name": "Kassadin faucheur cosmique",
-      "chromas": false
-    },
-    {
-      "id": "38006",
-      "num": 6,
-      "name": "Comte Kassadin",
-      "chromas": true
-    },
-    {
-      "id": "38014",
-      "num": 14,
-      "name": "Kassadin Hextech",
-      "chromas": false
-    },
-    {
-      "id": "38015",
-      "num": 15,
-      "name": "Kassadin électrolame",
-      "chromas": false
-    },
-    {
-      "id": "38024",
-      "num": 24,
-      "name": "Kassadin dracomancien",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "NullLance",
       "name": "Orbe du Néant",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NullLance.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 192,
         "y": 48,
-        "full": "NullLance.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -106,6 +44,12 @@
           "PV du bouclier",
           "Coût en @AbilityResourceName@",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ shieldamount }} -> {{ shieldamountNL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -119,13 +63,13 @@
       "name": "Lame éthérée",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NetherBlade.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 240,
         "y": 48,
-        "full": "NetherBlade.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -137,6 +81,11 @@
           "Dégâts actifs",
           "Mana rendu de base",
           "Mana rendu contre les champions"
+        ],
+        "effect": [
+          "{{ activebasedamage }} -> {{ activebasedamageNL }}",
+          "{{ missingmanaratio }}% -> {{ missingmanaratioNL }}%",
+          "{{ championmissingmanaratio }}% -> {{ championmissingmanaratioNL }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -150,13 +99,13 @@
       "name": "Pulsation",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ForcePulse.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 288,
         "y": 48,
-        "full": "ForcePulse.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -169,6 +118,12 @@
           "Ralentissement",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ e2 }}% -> {{ e2NL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -182,13 +137,13 @@
       "name": "Fissure",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RiftWalk.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 336,
         "y": 48,
-        "full": "RiftWalk.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -200,6 +155,11 @@
           "Dégâts",
           "Dégâts par effet cumulé",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ rbasedamage }} -> {{ rbasedamageNL }}",
+          "{{ stackdamage }} -> {{ stackdamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -212,13 +172,13 @@
   "passive": {
     "name": "Pierre du Néant",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Kassadin_Passive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 432,
       "y": 96,
-      "full": "Kassadin_Passive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Kassadin subit moins de dégâts magiques et peut traverser les unités."
   },
@@ -231,20 +191,20 @@
   "gender": "Male",
   "species": "Human",
   "title_en": "the Void Walker",
-  "lore_en": "Kassadin began life as a lowly offcast, guiding merchant caravans across the harsh sands of the Great Sai in Shurima. His talents were sought after, and he became known as Kassadin in the back alleys and markets of Bel'zhun. After years of exploring ancient ruins, he found a treasure of his own near Zirima—he fell in love with a woman from a desert tribe. He settled with his wife and newborn daughter, Kaisa (who would become Kai'Sa), in a small village to the south.\n\nOn a journey home from distant Piltover, Kassadin met terrified survivors stumbling out of the desert, speaking of a disaster that had swallowed their homes. Fearing for his family, Kassadin rode hard. When he finally reached his village, he found only shifting sand and rubble. He clawed at the debris, screaming his wife and daughter’s names, finding no answer. For days, he was a broken, empty man, convinced his family was dead.\n\nReduced to a vagrant, Kassadin's despair was broken when word reached town of \"the Prophet.\" Whispers of unspeakable horrors beneath the earth and sacrifices made in their name chilled him. He knew the legends of doomed Icathia and realized the Void had been deliberately drawn toward Shurima.\n\nKassadin swore he would avenge his wife and daughter by destroying the insidious Prophet, Malzahar, and the source of his abyssal power.\n\nHe resolved to arm himself with the most arcane and esoteric weapons in Valoran:\n\nHe called in favors for forbidden technologies, often leveraging Zaunite ingenuity.\n\nHe sought blessings from Ionian spirit-healers.\n\nFinally, he stole the infamous Nether Blade of Horok, a legendary sword.\n\nHe no longer cared for his own mortality, having nothing left to lose. Disguised as a pilgrim, Kassadin made his way into Icathia. He would go where no man was ever meant to walk, ready to confront the monsters of the Void, even if it meant his death.",
+  "lore_en": "Cutting a burning swath through the darkest places of the world, Kassadin knows his days are numbered. A widely traveled Shuriman guide and adventurer, he had chosen to raise a family among the peaceful southern tribes—until the day his village was consumed by the Void. He vowed vengeance, combining a number of arcane artifacts and forbidden technologies for the struggle ahead. Finally, Kassadin set out for the wastelands of Icathia, ready to face any monstrous Void-construct in his search for their self-proclaimed prophet, Malzahar.",
   "spells_en": [
     {
       "id": "NullLance",
       "name": "Null Sphere",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NullLance.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 192,
         "y": 48,
-        "full": "NullLance.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -257,6 +217,12 @@
           "Shield Amount",
           "@AbilityResourceName@ Cost",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ shieldamount }} -> {{ shieldamountNL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -270,13 +236,13 @@
       "name": "Nether Blade",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NetherBlade.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 240,
         "y": 48,
-        "full": "NetherBlade.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -288,6 +254,11 @@
           "Active Damage",
           "Base Mana Restore",
           "Champion Mana Restore"
+        ],
+        "effect": [
+          "{{ activebasedamage }} -> {{ activebasedamageNL }}",
+          "{{ missingmanaratio }}% -> {{ missingmanaratioNL }}%",
+          "{{ championmissingmanaratio }}% -> {{ championmissingmanaratioNL }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -301,13 +272,13 @@
       "name": "Force Pulse",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ForcePulse.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 288,
         "y": 48,
-        "full": "ForcePulse.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -320,6 +291,12 @@
           "Slow",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ e2 }}% -> {{ e2NL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -333,13 +310,13 @@
       "name": "Riftwalk",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RiftWalk.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 336,
         "y": 48,
-        "full": "RiftWalk.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -351,6 +328,11 @@
           "Damage",
           "Damage Per Stack",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ rbasedamage }} -> {{ rbasedamageNL }}",
+          "{{ stackdamage }} -> {{ stackdamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -363,13 +345,13 @@
   "passive_en": {
     "name": "Void Stone",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Kassadin_Passive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 432,
       "y": 96,
-      "full": "Kassadin_Passive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Kassadin takes reduced magic damage and ignores unit collision."
   },
@@ -437,6 +419,84 @@
       "num": 24,
       "name": "Dragonmancer Kassadin",
       "chromas": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "38000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "38001",
+      "num": 1,
+      "name": "Kassadin du Festival",
+      "chromas": false
+    },
+    {
+      "id": "38002",
+      "num": 2,
+      "name": "Kassadin des profondeurs",
+      "chromas": false
+    },
+    {
+      "id": "38003",
+      "num": 3,
+      "name": "Kassadin humain",
+      "chromas": false
+    },
+    {
+      "id": "38004",
+      "num": 4,
+      "name": "Kassadin héraut",
+      "chromas": false
+    },
+    {
+      "id": "38005",
+      "num": 5,
+      "name": "Kassadin faucheur cosmique",
+      "chromas": false
+    },
+    {
+      "id": "38006",
+      "num": 6,
+      "name": "Comte Kassadin",
+      "chromas": true
+    },
+    {
+      "id": "38014",
+      "num": 14,
+      "name": "Kassadin Hextech",
+      "chromas": false
+    },
+    {
+      "id": "38015",
+      "num": 15,
+      "name": "Kassadin électrolame",
+      "chromas": false
+    },
+    {
+      "id": "38024",
+      "num": 24,
+      "name": "Kassadin dracomancien",
+      "chromas": false
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Malzahar",
+      "type": "champion",
+      "relation": "nemesis/ex-friend",
+      "note_fr": "Obstacle majeur du Néant",
+      "note_en": "major void obstacle"
+    },
+    {
+      "id": "Kaisa",
+      "type": "champion",
+      "relation": "daughter",
+      "note_fr": "Fille perdue",
+      "note_en": "Lost daughter"
     }
   ]
 }

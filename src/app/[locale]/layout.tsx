@@ -1,30 +1,26 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Marcellus, Roboto } from "next/font/google";
 import "../globals.css";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import { Suspense } from "react";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import StoreProvider from '@/app/StoreProvider';
 
-
-import { fetchAllChampionsLight, fetchLoreCharactersLight } from "@/lib/data";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const marcellus = Marcellus({
+  weight: "400",
+  variable: "--font-marcellus",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const roboto = Roboto({
+  weight: ["300", "400", "500", "700"],
+  variable: "--font-roboto",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
   title: "RuneDex",
   description: "League of Legends Champion Database",
-
 };
 
 export default async function RootLayout({
@@ -36,32 +32,23 @@ export default async function RootLayout({
 }>) {
   const { locale } = await params;
 
-  // Ensure that the incoming `locale` is valid
   if (!['en', 'fr'].includes(locale)) {
     notFound();
   }
 
-  // Providing all messages to the client
   const messages = await getMessages();
-
-  const champions = await fetchAllChampionsLight(locale);
-  const loreCharacters = await fetchLoreCharactersLight();
 
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-900 text-white flex flex-col min-h-screen`}
+        className={`${marcellus.variable} ${roboto.variable} font-sans antialiased bg-[#010a13] text-[#a09b8c]`}
+        style={{ fontFamily: 'var(--font-roboto)' }}
       >
         <NextIntlClientProvider messages={messages}>
-          <Suspense fallback={<div className="h-16 bg-gray-900 border-b border-gray-800" />}>
-            <Navbar champions={champions} loreCharacters={loreCharacters} />
-          </Suspense>
-          <div className="pt-16 flex-grow">
+          <StoreProvider>
             {children}
-          </div>
-          <Footer />
+          </StoreProvider>
         </NextIntlClientProvider>
-
       </body>
     </html>
   );

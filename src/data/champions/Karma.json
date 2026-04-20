@@ -3,133 +3,35 @@
   "key": "43",
   "name": "Karma",
   "title": "Sagesse incarnée",
-  "version": "15.23.1",
-  "lore": "Karma est l'incarnation vivante d'une âme ionienne ancienne, réincarnée à travers les générations. Sa dernière incarnation est celle d'une fille de 12 ans nommée Darha, élevée dans les hauts plateaux de Shon-Xan.\n\nDès son plus jeune âge, Darha fut assaillie par d'étranges visions et mémoires d'une autre vie, la poussant au bord de la folie. Elle fut reconnue par un groupe de moines du Dernier Autel (Lasting Altar) qui cherchaient la nouvelle incarnation de Karma, l'ancien dirigeant spirituel étant récemment décédé. Les moines comprirent que les visions étaient les vies passées qui se précipitaient pour remplir le nouveau réceptacle.\n\nDarha laissa derrière elle sa vie pour devenir Karma, apprenant à communier avec des milliers d'incarnations précédentes. L'enseignement ancestral prônait la paix et l'harmonie : toute mauvaise action engendrerait ses propres répercussions et ne nécessiterait aucune réponse violente.\n\nCependant, Karma (Darha) remettait en question ces principes. Sa foi fut cruellement testée lorsque Noxus envahit Ionia. Des milliers de personnes furent tuées, et Karma sentit le potentiel destructeur immense qui gonflait dans son âme. Les voix du passé l'exhortaient à rester passive, mais une vérité plus profonde la força à agir.\n\nTiraillée par l'agonie, Karma prit une décision radicale : elle confronta un commandant noxien sur son propre navire de guerre et déchaîna sa fureur divine, oblitérant le navire et son équipage en un instant.\n\nBien que de nombreux Ioniens se soient réjouis, les moines la réprimandèrent sévèrement. Ils croyaient qu'elle avait brisé l'harmonie spirituelle de leur patrie, déshonorant toutes les incarnations précédentes de Karma.\n\nKarma les fit taire, choisissant d'écouter non pas les voix du passé, mais l'Esprit d'Ionia dans son cœur. Elle comprit que leur monde changeait, et que la véritable sagesse résidait dans l'acceptation que l'harmonie nécessitait parfois une action, et que la paix venait à un prix élevé.\n\nBien que la guerre soit finie, Ionia reste divisée, de nombreuses factions répondant désormais à la violence par la violence. Karma s'est engagée à guider son peuple vers un chemin plus éclairé : la paix lorsque c'est possible, mais l'action lorsque c'est nécessaire.",
+  "version": "16.8.1",
+  "lore": "Aucun mortel n'incarne mieux que Karma les traditions spirituelles d'Ionia. Elle est l'hôte vivant d'une âme ancienne réincarnée à de multiples reprises. Elle contient tous les souvenirs accumulés au fil de ces vies et elle possède une puissance que peu peuvent comprendre. Elle a fait de son mieux pour guider son peuple lors de la crise récente, même si elle sait que la paix et l'harmonie ne sont possibles qu'à un prix élevé, pour elle et pour la terre qu'elle aime tant.",
   "tags": [
     "Mage",
     "Support"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Karma.png",
+    "sprite": "champion1.png",
+    "group": "champion",
     "x": 336,
     "y": 96,
-    "full": "Karma.png",
-    "group": "champion",
-    "sprite": "champion1.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "43000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "43001",
-      "num": 1,
-      "name": "Karma déesse du soleil",
-      "chromas": false
-    },
-    {
-      "id": "43002",
-      "num": 2,
-      "name": "Karma sakura",
-      "chromas": false
-    },
-    {
-      "id": "43003",
-      "num": 3,
-      "name": "Karma classique",
-      "chromas": false
-    },
-    {
-      "id": "43004",
-      "num": 4,
-      "name": "Karma de l'Ordre du lotus",
-      "chromas": false
-    },
-    {
-      "id": "43005",
-      "num": 5,
-      "name": "Karma purificatrice",
-      "chromas": false
-    },
-    {
-      "id": "43006",
-      "num": 6,
-      "name": "Karma merveille hivernale",
-      "chromas": false
-    },
-    {
-      "id": "43007",
-      "num": 7,
-      "name": "Karma conquérante",
-      "chromas": true
-    },
-    {
-      "id": "43008",
-      "num": 8,
-      "name": "Karma du pulsar sombre",
-      "chromas": true
-    },
-    {
-      "id": "43019",
-      "num": 19,
-      "name": "Karma héraut de l'aube",
-      "chromas": false
-    },
-    {
-      "id": "43026",
-      "num": 26,
-      "name": "Karma de l'Odyssée",
-      "chromas": false
-    },
-    {
-      "id": "43027",
-      "num": 27,
-      "name": "Karma déchue",
-      "chromas": true
-    },
-    {
-      "id": "43044",
-      "num": 44,
-      "name": "Karma dragon de la tranquillité",
-      "chromas": false
-    },
-    {
-      "id": "43054",
-      "num": 54,
-      "name": "Karma reine des fæs",
-      "chromas": false
-    },
-    {
-      "id": "43061",
-      "num": 61,
-      "name": "Karma infernale",
-      "chromas": false
-    },
-    {
-      "id": "43070",
-      "num": 70,
-      "name": "Karma fleur spirituelle",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "KarmaQ",
       "name": "Flamme intérieure",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KarmaQ.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 288,
         "y": 0,
-        "full": "KarmaQ.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -141,6 +43,11 @@
           "Dégâts",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -154,13 +61,13 @@
       "name": "Volonté concentrée",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KarmaSpiritBind.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 336,
         "y": 0,
-        "full": "KarmaSpiritBind.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -172,6 +79,11 @@
           "Dégâts",
           "Durée de l'immobilisation",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ rootduration }} -> {{ rootdurationNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -185,24 +97,29 @@
       "name": "Exaltation",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KarmaSolKimShield.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 384,
         "y": 0,
-        "full": "KarmaSolKimShield.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
       "tooltip": "Karma octroie à un champion allié un <shield>bouclier de {{ totalshield }} PV</shield> pendant {{ shieldduration }} sec et <speed>+{{ movespeed*100 }}% de vitesse de déplacement</speed> pendant {{ movespeedduration }} sec.{{ spellmodifierdescriptionappend }}",
-      "costBurn": "50/55/60/65/70",
+      "costBurn": "60/65/70/75/80",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "PV du bouclier",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ baseshield }} -> {{ baseshieldNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -216,13 +133,13 @@
       "name": "Mantra",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KarmaMantra.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 432,
         "y": 0,
-        "full": "KarmaMantra.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 4,
@@ -236,6 +153,13 @@
           "Prolongation d'immobilisation de Renouveau",
           "Bouclier de Défi",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ qbonusdamage }} -> {{ qbonusdamageNL }}",
+          "{{ qdetonationdamage }} -> {{ qdetonationdamageNL }}",
+          "{{ rwbonusroot }} -> {{ rwbonusrootNL }}",
+          "{{ ebonusshield }} -> {{ ebonusshieldNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -248,13 +172,13 @@
   "passive": {
     "name": "Concentration ardente",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Karma_Passive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 336,
       "y": 96,
-      "full": "Karma_Passive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Les compétences de Karma qui infligent des dégâts réduisent le délai de récupération de Mantra."
   },
@@ -269,20 +193,20 @@
   "gender": "Female",
   "species": "Human",
   "title_en": "the Enlightened One",
-  "lore_en": "Karma is the living embodiment of an ancient Ionian soul, reincarnated through generations. Her most recent incarnation came in the form of a 12-year-old girl named Darha, raised in the northern highlands of Shon-Xan.\n\nFrom a young age, Darha suffered from strange, fitful visions and memories of past lives, nearly driving her to madness. She was recognized by a group of monks from the Lasting Altar, who were searching for the new incarnation of Karma after the divine leader's passing. The monks realized the visions were past lives rushing to fill the new vessel.\n\nDarha bid farewell to her old life to become Karma, learning to commune with thousands of previous incarnations. The ancient teachings advocated peace and harmony: any evil act would bring its own repercussions and required no violent response.\n\nHowever, Karma (Darha) questioned these principles. Her faith was severely tested when Noxus invaded Ionia. Thousands were killed, and Karma felt the immense destructive potential swelling within her soul. The voices of the past urged her to remain passive, but a deeper truth compelled her to act.\n\nAgonizing over this, Karma took radical action: she confronted a Noxian commander on his war frigate and unleashed her divine fury, obliterating the entire vessel and its crew in a heartbeat.\n\nThough many Ionians rejoiced, the monks severely reprimanded her. They believed she had upset the spiritual harmony of their homeland, disgracing all who had borne the name of Karma before her.\n\nKarma silenced them, choosing to listen not to the voices of the past, but to the Spirit of Ionia in her heart. She understood that their world was changing, and true wisdom lay in accepting that harmony sometimes required action, and that peace came at a great cost.\n\nThough the war is long over, Ionia remains divided, with many factions now meeting violence with violence, even against their own neighbors. Karma has pledged to guide them to a more enlightened path: peace when possible, but action when necessary.",
+  "lore_en": "No mortal exemplifies the spiritual traditions of Ionia more than Karma. She is the living embodiment of an ancient soul reincarnated countless times, carrying all her accumulated memories into each new life, and blessed with power that few can comprehend. She has done her best to guide her people in recent times of crisis, though she knows that peace and harmony may come only at a considerable cost—both to her, and to the land she holds most dear.",
   "spells_en": [
     {
       "id": "KarmaQ",
       "name": "Inner Flame",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KarmaQ.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 288,
         "y": 0,
-        "full": "KarmaQ.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -294,6 +218,11 @@
           "Damage",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -307,13 +236,13 @@
       "name": "Focused Resolve",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KarmaSpiritBind.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 336,
         "y": 0,
-        "full": "KarmaSpiritBind.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -325,6 +254,11 @@
           "Damage",
           "Root Duration",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ rootduration }} -> {{ rootdurationNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -338,24 +272,29 @@
       "name": "Inspire",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KarmaSolKimShield.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 384,
         "y": 0,
-        "full": "KarmaSolKimShield.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
       "tooltip": "Karma grants an allied champion <shield>{{ totalshield }} Shield</shield> for {{ shieldduration }}s and <speed>{{ movespeed*100 }}% Move Speed</speed> for {{ movespeedduration }}s.{{ spellmodifierdescriptionappend }}",
-      "costBurn": "50/55/60/65/70",
+      "costBurn": "60/65/70/75/80",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Shield Amount",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ baseshield }} -> {{ baseshieldNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -369,13 +308,13 @@
       "name": "Mantra",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KarmaMantra.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 432,
         "y": 0,
-        "full": "KarmaMantra.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 4,
@@ -389,6 +328,13 @@
           "Renewal Root Extension",
           "Defiance Shield",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ qbonusdamage }} -> {{ qbonusdamageNL }}",
+          "{{ qdetonationdamage }} -> {{ qdetonationdamageNL }}",
+          "{{ rwbonusroot }} -> {{ rwbonusrootNL }}",
+          "{{ ebonusshield }} -> {{ ebonusshieldNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -401,13 +347,13 @@
   "passive_en": {
     "name": "Gathering Fire",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Karma_Passive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 336,
       "y": 96,
-      "full": "Karma_Passive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Karma's damaging abilities will reduce the cooldown of Mantra."
   },
@@ -511,6 +457,113 @@
       "num": 70,
       "name": "Spirit Blossom Karma",
       "chromas": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "43000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "43001",
+      "num": 1,
+      "name": "Karma déesse du soleil",
+      "chromas": false
+    },
+    {
+      "id": "43002",
+      "num": 2,
+      "name": "Karma sakura",
+      "chromas": false
+    },
+    {
+      "id": "43003",
+      "num": 3,
+      "name": "Karma classique",
+      "chromas": false
+    },
+    {
+      "id": "43004",
+      "num": 4,
+      "name": "Karma de l'Ordre du lotus",
+      "chromas": false
+    },
+    {
+      "id": "43005",
+      "num": 5,
+      "name": "Karma purificatrice",
+      "chromas": false
+    },
+    {
+      "id": "43006",
+      "num": 6,
+      "name": "Karma merveille hivernale",
+      "chromas": false
+    },
+    {
+      "id": "43007",
+      "num": 7,
+      "name": "Karma conquérante",
+      "chromas": true
+    },
+    {
+      "id": "43008",
+      "num": 8,
+      "name": "Karma du pulsar sombre",
+      "chromas": true
+    },
+    {
+      "id": "43019",
+      "num": 19,
+      "name": "Karma héraut de l'aube",
+      "chromas": false
+    },
+    {
+      "id": "43026",
+      "num": 26,
+      "name": "Karma de l'Odyssée",
+      "chromas": false
+    },
+    {
+      "id": "43027",
+      "num": 27,
+      "name": "Karma déchue",
+      "chromas": true
+    },
+    {
+      "id": "43044",
+      "num": 44,
+      "name": "Karma dragon de la tranquillité",
+      "chromas": false
+    },
+    {
+      "id": "43054",
+      "num": 54,
+      "name": "Karma reine des fæs",
+      "chromas": false
+    },
+    {
+      "id": "43061",
+      "num": 61,
+      "name": "Karma infernale",
+      "chromas": false
+    },
+    {
+      "id": "43070",
+      "num": 70,
+      "name": "Karma fleur spirituelle",
+      "chromas": false
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Irelia",
+      "type": "champion",
+      "relation": "rival",
+      "note_fr": "Désaccord politique",
+      "note_en": "Political disagreement"
     }
   ]
 }

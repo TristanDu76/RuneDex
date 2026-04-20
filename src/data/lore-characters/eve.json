@@ -1,11 +1,28 @@
 {
   "id": "eve",
   "name": "Eve",
-  "faction": null,
-  "gender": null,
-  "species": null,
-  "description": "Personnage du lore de League of Legends",
-  "image": null,
-  "created_at": "2026-01-26T13:41:34.756Z",
-  "description_en": "League of Legends lore character"
+  "origin_region": "zaun",
+  "region": "zaun",
+  "faction": [
+    "zaun"
+  ],
+  "universe": [
+    "runeterra-prime"
+  ],
+  "gender": "unknown",
+  "species": [
+    "human"
+  ],
+  "status": "unknown",
+  "power_source": "chemtech-user",
+  "image": "https://wiki.leagueoflegends.com/en-us/images/Eve_Arcane_Render.png?9f522",
+  "created_at": "2026-03-31T19:28:20.631843+00:00",
+  "description_en": "Eve was a member of the Firelights and one of Ekko's friends. She participated in a raid on one of Silco's shimmer transports in order to destroy the cargo he was hauling, but was intercepted by Jinx, who punched off her mask during their scuffle. The sight of Eve's pink hair caused Jinx to mistake her for her older sister Vi and have a traumatic attack. After lighting up some of the shimmer that had been spilled nearby with a flare, Eve attempted to flee, but was fatally shot in the back by Jinx, much to Ekko's grief and rage.",
+  "related_characters": [
+    "Ekko",
+    "Jinx",
+    "Silco",
+    "Vi"
+  ],
+  "description_fr": "Eve était membre des Firelights et l'une des amies d'Ekko. Elle a participé à un raid sur l'un des transports chatoyants de Silco afin de détruire la cargaison qu'il transportait, mais a été interceptée par Jinx, qui lui a arraché son masque pendant leur bagarre. La vue des cheveux roses d'Eve a amené Jinx à la prendre pour sa sœur aînée Vi et à avoir une attaque traumatisante. Après avoir allumé une partie des reflets qui s'étaient répandus à proximité avec une fusée éclairante, Eve a tenté de fuir, mais a été mortellement touchée dans le dos par Jinx, au grand chagrin et à la rage d'Ekko."
 }

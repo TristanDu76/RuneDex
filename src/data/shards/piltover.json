@@ -1,0 +1,3117 @@
+[
+  {
+    "id": "caitlyn",
+    "name": "Caitlyn",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Caitlyn.png",
+    "factionKey": "piltover",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "camille",
+        "type": "champion",
+        "relation": "family",
+        "auto_generated": false,
+        "note_fr": "Grande-tante (Protection secrète)",
+        "note_en": "Great-aunt (Secret protection)"
+      },
+      {
+        "id": "vi",
+        "type": "champion",
+        "relation": "lover",
+        "auto_generated": false,
+        "note_fr": "Partenaire",
+        "note_en": "Partner"
+      },
+      {
+        "id": "ava",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "bolbok",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "cassandra",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "chross",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "corina-veraza",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "gorgeous-man",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "grayson",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "gustove-jowler",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "harold",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "heenot",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "huck",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "isha",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "j-s-harknor",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "jericho",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kepple",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "loris-the-shield-of-piltover",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "maddie",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "mantaire",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "marcus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "margot",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "mir",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "mylo",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "pim",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "ran",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "renni",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rictus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "salo",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "scar-the-blazing-firelight",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "scar",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "sevika",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "silco",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "smeech",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "steb-the-silent-guardian",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "steb",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tamara",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "thieram",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tobias",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "vander",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "warden-of-stillwater",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "zayne-asako",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "zevi",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "camille",
+    "name": "Camille",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Camille.png",
+    "factionKey": "piltover",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "vi",
+        "type": "champion",
+        "relation": "rival",
+        "auto_generated": false,
+        "note_fr": "Obstacle à l'ordre",
+        "note_en": "Obstacle to order"
+      },
+      {
+        "id": "caitlyn",
+        "type": "champion",
+        "relation": "family",
+        "auto_generated": false,
+        "note_fr": "Grande-tante (Protection secrète)",
+        "note_en": "Great-aunt (Secret protection)"
+      },
+      {
+        "id": "albus-ferros",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "corina-veraza",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "gemma-ferros",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "marko-volkage",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "petrok-grime",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rhodri-ferros",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "stevan-ferros",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "ezreal",
+    "name": "Ezreal",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Ezreal.png",
+    "factionKey": "piltover",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "zoe",
+        "type": "champion",
+        "relation": "lover",
+        "auto_generated": false
+      },
+      {
+        "id": "januk",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "jolando",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "zalie",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "heimerdinger",
+    "name": "Heimerdinger",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Heimerdinger.png",
+    "factionKey": "piltover",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "ziggs",
+        "type": "champion",
+        "relation": "friend",
+        "auto_generated": false,
+        "note_fr": "Partenaire explosif",
+        "note_en": "Explosive partner"
+      },
+      {
+        "id": "bolbok",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "cassandra",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "elora",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "giselle",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "grayson",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "harold",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "hoskel",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "marcus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rictus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "salo",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "scar-the-blazing-firelight",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "scar",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "shoola",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "stanwick-pididly",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tobias",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "torman-hoskel",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "wilfred",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "ximena-talis",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "jayce",
+    "name": "Jayce",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Jayce.png",
+    "factionKey": "piltover",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "viktor",
+        "type": "champion",
+        "relation": "rival",
+        "auto_generated": false,
+        "note_fr": "Ancien ami / Rival idéologique",
+        "note_en": "Former friend / Ideological rival"
+      },
+      {
+        "id": "albus-ferros",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "amara",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "axel",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "benzo",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "billingsworth",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "bolbok",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "cassandra",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "chross",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "claggor",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "elora",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "finn",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "gorgeous-man",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "harold",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "hoskel",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "huck",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "loris-the-shield-of-piltover",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "maddie",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "marcus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "margot",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "reggie",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "renni",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rennis-son",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rictus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rosa",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "salo",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "sevika",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "shoola",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "silco",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "sky-young",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "smeech",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "stanwick-pididly",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tobias",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "torman-hoskel",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "vander",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "ximena-talis",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "mel",
+    "name": "Mel",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Mel.png",
+    "factionKey": "piltover",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "amara",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "azizi-medarda",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "billingsworth",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "bolbok",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "cassandra",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "elora",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "gorgeous-man",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "grayson",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "harold",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "hoskel",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "huck",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "jago",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kino-medarda",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "lest",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "maddie",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "medarda-jago",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "menelik-medarda",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "mion-of-binan",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "renni",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rictus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rudo",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "salo",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "shoola",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "steb-the-silent-guardian",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "steb",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tobias",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "torman-hoskel",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "orianna",
+    "name": "Orianna",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Orianna.png",
+    "factionKey": "piltover",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "blitzcrank",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": false,
+        "note_fr": "Automates conscients",
+        "note_en": "Sentient automatons"
+      },
+      {
+        "id": "fieram",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "vander",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "seraphine",
+    "name": "Séraphine",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Seraphine.png",
+    "factionKey": "piltover",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "skarner",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": false,
+        "note_fr": "Entend son cristal (Hextech)",
+        "note_en": "Hears his crystal (Hextech)"
+      },
+      {
+        "id": "acorn",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "vi",
+    "name": "Vi",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Vi.png",
+    "factionKey": "piltover",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "camille",
+        "type": "champion",
+        "relation": "rival",
+        "auto_generated": false,
+        "note_fr": "Obstacle à l'ordre",
+        "note_en": "Obstacle to order"
+      },
+      {
+        "id": "silco",
+        "type": "lore",
+        "relation": "rival/corruption",
+        "auto_generated": false,
+        "note_fr": "Responsable de la corruption de Jinx et Vander",
+        "note_en": "Responsible for Jinx and Vander's corruption"
+      },
+      {
+        "id": "urgot",
+        "type": "champion",
+        "relation": "rival",
+        "auto_generated": false,
+        "note_fr": "Représente la loi qu'il déteste",
+        "note_en": "Represents the law he hates."
+      },
+      {
+        "id": "jinx",
+        "type": "champion",
+        "relation": "sister",
+        "auto_generated": false
+      },
+      {
+        "id": "caitlyn",
+        "type": "champion",
+        "relation": "lover",
+        "auto_generated": false,
+        "note_fr": "Partenaire",
+        "note_en": "Partner"
+      },
+      {
+        "id": "vander",
+        "type": "lore",
+        "relation": "adoptive-daughter",
+        "auto_generated": false
+      },
+      {
+        "id": "babette",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "bolbok",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "cassandra",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "chross",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "claggor",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "deckard",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "eve",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "gert",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "gustove-jowler",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "heenot",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "huck",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "isha",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "j-s-harknor",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "jericho",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kepple",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "loris-the-shield-of-piltover",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "maddie",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "mantaire",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "marcus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "margot",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "mir",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "mylo",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "pim",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "renni",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rennis-son",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rictus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "salo",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "scar-the-blazing-firelight",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "scar",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "sevika",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "smeech",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "steb-the-silent-guardian",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "steb",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "thieram",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tobias",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tommy",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "warden-of-stillwater",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "zevi",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "albus-ferros",
+    "name": "Albus Ferros",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05PZ031-full.png?2990c",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "camille",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jayce",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "reggie",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "axel",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rosa",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "anura",
+    "name": "Anura",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/07PZ021-full.png?380f9",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "cornelius",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "neeko",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "nidalee",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "rowain",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "axel",
+    "name": "Axel",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05PZ023-full.png?fffd3",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "albus-ferros",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jayce",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "reggie",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "rosa",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "billingsworth",
+    "name": "Billingsworth",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Billingsworth_Arcane_Render.png?1ff6c",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "jayce",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jinx",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "mel",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "harold",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "marcus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "cherry",
+    "name": "Cherry",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/99PZ114-full.png?a2bec",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": []
+  },
+  {
+    "id": "cornelius",
+    "name": "Cornelius",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/07SH003-full.png?7fa4c",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "anura",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "neeko",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "nidalee",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "rowain",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "gemma-ferros",
+    "name": "Gemma Ferros",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "camille",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "gorgeous-man",
+    "name": "Gorgeous Man",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Gorgeous_Man_Arcane_Render.png?84a60",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "ambessa",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "babette",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "caitlyn",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jayce",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kindred",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "mel",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "rictus",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "margot",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "grayson",
+    "name": "Grayson",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Grayson_Arcane_Render.png?3145a",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "bolbok",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "caitlyn",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "cassandra",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "heimerdinger",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "hoskel",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "mel",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "salo",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "shoola",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "silco",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vander",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "claggor",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "harold",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "marcus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "mylo",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "ren",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tobias",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "torman-hoskel",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "harold",
+    "name": "Harold",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Harold_Arcane_Render.png?03535",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "billingsworth",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "bolbok",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "caitlyn",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "cassandra",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "grayson",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "heimerdinger",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "hoskel",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jayce",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jericho",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "mel",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "salo",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "shoola",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "tobias",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "viktor",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "marcus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "j-s-harknor",
+    "name": "J.S. Harknor",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/02PZ010-full.png?bcd71",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "caitlyn",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kepple",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "mir",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vi",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "zevi",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "januk",
+    "name": "Januk",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Ezreal_The_Curator%27s_Gambit.jpg?8c633",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "ezreal",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "mordekaiser",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "jolando",
+    "name": "Jolando",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/99PZ109-full.png?d0720",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "ezreal",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "kepple",
+    "name": "Kepple",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/02PZ005-full.png?4fd26",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "caitlyn",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "mir",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vi",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "warden-of-stillwater",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "zevi",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "j-s-harknor",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "klas-henwick",
+    "name": "Klas Henwick",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/01PZ024-full.png?17add",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": []
+  },
+  {
+    "id": "loris-the-shield-of-piltover",
+    "name": "Loris, The Shield of Piltover",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Loris_OriginalSkin_TFT.jpg?bbff7",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "ambessa",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "caitlyn",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jayce",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jinx",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "maddie",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vi",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "medarda-jae",
+    "name": "Medarda Jae",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/01PZ035-full.png?479b3",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "jago",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "medarda-jago",
+    "name": "Medarda Jago",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Piltover_Jago_Medarda.jpg?fae79",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "ambessa",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jago",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "mel",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "mir",
+    "name": "Mir",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/02PZ005-full.png?4fd26",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "caitlyn",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kepple",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vi",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "warden-of-stillwater",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "zevi",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "j-s-harknor",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "pesh",
+    "name": "Pesh",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06BW029-full.png?ff7e0",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "breshi",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "chaska",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "fireth",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jax",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "trisk",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "fireth-reaper-of-the-sands",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "reggie",
+    "name": "Reggie",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05PZ024-full.png?6a44a",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "albus-ferros",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "eramis",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jayce",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "axel",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rosa",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "ren",
+    "name": "Ren",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Ren_Arcane_Render.png?9ba3c",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "grayson",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "mantaire",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "ran",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "silco",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "rhodri-ferros",
+    "name": "Rhodri Ferros",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "camille",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "rosa",
+    "name": "Rosa",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05PZ025-full.png?df641",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "albus-ferros",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "axel",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jayce",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "reggie",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "rowain",
+    "name": "Captain Rowain",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/07SH005-full.png?50d96",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "anura",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "cornelius",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "neeko",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "nidalee",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "sempescu",
+    "name": "Lady Sempescu",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06PZ025-full.png?c72a7",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "evelynn",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "solitude",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "shoola",
+    "name": "Shoola",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Shoola_Arcane_Render.png?2783c",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "amara",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "bolbok",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "cassandra",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "grayson",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "heimerdinger",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "hoskel",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jayce",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jinx",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "mel",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "salo",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "sevika",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "elora",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "harold",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "maddie",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "marcus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tobias",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "torman-hoskel",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "stanwick-pididly",
+    "name": "Stanwick Pididly",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/StanwickPididly.png?7082c",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "heimerdinger",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jayce",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "steb-the-silent-guardian",
+    "name": "Steb, The Silent Guardian",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Steb_OriginalSkin_TFT.png?a3f7e",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "ambessa",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "caitlyn",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jinx",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "maddie",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "mel",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vi",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "stevan-ferros",
+    "name": "Stevan Ferros",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "camille",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "torman-hoskel",
+    "name": "Torman Hoskel",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Hoskel_Arcane_Render.png?36988",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "bolbok",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "cassandra",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "grayson",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "heimerdinger",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "hoskel",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jayce",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jinx",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "mel",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "salo",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "shoola",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "warden-of-stillwater",
+    "name": "Warden of Stillwater",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Warden_Stillwater_Arcane_Render.png?97320",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "ambessa",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "caitlyn",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jinx",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "sevika",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vi",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "warwick",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "caleb-of-uwendale",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "cithria",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "gustove-jowler",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kepple",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kharox",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "marcus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "mir",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "voss",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "ximena-talis",
+    "name": "Ximena Talis",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Ximena_Arcane_Render.png?78084",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "cassandra",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "heimerdinger",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jayce",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "tobias",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "bolbok",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "salo",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "zalie",
+    "name": "Zalie",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/99PZ112-full.png?e286f",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "ezreal",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "zayne-asako",
+    "name": "Zayne Asako",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05PZ009-full.png?2b7d0",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "caitlyn",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "corina-veraza",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "zevi",
+    "name": "Zevi",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/02PZ002-full.png?0a326",
+    "factionKey": "piltover",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "caitlyn",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kepple",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "mir",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vi",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "j-s-harknor",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  }
+]

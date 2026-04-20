@@ -3,103 +3,35 @@
   "key": "31",
   "name": "Cho'Gath",
   "title": "Terreur noire",
-  "version": "15.23.1",
-  "lore": "Cho'Gath est une créature née du Néant (the Void), une dimension entre les mondes souvent appelée l'Inconnu ou l'Extérieur, mais qui est tout sauf vide, étant le foyer d'horreurs indescriptibles. Le Néant et ses habitants, les Créatures du Néant (Voidborn), cherchent à se frayer un chemin vers Runeterra, qu'ils considèrent comme un paradis personnel d'horreur à dévorer.\r\n\r\nL'existence de Cho'Gath est si terrible que la plupart des mortels refusent de prononcer son nom. Il est l'incarnation de la volonté du Néant de dévorer toute forme de vie.\r\n\r\nDès son apparition sous le soleil de Runeterra (probablement par une faille en Icathia, là où les rumeurs d'une obscurité grandissante persistent), il fut pris d'une faim insatiable. Son corps complexe lui permet de convertir la matière qu'il ingurgite rapidement pour augmenter sa masse musculaire et renforcer sa carapace jusqu'à ce qu'elle devienne aussi dure que du diamant. En d'autres termes, il se nourrit de ses proies pour grandir, gonfler et devenir plus résistant.\r\n\r\nLorsqu'il n'est pas en train de croître activement, il peut recracher de la matière digérée sous forme de pics effilés pour empaler ses victimes, les gardant pour un festin ultérieur.\r\n\r\nCe qui rend Cho'Gath encore plus terrifiant, c'est qu'il est intelligent, voire extrêmement intelligent. Sa présence, qui provoque l'effroi même chez les plus braves, est un indice de l'horreur douée de sensation qui habite le Néant et qui est destinée, selon les rumeurs, à revenir et à commander de vastes armées sur Runeterra.",
+  "version": "16.8.1",
+  "lore": "Lorsque Cho'Gath débarqua sous la lumière éclatante du soleil de Runeterra, il fut immédiatement pris d'une faim insatiable. Incarnation parfaite de la volonté du Néant de dévorer toute forme de vie, le corps complexe de Cho'Gath convertit rapidement la matière qu'il ingurgite pour accroître sa masse musculaire et rendre sa carapace aussi dure que du diamant. Et quand grandir n'est pas sa priorité immédiate, ce monstre du Néant peut recracher de la matière sous forme de piques effilées afin d'embrocher sa proie... et de la garder pour un prochain festin.",
   "tags": [
     "Tank",
     "Mage"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Chogath.png",
+    "sprite": "champion0.png",
+    "group": "champion",
     "x": 144,
     "y": 96,
-    "full": "Chogath.png",
-    "group": "champion",
-    "sprite": "champion0.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "31000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "31001",
-      "num": 1,
-      "name": "Cho'Gath du cauchemar",
-      "chromas": false
-    },
-    {
-      "id": "31002",
-      "num": 2,
-      "name": "Cho'Gath gentleman",
-      "chromas": false
-    },
-    {
-      "id": "31003",
-      "num": 3,
-      "name": "Cho'Gath du Loch Ness",
-      "chromas": false
-    },
-    {
-      "id": "31004",
-      "num": 4,
-      "name": "Cho'Gath jurassique",
-      "chromas": false
-    },
-    {
-      "id": "31005",
-      "num": 5,
-      "name": "Proto Cho'Gath Prime",
-      "chromas": true
-    },
-    {
-      "id": "31006",
-      "num": 6,
-      "name": "Cho'Gath préhistorique",
-      "chromas": false
-    },
-    {
-      "id": "31007",
-      "num": 7,
-      "name": "Cho'Gath du pulsar sombre",
-      "chromas": false
-    },
-    {
-      "id": "31014",
-      "num": 14,
-      "name": "Cho'Gath des rouleaux de Shan Hai",
-      "chromas": true
-    },
-    {
-      "id": "31023",
-      "num": 23,
-      "name": "Cho'Gath de l'Alliance brisée",
-      "chromas": true
-    },
-    {
-      "id": "31032",
-      "num": 32,
-      "name": "Cho'Gath jouet",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "Rupture",
       "name": "Rupture",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "Rupture.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 0,
         "y": 144,
-        "full": "Rupture.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -109,6 +41,9 @@
       "leveltip": {
         "label": [
           "Dégâts"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -122,13 +57,13 @@
       "name": "Cri sauvage",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "FeralScream.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 48,
         "y": 144,
-        "full": "FeralScream.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -141,6 +76,12 @@
           "Délai de récupération",
           "Durée du silence",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ e2 }} -> {{ e2NL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -154,13 +95,13 @@
       "name": "Piques vorpales",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "VorpalSpikes.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 96,
         "y": 144,
-        "full": "VorpalSpikes.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -171,8 +112,16 @@
         "label": [
           "Dégâts",
           "Pourcentage des PV max en dégâts",
+          "Dégâts aux monstres",
           "Ralentissement",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ percenthealthdamage }}% -> {{ percenthealthdamageNL }}%",
+          "{{ modifiedmonstercap }} -> {{ modifiedmonstercapNL }}",
+          "{{ slowamountpercentage }}% -> {{ slowamountpercentageNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -186,13 +135,13 @@
       "name": "Festin",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "Feast.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 144,
         "y": 144,
-        "full": "Feast.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -205,6 +154,12 @@
           "PV par effet cumulé",
           "Portée d'attaque par effet cumulé",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ rbasedamage }} -> {{ rbasedamageNL }}",
+          "{{ rhealthperstack }} -> {{ rhealthperstackNL }}",
+          "{{ attackrangeperstack }} -> {{ attackrangeperstackNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -217,13 +172,13 @@
   "passive": {
     "name": "Carnivore",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "GreenTerror_TailSpike.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 144,
       "y": 96,
-      "full": "GreenTerror_TailSpike.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Lorsque Cho'Gath élimine une unité, il regagne des PV et du mana. Le nombre de PV et points de mana restaurés augmente avec le niveau de Cho'Gath."
   },
@@ -237,20 +192,20 @@
   "gender": "Male",
   "species": "Voidborn",
   "title_en": "the Terror of the Void",
-  "lore_en": "Cho'Gath is a creature born of the Void, a dimension between worlds often called the Unknown or the Outside, which is anything but empty, being home to unspeakable horrors. The Void and its inhabitants, the Voidborn, seek a way into Runeterra, which they view as a personal paradise of horror to be devoured.\r\n\r\nCho'Gath's existence is so awful that most mortals will not speak its name. It is the embodiment of the Void's will to devour all life.\r\n\r\nSince its arrival under Runeterra's bright sun (likely through a rift in Icathia, where rumors of a stirring darkness persist), it was seized by an insatiable hunger. Its complex body quickly converts the matter it ingests to increase its muscle mass and harden its shell until it becomes as tough as diamond. In other words, it feeds on its preys to grow, swell, and become more resilient.\r\n\r\nWhen it is not actively growing, it can spit out matter in the form of sharp spikes to impale its victims, saving them for a future feast.\r\n\r\nWhat makes Cho'Gath even more terrifying is that it is intelligent, perhaps greatly so. Its presence, which causes all but the most stalwart to cringe in fear, hints at the sentient horror of the Void, rumored to one day return and command vast armies on Runeterra.",
+  "lore_en": "From the moment Cho'Gath first emerged into the harsh light of Runeterra's sun, the beast was driven by the most pure and insatiable hunger. A perfect expression of the Void's desire to consume all life, Cho'Gath's complex biology quickly converts matter into new bodily growth—increasing its muscle mass and density, or hardening its outer carapace like organic diamond. When growing larger does not suit the Void-spawn's needs, it vomits out the excess material as razor-sharp spines, leaving prey skewered and ready to feast upon later.",
   "spells_en": [
     {
       "id": "Rupture",
       "name": "Rupture",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "Rupture.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 0,
         "y": 144,
-        "full": "Rupture.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -260,6 +215,9 @@
       "leveltip": {
         "label": [
           "Damage"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -273,13 +231,13 @@
       "name": "Feral Scream",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "FeralScream.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 48,
         "y": 144,
-        "full": "FeralScream.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -292,6 +250,12 @@
           "Cooldown",
           "Silence Duration",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ e2 }} -> {{ e2NL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -305,13 +269,13 @@
       "name": "Vorpal Spikes",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "VorpalSpikes.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 96,
         "y": 144,
-        "full": "VorpalSpikes.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -322,8 +286,16 @@
         "label": [
           "Damage",
           "Maximum Health Damage",
+          "Monster Damage",
           "Slow",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ percenthealthdamage }}% -> {{ percenthealthdamageNL }}%",
+          "{{ modifiedmonstercap }} -> {{ modifiedmonstercapNL }}",
+          "{{ slowamountpercentage }}% -> {{ slowamountpercentageNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -337,13 +309,13 @@
       "name": "Feast",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "Feast.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 144,
         "y": 144,
-        "full": "Feast.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -356,6 +328,12 @@
           "Health per Stack",
           "Attack Range per Stack",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ rbasedamage }} -> {{ rbasedamageNL }}",
+          "{{ rhealthperstack }} -> {{ rhealthperstackNL }}",
+          "{{ attackrangeperstack }} -> {{ attackrangeperstackNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -368,13 +346,13 @@
   "passive_en": {
     "name": "Carnivore",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "GreenTerror_TailSpike.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 144,
       "y": 96,
-      "full": "GreenTerror_TailSpike.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Whenever Cho'Gath kills a unit, he recovers Health and Mana. The values restored increase with Cho'Gath's level."
   },
@@ -449,6 +427,87 @@
       "num": 32,
       "name": "Toy Terror Cho'Gath",
       "chromas": true
+    },
+    {
+      "id": "31041",
+      "num": 41,
+      "name": "Petricite Cho'Gath",
+      "chromas": false
     }
-  ]
+  ],
+  "skins": [
+    {
+      "id": "31000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "31001",
+      "num": 1,
+      "name": "Cho'Gath du cauchemar",
+      "chromas": false
+    },
+    {
+      "id": "31002",
+      "num": 2,
+      "name": "Cho'Gath gentleman",
+      "chromas": false
+    },
+    {
+      "id": "31003",
+      "num": 3,
+      "name": "Cho'Gath du Loch Ness",
+      "chromas": false
+    },
+    {
+      "id": "31004",
+      "num": 4,
+      "name": "Cho'Gath jurassique",
+      "chromas": false
+    },
+    {
+      "id": "31005",
+      "num": 5,
+      "name": "Proto Cho'Gath Prime",
+      "chromas": true
+    },
+    {
+      "id": "31006",
+      "num": 6,
+      "name": "Cho'Gath préhistorique",
+      "chromas": false
+    },
+    {
+      "id": "31007",
+      "num": 7,
+      "name": "Cho'Gath du pulsar sombre",
+      "chromas": false
+    },
+    {
+      "id": "31014",
+      "num": 14,
+      "name": "Cho'Gath des rouleaux de Shan Hai",
+      "chromas": true
+    },
+    {
+      "id": "31023",
+      "num": 23,
+      "name": "Cho'Gath de l'Alliance brisée",
+      "chromas": true
+    },
+    {
+      "id": "31032",
+      "num": 32,
+      "name": "Cho'Gath jouet",
+      "chromas": true
+    },
+    {
+      "id": "31041",
+      "num": 41,
+      "name": "Cho'Gath de pétricite",
+      "chromas": false
+    }
+  ],
+  "related_characters": []
 }

@@ -3,7 +3,7 @@
   "key": "157",
   "name": "Yasuo",
   "title": "Disgracié",
-  "version": "15.23.1",
+  "version": "16.8.1",
   "lore": "L'Ionien Yasuo est un épéiste agile et résolu, capable de déchaîner contre ses ennemis la puissance de l'air. Alors qu'il était encore un jeune homme fier, il fut accusé à tort d'avoir assassiné son maître. Incapable de prouver son innocence, il dut fuir et fut finalement contraint de tuer son frère pour se défendre. Même après la découverte du véritable meurtrier de son maître, Yasuo ne parvint pas à faire la paix avec sa conscience. Il erre désormais dans son pays natal, et seul le vent guide sa lame.",
   "tags": [
     "Fighter",
@@ -11,137 +11,27 @@
   ],
   "partype": "Impulsion",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Yasuo.png",
+    "sprite": "champion5.png",
+    "group": "champion",
     "x": 432,
     "y": 0,
-    "full": "Yasuo.png",
-    "group": "champion",
-    "sprite": "champion5.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "157000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "157001",
-      "num": 1,
-      "name": "Yasuo de l'Ouest",
-      "chromas": true
-    },
-    {
-      "id": "157002",
-      "num": 2,
-      "name": "PROJET : Yasuo",
-      "chromas": false
-    },
-    {
-      "id": "157003",
-      "num": 3,
-      "name": "Yasuo lune de sang",
-      "chromas": false
-    },
-    {
-      "id": "157009",
-      "num": 9,
-      "name": "Yasuo héraut de la nuit",
-      "chromas": true
-    },
-    {
-      "id": "157010",
-      "num": 10,
-      "name": "Yasuo de l'Odyssée",
-      "chromas": true
-    },
-    {
-      "id": "157017",
-      "num": 17,
-      "name": "Yasuo boss de combat",
-      "chromas": true
-    },
-    {
-      "id": "157018",
-      "num": 18,
-      "name": "True Damage Yasuo",
-      "chromas": true
-    },
-    {
-      "id": "157035",
-      "num": 35,
-      "name": "True Damage Yasuo prestige",
-      "chromas": false
-    },
-    {
-      "id": "157036",
-      "num": 36,
-      "name": "Yasuo fleur spirituelle",
-      "chromas": true
-    },
-    {
-      "id": "157045",
-      "num": 45,
-      "name": "Yasuo loup de mer",
-      "chromas": true
-    },
-    {
-      "id": "157054",
-      "num": 54,
-      "name": "Yasuo dragon de la vérité",
-      "chromas": false
-    },
-    {
-      "id": "157055",
-      "num": 55,
-      "name": "Yasuo dragon des rêves",
-      "chromas": false
-    },
-    {
-      "id": "157056",
-      "num": 56,
-      "name": "Yasuo guerrier d'encre",
-      "chromas": true
-    },
-    {
-      "id": "157057",
-      "num": 57,
-      "name": "Yasuo guerrier d'encre prestige",
-      "chromas": false
-    },
-    {
-      "id": "157068",
-      "num": 68,
-      "name": "Yasuo de la prédiction",
-      "chromas": true
-    },
-    {
-      "id": "157077",
-      "num": 77,
-      "name": "Yasuo loup de combat",
-      "chromas": true
-    },
-    {
-      "id": "157087",
-      "num": 87,
-      "name": "Yasuo héraut de la nuit genèse",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "YasuoQ1Wrapper",
       "name": "Tempête d'acier",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YasuoQ1Wrapper.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 192,
         "y": 48,
-        "full": "YasuoQ1Wrapper.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -151,6 +41,9 @@
       "leveltip": {
         "label": [
           "Dégâts"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -164,13 +57,13 @@
       "name": "Mur de vent",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YasuoW.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 240,
         "y": 48,
-        "full": "YasuoW.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -181,6 +74,10 @@
         "label": [
           "Largeur",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ e5 }} -> {{ e5NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -194,13 +91,13 @@
       "name": "Cercle tranchant",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YasuoE.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 288,
         "y": 48,
-        "full": "YasuoE.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -212,6 +109,11 @@
           "Dégâts",
           "Délai de récupération par unité",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ e2 }} -> {{ e2NL }}",
+          "{{ e3 }} -> {{ e3NL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -225,13 +127,13 @@
       "name": "Dernier soupir",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YasuoR.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 336,
         "y": 48,
-        "full": "YasuoR.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -242,6 +144,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ rbasedamage }} -> {{ rbasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -254,13 +160,13 @@
   "passive": {
     "name": "Voie du vagabond",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Yasuo_Passive.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 432,
       "y": 0,
-      "full": "Yasuo_Passive.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Les chances de coup critique de Yasuo sont augmentées. De plus, Yasuo génère un bouclier quand il se déplace. Le bouclier se déclenche quand un champion ou un monstre lui inflige des dégâts."
   },
@@ -282,13 +188,13 @@
       "name": "Steel Tempest",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YasuoQ1Wrapper.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 192,
         "y": 48,
-        "full": "YasuoQ1Wrapper.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -298,6 +204,9 @@
       "leveltip": {
         "label": [
           "Damage"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "No Cost",
@@ -311,13 +220,13 @@
       "name": "Wind Wall",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YasuoW.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 240,
         "y": 48,
-        "full": "YasuoW.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -328,6 +237,10 @@
         "label": [
           "Width",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ e5 }} -> {{ e5NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -341,13 +254,13 @@
       "name": "Sweeping Blade",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YasuoE.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 288,
         "y": 48,
-        "full": "YasuoE.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -359,6 +272,11 @@
           "Damage",
           "Per Unit Cooldown",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ e2 }} -> {{ e2NL }}",
+          "{{ e3 }} -> {{ e3NL }}"
         ]
       },
       "resource": "No Cost",
@@ -372,13 +290,13 @@
       "name": "Last Breath",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YasuoR.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 336,
         "y": 48,
-        "full": "YasuoR.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -389,6 +307,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ rbasedamage }} -> {{ rbasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -401,13 +323,13 @@
   "passive_en": {
     "name": "Way of the Wanderer",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Yasuo_Passive.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 432,
       "y": 0,
-      "full": "Yasuo_Passive.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Yasuo's Critical Strike Chance is increased. Additionally, Yasuo builds toward a shield whenever he is moving. The shield triggers when he takes damage from a champion or monster."
   },
@@ -523,6 +445,151 @@
       "num": 87,
       "name": "Genesis Nightbringer Yasuo",
       "chromas": false
+    },
+    {
+      "id": "157088",
+      "num": 88,
+      "name": "Petals of Spring Yasuo",
+      "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "157000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "157001",
+      "num": 1,
+      "name": "Yasuo de l'Ouest",
+      "chromas": true
+    },
+    {
+      "id": "157002",
+      "num": 2,
+      "name": "PROJET : Yasuo",
+      "chromas": false
+    },
+    {
+      "id": "157003",
+      "num": 3,
+      "name": "Yasuo lune de sang",
+      "chromas": false
+    },
+    {
+      "id": "157009",
+      "num": 9,
+      "name": "Yasuo héraut de la nuit",
+      "chromas": true
+    },
+    {
+      "id": "157010",
+      "num": 10,
+      "name": "Yasuo de l'Odyssée",
+      "chromas": true
+    },
+    {
+      "id": "157017",
+      "num": 17,
+      "name": "Yasuo boss de combat",
+      "chromas": true
+    },
+    {
+      "id": "157018",
+      "num": 18,
+      "name": "True Damage Yasuo",
+      "chromas": true
+    },
+    {
+      "id": "157035",
+      "num": 35,
+      "name": "True Damage Yasuo prestige",
+      "chromas": false
+    },
+    {
+      "id": "157036",
+      "num": 36,
+      "name": "Yasuo fleur spirituelle",
+      "chromas": true
+    },
+    {
+      "id": "157045",
+      "num": 45,
+      "name": "Yasuo loup de mer",
+      "chromas": true
+    },
+    {
+      "id": "157054",
+      "num": 54,
+      "name": "Yasuo dragon de la vérité",
+      "chromas": false
+    },
+    {
+      "id": "157055",
+      "num": 55,
+      "name": "Yasuo dragon des rêves",
+      "chromas": false
+    },
+    {
+      "id": "157056",
+      "num": 56,
+      "name": "Yasuo guerrier d'encre",
+      "chromas": true
+    },
+    {
+      "id": "157057",
+      "num": 57,
+      "name": "Yasuo guerrier d'encre prestige",
+      "chromas": false
+    },
+    {
+      "id": "157068",
+      "num": 68,
+      "name": "Yasuo de la prédiction",
+      "chromas": true
+    },
+    {
+      "id": "157077",
+      "num": 77,
+      "name": "Yasuo loup de combat",
+      "chromas": true
+    },
+    {
+      "id": "157087",
+      "num": 87,
+      "name": "Yasuo héraut de la nuit genèse",
+      "chromas": false
+    },
+    {
+      "id": "157088",
+      "num": 88,
+      "name": "Yasuo pétales de printemps",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Taliyah",
+      "type": "champion",
+      "relation": "student",
+      "note_fr": "Mentor temporaire",
+      "note_en": "Temporary mentor"
+    },
+    {
+      "id": "elder_souma",
+      "type": "lore",
+      "relation": "student",
+      "note_fr": "Élève",
+      "note_en": "Student"
+    },
+    {
+      "id": "Yone",
+      "type": "champion",
+      "relation": "half-brother",
+      "note_fr": "Demi-frère",
+      "note_en": "Half-brother"
     }
   ]
 }

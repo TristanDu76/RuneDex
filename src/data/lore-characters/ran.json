@@ -1,11 +1,32 @@
 {
   "id": "ran",
   "name": "Ran",
-  "faction": null,
-  "gender": null,
-  "species": null,
-  "description": "Personnage du lore de League of Legends",
-  "image": null,
-  "created_at": "2026-01-26T13:41:34.761Z",
-  "description_en": "League of Legends lore character"
+  "origin_region": "zaun",
+  "region": "zaun",
+  "faction": [
+    "zaun"
+  ],
+  "universe": [
+    "runeterra-prime"
+  ],
+  "gender": "unknown",
+  "species": [
+    "human"
+  ],
+  "status": "unknown",
+  "power_source": "unknown",
+  "image": "https://wiki.leagueoflegends.com/en-us/images/Ran_Arcane_Render.png?fde6e",
+  "created_at": "2026-03-31T19:31:28.642375+00:00",
+  "description_en": "Ran was one of Silco's henchmen during his reign as leader of Zaun, who had a mechanical hand and liked to arm wrestle in The Last Drop. After Silco's death, Ran, Mantaire, and Thieram escaped Caitlyn's strike team when they unleashed the Gray against Silco's remaining forces.",
+  "related_characters": [
+    "Caitlyn",
+    "Deckard",
+    "Gustove Jowler",
+    "Jinx",
+    "Mantaire",
+    "Sevika",
+    "Silco",
+    "Thieram"
+  ],
+  "description_fr": "Ran était l'un des hommes de main de Silco pendant son règne en tant que chef de Zaun, qui avait une main mécanique et aimait faire un bras de fer dans The Last Drop. Après la mort de Silco, Ran, Mantaire et Thieram ont échappé à l'équipe d'attaque de Caitlyn lorsqu'ils ont lancé le Gris contre les forces restantes de Silco."
 }

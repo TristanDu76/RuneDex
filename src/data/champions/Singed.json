@@ -3,115 +3,35 @@
   "key": "27",
   "name": "Singed",
   "title": "Chimiste fou",
-  "version": "15.23.1",
-  "lore": "Singed a commencé sa vie comme un prodige à Piltover. Passionné par les sciences naturelles, il fut rapidement frustré par l'ascension de l'Hextech, qu'il considérait comme une béquille pour ceux qui ne comprenaient pas la réalité physique. Ses critiques virulentes et son refus de la magie le menèrent à l'ostracisme et à la ruine, le forçant à s'exiler à Zaun.\n\n L'Ascension du Chemtech : Dans l'anarchie de la cité souterraine, Singed trouva enfin la liberté d'expérimenter sans limites éthiques. Il devint le pionnier du Chemtech, développant des stimulants pour lui permettre de travailler des semaines entières sans dormir, au prix de sa propre santé physique.\n\n L'Architecte du Massacre : Son génie attira l'attention de Noxus. La commandante Emystan l'engagea pour briser l'enlisement de la guerre en Ionia. Singed créa un feu alchimique instable et terrifiant. Son déploiement fut une atrocité : le feu fracturait la pierre et empoisonnait la terre si durablement que plus rien ne pouvait y pousser. C'est cet événement qui brisa l'âme de Riven.\n\n L'Expérience Warwick : Récemment, ses travaux ont pris un tournant biologique radical. Une expérience visant à fusionner l'homme, l'animal et la machine a laissé ses laboratoires en ruines et son visage défiguré, dissimulé sous des bandages sales. Son sujet (connu sous le nom de Warwick) rôde désormais dans Zaun.\n\n Maître de la Vie et de la Mort : Après avoir maîtrisé la destruction de la chair, Singed cherche désormais à la préserver et à la transformer. Il explore l'idée que la mort elle-même ne soit pas une fatalité, mais une simple limite biologique à surmonter.",
+  "version": "16.8.1",
+  "lore": "Singed est un alchimiste brillant à la moralité douteuse dont les expériences retourneraient l'estomac du plus cruel des criminels. Vendant son savoir-faire au plus offrant, il n'a que faire de la façon dont ses concoctions nocives sont utilisées. Il considère que le chaos qui s'ensuit est une expérience en soi. Son invention la plus notoire est le « shimmer », qui a permis aux barons de la chimie de faire de Zaun leur terrain de jeu personnel. Mais poussé par la folie, Singed travaille toujours sur quelque chose de nouveau, chaque tentative toujours plus dépravée que la précédente...",
   "tags": [
     "Tank",
     "Mage"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Singed.png",
+    "sprite": "champion4.png",
+    "group": "champion",
     "x": 96,
     "y": 0,
-    "full": "Singed.png",
-    "group": "champion",
-    "sprite": "champion4.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "27000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "27001",
-      "num": 1,
-      "name": "Singed anti-émeutes",
-      "chromas": false
-    },
-    {
-      "id": "27002",
-      "num": 2,
-      "name": "Singed Hextech",
-      "chromas": false
-    },
-    {
-      "id": "27003",
-      "num": 3,
-      "name": "Singed surfeur",
-      "chromas": false
-    },
-    {
-      "id": "27004",
-      "num": 4,
-      "name": "Singed savant fou",
-      "chromas": false
-    },
-    {
-      "id": "27005",
-      "num": 5,
-      "name": "Singed techmaturgique",
-      "chromas": false
-    },
-    {
-      "id": "27006",
-      "num": 6,
-      "name": "Singed des neiges",
-      "chromas": false
-    },
-    {
-      "id": "27007",
-      "num": 7,
-      "name": "SSW Singed",
-      "chromas": false
-    },
-    {
-      "id": "27008",
-      "num": 8,
-      "name": "Singed de la peste noire",
-      "chromas": false
-    },
-    {
-      "id": "27009",
-      "num": 9,
-      "name": "Singed apiculteur",
-      "chromas": false
-    },
-    {
-      "id": "27010",
-      "num": 10,
-      "name": "Singed résistant",
-      "chromas": true
-    },
-    {
-      "id": "27019",
-      "num": 19,
-      "name": "Singed astronaute",
-      "chromas": true
-    },
-    {
-      "id": "27028",
-      "num": 28,
-      "name": "Singed d'Arcane",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "PoisonTrail",
       "name": "Piste empoisonnée",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PoisonTrail.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 288,
         "y": 96,
-        "full": "PoisonTrail.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -121,6 +41,9 @@
       "leveltip": {
         "label": [
           "Dégâts"
+        ],
+        "effect": [
+          "{{ basedamagepersecond }} -> {{ basedamagepersecondNL }}"
         ]
       },
       "resource": "{{ cost }} pts de mana par sec",
@@ -134,13 +57,13 @@
       "name": "Attrape-mouche",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MegaAdhesive.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 336,
         "y": 96,
-        "full": "MegaAdhesive.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -152,6 +75,11 @@
           "Ralentissement",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ slowpercent }}% -> {{ slowpercentNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -165,17 +93,17 @@
       "name": "Projection",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "Fling.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 384,
         "y": 96,
-        "full": "Fling.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Singed projette un ennemi par-dessus son épaule, infligeant <magicDamage>{{ basedamage }} plus {{ e3 }}% des PV max en dégâts magiques</magicDamage>.<br /><br />Si Singed projette une cible dans son <spellName>Attrape-mouche</spellName>, elle est <status>immobilisée</status> pendant {{ e2 }} sec.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Singed projette un ennemi par-dessus son épaule, infligeant <magicDamage>{{ basedamage }} plus {{ maxhpdamage }}% des PV max en dégâts magiques</magicDamage>.<br /><br />Si Singed projette une cible dans son <spellName>Attrape-mouche</spellName>, celle-ci est <status>immobilisée</status> pendant {{ rootduration }} sec.{{ spellmodifierdescriptionappend }}",
       "costBurn": "60/70/80/90/100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -185,6 +113,13 @@
           "Durée de l'immobilisation",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ e3 }}% -> {{ e3NL }}%",
+          "{{ e2 }} -> {{ e2NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -198,13 +133,13 @@
       "name": "Potion de démence",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "InsanityPotion.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 432,
         "y": 96,
-        "full": "InsanityPotion.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -214,6 +149,9 @@
       "leveltip": {
         "label": [
           "Bonus aux stats"
+        ],
+        "effect": [
+          "{{ statamount }} -> {{ statamountNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -226,13 +164,13 @@
   "passive": {
     "name": "Sillage toxique",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Singed_Passive.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 96,
       "y": 0,
-      "full": "Singed_Passive.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Singed bénéficie de l'aspiration des champions proches, gagnant un bref bonus en vitesse de déplacement quand il les dépasse."
   },
@@ -249,20 +187,20 @@
   "gender": "Male",
   "species": "Human",
   "title_en": "the Mad Chemist",
-  "lore_en": "Singed began as a brilliant student in Piltover. Fascinated by natural sciences, he grew resentful of Hextech, viewing magic as a shortcut for the ignorant. His vocal opposition and refusal to integrate magic into his work led to his expulsion and eventual relocation to Zaun.\n\n Chemtech Pioneer: In the undercity, Singed found the freedom to pursue alchemical research without ethical constraints. He pushed the boundaries of Chemtech, creating powerful stimulants that allowed him to work for weeks at a time, though they ravaged his own body in the process.\n\n The Alchemical Horror: His reputation caught the eye of Noxus. Commander Emystan hired him to create a weapon to end the stalemate in Ionia. Singed developed an unstable, volatile alchemical fire that fractured stone and poisoned the earth so thoroughly that nothing could grow. This act of war defined the trauma of survivors like Riven.\n\n Biological Metamorphosis: Recently, Singed shifted his focus toward biological engineering. A chaotic experiment merging man, beast, and machine (resulting in the creation of Warwick) destroyed his lab and left his face scarred and hidden beneath bandages.\n\n Beyond Death: Having mastered the destruction of flesh, Singed now focuses on its preservation and transformation. He is driven by the obsession that life does not necessarily have to end with death, seeking to unlock the secrets of immortality through radical science.",
+  "lore_en": "Singed is a brilliant alchemist of dubious morality, whose experiments would turn the stomach of even the most cutthroat criminal. Selling his skills to the highest bidder, he cares little for how his noxious concoctions are used, with the ensuing chaos an experiment in itself. His most infamous work is “shimmer”, which enabled the chembarons to turn Zaun into their personal playground—but fueled by madness, Singed is always working on something new, with each endeavor more depraved than the last...",
   "spells_en": [
     {
       "id": "PoisonTrail",
       "name": "Poison Trail",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PoisonTrail.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 288,
         "y": 96,
-        "full": "PoisonTrail.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -272,6 +210,9 @@
       "leveltip": {
         "label": [
           "Damage"
+        ],
+        "effect": [
+          "{{ basedamagepersecond }} -> {{ basedamagepersecondNL }}"
         ]
       },
       "resource": "{{ cost }} Mana per Second",
@@ -285,13 +226,13 @@
       "name": "Mega Adhesive",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MegaAdhesive.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 336,
         "y": 96,
-        "full": "MegaAdhesive.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -303,6 +244,11 @@
           "Slow",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ slowpercent }}% -> {{ slowpercentNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -316,17 +262,17 @@
       "name": "Fling",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "Fling.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 384,
         "y": 96,
-        "full": "Fling.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Singed flings an enemy over his shoulder, dealing <magicDamage>{{ basedamage }} plus {{ e3 }}% max Health magic damage</magicDamage>.<br /><br />If Singed flings a target into his <spellName>Mega Adhesive</spellName>, they are <status>Rooted</status> for {{ e2 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Singed flings an enemy over his shoulder, dealing <magicDamage>{{ basedamage }} plus {{ maxhpdamage }}% max Health magic damage</magicDamage>.<br /><br />If Singed flings a target into his <spellName>Mega Adhesive</spellName>, they are <status>Rooted</status> for {{ rootduration }} seconds.{{ spellmodifierdescriptionappend }}",
       "costBurn": "60/70/80/90/100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -336,6 +282,13 @@
           "Root Duration",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ e3 }}% -> {{ e3NL }}%",
+          "{{ e2 }} -> {{ e2NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -349,13 +302,13 @@
       "name": "Insanity Potion",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "InsanityPotion.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 432,
         "y": 96,
-        "full": "InsanityPotion.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -365,6 +318,9 @@
       "leveltip": {
         "label": [
           "Bonus Stats"
+        ],
+        "effect": [
+          "{{ statamount }} -> {{ statamountNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -377,13 +333,13 @@
   "passive_en": {
     "name": "Noxious Slipstream",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Singed_Passive.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 96,
       "y": 0,
-      "full": "Singed_Passive.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Singed drafts off nearby champions, gaining a burst of Move Speed when passing them."
   },
@@ -469,6 +425,95 @@
       "num": 28,
       "name": "Arcane Shimmer Lab Singed",
       "chromas": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "27000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "27001",
+      "num": 1,
+      "name": "Singed anti-émeutes",
+      "chromas": false
+    },
+    {
+      "id": "27002",
+      "num": 2,
+      "name": "Singed Hextech",
+      "chromas": false
+    },
+    {
+      "id": "27003",
+      "num": 3,
+      "name": "Singed surfeur",
+      "chromas": false
+    },
+    {
+      "id": "27004",
+      "num": 4,
+      "name": "Singed savant fou",
+      "chromas": false
+    },
+    {
+      "id": "27005",
+      "num": 5,
+      "name": "Singed techmaturgique",
+      "chromas": false
+    },
+    {
+      "id": "27006",
+      "num": 6,
+      "name": "Singed des neiges",
+      "chromas": false
+    },
+    {
+      "id": "27007",
+      "num": 7,
+      "name": "SSW Singed",
+      "chromas": false
+    },
+    {
+      "id": "27008",
+      "num": 8,
+      "name": "Singed de la peste noire",
+      "chromas": false
+    },
+    {
+      "id": "27009",
+      "num": 9,
+      "name": "Singed apiculteur",
+      "chromas": false
+    },
+    {
+      "id": "27010",
+      "num": 10,
+      "name": "Singed résistant",
+      "chromas": true
+    },
+    {
+      "id": "27019",
+      "num": 19,
+      "name": "Singed astronaute",
+      "chromas": true
+    },
+    {
+      "id": "27028",
+      "num": 28,
+      "name": "Singed d'Arcane",
+      "chromas": false
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "silco",
+      "type": "lore",
+      "relation": "ally",
+      "note_fr": "Collaborateur",
+      "note_en": "Collaborator"
     }
   ]
 }

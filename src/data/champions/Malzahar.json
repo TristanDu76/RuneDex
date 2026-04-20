@@ -3,124 +3,38 @@
   "key": "90",
   "name": "Malzahar",
   "title": "Prophète du Néant",
-  "version": "15.23.1",
-  "lore": "Malzahar a grandi comme un jeune voyant dans la pauvreté de Shurima, rapidement traumatisé par le cycle de souffrance des mortels. Il est devenu profondément désillusionné, convaincu que le monde était corrompu et sans espoir.\n\nLe Trauma et l'Éveil : Hanté par des visions de souffrance universelle, il a erré seul jusqu'à la cité maudite d'Icathia. Là, il a contemplé l'Abîme déchiqueté et, dans un acte de désespoir, a ouvert son esprit au Néant (Void). Il fut transformé, son esprit étant saturé par les énergies abyssales.\n\nLa Nouvelle Foi : Malzahar interpréta sa survie et sa transformation comme une révélation : la destruction totale était la seule façon de mettre fin à la souffrance. Il devint un prophète fanatique, son but étant d'accélérer l'avènement de l'oubli inévitable, se considérant comme le « berger » guidant les mortels vers la « sainteté du néant ».\n\nL'Ennemi Juré : Malzahar est l'ennemi juré de Kassadin. C'est Malzahar qui a provoqué l'ouverture du portail du Néant qui a englouti la femme et la fille de Kassadin, Kai'Sa, brisant la vie de l'aventurier. Kassadin est désormais obsédé par la vengeance, cherchant à tuer Malzahar pour sauver Runeterra.\n\nLa Méthode : Malzahar utilise ses pouvoirs pour fendre la terre, invoquer des créatures du Néant (Voidlings) et propager la peur, car la peur et la folie accélèrent la progression du Néant.",
+  "version": "16.8.1",
+  "lore": "Voyant fanatique ayant dédié son existence à l'unification de toute forme de vie, Malzahar croit fermement que le Néant est la voie du salut de Runeterra. Dans les étendues désertiques de Shurima, il suivit les voix qui murmuraient dans son esprit jusqu'à l'antique cité d'Icathia. Au plus profond des ruines, il plongea le regard dans le cœur noir du Néant et reçut de nouveaux pouvoirs, un nouveau but. Malzahar se considère désormais comme un berger : sa tâche est d'unir ses semblables… ou de libérer les créatures du Néant qui vivent sous terre.",
   "tags": [
     "Mage"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Malzahar.png",
+    "sprite": "champion2.png",
+    "group": "champion",
     "x": 384,
     "y": 48,
-    "full": "Malzahar.png",
-    "group": "champion",
-    "sprite": "champion2.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "90000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "90001",
-      "num": 1,
-      "name": "Malzahar vizir",
-      "chromas": false
-    },
-    {
-      "id": "90002",
-      "num": 2,
-      "name": "Malzahar prince des ténèbres",
-      "chromas": false
-    },
-    {
-      "id": "90003",
-      "num": 3,
-      "name": "Malzahar djinn",
-      "chromas": false
-    },
-    {
-      "id": "90004",
-      "num": 4,
-      "name": "Malzahar tout-puissant",
-      "chromas": false
-    },
-    {
-      "id": "90005",
-      "num": 5,
-      "name": "Malzahar des neiges",
-      "chromas": true
-    },
-    {
-      "id": "90006",
-      "num": 6,
-      "name": "Malzahar boss de combat",
-      "chromas": false
-    },
-    {
-      "id": "90007",
-      "num": 7,
-      "name": "Malzahar Hextech",
-      "chromas": false
-    },
-    {
-      "id": "90009",
-      "num": 9,
-      "name": "Malzahar brise-monde",
-      "chromas": true
-    },
-    {
-      "id": "90018",
-      "num": 18,
-      "name": "Malzahar abeille",
-      "chromas": true
-    },
-    {
-      "id": "90028",
-      "num": 28,
-      "name": "Malzahar séducteur",
-      "chromas": true
-    },
-    {
-      "id": "90038",
-      "num": 38,
-      "name": "Malzahar des Trois Honneurs",
-      "chromas": false
-    },
-    {
-      "id": "90039",
-      "num": 39,
-      "name": "Malzahar empyréen",
-      "chromas": true
-    },
-    {
-      "id": "90049",
-      "num": 49,
-      "name": "Malzahar briseur de destins",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "MalzaharQ",
       "name": "Appel du Néant",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MalzaharQ.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 0,
         "y": 48,
-        "full": "MalzaharQ.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Malzahar ouvre deux portails vers le Néant dont partent des projectiles qui infligent <magicDamage>{{ totaldamagetooltip }} pts de dégâts magiques</magicDamage> et qui <status>réduisent au silence</status> pendant {{ e2 }} sec.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Malzahar ouvre deux portails vers le Néant dont partent des projectiles qui infligent <magicDamage>{{ totaldamagetooltip }} pts de dégâts magiques</magicDamage> et qui <status>réduisent au silence</status> pendant {{ silenceduration }} sec.{{ spellmodifierdescriptionappend }}",
       "costBurn": "60/65/70/75/80",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -128,6 +42,11 @@
           "Dégâts",
           "Durée du silence",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ e2 }} -> {{ e2NL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -141,13 +60,13 @@
       "name": "Nuée du Néant",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MalzaharW.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 48,
         "y": 48,
-        "full": "MalzaharW.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "0",
       "maxrank": 5,
@@ -159,6 +78,11 @@
           "Dégâts des êtres du Néant",
           "Durée des êtres du Néant",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ voidlingbasedamage }} -> {{ voidlingbasedamageNL }}",
+          "{{ voidlingduration }} -> {{ voidlingdurationNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -172,13 +96,13 @@
       "name": "Visions maléfiques",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MalzaharE.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 96,
         "y": 48,
-        "full": "MalzaharE.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -190,6 +114,11 @@
           "Dégâts",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -203,17 +132,17 @@
       "name": "Poigne du Néant",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MalzaharR.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 144,
         "y": 48,
-        "full": "MalzaharR.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "Malzahar <status>neutralise</status> un champion ennemi et lui inflige <magicDamage>{{ totaldamagetooltip }} pts de dégâts magiques</magicDamage> en {{ e4 }} sec. Une zone d'énergie négative est créée autour de sa cible, infligeant <magicDamage>{{ zonedamagetooltip }} des PV max en dégâts magiques</magicDamage> en {{ e3 }} sec.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Malzahar <status>neutralise</status> un champion ennemi et lui inflige <magicDamage>{{ totaldamagetooltip }} pts de dégâts magiques</magicDamage> en {{ ccduration }} sec. Une zone d'énergie négative est créée autour de sa cible, infligeant <magicDamage>{{ zonedamagetooltip }} des PV max en dégâts magiques</magicDamage> en {{ poolduration }} sec.{{ spellmodifierdescriptionappend }}",
       "costBurn": "100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -221,6 +150,11 @@
           "Dégâts de Poigne du Néant",
           "Dégâts par seconde de Vide absolu",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ beamdamage }} -> {{ beamdamageNL }}",
+          "{{ maxhealthdamage }}% -> {{ maxhealthdamageNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -233,13 +167,13 @@
   "passive": {
     "name": "Plan du Néant",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Malzahar_Passive.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 384,
       "y": 48,
-      "full": "Malzahar_Passive.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Quand il ne subit pas de dégâts ou de contrôle de foule pendant un temps, Malzahar gagne une énorme réduction des dégâts et devient insensible aux contrôles de foule. Cet effet perdure pendant un court instant après avoir subi des dégâts."
   },
@@ -254,24 +188,24 @@
   "gender": "Male",
   "species": "Human",
   "title_en": "the Prophet of the Void",
-  "lore_en": "Malzahar grew up as a young seer in the poverty of Shurima, quickly traumatized by the cycle of human suffering. He became deeply disillusioned, convinced that the world was corrupt and beyond hope.\n\nThe Trauma and Awakening: Haunted by visions of universal suffering, he wandered alone to the cursed city of Icathia. There, he gazed into the ragged abyss and, in an act of desperation, opened his mind to the Void. He was transformed, his mind saturated by abyssal energies.\n\nThe New Faith: Malzahar interpreted his survival and transformation as a revelation: total destruction was the only way to end suffering. He became a fanatical prophet, his goal being to accelerate the arrival of inevitable oblivion, viewing himself as the \"shepherd\" guiding mortals toward the \"holiness of nothingness.\"\n\nThe Sworn Enemy: Malzahar is the sworn enemy of Kassadin. It was Malzahar who instigated the opening of the Void gate that swallowed Kassadin's wife and daughter, Kai'Sa, shattering the adventurer's life. Kassadin is now obsessed with vengeance, seeking to kill Malzahar to save Runeterra.\n\nThe Method: Malzahar uses his powers to rend the earth, summon Void creatures (Voidlings), and spread fear, as fear and madness accelerate the Void's progress.",
+  "lore_en": "A zealous seer dedicated to the unification of all life, Malzahar truly believes the newly emergent Void to be the path to Runeterra's salvation. In the desert wastes of Shurima, he followed the voices that whispered in his mind, all the way to ancient Icathia. Amidst the ruins of that land, he gazed into the dark heart of the Void itself, and was gifted new power and purpose. Malzahar now sees himself as a shepherd, empowered to bring others into the fold… or to release the voidling creatures that dwell beneath.",
   "spells_en": [
     {
       "id": "MalzaharQ",
       "name": "Call of the Void",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MalzaharQ.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 0,
         "y": 48,
-        "full": "MalzaharQ.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Malzahar opens two portals to the Void that fire projectiles inward, dealing <magicDamage>{{ totaldamagetooltip }} magic damage</magicDamage> and <status>Silencing</status> for {{ e2 }} second(s).{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Malzahar opens two portals to the Void that fire projectiles inward, dealing <magicDamage>{{ totaldamagetooltip }} magic damage</magicDamage> and <status>Silencing</status> for {{ silenceduration }} second(s).{{ spellmodifierdescriptionappend }}",
       "costBurn": "60/65/70/75/80",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -279,6 +213,11 @@
           "Damage",
           "Silence Duration",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ e2 }} -> {{ e2NL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -292,13 +231,13 @@
       "name": "Void Swarm",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MalzaharW.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 48,
         "y": 48,
-        "full": "MalzaharW.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "0",
       "maxrank": 5,
@@ -310,6 +249,11 @@
           "Voidling Damage",
           "Voidling Duration",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ voidlingbasedamage }} -> {{ voidlingbasedamageNL }}",
+          "{{ voidlingduration }} -> {{ voidlingdurationNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -323,13 +267,13 @@
       "name": "Malefic Visions",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MalzaharE.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 96,
         "y": 48,
-        "full": "MalzaharE.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -341,6 +285,11 @@
           "Damage",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -354,17 +303,17 @@
       "name": "Nether Grasp",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MalzaharR.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 144,
         "y": 48,
-        "full": "MalzaharR.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "Malzahar <status>Suppresses</status> an enemy champion and deals <magicDamage>{{ totaldamagetooltip }} magic damage</magicDamage> over {{ e4 }} seconds. A zone of negative energy is created around his target dealing <magicDamage>{{ zonedamagetooltip }} max Health magic damage</magicDamage> over {{ e3 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Malzahar <status>Suppresses</status> an enemy champion and deals <magicDamage>{{ totaldamagetooltip }} magic damage</magicDamage> over {{ ccduration }} seconds. A zone of negative energy is created around his target dealing <magicDamage>{{ zonedamagetooltip }} max Health magic damage</magicDamage> over {{ poolduration }} seconds.{{ spellmodifierdescriptionappend }}",
       "costBurn": "100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -372,6 +321,11 @@
           "Nether Grasp Damage",
           "Null Zone Damage Per Second",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ beamdamage }} -> {{ beamdamageNL }}",
+          "{{ maxhealthdamage }}% -> {{ maxhealthdamageNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -384,13 +338,13 @@
   "passive_en": {
     "name": "Void Shift",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Malzahar_Passive.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 384,
       "y": 48,
-      "full": "Malzahar_Passive.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "When he hasn't recently taken damage or been crowd controlled, Malzahar gains massive damage reduction and crowd control immunity, lingering for a short period after taking damage."
   },
@@ -482,6 +436,108 @@
       "num": 49,
       "name": "Fatebreaker Malzahar",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "90000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "90001",
+      "num": 1,
+      "name": "Malzahar vizir",
+      "chromas": false
+    },
+    {
+      "id": "90002",
+      "num": 2,
+      "name": "Malzahar prince des ténèbres",
+      "chromas": false
+    },
+    {
+      "id": "90003",
+      "num": 3,
+      "name": "Malzahar djinn",
+      "chromas": false
+    },
+    {
+      "id": "90004",
+      "num": 4,
+      "name": "Malzahar tout-puissant",
+      "chromas": false
+    },
+    {
+      "id": "90005",
+      "num": 5,
+      "name": "Malzahar des neiges",
+      "chromas": true
+    },
+    {
+      "id": "90006",
+      "num": 6,
+      "name": "Malzahar boss de combat",
+      "chromas": false
+    },
+    {
+      "id": "90007",
+      "num": 7,
+      "name": "Malzahar Hextech",
+      "chromas": false
+    },
+    {
+      "id": "90009",
+      "num": 9,
+      "name": "Malzahar brise-monde",
+      "chromas": true
+    },
+    {
+      "id": "90018",
+      "num": 18,
+      "name": "Malzahar abeille",
+      "chromas": true
+    },
+    {
+      "id": "90028",
+      "num": 28,
+      "name": "Malzahar séducteur",
+      "chromas": true
+    },
+    {
+      "id": "90038",
+      "num": 38,
+      "name": "Malzahar des Trois Honneurs",
+      "chromas": false
+    },
+    {
+      "id": "90039",
+      "num": 39,
+      "name": "Malzahar empyréen",
+      "chromas": true
+    },
+    {
+      "id": "90049",
+      "num": 49,
+      "name": "Malzahar briseur de destins",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Kaisa",
+      "type": "champion",
+      "relation": "nemesis",
+      "note_fr": "Chef de la corruption du Néant",
+      "note_en": "leader of the void's corruption"
+    },
+    {
+      "id": "Kassadin",
+      "type": "champion",
+      "relation": "nemesis/ex-friend",
+      "note_fr": "Obstacle majeur du Néant",
+      "note_en": "major void obstacle"
     }
   ]
 }

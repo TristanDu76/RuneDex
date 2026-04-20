@@ -3,139 +3,35 @@
   "key": "4",
   "name": "Twisted Fate",
   "title": "Maître des cartes",
-  "version": "15.23.1",
-  "lore": "Né sous le nom de Tobias Felix au sein des peuples nomades du delta de la Serpentine, il apprit très tôt la sensation d'être un étranger, toléré pour son commerce mais méprisé pour ses traditions. Sa véritable vocation se révéla dans les tentes de jeu, où il développa un talent surnaturel pour manipuler les cartes.\n\n L'Exil et la Faute : Après avoir ruiné des hommes violents, Tobias prit la fuite lors d'une expédition punitive, laissant son peuple subir les coups à sa place. Pour cet acte d'égoïsme, il fut banni par les siens. Seul sur la rive avec le jeu de cartes de son grand-père, il commença une vie de nomade.\n\n L'Association avec Graves : Il rencontra Malcolm Graves, un esprit aussi tordu que le sien. Ensemble, ils formèrent un duo de malfaiteurs redoutable, enchaînant arnaques et casses. C'est durant cette période que Tobias commença à s'intéresser sérieusement à la cartomancie (la magie des cartes) pour plier le destin à sa volonté.\n\n La Trahison et Twisted Fate : Un braquage tourna mal : Graves fut capturé, tandis que Tobias s'échappa. Après avoir tenté en vain de libérer son partenaire, il abandonna son nom de naissance dans les eaux du fleuve pour devenir Twisted Fate.\n\n L'Art de l'Évasion : Devenu un criminel solitaire, il acquit la réputation de pouvoir s'échapper de n'importe quelle cellule, ne laissant derrière lui qu'une carte de visite moqueuse. Sa maîtrise de la magie lui permettait désormais de se téléporter, rendant sa capture impossible sur le long terme.\n\n Les Retrouvailles : À Bilgewater, après des années de rancœur, Twisted Fate et Graves finirent par se réconcilier au milieu du chaos suivant la chute de Gangplank. Aujourd'hui, le duo a repris du service, mettant le cap vers Piltover pour de nouvelles aventures.",
+  "version": "16.8.1",
+  "lore": "Twisted Fate est un virtuose des cartes à la réputation ambiguë qui a parcouru le monde entier pour l'éblouir de son charme et de ses talents, s'attirant l'admiration et la haine des riches comme des pigeons. Il prend rarement les choses au sérieux, salue chaque nouveau jour avec un sourire moqueur et insouciant. Twisted a toujours un atout dans sa manche, au propre comme au figuré.",
   "tags": [
     "Mage",
     "Marksman"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "TwistedFate.png",
+    "sprite": "champion4.png",
+    "group": "champion",
     "x": 48,
     "y": 96,
-    "full": "TwistedFate.png",
-    "group": "champion",
-    "sprite": "champion4.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "4000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "4001",
-      "num": 1,
-      "name": "Twisted Fate PAX",
-      "chromas": false
-    },
-    {
-      "id": "4002",
-      "num": 2,
-      "name": "Twisted Fate valet de cœur",
-      "chromas": false
-    },
-    {
-      "id": "4003",
-      "num": 3,
-      "name": "Twisted Fate le magnifique",
-      "chromas": false
-    },
-    {
-      "id": "4004",
-      "num": 4,
-      "name": "Twisted Fate tango",
-      "chromas": false
-    },
-    {
-      "id": "4005",
-      "num": 5,
-      "name": "Twisted Fate de l'Ouest",
-      "chromas": false
-    },
-    {
-      "id": "4006",
-      "num": 6,
-      "name": "Twisted Fate mousquetaire",
-      "chromas": false
-    },
-    {
-      "id": "4007",
-      "num": 7,
-      "name": "Twisted Fate des enfers",
-      "chromas": false
-    },
-    {
-      "id": "4008",
-      "num": 8,
-      "name": "Twisted Fate carton rouge",
-      "chromas": false
-    },
-    {
-      "id": "4009",
-      "num": 9,
-      "name": "Twisted Fate voleur à la tire",
-      "chromas": false
-    },
-    {
-      "id": "4010",
-      "num": 10,
-      "name": "Twisted Fate lune de sang",
-      "chromas": false
-    },
-    {
-      "id": "4011",
-      "num": 11,
-      "name": "Twisted Fate Pulsefire",
-      "chromas": true
-    },
-    {
-      "id": "4013",
-      "num": 13,
-      "name": "Twisted Fate de l'Odyssée",
-      "chromas": true
-    },
-    {
-      "id": "4023",
-      "num": 23,
-      "name": "DWG Twisted Fate",
-      "chromas": true
-    },
-    {
-      "id": "4025",
-      "num": 25,
-      "name": "Twisted Fate cauchemar criminel",
-      "chromas": true
-    },
-    {
-      "id": "4036",
-      "num": 36,
-      "name": "Twisted Fate astro-groove",
-      "chromas": false
-    },
-    {
-      "id": "4045",
-      "num": 45,
-      "name": "Twisted Fate héros de guerre",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "WildCards",
       "name": "Atouts",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "WildCards.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 96,
         "y": 96,
-        "full": "WildCards.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -147,6 +43,11 @@
           "Dégâts",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -160,13 +61,13 @@
       "name": "Bonne pioche",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PickACard.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 144,
         "y": 96,
-        "full": "PickACard.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -182,6 +83,15 @@
           "Dégâts de la carte or",
           "Durée d'étourdissement de la carte or",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ e6 }} -> {{ e6NL }}",
+          "{{ e4 }} -> {{ e4NL }}",
+          "{{ e2 }}% -> {{ e2NL }}%",
+          "{{ e5 }} -> {{ e5NL }}",
+          "{{ e3 }} -> {{ e3NL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -195,13 +105,13 @@
       "name": "Paquet",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "CardmasterStack.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 192,
         "y": 96,
-        "full": "CardmasterStack.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -210,8 +120,12 @@
       "costType": "Compétence passive",
       "leveltip": {
         "label": [
-          "Dégâts supplémentaires",
+          "Dégâts bonus :",
           "Vitesse d'attaque"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ attackspeedbonus }}% -> {{ attackspeedbonusNL }}%"
         ]
       },
       "resource": "Compétence passive",
@@ -225,13 +139,13 @@
       "name": "Destinée",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "Destiny.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 240,
         "y": 96,
-        "full": "Destiny.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -242,6 +156,10 @@
         "label": [
           "Durée",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ recastduration }} -> {{ recastdurationNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -254,13 +172,13 @@
   "passive": {
     "name": "Dé pipé",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Cardmaster_SealFate.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 48,
       "y": 96,
-      "full": "Cardmaster_SealFate.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Quand il tue une unité, Twisted Fate lance son dé « porte-bonheur » et reçoit entre 1 et 6 PO supplémentaires."
   },
@@ -275,20 +193,20 @@
   "gender": "Male",
   "species": "Human",
   "title_en": "the Card Master",
-  "lore_en": "Born Tobias Felix among the nomadic river folk, he grew up as an outsider, shunned for his traditions despite his people's trade. He found his calling in gambling tents, where his grandfather's omens and his aunt's lessons helped him master the art of the deck with a preternatural, almost magical, touch.\n\n Exile and Guilt: After winning a fortune from dangerous men, Tobias fled when they came for revenge, leaving his tribe to suffer for his actions. Ashamed and shunned, he was exiled, left with nothing but his grandfather's worn deck of cards.\n\n Partners in Crime: He eventually met Malcolm Graves, a kindred spirit. The two became an infamous criminal duo, pulling off heists and scams across the continent. During these years, Tobias sought out dangerous \"cartomancy\" to turn his gambler's luck into true magical control.\n\n Twisted Fate is Born: A daring heist went wrong, leading to Graves' capture while Tobias escaped. After a failed rescue attempt, he cast away his birth name and adopted the mantle of Twisted Fate, a man who would never be held down by the past—or a prison cell.\n\n The Elusive Rogue: Known for disappearing from the most secure prisons by morning's light, Twisted Fate became a legendary drifter. His magical connection to his cards allowed him to teleport and manipulate fate itself, leaving only a calling card as a final insult to his jailers.\n\n Reconciliation: In the chaos of Bilgewater, he and Graves finally settled their scores. After the fall of the reaver king Gangplank, the two reconciled and set sail for Piltover. The partnership is back, though it may take a few more heists to restore their old rhythm.",
+  "lore_en": "Twisted Fate is an infamous cardsharp and swindler who has gambled and charmed his way across much of the known world, earning the enmity and admiration of the rich and foolish alike. He rarely takes things seriously, greeting each day with a mocking smile and an insouciant swagger. In every possible way, Twisted Fate always has an ace up his sleeve.",
   "spells_en": [
     {
       "id": "WildCards",
       "name": "Wild Cards",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "WildCards.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 96,
         "y": 96,
-        "full": "WildCards.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -300,6 +218,11 @@
           "Damage",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -313,13 +236,13 @@
       "name": "Pick a Card",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PickACard.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 144,
         "y": 96,
-        "full": "PickACard.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -335,6 +258,15 @@
           "Gold Card Damage",
           "Gold Card Stun Duration",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ e6 }} -> {{ e6NL }}",
+          "{{ e4 }} -> {{ e4NL }}",
+          "{{ e2 }}% -> {{ e2NL }}%",
+          "{{ e5 }} -> {{ e5NL }}",
+          "{{ e3 }} -> {{ e3NL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -348,13 +280,13 @@
       "name": "Stacked Deck",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "CardmasterStack.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 192,
         "y": 96,
-        "full": "CardmasterStack.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -363,8 +295,12 @@
       "costType": "Passive",
       "leveltip": {
         "label": [
-          "Bonus Damage",
+          "Bonus Damage:",
           "Attack Speed"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ attackspeedbonus }}% -> {{ attackspeedbonusNL }}%"
         ]
       },
       "resource": "Passive",
@@ -378,13 +314,13 @@
       "name": "Destiny",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "Destiny.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 240,
         "y": 96,
-        "full": "Destiny.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -395,6 +331,10 @@
         "label": [
           "Duration",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ recastduration }} -> {{ recastdurationNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -407,13 +347,13 @@
   "passive_en": {
     "name": "Loaded Dice",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Cardmaster_SealFate.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 48,
       "y": 96,
-      "full": "Cardmaster_SealFate.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Upon killing a unit, Twisted Fate rolls his 'lucky' dice receiving 1 to 6 bonus gold."
   },
@@ -523,6 +463,119 @@
       "num": 45,
       "name": "Victorious Twisted Fate",
       "chromas": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "4000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "4001",
+      "num": 1,
+      "name": "Twisted Fate PAX",
+      "chromas": false
+    },
+    {
+      "id": "4002",
+      "num": 2,
+      "name": "Twisted Fate valet de cœur",
+      "chromas": false
+    },
+    {
+      "id": "4003",
+      "num": 3,
+      "name": "Twisted Fate le magnifique",
+      "chromas": false
+    },
+    {
+      "id": "4004",
+      "num": 4,
+      "name": "Twisted Fate tango",
+      "chromas": false
+    },
+    {
+      "id": "4005",
+      "num": 5,
+      "name": "Twisted Fate de l'Ouest",
+      "chromas": false
+    },
+    {
+      "id": "4006",
+      "num": 6,
+      "name": "Twisted Fate mousquetaire",
+      "chromas": false
+    },
+    {
+      "id": "4007",
+      "num": 7,
+      "name": "Twisted Fate des enfers",
+      "chromas": false
+    },
+    {
+      "id": "4008",
+      "num": 8,
+      "name": "Twisted Fate carton rouge",
+      "chromas": false
+    },
+    {
+      "id": "4009",
+      "num": 9,
+      "name": "Twisted Fate voleur à la tire",
+      "chromas": false
+    },
+    {
+      "id": "4010",
+      "num": 10,
+      "name": "Twisted Fate lune de sang",
+      "chromas": false
+    },
+    {
+      "id": "4011",
+      "num": 11,
+      "name": "Twisted Fate Pulsefire",
+      "chromas": true
+    },
+    {
+      "id": "4013",
+      "num": 13,
+      "name": "Twisted Fate de l'Odyssée",
+      "chromas": true
+    },
+    {
+      "id": "4023",
+      "num": 23,
+      "name": "DWG Twisted Fate",
+      "chromas": true
+    },
+    {
+      "id": "4025",
+      "num": 25,
+      "name": "Twisted Fate cauchemar criminel",
+      "chromas": true
+    },
+    {
+      "id": "4036",
+      "num": 36,
+      "name": "Twisted Fate astro-groove",
+      "chromas": false
+    },
+    {
+      "id": "4045",
+      "num": 45,
+      "name": "Twisted Fate héros de guerre",
+      "chromas": false
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Graves",
+      "type": "champion",
+      "relation": "lover",
+      "note_fr": "Partenaire",
+      "note_en": "Partner"
     }
   ]
 }

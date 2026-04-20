@@ -3,145 +3,35 @@
   "key": "11",
   "name": "Maître Yi",
   "title": "Fine lame Wuju",
-  "version": "15.23.1",
-  "lore": "Yi a grandi dans le village de Wuju, dans la province centrale de Bahrl, en Ionia. Wuju était un art martial secret dont les pratiquants croyaient que leur escrime était trop sacrée et précieuse pour être partagée ou utilisée pour verser le sang. Yi excellait dans cet art et fut rapidement connu comme le « Jeune Maître ».\n\nAlors qu'il rêvait d'explorer le reste de l'Ionia, la nation fut envahie par les armées de Noxus. Choisissant de défendre le peuple plutôt que la tradition de Wuju, Yi descendit la montagne pour se battre. Il balaya les lignes de front ennemies dans un flou de jeu d'épée inédit, inspirant ses pairs à le rejoindre dans la bataille.\n\nLes commandants noxiens comprirent que Wuju représentait une menace. Ils retrouvèrent l'origine de ces guerriers sans pareil et frappèrent sans pitié : le village de Wuju fut détruit en une seule nuit, son peuple et sa culture furent anéantis par un feu chimique que l'acier ne pouvait retenir.\n\nÀ la fin de la guerre, Yi revint et ne trouva que des ruines. La magie de la terre elle-même était souillée. Il était le seul disciple survivant et, bien que son corps ait survécu, son esprit était brisé. Il devint le Maître de Wuju, seul.\n\nAccablé par la culpabilité du survivant, Yi s'isola, s'entraînant de manière obsessionnelle. Il commença à douter qu'un seul homme puisse préserver un héritage entier... jusqu'à ce qu'il rencontre l'imprévisible.\n\nUn Vastaya curieux, ressemblant à un singe, le défia en duel. Yi le vainquit facilement, mais le Vastaya revint jour après jour avec des ruses toujours plus intelligentes. Pour la première fois depuis des années, Yi sentit l'esprit du Wuju revivre en lui.\n\nAprès des semaines de combat, l'étranger se présenta comme Kong de la tribu Shimon, suppliant d'apprendre l'art de Wuju. Yi vit dans ce combattant déterminé le potentiel d'un nouveau disciple. En enseignant, Yi retrouva sa raison d'être. Il passa le titre honorifique de Wukong à son élève, lui offrant un bâton enchanté.\n\nAujourd'hui, Maître Yi et Wukong voyagent à travers l'Ionia. Yi a dédié sa vie à perpétuer l'héritage de son peuple, utilisant les Sept lentilles d'éveil pour identifier les disciples dignes de recevoir son enseignement, honorant ainsi l'héritage de son foyer perdu.",
+  "version": "16.8.1",
+  "lore": "Maître Yi a renforcé son corps et affûté son esprit jusqu'à ce que réflexion et action ne fassent plus qu'un. Bien qu'il ne fasse appel à la violence qu'en dernier recours, la grâce et la vitesse avec lesquelles il manie son épée assurent une résolution rapide de tout conflit. En tant que l'un des derniers praticiens vivants de l'art martial ionien appelé Wuju, Yi a voué sa vie à perpétuer l'héritage de son peuple, scrutant les nouveaux disciples potentiels à l'aide des Sept lentilles d'éveil pour identifier les plus dignes de recevoir son enseignement.",
   "tags": [
     "Fighter",
     "Assassin"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "MasterYi.png",
+    "sprite": "champion2.png",
+    "group": "champion",
     "x": 0,
     "y": 96,
-    "full": "MasterYi.png",
-    "group": "champion",
-    "sprite": "champion2.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "11000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "11001",
-      "num": 1,
-      "name": "Maître Yi l'assassin",
-      "chromas": false
-    },
-    {
-      "id": "11002",
-      "num": 2,
-      "name": "Maître Yi l'élu",
-      "chromas": false
-    },
-    {
-      "id": "11003",
-      "num": 3,
-      "name": "Maître Yi de Ionia",
-      "chromas": false
-    },
-    {
-      "id": "11004",
-      "num": 4,
-      "name": "Samouraï Yi",
-      "chromas": false
-    },
-    {
-      "id": "11005",
-      "num": 5,
-      "name": "Maître Yi chasseur de têtes",
-      "chromas": true
-    },
-    {
-      "id": "11009",
-      "num": 9,
-      "name": "PROJET : Yi",
-      "chromas": false
-    },
-    {
-      "id": "11010",
-      "num": 10,
-      "name": "Maître Yi lame cosmique",
-      "chromas": false
-    },
-    {
-      "id": "11011",
-      "num": 11,
-      "name": "Yi à l'épée éternelle",
-      "chromas": true
-    },
-    {
-      "id": "11017",
-      "num": 17,
-      "name": "Bonhomme de neige Yi",
-      "chromas": true
-    },
-    {
-      "id": "11024",
-      "num": 24,
-      "name": "Maître Yi lune de sang",
-      "chromas": false
-    },
-    {
-      "id": "11033",
-      "num": 33,
-      "name": "Maître Yi psychoguerrier",
-      "chromas": false
-    },
-    {
-      "id": "11042",
-      "num": 42,
-      "name": "Maître Yi séducteur",
-      "chromas": false
-    },
-    {
-      "id": "11052",
-      "num": 52,
-      "name": "Maître Yi fleur spirituelle",
-      "chromas": false
-    },
-    {
-      "id": "11053",
-      "num": 53,
-      "name": "Maître Yi fleur spirituelle prestige",
-      "chromas": true
-    },
-    {
-      "id": "11089",
-      "num": 89,
-      "name": "Maître Yi guerrier d'encre",
-      "chromas": false
-    },
-    {
-      "id": "11096",
-      "num": 96,
-      "name": "Maître Yi écailles célestes",
-      "chromas": false
-    },
-    {
-      "id": "11106",
-      "num": 106,
-      "name": "Maître Yi héros de guerre",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "AlphaStrike",
       "name": "Assaut éclair",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AlphaStrike.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 384,
         "y": 48,
-        "full": "AlphaStrike.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -154,6 +44,12 @@
           "Dégâts supplémentaires aux monstres",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ bonusmonsterdamage }} -> {{ bonusmonsterdamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -167,13 +63,13 @@
       "name": "Méditation",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "Meditate.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 432,
         "y": 48,
-        "full": "Meditate.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -184,6 +80,10 @@
         "label": [
           "Restauration des PV",
           "Réduction des dégâts"
+        ],
+        "effect": [
+          "{{ baseheal }} -> {{ basehealNL }}",
+          "{{ damagereduction*100.000000 }}% -> {{ damagereductionnl*100.000000 }}%"
         ]
       },
       "resource": "{{ basemanacost }} pts de mana (+{{ percentmanacostpersecond*100 }}% du mana max par seconde)",
@@ -197,13 +97,13 @@
       "name": "Style Wuju",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "WujuStyle.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 0,
         "y": 96,
-        "full": "WujuStyle.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -213,6 +113,9 @@
       "leveltip": {
         "label": [
           "Dégâts"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -226,13 +129,13 @@
       "name": "Highlander",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "Highlander.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 48,
         "y": 96,
-        "full": "Highlander.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -243,6 +146,10 @@
         "label": [
           "Vitesse d'attaque",
           "Vitesse de déplacement"
+        ],
+        "effect": [
+          "{{ rasbonus }}% -> {{ rasbonusNL }}%",
+          "{{ rmsbonus }}% -> {{ rmsbonusNL }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -255,13 +162,13 @@
   "passive": {
     "name": "Coup double",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "MasterYi_Passive1.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 0,
       "y": 96,
-      "full": "MasterYi_Passive1.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Après plusieurs attaques consécutives, Maître Yi frappe deux fois."
   },
@@ -273,20 +180,20 @@
   "gender": "Male",
   "species": "Human",
   "title_en": "the Wuju Bladesman",
-  "lore_en": "Yi grew up in the village of Wuju, in the central province of Bahrl, Ionia. Wuju was a secret martial art whose practitioners believed their swordsmanship was too sacred to be shared or used to draw blood. Yi excelled in the art and was soon known as the \"Young Master.\"\n\nWhile he dreamed of exploring the rest of Ionia, the nation was invaded by the armies of Noxus. Choosing the people over Wuju's hallowed tradition, Yi ventured down the mountain to fight. He swept across the front lines in a blur of blinding swordplay, inspiring his fellow disciples to join the battle.\n\nNoxian commanders realized Wuju posed a threat. They scouted the origin of these peerless warriors and struck without mercy: the village of Wuju was destroyed in a single night, its people and culture obliterated by chemical fire that no steel could hold back.\n\nWhen the war ended, Yi returned to find only ruins. The magic of the land itself was defiled. He was the only surviving disciple, and though his body survived, his spirit was broken. He became the Master of Wuju, alone.\n\nGrief-stricken by survivor's guilt, Yi retreated into seclusion, training obsessively. He began to doubt if one man could preserve an entire heritage... until he encountered the least expected of individuals.\n\nA curious, monkey-like Vastaya challenged him to a duel. Yi defeated him easily, but the Vastaya returned day after day with increasingly clever tricks. For the first time in years, Yi felt the spirit of Wuju revive within him.\n\nAfter weeks of clashing, the stranger introduced himself as Kong of the Shimon tribe, begging to learn the way of Wuju. Yi saw in this reckless but determined fighter the makings of a new disciple. Through teaching, Yi found his purpose restored. He passed the honorific title of Wukong to his student, gifting him an enchanted staff.\n\nToday, Master Yi and Wukong travel the First Lands. Yi has dedicated his life to perpetuating his people's legacy, using the Seven Lenses of Insight to identify worthy disciples, thereby honoring the heritage of his lost home.",
+  "lore_en": "Master Yi has tempered his body and sharpened his mind, so that thought and action have become almost as one. Though he chooses to enter into violence only as a last resort, the grace and speed of his blade ensures resolution is always swift. As one of the last living practitioners of the Ionian art of Wuju, Yi has devoted his life to continuing the legacy of his people—scrutinizing potential new disciples with the Seven Lenses of Insight to identify the most worthy among them.",
   "spells_en": [
     {
       "id": "AlphaStrike",
       "name": "Alpha Strike",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AlphaStrike.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 384,
         "y": 48,
-        "full": "AlphaStrike.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -299,6 +206,12 @@
           "Bonus Monster Damage",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ bonusmonsterdamage }} -> {{ bonusmonsterdamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -312,13 +225,13 @@
       "name": "Meditate",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "Meditate.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 432,
         "y": 48,
-        "full": "Meditate.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -329,6 +242,10 @@
         "label": [
           "Health Restored",
           "Damage Reduction"
+        ],
+        "effect": [
+          "{{ baseheal }} -> {{ basehealNL }}",
+          "{{ damagereduction*100.000000 }}% -> {{ damagereductionnl*100.000000 }}%"
         ]
       },
       "resource": "{{ basemanacost }} Mana (+{{ percentmanacostpersecond*100 }}% Max Mana per second)",
@@ -342,13 +259,13 @@
       "name": "Wuju Style",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "WujuStyle.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 0,
         "y": 96,
-        "full": "WujuStyle.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -358,6 +275,9 @@
       "leveltip": {
         "label": [
           "Damage"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "No Cost",
@@ -371,13 +291,13 @@
       "name": "Highlander",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "Highlander.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 48,
         "y": 96,
-        "full": "Highlander.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -388,6 +308,10 @@
         "label": [
           "Attack Speed",
           "Move Speed"
+        ],
+        "effect": [
+          "{{ rasbonus }}% -> {{ rasbonusNL }}%",
+          "{{ rmsbonus }}% -> {{ rmsbonusNL }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -400,13 +324,13 @@
   "passive_en": {
     "name": "Double Strike",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "MasterYi_Passive1.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 0,
       "y": 96,
-      "full": "MasterYi_Passive1.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Every few consecutive basic attack, Master Yi strikes twice."
   },
@@ -522,6 +446,137 @@
       "num": 106,
       "name": "Victorious Master Yi",
       "chromas": false
+    },
+    {
+      "id": "11116",
+      "num": 116,
+      "name": "PROJECT: Command Line Yi",
+      "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "11000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "11001",
+      "num": 1,
+      "name": "Maître Yi l'assassin",
+      "chromas": false
+    },
+    {
+      "id": "11002",
+      "num": 2,
+      "name": "Maître Yi l'élu",
+      "chromas": false
+    },
+    {
+      "id": "11003",
+      "num": 3,
+      "name": "Maître Yi de Ionia",
+      "chromas": false
+    },
+    {
+      "id": "11004",
+      "num": 4,
+      "name": "Samouraï Yi",
+      "chromas": false
+    },
+    {
+      "id": "11005",
+      "num": 5,
+      "name": "Maître Yi chasseur de têtes",
+      "chromas": true
+    },
+    {
+      "id": "11009",
+      "num": 9,
+      "name": "PROJET : Yi",
+      "chromas": false
+    },
+    {
+      "id": "11010",
+      "num": 10,
+      "name": "Maître Yi lame cosmique",
+      "chromas": false
+    },
+    {
+      "id": "11011",
+      "num": 11,
+      "name": "Yi à l'épée éternelle",
+      "chromas": true
+    },
+    {
+      "id": "11017",
+      "num": 17,
+      "name": "Bonhomme de neige Yi",
+      "chromas": true
+    },
+    {
+      "id": "11024",
+      "num": 24,
+      "name": "Maître Yi lune de sang",
+      "chromas": false
+    },
+    {
+      "id": "11033",
+      "num": 33,
+      "name": "Maître Yi psychoguerrier",
+      "chromas": false
+    },
+    {
+      "id": "11042",
+      "num": 42,
+      "name": "Maître Yi séducteur",
+      "chromas": false
+    },
+    {
+      "id": "11052",
+      "num": 52,
+      "name": "Maître Yi fleur spirituelle",
+      "chromas": false
+    },
+    {
+      "id": "11053",
+      "num": 53,
+      "name": "Maître Yi fleur spirituelle prestige",
+      "chromas": true
+    },
+    {
+      "id": "11089",
+      "num": 89,
+      "name": "Maître Yi guerrier d'encre",
+      "chromas": false
+    },
+    {
+      "id": "11096",
+      "num": 96,
+      "name": "Maître Yi écailles célestes",
+      "chromas": false
+    },
+    {
+      "id": "11106",
+      "num": 106,
+      "name": "Maître Yi héros de guerre",
+      "chromas": false
+    },
+    {
+      "id": "11116",
+      "num": 116,
+      "name": "PROJET : Yi ligne de commande",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "MonkeyKing",
+      "type": "champion",
+      "relation": "mentor",
+      "note_fr": "Maître Wuju",
+      "note_en": "Wuju Master"
     }
   ]
 }

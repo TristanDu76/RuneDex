@@ -3,108 +3,34 @@
   "key": "115",
   "name": "Ziggs",
   "title": "Expert des Hexplosifs",
-  "version": "15.23.1",
+  "version": "16.8.1",
   "lore": "Amoureux des grosses bombes et des mèches courtes, le yordle Ziggs est une force de la nature explosive. Assistant d'un inventeur de Piltover, il finit par se lasser de sa vie routinière et devint l'ami d'une jeune fille imprévisible et portée sur les explosifs, Jinx. Après une folle nuit en ville, Ziggs suivit les conseils de Jinx et s'installa à Zaun, où il se livre désormais à sa passion plus librement, terrorisant les Barons de la chimie comme les simples citoyens dans sa quête éternelle pour faire sauter tout ce qui traverse son champ de vision.",
   "tags": [
     "Mage"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Ziggs.png",
+    "sprite": "champion5.png",
+    "group": "champion",
     "x": 384,
     "y": 48,
-    "full": "Ziggs.png",
-    "group": "champion",
-    "sprite": "champion5.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "115000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "115001",
-      "num": 1,
-      "name": "Ziggs savant fou",
-      "chromas": false
-    },
-    {
-      "id": "115002",
-      "num": 2,
-      "name": "Commandant Ziggs",
-      "chromas": false
-    },
-    {
-      "id": "115003",
-      "num": 3,
-      "name": "Ziggs bombe à eau",
-      "chromas": false
-    },
-    {
-      "id": "115004",
-      "num": 4,
-      "name": "Ziggs des neiges",
-      "chromas": false
-    },
-    {
-      "id": "115005",
-      "num": 5,
-      "name": "Ziggs maître arcaniste",
-      "chromas": false
-    },
-    {
-      "id": "115006",
-      "num": 6,
-      "name": "Ziggs boss de combat",
-      "chromas": false
-    },
-    {
-      "id": "115007",
-      "num": 7,
-      "name": "Ziggs de l'Odyssée",
-      "chromas": true
-    },
-    {
-      "id": "115014",
-      "num": 14,
-      "name": "Ziggs folie sucrée",
-      "chromas": true
-    },
-    {
-      "id": "115023",
-      "num": 23,
-      "name": "Ziggs Hextech",
-      "chromas": false
-    },
-    {
-      "id": "115024",
-      "num": 24,
-      "name": "Ziggs abeille",
-      "chromas": true
-    },
-    {
-      "id": "115033",
-      "num": 33,
-      "name": "Ziggs La Ilusión",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "ZiggsQ",
       "name": "Bombe rebondissante",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZiggsQ.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 0,
         "y": 48,
-        "full": "ZiggsQ.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -117,6 +43,12 @@
           "Ratio de puissance total",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ apratio*100.000000 }}% -> {{ aprationl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -130,13 +62,13 @@
       "name": "Charge explosive",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZiggsW.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 48,
         "y": 48,
-        "full": "ZiggsW.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -148,6 +80,11 @@
           "Dégâts",
           "Délai de récupération",
           "Seuil de destruction des tourelles"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ turretdestroypercent*100.000000 }}% -> {{ turretdestroypercentnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -161,13 +98,13 @@
       "name": "Mines Hexplosives",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZiggsE.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 96,
         "y": 48,
-        "full": "ZiggsE.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -180,6 +117,12 @@
           "Ratio de puissance total",
           "Ralentissement",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ damagepermine }} -> {{ damagepermineNL }}",
+          "{{ apratiopermine*100.000000 }}% -> {{ apratioperminenl*100.000000 }}%",
+          "{{ slow*-100.000000 }}% -> {{ slownl*-100.000000 }}%",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -193,13 +136,13 @@
       "name": "Méga bombe infernale",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZiggsR.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 144,
         "y": 48,
-        "full": "ZiggsR.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -211,6 +154,11 @@
           "Dégâts dans la zone du souffle",
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ basedamage*0.650000 }} -> {{ basedamagenl*0.650000 }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -223,13 +171,13 @@
   "passive": {
     "name": "Mèche courte",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "ZiggsPassiveReady.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 384,
       "y": 48,
-      "full": "ZiggsPassiveReady.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Périodiquement, la prochaine attaque de base de Ziggs inflige des dégâts magiques supplémentaires. Ce délai est réduit quand Ziggs utilise une compétence."
   },
@@ -250,13 +198,13 @@
       "name": "Bouncing Bomb",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZiggsQ.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 0,
         "y": 48,
-        "full": "ZiggsQ.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -269,6 +217,12 @@
           "Total AP Ratio",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ apratio*100.000000 }}% -> {{ aprationl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -282,13 +236,13 @@
       "name": "Satchel Charge",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZiggsW.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 48,
         "y": 48,
-        "full": "ZiggsW.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -300,6 +254,11 @@
           "Damage",
           "Cooldown",
           "Tower Destruction Threshold"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ turretdestroypercent*100.000000 }}% -> {{ turretdestroypercentnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -313,13 +272,13 @@
       "name": "Hexplosive Minefield",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZiggsE.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 96,
         "y": 48,
-        "full": "ZiggsE.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -332,6 +291,12 @@
           "Total AP Ratio",
           "Slow",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ damagepermine }} -> {{ damagepermineNL }}",
+          "{{ apratiopermine*100.000000 }}% -> {{ apratioperminenl*100.000000 }}%",
+          "{{ slow*-100.000000 }}% -> {{ slownl*-100.000000 }}%",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -345,13 +310,13 @@
       "name": "Mega Inferno Bomb",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZiggsR.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 144,
         "y": 48,
-        "full": "ZiggsR.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -363,6 +328,11 @@
           "Blast Zone Damage",
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ basedamage*0.650000 }} -> {{ basedamagenl*0.650000 }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -375,13 +345,13 @@
   "passive_en": {
     "name": "Short Fuse",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "ZiggsPassiveReady.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 384,
       "y": 48,
-      "full": "ZiggsPassiveReady.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Periodically, Ziggs' next basic attack deals bonus magic damage. This cooldown is reduced whenever Ziggs uses an ability."
   },
@@ -462,6 +432,101 @@
       "num": 33,
       "name": "La Ilusión Ziggs",
       "chromas": true
+    },
+    {
+      "id": "115043",
+      "num": 43,
+      "name": "Firecracker Ziggs",
+      "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "115000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "115001",
+      "num": 1,
+      "name": "Ziggs savant fou",
+      "chromas": false
+    },
+    {
+      "id": "115002",
+      "num": 2,
+      "name": "Commandant Ziggs",
+      "chromas": false
+    },
+    {
+      "id": "115003",
+      "num": 3,
+      "name": "Ziggs bombe à eau",
+      "chromas": false
+    },
+    {
+      "id": "115004",
+      "num": 4,
+      "name": "Ziggs des neiges",
+      "chromas": false
+    },
+    {
+      "id": "115005",
+      "num": 5,
+      "name": "Ziggs maître arcaniste",
+      "chromas": false
+    },
+    {
+      "id": "115006",
+      "num": 6,
+      "name": "Ziggs boss de combat",
+      "chromas": false
+    },
+    {
+      "id": "115007",
+      "num": 7,
+      "name": "Ziggs de l'Odyssée",
+      "chromas": true
+    },
+    {
+      "id": "115014",
+      "num": 14,
+      "name": "Ziggs folie sucrée",
+      "chromas": true
+    },
+    {
+      "id": "115023",
+      "num": 23,
+      "name": "Ziggs Hextech",
+      "chromas": false
+    },
+    {
+      "id": "115024",
+      "num": 24,
+      "name": "Ziggs abeille",
+      "chromas": true
+    },
+    {
+      "id": "115033",
+      "num": 33,
+      "name": "Ziggs La Ilusión",
+      "chromas": true
+    },
+    {
+      "id": "115043",
+      "num": 43,
+      "name": "Ziggs pyrotechnicien",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Heimerdinger",
+      "type": "champion",
+      "relation": "friend",
+      "note_fr": "Partenaire explosif",
+      "note_en": "Explosive partner"
     }
   ]
 }

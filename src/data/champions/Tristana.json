@@ -3,139 +3,35 @@
   "key": "18",
   "name": "Tristana",
   "title": "Canonnière yordle",
-  "version": "15.23.1",
-  "lore": "Comme beaucoup de Yordles, Tristana était fascinée par le monde matériel. Elle voyagea partout, observant avec émerveillement les trolls des glaces au nord ou les armées disciplinées dans le désert. Mais sa vie bascula le jour où elle fut témoin de la destruction d'un bois de Bandle. Un sorcier sombre et ses maraudeurs brûlèrent la forêt et détruisirent définitivement le portail magique qui s'y trouvait, propageant une onde de désespoir jusqu'à Bandle City.\n\n L'Éveil d'une Gardienne : Rongée par la culpabilité de ne pas avoir agi, Tristana décida de devenir la protectrice des bois de Bandle. Inspirée par la discipline militaire des humains, elle commença à s'imposer un régime strict : elle appela sa nourriture des \"rations\", s'imposa des tours de garde et des horaires de repos précis.\n\n La Naissance de Boomer : Pour être efficace, elle avait besoin d'une arme. En s'inspirant des canons de Bilgewater, elle fit forger un canon à sa taille qu'elle nomma affectueusement Boomer.\n\n Exploits Légendaires : Tristana a affronté des menaces partout dans Runeterra. Elle a dispersé des chasseurs de trésors aux Îles du Serpent et a éliminé une horreur du Néant qui dévorait une oasis secrète à Shurima en lui envoyant une bombe dans la gueule.\n\n Les Canonniers de Bandle : Son exemple a inspiré d'autres Yordles. Bien qu'elle trouve cela parfois agaçant, elle a commencé à former ces recrues avec l'aide des inventions de Rumble, créant ainsi une véritable unité d'élite : les Canonniers de Bandle.",
+  "version": "16.8.1",
+  "lore": "Si bon nombre d'autres yordles utilisent leur énergie débordante pour explorer, découvrir, inventer ou plus simplement jouer de mauvais tours, Tristana a toujours puisé son inspiration dans les récits des grands guerriers. Elle avait beaucoup entendu parler de Runeterra, de ses factions et de ses guerres, et elle pensait que les yordles aussi avaient l'étoffe des légendes. Dès son arrivée dans ce monde, elle s'équipa de son fidèle canon Boomer pour se jeter au combat avec un courage et un optimisme sans bornes.",
   "tags": [
     "Marksman",
     "Assassin"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Tristana.png",
+    "sprite": "champion4.png",
+    "group": "champion",
     "x": 384,
     "y": 48,
-    "full": "Tristana.png",
-    "group": "champion",
-    "sprite": "champion4.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "18000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "18001",
-      "num": 1,
-      "name": "Tristana Riot Girl",
-      "chromas": false
-    },
-    {
-      "id": "18002",
-      "num": 2,
-      "name": "Tristana l'elfe sérieuse",
-      "chromas": false
-    },
-    {
-      "id": "18003",
-      "num": 3,
-      "name": "Tristana pompier",
-      "chromas": false
-    },
-    {
-      "id": "18004",
-      "num": 4,
-      "name": "Tristana guérilla",
-      "chromas": false
-    },
-    {
-      "id": "18005",
-      "num": 5,
-      "name": "Tristana pirate",
-      "chromas": false
-    },
-    {
-      "id": "18006",
-      "num": 6,
-      "name": "Tristana à propulsion",
-      "chromas": true
-    },
-    {
-      "id": "18010",
-      "num": 10,
-      "name": "Tristana dragonnière",
-      "chromas": true
-    },
-    {
-      "id": "18011",
-      "num": 11,
-      "name": "Tristana sorcière",
-      "chromas": false
-    },
-    {
-      "id": "18012",
-      "num": 12,
-      "name": "Tristana de la section Oméga",
-      "chromas": true
-    },
-    {
-      "id": "18024",
-      "num": 24,
-      "name": "Tristana diablotin",
-      "chromas": true
-    },
-    {
-      "id": "18033",
-      "num": 33,
-      "name": "Tristana cosplay Pengu",
-      "chromas": true
-    },
-    {
-      "id": "18040",
-      "num": 40,
-      "name": "Tristana Hextech",
-      "chromas": false
-    },
-    {
-      "id": "18041",
-      "num": 41,
-      "name": "Tristana pyrotechnicienne",
-      "chromas": true
-    },
-    {
-      "id": "18051",
-      "num": 51,
-      "name": "Tristana fleur spirituelle",
-      "chromas": true
-    },
-    {
-      "id": "18061",
-      "num": 61,
-      "name": "Tristana de la cour féérique",
-      "chromas": true
-    },
-    {
-      "id": "18070",
-      "num": 70,
-      "name": "Tristana bergère de la pluie",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "TristanaQ",
       "name": "Tir rapide",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TristanaQ.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 0,
         "y": 48,
-        "full": "TristanaQ.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -147,6 +43,11 @@
           "Vitesse d'attaque",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ attackspeedmod*100.000000 }}% -> {{ attackspeedmodnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -160,13 +61,13 @@
       "name": "Saut roquette",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TristanaW.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 48,
         "y": 48,
-        "full": "TristanaW.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -178,6 +79,11 @@
           "Dégâts",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -191,26 +97,31 @@
       "name": "Charge explosive",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TristanaE.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 96,
         "y": 48,
-        "full": "TristanaE.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive : </spellPassive>les attaques de Tristana qui tuent un ennemi infligent <magicDamage>{{ passivedamage }} pts de dégâts magiques</magicDamage> aux ennemis proches.<br /><br /><spellActive>Active :</spellActive> Tristana colle une bombe sur un ennemi ou une tourelle. Au bout de {{ activeduration }} sec, la bombe explose, infligeant <physicalDamage>{{ activedamage }} pts de dégâts physiques</physicalDamage> aux ennemis proches. Les dégâts sont augmentés de {{ critchanceamp*100 }}% des chances de coup critique et de {{ activeperstackamp*100 }}% chaque fois que Tristana frappe la cible avec une attaque ou une compétence (max : 4 effets cumulés).<br /><br />À {{ activemaxstacks }} effets cumulés, la bombe explose immédiatement (max : <physicalDamage>{{ activemaxdamage }} pts de dégâts physiques</physicalDamage>).{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive : </spellPassive>les attaques de Tristana qui tuent des ennemis infligent <magicDamage>{{ passivedamage }} pts de dégâts magiques</magicDamage> aux ennemis proches.<br /><br /><spellActive>Active :</spellActive> Tristana colle une bombe sur un ennemi ou une tourelle. Au bout de {{ activeduration }} sec, la bombe explose, infligeant <physicalDamage>{{ activedamage }} pts de dégâts physiques</physicalDamage> aux ennemis proches. Les dégâts sont augmentés de {{ activeperstackamp*100 }}% chaque fois que Tristana frappe la cible avec une attaque ou une compétence (max : 4 effets cumulés).<br /><br />À {{ activemaxstacks }} effets cumulés, la bombe explose immédiatement (max : <physicalDamage>{{ activemaxdamage }} pts de dégâts physiques</physicalDamage>).{{ spellmodifierdescriptionappend }}",
       "costBurn": "50/55/60/65/70",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Dégâts de l'explosion passive",
           "Dégâts de base de la charge",
-          "Ratio de dégâts d'attaque",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ passivebasedamage }} -> {{ passivebasedamageNL }}",
+          "{{ activebasedamage }} -> {{ activebasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -224,13 +135,13 @@
       "name": "Tir à impact",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TristanaR.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 144,
         "y": 48,
-        "full": "TristanaR.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -242,6 +153,11 @@
           "Dégâts",
           "Distance de projection",
           "Durée de l'étourdissement :"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ knockbackdistance }} -> {{ knockbackdistanceNL }}",
+          "{{ stunduration }} -> {{ stundurationNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -254,13 +170,13 @@
   "passive": {
     "name": "Tir de précision",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Tristana_Passive.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 384,
       "y": 48,
-      "full": "Tristana_Passive.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Augmente la portée d'attaque de Tristana quand elle gagne un niveau."
   },
@@ -274,20 +190,20 @@
   "gender": "Female",
   "species": "Yordle",
   "title_en": "the Yordle Gunner",
-  "lore_en": "Like most Yordles, Tristana was enchanted by the material realm. She spent years wandering, witnessing everything from ice trolls in the north to the disciplined marches of southern armies. However, her carefree life ended when she saw a bandlewood destroyed. A dark sorcerer and his warband burned the magical grove and collapsed its portal, sending a ripple of despair through Bandle City.\n\n The Soldier's Path: Driven by guilt and a new sense of duty, Tristana dedicated herself to protecting the gateways. She began emulating mortal military discipline, referring to her food as \"rations\" and setting strict schedules for herself—concepts foreign to most Yordles.\n\n Boomer: Realizing she needed a weapon to match her resolve, she took inspiration from the black powder cannons of Bilgewater. She commissioned a heavy cannon scaled to her size, naming it Boomer.\n\n Defender of the Wilds: Tristana has fought innumerable threats. She intervened in a clash in the Serpent Isles to protect a hidden portal and destroyed a Void-horror in the Shuriman desert by tossing an explosive charge down its throat.\n\n The Bandle Gunners: Her legend inspired other Yordles to follow suit. Despite her initial embarrassment, she has taken to training these recruits, outfitting them with weapons provided by the inventor Rumble. Together, they form the \"Bandle Gunners,\" the first organized defense force for yordlekind.",
+  "lore_en": "While many other yordles channel their energy into discovery, invention, or just plain mischief-making, Tristana was always inspired by the adventures of great warriors. She had heard much about Runeterra, its factions, and its wars, and believed her kind could become worthy of legend too. Setting foot in the world for the first time, she took up her trusty cannon Boomer, and now leaps into battle with steadfast courage and optimism.",
   "spells_en": [
     {
       "id": "TristanaQ",
       "name": "Rapid Fire",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TristanaQ.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 0,
         "y": 48,
-        "full": "TristanaQ.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -299,6 +215,11 @@
           "Attack Speed",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ attackspeedmod*100.000000 }}% -> {{ attackspeedmodnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -312,13 +233,13 @@
       "name": "Rocket Jump",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TristanaW.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 48,
         "y": 48,
-        "full": "TristanaW.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -330,6 +251,11 @@
           "Damage",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -343,26 +269,31 @@
       "name": "Explosive Charge",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TristanaE.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 96,
         "y": 48,
-        "full": "TristanaE.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive: </spellPassive>Tristana's Attacks that kill enemies deal <magicDamage>{{ passivedamage }} magic damage</magicDamage> to surrounding enemies.<br /><br /><spellActive>Active:</spellActive> Tristana attaches a bomb to an enemy or turret that deals <physicalDamage>{{ activedamage }} physical damage</physicalDamage> to surrounding enemies after {{ activeduration }} seconds. The damage is increased by {{ critchanceamp*100 }}% Critical Strike Chance and by {{ activeperstackamp*100 }}% each time Tristana hits an Attack or Ability (max 4 stacks).<br /><br />At {{ activemaxstacks }} stacks, the bomb explodes immediately (max <physicalDamage>{{ activemaxdamage }} physical damage</physicalDamage>).{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive: </spellPassive>Tristana's Attacks that kill enemies deal <magicDamage>{{ passivedamage }} magic damage</magicDamage> to surrounding enemies.<br /><br /><spellActive>Active:</spellActive> Tristana attaches a bomb to an enemy or turret that deals <physicalDamage>{{ activedamage }} physical damage</physicalDamage> to surrounding enemies after {{ activeduration }} seconds. The damage is increased by {{ activeperstackamp*100 }}% each time Tristana hits an Attack or Ability (max 4 stacks).<br /><br />At {{ activemaxstacks }} stacks, the bomb explodes immediately (max <physicalDamage>{{ activemaxdamage }} physical damage</physicalDamage>).{{ spellmodifierdescriptionappend }}",
       "costBurn": "50/55/60/65/70",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Passive Explosion Damage",
           "Base Charge Damage",
-          "Attack Damage Ratio",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ passivebasedamage }} -> {{ passivebasedamageNL }}",
+          "{{ activebasedamage }} -> {{ activebasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -376,13 +307,13 @@
       "name": "Buster Shot",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TristanaR.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 144,
         "y": 48,
-        "full": "TristanaR.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -394,6 +325,11 @@
           "Damage",
           "Knockback Distance",
           "Stun Duration:"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ knockbackdistance }} -> {{ knockbackdistanceNL }}",
+          "{{ stunduration }} -> {{ stundurationNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -406,13 +342,13 @@
   "passive_en": {
     "name": "Draw a Bead",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Tristana_Passive.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 384,
       "y": 48,
-      "full": "Tristana_Passive.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Increases Tristana's Attack Range as she levels."
   },
@@ -522,6 +458,124 @@
       "num": 70,
       "name": "Rain Shepherd Tristana",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "18000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "18001",
+      "num": 1,
+      "name": "Tristana Riot Girl",
+      "chromas": false
+    },
+    {
+      "id": "18002",
+      "num": 2,
+      "name": "Tristana l'elfe sérieuse",
+      "chromas": false
+    },
+    {
+      "id": "18003",
+      "num": 3,
+      "name": "Tristana pompier",
+      "chromas": false
+    },
+    {
+      "id": "18004",
+      "num": 4,
+      "name": "Tristana guérilla",
+      "chromas": false
+    },
+    {
+      "id": "18005",
+      "num": 5,
+      "name": "Tristana pirate",
+      "chromas": false
+    },
+    {
+      "id": "18006",
+      "num": 6,
+      "name": "Tristana à propulsion",
+      "chromas": true
+    },
+    {
+      "id": "18010",
+      "num": 10,
+      "name": "Tristana dragonnière",
+      "chromas": true
+    },
+    {
+      "id": "18011",
+      "num": 11,
+      "name": "Tristana sorcière",
+      "chromas": false
+    },
+    {
+      "id": "18012",
+      "num": 12,
+      "name": "Tristana de la section Oméga",
+      "chromas": true
+    },
+    {
+      "id": "18024",
+      "num": 24,
+      "name": "Tristana diablotin",
+      "chromas": true
+    },
+    {
+      "id": "18033",
+      "num": 33,
+      "name": "Tristana cosplay Pengu",
+      "chromas": true
+    },
+    {
+      "id": "18040",
+      "num": 40,
+      "name": "Tristana Hextech",
+      "chromas": false
+    },
+    {
+      "id": "18041",
+      "num": 41,
+      "name": "Tristana pyrotechnicienne",
+      "chromas": true
+    },
+    {
+      "id": "18051",
+      "num": 51,
+      "name": "Tristana fleur spirituelle",
+      "chromas": true
+    },
+    {
+      "id": "18061",
+      "num": 61,
+      "name": "Tristana de la cour féérique",
+      "chromas": true
+    },
+    {
+      "id": "18070",
+      "num": 70,
+      "name": "Tristana bergère de la pluie",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Teemo",
+      "type": "champion",
+      "relation": "friend",
+      "note_fr": "Meilleurs amis",
+      "note_en": "Best friends"
+    },
+    {
+      "id": "Rumble",
+      "type": "champion",
+      "relation": "love/crush"
     }
   ]
 }

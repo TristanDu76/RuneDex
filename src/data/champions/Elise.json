@@ -3,97 +3,35 @@
   "key": "60",
   "name": "Elise",
   "title": "Reine araignée",
-  "version": "15.23.1",
-  "lore": "Elise est née il y a des siècles dans la puissante Maison Kythera de Noxus. Très jeune, elle maîtrisa le pouvoir de sa beauté pour manipuler les faibles. Elle arrangea un mariage politique avec Berholdt, l'héritier de la Maison Zaavan, sans savoir que ce mariage avait été orchestré par les forces obscures de la Rose noire. Elise domina son mari, Berholdt, dont le ressentiment grandit jusqu'à ce qu'il tente de l'empoisonner pour prendre le contrôle. Cependant, Elise le déjoua et le poignarda à mort pour s'emparer de l'antidote.\r\n\r\nAlors qu'elle se remettait de l'empoisonnement, la Femme pâle (la maîtresse de la Rose noire) l'approcha. Elise, qui voyait là un chemin vers un plus grand pouvoir, accepta de rejoindre la cabale. Pour gagner les faveurs de la Femme pâle, elle se lança dans une quête secrète pour récupérer un objet d'importance : le crâne de l'ancien chef de guerre Sahn-Uzal, caché dans les Îles Obscures (Shadow Isles).\r\n\r\nAccompagnée de fidèles et d'un capitaine endetté, Elise atteignit la ville maudite d'Helia. Leur recherche fut vaine, mais Elise trouva une créature inattendue : le dieu-araignée Vilemaw, qui émergea des ténèbres pour dévorer ses compagnons. Vilemaw s'enfonça ensuite ses crocs dans l'épaule d'Elise.\r\n\r\nLe venin arcanique provoqua une transformation terrible et agonisante : son corps ondula, et des pattes arachnoïdes émergèrent de sa chair. L'échange fut implicite : une compréhension non dite s'établit entre elle et le dieu-araignée. Elise revint sur la plage, indemne des esprits des Îles, et retourna à Noxus dans sa forme humaine quelques semaines plus tard, étant le seul être vivant à bord de son navire.\r\n\r\nBien qu'elle n'ait pas réussi à trouver le crâne, la Femme pâle vit en Elise un atout inestimable : un moyen de voyager en toute sécurité entre Noxus et les Îles Obscures. Un accord fut conclu : la Rose noire fournirait à Elise un flux incessant de sacrifices inconscients pour apaiser le dieu-araignée, et en retour, Elise rapporterait des artefacts de pouvoir des Îles.\r\n\r\nPour maintenir sa jeunesse éternelle, Elise se repaît de ses victimes et de l'essence de Vilemaw. Elle est désormais une recluse séduisante qui cultive son mystère. Après des siècles, elle continue de répondre à l'appel de son dieu, emmenant un malheureux soupirant ou une âme facilement séduite à chaque voyage. Aucun de ceux qui l'accompagnent ne revient jamais.",
+  "version": "16.8.1",
+  "lore": "Elise est un prédateur mortel qui vit dans un palais reclus et obscur, au plus profond de la plus vieille ville de Noxus. C'était autrefois une simple femme, maîtresse d'une Maison toute-puissante, mais la morsure d'un maléfique demi-dieu la transforma en un être aussi magnifique qu'inhumain : une créature arachnéenne qui tisse sa toile pour piéger ses proies. Pour maintenir sa jeunesse éternelle, Elise se repaît des innocents et peu sont ceux qui peuvent résister à sa séduction.",
   "tags": [
     "Assassin",
     "Mage"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Elise.png",
+    "sprite": "champion1.png",
+    "group": "champion",
     "x": 0,
     "y": 0,
-    "full": "Elise.png",
-    "group": "champion",
-    "sprite": "champion1.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "60000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "60001",
-      "num": 1,
-      "name": "Elise du lotus mortel",
-      "chromas": false
-    },
-    {
-      "id": "60002",
-      "num": 2,
-      "name": "Elise héroïne de guerre",
-      "chromas": false
-    },
-    {
-      "id": "60003",
-      "num": 3,
-      "name": "Elise lune de sang",
-      "chromas": false
-    },
-    {
-      "id": "60004",
-      "num": 4,
-      "name": "SKT T1 Elise",
-      "chromas": false
-    },
-    {
-      "id": "60005",
-      "num": 5,
-      "name": "Super Elise intergalactique",
-      "chromas": false
-    },
-    {
-      "id": "60006",
-      "num": 6,
-      "name": "Elise sorcière",
-      "chromas": true
-    },
-    {
-      "id": "60015",
-      "num": 15,
-      "name": "Elise rose fanée",
-      "chromas": true
-    },
-    {
-      "id": "60024",
-      "num": 24,
-      "name": "Elise de l'assemblée",
-      "chromas": true
-    },
-    {
-      "id": "60034",
-      "num": 34,
-      "name": "Elise bal masqué de la Rose noire",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "EliseHumanQ",
       "name": "Neurotoxine/Morsure venimeuse",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "EliseHumanQ.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 384,
         "y": 48,
-        "full": "EliseHumanQ.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -106,6 +44,12 @@
           "Dégâts de Morsure venimeuse",
           "Dégâts max aux monstres",
           "Coût en mana (Neurotoxine)"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ spiderbasedamage }} -> {{ spiderbasedamageNL }}",
+          "{{ monstercapdamage }} -> {{ monstercapdamageNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -119,13 +63,13 @@
       "name": "Araignée explosive/Frénésie symbiotique",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "EliseHumanW.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 432,
         "y": 48,
-        "full": "EliseHumanW.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -136,6 +80,10 @@
         "label": [
           "Dégâts",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -149,13 +97,13 @@
       "name": "Cocon/Suspension",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "EliseHumanE.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 0,
         "y": 96,
-        "full": "EliseHumanE.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -168,6 +116,12 @@
           "Délai de récupération (Cocon)",
           "Délai de récupération (Suspension)",
           "Dégâts et soins augmentés"
+        ],
+        "effect": [
+          "{{ e5 }} -> {{ e5NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ e3 }} -> {{ e3NL }}",
+          "{{ e6 }}% -> {{ e6NL }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -181,13 +135,13 @@
       "name": "Forme arachnéenne",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "EliseR.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 48,
         "y": 96,
-        "full": "EliseR.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 4,
@@ -201,6 +155,13 @@
           "Nombre max d'araignées",
           "Armure des araignées",
           "Résistance magique des araignées"
+        ],
+        "effect": [
+          "{{ passivebonusdamage }} -> {{ passivebonusdamageNL }}",
+          "{{ spiderlingbasedamage }} -> {{ spiderlingbasedamageNL }}",
+          "{{ spiderlingsstored }} -> {{ spiderlingsstoredNL }}",
+          "{{ e6 }} -> {{ e6NL }}",
+          "{{ e7 }} -> {{ e7NL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -213,13 +174,13 @@
   "passive": {
     "name": "Reine araignée",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "ElisePassive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 0,
       "y": 0,
-      "full": "ElisePassive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Forme humaine : quand les compétences d'Elise touchent un ennemi, elle génère une araignée en sommeil.<br><br>Forme arachnéenne : les attaques de base infligent des dégâts magiques supplémentaires et rendent des PV à Elise."
   },
@@ -234,20 +195,20 @@
   "gender": "Female",
   "species": "Human",
   "title_en": "the Spider Queen",
-  "lore_en": "Elise was born centuries ago into the powerful House Kythera of Noxus. From a young age, she mastered the power of her beauty to influence the weak. She arranged a political marriage with Berholdt, the heir to House Zaavan, unaware that the marriage was orchestrated by the shadowy forces of the Black Rose. Elise completely dominated her husband, Berholdt, whose resentment grew until he attempted to poison her to take control. Elise, however, outsmarted him and plunged a knife into his heart to secure the antidote.\r\n\r\nWhile recovering from the poisoning, the Pale Woman (the mistress of the Black Rose) approached her. Elise, seeing a path to greater power, accepted to join the cabal. To gain the Pale Woman's favor, she embarked on a secret quest to retrieve an object of significance: the skull of the ancient warlord Sahn-Uzal, hidden in the Shadow Isles.\r\n\r\nAccompanied by devotees and a debt-ridden captain, Elise reached the cursed city of Helia. Their search was in vain, but Elise found an unexpected creature: the spider-god Vilemaw, who erupted from the darkness to devour her intruders. Vilemaw then sank its fangs into Elise's shoulder.\r\n\r\nThe arcane venom caused a terrible and agonizing transformation: her spine rippled, and arachnoid legs pushed out from her flesh. An unspoken understanding passed between her and the spider-god. Elise scuttled back to the beach, untroubled by the Isles' spirits, and returned to Noxus in her human form some weeks later, being the only living thing left aboard her ship.\r\n\r\nThough she failed to find the skull, the Pale Woman saw Elise's dangerous new gift for what it was—a means to travel safely between Noxus and the Shadow Isles. An accord was struck: the Black Rose would provide Elise with an endless supply of unwitting sacrifices to appease the spider-god, and in return, Elise would recover any artifacts of power from those forbidding shores.\r\n\r\nTo maintain her eternal youth, Elise feeds on her victims and Vilemaw's essence. She is now a seductive recluse who cultivates her mystery. Centuries later, she continues to heed her god's summon, taking a hapless suitor or some other easily swayed soul with her on every journey. None who accompany her ever return.",
+  "lore_en": "Elise is a deadly predator who dwells in a shuttered, lightless palace, deep within the oldest city of Noxus. Once mortal, she was the mistress of a powerful house, but the bite of a vile demigod transformed her into something beautiful, yet utterly inhuman—a spider-like creature, drawing unsuspecting prey into her web. To maintain her eternal youth, Elise now prefers to feed upon the naive and the faithless, and there are few who can resist her seductions.",
   "spells_en": [
     {
       "id": "EliseHumanQ",
       "name": "Neurotoxin / Venomous Bite",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "EliseHumanQ.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 384,
         "y": 48,
-        "full": "EliseHumanQ.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -260,6 +221,12 @@
           "Venomous Bite Damage",
           "Monster Damage Cap",
           "Mana Cost (Neurotoxin)"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ spiderbasedamage }} -> {{ spiderbasedamageNL }}",
+          "{{ monstercapdamage }} -> {{ monstercapdamageNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -273,13 +240,13 @@
       "name": "Volatile Spiderling / Skittering Frenzy",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "EliseHumanW.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 432,
         "y": 48,
-        "full": "EliseHumanW.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -290,6 +257,10 @@
         "label": [
           "Damage",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -303,13 +274,13 @@
       "name": "Cocoon / Rappel",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "EliseHumanE.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 0,
         "y": 96,
-        "full": "EliseHumanE.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -322,6 +293,12 @@
           "Cooldown (Cocoon)",
           "Cooldown (Rappel)",
           "Damage and Healing Increase"
+        ],
+        "effect": [
+          "{{ e5 }} -> {{ e5NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ e3 }} -> {{ e3NL }}",
+          "{{ e6 }}% -> {{ e6NL }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -335,13 +312,13 @@
       "name": "Spider Form",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "EliseR.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 48,
         "y": 96,
-        "full": "EliseR.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 4,
@@ -355,6 +332,13 @@
           "Maximum Number of Spiderlings",
           "Spiderling Armor",
           "Spiderling Magic Resist"
+        ],
+        "effect": [
+          "{{ passivebonusdamage }} -> {{ passivebonusdamageNL }}",
+          "{{ spiderlingbasedamage }} -> {{ spiderlingbasedamageNL }}",
+          "{{ spiderlingsstored }} -> {{ spiderlingsstoredNL }}",
+          "{{ e6 }} -> {{ e6NL }}",
+          "{{ e7 }} -> {{ e7NL }}"
         ]
       },
       "resource": "No Cost",
@@ -367,13 +351,13 @@
   "passive_en": {
     "name": "Spider Queen",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "ElisePassive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 0,
       "y": 0,
-      "full": "ElisePassive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Human Form: When Elise's abilities hit an enemy, she gains a dormant Spiderling.<br><br>Spider Form: Basic attacks deal bonus magic damage and restore health to Elise."
   },
@@ -442,6 +426,75 @@
       "num": 34,
       "name": "Masque of the Black Rose Elise",
       "chromas": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "60000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "60001",
+      "num": 1,
+      "name": "Elise du lotus mortel",
+      "chromas": false
+    },
+    {
+      "id": "60002",
+      "num": 2,
+      "name": "Elise héroïne de guerre",
+      "chromas": false
+    },
+    {
+      "id": "60003",
+      "num": 3,
+      "name": "Elise lune de sang",
+      "chromas": false
+    },
+    {
+      "id": "60004",
+      "num": 4,
+      "name": "SKT T1 Elise",
+      "chromas": false
+    },
+    {
+      "id": "60005",
+      "num": 5,
+      "name": "Super Elise intergalactique",
+      "chromas": false
+    },
+    {
+      "id": "60006",
+      "num": 6,
+      "name": "Elise sorcière",
+      "chromas": true
+    },
+    {
+      "id": "60015",
+      "num": 15,
+      "name": "Elise rose fanée",
+      "chromas": true
+    },
+    {
+      "id": "60024",
+      "num": 24,
+      "name": "Elise de l'assemblée",
+      "chromas": true
+    },
+    {
+      "id": "60034",
+      "num": 34,
+      "name": "Elise bal masqué de la Rose noire",
+      "chromas": false
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Leblanc",
+      "type": "champion",
+      "relation": "leader/black-rose"
     }
   ]
 }

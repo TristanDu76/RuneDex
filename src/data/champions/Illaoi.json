@@ -3,73 +3,35 @@
   "key": "420",
   "name": "Illaoi",
   "title": "Prêtresse du kraken",
-  "version": "15.23.1",
-  "lore": "Illaoi est la Porte-Vérité (Truth Bearer) de la religion de Nagakabouros, le dieu des Îles aux Serpents, souvent représenté comme un énorme serpent de mer aux tentacules en mouvement incessant. Ce dieu est la divinité de la vie, des tempêtes océaniques et, surtout, du Mouvement. La théologie de Nagakabouros repose sur trois principes : l'univers a doté chaque être vivant du désir, et ce n'est qu'en poursuivant ce désir que l'univers progresse vers sa destinée.\n\nLe rôle d'Illaoi est de servir directement le dieu en assurant la fluidité de l'univers en brisant les blocages. Elle a deux responsabilités sacrées :\n\nGuerre contre la Non-vie : Les morts-vivants sont considérés comme des abominations car ils sont sortis du flux normal de l'univers. Le devoir principal d'Illaoi est de diriger la guerre contre la Ruine (Harrowing) et la Brume noire, affrontant directement les esprits les plus puissants pour les repousser.\n\nLe Test de Nagakabouros : Illaoi doit chercher des individus à fort potentiel et les défier. Utilisant son énorme relique sacrée, l'Œil de Dieu, elle arrache l'esprit du sujet de son corps et le force à se battre contre elle pour prouver sa valeur. Ceux qui échouent sont anéantis, car le Kraken n'a aucune tolérance pour la lâcheté ou la retenue. Cependant, la destruction n'est pas le but ; les survivants sont changés à jamais et trouvent la volonté de poursuivre leur vrai destin.\n\nIllaoi est la Porte-Vérité la plus puissante et respectée depuis cent générations, mais c'est par ses ruptures avec la tradition qu'elle se distingue. Elle a quitté les temples dorés de Buhru pour la ville voisine de Bilgewater, considérée comme un caniveau fétide par son peuple, où les étrangers (les paylangi) étaient ignorés.\n\nIllaoi a brisé la tradition en choisissant de protéger les habitants de Bilgewater contre la Ruine et, plus controversé, en décidant que certains de ses résidents avaient des âmes dignes du grand test. Elle est celle qui a fait connaître la Déesse-Mère à Bilgewater, et son esprit indomptable a rendu sa religion populaire.\n\nDes rumeurs persistantes affirment que le pirate le plus célèbre de Bilgewater a eu le cœur brisé par la prêtresse. À tous ceux qui la rencontrent, cela ne surprend pas : sa manière rude masque une intelligence subtile, une grande force et une confiance magnétique.",
+  "version": "16.8.1",
+  "lore": "La stature colossale d'Illaoi n'a d'égale que sa foi implacable. Prophétesse du Grand Kraken, elle se sert d'une énorme idole dorée pour arracher les esprits de ses ennemis et faire voler en éclats leur perception de la réalité. Ceux qui défient « l'Apôtre de la vérité de Nagakabouros » découvrent bien vite qu'Illaoi ne combat jamais seule, car le dieu des Îles aux serpents lui prête main-forte.",
   "tags": [
     "Fighter",
     "Tank"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Illaoi.png",
+    "sprite": "champion1.png",
+    "group": "champion",
     "x": 288,
     "y": 48,
-    "full": "Illaoi.png",
-    "group": "champion",
-    "sprite": "champion1.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "420000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "420001",
-      "num": 1,
-      "name": "Illaoi messagère du Néant",
-      "chromas": false
-    },
-    {
-      "id": "420002",
-      "num": 2,
-      "name": "Illaoi résistante",
-      "chromas": true
-    },
-    {
-      "id": "420010",
-      "num": 10,
-      "name": "Illaoi invocatrice cosmique",
-      "chromas": true
-    },
-    {
-      "id": "420018",
-      "num": 18,
-      "name": "Illaoi lune de neige",
-      "chromas": true
-    },
-    {
-      "id": "420027",
-      "num": 27,
-      "name": "Illaoi ours de combat",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "IllaoiQ",
       "name": "Coup de tentacule",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "IllaoiQ.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 96,
         "y": 0,
-        "full": "IllaoiQ.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -81,6 +43,11 @@
           "Bonus aux cinglements",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ tentacledamageamp*100.000000 }}% -> {{ tentacledamageampnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -94,13 +61,13 @@
       "name": "Âpre leçon",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "IllaoiW.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 144,
         "y": 0,
-        "full": "IllaoiW.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -111,6 +78,10 @@
         "label": [
           "Pourcentage des PV max en dégâts",
           "Dégâts minimum"
+        ],
+        "effect": [
+          "{{ healthpercentdamage }}% -> {{ healthpercentdamageNL }}%",
+          "{{ wmindamage }} -> {{ wmindamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -124,13 +95,13 @@
       "name": "Épreuve de l'esprit",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "IllaoiE.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 192,
         "y": 0,
-        "full": "IllaoiE.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -142,6 +113,11 @@
           "Dégâts transférés",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamagetransferpercent*100.000000 }}% -> {{ basedamagetransferpercentnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -155,13 +131,13 @@
       "name": "Acte de foi",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "IllaoiR.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 240,
         "y": 0,
-        "full": "IllaoiR.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -172,6 +148,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -184,13 +164,13 @@
   "passive": {
     "name": "Prophétesse d'un dieu ancestral",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Illaoi_P.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 288,
       "y": 48,
-      "full": "Illaoi_P.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Illaoi et les <font color='#669900'>réceptacles</font> qu'elle crée font apparaître des tentacules sur les éléments de décor infranchissables à proximité. Les tentacules frappent les esprits, les <font color='#669900'>réceptacles</font> et les victimes de l'Âpre leçon d'Illaoi. Les tentacules infligent des dégâts physiques aux ennemis touchés, et ils soignent Illaoi s'ils blessent un champion."
   },
@@ -205,20 +185,20 @@
   "gender": "Female",
   "species": "Human",
   "title_en": "the Kraken Priestess",
-  "lore_en": "All who encounter Illaoi are struck by her presence. She is the Truth Bearer of the religion of Nagakabouros, the god of the Serpent Isles, usually depicted as an enormous serpent head with endlessly spiraling tentacles. This deity is the god of life, ocean storms, and, crucially, Motion (the literal translation of its name is 'the unending monster that drives the sea and sky'). Central to the faith's theology are three tenets, including the belief that every living being was built with desire by the universe, and only by chasing these desires does the universe move toward its destiny.\n\nIllaoi's role is to serve the god directly by unblocking the flow of the universe. To this end, she has two sacred responsibilities:\n\nWar Against Undeath: The undead are considered an abomination because they have fallen outside the normal flow of the universe. Illaoi's primary duty is to be the spearhead against the Harrowing and the Black Mist, directly engaging its most powerful spirits.\n\nThe Test of Nagakabouros: Illaoi must seek out individuals of great potential and challenge them. Using her massive, holy relic, The Eye of God, she strips the subject's spirit from their body and forces them to stand against her to prove their worth. Those who fail are completely annihilated, as the Kraken has no tolerance for cowardice or restraint. However, destruction is never the goal; survivors are forever changed and find the will to pursue their true destiny.\n\nIllaoi is the most powerful and respected Truth Bearer in a hundred generations, but she is most notable for breaking the traditions of her faith. She left the golden temples of Buhru for the nearby squalor of Bilgewater, a city viewed as a fetid gutter by her people, where foreigners (paylangi) were ignored.\n\nIllaoi broke tradition by choosing to protect Bilgewater residents from the Harrowing and, even more controversially, deciding that some of its residents had souls worthy of the great test. She is the one who brought widespread awareness of the Mother Serpent to Bilgewater, and her indomitable spirit has brought her religion into favor there.\n\nPersistent rumors suggest that Bilgewater's most bloodthirsty pirate had his heart broken by the towering priestess. To anyone who has ever met her, this is no surprise: Illaoi's rough manner belies subtle intelligence, great strength, and magnetic confidence.",
+  "lore_en": "Illaoi's powerful physique is dwarfed only by her indomitable faith. As the prophet of the Great Kraken, she uses a huge, golden idol to rip her foes' spirits from their bodies and shatter their perception of reality. All who challenge the “Truth Bearer of Nagakabouros” soon discover Illaoi never battles alone—the god of the Serpent Isles fights by her side.",
   "spells_en": [
     {
       "id": "IllaoiQ",
       "name": "Tentacle Smash",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "IllaoiQ.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 96,
         "y": 0,
-        "full": "IllaoiQ.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -230,6 +210,11 @@
           "Slam Bonus",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ tentacledamageamp*100.000000 }}% -> {{ tentacledamageampnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -243,13 +228,13 @@
       "name": "Harsh Lesson",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "IllaoiW.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 144,
         "y": 0,
-        "full": "IllaoiW.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -260,6 +245,10 @@
         "label": [
           "Maximum Health Damage",
           "Minimum Damage"
+        ],
+        "effect": [
+          "{{ healthpercentdamage }}% -> {{ healthpercentdamageNL }}%",
+          "{{ wmindamage }} -> {{ wmindamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -273,13 +262,13 @@
       "name": "Test of Spirit",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "IllaoiE.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 192,
         "y": 0,
-        "full": "IllaoiE.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -291,6 +280,11 @@
           "Damage Echo",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamagetransferpercent*100.000000 }}% -> {{ basedamagetransferpercentnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -304,13 +298,13 @@
       "name": "Leap of Faith",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "IllaoiR.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 240,
         "y": 0,
-        "full": "IllaoiR.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -321,6 +315,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -333,13 +331,13 @@
   "passive_en": {
     "name": "Prophet of an Elder God",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Illaoi_P.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 288,
       "y": 48,
-      "full": "Illaoi_P.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Illaoi and the <font color='#669900'>Vessels</font> she creates spawn Tentacles on nearby impassible terrain. Tentacles swing at spirits, <font color='#669900'>Vessels</font>, and victims of Illaoi's Harsh lesson. Tentacles deal physical damage to enemies hit, and will heal Illaoi if they damage a champion."
   },
@@ -383,6 +381,53 @@
       "num": 27,
       "name": "Battle Bear Illaoi",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "420000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "420001",
+      "num": 1,
+      "name": "Illaoi messagère du Néant",
+      "chromas": false
+    },
+    {
+      "id": "420002",
+      "num": 2,
+      "name": "Illaoi résistante",
+      "chromas": true
+    },
+    {
+      "id": "420010",
+      "num": 10,
+      "name": "Illaoi invocatrice cosmique",
+      "chromas": true
+    },
+    {
+      "id": "420018",
+      "num": 18,
+      "name": "Illaoi lune de neige",
+      "chromas": true
+    },
+    {
+      "id": "420027",
+      "num": 27,
+      "name": "Illaoi ours de combat",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Gangplank",
+      "type": "champion",
+      "relation": "ex-lover",
+      "note_fr": "Premier amour",
+      "note_en": "First love"
     }
   ]
 }

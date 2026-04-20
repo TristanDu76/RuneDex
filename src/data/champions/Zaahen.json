@@ -3,7 +3,7 @@
   "key": "904",
   "name": "Zaahen",
   "title": "Incorruptible",
-  "version": "15.23.1",
+  "version": "16.8.1",
   "lore": "Dieu déchu maniant à la fois le divin et l'impie, Zaahen traque ses frères et sœurs Darkin tout en résistant à la corruption qui menace de le consumer. Autrefois scellé volontairement dans son glaive pour ne pas succomber à la folie, il est désormais libre, guidé par la noblesse de son cœur et la violence de ses actes. Zaahen mène une lutte sans fin au plus profond de lui, mais tant qu'il résistera, il s'élèvera face à tous ceux qui cherchent à réduire Runeterra en cendres.",
   "tags": [
     "Fighter",
@@ -11,41 +11,27 @@
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Zaahen.png",
+    "sprite": "champion5.png",
+    "group": "champion",
     "x": 192,
     "y": 48,
-    "full": "Zaahen.png",
-    "group": "champion",
-    "sprite": "champion5.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "904000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "904001",
-      "num": 1,
-      "name": "Zaahen du Voyage immortel",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "ZaahenQ",
       "name": "Glaive des Darkin",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZaahenQ.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 192,
         "y": 144,
-        "full": "ZaahenQ.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -59,26 +45,33 @@
           "Délai de récupération",
           "Pourcentage soigné",
           "Ratio de dégâts d'attaque bonus"
+        ],
+        "effect": [
+          "{{ q1basedamage }} -> {{ q1basedamageNL }}",
+          "{{ q2basedamage }} -> {{ q2basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ healpercent*100.000000 }}% -> {{ healpercentnl*100.000000 }}%",
+          "{{ qcoeff*100.000000 }}% -> {{ qcoeffnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
       "rangeBurn": "25000",
       "datavalues": {},
       "description": "Lors de sa prochaine attaque, Zaahen taillade deux fois sa cible, infligeant des dégâts bonus et récupérant des PV. Zaahen peut relancer cette compétence pour que sa prochaine attaque inflige des dégâts bonus et projette sa cible dans les airs.<br>",
-      "cooldownBurn": "9/8/7/6/5"
+      "cooldownBurn": "10/9/8/7/6"
     },
     {
       "id": "ZaahenW",
       "name": "Retour redoutable",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZaahenW.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 240,
         "y": 144,
-        "full": "ZaahenW.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -88,7 +81,13 @@
       "leveltip": {
         "label": [
           "Dégâts",
+          "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ initialbasedamage }} -> {{ initialbasedamageNL }}",
+          "{{ secondarybasedamage }} -> {{ secondarybasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -102,13 +101,13 @@
       "name": "Incursion dorée",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZaahenE.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 288,
         "y": 144,
-        "full": "ZaahenE.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -121,6 +120,12 @@
           "Dégâts à l'extrémité",
           "Délai de récupération",
           "% des PV en dégâts"
+        ],
+        "effect": [
+          "{{ damage_base }} -> {{ damage_baseNL }}",
+          "{{ damagebonusbase }} -> {{ damagebonusbaseNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ percenthpdamage*100.000000 }}% -> {{ percenthpdamagenl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -134,13 +139,13 @@
       "name": "Libération inexorable",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZaahenR.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 336,
         "y": 144,
-        "full": "ZaahenR.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -152,6 +157,11 @@
           "Délai de récupération",
           "Dégâts",
           "Pénétration d'armure"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ enddamage }} -> {{ enddamageNL }}",
+          "{{ armorpen*100.000000 }}% -> {{ armorpennl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -164,13 +174,13 @@
   "passive": {
     "name": "Guerrier immortel",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "ZaahenP.Zaahen.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 192,
       "y": 48,
-      "full": "ZaahenP.Zaahen.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Les attaques et compétences de Zaahen qui touchent un champion ennemi lui octroient des effets de Détermination. Chaque effet lui octroie des dégâts d'attaque bonus. Au maximum d'effets cumulés, Zaahen gagne des dégâts d'attaque et peut revenir à la vie."
   },
@@ -193,13 +203,13 @@
       "name": "The Darkin Glaive",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZaahenQ.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 192,
         "y": 144,
-        "full": "ZaahenQ.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -213,26 +223,33 @@
           "Cooldown",
           "Percent Healed",
           "Bonus AD Ratio"
+        ],
+        "effect": [
+          "{{ q1basedamage }} -> {{ q1basedamageNL }}",
+          "{{ q2basedamage }} -> {{ q2basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ healpercent*100.000000 }}% -> {{ healpercentnl*100.000000 }}%",
+          "{{ qcoeff*100.000000 }}% -> {{ qcoeffnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
       "rangeBurn": "25000",
       "datavalues": {},
       "description": "Zaahen slashes twice on his next attack, dealing bonus damage and healing himself. Zaahen can recast this ability to have his next attack deal bonus damage and knock up his target.<br>",
-      "cooldownBurn": "9/8/7/6/5"
+      "cooldownBurn": "10/9/8/7/6"
     },
     {
       "id": "ZaahenW",
       "name": "Dreaded Return",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZaahenW.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 240,
         "y": 144,
-        "full": "ZaahenW.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -242,7 +259,13 @@
       "leveltip": {
         "label": [
           "Damage",
+          "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ initialbasedamage }} -> {{ initialbasedamageNL }}",
+          "{{ secondarybasedamage }} -> {{ secondarybasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -256,13 +279,13 @@
       "name": "Aureate Rush",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZaahenE.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 288,
         "y": 144,
-        "full": "ZaahenE.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -275,6 +298,12 @@
           "Edge Damage",
           "Cooldown",
           "% Health damage"
+        ],
+        "effect": [
+          "{{ damage_base }} -> {{ damage_baseNL }}",
+          "{{ damagebonusbase }} -> {{ damagebonusbaseNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ percenthpdamage*100.000000 }}% -> {{ percenthpdamagenl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -288,13 +317,13 @@
       "name": "Grim Deliverance",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZaahenR.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 336,
         "y": 144,
-        "full": "ZaahenR.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -306,6 +335,11 @@
           "Cooldown",
           "Damage",
           "Armor Penetration"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ enddamage }} -> {{ enddamageNL }}",
+          "{{ armorpen*100.000000 }}% -> {{ armorpennl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -318,13 +352,13 @@
   "passive_en": {
     "name": "Cultivation of War",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "ZaahenP.Zaahen.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 192,
       "y": 48,
-      "full": "ZaahenP.Zaahen.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Zaahen's attacks and abilities against enemy champions  grant him stacks of Determination, gaining bonus Attack Damage per stack. When filled with Determination, Zaahen gains increased Attack Damage and can revive."
   },
@@ -345,5 +379,20 @@
       "name": "Immortal Journey Zaahen",
       "chromas": true
     }
-  ]
+  ],
+  "skins": [
+    {
+      "id": "904000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "904001",
+      "num": 1,
+      "name": "Zaahen du Voyage immortel",
+      "chromas": true
+    }
+  ],
+  "related_characters": []
 }

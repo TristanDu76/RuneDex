@@ -3,169 +3,35 @@
   "key": "103",
   "name": "Ahri",
   "title": "Renarde à neuf queues",
-  "version": "15.23.1",
-  "lore": "Ahri est une mystérieuse Vastaya d'Ionia, une race d'êtres féériques connectés au royaume des esprits. Élevée par des renards des neiges après la disparition de sa tribu, ses origines lui étaient longtemps inconnues, marquées seulement par deux gemmes. Très tôt, elle comprit qu'elle était connectée à la magie Vastaya, qu'elle utilisait initialement pour apaiser sa proie avant de la dévorer.\r\n\r\nSon destin changea lorsqu'elle absorba l'essence vitale d'un chasseur humain blessé. Ce faisant, elle absorba brièvement ses souvenirs et acquit soudainement la capacité de parler la langue humaine. Cette expérience révéla sa véritable nature : celle d'un prédateur spirituel capable de manipuler les émotions de ses victimes et de consommer leur essence pour obtenir leurs souvenirs.\r\n\r\nPendant un temps, Ahri fut une créature dangereuse, s'enivrant des mémoires et des émotions volées, ce qui l'a fait se considérer comme un monstre. Sa descente fut interrompue par un artiste humain qui, au lieu de fuir, lui offrit son propre amour et son essence en échange de son cœur. Pour la première fois, Ahri fit l'expérience d'être aimée, et tenta de modérer sa soif.\r\n\r\nMalheureusement, elle perdit le contrôle et draina accidentellement toute la vie de son amant. Dévastée par le chagrin et le regret, Ahri partit en quête de ses origines, cherchant un moyen de contrôler sa faim dévorante.\r\n\r\nSon voyage la mena à découvrir les vestiges de sa véritable tribu, les Vesani, qui étaient des porteurs d'innovation et de magie positive. Inspirée par l'héritage bienveillant de ses ancêtres, Ahri est désormais résolue à laisser derrière elle son passé de prédatrice. Elle voyage à travers Runeterra, s'efforçant d'apporter le bien dans le monde, non seulement pour perpétuer l'héritage des Vesani, mais aussi pour remplacer ses souvenirs volés par sa propre expérience d'une existence constructive.",
+  "version": "16.8.1",
+  "lore": "Connectée à la magie du royaume spirituel, Ahri est une mystérieuse Vastaya aux traits de renard qui peut manipuler les émotions de sa proie et consumer son essence, afin de recevoir des fragments de sa mémoire. Ahri fut un temps un terrifiant prédateur, mais elle voyage désormais à la recherche des vestiges de ses ancêtres tout en essayant de remplacer les souvenirs qu'elle a volés par sa propre expérience de l'existence.",
   "tags": [
     "Mage",
     "Assassin"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Ahri.png",
+    "sprite": "champion0.png",
+    "group": "champion",
     "x": 48,
     "y": 0,
-    "full": "Ahri.png",
-    "group": "champion",
-    "sprite": "champion0.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "103000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "103001",
-      "num": 1,
-      "name": "Ahri dynastique",
-      "chromas": true
-    },
-    {
-      "id": "103002",
-      "num": 2,
-      "name": "Ahri de minuit",
-      "chromas": true
-    },
-    {
-      "id": "103003",
-      "num": 3,
-      "name": "Ahri renard du feu",
-      "chromas": true
-    },
-    {
-      "id": "103004",
-      "num": 4,
-      "name": "Ahri popstar",
-      "chromas": true
-    },
-    {
-      "id": "103005",
-      "num": 5,
-      "name": "Ahri challenger",
-      "chromas": true
-    },
-    {
-      "id": "103006",
-      "num": 6,
-      "name": "Ahrithmétique",
-      "chromas": true
-    },
-    {
-      "id": "103007",
-      "num": 7,
-      "name": "Ahri arcade",
-      "chromas": true
-    },
-    {
-      "id": "103014",
-      "num": 14,
-      "name": "Ahri gardienne des étoiles",
-      "chromas": true
-    },
-    {
-      "id": "103015",
-      "num": 15,
-      "name": "K/DA Ahri",
-      "chromas": true
-    },
-    {
-      "id": "103016",
-      "num": 16,
-      "name": "K/DA Ahri prestige",
-      "chromas": false
-    },
-    {
-      "id": "103017",
-      "num": 17,
-      "name": "Ahri sylvestre",
-      "chromas": true
-    },
-    {
-      "id": "103027",
-      "num": 27,
-      "name": "Ahri fleur spirituelle",
-      "chromas": true
-    },
-    {
-      "id": "103028",
-      "num": 28,
-      "name": "K/DA ALL OUT Ahri",
-      "chromas": true
-    },
-    {
-      "id": "103042",
-      "num": 42,
-      "name": "Ahri de l'assemblée",
-      "chromas": true
-    },
-    {
-      "id": "103065",
-      "num": 65,
-      "name": "K/DA Ahri prestige (2022)",
-      "chromas": false
-    },
-    {
-      "id": "103066",
-      "num": 66,
-      "name": "Ahri des arcanes",
-      "chromas": true
-    },
-    {
-      "id": "103076",
-      "num": 76,
-      "name": "Ahri lune de neige",
-      "chromas": true
-    },
-    {
-      "id": "103085",
-      "num": 85,
-      "name": "Ahri légende transcendée",
-      "chromas": false
-    },
-    {
-      "id": "103086",
-      "num": 86,
-      "name": "Ahri légende immortalisée",
-      "chromas": false
-    },
-    {
-      "id": "103088",
-      "num": 88,
-      "name": "Ahri fleur spirituelle onsen",
-      "chromas": false
-    },
-    {
-      "id": "103089",
-      "num": 89,
-      "name": "Ahri fleur spirituelle onsen nocturne",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "AhriQ",
       "name": "Orbe d'illusion",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AhriQ.png",
+        "sprite": "spell0.png",
+        "group": "spell",
         "x": 96,
         "y": 96,
-        "full": "AhriQ.png",
-        "group": "spell",
-        "sprite": "spell0.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -176,6 +42,10 @@
         "label": [
           "Coût en @AbilityResourceName@",
           "Dégâts"
+        ],
+        "effect": [
+          "{{ cost }} -> {{ costNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -189,13 +59,13 @@
       "name": "Lucioles",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AhriW.png",
+        "sprite": "spell0.png",
+        "group": "spell",
         "x": 144,
         "y": 96,
-        "full": "AhriW.png",
-        "group": "spell",
-        "sprite": "spell0.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -206,26 +76,30 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
       "rangeBurn": "700",
       "datavalues": {},
       "description": "Ahri gagne un bref bonus en vitesse de déplacement et libère trois lucioles qui verrouillent et attaquent les ennemis proches.",
-      "cooldownBurn": "10/9/8/7/6"
+      "cooldownBurn": "9/8/7/6/5"
     },
     {
       "id": "AhriE",
       "name": "Charme",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AhriE.png",
+        "sprite": "spell0.png",
+        "group": "spell",
         "x": 192,
         "y": 96,
-        "full": "AhriE.png",
-        "group": "spell",
-        "sprite": "spell0.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -236,6 +110,10 @@
         "label": [
           "Dégâts",
           "Durée"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ charmduration }} -> {{ charmdurationNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -249,13 +127,13 @@
       "name": "Assaut spirituel",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AhriR.png",
+        "sprite": "spell0.png",
+        "group": "spell",
         "x": 240,
         "y": 96,
-        "full": "AhriR.png",
-        "group": "spell",
-        "sprite": "spell0.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -266,6 +144,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ rbasedamage }} -> {{ rbasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -278,13 +160,13 @@
   "passive": {
     "name": "Vol essentiel",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Ahri_SoulEater2.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 48,
       "y": 0,
-      "full": "Ahri_SoulEater2.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Après avoir tué 9 sbires ou monstres, Ahri récupère des PV.<br>Après avoir participé à l'élimination d'un champion ennemi, Ahri récupère encore plus de PV."
   },
@@ -296,20 +178,20 @@
   "gender": "Female",
   "species": "Vastaya",
   "title_en": "the Nine-Tailed Fox",
-  "lore_en": "Ahri is a mysterious Vastaya from Ionia, a race of fey beings connected to the spirit realm. Raised by icefoxes after the disappearance of her tribe, her origins were long unknown to her, marked only by two gemstones. Early on, she realized she was connected to Vastayan magic, which she initially used to soothe her prey before devouring it.\r\n\r\nHer fate changed when she absorbed the life essence of a wounded human hunter. In doing so, she briefly absorbed his memories and suddenly gained the ability to speak the human language. This experience revealed her true nature: that of a spiritual predator capable of manipulating her victims' emotions and consuming their essence to gain their memories.\r\n\r\nFor a time, Ahri was a dangerous creature, becoming drunk on stolen memories and emotions, which led her to see herself as a monster. Her descent was interrupted by a human artist who, instead of fleeing, offered her his own love and his essence in exchange for her heart. For the first time, Ahri experienced being loved and tried to moderate her hunger.\r\n\r\nUnfortunately, she lost control and accidentally drained all life from her lover. Devastated by grief and regret, Ahri set out on a quest for her origins, seeking a way to control her ravenous hunger.\r\n\r\nHer journey led her to discover the remnants of her true tribe, the Vesani, who were bearers of innovation and positive magic. Inspired by the benevolent heritage of her ancestors, Ahri is now resolved to leave her predatory past behind. She travels across Runeterra, striving to bring good into the world, not only to perpetuate the Vesani legacy, but also to replace her stolen memories with her own experience of a constructive existence.",
+  "lore_en": "Innately connected to the magic of the spirit realm, Ahri is a fox-like vastaya who can manipulate her prey's emotions and consume their essence—receiving flashes of their memory and insight from each soul she consumes. Once a powerful yet wayward predator, Ahri is now traveling the world in search of remnants of her ancestors while also trying to replace her stolen memories with ones of her own making.",
   "spells_en": [
     {
       "id": "AhriQ",
       "name": "Orb of Deception",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AhriQ.png",
+        "sprite": "spell0.png",
+        "group": "spell",
         "x": 96,
         "y": 96,
-        "full": "AhriQ.png",
-        "group": "spell",
-        "sprite": "spell0.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -320,6 +202,10 @@
         "label": [
           "@AbilityResourceName@ Cost",
           "Damage"
+        ],
+        "effect": [
+          "{{ cost }} -> {{ costNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -333,13 +219,13 @@
       "name": "Fox-Fire",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AhriW.png",
+        "sprite": "spell0.png",
+        "group": "spell",
         "x": 144,
         "y": 96,
-        "full": "AhriW.png",
-        "group": "spell",
-        "sprite": "spell0.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -350,26 +236,30 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
       "rangeBurn": "700",
       "datavalues": {},
       "description": "Ahri gains a brief burst of Move Speed and releases three fox-fires, that lock onto and attack nearby enemies.",
-      "cooldownBurn": "10/9/8/7/6"
+      "cooldownBurn": "9/8/7/6/5"
     },
     {
       "id": "AhriE",
       "name": "Charm",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AhriE.png",
+        "sprite": "spell0.png",
+        "group": "spell",
         "x": 192,
         "y": 96,
-        "full": "AhriE.png",
-        "group": "spell",
-        "sprite": "spell0.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -380,6 +270,10 @@
         "label": [
           "Damage",
           "Duration"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ charmduration }} -> {{ charmdurationNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -393,13 +287,13 @@
       "name": "Spirit Rush",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AhriR.png",
+        "sprite": "spell0.png",
+        "group": "spell",
         "x": 240,
         "y": 96,
-        "full": "AhriR.png",
-        "group": "spell",
-        "sprite": "spell0.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -410,6 +304,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ rbasedamage }} -> {{ rbasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -422,13 +320,13 @@
   "passive_en": {
     "name": "Essence Theft",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Ahri_SoulEater2.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 48,
       "y": 0,
-      "full": "Ahri_SoulEater2.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "After killing 9 minions or monsters, Ahri heals.<br>After taking down an enemy champion, Ahri heals for a greater amount."
   },
@@ -568,6 +466,149 @@
       "num": 89,
       "name": "After Hours Spirit Blossom Springs Ahri",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "103000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "103001",
+      "num": 1,
+      "name": "Ahri dynastique",
+      "chromas": true
+    },
+    {
+      "id": "103002",
+      "num": 2,
+      "name": "Ahri de minuit",
+      "chromas": true
+    },
+    {
+      "id": "103003",
+      "num": 3,
+      "name": "Ahri renard du feu",
+      "chromas": true
+    },
+    {
+      "id": "103004",
+      "num": 4,
+      "name": "Ahri popstar",
+      "chromas": true
+    },
+    {
+      "id": "103005",
+      "num": 5,
+      "name": "Ahri challenger",
+      "chromas": true
+    },
+    {
+      "id": "103006",
+      "num": 6,
+      "name": "Ahrithmétique",
+      "chromas": true
+    },
+    {
+      "id": "103007",
+      "num": 7,
+      "name": "Ahri arcade",
+      "chromas": true
+    },
+    {
+      "id": "103014",
+      "num": 14,
+      "name": "Ahri gardienne des étoiles",
+      "chromas": true
+    },
+    {
+      "id": "103015",
+      "num": 15,
+      "name": "K/DA Ahri",
+      "chromas": true
+    },
+    {
+      "id": "103016",
+      "num": 16,
+      "name": "K/DA Ahri prestige",
+      "chromas": false
+    },
+    {
+      "id": "103017",
+      "num": 17,
+      "name": "Ahri sylvestre",
+      "chromas": true
+    },
+    {
+      "id": "103027",
+      "num": 27,
+      "name": "Ahri fleur spirituelle",
+      "chromas": true
+    },
+    {
+      "id": "103028",
+      "num": 28,
+      "name": "K/DA ALL OUT Ahri",
+      "chromas": true
+    },
+    {
+      "id": "103042",
+      "num": 42,
+      "name": "Ahri de l'assemblée",
+      "chromas": true
+    },
+    {
+      "id": "103065",
+      "num": 65,
+      "name": "K/DA Ahri prestige (2022)",
+      "chromas": false
+    },
+    {
+      "id": "103066",
+      "num": 66,
+      "name": "Ahri des arcanes",
+      "chromas": true
+    },
+    {
+      "id": "103076",
+      "num": 76,
+      "name": "Ahri lune de neige",
+      "chromas": true
+    },
+    {
+      "id": "103085",
+      "num": 85,
+      "name": "Ahri légende transcendée",
+      "chromas": false
+    },
+    {
+      "id": "103086",
+      "num": 86,
+      "name": "Ahri légende immortalisée",
+      "chromas": false
+    },
+    {
+      "id": "103088",
+      "num": 88,
+      "name": "Ahri fleur spirituelle onsen",
+      "chromas": false
+    },
+    {
+      "id": "103089",
+      "num": 89,
+      "name": "Ahri fleur spirituelle onsen nocturne",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "MonkeyKing",
+      "type": "champion",
+      "relation": "friend",
+      "note_fr": "Ami Vastaya",
+      "note_en": "Vastaya friend"
     }
   ]
 }

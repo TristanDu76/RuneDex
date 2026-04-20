@@ -5,10 +5,10 @@ export default function Footer() {
     const t = useTranslations();
 
     return (
-        <footer className="mt-auto border-t border-gray-800/50 bg-gray-900/30 backdrop-blur-sm">
+        <footer className="mt-auto border-t border-hextech-gold/20 bg-hextech-panel/80 backdrop-blur-sm shadow-[0_-5px_15px_rgba(0,0,0,0.5)]">
             <div className="max-w-7xl mx-auto px-4 py-4">
                 <div className="flex flex-col sm:flex-row justify-between items-center gap-3 text-xs">
-                    <div className="flex flex-col sm:flex-row items-center gap-2 text-gray-500">
+                    <div className="flex flex-col sm:flex-row items-center gap-2 text-gray-400">
                         <p>
                             © {new Date().getFullYear()} RuneDex · {t('footer.disclaimer')}
                         </p>
@@ -18,7 +18,7 @@ export default function Footer() {
                                 href="https://github.com/TristanDu76"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-yellow-400/80 hover:text-yellow-400 transition-colors"
+                                className="text-hextech-gold hover:text-hextech-cyan transition-colors"
                             >
                                 TristanDu76
                             </a>

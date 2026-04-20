@@ -3,115 +3,35 @@
   "key": "202",
   "name": "Jhin",
   "title": "Virtuose",
-  "version": "15.23.1",
-  "lore": "Pendant des années, les montagnes méridionales d'Ionia furent le théâtre d'une série de meurtres horribles. La créature laissait derrière elle des mises en scène macabres de cadavres. Les milices le chassaient, mais rien n'arrêtait le monstre, surnommé le Démon doré.\n\nLe Conseil de Zhyun supplia le Grand Maître Kusho de l'Ordre Kinkou de l'aide. Kusho, son fils adolescent Shen, et son apprenti Zed passèrent quatre ans à traquer la créature. La longue enquête laissa les trois hommes profondément changés : l'échec et l'horreur semée par le démon les tourmentaient.\n\nFinalement, Kusho réalisa qu'ils ne chassaient pas un démon, mais un être humain ou un Vastaya pervers. Il voulut abandonner l'enquête, estimant que cela dépassait le mandat du Kinkou, mais Shen et Zed le convainquirent de continuer.\n\nLe Grand Maître fut prouvé juste : le célèbre « Démon doré » était un simple machiniste dans les théâtres ambulants et les opéras de Zhyun, travaillant sous le nom de Khada Jhin.\n\nAprès la capture de Jhin, Zed voulut le tuer, mais Kusho le retint, insistant sur le fait que le meurtre ne ferait qu'aggraver la situation. Kusho craignait surtout que la connaissance de l'humanité de Jhin ne mine l'harmonie ionienne et n'encourage d'autres crimes. Il décida que Jhin devait être enfermé dans la prison du monastère de Tuula.\n\nShen accepta la logique sans émotion de son père. Zed, en revanche, ne put ni comprendre ni accepter cette miséricorde, et un profond ressentiment commença à fleurir en lui.\n\nEmprisonné pendant de nombreuses années, Jhin garda ses secrets. Il excellait dans de nombreux domaines (forge, poésie, danse), mais les moines ne purent le guérir de ses fascinations morbides. Pendant ce temps, Ionia sombra dans le chaos avec l'invasion noxienne.\n\nJhin fut libéré de Tuula après la guerre, probablement par des éléments radicaux luttant pour le pouvoir au sein du conseil dirigeant ionien. Il a désormais accès à de nouvelles armes sophistiquées de l'armurerie Kashuri, que ses patrons invisibles lui ont fournies.\n\nSes « performances » sadiques se sont intensifiées. Récemment, il a attaqué des membres de l'Ordre Yanlei de Zed, et ses meurtres de masse, portant sa signature théâtrale, ont eu lieu non seulement en Ionia, mais aussi dans des villes lointaines comme Piltover et Zaun.\n\nPour Jhin, Runeterra n'est qu'une toile pour l'atrocité de son art. Il continue de créer des œuvres d'art brutales et terrifiantes, envoyant le message le plus puissant de tous : celui de la terreur pure.",
+  "version": "16.8.1",
+  "lore": "Jhin est un psychopathe méticuleux pour qui le meurtre est une forme d'art. Autrefois prisonnier de Ionia, mais libéré par des conspirateurs opérant au sein du conseil dirigeant du pays, ce tueur en série a désormais mis ses talents d'assassin au service de leur complot. Utilisant son pistolet comme un pinceau, Jhin crée des œuvres d'art empreintes de brutalité, aussi terrifiantes pour ses victimes que pour les témoins de ses crimes. Il tire un plaisir sadique de ses performances théâtrales, ce qui en fait un atout de poids quand il s'agit d'envoyer le plus puissant des messages : celui de la terreur.",
   "tags": [
     "Marksman",
     "Mage"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Jhin.png",
+    "sprite": "champion1.png",
+    "group": "champion",
     "x": 144,
     "y": 96,
-    "full": "Jhin.png",
-    "group": "champion",
-    "sprite": "champion1.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "202000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "202001",
-      "num": 1,
-      "name": "Jhin de l'Ouest",
-      "chromas": true
-    },
-    {
-      "id": "202002",
-      "num": 2,
-      "name": "Jhin lune de sang",
-      "chromas": false
-    },
-    {
-      "id": "202003",
-      "num": 3,
-      "name": "SKT T1 Jhin",
-      "chromas": false
-    },
-    {
-      "id": "202004",
-      "num": 4,
-      "name": "PROJET : Jhin",
-      "chromas": false
-    },
-    {
-      "id": "202005",
-      "num": 5,
-      "name": "Jhin démiurge cosmique",
-      "chromas": false
-    },
-    {
-      "id": "202014",
-      "num": 14,
-      "name": "Jhin des rouleaux de Shan Hai",
-      "chromas": true
-    },
-    {
-      "id": "202023",
-      "num": 23,
-      "name": "DWG Jhin",
-      "chromas": true
-    },
-    {
-      "id": "202025",
-      "num": 25,
-      "name": "Jhin empyréen",
-      "chromas": true
-    },
-    {
-      "id": "202036",
-      "num": 36,
-      "name": "Jhin combattant spirituel",
-      "chromas": false
-    },
-    {
-      "id": "202037",
-      "num": 37,
-      "name": "Jhin démiurge sidéral",
-      "chromas": true
-    },
-    {
-      "id": "202047",
-      "num": 47,
-      "name": "Jhin mythificateur",
-      "chromas": false
-    },
-    {
-      "id": "202055",
-      "num": 55,
-      "name": "Jhin des arcanes",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "JhinQ",
       "name": "Grenade dansante",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "JhinQ.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 0,
         "y": 144,
-        "full": "JhinQ.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -124,6 +44,12 @@
           "Ratio de dégâts d'attaque totaux",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ adratio*100.000000 }}% -> {{ adrationl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -137,13 +63,13 @@
       "name": "Floraison mortelle",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "JhinW.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 48,
         "y": 144,
-        "full": "JhinW.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -155,6 +81,11 @@
           "Dégâts",
           "Durée de l'immobilisation",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ rootduration }} -> {{ rootdurationNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -168,13 +99,13 @@
       "name": "Public captif",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "JhinE.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 96,
         "y": 144,
-        "full": "JhinE.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "2",
       "maxrank": 5,
@@ -185,6 +116,10 @@
         "label": [
           "Dégâts",
           "Délai de rechargement"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ ammorechargetime }} -> {{ ammorechargetimeNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -198,13 +133,13 @@
       "name": "Rappel de rideau",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "JhinR.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 144,
         "y": 144,
-        "full": "JhinR.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -215,6 +150,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -227,13 +166,13 @@
   "passive": {
     "name": "Murmure",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Jhin_P.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 144,
       "y": 96,
-      "full": "Jhin_P.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Le pistolet de Jhin, Murmure, est un instrument de précision capable d'infliger de lourds dégâts. Sa cadence de tir est fixe et il ne peut tirer que quatre balles avant de devoir être rechargé. Jhin insuffle à la dernière balle un soupçon de magie noire qui lui permet de toujours infliger un coup critique et des dégâts supplémentaires. Quand Murmure inflige un coup critique, Jhin reçoit un bonus en vitesse de déplacement."
   },
@@ -248,20 +187,20 @@
   "gender": "Male",
   "species": "Human",
   "title_en": "the Virtuoso",
-  "lore_en": "For years, the southern mountains of Ionia were plagued by a series of horrific murders. The creature left behind twisted displays of corpses. Armed militias hunted it, but nothing slowed the monster, dubbed the Golden Demon.\n\nThe Council of Zhyun begged Great Master Kusho of the Kinkou Order for help. Kusho, his teenage son Shen, and young apprentice Zed spent four years tracking the creature. The long investigation left the three men profoundly changed, as the failure and the horror sown by the demon tormented them.\n\nFinally, Kusho realized they were hunting not a demon, but a wicked human or Vastaya. He wanted to hand off the investigation, believing it was outside the Kinkou's mandate, but Shen and Zed convinced him to continue.\n\nThe Great Master was proven right: the famed \"Golden Demon\" was a mere stagehand in Zhyun's traveling theaters and opera houses, working under the name Khada Jhin.\n\nAfter Jhin's capture, Zed made to kill him, but Kusho held him back, insisting that killing Jhin would only worsen matters. Kusho primarily feared that the knowledge of Jhin's humanity would undermine Ionian harmony and encourage others to commit similar crimes. He decided Jhin should be locked away within the monastery prison at Tuula.\n\nShen agreed to the emotionless logic of his father's judgment. Zed, however, was unable to understand or accept this mercy, and a deep resentment began to bloom in his heart.\n\nImprisoned for many years, Jhin kept his secrets. He excelled in many subjects (smithing, poetry, dance), but the monks could find nothing to cure his morbid fascinations. Meanwhile, outside the monastery walls, Ionia fell into turmoil with the Noxian invasion.\n\nJhin was freed from Tuula sometime after the war, possibly put to use by one of the many radical elements vying for power within the Ionian ruling council. He now has access to the Kashuri armories' new, sophisticated weapons, provided by his shadowy patrons.\n\nHis sadistic \"performances\" have escalated. Recently, he attacked members of Zed's Yanlei order, and mass murders bearing his signature theatrical flair have occurred not only across Ionia but also in distant cities like Piltover and Zaun.\n\nFor Jhin, Runeterra might be but a canvas for the atrocity that is his art. He continues to create brutal and terrifying masterpieces, sending the most powerful message of all: one of pure terror.",
+  "lore_en": "Jhin is a meticulous criminal psychopath who believes murder is art. Once an Ionian prisoner, but freed by shadowy elements within Ionia's ruling council, the serial killer now works as their cabal's assassin. Using his gun as his paintbrush, Jhin creates works of artistic brutality, horrifying victims and onlookers. He gains a cruel pleasure from putting on his gruesome theater, making him the ideal choice to send the most powerful of messages: terror.",
   "spells_en": [
     {
       "id": "JhinQ",
       "name": "Dancing Grenade",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "JhinQ.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 0,
         "y": 144,
-        "full": "JhinQ.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -274,6 +213,12 @@
           "Total AD Ratio",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ adratio*100.000000 }}% -> {{ adrationl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -287,13 +232,13 @@
       "name": "Deadly Flourish",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "JhinW.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 48,
         "y": 144,
-        "full": "JhinW.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -305,6 +250,11 @@
           "Damage",
           "Root Duration",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ rootduration }} -> {{ rootdurationNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -318,13 +268,13 @@
       "name": "Captive Audience",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "JhinE.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 96,
         "y": 144,
-        "full": "JhinE.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "2",
       "maxrank": 5,
@@ -335,6 +285,10 @@
         "label": [
           "Damage",
           "Recharge Time"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ ammorechargetime }} -> {{ ammorechargetimeNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -348,13 +302,13 @@
       "name": "Curtain Call",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "JhinR.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 144,
         "y": 144,
-        "full": "JhinR.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -365,6 +319,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -377,13 +335,13 @@
   "passive_en": {
     "name": "Whisper",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Jhin_P.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 144,
       "y": 96,
-      "full": "Jhin_P.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Jhin's hand cannon, Whisper, is a precise instrument designed to deal superior damage. It fires at a fixed rate and carries only four shots. Jhin imbues the final bullet with dark magics to critically strike and deal bonus execute damage. Whenever Whisper crits, it inspires Jhin with a burst of Move Speed."
   },
@@ -469,6 +427,100 @@
       "num": 55,
       "name": "Arcana Jhin",
       "chromas": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "202000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "202001",
+      "num": 1,
+      "name": "Jhin de l'Ouest",
+      "chromas": true
+    },
+    {
+      "id": "202002",
+      "num": 2,
+      "name": "Jhin lune de sang",
+      "chromas": false
+    },
+    {
+      "id": "202003",
+      "num": 3,
+      "name": "SKT T1 Jhin",
+      "chromas": false
+    },
+    {
+      "id": "202004",
+      "num": 4,
+      "name": "PROJET : Jhin",
+      "chromas": false
+    },
+    {
+      "id": "202005",
+      "num": 5,
+      "name": "Jhin démiurge cosmique",
+      "chromas": false
+    },
+    {
+      "id": "202014",
+      "num": 14,
+      "name": "Jhin des rouleaux de Shan Hai",
+      "chromas": true
+    },
+    {
+      "id": "202023",
+      "num": 23,
+      "name": "DWG Jhin",
+      "chromas": true
+    },
+    {
+      "id": "202025",
+      "num": 25,
+      "name": "Jhin empyréen",
+      "chromas": true
+    },
+    {
+      "id": "202036",
+      "num": 36,
+      "name": "Jhin combattant spirituel",
+      "chromas": false
+    },
+    {
+      "id": "202037",
+      "num": 37,
+      "name": "Jhin démiurge sidéral",
+      "chromas": true
+    },
+    {
+      "id": "202047",
+      "num": 47,
+      "name": "Jhin mythificateur",
+      "chromas": false
+    },
+    {
+      "id": "202055",
+      "num": 55,
+      "name": "Jhin des arcanes",
+      "chromas": false
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Shen",
+      "type": "champion",
+      "relation": "nemesis",
+      "note_fr": "Cible artistique",
+      "note_en": "Artistic target"
+    },
+    {
+      "id": "kusho",
+      "type": "lore",
+      "relation": "nemesis"
     }
   ]
 }

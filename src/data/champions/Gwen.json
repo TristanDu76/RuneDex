@@ -3,72 +3,34 @@
   "key": "887",
   "name": "Gwen",
   "title": "Couturière sacrée",
-  "version": "15.23.1",
-  "lore": "Gwen était à l'origine une poupée faite main, confectionnée par une humble couturière dans un village du royaume perdu de Camavor (patrie de Viego). Elle garde des souvenirs aimants d'une vie simple, passée à fabriquer des objets, et à jouer à des duels imaginaires sous la table de la cuisine, les ciseaux et les couverts s'entrechoquant.\r\n\r\nLa lumière s'est éteinte avec la maladie de sa créatrice. Les souvenirs s'estompèrent, et Gwen resta inanimée pendant des siècles, oubliée, avec une douleur lancinante liée à un homme dont le nom lui échappait.\r\n\r\nUne nuit, elle s'éveilla sur une plage sombre, loin de chez elle. Par une magie inconnue, elle avait été transformée en une fille vivante, capable de bouger et d'expérimenter le monde avec une joie immense. Sur la plage, elle trouva des débris, dont des outils familiers : ciseaux, aiguilles et fil à coudre — les outils de sa créatrice.\r\n\r\nAu contact de ces outils, une Brume sacrée (Hallowed Mist), scintillante et chaleureuse, émana de ses mains. Cette magie attira une autre brume, la Brume noire (Black Mist), qui formait des spectres féroces attirés par la présence magique de Gwen.\r\n\r\nAlors que les spectres l'attaquaient, Gwen utilisa ses ciseaux. Plus de sa Brume sacrée remplit l'air, enchantant la taille et la force de ses outils, les transformant en magie spectrale. Au milieu du combat, des souvenirs réprimés firent surface : sa créatrice, malade, et l'homme dont le visage et le nom lui revinrent : Viego.\r\n\r\nGwen se rappela alors de sa créatrice. Elle réalisa que ce n'était pas un hasard si les outils qui l'avaient créée étaient maintenant dans ses mains. Elle comprit que sa créatrice était toujours là, se battant à travers elle.\r\n\r\nGwen s'empara des aiguilles et du fil, tissant des nuages de Brume sacrée pour repousser la Brume noire. Ses ciseaux frappèrent avec la vitesse qu'elle avait imaginée lors de ses jeux d'enfance. Les spectres furent vaincus.\r\n\r\nBien que triomphante, Gwen sentit le lien entre les spectres et Viego, comprenant qu'ils étaient responsables de la propagation de la douleur. Elle est désormais résolue à traquer et à arrêter la Brume noire à tout prix. Elle savoure chaque seconde de son existence inattendue, choisissant d'être une force positive et indomptable contre toutes les adversités, déterminée à restaurer la joie dans le monde.",
+  "version": "16.8.1",
+  "lore": "Ancienne poupée à qui la magie a conféré la vie, Gwen est armée des outils qui l'ont créée. Elle emporte à chaque pas l'amour de sa créatrice et ne tient jamais rien pour acquis. Elle commande à la Brume sacrée, une ancienne magie de protection qui a béni ses ciseaux, ses aiguilles et son fil à coudre. Tout est nouveau pour Gwen, mais elle reste déterminée à combattre dans la joie pour préserver le bien qui survit dans un monde en déréliction.",
   "tags": [
     "Fighter"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Gwen.png",
+    "sprite": "champion1.png",
+    "group": "champion",
     "x": 96,
     "y": 48,
-    "full": "Gwen.png",
-    "group": "champion",
-    "sprite": "champion1.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "887000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "887001",
-      "num": 1,
-      "name": "Gwen astro-groove",
-      "chromas": true
-    },
-    {
-      "id": "887011",
-      "num": 11,
-      "name": "Gwen Café Chouchous",
-      "chromas": true
-    },
-    {
-      "id": "887020",
-      "num": 20,
-      "name": "Gwen combattante spirituelle",
-      "chromas": true
-    },
-    {
-      "id": "887030",
-      "num": 30,
-      "name": "Gwen reine du combat",
-      "chromas": true
-    },
-    {
-      "id": "887039",
-      "num": 39,
-      "name": "Gwen bergère de la pluie",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "GwenQ",
       "name": "Tchac, tchac !",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GwenQ.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 288,
         "y": 96,
-        "full": "GwenQ.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -79,6 +41,10 @@
         "label": [
           "Délai de récupération",
           "Dégâts du dernier coup"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ swipedamagebase }} -> {{ swipedamagebaseNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -92,13 +58,13 @@
       "name": "Brume sacrée",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GwenW.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 336,
         "y": 96,
-        "full": "GwenW.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -109,6 +75,10 @@
         "label": [
           "Résistances supplémentaires",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ baseresists }} -> {{ baseresistsNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -122,13 +92,13 @@
       "name": "Élan incisif",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GwenE.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 384,
         "y": 96,
-        "full": "GwenE.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -140,6 +110,11 @@
           "Délai de récupération",
           "Vitesse d'attaque",
           "Réduction du délai de récupération"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ baseattackspeed }}% -> {{ baseattackspeedNL }}%",
+          "{{ cdrefund }} -> {{ cdrefundNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -153,13 +128,13 @@
       "name": "Piqûre",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GwenR.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 432,
         "y": 96,
-        "full": "GwenR.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -171,6 +146,11 @@
           "Délai de récupération",
           "Dégâts de base",
           "Ralentissement"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ initialslow*-100.000000 }}% -> {{ initialslownl*-100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -183,13 +163,13 @@
   "passive": {
     "name": "Mille coupures",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Gwen_Passive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 96,
       "y": 48,
-      "full": "Gwen_Passive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Les attaques de Gwen infligent des dégâts magiques supplémentaires selon les PV de la cible. Gwen récupère des PV équivalents à une partie des dégâts que cet effet inflige aux champions. "
   },
@@ -204,20 +184,20 @@
   "gender": "Female",
   "species": "Magically Altered Construct",
   "title_en": "The Hallowed Seamstress",
-  "lore_en": "Gwen was originally a handmade doll, crafted by a humble seamstress in a village of the long-lost kingdom of Camavor (Viego's homeland). She remembers her past with love, recalling a simple life spent crafting and playing make-believe duels under the kitchen table, with the clashing of scissors and silverware.\r\n\r\nThe light faded with the sickness of her maker. Gwen lay still for centuries, quiet and forgotten, with a persistent twinge of pain tied to a man whose name escaped her.\r\n\r\nOne night, her eyes opened. Gwen awoke for the very first time on a shadowy beach, far from home. By magic unknown to her, she had been transformed into a living girl, able to move and experience the world with immense joy. Along the coast, amidst scattered debris, she noticed oddly familiar tools: scissors, needles, and thread—her maker's tools.\r\n\r\nWhen she touched them, a burst of glistening Hallowed Mist flowed from her hands. This magic drew another mist, the Black Mist, which swarmed and formed into fearsome wraiths, hungry for Gwen's newfound presence.\r\n\r\nAs the wraiths came for her, Gwen used her scissors. More of her Hallowed Mist filled the air, enchanting her tools' size and strength and turning them into spectral magic. Amidst the battle, suppressed memories surfaced: her sick maker, and the man whose face and name finally returned to Gwen: Viego.\r\n\r\nGwen remembered her maker. She realized it was no accident that the tools that first sewed her together were now in her hands. She knew her maker was still with her, still fighting through her.\r\n\r\nGrasping the needles and thread, Gwen spun clouds of Hallowed Mist to push back the swarming wraiths. Her scissors slashed hard and fast, reminiscent of those blissful nights of imagined battles under the kitchen table. The wraiths were defeated.\r\n\r\nThough triumphant, Gwen sensed the link between the wraiths and Viego, understanding they were responsible for the spread of immense pain. She is now resolved to track and stop the Black Mist at any cost. She revels in every second of her unexpected existence, choosing to be an indomitable, positive force against all odds, determined to restore joy to those who are suffering.",
+  "lore_en": "A former doll transformed and brought to life by magic, Gwen wields the very tools that once created her. She carries the weight of her maker's love with every step, taking nothing for granted. At her command is the Hallowed Mist, an ancient and protective magic that has blessed Gwen's scissors, needles, and sewing thread. So much is new to her, but Gwen remains joyfully determined to fight for the good that survives in a broken world.",
   "spells_en": [
     {
       "id": "GwenQ",
       "name": "Snip Snip!",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GwenQ.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 288,
         "y": 96,
-        "full": "GwenQ.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -228,6 +208,10 @@
         "label": [
           "Cooldown",
           "Final Strike Damage"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ swipedamagebase }} -> {{ swipedamagebaseNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -241,13 +225,13 @@
       "name": "Hallowed Mist",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GwenW.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 336,
         "y": 96,
-        "full": "GwenW.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -258,6 +242,10 @@
         "label": [
           "Bonus Resistances",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ baseresists }} -> {{ baseresistsNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -271,13 +259,13 @@
       "name": "Skip 'n Slash",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GwenE.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 384,
         "y": 96,
-        "full": "GwenE.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -289,6 +277,11 @@
           "Cooldown",
           "Attack Speed",
           "Cooldown Refund"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ baseattackspeed }}% -> {{ baseattackspeedNL }}%",
+          "{{ cdrefund }} -> {{ cdrefundNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -302,13 +295,13 @@
       "name": "Needlework",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GwenR.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 432,
         "y": 96,
-        "full": "GwenR.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -320,6 +313,11 @@
           "Cooldown",
           "Base Damage",
           "Slow"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ initialslow*-100.000000 }}% -> {{ initialslownl*-100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -332,13 +330,13 @@
   "passive_en": {
     "name": "A Thousand Cuts",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Gwen_Passive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 96,
       "y": 48,
-      "full": "Gwen_Passive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Gwen's attacks deal bonus magic damage based on the targets health. She heals for a portion of the damage dealt to champions by this effect. "
   },
@@ -383,6 +381,51 @@
       "num": 39,
       "name": "Rain Shepherd Gwen",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "887000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "887001",
+      "num": 1,
+      "name": "Gwen astro-groove",
+      "chromas": true
+    },
+    {
+      "id": "887011",
+      "num": 11,
+      "name": "Gwen Café Chouchous",
+      "chromas": true
+    },
+    {
+      "id": "887020",
+      "num": 20,
+      "name": "Gwen combattante spirituelle",
+      "chromas": true
+    },
+    {
+      "id": "887030",
+      "num": 30,
+      "name": "Gwen reine du combat",
+      "chromas": true
+    },
+    {
+      "id": "887039",
+      "num": 39,
+      "name": "Gwen bergère de la pluie",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "isolde",
+      "type": "lore",
+      "relation": "creator"
     }
   ]
 }

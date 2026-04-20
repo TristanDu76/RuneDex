@@ -3,102 +3,34 @@
   "key": "85",
   "name": "Kennen",
   "title": "Cœur de la tempête",
-  "version": "15.23.1",
-  "lore": "Kennen est un Yordle millénaire, originaire de la Cité de Bandle, qui a quitté le royaume spirituel il y a des millénaires, à la recherche de l'harmonie et de l'équilibre. Il fut particulièrement attiré par l'Ionia, où il observa les mortels pendant des générations, admirant leur diligence à protéger l'équilibre malgré leur courte vie.\n\nFatigué de combattre seul les entités malveillantes qui traversaient le royaume spirituel, il comprit qu'il devait s'attaquer à la cause profonde : le déséquilibre. Il découvrit un ordre naissant qui poursuivait activement l'équilibre entre les royaumes : le Kinkou.\n\nKennen fut intrigué par l'ordre, dirigé par un Œil du Crépuscule (Eye of Twilight) et un Poing de l'Ombre (Fist of Shadow). Il proposa d'être l'Arbitre, le constructeur de consensus nécessaire pour empêcher le Poing (plus belliqueux) de dominer l'Œil (plus contemplatif), et pour éviter que l'observation de l'Œil ne paralyse l'action du Poing. Il devint ainsi le premier Cœur de la Tempête (Heart of the Tempest) du Kinkou.\n\nEn tant que créature des deux mondes, Kennen était parfaitement adapté pour communiquer les jugements du Kinkou au peuple. Il retira son masque pour se connecter avec ceux qu'il protégeait, comblant le fossé créé par les autres membres de l'Ordre, plus distants.\n\nToutefois, il était également chargé de faire respecter les jugements par la force : si le prix de l'équilibre était le sang, les shurikens et les trombes électriques de Kennen étaient capables de faire taire toute dissidence.\n\nLe Kinkou fut menacé par l'invasion Noxienne et, plus tard, par le coup d'État mené par l'ancien acolyte Zed, qui déchira l'Ordre. Dans cette heure sombre, Kennen aida le nouvel Œil du Crépuscule, Shen (le fils de l'ancien maître Kusho), à diriger l'Ordre fracturé. Il tenta également en vain de retenir Akali (la fille du précédent Poing de l'Ombre), qu'il avait entraînée, qui finit par quitter l'Ordre, frustrée par leur inaction.\n\nMalgré le nouvel âge de violence et de chaos, Kennen reste résolu à protéger l'Ordre Kinkou aux côtés de Shen. Bien qu'il soit de petite taille, sa force est immense ; car, si le cœur de la tempête est son point le plus calme, sa force dévastatrice le suit de très près.",
+  "version": "16.8.1",
+  "lore": "Vif comme l'éclair, Kennen est plus que le simple protecteur de l'équilibre ionien, c'est aussi le seul yordle membre du Kinkou. En dépit de son allure de boule de poils, il est prêt à affronter n'importe quelle menace dans un tourbillon de shurikens et d'enthousiasme. Aux côtés de son maître, Shen, Kennen patrouille dans le domaine des esprits, utilisant sa dévastatrice énergie électrique pour abattre ses ennemis.",
   "tags": [
     "Mage"
   ],
   "partype": "Énergie",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Kennen.png",
+    "sprite": "champion2.png",
+    "group": "champion",
     "x": 144,
     "y": 0,
-    "full": "Kennen.png",
-    "group": "champion",
-    "sprite": "champion2.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "85000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "85001",
-      "num": 1,
-      "name": "Kennen funeste",
-      "chromas": false
-    },
-    {
-      "id": "85002",
-      "num": 2,
-      "name": "Kennen des marais",
-      "chromas": false
-    },
-    {
-      "id": "85003",
-      "num": 3,
-      "name": "Kennen karatéka",
-      "chromas": false
-    },
-    {
-      "id": "85004",
-      "num": 4,
-      "name": "Docteur Kennen",
-      "chromas": true
-    },
-    {
-      "id": "85005",
-      "num": 5,
-      "name": "Kennen arctique",
-      "chromas": false
-    },
-    {
-      "id": "85006",
-      "num": 6,
-      "name": "Kennen lune de sang",
-      "chromas": false
-    },
-    {
-      "id": "85007",
-      "num": 7,
-      "name": "Super Kennen",
-      "chromas": false
-    },
-    {
-      "id": "85008",
-      "num": 8,
-      "name": "Kennen infernal",
-      "chromas": true
-    },
-    {
-      "id": "85023",
-      "num": 23,
-      "name": "DWG Kennen",
-      "chromas": true
-    },
-    {
-      "id": "85025",
-      "num": 25,
-      "name": "Kennen astronaute",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "KennenShurikenHurlMissile1",
       "name": "Shuriken foudroyant",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KennenShurikenHurlMissile1.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 0,
         "y": 144,
-        "full": "KennenShurikenHurlMissile1.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -110,6 +42,11 @@
           "Délai de récupération",
           "Coût en @AbilityResourceName@",
           "Dégâts"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ e1 }} -> {{ e1NL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -123,13 +60,13 @@
       "name": "Surtension",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KennenBringTheLight.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 48,
         "y": 144,
-        "full": "KennenBringTheLight.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -142,6 +79,12 @@
           "Ratio de dégâts d'attaque bonus",
           "Dégâts (passifs)",
           "Dégâts (actifs)"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ badratio*100.000000 }}% -> {{ badrationl*100.000000 }}%",
+          "{{ baseonhitdamage }} -> {{ baseonhitdamageNL }}",
+          "{{ e1 }} -> {{ e1NL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -155,13 +98,13 @@
       "name": "Rush foudroyant",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KennenLightningRush.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 96,
         "y": 144,
-        "full": "KennenLightningRush.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -173,6 +116,11 @@
           "Délai de récupération",
           "Dégâts",
           "Vitesse d'attaque"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ attackspeed*100.000000 }}% -> {{ attackspeednl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -186,13 +134,13 @@
       "name": "Maelström",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KennenShurikenStorm.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 144,
         "y": 144,
-        "full": "KennenShurikenStorm.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -203,27 +151,31 @@
         "label": [
           "Dégâts",
           "Bonus d'armure",
-          "Bonus de résistance magique",
-          "Délai de récupération"
+          "Bonus de résistance magique"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ kennenrdefenses }} -> {{ kennenrdefensesNL }}",
+          "{{ kennenrdefenses }} -> {{ kennenrdefensesNL }}"
         ]
       },
       "resource": "Pas de coût",
       "rangeBurn": "550",
       "datavalues": {},
       "description": "Kennen invoque une tempête qui frappe les champions ennemis proches et leur inflige des dégâts magiques.",
-      "cooldownBurn": "120/100/80"
+      "cooldownBurn": "120"
     }
   ],
   "passive": {
     "name": "Marque de tempête",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Kennen_Passive.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 144,
       "y": 0,
-      "full": "Kennen_Passive.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Kennen étourdit les ennemis qu'il touche 3 fois avec ses compétences."
   },
@@ -238,20 +190,20 @@
   "gender": "Male",
   "species": "Yordle",
   "title_en": "the Heart of the Tempest",
-  "lore_en": "Kennen is a millenia-old Yordle originally from Bandle City, who ventured out from the spirit realm centuries ago in search of harmony and balance. He was particularly drawn to Ionia, where he observed mortals for generations, admiring their diligence in protecting the sacred balance despite their fragile lives.\n\nTired of fighting malevolent spirit entities alone, he realized he needed to address the root cause: imbalance. He discovered a fledgling order that actively pursued balance between the realms: the Kinkou.\n\nKennen was intrigued by the order, led by an Eye of Twilight and a Fist of Shadow. He proposed that he was uniquely suited to be the Arbiter and consensus builder, preventing the warlike Fist from dominating the introspective Eye, and vice-versa. He thus became the Kinkou’s first Heart of the Tempest.\n\nAs a creature of both realms, Kennen was ideal for communicating the Kinkou’s judgments to the people. He removed his mask to connect with those he sought to protect, bridging the gap created by the more distant members.\n\nHowever, he was also charged with enforcing judgments: if the cost of balance was blood, Kennen’s shuriken and summoned maelstroms were quite capable of silencing all dissent.\n\nThe Kinkou faced grave threats, including the Noxian invasion and the subsequent coup led by former acolyte Zed, which tore the Order apart. In this dark hour, Kennen guided the fractured Order alongside the new Eye of Twilight, Shen (the son of the former master, Kusho). He unsuccessfully tried to curb Akali’s frustration, who eventually left the Order, unhappy with their failure to act against Ionia's enemies.\n\nDespite the new age of disruption and violence, Kennen remains resolute in protecting the Kinkou Order alongside Shen. Do not let his diminutive appearance fool you—for though the heart of the tempest is its calmest part, its devastating force is never more than a moment behind.",
+  "lore_en": "More than just the lightning-quick enforcer of Ionian balance, Kennen is the only yordle member of the Kinkou. Despite his small, furry stature, he is eager to take on any threat with a whirling storm of shuriken and boundless enthusiasm. Alongside his master Shen, Kennen patrols the spirit realm, employing devastating electrical energy to strike down his enemies.",
   "spells_en": [
     {
       "id": "KennenShurikenHurlMissile1",
       "name": "Thundering Shuriken",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KennenShurikenHurlMissile1.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 0,
         "y": 144,
-        "full": "KennenShurikenHurlMissile1.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -263,6 +215,11 @@
           "Cooldown",
           "@AbilityResourceName@ Cost",
           "Damage"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ e1 }} -> {{ e1NL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -276,13 +233,13 @@
       "name": "Electrical Surge",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KennenBringTheLight.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 48,
         "y": 144,
-        "full": "KennenBringTheLight.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -295,6 +252,12 @@
           "Bonus AD Ratio",
           "Damage (passive)",
           "Damage (active)"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ badratio*100.000000 }}% -> {{ badrationl*100.000000 }}%",
+          "{{ baseonhitdamage }} -> {{ baseonhitdamageNL }}",
+          "{{ e1 }} -> {{ e1NL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -308,13 +271,13 @@
       "name": "Lightning Rush",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KennenLightningRush.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 96,
         "y": 144,
-        "full": "KennenLightningRush.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -326,6 +289,11 @@
           "Cooldown",
           "Damage",
           "Attack Speed"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ attackspeed*100.000000 }}% -> {{ attackspeednl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -339,13 +307,13 @@
       "name": "Slicing Maelstrom",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KennenShurikenStorm.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 144,
         "y": 144,
-        "full": "KennenShurikenStorm.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -356,27 +324,31 @@
         "label": [
           "Damage",
           "Armor Bonus",
-          "Magic Resist Bonus",
-          "Cooldown"
+          "Magic Resist Bonus"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ kennenrdefenses }} -> {{ kennenrdefensesNL }}",
+          "{{ kennenrdefenses }} -> {{ kennenrdefensesNL }}"
         ]
       },
       "resource": "No Cost",
       "rangeBurn": "550",
       "datavalues": {},
       "description": "Kennen summons a storm that strikes at nearby enemy champions for magical damage.",
-      "cooldownBurn": "120/100/80"
+      "cooldownBurn": "120"
     }
   ],
   "passive_en": {
     "name": "Mark of the Storm",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Kennen_Passive.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 144,
       "y": 0,
-      "full": "Kennen_Passive.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Kennen stuns enemies he hits 3 times with his abilities."
   },
@@ -452,5 +424,74 @@
       "name": "Astronaut Kennen",
       "chromas": true
     }
-  ]
+  ],
+  "skins": [
+    {
+      "id": "85000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "85001",
+      "num": 1,
+      "name": "Kennen funeste",
+      "chromas": false
+    },
+    {
+      "id": "85002",
+      "num": 2,
+      "name": "Kennen des marais",
+      "chromas": false
+    },
+    {
+      "id": "85003",
+      "num": 3,
+      "name": "Kennen karatéka",
+      "chromas": false
+    },
+    {
+      "id": "85004",
+      "num": 4,
+      "name": "Docteur Kennen",
+      "chromas": true
+    },
+    {
+      "id": "85005",
+      "num": 5,
+      "name": "Kennen arctique",
+      "chromas": false
+    },
+    {
+      "id": "85006",
+      "num": 6,
+      "name": "Kennen lune de sang",
+      "chromas": false
+    },
+    {
+      "id": "85007",
+      "num": 7,
+      "name": "Super Kennen",
+      "chromas": false
+    },
+    {
+      "id": "85008",
+      "num": 8,
+      "name": "Kennen infernal",
+      "chromas": true
+    },
+    {
+      "id": "85023",
+      "num": 23,
+      "name": "DWG Kennen",
+      "chromas": true
+    },
+    {
+      "id": "85025",
+      "num": 25,
+      "name": "Kennen astronaute",
+      "chromas": true
+    }
+  ],
+  "related_characters": []
 }

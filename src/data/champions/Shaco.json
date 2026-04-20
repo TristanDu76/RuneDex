@@ -3,132 +3,34 @@
   "key": "35",
   "name": "Shaco",
   "title": "Bouffon des ténèbres",
-  "version": "15.23.1",
-  "lore": "Shaco est le premier \"comique homicide\" de Valoran. Pour lui, la mort n'est pas une tragédie, c'est une plaisanterie dont il est le seul à comprendre la chute. Figure insaisissable et malveillante, il est connu sous le nom de Bouffon des Ténèbres.\n\n Une Origine Mystérieuse : Personne ne sait d'où vient Shaco. Les rumeurs abondent : certains pensent qu'il n'est pas originaire de Runeterra mais d'un monde sombre et torturé. D'autres voient en lui la manifestation démoniaque des pulsions les plus noires de l'humanité.\n\n L'Assassin Insaisissable : L'explication la plus rationnelle, bien que terrifiante, est que Shaco est un assassin à gages laissé à ses propres délires jusqu'à ce que ses services soient requis. Il fait preuve d'une ruse exceptionnelle, échappant systématiquement aux autorités qui tentent de l'interroger sur ses innombrables atrocités.\n\n Le Règne de la Folie : Shaco apparaît généralement là où la folie et le chaos règnent déjà. Il ne cherche pas le pouvoir ou la richesse, mais l'hystérie. Il plaisante jusqu'à ce que mort s'ensuive, puis il rit.\n\n Une Menace Permanente : Le fait qu'un tel individu puisse rester en liberté est une source de terreur constante pour les habitants de Valoran. Il est l'ombre qui rit dans la nuit, le danger imprévisible que l'on ne peut pas anticiper.",
+  "version": "16.8.1",
+  "lore": "Fabriqué il y a longtemps pour servir de jouet à un prince qui se sentait seul, Shaco est une marionnette enchantée qui se repaît désormais de meurtres et de chaos. Corrompu par la magie noire et la perte de sa chère mission, le pantin autrefois gentil ne se réjouit plus que du malheur des âmes qu'il tourmente. Il utilise ses jouets et ses mauvais tours pour répandre la mort et le sang, ce qui le fait follement rire. Tous ceux qui, la nuit venue, entendent un odieux ricanement savent qu'ils sont la prochaine cible du Bouffon des ténèbres.",
   "tags": [
     "Assassin"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Shaco.png",
+    "sprite": "champion3.png",
+    "group": "champion",
     "x": 432,
     "y": 96,
-    "full": "Shaco.png",
-    "group": "champion",
-    "sprite": "champion3.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "35000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "35001",
-      "num": 1,
-      "name": "Shaco le fou",
-      "chromas": false
-    },
-    {
-      "id": "35002",
-      "num": 2,
-      "name": "Shaco royal",
-      "chromas": false
-    },
-    {
-      "id": "35003",
-      "num": 3,
-      "name": "Shac-noisettes",
-      "chromas": false
-    },
-    {
-      "id": "35004",
-      "num": 4,
-      "name": "Shaco mécanique",
-      "chromas": false
-    },
-    {
-      "id": "35005",
-      "num": 5,
-      "name": "Shaco aliéné",
-      "chromas": false
-    },
-    {
-      "id": "35006",
-      "num": 6,
-      "name": "Shaco masqué",
-      "chromas": false
-    },
-    {
-      "id": "35007",
-      "num": 7,
-      "name": "Shaco joker",
-      "chromas": false
-    },
-    {
-      "id": "35008",
-      "num": 8,
-      "name": "Shaco du pulsar sombre",
-      "chromas": true
-    },
-    {
-      "id": "35015",
-      "num": 15,
-      "name": "Shaco arcaniste",
-      "chromas": true
-    },
-    {
-      "id": "35023",
-      "num": 23,
-      "name": "Shaco cauchemar criminel",
-      "chromas": true
-    },
-    {
-      "id": "35033",
-      "num": 33,
-      "name": "Shaco élu de l'hiver",
-      "chromas": true
-    },
-    {
-      "id": "35043",
-      "num": 43,
-      "name": "Shaco combattant spirituel",
-      "chromas": true
-    },
-    {
-      "id": "35044",
-      "num": 44,
-      "name": "Shaco combattant spirituel prestige",
-      "chromas": false
-    },
-    {
-      "id": "35054",
-      "num": 54,
-      "name": "Shaco Nuit d'effroi",
-      "chromas": true
-    },
-    {
-      "id": "35064",
-      "num": 64,
-      "name": "Chatco",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "Deceive",
       "name": "Tromperie",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "Deceive.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 192,
         "y": 48,
-        "full": "Deceive.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -140,6 +42,11 @@
           "Dégâts",
           "Durée de la furtivité",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ stealthduration }} -> {{ stealthdurationNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -153,13 +60,13 @@
       "name": "Boîte surprise",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "JackInTheBox.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 240,
         "y": 48,
-        "full": "JackInTheBox.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -172,6 +79,12 @@
           "Durée de peur",
           "Dégâts supplémentaires aux monstres",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ stbasedamage }} -> {{ stbasedamageNL }}",
+          "{{ fearduration }} -> {{ feardurationNL }}",
+          "{{ monsterbonusdamage }} -> {{ monsterbonusdamageNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -185,13 +98,13 @@
       "name": "Poison double",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TwoShivPoison.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 288,
         "y": 48,
-        "full": "TwoShivPoison.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -202,6 +115,10 @@
         "label": [
           "Dégâts",
           "Ralentissement"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ slowamount*-100.000000 }}% -> {{ slowamountnl*-100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -215,13 +132,13 @@
       "name": "Hallucination",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "HallucinateFull.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 336,
         "y": 48,
-        "full": "HallucinateFull.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -233,6 +150,11 @@
           "Dégâts en mourant",
           "Dégâts de la mini-boîte",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ explosionbasedamage }} -> {{ explosionbasedamageNL }}",
+          "{{ stbasedamage }} -> {{ stbasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -245,13 +167,13 @@
   "passive": {
     "name": "Traîtrise",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Jester_CarefulStrikes.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 432,
       "y": 96,
-      "full": "Jester_CarefulStrikes.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Les attaques de base et la compétence Poison double de Shaco infligent des dégâts supplémentaires lorsqu'elles frappent dans le dos d'un ennemi."
   },
@@ -263,20 +185,20 @@
   "gender": "Male",
   "species": "Magically Altered Construct",
   "title_en": "the Demon Jester",
-  "lore_en": "Shaco is Valoran's first \"homicidal comedian.\" To him, death isn't a tragedy; it's a punchline that only he understands. An elusive and malevolent figure, he is known as the Demon Jester.\n\n A Mysterious Origin: No one knows exactly where Shaco comes from. Rumors abound: some believe he isn't from Runeterra at all, but from a dark and twisted world. Others see him as a demonic manifestation of humanity's darkest urges.\n\n The Elusive Assassin: The most rational explanation, albeit a terrifying one, is that Shaco is an assassin for hire, left to his own lunatic devices until his services are needed. He displays exceptional cunning, systematically evading authorities who try to question him about his countless atrocities.\n\n The Reign of Madness: Shaco typically appears where madness and chaos already reign. He seeks neither power nor wealth, but hysteria. He jokes until death ensues, and then he laughs.\n\n A Permanent Threat: The fact that such an individual remains at large is a constant source of terror for Valoran's inhabitants. He is the shadow that chuckles in the night, the unpredictable danger one can never anticipate.",
+  "lore_en": "Crafted long ago as a plaything for a lonely prince, the enchanted marionette Shaco now delights in murder and mayhem. Corrupted by dark magic and the loss of his beloved charge, the once-kind puppet finds pleasure only in the misery of the poor souls he torments. He uses toys and simple tricks to deadly effect, finding the results of his bloody “games” hilarious—and for those who hear a dark chuckle in the dead of night, the Demon Jester may have marked them as his next plaything.",
   "spells_en": [
     {
       "id": "Deceive",
       "name": "Deceive",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "Deceive.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 192,
         "y": 48,
-        "full": "Deceive.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -288,6 +210,11 @@
           "Damage",
           "Stealth Duration",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ stealthduration }} -> {{ stealthdurationNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -301,13 +228,13 @@
       "name": "Jack In The Box",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "JackInTheBox.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 240,
         "y": 48,
-        "full": "JackInTheBox.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -320,6 +247,12 @@
           "Fear Duration",
           "Bonus Monster Damage",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ stbasedamage }} -> {{ stbasedamageNL }}",
+          "{{ fearduration }} -> {{ feardurationNL }}",
+          "{{ monsterbonusdamage }} -> {{ monsterbonusdamageNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -333,13 +266,13 @@
       "name": "Two-Shiv Poison",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TwoShivPoison.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 288,
         "y": 48,
-        "full": "TwoShivPoison.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -350,6 +283,10 @@
         "label": [
           "Damage",
           "Slow"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ slowamount*-100.000000 }}% -> {{ slowamountnl*-100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -363,13 +300,13 @@
       "name": "Hallucinate",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "HallucinateFull.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 336,
         "y": 48,
-        "full": "HallucinateFull.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -381,6 +318,11 @@
           "On Death Damage",
           "Mini Box Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ explosionbasedamage }} -> {{ explosionbasedamageNL }}",
+          "{{ stbasedamage }} -> {{ stbasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -393,13 +335,13 @@
   "passive_en": {
     "name": "Backstab",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Jester_CarefulStrikes.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 432,
       "y": 96,
-      "full": "Jester_CarefulStrikes.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Shaco's basic attacks and Two-Shiv Poison deal additional damage when striking from behind."
   },
@@ -505,5 +447,104 @@
       "name": "Cat-in-the-Box Shaco",
       "chromas": true
     }
-  ]
+  ],
+  "skins": [
+    {
+      "id": "35000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "35001",
+      "num": 1,
+      "name": "Shaco le fou",
+      "chromas": false
+    },
+    {
+      "id": "35002",
+      "num": 2,
+      "name": "Shaco royal",
+      "chromas": false
+    },
+    {
+      "id": "35003",
+      "num": 3,
+      "name": "Shac-noisettes",
+      "chromas": false
+    },
+    {
+      "id": "35004",
+      "num": 4,
+      "name": "Shaco mécanique",
+      "chromas": false
+    },
+    {
+      "id": "35005",
+      "num": 5,
+      "name": "Shaco aliéné",
+      "chromas": false
+    },
+    {
+      "id": "35006",
+      "num": 6,
+      "name": "Shaco masqué",
+      "chromas": false
+    },
+    {
+      "id": "35007",
+      "num": 7,
+      "name": "Shaco joker",
+      "chromas": false
+    },
+    {
+      "id": "35008",
+      "num": 8,
+      "name": "Shaco du pulsar sombre",
+      "chromas": true
+    },
+    {
+      "id": "35015",
+      "num": 15,
+      "name": "Shaco arcaniste",
+      "chromas": true
+    },
+    {
+      "id": "35023",
+      "num": 23,
+      "name": "Shaco cauchemar criminel",
+      "chromas": true
+    },
+    {
+      "id": "35033",
+      "num": 33,
+      "name": "Shaco élu de l'hiver",
+      "chromas": true
+    },
+    {
+      "id": "35043",
+      "num": 43,
+      "name": "Shaco combattant spirituel",
+      "chromas": true
+    },
+    {
+      "id": "35044",
+      "num": 44,
+      "name": "Shaco combattant spirituel prestige",
+      "chromas": false
+    },
+    {
+      "id": "35054",
+      "num": 54,
+      "name": "Shaco Nuit d'effroi",
+      "chromas": true
+    },
+    {
+      "id": "35064",
+      "num": 64,
+      "name": "Chatco",
+      "chromas": true
+    }
+  ],
+  "related_characters": []
 }

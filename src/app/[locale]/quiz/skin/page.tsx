@@ -14,7 +14,7 @@ export default async function SkinQuizPage({ params }: QuizPageProps) {
     const champions = await fetchAllChampions(locale);
 
     return (
-        <main className="min-h-screen bg-gray-900 text-white relative flex flex-col">
+        <main className="min-h-screen bg-transparent text-white relative flex flex-col">
             {/* Header */}
             <div className="w-full p-4 flex justify-center items-center max-w-7xl mx-auto relative">
                 <a href={`/${locale}/quiz`} className="absolute left-4 text-gray-400 hover:text-white transition-colors">

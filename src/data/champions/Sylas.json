@@ -3,97 +3,35 @@
   "key": "517",
   "name": "Sylas",
   "title": "Révolutionnaire déchaîné",
-  "version": "15.23.1",
-  "lore": "Sylas de Dregbourne est né mage dans une famille pauvre de Demacia. Ses parents, fervents patriotes, le livrèrent aux Traqueurs de Mages. En raison de son don pour détecter la magie, il fut utilisé par le royaume pour débusquer ses pairs, vivant une vie de serviteur fier mais isolé.\n\n La Découverte de l'Hypocrisie : En servant les Traqueurs, Sylas réalisa que si les pauvres étaient persécutés pour leur magie, l'élite de Demacia l'utilisait souvent en secret ou restait impunie. Ce constat sema en lui les graines du doute.\n\n L'Accident Mortel : Lors d'une mission, il tenta de protéger une jeune fille mage. En la touchant, il découvrit son véritable pouvoir : la capacité d'absorber et de projeter la magie d'autrui. L'explosion qui suivit tua ses mentors. Qualifié de meurtrier, il fut capturé et condamné à la prison à vie.\n\n L'Alliance avec Lux : Enchaîné avec de la pétricite (une pierre censée annuler la magie), Sylas passa 15 ans dans le noir. Il fut visité par Luxanna Crownguard, qu'il reconnut immédiatement comme une puissante mage. Il la manipula pour obtenir des connaissances, notamment sur la nature de la pétricite.\n\n Le Secret de la Pétricite : Sylas apprit que la pétricite ne détruit pas la magie, mais l'emmagasine. Lors de son exécution, il toucha Lux, vola son pouvoir et utilisa ses propres chaînes comme des conducteurs pour briser ses liens et dévaster le complexe des Traqueurs.\n\n La Révolution et le Freljord : Devenu un symbole pour les opprimés, Sylas monta une rébellion. Comprenant que ses forces étaient insuffisantes contre le trône de Demacia, il s'est exilé vers le Freljord. Il y cherche des alliés et des magies anciennes pour revenir et détruire définitivement le système demacien.",
+  "version": "16.8.1",
+  "lore": "Élevé dans l'un des quartiers les plus pauvres de Demacia, Sylas de Liebourg est devenu le symbole du côté obscur de la Grande cité. Enfant, sa capacité à déceler la sorcellerie cachée attira l'attention des tristement célèbres traqueurs de mages, qui finirent par l'emprisonner pour avoir retourné ses pouvoirs contre eux. Désormais libéré de ses chaînes, Sylas est un révolutionnaire convaincu, employant la magie de ceux qui l'entourent pour ravager le royaume qu'il a autrefois servi… Et son groupe de mages exilés semble grandir chaque jour un peu plus.",
   "tags": [
     "Mage",
     "Assassin"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Sylas.png",
+    "sprite": "champion4.png",
+    "group": "champion",
     "x": 0,
     "y": 48,
-    "full": "Sylas.png",
-    "group": "champion",
-    "sprite": "champion4.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "517000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "517001",
-      "num": 1,
-      "name": "Sylas spectre lunaire",
-      "chromas": true
-    },
-    {
-      "id": "517008",
-      "num": 8,
-      "name": "Sylas de Freljord",
-      "chromas": true
-    },
-    {
-      "id": "517013",
-      "num": 13,
-      "name": "PROJET : Sylas",
-      "chromas": true
-    },
-    {
-      "id": "517014",
-      "num": 14,
-      "name": "PROJET : Sylas prestige",
-      "chromas": false
-    },
-    {
-      "id": "517024",
-      "num": 24,
-      "name": "Sylas loup de combat",
-      "chromas": true
-    },
-    {
-      "id": "517034",
-      "num": 34,
-      "name": "Sylas tueur de cendres",
-      "chromas": true
-    },
-    {
-      "id": "517036",
-      "num": 36,
-      "name": "Sylas élu de l'hiver",
-      "chromas": true
-    },
-    {
-      "id": "517046",
-      "num": 46,
-      "name": "Sylas du pulsar sombre",
-      "chromas": true
-    },
-    {
-      "id": "517053",
-      "num": 53,
-      "name": "T1 Sylas prestige",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "SylasQ",
       "name": "Croix du forçat",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SylasQ.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 384,
         "y": 48,
-        "full": "SylasQ.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -106,6 +44,12 @@
           "Dégâts de l'explosion",
           "Ralentissement",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ explosionbasedamage }} -> {{ explosionbasedamageNL }}",
+          "{{ slowamount*100.000000 }}% -> {{ slowamountnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -119,13 +63,13 @@
       "name": "Régicide",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SylasW.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 432,
         "y": 48,
-        "full": "SylasW.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -138,6 +82,12 @@
           "Soins",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ healing }} -> {{ healingNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -151,13 +101,13 @@
       "name": "Évasion / Enlèvement",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SylasE.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 0,
         "y": 96,
-        "full": "SylasE.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -168,6 +118,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ pulldamage }} -> {{ pulldamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -181,13 +135,13 @@
       "name": "Détournement",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SylasR.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 48,
         "y": 96,
-        "full": "SylasR.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -197,6 +151,9 @@
       "leveltip": {
         "label": [
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -209,13 +166,13 @@
   "passive": {
     "name": "Volée de pétricite",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "SylasP.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 0,
       "y": 48,
-      "full": "SylasP.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Après avoir lancé une compétence, Sylas stocke une charge de Volée de pétricite. Les attaques de base de Sylas dépensent une charge pour donner un coup de chaînes énergisé autour de lui, infligeant des dégâts magiques supplémentaires aux ennemis touchés. Tant que Sylas possède une charge de Volée de pétricite, sa vitesse d'attaque est augmentée. "
   },
@@ -231,20 +188,20 @@
   "gender": "Male",
   "species": "Human",
   "title_en": "the Unshackled",
-  "lore_en": "Sylas of Dregbourne was a mage born into poverty in Demacia. His parents, believing in the kingdom's anti-magic ideals, turned him in to the Mageseekers. Because he could sense magic, he was used as a \"hound\" to find other mages, living a life of loyal but lonely service.\n\n Observing Hypocrisy: While working for the state, Sylas noticed that while commoners were punished for magic, the elite often possessed hidden powers and remained untouched. This unfairness planted seeds of resentment in his mind.\n\n The Fateful Touch: During a mission, he tried to protect a young mage girl. Upon touching her, he discovered his true talent: stealing and redirecting magic. The resulting blast killed his handlers. He was branded a murderer and sentenced to life in prison.\n\n The Lux Connection: Shackled in petricite, Sylas spent 15 years in darkness until he met Luxanna Crownguard. Recognizing her as a powerful mage, he befriended her, trading knowledge for books and information about the world outside.\n\n The Petricite Revelation: Through Lux, Sylas learned that petricite doesn't negate magic—it absorbs it. During his public execution, he made contact with Lux, absorbed her power into his shackles, and used it to blast his way to freedom.\n\n Rebellion and the North: Now a revolutionary leader, Sylas gathered a following of exiled mages. Realizing he needed more power to topple Demacia, he journeyed to the Freljord to seek ancient elemental magic and allies for his eventual return.",
+  "lore_en": "Raised in one of Demacia's lesser quarters, Sylas of Dregbourne has come to symbolize the darker side of the Great City. As a boy, his ability to root out hidden sorcery caught the attention of the notorious mageseekers, who eventually imprisoned him for turning those same powers against them. Having now broken free, Sylas lives as a hardened revolutionary, using the magic of those around him to destroy the kingdom he once served… and his band of outcast mage followers seems to grow by the day.",
   "spells_en": [
     {
       "id": "SylasQ",
       "name": "Chain Lash",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SylasQ.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 384,
         "y": 48,
-        "full": "SylasQ.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -257,6 +214,12 @@
           "Explosion Damage",
           "Slow",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ explosionbasedamage }} -> {{ explosionbasedamageNL }}",
+          "{{ slowamount*100.000000 }}% -> {{ slowamountnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -270,13 +233,13 @@
       "name": "Kingslayer",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SylasW.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 432,
         "y": 48,
-        "full": "SylasW.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -289,6 +252,12 @@
           "Healing",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ healing }} -> {{ healingNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -302,13 +271,13 @@
       "name": "Abscond / Abduct",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SylasE.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 0,
         "y": 96,
-        "full": "SylasE.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -319,6 +288,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ pulldamage }} -> {{ pulldamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -332,13 +305,13 @@
       "name": "Hijack",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SylasR.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 48,
         "y": 96,
-        "full": "SylasR.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -348,6 +321,9 @@
       "leveltip": {
         "label": [
           "Cooldown"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -360,13 +336,13 @@
   "passive_en": {
     "name": "Petricite Burst",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "SylasP.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 0,
       "y": 48,
-      "full": "SylasP.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "After casting a spell, Sylas stores a charge of Petricite Burst. Sylas's basic attacks will expend a charge and whirl his energized chains around him dealing bonus magic damage to enemies hit. While Sylas has a charge of Petricite Burst, he gains attack speed. "
   },
@@ -435,6 +411,84 @@
       "num": 53,
       "name": "Prestige T1 Sylas",
       "chromas": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "517000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "517001",
+      "num": 1,
+      "name": "Sylas spectre lunaire",
+      "chromas": true
+    },
+    {
+      "id": "517008",
+      "num": 8,
+      "name": "Sylas de Freljord",
+      "chromas": true
+    },
+    {
+      "id": "517013",
+      "num": 13,
+      "name": "PROJET : Sylas",
+      "chromas": true
+    },
+    {
+      "id": "517014",
+      "num": 14,
+      "name": "PROJET : Sylas prestige",
+      "chromas": false
+    },
+    {
+      "id": "517024",
+      "num": 24,
+      "name": "Sylas loup de combat",
+      "chromas": true
+    },
+    {
+      "id": "517034",
+      "num": 34,
+      "name": "Sylas tueur de cendres",
+      "chromas": true
+    },
+    {
+      "id": "517036",
+      "num": 36,
+      "name": "Sylas élu de l'hiver",
+      "chromas": true
+    },
+    {
+      "id": "517046",
+      "num": 46,
+      "name": "Sylas du pulsar sombre",
+      "chromas": true
+    },
+    {
+      "id": "517053",
+      "num": 53,
+      "name": "T1 Sylas prestige",
+      "chromas": false
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Lux",
+      "type": "champion",
+      "relation": "betrayer",
+      "note_fr": "Trahie par lui",
+      "note_en": "Betrayed by him"
+    },
+    {
+      "id": "Garen",
+      "type": "champion",
+      "relation": "nemesis",
+      "note_fr": "Symbole de la tyrannie Démacienne",
+      "note_en": "Symbol of demacian tyranny"
     }
   ]
 }

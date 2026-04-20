@@ -3,60 +3,34 @@
   "key": "200",
   "name": "Bel'Veth",
   "title": "Impératrice du Néant",
-  "version": "15.23.1",
-  "lore": "Bel'Veth n'est pas une simple entité du Néant (Void) ; elle est le produit d'une réaction allergique entre le Néant, dimension de néant paisible, et la réalité de l'existence. Pendant des millénaires, les créatures du Néant (Voidborn), en réaction à l'agitation et à la douleur de l'existence, ont dévoré la réalité, ne laissant derrière elles qu'un vide. Cependant, à chaque incursion, les Voidborn et le Néant lui-même se sont lentement mutés, passant de leurs formes parfaites à des êtres violents et hédonistes.\r\n\r\nProfondément enfouie dans les tunnels du Néant, une nouvelle poche de \"non-création\" grandissait, alimentée par les interférences humaines et les tentatives des Guetteurs (Watchers) d'envahir le Freljord. Ce lieu blasphématoire commença à manifester les opposés du Vieux Néant : le désir, la soif et le besoin.\r\n\r\nCette nouvelle entité avait besoin d'un chef, capable d'interagir avec les humains, de récolter leurs émotions et leurs souvenirs, et de diriger l'anéantissement pour faire naître une nouvelle ère.\r\n\r\nC'est ainsi qu'est née Bel'Veth, l'Impératrice de Cauchemar. Elle est l'aboutissement des souvenirs, expériences et émotions combinés d'une ville portuaire entière et de son océan périphérique, qu'elle a dévorés. Son esprit détient des millions d'années de connaissances parfaitement préservées, lui conférant une quasi-omniscience.\r\n\r\nBel'Veth représente la fin de Runeterra. Elle consume des villes et leurs populations, transformant l'information et la matière en un paysage tentaculaire et étranger qu'elle nomme la Mer de Lavande (Lavender Sea). Son ambition est de dévorer et de reconstruire Runeterra à sa propre image tordue.\r\n\r\nPour ceux qu'elle juge utiles, Bel'Veth ne ment jamais, se contentant d'énoncer la nature des choses, car elle considère la victoire comme assurée. Cependant, sa forme humaine est simplement une adaptation faite de nerfs, de muscles et de pédoncules oculaires. Lorsqu'elle est mécontente ou se prépare à l'action, elle se déploie pour révéler sa véritable figure monstrueuse aux ailes titanesques.\r\n\r\nIroniquement, son nom provient d'un mythe des anciens Shurimiens sur un \"Dieu de l'Oubli\" qui effacerait tout sans haine pour se remplacer lui-même.\r\n\r\nBel'Veth ne se contentera pas de Runeterra. Son regard avide se tourne également vers ses propres progéniteurs, les Guetteurs, car elle a l'intention de détruire à la fois le monde du dessus et le domaine de ceux qu'elle considère comme les maîtres dépassés du Néant.",
+  "version": "16.8.1",
+  "lore": "Bel'Veth, impératrice cauchemardesque née d'une cité dévorée, représente la fin de Runeterra... et le début d'une monstrueuse réalité de sa propre conception. Mue par des siècles d'histoire, de connaissances et de souvenirs absorbés dans le monde du dessus, elle assouvit son appétit croissant pour les expériences et les émotions nouvelles, consumant tout sur son passage. Néanmoins, un seul monde ne suffira jamais à satisfaire tous ses désirs, aussi tourne-t-elle son regard avide vers les anciens maîtres du Néant...",
   "tags": [
     "Fighter"
   ],
-  "partype": "Aucune",
+  "partype": "",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Belveth.png",
+    "sprite": "champion0.png",
+    "group": "champion",
     "x": 240,
     "y": 48,
-    "full": "Belveth.png",
-    "group": "champion",
-    "sprite": "champion0.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "200000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "200001",
-      "num": 1,
-      "name": "Bel'Veth boss de combat",
-      "chromas": true
-    },
-    {
-      "id": "200010",
-      "num": 10,
-      "name": "Bel'Veth matriarche cosmique",
-      "chromas": true
-    },
-    {
-      "id": "200019",
-      "num": 19,
-      "name": "Bel'Veth primordienne",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "BelvethQ",
       "name": "Charge du Néant",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BelvethQ.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 384,
         "y": 144,
-        "full": "BelvethQ.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -69,6 +43,12 @@
           "Délai de récupération par direction",
           "Dégâts aux monstres",
           "Dégâts aux sbires"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ persidecooldown }} -> {{ persidecooldownNL }}",
+          "{{ monstermod }} -> {{ monstermodNL }}",
+          "{{ minonmod*100.000000 }}% -> {{ minonmodnl*100.000000 }}%"
         ]
       },
       "resource": "Pas de coût",
@@ -82,13 +62,13 @@
       "name": "Projection cinglante",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BelvethW.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 432,
         "y": 144,
-        "full": "BelvethW.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -100,6 +80,11 @@
           "Dégâts",
           "Durée de ralentissement",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ slowduration }} -> {{ slowdurationNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -113,13 +98,13 @@
       "name": "Maelström impérial",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BelvethE.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 0,
         "y": 0,
-        "full": "BelvethE.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -131,6 +116,11 @@
           "Dégâts",
           "Réduction des dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ damageperhit }} -> {{ damageperhitNL }}",
+          "{{ drpercent*100.000000 }}% -> {{ drpercentnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -144,13 +134,13 @@
       "name": "Banquet infini",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BelvethR.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 48,
         "y": 0,
-        "full": "BelvethR.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -165,6 +155,14 @@
           "Vitesse de déplacement",
           "Vitesse d'attaque",
           "PV des rémoras du Néant"
+        ],
+        "effect": [
+          "{{ onhitdamage }} -> {{ onhitdamageNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ basemaxhealth }} -> {{ basemaxhealthNL }}",
+          "{{ oocms }} -> {{ oocmsNL }}",
+          "{{ totalasmod*100.000000 }}% -> {{ totalasmodnl*100.000000 }}%",
+          "{{ voidlinghpscale*100.000000 }}% -> {{ voidlinghpscalenl*100.000000 }}%"
         ]
       },
       "resource": "Pas de coût",
@@ -177,13 +175,13 @@
   "passive": {
     "name": "Mer de lavande ",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Belveth_Passive.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 240,
       "y": 48,
-      "full": "Belveth_Passive.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Bel'Veth gagne définitivement des bonus cumulables en vitesse d'attaque après avoir tué des grands monstres, des grands sbires et des champions. Elle gagne aussi un bonus temporaire en vitesse d'attaque après avoir utilisé une compétence."
   },
@@ -197,20 +195,20 @@
   "gender": "Female",
   "species": "Voidborn",
   "title_en": "the Empress of the Void",
-  "lore_en": "Bel'Veth is not a simple Void entity; she is the product of an allergic reaction between the Void, a dimension of peaceful nothingness, and the reality of existence. For millennia, the Voidborn, reacting to the shock and pain of existence, devoured reality, leaving behind only a void. However, with every incursion, the Voidborn and the Void itself slowly mutated, shifting from their once-perfect forms into violent and hedonistic animals.\r\n\r\nDeep inside the darkest recesses of the Voidborn tunnels, a new pocket of \"un-creation\" grew, fueled by human interference and the Watchers' attempts to invade the Freljord. This blasphemous pocket began to manifest the opposites of the Old Void: desire, want, and need.\r\n\r\nThis new entity craved a leader, someone who could interface with humans, harvest their emotions and memories, and direct the annihilation to usher in a new era.\r\n\r\nThus, Bel'Veth, the Nightmare Empress, was born. She is the culmination of the combined memories, experiences, and emotions of an entire devoured port city and its outlying ocean. Her mind contains millions of years of perfectly preserved knowledge, granting her near-omniscience.\r\n\r\nBel'Veth represents the end of Runeterra. She consumes cities and their populations, repurposing the information and matter into a sprawling, alien landscape she calls the Lavender Sea. Her ambition is to devour and rebuild Runeterra in her own twisted image.\r\n\r\nTo those she deems of strategic value, Bel'Veth never lies, simply stating the nature of things, as she considers victory all but assured. However, her human form is merely an adaptation made of nerve endings, muscles, and eyestalks. When displeased or preparing for action, she unfurls her titanic wings to reveal her true, monstrous figure.\r\n\r\nIronically, her name comes from an ancient Shuriman myth about a \"God of Oblivion\" who would erase all things without hatred, replacing them with itself.\r\n\r\nBel'Veth will not be satisfied with Runeterra alone. Her greedy gaze is also fixed upon her own progenitors, the Watchers, as she intends to destroy both the world above and the domain of those she views as the outdated masters of the Void.",
+  "lore_en": "A nightmarish empress created from the raw material of an entire devoured city, Bel'Veth is the end of Runeterra itself... and the beginning of a monstrous reality of her own design. Driven by epochs of repurposed history, knowledge, and memories from the world above, she voraciously feeds an ever-expanding need for new experiences and emotions, consuming all that crosses her path. Yet her wants could never be sated by only one world as she turns her hungry eyes toward the Void's old masters...",
   "spells_en": [
     {
       "id": "BelvethQ",
       "name": "Void Surge",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BelvethQ.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 384,
         "y": 144,
-        "full": "BelvethQ.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -223,6 +221,12 @@
           "Cooldown Per Direction",
           "Monster Damage",
           "Minion Damage"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ persidecooldown }} -> {{ persidecooldownNL }}",
+          "{{ monstermod }} -> {{ monstermodNL }}",
+          "{{ minonmod*100.000000 }}% -> {{ minonmodnl*100.000000 }}%"
         ]
       },
       "resource": "No Cost",
@@ -236,13 +240,13 @@
       "name": "Above and Below",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BelvethW.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 432,
         "y": 144,
-        "full": "BelvethW.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -254,6 +258,11 @@
           "Damage",
           "Slow Duration",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ slowduration }} -> {{ slowdurationNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -267,13 +276,13 @@
       "name": "Royal Maelstrom",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BelvethE.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 0,
         "y": 0,
-        "full": "BelvethE.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -285,6 +294,11 @@
           "Damage",
           "Damage Reduction",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ damageperhit }} -> {{ damageperhitNL }}",
+          "{{ drpercent*100.000000 }}% -> {{ drpercentnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -298,13 +312,13 @@
       "name": "Endless Banquet",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BelvethR.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 48,
         "y": 0,
-        "full": "BelvethR.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -319,6 +333,14 @@
           "Move Speed",
           "Attack Speed",
           "Void Remora Health"
+        ],
+        "effect": [
+          "{{ onhitdamage }} -> {{ onhitdamageNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ basemaxhealth }} -> {{ basemaxhealthNL }}",
+          "{{ oocms }} -> {{ oocmsNL }}",
+          "{{ totalasmod*100.000000 }}% -> {{ totalasmodnl*100.000000 }}%",
+          "{{ voidlinghpscale*100.000000 }}% -> {{ voidlinghpscalenl*100.000000 }}%"
         ]
       },
       "resource": "No Cost",
@@ -331,17 +353,17 @@
   "passive_en": {
     "name": "Death in Lavender ",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Belveth_Passive.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 240,
       "y": 48,
-      "full": "Belveth_Passive.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Bel'Veth gains permanent attack speed stacks after taking down large minions and monsters and champions. She also gains temporary bonus attack speed after using an ability."
   },
-  "partype_en": "None",
+  "partype_en": "",
   "lanes": [
     "Jungle"
   ],
@@ -370,5 +392,32 @@
       "name": "Primordian Bel'Veth",
       "chromas": true
     }
-  ]
+  ],
+  "skins": [
+    {
+      "id": "200000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "200001",
+      "num": 1,
+      "name": "Bel'Veth boss de combat",
+      "chromas": true
+    },
+    {
+      "id": "200010",
+      "num": 10,
+      "name": "Bel'Veth matriarche cosmique",
+      "chromas": true
+    },
+    {
+      "id": "200019",
+      "num": 19,
+      "name": "Bel'Veth primordienne",
+      "chromas": true
+    }
+  ],
+  "related_characters": []
 }

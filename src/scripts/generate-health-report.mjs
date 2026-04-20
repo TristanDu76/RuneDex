@@ -1,0 +1,197 @@
+#!/usr/bin/env node
+
+/**
+ * 📊 HEALTH REPORT: Pre-Flight Dashboard
+ * 
+ * Run BEFORE each build to detect data issues early:
+ * - Top 5 regions by population
+ * - Orphan characters (no relations)
+ * - Canon vs Legacy ratio
+ * 
+ * Usage: npm run stats
+ * Exit code: 0 (healthy), 1 (warnings), 2 (errors)
+ */
+
+import fs from 'fs';
+import path from 'path';
+
+const MANIFEST_PATH = path.join(process.cwd(), 'src/data/manifest.json');
+const SHARDS_DIR = path.join(process.cwd(), 'src/data/shards');
+
+function log(level, msg) {
+    const prefix = { info: '✓', warn: '⚠', error: '✗', stat: '📊' }[level] || '•';
+    console.log(`[${prefix}] ${msg}`);
+}
+
+function separator(title) {
+    console.log('\n' + '═'.repeat(60));
+    console.log(`  ${title}`);
+    console.log('═'.repeat(60) + '\n');
+}
+
+try {
+    // ▼ LOAD MANIFEST
+    if (!fs.existsSync(MANIFEST_PATH)) {
+        log('error', `Manifest not found: ${MANIFEST_PATH}`);
+        log('error', 'Run "npm run predev" first to generate manifest');
+        process.exit(2);
+    }
+
+    const manifest = JSON.parse(fs.readFileSync(MANIFEST_PATH, 'utf8'));
+    const characters = manifest.characters || {};
+    const meta = manifest.meta || {};
+
+    separator('📊 HEALTH REPORT');
+
+    // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    // STAT 1: Top 5 Regions by Population
+    // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+    const regionStats = {};
+
+    Object.entries(characters).forEach(([id, char]) => {
+        const faction = char.factionKey || 'Unknown';
+        if (!regionStats[faction]) {
+            regionStats[faction] = { count: 0, canonical: 0, legacy: 0 };
+        }
+        regionStats[faction].count++;
+        if (char.canon !== false) {
+            regionStats[faction].canonical++;
+        } else {
+            regionStats[faction].legacy++;
+        }
+    });
+
+    const topRegions = Object.entries(regionStats)
+        .sort((a, b) => b[1].count - a[1].count)
+        .slice(0, 5);
+
+    log('stat', '🏰 TOP 5 REGIONS BY POPULATION');
+    topRegions.forEach(([region, stats], idx) => {
+        const canLabel = `${stats.canonical} 📘 canon`;
+        const legacyLabel = stats.legacy > 0 ? ` + ${stats.legacy} 📕 legacy` : '';
+        console.log(`  ${idx + 1}. ${region.padEnd(20)} ${stats.count.toString().padStart(3)} chars (${canLabel}${legacyLabel})`);
+    });
+
+    // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    // STAT 2: Orphan Detection (no relations)
+    // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+    const orphans = Object.entries(characters)
+        .filter(([id, char]) => !char.related_characters || char.related_characters.length === 0)
+        .map(([id, char]) => ({ id, name: char.name, faction: char.factionKey }));
+
+    log('stat', `👻 ORPHAN CHARACTERS (no relations): ${orphans.length}`);
+
+    if (orphans.length > 0 && orphans.length <= 15) {
+        orphans.forEach(char => {
+            const icon = char.faction === 'Unknown' ? '⚠' : '🔹';
+            console.log(`  ${icon} ${char.id.padEnd(25)} (${char.name}) [${char.faction}]`);
+        });
+    } else if (orphans.length > 15) {
+        log('warn', `Too many orphans (${orphans.length}). Showing summary by faction:`);
+        const orphansByFaction = {};
+        orphans.forEach(char => {
+            if (!orphansByFaction[char.faction]) orphansByFaction[char.faction] = [];
+            orphansByFaction[char.faction].push(char.id);
+        });
+        Object.entries(orphansByFaction).forEach(([faction, ids]) => {
+            console.log(`  → ${faction}: ${ids.length} orphans`);
+        });
+    }
+
+    // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    // STAT 3: Canon vs Legacy Ratio
+    // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+    const canonCount = Object.values(characters).filter(c => c.canon !== false).length;
+    const legacyCount = Object.values(characters).filter(c => c.canon === false).length;
+    const total = canonCount + legacyCount;
+    const canonPercent = ((canonCount / total) * 100).toFixed(1);
+    const legacyPercent = ((legacyCount / total) * 100).toFixed(1);
+
+    log('stat', '📚 CANON vs LEGACY RATIO');
+    console.log(`  📘 Canonical: ${canonCount.toString().padStart(3)} (${canonPercent}%)`);
+    console.log(`  📕 Legacy:    ${legacyCount.toString().padStart(3)} (${legacyPercent}%)`);
+
+    // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    // STAT 4: Data Quality Metrics
+    // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+    const charsWithThumbnails = Object.values(characters).filter(c => c.thumbnail && c.thumbnail !== 'https://wiki.leagueoflegends.com/en-us/images/Unknown_Character.png').length;
+    const charsWithVersions = Object.values(characters).filter(c => c.version).length;
+    const totalRelations = Object.values(characters).reduce((sum, c) => sum + (c.related_characters?.length || 0), 0);
+    const autoGeneratedRelations = Object.values(characters).reduce(
+        (sum, c) => sum + (c.related_characters?.filter(r => r.auto_generated).length || 0),
+        0
+    );
+
+    log('stat', '🔍 DATA QUALITY METRICS');
+    console.log(`  ✓ Characters with thumbnails: ${charsWithThumbnails}/${total} (${((charsWithThumbnails/total)*100).toFixed(1)}%)`);
+    console.log(`  ✓ Characters with versions:   ${charsWithVersions}/${total} (${((charsWithVersions/total)*100).toFixed(1)}%)`);
+    console.log(`  ✓ Total relations: ${totalRelations}`);
+    console.log(`  ✓ Auto-generated: ${autoGeneratedRelations} (${totalRelations > 0 ? ((autoGeneratedRelations/totalRelations)*100).toFixed(1) : 0}%)`);
+
+    // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    // STAT 5: Warnings Summary
+    // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+    const warnings = meta.integrity?.warnings || [];
+    const errors = warnings.filter(w => w.includes('✗'));
+    const bilingual = warnings.filter(w => w.includes('Bilingual'));
+    const orphans_warnings = warnings.filter(w => w.includes('Orphan'));
+
+    log('stat', '⚠️  WARNINGS SUMMARY');
+    console.log(`  Total warnings: ${warnings.length}`);
+    if (bilingual.length > 0) console.log(`    → Bilingual issues: ${bilingual.length}`);
+    if (orphans_warnings.length > 0) console.log(`    → Orphan relations: ${orphans_warnings.length}`);
+    if (errors.length > 0) console.log(`    → Validation errors: ${errors.length}`);
+
+    // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    // FINAL VERDICT
+    // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+    separator('✅ PRE-FLIGHT CHECK');
+
+    let healthStatus = 'HEALTHY';
+    let exitCode = 0;
+
+    // Health checks
+    const checks = [
+        { name: 'Manifest exists', pass: !!manifest },
+        { name: 'Characters > 0', pass: total > 0 },
+        { name: 'Regions populated', pass: Object.keys(regionStats).length > 0 },
+        { name: 'No orphans > 50%', pass: orphans.length < (total * 0.5) },
+        { name: 'Bilingual warnings < 5', pass: bilingual.length < 5 },
+        { name: 'Manifest generated recently', pass: meta.generated && new Date(meta.generated) > new Date(Date.now() - 1000 * 60 * 60) }
+    ];
+
+    checks.forEach(check => {
+        const icon = check.pass ? '✓' : '✗';
+        console.log(`  [${icon}] ${check.name}`);
+        if (!check.pass) {
+            healthStatus = 'WARNING';
+            exitCode = Math.max(exitCode, 1);
+        }
+    });
+
+    console.log(`\n  Status: ${healthStatus}\n`);
+
+    if (exitCode === 0) {
+        log('info', '🚀 System ready for deployment');
+    } else if (exitCode === 1) {
+        log('warn', '⚠️  Review warnings before deploying');
+    } else {
+        log('error', '❌ Critical issues detected');
+    }
+
+    console.log(`\nManifest: ${MANIFEST_PATH}`);
+    console.log(`Generated: ${meta.generated || 'unknown'}\n`);
+
+    process.exit(exitCode);
+
+} catch (e) {
+    log('error', `Failed to generate health report: ${e.message}`);
+    console.error(e.stack);
+    process.exit(2);
+}

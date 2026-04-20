@@ -37,8 +37,22 @@ export const localizeChampion = (champion: ChampionData, locale: string) => {
  * Applies localization to a lore character object.
  */
 export const localizeLoreCharacter = (character: LoreCharacter, locale: string) => {
+    const c = character as LoreCharacter & {
+        description_fr?: string;
+        lore_fr?: string;
+        lore_en?: string;
+    };
+
     if (locale.startsWith('en')) {
-        if (character.description_en) character.description = character.description_en;
+        if (c.description_en) c.description = c.description_en;
+        else if (c.lore_en) c.description = c.lore_en;
+        else if (c.description_fr) c.description = c.description_fr;
+        else if (c.lore_fr) c.description = c.lore_fr;
+    } else {
+        if (c.description_fr) c.description = c.description_fr;
+        else if (c.lore_fr) c.description = c.lore_fr;
+        else if (c.description_en) c.description = c.description_en;
+        else if (c.lore_en) c.description = c.lore_en;
     }
     return character;
 };

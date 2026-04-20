@@ -3,133 +3,35 @@
   "key": "39",
   "name": "Irelia",
   "title": "Danseuse des lames",
-  "version": "15.23.1",
-  "lore": "Xan Irelia était une jeune fille de la province de Navori, en Ionia, fascinée par la grâce du mouvement humain. Elle apprit les danses traditionnelles de la soie de sa grand-mère et étudia avec les artistes les plus respectés au Placidium de Navori.\n\nLa paix fut brisée par l'invasion de Noxus. Irelia revint dans son village pour le trouver occupé. Ses frères et son père, Lito, avaient protesté et gisaient maintenant dans des tombes anonymes.\n\nDévastée, Irelia vit les hommes de l'Amiral Duqal piller sa maison, emportant le grand blason métallique de la famille Xan. Dans un accès de rage et de douleur, elle arracha le blason aux mains d'un Noxien, fut jetée au sol, et vit le blason se faire briser par un marteau. Alors que les soldats l'entouraient pour la tuer, un étrange rythme commença à battre au fond de son âme. Les éclats de métal brisé se mirent à bouger, mus par la force de la danse ancestrale qui l'habitait.\n\nD'un mouvement de bras, elle envoya les éclats voler comme des lames acérées, tranchant net deux Noxiens. Elle récupéra les fragments du blason et s'enfuit dans les forêts. Elle comprit alors que les techniques apprises n'étaient pas de simples danses, mais une puissante expression du mysticisme ionien.\n\nLa résistance contre l'occupation noxienne s'organisa. Irelia rejoignit leurs rangs, utilisant ses danses pour préserver la culture ionienne. Elle n'avait que quatorze ans lorsque le général Jericho Swain captura le Placidium et prit ses défenseurs en otage.\n\nC'est là qu'Irelia se manifesta. Libérée de ses liens, elle déchaîna le plein potentiel de sa danse des lames antique, faisant léviter les fragments de métal avec une grâce féroce. Une douzaine de vétérans de Swain tombèrent, et après avoir semé le chaos, elle frappa le général lui-même — le spectacle de la jeune fille brandissant le bras coupé de Swain devint le tournant de la guerre.\n\nCette victoire, la Grande Défense de Navori, fit d'Irelia le symbole de la Résistance. Elle dirigea le mouvement pendant près de trois ans de combats acharnés, jusqu'à sa victoire finale à la baie de Dalu, où elle put enfin exécuter l'Amiral Duqal, accomplissant la vengeance qu'elle cherchait.\n\nBien que la guerre soit terminée, Ionia est maintenant divisée par des factions rivales. Beaucoup se tournent vers Irelia pour trouver des réponses, mais elle, malgré son pouvoir, est mal à l'aise dans son rôle de leader. Au fond, elle aspire toujours à ne faire que danser seule.",
+  "version": "16.8.1",
+  "lore": "Des nombreux héros qui naquirent de l'occupation noxienne, aucun n'est plus étonnant que la jeune Irelia de Navori. Formée aux danses ancestrales de sa province, elle adapta son art pour la guerre, se servant de ses mouvements gracieux et précis pour faire léviter une multitude de lames acérées. Après avoir prouvé ses talents de guerrière, elle devint le chef et le symbole de la Résistance ; à ce jour, sa tâche est toujours de défendre son pays.",
   "tags": [
     "Fighter",
     "Assassin"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Irelia.png",
+    "sprite": "champion1.png",
+    "group": "champion",
     "x": 336,
     "y": 48,
-    "full": "Irelia.png",
-    "group": "champion",
-    "sprite": "champion1.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "39000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "39001",
-      "num": 1,
-      "name": "Irelia assassin",
-      "chromas": false
-    },
-    {
-      "id": "39002",
-      "num": 2,
-      "name": "Irelia aviatrice",
-      "chromas": false
-    },
-    {
-      "id": "39003",
-      "num": 3,
-      "name": "Cyber Irelia",
-      "chromas": false
-    },
-    {
-      "id": "39004",
-      "num": 4,
-      "name": "Irelia lame de glace",
-      "chromas": true
-    },
-    {
-      "id": "39005",
-      "num": 5,
-      "name": "Irelia de l'Ordre du lotus",
-      "chromas": false
-    },
-    {
-      "id": "39006",
-      "num": 6,
-      "name": "Irelia à l'épée divine",
-      "chromas": true
-    },
-    {
-      "id": "39015",
-      "num": 15,
-      "name": "iG Irelia",
-      "chromas": true
-    },
-    {
-      "id": "39016",
-      "num": 16,
-      "name": "PROJET : Irelia",
-      "chromas": false
-    },
-    {
-      "id": "39017",
-      "num": 17,
-      "name": "PROJET : Irelia prestige",
-      "chromas": false
-    },
-    {
-      "id": "39018",
-      "num": 18,
-      "name": "Irelia de l'Ouest",
-      "chromas": true
-    },
-    {
-      "id": "39026",
-      "num": 26,
-      "name": "Irelia Sentinelle",
-      "chromas": true
-    },
-    {
-      "id": "39036",
-      "num": 36,
-      "name": "PROJET : Irelia prestige (2022)",
-      "chromas": false
-    },
-    {
-      "id": "39037",
-      "num": 37,
-      "name": "Irelia mythificatrice",
-      "chromas": true
-    },
-    {
-      "id": "39045",
-      "num": 45,
-      "name": "Irelia de porcelaine",
-      "chromas": true
-    },
-    {
-      "id": "39055",
-      "num": 55,
-      "name": "Irelia fleur spirituelle",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "IreliaQ",
       "name": "Rush fatal",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "IreliaQ.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 288,
         "y": 0,
-        "full": "IreliaQ.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -141,6 +43,11 @@
           "Dégâts",
           "Délai de récupération",
           "Ratio de soins"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ healtadcoefficient*100.000000 }}% -> {{ healtadcoefficientnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -154,13 +61,13 @@
       "name": "Danse de défi",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "IreliaW.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 336,
         "y": 0,
-        "full": "IreliaW.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -172,6 +79,11 @@
           "Dégâts",
           "Délai de récupération",
           "Coût en mana"
+        ],
+        "effect": [
+          "{{ mindamage }} -> {{ mindamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -185,13 +97,13 @@
       "name": "Duo parfait",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "IreliaE.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 384,
         "y": 0,
-        "full": "IreliaE.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -202,6 +114,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -215,13 +131,13 @@
       "name": "Pointe de l'avant-garde",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "IreliaR.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 432,
         "y": 0,
-        "full": "IreliaR.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -233,6 +149,11 @@
           "Dégâts",
           "Dégâts du mur",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basemissiledamage }} -> {{ basemissiledamageNL }}",
+          "{{ basezonedamage }} -> {{ basezonedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -245,13 +166,13 @@
   "passive": {
     "name": "Ferveur ionienne",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Irelia_Passive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 336,
       "y": 48,
-      "full": "Irelia_Passive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Quand Irelia frappe des ennemis avec ses compétences, elle gagne un bonus de vitesse d'attaque cumulable. Au maximum d'effets cumulés, elle gagne aussi des dégâts à l'impact supplémentaires."
   },
@@ -266,20 +187,20 @@
   "gender": "Female",
   "species": "Human",
   "title_en": "the Blade Dancer",
-  "lore_en": "Xan Irelia was a young girl from the Navori province in Ionia, fascinated by the grace of human movement. She learned the traditional silk dances from her grandmother and studied with the most respected performers at the Placidium of Navori.\n\nThe peace was shattered by the Noxian invasion. Irelia returned to her village to find it occupied. Her brothers and her father, Lito, had protested and now lay in unmarked graves.\n\nRavaged by grief, Irelia watched Admiral Duqal's men loot her home, taking the great metal crest of the Xan family. In a burst of rage and pain, she wrenched the crest from Noxian hands, was hurled to the ground, and watched the crest be shattered by an iron maul. As the soldiers surrounded her to kill her, a strange rhythm began to beat deep within her soul. The shattered metal shards began to twitch and twist, moving seemingly on their own, powered by the ancient dance within her.\n\nWith a sweep of her arm, she sent the pieces flying like ragged blades, cutting clean through two Noxians. She snatched up the crest fragments and fled into the forests. She realized then that the techniques she had learned were more than mere dances—they were a powerful expression of Ionian mysticism.\n\nThe resistance against the Noxian occupation began to form. Irelia joined their ranks, using her dances to preserve Ionian culture. She was barely fourteen when General Jericho Swain captured the Placidium and took its defenders hostage.\n\nIt was in this moment that Irelia rose to meet her destiny. Freed from her bonds, she unleashed the full potential of her ancient blade dance, lashing out with graceful zeal. A dozen of Swain's veterans fell, and after sowing chaos, she struck down the general himself—the sight of the rebellious girl hefting Swain’s severed arm over her head became the turning point of the war.\n\nThis victory, the Great Stand at Navori, made Irelia the symbol of the Resistance. She reluctantly led the movement for almost three years of grueling battle, until her final triumph at Dalu Bay, where she finally cornered and exacted the vengeance she had sought on Admiral Duqal.\n\nThough the war has long since ended, Ionia is now divided by rival factions. Many look to Irelia for answers, but she, despite her power, remains uneasy with her leadership role. At heart, she still yearns only to dance alone.",
+  "lore_en": "The Noxian occupation of Ionia produced many heroes, none more unlikely than young Irelia of Navori. Trained in the ancient dances of her province, she adapted her art for war, using the graceful and carefully practised movements to levitate a host of deadly blades. After proving herself as a fighter, she was thrust into the role of resistance leader and figurehead, and to this day remains dedicated to the preservation of her homeland.",
   "spells_en": [
     {
       "id": "IreliaQ",
       "name": "Bladesurge",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "IreliaQ.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 288,
         "y": 0,
-        "full": "IreliaQ.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -291,6 +212,11 @@
           "Damage",
           "Cooldown",
           "Heal Ratio"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ healtadcoefficient*100.000000 }}% -> {{ healtadcoefficientnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -304,13 +230,13 @@
       "name": "Defiant Dance",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "IreliaW.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 336,
         "y": 0,
-        "full": "IreliaW.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -322,6 +248,11 @@
           "Damage",
           "Cooldown",
           "Mana Cost"
+        ],
+        "effect": [
+          "{{ mindamage }} -> {{ mindamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -335,13 +266,13 @@
       "name": "Flawless Duet",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "IreliaE.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 384,
         "y": 0,
-        "full": "IreliaE.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -352,6 +283,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -365,13 +300,13 @@
       "name": "Vanguard's Edge",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "IreliaR.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 432,
         "y": 0,
-        "full": "IreliaR.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -383,6 +318,11 @@
           "Damage",
           "Wall Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basemissiledamage }} -> {{ basemissiledamageNL }}",
+          "{{ basezonedamage }} -> {{ basezonedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -395,13 +335,13 @@
   "passive_en": {
     "name": "Ionian Fervor",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Irelia_Passive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 336,
       "y": 48,
-      "full": "Irelia_Passive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "When Irelia strikes enemies with spells she gains stacking bonus Attack Speed. At maximum stacks she also gains bonus damage on hit."
   },
@@ -506,6 +446,125 @@
       "num": 55,
       "name": "Spirit Blossom Irelia",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "39000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "39001",
+      "num": 1,
+      "name": "Irelia assassin",
+      "chromas": false
+    },
+    {
+      "id": "39002",
+      "num": 2,
+      "name": "Irelia aviatrice",
+      "chromas": false
+    },
+    {
+      "id": "39003",
+      "num": 3,
+      "name": "Cyber Irelia",
+      "chromas": false
+    },
+    {
+      "id": "39004",
+      "num": 4,
+      "name": "Irelia lame de glace",
+      "chromas": true
+    },
+    {
+      "id": "39005",
+      "num": 5,
+      "name": "Irelia de l'Ordre du lotus",
+      "chromas": false
+    },
+    {
+      "id": "39006",
+      "num": 6,
+      "name": "Irelia à l'épée divine",
+      "chromas": true
+    },
+    {
+      "id": "39015",
+      "num": 15,
+      "name": "iG Irelia",
+      "chromas": true
+    },
+    {
+      "id": "39016",
+      "num": 16,
+      "name": "PROJET : Irelia",
+      "chromas": false
+    },
+    {
+      "id": "39017",
+      "num": 17,
+      "name": "PROJET : Irelia prestige",
+      "chromas": false
+    },
+    {
+      "id": "39018",
+      "num": 18,
+      "name": "Irelia de l'Ouest",
+      "chromas": true
+    },
+    {
+      "id": "39026",
+      "num": 26,
+      "name": "Irelia Sentinelle",
+      "chromas": true
+    },
+    {
+      "id": "39036",
+      "num": 36,
+      "name": "PROJET : Irelia prestige (2022)",
+      "chromas": false
+    },
+    {
+      "id": "39037",
+      "num": 37,
+      "name": "Irelia mythificatrice",
+      "chromas": true
+    },
+    {
+      "id": "39045",
+      "num": 45,
+      "name": "Irelia de porcelaine",
+      "chromas": true
+    },
+    {
+      "id": "39055",
+      "num": 55,
+      "name": "Irelia fleur spirituelle",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "elder_souma",
+      "type": "lore",
+      "relation": "student",
+      "note_fr": "Élève",
+      "note_en": "Student"
+    },
+    {
+      "id": "Karma",
+      "type": "champion",
+      "relation": "rival",
+      "note_fr": "Désaccord politique",
+      "note_en": "Political disagreement"
+    },
+    {
+      "id": "Swain",
+      "type": "champion",
+      "relation": "nemesis/war"
     }
   ]
 }

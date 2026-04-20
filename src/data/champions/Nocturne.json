@@ -3,103 +3,35 @@
   "key": "56",
   "name": "Nocturne",
   "title": "Éternel cauchemar",
-  "version": "15.23.1",
-  "lore": "Nocturne est l'expression démoniaque et primordiale des cauchemars qui hantent les êtres doués d'intelligence. Il est le pire des horreurs que la magie des ombres a engendrées et qui fut pratiquée par des mages et des sorciers cherchant un avantage durant les Guerres runiques.\n\nLa Naissance dans le Royaume des Esprits : Vers la fin des Guerres runiques, des cabales de mages-guerriers se sont affrontées non seulement sur le champ de bataille, mais aussi dans le royaume des esprits, où leurs pensées et émotions subconscientes façonnaient le paysage. Les mages des ombres excellaient à conjurer des assassins éthérés.\n\nLa Manifestation de la Peur : Nul ne sait si les souffrances infligées (le moral sapé, les rêves infectés par la peur) ont créé Nocturne à partir de rien, ou s'il a corrompu un constructe-assassin mineur. Le résultat fut une créature insubstantielle et d'une terreur insondable.\n\nLe Goût de l'Angoisse : Nocturne était la terreur faite manifeste. Il a hurlé et s'est acharné sur les mages qui lui avaient donné vie, cherchant à mettre fin à sa propre souffrance. Il acquit rapidement un goût prononcé pour la peur mortelle, prolongeant chaque poursuite pour savourer l'angoisse de sa proie avant de couper le fil d'argent de sa vie.\n\nL'Évasion vers le Monde Éveillé : Une fois le royaume des esprits purgé de ses intrus, Nocturne commença à mourir de faim. La seule chose qui pouvait le sustenter étaient les esprits mortels qui s'égaraient inconsciemment dans l'éther pendant leur sommeil.\n\nLe Chasseur des Ténèbres : Attiré par les courants magiques où les deux royaumes se rencontrent, Nocturne a trouvé un moyen de se manifester dans le monde éveillé. Il existe désormais comme une ombre liquide, sans visage et aux yeux glacés, se nourrissant de la terreur. Des rois aux paysans, il est attiré par toute faiblesse d'esprit qu'il peut transformer en terreur mortelle et en ténèbres éternelles.",
+  "version": "16.8.1",
+  "lore": "Expression démoniaque des cauchemars qui hantent tous les êtres doués d'intelligence, la chose que l'on nomme Nocturne est devenue une force primordiale du mal. D'aspect liquide, c'est une ombre sans visage, au regard glacial, armée de lames effrayantes. Après s'être affranchi du royaume des esprits, Nocturne est parvenu jusqu'au monde éveillé, pour se nourrir d'une terreur qui ne prospère que dans les véritables ténèbres.",
   "tags": [
     "Fighter",
     "Assassin"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Nocturne.png",
+    "sprite": "champion3.png",
+    "group": "champion",
     "x": 192,
     "y": 0,
-    "full": "Nocturne.png",
-    "group": "champion",
-    "sprite": "champion3.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "56000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "56001",
-      "num": 1,
-      "name": "Nocturne terreur glaciale",
-      "chromas": false
-    },
-    {
-      "id": "56002",
-      "num": 2,
-      "name": "Nocturne du Néant",
-      "chromas": false
-    },
-    {
-      "id": "56003",
-      "num": 3,
-      "name": "Nocturne ravageur",
-      "chromas": false
-    },
-    {
-      "id": "56004",
-      "num": 4,
-      "name": "Nocturne revenant",
-      "chromas": false
-    },
-    {
-      "id": "56005",
-      "num": 5,
-      "name": "Nocturne eternum",
-      "chromas": false
-    },
-    {
-      "id": "56006",
-      "num": 6,
-      "name": "Nocturne spectre maudit",
-      "chromas": false
-    },
-    {
-      "id": "56007",
-      "num": 7,
-      "name": "Nocturne dieu ancien",
-      "chromas": true
-    },
-    {
-      "id": "56016",
-      "num": 16,
-      "name": "Nocturne Hextech",
-      "chromas": false
-    },
-    {
-      "id": "56017",
-      "num": 17,
-      "name": "Nocturne de l'Alliance brisée",
-      "chromas": true
-    },
-    {
-      "id": "56026",
-      "num": 26,
-      "name": "Nocturne empyréen",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "NocturneDuskbringer",
       "name": "Crépuscule",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NocturneDuskbringer.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 192,
         "y": 144,
-        "full": "NocturneDuskbringer.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -112,6 +44,12 @@
           "Vitesse de déplacement",
           "Dégâts d'attaque supplémentaires",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ movespeed }}% -> {{ movespeedNL }}%",
+          "{{ bonustrailad }} -> {{ bonustrailadNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -125,13 +63,13 @@
       "name": "Linceul des ténèbres",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NocturneShroudofDarkness.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 240,
         "y": 144,
-        "full": "NocturneShroudofDarkness.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -142,6 +80,10 @@
         "label": [
           "Vitesse d'attaque supplémentaire",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ e1 }}% -> {{ e1NL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -155,13 +97,13 @@
       "name": "Horreur indicible",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NocturneUnspeakableHorror.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 288,
         "y": 144,
-        "full": "NocturneUnspeakableHorror.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -174,6 +116,12 @@
           "Durée de peur",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ e2 }} -> {{ e2NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -187,13 +135,13 @@
       "name": "Paranoïa",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NocturneParanoia.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 336,
         "y": 144,
-        "full": "NocturneParanoia.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -205,6 +153,11 @@
           "Dégâts",
           "Portée",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ castrange }} -> {{ castrangeNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -217,13 +170,13 @@
   "passive": {
     "name": "Lames d'ombre",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Nocturne_UmbraBlades.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 192,
       "y": 0,
-      "full": "Nocturne_UmbraBlades.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Toutes les quelques secondes, la prochaine attaque de Nocturne frappe les ennemis proches, infligeant des dégâts physiques supplémentaires et lui rendant des PV. <br><br>Les attaques de base de Nocturne réduisent ce délai."
   },
@@ -238,20 +191,20 @@
   "gender": "Male",
   "species": "Demon",
   "title_en": "the Eternal Nightmare",
-  "lore_en": "Nocturne is the demonic, primordial expression of the nightmares that haunt all intelligent beings. He is the greatest horror unleashed by \"shadow magic,\" a discipline shunned even by the most skilled mages.\n\nThe Birth in the Spirit Realm: Towards the end of the Rune Wars, desperate warrior-mages fought not only on the battlefield but also in the spirit realm, where their subconscious thoughts and emotions shaped the landscape. Shadow mages excelled at conjuring etheric assassins.\n\nThe Manifestation of Dread: No one can say for certain if the suffering caused (sapped morale, dreams infected with nameless fears) created Nocturne from nothing or merely corrupted a lesser assassin-construct. The result was a creature of insubstantial form and fathomless dread.\n\nThe Acquired Taste: Nocturne was terror made manifest. It howled and set upon the mages who had given it life, thrashing in pain. It quickly acquired a taste for mortal fear, dragging out every pursuit to savor the prey's anguish before cutting their life's silvery thread.\n\nThe Escape to the Waking World: Trapped in the spirit realm with few intruders to sustain it, Nocturne began to starve. The only thing close to the delectable feasts of fear it had once tasted was when mortal minds unknowingly drifted through the ether in sleep.\n\nThe Darkness Hunter: Drawn on currents of magic to where the two realms divide, Nocturne found a way to manifest itself into the waking world. Existing now as a liquid shade, armed with frightening blades, it is a sinister reflection of the most primal fears of Runeterra's peoples. The demon is drawn to any weakness of spirit it can twist into mortal terror and everlasting darkness.",
+  "lore_en": "A demonic amalgamation drawn from the nightmares that haunt every sentient mind, the thing known as Nocturne has become a primordial force of pure evil. It is liquidly chaotic in aspect, a faceless shadow with cold eyes and armed with wicked-looking blades. After freeing itself from the spirit realm, Nocturne descended upon the waking world, to feed upon the kind of terror that can only thrive in true darkness.",
   "spells_en": [
     {
       "id": "NocturneDuskbringer",
       "name": "Duskbringer",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NocturneDuskbringer.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 192,
         "y": 144,
-        "full": "NocturneDuskbringer.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -264,6 +217,12 @@
           "Move Speed",
           "Bonus Attack Damage",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ movespeed }}% -> {{ movespeedNL }}%",
+          "{{ bonustrailad }} -> {{ bonustrailadNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -277,13 +236,13 @@
       "name": "Shroud of Darkness",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NocturneShroudofDarkness.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 240,
         "y": 144,
-        "full": "NocturneShroudofDarkness.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -294,6 +253,10 @@
         "label": [
           "Bonus Attack Speed",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ e1 }}% -> {{ e1NL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -307,13 +270,13 @@
       "name": "Unspeakable Horror",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NocturneUnspeakableHorror.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 288,
         "y": 144,
-        "full": "NocturneUnspeakableHorror.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -326,6 +289,12 @@
           "Fear Duration",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ e2 }} -> {{ e2NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -339,13 +308,13 @@
       "name": "Paranoia",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NocturneParanoia.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 336,
         "y": 144,
-        "full": "NocturneParanoia.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -357,6 +326,11 @@
           "Damage",
           "Range",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ castrange }} -> {{ castrangeNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -369,13 +343,13 @@
   "passive_en": {
     "name": "Umbra Blades",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Nocturne_UmbraBlades.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 192,
       "y": 0,
-      "full": "Nocturne_UmbraBlades.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Every few seconds, Nocturne's next attack strikes surrounding enemies for bonus physical damage and heals himself. <br><br>Nocturne's basic attacks reduce this cooldown."
   },
@@ -450,5 +424,74 @@
       "name": "Empyrean Nocturne",
       "chromas": true
     }
-  ]
+  ],
+  "skins": [
+    {
+      "id": "56000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "56001",
+      "num": 1,
+      "name": "Nocturne terreur glaciale",
+      "chromas": false
+    },
+    {
+      "id": "56002",
+      "num": 2,
+      "name": "Nocturne du Néant",
+      "chromas": false
+    },
+    {
+      "id": "56003",
+      "num": 3,
+      "name": "Nocturne ravageur",
+      "chromas": false
+    },
+    {
+      "id": "56004",
+      "num": 4,
+      "name": "Nocturne revenant",
+      "chromas": false
+    },
+    {
+      "id": "56005",
+      "num": 5,
+      "name": "Nocturne eternum",
+      "chromas": false
+    },
+    {
+      "id": "56006",
+      "num": 6,
+      "name": "Nocturne spectre maudit",
+      "chromas": false
+    },
+    {
+      "id": "56007",
+      "num": 7,
+      "name": "Nocturne dieu ancien",
+      "chromas": true
+    },
+    {
+      "id": "56016",
+      "num": 16,
+      "name": "Nocturne Hextech",
+      "chromas": false
+    },
+    {
+      "id": "56017",
+      "num": 17,
+      "name": "Nocturne de l'Alliance brisée",
+      "chromas": true
+    },
+    {
+      "id": "56026",
+      "num": 26,
+      "name": "Nocturne empyréen",
+      "chromas": true
+    }
+  ],
+  "related_characters": []
 }

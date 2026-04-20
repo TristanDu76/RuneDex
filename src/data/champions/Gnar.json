@@ -3,103 +3,35 @@
   "key": "150",
   "name": "Gnar",
   "title": "Chaînon manquant",
-  "version": "15.23.1",
-  "lore": "Avant que la glace ne donne son nom au Freljord, la terre était remplie d'émerveillement, du moins aux yeux de Gnar, un jeune Yordle débordant d'énergie. Lui et les autres Yordles vivaient ouvertement parmi les tribus du nord. Malgré sa petite taille, Gnar possédait un tempérament féroce et irrationnel. Il se sentait plus proche des grandes créatures (qu'il voyait comme d'énormes Yordles à fourrure blanche) que des mortels.\r\n\r\nGnar était un collectionneur joyeux de babioles, mais son plus grand trésor était la mâchoire d'un drüvask, son « boomerang » chéri qu'il aimait lancer et rattraper. Il se considérait comme un chasseur et parcourait les terres avec insouciance.\r\n\r\nCependant, Gnar sentit le changement arriver : le ciel s'assombrissait, le vent se faisait plus froid et les tribus mortelles commençaient à se chasser les unes les autres. Il décida d'aller chercher ses grands amis à fourrure blanche (les Transfigurés / Iceborn ou les dieux-animaux) dans les sommets enneigés, loin de ses sentiers habituels.\r\n\r\nIl arriva sur place au milieu d'une foule de mortels, juste avant qu'un monstre n'émerge d'un abîme nouvellement ouvert (probablement les Guerres de Givre ou une incursion du Néant). En voyant le monstre menacer ses nouveaux amis, Gnar ressentit une douleur étrange à la poitrine, comme la peur de perdre son boomerang, ce qui le plongea dans une colère incontrôlée.\r\n\r\nDans cette rage, Gnar se transforma. Il devint aussi grand que les « grands Yordles blancs » (sa forme Mega Gnar), arrachant un rocher de la montagne pour l'utiliser comme une boule de neige géante et se jeta sur le monstre.\r\n\r\nLe coup ne fut jamais porté. Une vague de froid élémentaire (probablement la Vraie Glace ou une magie élémentaire puissante) figea Gnar sur place, le transformant en glace. Sa colère et sa force fondirent, et il s'endormit doucement.\r\n\r\nGnar dormit pendant un temps immémorial. À son réveil, il secoua simplement le givre de ses épaules. Le monde autour de lui était recouvert de neige (le Freljord moderne). Il n'a aucun souvenir de ce qui s'est passé, de la façon dont il a été libéré, ni de la durée de son sommeil. Il est simplement ravi de se retrouver dans un monde exotique et merveilleux à explorer, son cher boomerang à ses côtés, prêt à se déchaîner dès que sa rage primitive se réveillera.",
+  "version": "16.8.1",
+  "lore": "Gnar est un yordle primitif dont les manières joyeuses peuvent soudain faire place à une colère irrationnelle. Il se transforme alors en une bête colossale portée à la destruction. Gelé dans de la glace pure pendant des millénaires, la curieuse créature s'est libérée de sa prison. Aujourd'hui, il parcourt avec enthousiasme un monde qu'il trouve exotique et merveilleux. Enchanté par le danger, Gnar lance à ses ennemis tout ce qu'il trouve, qu'il s'agisse de son boomerang en croc ou d'un bâtiment proche.",
   "tags": [
     "Fighter",
     "Tank"
   ],
   "partype": "Rage",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Gnar.png",
+    "sprite": "champion1.png",
+    "group": "champion",
     "x": 432,
     "y": 0,
-    "full": "Gnar.png",
-    "group": "champion",
-    "sprite": "champion1.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "150000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "150001",
-      "num": 1,
-      "name": "Dino Gnar",
-      "chromas": true
-    },
-    {
-      "id": "150002",
-      "num": 2,
-      "name": "Gnar gentleman",
-      "chromas": false
-    },
-    {
-      "id": "150003",
-      "num": 3,
-      "name": "Gnar des neiges",
-      "chromas": false
-    },
-    {
-      "id": "150004",
-      "num": 4,
-      "name": "Gnar El León",
-      "chromas": false
-    },
-    {
-      "id": "150013",
-      "num": 13,
-      "name": "Super Gnar intergalactique",
-      "chromas": false
-    },
-    {
-      "id": "150014",
-      "num": 14,
-      "name": "SSG Gnar",
-      "chromas": true
-    },
-    {
-      "id": "150015",
-      "num": 15,
-      "name": "Gnar astronaute",
-      "chromas": true
-    },
-    {
-      "id": "150022",
-      "num": 22,
-      "name": "Gnar sylvestre",
-      "chromas": true
-    },
-    {
-      "id": "150031",
-      "num": 31,
-      "name": "Gnar La Ilusión",
-      "chromas": true
-    },
-    {
-      "id": "150041",
-      "num": 41,
-      "name": "T1 Gnar",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "GnarQ",
       "name": "Jet de boomerang/Jet de rocher",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GnarQ.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 192,
         "y": 48,
-        "full": "GnarQ.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -113,6 +45,13 @@
           "Ralentissement",
           "Ralentissement de Jet de rocher",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ minibasedamage }} -> {{ minibasedamageNL }}",
+          "{{ megabasedamage }} -> {{ megabasedamageNL }}",
+          "{{ slowamount*100.000000 }}% -> {{ slowamountnl*100.000000 }}%",
+          "{{ megaslowamount*100.000000 }}% -> {{ megaslowamountnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -126,13 +65,13 @@
       "name": "Agitation/Beigne",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GnarW.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 240,
         "y": 48,
-        "full": "GnarW.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -144,6 +83,11 @@
           "Dégâts d'Agitation",
           "Dégâts % PV d'Agitation",
           "Dégâts de Beigne"
+        ],
+        "effect": [
+          "{{ minibasedamage }} -> {{ minibasedamageNL }}",
+          "{{ minipercenthpdamage*100.000000 }}% -> {{ minipercenthpdamagenl*100.000000 }}%",
+          "{{ megabasedamage }} -> {{ megabasedamageNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -157,13 +101,13 @@
       "name": "Rebond/Aplatissement",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GnarE.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 288,
         "y": 48,
-        "full": "GnarE.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -176,6 +120,12 @@
           "Dégâts d'Aplatissement",
           "Vitesse d'attaque supplémentaire",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ minidamage }} -> {{ minidamageNL }}",
+          "{{ megadamage }} -> {{ megadamageNL }}",
+          "{{ minibas*100.000000 }}% -> {{ minibasnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -189,13 +139,13 @@
       "name": "GNAR !",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GnarR.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 336,
         "y": 48,
-        "full": "GnarR.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -208,6 +158,12 @@
           "Durée du ralentissement/de l'étourdissement",
           "Vitesse de déplacement d'Agitation",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ rbasedamage }} -> {{ rbasedamageNL }}",
+          "{{ rccduration }} -> {{ rccdurationNL }}",
+          "{{ rhypermovementspeedpercent }}% -> {{ rhypermovementspeedpercentNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -220,13 +176,13 @@
   "passive": {
     "name": "Rage génique",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Gnar_Passive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 432,
       "y": 0,
-      "full": "Gnar_Passive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Gnar génère de la Rage quand il combat. Une fois sa jauge de Rage remplie, sa prochaine compétence le transforme en Méga Gnar, ce qui améliore ses défenses et lui octroie de nouvelles compétences."
   },
@@ -240,20 +196,20 @@
   "gender": "Male",
   "species": "Yordle",
   "title_en": "the Missing Link",
-  "lore_en": "Before the ice gave the Freljord its name, the land was filled with wonder, at least through the eyes of Gnar, a young Yordle with boundless energy. He and the other Yordles lived openly among the northern tribes. Despite his small size, Gnar possessed a fierce, irrational temper. He felt more kinship with the greater and wiser creatures (which he saw as overgrown, white-furred Yordles) than with mortals.\r\n\r\nGnar was a joyous collector of trinkets, but his greatest treasure was the jawbone of a drüvask, his cherished \"boomerang\" that he loved to throw and catch. He considered himself a hunter and roamed the lands carelessly.\r\n\r\nHowever, Gnar sensed change coming: the sky seemed darker, the winds felt colder, and the mortal tribes began hunting each other. He decided to seek out his big white furry friends (the Iceborn or animal gods) in the snow-capped peaks, much farther than he had ever wandered before.\r\n\r\nHe arrived at the scene amidst a crowd of mortals, just before a monster emerged from a newly opened abyss (likely the Fimbulwinter or a Void incursion). Seeing the monster threaten his new friends, Gnar felt an odd pain in his chest—like the fear of losing his boomerang—which plunged him into an uncontrolled rage.\r\n\r\nIn that moment of rage, Gnar transformed. He grew as large as the \"big white Yordles\" (his Mega Gnar form), plucking a boulder from the mountainside to use as a giant snowball and lunged toward the monster.\r\n\r\nThe blow never landed. A chill colder than any winter (likely True Ice or powerful elemental magic) froze Gnar in place. His strength and anger melted away, and he fell softly asleep.\r\n\r\nGnar slept for an immeasurable time. When he finally awoke, he simply shook the frost from his shoulders. The world around him was blanketed in snow (the modern Freljord). He has no memory of what happened, how he escaped, or how long he slept. He simply marvels at the exotic and wonderful world before him, his cherished boomerang by his side, ready to unleash his primitive rage whenever it awakens again.",
+  "lore_en": "Gnar is a primeval yordle whose playful antics can erupt into a toddler's outrage in an instant, transforming him into a massive beast bent on destruction. Frozen in True Ice for millennia, the curious creature broke free and now hops about a changed world he sees as exotic and wondrous. Delighted by danger, Gnar flings whatever he can at his enemies, be it his bonetooth boomerang, or a nearby building.",
   "spells_en": [
     {
       "id": "GnarQ",
       "name": "Boomerang Throw / Boulder Toss",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GnarQ.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 192,
         "y": 48,
-        "full": "GnarQ.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -267,6 +223,13 @@
           "Slow",
           "Boulder Slow Amount",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ minibasedamage }} -> {{ minibasedamageNL }}",
+          "{{ megabasedamage }} -> {{ megabasedamageNL }}",
+          "{{ slowamount*100.000000 }}% -> {{ slowamountnl*100.000000 }}%",
+          "{{ megaslowamount*100.000000 }}% -> {{ megaslowamountnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -280,13 +243,13 @@
       "name": "Hyper / Wallop",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GnarW.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 240,
         "y": 48,
-        "full": "GnarW.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -298,6 +261,11 @@
           "Hyper Damage",
           "Hyper % Health Damage",
           "Wallop Damage"
+        ],
+        "effect": [
+          "{{ minibasedamage }} -> {{ minibasedamageNL }}",
+          "{{ minipercenthpdamage*100.000000 }}% -> {{ minipercenthpdamagenl*100.000000 }}%",
+          "{{ megabasedamage }} -> {{ megabasedamageNL }}"
         ]
       },
       "resource": "No Cost",
@@ -311,13 +279,13 @@
       "name": "Hop / Crunch",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GnarE.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 288,
         "y": 48,
-        "full": "GnarE.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -330,6 +298,12 @@
           "Crunch Damage",
           "Bonus Attack Speed",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ minidamage }} -> {{ minidamageNL }}",
+          "{{ megadamage }} -> {{ megadamageNL }}",
+          "{{ minibas*100.000000 }}% -> {{ minibasnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -343,13 +317,13 @@
       "name": "GNAR!",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GnarR.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 336,
         "y": 48,
-        "full": "GnarR.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -362,6 +336,12 @@
           "Slow/Stun Duration",
           "Hyper Move Speed",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ rbasedamage }} -> {{ rbasedamageNL }}",
+          "{{ rccduration }} -> {{ rccdurationNL }}",
+          "{{ rhypermovementspeedpercent }}% -> {{ rhypermovementspeedpercentNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -374,13 +354,13 @@
   "passive_en": {
     "name": "Rage Gene",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Gnar_Passive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 432,
       "y": 0,
-      "full": "Gnar_Passive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "While in combat Gnar generates Rage. At maximum Rage his next ability will transform him into Mega Gnar, granting increased survivability and access to new spells."
   },
@@ -455,5 +435,74 @@
       "name": "T1 Gnar",
       "chromas": true
     }
-  ]
+  ],
+  "skins": [
+    {
+      "id": "150000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "150001",
+      "num": 1,
+      "name": "Dino Gnar",
+      "chromas": true
+    },
+    {
+      "id": "150002",
+      "num": 2,
+      "name": "Gnar gentleman",
+      "chromas": false
+    },
+    {
+      "id": "150003",
+      "num": 3,
+      "name": "Gnar des neiges",
+      "chromas": false
+    },
+    {
+      "id": "150004",
+      "num": 4,
+      "name": "Gnar El León",
+      "chromas": false
+    },
+    {
+      "id": "150013",
+      "num": 13,
+      "name": "Super Gnar intergalactique",
+      "chromas": false
+    },
+    {
+      "id": "150014",
+      "num": 14,
+      "name": "SSG Gnar",
+      "chromas": true
+    },
+    {
+      "id": "150015",
+      "num": 15,
+      "name": "Gnar astronaute",
+      "chromas": true
+    },
+    {
+      "id": "150022",
+      "num": 22,
+      "name": "Gnar sylvestre",
+      "chromas": true
+    },
+    {
+      "id": "150031",
+      "num": 31,
+      "name": "Gnar La Ilusión",
+      "chromas": true
+    },
+    {
+      "id": "150041",
+      "num": 41,
+      "name": "T1 Gnar",
+      "chromas": true
+    }
+  ],
+  "related_characters": []
 }

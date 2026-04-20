@@ -3,103 +3,35 @@
   "key": "147",
   "name": "Séraphine",
   "title": "Chanteuse rêveuse",
-  "version": "15.23.1",
-  "lore": "Séraphine est née à Piltover de parents zauniens qui ont tout quitté pour lui offrir un avenir meilleur. Très tôt, elle a manifesté un don magique unique : la capacité d'entendre les chants intérieurs des gens. Ce qui était d'abord une joie est devenu une cacophonie insupportable de désirs conflictuels, la forçant à s'isoler dans le silence.\n\n Le Cristal et la Conscience : Pour aider leur fille, ses parents ont acheté un éclat de cristal hextech rare pour fabriquer un appareil capable d'étouffer son audition magique. Dans le silence, Séraphine entendit alors la voix du cristal. C'était une conscience Brackern (l'espèce dont sont issus les cristaux), une voix ancienne et bienveillante qui lui apprit que nous sommes tous forgés par les voix des autres.\n\n L'Apprentissage de la Résonance : Guidée par le cristal, Séraphine apprit à ne plus craindre le bruit, mais à entrer en résonance avec lui. Elle commença à se produire en public à Piltover, rencontrant un succès fulgurant. Cependant, elle sentait qu'il manquait quelque chose à sa musique et à son message.\n\n Le Choc de Zaun : Elle descendit à Zaun, la cité de ses parents. Elle y découvrit une résilience incroyable, mais aussi une douleur profonde : la peur des barons de la chimie et la haine envers les habitants de la surface. Elle comprit que le fossé entre les deux cités était bien plus profond qu'une simple méconnaissance.\n\n L'Amplification de l'Unité : Refusant de laisser la haine s'installer, elle demanda à ses parents de transformer son appareil. Au lieu d'étouffer ses pouvoirs, ils créèrent une plateforme flottante pour les amplifier. Elle se produisit à l'Entresol, la zone frontière, réunissant des citoyens de Piltover et de Zaun dans une même chanson.\n\n Une Nouvelle Voix : Séraphine est devenue une star dans les deux cités. Son but n'est pas d'être adorée, mais d'aider chacun à trouver sa propre voix. Elle utilise son optimisme et sa magie pour que les plus démunis et les plus souffrants soient enfin entendus.",
+  "version": "16.8.1",
+  "lore": "Née à Piltover de parents zauniens, Séraphine peut entendre les âmes des autres. Le monde chante pour elle et elle chante pour le monde. Alors que ces sons l'accablaient dans sa jeunesse, elle s'en inspire aujourd'hui et transforme le chaos en symphonie. Elle chante pour les cités sœurs, afin de rappeler à leurs citoyens qu'ils ne sont pas seuls, qu'ils sont plus forts ensemble et que, pour elle, leur potentiel est infini.",
   "tags": [
     "Support",
     "Mage"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Seraphine.png",
+    "sprite": "champion3.png",
+    "group": "champion",
     "x": 336,
     "y": 96,
-    "full": "Seraphine.png",
-    "group": "champion",
-    "sprite": "champion3.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "147000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "147001",
-      "num": 1,
-      "name": "K/DA ALL OUT Séraphine Indé",
-      "chromas": false
-    },
-    {
-      "id": "147002",
-      "num": 2,
-      "name": "K/DA ALL OUT Séraphine Étoile montante",
-      "chromas": false
-    },
-    {
-      "id": "147003",
-      "num": 3,
-      "name": "K/DA ALL OUT Séraphine Superstar",
-      "chromas": false
-    },
-    {
-      "id": "147004",
-      "num": 4,
-      "name": "Séraphine phénix gracieux",
-      "chromas": true
-    },
-    {
-      "id": "147014",
-      "num": 14,
-      "name": "Séraphine du Chant de l'océan",
-      "chromas": true
-    },
-    {
-      "id": "147015",
-      "num": 15,
-      "name": "Séraphine du Chant de l'océan prestige",
-      "chromas": false
-    },
-    {
-      "id": "147024",
-      "num": 24,
-      "name": "Séraphine de la cour féérique",
-      "chromas": true
-    },
-    {
-      "id": "147034",
-      "num": 34,
-      "name": "Séraphine gardienne des étoiles",
-      "chromas": true
-    },
-    {
-      "id": "147043",
-      "num": 43,
-      "name": "Séraphine colombe de combat",
-      "chromas": true
-    },
-    {
-      "id": "147050",
-      "num": 50,
-      "name": "Séraphine ravioles adorées",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "SeraphineQ",
       "name": "Note aiguë",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SeraphineQ.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 288,
         "y": 0,
-        "full": "SeraphineQ.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -111,6 +43,11 @@
           "Dégâts initiaux",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -124,13 +61,13 @@
       "name": "Son ambiophonique",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SeraphineW.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 336,
         "y": 0,
-        "full": "SeraphineW.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -142,6 +79,11 @@
           "PV du bouclier",
           "Pourcentage soigné",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ shieldstrength }} -> {{ shieldstrengthNL }}",
+          "{{ wmissinghpbase }} -> {{ wmissinghpbaseNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -155,13 +97,13 @@
       "name": "Battement",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SeraphineE.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 384,
         "y": 0,
-        "full": "SeraphineE.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -173,6 +115,11 @@
           "Dégâts",
           "Durée de ralentissement",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ slowduration }} -> {{ slowdurationNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -186,13 +133,13 @@
       "name": "Bis",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SeraphineR.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 432,
         "y": 0,
-        "full": "SeraphineR.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -204,6 +151,11 @@
           "Dégâts initiaux",
           "Durée du charme",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ r1basedamage }} -> {{ r1basedamageNL }}",
+          "{{ rchannelduration }} -> {{ rchanneldurationNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -216,13 +168,13 @@
   "passive": {
     "name": "Présence sur scène",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Seraphine_Passive.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 336,
       "y": 96,
-      "full": "Seraphine_Passive.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Toutes les trois compétences de base, Séraphine lance deux fois la compétence de base choisie. De plus, lancer des compétences près d'alliés permet à sa prochaine attaque de base d'avoir une plus grande portée et d'infliger des dégâts magiques supplémentaires."
   },
@@ -237,20 +189,20 @@
   "gender": "Female",
   "species": "Human",
   "title_en": "the Starry-Eyed Songstress",
-  "lore_en": "Seraphine was born in Piltover to Zaunite parents who sought a better life for her. As a child, she discovered a unique magical gift: the ability to hear the private songs of people's souls. Over time, this gift became an overwhelming cacophony of conflicting desires, driving her into a state of sensory overload.\n\n The Crystal's Voice: Her parents spent their savings on a rare hextech crystal to build a device that would dampen her magical hearing. In the newfound quiet, Seraphine heard a kind, ancient voice within the crystal—a Brackern consciousness. It taught her that \"we are all forged through others' voices,\" helping her find her own.\n\n Learning to Resonate: With the crystal's guidance, she learned to manage the noise and resonate with the crowds. She became a sensation in Piltover, but she felt her message of harmony was incomplete. This led her to visit the city her parents had left behind: Zaun.\n\n The Discord of Two Cities: In Zaun, she heard songs of resilience but also a deep thrum of pain and hatred for the \"Pilties\" above. She realized that understanding alone wasn't enough to bridge the divide between the two cities.\n\n Amplifying Unity: Seraphine chose to dismantle her dampener. With her parents' help, she repurposed the crystal into an amplifying platform. She used this stage to perform in the Entresol, the space between the cities, drawing crowds from both sides to experience a song of unity for the first time.\n\n A Star for the People: Now the premier star of both Piltover and Zaun, Seraphine uses her music and hextech to amplify the voices of the struggling. She believes everyone deserves to be heard and strives to inspire others to find their own melody in the face of discord.",
+  "lore_en": "Born in Piltover to Zaunite parents, Seraphine can hear the souls of others—the world sings to her, and she sings back. Though these sounds overwhelmed her in her youth, she now draws on them for inspiration, turning the chaos into a symphony. She performs for the sister cities to remind their citizens that they're not alone, that they're stronger together, and that, in her eyes, their potential is limitless.",
   "spells_en": [
     {
       "id": "SeraphineQ",
       "name": "High Note",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SeraphineQ.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 288,
         "y": 0,
-        "full": "SeraphineQ.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -262,6 +214,11 @@
           "Initial Damage",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -275,13 +232,13 @@
       "name": "Surround Sound",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SeraphineW.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 336,
         "y": 0,
-        "full": "SeraphineW.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -293,6 +250,11 @@
           "Shield Amount",
           "Percent Healed",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ shieldstrength }} -> {{ shieldstrengthNL }}",
+          "{{ wmissinghpbase }} -> {{ wmissinghpbaseNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -306,13 +268,13 @@
       "name": "Beat Drop",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SeraphineE.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 384,
         "y": 0,
-        "full": "SeraphineE.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -324,6 +286,11 @@
           "Damage",
           "Slow Duration",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ slowduration }} -> {{ slowdurationNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -337,13 +304,13 @@
       "name": "Encore",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SeraphineR.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 432,
         "y": 0,
-        "full": "SeraphineR.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -355,6 +322,11 @@
           "Initial Damage",
           "Charm Duration",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ r1basedamage }} -> {{ r1basedamageNL }}",
+          "{{ rchannelduration }} -> {{ rchanneldurationNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -367,13 +339,13 @@
   "passive_en": {
     "name": "Stage Presence",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Seraphine_Passive.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 336,
       "y": 96,
-      "full": "Seraphine_Passive.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Every third basic spell will cast twice from Seraphine. Additionally, casting spells near allies grants her bonus magic damage and range on her next basic attack."
   },
@@ -447,6 +419,95 @@
       "num": 50,
       "name": "Dumpling Darlings Seraphine",
       "chromas": true
+    },
+    {
+      "id": "147059",
+      "num": 59,
+      "name": "Firecracker Seraphine",
+      "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "147000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "147001",
+      "num": 1,
+      "name": "K/DA ALL OUT Séraphine Indé",
+      "chromas": false
+    },
+    {
+      "id": "147002",
+      "num": 2,
+      "name": "K/DA ALL OUT Séraphine Étoile montante",
+      "chromas": false
+    },
+    {
+      "id": "147003",
+      "num": 3,
+      "name": "K/DA ALL OUT Séraphine Superstar",
+      "chromas": false
+    },
+    {
+      "id": "147004",
+      "num": 4,
+      "name": "Séraphine phénix gracieux",
+      "chromas": true
+    },
+    {
+      "id": "147014",
+      "num": 14,
+      "name": "Séraphine du Chant de l'océan",
+      "chromas": true
+    },
+    {
+      "id": "147015",
+      "num": 15,
+      "name": "Séraphine du Chant de l'océan prestige",
+      "chromas": false
+    },
+    {
+      "id": "147024",
+      "num": 24,
+      "name": "Séraphine de la cour féérique",
+      "chromas": true
+    },
+    {
+      "id": "147034",
+      "num": 34,
+      "name": "Séraphine gardienne des étoiles",
+      "chromas": true
+    },
+    {
+      "id": "147043",
+      "num": 43,
+      "name": "Séraphine colombe de combat",
+      "chromas": true
+    },
+    {
+      "id": "147050",
+      "num": 50,
+      "name": "Séraphine ravioles adorées",
+      "chromas": true
+    },
+    {
+      "id": "147059",
+      "num": 59,
+      "name": "Séraphine pyrotechnicienne",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Skarner",
+      "type": "champion",
+      "relation": "related",
+      "note_fr": "Entend son cristal (Hextech)",
+      "note_en": "Hears his crystal (Hextech)"
     }
   ]
 }

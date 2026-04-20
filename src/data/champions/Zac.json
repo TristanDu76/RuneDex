@@ -3,7 +3,7 @@
   "key": "154",
   "name": "Zac",
   "title": "Arme secrète",
-  "version": "15.23.1",
+  "version": "16.8.1",
   "lore": "Zac est le produit d'une fuite toxique qui, dégoulinant par une veine techno-chimique, se transforma en bassin dans une profonde caverne du Puisard de Zaun. En dépit de ses humbles origines, Zac a évolué pour passer du stade de dépôt primordial à celui d'être pensant qui se faufile dans les canalisations de la ville. De temps en temps, il émerge pour aider ceux qui ne s'en sortent pas seuls ou pour reconstruire les infrastructures en mauvais état de Zaun.",
   "tags": [
     "Tank",
@@ -11,71 +11,27 @@
   ],
   "partype": "Aucune",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Zac.png",
+    "sprite": "champion5.png",
+    "group": "champion",
     "x": 240,
     "y": 48,
-    "full": "Zac.png",
-    "group": "champion",
-    "sprite": "champion5.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "154000",
-      "num": 0,
-      "name": "default",
-      "chromas": true
-    },
-    {
-      "id": "154001",
-      "num": 1,
-      "name": "Zac arme spéciale",
-      "chromas": false
-    },
-    {
-      "id": "154002",
-      "num": 2,
-      "name": "Zaquatique",
-      "chromas": false
-    },
-    {
-      "id": "154006",
-      "num": 6,
-      "name": "SKT T1 Zac",
-      "chromas": false
-    },
-    {
-      "id": "154007",
-      "num": 7,
-      "name": "Proto Zac",
-      "chromas": true
-    },
-    {
-      "id": "154014",
-      "num": 14,
-      "name": "Zac empyréen",
-      "chromas": true
-    },
-    {
-      "id": "154024",
-      "num": 24,
-      "name": "Zac nachos",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "ZacQ",
       "name": "Étirements",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZacQ.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 384,
         "y": 144,
-        "full": "ZacQ.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -86,6 +42,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Coûte {{ e2 }}% des PV actuels ({{ healthcosttooltip }})",
@@ -99,13 +59,13 @@
       "name": "Matière instable",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZacW.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 432,
         "y": 144,
-        "full": "ZacW.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -116,6 +76,10 @@
         "label": [
           "Dégâts fixes",
           "Pourcentage des PV max en dégâts"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ basemaxhealthdamage*100.000000 }}% -> {{ basemaxhealthdamagenl*100.000000 }}%"
         ]
       },
       "resource": "Coûte {{ e2 }}% des PV actuels ({{ tooltiphealthcost }})",
@@ -129,13 +93,13 @@
       "name": "Fronde",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZacE.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 0,
         "y": 0,
-        "full": "ZacE.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -147,6 +111,11 @@
           "Dégâts",
           "Portée",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ e3 }} -> {{ e3NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Coûte {{ e2 }}% des PV actuels ({{ healthcosttooltip }})",
@@ -160,13 +129,13 @@
       "name": "Boing !",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZacR.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 48,
         "y": 0,
-        "full": "ZacR.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -177,6 +146,10 @@
         "label": [
           "Dégâts de base des rebonds",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamagebounce }} -> {{ basedamagebounceNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -189,13 +162,13 @@
   "passive": {
     "name": "Division cellulaire",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "ZacPassive.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 240,
       "y": 48,
-      "full": "ZacPassive.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "À chaque fois que Zac frappe un ennemi avec une compétence, il perd un bout de lui-même qu'il peut absorber pour récupérer des PV. S'il subit des dégâts mortels, Zac se divise en 4 blobs qui tentent de se recombiner. S'il reste des blobs, Zac revient à la vie avec un nombre de PV qui dépend des PV des blobs survivants. Chaque blob a un pourcentage des PV max, de l'armure et de la résistance magique de Zac. Cette compétence a un délai de récupération de 5 minutes."
   },
@@ -216,13 +189,13 @@
       "name": "Stretching Strikes",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZacQ.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 384,
         "y": 144,
-        "full": "ZacQ.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -233,6 +206,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ e2 }}% of current Health ({{ healthcosttooltip }})",
@@ -246,13 +223,13 @@
       "name": "Unstable Matter",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZacW.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 432,
         "y": 144,
-        "full": "ZacW.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -263,6 +240,10 @@
         "label": [
           "Flat Damage",
           "Maximum Health Damage"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ basemaxhealthdamage*100.000000 }}% -> {{ basemaxhealthdamagenl*100.000000 }}%"
         ]
       },
       "resource": "{{ e2 }}% of current Health ({{ tooltiphealthcost }})",
@@ -276,13 +257,13 @@
       "name": "Elastic Slingshot",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZacE.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 0,
         "y": 0,
-        "full": "ZacE.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -294,6 +275,11 @@
           "Damage",
           "Range",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ e3 }} -> {{ e3NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ e2 }}% of current Health ({{ healthcosttooltip }})",
@@ -307,13 +293,13 @@
       "name": "Let's Bounce!",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZacR.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 48,
         "y": 0,
-        "full": "ZacR.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -324,6 +310,10 @@
         "label": [
           "Base Bounce Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamagebounce }} -> {{ basedamagebounceNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -336,13 +326,13 @@
   "passive_en": {
     "name": "Cell Division",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "ZacPassive.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 240,
       "y": 48,
-      "full": "ZacPassive.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Each time Zac hits an enemy with an ability, he sheds a chunk of himself that can be reabsorbed to restore Health. Upon taking fatal damage, Zac splits into 4 bloblets that attempt to recombine. If any bloblets remain, he will revive with an amount of Health depending on the Health of the surviving bloblets. Each bloblet has a percentage of Zac's maximum Health, Armor and Magic Resistance. This ability has a 5 minute cooldown."
   },
@@ -393,6 +383,71 @@
       "num": 24,
       "name": "Zesty Dip Zac",
       "chromas": true
+    },
+    {
+      "id": "154033",
+      "num": 33,
+      "name": "Space Groove Zac",
+      "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "154000",
+      "num": 0,
+      "name": "default",
+      "chromas": true
+    },
+    {
+      "id": "154001",
+      "num": 1,
+      "name": "Zac arme spéciale",
+      "chromas": false
+    },
+    {
+      "id": "154002",
+      "num": 2,
+      "name": "Zaquatique",
+      "chromas": false
+    },
+    {
+      "id": "154006",
+      "num": 6,
+      "name": "SKT T1 Zac",
+      "chromas": false
+    },
+    {
+      "id": "154007",
+      "num": 7,
+      "name": "Proto Zac",
+      "chromas": true
+    },
+    {
+      "id": "154014",
+      "num": 14,
+      "name": "Zac empyréen",
+      "chromas": true
+    },
+    {
+      "id": "154024",
+      "num": 24,
+      "name": "Zac nachos",
+      "chromas": true
+    },
+    {
+      "id": "154033",
+      "num": 33,
+      "name": "Zac astro-groove",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Twitch",
+      "type": "champion",
+      "relation": "friend",
+      "note_fr": "Ami des égouts",
+      "note_en": "Sewer friend"
     }
   ]
 }

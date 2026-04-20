@@ -3,139 +3,35 @@
   "key": "25",
   "name": "Morgana",
   "title": "Déchue",
-  "version": "15.23.1",
-  "lore": "Morgana et sa sœur jumelle, Kayle, sont nées sous le signe du Mont Targon. Leur mère, Mihira, fut choisie comme l'Aspect de la Justice. Craignant l'évolution divine de Mihira et l'attrait du combat, leur père, Kilam, s'enfuit avec les jumelles vers un havre de paix qui deviendra le royaume de Demacia.\n\nLe Schisme et la Tragédie :\n\nEn grandissant, Morgana devint troublée par la méfiance de Demacia envers les nouveaux arrivants et les mages. Contrairement à Kayle, elle ressentait de l'amertume envers sa mère pour avoir abandonné Kilam.\n\nLeurs craintes concernant leurs pouvoirs furent confirmées lorsqu'une grande lame céleste s'écrasa, se brisant en deux. Des ailes sombres (et des chaînes) jaillirent des épaules de Morgana. Elle prit la moitié de l'arme, mais ressentit du ressentiment pour ses dons, même si elle les utilisa pour défendre son père et le peuple.\n\nKayle devint de plus en plus extrême, fondant l'ordre des judicateurs, tandis que Morgana s'efforçait de plaider la cause de ceux qui voulaient s'amender.\n\nLa tension culmina lorsque Ronas, le disciple fanatique de Kayle, tenta d'arrêter Morgana. En la défendant, Morgana le paralysa avec des flammes ténébreuses jusqu'à ce qu'il meure.\n\nL'Acte Final et l'Exil Volontaire :\n\nKayle jura de venger Ronas. Le duel céleste entre les sœurs (lumière contre ténèbres) déchira la ville, s'arrêtant seulement lorsque leur père, Kilam, fut mortellement blessé par leur propre violence.\n\nHurlant de douleur, Morgana jeta sa moitié de l'épée sur Kayle et plongea vers son père, maudissant leur héritage. Kayle s'envola vers Targon sans regarder en arrière.\n\nMorgana, pour qui ses ailes étaient un rappel constant de sa douleur, les chaîna avec du fer. Elle décida d'embrasser le monde des mortels et de vivre parmi eux.\n\nL'Héritage :\n\nLe peuple de Demacia n'a vénéré que l'image de la gloire de Kayle, oubliant Morgana, dont les accès de colère sombres et la croyance en la rédemption personnelle sont devenus le mythe de la « Voilée » (the Veiled One).\n\nElle est amère et trahie, mais elle reste terrée dans les recoins obscurs de Demacia, utilisant ses boucliers et ses chaînes de feu ténébreux pour se battre pour la vérité et la rédemption, convaincue que même les proscrits et les parias peuvent changer. Elle sait que Kayle reviendra un jour, et elle sera là pour faire face à son jugement inflexible.",
+  "version": "16.8.1",
+  "lore": "Déchirée entre ses origines célestes et mortelles, Morgana a enchaîné ses ailes pour appartenir pleinement à l'humanité et abattre sa peine et sa rancœur sur les corrompus et les malhonnêtes. Elle rejette les lois et les traditions qu'elle juge injustes. Terrée dans les recoins obscurs de Demacia, elle préfère se battre pour la vérité – quand d'autres veulent la faire taire – en employant ses boucliers et ses chaînes de feu ténébreux. Plus que tout, Morgana croit fermement que même les proscrits et les parias peuvent un jour se racheter.",
   "tags": [
     "Support",
     "Mage"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Morgana.png",
+    "sprite": "champion2.png",
+    "group": "champion",
     "x": 288,
     "y": 96,
-    "full": "Morgana.png",
-    "group": "champion",
-    "sprite": "champion2.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "25000",
-      "num": 0,
-      "name": "default",
-      "chromas": true
-    },
-    {
-      "id": "25001",
-      "num": 1,
-      "name": "Morgana exilée",
-      "chromas": false
-    },
-    {
-      "id": "25002",
-      "num": 2,
-      "name": "Morgana pécheresse",
-      "chromas": false
-    },
-    {
-      "id": "25003",
-      "num": 3,
-      "name": "Morgana la Lame sinistre",
-      "chromas": false
-    },
-    {
-      "id": "25004",
-      "num": 4,
-      "name": "Morgana des ronces",
-      "chromas": true
-    },
-    {
-      "id": "25005",
-      "num": 5,
-      "name": "Morgana mariée fantôme",
-      "chromas": false
-    },
-    {
-      "id": "25006",
-      "num": 6,
-      "name": "Morgana héroïne de guerre",
-      "chromas": false
-    },
-    {
-      "id": "25010",
-      "num": 10,
-      "name": "Morgana spectre lunaire",
-      "chromas": false
-    },
-    {
-      "id": "25011",
-      "num": 11,
-      "name": "Morgana sorcière",
-      "chromas": true
-    },
-    {
-      "id": "25017",
-      "num": 17,
-      "name": "Morgana impératrice majestueuse",
-      "chromas": true
-    },
-    {
-      "id": "25026",
-      "num": 26,
-      "name": "Morgana de l'assemblée",
-      "chromas": true
-    },
-    {
-      "id": "25039",
-      "num": 39,
-      "name": "Morgana héraut de l'aube",
-      "chromas": true
-    },
-    {
-      "id": "25041",
-      "num": 41,
-      "name": "Morgana sorcière prestige",
-      "chromas": false
-    },
-    {
-      "id": "25050",
-      "num": 50,
-      "name": "Morgana terreur des étoiles",
-      "chromas": true
-    },
-    {
-      "id": "25060",
-      "num": 60,
-      "name": "Morgana lune de neige",
-      "chromas": true
-    },
-    {
-      "id": "25070",
-      "num": 70,
-      "name": "Morgana de porcelaine",
-      "chromas": false
-    },
-    {
-      "id": "25080",
-      "num": 80,
-      "name": "Morgana fleur spirituelle",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "MorganaQ",
       "name": "Entrave sombre",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MorganaQ.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 96,
         "y": 0,
-        "full": "MorganaQ.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -147,6 +43,11 @@
           "Dégâts",
           "Durée de l'immobilisation",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ rootduration }} -> {{ rootdurationNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -160,13 +61,13 @@
       "name": "Tourment ténébreux",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MorganaW.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 144,
         "y": 0,
-        "full": "MorganaW.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -177,6 +78,10 @@
         "label": [
           "Dégâts par seconde",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -190,13 +95,13 @@
       "name": "Bouclier noir",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MorganaE.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 192,
         "y": 0,
-        "full": "MorganaE.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -207,6 +112,10 @@
         "label": [
           "PV du bouclier",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ shieldstrength }} -> {{ shieldstrengthNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -220,13 +129,13 @@
       "name": "Chaînes spirituelles",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MorganaR.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 240,
         "y": 0,
-        "full": "MorganaR.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -239,6 +148,12 @@
           "Vitesse de déplacement",
           "Durée de l'étourdissement :",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ hastepercent }}% -> {{ hastepercentNL }}%",
+          "{{ stunduration }} -> {{ stundurationNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -251,13 +166,13 @@
   "passive": {
     "name": "Siphon d'âme",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "FallenAngel_Empathize.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 288,
       "y": 96,
-      "full": "FallenAngel_Empathize.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Morgana peut drainer l'esprit de ses ennemis. Elle récupère des PV quand elle blesse des champions, des grands sbires et des monstres grands ou moyens de la jungle."
   },
@@ -273,20 +188,20 @@
   "gender": "Female",
   "species": "Aspect",
   "title_en": "the Fallen",
-  "lore_en": "Morgana and her twin sister, Kayle, were born under the light of Mount Targon. Their mother, Mihira, was chosen to embody the Aspect of Justice. Fearing Mihira's divine evolution, their father, Kilam, fled with the twins to a haven that would become the kingdom of Demacia.\n\nThe Schism and the Tragedy:\n\nAs she grew, Morgana became troubled by Demacia's distrust of mages and newcomers. Unlike Kayle, she grew bitter toward her mother for abandoning Kilam.\n\nTheir fears about their powers were confirmed when a great celestial blade fell, splitting in two. Dark wings (and chains) burst from Morgana's shoulders. She took half the weapon but resented her gifts, even though she used them to defend her father and the settlement.\n\nKayle grew more extreme, founding the judicator order, while Morgana increasingly pleaded the case for those who sought to atone for their crimes.\n\nThe tension peaked when Ronas, Kayle's zealous disciple, attempted to arrest Morgana. Defending her penitent followers, Morgana shackled him with dark fire until he died.\n\nThe Final Act and Self-Exile:\n\nKayle vowed to avenge Ronas. The celestial duel between the sisters (light versus dark) tore the city apart, stopping only when their father, Kilam, was mortally wounded by the violence they unleashed.\n\nHowling with grief, Morgana hurled her half of the sword at Kayle and plunged to the surface, cursing their inheritance. Kayle flew into the heavens without looking back.\n\nMorgana, for whom her wings were a constant reminder of her pain, bound them with iron chains. She resolved to walk the world of mortals.\n\nThe Legacy:\n\nThe people of Demacia venerate the glory of Kayle, forgetting Morgana, whose dark outbursts and belief in personal redemption became the myth of the \"Veiled One.\"\n\nShe is bitter and betrayed, but she remains hidden in Demacia's dark corners, using her shields and chains of dark fire to fight for truth and redemption, convinced that even outlaws and outcasts can redeem themselves. She knows Kayle will return one day, and she will be there to face her unforgiving judgment.",
+  "lore_en": "Conflicted between her celestial and mortal natures, Morgana bound her wings to embrace humanity, and inflicts her pain and bitterness upon the dishonest and the corrupt. She rejects laws and traditions she believes are unjust, and fights for truth from the shadows of Demacia—even as others seek to repress it—by casting shields and chains of dark fire. More than anything else, Morgana truly believes that even the banished and outcast may one day rise again.",
   "spells_en": [
     {
       "id": "MorganaQ",
       "name": "Dark Binding",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MorganaQ.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 96,
         "y": 0,
-        "full": "MorganaQ.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -298,6 +213,11 @@
           "Damage",
           "Root Duration",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ rootduration }} -> {{ rootdurationNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -311,13 +231,13 @@
       "name": "Tormented Shadow",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MorganaW.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 144,
         "y": 0,
-        "full": "MorganaW.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -328,6 +248,10 @@
         "label": [
           "Damage Per Second",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -341,13 +265,13 @@
       "name": "Black Shield",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MorganaE.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 192,
         "y": 0,
-        "full": "MorganaE.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -358,6 +282,10 @@
         "label": [
           "Shield Amount",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ shieldstrength }} -> {{ shieldstrengthNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -371,13 +299,13 @@
       "name": "Soul Shackles",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MorganaR.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 240,
         "y": 0,
-        "full": "MorganaR.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -390,6 +318,12 @@
           "Move Speed",
           "Stun Duration:",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ hastepercent }}% -> {{ hastepercentNL }}%",
+          "{{ stunduration }} -> {{ stundurationNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -402,13 +336,13 @@
   "passive_en": {
     "name": "Soul Siphon",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "FallenAngel_Empathize.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 288,
       "y": 96,
-      "full": "FallenAngel_Empathize.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Morgana drains spirit from her enemies, healing as she deals damage to champions, large minions, and medium and larger jungler monsters."
   },
@@ -519,6 +453,129 @@
       "num": 80,
       "name": "Spirit Blossom Morgana",
       "chromas": false
+    },
+    {
+      "id": "25081",
+      "num": 81,
+      "name": "Prestige Veiled Lady Morgana",
+      "chromas": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "25000",
+      "num": 0,
+      "name": "default",
+      "chromas": true
+    },
+    {
+      "id": "25001",
+      "num": 1,
+      "name": "Morgana exilée",
+      "chromas": false
+    },
+    {
+      "id": "25002",
+      "num": 2,
+      "name": "Morgana pécheresse",
+      "chromas": false
+    },
+    {
+      "id": "25003",
+      "num": 3,
+      "name": "Morgana la Lame sinistre",
+      "chromas": false
+    },
+    {
+      "id": "25004",
+      "num": 4,
+      "name": "Morgana des ronces",
+      "chromas": true
+    },
+    {
+      "id": "25005",
+      "num": 5,
+      "name": "Morgana mariée fantôme",
+      "chromas": false
+    },
+    {
+      "id": "25006",
+      "num": 6,
+      "name": "Morgana héroïne de guerre",
+      "chromas": false
+    },
+    {
+      "id": "25010",
+      "num": 10,
+      "name": "Morgana spectre lunaire",
+      "chromas": false
+    },
+    {
+      "id": "25011",
+      "num": 11,
+      "name": "Morgana sorcière",
+      "chromas": true
+    },
+    {
+      "id": "25017",
+      "num": 17,
+      "name": "Morgana impératrice majestueuse",
+      "chromas": true
+    },
+    {
+      "id": "25026",
+      "num": 26,
+      "name": "Morgana de l'assemblée",
+      "chromas": true
+    },
+    {
+      "id": "25039",
+      "num": 39,
+      "name": "Morgana héraut de l'aube",
+      "chromas": true
+    },
+    {
+      "id": "25041",
+      "num": 41,
+      "name": "Morgana sorcière prestige",
+      "chromas": false
+    },
+    {
+      "id": "25050",
+      "num": 50,
+      "name": "Morgana terreur des étoiles",
+      "chromas": true
+    },
+    {
+      "id": "25060",
+      "num": 60,
+      "name": "Morgana lune de neige",
+      "chromas": true
+    },
+    {
+      "id": "25070",
+      "num": 70,
+      "name": "Morgana de porcelaine",
+      "chromas": false
+    },
+    {
+      "id": "25080",
+      "num": 80,
+      "name": "Morgana fleur spirituelle",
+      "chromas": false
+    },
+    {
+      "id": "25081",
+      "num": 81,
+      "name": "Morgana dame voilée prestige",
+      "chromas": false
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Kayle",
+      "type": "champion",
+      "relation": "sister"
     }
   ]
 }

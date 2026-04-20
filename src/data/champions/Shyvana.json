@@ -3,22 +3,415 @@
   "key": "102",
   "name": "Shyvana",
   "title": "Demi-dragon",
-  "version": "15.23.1",
-  "lore": "Shyvana est née d'un événement extraordinaire. Après qu'un mage a volé un œuf à la dragonne élémentaire Yvva, l'œuf a éclos d'une manière imprévue, donnant naissance non pas à un dragon, mais à une petite fille humaine à la peau violette. Le mage l'éleva comme sa propre fille, la nommant d'après la légende de sa mère biologique.\n\n Le Lien de Sang : Shyvana réalisa vite qu'elle n'était pas humaine, capable de se transformer en une créature monstrueuse. Sa mère, Yvva, gardait un lien avec elle et finit par traquer sa fille à travers tout Valoran. Dans l'attaque qui s'ensuivit, le père adoptif de Shyvana fut tué, la laissant seule et traquée.\n\n La Rencontre avec le Prince : En fuyant, Shyvana trouva un guerrier blessé : le Prince Jarvan IV. Elle utilisa sa forme de demi-dragon pour le mettre à l'abri à Wrenwall, un avant-poste de Demacia. Malgré la méfiance des soldats envers son apparence, la bonté des Demaciens fut pour elle une paix inédite.\n\n Le Duel des Cieux : Lorsque Yvva attaqua Wrenwall, Shyvana voulut fuir pour protéger les innocents. Jarvan refusa et choisit de combattre à ses côtés. Shyvana bondit alors dans les airs, se transforma en dragon et engagea un combat épique contre sa mère. Elle finit par terrasser Yvva, brisant le cou de la bête sur les dalles du château.\n\n Une Place à Demacia : Jarvan honora sa bravoure et l'invita à la capitale. Avec le crâne d'Yvva comme trophée, elle devint l'une des gardiennes les plus fidèles du prince.\n\n Le Dilemme de l'Exilée : Bien qu'acceptée par Jarvan, Shyvana vit dans l'ombre de la méfiance de Demacia envers la magie. Elle se demande si son peuple d'adoption l'accepterait toujours s'il connaissait la pleine mesure de sa nature magique et sauvage.",
+  "version": "16.8.1",
+  "lore": "Shyvana est une redoutable guerrière demi-dragon. Bien qu'elle prenne souvent une apparence humanoïde, elle règne également sur les cieux en tant que dragon, réduisant ses ennemis en cendres grâce à son souffle ardent. Depuis qu'elle a sauvé la vie du prince héritier Jarvan IV, Shyvana sert au sein de sa garde royale, et s'efforce de se faire accepter malgré la méfiance des Demaciens.",
   "tags": [
     "Fighter",
-    "Mage"
+    "Tank"
   ],
   "partype": "Fureur",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Shyvana.png",
+    "sprite": "champion4.png",
+    "group": "champion",
     "x": 48,
     "y": 0,
-    "full": "Shyvana.png",
-    "group": "champion",
-    "sprite": "champion4.png"
+    "w": 48,
+    "h": 48
   },
+  "spells": [
+    {
+      "id": "ShyvanaQ",
+      "name": "Frappe enflammée",
+      "vars": [],
+      "image": {
+        "full": "ShyvanaQ.png",
+        "sprite": "spell12.png",
+        "group": "spell",
+        "x": 96,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive :</spellPassive> les attaques de Shyvana infligent <magicDamage>{{ calc_max_health_damage }} pts de dégâts magiques en fonction des PV max</magicDamage> <OnHit>%i:OnHit% à l'impact</OnHit> et réduisent le délai de récupération de cette compétence de {{ cooldown_reduction }} sec.<br /><br /><spellActive>Active</spellActive> : la prochaine attaque de Shyvana frappe la cible et la zone environnante, infligeant <physicalDamage>{{ calc_damage }} pts de dégâts physiques</physicalDamage>. Cette compétence peut être <recast>réactivée</recast> après une attaque ou un court délai dans les {{ recastduration }} sec.<br /><br /><keywordMajor>Forme de dragon</keywordMajor> : Shyvana peut <recast>réactiver</recast> la compétence une fois de plus, ce qui lui permet de mordre sa cible avec sa prochaine attaque et d'infliger <trueDamage>{{ calc_dragon_form_damage }} pts de dégâts bruts</trueDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ base_damage }} -> {{ base_damageNL }}"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "La prochaine attaque de Shyvana frappe à la fois la cible et la zone environnante. Cette compétence peut être réactivée. Lorsque Shyvana est en forme de dragon, la compétence bénéficie d'une réactivation supplémentaire, infligeant d'énormes dégâts à une cible unique.",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "ShyvanaW",
+      "name": "Égide de feu",
+      "vars": [],
+      "image": {
+        "full": "ShyvanaW.png",
+        "sprite": "spell12.png",
+        "group": "spell",
+        "x": 144,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Shyvana s'enveloppe de flammes pendant {{ duration }} sec, gagnant un <shield>bouclier de {{ calc_shield }}</shield>, augmenté de <shield>{{ calc_shield_per_nearby_champion }}</shield> PV par champion ennemi à proximité et <speed>{{ movespeed }} de vitesse de déplacement</speed>, augmentée à <speed>{{ movespeedtowardsenemies }}</speed> lorsqu'elle se dirige vers des champions ennemis.<br /><br />Lorsque l'effet prend fin, que le <shield>bouclier</shield> se brise ou lorsqu'elle <recast>réactive</recast> la compétence, la zone autour d'elle explose, infligeant <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage>.<br /><br /><keywordMajor>Forme de dragon</keywordMajor> : si la détonation touche un champion ennemi, Shyvana <healing>récupère entre {{ calc_heal_min }} et {{ calc_heal_max }} PV</healing> en fonction de ses PV manquants.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "PV du bouclier",
+          "Dégâts"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ shield }} -> {{ shieldNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "350",
+      "datavalues": {},
+      "description": "Shyvana gagne un bouclier, de la vitesse de déplacement et, après un court délai, la zone autour d'elle explose.  Lorsqu'elle est en forme de dragon, l'explosion lui octroie des soins si elle touche un champion ennemi.",
+      "cooldownBurn": "14/13.5/13/12.5/12"
+    },
+    {
+      "id": "ShyvanaE",
+      "name": "Éruption",
+      "vars": [],
+      "image": {
+        "full": "ShyvanaE.png",
+        "sprite": "spell12.png",
+        "group": "spell",
+        "x": 192,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Shyvana lance une boule de feu vers l'endroit ciblé, infligeant <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage> et <status>ralentissant les ennemis de {{ calc_slow }} pendant {{ slowduration }} sec</status>. La boule de feu explose au contact d'un ennemi ou lorsqu'elle atteint sa distance maximum.<br /><br /><keywordMajor>Forme de dragon :</keywordMajor> la boule de feu de Shyvana est plus grande et transperce les ennemis. Lorsque la boule de feu touche un champion, un grand monstre ou qu'elle atteint sa distance maximum, elle déclenche une impulsion de feu qui inflige <magicDamage>{{ calc_dragon_damage }} pts de dégâts magiques</magicDamage> et <status>ralentit les ennemis de {{ calc_slow_dragon }} pendant {{ slowduration }} sec</status>. La boule de feu laisse une traînée derrière elle pendant {{ groundlingerduration }} sec, infligeant <magicDamage>{{ damagepersecond }} pts de dégâts magiques par seconde</magicDamage>. {{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Pas de coût",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts",
+          "Ralentissement"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ slowamount*100.000000 }}% -> {{ slowamountnl*100.000000 }}%"
+        ]
+      },
+      "resource": "Pas de coût",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Shyvana lance une boule de feu qui explose en touchant un grand ennemi et le ralentit. En forme de dragon, la boule de feu traverse et explose au contact des grands ennemis, laissant derrière elle une traînée de feu.",
+      "cooldownBurn": "12/11.5/11/10.5/10"
+    },
+    {
+      "id": "ShyvanaR",
+      "name": "Vol du dragon",
+      "vars": [],
+      "image": {
+        "full": "ShyvanaR.png",
+        "sprite": "spell12.png",
+        "group": "spell",
+        "x": 240,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellPassive>Passive</spellPassive> : Shyvana génère <keywordMajor>{{ fury_generation }} de fureur</keywordMajor> en frappant des ennemis avec des attaques et des compétences. Elle en génère {{ tt_fury_mult }} de plus lorsqu'elle est en <keywordMajor>forme de dragon</keywordMajor>, mais elle en génère {{ tt_fury_aoe_penalty }} de moins lorsqu'elle frappe dans une zone où se trouvent des non-champions.<br /><br /><spellActive>Active</spellActive> : Shyvana se transforme en <keywordMajor>dragon</keywordMajor>, devient <attention>inarrêtable</attention> et s'envole vers l'emplacement ciblé en crachant du feu sur les ennemis en dessous, infligeant <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage> et les faisant <status>fuir pendant {{ fearduration }} sec</status>.<br /><br />Lorsque Shyvana est en forme de dragon, ses compétences sont améliorées, elle gagne <scaleHealth>{{ calc_bonus_health }} PV bonus</scaleHealth>, grandit et gagne de la portée d'attaque. Shyvana perd progressivement de la <keywordMajor>fureur</keywordMajor> et sa transformation prend fin lorsqu'elle n'a plus de <keywordMajor>fureur</keywordMajor>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Nécessite 100 de fureur.",
+      "leveltip": {
+        "label": [
+          "Génération de fureur par seconde",
+          "Dégâts",
+          "PV supplémentaires",
+          "Taille de la compétence",
+          "Portée d'attaque"
+        ],
+        "effect": [
+          "{{ furygain }} -> {{ furygainNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ bonushealth }} -> {{ bonushealthNL }}",
+          "{{ sizescaling*100.000000 }}% -> {{ sizescalingnl*100.000000 }}%",
+          "{{ bonusattackrange }} -> {{ bonusattackrangeNL }}"
+        ]
+      },
+      "resource": "Nécessite 100 de fureur.",
+      "rangeBurn": "1050",
+      "datavalues": {},
+      "description": "Shyvana se transforme en dragon et bondit en avant, faisant fuir les ennemis sur son passage. Sous forme de dragon, elle devient plus grande et ses compétences de base sont renforcées.",
+      "cooldownBurn": "0"
+    }
+  ],
+  "passive": {
+    "name": "Armure d'écailles",
+    "image": {
+      "full": "Shyvana_Passive.Shyvana_Rework.png",
+      "sprite": "passive4.png",
+      "group": "passive",
+      "x": 48,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "description": "Les éliminations de champions ennemis, de grands sbires et de grands monstres confèrent à Shyvana des effets Armure d'écailles, améliorant ses résistances."
+  },
+  "created_at": "2025-11-26T15:13:35.01772+00:00",
+  "factions": [
+    "demacia"
+  ],
+  "custom_tags": [
+    "demi-dragon"
+  ],
+  "gender": "Female",
+  "species": "Dragon",
+  "title_en": "the Half-Dragon",
+  "lore_en": "Shyvana is a fearsome half-dragon warrior. Though she often appears humanoid, she also rules the skies as a dragon, incinerating her foes with fiery breath. Having saved the life of the crown prince Jarvan IV, Shyvana now serves uneasily in his royal guard, struggling to find acceptance among the suspicious people of Demacia.",
+  "spells_en": [
+    {
+      "id": "ShyvanaQ",
+      "name": "Emberstrike",
+      "vars": [],
+      "image": {
+        "full": "ShyvanaQ.png",
+        "sprite": "spell12.png",
+        "group": "spell",
+        "x": 96,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "<spellPassive>Passive:</spellPassive> Shyvana's Attacks deal <magicDamage>{{ calc_max_health_damage }} max Health magic damage</magicDamage> <OnHit>%i:OnHit% On-Hit</OnHit> and reduce this Ability's Cooldown by {{ cooldown_reduction }} seconds.<br /><br /><spellActive>Active:</spellActive> Shyvana's next Attack strikes the target and the surrounding area dealing <physicalDamage>{{ calc_damage }} physical damage</physicalDamage>. This Ability may be <recast>Recast</recast> after an Attack or short delay within the next {{ recastduration }} seconds.<br /><br /><keywordMajor>Dragon Form:</keywordMajor> Shyvana gains an additional <recast>Recast</recast>, causing her to bite the target of her next Attack dealing <trueDamage>{{ calc_dragon_form_damage }} true damage</trueDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ base_damage }} -> {{ base_damageNL }}"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "25000",
+      "datavalues": {},
+      "description": "Shyvana's next attack strikes both the target and the surrounding area. This Ability can be recast. While in Dragon Form, it gains an additional recast, dealing massive damage to a single target.",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "ShyvanaW",
+      "name": "Inferno Aegis",
+      "vars": [],
+      "image": {
+        "full": "ShyvanaW.png",
+        "sprite": "spell12.png",
+        "group": "spell",
+        "x": 144,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Shyvana wraps herself in flames for {{ duration }} seconds, gaining <shield>{{ calc_shield }} Shield</shield>, increased by <shield>{{ calc_shield_per_nearby_champion }}</shield> per nearby enemy champion and <speed>{{ movespeed }} Move Speed</speed>, increased to <speed>{{ movespeedtowardsenemies }}</speed> when moving towards enemy champions.<br /><br />When the effect ends, the <shield>Shield</shield> is broken, or upon <recast>Recast</recast> the area around her detonates, dealing <magicDamage>{{ damage }} magic damage</magicDamage>.<br /><br /><keywordMajor>Dragon Form:</keywordMajor> If the detonation hits an enemy champion Shyvana <healing>restores from {{ calc_heal_min }} to {{ calc_heal_max }} Health</healing> based on her missing Health.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Shield Amount",
+          "Damage"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ shield }} -> {{ shieldNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "350",
+      "datavalues": {},
+      "description": "Shyvana gains a shield, movement speed, and after a short delay, the area around her detonates.  While in Dragon Form, the explosion will heal her if it strikes an enemy champion.",
+      "cooldownBurn": "14/13.5/13/12.5/12"
+    },
+    {
+      "id": "ShyvanaE",
+      "name": "Molten Burst",
+      "vars": [],
+      "image": {
+        "full": "ShyvanaE.png",
+        "sprite": "spell12.png",
+        "group": "spell",
+        "x": 192,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Shyvana launches a fireball at the target location dealing <magicDamage>{{ damage }} magic damage</magicDamage> and <status>Slowing by {{ calc_slow }} for {{ slowduration }} seconds</status>. It explodes upon striking an enemy or reaching its terminus.<br /><br /><keywordMajor>Dragon Form:</keywordMajor> Shyvana's fireball is larger and pierces through enemies. Upon striking a champion, large monster, or reaching its terminus it triggers a pulse of fire that deals <magicDamage>{{ calc_dragon_damage }} magic damage</magicDamage> and <status>Slows by {{ calc_slow_dragon }} for {{ slowduration }} seconds</status>. The fireball leaves behind a trail for {{ groundlingerduration }} seconds that deals <magicDamage>{{ damagepersecond }} magic damage per second</magicDamage>. {{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "No Cost",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage",
+          "Slow"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ slowamount*100.000000 }}% -> {{ slowamountnl*100.000000 }}%"
+        ]
+      },
+      "resource": "No Cost",
+      "rangeBurn": "800",
+      "datavalues": {},
+      "description": "Shyvana launches a fireball that explodes upon striking a large target and slows them. In Dragon Form, it passes through and explodes upon striking large enemies, leaving behind a trail of fire.",
+      "cooldownBurn": "12/11.5/11/10.5/10"
+    },
+    {
+      "id": "ShyvanaR",
+      "name": "Dragon's Descent",
+      "vars": [],
+      "image": {
+        "full": "ShyvanaR.png",
+        "sprite": "spell12.png",
+        "group": "spell",
+        "x": 240,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "<spellPassive>Passive</spellPassive>: Shyvana generates <keywordMajor>{{ fury_generation }} Dragon Fury</keywordMajor> by striking enemies with Attacks and Abilities, increased by {{ tt_fury_mult }} while in <keywordMajor>Dragon Form</keywordMajor>, and reduced {{ tt_fury_aoe_penalty }} by when striking in an area against non-champions.<br /><br /><spellActive>Active</spellActive>: Shyvana transforms into her <keywordMajor>Dragon Form</keywordMajor>, becoming <attention>Unstoppable</attention>, and flying to the target location breathing fire on enemies below dealing <magicDamage>{{ damage }} magic damage</magicDamage> and causing them <status>Flee for {{ fearduration }} seconds</status>.<br /><br />While transformed, Shyvana's basic Abilities are upgraded, she gains <scaleHealth>{{ calc_bonus_health }} bonus Health</scaleHealth>, size, and Attack Range. Shyvana loses <keywordMajor>Dragon Fury</keywordMajor> over time and her transformation ends when she has no <keywordMajor>Dragon Fury</keywordMajor> remaining.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "0",
+      "costType": "Requires 100 Dragon Fury",
+      "leveltip": {
+        "label": [
+          "Dragon Fury Generation per Second",
+          "Damage",
+          "Bonus Health",
+          "Ability Size",
+          "Attack Range"
+        ],
+        "effect": [
+          "{{ furygain }} -> {{ furygainNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ bonushealth }} -> {{ bonushealthNL }}",
+          "{{ sizescaling*100.000000 }}% -> {{ sizescalingnl*100.000000 }}%",
+          "{{ bonusattackrange }} -> {{ bonusattackrangeNL }}"
+        ]
+      },
+      "resource": "Requires 100 Dragon Fury",
+      "rangeBurn": "1050",
+      "datavalues": {},
+      "description": "Shyvana transforms into a Dragon and leaps forward causing enemies along her path to flee. While in Dragon form she becomes larger and her basic abilities are empowered.",
+      "cooldownBurn": "0"
+    }
+  ],
+  "passive_en": {
+    "name": "Scalemail",
+    "image": {
+      "full": "Shyvana_Passive.Shyvana_Rework.png",
+      "sprite": "passive4.png",
+      "group": "passive",
+      "x": 48,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "description": "Takedowns on enemy champions, large minions, and large monsters grant Shyvana Scalemail stacks, improving her defenses."
+  },
+  "partype_en": "Fury",
+  "lanes": [
+    "Jungle"
+  ],
+  "skins_en": [
+    {
+      "id": "102000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "102001",
+      "num": 1,
+      "name": "Shyvana Ironscale",
+      "chromas": false
+    },
+    {
+      "id": "102002",
+      "num": 2,
+      "name": "Boneclaw Shyvana",
+      "chromas": false
+    },
+    {
+      "id": "102003",
+      "num": 3,
+      "name": "Darkflame Shyvana",
+      "chromas": false
+    },
+    {
+      "id": "102004",
+      "num": 4,
+      "name": "Ice Drake Shyvana",
+      "chromas": false
+    },
+    {
+      "id": "102005",
+      "num": 5,
+      "name": "Worlds 2014 Shyvana",
+      "chromas": true
+    },
+    {
+      "id": "102006",
+      "num": 6,
+      "name": "Super Galaxy Shyvana",
+      "chromas": false
+    },
+    {
+      "id": "102008",
+      "num": 8,
+      "name": "Ruined Shyvana",
+      "chromas": true
+    },
+    {
+      "id": "102017",
+      "num": 17,
+      "name": "Immortal Journey Shyvana",
+      "chromas": true
+    }
+  ],
   "skins": [
     {
       "id": "102000",
@@ -75,351 +468,13 @@
       "chromas": true
     }
   ],
-  "spells": [
+  "related_characters": [
     {
-      "id": "ShyvanaDoubleAttack",
-      "name": "Morsure double",
-      "vars": [],
-      "image": {
-        "h": 48,
-        "w": 48,
-        "x": 96,
-        "y": 96,
-        "full": "ShyvanaDoubleAttack.png",
-        "group": "spell",
-        "sprite": "spell12.png"
-      },
-      "maxammo": "-1",
-      "maxrank": 5,
-      "tooltip": "La prochaine attaque de Shyvana frappe deux fois, infligeant <physicalDamage>{{ firsthitdamagecalc }}</physicalDamage> puis <physicalDamage>{{ secondhitdamagecalc }} pts de dégâts physiques</physicalDamage>. Ses deux prochaines attaques gagnent <speed>+{{ bonusas }}% de vitesse d'attaque</speed>.<br /><br />Les attaques réduisent le délai de récupération de cette compétence de {{ cdreductiononhit }} sec.<br /><br /><keywordMajor>Forme de dragon :</keywordMajor> les attaques renforcées frappent toutes les unités devant Shyvana.<br /><br /><rules>Cette compétence déclenche les effets de sort quand elle inflige des dégâts.</rules>{{ spellmodifierdescriptionappend }}",
-      "costBurn": "0",
-      "costType": "Pas de coût",
-      "leveltip": {
-        "label": [
-          "Dégâts supplémentaires",
-          "Délai de récupération",
-          "Vitesse d'attaque"
-        ]
-      },
-      "resource": "Pas de coût",
-      "rangeBurn": "650",
-      "datavalues": {},
-      "description": "Shyvana frappe deux fois à sa prochaine attaque et gagne un bonus en vitesse d'attaque pour ses prochaines attaques. Les attaques de base réduisent le délai de récupération de Morsure double de 0.5 sec.<br><br><font color='#FF3300'>Forme de dragon : </font>Morsure double blesse toutes les unités devant Shyvana.",
-      "cooldownBurn": "8/7.5/7/6.5/6"
-    },
-    {
-      "id": "ShyvanaImmolationAura",
-      "name": "Combustion",
-      "vars": [],
-      "image": {
-        "h": 48,
-        "w": 48,
-        "x": 144,
-        "y": 96,
-        "full": "ShyvanaImmolationAura.png",
-        "group": "spell",
-        "sprite": "spell12.png"
-      },
-      "maxammo": "-1",
-      "maxrank": 5,
-      "tooltip": "Shyvana s'entoure d'une tempête de feu, gagnant <speed>+{{ finalmsperc }} de vitesse de déplacement</speed> (ce bonus diminue sur la durée) et infligeant <magicDamage>{{ damagepertickcalc }} pts de dégâts magiques par seconde</magicDamage> pendant {{ baseduration }} sec. <br /><br />La tempête de feu permet également aux attaques de Shyvana d'infliger <magicDamage>{{ damageonhitcalc }} pts de dégâts magiques</magicDamage> supplémentaires aux ennemis proches et de prolonger la durée de cette compétence de {{ bonusdurationonhit }} sec.<br /><br /><keywordMajor>Forme de dragon :</keywordMajor> la taille de la tempête de feu est augmentée.{{ spellmodifierdescriptionappend }}",
-      "costBurn": "0",
-      "costType": "Pas de coût",
-      "leveltip": {
-        "label": [
-          "Dégâts (halo)",
-          "Dégâts (à l'impact)",
-          "Vitesse de déplacement"
-        ]
-      },
-      "resource": "Pas de coût",
-      "rangeBurn": "325",
-      "datavalues": {},
-      "description": "Shyvana s'enveloppe de feu, infligeant des dégâts magiques chaque seconde aux ennemis proches et se déplaçant plus vite pendant 3 sec. Tant que dure Combustion, les attaques de base de Shyvana infligent de nouveau une partie de ces dégâts. Le bonus de vitesse de déplacement diminue progressivement. Les attaques de base prolongent la durée de Combustion. <br><br><font color='#FF3300'>Forme de dragon : </font>la taille de Combustion augmente.",
-      "cooldownBurn": "12"
-    },
-    {
-      "id": "ShyvanaFireball",
-      "name": "Souffle de flammes",
-      "vars": [],
-      "image": {
-        "h": 48,
-        "w": 48,
-        "x": 192,
-        "y": 96,
-        "full": "ShyvanaFireball.png",
-        "group": "spell",
-        "sprite": "spell12.png"
-      },
-      "maxammo": "-1",
-      "maxrank": 5,
-      "tooltip": "Shyvana lance une boule de feu qui inflige <magicDamage>{{ damagecalc }} pts de dégâts magiques</magicDamage> et applique une marque pendant {{ markduration }} sec. La boule de feu s'arrête au premier champion ennemi touché.<br /><br />Les attaques de Shyvana contre les cibles marquées infligent <magicDamage>{{ percenthpdamageonhit }}% des PV max en dégâts magiques</magicDamage> supplémentaires.<br /><br /><keywordMajor>Forme de dragon :</keywordMajor> la boule de feu explose en atteignant une cible, infligeant <magicDamage>{{ dragonexplosioncalc }} pts de dégâts magiques</magicDamage> supplémentaires et brûlant le sol. Le sol brûlé inflige <magicDamage>{{ dragondamagetotalcalc }} pts de dégâts magiques</magicDamage> en 4 sec.{{ spellmodifierdescriptionappend }}",
-      "costBurn": "0",
-      "costType": "Pas de coût",
-      "leveltip": {
-        "label": [
-          "Dégâts",
-          "Délai de récupération"
-        ]
-      },
-      "resource": "Pas de coût",
-      "rangeBurn": "925",
-      "datavalues": {},
-      "description": "Shyvana lance une boule de feu qui blesse tous les ennemis touchés et laisse des cendres sur les cibles, les marquant pendant 5 sec. À l'impact, les attaques de base de Shyvana contre une cible marquée infligent des dégâts équivalents à un pourcentage des PV max de la cible. <br><br><font color='#FF3300'>Forme de dragon : </font>Souffle de flammes explose à l'impact ou à l'endroit ciblé, infligeant des dégâts supplémentaires et brûlant le sol pendant un court instant.",
-      "cooldownBurn": "12/11/10/9/8"
-    },
-    {
-      "id": "ShyvanaTransformCast",
-      "name": "Vol du dragon",
-      "vars": [],
-      "image": {
-        "h": 48,
-        "w": 48,
-        "x": 240,
-        "y": 96,
-        "full": "ShyvanaTransformCast.png",
-        "group": "spell",
-        "sprite": "spell12.png"
-      },
-      "maxammo": "-1",
-      "maxrank": 3,
-      "tooltip": "<spellPassive>Passive : </spellPassive>Shyvana génère <keywordMajor>{{ furygainpertick }} pt de Fureur</keywordMajor> par seconde, et ses attaques génèrent <keywordMajor>{{ furygainonhit }} pts de Fureur</keywordMajor> de plus.<br /><br /><spellActive>Active : </spellActive>Shyvana prend sa <keywordMajor>forme de dragon</keywordMajor>. Elle gagne <healing>+{{ bonushp }} PV max</healing> et s'envole vers l'avant, infligeant <magicDamage>{{ damagecalc }} pts de dégâts magiques</magicDamage> et <status>repoussant</status> les ennemis vers sa destination.{{ spellmodifierdescriptionappend }}",
-      "costBurn": "0",
-      "costType": " pts de Fureur par sec",
-      "leveltip": {
-        "label": [
-          "Gain de Fureur passif",
-          "PV supplémentaires",
-          "Dégâts du vol"
-        ]
-      },
-      "resource": "{{ furydrainpersecond }} pts de Fureur par sec",
-      "rangeBurn": "850",
-      "datavalues": {},
-      "description": "Shyvana se transforme en dragon et s'envole vers l'endroit ciblé. Les ennemis sur sa route subissent des dégâts et sont repoussés vers la zone cible.<br><br>Shyvana gagne passivement de la Fureur chaque seconde, plus 2 pts de Fureur par attaque de base.",
-      "cooldownBurn": "0"
-    }
-  ],
-  "passive": {
-    "name": "Fureur d'enfant de dragon",
-    "image": {
-      "h": 48,
-      "w": 48,
-      "x": 48,
-      "y": 0,
-      "full": "ShyvanaReinforcedScales.png",
-      "group": "passive",
-      "sprite": "passive4.png"
-    },
-    "description": "Shyvana inflige des dégâts supplémentaires aux dragons et augmente son armure et sa résistance magique. Plus Shyvana et ses alliés tuent de dragons, plus elle augmente son armure et sa résistance magique."
-  },
-  "created_at": "2025-11-26T15:13:35.01772+00:00",
-  "factions": [
-    "demacia"
-  ],
-  "custom_tags": [
-    "demi-dragon"
-  ],
-  "gender": "Female",
-  "species": "Dragon",
-  "title_en": "the Half-Dragon",
-  "lore_en": "Shyvana's origin is a freak of nature. After a mage stole an egg from the elemental dragon Yvva, it hatched prematurely, producing a violet-skinned humanoid girl instead of a drake. The mage raised her as his own, naming her after the dark legends of her brood-mother.\n\n The Blood Connection: Shyvana soon discovered she could shift into a monstrous half-dragon form. Her biological mother, Yvva, maintained a psychic link and eventually hunted her across Valoran. During the pursuit, Shyvana's adoptive father was killed, leaving her a nomadic exile.\n\n Saving the Prince: While hiding, Shyvana discovered a dying warrior: Prince Jarvan IV. She shifted form to carry him to safety at Wrenwall, a Demacian outpost. Though the soldiers were suspicious of her strange appearance, she found a sense of community among the people there.\n\n The Great Clash: When Yvva descended upon Wrenwall, Shyvana tried to leave to save the locals from the dragon's wrath. Jarvan refused, insisting they fight together. Shyvana leapt into the sky, transformed mid-air, and engaged her brood-mother in a brutal sky-battle. She ultimately killed Yvva, breaking her neck upon the stones.\n\n The Royal Guardian: Honoring her bravery, Jarvan offered her a place at his side in the Great City of Demacia. Bringing Yvva's skull as proof of victory, she was sworn in as one of his most trusted protectors.\n\n A Fragile Acceptance: Shyvana remains a protector of the realm, but she is acutely aware of Demacia's deep-seated hatred for magic. She often wonders if she would still be welcomed if the true extent of her magical, draconic nature were common knowledge.",
-  "spells_en": [
-    {
-      "id": "ShyvanaDoubleAttack",
-      "name": "Twin Bite",
-      "vars": [],
-      "image": {
-        "h": 48,
-        "w": 48,
-        "x": 96,
-        "y": 96,
-        "full": "ShyvanaDoubleAttack.png",
-        "group": "spell",
-        "sprite": "spell12.png"
-      },
-      "maxammo": "-1",
-      "maxrank": 5,
-      "tooltip": "Shyvana's next Attack strikes twice, dealing <physicalDamage>{{ firsthitdamagecalc }}</physicalDamage> then <physicalDamage>{{ secondhitdamagecalc }} physical damage</physicalDamage>. Her next 2 Attacks gain<speed> {{ bonusas }}% Attack Speed</speed>.<br /><br />Attacks reduce this Ability's Cooldown by {{ cdreductiononhit }} seconds.<br /><br /><keywordMajor>Dragon Form:</keywordMajor> The empowered Attacks hit all units in front of Shyvana.<br /><br /><rules>This Ability triggers spell effects upon dealing damage.</rules>{{ spellmodifierdescriptionappend }}",
-      "costBurn": "0",
-      "costType": "No Cost",
-      "leveltip": {
-        "label": [
-          "Bonus Damage",
-          "Cooldown",
-          "Attack Speed"
-        ]
-      },
-      "resource": "No Cost",
-      "rangeBurn": "650",
-      "datavalues": {},
-      "description": "Shyvana strikes twice on her next attack and grants herself Attack Speed for her next attacks. Basic attacks reduce the cooldown of Twin Bite by 0.5 seconds.<br><br><font color='#FF3300'>Dragon Form: </font>Twin Bite cleaves all units in front of Shyvana.",
-      "cooldownBurn": "8/7.5/7/6.5/6"
-    },
-    {
-      "id": "ShyvanaImmolationAura",
-      "name": "Burnout",
-      "vars": [],
-      "image": {
-        "h": 48,
-        "w": 48,
-        "x": 144,
-        "y": 96,
-        "full": "ShyvanaImmolationAura.png",
-        "group": "spell",
-        "sprite": "spell12.png"
-      },
-      "maxammo": "-1",
-      "maxrank": 5,
-      "tooltip": "Shyvana summons a flame storm around her, gaining <speed>{{ finalmsperc }} decaying Move Speed</speed> and dealing <magicDamage>{{ damagepertickcalc }} magic damage per second</magicDamage> for {{ baseduration }} seconds. <br /><br />The flame storm also causes Shyvana's Attacks to deal an additional <magicDamage>{{ damageonhitcalc }} magic damage</magicDamage> to surrounding enemies and extend this Ability's duration by {{ bonusdurationonhit }} second.<br /><br /><keywordMajor>Dragon Form:</keywordMajor> The size of the flame storm is increased.{{ spellmodifierdescriptionappend }}",
-      "costBurn": "0",
-      "costType": "No Cost",
-      "leveltip": {
-        "label": [
-          "Damage (aura)",
-          "Damage (on hit)",
-          "Move Speed"
-        ]
-      },
-      "resource": "No Cost",
-      "rangeBurn": "325",
-      "datavalues": {},
-      "description": "Shyvana surrounds herself in fire, dealing magic damage per second to nearby enemies and moving faster for 3 seconds, part of this damage is applied again when Shyvana basic attacks an enemy with Burnout active. The Move Speed reduces over the duration of the spell. Basic attacks extend the duration of Burnout. <br><br><font color='#FF3300'>Dragon Form: </font>Burnout grows in size.",
-      "cooldownBurn": "12"
-    },
-    {
-      "id": "ShyvanaFireball",
-      "name": "Flame Breath",
-      "vars": [],
-      "image": {
-        "h": 48,
-        "w": 48,
-        "x": 192,
-        "y": 96,
-        "full": "ShyvanaFireball.png",
-        "group": "spell",
-        "sprite": "spell12.png"
-      },
-      "maxammo": "-1",
-      "maxrank": 5,
-      "tooltip": "Shyvana unleashes a fireball that deals <magicDamage>{{ damagecalc }} magic damage</magicDamage> and marks for {{ markduration }} seconds. The fireball stops on the first champion hit.<br /><br />Shyvana's Attacks against marked targets deal an additional <magicDamage>{{ percenthpdamageonhit }}% max Health magic damage</magicDamage>.<br /><br /><keywordMajor>Dragon Form:</keywordMajor> The fireball explodes once it ends, dealing an additional <magicDamage>{{ dragonexplosioncalc }} magic damage</magicDamage> and scorching the earth, dealing <magicDamage>{{ dragondamagetotalcalc }} magic damage</magicDamage> over 4 seconds.{{ spellmodifierdescriptionappend }}",
-      "costBurn": "0",
-      "costType": "No Cost",
-      "leveltip": {
-        "label": [
-          "Damage",
-          "Cooldown"
-        ]
-      },
-      "resource": "No Cost",
-      "rangeBurn": "925",
-      "datavalues": {},
-      "description": "Shyvana unleashes a fireball that deals damage to all enemies it encounters and leaves cinders on the target, marking them for 5 seconds. Shyvana's basic attacks on marked targets deal a percentage of their maximum Health as damage on-hit.<br><br><font color='#FF3300'>Dragon Form: </font>Flame Breath explodes on impact or at target location, dealing bonus damage and scorching the earth for a short duration.",
-      "cooldownBurn": "12/11/10/9/8"
-    },
-    {
-      "id": "ShyvanaTransformCast",
-      "name": "Dragon's Descent",
-      "vars": [],
-      "image": {
-        "h": 48,
-        "w": 48,
-        "x": 240,
-        "y": 96,
-        "full": "ShyvanaTransformCast.png",
-        "group": "spell",
-        "sprite": "spell12.png"
-      },
-      "maxammo": "-1",
-      "maxrank": 3,
-      "tooltip": "<spellPassive>Passive: </spellPassive>Shyvana generates <keywordMajor>{{ furygainpertick }} Fury</keywordMajor> every second, and Attacks generate an extra <keywordMajor>{{ furygainonhit }} Fury</keywordMajor>.<br /><br /><spellActive>Active: </spellActive>Shyvana transforms into <keywordMajor>Dragon Form</keywordMajor>, gaining <healing>{{ bonushp }} max Health</healing> and flying forward, dealing <magicDamage>{{ damagecalc }} magic damage</magicDamage> and <status>Knocking</status> enemies toward her target location.{{ spellmodifierdescriptionappend }}",
-      "costBurn": "0",
-      "costType": " Fury a Second",
-      "leveltip": {
-        "label": [
-          "Passive Fury Gain",
-          "Bonus Health",
-          "Flight Damage"
-        ]
-      },
-      "resource": "{{ furydrainpersecond }} Fury a Second",
-      "rangeBurn": "850",
-      "datavalues": {},
-      "description": "Shyvana transforms into a dragon and takes flight to a target location. Enemies along her path take damage and are knocked toward her target location.<br><br>Shyvana passively gains Fury per second and gains 2 Fury on basic attack.",
-      "cooldownBurn": "0"
-    }
-  ],
-  "passive_en": {
-    "name": "Fury of the Dragonborn",
-    "image": {
-      "h": 48,
-      "w": 48,
-      "x": 48,
-      "y": 0,
-      "full": "ShyvanaReinforcedScales.png",
-      "group": "passive",
-      "sprite": "passive4.png"
-    },
-    "description": "Shyvana deals bonus damage to dragons and gains Armor and Magic Resistance. As Shyvana and her allies slay more dragons, she gains more bonus Armor and Magic Resistance."
-  },
-  "partype_en": "Fury",
-  "lanes": [
-    "Jungle"
-  ],
-  "skins_en": [
-    {
-      "id": "102000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "102001",
-      "num": 1,
-      "name": "Ironscale Shyvana",
-      "chromas": false
-    },
-    {
-      "id": "102002",
-      "num": 2,
-      "name": "Boneclaw Shyvana",
-      "chromas": false
-    },
-    {
-      "id": "102003",
-      "num": 3,
-      "name": "Darkflame Shyvana",
-      "chromas": false
-    },
-    {
-      "id": "102004",
-      "num": 4,
-      "name": "Ice Drake Shyvana",
-      "chromas": false
-    },
-    {
-      "id": "102005",
-      "num": 5,
-      "name": "Worlds 2014 Shyvana",
-      "chromas": true
-    },
-    {
-      "id": "102006",
-      "num": 6,
-      "name": "Super Galaxy Shyvana",
-      "chromas": false
-    },
-    {
-      "id": "102008",
-      "num": 8,
-      "name": "Ruined Shyvana",
-      "chromas": true
-    },
-    {
-      "id": "102017",
-      "num": 17,
-      "name": "Immortal Journey Shyvana",
-      "chromas": true
+      "id": "JarvanIV",
+      "type": "champion",
+      "relation": "love/crush",
+      "note_fr": "Son protecteur et sa seule ancre",
+      "note_en": "Her protector and only anchor"
     }
   ]
 }

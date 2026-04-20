@@ -3,103 +3,35 @@
   "key": "14",
   "name": "Sion",
   "title": "Colosse mort-vivant",
-  "version": "15.23.1",
-  "lore": "Sion était un chef de guerre légendaire de Noxus, le dernier d'une lignée de guerriers fiers qui juraient de ne jamais reculer. Bien que peu subtil, il était l'instrument de la puissance de l'empire jusqu'à ce que Demacia ne commence à repousser les frontières noxiennes.\n\n La Mort d'un Roi : Furieux de voir le commandant de la ville de Hvardis se replier, Sion le jeta du haut des remparts et mena la charge contre l'armée de Jarvan Ier. Seul et transpercé par des dizaines d'épées, il réussit à atteindre le roi de Demacia. Dans son dernier souffle, il l'étrangla à mains nues, mourant seulement une fois que son ennemi fut sans vie.\n\n La Résurrection Interdite : Cinquante ans plus tard, le Grand Général Boram Darkwill, cherchant à restaurer la gloire de Noxus, utilisa la magie noire de la Rose Noire pour réanimer Sion. Le héros revint à la vie, mais comme une bête incontrôlable, incapable de distinguer ses alliés de ses ennemis.\n\n L'Emprisonnement et la Folie : À cause de son instabilité, Darkwill ordonna de l'enchaîner sous sa propre statue monumentale. Dans le silence de sa tombe, privé de massacre, l'esprit de Sion sombra dans une agonie de rage et de confusion, oubliant presque tout de son ancienne vie.\n\n L'Arme de Swain : Après le coup d'État de Jericho Swain, Sion fut libéré pour punir les cités rebelles comme Hvardis. Pour Swain, Sion n'est pas un héros à honorer, mais un outil de terreur.\n\n Le Cycle de la Violence : Aujourd'hui, Sion ne vit que pour les instants où sa tombe s'ouvre. La douleur et les voix dans sa tête ne se taisent que lorsqu'il sent le sang couler. Il ne se souvient que par fragments de sa gloire passée, mais une vérité demeure : le monde tremble toujours devant lui.",
+  "version": "16.8.1",
+  "lore": "Guerrier sanguinaire d'une époque révolue, Sion était célébré comme un héros à Noxus, pour avoir étouffé un roi de Demacia de ses mains nues. Il était l'objet d'une telle dévotion qu'on lui refusa le repos éternel, en le ramenant à la vie pour continuer à servir son empire. Il massacre sans distinction alliés comme ennemis sur son chemin, prouvant à cette occasion qu'il n'a plus rien d'humain. Son armure rivetée à même la chair, Sion charge sans relâche au combat, luttant entre deux coups de sa puissante hache pour tenter de se remémorer qui il était.",
   "tags": [
     "Tank",
     "Fighter"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Sion.png",
+    "sprite": "champion4.png",
+    "group": "champion",
     "x": 144,
     "y": 0,
-    "full": "Sion.png",
-    "group": "champion",
-    "sprite": "champion4.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "14000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "14001",
-      "num": 1,
-      "name": "Sion Hextech",
-      "chromas": false
-    },
-    {
-      "id": "14002",
-      "num": 2,
-      "name": "Sion barbare",
-      "chromas": false
-    },
-    {
-      "id": "14003",
-      "num": 3,
-      "name": "Sion bûcheron",
-      "chromas": false
-    },
-    {
-      "id": "14004",
-      "num": 4,
-      "name": "Sion massacreur",
-      "chromas": false
-    },
-    {
-      "id": "14005",
-      "num": 5,
-      "name": "Mecha Sion Zéro",
-      "chromas": true
-    },
-    {
-      "id": "14014",
-      "num": 14,
-      "name": "Sion brise-monde",
-      "chromas": true
-    },
-    {
-      "id": "14022",
-      "num": 22,
-      "name": "Sion des glaces noires",
-      "chromas": true
-    },
-    {
-      "id": "14030",
-      "num": 30,
-      "name": "Sion de l'Ouest",
-      "chromas": true
-    },
-    {
-      "id": "14040",
-      "num": 40,
-      "name": "Sion paladin cosmique",
-      "chromas": true
-    },
-    {
-      "id": "14049",
-      "num": 49,
-      "name": "Sion arénaire",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "SionQ",
       "name": "Fracas meurtrier",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SionQ.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 0,
         "y": 144,
-        "full": "SionQ.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -113,6 +45,13 @@
           "Ratio de dégâts d'attaque",
           "Ratio de dégâts d'attaque",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ lowdamage }} -> {{ lowdamageNL }}",
+          "{{ highdamage }} -> {{ highdamageNL }}",
+          "{{ adratiomin*100.000000 }}% -> {{ adratiominnl*100.000000 }}%",
+          "{{ adratiomax*100.000000 }}% -> {{ adratiomaxnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -126,17 +65,17 @@
       "name": "Feu intérieur",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SionW.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 48,
         "y": 144,
-        "full": "SionW.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive</spellPassive> : Sion gagne <scaleHealth>+{{ hpperkill }} PV max</scaleHealth> chaque fois qu'il tue une unité, ou +{{ hpperchampkill }} PV max chaque fois qu'il participe à l'élimination d'un champion ou qu'il tue un grand sbire ou un grand monstre.<br /><br /><spellActive>Active</spellActive> : Sion gagne un <shield>bouclier de {{ totalshield }} PV</shield> pendant 6 sec. Après {{ e7 }} sec, si le bouclier est toujours actif, Sion peut <recast>réactiver</recast> cette compétence pour faire exploser le bouclier et infliger <magicDamage>{{ totaldamage }} plus {{ e4 }}% des PV max en dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive</spellPassive> : Sion gagne <scaleHealth>{{ hpperkill }} PV max</scaleHealth> chaque fois qu'il tue une unité, ou <scaleHealth>{{ hpperchampkill }}</scaleHealth> chaque fois qu'il participe à l'élimination d'un champion, d'un grand sbire ou d'un grand monstre.<br /><br /><spellActive>Active</spellActive> : Sion s'octroie un <shield>bouclier de {{ totalshield }} PV</shield> pendant 6 sec. Après {{ e7 }} sec, si le bouclier est toujours actif, Sion peut <recast>réactiver</recast> cette compétence pour faire exploser le bouclier et infliger <magicDamage>{{ totaldamage }} plus {{ e4 }}% des PV max en dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "65/70/75/80/85",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -146,6 +85,13 @@
           "Ratio de PV max (bouclier)",
           "Coût en mana",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ e2 }} -> {{ e2NL }}",
+          "{{ shieldpercenthealthtooltip*100.000000 }}% -> {{ shieldpercenthealthtooltipnl*100.000000 }}%",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -159,13 +105,13 @@
       "name": "Cri du tueur",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SionE.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 96,
         "y": 144,
-        "full": "SionE.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -178,6 +124,12 @@
           "Ralentissement",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ slowamount }}% -> {{ slowamountNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -191,13 +143,13 @@
       "name": "Assaut inarrêtable",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SionR.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 144,
         "y": 144,
-        "full": "SionR.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -210,6 +162,12 @@
           "Dégâts maximum",
           "Ralentissement",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ mindamage }} -> {{ mindamageNL }}",
+          "{{ maxdamage }} -> {{ maxdamageNL }}",
+          "{{ slowamount }}% -> {{ slowamountNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -222,13 +180,13 @@
   "passive": {
     "name": "Gloire posthume",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Sion_Passive1.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 144,
       "y": 0,
-      "full": "Sion_Passive1.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Après avoir été tué, Sion revient temporairement à la vie, mais ses PV diminuent rapidement. Ses attaques deviennent très rapides, soignent Sion et infligent des dégâts supplémentaires en fonction des PV max de la cible."
   },
@@ -243,20 +201,20 @@
   "gender": "Male",
   "species": "Undead",
   "title_en": "The Undead Juggernaut",
-  "lore_en": "Sion was a legendary Noxian warlord, the last of a proud warrior culture that swore never to take a backward step. Though not a strategist, his brutal effectiveness helped expand Noxus until the kingdom of Demacia began to push back.\n\n The Death of a King: Outraged by the cowardice of the Noxian commander at Hvardis, Sion threw him from the walls and led a desperate charge against King Jarvan I. Alone and impaled by a dozen blades, he reached the king. With his final breath, he crushed Jarvan's throat, dying only after the enemy king was slain.\n\n Forbidden Reanimation: Fifty years later, Grand General Boram Darkwill, desperate for power, allied with the Black Rose to resurrect Sion using forbidden blood magic. Sion returned as an unstoppable juggernaut, but he was uncontrollable, slaughtering friend and foe alike.\n\n Entombment and Decay: Because he was a liability on the battlefield, Darkwill had him bound in chains and sealed beneath his own monument. Without the scent of blood to sustain his mind, Sion languished in a state of screaming madness, his memories of his former life rotting away.\n\n Swain's Punishment: Following Jericho Swain's rise to power, Sion was unleashed once more to crush rebellions. To the new Grand General, Sion is a tool of psychological and physical warfare—a punishment for those who betray the empire.\n\n The Hunger for War: Sion now welcomes the light of day only because it means his chains are removed. The mental agony and the fog of undeath are silenced only by the heat of battle. He is a shell of a hero, a living battering ram that remembers only one thing: the world must tremble.",
+  "lore_en": "A war hero from a bygone era, Sion was revered in Noxus for choking the life out of a Demacian king with his bare hands—but, denied oblivion, he was resurrected to serve his empire even in death. His indiscriminate slaughter claimed all who stood in his way, regardless of allegiance, proving he no longer retained his former humanity. Even so, with crude armor bolted onto rotten flesh, Sion continues to charge into battle with reckless abandon, struggling to remember his true self between the swings of his mighty axe.",
   "spells_en": [
     {
       "id": "SionQ",
       "name": "Decimating Smash",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SionQ.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 0,
         "y": 144,
-        "full": "SionQ.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -270,6 +228,13 @@
           "Attack Damage Ratio",
           "Attack Damage Ratio",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ lowdamage }} -> {{ lowdamageNL }}",
+          "{{ highdamage }} -> {{ highdamageNL }}",
+          "{{ adratiomin*100.000000 }}% -> {{ adratiominnl*100.000000 }}%",
+          "{{ adratiomax*100.000000 }}% -> {{ adratiomaxnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -283,17 +248,17 @@
       "name": "Soul Furnace",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SionW.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 48,
         "y": 144,
-        "full": "SionW.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive</spellPassive>: Sion gains <scaleHealth>{{ hpperkill }} max Health</scaleHealth> when he kills a unit, or {{ hpperchampkill }} for champion takedowns, large minions and large monsters.<br /><br /><spellActive>Active</spellActive>: Sion gains <shield>{{ totalshield }} Shield</shield> for 6 seconds. After {{ e7 }} seconds if the shield still holds, Sion can <recast>Recast</recast> to detonate the shield to deal <magicDamage>{{ totaldamage }} plus {{ e4 }}% max Health magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive</spellPassive>: Sion gains <scaleHealth>{{ hpperkill }} max Health</scaleHealth> when he kills a unit, or <scaleHealth>{{ hpperchampkill }}</scaleHealth> for champion takedowns, large minions and large monsters.<br /><br /><spellActive>Active</spellActive>: Sion gains <shield>{{ totalshield }} Shield</shield> for 6 seconds. After {{ e7 }} seconds if the shield still holds, Sion can <recast>Recast</recast> to detonate the shield to deal <magicDamage>{{ totaldamage }} plus {{ e4 }}% max Health magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "65/70/75/80/85",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -303,6 +268,13 @@
           "Max Health Shield Ratio",
           "Mana Cost",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ e2 }} -> {{ e2NL }}",
+          "{{ shieldpercenthealthtooltip*100.000000 }}% -> {{ shieldpercenthealthtooltipnl*100.000000 }}%",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -316,13 +288,13 @@
       "name": "Roar of the Slayer",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SionE.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 96,
         "y": 144,
-        "full": "SionE.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -335,6 +307,12 @@
           "Slow",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ slowamount }}% -> {{ slowamountNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -348,13 +326,13 @@
       "name": "Unstoppable Onslaught",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SionR.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 144,
         "y": 144,
-        "full": "SionR.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -367,6 +345,12 @@
           "Maximum Damage",
           "Slow",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ mindamage }} -> {{ mindamageNL }}",
+          "{{ maxdamage }} -> {{ maxdamageNL }}",
+          "{{ slowamount }}% -> {{ slowamountNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -379,13 +363,13 @@
   "passive_en": {
     "name": "Glory in Death",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Sion_Passive1.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 144,
       "y": 0,
-      "full": "Sion_Passive1.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "After being killed, Sion will temporarily reanimate with rapidly decaying Health. His attacks become very rapid, heal him, and deal bonus damage based on his target's maximum Health."
   },
@@ -459,6 +443,83 @@
       "num": 49,
       "name": "Grand Reckoning Sion",
       "chromas": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "14000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "14001",
+      "num": 1,
+      "name": "Sion Hextech",
+      "chromas": false
+    },
+    {
+      "id": "14002",
+      "num": 2,
+      "name": "Sion barbare",
+      "chromas": false
+    },
+    {
+      "id": "14003",
+      "num": 3,
+      "name": "Sion bûcheron",
+      "chromas": false
+    },
+    {
+      "id": "14004",
+      "num": 4,
+      "name": "Sion massacreur",
+      "chromas": false
+    },
+    {
+      "id": "14005",
+      "num": 5,
+      "name": "Mecha Sion Zéro",
+      "chromas": true
+    },
+    {
+      "id": "14014",
+      "num": 14,
+      "name": "Sion brise-monde",
+      "chromas": true
+    },
+    {
+      "id": "14022",
+      "num": 22,
+      "name": "Sion des glaces noires",
+      "chromas": true
+    },
+    {
+      "id": "14030",
+      "num": 30,
+      "name": "Sion de l'Ouest",
+      "chromas": true
+    },
+    {
+      "id": "14040",
+      "num": 40,
+      "name": "Sion paladin cosmique",
+      "chromas": true
+    },
+    {
+      "id": "14049",
+      "num": 49,
+      "name": "Sion arénaire",
+      "chromas": false
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Swain",
+      "type": "champion",
+      "relation": "ally",
+      "note_fr": "Arme ressuscitée",
+      "note_en": "Resurrected weapon"
     }
   ]
 }

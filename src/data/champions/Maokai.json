@@ -3,103 +3,35 @@
   "key": "57",
   "name": "Maokai",
   "title": "Tréant torturé",
-  "version": "15.23.1",
-  "lore": "Maokai est un esprit de la nature né au moment de la création d'une chaîne d'îles rocheuses. Seul dans sa solitude, il chercha la vie jusqu'à ce qu'il trouve une source souterraine d'eau magique et vivifiante. Il s'en abreuva, créa et planta des centaines de jeunes pousses, transformant les rochers en forêts luxuriantes, les Îles Bénies.\n\nDes esprits de la nature et, plus tard, des humains vinrent prospérer sur cette terre. Maokai devint le gardien de l'archipel. Il faisait confiance aux humains qui respectaient le caractère sacré de la terre et leur confia même le secret de l'eau de vie, capable de guérir les blessures mortelles.\n\nL'idylle s'acheva lorsqu'une flotte arriva, menée par un roi devenu fou de chagrin, qui portait le cadavre de sa reine. Le roi baigna le corps de la reine dans les eaux de vie, ce qui la ranima en un cadavre en décomposition suppliant la mort. Le roi tenta de défaire son geste, déclenchant involontairement la terrible Ruine (Ruination).\n\nSentant le désastre s'abattre, Maokai plongea désespérément ses racines pour s'abreuver de l'eau de vie, saturant chaque fibre de son être de sa magie avant que la source ne soit totalement corrompue.\n\nAlors que la Ruine se propageait, les brumes s'assombrirent et tous les êtres vivants – plantes, esprits, animaux et humains – se tordirent en d'horribles spectres. Maokai, rempli d'une fureur impuissante, vit toute la beauté qu'il avait cultivée tomber en ruine par la main insouciante de l'homme.\n\nLa brume l'atteignit, flétrissant son corps et ses fleurs, le tordant en une masse de racines noueuses et de branches emmêlées. Mais la sève de son cœur, saturée des eaux pures de la vie, le sauva du sort de mort-vivant.\n\nAssailli par une horde de spectres, Maokai frappa les formes sans vie avec ses membres semblables à des branches, découvrant qu'il pouvait les réduire en poussière. Rempli de répulsion (il n'avait jamais tué auparavant), il fut forcé de battre en retraite.\n\nBien que tenté de fuir le cauchemar, Maokai réalisa qu'il portait le cœur de la vie des îles en lui. Il décida de rester et de se battre pour l'âme de sa patrie. Il combat avec une vengeance furieuse le mal qui ronge les Îles Obscures.\n\nIl parvient parfois à créer des havres temporaires, libres de pourriture, en brisant l'emprise de la brume sur de petits bosquets. Tant que Maokai continuera de se battre, l'espoir demeure, car les eaux non corrompues en lui sont la dernière chance de restaurer l'archipel à son ancienne beauté.",
+  "version": "16.8.1",
+  "lore": "Maokai est un immense tréant possédé par la colère, qui combat les horreurs impies des Îles obscures. Il est devenu l'incarnation de la vengeance après la destruction de ses terres par un cataclysme magique, n'échappant lui-même à l'état de mort-vivant que grâce à l'eau de la vie qui l'irrigue. Autrefois, Maokai était un paisible esprit de la nature ; aujourd'hui, il combat avec fureur le fléau mort-vivant qui accable les Îles obscures pour rendre à l'archipel son ancienne beauté.",
   "tags": [
     "Tank",
     "Support"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Maokai.png",
+    "sprite": "champion2.png",
+    "group": "champion",
     "x": 432,
     "y": 48,
-    "full": "Maokai.png",
-    "group": "champion",
-    "sprite": "champion2.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "57000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "57001",
-      "num": 1,
-      "name": "Maokai calciné",
-      "chromas": false
-    },
-    {
-      "id": "57002",
-      "num": 2,
-      "name": "Maokai totémique",
-      "chromas": false
-    },
-    {
-      "id": "57003",
-      "num": 3,
-      "name": "Maokai festif",
-      "chromas": false
-    },
-    {
-      "id": "57004",
-      "num": 4,
-      "name": "Maokai hanté",
-      "chromas": false
-    },
-    {
-      "id": "57005",
-      "num": 5,
-      "name": "Maokai gardien de but",
-      "chromas": false
-    },
-    {
-      "id": "57006",
-      "num": 6,
-      "name": "Miaoukai",
-      "chromas": true
-    },
-    {
-      "id": "57007",
-      "num": 7,
-      "name": "Maokai héros de guerre",
-      "chromas": false
-    },
-    {
-      "id": "57016",
-      "num": 16,
-      "name": "Maokai brise-monde",
-      "chromas": true
-    },
-    {
-      "id": "57024",
-      "num": 24,
-      "name": "Maokai astronaute",
-      "chromas": true
-    },
-    {
-      "id": "57033",
-      "num": 33,
-      "name": "DRX Maokai",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "MaokaiQ",
       "name": "Coup de ronces",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MaokaiQ.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 192,
         "y": 48,
-        "full": "MaokaiQ.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -112,6 +44,12 @@
           "% PV max",
           "Dégâts aux monstres",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ basepercenthealth*100.000000 }}% -> {{ basepercenthealthnl*100.000000 }}%",
+          "{{ bonusmonsterdamage }} -> {{ bonusmonsterdamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -125,13 +63,13 @@
       "name": "Croissance torturée",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MaokaiW.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 240,
         "y": 48,
-        "full": "MaokaiW.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -143,6 +81,11 @@
           "Dégâts",
           "Durée de l'immobilisation",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ e2 }} -> {{ e2NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -156,13 +99,13 @@
       "name": "Jet d'arbrisseau",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MaokaiE.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 288,
         "y": 48,
-        "full": "MaokaiE.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -175,6 +118,12 @@
           "Dégâts renforcés",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ empoweredbasedamage }} -> {{ empoweredbasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -188,13 +137,13 @@
       "name": "Emprise de la nature",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MaokaiR.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 336,
         "y": 48,
-        "full": "MaokaiR.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -206,6 +155,11 @@
           "Dégâts",
           "Vitesse de déplacement",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ movehaste*100.000000 }}% -> {{ movehastenl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -218,13 +172,13 @@
   "passive": {
     "name": "Sève magique",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Maokai_Passive.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 432,
       "y": 48,
-      "full": "Maokai_Passive.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "L'attaque de base de Maokai a un effet qui lui rend des PV et qui inflige des dégâts supplémentaires, avec un délai de récupération modéré. Chaque fois que Maokai lance une compétence ou est touché par une compétence ennemie, ce délai de récupération est réduit."
   },
@@ -239,20 +193,20 @@
   "gender": "Male",
   "species": "Spirit",
   "title_en": "the Twisted Treant",
-  "lore_en": "Maokai is a nature spirit born at the creation of a chain of rocky islands. Lonely in his solitude, he searched for life until he found an underground spring of magical, life-giving water. He drank deeply, created hundreds of saplings, and planted them across the islands, turning the rocks into lush forests—the Blessed Isles.\n\nNature spirits and, eventually, humans thrived there. Maokai became the guardian of the archipelago. He trusted the humans, who respected the land's sanctity, and even shared the secret of the healing waters.\n\nThe idyll ended when a fleet arrived, led by a grief-maddened King who carried the corpse of his Queen. The King bathed her body in the healing waters, which reanimated her as a rotting corpse begging for death. The King sought to reverse his act, unwittingly casting the terrible Ruination upon the land.\n\nSensing the disaster, Maokai desperately plunged his roots deep and drank the healing waters, saturating his being with their magic before the spring was completely corrupted.\n\nAs the Ruination spread, the mists blackened, and all living things—plants, spirits, animals, and humans—twisted into wretched shades. Maokai, filled with helpless fury, watched all the beauty he had cultivated fall to ruin at the careless hand of man.\n\nThe mist coiled around him, withering his body and flowers, contorting him into a mass of gnarled roots and tangled branches. But the heartwood, saturated with the pure waters of life, saved him from the terrible fate of undeath.\n\nAssailed by hordes of wraiths, Maokai struck the spirits with his branch-like limbs, realizing the force of his blows could shatter them to dust. Filled with revulsion (he had never killed before), he was forced to retreat.\n\nThough tempted to escape the nightmare, Maokai realized he carried the very heart of the islands' life within him. He vowed to stay and fight for his homeland's soul. He fights with furious vengeance to conquer the evil plaguing the Shadow Isles.\n\nHe sometimes manages to carve out temporary havens free from decay. As long as Maokai continues to fight, hope remains, for the uncorrupted waters within him are the last chance of restoring the archipelago to its former, joyous state.",
+  "lore_en": "Maokai is a rageful, towering treant who fights the unnatural horrors of the Shadow Isles. He was twisted into a force of vengeance after a magical cataclysm destroyed his home, surviving undeath only through the Waters of Life infused within his heartwood. Once a peaceful nature spirit, Maokai now furiously battles to banish the scourge of unlife from the Shadow Isles and restore his home to its former beauty.",
   "spells_en": [
     {
       "id": "MaokaiQ",
       "name": "Bramble Smash",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MaokaiQ.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 192,
         "y": 48,
-        "full": "MaokaiQ.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -265,6 +219,12 @@
           "Max Health %",
           "Monster Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ basepercenthealth*100.000000 }}% -> {{ basepercenthealthnl*100.000000 }}%",
+          "{{ bonusmonsterdamage }} -> {{ bonusmonsterdamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -278,13 +238,13 @@
       "name": "Twisted Advance",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MaokaiW.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 240,
         "y": 48,
-        "full": "MaokaiW.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -296,6 +256,11 @@
           "Damage",
           "Root Duration",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ e2 }} -> {{ e2NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -309,13 +274,13 @@
       "name": "Sapling Toss",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MaokaiE.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 288,
         "y": 48,
-        "full": "MaokaiE.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -328,6 +293,12 @@
           "Empowered Damage",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ empoweredbasedamage }} -> {{ empoweredbasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -341,13 +312,13 @@
       "name": "Nature's Grasp",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MaokaiR.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 336,
         "y": 48,
-        "full": "MaokaiR.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -359,6 +330,11 @@
           "Damage",
           "Move Speed",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ movehaste*100.000000 }}% -> {{ movehastenl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -371,13 +347,13 @@
   "passive_en": {
     "name": "Sap Magic",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Maokai_Passive.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 432,
       "y": 48,
-      "full": "Maokai_Passive.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Maokai's basic attack also heals him and deals additional damage on a moderate cooldown. Each time Maokai casts a spell or is struck by an enemy's spell, this cooldown is reduced."
   },
@@ -451,6 +427,87 @@
       "num": 33,
       "name": "DRX Maokai",
       "chromas": true
+    },
+    {
+      "id": "57035",
+      "num": 35,
+      "name": "Corrupted Petricite Maokai",
+      "chromas": false
     }
-  ]
+  ],
+  "skins": [
+    {
+      "id": "57000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "57001",
+      "num": 1,
+      "name": "Maokai calciné",
+      "chromas": false
+    },
+    {
+      "id": "57002",
+      "num": 2,
+      "name": "Maokai totémique",
+      "chromas": false
+    },
+    {
+      "id": "57003",
+      "num": 3,
+      "name": "Maokai festif",
+      "chromas": false
+    },
+    {
+      "id": "57004",
+      "num": 4,
+      "name": "Maokai hanté",
+      "chromas": false
+    },
+    {
+      "id": "57005",
+      "num": 5,
+      "name": "Maokai gardien de but",
+      "chromas": false
+    },
+    {
+      "id": "57006",
+      "num": 6,
+      "name": "Miaoukai",
+      "chromas": true
+    },
+    {
+      "id": "57007",
+      "num": 7,
+      "name": "Maokai héros de guerre",
+      "chromas": false
+    },
+    {
+      "id": "57016",
+      "num": 16,
+      "name": "Maokai brise-monde",
+      "chromas": true
+    },
+    {
+      "id": "57024",
+      "num": 24,
+      "name": "Maokai astronaute",
+      "chromas": true
+    },
+    {
+      "id": "57033",
+      "num": 33,
+      "name": "DRX Maokai",
+      "chromas": true
+    },
+    {
+      "id": "57035",
+      "num": 35,
+      "name": "Maokai de pétricite corrompu",
+      "chromas": false
+    }
+  ],
+  "related_characters": []
 }

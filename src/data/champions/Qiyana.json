@@ -3,96 +3,34 @@
   "key": "246",
   "name": "Qiyana",
   "title": "Impératrice des éléments",
-  "version": "15.23.1",
-  "lore": "Qiyana est la plus jeune de dix sœurs au sein de la famille régnante d'Ixaocan, une cité-état cachée dans les jungles d'Ixtal. Selon la tradition des Yun Tal, elle était destinée à n'être que la dixième dans l'ordre de succession, loin du trône.\n\n Le Prodige Précoce : Dès l'âge de sept ans, Qiyana a démontré un talent extraordinaire pour la magie élémentaire. En quelques semaines, elle maîtrisait des techniques que ses sœurs aînées peinaient à comprendre après des années d'études. Elle devint rapidement la plus grande élémentaliste de sa lignée, nourrissant un profond ressentiment envers ses sœurs qu'elle jugeait inférieures.\n\n Le Duel Fratricide : Frustrée d'être ignorée, Qiyana provoqua son aînée, Inessa, en duel rituel. Le combat fut sans appel : Qiyana en sortit indemne, tandis qu'Inessa fut mutilée et ne put plus jamais marcher. Malgré sa victoire, ses parents lui refusèrent le titre d'héritière, s'accrochant obstinément à la tradition.\n\n L'Ambition Extérieure : Qiyana commença à mépriser la politique d'isolement de ses parents. Alors que des mineurs de Piltover commençaient à grignoter les frontières d'Ixtal, elle proposa de les écraser. Ses parents refusèrent, craignant que le contact avec les \"étrangers\" ne mène à la guerre et à la maladie.\n\n Le Massacre et la Manipulation : Défiant leurs ordres, Qiyana attaqua un site minier et massacra tout le monde, sauf un homme, pour qu'il répande la terreur et son nom à Piltover. Ses parents tentèrent de l'emprisonner, mais le prestige de Qiyana était tel que les élémentalistes de la cour prirent sa défense, forçant sa libération.\n\n L'Ascension Inévitable : Qiyana a compris que sa puissance est plus forte que la tradition. Forte d'un nombre croissant d'admirateurs, elle se prépare à gravir les échelons de la succession par tous les moyens, convaincue qu'elle est la seule capable de faire d'Ixtal un empire dominant.",
+  "version": "16.8.1",
+  "lore": "Dans la ville d'Ixaocan, perdue dans la jungle, Qiyana complote pour obtenir au prix du sang le siège révéré des Yun Tal. Dernière dans l'ordre de la succession, elle affronte ceux qui sont sur son chemin avec une absolue confiance en elle et une maîtrise exceptionnelle de la magie élémentaire. La terre elle-même obéit à ses ordres et Qiyana se considère comme la plus grande élémentaliste de l'histoire d'Ixaocan. À ce titre, elle pense mériter, non une ville, mais un empire.",
   "tags": [
     "Assassin"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Qiyana.png",
+    "sprite": "champion3.png",
+    "group": "champion",
     "x": 96,
     "y": 48,
-    "full": "Qiyana.png",
-    "group": "champion",
-    "sprite": "champion3.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "246000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "246001",
-      "num": 1,
-      "name": "Qiyana boss de combat",
-      "chromas": true
-    },
-    {
-      "id": "246002",
-      "num": 2,
-      "name": "True Damage Qiyana",
-      "chromas": false
-    },
-    {
-      "id": "246010",
-      "num": 10,
-      "name": "True Damage Qiyana prestige",
-      "chromas": false
-    },
-    {
-      "id": "246011",
-      "num": 11,
-      "name": "Qiyana reine du combat",
-      "chromas": true
-    },
-    {
-      "id": "246020",
-      "num": 20,
-      "name": "Qiyana électrolame",
-      "chromas": true
-    },
-    {
-      "id": "246021",
-      "num": 21,
-      "name": "True Damage Qiyana prestige (2022)",
-      "chromas": false
-    },
-    {
-      "id": "246030",
-      "num": 30,
-      "name": "Qiyana impératrice lunaire",
-      "chromas": true
-    },
-    {
-      "id": "246040",
-      "num": 40,
-      "name": "Qiyana La Ilusión",
-      "chromas": true
-    },
-    {
-      "id": "246050",
-      "num": 50,
-      "name": "Qiyana de l'Académie du combat prestige",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "QiyanaQ",
       "name": "Courroux élémentaire/Lame d'Ixtal",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "QiyanaQ.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 288,
         "y": 96,
-        "full": "QiyanaQ.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "0",
       "maxrank": 5,
@@ -102,6 +40,9 @@
       "leveltip": {
         "label": [
           "Dégâts"
+        ],
+        "effect": [
+          "{{ vanillabase }} -> {{ vanillabaseNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -115,13 +56,13 @@
       "name": "Terraforce",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "QiyanaW.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 336,
         "y": 96,
-        "full": "QiyanaW.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "0",
       "maxrank": 5,
@@ -134,6 +75,12 @@
           "Vitesse de déplacement",
           "Vitesse d'attaque supplémentaire",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ passivems*100.000000 }}% -> {{ passivemsnl*100.000000 }}%",
+          "{{ attackspeed*100.000000 }}% -> {{ attackspeednl*100.000000 }}%",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -147,13 +94,13 @@
       "name": "Audace",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "QiyanaE.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 384,
         "y": 96,
-        "full": "QiyanaE.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "0",
       "maxrank": 5,
@@ -165,6 +112,11 @@
           "Dégâts de base",
           "Délai de récupération",
           "Coût en mana"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basecost }} -> {{ basecostNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -178,13 +130,13 @@
       "name": "Tour de force suprême",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "QiyanaR.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 432,
         "y": 96,
-        "full": "QiyanaR.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "0",
       "maxrank": 3,
@@ -195,6 +147,10 @@
         "label": [
           "Dégâts initiaux",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -207,13 +163,13 @@
   "passive": {
     "name": "Privilège royal",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Qiyana_Passive.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 96,
       "y": 48,
-      "full": "Qiyana_Passive.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "La première compétence ou attaque de base de Qiyana contre un ennemi inflige des dégâts supplémentaires."
   },
@@ -228,20 +184,20 @@
   "gender": "Female",
   "species": "Human",
   "title_en": "Empress of the Elements",
-  "lore_en": "Qiyana is the youngest of ten sisters in the ruling family of Ixaocan, a city-state hidden deep in the jungles of Ixtal. According to Yun Tal tradition, she was destined to be tenth in line for the throne, a position she found insulting.\n\n The Child Prodigy: At just seven years old, Qiyana displayed extraordinary talent for elemental magic. Within weeks, she mastered advanced techniques that her older sisters had yet to grasp after years of study. She quickly became the greatest elementalist of her kin, growing resentful of her \"inferior\" siblings.\n\n The Fratricidal Duel: Frustrated by being overlooked, Qiyana challenged her eldest sister, Inessa, to ritual combat. The contest ended in a brutal victory: Qiyana stood unscathed, while Inessa was left unable to walk. Despite her prowess, her parents refused to name her heir, strictly adhering to tradition.\n\n External Ambition: Qiyana began to despise her parents' isolationist policies. As Piltovan miners began encroaching on Ixtal's borders, she proposed driving them off. Her parents rejected the idea, fearing that contact with \"outlanders\" would bring war and disease.\n\n Massacre and Defiance: Acting against her parents' will, Qiyana raided a mining site, killing everyone but one man—ensuring he would spread word of her power back to Piltover. Her parents tried to imprison her, but the court elementalists, awed by her skill, came to her defense and secured her release.\n\n Inevitable Rule: Qiyana has realized that her power is greater than tradition. With a growing number of followers, she is determined to climb the ladder of succession by any means necessary, convinced she is the future Empress of all Ixtal.",
+  "lore_en": "In the jungle city of Ixaocan, Qiyana plots her own ruthless path to the high seat of the Yun Tal. Last in line to succeed her parents, she faces those who stand in her way with brash confidence and unprecedented mastery over elemental magic. With the land itself obeying her every command, Qiyana sees herself as the greatest elementalist in the history of Ixaocan—and by that right, deserving of not only a city, but an empire.",
   "spells_en": [
     {
       "id": "QiyanaQ",
       "name": "Elemental Wrath / Edge of Ixtal",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "QiyanaQ.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 288,
         "y": 96,
-        "full": "QiyanaQ.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "0",
       "maxrank": 5,
@@ -251,6 +207,9 @@
       "leveltip": {
         "label": [
           "Damage"
+        ],
+        "effect": [
+          "{{ vanillabase }} -> {{ vanillabaseNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -264,13 +223,13 @@
       "name": "Terrashape",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "QiyanaW.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 336,
         "y": 96,
-        "full": "QiyanaW.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "0",
       "maxrank": 5,
@@ -283,6 +242,12 @@
           "Move Speed",
           "Bonus Attack Speed",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ passivems*100.000000 }}% -> {{ passivemsnl*100.000000 }}%",
+          "{{ attackspeed*100.000000 }}% -> {{ attackspeednl*100.000000 }}%",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -296,13 +261,13 @@
       "name": "Audacity",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "QiyanaE.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 384,
         "y": 96,
-        "full": "QiyanaE.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "0",
       "maxrank": 5,
@@ -314,6 +279,11 @@
           "Base Damage",
           "Cooldown",
           "Mana Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basecost }} -> {{ basecostNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -327,13 +297,13 @@
       "name": "Supreme Display of Talent",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "QiyanaR.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 432,
         "y": 96,
-        "full": "QiyanaR.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "0",
       "maxrank": 3,
@@ -344,6 +314,10 @@
         "label": [
           "Initial Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -356,13 +330,13 @@
   "passive_en": {
     "name": "Royal Privilege",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Qiyana_Passive.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 96,
       "y": 48,
-      "full": "Qiyana_Passive.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Qiyana's first basic attack or ability against each enemy deals bonus damage."
   },
@@ -432,5 +406,68 @@
       "name": "Prestige Battle Academia Qiyana",
       "chromas": false
     }
-  ]
+  ],
+  "skins": [
+    {
+      "id": "246000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "246001",
+      "num": 1,
+      "name": "Qiyana boss de combat",
+      "chromas": true
+    },
+    {
+      "id": "246002",
+      "num": 2,
+      "name": "True Damage Qiyana",
+      "chromas": false
+    },
+    {
+      "id": "246010",
+      "num": 10,
+      "name": "True Damage Qiyana prestige",
+      "chromas": false
+    },
+    {
+      "id": "246011",
+      "num": 11,
+      "name": "Qiyana reine du combat",
+      "chromas": true
+    },
+    {
+      "id": "246020",
+      "num": 20,
+      "name": "Qiyana électrolame",
+      "chromas": true
+    },
+    {
+      "id": "246021",
+      "num": 21,
+      "name": "True Damage Qiyana prestige (2022)",
+      "chromas": false
+    },
+    {
+      "id": "246030",
+      "num": 30,
+      "name": "Qiyana impératrice lunaire",
+      "chromas": true
+    },
+    {
+      "id": "246040",
+      "num": 40,
+      "name": "Qiyana La Ilusión",
+      "chromas": true
+    },
+    {
+      "id": "246050",
+      "num": 50,
+      "name": "Qiyana de l'Académie du combat prestige",
+      "chromas": false
+    }
+  ],
+  "related_characters": []
 }

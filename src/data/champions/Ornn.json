@@ -3,66 +3,34 @@
   "key": "516",
   "name": "Ornn",
   "title": "Dieu de la forge volcanique",
-  "version": "15.23.1",
-  "lore": "Ornn est le demi-dieu de la forge et de l'artisanat du Freljord. Il valorise l'intimité, la solitude et la concentration au-dessus de tout. Il travaille dans sa forge enfouie sous un volcan endormi, l'Âtre-foyer (Hearth-Home), où il crée des outils d'une qualité inégalable (comme le bouclier légendaire de Braum).\n\nLe Peuple Perdu : Autrefois, un peuple connu sous le nom des Sangs-du-Foyer (Hearthblood) s'est rassemblé sur les pentes de son volcan. Ces architectes, brasseurs et forgerons imitaient l'exemple d'Ornn, cherchant constamment à améliorer leur art. Ornn les désapprouvait publiquement (il ne leur accordait que des froncements de sourcils ou de brefs hochements de tête), mais il appréciait secrètement leur persévérance et leur désir d'excellence.\n\nLa Catastrophe Fratricide : Cette culture fut détruite en une seule nuit lors d'une bataille dévastatrice entre Ornn et son frère, le demi-dieu Volibear, au sommet de la montagne. Le cataclysme de feu, de cendres et de foudre fut si violent que les Sangs-du-Foyer furent réduits en os et en cendres.\n\nL'Exil du Culpable : Dévasté (bien qu'il ne l'avouerait jamais), Ornn fut submergé par la culpabilité. Il avait entrevu le potentiel de la vie mortelle à travers les Sangs-du-Foyer, mais l'avait anéanti sous la colère aveugle des immortels. Il se retira dans l'isolement de sa fonderie pendant des siècles.\n\nLe Retour Imminent : Aujourd'hui, Ornn sent que le monde est au bord d'une nouvelle ère. Ses frères et sœurs (notamment Volibear) s'immiscent à nouveau dans les affaires des mortels, le Freljord est fracturé et des horreurs anciennes se cachent dans l'ombre.\n\nLe Nouveau But : Ornn sait que pendant les guerres à venir et à leur issue, le Freljord — et le reste de Runeterra — aura besoin d'un bon forgeron. Il sort de son antre pour remettre les divinités à leur place, avec son fidèle marteau ou la puissance du volcan, et pour forger ce qui est nécessaire à l'ère nouvelle.",
+  "version": "16.8.1",
+  "lore": "Ornn est le demi-dieu de la forge et de l'artisanat à Freljord. Avec comme seule compagne la solitude, il travaille dans sa forge enfouie au plus profond des cavernes de lave de l'Âtre-foyer. C'est là qu'il fond et purifie les métaux nécessaires à la création d'objets de qualité inimitable. Tandis que d'autres divinités – Volibear avant tout – s'immiscent dans les affaires des mortels, Ornn ne sort de son antre que pour remettre ces déités à leur place, avec son fidèle marteau ou les pouvoirs du volcan lui-même.",
   "tags": [
     "Tank"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Ornn.png",
+    "sprite": "champion3.png",
+    "group": "champion",
     "x": 384,
     "y": 0,
-    "full": "Ornn.png",
-    "group": "champion",
-    "sprite": "champion3.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "516000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "516001",
-      "num": 1,
-      "name": "Fulguro Ornn",
-      "chromas": false
-    },
-    {
-      "id": "516002",
-      "num": 2,
-      "name": "Ornn sylvestre",
-      "chromas": true
-    },
-    {
-      "id": "516011",
-      "num": 11,
-      "name": "Ornn astro-groove",
-      "chromas": true
-    },
-    {
-      "id": "516020",
-      "num": 20,
-      "name": "Ornn tchou-tchou",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "OrnnQ",
       "name": "Fracture magmatique",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "OrnnQ.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 0,
         "y": 48,
-        "full": "OrnnQ.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -73,6 +41,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -86,13 +58,13 @@
       "name": "Fournaise",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "OrnnW.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 48,
         "y": 48,
-        "full": "OrnnW.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -106,6 +78,13 @@
           "Dégâts maximum",
           "Coût en @AbilityResourceName@",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ maxpercenthpperticktooltip }}% -> {{ maxpercenthpperticktooltipNL }}%",
+          "{{ minimumdamagepertick*5.000000 }} -> {{ minimumdamageperticknl*5.000000 }}",
+          "{{ monsterdamagepertickcap*5.000000 }} -> {{ monsterdamagepertickcapnl*5.000000 }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -119,13 +98,13 @@
       "name": "Ruée ardente",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "OrnnE.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 96,
         "y": 48,
-        "full": "OrnnE.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -137,6 +116,11 @@
           "Dégâts de la ruée",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -150,13 +134,13 @@
       "name": "Appel du dieu de la forge",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "OrnnR.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 144,
         "y": 48,
-        "full": "OrnnR.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -168,6 +152,11 @@
           "Dégâts",
           "Ralentissement",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ rbasedamage }} -> {{ rbasedamageNL }}",
+          "{{ rslowpercentbasepremath }} -> {{ rslowpercentbasepremathNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -180,13 +169,13 @@
   "passive": {
     "name": "Forgeron ambulant",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "OrnnP.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 384,
       "y": 0,
-      "full": "OrnnP.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Ornn augmente tous ses bonus d'armure et de résistance magique.<br><br>Ornn peut dépenser des PO pour forger des objets non consommables n'importe où sur la carte.<br><br>De plus, il peut créer des chefs-d'œuvre pour ses alliés ou lui-même."
   },
@@ -201,20 +190,20 @@
   "gender": "Male",
   "species": "Spirit",
   "title_en": "The Fire below the Mountain",
-  "lore_en": "Ornn is the demi-god of the forge and craftsmanship in the Freljord. He values privacy, solitude, and focus above all. He labors in his forge beneath a dormant volcano, Hearth-Home, creating tools of inimitable quality (such as the legendary shield of Braum).\n\nThe Lost People: Once, a people known as the Hearthblood gathered on his slopes. These blacksmiths, architects, and brewmasters imitated Ornn's example, constantly striving to hone their craft. Ornn publicly disapproved (giving only curt nods or frowns), but he secretly approved of their perseverance and pursuit of excellence.\n\nThe Fratricidal Cataclysm: This culture was destroyed in a single night when Ornn battled his brother, the demigod Volibear, at the mountain's peak. The resultant storm of fire, ash, and lightning was so violent that the Hearthblood were reduced to scattered bones and cinders.\n\nThe Guilty Exile: Though he would never admit it, Ornn was devastated and wracked with guilt. He had glimpsed the potential of mortal life through the Hearthblood, only to see it lost beneath the indiscriminate wrath of the immortals. He retreated to the isolation of his foundry for an age.\n\nThe Imminent Return: Now, Ornn senses the world is on the cusp of a new era. His siblings (especially Volibear) are taking physical form again, the Freljord is fractured, and ancient horrors lurk in the shadows.\n\nThe New Purpose: Ornn knows that during the wars to come and in their aftermath, the Freljord—and the rest of Runeterra—will have need of a good blacksmith. He emerges from his lair only to put these deities in their place, with his hammer or the powers of the volcano itself, and to forge what is needed for the new era.",
+  "lore_en": "Ornn is the Freljordian spirit of forging and craftsmanship. He works in the solitude of a massive smithy, hammered out from the lava caverns beneath the volcano Hearth-Home. There he stokes bubbling cauldrons of molten rock to purify ores and fashion items of unsurpassed quality. When other deities—especially Volibear—walk the earth and meddle in mortal affairs, Ornn arises to put these impetuous beings back in their place, either with his trusty hammer or the fiery power of the mountains themselves.",
   "spells_en": [
     {
       "id": "OrnnQ",
       "name": "Volcanic Rupture",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "OrnnQ.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 0,
         "y": 48,
-        "full": "OrnnQ.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -225,6 +214,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -238,13 +231,13 @@
       "name": "Bellows Breath",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "OrnnW.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 48,
         "y": 48,
-        "full": "OrnnW.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -258,6 +251,13 @@
           "Maximum Damage",
           "@AbilityResourceName@ Cost",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ maxpercenthpperticktooltip }}% -> {{ maxpercenthpperticktooltipNL }}%",
+          "{{ minimumdamagepertick*5.000000 }} -> {{ minimumdamageperticknl*5.000000 }}",
+          "{{ monsterdamagepertickcap*5.000000 }} -> {{ monsterdamagepertickcapnl*5.000000 }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -271,13 +271,13 @@
       "name": "Searing Charge",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "OrnnE.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 96,
         "y": 48,
-        "full": "OrnnE.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -289,6 +289,11 @@
           "Dash Damage",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -302,13 +307,13 @@
       "name": "Call of the Forge God",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "OrnnR.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 144,
         "y": 48,
-        "full": "OrnnR.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -320,6 +325,11 @@
           "Damage",
           "Slow",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ rbasedamage }} -> {{ rbasedamageNL }}",
+          "{{ rslowpercentbasepremath }} -> {{ rslowpercentbasepremathNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -332,13 +342,13 @@
   "passive_en": {
     "name": "Living Forge",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "OrnnP.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 384,
       "y": 0,
-      "full": "OrnnP.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Ornn gains an additional bonus Armor and Magic Resist from all sources.<br><br>Ornn can spend gold to forge non-consumable items anywhere.<br><br>Additionally, he can create masterwork items for himself and for his allies."
   },
@@ -376,6 +386,64 @@
       "num": 20,
       "name": "Choo-Choo Ornn",
       "chromas": true
+    },
+    {
+      "id": "516029",
+      "num": 29,
+      "name": "Aegis Frame Ornn",
+      "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "516000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "516001",
+      "num": 1,
+      "name": "Fulguro Ornn",
+      "chromas": false
+    },
+    {
+      "id": "516002",
+      "num": 2,
+      "name": "Ornn sylvestre",
+      "chromas": true
+    },
+    {
+      "id": "516011",
+      "num": 11,
+      "name": "Ornn astro-groove",
+      "chromas": true
+    },
+    {
+      "id": "516020",
+      "num": 20,
+      "name": "Ornn tchou-tchou",
+      "chromas": true
+    },
+    {
+      "id": "516029",
+      "num": 29,
+      "name": "Ornn Aegis Frame",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Volibear",
+      "type": "champion",
+      "relation": "brother/rival",
+      "note_fr": "Frère et rival",
+      "note_en": "Brother and rival"
+    },
+    {
+      "id": "Anivia",
+      "type": "champion",
+      "relation": "sister/ally"
     }
   ]
 }

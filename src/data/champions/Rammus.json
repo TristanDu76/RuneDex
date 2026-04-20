@@ -3,108 +3,34 @@
   "key": "33",
   "name": "Rammus",
   "title": "Tatou blindé",
-  "version": "15.23.1",
-  "lore": "Rammus est une figure mythique de Shurima. Personne ne connaît sa véritable nature : certains y voient un Transfiguré (un dieu parmi les hommes), d'autres le dernier représentant d'une espèce antique disparue lors des Guerres Runiques, ou encore un oracle porteur de grands changements.\n\n Une Présence Millénaire : Son image apparaît sur des mosaïques de ruines antiques et des monuments datant des premiers jours de l'Ascension. Il est si respecté que des cultes entiers lui sont voués. Ses disciples imitent sa célèbre roulade lors de cérémonies annuelles à travers les villes.\n\n L'Oracle Silencieux : La légende raconte que Rammus répond à une seule question pour ceux qu'il juge dignes. Des pèlerins traversent le désert avec des offrandes (lait de chèvre, fourmis, miel) pour s'attirer ses faveurs. Souvent, ils ne trouvent que des sacs vides au réveil, signe que le \"dieu\" est passé par là.\n\n Des Faits d'Armes Inexpliqués : Rammus est connu pour son endurance miraculeuse. Il a détruit seul la forteresse \"imprenable\" de Siram en une heure, a traversé un lac immense en deux jours et a creusé des kilomètres pour anéantir une reine fourmi géante qui menaçait les fermes.\n\n Héros par Accident ? : Lors d'une invasion noxienne, Rammus a traversé le champ de bataille en roulant. En passant près d'un temple, les vibrations ont provoqué l'effondrement de l'édifice sur l'armée ennemie. Si les habitants y voient un acte de sauvetage héroïque, les sceptiques pensent qu'il protégeait simplement ses fleurs de cactus préférées ou qu'il roulait tout bêtement en dormant.\n\n Le Présage : Avec la renaissance de l'antique Shurima, les apparitions de Rammus se multiplient. Pour beaucoup, comme ce fut le cas juste avant la chute de l'empire jadis, sa présence annonce un changement d'ère majeur et peut-être des temps sombres.",
+  "version": "16.8.1",
+  "lore": "Beaucoup l'idolâtrent, certains le méprisent, mais tous restent perplexes devant l'énigmatique Rammus. Protégé par une carapace cloutée, il inspire des théories de plus en plus variées sur ses origines : demi-dieu, oracle, simple bête transformée par la magie... Quelle que soit la vérité, Rammus n'est pas très bavard et ne s'arrête pour personne tandis qu'il parcourt le désert de Shurima.",
   "tags": [
     "Tank"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Rammus.png",
+    "sprite": "champion3.png",
+    "group": "champion",
     "x": 240,
     "y": 48,
-    "full": "Rammus.png",
-    "group": "champion",
-    "sprite": "champion3.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "33000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "33001",
-      "num": 1,
-      "name": "Roi Rammus",
-      "chromas": false
-    },
-    {
-      "id": "33002",
-      "num": 2,
-      "name": "Rammus de chrome",
-      "chromas": false
-    },
-    {
-      "id": "33003",
-      "num": 3,
-      "name": "Rammus fondu",
-      "chromas": false
-    },
-    {
-      "id": "33004",
-      "num": 4,
-      "name": "Rammus de Freljord",
-      "chromas": false
-    },
-    {
-      "id": "33005",
-      "num": 5,
-      "name": "Rammus ninja",
-      "chromas": false
-    },
-    {
-      "id": "33006",
-      "num": 6,
-      "name": "Full Metal Rammus",
-      "chromas": false
-    },
-    {
-      "id": "33007",
-      "num": 7,
-      "name": "Rammus gardien des sables",
-      "chromas": false
-    },
-    {
-      "id": "33008",
-      "num": 8,
-      "name": "Rammus libéro",
-      "chromas": true
-    },
-    {
-      "id": "33016",
-      "num": 16,
-      "name": "Rammus Hextech",
-      "chromas": false
-    },
-    {
-      "id": "33017",
-      "num": 17,
-      "name": "Rammus astronaute",
-      "chromas": true
-    },
-    {
-      "id": "33026",
-      "num": 26,
-      "name": "Rammus durian",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "PowerBall",
       "name": "Démolisseur",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PowerBall.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 384,
         "y": 144,
-        "full": "PowerBall.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -116,6 +42,11 @@
           "Dégâts",
           "Ralentissement",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ qbasedamage }} -> {{ qbasedamageNL }}",
+          "{{ slowpercent }}% -> {{ slowpercentNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -129,13 +60,13 @@
       "name": "Boule défensive",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "DefensiveBallCurl.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 432,
         "y": 144,
-        "full": "DefensiveBallCurl.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -148,6 +79,12 @@
           "Bonus de résistance magique",
           "Bonus en armure",
           "Bonus en résistance magique"
+        ],
+        "effect": [
+          "{{ flatbonusarmor }} -> {{ flatbonusarmorNL }}",
+          "{{ flatbonusmr }} -> {{ flatbonusmrNL }}",
+          "{{ bonusarmorpercent*100.000000 }}% -> {{ bonusarmorpercentnl*100.000000 }}%",
+          "{{ bonusmrpercent*100.000000 }}% -> {{ bonusmrpercentnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -161,13 +98,13 @@
       "name": "Provocation frénétique",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PuncturingTaunt.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 0,
         "y": 0,
-        "full": "PuncturingTaunt.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -178,6 +115,10 @@
         "label": [
           "Durée",
           "Dégâts aux monstres"
+        ],
+        "effect": [
+          "{{ duration }} -> {{ durationNL }}",
+          "{{ monsterdamage }} -> {{ monsterdamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -191,13 +132,13 @@
       "name": "Frappe ascendante",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "Tremors2.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 48,
         "y": 0,
-        "full": "Tremors2.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -209,6 +150,11 @@
           "Dégâts",
           "Ralentissement",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ initialdamage }} -> {{ initialdamageNL }}",
+          "{{ slowamount*100.000000 }}% -> {{ slowamountnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -221,13 +167,13 @@
   "passive": {
     "name": "Carapace cloutée",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Armordillo_ScavengeArmor.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 240,
       "y": 48,
-      "full": "Armordillo_ScavengeArmor.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Rammus gagne des dégâts d'attaque bonus en fonction de son armure et de sa résistance magique."
   },
@@ -241,20 +187,20 @@
   "gender": "Male",
   "species": "Ascended",
   "title_en": "the Armordillo",
-  "lore_en": "Rammus is a mythical figure in Shurima. His true nature is a mystery: some believe he is an Ascended being, others the last of a species that predates the Rune Wars, or even a harbinger of power shifts.\n\n Ancient Evidence: His likeness appears on ancient mosaics and monuments from the early days of Ascension. He is so revered that entire cults devote themselves to him, with disciples imitating his famous roll in yearly ceremonies.\n\n The Silent Oracle: Legend says Rammus will answer a single question for those he deems worthy. Pilgrims trek through the desert with offerings (goat’s milk, ants, honey) to seek his blessing. Often, they only find their provisions mysteriously emptied overnight—a sign the \"god\" has visited.\n\n Unexplained Feats: Rammus is known for miraculous endurance. He caused the collapse of the \"impenetrable\" Fortress of Siram in less than an hour, crossed the vast Lake Imalli in two days, and dug miles deep to slay a giant ant queen threatening local farmlands.\n\n Accidental Hero: During a Noxian invasion, Rammus rolled through the fray. As he passed a temple, the vibrations caused the structure to collapse onto the invaders. While locals swear he saved them out of love for Shurima, others argue he was merely defending his favorite cactus flowers or was simply \"sleeprolling.\"\n\n The Omen: With the rise of Ancient Shurima, stories of Rammus have increased. Just as his appearances preceded the empire's fall, many now believe his presence heralds a great shift in power or darker times to come.",
+  "lore_en": "Idolized by many, dismissed by some, mystifying to all, the curious being Rammus is an enigma. Protected by a spiked shell, he inspires increasingly disparate theories on his origin wherever he goes—from demigod, to sacred oracle, to a mere beast transformed by magic. Whatever the truth may be, Rammus keeps his own counsel and stops for no one as he roams the Shuriman desert.",
   "spells_en": [
     {
       "id": "PowerBall",
       "name": "Powerball",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PowerBall.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 384,
         "y": 144,
-        "full": "PowerBall.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -266,6 +212,11 @@
           "Damage",
           "Slow",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ qbasedamage }} -> {{ qbasedamageNL }}",
+          "{{ slowpercent }}% -> {{ slowpercentNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -279,13 +230,13 @@
       "name": "Defensive Ball Curl",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "DefensiveBallCurl.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 432,
         "y": 144,
-        "full": "DefensiveBallCurl.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -298,6 +249,12 @@
           "Magic Resist Bonus",
           "Percent Armor Bonus",
           "Percent Magic Resist Bonus"
+        ],
+        "effect": [
+          "{{ flatbonusarmor }} -> {{ flatbonusarmorNL }}",
+          "{{ flatbonusmr }} -> {{ flatbonusmrNL }}",
+          "{{ bonusarmorpercent*100.000000 }}% -> {{ bonusarmorpercentnl*100.000000 }}%",
+          "{{ bonusmrpercent*100.000000 }}% -> {{ bonusmrpercentnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -311,13 +268,13 @@
       "name": "Frenzying Taunt",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PuncturingTaunt.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 0,
         "y": 0,
-        "full": "PuncturingTaunt.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -328,6 +285,10 @@
         "label": [
           "Duration",
           "Monster Damage"
+        ],
+        "effect": [
+          "{{ duration }} -> {{ durationNL }}",
+          "{{ monsterdamage }} -> {{ monsterdamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -341,13 +302,13 @@
       "name": "Soaring Slam",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "Tremors2.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 48,
         "y": 0,
-        "full": "Tremors2.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -359,6 +320,11 @@
           "Damage",
           "Slow",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ initialdamage }} -> {{ initialdamageNL }}",
+          "{{ slowamount*100.000000 }}% -> {{ slowamountnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -371,13 +337,13 @@
   "passive_en": {
     "name": "Spiked Shell",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Armordillo_ScavengeArmor.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 240,
       "y": 48,
-      "full": "Armordillo_ScavengeArmor.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Rammus gains bonus Attack Damage scaling with his Armor and Magic Resistance."
   },
@@ -458,5 +424,80 @@
       "name": "Durian Defender Rammus",
       "chromas": true
     }
-  ]
+  ],
+  "skins": [
+    {
+      "id": "33000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "33001",
+      "num": 1,
+      "name": "Roi Rammus",
+      "chromas": false
+    },
+    {
+      "id": "33002",
+      "num": 2,
+      "name": "Rammus de chrome",
+      "chromas": false
+    },
+    {
+      "id": "33003",
+      "num": 3,
+      "name": "Rammus fondu",
+      "chromas": false
+    },
+    {
+      "id": "33004",
+      "num": 4,
+      "name": "Rammus de Freljord",
+      "chromas": false
+    },
+    {
+      "id": "33005",
+      "num": 5,
+      "name": "Rammus ninja",
+      "chromas": false
+    },
+    {
+      "id": "33006",
+      "num": 6,
+      "name": "Full Metal Rammus",
+      "chromas": false
+    },
+    {
+      "id": "33007",
+      "num": 7,
+      "name": "Rammus gardien des sables",
+      "chromas": false
+    },
+    {
+      "id": "33008",
+      "num": 8,
+      "name": "Rammus libéro",
+      "chromas": true
+    },
+    {
+      "id": "33016",
+      "num": 16,
+      "name": "Rammus Hextech",
+      "chromas": false
+    },
+    {
+      "id": "33017",
+      "num": 17,
+      "name": "Rammus astronaute",
+      "chromas": true
+    },
+    {
+      "id": "33026",
+      "num": 26,
+      "name": "Rammus durian",
+      "chromas": true
+    }
+  ],
+  "related_characters": []
 }

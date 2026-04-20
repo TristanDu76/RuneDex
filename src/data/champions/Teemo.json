@@ -3,133 +3,35 @@
   "key": "17",
   "name": "Teemo",
   "title": "Éclaireur de Bandle",
-  "version": "15.23.1",
-  "lore": "Teemo incarne l'esprit des Scouts de Bandle depuis toujours. Sa vie est rythmée par l'obtention de badges (comme le badge 248 : \"Expert en Fongologie\") et l'exploration de Runeterra via les portails magiques. Il est devenu le scout le plus décoré de l'histoire, inspirant une génération entière de Yordles à suivre son exemple.\n\n L'Expansion des Scouts : Ce qui n'était au départ qu'un rêve solitaire est devenu une organisation massive. Teemo a rédigé de mémoire le manuel des scouts (après avoir perdu l'original en mer) et forme désormais des cadets intrépides, leur apprenant la règle d'or : \"Ne jamais craindre l'inconnu\".\n\n Une Réputation Mondiale : Les témoignages sur Teemo sont unanimes (ou presque). De Tristana à Corki, tous saluent son courage et son enthousiasme. Seul Kled semble ignorer ce qu'est un Scout de Bandle, avec sa politesse habituelle.\n\n Les Biscuits de Bandle : Teemo a révolutionné l'intendance scout en créant des biscuits aux saveurs variées, allant du \"Fruit de Miel\" au \"Rat de Bilgewater\", permettant aux explorateurs de rester nourris dans toutes les conditions.\n\n Missions Spéciales : Récemment, Teemo s'est illustré en sauvant des espèces de champignons explosifs en voie de disparition et en libérant des basilisks d'un camp de guerre noxien.\n\n Le Mystère des Origines : Teemo cherche désormais à découvrir qui a fondé les Scouts de Bandle. Il en vient même à se demander si, dans un passé lointain qu'il aurait oublié, ce ne serait pas lui-même. Peu importe la réponse, il reste fidèle à son serment : servir le peuple Yordle chaque jour.",
+  "version": "16.8.1",
+  "lore": "N'ayant pas peur de braver les obstacles les plus dangereux, Teemo explore le monde avec un enthousiasme débordant et une bonne humeur contagieuse. Yordle au sens moral inflexible, il suit fièrement les préceptes du Code des éclaireurs de Bandle, parfois avec tant d'empressement qu'il en oublie les conséquences néfastes de ses actions. Pour certains, l'existence même des éclaireurs est à remettre en cause. Mais ce qu'il ne faut surtout pas remettre en cause, ce sont les convictions de Teemo !",
   "tags": [
     "Marksman",
     "Mage"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Teemo.png",
+    "sprite": "champion4.png",
+    "group": "champion",
     "x": 288,
     "y": 48,
-    "full": "Teemo.png",
-    "group": "champion",
-    "sprite": "champion4.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "17000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "17001",
-      "num": 1,
-      "name": "Teemo l'elfe heureux",
-      "chromas": false
-    },
-    {
-      "id": "17002",
-      "num": 2,
-      "name": "Teemo éclaireur",
-      "chromas": false
-    },
-    {
-      "id": "17003",
-      "num": 3,
-      "name": "Teemo blaireau",
-      "chromas": false
-    },
-    {
-      "id": "17004",
-      "num": 4,
-      "name": "Teemo astronaute",
-      "chromas": true
-    },
-    {
-      "id": "17005",
-      "num": 5,
-      "name": "Teemo lapin",
-      "chromas": true
-    },
-    {
-      "id": "17006",
-      "num": 6,
-      "name": "Super Teemo",
-      "chromas": false
-    },
-    {
-      "id": "17007",
-      "num": 7,
-      "name": "Teemo panda",
-      "chromas": false
-    },
-    {
-      "id": "17008",
-      "num": 8,
-      "name": "Teemo de la section Oméga",
-      "chromas": true
-    },
-    {
-      "id": "17014",
-      "num": 14,
-      "name": "Teemo diablotin",
-      "chromas": true
-    },
-    {
-      "id": "17018",
-      "num": 18,
-      "name": "Teemo abeille",
-      "chromas": true
-    },
-    {
-      "id": "17025",
-      "num": 25,
-      "name": "Teemo fleur spirituelle",
-      "chromas": false
-    },
-    {
-      "id": "17027",
-      "num": 27,
-      "name": "Teemo fleur spirituelle prestige",
-      "chromas": false
-    },
-    {
-      "id": "17037",
-      "num": 37,
-      "name": "Teemo pyrotechnicien",
-      "chromas": true
-    },
-    {
-      "id": "17047",
-      "num": 47,
-      "name": "Teemo astro-groove",
-      "chromas": true
-    },
-    {
-      "id": "17054",
-      "num": 54,
-      "name": "Teemo fleur spirituelle onsen",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "TeemoQ",
       "name": "Fléchette aveuglante",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TeemoQ.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 96,
         "y": 0,
-        "full": "TeemoQ.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -141,6 +43,11 @@
           "Coût en @AbilityResourceName@",
           "Durée",
           "Dégâts"
+        ],
+        "effect": [
+          "{{ cost }} -> {{ costNL }}",
+          "{{ blindduration }} -> {{ blinddurationNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -154,13 +61,13 @@
       "name": "Vélocité",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TeemoW.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 144,
         "y": 0,
-        "full": "TeemoW.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -171,6 +78,10 @@
         "label": [
           "Vitesse de déplacement passive",
           "Vitesse de déplacement active"
+        ],
+        "effect": [
+          "{{ passivemovespeedbonus*100.000000 }}% -> {{ passivemovespeedbonusnl*100.000000 }}%",
+          "{{ activemovespeedbonus*100.000000 }}% -> {{ activemovespeedbonusnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -184,13 +95,13 @@
       "name": "Tir toxique",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TeemoE.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 192,
         "y": 0,
-        "full": "TeemoE.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -201,6 +112,10 @@
         "label": [
           "Dégâts à l'impact",
           "Dégâts par seconde"
+        ],
+        "effect": [
+          "{{ impactbasedamage }} -> {{ impactbasedamageNL }}",
+          "{{ tickbasedamage }} -> {{ tickbasedamageNL }}"
         ]
       },
       "resource": "Compétence passive",
@@ -214,13 +129,13 @@
       "name": "Piège nocif",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TeemoR.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 240,
         "y": 0,
-        "full": "TeemoR.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "3",
       "maxrank": 3,
@@ -235,6 +150,14 @@
           "Portée max du rebond",
           "Pièges max",
           "Coût en mana"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ slowamount }}% -> {{ slowamountNL }}%",
+          "{{ castrange }} -> {{ castrangeNL }}",
+          "{{ maxbouncedistance }} -> {{ maxbouncedistanceNL }}",
+          "{{ maxammo }} -> {{ maxammoNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -247,13 +170,13 @@
   "passive": {
     "name": "Guérilla",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "TeemoPassive.ASU_Teemo.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 288,
       "y": 48,
-      "full": "TeemoPassive.ASU_Teemo.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Si Teemo reste immobile et sans agir pendant un court instant, il devient invisible indéfiniment. Dans les herbes hautes, Teemo peut activer et maintenir son invisibilité tout en se déplaçant. Quand il quitte son invisibilité, Teemo profite de l'Effet de surprise, augmentant sa vitesse d'attaque pendant quelques secondes."
   },
@@ -267,20 +190,20 @@
   "gender": "Male",
   "species": "Yordle",
   "title_en": "the Swift Scout",
-  "lore_en": "Teemo has been a Bandle Scout for as long as he can remember. His life is defined by adventure and the pursuit of badges, such as Badge 131 (\"Help a Stranger\") or Badge 389 (\"Adopt a Pet\"). He is the most decorated scout in history, an icon whose dedication has inspired countless other Yordles to join the ranks.\n\n Leading the Way: What started as one yordle with a dream grew into a global movement. Teemo personally trains cadets and wrote the current scout handbook from memory after losing the original near the Serpent Isles. His leadership is built on Rule #154: \"Never fear the unknown.\"\n\n A Beloved Leader: Across Runeterra, Teemo is a legend. Tristana admires his festivals, Corki loves his \"moxy,\" and even young scouts tell tales of him stopping horse stampedes. While the Noxian-Yordle Kled remains skeptical, the rest of the world embraces the scouts.\n\n Scout Biscuits: Teemo introduced Bandle Scout biscuits to the world. With over a hundred flavors like \"Poro-Snax\" or the rare \"Limited Edition Spirit Blossom,\" these supplies ensure that no scout ever goes hungry on a mission.\n\n Ecological and Humanitarian Missions: His recent exploits include propagating near-extinct exploding mushrooms and \"freeing\" cute basilisks from Noxian stables, showing that his definition of \"helping\" is as broad as it is bold.\n\n The Great Mystery: Teemo is currently researching the origins of the scouts. He wonders if he might have been the founder himself in a forgotten time. Regardless of the past, his focus remains on the present: living by the Scout's Oath and serving yordlekind.",
+  "lore_en": "Undeterred by even the most dangerous and threatening of obstacles, Teemo scouts the world with boundless enthusiasm and a cheerful spirit. A yordle with an unwavering sense of morality, he takes pride in following the Bandle Scout's Code, sometimes with such eagerness that he is unaware of the broader consequences of his actions. Though some say the existence of the Scouts is questionable, one thing is for certain: Teemo's conviction is nothing to be trifled with.",
   "spells_en": [
     {
       "id": "TeemoQ",
       "name": "Blinding Dart",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TeemoQ.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 96,
         "y": 0,
-        "full": "TeemoQ.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -292,6 +215,11 @@
           "@AbilityResourceName@ Cost",
           "Duration",
           "Damage"
+        ],
+        "effect": [
+          "{{ cost }} -> {{ costNL }}",
+          "{{ blindduration }} -> {{ blinddurationNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -305,13 +233,13 @@
       "name": "Move Quick",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TeemoW.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 144,
         "y": 0,
-        "full": "TeemoW.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -322,6 +250,10 @@
         "label": [
           "Passive Move Speed",
           "Active Move Speed"
+        ],
+        "effect": [
+          "{{ passivemovespeedbonus*100.000000 }}% -> {{ passivemovespeedbonusnl*100.000000 }}%",
+          "{{ activemovespeedbonus*100.000000 }}% -> {{ activemovespeedbonusnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -335,13 +267,13 @@
       "name": "Toxic Shot",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TeemoE.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 192,
         "y": 0,
-        "full": "TeemoE.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -352,6 +284,10 @@
         "label": [
           "Impact Damage",
           "Damage Per Second"
+        ],
+        "effect": [
+          "{{ impactbasedamage }} -> {{ impactbasedamageNL }}",
+          "{{ tickbasedamage }} -> {{ tickbasedamageNL }}"
         ]
       },
       "resource": "Passive",
@@ -365,13 +301,13 @@
       "name": "Noxious Trap",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TeemoR.png",
+        "sprite": "spell14.png",
+        "group": "spell",
         "x": 240,
         "y": 0,
-        "full": "TeemoR.png",
-        "group": "spell",
-        "sprite": "spell14.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "3",
       "maxrank": 3,
@@ -386,6 +322,14 @@
           "Maximum Bounce Distance",
           "Maximum Traps",
           "Mana Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ slowamount }}% -> {{ slowamountNL }}%",
+          "{{ castrange }} -> {{ castrangeNL }}",
+          "{{ maxbouncedistance }} -> {{ maxbouncedistanceNL }}",
+          "{{ maxammo }} -> {{ maxammoNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -398,13 +342,13 @@
   "passive_en": {
     "name": "Guerrilla Warfare",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "TeemoPassive.ASU_Teemo.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 288,
       "y": 48,
-      "full": "TeemoPassive.ASU_Teemo.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "If Teemo stands still and takes no actions for a short duration, he becomes Invisible indefinitely. If he's in brush, Teemo can enter and maintain his Invisibility while moving. After leaving Invisibility, Teemo gains the Element of Surprise, increasing his Attack Speed for a few seconds."
   },
@@ -508,6 +452,113 @@
       "num": 54,
       "name": "Spirit Blossom Springs Teemo",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "17000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "17001",
+      "num": 1,
+      "name": "Teemo l'elfe heureux",
+      "chromas": false
+    },
+    {
+      "id": "17002",
+      "num": 2,
+      "name": "Teemo éclaireur",
+      "chromas": false
+    },
+    {
+      "id": "17003",
+      "num": 3,
+      "name": "Teemo blaireau",
+      "chromas": false
+    },
+    {
+      "id": "17004",
+      "num": 4,
+      "name": "Teemo astronaute",
+      "chromas": true
+    },
+    {
+      "id": "17005",
+      "num": 5,
+      "name": "Teemo lapin",
+      "chromas": true
+    },
+    {
+      "id": "17006",
+      "num": 6,
+      "name": "Super Teemo",
+      "chromas": false
+    },
+    {
+      "id": "17007",
+      "num": 7,
+      "name": "Teemo panda",
+      "chromas": false
+    },
+    {
+      "id": "17008",
+      "num": 8,
+      "name": "Teemo de la section Oméga",
+      "chromas": true
+    },
+    {
+      "id": "17014",
+      "num": 14,
+      "name": "Teemo diablotin",
+      "chromas": true
+    },
+    {
+      "id": "17018",
+      "num": 18,
+      "name": "Teemo abeille",
+      "chromas": true
+    },
+    {
+      "id": "17025",
+      "num": 25,
+      "name": "Teemo fleur spirituelle",
+      "chromas": false
+    },
+    {
+      "id": "17027",
+      "num": 27,
+      "name": "Teemo fleur spirituelle prestige",
+      "chromas": false
+    },
+    {
+      "id": "17037",
+      "num": 37,
+      "name": "Teemo pyrotechnicien",
+      "chromas": true
+    },
+    {
+      "id": "17047",
+      "num": 47,
+      "name": "Teemo astro-groove",
+      "chromas": true
+    },
+    {
+      "id": "17054",
+      "num": 54,
+      "name": "Teemo fleur spirituelle onsen",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Tristana",
+      "type": "champion",
+      "relation": "friend",
+      "note_fr": "Meilleurs amis",
+      "note_en": "Best friends"
     }
   ]
 }

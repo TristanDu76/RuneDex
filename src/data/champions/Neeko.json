@@ -3,97 +3,35 @@
   "key": "518",
   "name": "Neeko",
   "title": "Caméléon curieux",
-  "version": "15.23.1",
-  "lore": "Neeko est une jeune Vastaya originaire d'une tribu disparue. Elle est dotée d'un pouvoir de métamorphose unique et puissant : elle peut non seulement emprunter l'apparence des autres (mortels et Vastayas), mais elle absorbe également un soupçon de leur état émotionnel (sho'ma en Vastaya) pour mieux les comprendre et distinguer les amis des ennemis.\n\nOrigines Perdues : Neeko est l'une des rares survivantes de sa lignée, son foyer ayant été détruit lors d'un cataclysme inconnu (probablement lié à la chute de son ancienne civilisation Vastaya).\n\nLa Quête de Connexion : Sa nature de Vastaya lui confère une puissante force spirituelle primordiale. Cependant, elle est profondément curieuse et désireuse de se lier à d'autres êtres, cherchant un nouveau foyer et une nouvelle famille après la perte de sa tribu.\n\nLe Mimétisme par Empathie : Sa capacité à se fondre dans la foule est alimentée par une forme d'empathie spirituelle : elle perçoit les émotions fondamentales de ceux qu'elle imite. Cela lui permet d'évaluer rapidement une personne.\n\nL'Inconnu : Personne ne sait réellement où ni qui est vraiment Neeko, car son apparence et son identité sont fluides.\n\nConclusion :\n\nCeux qui tentent de lui faire du mal découvrent la véritable force primordiale de son pouvoir spirituel. Neeko est une force de la nature par sa puissance, mais sa motivation principale est la curiosité sincère et le besoin de connexion.",
+  "version": "16.8.1",
+  "lore": "Originaire d'une tribu disparue de Vastayas, Neeko est capable de se fondre dans n'importe quelle foule en empruntant l'apparence des autres, allant même jusqu'à absorber un soupçon de leur état émotionnel pour différencier un instant les amis des ennemis. Personne ne sait réellement où – ni qui – peut bien être Neeko, mais ceux qui chercheront à lui faire du mal découvriront bien vite sa véritable nature… et goûteront à toute la force primordiale de son pouvoir spirituel.",
   "tags": [
     "Mage",
     "Support"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Neeko.png",
+    "sprite": "champion3.png",
+    "group": "champion",
     "x": 48,
     "y": 0,
-    "full": "Neeko.png",
-    "group": "champion",
-    "sprite": "champion3.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "518000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "518001",
-      "num": 1,
-      "name": "Neeko merveille hivernale",
-      "chromas": true
-    },
-    {
-      "id": "518010",
-      "num": 10,
-      "name": "Neeko gardienne des étoiles",
-      "chromas": false
-    },
-    {
-      "id": "518011",
-      "num": 11,
-      "name": "Neeko gardienne des étoiles prestige",
-      "chromas": false
-    },
-    {
-      "id": "518012",
-      "num": 12,
-      "name": "Neeko des rouleaux de Shan Hai",
-      "chromas": true
-    },
-    {
-      "id": "518021",
-      "num": 21,
-      "name": "Neeko gardienne des étoiles prestige (2022)",
-      "chromas": false
-    },
-    {
-      "id": "518022",
-      "num": 22,
-      "name": "Neeko sorcière",
-      "chromas": true
-    },
-    {
-      "id": "518031",
-      "num": 31,
-      "name": "Neeko ville démoniaque",
-      "chromas": true
-    },
-    {
-      "id": "518040",
-      "num": 40,
-      "name": "Neeko cosplayeuse",
-      "chromas": true
-    },
-    {
-      "id": "518049",
-      "num": 49,
-      "name": "Neeko abeille",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "NeekoQ",
       "name": "Explosion florale",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NeekoQ.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 96,
         "y": 96,
-        "full": "NeekoQ.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -107,6 +45,13 @@
           "Coût en @AbilityResourceName@",
           "Dégâts supplémentaires aux monstres",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ zonedamage }} -> {{ zonedamageNL }}",
+          "{{ secondarydamage }} -> {{ secondarydamageNL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ monsterbonus }} -> {{ monsterbonusNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -120,13 +65,13 @@
       "name": "Métaclonage",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NeekoW.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 144,
         "y": 96,
-        "full": "NeekoW.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -139,6 +84,12 @@
           "Vitesse de déplacement active",
           "Vitesse de déplacement passive",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ passivedamage }} -> {{ passivedamageNL }}",
+          "{{ haste }}% -> {{ hasteNL }}%",
+          "{{ passivehaste }}% -> {{ passivehasteNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -152,13 +103,13 @@
       "name": "Spirale épineuse",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NeekoE.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 192,
         "y": 96,
-        "full": "NeekoE.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -172,6 +123,13 @@
           "Durée de l'immobilisation renforcée",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ minrootduration }} -> {{ minrootdurationNL }}",
+          "{{ maxrootduration }} -> {{ maxrootdurationNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -185,13 +143,13 @@
       "name": "Floraison renversante",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NeekoR.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 240,
         "y": 96,
-        "full": "NeekoR.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -202,6 +160,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -214,13 +176,13 @@
   "passive": {
     "name": "Mirage inné",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Neeko_P.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 48,
       "y": 0,
-      "full": "Neeko_P.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Neeko peut prendre l'apparence d'un champion allié ou d'autres unités sur la carte. Votre déguisement prend fin si vous subissez une immobilisation, lancez des compétences offensives, infligez des dégâts aux tourelles ennemies (uniquement si vous avez pris la forme d'un non-champion) ou si vous subissez des dégâts équivalents aux PV de votre déguisement."
   },
@@ -234,20 +196,20 @@
   "gender": "Female",
   "species": "Vastaya",
   "title_en": "the Curious Chameleon",
-  "lore_en": "Neeko is a young Vastaya originating from a vanished tribe. She is gifted with a unique and powerful shapeshifting ability: she can not only borrow the appearance of others (mortals and Vastaya), but she also absorbs a sense of their emotional state (sho'ma in Vastaya) to better understand them and differentiate between friends and foes.\n\nLost Origins: Neeko is one of the rare survivors of her lineage, her home having been destroyed during an unknown cataclysm (likely related to the fall of her ancient Vastaya civilization).\n\nThe Quest for Connection: Her Vastaya nature grants her powerful primordial spiritual strength. However, she is deeply curious and longs to bond with other beings, seeking a new home and a new family after the loss of her tribe.\n\nMimicry through Empathy: Her ability to blend into any crowd is fueled by a form of spiritual empathy: she perceives the fundamental emotions of those she mimics. This allows her to quickly assess an individual.\n\nThe Unknown: No one truly knows where—or who—Neeko actually is, as her appearance and identity are fluid.\n\nConclusion:\n\nThose who seek to harm her will quickly discover her true nature and experience the full force of her primordial spiritual power. Neeko is a force of nature due to her strength, but her core motivation is sincere curiosity and the need for connection.",
+  "lore_en": "Hailing from a long lost tribe of vastaya, Neeko can blend into any crowd by borrowing the appearances of others, even absorbing something of their emotional state to tell friend from foe in an instant. No one is ever sure where—or who—Neeko might be, but those who intend to do her harm will soon witness her true colors revealed, and feel the full power of her primordial spirit magic unleashed upon them.",
   "spells_en": [
     {
       "id": "NeekoQ",
       "name": "Blooming Burst",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NeekoQ.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 96,
         "y": 96,
-        "full": "NeekoQ.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -261,6 +223,13 @@
           "@AbilityResourceName@ Cost",
           "Bonus Monster Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ zonedamage }} -> {{ zonedamageNL }}",
+          "{{ secondarydamage }} -> {{ secondarydamageNL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ monsterbonus }} -> {{ monsterbonusNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -274,13 +243,13 @@
       "name": "Shapesplitter",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NeekoW.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 144,
         "y": 96,
-        "full": "NeekoW.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -293,6 +262,12 @@
           "Active Move Speed",
           "Passive Move Speed",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ passivedamage }} -> {{ passivedamageNL }}",
+          "{{ haste }}% -> {{ hasteNL }}%",
+          "{{ passivehaste }}% -> {{ passivehasteNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -306,13 +281,13 @@
       "name": "Tangle-Barbs",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NeekoE.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 192,
         "y": 96,
-        "full": "NeekoE.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -326,6 +301,13 @@
           "Empowered Root Duration",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ minrootduration }} -> {{ minrootdurationNL }}",
+          "{{ maxrootduration }} -> {{ maxrootdurationNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -339,13 +321,13 @@
       "name": "Pop Blossom",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NeekoR.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 240,
         "y": 96,
-        "full": "NeekoR.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -356,6 +338,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -368,13 +354,13 @@
   "passive_en": {
     "name": "Inherent Glamour",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Neeko_P.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 48,
       "y": 0,
-      "full": "Neeko_P.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Neeko can look like an ally champion or as other units on the map. Receiving immobilizing crowd control, casting damaging spells, damaging enemy towers as a non-champion, or your disguise taking damage equal to its healthbar breaks the disguise."
   },
@@ -443,6 +429,77 @@
       "num": 49,
       "name": "Beeko",
       "chromas": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "518000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "518001",
+      "num": 1,
+      "name": "Neeko merveille hivernale",
+      "chromas": true
+    },
+    {
+      "id": "518010",
+      "num": 10,
+      "name": "Neeko gardienne des étoiles",
+      "chromas": false
+    },
+    {
+      "id": "518011",
+      "num": 11,
+      "name": "Neeko gardienne des étoiles prestige",
+      "chromas": false
+    },
+    {
+      "id": "518012",
+      "num": 12,
+      "name": "Neeko des rouleaux de Shan Hai",
+      "chromas": true
+    },
+    {
+      "id": "518021",
+      "num": 21,
+      "name": "Neeko gardienne des étoiles prestige (2022)",
+      "chromas": false
+    },
+    {
+      "id": "518022",
+      "num": 22,
+      "name": "Neeko sorcière",
+      "chromas": true
+    },
+    {
+      "id": "518031",
+      "num": 31,
+      "name": "Neeko ville démoniaque",
+      "chromas": true
+    },
+    {
+      "id": "518040",
+      "num": 40,
+      "name": "Neeko cosplayeuse",
+      "chromas": true
+    },
+    {
+      "id": "518049",
+      "num": 49,
+      "name": "Neeko abeille",
+      "chromas": false
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Nidalee",
+      "type": "champion",
+      "relation": "friend",
+      "note_fr": "Amie proche",
+      "note_en": "Close friend"
     }
   ]
 }

@@ -3,119 +3,39 @@
   "key": "78",
   "name": "Poppy",
   "title": "Gardienne du marteau",
-  "version": "15.23.1",
-  "lore": "Poppy est une Yordle d'une détermination sans faille. Contrairement à ses congénères souvent chaotiques et fantasques, elle a toujours recherché la stabilité, la structure et la discipline. Cette quête de sens l'a menée vers les colonies humaines du Valoran occidental.\n\n La Rencontre avec Orlon : Poppy fut fascinée par un groupe de voyageurs agissant avec une coordination parfaite, comme les rouages d'une machine. À leur tête se trouvait Orlon, un commandant dont la présence inspirait chacun à se dépasser. Poppy, fascinée, décida de se révéler à lui. Une amitié profonde et un mentorat naquirent ; ils devinrent inséparables.\n\n La Fondation de Demacia : Elle accompagna Orlon dans la fondation d'une nouvelle nation : Demacia. Dans ce royaume, chacun était le bienvenu tant qu'il contribuait au bien commun. Poppy était la seule capable de s'entraîner d'égal à égal avec Orlon, n'ayant pas peur de frapper le grand commandant avec son marteau massif.\n\n Le Serment : Sur son lit de mort, Orlon confia son marteau à Poppy. Il lui révéla que l'arme n'était pas destinée à ses propres mains, mais à celles du vrai Héros de Demacia, le seul capable de maintenir l'unité du royaume. Poppy jura de trouver ce guerrier légendaire.\n\n La Quête sans Fin : Depuis des siècles, Poppy parcourt Demacia à la recherche de ce héros. Elle a tenté de confier le marteau à de nombreux guerriers prometteurs, mais les résultats furent souvent catastrophiques (ou mortels pour les dits \"héros\"), prouvant qu'ils n'étaient pas les bons.\n\n L'Héroïne Ignorante : Poppy possède une détermination immense mais un ego inexistant. Elle accomplit des prouesses incroyables — terrassant des monstres et repoussant des armées — mais elle reste persuadée qu'elle n'est qu'une simple messagère. Il ne lui est jamais venu à l'esprit que c'est elle-même l'héroïne décrite par Orlon.",
+  "version": "16.8.1",
+  "lore": "Runeterra ne manque pas de braves champions, mais peu peuvent se targuer d'être aussi tenaces que Poppy. Armée du légendaire marteau d'Orlon, faisant deux fois sa taille, cette yordle déterminée cherche depuis d'innombrables années le « héros de Demacia », qui serait le dépositaire légitime de cette arme. En attendant, elle part inlassablement au combat, repoussant les ennemis du royaume à grands coups de marteau.",
   "tags": [
     "Tank",
     "Fighter"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Poppy.png",
+    "sprite": "champion3.png",
+    "group": "champion",
     "x": 0,
     "y": 48,
-    "full": "Poppy.png",
-    "group": "champion",
-    "sprite": "champion3.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "78000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "78001",
-      "num": 1,
-      "name": "Poppy noxienne",
-      "chromas": false
-    },
-    {
-      "id": "78002",
-      "num": 2,
-      "name": "Lollipoppy",
-      "chromas": false
-    },
-    {
-      "id": "78003",
-      "num": 3,
-      "name": "Poppy forgeron",
-      "chromas": false
-    },
-    {
-      "id": "78004",
-      "num": 4,
-      "name": "Poppy de son",
-      "chromas": false
-    },
-    {
-      "id": "78005",
-      "num": 5,
-      "name": "Poppy royale",
-      "chromas": true
-    },
-    {
-      "id": "78006",
-      "num": 6,
-      "name": "Poppy chevalier rouge",
-      "chromas": false
-    },
-    {
-      "id": "78007",
-      "num": 7,
-      "name": "Poppy gardienne des étoiles",
-      "chromas": false
-    },
-    {
-      "id": "78014",
-      "num": 14,
-      "name": "Poppy faon des neiges",
-      "chromas": false
-    },
-    {
-      "id": "78015",
-      "num": 15,
-      "name": "Poppy Hextech",
-      "chromas": false
-    },
-    {
-      "id": "78016",
-      "num": 16,
-      "name": "Poppy astronaute",
-      "chromas": true
-    },
-    {
-      "id": "78024",
-      "num": 24,
-      "name": "Poppy sorcière",
-      "chromas": true
-    },
-    {
-      "id": "78033",
-      "num": 33,
-      "name": "Poppy Café Chouchous",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "PoppyQ",
       "name": "Commotion",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PoppyQ.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 384,
         "y": 48,
-        "full": "PoppyQ.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Poppy frappe le sol, infligeant <physicalDamage>{{ basedamage }}</physicalDamage> plus <physicalDamage>{{ healthdamagepercent }}% des PV max en dégâts physiques</physicalDamage> et créant une zone instable. <br /><br />La zone instable <status>ralentit</status> les ennemis de {{ e3 }}% et explose au bout de {{ e4 }} sec, infligeant à nouveau <physicalDamage>{{ basedamage }}</physicalDamage> plus <physicalDamage>{{ healthdamagepercent }}% des PV max en dégâts physiques</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Poppy frappe le sol, infligeant <physicalDamage>{{ basedamage }}</physicalDamage> plus <physicalDamage>{{ healthdamagepercent }}% des PV max en dégâts physiques</physicalDamage> et créant une zone instable. <br /><br />La zone instable <status>ralentit</status> les ennemis de {{ slow_ }}% et explose au bout de {{ delaybetweentwohits }} sec, infligeant à nouveau <physicalDamage>{{ basedamage }}</physicalDamage> plus <physicalDamage>{{ healthdamagepercent }}% des PV max en dégâts physiques</physicalDamage>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "35/40/45/50/55",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -125,6 +45,13 @@
           "Délai de récupération",
           "Coût en @AbilityResourceName@",
           "Limite contre les monstres"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ e3 }}% -> {{ e3NL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ e6 }} -> {{ e6NL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -138,23 +65,27 @@
       "name": "Présence immuable",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PoppyW.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 432,
         "y": 48,
-        "full": "PoppyW.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive :</spellPassive> Poppy gagne <scaleArmor>+{{ bonusarmor }} armure</scaleArmor> et <scaleMR>+{{ bonusmr }} résistance magique</scaleMR>. Ce bonus est doublé si Poppy a moins de {{ passiveempoweredhealthpercent*100 }}% de ses PV.<br /><br /><spellActive>Active :</spellActive> Poppy gagne <speed>+{{ e2 }}% de vitesse de déplacement</speed> et crée un champ autour d'elle pendant {{ e1 }} sec qui arrête les ruées ennemies. Les ennemis qui sont arrêtés par le champ sont rendus <status>inertes</status> et sont <status>ralentis</status> de {{ slowamount*-100 }}% pendant {{ groundingduration }} sec, et ils subissent <magicDamage>{{ interruptdamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive :</spellPassive> Poppy gagne <scaleArmor>{{ bonusarmor }} armure</scaleArmor> et <scaleMR>{{ bonusmr }} résistance magique</scaleMR>. Ce bonus est doublé si Poppy possède moins de {{ passiveempoweredhealthpercent*100 }}% de ses PV.<br /><br /><spellActive>Active :</spellActive> Poppy gagne <speed>{{ haste }}% de vitesse de déplacement</speed> et crée autour d'elle un champ qui arrête les ruées ennemies pendant {{ duration }} sec. Les ennemis qui sont arrêtés par le champ sont rendus <status>inertes</status> et sont <status>ralentis</status> de {{ slowamount*-100 }}% pendant {{ groundingduration }} sec, et ils subissent <magicDamage>{{ interruptdamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "50",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Délai de récupération",
           "Dégâts"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ e5 }} -> {{ e5NL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -168,17 +99,17 @@
       "name": "Charge héroïque",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PoppyE.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 0,
         "y": 96,
-        "full": "PoppyE.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Poppy se précipite sur un ennemi, lui infligeant <physicalDamage>{{ tackledamage }} pts de dégâts physiques</physicalDamage> et le traînant sur une courte distance. Si Poppy le plaque contre un obstacle, l'ennemi est <status>étourdi</status> pendant {{ e3 }} sec et subit <physicalDamage>{{ tackledamage }} pts de dégâts physiques</physicalDamage> supplémentaires.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Poppy se précipite sur un ennemi, lui infligeant <physicalDamage>{{ tackledamage }} pts de dégâts physiques</physicalDamage> et le traînant sur une courte distance. Si Poppy le plaque contre un obstacle, l'ennemi est <status>étourdi</status> pendant {{ stunduration }} sec et subit <physicalDamage>{{ tackledamage }} pts de dégâts physiques</physicalDamage> bonus.{{ spellmodifierdescriptionappend }}",
       "costBurn": "70",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -187,6 +118,12 @@
           "Dégâts contre un mur",
           "Durée de l'étourdissement :",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ e2 }} -> {{ e2NL }}",
+          "{{ e3 }} -> {{ e3NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -200,13 +137,13 @@
       "name": "Verdict de la gardienne",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PoppyR.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 48,
         "y": 96,
-        "full": "PoppyR.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -217,6 +154,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -229,13 +170,13 @@
   "passive": {
     "name": "Ambassadrice de fer",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Poppy_Passive.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 0,
       "y": 48,
-      "full": "Poppy_Passive.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Poppy lance son écu et le fait rebondir sur sa cible. Poppy peut le ramasser pour obtenir un bouclier temporaire."
   },
@@ -250,24 +191,24 @@
   "gender": "Female",
   "species": "Yordle",
   "title_en": "Keeper of the Hammer",
-  "lore_en": "Poppy is a Yordle of undying tenacity. Unlike her often chaotic and whimsical kin, she has always sought stability, structure, and discipline. This drive led her to the human settlements of western Valoran.\n\n Meeting Orlon: Poppy was fascinated by a group of travelers acting with perfect coordination, like the cogs of a gear. At their head was Orlon, a commander whose presence inspired everyone to press on. Drawn to him, Poppy decided to reveal herself. A deep friendship and mentorship were born; the two became inseparable.\n\n The Foundation of Demacia: She accompanied Orlon to the site of a new nation: Demacia. In this kingdom, all were welcome as long as they contributed to the good of the whole. Poppy was the only sparring partner unafraid to strike the great commander, despite his massive hammer.\n\n The Vow: On his deathbed, Orlon passed the hammer to Poppy. He revealed that the weapon was never truly meant for his hands, but for the rightful Hero of Demacia, the only one who could keep the nation whole. Poppy swore to find this legendary warrior.\n\n The Endless Search: For centuries, Poppy has traveled the furthest corners of Demacia searching for this hero. She has tried to pass the hammer to many promising warriors, but the results were often disastrous (or fatal for the \"heroes\"), proving they were not the chosen one.\n\n The Unwitting Hero: What Poppy possesses in resolve, she lacks in ego. She performs incredible feats—slaying monsters and pushing back armies—yet she remains convinced she is merely a messenger. It has never even occurred to her that she is the hero Orlon described.",
+  "lore_en": "Runeterra has no shortage of valiant champions, but few are as tenacious as Poppy. Bearing the legendary hammer of Orlon, a weapon twice her size, this determined yordle has spent untold years searching in secret for the fabled “Hero of Demacia,” said to be its rightful wielder. Until then, she dutifully charges into battle, pushing back the kingdom's enemies with every whirling strike.",
   "spells_en": [
     {
       "id": "PoppyQ",
       "name": "Hammer Shock",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PoppyQ.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 384,
         "y": 48,
-        "full": "PoppyQ.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Poppy smashes the ground, dealing <physicalDamage>{{ basedamage }}</physicalDamage> plus <physicalDamage>{{ healthdamagepercent }}% max Health physical damage</physicalDamage> and making the ground unstable. <br /><br />The unstable area <status>Slows</status> enemies by {{ e3 }}% and erupts after {{ e4 }} second, dealing <physicalDamage>{{ basedamage }}</physicalDamage> plus <physicalDamage>{{ healthdamagepercent }}% max Health physical damage</physicalDamage> again.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Poppy smashes the ground, dealing <physicalDamage>{{ basedamage }}</physicalDamage> plus <physicalDamage>{{ healthdamagepercent }}% max Health physical damage</physicalDamage> and making the ground unstable. <br /><br />The unstable area <status>Slows</status> enemies by {{ slow_ }}% and erupts after {{ delaybetweentwohits }} second, dealing <physicalDamage>{{ basedamage }}</physicalDamage> plus <physicalDamage>{{ healthdamagepercent }}% max Health physical damage</physicalDamage> again.{{ spellmodifierdescriptionappend }}",
       "costBurn": "35/40/45/50/55",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -277,6 +218,13 @@
           "Cooldown",
           "@AbilityResourceName@ Cost",
           "Monster Cap"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ e3 }}% -> {{ e3NL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ e6 }} -> {{ e6NL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -290,23 +238,27 @@
       "name": "Steadfast Presence",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PoppyW.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 432,
         "y": 48,
-        "full": "PoppyW.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive:</spellPassive> Poppy gains <scaleArmor>{{ bonusarmor }} Armor</scaleArmor> and <scaleMR>{{ bonusmr }} Magic Resist</scaleMR>. This bonus is doubled if Poppy is below {{ passiveempoweredhealthpercent*100 }}% Health.<br /><br /><spellActive>Active:</spellActive> Poppy gains <speed>{{ e2 }}% Move Speed</speed> and projects a field around her for {{ e1 }} seconds that stops enemy dashes. Enemies who are stopped by the field are <status>Grounded</status> and <status>Slowed</status> by {{ slowamount*-100 }}% for {{ groundingduration }} seconds and take <magicDamage>{{ interruptdamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive:</spellPassive> Poppy gains <scaleArmor>{{ bonusarmor }} Armor</scaleArmor> and <scaleMR>{{ bonusmr }} Magic Resist</scaleMR>. This bonus is doubled if Poppy is below {{ passiveempoweredhealthpercent*100 }}% Health.<br /><br /><spellActive>Active:</spellActive> Poppy gains <speed>{{ haste }}% Move Speed</speed> and projects a field around her for {{ duration }} seconds that stops enemy dashes. Enemies who are stopped by the field are <status>Grounded</status> and <status>Slowed</status> by {{ slowamount*-100 }}% for {{ groundingduration }} seconds and take <magicDamage>{{ interruptdamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "50",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Cooldown",
           "Damage"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ e5 }} -> {{ e5NL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -320,17 +272,17 @@
       "name": "Heroic Charge",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PoppyE.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 0,
         "y": 96,
-        "full": "PoppyE.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Poppy tackles an enemy, dealing <physicalDamage>{{ tackledamage }} physical damage</physicalDamage> and carrying them forward. If Poppy tackles them into terrain, the enemy is <status>Stunned</status> for {{ e3 }} seconds and take an additional <physicalDamage>{{ tackledamage }} physical damage</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Poppy tackles an enemy, dealing <physicalDamage>{{ tackledamage }} physical damage</physicalDamage> and carrying them forward. If Poppy tackles them into terrain, the enemy is <status>Stunned</status> for {{ stunduration }} seconds and take an additional <physicalDamage>{{ tackledamage }} physical damage</physicalDamage>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "70",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -339,6 +291,12 @@
           "Wall Damage",
           "Stun Duration:",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ e2 }} -> {{ e2NL }}",
+          "{{ e3 }} -> {{ e3NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -352,13 +310,13 @@
       "name": "Keeper's Verdict",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PoppyR.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 48,
         "y": 96,
-        "full": "PoppyR.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -369,6 +327,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -381,13 +343,13 @@
   "passive_en": {
     "name": "Iron Ambassador",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Poppy_Passive.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 0,
       "y": 48,
-      "full": "Poppy_Passive.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Poppy throws her buckler that bounces off the target. Poppy can pick it up to gain a temporary shield."
   },
@@ -474,6 +436,99 @@
       "num": 33,
       "name": "Cafe Cuties Poppy",
       "chromas": true
+    },
+    {
+      "id": "78042",
+      "num": 42,
+      "name": "Firecracker Poppy",
+      "chromas": true
     }
-  ]
+  ],
+  "skins": [
+    {
+      "id": "78000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "78001",
+      "num": 1,
+      "name": "Poppy noxienne",
+      "chromas": false
+    },
+    {
+      "id": "78002",
+      "num": 2,
+      "name": "Lollipoppy",
+      "chromas": false
+    },
+    {
+      "id": "78003",
+      "num": 3,
+      "name": "Poppy forgeron",
+      "chromas": false
+    },
+    {
+      "id": "78004",
+      "num": 4,
+      "name": "Poppy de son",
+      "chromas": false
+    },
+    {
+      "id": "78005",
+      "num": 5,
+      "name": "Poppy royale",
+      "chromas": true
+    },
+    {
+      "id": "78006",
+      "num": 6,
+      "name": "Poppy chevalier rouge",
+      "chromas": false
+    },
+    {
+      "id": "78007",
+      "num": 7,
+      "name": "Poppy gardienne des étoiles",
+      "chromas": false
+    },
+    {
+      "id": "78014",
+      "num": 14,
+      "name": "Poppy faon des neiges",
+      "chromas": false
+    },
+    {
+      "id": "78015",
+      "num": 15,
+      "name": "Poppy Hextech",
+      "chromas": false
+    },
+    {
+      "id": "78016",
+      "num": 16,
+      "name": "Poppy astronaute",
+      "chromas": true
+    },
+    {
+      "id": "78024",
+      "num": 24,
+      "name": "Poppy sorcière",
+      "chromas": true
+    },
+    {
+      "id": "78033",
+      "num": 33,
+      "name": "Poppy Café Chouchous",
+      "chromas": true
+    },
+    {
+      "id": "78042",
+      "num": 42,
+      "name": "Poppy pyrotechnicienne",
+      "chromas": true
+    }
+  ],
+  "related_characters": []
 }

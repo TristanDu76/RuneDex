@@ -3,97 +3,35 @@
   "key": "3",
   "name": "Galio",
   "title": "Colosse",
-  "version": "15.23.1",
-  "lore": "La légende de Galio commence après les Guerres runiques, lorsque des réfugiés fuyant le pouvoir destructeur de la magie se cachèrent dans une ancienne forêt pétrifiée. Ils découvrirent que le bois fossilisé était un amortisseur de magie naturel, rendant toute sorcellerie inefficace. Ce sanctuaire devint le fondement de leur nouveau royaume, Demacia.\r\n\r\nLes colons apprirent à mélanger ce bois enchanté avec de la chaux pour créer la Pétrissite, un matériau doté d'une puissante résistance à la magie. Ces murs de Pétrissite rendaient Demacia sûre, mais son armée était vulnérable à la sorcellerie à l'étranger. Le sculpteur Durand fut alors chargé de créer un bouclier en Pétrissite pour l'armée. Il en résulta la statue ailée, Galio, un chef-d'œuvre qui servit de symbole et de protection.\r\n\r\nTiré sur les champs de bataille, Galio était si impressionnant que les envahisseurs figeaient souvent à sa vue. Cependant, personne ne pensa aux conséquences d'exposer la statue à de telles énergies magiques.\r\n\r\nLors d'une bataille prolongée dans les Monts Croc-vert, l'armée démancienne, bombardée par des mages pendant treize jours, se regroupa près de Galio. Alors que leur moral était au plus bas, Galio s'anima soudainement, parlant et bougeant de lui-même pour la première fois. L'accumulation de la magie absorbée lui avait donné vie. Il se jeta devant les soldats, les protégeant, et écrasa les mages ennemis.\r\n\r\nAussi vite qu'il s'était animé, Galio redevint immobile. Il était entré dans la légende. Cependant, ce que les Démaciens ignoraient, c'est que Galio restait conscient même en étant immobile, désirant ardemment revivre les sensations du combat.\r\n\r\nEn observant les mortels passer devant lui année après année, Galio se posa la question de leur disparition. Il comprit finalement la triste vérité : contrairement à lui, les mortels étaient des créatures fragiles et éphémères qui ne pouvaient pas être simplement « réparées ». Sa passion était le combat, mais son but était la protection de ces êtres qu'il comprenait enfin.\r\n\r\nAu fil des siècles, la magie se raréfiant dans le monde de Demacia, Galio est resté majoritairement dormant. Son plus grand espoir est d'être béni par une magie si puissante qu'il ne sera plus jamais forcé de dormir. Ce n'est qu'alors qu'il pourra véritablement servir son objectif : se tenir prêt à se battre comme le protecteur éternel de Demacia.",
+  "version": "16.8.1",
+  "lore": "Près de la cité étincelante de Demacia, le colosse de pierre Galio monte une garde attentive. Érigé comme un rempart contre les mages ennemis, il reste souvent immobile pendant des décennies, jusqu'à ce que l'apparition de puissants flux magiques le ramène à la vie. Une fois éveillé, Galio profite de chaque seconde d'existence ; il s'enivre des frissons du combat et de l'honneur trop rare de défendre ses compatriotes. Mais ses triomphes ont toujours un arrière-goût amer, car la magie qu'il éradique est également la sève qui le fait vivre, et chaque victoire le renvoie au sommeil.",
   "tags": [
     "Tank",
     "Mage"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Galio.png",
+    "sprite": "champion1.png",
+    "group": "champion",
     "x": 288,
     "y": 0,
-    "full": "Galio.png",
-    "group": "champion",
-    "sprite": "champion1.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "3000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "3001",
-      "num": 1,
-      "name": "Galio l'enchanteur",
-      "chromas": false
-    },
-    {
-      "id": "3002",
-      "num": 2,
-      "name": "Galio Hextech",
-      "chromas": false
-    },
-    {
-      "id": "3003",
-      "num": 3,
-      "name": "Galio commando",
-      "chromas": false
-    },
-    {
-      "id": "3004",
-      "num": 4,
-      "name": "Galio cerbère",
-      "chromas": false
-    },
-    {
-      "id": "3005",
-      "num": 5,
-      "name": "Galio séducteur",
-      "chromas": false
-    },
-    {
-      "id": "3006",
-      "num": 6,
-      "name": "Poulio",
-      "chromas": true
-    },
-    {
-      "id": "3013",
-      "num": 13,
-      "name": "Galio infernal",
-      "chromas": true
-    },
-    {
-      "id": "3019",
-      "num": 19,
-      "name": "Galio gardien des dragons",
-      "chromas": true
-    },
-    {
-      "id": "3028",
-      "num": 28,
-      "name": "Galio mythificateur",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "GalioQ",
       "name": "Vents de guerre",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GalioQ.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 96,
         "y": 0,
-        "full": "GalioQ.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -105,6 +43,11 @@
           "Dégâts de la rafale",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -118,13 +61,13 @@
       "name": "Bouclier de Durand",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GalioW.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 144,
         "y": 0,
-        "full": "GalioW.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -138,6 +81,13 @@
           "Réduction des dégâts physiques",
           "Dégâts maximum",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ passiveshieldhealthratio*100.000000 }}% -> {{ passiveshieldhealthrationl*100.000000 }}%",
+          "{{ e1 }}% -> {{ e1NL }}%",
+          "{{ effect1amount*0.500000 }}% -> {{ effect1amountnl*0.500000 }}%",
+          "{{ maximumwbasedamage }} -> {{ maximumwbasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -151,13 +101,13 @@
       "name": "Horion de la justice",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GalioE.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 192,
         "y": 0,
-        "full": "GalioE.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -168,6 +118,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -181,13 +135,13 @@
       "name": "Entrée héroïque",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GalioR.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 240,
         "y": 0,
-        "full": "GalioR.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -199,6 +153,11 @@
           "Dégâts",
           "Portée",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ castrange }} -> {{ castrangeNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -211,13 +170,13 @@
   "passive": {
     "name": "Frappe colossale",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Galio_Passive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 288,
       "y": 0,
-      "full": "Galio_Passive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Toutes les quelques secondes, la prochaine attaque de base de Galio inflige des dégâts magiques supplémentaires dans une zone."
   },
@@ -232,20 +191,20 @@
   "gender": "Male",
   "species": "Golem",
   "title_en": "the Colossus",
-  "lore_en": "Galio's legend begins in the aftermath of the Rune Wars, when countless refugees fled the destructive power of magic and found sanctuary in an ancient, petrified forest. They discovered that the fossilized trees were a natural magic-dampener, making any sorcery ineffective. This sanctuary became the foundation for their new kingdom, Demacia.\r\n\r\nThe settlers learned to mix the enchanted wood with ash to create Petricite, a material with a powerful resistance to magic. These Petricite walls made Demacia secure, but its army was vulnerable to sorcery abroad. The sculptor Durand was commissioned to fashion a Petricite shield for the military. The result was the winged statue, Galio, a masterpiece that served as a symbol and defense.\r\n\r\nPulled to battlefields, Galio was so awe-inspiring that invaders often froze at the sight of him. However, no one considered what exposing the statue to such unpredictable energies might do.\r\n\r\nDuring a prolonged battle in the Greenfang Mountains, the Demacian army, bombarded by warmages for thirteen days, huddled close to Galio. Just when their morale was lowest, Galio suddenly came to life, moving and speaking for the first time. The accumulation of absorbed magic had given him life. He threw himself in front of the soldiers, shielding them, and crushed the enemy mages.\r\n\r\nAs quickly as he had come to life, Galio ceased moving, returning to his pedestal. He had passed into legend. However, what the Demacians didn't know was that Galio remained conscious even while immobile, longing to experience the sensations of battle once again.\r\n\r\nWatching mortals pass beneath him year after year, Galio pondered their disappearance. He eventually realized the sorrowful truth: unlike himself, mortals were frail, ephemeral creatures who could not simply be \"repaired.\" Fighting had been his passion, but the people were now his purpose.\r\n\r\nAs centuries passed and magic grew rarer in Demacia's world, Galio remained mostly dormant. His greatest hope is to be blessed by magic so powerful that he will never be forced to sleep again. Only then will he be able to truly serve his purpose: to stand and fight as Demacia's eternal protector.",
+  "lore_en": "Outside the gleaming city of Demacia, the stone colossus Galio keeps vigilant watch. Built as a bulwark against enemy mages, he often stands motionless for decades until the presence of powerful magic stirs him to life. Once activated, Galio makes the most of his time, savoring the thrill of a fight and the rare honor of defending his countrymen. But his triumphs are always bittersweet, for the magic he destroys is also his source of reanimation, and each victory leaves him dormant once again.",
   "spells_en": [
     {
       "id": "GalioQ",
       "name": "Winds of War",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GalioQ.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 96,
         "y": 0,
-        "full": "GalioQ.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -257,6 +216,11 @@
           "Windblast Damage",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -270,13 +234,13 @@
       "name": "Shield of Durand",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GalioW.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 144,
         "y": 0,
-        "full": "GalioW.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -290,6 +254,13 @@
           "Physical Damage Reduction",
           "Maximum Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ passiveshieldhealthratio*100.000000 }}% -> {{ passiveshieldhealthrationl*100.000000 }}%",
+          "{{ e1 }}% -> {{ e1NL }}%",
+          "{{ effect1amount*0.500000 }}% -> {{ effect1amountnl*0.500000 }}%",
+          "{{ maximumwbasedamage }} -> {{ maximumwbasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -303,13 +274,13 @@
       "name": "Justice Punch",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GalioE.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 192,
         "y": 0,
-        "full": "GalioE.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -320,6 +291,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -333,13 +308,13 @@
       "name": "Hero's Entrance",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GalioR.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 240,
         "y": 0,
-        "full": "GalioR.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -351,6 +326,11 @@
           "Damage",
           "Range",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ castrange }} -> {{ castrangeNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -363,13 +343,13 @@
   "passive_en": {
     "name": "Colossal Smash",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Galio_Passive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 288,
       "y": 0,
-      "full": "Galio_Passive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Every few seconds, Galio's next basic attack deals bonus magic damage in an area."
   },
@@ -438,6 +418,87 @@
       "num": 28,
       "name": "Mythmaker Galio",
       "chromas": true
+    },
+    {
+      "id": "3040",
+      "num": 40,
+      "name": "Aegis Frame Galio",
+      "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "3000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "3001",
+      "num": 1,
+      "name": "Galio l'enchanteur",
+      "chromas": false
+    },
+    {
+      "id": "3002",
+      "num": 2,
+      "name": "Galio Hextech",
+      "chromas": false
+    },
+    {
+      "id": "3003",
+      "num": 3,
+      "name": "Galio commando",
+      "chromas": false
+    },
+    {
+      "id": "3004",
+      "num": 4,
+      "name": "Galio cerbère",
+      "chromas": false
+    },
+    {
+      "id": "3005",
+      "num": 5,
+      "name": "Galio séducteur",
+      "chromas": false
+    },
+    {
+      "id": "3006",
+      "num": 6,
+      "name": "Poulio",
+      "chromas": true
+    },
+    {
+      "id": "3013",
+      "num": 13,
+      "name": "Galio infernal",
+      "chromas": true
+    },
+    {
+      "id": "3019",
+      "num": 19,
+      "name": "Galio gardien des dragons",
+      "chromas": true
+    },
+    {
+      "id": "3028",
+      "num": 28,
+      "name": "Galio mythificateur",
+      "chromas": true
+    },
+    {
+      "id": "3040",
+      "num": 40,
+      "name": "Galio Aegis Frame",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "arcturus_j_durand",
+      "type": "lore",
+      "relation": "creation"
     }
   ]
 }

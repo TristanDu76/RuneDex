@@ -49,6 +49,14 @@ export const getGenderColor = (g: string) => {
     return 'text-purple-300';
 };
 
+export const getStatusColor = (s: string) => {
+    const status = s.toLowerCase();
+    if (status === 'alive' || status === 'vivant') return 'text-green-400';
+    if (status === 'dead' || status === 'mort') return 'text-red-500';
+    if (status === 'undead' || status === 'mort-vivant') return 'text-teal-400';
+    return 'text-gray-400';
+};
+
 export const getResourceColor = (r: string) => {
     const resource = r.toLowerCase();
     if (resource.includes('mana')) return 'text-blue-400';
@@ -88,7 +96,7 @@ export const getTypeStyle = (type: string) => {
     if ([
         'friend', 'mentor', 'student', 'ally', 'comrade', 'faction-member', 'apprentice', 'leader/black-rose',
         'subordinate/black-rose', 'employee', 'creator', 'creation', 'host', 'mentor/ally',
-        'student/ally', 'student/rival'
+        'student/ally', 'student/rival', 'related-lore'
     ].includes(t)) {
         return { bg: 'bg-green-500/10', border: 'border-green-500/30', text: 'text-green-400', icon: '🤝' };
     }

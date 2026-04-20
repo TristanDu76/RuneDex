@@ -3,55 +3,35 @@
   "key": "233",
   "name": "Briar",
   "title": "Faim insatiable",
-  "version": "15.23.1",
-  "lore": "Briar est née près de la fin du règne du Grand Général Boram Darkwill, conçue par la Rose noire et ses hémomanciens pour être une nouvelle forme d'arme vivante, alimentée par le sang et destinée à chasser sans avoir besoin de nourriture ou d'eau. Cependant, ses créateurs obtinrent une créature guidée par un seul et unique désir : manger (le sang).\r\n\r\nSa première mission fut un échec sanglant et frénétique. La Rose noire jugea Briar trop dangereuse à utiliser, mais trop puissante à détruire. Pour la contrôler, ils conçurent un pilori spécial verrouillé par une gemme hémolithe, destiné à la contenir et à concentrer son esprit. Une fois enchaînée, elle fut déployée lors du coup d'État de Jericho Swain contre Darkwill. Briar fut libérée de son pilori, mais elle dévoça immédiatement son gardien et tous ceux qui étaient proches, sauf sa cible, Swain.\r\n\r\nAprès une capture ardue, les gardes de Swain réussirent à réactiver le pilori et à l'enfermer. Seule dans sa cellule, Briar était torturée par une faim lancinante (elle ne pouvait pas mourir de faim, mais l'absence de sang frais l'affaiblissait). Elle entendit bientôt les plaintes et les cris des autres armes vivantes capturées autour d'elle, qui ne parlaient que de leur soif de sang (hemomania).\r\n\r\nPour Briar, cette mono-obsession était d'un ennui mortel. Craignant que sa propre frénésie la rende aussi simple d'esprit et ennuyeuse que ses voisins, elle se résigna à une solitude apathique. Les années passèrent, lui permettant de réfléchir au monde extérieur.\r\n\r\nUn jour, en jouant avec son pilori, elle le desserra par inadvertance, découvrant le mécanisme de l'hémolithe. Elle réalisa qu'être sous contrôle était aussi dangereux qu'être hors de contrôle. Son nouveau but : trouver l'équilibre en décidant elle-même quand se déchaîner.\r\n\r\nElle mit au point un plan pour attirer un garde près de sa cellule et, avec le sang de celui-ci, elle se libéra.\r\n\r\nAujourd'hui, l'arme vivante rôde dans les rues de Noxus, le pilori de nouveau verrouillé... jusqu'à ce qu'elle décide de le déverrouiller. Elle s'acclimate au monde extérieur, apprenant avidement, faisant de nouvelles découvertes, et savourant chaque occasion de se déchaîner, cherchant à satisfaire sa faim de sang et de connaissances, bien décidée à ne jamais devenir l'arme simple et ennuyeuse que la Rose noire voulait qu'elle soit.",
+  "version": "16.8.1",
+  "lore": "Née d'une expérience ratée menée par la Rose noire, Briar a besoin d'un pilori spécial pour contrôler son irrépressible soif de sang. Après des années d'enfermement, cette arme vivante s'est aujourd'hui défaite de ses entraves et parcourt le monde librement. Plus personne ne la contrôle. Elle assouvit sa soif de connaissance et de sang au gré de ses envies, et savoure chaque occasion de se déchaîner, même si mettre fin à sa frénésie sanguinaire n'est jamais facile.",
   "tags": [
     "Fighter",
     "Assassin"
   ],
   "partype": "Fureur",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Briar.png",
+    "sprite": "champion0.png",
+    "group": "champion",
     "x": 432,
     "y": 48,
-    "full": "Briar.png",
-    "group": "champion",
-    "sprite": "champion0.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "233000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "233001",
-      "num": 1,
-      "name": "Briar ville démoniaque",
-      "chromas": true
-    },
-    {
-      "id": "233010",
-      "num": 10,
-      "name": "Briar primordienne",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "BriarQ",
       "name": "À table !",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BriarQ.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 192,
         "y": 48,
-        "full": "BriarQ.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -63,6 +43,11 @@
           "Dégâts",
           "Réduction d'armure et de résistance magique",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ shredpercent*100.000000 }}% -> {{ shredpercentnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Coûte {{ spell.briarp:currenthealthpercentcost*100 }}% des PV actuels.",
@@ -76,13 +61,13 @@
       "name": "Folie sanguinaire / Juste un croc",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BriarW.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 240,
         "y": 48,
-        "full": "BriarW.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -97,6 +82,14 @@
           "Dégâts",
           "Soins",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ berserkas*100.000000 }}% -> {{ berserkasnl*100.000000 }}%",
+          "{{ berserkms*100.000000 }}% -> {{ berserkmsnl*100.000000 }}%",
+          "{{ aoeattackdamagepercent*100.000000 }}% -> {{ aoeattackdamagepercentnl*100.000000 }}%",
+          "{{ attackbonusdamage }} -> {{ attackbonusdamageNL }}",
+          "{{ attackhealpercent*100.000000 }}% -> {{ attackhealpercentnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Coûte {{ spell.briarp:currenthealthpercentcost*100 }}% des PV actuels.",
@@ -110,13 +103,13 @@
       "name": "Cri sanglant",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BriarE.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 288,
         "y": 48,
-        "full": "BriarE.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -128,6 +121,11 @@
           "Dégâts",
           "Dégâts supplémentaires",
           "Ratio de soins"
+        ],
+        "effect": [
+          "{{ maxbasedamage }} -> {{ maxbasedamageNL }}",
+          "{{ wallhitbasedamage }} -> {{ wallhitbasedamageNL }}",
+          "{{ healhppercent*100.000000 }}% -> {{ healhppercentnl*100.000000 }}%"
         ]
       },
       "resource": "Coûte {{ spell.briarp:currenthealthpercentcost*100 }}% des PV actuels.",
@@ -141,13 +139,13 @@
       "name": "Vol mortel",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BriarR.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 336,
         "y": 48,
-        "full": "BriarR.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -160,6 +158,12 @@
           "Vol de vie",
           "Vitesse de déplacement",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ lifestealpercent*100.000000 }}% -> {{ lifestealpercentnl*100.000000 }}%",
+          "{{ extramovespeedpercent*100.000000 }}% -> {{ extramovespeedpercentnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Coûte {{ spell.briarp:currenthealthpercentcost*100 }}% des PV actuels.",
@@ -172,13 +176,13 @@
   "passive": {
     "name": "Malédiction écarlate",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "BriarP.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 432,
       "y": 48,
-      "full": "BriarP.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Les attaques et compétences de Briar infligent un saignement cumulable qui la soigne d'une partie des dégâts qu'il inflige. Du fait de sa faim permanente, Briar manque de régénération naturelle des PV, mais moins elle a de PV, plus ses soins sont renforcés."
   },
@@ -193,20 +197,20 @@
   "gender": "Female",
   "species": "Magically Altered Human",
   "title_en": "the Restrained Hunger",
-  "lore_en": "Briar was conceived near the end of Grand General Boram Darkwill's reign, created by the Black Rose and its hemomancers to be a new kind of living weapon, fueled by blood and designed to hunt targets without needing food or water. However, her creators got a creature driven by one singular desire: to eat (blood).\r\n\r\nHer first mission ended in a frenzied, gory failure. The Black Rose deemed Briar too dangerous to use but too powerful to destroy. To control her, they devised a special pillory locked by a hemolith gemstone, intended to restrain and focus her mind. Once shackled, she was deployed during Jericho Swain's coup against Darkwill. Briar was released from her pillory, but immediately devoured her handler and everyone nearby—everyone except her target, Swain.\r\n\r\nAfter an arduous capture, Swain's guards managed to re-activate the pillory and lock her away. Alone in her cell, Briar was plagued by a gnawing hunger (she couldn't die from starvation, but the absence of fresh blood weakened her). She soon heard the wails and cries of the other captured living weapons around her, who talked of nothing but their bloodlust (hemomania).\r\n\r\nTo Briar, this single-minded obsession was boringly monotonous. Fearing that her own frenzy would make her as single-minded and boring as her neighbors, she resigned herself to listless solitude. Years passed, allowing her to reflect on the outside world.\r\n\r\nOne day, while toying with her pillory, she inadvertently loosened it, discovering the hemolith's mechanism. She realized that being under control was just as dangerous as being out of control. Her new goal: to strike a balance by deciding herself when to unleash the frenzy.\r\n\r\nShe devised a plan to lure a guard close to her cell and, using his blood, she broke free.\r\n\r\nNow, the living weapon gleefully roams the streets of Noxus, the pillory locked back in place—until she decides to unlock it. She is acclimating to the outside world, eagerly learning all she can, making new friends and discoveries, and relishing every opportunity to unleash her frenzy, determined to satisfy her hunger for both blood and knowledge, and committed to never becoming the simple, boring weapon the Black Rose intended her to be.",
+  "lore_en": "A failed experiment by the Black Rose, Briar's uncontrollable bloodlust required a special pillory to focus her frenzied mind. After years of confinement, this living weapon broke free from her restraints and unleashed herself into the world. Now she's controlled by no one—following only her hunger for knowledge and blood—and relishes the opportunities to let loose, even if reining back the frenzy isn't easy.",
   "spells_en": [
     {
       "id": "BriarQ",
       "name": "Head Rush",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BriarQ.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 192,
         "y": 48,
-        "full": "BriarQ.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -218,6 +222,11 @@
           "Damage",
           "Armor and Magic Resist Shred",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ shredpercent*100.000000 }}% -> {{ shredpercentnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ spell.briarp:currenthealthpercentcost*100 }}% of current Health",
@@ -231,13 +240,13 @@
       "name": "Blood Frenzy / Snack Attack",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BriarW.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 240,
         "y": 48,
-        "full": "BriarW.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -252,6 +261,14 @@
           "Damage",
           "Healing",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ berserkas*100.000000 }}% -> {{ berserkasnl*100.000000 }}%",
+          "{{ berserkms*100.000000 }}% -> {{ berserkmsnl*100.000000 }}%",
+          "{{ aoeattackdamagepercent*100.000000 }}% -> {{ aoeattackdamagepercentnl*100.000000 }}%",
+          "{{ attackbonusdamage }} -> {{ attackbonusdamageNL }}",
+          "{{ attackhealpercent*100.000000 }}% -> {{ attackhealpercentnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ spell.briarp:currenthealthpercentcost*100 }}% of current Health",
@@ -265,13 +282,13 @@
       "name": "Chilling Scream",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BriarE.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 288,
         "y": 48,
-        "full": "BriarE.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -283,6 +300,11 @@
           "Damage",
           "Additional Damage",
           "Heal Ratio"
+        ],
+        "effect": [
+          "{{ maxbasedamage }} -> {{ maxbasedamageNL }}",
+          "{{ wallhitbasedamage }} -> {{ wallhitbasedamageNL }}",
+          "{{ healhppercent*100.000000 }}% -> {{ healhppercentnl*100.000000 }}%"
         ]
       },
       "resource": "{{ spell.briarp:currenthealthpercentcost*100 }}% of current Health",
@@ -296,13 +318,13 @@
       "name": "Certain Death",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BriarR.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 336,
         "y": 48,
-        "full": "BriarR.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -315,6 +337,12 @@
           "Life Steal",
           "Move Speed",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ lifestealpercent*100.000000 }}% -> {{ lifestealpercentnl*100.000000 }}%",
+          "{{ extramovespeedpercent*100.000000 }}% -> {{ extramovespeedpercentnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ spell.briarp:currenthealthpercentcost*100 }}% of current Health",
@@ -327,13 +355,13 @@
   "passive_en": {
     "name": "Crimson Curse",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "BriarP.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 432,
       "y": 48,
-      "full": "BriarP.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Briar's attacks and abilities apply a stacking bleed that heals her for a portion of the damage it deals. Perpetually hungry, she gains increased healing based on her missing Health, but lacks innate Health Regeneration."
   },
@@ -359,6 +387,39 @@
       "num": 10,
       "name": "Primordian Briar",
       "chromas": true
+    },
+    {
+      "id": "233020",
+      "num": 20,
+      "name": "Battle Academia Briar",
+      "chromas": true
     }
-  ]
+  ],
+  "skins": [
+    {
+      "id": "233000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "233001",
+      "num": 1,
+      "name": "Briar ville démoniaque",
+      "chromas": true
+    },
+    {
+      "id": "233010",
+      "num": 10,
+      "name": "Briar primordienne",
+      "chromas": true
+    },
+    {
+      "id": "233020",
+      "num": 20,
+      "name": "Briar de l'Académie du combat",
+      "chromas": true
+    }
+  ],
+  "related_characters": []
 }

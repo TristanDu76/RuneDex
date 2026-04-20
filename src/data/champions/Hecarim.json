@@ -3,115 +3,35 @@
   "key": "120",
   "name": "Hecarim",
   "title": "Ombre de la guerre",
-  "version": "15.23.1",
-  "lore": "Hecarim était un lieutenant de l'Ordre de Fer (Iron Order), une fraternité de chevaliers au service d'un empire aujourd'hui oublié. Monté sur son puissant cheval de guerre, il accumulait les victoires. Le commandant de l'Ordre de Fer vit en lui un successeur potentiel, mais aussi une obscurité grandissante : son désir obsessionnel de gloire érodait son honneur. Sachant qu'Hecarim ne devait jamais diriger l'Ordre, le commandant le lui annonça.\n\nFou de rage, Hecarim cacha sa colère. Lors de la bataille suivante, le commandant se retrouva encerclé par les ennemis. Hecarim, voyant sa chance, tourna le dos et le laissa mourir. À la fin du combat, les chevaliers, ignorant sa trahison, jurèrent allégeance à Hecarim.\n\nHecarim se rendit à la capitale pour prendre ses serments officiels et rencontra Kalista, la générale la plus fiable du roi. Elle reconnut ses qualités, et lorsqu'une lame empoisonnée blessa mortellement la reine, Kalista partit chercher un remède sur les Îles bénies, confiant l'Ordre de Fer à Hecarim pour protéger le roi.\n\nLe roi, sombrant dans la paranoïa, ordonna à Hecarim de réprimer la dissidence. L'Ordre de Fer devint tristement célèbre pour sa cruauté en tant qu'exécuteur des volontés du roi.\n\nAprès la mort de la reine, Hecarim, assoiffé de gloire, exacerba la haine du roi pour l'inciter à la guerre. Mais Kalista revint, trop tard. Le roi la fit emprisonner comme traîtresse, refusant de croire que le remède était désormais inutile. Intrigué par les récits des Eaux de Vie des Îles Bénies, Hecarim persuada Kalista de guider la flotte du roi vers les Îles.\n\nArrivés à Helia, les maîtres de la cité refusèrent d'aider le roi. Enragé, le roi ordonna à Kalista de les tuer. Face à son refus, Hecarim sourit, prit une décision qui le damnerait pour l'éternité, et planta sa lance dans le dos de Kalista, ordonnant à ses chevaliers de piller la ville.\n\nAu milieu du chaos, un gardien accepta de donner l'accès aux Eaux de Vie au roi. Mais Hecarim était trop absorbé par le plaisir du bain de sang. Il fut pris par surprise par la Ruine : une onde de choc magique déchira Helia, suivie de la Brume noire (Black Mist) qui emporta toute créature vivante. Hecarim tenta de rallier ses hommes, mais ils furent submergés un par un.\n\nSeul et défiant jusqu'à la fin, Hecarim fut fusionné avec son cheval par les ombres, se transformant en une abomination spectrale et monstrueuse, reflet de la noirceur de son cœur.\n\nCondamné à patrouiller les Îles Obscures (Shadow Isles) pour toujours dans une sinistre moquerie de sa vie passée, Hecarim mène désormais la charge de l'armée spectrale de l'Ordre de Fer chaque fois que la Brume noire s'étend, se plaisant à massacrer et écraser les vivants en souvenir de sa gloire perdue.",
+  "version": "16.8.1",
+  "lore": "Fusion spectrale de l'homme et de la bête, Hecarim est condamné à pourchasser les âmes des vivants pour l'éternité. Lorsque les ombres ont envahi les Îles bénies, ce fier chevalier et sa horde de cavaliers ont été anéantis par les énergies destructrices de la Ruine. À présent, quand la Brume noire s'étend sur Runeterra, il mène la charge et se plaît à massacrer et écraser ses ennemis sous ses lourds sabots.",
   "tags": [
     "Fighter",
     "Tank"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Hecarim.png",
+    "sprite": "champion1.png",
+    "group": "champion",
     "x": 144,
     "y": 48,
-    "full": "Hecarim.png",
-    "group": "champion",
-    "sprite": "champion1.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "120000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "120001",
-      "num": 1,
-      "name": "Hecarim chevalier de sang",
-      "chromas": false
-    },
-    {
-      "id": "120002",
-      "num": 2,
-      "name": "Hecarim faucheur",
-      "chromas": false
-    },
-    {
-      "id": "120003",
-      "num": 3,
-      "name": "Hecarim sans tête",
-      "chromas": false
-    },
-    {
-      "id": "120004",
-      "num": 4,
-      "name": "Hecarim arcade",
-      "chromas": false
-    },
-    {
-      "id": "120005",
-      "num": 5,
-      "name": "Hecarim sylvestre",
-      "chromas": false
-    },
-    {
-      "id": "120006",
-      "num": 6,
-      "name": "Hecarim brise-monde",
-      "chromas": false
-    },
-    {
-      "id": "120007",
-      "num": 7,
-      "name": "Hecarim Lancier Zéro",
-      "chromas": false
-    },
-    {
-      "id": "120008",
-      "num": 8,
-      "name": "Hecarim de l'Ouest",
-      "chromas": true
-    },
-    {
-      "id": "120014",
-      "num": 14,
-      "name": "Hecarim cavalier cosmique",
-      "chromas": true
-    },
-    {
-      "id": "120022",
-      "num": 22,
-      "name": "Hecarim des arcanes",
-      "chromas": true
-    },
-    {
-      "id": "120031",
-      "num": 31,
-      "name": "Hecarim élu de l'hiver",
-      "chromas": true
-    },
-    {
-      "id": "120041",
-      "num": 41,
-      "name": "Hecarim héraut de la nuit",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "HecarimRapidSlash",
       "name": "Carnage",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "HecarimRapidSlash.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 0,
         "y": 144,
-        "full": "HecarimRapidSlash.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -122,6 +42,10 @@
         "label": [
           "Dégâts",
           "Coût en mana"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -135,13 +59,13 @@
       "name": "Essence de la peur",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "HecarimW.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 48,
         "y": 144,
-        "full": "HecarimW.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -154,6 +78,12 @@
           "Résistances supplémentaires",
           "PV soignés max",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ resistamount }} -> {{ resistamountNL }}",
+          "{{ minionhealcap }} -> {{ minionhealcapNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -167,13 +97,13 @@
       "name": "Charge dévastatrice",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "HecarimRamp.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 96,
         "y": 144,
-        "full": "HecarimRamp.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -185,6 +115,11 @@
           "Dégâts minimum",
           "Dégâts maximum",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ minbasedamage }} -> {{ minbasedamageNL }}",
+          "{{ maxbasedamage }} -> {{ maxbasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -198,13 +133,13 @@
       "name": "Légion des ombres",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "HecarimUlt.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 144,
         "y": 144,
-        "full": "HecarimUlt.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -215,6 +150,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -227,13 +166,13 @@
   "passive": {
     "name": "Galop",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Hecarim_Passive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 144,
       "y": 48,
-      "full": "Hecarim_Passive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Les dégâts d'attaque d'Hecarim augmentent d'un montant égal à un pourcentage de sa vitesse de déplacement bonus."
   },
@@ -248,20 +187,20 @@
   "gender": "Male",
   "species": "Undead",
   "title_en": "the Shadow of War",
-  "lore_en": "Hecarim was a lieutenant of the Iron Order, a brotherhood of knights sworn to defend a king's lands in an empire long since forgotten. Mounted on his mighty warhorse, he accumulated victory after victory. The commander of the Iron Order saw in him a potential successor but also a growing darkness: his obsessive hunger for glory was eroding his honor. Knowing Hecarim must never lead the Order, the commander told him so.\n\nHecarim was furious, but bit back his anger. In the next war, the commander found himself surrounded by enemies. Hecarim, seeing his chance, turned away and left him to die. At the battle's end, the knights, oblivious to Hecarim's betrayal, swore allegiance to him.\n\nHecarim rode to the capital to take his formal oaths and met with Kalista, the king's most trusted general. When a poisoned blade wounded the queen, Kalista left to seek a cure on the distant Blessed Isles, entrusting the Iron Order to Hecarim to protect the king.\n\nThe king, consumed by paranoia, ordered Hecarim to quell dissent. The Iron Order earned a dreadful reputation as ruthless enforcers of the king's will.\n\nAfter the queen died, Hecarim, craving dark renown, twisted the king's grief into hatred, seeking sanction to ride out for revenge. But Kalista returned, too late. The king had her imprisoned as a traitor. Intrigued by the talk of the Waters of Life on the Blessed Isles, Hecarim eventually persuaded Kalista to guide the king's fleet through the veil to the Isles.\n\nThey landed at the city of Helia. When the city's masters refused to help, the enraged king ordered Kalista to kill them. When she refused, Hecarim smiled, made the decision that would damn him for eternity, and drove a spear through Kalista’s back, ordering his knights to ransack the city.\n\nAmid the chaos, a custodian agreed to grant the king access to the Waters of Life. But Hecarim was too distracted by the revelry of bloodshed. He was almost completely surprised by the Ruination: a magical blastwave tore across Helia, followed by the Black Mist, a billowing hurricane that claimed every living creature it touched. Hecarim tried to rally the Iron Order, but they were claimed one by one.\n\nAlone, and defiant to the end, Hecarim was fused with his mighty steed by the shadows, becoming a monstrous, spectral abomination that reflected the darkness in his heart.\n\nBound forevermore to the Shadow Isles, Hecarim spends centuries in a sinister mockery of his former life. Whenever the Black Mist reaches out beyond their shores, he and the otherworldly host of the Iron Order ride out to slaughter the living, trampling them under heavy hooves in memory of glories long passed.",
+  "lore_en": "Hecarim is a spectral fusion of man and beast, cursed to ride down the souls of the living for all eternity. When the Blessed Isles fell into shadow, this proud knight was obliterated by the destructive energies of the Ruination, along with all his cavalry and their mounts. Now, whenever the Black Mist reaches out across Runeterra, he leads their devastating charge, reveling in the slaughter and crushing the foe beneath his armored hooves.",
   "spells_en": [
     {
       "id": "HecarimRapidSlash",
       "name": "Rampage",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "HecarimRapidSlash.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 0,
         "y": 144,
-        "full": "HecarimRapidSlash.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -272,6 +211,10 @@
         "label": [
           "Damage",
           "Mana Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -285,13 +228,13 @@
       "name": "Spirit of Dread",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "HecarimW.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 48,
         "y": 144,
-        "full": "HecarimW.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -304,6 +247,12 @@
           "Bonus Resistances",
           "Healing Cap",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ resistamount }} -> {{ resistamountNL }}",
+          "{{ minionhealcap }} -> {{ minionhealcapNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -317,13 +266,13 @@
       "name": "Devastating Charge",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "HecarimRamp.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 96,
         "y": 144,
-        "full": "HecarimRamp.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -335,6 +284,11 @@
           "Minimum Damage",
           "Maximum Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ minbasedamage }} -> {{ minbasedamageNL }}",
+          "{{ maxbasedamage }} -> {{ maxbasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -348,13 +302,13 @@
       "name": "Onslaught of Shadows",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "HecarimUlt.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 144,
         "y": 144,
-        "full": "HecarimUlt.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -365,6 +319,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -377,13 +335,13 @@
   "passive_en": {
     "name": "Warpath",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Hecarim_Passive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 144,
       "y": 48,
-      "full": "Hecarim_Passive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Hecarim gains Attack Damage equal to a percentage of his bonus Move Speed."
   },
@@ -469,6 +427,93 @@
       "num": 41,
       "name": "Nightbringer Hecarim",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "120000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "120001",
+      "num": 1,
+      "name": "Hecarim chevalier de sang",
+      "chromas": false
+    },
+    {
+      "id": "120002",
+      "num": 2,
+      "name": "Hecarim faucheur",
+      "chromas": false
+    },
+    {
+      "id": "120003",
+      "num": 3,
+      "name": "Hecarim sans tête",
+      "chromas": false
+    },
+    {
+      "id": "120004",
+      "num": 4,
+      "name": "Hecarim arcade",
+      "chromas": false
+    },
+    {
+      "id": "120005",
+      "num": 5,
+      "name": "Hecarim sylvestre",
+      "chromas": false
+    },
+    {
+      "id": "120006",
+      "num": 6,
+      "name": "Hecarim brise-monde",
+      "chromas": false
+    },
+    {
+      "id": "120007",
+      "num": 7,
+      "name": "Hecarim Lancier Zéro",
+      "chromas": false
+    },
+    {
+      "id": "120008",
+      "num": 8,
+      "name": "Hecarim de l'Ouest",
+      "chromas": true
+    },
+    {
+      "id": "120014",
+      "num": 14,
+      "name": "Hecarim cavalier cosmique",
+      "chromas": true
+    },
+    {
+      "id": "120022",
+      "num": 22,
+      "name": "Hecarim des arcanes",
+      "chromas": true
+    },
+    {
+      "id": "120031",
+      "num": 31,
+      "name": "Hecarim élu de l'hiver",
+      "chromas": true
+    },
+    {
+      "id": "120041",
+      "num": 41,
+      "name": "Hecarim héraut de la nuit",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "ledros",
+      "type": "lore",
+      "relation": "rival"
     }
   ]
 }

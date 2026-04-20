@@ -3,66 +3,40 @@
   "key": "950",
   "name": "Naafiri",
   "title": "la meute de fer",
-  "version": "15.23.1",
-  "lore": "Naafiri est une puissante Darkin qui faillit autrefois diriger ses frères et sœurs. Cependant, elle fut trahie (vraisemblablement par l'Aspect, Myisha) et maudite : son esprit fut lié à une simple dague de lancer antique. Pendant des siècles, elle resta prisonnière dans une crypte de Shurima, incapable de bouger ou de parler, consumée par la honte et le regret de sa défaite.\n\nLa Libération et l'Échec Initial :\n\nLe jour de sa libération, elle sentit la présence d'un humain, son hôte potentiel. Elle espéra qu'il la toucherait pour qu'elle puisse prendre possession de son corps. Cependant, l'homme était au courant de la magie Darkin et ramassa la dague avec des pinces métalliques, l'enveloppant dans un épais tissu doublé de plomb avant de fuir à cheval.\n\nLa Mutation Involontaire :\n\nDésespérée, Naafiri invoqua mentalement une meute de chiens des sables (dune hounds), espérant que l'humain glisserait ou la toucherait en se défendant. Les chiens attaquèrent l'homme et son cheval, les dévorant entièrement.\n\nNaafiri sentit alors le monde revenir brutalement à elle. Elle fut submergée par les sens (odeurs, sang, vision). Elle réalisa avec confusion qu'elle était devenue les chiens des sables : non pas un seul chien, mais l'entité entière du pack.\n\nLa Révélation du Pack :\n\nCe fut une cruelle ironie : elle avait trouvé non pas un seul hôte pour ses grandes ambitions, mais des dizaines, et aucun d'entre eux ne lui semblait utile. Elle détestait la nature primitive des chiens, leur odeur, et surtout, leur besoin de compagnie.\n\nCependant, son amertume s'estompa lorsqu'elle comprit la vraie nature de ses hôtes. Les chiens, individuellement faibles, étaient des prédateurs dominants collectivement. Naafiri réalisa que ce concept s'appliquait aux Darkin : ce n'étaient pas les ambitions personnelles qui les avaient fait chuter, mais leurs querelles intestines et leurs jalousies.\n\nElle est désormais mue par cette nouvelle sagesse : l'unité fait la force. Elle sait comment restaurer les Darkin. Il ne lui reste plus qu'à trouver ses frères et sœurs et partager avec eux la sagesse du pack.",
+  "version": "16.8.1",
+  "lore": "À travers le désert de Shurima, un concert de hurlements retentit. C'est l'appel des chiens des sables, ces prédateurs voraces qui se déplacent en meutes et luttent pour la moindre source de nourriture de ces terres stériles. Parmi ces meutes, une se distingue des autres. Elle ne suit pas uniquement ses instincts primitifs : elle est guidée par le pouvoir antique des Darkin.",
   "tags": [
     "Assassin",
     "Fighter"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Naafiri.png",
+    "sprite": "champion2.png",
+    "group": "champion",
     "x": 336,
     "y": 96,
-    "full": "Naafiri.png",
-    "group": "champion",
-    "sprite": "champion2.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "950000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "950001",
-      "num": 1,
-      "name": "Naafiri combattante spirituelle",
-      "chromas": true
-    },
-    {
-      "id": "950011",
-      "num": 11,
-      "name": "PROJET : Naafiri",
-      "chromas": true
-    },
-    {
-      "id": "950020",
-      "num": 20,
-      "name": "Naafiri hot-dog",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "NaafiriQ",
       "name": "Dagues des Darkin",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NaafiriQ.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 288,
         "y": 0,
-        "full": "NaafiriQ.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
       "tooltip": "Naafiri lance des lames des Darkin, infligeant <physicalDamage>{{ spell.naafiriq:totaldamagefirstcast }} pts de dégâts physiques</physicalDamage> et appliquant un saignement qui inflige <physicalDamage>{{ spell.naafiriq:totalbleeddamage }} pts de dégâts physiques</physicalDamage> en {{ spell.naafiriq:bleedduration }} sec.<br /><br />Naafiri peut <recast>relancer</recast> cette compétence. Si l'ennemi touché subit déjà le saignement de cette compétence, elle lui inflige à la place les dégâts de saignement restants et <physicalDamage>{{ spell.naafiriq:totalmindamagesecondcast }}</physicalDamage>-<physicalDamage>{{ spell.naafiriq:totalmaxdamagesecondcast }} pts de dégâts physiques</physicalDamage> supplémentaires, en fonction des PV manquants de la cible. Si la cible était un champion ou un grand monstre, Naafiri récupère <healing>{{ spell.naafiriq:totalhealsecondcast }} PV</healing>.<br /><br />Les <keywordMajor>membres de meute</keywordMajor> bondissent sur le premier champion touché et l'attaquent pendant {{ spell.naafirip:packmatetauntduration }} sec. <br /><br />{{ spellmodifierdescriptionappend }}",
-      "costBurn": "55/60/65/70/75",
+      "costBurn": "50/60/70/80/90",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
@@ -72,6 +46,14 @@
           "Soins",
           "Coût en @AbilityResourceName@",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamagefirstcast }} -> {{ basedamagefirstcastNL }}",
+          "{{ basedamagesecondcast }} -> {{ basedamagesecondcastNL }}",
+          "{{ bleedbasedamage }} -> {{ bleedbasedamageNL }}",
+          "{{ basehealsecondcast }} -> {{ basehealsecondcastNL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -85,13 +67,13 @@
       "name": "Appel de la meute",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NaafiriR.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 336,
         "y": 0,
-        "full": "NaafiriR.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -102,6 +84,10 @@
         "label": [
           "Vitesse de déplacement",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ movespeedamount*100.000000 }}% -> {{ movespeedamountnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -115,24 +101,29 @@
       "name": "Éviscération",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NaafiriE.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 384,
         "y": 0,
-        "full": "NaafiriE.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
       "tooltip": "Naafiri se rue en avant, infligeant <physicalDamage>{{ totaldamagefirstslash }} pts de dégâts physiques</physicalDamage>, puis projette une volée de lames qui infligent <physicalDamage>{{ totaldamagesecondslash }} pts de dégâts physiques</physicalDamage>.<br /><br />Les <keywordMajor>membres de la meute</keywordMajor> deviennent impossibles à cibler et retournent auprès de Naafiri, <healing>récupérant 100% de leurs PV</healing>. <br />{{ spellmodifierdescriptionappend }}",
-      "costBurn": "35",
+      "costBurn": "40",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Dégâts (premier coup)",
           "Dégâts (deuxième coup)",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamagefirstslash }} -> {{ basedamagefirstslashNL }}",
+          "{{ basedamagesecondhit }} -> {{ basedamagesecondhitNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -146,13 +137,13 @@
       "name": "Hallali",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NaafiriW.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 432,
         "y": 0,
-        "full": "NaafiriW.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -164,6 +155,11 @@
           "Dégâts",
           "PV du bouclier",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ shieldsize }} -> {{ shieldsizeNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -176,13 +172,13 @@
   "passive": {
     "name": "La meute s'agrandit",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Icons_Naafiri_P.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 336,
       "y": 96,
-      "full": "Icons_Naafiri_P.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Naafiri fait apparaître des membres de meute qui attaquent les cibles de ses attaques et de ses compétences."
   },
@@ -196,25 +192,25 @@
   "gender": "Female",
   "species": "Darkin",
   "title_en": "the Hound of a Hundred Bites",
-  "lore_en": "Naafiri is a powerful Darkin who once almost led her siblings. However, she was betrayed (presumably by the Aspect, Myisha) and cursed: her spirit was bound to an ancient throwing dagger. For centuries, she remained imprisoned in a crypt in Shurima, unable to move or speak, consumed by shame and regret over her defeat.\n\nThe Liberation and Initial Failure:\n\nThe day of her release, she sensed a human presence—her potential host. She hoped he would touch her so she could possess his body. However, the man was aware of Darkin magic and carefully picked up the dagger with metal tongs, wrapping it in thick, lead-lined cloth before fleeing on horseback.\n\nThe Unintentional Mutation:\n\nDesperate, Naafiri mentally called out to a pack of dune hounds, hoping the man would slip and touch the blade while defending himself. The hounds attacked the man and his horse, devouring them completely.\n\nNaafiri suddenly felt the world rush back into focus, overwhelmed by senses (smell, blood, sight). She realized with confusion that she had become the dune hounds: not one of them, but the entire pack entity, her shattered consciousness resonating through each dog.\n\nThe Revelation of the Pack:\n\nIt seemed a cruel irony: she had found not one host for her grand ambitions, but dozens, and none were useful individually. She hated the hounds' primitive nature and, most of all, their need for companionship.\n\nHowever, her bitterness subsided as she grasped her hosts' true nature. The dogs, separately weak, were an apex predator collectively. Naafiri realized this concept applied to the Darkin: it was not personal ambition that caused their downfall, but their internal feuds and petty agendas.\n\nShe is now driven by this new wisdom: unity is strength. She knows how to restore the Darkin. Now she only needs to find her siblings and share with them the wisdom of the pack.",
+  "lore_en": "Across the sands of Shurima, a chorus of howls rings out. It is the call of the dune hounds, voracious predators who form packs and compete for the right to hunt in these barren lands. Among them, one pack stands above all, for they are driven not only by canine instincts, but by the ancient power of the Darkin.",
   "spells_en": [
     {
       "id": "NaafiriQ",
       "name": "Darkin Daggers",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NaafiriQ.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 288,
         "y": 0,
-        "full": "NaafiriQ.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
       "tooltip": "Naafiri hurls Darkin-tainted blades, dealing <physicalDamage>{{ spell.naafiriq:totaldamagefirstcast }} physical damage</physicalDamage> and inflicting a bleed, dealing <physicalDamage>{{ spell.naafiriq:totalbleeddamage }} physical damage</physicalDamage> over {{ spell.naafiriq:bleedduration }} seconds.<br /><br />Naafiri can <recast>Recast</recast> this Ability. If enemies hit are already bleeding from this Ability, it instead deals the remaining bleed damage plus between <physicalDamage>{{ spell.naafiriq:totalmindamagesecondcast }}</physicalDamage> and <physicalDamage>{{ spell.naafiriq:totalmaxdamagesecondcast }} physical damage</physicalDamage>, based on their missing Health. If that target was a champion or large monster, Naafiri restores <healing>{{ spell.naafiriq:totalhealsecondcast }} Health</healing>.<br /><br /><keywordMajor>Packmates</keywordMajor> will leap at the first champion or monster hit and attack them for {{ spell.naafirip:packmatetauntduration }} seconds. <br /><br />{{ spellmodifierdescriptionappend }}",
-      "costBurn": "55/60/65/70/75",
+      "costBurn": "50/60/70/80/90",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
@@ -224,6 +220,14 @@
           "Healing",
           "@AbilityResourceName@ Cost",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamagefirstcast }} -> {{ basedamagefirstcastNL }}",
+          "{{ basedamagesecondcast }} -> {{ basedamagesecondcastNL }}",
+          "{{ bleedbasedamage }} -> {{ bleedbasedamageNL }}",
+          "{{ basehealsecondcast }} -> {{ basehealsecondcastNL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -237,13 +241,13 @@
       "name": "The Call of the Pack",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NaafiriR.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 336,
         "y": 0,
-        "full": "NaafiriR.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -254,6 +258,10 @@
         "label": [
           "Move Speed",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ movespeedamount*100.000000 }}% -> {{ movespeedamountnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -267,24 +275,29 @@
       "name": "Eviscerate",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NaafiriE.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 384,
         "y": 0,
-        "full": "NaafiriE.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
       "tooltip": "Naafiri surges forward, dealing <physicalDamage>{{ totaldamagefirstslash }} physical damage</physicalDamage>, then explodes in a flurry of blades, dealing <physicalDamage>{{ totaldamagesecondslash }} physical damage.</physicalDamage><br /><br /><keywordMajor>Packmates</keywordMajor> become Untargetable and are recalled to Naafiri <healing>restoring 100% Health</healing>. <br />{{ spellmodifierdescriptionappend }}",
-      "costBurn": "35",
+      "costBurn": "40",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Damage (First Slash)",
           "Damage (Second Slash)",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamagefirstslash }} -> {{ basedamagefirstslashNL }}",
+          "{{ basedamagesecondhit }} -> {{ basedamagesecondhitNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -298,13 +311,13 @@
       "name": "Hounds' Pursuit",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NaafiriW.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 432,
         "y": 0,
-        "full": "NaafiriW.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -316,6 +329,11 @@
           "Damage",
           "Shield Amount",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ shieldsize }} -> {{ shieldsizeNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -328,13 +346,13 @@
   "passive_en": {
     "name": "We Are More",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Icons_Naafiri_P.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 336,
       "y": 96,
-      "full": "Icons_Naafiri_P.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Naafiri spawns packmates that attack the targets of her attacks and abilities."
   },
@@ -367,6 +385,53 @@
       "num": 20,
       "name": "Glizzy Naafiri",
       "chromas": true
+    },
+    {
+      "id": "950029",
+      "num": 29,
+      "name": "Warhound Naafiri",
+      "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "950000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "950001",
+      "num": 1,
+      "name": "Naafiri combattante spirituelle",
+      "chromas": true
+    },
+    {
+      "id": "950011",
+      "num": 11,
+      "name": "PROJET : Naafiri",
+      "chromas": true
+    },
+    {
+      "id": "950020",
+      "num": 20,
+      "name": "Naafiri hot-dog",
+      "chromas": true
+    },
+    {
+      "id": "950029",
+      "num": 29,
+      "name": "Naafiri limier de guerre",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Aatrox",
+      "type": "champion",
+      "relation": "rival/ally",
+      "note_fr": "Trouve Aatrox têtu.",
+      "note_en": "Finds Aatrox stubborn."
     }
   ]
 }

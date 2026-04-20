@@ -3,79 +3,35 @@
   "key": "223",
   "name": "Tahm Kench",
   "title": "Roi des rivières",
-  "version": "15.23.1",
-  "lore": "Tahm Kench est un démon ancestral qui hante les voies navigables de Runeterra, du fleuve Serpentine aux canaux dorés de Piltover. Il est l'incarnation de l'addiction et de l'avarice. Ses légendes varient selon les régions, mais sa méthode reste constante : il propose un pacte à ceux qui sont insatisfaits de leur sort.\n\n Le Prix du Mensonge : L'un des premiers récits parle d'un batelier honnête à qui le démon promit des richesses en échange d'un \"petit mensonge\". De mensonge en mensonge, l'homme finit par perdre sa famille, sa maison et son identité, se retrouvant seul au milieu de l'océan sans plus personne à tromper.\n\n \"Deux-Vestes\" à Piltover : Dans la Cité du Progrès, on l'appelle \"Deux-Vestes\" car il est si large qu'il doit coudre deux manteaux ensemble. Il y séduit les inventeurs jaloux. Une jeune femme lui donna d'abord une mèche de cheveux contre une idée géniale, puis ses tresses, puis un doigt, puis une oreille... jusqu'à ce qu'elle le supplie d'arrêter. Il exauça son vœu en l'avalant tout entière.\n\n Le Symbole de Bilgewater : À Bilgewater, il est le saint patron des salles de jeux et des maisons de péché. Il représente le cycle de la fortune qui monte et descend avec la marée. On raconte qu'il ne perd jamais au jeu, car il ne parie pas de l'argent, mais l'avenir de ses adversaires.\n\n La Bouche du Néant : Peu importe le nom qu'on lui donne (Le Grand Dandineur, Vieux Ventre-Béant), la vérité est la même : ses mots sont mielleux et ses promesses alléchantes, mais finir dans sa bouche signifie être perdu à jamais.",
+  "version": "16.8.1",
+  "lore": "Au fil du temps, on lui a donné de nombreux noms. Le démon Tahm Kench voyage dans les cours d'eau de Runeterra, nourrissant son insatiable appétit de la misère des autres. Bien qu'il puisse sembler particulièrement charmant et fier, il rôde dans le monde tel un vagabond à la recherche d'une proie sans méfiance. Sa langue extensible peut étourdir un guerrier en armure à plusieurs mètres de distance, avant de l'attirer dans son estomac gargouillant vers un abysse dont il n'a que peu de chances de revenir.",
   "tags": [
     "Tank",
     "Support"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "TahmKench.png",
+    "sprite": "champion4.png",
+    "group": "champion",
     "x": 96,
     "y": 48,
-    "full": "TahmKench.png",
-    "group": "champion",
-    "sprite": "champion4.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "223000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "223001",
-      "num": 1,
-      "name": "Tahm Kench cordon-bleu",
-      "chromas": false
-    },
-    {
-      "id": "223002",
-      "num": 2,
-      "name": "Urf Kench",
-      "chromas": false
-    },
-    {
-      "id": "223003",
-      "num": 3,
-      "name": "Tahm Kench numismate",
-      "chromas": true
-    },
-    {
-      "id": "223011",
-      "num": 11,
-      "name": "Tahm Kench des arcanes",
-      "chromas": false
-    },
-    {
-      "id": "223020",
-      "num": 20,
-      "name": "Tahm Kench de l'Ouest",
-      "chromas": false
-    },
-    {
-      "id": "223030",
-      "num": 30,
-      "name": "Tahm Kench des rouleaux de Shan Hai",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "TahmKenchQ",
       "name": "Coup de langue",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TahmKenchQ.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 288,
         "y": 96,
-        "full": "TahmKenchQ.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -89,6 +45,13 @@
           "Soins selon un pourcentage des PV manquants",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ baseheal }} -> {{ basehealNL }}",
+          "{{ percenthealthhealing*100.000000 }}% -> {{ percenthealthhealingnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -102,13 +65,13 @@
       "name": "Plongée abyssale",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TahmKenchW.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 336,
         "y": 96,
-        "full": "TahmKenchW.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -122,6 +85,13 @@
           "Portée",
           "Coût en @AbilityResourceName@",
           "Réduction du délai de récupération"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ castrange }} -> {{ castrangeNL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ champrefund*100.000000 }}% -> {{ champrefundnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -135,13 +105,13 @@
       "name": "Peau épaisse",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TahmKenchE.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 384,
         "y": 96,
-        "full": "TahmKenchE.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -152,6 +122,10 @@
         "label": [
           "% de dégâts stockés par Peau épaisse",
           "% de dégâts stockés par Peau épaisse renforcée"
+        ],
+        "effect": [
+          "{{ greyhealthratio*100.000000 }}% -> {{ greyhealthrationl*100.000000 }}%",
+          "{{ greyhealthratioenhanced*100.000000 }}% -> {{ greyhealthratioenhancednl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -165,13 +139,13 @@
       "name": "Dévoration",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TahmKenchRWrapper.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 432,
         "y": 96,
-        "full": "TahmKenchRWrapper.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -183,6 +157,11 @@
           "Dégâts",
           "PV du bouclier",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ baseshield }} -> {{ baseshieldNL }}",
+          "{{ datacooldown }} -> {{ datacooldownNL }}"
         ]
       },
       "resource": "{{ datamanacost }} pts de mana",
@@ -195,13 +174,13 @@
   "passive": {
     "name": "Goût acquis",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "TahmKenchP.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 96,
       "y": 48,
-      "full": "TahmKenchP.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Tahm Kench met tout son poids dans ses attaques, permettant à ses PV totaux d'augmenter ses dégâts. Blesser des champions ennemis leur applique des effets <spellName>Goût acquis</spellName>. À 3 effets cumulés, Tahm Kench peut utiliser <spellName>Dévoration</spellName> sur un champion ennemi."
   },
@@ -214,20 +193,20 @@
   "gender": "Male",
   "species": "Demon",
   "title_en": "The River King",
-  "lore_en": "Tahm Kench is a primordial demon who haunts the waterways of Runeterra. From the Serpentine River to the gilded tables of Piltover, he is the embodiment of covetousness and addiction. He preys on the dissatisfied, offering them a taste of their deepest desires—for a price that always escalates.\n\n The Raftsman's Deceit: An early tale tells of an honest raftsman who told \"one little lie\" for a night of luxury. Night after night, the demon returned, demanding more lies for more pleasure. Eventually, the man had lied so much he had no home to return to and no one left to speak to.\n\n \"Two-Coats\" of Piltover: In the City of Progress, children call him \"Two-Coats\" due to his immense size. He preys on ambitious inventors. One woman traded locks of hair, then braids, then fingers and ears for innovative ideas. When she finally begged him to make the pain stop, he laughed and swallowed her whole to \"protect her from herself.\"\n\n Bilgewater's Sin Eater: In the ports of Bilgewater, Tahm Kench is a symbol for gambling dens. He represents the boom-and-bust nature of the city, a loquacious beast with an unending appetite for games of chance and the despair of those who lose.\n\n The Eternal Hunger: Known by many names (The Great Waddler, Old Yawn-Belly), he is a master of silver-tongued persuasion. His singular truth is this: no matter how alluring his bargains seem, in his mouth, you will be lost.",
+  "lore_en": "Known by many names throughout history, the demon Tahm Kench travels the waterways of Runeterra, feeding his insatiable appetite with the misery of others. Though he may appear singularly charming and proud, he swaggers through the physical realm like a vagabond in search of unsuspecting prey. His lashing tongue can stun even a heavily armored warrior from a dozen paces, and to fall into his rumbling belly is to tumble into an abyss from which there is little hope of return.",
   "spells_en": [
     {
       "id": "TahmKenchQ",
       "name": "Tongue Lash",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TahmKenchQ.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 288,
         "y": 96,
-        "full": "TahmKenchQ.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -241,6 +220,13 @@
           "Percent Missing Health Healing",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ baseheal }} -> {{ basehealNL }}",
+          "{{ percenthealthhealing*100.000000 }}% -> {{ percenthealthhealingnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -254,13 +240,13 @@
       "name": "Abyssal Dive",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TahmKenchW.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 336,
         "y": 96,
-        "full": "TahmKenchW.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -274,6 +260,13 @@
           "Range",
           "@AbilityResourceName@ Cost",
           "Cooldown Refund"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ castrange }} -> {{ castrangeNL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ champrefund*100.000000 }}% -> {{ champrefundnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -287,13 +280,13 @@
       "name": "Thick Skin",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TahmKenchE.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 384,
         "y": 96,
-        "full": "TahmKenchE.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -304,6 +297,10 @@
         "label": [
           "% Damage to Thick Skin",
           "% Damage to Thick Skin Enhanced"
+        ],
+        "effect": [
+          "{{ greyhealthratio*100.000000 }}% -> {{ greyhealthrationl*100.000000 }}%",
+          "{{ greyhealthratioenhanced*100.000000 }}% -> {{ greyhealthratioenhancednl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -317,13 +314,13 @@
       "name": "Devour",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "TahmKenchRWrapper.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 432,
         "y": 96,
-        "full": "TahmKenchRWrapper.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -335,6 +332,11 @@
           "Damage",
           "Shield Amount",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ baseshield }} -> {{ baseshieldNL }}",
+          "{{ datacooldown }} -> {{ datacooldownNL }}"
         ]
       },
       "resource": "{{ datamanacost }} Mana",
@@ -347,13 +349,13 @@
   "passive_en": {
     "name": "An Acquired Taste",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "TahmKenchP.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 96,
       "y": 48,
-      "full": "TahmKenchP.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Tahm Kench puts the heft of his immense body behind his attacks, gaining extra damage based on his total health. Damaging enemy champions builds stacks of <spellName>An Acquired Taste</spellName>. At three stacks, he can use <spellName>Devour</spellName> on an enemy champion."
   },
@@ -404,6 +406,71 @@
       "num": 30,
       "name": "Shan Hai Scrolls Tahm Kench",
       "chromas": false
+    },
+    {
+      "id": "223039",
+      "num": 39,
+      "name": "Choncc Kench",
+      "chromas": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "223000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "223001",
+      "num": 1,
+      "name": "Tahm Kench cordon-bleu",
+      "chromas": false
+    },
+    {
+      "id": "223002",
+      "num": 2,
+      "name": "Urf Kench",
+      "chromas": false
+    },
+    {
+      "id": "223003",
+      "num": 3,
+      "name": "Tahm Kench numismate",
+      "chromas": true
+    },
+    {
+      "id": "223011",
+      "num": 11,
+      "name": "Tahm Kench des arcanes",
+      "chromas": false
+    },
+    {
+      "id": "223020",
+      "num": 20,
+      "name": "Tahm Kench de l'Ouest",
+      "chromas": false
+    },
+    {
+      "id": "223030",
+      "num": 30,
+      "name": "Tahm Kench des rouleaux de Shan Hai",
+      "chromas": false
+    },
+    {
+      "id": "223039",
+      "num": 39,
+      "name": "Tahm Crocc",
+      "chromas": false
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Pyke",
+      "type": "champion",
+      "relation": "related",
+      "note_fr": "Légendes des abysses",
+      "note_en": "Abyssal legends"
     }
   ]
 }

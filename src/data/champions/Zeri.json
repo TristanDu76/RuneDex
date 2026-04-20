@@ -3,72 +3,34 @@
   "key": "221",
   "name": "Zeri",
   "title": "Étincelle de Zaun",
-  "version": "15.23.1",
+  "version": "16.8.1",
   "lore": "Zeri est une jeune femme vive et téméraire originaire des quartiers défavorisés de Zaun. Elle canalise son électricité intérieure afin de la charger dans un fusil conçu spécialement pour elle. Son pouvoir magique est le reflet de ses émotions, et ses étincelles sont aussi fulgurantes que son caractère. Résolument tournée vers les autres, Zeri se sert de son amour pour sa famille et son quartier durant chaque combat. Malgré toute sa bonne volonté, cependant, les événements ne se passent pas toujours comme prévu. Cela dit, Zeri est sûre d'une chose : si vous vous battez pour votre communauté, elle se battra avec vous.",
   "tags": [
     "Marksman"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Zeri.png",
+    "sprite": "champion5.png",
+    "group": "champion",
     "x": 336,
     "y": 48,
-    "full": "Zeri.png",
-    "group": "champion",
-    "sprite": "champion5.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "221000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "221001",
-      "num": 1,
-      "name": "Zeri rose fanée",
-      "chromas": true
-    },
-    {
-      "id": "221010",
-      "num": 10,
-      "name": "Zeri du Chant de l'océan",
-      "chromas": true
-    },
-    {
-      "id": "221019",
-      "num": 19,
-      "name": "Zeri du Voyage immortel",
-      "chromas": true
-    },
-    {
-      "id": "221028",
-      "num": 28,
-      "name": "Zeri Nuit d'effroi",
-      "chromas": true
-    },
-    {
-      "id": "221029",
-      "num": 29,
-      "name": "Zeri Nuit d'effroi prestige",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "ZeriQ",
       "name": "Rafale",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZeriQ.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 288,
         "y": 0,
-        "full": "ZeriQ.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -79,6 +41,10 @@
         "label": [
           "Dégâts",
           "Ratio de dégâts d'attaque totaux"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ activeadratio*100.000000 }}% -> {{ activeadrationl*100.000000 }}%"
         ]
       },
       "resource": "Pas de coût",
@@ -92,17 +58,17 @@
       "name": "Laser électrocuteur",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZeriW.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 336,
         "y": 0,
-        "full": "ZeriW.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Zeri tire une impulsion électrique qui inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> et <status>ralentit</status> le premier ennemi touché de {{ slowpercent*100 }}% pendant {{ slowduration }} sec.<br /><br />Si l'impulsion frappe un obstacle, elle se transforme en laser qui applique les mêmes effets dans une zone et inflige des coups critiques aux champions et aux monstres.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Zeri émet une impulsion électrique qui inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> au premier ennemi touché et le <status>ralentit</status> de {{ slowpercent*100 }}% pendant {{ slowduration }} sec.<br /><br />Si l'impulsion frappe un obstacle, elle se transforme en laser qui applique les mêmes effets dans une zone et inflige des coups critiques équivalents à <physicalDamage>{{ walldamage }} pts de dégâts physiques</physicalDamage> aux champions et aux monstres.{{ spellmodifierdescriptionappend }}",
       "costBurn": "50/60/70/80/90",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -111,6 +77,12 @@
           "Ralentissement",
           "Coût en @AbilityResourceName@",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ slowpercent*100.000000 }}% -> {{ slowpercentnl*100.000000 }}%",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -124,13 +96,13 @@
       "name": "Charge ionique",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZeriE.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 384,
         "y": 0,
-        "full": "ZeriE.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -143,6 +115,12 @@
           "Dégâts de base",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ pendamagepercent*100.000000 }}% -> {{ pendamagepercentnl*100.000000 }}%",
+          "{{ bonusdamagebase }} -> {{ bonusdamagebaseNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -156,13 +134,13 @@
       "name": "Éruption électrique",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZeriR.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 432,
         "y": 0,
-        "full": "ZeriR.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -173,6 +151,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ activedamage }} -> {{ activedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -185,13 +167,13 @@
   "passive": {
     "name": "Batterie vivante",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "ZeriP.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 336,
       "y": 48,
-      "full": "ZeriP.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Les attaques de Zeri infligent des dégâts magiques et sont traitées comme des compétences. Se déplacer et lancer Rafale stocke de l'énergie dans le Paquetage ionique de Zeri. Lorsqu'elle est chargée à bloc, sa prochaine attaque inflige des dégâts supplémentaires."
   },
@@ -210,13 +192,13 @@
       "name": "Burst Fire",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZeriQ.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 288,
         "y": 0,
-        "full": "ZeriQ.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -227,6 +209,10 @@
         "label": [
           "Damage",
           "Total AD Ratio"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ activeadratio*100.000000 }}% -> {{ activeadrationl*100.000000 }}%"
         ]
       },
       "resource": "No Cost",
@@ -240,17 +226,17 @@
       "name": "Ultrashock Laser",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZeriW.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 336,
         "y": 0,
-        "full": "ZeriW.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Zeri fires an electric pulse that deals <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> and <status>Slows</status> the first enemy hit by {{ slowpercent*100 }}% for {{ slowduration }} seconds.<br /><br />If the pulse hits terrain, it expands into a laser that applies the effects in an area and Critically Strikes champions and monsters.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Zeri fires an electric pulse that deals <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> and <status>Slows</status> the first enemy hit by {{ slowpercent*100 }}% for {{ slowduration }} seconds.<br /><br />If the pulse hits terrain, it expands into a laser that applies the effects in an area and Critically Strikes champions and monsters for <physicalDamage>{{ walldamage }} physical damage</physicalDamage>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "50/60/70/80/90",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -259,6 +245,12 @@
           "Slow",
           "@AbilityResourceName@ Cost",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ slowpercent*100.000000 }}% -> {{ slowpercentnl*100.000000 }}%",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -272,13 +264,13 @@
       "name": "Spark Surge",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZeriE.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 384,
         "y": 0,
-        "full": "ZeriE.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -291,6 +283,12 @@
           "Base Damage",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ pendamagepercent*100.000000 }}% -> {{ pendamagepercentnl*100.000000 }}%",
+          "{{ bonusdamagebase }} -> {{ bonusdamagebaseNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -304,13 +302,13 @@
       "name": "Lightning Crash",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZeriR.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 432,
         "y": 0,
-        "full": "ZeriR.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -321,6 +319,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ activedamage }} -> {{ activedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -333,13 +335,13 @@
   "passive_en": {
     "name": "Living Battery",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "ZeriP.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 336,
       "y": 48,
-      "full": "ZeriP.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Zeri's Attacks deal magic damage and are treated as Abilities. Moving and casting Burst Fire stores up energy in Zeri's Sparkpack. When fully charged her next Attack deals bonus damage."
   },
@@ -383,6 +385,57 @@
       "num": 29,
       "name": "Prestige Fright Night Zeri",
       "chromas": false
+    },
+    {
+      "id": "221040",
+      "num": 40,
+      "name": "Winter Wonder Zeri",
+      "chromas": true
     }
-  ]
+  ],
+  "skins": [
+    {
+      "id": "221000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "221001",
+      "num": 1,
+      "name": "Zeri rose fanée",
+      "chromas": true
+    },
+    {
+      "id": "221010",
+      "num": 10,
+      "name": "Zeri du Chant de l'océan",
+      "chromas": true
+    },
+    {
+      "id": "221019",
+      "num": 19,
+      "name": "Zeri du Voyage immortel",
+      "chromas": true
+    },
+    {
+      "id": "221028",
+      "num": 28,
+      "name": "Zeri Nuit d'effroi",
+      "chromas": true
+    },
+    {
+      "id": "221029",
+      "num": 29,
+      "name": "Zeri Nuit d'effroi prestige",
+      "chromas": false
+    },
+    {
+      "id": "221040",
+      "num": 40,
+      "name": "Zeri merveille hivernale",
+      "chromas": true
+    }
+  ],
+  "related_characters": []
 }

@@ -3,114 +3,34 @@
   "key": "98",
   "name": "Shen",
   "title": "Œil du crépuscule",
-  "version": "15.23.1",
-  "lore": "Shen appartient à l'une des familles les plus respectées de Navori (Ionia). En tant que fils du Grand Maître Kusho, son destin était tracé au sein de l'Ordre Kinkou, une organisation dédiée au maintien de l'équilibre entre les mondes spirituel et mortel.\n\n Une Fraternité Brisée : Shen a grandi avec Zed, son ami le plus proche et son \"frère\" de cœur. Ensemble, ils étaient les meilleurs élèves de l'ordre. Leur lien commença à se fissurer lors de la traque de Khada Jhin, le \"Démon d'Or\". Alors que Zed voulait l'exécuter pour ses crimes atroces, Shen accepta la décision de clémence de son père, privilégiant le détachement émotionnel.\n\n Le Coup d'État de l'Ombre : Alors que Noxus envahissait Ionia, Zed quitta l'ordre pour combattre, tandis que Shen restait fidèle à la neutralité du Kinkou. Pendant une absence de Shen, Zed revint avec sa propre armée d'ombres, s'empara du temple et tua le Maître Kusho.\n\n L'Héritage et le Fardeau : Malgré sa douleur, Shen refusa la vengeance. Il récupéra la lame spirituelle de son père et le titre d'Œil du Crépuscule. Son rôle n'est pas de punir, mais de préserver l'harmonie. Il mena les survivants dans les montagnes pour reconstruire l'ordre de ses cendres.\n\n Le Conflit avec Akali : Shen forma une nouvelle génération, dont la jeune Akali. Bien qu'elle fût une élève brillante, elle finit par rejeter les enseignements de Shen, jugeant sa neutralité insupportable face aux souffrances des mortels. Elle quitta l'ordre, laissant Shen de plus en plus seul dans sa tâche.\n\n L'Équilibre Impossible : Shen continue de marcher entre deux mondes. En privé, il lutte contre sa haine pour Zed et ses doutes sur sa capacité à diriger. Il sait que chaque action dans un monde peut avoir des conséquences désastreuses dans l'autre, et il porte ce poids avec une discipline de fer.",
+  "version": "16.8.1",
+  "lore": "Shen, l'Œil du crépuscule, est le chef d'un groupe secret de guerriers ioniens connu sous le nom de Kinkou. Désireux d'échapper aux méfaits des émotions, des préjugés et de l'ego, il porte un regard désintéressé sur les choses en arpentant le chemin invisible entre le royaume des esprits et le monde physique. Ayant pour mission d'assurer leur équilibre, Shen emploie ses lames d'acier et son énergie arcanique contre ceux qui voudraient le menacer.",
   "tags": [
     "Tank"
   ],
   "partype": "Énergie",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Shen.png",
+    "sprite": "champion4.png",
+    "group": "champion",
     "x": 0,
     "y": 0,
-    "full": "Shen.png",
-    "group": "champion",
-    "sprite": "champion4.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "98000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "98001",
-      "num": 1,
-      "name": "Shen glacé",
-      "chromas": false
-    },
-    {
-      "id": "98002",
-      "num": 2,
-      "name": "Shen au manteau jaune",
-      "chromas": false
-    },
-    {
-      "id": "98003",
-      "num": 3,
-      "name": "Shen chirurgien",
-      "chromas": true
-    },
-    {
-      "id": "98004",
-      "num": 4,
-      "name": "Shen lune de sang",
-      "chromas": false
-    },
-    {
-      "id": "98005",
-      "num": 5,
-      "name": "Samouraï Shen",
-      "chromas": true
-    },
-    {
-      "id": "98006",
-      "num": 6,
-      "name": "TPA Shen",
-      "chromas": false
-    },
-    {
-      "id": "98015",
-      "num": 15,
-      "name": "Shen Pulsefire",
-      "chromas": true
-    },
-    {
-      "id": "98016",
-      "num": 16,
-      "name": "Shen infernal",
-      "chromas": true
-    },
-    {
-      "id": "98022",
-      "num": 22,
-      "name": "Shen psychoguerrier",
-      "chromas": true
-    },
-    {
-      "id": "98040",
-      "num": 40,
-      "name": "Shen électrolame",
-      "chromas": true
-    },
-    {
-      "id": "98049",
-      "num": 49,
-      "name": "Shen gardien de cendres",
-      "chromas": true
-    },
-    {
-      "id": "98051",
-      "num": 51,
-      "name": "Shen des Trois Honneurs",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "ShenQ",
       "name": "Assaut crépusculaire",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ShenQ.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 384,
         "y": 48,
-        "full": "ShenQ.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -125,6 +45,14 @@
           "Coût en @AbilityResourceName@",
           "Dégâts max aux monstres",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ e2 }}% -> {{ e2NL }}%",
+          "{{ e6 }}% -> {{ e6NL }}%",
+          "{{ e4 }}% -> {{ e4NL }}%",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ e7 }} -> {{ e7NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -138,13 +66,13 @@
       "name": "Refuge spirituel",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ShenW.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 432,
         "y": 48,
-        "full": "ShenW.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -154,6 +82,9 @@
       "leveltip": {
         "label": [
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -167,13 +98,13 @@
       "name": "Rush des ombres",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ShenE.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 0,
         "y": 96,
-        "full": "ShenE.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -184,6 +115,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -197,13 +132,13 @@
       "name": "Soutien indéfectible",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ShenR.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 48,
         "y": 96,
-        "full": "ShenR.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -215,6 +150,11 @@
           "PV min du bouclier",
           "PV max du bouclier",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ baseshieldamount }} -> {{ baseshieldamountNL }}",
+          "{{ baseshieldamount*1.600000 }} -> {{ baseshieldamountnl*1.600000 }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -227,13 +167,13 @@
   "passive": {
     "name": "Barrière de ki",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Shen_Passive.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 0,
       "y": 0,
-      "full": "Shen_Passive.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Après avoir lancé une compétence, Shen gagne un bouclier. Affecter d'autres champions réduit le délai de récupération de cet effet."
   },
@@ -248,20 +188,20 @@
   "gender": "Male",
   "species": "Human",
   "title_en": "the Eye of Twilight",
-  "lore_en": "Shen belongs to one of the most revered families in Navori (Ionia). As the son of Great Master Kusho, his destiny was woven into the Kinkou Order, a sacred organization dedicated to maintaining the balance between the spirit and mortal realms.\n\n A Broken Brotherhood: Shen grew up alongside Zed, his closest friend and \"brother.\" They were the Kinkou's star pupils. Their bond fractured during the hunt for Khada Jhin, the \"Golden Demon.\" While Zed wanted the killer executed for his gruesome murders, Shen followed his father's lead of dispassionate mercy, choosing tradition over vengeance.\n\n The Shadow Coup: As Noxus invaded Ionia, Zed abandoned the Kinkou to join the war, while Shen remained within the temple to maintain spiritual harmony. During Shen's absence, Zed returned with his own acolytes, seized the temple, and slayed Master Kusho.\n\n Heredity and Burden: Repressing his anguish, Shen chose duty over revenge. He took up his father's spirit blade and the title of Eye of Twilight. His role was not to hunt Zed, but to rebuild the Kinkou. He led the survivors to the mountains to restore the order's strength.\n\n The Conflict with Akali: Shen trained a new generation, including the promising Akali. However, she eventually grew resentful of his restraint. Feeling that the Kinkou were failing to protect Ionians from mortal threats, she denounced his teachings and left the order to find her own way.\n\n Walking Two Worlds: Shen remains an enigma, belonging fully to neither the spirit nor the mortal world. Privately, he wrestles with his hatred for Zed and doubt in his leadership. He continues his unseen struggle to preserve balance, knowing that the acts of one world could easily destroy the other.",
+  "lore_en": "Among the secretive, Ionian warriors known as the Kinkou, Shen serves as their leader, the Eye of Twilight. He longs to remain free from the confusion of emotion, prejudice, and ego, and walks the unseen path of dispassionate judgment between the spirit realm and the physical world. Tasked with enforcing the equilibrium between them, Shen wields blades of steel and arcane energy against any who would threaten it.",
   "spells_en": [
     {
       "id": "ShenQ",
       "name": "Twilight Assault",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ShenQ.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 384,
         "y": 48,
-        "full": "ShenQ.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -276,6 +216,14 @@
           "@AbilityResourceName@ Cost",
           "Monster Damage Cap",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ e2 }}% -> {{ e2NL }}%",
+          "{{ e6 }}% -> {{ e6NL }}%",
+          "{{ e4 }}% -> {{ e4NL }}%",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ e7 }} -> {{ e7NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -289,13 +237,13 @@
       "name": "Spirit's Refuge",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ShenW.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 432,
         "y": 48,
-        "full": "ShenW.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -305,6 +253,9 @@
       "leveltip": {
         "label": [
           "Cooldown"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -318,13 +269,13 @@
       "name": "Shadow Dash",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ShenE.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 0,
         "y": 96,
-        "full": "ShenE.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -335,6 +286,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -348,13 +303,13 @@
       "name": "Stand United",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ShenR.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 48,
         "y": 96,
-        "full": "ShenR.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -366,6 +321,11 @@
           "Minimum Shield Health",
           "Maximum Shield Health",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ baseshieldamount }} -> {{ baseshieldamountNL }}",
+          "{{ baseshieldamount*1.600000 }} -> {{ baseshieldamountnl*1.600000 }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -378,13 +338,13 @@
   "passive_en": {
     "name": "Ki Barrier",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Shen_Passive.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 0,
       "y": 0,
-      "full": "Shen_Passive.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "After casting a spell, Shen gets a shield. Affecting other champions reduces the cooldown of this effect."
   },
@@ -470,6 +430,107 @@
       "num": 51,
       "name": "Three Honors Shen",
       "chromas": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "98000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "98001",
+      "num": 1,
+      "name": "Shen glacé",
+      "chromas": false
+    },
+    {
+      "id": "98002",
+      "num": 2,
+      "name": "Shen au manteau jaune",
+      "chromas": false
+    },
+    {
+      "id": "98003",
+      "num": 3,
+      "name": "Shen chirurgien",
+      "chromas": true
+    },
+    {
+      "id": "98004",
+      "num": 4,
+      "name": "Shen lune de sang",
+      "chromas": false
+    },
+    {
+      "id": "98005",
+      "num": 5,
+      "name": "Samouraï Shen",
+      "chromas": true
+    },
+    {
+      "id": "98006",
+      "num": 6,
+      "name": "TPA Shen",
+      "chromas": false
+    },
+    {
+      "id": "98015",
+      "num": 15,
+      "name": "Shen Pulsefire",
+      "chromas": true
+    },
+    {
+      "id": "98016",
+      "num": 16,
+      "name": "Shen infernal",
+      "chromas": true
+    },
+    {
+      "id": "98022",
+      "num": 22,
+      "name": "Shen psychoguerrier",
+      "chromas": true
+    },
+    {
+      "id": "98040",
+      "num": 40,
+      "name": "Shen électrolame",
+      "chromas": true
+    },
+    {
+      "id": "98049",
+      "num": 49,
+      "name": "Shen gardien de cendres",
+      "chromas": true
+    },
+    {
+      "id": "98051",
+      "num": 51,
+      "name": "Shen des Trois Honneurs",
+      "chromas": false
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Jhin",
+      "type": "champion",
+      "relation": "nemesis",
+      "note_fr": "Cible artistique",
+      "note_en": "Artistic target"
+    },
+    {
+      "id": "kusho",
+      "type": "lore",
+      "relation": "father",
+      "note_fr": "Père",
+      "note_en": "Father"
+    },
+    {
+      "id": "Zed",
+      "type": "champion",
+      "relation": "rival/ex-brother"
     }
   ]
 }

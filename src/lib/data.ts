@@ -7,21 +7,25 @@ import championsIndex from '@/data/champions/index.json';
 import loreCharactersIndex from '@/data/lore-characters/index.json';
 import artifactsIndex from '@/data/artifacts/index.json';
 import runesIndex from '@/data/runes/index.json';
+import summaryCharacters from '@/data/champions-summary.json';
 import relationsData from '@/data/relations.json';
 import artifactOwnersData from '@/data/artifact-owners.json';
 import runeOwnersData from '@/data/rune-owners.json';
-import type { Relation } from '@/types/relations';
-import { getInverseRelationType } from '@/types/relations';
+import { Relation } from '@/types/relations';
+import fs from 'fs';
+import path from 'path';
 
 /**
  * Load a single lore character's data from individual file
  */
 const loadLoreCharacterData = async (characterId: string): Promise<LoreCharacter | null> => {
+  if (!characterId) return null;
+  const safeId = characterId.toLowerCase();
   try {
-    const characterData = await import(`@/data/lore-characters/${characterId}.json`);
+    const characterData = await import(`@/data/lore-characters/${safeId}.json`);
     return characterData.default as LoreCharacter;
   } catch (error) {
-    console.error(`Failed to load lore character ${characterId}:`, error);
+    // Fail silently, error logging is handled by the caller if needed
     return null;
   }
 };
@@ -30,11 +34,12 @@ const loadLoreCharacterData = async (characterId: string): Promise<LoreCharacter
  * Load a single artifact's data from individual file
  */
 const loadArtifactData = async (artifactId: string): Promise<any | null> => {
+  if (!artifactId) return null;
+  const safeId = artifactId.toLowerCase();
   try {
-    const artifactData = await import(`@/data/artifacts/${artifactId}.json`);
+    const artifactData = await import(`@/data/artifacts/${safeId}.json`);
     return artifactData.default;
   } catch (error) {
-    console.error(`Failed to load artifact ${artifactId}:`, error);
     return null;
   }
 };
@@ -43,32 +48,122 @@ const loadArtifactData = async (artifactId: string): Promise<any | null> => {
  * Load a single rune's data from individual file
  */
 const loadRuneData = async (runeId: string): Promise<any | null> => {
+  if (!runeId) return null;
+  const safeId = runeId.toLowerCase();
   try {
-    const runeData = await import(`@/data/runes/${runeId}.json`);
+    const runeData = await import(`@/data/runes/${safeId}.json`);
     return runeData.default;
   } catch (error) {
-    console.error(`Failed to load rune ${runeId}:`, error);
     return null;
   }
 };
+
 const loadChampionData = async (championId: string): Promise<ChampionData | null> => {
+  if (!championId) return null;
+  // Champions IDs are typically TitleCase in the filesystem
+  // We try exact match first, then fall back to found in the index
   try {
     const championData = await import(`@/data/champions/${championId}.json`);
     return championData.default as ChampionData;
   } catch (error) {
-    console.error(`Failed to load champion ${championId}:`, error);
+    // If not found, check the index to find the correct ID
+    const index = championsIndex as Array<{ id: string; name: string }>;
+    const found = index.find(c => c.id.toLowerCase() === championId.toLowerCase());
+    if (found && found.id !== championId) {
+      try {
+        const charData = await import(`@/data/champions/${found.id}.json`);
+        return charData.default as ChampionData;
+      } catch (e) {
+        return null;
+      }
+    }
     return null;
   }
 };
 
+const normalizeEntityLookupKey = (value: string): string => {
+  if (!value) return '';
+  return value
+    .toString()
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, '-')
+    .replace(/[^\w-]+/g, '')
+    .replace(/--+/g, '-')
+    .replace(/^-+/, '')
+    .replace(/-+$/, '');
+};
+
+const buildFallbackRelationsFromRaw = async (
+  rawRelated: any[] | undefined,
+  locale: string
+): Promise<Array<{ champion: string; type: string; note?: string; image?: any }>> => {
+  if (!Array.isArray(rawRelated) || rawRelated.length === 0) return [];
+
+  const fallback = await Promise.all(rawRelated.map(async (entry: any) => {
+    const isString = typeof entry === 'string';
+    const rawId = isString ? entry : (entry?.id || '');
+    if (!rawId) return null;
+
+    const normalizedId = normalizeEntityLookupKey(rawId);
+    const relationType = isString ? 'related' : (entry.relation || 'related');
+    const relationNote = isString
+      ? undefined
+      : (locale.startsWith('en') ? entry.note_en : entry.note_fr) || entry.note_en || entry.note_fr;
+
+    const preferredType = isString ? undefined : entry.type;
+
+    let champion = null as ChampionData | null;
+    let lore = null as LoreCharacter | null;
+
+    if (preferredType === 'champion') {
+      champion = await loadChampionData(normalizedId);
+      if (!champion) lore = await loadLoreCharacterData(normalizedId);
+    } else if (preferredType === 'lore') {
+      lore = await loadLoreCharacterData(normalizedId);
+      if (!lore) champion = await loadChampionData(normalizedId);
+    } else {
+      champion = await loadChampionData(normalizedId);
+      if (!champion) lore = await loadLoreCharacterData(normalizedId);
+    }
+
+    return {
+      champion: champion?.name || lore?.name || rawId,
+      type: relationType,
+      note: relationNote,
+      image: champion?.image || lore?.image
+    };
+  }));
+
+  return fallback.filter(Boolean) as Array<{ champion: string; type: string; note?: string; image?: any }>;
+};
+
+const mergeRelationsByChampion = (
+  primary: Array<{ champion: string; type: string; note?: string; image?: any }>,
+  secondary: Array<{ champion: string; type: string; note?: string; image?: any }>
+) => {
+  const mergedMap = new Map<string, { champion: string; type: string; note?: string; image?: any }>();
+
+  // Process both lists, but keep only the "best" entry for each champion
+  // Order matters: secondary (local JSON) usually has better notes than primary (relations.json)
+  [...primary, ...secondary].forEach((rel) => {
+    const key = rel.champion.toLowerCase();
+    const existing = mergedMap.get(key);
+
+    if (!existing || (!existing.note && rel.note)) {
+      mergedMap.set(key, rel);
+    }
+  });
+
+  return Array.from(mergedMap.values());
+};
+
 /**
  * Internal helper to load all champion data without caching.
- * Used by other functions that will cache their specific (smaller) results.
+ * Used by legacy functions that still need full list.
  */
 const loadAllChampionsRaw = async (locale: string = 'fr_FR') => {
   const index = championsIndex as Array<{ id: string; name: string; key: string; image: any }>;
-
-  // Load all champion data files
   const championsPromises = index.map(champ => loadChampionData(champ.id));
   const championsData = await Promise.all(championsPromises);
   const champions = championsData.filter(c => c !== null) as ChampionData[];
@@ -80,8 +175,8 @@ const loadAllChampionsRaw = async (locale: string = 'fr_FR') => {
       lore: c.lore_en || c.lore,
       spells: c.spells_en || c.spells,
       passive: c.passive_en || c.passive,
-      tags: c.tags_en || c.tags,
-      skins: c.skins_en || c.skins
+      tags: (c as any).tags_en || c.tags,
+      skins: (c as any).skins_en || c.skins
     }));
   }
 
@@ -101,19 +196,16 @@ export const fetchAllChampions = async (locale: string = 'fr_FR') => {
   return loadAllChampionsRaw(locale);
 };
 
-/**
- * Fetches a lightweight version of champions for search bar and navigation.
- * Excludes lore, spells, skins, stats, info.
- */
 export const fetchAllChampionsLight = async (locale: string = 'fr_FR') => {
   return cachedQuery(
     async () => {
-      const champions = await loadAllChampionsRaw(locale);
-      return champions.map((c: ChampionData): ChampionLight => ({
+      // Using pre-compiled summary instead of heavy Promise.all(loadAll)
+      const champions = summaryCharacters as any[];
+      return champions.map((c: any): ChampionLight => ({
         id: c.id,
         key: c.key,
-        name: c.name,
-        title: c.title,
+        name: locale.startsWith('en') && c.name_en ? c.name_en : c.name,
+        title: locale.startsWith('en') && c.title_en ? c.title_en : c.title,
         version: c.version,
         image: c.image
       }));
@@ -123,25 +215,21 @@ export const fetchAllChampionsLight = async (locale: string = 'fr_FR') => {
   );
 };
 
-/**
- * Fetches data needed for the champion grid (filtering).
- * Excludes lore, spells, skins.
- */
 export const fetchAllChampionsGrid = async (locale: string = 'fr_FR') => {
   return cachedQuery(
     async () => {
-      const champions = await loadAllChampionsRaw(locale);
-      return champions.map((c: ChampionData): ChampionGridData => ({
+      const champions = summaryCharacters as any[];
+      return champions.map((c: any): ChampionGridData => ({
         id: c.id,
         key: c.key,
-        name: c.name,
-        title: c.title,
+        name: locale.startsWith('en') && c.name_en ? c.name_en : c.name,
+        title: locale.startsWith('en') && c.title_en ? c.title_en : c.title,
         version: c.version,
         image: c.image,
         tags: c.tags,
-        partype: c.partype,
-        info: (c as any).info,
-        stats: (c as any).stats,
+        partype: locale.startsWith('en') && c.partype_en ? c.partype_en : c.partype,
+        info: c.info,
+        stats: c.stats,
         factions: c.factions,
         faction: c.faction,
         gender: c.gender,
@@ -180,10 +268,8 @@ export const fetchChampionDetails = async (championId: string, locale: string = 
           const targetChampion = targetType === 'champion' ? await loadChampionData(targetId) : null;
           const targetLore = targetType === 'lore' ? await loadLoreCharacterData(targetId) : null;
 
-          // IMPORTANT: Always show the ORIGINAL relation type (what entity_a is)
-          // If Lissandra (entity_a) is "master" and Trundle (entity_b) views her, show "master"
-          // The relation type describes what entity_a IS, not what entity_b is
-          const displayType = relation.relation_type;
+          // The relation type describes what the TARGET is from the perspective of the current entity
+          const displayType = relationType;
 
           return {
             type: displayType,
@@ -194,7 +280,9 @@ export const fetchChampionDetails = async (championId: string, locale: string = 
           };
         }));
 
-        champion.related_champions = formatRelations(enrichedRelations, locale);
+        const relationsFromTable = formatRelations(enrichedRelations, locale);
+        const relationsFromRaw = await buildFallbackRelationsFromRaw((champion as any).related_characters, locale);
+        champion.related_champions = mergeRelationsByChampion(relationsFromTable, relationsFromRaw);
         return localizeChampion(champion, locale);
       } catch (error) {
         console.error(`Error (fetchChampionDetails ${championId}):`, error);
@@ -244,17 +332,25 @@ export const fetchLoreCharacter = async (name: string, locale: string = 'fr_FR')
     async () => {
       try {
         const character = await loadLoreCharacterData(name);
-        if (!character || character.name.toLowerCase() !== name.toLowerCase()) {
-          // Fallback: search in index
-          const index = loreCharactersIndex as Array<{ id: string; name: string }>;
-          const found = index.find(c => c.name.toLowerCase() === name.toLowerCase());
-          if (found) {
-            const charData = await loadLoreCharacterData(found.id);
-            if (charData) return await enrichLoreCharacter(charData, locale);
-          }
-          return null;
+        const nameLower = name.toLowerCase();
+
+        // Check if loaded character matches by ID or Name
+        if (character && (character.id.toLowerCase() === nameLower || character.name.toLowerCase() === nameLower)) {
+          return await enrichLoreCharacter(character, locale);
         }
-        return await enrichLoreCharacter(character, locale);
+
+        // Fallback: search in index by ID or Name
+        const index = loreCharactersIndex as Array<{ id: string; name: string }>;
+        const found = index.find(c =>
+          c.id.toLowerCase() === nameLower ||
+          c.name.toLowerCase() === nameLower
+        );
+
+        if (found) {
+          const charData = await loadLoreCharacterData(found.id);
+          if (charData) return await enrichLoreCharacter(charData, locale);
+        }
+        return null;
       } catch (error) {
         return null;
       }
@@ -294,7 +390,9 @@ const enrichLoreCharacter = async (character: LoreCharacter, locale: string) => 
   }));
 
   const loreChar = { ...character };
-  loreChar.related_champions = formatRelations(enrichedRelations, locale);
+  const relationsFromTable = formatRelations(enrichedRelations, locale);
+  const relationsFromRaw = await buildFallbackRelationsFromRaw((loreChar as any).related_characters, locale);
+  loreChar.related_champions = mergeRelationsByChampion(relationsFromTable, relationsFromRaw);
   return localizeLoreCharacter(loreChar, locale);
 };
 
@@ -507,3 +605,30 @@ export const fetchChampionRunes = async (championId: string, locale: string = 'f
     ['champions', 'runes', `champion-${championId}`]
   );
 };
+/**
+ * Fetches regional shard data containing all characters (champions + lore).
+ */
+export const fetchRegionShard = async (regionId: string) => {
+  return cachedQuery(
+    async () => {
+      try {
+        const normalizedId = regionId.toLowerCase().replace(/[^a-z]/g, "");
+        const filePath = path.join(process.cwd(), "src/data/shards", `${normalizedId}.json`);
+
+        if (!fs.existsSync(filePath)) {
+          return [];
+        }
+
+        const fileContent = fs.readFileSync(filePath, "utf8");
+        return JSON.parse(fileContent);
+      } catch (error) {
+        console.error(`Error fetching shard for ${regionId}:`, error);
+        return [];
+      }
+    },
+    ["region-shard", regionId],
+    ["shards", `shard-${regionId}`]
+  );
+};
+
+

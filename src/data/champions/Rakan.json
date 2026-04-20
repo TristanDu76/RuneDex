@@ -3,114 +3,34 @@
   "key": "497",
   "name": "Rakan",
   "title": "Charmeur",
-  "version": "15.23.1",
-  "lore": "Rakan appartient aux Lhotlan, une tribu de Vastayas originaire de l'île de Qaelin en Ionia. Alors que les humains commençaient à endiguer la magie sauvage d'Ionia pour leur sécurité, les tribus Vastayas, privées de l'énergie nécessaire à leur survie, commencèrent à décliner.\n\nLe Paria Idéaliste : Contrairement aux siens devenus isolationnistes, le jeune Rakan pensait pouvoir convaincre les humains de libérer la magie en leur montrant sa beauté par l'art. Jugé trop proche des mortels, il fut étiqueté mu’takl (collaborateur) et quitta sa tribu pour devenir un artiste itinérant.\n\nLa Rencontre avec Xayah : Bien que célèbre et adulé dans les tavernes, Rakan se sentait sans but, réalisant qu'il n'était qu'un divertissement pour les humains. Tout changea au festival de Vlonqo lorsqu'il rencontra Xayah, une autre Lhotlan. Intrigué par son indifférence à son charme habituel, il la rejoignit.\n\nL'Engagement pour la Cause : En apprenant de Xayah que les Lhotlan avaient perdu leurs dernières terres, la rage de Rakan le poussa à rejoindre sa cause : une rébellion pour reprendre ce que les Vastayas avaient perdu.\n\nL'Harmonie dans le Chaos : Rakan se révéla être le plus grand danseur de bataille de l'histoire de sa tribu. Sur le terrain, ses acrobaties éblouissantes et ses entrées théâtrales déconcertent les ennemis, créant les ouvertures nécessaires pour que Xayah les achève.\n\nL'Équilibre des Contraires : Là où Xayah est froide, concentrée et voit le monde en noir et blanc, Rakan est distrait, affable et capable de compassion envers certains humains. Leurs forces se complètent parfaitement : il utilise son charisme pour naviguer parmi les gens, tandis qu'elle prépare leurs plans de bataille.\n\nAujourd'hui, Rakan a trouvé sa raison d'être. Inspiré par la détermination de sa partenaire, il a fait de sa croisade la sienne. Ensemble, ils combattent pour rendre aux Vastayas la splendeur des Terres Premières.",
+  "version": "16.8.1",
+  "lore": "Aussi lunatique qu'il est charmeur, Rakan est un trublion vastaya tristement célèbre, et le plus grand danseur guerrier de l'histoire de la tribu Lhotla. Pour les humains qui vivent dans les hautes terres d'Ionia, son nom est depuis longtemps synonyme de festivals endiablés, de fêtes déraisonnables et de musique anarchique. Peu de gens savent cependant que cet histrion ambulant est également le partenaire de Xayah, la rebelle, dont il défend avec ferveur la cause.",
   "tags": [
     "Support"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Rakan.png",
+    "sprite": "champion3.png",
+    "group": "champion",
     "x": 192,
     "y": 48,
-    "full": "Rakan.png",
-    "group": "champion",
-    "sprite": "champion3.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "497000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "497001",
-      "num": 1,
-      "name": "Rakan de l'aube cosmique",
-      "chromas": false
-    },
-    {
-      "id": "497002",
-      "num": 2,
-      "name": "Rakan cœur tendre",
-      "chromas": false
-    },
-    {
-      "id": "497003",
-      "num": 3,
-      "name": "SSG Rakan",
-      "chromas": true
-    },
-    {
-      "id": "497004",
-      "num": 4,
-      "name": "iG Rakan",
-      "chromas": true
-    },
-    {
-      "id": "497005",
-      "num": 5,
-      "name": "Rakan gardien des étoiles",
-      "chromas": true
-    },
-    {
-      "id": "497009",
-      "num": 9,
-      "name": "Rakan sylvestre",
-      "chromas": true
-    },
-    {
-      "id": "497018",
-      "num": 18,
-      "name": "Rakan des arcanes",
-      "chromas": true
-    },
-    {
-      "id": "497027",
-      "num": 27,
-      "name": "Rakan de l'Alliance brisée",
-      "chromas": true
-    },
-    {
-      "id": "497036",
-      "num": 36,
-      "name": "Rakan gardien des étoiles repenti",
-      "chromas": false
-    },
-    {
-      "id": "497037",
-      "num": 37,
-      "name": "Rakan dracomancien",
-      "chromas": true
-    },
-    {
-      "id": "497038",
-      "num": 38,
-      "name": "Rakan dracomancien prestige",
-      "chromas": false
-    },
-    {
-      "id": "497047",
-      "num": 47,
-      "name": "Rakan de l'Académie du combat",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "RakanQ",
       "name": "Rémige rayonnante",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RakanQ.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 192,
         "y": 144,
-        "full": "RakanQ.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -121,6 +41,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -134,13 +58,13 @@
       "name": "Entrée triomphale",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RakanW.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 240,
         "y": 144,
-        "full": "RakanW.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -152,6 +76,11 @@
           "Dégâts",
           "Délai de récupération",
           "Coût en mana"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basecost }} -> {{ basecostNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -165,13 +94,13 @@
       "name": "Valse guerrière",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RakanE.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 288,
         "y": 144,
-        "full": "RakanE.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -183,6 +112,11 @@
           "PV du bouclier",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ baseshield }} -> {{ baseshieldNL }}",
+          "{{ e4 }} -> {{ e4NL }}",
+          "{{ e5 }} -> {{ e5NL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -196,13 +130,13 @@
       "name": "Danse ultime",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RakanR.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 336,
         "y": 144,
-        "full": "RakanR.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -214,6 +148,11 @@
           "Durée du charme",
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ e3 }} -> {{ e3NL }}",
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -226,13 +165,13 @@
   "passive": {
     "name": "Plumes enchantées",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Rakan_P.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 192,
       "y": 48,
-      "full": "Rakan_P.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Rakan gagne périodiquement un bouclier."
   },
@@ -246,20 +185,20 @@
   "gender": "Male",
   "species": "Vastaya",
   "title_en": "The Charmer",
-  "lore_en": "Rakan is a Vastaya of the Lhotlan tribe, from the island of Qaelin in Ionia. As humans began damming Ionia’s wild magic for their own safety, the Vastayan tribes—who need this energy to thrive—began to wither.\n\nThe Idealistic Outcast: Unlike his increasingly isolationist kin, young Rakan believed he could convince mortals to let magic run free by showing them its beauty through art. Distrusted as a human sympathizer, he was labeled mu’takl (collaborator) and left his tribe to become a traveling performer.\n\nThe Meeting with Xayah: Although a famous rogue adored in every tavern, Rakan felt purposeless, realizing he was merely a diversion for reveling humans. Everything changed at the Vlonqo harvest festival when he met Xayah, a fellow Lhotlan. Intrigued by her resistance to his charms, he sought her out.\n\nA Cause to Die For: Upon learning from Xayah that the Lhotlan had lost the last of their lands, Rakan’s rage ignited. He begged to join her rebellion to take back what the Vastaya had lost—not just for their tribe, but for all of them.\n\nHarmony in Battle: Rakan proved to be the greatest battle-dancer in Lhotlan history. In combat, his dazzling acrobatics and grand entrances distract and befuddle enemies, providing the perfect opening for Xayah to strike them down.\n\nComplementary Souls: While Xayah is prepared and aloof, Rakan is absent-minded and affable. He compensates for his lack of planning with an uncanny ability to read emotions and use his charisma to persuade others. They pledged themselves to each other in the middle of a tavern brawl.\n\nToday, Rakan has found his purpose through Xayah. Inspired by her singular drive, he has made her crusade his own, and together they fight to reclaim the First Lands for the Vastaya.",
+  "lore_en": "As mercurial as he is charming, Rakan is an infamous vastayan troublemaker and the greatest battle-dancer in Lhotlan tribal history. To the humans of the Ionian highlands, his name has long been synonymous with wild festivals, uncontrollable parties, and anarchic music. Few would suspect this energetic, traveling showman is also partner to the rebel Xayah, and is dedicated to her cause.",
   "spells_en": [
     {
       "id": "RakanQ",
       "name": "Gleaming Quill",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RakanQ.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 192,
         "y": 144,
-        "full": "RakanQ.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -270,6 +209,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -283,13 +226,13 @@
       "name": "Grand Entrance",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RakanW.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 240,
         "y": 144,
-        "full": "RakanW.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -301,6 +244,11 @@
           "Damage",
           "Cooldown",
           "Mana Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basecost }} -> {{ basecostNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -314,13 +262,13 @@
       "name": "Battle Dance",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RakanE.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 288,
         "y": 144,
-        "full": "RakanE.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -332,6 +280,11 @@
           "Shield Health",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ baseshield }} -> {{ baseshieldNL }}",
+          "{{ e4 }} -> {{ e4NL }}",
+          "{{ e5 }} -> {{ e5NL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -345,13 +298,13 @@
       "name": "The Quickness",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RakanR.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 336,
         "y": 144,
-        "full": "RakanR.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -363,6 +316,11 @@
           "Charm Duration",
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ e3 }} -> {{ e3NL }}",
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -375,13 +333,13 @@
   "passive_en": {
     "name": "Fey Feathers",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Rakan_P.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 192,
       "y": 48,
-      "full": "Rakan_P.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Rakan periodically gains a shield."
   },
@@ -467,6 +425,95 @@
       "num": 47,
       "name": "Battle Academia Rakan",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "497000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "497001",
+      "num": 1,
+      "name": "Rakan de l'aube cosmique",
+      "chromas": false
+    },
+    {
+      "id": "497002",
+      "num": 2,
+      "name": "Rakan cœur tendre",
+      "chromas": false
+    },
+    {
+      "id": "497003",
+      "num": 3,
+      "name": "SSG Rakan",
+      "chromas": true
+    },
+    {
+      "id": "497004",
+      "num": 4,
+      "name": "iG Rakan",
+      "chromas": true
+    },
+    {
+      "id": "497005",
+      "num": 5,
+      "name": "Rakan gardien des étoiles",
+      "chromas": true
+    },
+    {
+      "id": "497009",
+      "num": 9,
+      "name": "Rakan sylvestre",
+      "chromas": true
+    },
+    {
+      "id": "497018",
+      "num": 18,
+      "name": "Rakan des arcanes",
+      "chromas": true
+    },
+    {
+      "id": "497027",
+      "num": 27,
+      "name": "Rakan de l'Alliance brisée",
+      "chromas": true
+    },
+    {
+      "id": "497036",
+      "num": 36,
+      "name": "Rakan gardien des étoiles repenti",
+      "chromas": false
+    },
+    {
+      "id": "497037",
+      "num": 37,
+      "name": "Rakan dracomancien",
+      "chromas": true
+    },
+    {
+      "id": "497038",
+      "num": 38,
+      "name": "Rakan dracomancien prestige",
+      "chromas": false
+    },
+    {
+      "id": "497047",
+      "num": 47,
+      "name": "Rakan de l'Académie du combat",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Xayah",
+      "type": "champion",
+      "relation": "lover",
+      "note_fr": "Amant",
+      "note_en": "Lover"
     }
   ]
 }

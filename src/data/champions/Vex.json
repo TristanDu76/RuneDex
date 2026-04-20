@@ -3,60 +3,34 @@
   "key": "711",
   "name": "Vex",
   "title": "Ombre du désespoir",
-  "version": "15.23.1",
+  "version": "16.8.1",
   "lore": "Au cœur des terribles Îles obscures et de leur brume spectrale, une yordle solitaire se complaît dans son malheur. Vex se protège de la gaieté, de l'excitation et des gens « normaux » dont le monde extérieur regorge grâce à une dose inépuisable d'apitoiement et à une ombre puissante. Même si l'ambition lui fait défaut, on peut compter sur elle pour ternir le bonheur des autres et éloigner tous ceux qui voudraient l'approcher avec sa morosité magique.",
   "tags": [
     "Mage"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Vex.png",
+    "sprite": "champion4.png",
+    "group": "champion",
     "x": 432,
     "y": 96,
-    "full": "Vex.png",
-    "group": "champion",
-    "sprite": "champion4.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "711000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "711001",
-      "num": 1,
-      "name": "Vex héraut de l'aube",
-      "chromas": true
-    },
-    {
-      "id": "711010",
-      "num": 10,
-      "name": "Vex empyréenne",
-      "chromas": true
-    },
-    {
-      "id": "711020",
-      "num": 20,
-      "name": "Vex visionnaire",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "VexQ",
       "name": "Mistral perdant",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "VexQ.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 192,
         "y": 48,
-        "full": "VexQ.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -68,6 +42,11 @@
           "Coût en @AbilityResourceName@",
           "Délai de récupération",
           "Dégâts"
+        ],
+        "effect": [
+          "{{ cost }} -> {{ costNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -81,13 +60,13 @@
       "name": "Lâchez-moi !",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "VexW.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 240,
         "y": 48,
-        "full": "VexW.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -99,6 +78,11 @@
           "Dégâts",
           "PV du bouclier",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ shieldamount }} -> {{ shieldamountNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -112,13 +96,13 @@
       "name": "Ténèbres imminentes",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "VexE.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 288,
         "y": 48,
-        "full": "VexE.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -130,6 +114,11 @@
           "Dégâts",
           "Ralentissement",
           "Ratio de puissance total"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ slowamount*100.000000 }}% -> {{ slowamountnl*100.000000 }}%",
+          "{{ apratio*100.000000 }}% -> {{ aprationl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -143,13 +132,13 @@
       "name": "Déferlement d'Ombre",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "VexR.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 336,
         "y": 48,
-        "full": "VexR.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -162,6 +151,12 @@
           "Dégâts",
           "Dégâts à la réactivation",
           "Portée"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ recastdamage }} -> {{ recastdamageNL }}",
+          "{{ castrange }} -> {{ castrangeNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -174,13 +169,13 @@
   "passive": {
     "name": "Malheur et Désespoir",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Icons_Vex_Passive.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 432,
       "y": 96,
-      "full": "Icons_Vex_Passive.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Vex est régulièrement renforcée, ce qui permet à sa prochaine compétence de base d'effrayer les ennemis et d'interrompre les ruées. Chaque fois qu'un ennemi proche fait une ruée, Vex applique une marque qui, si elle est consommée, inflige des dégâts supplémentaires et réduit le délai de récupération du renforcement."
   },
@@ -201,13 +196,13 @@
       "name": "Mistral Bolt",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "VexQ.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 192,
         "y": 48,
-        "full": "VexQ.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -219,6 +214,11 @@
           "@AbilityResourceName@ Cost",
           "Cooldown",
           "Damage"
+        ],
+        "effect": [
+          "{{ cost }} -> {{ costNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -232,13 +232,13 @@
       "name": "Personal Space",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "VexW.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 240,
         "y": 48,
-        "full": "VexW.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -250,6 +250,11 @@
           "Damage",
           "Shield Amount",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ shieldamount }} -> {{ shieldamountNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -263,13 +268,13 @@
       "name": "Looming Darkness",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "VexE.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 288,
         "y": 48,
-        "full": "VexE.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -281,6 +286,11 @@
           "Damage",
           "Slow",
           "Total AP Ratio"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ slowamount*100.000000 }}% -> {{ slowamountnl*100.000000 }}%",
+          "{{ apratio*100.000000 }}% -> {{ aprationl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -294,13 +304,13 @@
       "name": "Shadow Surge",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "VexR.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 336,
         "y": 48,
-        "full": "VexR.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -313,6 +323,12 @@
           "Damage",
           "Recast Damage",
           "Range"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ recastdamage }} -> {{ recastdamageNL }}",
+          "{{ castrange }} -> {{ castrangeNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -325,13 +341,13 @@
   "passive_en": {
     "name": "Doom 'n Gloom",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Icons_Vex_Passive.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 432,
       "y": 96,
-      "full": "Icons_Vex_Passive.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Vex periodically becomes empowered, causing her next basic Ability to fear enemies and interrupt dashes. Whenever a nearby enemy dashes, Vex applies a mark that can be consumed for bonus damage that also reduces the cooldown of her empowered state."
   },
@@ -363,6 +379,53 @@
       "num": 20,
       "name": "Stargazer Vex",
       "chromas": true
+    },
+    {
+      "id": "711029",
+      "num": 29,
+      "name": "Surprise Party Vex",
+      "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "711000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "711001",
+      "num": 1,
+      "name": "Vex héraut de l'aube",
+      "chromas": true
+    },
+    {
+      "id": "711010",
+      "num": 10,
+      "name": "Vex empyréenne",
+      "chromas": true
+    },
+    {
+      "id": "711020",
+      "num": 20,
+      "name": "Vex visionnaire",
+      "chromas": true
+    },
+    {
+      "id": "711029",
+      "num": 29,
+      "name": "Vex clown triste",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "norra",
+      "type": "lore",
+      "relation": "rival",
+      "note_fr": "Rencontrée dans les ombres",
+      "note_en": "Met in the shadows"
     }
   ]
 }

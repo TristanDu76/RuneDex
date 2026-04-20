@@ -3,113 +3,39 @@
   "key": "2",
   "name": "Olaf",
   "title": "Berzerker",
-  "version": "15.23.1",
-  "lore": "Olaf est un guerrier de la péninsule brutale de Lokfar, dans le Freljord. Il ne vit que pour la gloire du combat et le choc de l'acier.\n\nLa Prophétie Fatale : Un soir, alors qu'il se vantait de sa gloire, ses compagnons l'ont incité à lire les augures à l'aide d'ossements. Les os prédirent une longue vie et une mort paisible – le pire destin possible pour un guerrier de Lokfar, car considéré comme lâche et oublié.\n\nLa Quête de la Mort Glorieuse : Infurié et déterminé à prouver la fausseté de la prophétie, Olaf se lança dans une quête pour trouver et tuer le serpent de givre redouté de Lokfar. Il se jeta tête baissée dans la gueule de la bête, mais la frénésie sanguinaire (bloodlust) qui s'emparait de lui au bord de la mort le sauva toujours. Il se réveilla aux côtés de la carcasse massacrée du monstre.\n\nL'Échec Répété : Thwarté mais non vaincu, Olaf pourchassa toutes les créatures légendaires du Freljord, cherchant chaque fois sa mort tant convoitée. Chaque fois, il était épargné par la folie qui le submergeait au moment du danger.\n\nLa Confrontation avec la Griffe Hivernale : Concluant qu'aucune bête ne pouvait lui accorder la mort d'un guerrier, il décida d'affronter la tribu la plus redoutée du Freljord : la Griffe Hivernale (Winter's Claw). Leur cheffe, Sejuani, accepta son défi et envoya des guerriers pour le submerger.\n\nL'Alliance : Olaf, perdu dans sa frénésie, tailla sans effort un chemin sanglant jusqu'à Sejuani. Leur affrontement fit trembler les glaciers, mais Sejuani réussit à le tenir en échec. Son regard perça le brouillard de berserker d'Olaf, le calmant assez longtemps pour qu'elle lui fasse une offre : Sejuani jura de trouver à Olaf sa mort glorieuse s'il lui prêtait sa hache et sa force pour sa campagne de conquête.\n\nOlaf est aujourd'hui un combattant brutal de la Griffe Hivernale. Il est désormais lié à Sejuani par ce vœu et espère que les grandes guerres à venir lui apporteront enfin la fin honorable qu'il désire.",
+  "version": "16.8.1",
+  "lore": "Olaf, avec sa hache et son extraordinaire force de destruction, ne souhaite que mourir au combat. Venu de l'âpre péninsule freljordienne de Lokfar, il a été choqué par une prophétie qui lui prédisait une mort paisible : dans l'esprit de son peuple, une ignoble fin de lâche. Cherchant la mort et animé par la rage, il ravage une région après l'autre, éliminant des hordes de grands guerriers et de bêtes légendaires dans sa recherche d'un ennemi capable de l'arrêter. Aujourd'hui un brutal combattant de la Griffe hivernale, il espère mourir glorieusement dans les grandes guerres à venir.",
   "tags": [
     "Fighter",
     "Tank"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Olaf.png",
+    "sprite": "champion3.png",
+    "group": "champion",
     "x": 288,
     "y": 0,
-    "full": "Olaf.png",
-    "group": "champion",
-    "sprite": "champion3.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "2000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "2001",
-      "num": 1,
-      "name": "Olaf déchu",
-      "chromas": false
-    },
-    {
-      "id": "2002",
-      "num": 2,
-      "name": "Olaf des glaces",
-      "chromas": false
-    },
-    {
-      "id": "2003",
-      "num": 3,
-      "name": "Brolaf",
-      "chromas": true
-    },
-    {
-      "id": "2004",
-      "num": 4,
-      "name": "Olaf Pentakill",
-      "chromas": false
-    },
-    {
-      "id": "2005",
-      "num": 5,
-      "name": "Olaf maraudeur",
-      "chromas": false
-    },
-    {
-      "id": "2006",
-      "num": 6,
-      "name": "Olaf boucher",
-      "chromas": false
-    },
-    {
-      "id": "2015",
-      "num": 15,
-      "name": "SKT T1 Olaf",
-      "chromas": false
-    },
-    {
-      "id": "2016",
-      "num": 16,
-      "name": "Olaf tueur de dragons",
-      "chromas": true
-    },
-    {
-      "id": "2025",
-      "num": 25,
-      "name": "Olaf Sentinelle",
-      "chromas": true
-    },
-    {
-      "id": "2035",
-      "num": 35,
-      "name": "Olaf Pentakill III : Lost Chapter",
-      "chromas": true
-    },
-    {
-      "id": "2044",
-      "num": 44,
-      "name": "Olaf infernal",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "OlafAxeThrowCast",
       "name": "Déchireuse",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "OlafAxeThrowCast.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 96,
         "y": 0,
-        "full": "OlafAxeThrowCast.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Olaf lance une hache qui inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> et qui <status>ralentit</status> les ennemis de {{ slowamount*100 }}% pendant un maximum de {{ e3 }} sec (selon la distance parcourue). Les champions touchés perdent <scaleArmor>{{ shredamount*100 }}% d'armure</scaleArmor> pendant {{ debuffduration }} sec.<br /><br />Si Olaf ramasse la hache, le délai de récupération de cette compétence est réduit à {{ tooltipcdrefund }} sec. S'il s'est écoulé {{ tooltipcdrefund }} sec avant le ramassage, le délai de récupération est annulé.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Olaf lance une hache qui inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> et qui <status>ralentit</status> les ennemis de {{ slowamount*100 }}% pendant un maximum de {{ maxslowduration }} sec (selon la distance parcourue). Les champions touchés perdent <scaleArmor>{{ shredamount*100 }}% d'armure</scaleArmor> pendant {{ debuffduration }} sec.<br /><br />Si Olaf ramasse la hache, le délai de récupération de cette compétence est réduit à {{ tooltipcdrefund }} sec. S'il s'est écoulé {{ tooltipcdrefund }} sec avant le ramassage, le délai de récupération est annulé.{{ spellmodifierdescriptionappend }}",
       "costBurn": "50/55/60/65/70",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -118,6 +44,12 @@
           "Ralentissement",
           "Dégâts aux monstres",
           "Coût en mana"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ slowamount*100.000000 }}% -> {{ slowamountnl*100.000000 }}%",
+          "{{ monsterdamage }} -> {{ monsterdamageNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -131,13 +63,13 @@
       "name": "Force décuplée",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "OlafFrenziedStrikes.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 144,
         "y": 0,
-        "full": "OlafFrenziedStrikes.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -149,6 +81,11 @@
           "Vitesse d'attaque",
           "Bouclier de base",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ attackspeed*100.000000 }}% -> {{ attackspeednl*100.000000 }}%",
+          "{{ baseshield }} -> {{ baseshieldNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -162,13 +99,13 @@
       "name": "Frappe sauvage",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "OlafRecklessStrike.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 192,
         "y": 0,
-        "full": "OlafRecklessStrike.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -179,6 +116,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Coûte  PV",
@@ -192,13 +133,13 @@
       "name": "Ragnarok",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "OlafRagnarok.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 240,
         "y": 0,
-        "full": "OlafRagnarok.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -211,6 +152,12 @@
           "Dégâts d'attaque",
           "Vitesse de déplacement",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ resists }} -> {{ resistsNL }}",
+          "{{ flatad }} -> {{ flatadNL }}",
+          "{{ haste*100.000000 }} -> {{ hastenl*100.000000 }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -223,13 +170,13 @@
   "passive": {
     "name": "Rage du berzerker",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Olaf_Passive.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 288,
       "y": 0,
-      "full": "Olaf_Passive.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Olaf gagne de la vitesse d'attaque et du vol de vie selon ses PV manquants."
   },
@@ -243,24 +190,24 @@
   "gender": "Male",
   "species": "Human",
   "title_en": "the Berserker",
-  "lore_en": "Olaf is a warrior from the brutal peninsula of Lokfar in the Freljord. He lives only for the clash of steel and the glory of battle.\n\nThe Fatal Prophecy: One evening, while boasting of his glories, his clansmen goaded him into reading the omens using knuckle bones. The bones predicted a long life and a quiet passing—the worst fate for a Lokfar warrior, seen as cowardly and forgettable.\n\nThe Quest for Glorious Death: Infuriated and determined to prove the prediction false, Olaf set out to hunt and slay Lokfar's feared frost serpent. He hurled himself into the monster's maw, but the bloodlust that washed over him at the brink of death always saved him. He awoke next to the beast's butchered carcass.\n\nThe Repeated Failure: Thwarted but not defeated, Olaf hunted down every legendary creature in the Freljord, charging headlong toward his coveted death. Each time, he was spared by the frenzy that consumed him.\n\nThe Confrontation with the Winter's Claw: Concluding that no mere beast could grant him a warrior's death, he decided to challenge the most fearsome tribe in the Freljord: the Winter's Claw. Their leader, Sejuani, was amused but ordered scores of warriors to overwhelm him.\n\nThe Alliance: Olaf, lost in his frenzy, effortlessly cut a path to Sejuani. Their clash shook the glaciers, but Sejuani managed to fight the berserker to a standstill. Her glare penetrated Olaf's berserker haze, calming him long enough for her to make an offer: Sejuani swore that she would find Olaf his glorious death if he lent his axe and strength to her campaign of conquest.\n\nOlaf is now a brutal fighter of the Winter's Claw. He is bound to Sejuani by this vow and hopes that the great wars to come will finally bring him the honorable end he desires.",
+  "lore_en": "An unstoppable force of destruction, the axe-wielding Olaf wants nothing but to die in glorious combat. Hailing from the brutal Freljordian peninsula of Lokfar, he once received a prophecy foretelling his peaceful passing—a coward's fate, and a great insult among his people. Seeking death, and fueled by rage, he rampaged across the land, slaughtering scores of great warriors and legendary beasts in search of any opponent who could stop him. Now a brutal enforcer for the Winter's Claw, he seeks his end in the great wars to come.",
   "spells_en": [
     {
       "id": "OlafAxeThrowCast",
       "name": "Undertow",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "OlafAxeThrowCast.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 96,
         "y": 0,
-        "full": "OlafAxeThrowCast.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Olaf throws an axe, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> and <status>Slowing</status> by {{ slowamount*100 }}% for up to {{ e3 }} seconds (based on distance travelled). Champions hit lose <scaleArmor>{{ shredamount*100 }}% Armor</scaleArmor> for {{ debuffduration }} seconds.<br /><br />If Olaf picks up the axe, this Ability's Cooldown is reduced to {{ tooltipcdrefund }} seconds, or fully refunded if {{ tooltipcdrefund }} seconds has elapsed.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Olaf throws an axe, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> and <status>Slowing</status> by {{ slowamount*100 }}% for up to {{ maxslowduration }} seconds (based on distance travelled). Champions hit lose <scaleArmor>{{ shredamount*100 }}% Armor</scaleArmor> for {{ debuffduration }} seconds.<br /><br />If Olaf picks up the axe, this Ability's Cooldown is reduced to {{ tooltipcdrefund }} seconds, or fully refunded if {{ tooltipcdrefund }} seconds has elapsed.{{ spellmodifierdescriptionappend }}",
       "costBurn": "50/55/60/65/70",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -269,6 +216,12 @@
           "Slow",
           "Monster Damage",
           "Mana Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ slowamount*100.000000 }}% -> {{ slowamountnl*100.000000 }}%",
+          "{{ monsterdamage }} -> {{ monsterdamageNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -282,13 +235,13 @@
       "name": "Tough It Out",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "OlafFrenziedStrikes.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 144,
         "y": 0,
-        "full": "OlafFrenziedStrikes.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -300,6 +253,11 @@
           "Attack Speed",
           "Base Shield",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ attackspeed*100.000000 }}% -> {{ attackspeednl*100.000000 }}%",
+          "{{ baseshield }} -> {{ baseshieldNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -313,13 +271,13 @@
       "name": "Reckless Swing",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "OlafRecklessStrike.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 192,
         "y": 0,
-        "full": "OlafRecklessStrike.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -330,6 +288,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Health",
@@ -343,13 +305,13 @@
       "name": "Ragnarok",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "OlafRagnarok.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 240,
         "y": 0,
-        "full": "OlafRagnarok.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -362,6 +324,12 @@
           "Attack Damage",
           "Move Speed",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ resists }} -> {{ resistsNL }}",
+          "{{ flatad }} -> {{ flatadNL }}",
+          "{{ haste*100.000000 }} -> {{ hastenl*100.000000 }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -374,13 +342,13 @@
   "passive_en": {
     "name": "Berserker Rage",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Olaf_Passive.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 288,
       "y": 0,
-      "full": "Olaf_Passive.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Olaf gains Attack Speed and Life Steal based on his missing Health."
   },
@@ -460,6 +428,89 @@
       "num": 44,
       "name": "Infernal Olaf",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "2000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "2001",
+      "num": 1,
+      "name": "Olaf déchu",
+      "chromas": false
+    },
+    {
+      "id": "2002",
+      "num": 2,
+      "name": "Olaf des glaces",
+      "chromas": false
+    },
+    {
+      "id": "2003",
+      "num": 3,
+      "name": "Brolaf",
+      "chromas": true
+    },
+    {
+      "id": "2004",
+      "num": 4,
+      "name": "Olaf Pentakill",
+      "chromas": false
+    },
+    {
+      "id": "2005",
+      "num": 5,
+      "name": "Olaf maraudeur",
+      "chromas": false
+    },
+    {
+      "id": "2006",
+      "num": 6,
+      "name": "Olaf boucher",
+      "chromas": false
+    },
+    {
+      "id": "2015",
+      "num": 15,
+      "name": "SKT T1 Olaf",
+      "chromas": false
+    },
+    {
+      "id": "2016",
+      "num": 16,
+      "name": "Olaf tueur de dragons",
+      "chromas": true
+    },
+    {
+      "id": "2025",
+      "num": 25,
+      "name": "Olaf Sentinelle",
+      "chromas": true
+    },
+    {
+      "id": "2035",
+      "num": 35,
+      "name": "Olaf Pentakill III : Lost Chapter",
+      "chromas": true
+    },
+    {
+      "id": "2044",
+      "num": 44,
+      "name": "Olaf infernal",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Sejuani",
+      "type": "champion",
+      "relation": "ally",
+      "note_fr": "Guerrier de la Griffe Hivernale",
+      "note_en": "Winter's Claw Warrior"
     }
   ]
 }

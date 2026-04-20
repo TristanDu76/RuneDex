@@ -3,156 +3,86 @@
   "key": "113",
   "name": "Sejuani",
   "title": "Fureur du nord",
-  "version": "15.23.1",
-  "lore": "Sejuani est la fille de Kalkia, l'ancienne Sublimée de la Griffe Hivernale. Abandonnée par sa mère qui a fui par amour, elle fut élevée par une grand-mère sévère et froide. Son seul réconfort fut ses étés chez les Avarosans, où elle se lia d'une amitié profonde avec Ashe.\n\n La Ruine et le Déshonneur : Sous la direction de sa grand-mère, la Griffe Hivernale sombra dans la pauvreté et fut forcée de demander la protection des Gardiens du Givre, une alliance que Sejuani jugeait humiliante. Le retour de sa mère, Kalkia, n'arrangea rien, car celle-ci restait sous l'influence des Prêtres du Givre.\n\n Le Raid Formateur : Pour prouver sa valeur, Sejuani jura de mener un raid périlleux contre un navire de guerre Noxien. C'est lors de cet assaut qu'elle sauva un jeune drüvask destiné à la boucherie. Elle le nomma Bristle (Grogneur) ; il devint sa monture fidèle et l'un des plus massifs de son espèce.\n\n L'Accession au Pouvoir : Forte de son succès, Sejuani défia sa mère. Bien que le duel fut interrompu par la mort de Kalkia lors de l'intervention des Prêtres du Givre, Sejuani s'empara du titre de Sublimée. Elle chassa les émissaires des Gardiens du Givre et commença à unifier les parias, les marcheurs d'esprits et les guerriers du Nord sous sa bannière.\n\n La Force par la Cruauté : En quelques années, la Griffe Hivernale passa d'une tribu mourante à une horde redoutable, prônant la survie du plus fort. Sejuani rejette l'idée de l'agriculture ou de la paix, préférant le pillage et la conquête pour endurcir son peuple.\n\n La Rupture avec Ashe : Sejuani marche désormais vers le sud. Elle voit en Ashe, son ancienne amie, une traîtresse qui affaiblit le Freljord par ses idéaux de paix. Pour Sejuani, seul le conflit peut sauver leur terre, et elle compte bien prouver qu'elle est la seule digne de régner sur le Freljord.",
+  "version": "16.8.1",
+  "lore": "Sejuani est l'impitoyable chef de guerre sublimée de la Griffe hivernale, l'une des tribus les plus redoutées de Freljord. La survie de son peuple est une lutte constante et désespérée contre les éléments. Pour résister aux rigueurs de l'hiver, il doit lancer des assauts contre les Noxiens, les Demaciens et les Avarosans. Sejuani mène elle-même la charge des plus dangereux de ces assauts en chevauchant son sanglier drüvask, Bristle, et en agitant son fléau de glace pure pour congeler et réduire en miettes ses ennemis.",
   "tags": [
     "Tank"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Sejuani.png",
+    "sprite": "champion3.png",
+    "group": "champion",
     "x": 240,
     "y": 96,
-    "full": "Sejuani.png",
-    "group": "champion",
-    "sprite": "champion3.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "113000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "113001",
-      "num": 1,
-      "name": "Sejuani défenses acérées",
-      "chromas": false
-    },
-    {
-      "id": "113002",
-      "num": 2,
-      "name": "Sejuani fatale",
-      "chromas": false
-    },
-    {
-      "id": "113003",
-      "num": 3,
-      "name": "Sejuani classique",
-      "chromas": false
-    },
-    {
-      "id": "113004",
-      "num": 4,
-      "name": "Sejuani cavalerie ursine",
-      "chromas": false
-    },
-    {
-      "id": "113005",
-      "num": 5,
-      "name": "Sejuani chevaucheuse de Poro",
-      "chromas": true
-    },
-    {
-      "id": "113006",
-      "num": 6,
-      "name": "Sejuani chasseuse de bêtes",
-      "chromas": false
-    },
-    {
-      "id": "113007",
-      "num": 7,
-      "name": "Sejuani traqueuse de l'aube",
-      "chromas": false
-    },
-    {
-      "id": "113008",
-      "num": 8,
-      "name": "Sejuani pyrotechnicienne",
-      "chromas": true
-    },
-    {
-      "id": "113015",
-      "num": 15,
-      "name": "Sejuani Hextech",
-      "chromas": false
-    },
-    {
-      "id": "113016",
-      "num": 16,
-      "name": "PROJET : Sejuani",
-      "chromas": true
-    },
-    {
-      "id": "113026",
-      "num": 26,
-      "name": "Sejuani de l'éclipse solaire",
-      "chromas": true
-    },
-    {
-      "id": "113036",
-      "num": 36,
-      "name": "Sejuani héroïne de guerre",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "SejuaniQ",
       "name": "Assaut arctique",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SejuaniQ.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 384,
         "y": 144,
-        "full": "SejuaniQ.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
       "tooltip": "Sejuani se rue dans une direction, infligeant <magicDamage>{{ totaldamagetooltip }} pts de dégâts magiques</magicDamage> aux ennemis et les <status>projetant dans les airs</status> pendant {{ e4 }} sec. La ruée s'arrête si elle touche un champion ennemi.{{ spellmodifierdescriptionappend }}",
-      "costBurn": "70/75/80/85/90",
+      "costBurn": "60/65/70/75/80",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Dégâts",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
       "rangeBurn": "650",
       "datavalues": {},
       "description": "Sejuani charge droit devant elle, projetant les ennemis dans les airs. La charge s'arrête si elle touche un champion ennemi.",
-      "cooldownBurn": "19/17.5/16/14.5/13"
+      "cooldownBurn": "18/16.5/15/13.5/12"
     },
     {
       "id": "SejuaniW",
       "name": "Colère de l'hiver",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SejuaniW.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 432,
         "y": 144,
-        "full": "SejuaniW.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
       "tooltip": "Sejuani frappe avec son fléau, infligeant <physicalDamage>{{ firsthitdamagetooltip }} pts de dégâts physiques</physicalDamage> et <status>repoussant</status> les sbires et les monstres de la jungle. Elle frappe ensuite une nouvelle fois, infligeant <physicalDamage>{{ secondhitdamagetooltip }} pts de dégâts physiques</physicalDamage> et <status>ralentissant</status> brièvement les cibles.<br /><br />Les deux coups appliquent des effets <spellName>Permafrost</spellName>.{{ spellmodifierdescriptionappend }}",
-      "costBurn": "65",
+      "costBurn": "60",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Dégâts du premier coup",
           "Dégâts du second coup",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamageone }} -> {{ basedamageoneNL }}",
+          "{{ basedamagetwo }} -> {{ basedamagetwoNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -166,13 +96,13 @@
       "name": "Permafrost",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SejuaniE.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 0,
         "y": 0,
-        "full": "SejuaniE.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -182,6 +112,9 @@
       "leveltip": {
         "label": [
           "Dégâts"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -195,13 +128,13 @@
       "name": "Prison de glace",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SejuaniR.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 48,
         "y": 0,
-        "full": "SejuaniR.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -213,25 +146,30 @@
           "Dégâts minimum",
           "Dégâts maximum",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ e7 }} -> {{ e7NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
       "rangeBurn": "1300",
       "datavalues": {},
       "description": "Sejuani projette des bolas qui gèlent et étourdissent le premier champion touché, en plus de créer une tempête de glace qui ralentit les autres ennemis.",
-      "cooldownBurn": "130/110/90"
+      "cooldownBurn": "120/105/90"
     }
   ],
   "passive": {
     "name": "Fureur du nord",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Sejuani_passive.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 240,
       "y": 96,
-      "full": "Sejuani_passive.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "En dehors des combats, Sejuani gagne Armure de glace, qui augmente son armure et sa résistance magique et l'immunise contre les ralentissements. Armure de glace persiste un court instant après que Sejuani a subi des dégâts.  Sejuani peut blesser un ennemi étourdi pour le fracasser, infligeant d'énormes dégâts magiques."
   },
@@ -246,62 +184,72 @@
   "gender": "Female",
   "species": "Human",
   "title_en": "Fury of the North",
-  "lore_en": "Sejuani is the daughter of Kalkia, former Warmother of the Winter's Claw. Abandoned by her mother who fled for love, she was raised by a cold, demanding grandmother. Her only experience with warmth came during summers spent with the Avarosans, where she became best friends with Ashe.\n\n Decline and Disgrace: Under her grandmother's rule, the Winter's Claw fell into ruin and was forced to rely on the Frostguard for protection—an alliance Sejuani found galling. Even when Kalkia returned, the tribe remained weak and subservient to the Frost Priests.\n\n The Turning Point Raid: To rally the tribe, Sejuani swore a sacred oath to raid a Noxian warship. During the assault, she rescued a juvenile drüvask from the butchery stores, naming him Bristle. He grew into a massive beast and remains her loyal steed.\n\n Taking the Mantle: Sejuani eventually challenged her mother for leadership. Although Kalkia died during the struggle with the Frost Priests before the duel could finish, Sejuani emerged as the new Warmother. She purged the Frostguard's influence and began absorbing nearby tribes.\n\n Strength Through Brutality: In just a few years, she transformed the Winter's Claw into a feared horde. She believes that only the harshness of winter and constant conflict can keep the Freljordians strong, rejecting the \"soft\" ways of farming and diplomacy.\n\n Betrayal of Friendship: Sejuani now seeks to destroy the coalition formed by her childhood friend, Ashe. She views Ashe's desire for peace as a betrayal of the Freljord's true nature. Sejuani intends to prove that only she has the strength to lead their people through the coming storms.",
+  "lore_en": "Sejuani is the brutal, unforgiving Iceborn warmother of the Winter's Claw, one of the most feared tribes of the Freljord. Her people's survival is a constant, desperate battle against the elements, forcing them to raid Noxians, Demacians, and Avarosans alike to survive the harsh winters. Sejuani herself spearheads the most dangerous of these attacks from the saddle of her drüvask boar Bristle, using her True Ice flail to freeze and shatter her enemies.",
   "spells_en": [
     {
       "id": "SejuaniQ",
       "name": "Arctic Assault",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SejuaniQ.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 384,
         "y": 144,
-        "full": "SejuaniQ.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
       "tooltip": "Sejuani charges, dealing <magicDamage>{{ totaldamagetooltip }} magic damage</magicDamage> to enemies and <status>Knocking</status> them <status>Up</status> for {{ e4 }} seconds. The charge ends after hitting an enemy champion.{{ spellmodifierdescriptionappend }}",
-      "costBurn": "70/75/80/85/90",
+      "costBurn": "60/65/70/75/80",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Damage",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
       "rangeBurn": "650",
       "datavalues": {},
       "description": "Sejuani charges forward, knocking enemies into the air. The charge stops after hitting an enemy champion.",
-      "cooldownBurn": "19/17.5/16/14.5/13"
+      "cooldownBurn": "18/16.5/15/13.5/12"
     },
     {
       "id": "SejuaniW",
       "name": "Winter's Wrath",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SejuaniW.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 432,
         "y": 144,
-        "full": "SejuaniW.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
       "tooltip": "Sejuani swings her flail, dealing <physicalDamage>{{ firsthitdamagetooltip }} physical damage</physicalDamage> and <status>Knocking Back</status> minions and jungle monsters. She then lashes out again, dealing <physicalDamage>{{ secondhitdamagetooltip }} physical damage</physicalDamage> and briefly <status>Slowing</status> targets.<br /><br />Both swings apply stacks of <spellName>Permafrost</spellName>.{{ spellmodifierdescriptionappend }}",
-      "costBurn": "65",
+      "costBurn": "60",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "First Hit Damage",
           "Second Hit Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamageone }} -> {{ basedamageoneNL }}",
+          "{{ basedamagetwo }} -> {{ basedamagetwoNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -315,13 +263,13 @@
       "name": "Permafrost",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SejuaniE.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 0,
         "y": 0,
-        "full": "SejuaniE.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -331,6 +279,9 @@
       "leveltip": {
         "label": [
           "Damage"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -344,13 +295,13 @@
       "name": "Glacial Prison",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SejuaniR.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 48,
         "y": 0,
-        "full": "SejuaniR.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -362,25 +313,30 @@
           "Minimum Damage",
           "Maximum Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ e7 }} -> {{ e7NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
       "rangeBurn": "1300",
       "datavalues": {},
       "description": "Sejuani throws her bola that freezes and stuns the first champion hit and creates an ice storm that slows other enemies.",
-      "cooldownBurn": "130/110/90"
+      "cooldownBurn": "120/105/90"
     }
   ],
   "passive_en": {
     "name": "Fury of the North",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Sejuani_passive.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 240,
       "y": 96,
-      "full": "Sejuani_passive.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "After being out of combat, Sejuani gains Frost Armor which grants Armor and Magic Resist and immunity to slows. Frost Armor persists for a short time after Sejuani takes damage.  Sejuani can damage a stunned enemy to shatter it, dealing massive magic damage."
   },
@@ -467,6 +423,126 @@
       "num": 36,
       "name": "Victorious Sejuani",
       "chromas": true
+    },
+    {
+      "id": "113048",
+      "num": 48,
+      "name": "Pug Trainer Sejuani",
+      "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "113000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "113001",
+      "num": 1,
+      "name": "Sejuani défenses acérées",
+      "chromas": false
+    },
+    {
+      "id": "113002",
+      "num": 2,
+      "name": "Sejuani fatale",
+      "chromas": false
+    },
+    {
+      "id": "113003",
+      "num": 3,
+      "name": "Sejuani classique",
+      "chromas": false
+    },
+    {
+      "id": "113004",
+      "num": 4,
+      "name": "Sejuani cavalerie ursine",
+      "chromas": false
+    },
+    {
+      "id": "113005",
+      "num": 5,
+      "name": "Sejuani chevaucheuse de Poro",
+      "chromas": true
+    },
+    {
+      "id": "113006",
+      "num": 6,
+      "name": "Sejuani chasseuse de bêtes",
+      "chromas": false
+    },
+    {
+      "id": "113007",
+      "num": 7,
+      "name": "Sejuani traqueuse de l'aube",
+      "chromas": false
+    },
+    {
+      "id": "113008",
+      "num": 8,
+      "name": "Sejuani pyrotechnicienne",
+      "chromas": true
+    },
+    {
+      "id": "113015",
+      "num": 15,
+      "name": "Sejuani Hextech",
+      "chromas": false
+    },
+    {
+      "id": "113016",
+      "num": 16,
+      "name": "PROJET : Sejuani",
+      "chromas": true
+    },
+    {
+      "id": "113026",
+      "num": 26,
+      "name": "Sejuani de l'éclipse solaire",
+      "chromas": true
+    },
+    {
+      "id": "113036",
+      "num": 36,
+      "name": "Sejuani héroïne de guerre",
+      "chromas": true
+    },
+    {
+      "id": "113048",
+      "num": 48,
+      "name": "Sejuani dresseuse de chien",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Udyr",
+      "type": "champion",
+      "relation": "family",
+      "note_fr": "Père de substitution",
+      "note_en": "Surrogate father"
+    },
+    {
+      "id": "Olaf",
+      "type": "champion",
+      "relation": "ally",
+      "note_fr": "Guerrier de la Griffe Hivernale",
+      "note_en": "Winter's Claw Warrior"
+    },
+    {
+      "id": "avarosa",
+      "type": "lore",
+      "relation": "sister/rival",
+      "note_fr": "Sœur et rivale",
+      "note_en": "Sister and rival"
+    },
+    {
+      "id": "Ashe",
+      "type": "champion",
+      "relation": "rival/ex-ally"
     }
   ]
 }

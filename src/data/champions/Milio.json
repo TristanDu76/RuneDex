@@ -3,55 +3,35 @@
   "key": "902",
   "name": "Milio",
   "title": "Douce flamme",
-  "version": "15.23.1",
-  "lore": "Milio est un jeune garçon d'Ixtal, dont l'histoire est marquée par la tragédie familiale et l'exil. Sa grand-mère, Lupé, et sa jumelle, Luné, étaient des maîtresses élémentaires de la caste dirigeante des Yun Tal. Luné fut bannie pour avoir comploté, mais Lupé fut également punie et exilée à cause de leur lien gémellaire.\n\nMilio a grandi en exil, mais n'a connu que l'amour et le bonheur de sa famille. Lupé a tenté de lui enseigner l'axiomatique élémentaire, mais Milio peinait avec la rigidité des règles. Il a continué seul, abandonnant les restrictions, étudiant la nature pour finalement maîtriser l'Axiome du feu, que sa grand-mère refusait de lui enseigner.\n\nLa Découverte du Feu Guérisseur :\n\nMilio se demandait si le feu devait être si destructeur. La réponse lui vint une nuit, alors qu'il tentait en vain d'aider une chasseuse blessée. Poussé par la nécessité, il fit l'effort désespéré d'adapter l'axiome pour qu'il guérisse. En se concentrant sur une sensation de chaleur familière et apaisante (l'« inner flame » ou flamme intérieure de la chasseuse), il manifesta une nouvelle créature : une petite flamme timide et amicale, qu'il nomma « fuemigo » (son feu guérisseur).\n\nIl avait découvert un tout nouvel axiome : le « feu apaisant » (soothing fire).\n\nLa Quête de Rédemption :\n\nLupé fut troublée par l'innovation de Milio, mais y vit aussi sa seule chance de réintégrer les Yun Tal. Elle prépara Milio, à seulement douze ans, pour qu'il se rende dans la capitale, Ixaocan, et y affronte les épreuves du Vidalion, annulant ainsi l'exil de la famille.\n\nMilio accepta, son amour pour sa famille l'emportant sur la peur de partir. Il se confectionna un sac à dos spécial, sa « furnasita », pour garder son fuemigo toujours brûlant.\n\nAprès un long voyage, Milio est arrivé à Ixaocan pour commencer son entraînement. Le « garçon aux flammes apaisantes » a attiré l'attention, notamment celle de Luné, sa grand-tante, qui est actuellement emprisonnée sous la ville et qui attend son heure. Milio, concentré sur sa mission de rendre sa famille fière, ignore les dangers et les machinations qui l'attendent.",
+  "version": "16.8.1",
+  "lore": "Milio est un garçon d'Ixtal chaleureux qui, malgré son jeune âge, maîtrise l'Axiome du feu et a découvert le feu guérisseur. Grâce à cette puissance nouvelle, il espère intégrer les Yun Tal, comme sa grand-mère avant lui, et annuler le jugement qui contraint sa famille à l'exil. Après avoir traversé les jungles d'Ixtal pour rejoindre Ixaocan, la capitale, il se prépare à affronter le Vidalion, ignorant tout des épreuves et des dangers qui l'attendent.",
   "tags": [
     "Support",
     "Mage"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Milio.png",
+    "sprite": "champion2.png",
+    "group": "champion",
     "x": 96,
     "y": 96,
-    "full": "Milio.png",
-    "group": "champion",
-    "sprite": "champion2.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "902000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "902001",
-      "num": 1,
-      "name": "Milio de la cour féérique",
-      "chromas": true
-    },
-    {
-      "id": "902011",
-      "num": 11,
-      "name": "Milio berger de la pluie",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "MilioQ",
       "name": "Ultra méga boule de feu",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MilioQ.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 288,
         "y": 96,
-        "full": "MilioQ.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -63,6 +43,11 @@
           "Dégâts",
           "Ralentissement",
           "Coût en mana"
+        ],
+        "effect": [
+          "{{ falldamage }} -> {{ falldamageNL }}",
+          "{{ slowamount*100.000000 }}% -> {{ slowamountnl*100.000000 }}%",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -76,13 +61,13 @@
       "name": "Feu de camp",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MilioW.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 336,
         "y": 96,
-        "full": "MilioW.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -95,6 +80,12 @@
           "Soins",
           "Délai de récupération",
           "Coût en mana"
+        ],
+        "effect": [
+          "{{ rangepctincrease*100.000000 }}% -> {{ rangepctincreasenl*100.000000 }}%",
+          "{{ totalhealingovertime }} -> {{ totalhealingovertimeNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -108,13 +99,13 @@
       "name": "Chaud devant !",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MilioE.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 384,
         "y": 96,
-        "full": "MilioE.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "2",
       "maxrank": 5,
@@ -127,6 +118,12 @@
           "Vitesse de déplacement",
           "Coût en mana",
           "Délai de rechargement"
+        ],
+        "effect": [
+          "{{ shieldbase }} -> {{ shieldbaseNL }}",
+          "{{ movespeedamount*100.000000 }}% -> {{ movespeedamountnl*100.000000 }}%",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ ammorechargetime }} -> {{ ammorechargetimeNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -140,13 +137,13 @@
       "name": "Flammes vitales",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MilioR.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 432,
         "y": 96,
-        "full": "MilioR.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -157,6 +154,10 @@
         "label": [
           "Soins",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ healbase }} -> {{ healbaseNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -169,13 +170,13 @@
   "passive": {
     "name": "Tout feu tout flamme",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Milio_P.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 96,
       "y": 96,
-      "full": "Milio_P.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Les compétences de Milio enchantent les alliés touchés, ce qui permet aux prochains dégâts de ces alliés d'infliger des dégâts supplémentaires et de brûler leur cible."
   },
@@ -190,20 +191,20 @@
   "gender": "Male",
   "species": "Human",
   "title_en": "The Gentle Flame",
-  "lore_en": "Milio is a young, warm-hearted boy from Ixtal, whose story is marked by family tragedy and exile. His grandmother, Lupé, and her twin, Luné, were elemental masters of the ruling caste, the Yun Tal. Luné was banished for plotting, and Lupé was punished and exiled alongside her due to their twin bond.\n\nMilio grew up in exile, knowing only love and happiness. Lupé tried to teach him the elemental axiomata, but Milio struggled with the discipline's rigidity. He continued learning on his own, abandoning restrictions and eventually mastering the Fire Axiom, which his grandmother would not teach him.\n\nThe Discovery of Soothing Fire:\n\nMilio wondered if fire had to be so destructive. The answer came one night when he was trying to help an injured hunter. Driven by desperation, he sought to adapt the axiom to heal. By focusing on a familiar, soothing warmth (the hunter's \"inner flame\"), he manifested a new creature: a small, timid, friendly flame he named \"fuemigo.\"\n\nHe had discovered an entirely new axiom: \"soothing fire.\"\n\nThe Quest for Redemption:\n\nLupé was unsettled by Milio's innovation but saw it as her last chance to rejoin the Yun Tal. She prepared Milio, at only twelve years old, to travel to the capital, Ixaocan, and challenge the Vidalion trials, thereby ending the family's exile.\n\nMilio accepted, his love for his family overcoming his fear of leaving home. He fashioned a special backpack, his \"furnasita,\" to keep his fuemigo burning.\n\nAfter a long journey, Milio arrived at Ixaocan to begin his training. \"The boy with the soothing flames\" has caught the eye of many, including Luné, his great-aunt, who is currently imprisoned beneath the city and biding her time. Milio, focused on making his family proud, is unaware of the dangers and machinations that await him.",
+  "lore_en": "Milio is a warmhearted boy from Ixtal who has, despite his young age, mastered the fire axiom and discovered something new: soothing fire. With this newfound power, Milio plans to help his family escape their exile by joining the Yun Tal—just like his grandmother once did. Having traveled through the Ixtal jungles to the capital of Ixaocan, Milio now prepares to face the Vidalion and join the Yun Tal, unaware of the trials—and dangers—that await him.",
   "spells_en": [
     {
       "id": "MilioQ",
       "name": "Ultra Mega Fire Kick",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MilioQ.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 288,
         "y": 96,
-        "full": "MilioQ.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -215,6 +216,11 @@
           "Damage",
           "Slow",
           "Mana Cost"
+        ],
+        "effect": [
+          "{{ falldamage }} -> {{ falldamageNL }}",
+          "{{ slowamount*100.000000 }}% -> {{ slowamountnl*100.000000 }}%",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -228,13 +234,13 @@
       "name": "Cozy Campfire",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MilioW.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 336,
         "y": 96,
-        "full": "MilioW.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -247,6 +253,12 @@
           "Healing",
           "Cooldown",
           "Mana Cost"
+        ],
+        "effect": [
+          "{{ rangepctincrease*100.000000 }}% -> {{ rangepctincreasenl*100.000000 }}%",
+          "{{ totalhealingovertime }} -> {{ totalhealingovertimeNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -260,13 +272,13 @@
       "name": "Warm Hugs",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MilioE.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 384,
         "y": 96,
-        "full": "MilioE.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "2",
       "maxrank": 5,
@@ -279,6 +291,12 @@
           "Move Speed",
           "Mana Cost",
           "Recharge Time"
+        ],
+        "effect": [
+          "{{ shieldbase }} -> {{ shieldbaseNL }}",
+          "{{ movespeedamount*100.000000 }}% -> {{ movespeedamountnl*100.000000 }}%",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ ammorechargetime }} -> {{ ammorechargetimeNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -292,13 +310,13 @@
       "name": "Breath of Life",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MilioR.png",
+        "sprite": "spell8.png",
+        "group": "spell",
         "x": 432,
         "y": 96,
-        "full": "MilioR.png",
-        "group": "spell",
-        "sprite": "spell8.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -309,6 +327,10 @@
         "label": [
           "Healing",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ healbase }} -> {{ healbaseNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -321,13 +343,13 @@
   "passive_en": {
     "name": "Fired Up!",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Milio_P.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 96,
       "y": 96,
-      "full": "Milio_P.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Milio's abilities enchant allies on touch, making their next damage deal a burst of extra damage and burn the target."
   },
@@ -353,6 +375,39 @@
       "num": 11,
       "name": "Rain Shepherd Milio",
       "chromas": true
+    },
+    {
+      "id": "902020",
+      "num": 20,
+      "name": "Winter Wonder Milio",
+      "chromas": true
     }
-  ]
+  ],
+  "skins": [
+    {
+      "id": "902000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "902001",
+      "num": 1,
+      "name": "Milio de la cour féérique",
+      "chromas": true
+    },
+    {
+      "id": "902011",
+      "num": 11,
+      "name": "Milio berger de la pluie",
+      "chromas": true
+    },
+    {
+      "id": "902020",
+      "num": 20,
+      "name": "Milio merveille hivernale",
+      "chromas": true
+    }
+  ],
+  "related_characters": []
 }

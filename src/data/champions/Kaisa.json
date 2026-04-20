@@ -3,133 +3,35 @@
   "key": "145",
   "name": "Kai'Sa",
   "title": "Fille du Néant",
-  "version": "15.23.1",
-  "lore": "Kai'Sa a commencé sa vie modestement comme une fille ordinaire nommée Kaisa, fille de l'explorateur et érudit Kassadin, vivant avec ses parents aimants dans les déserts du sud de Shurima. À dix ans, son destin bascula pour toujours.\n\nDes événements inquiétants se produisaient. Kaisa et ses amis libérèrent des chèvres sacrificielles, déclenchant l'impensable : la terre trembla, un immense abîme se déchira et le village fut englouti. Le Néant (Void) s'était éveillé. Kaisa fut engloutie, et son père, Kassadin, la crut morte, ce qui le poussa à devenir un guerrier obsédé par la vengeance contre le Néant.\n\nKaisa se réveilla piégée sous terre. Elle se retrouva seule dans l'obscurité, les cris des autres survivants s'étant éteints. Poussée par la peur et la faim, elle s'enfonça dans le Néant jusqu'à une vaste caverne illuminée par une lueur violette. Elle y trouva des créatures du Néant.\n\nAttaquée par une première créature, elle la tua, mais sa peau non naturelle s'accrocha à son bras. Cette carapace sombre et dure comme l'acier se mit à croître, devenant une seconde peau vivante en symbiose avec elle. Au fil des années, Kaisa se transforma de jeune fille effrayée en chasseuse intrépide.\n\nPendant près d'une décennie, elle a vécu entre deux mondes pour tenter de les séparer, car le Néant cherche à consommer tout Runeterra. Elle est déterminée à empêcher cela.\n\nBien qu'elle ait tué d'innombrables créatures du Néant, elle comprend que beaucoup des personnes qu'elle protège la verraient comme un monstre elle-même. Son nom est passé dans la légende, un écho des anciennes horreurs de l'Icathia condamnée : elle n'est plus Kaisa, mais Kai'Sa.\n\nL'Ironie Tragique : Bien que son père, Kassadin, soit devenu un puissant guerrier anti-Néant, Kai'Sa reste isolée. Elle doit décider si elle doit pardonner aux mortels qui la rejettent et vaincre la vague montante des ténèbres, ou si elle doit les laisser être consumés par le Néant, seule, sans savoir que son père est lui aussi de l'autre côté, transformé et brisé.",
+  "version": "16.8.1",
+  "lore": "Capturée par le Néant alors qu'elle n'était qu'une enfant, Kai'Sa parvint à survivre par la simple force de sa détermination et de sa ténacité. Si ses expériences ont fait d'elle une chasseuse meurtrière, certains voient en elle l'avant-goût d'un avenir qu'ils préféreraient ne pas connaître. Étant entrée en fragile symbiose avec une carapace vivante du Néant, il lui faudra bientôt décider si elle doit pardonner aux mortels qui la considèrent comme un monstre et vaincre la vague grandissante des ténèbres… ou si elle doit fermer les yeux et laisser le Néant consumer le monde qui l'a abandonnée.",
   "tags": [
     "Marksman",
     "Mage"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Kaisa.png",
+    "sprite": "champion1.png",
+    "group": "champion",
     "x": 240,
     "y": 96,
-    "full": "Kaisa.png",
-    "group": "champion",
-    "sprite": "champion1.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "145000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "145001",
-      "num": 1,
-      "name": "Kai'Sa ange exterminateur",
-      "chromas": true
-    },
-    {
-      "id": "145014",
-      "num": 14,
-      "name": "K/DA Kai'Sa",
-      "chromas": false
-    },
-    {
-      "id": "145015",
-      "num": 15,
-      "name": "K/DA Kai'Sa prestige",
-      "chromas": false
-    },
-    {
-      "id": "145016",
-      "num": 16,
-      "name": "iG Kai'Sa",
-      "chromas": false
-    },
-    {
-      "id": "145017",
-      "num": 17,
-      "name": "Kai'Sa arcade",
-      "chromas": false
-    },
-    {
-      "id": "145026",
-      "num": 26,
-      "name": "K/DA ALL OUT Kai'Sa",
-      "chromas": false
-    },
-    {
-      "id": "145027",
-      "num": 27,
-      "name": "K/DA ALL OUT Kai'Sa prestige",
-      "chromas": false
-    },
-    {
-      "id": "145029",
-      "num": 29,
-      "name": "Kai'Sa dragon du lagon",
-      "chromas": false
-    },
-    {
-      "id": "145039",
-      "num": 39,
-      "name": "K/DA Kai'Sa prestige (2022)",
-      "chromas": false
-    },
-    {
-      "id": "145040",
-      "num": 40,
-      "name": "Kai'Sa gardienne des étoiles",
-      "chromas": false
-    },
-    {
-      "id": "145048",
-      "num": 48,
-      "name": "Kai'Sa guerrière d'encre",
-      "chromas": false
-    },
-    {
-      "id": "145059",
-      "num": 59,
-      "name": "Kai'Sa écailles célestes",
-      "chromas": false
-    },
-    {
-      "id": "145069",
-      "num": 69,
-      "name": "Kai'Sa du pulsar sombre",
-      "chromas": false
-    },
-    {
-      "id": "145070",
-      "num": 70,
-      "name": "Kai'Sa légende transcendée",
-      "chromas": false
-    },
-    {
-      "id": "145071",
-      "num": 71,
-      "name": "Kai'Sa légende immortalisée",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "KaisaQ",
       "name": "Pluie d'Icathia",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KaisaQ.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 384,
         "y": 144,
-        "full": "KaisaQ.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -140,6 +42,10 @@
         "label": [
           "Délai de récupération",
           "Dégâts par projectile"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -153,13 +59,13 @@
       "name": "Rayon du Néant",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KaisaW.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 432,
         "y": 144,
-        "full": "KaisaW.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -171,6 +77,11 @@
           "Délai de récupération",
           "Dégâts",
           "Coût en mana"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -184,13 +95,13 @@
       "name": "Surpresseur",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KaisaE.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 0,
         "y": 0,
-        "full": "KaisaE.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -202,6 +113,11 @@
           "Délai de récupération",
           "Vitesse de déplacement",
           "Vitesse d'attaque"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ effect1amount*100.000000 }}% -> {{ effect1amountnl*100.000000 }}%",
+          "{{ effect5amount*100.000000 }}% -> {{ effect5amountnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -215,13 +131,13 @@
       "name": "Instinct meurtrier",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KaisaR.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 48,
         "y": 0,
-        "full": "KaisaR.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -234,6 +150,12 @@
           "Délai de récupération",
           "PV du bouclier",
           "Ratio de dégâts d'attaque"
+        ],
+        "effect": [
+          "{{ rrange }} -> {{ rrangeNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ rbasevalue }} -> {{ rbasevalueNL }}",
+          "{{ rtotaladratio*100.000000 }}% -> {{ rtotaladrationl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -246,13 +168,13 @@
   "passive": {
     "name": "Seconde peau",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Kaisa_Passive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 240,
       "y": 96,
-      "full": "Kaisa_Passive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Les attaques de base de Kai'Sa appliquent des effets Plasma, infligeant de plus en plus de dégâts magiques supplémentaires. Les effets immobilisants des alliés appliquent aussi des effets Plasma. De plus, les objets achetés par Kai'Sa améliorent ses sorts de base en leur offrant des propriétés plus puissantes."
   },
@@ -265,20 +187,20 @@
   "gender": "Female",
   "species": "Human",
   "title_en": "Daughter of the Void",
-  "lore_en": "Kai'Sa (originally Kaisa) began her life as an ordinary girl, the daughter of the explorer and scholar Kassadin, living with her loving parents in the southern deserts of Shurima. In her tenth summer, her destiny changed forever.\n\nWhen she and her friends freed sacrificial goats, they triggered the unthinkable: the ground split open, and her village was swallowed, the Void having been awakened. Kaisa was presumed dead, which drove her father, Kassadin, to become a transformed warrior obsessed with revenge against the Void.\n\nKaisa woke up trapped underground. She was left alone in the darkness after the cries of the other survivors faded. Driven by fear and hunger, she followed a light down into the Void, finding a vast cavern illuminated by an otherworldly purplish glow and swarming Void creatures.\n\nShe killed the first creature that attacked her, but its unnatural skin attached itself to her arm. This dark, steel-hard shell began to grow, becoming a living second skin in symbiosis with her. Over years of survival, Kaisa transformed from a frightened girl into a fearless hunter.\n\nFor almost a decade, she has lived between two worlds, fighting to keep the Void from consuming all of Runeterra.\n\nThough she has slain countless Void-constructs, she understands that many of the people she protects view her as a monster herself. Her name has passed into legend as Kai'Sa.\n\nThe Tragic Irony: Though her father, Kassadin, became a powerful anti-Void warrior, Kai'Sa remains isolated. She must decide whether to forgive the mortals who reject her and defeat the growing darkness, or to let them be consumed—unaware that her father is also on the surface, transformed and heartbroken, fighting the very same enemy.",
+  "lore_en": "Claimed by the Void when she was only a child, Kai'Sa managed to survive through sheer tenacity and strength of will. Her experiences have made her a deadly hunter and, to some, the harbinger of a future they would rather not live to see. Having entered into an uneasy symbiosis with a living Void carapace, the time will soon come when she must decide whether to forgive those mortals who would call her a monster, and defeat the coming darkness together… or simply to forget, as the Void consumes the world that left her behind.",
   "spells_en": [
     {
       "id": "KaisaQ",
       "name": "Icathian Rain",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KaisaQ.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 384,
         "y": 144,
-        "full": "KaisaQ.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -289,6 +211,10 @@
         "label": [
           "Cooldown",
           "Damage Per Missile"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -302,13 +228,13 @@
       "name": "Void Seeker",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KaisaW.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 432,
         "y": 144,
-        "full": "KaisaW.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -320,6 +246,11 @@
           "Cooldown",
           "Damage",
           "Mana Cost"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -333,13 +264,13 @@
       "name": "Supercharge",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KaisaE.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 0,
         "y": 0,
-        "full": "KaisaE.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -351,6 +282,11 @@
           "Cooldown",
           "Move Speed",
           "Attack Speed"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ effect1amount*100.000000 }}% -> {{ effect1amountnl*100.000000 }}%",
+          "{{ effect5amount*100.000000 }}% -> {{ effect5amountnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -364,13 +300,13 @@
       "name": "Killer Instinct",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KaisaR.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 48,
         "y": 0,
-        "full": "KaisaR.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -383,6 +319,12 @@
           "Cooldown",
           "Shield Amount",
           "Attack Damage Ratio"
+        ],
+        "effect": [
+          "{{ rrange }} -> {{ rrangeNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ rbasevalue }} -> {{ rbasevalueNL }}",
+          "{{ rtotaladratio*100.000000 }}% -> {{ rtotaladrationl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -395,13 +337,13 @@
   "passive_en": {
     "name": "Second Skin",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Kaisa_Passive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 240,
       "y": 96,
-      "full": "Kaisa_Passive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Kai'Sa's basic attacks stack Plasma, dealing increasing bonus magic damage. Allies' immobilizing effects help stack Plasma. Additionally, Kai'Sa's item purchases upgrade her basic spells to have more powerful properties."
   },
@@ -505,6 +447,120 @@
       "num": 71,
       "name": "Immortalized Legend Kai'Sa",
       "chromas": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "145000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "145001",
+      "num": 1,
+      "name": "Kai'Sa ange exterminateur",
+      "chromas": true
+    },
+    {
+      "id": "145014",
+      "num": 14,
+      "name": "K/DA Kai'Sa",
+      "chromas": false
+    },
+    {
+      "id": "145015",
+      "num": 15,
+      "name": "K/DA Kai'Sa prestige",
+      "chromas": false
+    },
+    {
+      "id": "145016",
+      "num": 16,
+      "name": "iG Kai'Sa",
+      "chromas": false
+    },
+    {
+      "id": "145017",
+      "num": 17,
+      "name": "Kai'Sa arcade",
+      "chromas": false
+    },
+    {
+      "id": "145026",
+      "num": 26,
+      "name": "K/DA ALL OUT Kai'Sa",
+      "chromas": false
+    },
+    {
+      "id": "145027",
+      "num": 27,
+      "name": "K/DA ALL OUT Kai'Sa prestige",
+      "chromas": false
+    },
+    {
+      "id": "145029",
+      "num": 29,
+      "name": "Kai'Sa dragon du lagon",
+      "chromas": false
+    },
+    {
+      "id": "145039",
+      "num": 39,
+      "name": "K/DA Kai'Sa prestige (2022)",
+      "chromas": false
+    },
+    {
+      "id": "145040",
+      "num": 40,
+      "name": "Kai'Sa gardienne des étoiles",
+      "chromas": false
+    },
+    {
+      "id": "145048",
+      "num": 48,
+      "name": "Kai'Sa guerrière d'encre",
+      "chromas": false
+    },
+    {
+      "id": "145059",
+      "num": 59,
+      "name": "Kai'Sa écailles célestes",
+      "chromas": false
+    },
+    {
+      "id": "145069",
+      "num": 69,
+      "name": "Kai'Sa du pulsar sombre",
+      "chromas": false
+    },
+    {
+      "id": "145070",
+      "num": 70,
+      "name": "Kai'Sa légende transcendée",
+      "chromas": false
+    },
+    {
+      "id": "145071",
+      "num": 71,
+      "name": "Kai'Sa légende immortalisée",
+      "chromas": false
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Malzahar",
+      "type": "champion",
+      "relation": "nemesis",
+      "note_fr": "Chef de la corruption du Néant",
+      "note_en": "leader of the void's corruption"
+    },
+    {
+      "id": "Kassadin",
+      "type": "champion",
+      "relation": "daughter",
+      "note_fr": "Fille perdue",
+      "note_en": "Lost daughter"
     }
   ]
 }

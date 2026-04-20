@@ -3,95 +3,39 @@
   "key": "201",
   "name": "Braum",
   "title": "Cœur de Freljord",
-  "version": "15.23.1",
-  "lore": "Braum est un héros révéré du Freljord, un Enfant de glace (Iceborn) dont la taille et la force légendaires étaient évidentes dès l'enfance. Sa mère, issue d'une fière lignée de bergers, lui a enseigné que le véritable courage résidait dans l'utilisation de son pouvoir pour protéger les plus faibles, et non pour dominer. Cet enseignement fut renforcé lorsqu'elle aida une tribu rivale dévastée par les géants des glaces, les transformant en alliés permanents. Braum fit alors le serment d'unifier le peuple du Freljord, qu'il considérait comme une seule et grande famille.\r\n\r\nSa force et sa résilience légendaires (même parmi les Enfants de glace) firent de lui un héros local, sauvant des enfants, des voyageurs et protégeant les familles des créatures sauvages. Il est devenu un symbole d'espoir, connu pour sa gaieté et sa capacité à se faire facilement des amis.\r\n\r\nReconnaissant qu'il était nécessaire au-delà de sa vallée natale, Braum partit voyager à travers tout le Freljord. D'innombrables histoires de ses exploits se répandirent, devenant de plus en plus mythiques : on raconte qu'il abattit une forêt entière à mains nues en une seule nuit, ou qu'il souleva une ferme isolée pour la sauver d'une éruption.\r\n\r\nL'une des légendes les plus célèbres concerne son bouclier, une porte de chambre forte enchantée incrustée dans une montagne. Entendant des cris à l'intérieur, Braum, incapable de briser la porte incassable, ouvrit un passage à travers la roche de la montagne à coups de poing, sauvant un jeune troll. Il arracha la porte de ses gonds et la porte de chambre forte à tête de bélier devint son bouclier invincible. Braum, loin de réfuter ces contes farfelus, les adopte, car il croit que l'inspiration est plus importante que la vérité.\r\n\r\nC'est sur le site sacré de Rakelstake qu'il rencontra le barbare Tryndamere, qui se battait sauvagement pour prouver sa valeur. Lorsque la rage de Tryndamere menaça de tuer un adversaire vaincu, Braum s'interposa, son bouclier inébranlable absorbant les coups furieux du barbare. Une fois sa fureur retombée, Braum gagna Tryndamere par sa bonne humeur et son rire. Certains disent même que Braum fut le premier à présenter Tryndamere à la Gardienne de Guerre Ashe.\r\n\r\nBraum n'a pas d'allégeance tribale particulière, mais il voit en Ashe une chance de mettre fin aux querelles séculaires. Il a été adopté de manière informelle par les Avarosans. Son rêve est que le Freljord soit un jour uni en une seule grande famille, afin qu'il puisse prendre sa retraite et devenir un humble berger de Poros. Cependant, il a eu quelques démêlés avec la Garde de Givre (Frostguard), qui semble étrangement intéressée par son bouclier.",
+  "version": "16.8.1",
+  "lore": "Doté de biceps énormes, et d'un cœur plus grand encore, Braum est un héros admiré par tout Freljord. Lors de tous les banquets au nord de Frostheld, on rend hommage à sa force légendaire. On raconte qu'il a abattu une forêt entière de chênes en une seule nuit, ou encore qu'il a réduit en miettes une montagne à coups de poing. Portant une porte enchantée en guise de bouclier, Braum arpente les terres gelées du nord en arborant un sourire aussi large que ses muscles et en venant en aide à ceux dans le besoin.",
   "tags": [
     "Tank",
     "Support"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Braum.png",
+    "sprite": "champion0.png",
+    "group": "champion",
     "x": 384,
     "y": 48,
-    "full": "Braum.png",
-    "group": "champion",
-    "sprite": "champion0.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "201000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "201001",
-      "num": 1,
-      "name": "Braum tueur de dragons",
-      "chromas": true
-    },
-    {
-      "id": "201002",
-      "num": 2,
-      "name": "Braum El Tigre",
-      "chromas": false
-    },
-    {
-      "id": "201003",
-      "num": 3,
-      "name": "Braum cœur de lion",
-      "chromas": false
-    },
-    {
-      "id": "201010",
-      "num": 10,
-      "name": "Père Braum",
-      "chromas": false
-    },
-    {
-      "id": "201011",
-      "num": 11,
-      "name": "Don Braum",
-      "chromas": true
-    },
-    {
-      "id": "201024",
-      "num": 24,
-      "name": "Braum folie sucrée",
-      "chromas": true
-    },
-    {
-      "id": "201033",
-      "num": 33,
-      "name": "Braum cocktails",
-      "chromas": true
-    },
-    {
-      "id": "201042",
-      "num": 42,
-      "name": "Braum maître kebabier",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "BraumQ",
       "name": "Morsure de l'hiver",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BraumQ.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 0,
         "y": 48,
-        "full": "BraumQ.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Braum projette des éclats de glace depuis son bouclier, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> au premier ennemi touché et le <status>ralentissant</status> de {{ e2 }}% (la cible retrouve peu à peu sa vitesse normale en {{ e5 }} sec).<br /><br />Applique un effet <keywordMajor>Coups étourdissants</keywordMajor>. {{ spellmodifierdescriptionappend }}",
+      "tooltip": "Braum projette un éclat de glace depuis son bouclier, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> au premier ennemi touché et le <status>ralentissant</status> de {{ initialslow }}% (la cible retrouve peu à peu sa vitesse normale en {{ slowduration }} sec).<br /><br />Applique un effet de <keywordMajor>Coups étourdissants</keywordMajor>. {{ spellmodifierdescriptionappend }}",
       "costBurn": "45/50/55/60/65",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -99,6 +43,11 @@
           "Dégâts",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -112,23 +61,27 @@
       "name": "Bouclier humain",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BraumW.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 48,
         "y": 48,
-        "full": "BraumW.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Braum bondit vers un champion ou un sbire allié. À l'arrivée, Braum octroie à la cible <scaleArmor>+{{ grantedallyarmor }} armure</scaleArmor> et <scaleMR>+{{ grantedallymr }} résistance magique</scaleMR> pendant {{ e1 }} sec. Braum s'octroie <scaleArmor>+{{ grantedbraumarmor }} armure</scaleArmor> et <scaleMR>+{{ grantedbraummr }} résistance magique</scaleMR> pendant la même durée.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Braum bondit vers un champion ou un sbire allié. À l'arrivée, Braum octroie à la cible <scaleArmor>{{ grantedallyarmor }} armure</scaleArmor> et <scaleMR>{{ grantedallymr }} résistance magique</scaleMR> pendant {{ duration }} sec. Braum s'octroie <scaleArmor>{{ grantedbraumarmor }} armure</scaleArmor> et <scaleMR>{{ grantedbraummr }} résistance magique</scaleMR> pendant la même durée.{{ spellmodifierdescriptionappend }}",
       "costBurn": "40",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Résistances de base",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ baseresists }} -> {{ baseresistsNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -142,17 +95,17 @@
       "name": "Incassable",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BraumE.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 96,
         "y": 48,
-        "full": "BraumE.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Braum lève son bouclier pendant {{ e2 }} sec, interceptant les projectiles ennemis venant de la direction choisie et les détruisant quand ils le touchent. Le premier projectile bloqué par Braum ne lui inflige pas de dégâts, et les projectiles suivants lui infligent des dégâts réduits de {{ e3 }}%.<br /><br />Braum gagne <speed>+{{ e4 }}% de vitesse de déplacement</speed> tant que son bouclier est levé.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Braum lève son bouclier pendant {{ shieldholdduration }} sec, interceptant les projectiles ennemis venant de la direction choisie et les détruisant quand ils le touchent. Le premier projectile bloqué par Braum ne lui inflige pas de dégâts, et les projectiles suivants lui infligent des dégâts réduits de {{ shieldfacingdramount }}%.<br /><br />Braum gagne <speed>{{ movespeedpercent }}% de vitesse de déplacement</speed> tant que son bouclier est levé.{{ spellmodifierdescriptionappend }}",
       "costBurn": "30/35/40/45/50",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -161,6 +114,12 @@
           "Réduction des dégâts",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ e2 }} -> {{ e2NL }}",
+          "{{ e3 }}% -> {{ e3NL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -174,13 +133,13 @@
       "name": "Fissure glaciale",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BraumRWrapper.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 144,
         "y": 48,
-        "full": "BraumRWrapper.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -193,25 +152,31 @@
           "Durée de la projection",
           "Ralentissement",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ firstknockupduration }} -> {{ firstknockupdurationNL }}",
+          "{{ movespeedmod }}% -> {{ movespeedmodNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
       "rangeBurn": "1250",
       "datavalues": {},
       "description": "Braum frappe le sol, projetant en l'air les ennemis proches et ceux sur une ligne devant lui. Une fissure se crée sur cette ligne et ralentit les ennemis.",
-      "cooldownBurn": "120/100/80"
+      "cooldownBurn": "130/115/100"
     }
   ],
   "passive": {
     "name": "Coups étourdissants",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Braum_Passive.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 384,
       "y": 48,
-      "full": "Braum_Passive.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Les attaques de base de Braum appliquent Coups étourdissants. Une fois le premier effet appliqué, les attaques de base des <font color='#FFF673'>alliés</font> appliquent aussi l'effet Coups étourdissants. <br><br>À 4 effets cumulés, la cible est étourdie et elle subit des dégâts magiques. Pendant quelques secondes, la cible ne peut plus recevoir cet effet mais les attaques de Braum lui infligent des dégâts magiques supplémentaires."
   },
@@ -226,24 +191,24 @@
   "gender": "Male",
   "species": "Human",
   "title_en": "the Heart of the Freljord",
-  "lore_en": "Braum is a revered hero of the Freljord, an Iceborn whose legendary size and strength were evident from childhood. His mother, from a proud line of herders, taught him that true courage lay in using his power to protect those in need, not to dominate. This lesson was reinforced when she aided a rival tribe devastated by ice giants, turning them into lifelong allies. Braum then pledged to unite the people of the Freljord, whom he viewed as one big family.\r\n\r\nHis strength and legendary resilience (even among the Iceborn) made him a local hero, rescuing children, saving travelers stranded in blizzards, and protecting families from ravaging wildclaws. He became a figure of hope, known for his liveliness, laughter, and easy way of making friends.\r\n\r\nRecognizing he was needed beyond his native valleys, Braum set out to travel the Freljord. Countless stories of his mighty feats spread, becoming increasingly far-fetched and mythic—such as the legend of how he chopped down an entire forest bare-handed in a single night, or how he saved an isolated farmstead by picking it up and carrying it to higher ground.\r\n\r\nOne of the most famous tales concerns his shield, an enchanted vault door set into a mountain. Hearing cries from within, Braum, unable to break the unbreakable door, punched his way through the mountain's bare rock, rescuing a troll boy. He ripped the ram-headed vault door off its hinges and has borne it ever since as his invincible shield. Braum, far from refuting these tall tales, embraces them, believing inspiration is more important than the truth.\r\n\r\nIt was at the sacred site of Rakelstake that he met the barbarian Tryndamere, who was savagely fighting to prove his worth. When Tryndamere's fury threatened to kill a downed opponent, Braum stepped in, his impenetrable shield absorbing the barbarian's frantic hacks. Once Tryndamere's rage subsided, Braum won him over with his good humor and laughter. Some even say it was Braum who first introduced Tryndamere to the Warmother Ashe.\r\n\r\nBraum holds no particular tribal allegiance but sees in Ashe a chance to end the centuries-old feuding. He has been informally adopted into the Avarosan numbers. His dream is that someday the Freljord will be united in one big family, so he can retire and become a humble Poro herder. However, he has had a few run-ins with the Frostguard, who seem strangely interested in the shield he now bears.",
+  "lore_en": "Blessed with massive biceps and an even bigger heart, Braum is a beloved hero of the Freljord. Every mead hall north of Frostheld toasts his legendary strength, said to have felled a forest of oaks in a single night, and punched an entire mountain into rubble. Bearing an enchanted vault door as his shield, Braum roams the frozen north sporting a mustachioed smile as big as his muscles—a true friend to all those in need.",
   "spells_en": [
     {
       "id": "BraumQ",
       "name": "Winter's Bite",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BraumQ.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 0,
         "y": 48,
-        "full": "BraumQ.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Braum propels freezing ice from his shield, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> to the first enemy hit and <status>Slowing</status> them by {{ e2 }}% decaying over {{ e5 }} seconds.<br /><br />Applies a stack of <keywordMajor>Concussive Blows</keywordMajor>. {{ spellmodifierdescriptionappend }}",
+      "tooltip": "Braum propels freezing ice from his shield, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> to the first enemy hit and <status>Slowing</status> them by {{ initialslow }}% decaying over {{ slowduration }} seconds.<br /><br />Applies a stack of <keywordMajor>Concussive Blows</keywordMajor>. {{ spellmodifierdescriptionappend }}",
       "costBurn": "45/50/55/60/65",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -251,6 +216,11 @@
           "Damage",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -264,23 +234,27 @@
       "name": "Stand Behind Me",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BraumW.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 48,
         "y": 48,
-        "full": "BraumW.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Braum leaps to an allied champion or minion. On arrival, Braum grants the target <scaleArmor>{{ grantedallyarmor }} Armor</scaleArmor> and <scaleMR>{{ grantedallymr }} Magic Resist</scaleMR> for {{ e1 }} seconds. Braum grants himself <scaleArmor>{{ grantedbraumarmor }} Armor</scaleArmor> and <scaleMR>{{ grantedbraummr }} Magic Resist</scaleMR> for the same duration.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Braum leaps to an allied champion or minion. On arrival, Braum grants the target <scaleArmor>{{ grantedallyarmor }} Armor</scaleArmor> and <scaleMR>{{ grantedallymr }} Magic Resist</scaleMR> for {{ duration }} seconds. Braum grants himself <scaleArmor>{{ grantedbraumarmor }} Armor</scaleArmor> and <scaleMR>{{ grantedbraummr }} Magic Resist</scaleMR> for the same duration.{{ spellmodifierdescriptionappend }}",
       "costBurn": "40",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Base Resists",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ baseresists }} -> {{ baseresistsNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -294,17 +268,17 @@
       "name": "Unbreakable",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BraumE.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 96,
         "y": 48,
-        "full": "BraumE.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Braum raises his shield for {{ e2 }} seconds, intercepting enemy missiles from the chosen direction, causing them to hit Braum and then be destroyed. The first missile Braum blocks deals no damage, and subsequent projectiles deal {{ e3 }}% reduced damage.<br /><br />Braum gains <speed>{{ e4 }}% Move Speed</speed> while his shield is raised.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Braum raises his shield for {{ shieldholdduration }} seconds, intercepting enemy missiles from the chosen direction, causing them to hit Braum and then be destroyed. The first missile Braum blocks deals no damage, and subsequent projectiles deal {{ shieldfacingdramount }}% reduced damage.<br /><br />Braum gains <speed>{{ movespeedpercent }}% Move Speed</speed> while his shield is raised.{{ spellmodifierdescriptionappend }}",
       "costBurn": "30/35/40/45/50",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -313,6 +287,12 @@
           "Damage Reduction",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ e2 }} -> {{ e2NL }}",
+          "{{ e3 }}% -> {{ e3NL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -326,13 +306,13 @@
       "name": "Glacial Fissure",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "BraumRWrapper.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 144,
         "y": 48,
-        "full": "BraumRWrapper.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -345,25 +325,31 @@
           "Knockup Duration",
           "Slow",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ firstknockupduration }} -> {{ firstknockupdurationNL }}",
+          "{{ movespeedmod }}% -> {{ movespeedmodNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
       "rangeBurn": "1250",
       "datavalues": {},
       "description": "Braum slams the ground, knocking up enemies nearby and in a line in front of him. A fissure is left along the line that slows enemies.",
-      "cooldownBurn": "120/100/80"
+      "cooldownBurn": "130/115/100"
     }
   ],
   "passive_en": {
     "name": "Concussive Blows",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Braum_Passive.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 384,
       "y": 48,
-      "full": "Braum_Passive.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Braum's basic attacks apply Concussive Blows. Once the first stack is applied, <font color='#FFF673'>ally</font> basic attacks also stack Concussive Blows. <br><br>Upon reaching 4 stacks, the target is stunned and takes magic damage. For the next few seconds they cannot receive new stacks, but take bonus magic damage from Braum's attacks."
   },
@@ -425,6 +411,83 @@
       "num": 42,
       "name": "Grill Master Braum",
       "chromas": true
+    },
+    {
+      "id": "201051",
+      "num": 51,
+      "name": "Victorious Braum",
+      "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "201000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "201001",
+      "num": 1,
+      "name": "Braum tueur de dragons",
+      "chromas": true
+    },
+    {
+      "id": "201002",
+      "num": 2,
+      "name": "Braum El Tigre",
+      "chromas": false
+    },
+    {
+      "id": "201003",
+      "num": 3,
+      "name": "Braum cœur de lion",
+      "chromas": false
+    },
+    {
+      "id": "201010",
+      "num": 10,
+      "name": "Père Braum",
+      "chromas": false
+    },
+    {
+      "id": "201011",
+      "num": 11,
+      "name": "Don Braum",
+      "chromas": true
+    },
+    {
+      "id": "201024",
+      "num": 24,
+      "name": "Braum folie sucrée",
+      "chromas": true
+    },
+    {
+      "id": "201033",
+      "num": 33,
+      "name": "Braum cocktails",
+      "chromas": true
+    },
+    {
+      "id": "201042",
+      "num": 42,
+      "name": "Braum maître kebabier",
+      "chromas": true
+    },
+    {
+      "id": "201051",
+      "num": 51,
+      "name": "Braum héros de guerre",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Ashe",
+      "type": "champion",
+      "relation": "ally",
+      "note_fr": "Protecteur d'Avarosa",
+      "note_en": "Protector of Avarosa"
     }
   ]
 }

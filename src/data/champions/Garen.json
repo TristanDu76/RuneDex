@@ -3,139 +3,35 @@
   "key": "86",
   "name": "Garen",
   "title": "Force de Demacia",
-  "version": "15.23.1",
-  "lore": "Garen est né dans la noble et influente famille Crownguard de Demacia, destiné à défendre le trône avec sa vie. Son père et sa tante, Tianna (capitaine d'épée de l'élite de l'Avant-garde Intrépide), étaient des figures militaires respectées.\r\n\r\nL'enfance de Garen fut marquée par les récits de son oncle sur les dangers extérieurs, notamment les mages. Le pire se confirma lorsque cet oncle fut tué par un mage avant les onze ans de Garen. En voyant la douleur de sa famille et la peur dans les yeux de sa jeune sœur, Lux, Garen en tira une conviction absolue : la magie était le plus grand danger pour Demacia. Il fit le serment de ne jamais la laisser franchir les murs du royaume.\r\n\r\nÀ l'âge de douze ans, il rejoignit l'armée, où il rencontra et devint inséparable de Jarvan IV, le prince qu'il était destiné à servir. Il s'entraîna sans relâche, transformant son corps et son esprit en une arme d'acier.\r\n\r\nAu fil des années, Garen se forgea une réputation redoutable, servant avec honneur lors de campagnes aux frontières du Freljord et dans la purge de cultistes. À dix-huit ans, il fut rappelé dans la Grande Cité et recommandé par sa tante pour les épreuves de l'Avant-garde Intrépide (Dauntless Vanguard).\r\n\r\nDe retour chez lui, il fut fier de voir Lux, mais il fut également troublé par un soupçon lancinant : il craignait que sa sœur ne possède des pouvoirs magiques interdits. L'idée qu'un Crownguard puisse être capable de la même sorcellerie qui avait tué leur oncle était trop insupportable pour qu'il la confronte.\r\n\r\nGaren remporta sa place dans l'Avant-garde et prêta serment devant le trône. Il s'immergea dans ses nouvelles fonctions, redoublant d'efforts pour éviter d'avoir à faire face à ses soupçons concernant Lux. Il aimait sa sœur plus que tout, mais une petite partie de lui savait ce qu'il serait forcé de faire si ses peurs étaient confirmées.\r\n\r\nLorsque le capitaine d'épée de l'Avant-garde tomba au combat, Garen fut unanimement choisi pour le commandement.\r\n\r\nAujourd'hui, Garen est bien plus que le soldat le plus redoutable de Demacia ; il est l'incarnation même des idéaux les plus nobles sur lesquels le royaume a été fondé, se tenant résolument en défense de sa patrie, ignorant le secret douloureux qui menace de le détruire.",
+  "version": "16.8.1",
+  "lore": "Garen est un guerrier fier et noble qui fait partie du Détachement hardi. Héritier des Crownguard, la famille chargée de défendre Demacia et ses idéaux, il est apprécié par ses compatriotes et respecté par ses ennemis. Équipé d'une armure résistante à la magie et d'une épée large, Garen affronte sans faillir les mages et les sorciers dans un véritable tourbillon d'acier.",
   "tags": [
     "Fighter",
     "Tank"
   ],
   "partype": "Aucune",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Garen.png",
+    "sprite": "champion1.png",
+    "group": "champion",
     "x": 384,
     "y": 0,
-    "full": "Garen.png",
-    "group": "champion",
-    "sprite": "champion1.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "86000",
-      "num": 0,
-      "name": "default",
-      "chromas": true
-    },
-    {
-      "id": "86001",
-      "num": 1,
-      "name": "Garen sanguin",
-      "chromas": false
-    },
-    {
-      "id": "86002",
-      "num": 2,
-      "name": "Garen soldat du désert",
-      "chromas": false
-    },
-    {
-      "id": "86003",
-      "num": 3,
-      "name": "Garen commando",
-      "chromas": false
-    },
-    {
-      "id": "86004",
-      "num": 4,
-      "name": "Garen chevalier d'effroi",
-      "chromas": false
-    },
-    {
-      "id": "86005",
-      "num": 5,
-      "name": "Garen vagabond",
-      "chromas": false
-    },
-    {
-      "id": "86006",
-      "num": 6,
-      "name": "Garen de la Légion d'acier",
-      "chromas": false
-    },
-    {
-      "id": "86010",
-      "num": 10,
-      "name": "Garen amiral renégat",
-      "chromas": false
-    },
-    {
-      "id": "86011",
-      "num": 11,
-      "name": "Garen du royaume en guerre",
-      "chromas": true
-    },
-    {
-      "id": "86013",
-      "num": 13,
-      "name": "Dieu-roi Garen",
-      "chromas": false
-    },
-    {
-      "id": "86014",
-      "num": 14,
-      "name": "Garen Demacia Vice",
-      "chromas": true
-    },
-    {
-      "id": "86022",
-      "num": 22,
-      "name": "Garen du royaume des mechas",
-      "chromas": false
-    },
-    {
-      "id": "86023",
-      "num": 23,
-      "name": "Garen du royaume des mechas prestige",
-      "chromas": false
-    },
-    {
-      "id": "86024",
-      "num": 24,
-      "name": "Garen de l'Académie du combat",
-      "chromas": true
-    },
-    {
-      "id": "86033",
-      "num": 33,
-      "name": "Garen mythificateur",
-      "chromas": true
-    },
-    {
-      "id": "86044",
-      "num": 44,
-      "name": "Dieu-roi Garen détrôné",
-      "chromas": false
-    },
-    {
-      "id": "86046",
-      "num": 46,
-      "name": "Garen Darkin",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "GarenQ",
       "name": "Coup décisif",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GarenQ.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 0,
         "y": 48,
-        "full": "GarenQ.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -146,6 +42,10 @@
         "label": [
           "Dégâts",
           "Durée du bonus en vitesse de déplacement"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ movementspeedduration }} -> {{ movementspeeddurationNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -159,13 +59,13 @@
       "name": "Courage",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GarenW.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 48,
         "y": 48,
-        "full": "GarenW.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -177,6 +77,11 @@
           "PV du bouclier",
           "Réduction des dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ baseshield }} -> {{ baseshieldNL }}",
+          "{{ drpercent*100.000000 }}% -> {{ drpercentnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -190,13 +95,13 @@
       "name": "Jugement",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GarenE.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 96,
         "y": 48,
-        "full": "GarenE.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -208,6 +113,11 @@
           "Dégâts de base par tourbillon",
           "Ratio de dégâts d'attaque par rotation",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamagepertick }} -> {{ basedamagepertickNL }}",
+          "{{ adratiopertick*100.000000 }}% -> {{ adratioperticknl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -221,13 +131,13 @@
       "name": "Justice de Demacia",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GarenR.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 144,
         "y": 48,
-        "full": "GarenR.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -239,6 +149,11 @@
           "Délai de récupération",
           "Dégâts",
           "Pourcentage des PV manquants en dégâts"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ executedamage*100.000000 }}% -> {{ executedamagenl*100.000000 }}%"
         ]
       },
       "resource": "Pas de coût",
@@ -251,13 +166,13 @@
   "passive": {
     "name": "Persévérance",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Garen_Passive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 384,
       "y": 0,
-      "full": "Garen_Passive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Si Garen n'a pas subi de dégâts ou de compétences ennemies récemment, il régénère un pourcentage de ses PV totaux chaque seconde."
   },
@@ -272,20 +187,20 @@
   "gender": "Male",
   "species": "Human",
   "title_en": "The Might of Demacia",
-  "lore_en": "Garen was born into the noble and influential Crownguard family of Demacia, destined to defend the throne with his life. His father and his aunt, Tianna (Sword-Captain of the elite Dauntless Vanguard), were respected military figures.\r\n\r\nGaren's childhood was marked by his uncle's tales of external dangers, particularly mages. The worst was confirmed when that uncle was killed by a mage before Garen turned eleven. Seeing the pain this brought his family and the fear in his young sister Lux's eyes, Garen formed an absolute conviction: magic was Demacia's first and greatest peril. He vowed never to let it within their walls.\r\n\r\nAt the age of twelve, he left home to join the military, where he met and became inseparable from Jarvan IV, the prince he was destined to serve. He trained tirelessly, honing his body and mind into a weapon as strong and true as Demacian steel.\r\n\r\nOver the years, Garen earned a fearsome reputation on the battlefield, serving with honor in campaigns along the Freljordian borders and in the purging of cultists. By the time he was eighteen, he was summoned back to the Great City and recommended by his aunt for the trials necessary to join the ranks of the Dauntless Vanguard.\r\n\r\nReturning home, he was proud to see Lux, but he also wrestled with a gnawing suspicion: he feared his sister possessed the same forbidden magical powers that had slain their uncle. The thought of a Crownguard being capable of such sorceries was too unbearable to confront.\r\n\r\nGaren won his place in the Vanguard and took his oaths before the throne. He threw himself into his new duties, fighting and training twice as hard to avoid confronting his suspicions about Lux. Though he loved his sister more than anything else in the world, some small part of him knew what he would be forced to do if his fears were ever confirmed.\r\n\r\nWhen the Sword-Captain of the Vanguard fell in battle, Garen was unanimously nominated for command.\r\n\r\nTo this day, Garen stands resolute in the defense of his homeland. Far more than Demacia's most formidable soldier, he is the very embodiment of all the noblest ideals upon which the kingdom was founded, resolute in his duty while silently battling the secret that threatens to destroy him.",
+  "lore_en": "A proud and noble warrior, Garen fights as one of the Dauntless Vanguard. He is popular among his fellows, and respected well enough by his enemies—not least as a scion of the prestigious Crownguard family, entrusted with defending Demacia and its ideals. Clad in magic-resistant armor and bearing a mighty broadsword, Garen stands ready to confront mages and sorcerers on the field of battle, in a veritable whirlwind of righteous steel.",
   "spells_en": [
     {
       "id": "GarenQ",
       "name": "Decisive Strike",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GarenQ.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 0,
         "y": 48,
-        "full": "GarenQ.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -296,6 +211,10 @@
         "label": [
           "Damage",
           "Move Speed Duration"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ movementspeedduration }} -> {{ movementspeeddurationNL }}"
         ]
       },
       "resource": "No Cost",
@@ -309,13 +228,13 @@
       "name": "Courage",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GarenW.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 48,
         "y": 48,
-        "full": "GarenW.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -327,6 +246,11 @@
           "Shield Amount",
           "Damage Reduction",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ baseshield }} -> {{ baseshieldNL }}",
+          "{{ drpercent*100.000000 }}% -> {{ drpercentnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -340,13 +264,13 @@
       "name": "Judgment",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GarenE.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 96,
         "y": 48,
-        "full": "GarenE.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -358,6 +282,11 @@
           "Base Damage Per Spin",
           "Attack Damage Scaling Per Spin",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamagepertick }} -> {{ basedamagepertickNL }}",
+          "{{ adratiopertick*100.000000 }}% -> {{ adratioperticknl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -371,13 +300,13 @@
       "name": "Demacian Justice",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GarenR.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 144,
         "y": 48,
-        "full": "GarenR.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -389,6 +318,11 @@
           "Cooldown",
           "Damage",
           "Percent Missing Health Damage"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ executedamage*100.000000 }}% -> {{ executedamagenl*100.000000 }}%"
         ]
       },
       "resource": "No Cost",
@@ -401,13 +335,13 @@
   "passive_en": {
     "name": "Perseverance",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Garen_Passive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 384,
       "y": 0,
-      "full": "Garen_Passive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "If Garen has not recently been struck by damage or enemy abilities, he regenerates a percentage of his total health each second."
   },
@@ -507,6 +441,12 @@
       "chromas": true
     },
     {
+      "id": "86043",
+      "num": 43,
+      "name": "Pengu Garen",
+      "chromas": false
+    },
+    {
       "id": "86044",
       "num": 44,
       "name": "Fallen God-King Garen",
@@ -516,7 +456,159 @@
       "id": "86046",
       "num": 46,
       "name": "Visions of the Fallen Garen",
+      "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "86000",
+      "num": 0,
+      "name": "default",
+      "chromas": true
+    },
+    {
+      "id": "86001",
+      "num": 1,
+      "name": "Garen sanguin",
       "chromas": false
+    },
+    {
+      "id": "86002",
+      "num": 2,
+      "name": "Garen soldat du désert",
+      "chromas": false
+    },
+    {
+      "id": "86003",
+      "num": 3,
+      "name": "Garen commando",
+      "chromas": false
+    },
+    {
+      "id": "86004",
+      "num": 4,
+      "name": "Garen chevalier d'effroi",
+      "chromas": false
+    },
+    {
+      "id": "86005",
+      "num": 5,
+      "name": "Garen vagabond",
+      "chromas": false
+    },
+    {
+      "id": "86006",
+      "num": 6,
+      "name": "Garen de la Légion d'acier",
+      "chromas": false
+    },
+    {
+      "id": "86010",
+      "num": 10,
+      "name": "Garen amiral renégat",
+      "chromas": false
+    },
+    {
+      "id": "86011",
+      "num": 11,
+      "name": "Garen du royaume en guerre",
+      "chromas": true
+    },
+    {
+      "id": "86013",
+      "num": 13,
+      "name": "Dieu-roi Garen",
+      "chromas": false
+    },
+    {
+      "id": "86014",
+      "num": 14,
+      "name": "Garen Demacia Vice",
+      "chromas": true
+    },
+    {
+      "id": "86022",
+      "num": 22,
+      "name": "Garen du royaume des mechas",
+      "chromas": false
+    },
+    {
+      "id": "86023",
+      "num": 23,
+      "name": "Garen du royaume des mechas prestige",
+      "chromas": false
+    },
+    {
+      "id": "86024",
+      "num": 24,
+      "name": "Garen de l'Académie du combat",
+      "chromas": true
+    },
+    {
+      "id": "86033",
+      "num": 33,
+      "name": "Garen mythificateur",
+      "chromas": true
+    },
+    {
+      "id": "86043",
+      "num": 43,
+      "name": "Garen Pengu",
+      "chromas": false
+    },
+    {
+      "id": "86044",
+      "num": 44,
+      "name": "Dieu-roi Garen détrôné",
+      "chromas": false
+    },
+    {
+      "id": "86046",
+      "num": 46,
+      "name": "Garen Darkin",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "cithria",
+      "type": "lore",
+      "relation": "master",
+      "note_fr": "Subordonnée",
+      "note_en": "Subordinate"
+    },
+    {
+      "id": "tiana_crownguard",
+      "type": "lore",
+      "relation": "family",
+      "note_fr": "Neveu",
+      "note_en": "Nephew"
+    },
+    {
+      "id": "arcturus_j_durand",
+      "type": "lore",
+      "relation": "ally",
+      "note_fr": "Client",
+      "note_en": "Client"
+    },
+    {
+      "id": "Sylas",
+      "type": "champion",
+      "relation": "nemesis",
+      "note_fr": "Symbole de la tyrannie Démacienne",
+      "note_en": "Symbol of demacian tyranny"
+    },
+    {
+      "id": "Lux",
+      "type": "champion",
+      "relation": "sister"
+    },
+    {
+      "id": "Taric",
+      "type": "champion",
+      "relation": "friend",
+      "note_fr": "Ancien frère d'armes",
+      "note_en": "Former brother in arms"
     }
   ]
 }

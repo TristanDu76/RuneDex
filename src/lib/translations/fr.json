@@ -10,6 +10,9 @@
         "items": "Objets",
         "runes": "Runes",
         "artifacts": "Artefacts",
+        "map": {
+            "title": "Carte"
+        },
         "worldRunes": "Runes Telluriques",
         "legendaryArtifacts": "Artefacts Légendaires"
     },
@@ -19,7 +22,8 @@
         "runes": "Runes",
         "arsenal": "Arsenal de la Faille",
         "previous": "Précédent",
-        "next": "Suivant"
+        "next": "Suivant",
+        "map": "Carte"
     },
     "items": {
         "title": "Objets",
@@ -89,9 +93,12 @@
         "spellsTitle": "Compétences",
         "passive": "Passif",
         "relatedCharacters": "Personnages liés",
+        "origin_region": "Région d'origine",
         "region": "Région",
+        "faction": "Faction",
         "species": "Espèce",
         "gender": "Genre",
+        "status": "Statut",
         "resource": "Ressource",
         "artifacts": "Artefacts",
         "showMore": "Voir plus",
@@ -118,10 +125,22 @@
         "zaun": "Zaun",
         "void": "Néant",
         "runeterra": "Runeterra",
+        "runeterra-prime": "Runeterra Prime",
         "unaffiliated": "Non affilié",
         "darkin": "Darkin",
         "spirit-realm": "Royaume Spirituel",
-        "icathia": "Icathia"
+        "icathia": "Icathia",
+        "lunari": "Lunari",
+        "rakkors": "Rakkors",
+        "solari": "Solari",
+        "lunari,-rakkors": "Lunari & Rakkors",
+        "pre-arcane-runeterra": "Pré-Arcane Runeterra",
+        "independent": "Indépendant",
+        "black-rose": "Rose Noire",
+        "sentinels-of-light": "Sentinelles de la Lumière",
+        "kinkou-order": "Ordre du Kinkou",
+        "navori-brotherhood": "Fraternité de Navori",
+        "crimson-circle": "Cercle Écarlate"
     },
     "relationTypes": {
         "adoptive-brother": "Frère adoptif",
@@ -199,6 +218,7 @@
         "predator": "Prédateur",
         "prey": "Proie",
         "related": "Lié",
+        "related-lore": "Lien narratif",
         "rival": "Rivalité",
         "rival/corruption": "Rival et Corruption",
         "rival/ex-ally": "Rival et Ex-allié",
@@ -231,8 +251,7 @@
         "twin-sister": "Gémellité",
         "unrequited-love": "Amour non réciproque",
         "victim": "Victime de",
-        "wife": "Mariage",
-        "husband": "Mariage"
+        "wife": "Mariage"
     },
     "species": {
         "Ascended": "Transfiguré",
@@ -249,6 +268,7 @@
         "Dragon": "Dragon",
         "Drakalops": "Drakalops",
         "God": "Dieu",
+        "God Warrior": "Guerrier Divin",
         "Golem": "Golem",
         "Half-man": "Demi-homme",
         "Half-man/tree": "Demi-homme/arbre",
@@ -257,10 +277,12 @@
         "Magically Altered": "Modifié par la magie",
         "Magically Altered Construct": "Création animée par la magie",
         "Magically Altered Human": "Humain magiquement modifié",
+        "Marai": "Marai",
         "Minotaur": "Minotaure",
         "Plant": "Plante",
         "Rat": "Rat",
         "Revenant": "Revenant",
+        "Squirrel": "Écureuil",
         "Spirit": "Esprit",
         "Troll": "Troll",
         "Undead": "Mort-vivant",
@@ -272,27 +294,47 @@
     },
     "resource": {
         "Mana": "Mana",
+        "mana": "Mana",
         "Énergie": "Énergie",
+        "énergie": "Énergie",
         "Fureur": "Fureur",
+        "fureur": "Fureur",
         "Rage": "Rage",
+        "rage": "Rage",
         "Chaleur": "Chaleur",
+        "chaleur": "Chaleur",
         "Courage": "Courage",
+        "courage": "Courage",
         "Bouclier": "Bouclier",
+        "bouclier": "Bouclier",
         "Aucune": "Aucune",
+        "aucune": "Aucune",
         "Férocité": "Férocité",
+        "férocité": "Férocité",
         "Puits de sang": "Puits de sang",
+        "puits de sang": "Puits de sang",
         "Afflux sanguin": "Afflux sanguin",
+        "afflux sanguin": "Afflux sanguin",
         "Impulsion": "Impulsion",
+        "impulsion": "Impulsion",
         "Vapeur": "Vapeur",
-        "Agressivité": "Agressivité"
+        "vapeur": "Vapeur",
+        "Agressivité": "Agressivité",
+        "agressivité": "Agressivité"
     },
     "roles": {
         "Fighter": "Combattant",
+        "fighter": "Combattant",
         "Tank": "Tank",
+        "tank": "Tank",
         "Mage": "Mage",
+        "mage": "Mage",
         "Assassin": "Assassin",
+        "assassin": "Assassin",
         "Support": "Support",
-        "Marksman": "Tireur"
+        "support": "Support",
+        "Marksman": "Tireur",
+        "marksman": "Tireur"
     },
     "lanes": {
         "Top": "Top",
@@ -303,9 +345,19 @@
     },
     "gender": {
         "Male": "Homme",
+        "male": "Homme",
         "Female": "Femme",
+        "female": "Femme",
         "Other": "Autre",
-        "Unknown": "Inconnu"
+        "other": "Autre",
+        "Unknown": "Inconnu",
+        "unknown": "Inconnu"
+    },
+    "status": {
+        "alive": "Vivant",
+        "dead": "Mort",
+        "unknown": "Inconnu",
+        "undead": "Mort-vivant"
     },
     "footer": {
         "description": "Encyclopédie complète du lore de Runeterra et de l'univers de League of Legends",
@@ -315,5 +367,9 @@
         "allRightsReserved": "Tous droits réservés.",
         "createdBy": "Créé par",
         "disclaimer": "RuneDex n'est pas affilié à Riot Games."
+    },
+    "characters": {
+        "title": "Personnages",
+        "subtitle": "Choisissez votre univers à explorer"
     }
 }

@@ -3,121 +3,35 @@
   "key": "105",
   "name": "Fizz",
   "title": "Filou des mers",
-  "version": "15.23.1",
-  "lore": "Fizz est un Yordle qui vivait dans une grande et noble cité sous-marine du continent, dans les profondeurs de ce qui est aujourd'hui la Mer des Gardiens. Bien qu'il ne soit pas l'un des membres de cette fière race sous-marine, ils l'acceptaient comme un égal, appréciant son tempérament espiègle et ses récits d'aventures.\r\n\r\nLe monde changea, les océans se réchauffèrent, et de féroces prédateurs émergèrent des fosses abyssales. Les dirigeants de la cité n'arrivaient pas à s'accorder sur une stratégie défensive. Fizz, quant à lui, jura de parcourir les mers à la recherche de survivants et de solutions.\r\n\r\nUn jour sombre, les Gigalodons firent leur apparition. Ces immenses requins-dragons utilisèrent leurs cris terrifiants pour étourdir leurs proies. Des milliers de vies furent perdues en quelques heures, les monstres écrasant tours et temples dans une frénésie alimentaire. Fizz se précipita pour sauver la ville, mais il arriva trop tard. La cité avait été entièrement anéantie, il ne restait rien, et le banc de prédateurs voraces était parti.\r\n\r\nSeul dans les profondeurs glaciales, Fizz sombra dans un désespoir morose. Sa magie Yordle commença à s'estomper, et il se laissa dériver dans une torpeur catatonique, dormant pendant des millénaires.\r\n\r\nLe hasard le réveilla : quelques pièces de monnaie en cuivre, tombées d'un grand « poisson en bois » naviguant à la surface. Alarmé et curieux par ces « poissons » qui survivent en surface, Fizz s'aventura à la surface pour la première fois. Il découvrit des humains naviguant sur l'eau et qui jetaient des cadeaux curieux dans l'océan, un signe qui, pour le Yordle, signifiait qu'ils voulaient être ses amis.\r\n\r\nEn suivant les mouvements de ces navires, il atteignit la ville portuaire de Bilgewater. Pour ses habitants, cette créature étrange et insaisissable devint rapidement une légende, l'Escamoteur des Flots, un esprit de l'océan. On raconte qu'il peut invoquer de grandes bêtes, percer la coque des navires avec son trident de pierre et respirer sous l'eau ou dans l'air à sa guise.\r\n\r\nBien qu'il soit de bonne nature, Fizz est malicieux, même pour un Yordle, et prend plaisir à confondre les gens de Bilgewater. Il ne tolère pas les marins cupides ou égoïstes : plus d'un capitaine arrogant a vu son équipage, guidé par cet esprit versatile, finir par faire naufrage. Il aime semer le chaos de manière ludique, souvent confondu avec un esprit océanique capricieux.",
+  "version": "16.8.1",
+  "lore": "Fizz est un yordle amphibie qui vit dans les récifs qui entourent Bilgewater. Il essaie souvent de récupérer et de rendre les tributs que lancent dans l'océan les capitaines superstitieux, mais même le plus dessalé des marins n'est pas assez arrogant pour essayer de le tromper. On raconte bien des histoires sur ceux qui ont sous-estimé son humeur changeante... Souvent confondu avec un esprit océanique capricieux, il semble capable de commander aux créatures des profondeurs et n'aime rien tant que confondre alliés comme ennemis.",
   "tags": [
     "Assassin",
     "Fighter"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Fizz.png",
+    "sprite": "champion1.png",
+    "group": "champion",
     "x": 240,
     "y": 0,
-    "full": "Fizz.png",
-    "group": "champion",
-    "sprite": "champion1.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "105000",
-      "num": 0,
-      "name": "default",
-      "chromas": true
-    },
-    {
-      "id": "105001",
-      "num": 1,
-      "name": "Fizz de l'Atlantide",
-      "chromas": false
-    },
-    {
-      "id": "105002",
-      "num": 2,
-      "name": "Fizz de la toundra",
-      "chromas": false
-    },
-    {
-      "id": "105003",
-      "num": 3,
-      "name": "Fizz pêcheur",
-      "chromas": false
-    },
-    {
-      "id": "105004",
-      "num": 4,
-      "name": "Fizz du Néant",
-      "chromas": false
-    },
-    {
-      "id": "105008",
-      "num": 8,
-      "name": "Fizz lapin",
-      "chromas": false
-    },
-    {
-      "id": "105009",
-      "num": 9,
-      "name": "Super Fizz intergalactique",
-      "chromas": false
-    },
-    {
-      "id": "105010",
-      "num": 10,
-      "name": "Fizz de la section Oméga",
-      "chromas": true
-    },
-    {
-      "id": "105014",
-      "num": 14,
-      "name": "Fizz toutou",
-      "chromas": false
-    },
-    {
-      "id": "105015",
-      "num": 15,
-      "name": "Fizz toutou prestige",
-      "chromas": false
-    },
-    {
-      "id": "105016",
-      "num": 16,
-      "name": "Fizz diablotin",
-      "chromas": true
-    },
-    {
-      "id": "105025",
-      "num": 25,
-      "name": "Fizz toutou prestige (2022)",
-      "chromas": false
-    },
-    {
-      "id": "105026",
-      "num": 26,
-      "name": "Fizz astronaute",
-      "chromas": true
-    },
-    {
-      "id": "105035",
-      "num": 35,
-      "name": "Fizz berger de la pluie",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "FizzQ",
       "name": "Frappe de l'oursin",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "FizzQ.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 384,
         "y": 144,
-        "full": "FizzQ.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -128,6 +42,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -141,13 +59,13 @@
       "name": "Trident marin",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "FizzW.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 432,
         "y": 144,
-        "full": "FizzW.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -162,6 +80,14 @@
           "Mana rendu",
           "Coût en @AbilityResourceName@",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ dotbasedamage }} -> {{ dotbasedamageNL }}",
+          "{{ activebasedamage }} -> {{ activebasedamageNL }}",
+          "{{ onhitbuffbasedamage }} -> {{ onhitbuffbasedamageNL }}",
+          "{{ onkillmanarefund }} -> {{ onkillmanarefundNL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -175,13 +101,13 @@
       "name": "Joueur/Filou",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "FizzE.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 0,
         "y": 0,
-        "full": "FizzE.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -194,6 +120,12 @@
           "Coût en @AbilityResourceName@",
           "Dégâts",
           "Ralentissement"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ slowamount*100.000000 }}% -> {{ slowamountnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -207,13 +139,13 @@
       "name": "Pêche au gros",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "FizzR.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 48,
         "y": 0,
-        "full": "FizzR.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -226,6 +158,12 @@
           "Dégâts du petit requin",
           "Dégâts du requin moyen",
           "Dégâts du gros requin"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ smalldamage }} -> {{ smalldamageNL }}",
+          "{{ smalldamage*1.250000 }} -> {{ smalldamagenl*1.250000 }}",
+          "{{ smalldamage*1.500000 }} -> {{ smalldamagenl*1.500000 }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -238,13 +176,13 @@
   "passive": {
     "name": "Combattant agile",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Fizz_P.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 240,
       "y": 0,
-      "full": "Fizz_P.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Fizz peut traverser les unités et profite d'un montant fixe de réduction des dégâts contre toutes les sources de dégâts."
   },
@@ -260,20 +198,20 @@
   "gender": "Male",
   "species": "Yordle",
   "title_en": "the Tidal Trickster",
-  "lore_en": "Fizz is a Yordle who once lived in a great and noble underwater city on the continent, in the depths of what is now the Guardian's Sea. Although he was not one of the members of that proud, noble race, they treated him as an equal, enjoying his playful nature and adventurous tales.\r\n\r\nThe world changed, the oceans grew warmer, and fierce predators rose from the deepest trenches. The rulers of the great city could not agree on a defensive strategy. Fizz, meanwhile, pledged to roam the seas in search of survivors and solutions.\r\n\r\nThen, one dark day, the Gigalodons came. These huge dragon-sharks used their terrifying shrieking to stun their prey. Thousands died within hours, the immense bulk of the killers crushing towers and temples in a monstrous feeding frenzy. Fizz raced back to save the city, but he was too late. The city had been completely annihilated—not a single creature or stone remained, and the ravenous shoal had moved on.\r\n\r\nAlone in the cold depths, Fizz sank into mournful despair. His Yordle magic began to fade, and he allowed himself to drift in a catatonic torpor, dreaming away the millennia.\r\n\r\nChance reawakened him: a handful of copper coins fell from above, scattered to the seabed in the wake of a huge, wooden \"fish\" sailing on the surface. Alarmed and curious about these \"fish\" surviving on the surface, Fizz ventured up and peered into the salty air for the first time. He discovered humans sailing the water and casting curious gifts into the ocean, a sign which, to the Yordle, meant they wanted to be his friends.\r\n\r\nFollowing the movements of these ships, he eventually came to the port city of Bilgewater. To its inhabitants, this strange and slippery creature quickly became a legend, the Tidal Trickster, a spirit of the ocean itself. It is said he can summon great beasts, hole a ship's hull with his stone trident, and breathe air or water as it suits him.\r\n\r\nThough he is good-natured, Fizz is mischievous, even for a Yordle, and delights in confounding the people of Bilgewater. He does not take kindly to the greedy or selfish sailors: more than one haughty sea captain hoping to make a quick pile of silver has found that her mysterious guide has led her crew not to safety, but to shipwreck. He enjoys causing playful chaos, often mistaken for a capricious ocean spirit.",
+  "lore_en": "Fizz is an amphibious yordle, who dwells among the reefs surrounding Bilgewater. He often retrieves and returns the tithes cast into the sea by superstitious captains, but even the saltiest of sailors know better than to cross him—for many are the tales of those who have underestimated this slippery character. Often mistaken for some manner of capricious ocean spirit, he seems able to command the beasts of the deep, and delights in confounding his allies and enemies alike.",
   "spells_en": [
     {
       "id": "FizzQ",
       "name": "Urchin Strike",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "FizzQ.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 384,
         "y": 144,
-        "full": "FizzQ.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -284,6 +222,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -297,13 +239,13 @@
       "name": "Seastone Trident",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "FizzW.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 432,
         "y": 144,
-        "full": "FizzW.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -318,6 +260,14 @@
           "Mana Refund",
           "@AbilityResourceName@ Cost",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ dotbasedamage }} -> {{ dotbasedamageNL }}",
+          "{{ activebasedamage }} -> {{ activebasedamageNL }}",
+          "{{ onhitbuffbasedamage }} -> {{ onhitbuffbasedamageNL }}",
+          "{{ onkillmanarefund }} -> {{ onkillmanarefundNL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -331,13 +281,13 @@
       "name": "Playful / Trickster",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "FizzE.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 0,
         "y": 0,
-        "full": "FizzE.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -350,6 +300,12 @@
           "@AbilityResourceName@ Cost",
           "Damage",
           "Slow"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ slowamount*100.000000 }}% -> {{ slowamountnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -363,13 +319,13 @@
       "name": "Chum the Waters",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "FizzR.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 48,
         "y": 0,
-        "full": "FizzR.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -382,6 +338,12 @@
           "Small Shark Damage",
           "Medium Shark Damage",
           "Big Shark Damage"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ smalldamage }} -> {{ smalldamageNL }}",
+          "{{ smalldamage*1.250000 }} -> {{ smalldamagenl*1.250000 }}",
+          "{{ smalldamage*1.500000 }} -> {{ smalldamagenl*1.500000 }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -394,13 +356,13 @@
   "passive_en": {
     "name": "Nimble Fighter",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Fizz_P.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 240,
       "y": 0,
-      "full": "Fizz_P.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Fizz can move through units and takes a flat amount of reduced damage from all sources"
   },
@@ -493,5 +455,92 @@
       "name": "Rain Shepherd Fizz",
       "chromas": true
     }
-  ]
+  ],
+  "skins": [
+    {
+      "id": "105000",
+      "num": 0,
+      "name": "default",
+      "chromas": true
+    },
+    {
+      "id": "105001",
+      "num": 1,
+      "name": "Fizz de l'Atlantide",
+      "chromas": false
+    },
+    {
+      "id": "105002",
+      "num": 2,
+      "name": "Fizz de la toundra",
+      "chromas": false
+    },
+    {
+      "id": "105003",
+      "num": 3,
+      "name": "Fizz pêcheur",
+      "chromas": false
+    },
+    {
+      "id": "105004",
+      "num": 4,
+      "name": "Fizz du Néant",
+      "chromas": false
+    },
+    {
+      "id": "105008",
+      "num": 8,
+      "name": "Fizz lapin",
+      "chromas": false
+    },
+    {
+      "id": "105009",
+      "num": 9,
+      "name": "Super Fizz intergalactique",
+      "chromas": false
+    },
+    {
+      "id": "105010",
+      "num": 10,
+      "name": "Fizz de la section Oméga",
+      "chromas": true
+    },
+    {
+      "id": "105014",
+      "num": 14,
+      "name": "Fizz toutou",
+      "chromas": false
+    },
+    {
+      "id": "105015",
+      "num": 15,
+      "name": "Fizz toutou prestige",
+      "chromas": false
+    },
+    {
+      "id": "105016",
+      "num": 16,
+      "name": "Fizz diablotin",
+      "chromas": true
+    },
+    {
+      "id": "105025",
+      "num": 25,
+      "name": "Fizz toutou prestige (2022)",
+      "chromas": false
+    },
+    {
+      "id": "105026",
+      "num": 26,
+      "name": "Fizz astronaute",
+      "chromas": true
+    },
+    {
+      "id": "105035",
+      "num": 35,
+      "name": "Fizz berger de la pluie",
+      "chromas": true
+    }
+  ],
+  "related_characters": []
 }

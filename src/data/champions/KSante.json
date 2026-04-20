@@ -3,61 +3,35 @@
   "key": "897",
   "name": "K'Santé",
   "title": "Fierté de Nazumah",
-  "version": "15.23.1",
-  "lore": "K'Santé est originaire de Nazumah, une république libre et riche en ressources, nichée au cœur des sables de Shurima, fondée par des ancêtres qui ont fui la tyrannie des Transfigurés (Ascended). K'Santé grandit en idolâtrant les guerriers-chasseurs de son peuple qui ont vaincu des bêtes féroces pour sécuriser la ville.\n\nPendant deux décennies, il s'entraîna rigoureusement, mais apprit aussi que la survie de Nazumah exigeait plus que la simple force brute. Il forgea un lien fort avec un jeune homme nommé Tope, originaire de Marrowmark. K'Santé excellait au combat rapproché, tandis que Tope était spécialisé dans l'assaut à distance et la stratégie. Leur alchimie était parfaite, et leur partenariat devint une relation amoureuse.\n\nTout bascula lorsque les forces de Xerath et d'Azir déchaînèrent des abominations sur le continent. K'Santé et Tope jurèrent de tuer l'une d'elles : une créature colossale, mi-lion, mi-cobra (Baccai – un Transfiguré raté créé par Xerath) dont l'armure se régénérait constamment après les coups non létaux.\n\nAprès plusieurs échecs, la frustration consuma K'Santé. Il devint obsédé par la nécessité de tuer la bête seul, considérant la victoire comme un accomplissement personnel. Tope, lui, étudiait la bête et proposait des stratégies et des solutions d'équipe.\n\nK'Santé, aveuglé par son orgueil, vit l'échec d'une seule stratégie de Tope comme la preuve que son partenaire le retenait. Il commença à mépriser les idées de Tope, croyant que les héros qu'il idolâtrait ne demandaient jamais d'aide. Blessé, Tope accusa K'Santé d'avoir transformé son admirable détermination en une quête égocentrique. Leur relation s'effondra, et ils se séparèrent douloureusement.\n\nL'année suivante, K'Santé s'entraîna seul, réalisant finalement que la force seule ne suffisait pas. Il alla rendre visite à Tope, qui était parti. L'tante de Tope lui remit le journal de son neveu, lui expliquant qu'il l'avait laissé pour l'aider dans son combat contre son plus grand monstre.\n\nK'Santé étudia le journal de Tope, découvrant ses théories brillantes (notamment que la bête était un Baccai) et les failles de son armure. K'Santé accepta ses propres défauts, reconnaissant qu'il avait plus respecté son ennemi que son partenaire.\n\nArmé de la sagesse de Tope et de sa nouvelle humilité, K'Santé affronta le cobra-lion une dernière fois. Il calcula chaque mouvement, esquivant plutôt que frappant. Il coinça la bête contre une cascade de Nazumah, où l'eau naturelle affaiblit l'armure régénératrice, permettant à K'Santé de porter un coup fatal.\n\nDe retour à Nazumah, K'Santé raffina ses armes, les Ntofo, pour qu'elles se reforment après avoir brisé leur coquille (inspiré par l'armure du Baccai). Il grava sur chacune le symbole du cobra-lion dessiné par Tope dans son journal, reconnaissant que son succès n'avait pas été obtenu seul.\n\nK'Santé est désormais la Fierté de Nazumah, mais il a appris que pour diriger sa ville contre la menace des Transfigurés, il doit brider son ego et privilégier la sagesse au-dessus de l'obsession de la victoire personnelle.",
+  "version": "16.8.1",
+  "lore": "Rebelle et courageux, K'Santé combat les bêtes colossales et les Transfigurés impitoyables qui menacent son foyer convoité de Nazumah, une oasis lovée au cœur des sables de Shurima. Après s'être séparé de son ancien partenaire, K'Santé comprend que pour devenir un guerrier digne de diriger sa ville, il doit apprendre à brider son désir de victoire qui vire à l'obsession. Ce n'est qu'à ce prix qu'il pourra éviter les écueils de son propre orgueil et trouver en lui la sagesse nécessaire à la protection de son peuple.",
   "tags": [
     "Tank",
     "Fighter"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "KSante.png",
+    "sprite": "champion2.png",
+    "group": "champion",
     "x": 384,
     "y": 0,
-    "full": "KSante.png",
-    "group": "champion",
-    "sprite": "champion2.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "897000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "897001",
-      "num": 1,
-      "name": "K'Santé empyréen",
-      "chromas": true
-    },
-    {
-      "id": "897002",
-      "num": 2,
-      "name": "K'Santé empyréen prestige",
-      "chromas": false
-    },
-    {
-      "id": "897008",
-      "num": 8,
-      "name": "HEARTSTEEL K'Santé",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "KSanteQ",
       "name": "Coups de ntofo",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KSanteQ.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 0,
         "y": 48,
-        "full": "KSanteQ.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -67,6 +41,9 @@
       "leveltip": {
         "label": [
           "Dégâts"
+        ],
+        "effect": [
+          "{{ flatdamage }} -> {{ flatdamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -80,13 +57,13 @@
       "name": "Pour Nazumah !",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KSanteW.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 48,
         "y": 48,
-        "full": "KSanteW.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -98,6 +75,11 @@
           "Dégâts",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -111,13 +93,13 @@
       "name": "Jeu de jambes",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KSanteE.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 96,
         "y": 48,
-        "full": "KSanteE.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -129,6 +111,11 @@
           "Bouclier",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ shieldbaseamountfast }} -> {{ shieldbaseamountfastNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -142,13 +129,13 @@
       "name": "Grand jeu",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KSanteR.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 144,
         "y": 48,
-        "full": "KSanteR.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -161,6 +148,12 @@
           "Dégâts de traversée d'obstacle",
           "Délai de récupération",
           "Vitesse d'attaque"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ slamdownstrikedamage }} -> {{ slamdownstrikedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ attackspeed*100.000000 }}% -> {{ attackspeednl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -173,13 +166,13 @@
   "passive": {
     "name": "Instinct intrépide",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Icons_KSante_P.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 384,
       "y": 0,
-      "full": "Icons_KSante_P.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Les compétences de K'Santé marquent ses cibles pour que sa prochaine attaque leur inflige plus de dégâts.<br><br>Dans sa forme Grand jeu, les attaques et les compétences de K'Santé infligent plus de dégâts."
   },
@@ -191,20 +184,20 @@
   "gender": "Male",
   "species": "Human",
   "title_en": "the Pride of Nazumah",
-  "lore_en": "K'Santé is from Nazumah, a free republic rich in resources, nestled in the heart of the Shuriman sands, founded by ancestors who resisted the tyranny of the Ascended. K'Santé grew up vowing to become Nazumah’s greatest warrior-hunter.\n\nFor two decades, he trained, learning that Nazumah's survival required more than brute strength. He forged a close bond with a young man named Tope. K'Santé specialized in close combat, while Tope specialized in ranged assault and strategy. Their chemistry was unmatched, and their partnership blossomed into a loving relationship.\n\nThe conflict began when the forces of Xerath and Azir deployed abominations. K'Santé and Tope pledged to kill one such creature: a colossal lion-cobra hybrid (Baccai—a failed Ascended creature) whose armor constantly regenerated from nonlethal blows.\n\nAfter multiple failures, frustration consumed K'Santé. He became obsessed with slaying the beast alone, viewing anything less than victory as failure. Tope, meanwhile, studied the beast, offering strategic ideas.\n\nK'Santé, blinded by his pride, began to believe Tope was holding him back. He dismissed Tope's strategies as futile and questioned his partner's strength. Tope insisted that K'Santé's once admirable determination had devolved into a self-serving, single-minded drive. Their relationship fractured, and they painfully went their separate ways.\n\nOver the next year, K'Santé trained alone, eventually realizing that strength alone was insufficient. He visited Tope's home, finding he had returned to Marrowmark. Tope’s aunt handed K'Santé Tope’s journal, explaining that her nephew left it to assist K'Santé in his fight against his greatest monster.\n\nK'Santé studied Tope’s journal, discovering his brilliant theories (including that the creature was a Baccai) and the flaws in its armor regeneration. K'Santé accepted his shortcomings, realizing he had respected his foe more than his partner.\n\nArmed with Tope's wisdom and newfound humility, K'Santé faced the cobra-lion one last time. He calculated every move, dodging when the beast struck. He cornered the creature against a Nazuman waterfall, where the natural waters weakened the regenerative armor, allowing K'Santé to finally land a fatal blow.\n\nK'Santé refined his weapons, the Ntofo, to reform after their heavy outer layer shattered, inspired by the Baccai's armor. He carved onto them the cobra-lion symbol Tope had drawn in his journal, acknowledging that his success was not achieved alone.\n\nK'Santé is now the Pride of Nazumah, but he has learned that to lead his city against the looming Ascended threat, he must temper his ego and prioritize wisdom over personal victory obsession.",
+  "lore_en": "Defiant and courageous, K'Sante battles colossal beasts and ruthless Ascended to protect his home of Nazumah, a coveted oasis amid the sands of Shurima. But after a falling-out with his former partner, K'Sante realizes that in order to become a warrior worthy of leading his city, he must temper his single-minded drive for success. Only then can he avoid falling prey to his own pride and find the wisdom he needs to defeat the vicious monsters threatening his people.",
   "spells_en": [
     {
       "id": "KSanteQ",
       "name": "Ntofo Strikes",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KSanteQ.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 0,
         "y": 48,
-        "full": "KSanteQ.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -214,6 +207,9 @@
       "leveltip": {
         "label": [
           "Damage"
+        ],
+        "effect": [
+          "{{ flatdamage }} -> {{ flatdamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -227,13 +223,13 @@
       "name": "Path Maker",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KSanteW.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 48,
         "y": 48,
-        "full": "KSanteW.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -245,6 +241,11 @@
           "Damage",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -258,13 +259,13 @@
       "name": "Footwork",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KSanteE.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 96,
         "y": 48,
-        "full": "KSanteE.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -276,6 +277,11 @@
           "Shield",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ shieldbaseamountfast }} -> {{ shieldbaseamountfastNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -289,13 +295,13 @@
       "name": "All Out",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KSanteR.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 144,
         "y": 48,
-        "full": "KSanteR.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -308,6 +314,12 @@
           "Follow-Up Damage",
           "Cooldown",
           "Attack Speed"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ slamdownstrikedamage }} -> {{ slamdownstrikedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ attackspeed*100.000000 }}% -> {{ attackspeednl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -320,13 +332,13 @@
   "passive_en": {
     "name": "Dauntless Instinct",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Icons_KSante_P.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 384,
       "y": 0,
-      "full": "Icons_KSante_P.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "K'Sante's Abilities mark targets to take more damage on his next Attack.<br><br>When All Out, K'Sante deals more damage with all Attacks and Abilities."
   },
@@ -358,6 +370,41 @@
       "num": 8,
       "name": "HEARTSTEEL K'Sante",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "897000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "897001",
+      "num": 1,
+      "name": "K'Santé empyréen",
+      "chromas": true
+    },
+    {
+      "id": "897002",
+      "num": 2,
+      "name": "K'Santé empyréen prestige",
+      "chromas": false
+    },
+    {
+      "id": "897008",
+      "num": 8,
+      "name": "HEARTSTEEL K'Santé",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "tope",
+      "type": "lore",
+      "relation": "ex-lover",
+      "note_fr": "Ancien mari/partenaire",
+      "note_en": "Ex-husband/partner"
     }
   ]
 }

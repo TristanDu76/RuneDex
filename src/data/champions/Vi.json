@@ -3,7 +3,7 @@
   "key": "254",
   "name": "Vi",
   "title": "Pacifieuse de Piltover",
-  "version": "15.23.1",
+  "version": "16.8.1",
   "lore": "Élevée dans les quartiers louches de Zaun, Vi est une femme sans peur, mais pas sans reproche, au tempérament bouillant, impulsif, qui n'a qu'un respect mesuré pour l'autorité. Elle a toujours été une survivante astucieuse, que ce soit lorsqu'elle troublait l'ordre public de Piltover pendant sa jeunesse, ou lors de son séjour injustement long à la prison de Stillwater. Aujourd'hui, elle travaille avec les pacifieurs de Piltover pour maintenir l'ordre plutôt que le troubler, et elle se sert pour cela de puissants gantelets Hextech qui n'ont peur de frapper ni les plus épais murs de briques ni les criminels.",
   "tags": [
     "Fighter",
@@ -11,117 +11,31 @@
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Vi.png",
+    "sprite": "champion5.png",
+    "group": "champion",
     "x": 0,
     "y": 0,
-    "full": "Vi.png",
-    "group": "champion",
-    "sprite": "champion5.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "254000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "254001",
-      "num": 1,
-      "name": "Vi de l'unité Néon",
-      "chromas": false
-    },
-    {
-      "id": "254002",
-      "num": 2,
-      "name": "Agent Vi",
-      "chromas": true
-    },
-    {
-      "id": "254003",
-      "num": 3,
-      "name": "Vi séductrice",
-      "chromas": false
-    },
-    {
-      "id": "254004",
-      "num": 4,
-      "name": "Vi démoniaque",
-      "chromas": false
-    },
-    {
-      "id": "254005",
-      "num": 5,
-      "name": "Vi du royaume en guerre",
-      "chromas": false
-    },
-    {
-      "id": "254011",
-      "num": 11,
-      "name": "PROJET : Vi",
-      "chromas": false
-    },
-    {
-      "id": "254012",
-      "num": 12,
-      "name": "Vi bourreau des cœurs",
-      "chromas": true
-    },
-    {
-      "id": "254020",
-      "num": 20,
-      "name": "Vi psychoguerrière",
-      "chromas": true
-    },
-    {
-      "id": "254029",
-      "num": 29,
-      "name": "Vi de la basse-ville d'Arcane",
-      "chromas": false
-    },
-    {
-      "id": "254030",
-      "num": 30,
-      "name": "Vi cœur brisé",
-      "chromas": true
-    },
-    {
-      "id": "254039",
-      "num": 39,
-      "name": "Vi embuscade férale",
-      "chromas": true
-    },
-    {
-      "id": "254048",
-      "num": 48,
-      "name": "Vi bagarreuse d'Arcane",
-      "chromas": false
-    },
-    {
-      "id": "254049",
-      "num": 49,
-      "name": "T1 Vi",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "ViQ",
       "name": "Brise-coffre",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ViQ.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 384,
         "y": 48,
-        "full": "ViQ.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<charge>Début de la charge :</charge> Vi commence à charger un puissant coup de poing, ce qui la <status>ralentit</status> de {{ e4 }}%.<br /><br /><release>Relâchement :</release> Vi se rue vers l'avant, infligeant de <physicalDamage>{{ totaldamage }} à {{ maxdamagetooltip }} pts de dégâts physiques</physicalDamage>, selon la durée de la charge, et appliquant <spellName>Coups fracassants</spellName> sur tous les ennemis touchés. Vi s'arrête au contact d'un champion ennemi et le <status>projette</status> en <status>arrière</status>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<charge>Début de la charge :</charge> Vi commence à charger un puissant coup de poing, ce qui la <status>ralentit</status> de {{ selfslow }}%.<br /><br /><release>Relâchement :</release> Vi se rue vers l'avant, infligeant de <physicalDamage>{{ totaldamage }} à {{ maxdamagetooltip }} pts de dégâts physiques</physicalDamage>, selon la durée de la charge, et appliquant <spellName>Coups fracassants</spellName> sur tous les ennemis touchés. Vi s'arrête au contact d'un champion ennemi et le <status>projette</status> en <status>arrière</status>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "50/60/70/80/90",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -130,6 +44,12 @@
           "Dégâts maximum",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ mindamage }} -> {{ mindamageNL }}",
+          "{{ mindamage*2.500000 }} -> {{ mindamagenl*2.500000 }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -143,13 +63,13 @@
       "name": "Coups fracassants",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ViW.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 432,
         "y": 48,
-        "full": "ViW.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -160,6 +80,10 @@
         "label": [
           "Pourcentage des PV max en dégâts",
           "Vitesse d'attaque"
+        ],
+        "effect": [
+          "{{ maxhealthdamage }}% -> {{ maxhealthdamageNL }}%",
+          "{{ attackspeed }}% -> {{ attackspeedNL }}%"
         ]
       },
       "resource": "Compétence passive",
@@ -173,13 +97,13 @@
       "name": "Force implacable",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ViE.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 0,
         "y": 96,
-        "full": "ViE.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "2",
       "maxrank": 5,
@@ -191,6 +115,11 @@
           "Dégâts de base",
           "Délai de chargement",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ ammorechargetime }} -> {{ ammorechargetimeNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -204,13 +133,13 @@
       "name": "Mise en demeure",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ViR.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 48,
         "y": 96,
-        "full": "ViR.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -221,6 +150,10 @@
         "label": [
           "Dégâts de base",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ rbasedamage }} -> {{ rbasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -233,13 +166,13 @@
   "passive": {
     "name": "Bouclier antichoc",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "ViPassive.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 0,
       "y": 0,
-      "full": "ViPassive.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Vi charge un bouclier sur la durée. Le bouclier peut être activé en frappant un ennemi avec une compétence."
   },
@@ -261,17 +194,17 @@
       "name": "Vault Breaker",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ViQ.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 384,
         "y": 48,
-        "full": "ViQ.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<charge>Begin Charging:</charge> Vi begins charging a powerful punch, <status>Slowing</status> herself by {{ e4 }}%.<br /><br /><release>Release:</release> Vi dashes forward dealing between <physicalDamage>{{ totaldamage }} and {{ maxdamagetooltip }} physical damage</physicalDamage> based on charge time and applying <spellName>Denting Blows</spellName> to all enemies hit. Vi stops upon colliding with an enemy champion, and <status>Knocks</status> them <status>Back</status>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<charge>Begin Charging:</charge> Vi begins charging a powerful punch, <status>Slowing</status> herself by {{ selfslow }}%.<br /><br /><release>Release:</release> Vi dashes forward dealing between <physicalDamage>{{ totaldamage }} and {{ maxdamagetooltip }} physical damage</physicalDamage> based on charge time and applying <spellName>Denting Blows</spellName> to all enemies hit. Vi stops upon colliding with an enemy champion, and <status>Knocks</status> them <status>Back</status>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "50/60/70/80/90",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -280,6 +213,12 @@
           "Maximum Damage",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ mindamage }} -> {{ mindamageNL }}",
+          "{{ mindamage*2.500000 }} -> {{ mindamagenl*2.500000 }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -293,13 +232,13 @@
       "name": "Denting Blows",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ViW.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 432,
         "y": 48,
-        "full": "ViW.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -310,6 +249,10 @@
         "label": [
           "Maximum Health Damage",
           "Attack Speed"
+        ],
+        "effect": [
+          "{{ maxhealthdamage }}% -> {{ maxhealthdamageNL }}%",
+          "{{ attackspeed }}% -> {{ attackspeedNL }}%"
         ]
       },
       "resource": "Passive",
@@ -323,13 +266,13 @@
       "name": "Relentless Force",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ViE.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 0,
         "y": 96,
-        "full": "ViE.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "2",
       "maxrank": 5,
@@ -341,6 +284,11 @@
           "Base Damage",
           "Charge Time",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ ammorechargetime }} -> {{ ammorechargetimeNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -354,13 +302,13 @@
       "name": "Cease and Desist",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ViR.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 48,
         "y": 96,
-        "full": "ViR.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -371,6 +319,10 @@
         "label": [
           "Base Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ rbasedamage }} -> {{ rbasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -383,13 +335,13 @@
   "passive_en": {
     "name": "Blast Shield",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "ViPassive.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 0,
       "y": 0,
-      "full": "ViPassive.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Vi charges a shield over time. The shield can be activated by hitting an enemy with an ability."
   },
@@ -481,6 +433,133 @@
       "num": 49,
       "name": "T1 Vi",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "254000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "254001",
+      "num": 1,
+      "name": "Vi de l'unité Néon",
+      "chromas": false
+    },
+    {
+      "id": "254002",
+      "num": 2,
+      "name": "Agent Vi",
+      "chromas": true
+    },
+    {
+      "id": "254003",
+      "num": 3,
+      "name": "Vi séductrice",
+      "chromas": false
+    },
+    {
+      "id": "254004",
+      "num": 4,
+      "name": "Vi démoniaque",
+      "chromas": false
+    },
+    {
+      "id": "254005",
+      "num": 5,
+      "name": "Vi du royaume en guerre",
+      "chromas": false
+    },
+    {
+      "id": "254011",
+      "num": 11,
+      "name": "PROJET : Vi",
+      "chromas": false
+    },
+    {
+      "id": "254012",
+      "num": 12,
+      "name": "Vi bourreau des cœurs",
+      "chromas": true
+    },
+    {
+      "id": "254020",
+      "num": 20,
+      "name": "Vi psychoguerrière",
+      "chromas": true
+    },
+    {
+      "id": "254029",
+      "num": 29,
+      "name": "Vi de la basse-ville d'Arcane",
+      "chromas": false
+    },
+    {
+      "id": "254030",
+      "num": 30,
+      "name": "Vi cœur brisé",
+      "chromas": true
+    },
+    {
+      "id": "254039",
+      "num": 39,
+      "name": "Vi embuscade férale",
+      "chromas": true
+    },
+    {
+      "id": "254048",
+      "num": 48,
+      "name": "Vi bagarreuse d'Arcane",
+      "chromas": false
+    },
+    {
+      "id": "254049",
+      "num": 49,
+      "name": "T1 Vi",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Camille",
+      "type": "champion",
+      "relation": "rival",
+      "note_fr": "Obstacle à l'ordre",
+      "note_en": "Obstacle to order"
+    },
+    {
+      "id": "silco",
+      "type": "lore",
+      "relation": "rival/corruption",
+      "note_fr": "Responsable de la corruption de Jinx et Vander",
+      "note_en": "Responsible for Jinx and Vander's corruption"
+    },
+    {
+      "id": "Urgot",
+      "type": "champion",
+      "relation": "rival",
+      "note_fr": "Représente la loi qu'il déteste",
+      "note_en": "Represents the law he hates."
+    },
+    {
+      "id": "Jinx",
+      "type": "champion",
+      "relation": "sister",
+      "note_fr": "Soeur"
+    },
+    {
+      "id": "Caitlyn",
+      "type": "champion",
+      "relation": "lover",
+      "note_fr": "Partenaire",
+      "note_en": "Partner"
+    },
+    {
+      "id": "vander",
+      "type": "lore",
+      "relation": "adoptive-daughter"
     }
   ]
 }

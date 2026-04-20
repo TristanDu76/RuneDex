@@ -3,97 +3,35 @@
   "key": "74",
   "name": "Heimerdinger",
   "title": "Inventeur réputé",
-  "version": "15.23.1",
-  "lore": "Le professeur Cecil B. Heimerdinger est un scientifique Yordle excentrique, reconnu comme l'un des esprits les plus innovants de Piltover. Son génie est alimenté par une obsession névrotique pour le travail : il est fasciné par les mystères qui déconcertent ses contemporains depuis des décennies et s'épanouit en tentant de répondre aux questions les plus impénétrables de l'univers.\n\nHeimerdinger est le membre actif le plus ancien du Conseil de Piltover. Il a été un témoin privilégié de la croissance de la ville et a vu les meilleurs aspects, ainsi que les pires, du désir incessant de progrès de Piltover.\n\nMalgré le caractère parfois opaque et ésotérique de ses théories, Heimerdinger est fermement convaincu que le savoir doit être partagé. Il se consacre à l'enseignement de tous ceux qui aspirent à la connaissance.\n\nSon objectif reste de tout son être d'utiliser ses dispositifs et inventions atypiques (souvent des merveilles de la techmaturgie) pour améliorer la vie d'autrui. Il est l'une des figures de proue du progrès technique de la ville et s'efforce toujours d'assurer que l'innovation serve le bien commun.",
+  "version": "16.8.1",
+  "lore": "L'excentrique professeur Cecil B. Heimerdinger est considéré comme l'un des inventeurs les plus innovants qu'ait connus le monde. En tant que plus ancien membre actif du Conseil de Piltover, il a été témoin du meilleur comme du pire que le désir de progrès incessant de la ville a pu produire. Néanmoins, ce brillant scientifique et enseignant restera toujours déterminé à utiliser ses dispositifs atypiques pour améliorer la vie d'autrui.",
   "tags": [
     "Mage",
     "Support"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Heimerdinger.png",
+    "sprite": "champion1.png",
+    "group": "champion",
     "x": 192,
     "y": 48,
-    "full": "Heimerdinger.png",
-    "group": "champion",
-    "sprite": "champion1.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "74000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "74001",
-      "num": 1,
-      "name": "Heimerdinger l'envahisseur",
-      "chromas": false
-    },
-    {
-      "id": "74002",
-      "num": 2,
-      "name": "Heimerdinger explosif",
-      "chromas": false
-    },
-    {
-      "id": "74003",
-      "num": 3,
-      "name": "Heimerdinger Jackys Piltover",
-      "chromas": false
-    },
-    {
-      "id": "74004",
-      "num": 4,
-      "name": "Snowmerdinger",
-      "chromas": false
-    },
-    {
-      "id": "74005",
-      "num": 5,
-      "name": "Heimerdinger Hazmat",
-      "chromas": false
-    },
-    {
-      "id": "74006",
-      "num": 6,
-      "name": "Heimerdinger dragonnier",
-      "chromas": false
-    },
-    {
-      "id": "74015",
-      "num": 15,
-      "name": "Heimerdinger du petit bain",
-      "chromas": false
-    },
-    {
-      "id": "74024",
-      "num": 24,
-      "name": "Heimerdinger abeille",
-      "chromas": false
-    },
-    {
-      "id": "74033",
-      "num": 33,
-      "name": "Heimerdinger professeur d'Arcane",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "HeimerdingerQ",
       "name": "Tourelle H-28G Évolution",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "HeimerdingerQ.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 192,
         "y": 144,
-        "full": "HeimerdingerQ.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "3",
       "maxrank": 5,
@@ -104,6 +42,10 @@
         "label": [
           "Dégâts du canon",
           "Dégâts du rayon laser"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ basedamagebeam }} -> {{ basedamagebeamNL }}"
         ]
       },
       "resource": "{{ kitcost }} kit de tourelle et {{ cost }} pts de mana",
@@ -117,13 +59,13 @@
       "name": "Micro-roquettes Hextech",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "HeimerdingerW.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 240,
         "y": 144,
-        "full": "HeimerdingerW.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -135,6 +77,11 @@
           "Délai de récupération",
           "Dégâts",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -148,13 +95,13 @@
       "name": "Grenade électro-tempête CH-2",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "HeimerdingerE.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 288,
         "y": 144,
-        "full": "HeimerdingerE.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -164,6 +111,9 @@
       "leveltip": {
         "label": [
           "Dégâts"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -177,13 +127,13 @@
       "name": "AMÉLIORATION !",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "HeimerdingerR.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 336,
         "y": 144,
-        "full": "HeimerdingerR.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -198,6 +148,14 @@
           "Dégâts de la Nuée de roquettes",
           "Dégâts max de la Nuée de roquettes",
           "Dégâts de la Grenade éclair"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ qultbasedamage }} -> {{ qultbasedamageNL }}",
+          "{{ qultbasedamagebeam }} -> {{ qultbasedamagebeamNL }}",
+          "{{ wultbasedamage }} -> {{ wultbasedamageNL }}",
+          "{{ wulttotalbasedamage }} -> {{ wulttotalbasedamageNL }}",
+          "{{ eultbasedamage }} -> {{ eultbasedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -210,13 +168,13 @@
   "passive": {
     "name": "Affinité Hextech",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Heimerdinger_Passive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 192,
       "y": 48,
-      "full": "Heimerdinger_Passive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Gagne de la vitesse de déplacement à proximité des tourelles alliées et des tourelles déployées par Heimerdinger."
   },
@@ -231,20 +189,20 @@
   "gender": "Male",
   "species": "Yordle",
   "title_en": "the Revered Inventor",
-  "lore_en": "Professor Cecil B. Heimerdinger is an eccentric Yordle scientist, widely lauded as one of the most innovative minds and esteemed inventors Piltover has ever seen. His genius is fueled by a neurotic obsession with work: he is fascinated by mysteries that have confounded his contemporaries for decades, and thrives on answering the universe's most impenetrable questions.\n\nHeimerdinger is the longest-serving active member of the Piltover Council. He has been a keen observer of the city's growth, witnessing both the best and the worst outcomes that the city's relentless desire for progress has produced.\n\nDespite the often opaque and esoteric nature of his theories, Heimerdinger firmly believes that knowledge should be shared. He is devoted to teaching all who desire it.\n\nHis ultimate goal remains to use his atypical devices and inventions (often wonders of techmaturgy) to improve the lives of others. He is a leading figure in the city's technical progress and always strives to ensure that innovation serves the greater good.",
+  "lore_en": "The eccentric Professor Cecil B. Heimerdinger is one of the most innovative and esteemed inventors the world has ever known. As the longest serving member of the Council of Piltover, he saw the best and the worst of the city's unending desire for progress. Nonetheless, this brilliant scientist and teacher will always remain dedicated to using his unconventional devices to improve the lives of others.",
   "spells_en": [
     {
       "id": "HeimerdingerQ",
       "name": "H-28 G Evolution Turret",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "HeimerdingerQ.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 192,
         "y": 144,
-        "full": "HeimerdingerQ.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "3",
       "maxrank": 5,
@@ -255,6 +213,10 @@
         "label": [
           "Cannon Damage",
           "Beam Damage"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ basedamagebeam }} -> {{ basedamagebeamNL }}"
         ]
       },
       "resource": "{{ kitcost }} Turret Kit & {{ cost }} Mana",
@@ -268,13 +230,13 @@
       "name": "Hextech Micro-Rockets",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "HeimerdingerW.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 240,
         "y": 144,
-        "full": "HeimerdingerW.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -286,6 +248,11 @@
           "Cooldown",
           "Damage",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -299,13 +266,13 @@
       "name": "CH-2 Electron Storm Grenade",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "HeimerdingerE.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 288,
         "y": 144,
-        "full": "HeimerdingerE.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -315,6 +282,9 @@
       "leveltip": {
         "label": [
           "Damage"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -328,13 +298,13 @@
       "name": "UPGRADE!!!",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "HeimerdingerR.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 336,
         "y": 144,
-        "full": "HeimerdingerR.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -349,6 +319,14 @@
           "Rocket Swarm Damage",
           "Rocket Swarm Max Damage",
           "Lightning Grenade Damage"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ qultbasedamage }} -> {{ qultbasedamageNL }}",
+          "{{ qultbasedamagebeam }} -> {{ qultbasedamagebeamNL }}",
+          "{{ wultbasedamage }} -> {{ wultbasedamageNL }}",
+          "{{ wulttotalbasedamage }} -> {{ wulttotalbasedamageNL }}",
+          "{{ eultbasedamage }} -> {{ eultbasedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -361,13 +339,13 @@
   "passive_en": {
     "name": "Hextech Affinity",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Heimerdinger_Passive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 192,
       "y": 48,
-      "full": "Heimerdinger_Passive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Gain Move Speed while near allied towers and turrets deployed by Heimerdinger."
   },
@@ -435,6 +413,77 @@
       "num": 33,
       "name": "Arcane Professor Heimerdinger",
       "chromas": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "74000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "74001",
+      "num": 1,
+      "name": "Heimerdinger l'envahisseur",
+      "chromas": false
+    },
+    {
+      "id": "74002",
+      "num": 2,
+      "name": "Heimerdinger explosif",
+      "chromas": false
+    },
+    {
+      "id": "74003",
+      "num": 3,
+      "name": "Heimerdinger Jackys Piltover",
+      "chromas": false
+    },
+    {
+      "id": "74004",
+      "num": 4,
+      "name": "Snowmerdinger",
+      "chromas": false
+    },
+    {
+      "id": "74005",
+      "num": 5,
+      "name": "Heimerdinger Hazmat",
+      "chromas": false
+    },
+    {
+      "id": "74006",
+      "num": 6,
+      "name": "Heimerdinger dragonnier",
+      "chromas": false
+    },
+    {
+      "id": "74015",
+      "num": 15,
+      "name": "Heimerdinger du petit bain",
+      "chromas": false
+    },
+    {
+      "id": "74024",
+      "num": 24,
+      "name": "Heimerdinger abeille",
+      "chromas": false
+    },
+    {
+      "id": "74033",
+      "num": 33,
+      "name": "Heimerdinger professeur d'Arcane",
+      "chromas": false
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Ziggs",
+      "type": "champion",
+      "relation": "friend",
+      "note_fr": "Partenaire explosif",
+      "note_en": "Explosive partner"
     }
   ]
 }

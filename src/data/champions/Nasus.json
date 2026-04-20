@@ -3,121 +3,35 @@
   "key": "75",
   "name": "Nasus",
   "title": "Gardien des sables",
-  "version": "15.23.1",
-  "lore": "Nasus était un érudit prodige de Shurima, reconnu bien avant son Ascension. Il maîtrisait l'histoire et la philosophie de Shurima avant l'âge de dix ans. Il devint le plus jeune général de l'histoire grâce à son génie stratégique et logistique (plutôt qu'au combat direct).\n\nLe Général Compassionné : Profondément empathique, Nasus assurait le bien-être et le traitement équitable de ses soldats. Il était respecté de tous, y compris de son jeune frère, Renekton, qu'il surveillait et qui servait sous ses ordres.\n\nL'Amour de la Connaissance : Nasus détestait la guerre, mais la jugeait nécessaire à l'expansion de l'empire. Sa plus grande contribution fut de préserver le savoir des cultures conquises, ajoutant leurs livres et enseignements aux bibliothèques de Shurima.\n\nL'Ascension Forcée et le Sacrifice de Renekton : Après des décennies de service, Nasus fut frappé par une maladie terrible qui devait l'emporter en une semaine. L'Empereur et le peuple implorèrent l'Ascension pour lui. Trop faible pour monter seul sur l'estrade, son frère, Renekton, par amour, le porta, acceptant l'oblivion pour son propre sacrifice. Contre toute attente, les deux frères survécurent : Nasus devint un Transfiguré à tête de chacal (symbole de sagesse) et Renekton un mastodonte à l'image d'un crocodile.\n\nLe Schisme avec Renekton : L'Ascension accrut la sauvagerie de Renekton. Après le siège de Nashramae, Nasus découvrit que son frère avait rasé la grande bibliothèque. Leur affrontement dans les décombres s'arrêta seulement lorsque Renekton se détourna de honte sous le regard sévère de Nasus.\n\nLa Chute de l'Empire : Lorsque l'Ascension d'Azir tourna mal, Nasus et Renekton revinrent trop tard. Ils combattirent le traître Xerath, sans réussir à le tuer. Poussé par la rage (et peut-être le besoin de se racheter), Renekton lutta contre Xerath dans la Tombe des Empereurs, suppliant Nasus de les sceller à l'intérieur. Nasus s'exécuta le cœur lourd.\n\nL'Exil et la Réouverture : Le Disque solaire s'effondra, entraînant la chute et la désolation de Shurima. Submergé par la culpabilité, Nasus s'imposa un exil de plusieurs siècles, devenant une légende. Il ne revint que lorsque la Tombe des Empereurs fut brisée, libérant Xerath.\n\nAujourd'hui, Nasus est de retour. Stupéfait de voir l'Empereur Azir renaître et le Disque solaire se relever, il est déterminé à guider le nouvel empereur et à empêcher la nouvelle Shurima de s'effondrer. L'espoir renaît en lui, y compris celui de retrouver son frère.",
+  "version": "16.8.1",
+  "lore": "Nasus est un imposant Transfiguré à tête de chacal, une figure héroïque que les peuples du désert considéraient comme un demi-dieu aux temps anciens de Shurima. Il était très intelligent ; son savoir encyclopédique et son extraordinaire sens stratégique guidèrent l'antique empire de Shurima vers la grandeur pendant des siècles. Après la chute de l'empire, il s'imposa un exil et devint peu à peu une légende. Maintenant que l'ancienne cité de Shurima renaît de ses cendres, il est de retour, déterminé à empêcher qu'elle ne chute de nouveau.",
   "tags": [
     "Fighter",
     "Tank"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Nasus.png",
+    "sprite": "champion2.png",
+    "group": "champion",
     "x": 432,
     "y": 96,
-    "full": "Nasus.png",
-    "group": "champion",
-    "sprite": "champion2.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "75000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "75001",
-      "num": 1,
-      "name": "Nasus galactique",
-      "chromas": false
-    },
-    {
-      "id": "75002",
-      "num": 2,
-      "name": "Nasus pharaon",
-      "chromas": false
-    },
-    {
-      "id": "75003",
-      "num": 3,
-      "name": "Nasus chevalier d'effroi",
-      "chromas": true
-    },
-    {
-      "id": "75004",
-      "num": 4,
-      "name": "Nasus K-Nine",
-      "chromas": false
-    },
-    {
-      "id": "75005",
-      "num": 5,
-      "name": "Nasus infernal",
-      "chromas": false
-    },
-    {
-      "id": "75006",
-      "num": 6,
-      "name": "Archiduc Nasus",
-      "chromas": false
-    },
-    {
-      "id": "75010",
-      "num": 10,
-      "name": "Nasus brise-monde",
-      "chromas": false
-    },
-    {
-      "id": "75011",
-      "num": 11,
-      "name": "Nasus gardien lunaire",
-      "chromas": true
-    },
-    {
-      "id": "75016",
-      "num": 16,
-      "name": "Proto Nasus",
-      "chromas": true
-    },
-    {
-      "id": "75025",
-      "num": 25,
-      "name": "Nasus astro-groove",
-      "chromas": true
-    },
-    {
-      "id": "75035",
-      "num": 35,
-      "name": "Nasus titan blindé",
-      "chromas": true
-    },
-    {
-      "id": "75045",
-      "num": 45,
-      "name": "Nasus héraut de la nuit",
-      "chromas": true
-    },
-    {
-      "id": "75054",
-      "num": 54,
-      "name": "Nasus forgeur de destins",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "NasusQ",
       "name": "Buveuse d'âmes",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NasusQ.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 192,
         "y": 48,
-        "full": "NasusQ.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -128,6 +42,10 @@
         "label": [
           "Dégâts de base",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ bonusdamage }} -> {{ bonusdamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -141,13 +59,13 @@
       "name": "Flétrissement",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NasusW.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 240,
         "y": 48,
-        "full": "NasusW.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -158,6 +76,10 @@
         "label": [
           "Ralentissement max",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ maxslowtooltiponly }}% -> {{ maxslowtooltiponlyNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -171,13 +93,13 @@
       "name": "Esprit enflammé",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NasusE.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 288,
         "y": 48,
-        "full": "NasusE.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -190,6 +112,12 @@
           "Dégâts par seconde",
           "% réduction d'armure",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ e4 }} -> {{ e4NL }}",
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ effect2amount*-100.000000 }}% -> {{ effect2amountnl*-100.000000 }}%",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -203,13 +131,13 @@
       "name": "Fureur des sables",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NasusR.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 336,
         "y": 48,
-        "full": "NasusR.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -222,6 +150,12 @@
           "% des PV max",
           "Armure et résistance magique bonus",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ bonushealth }} -> {{ bonushealthNL }}",
+          "{{ aoedamagepercent*100.000000 }}% -> {{ aoedamagepercentnl*100.000000 }}%",
+          "{{ initialresistgain }} -> {{ initialresistgainNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -234,13 +168,13 @@
   "passive": {
     "name": "Mangeur d'âmes",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Nasus_Passive.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 432,
       "y": 96,
-      "full": "Nasus_Passive.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Nasus draine l'énergie spirituelle de son adversaire et profite d'un bonus de Vol de vie."
   },
@@ -255,20 +189,20 @@
   "gender": "Male",
   "species": "Ascended",
   "title_en": "the Curator of the Sands",
-  "lore_en": "Nasus's brilliance was recognized long before he was chosen to join the ranks of the Ascended. A voracious student, he was a master of Shuriman history and philosophy before the age of ten. He became the youngest general in history due to his strategic genius and logistics (rather than fighting).\n\nThe Compassionate General: A deeply empathetic man, Nasus always ensured his soldiers were treated fairly. He was respected by all, including his younger brother, Renekton, who served under his command.\n\nThe Love of Knowledge: Nasus disliked war but understood its necessity. His greatest contribution was to preserve the knowledge of defeated cultures, adding their books and teachings to Shurima's libraries.\n\nThe Forced Ascension and Renekton's Sacrifice: After decades of service, Nasus was struck by a terrible wasting sickness. The Emperor and the people pleaded for his Ascension. Too weak to climb the final steps, his brother, Renekton, out of love, carried him onto the dais, accepting oblivion for himself. Unexpectedly, both brothers survived and flourished: Nasus became a towering, jackal-headed avatar of wisdom, and Renekton a crocodile-like behemoth.\n\nThe Schism with Renekton: Ascension increased Renekton's savagery. After the siege of Nashramae, Nasus learned his brother had razed the grand library. Their confrontation in the rubble stopped only when Renekton turned away in shame under Nasus's disappointed gaze.\n\nThe Fall of the Empire: When Azir's Ascension went wrong, Nasus and Renekton returned too late. They fought the traitor Xerath, but were unable to slay him. Renekton, driven by rage, wrestled Xerath into the Tomb of the Emperors beneath the city, pleading with Nasus to seal them in. Nasus reluctantly committed Xerath and his brother to the darkness.\n\nExile and Reawakening: The Sun Disc fell, leading to the collapse and desolation of Shurima. Overwhelmed by guilt, Nasus imposed a centuries-long exile on himself, becoming a legend. He returned only when the Tomb of the Emperors was broken, freeing Xerath.\n\nToday, Nasus is back. Stunned to see Emperor Azir reborn and the Sun Disc raised once more, he is determined to guide the new god-emperor and prevent Shurima from falling again. Hope stirs within him for the first time in millennia, including the hope of being reunited with his beloved brother, Renekton.",
+  "lore_en": "Nasus is an imposing, jackal-headed Ascended being from ancient Shurima, a heroic figure regarded as a demigod by the people of the desert. Fiercely intelligent, he was a guardian of knowledge and peerless strategist whose wisdom guided the ancient empire of Shurima to greatness for many centuries. After the fall of the empire, he went into self-imposed exile, becoming little more than a legend. Now that the ancient city of Shurima has risen once more, he has returned, determined to ensure it never falls again.",
   "spells_en": [
     {
       "id": "NasusQ",
       "name": "Siphoning Strike",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NasusQ.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 192,
         "y": 48,
-        "full": "NasusQ.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -279,6 +213,10 @@
         "label": [
           "Base Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ bonusdamage }} -> {{ bonusdamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -292,13 +230,13 @@
       "name": "Wither",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NasusW.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 240,
         "y": 48,
-        "full": "NasusW.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -309,6 +247,10 @@
         "label": [
           "Max Slow",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ maxslowtooltiponly }}% -> {{ maxslowtooltiponlyNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -322,13 +264,13 @@
       "name": "Spirit Fire",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NasusE.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 288,
         "y": 48,
-        "full": "NasusE.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -341,6 +283,12 @@
           "Damage Per Second",
           "Armor Reduction %",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ e4 }} -> {{ e4NL }}",
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ effect2amount*-100.000000 }}% -> {{ effect2amountnl*-100.000000 }}%",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -354,13 +302,13 @@
       "name": "Fury of the Sands",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "NasusR.png",
+        "sprite": "spell9.png",
+        "group": "spell",
         "x": 336,
         "y": 48,
-        "full": "NasusR.png",
-        "group": "spell",
-        "sprite": "spell9.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -373,6 +321,12 @@
           "Max Health %",
           "Bonus Armor and Magic Resistance",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ bonushealth }} -> {{ bonushealthNL }}",
+          "{{ aoedamagepercent*100.000000 }}% -> {{ aoedamagepercentnl*100.000000 }}%",
+          "{{ initialresistgain }} -> {{ initialresistgainNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -385,13 +339,13 @@
   "passive_en": {
     "name": "Soul Eater",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Nasus_Passive.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 432,
       "y": 96,
-      "full": "Nasus_Passive.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Nasus drains his foe's spiritual energy, giving him bonus Life Steal."
   },
@@ -483,6 +437,101 @@
       "num": 54,
       "name": "Fatemaker Nasus",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "75000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "75001",
+      "num": 1,
+      "name": "Nasus galactique",
+      "chromas": false
+    },
+    {
+      "id": "75002",
+      "num": 2,
+      "name": "Nasus pharaon",
+      "chromas": false
+    },
+    {
+      "id": "75003",
+      "num": 3,
+      "name": "Nasus chevalier d'effroi",
+      "chromas": true
+    },
+    {
+      "id": "75004",
+      "num": 4,
+      "name": "Nasus K-Nine",
+      "chromas": false
+    },
+    {
+      "id": "75005",
+      "num": 5,
+      "name": "Nasus infernal",
+      "chromas": false
+    },
+    {
+      "id": "75006",
+      "num": 6,
+      "name": "Archiduc Nasus",
+      "chromas": false
+    },
+    {
+      "id": "75010",
+      "num": 10,
+      "name": "Nasus brise-monde",
+      "chromas": false
+    },
+    {
+      "id": "75011",
+      "num": 11,
+      "name": "Nasus gardien lunaire",
+      "chromas": true
+    },
+    {
+      "id": "75016",
+      "num": 16,
+      "name": "Proto Nasus",
+      "chromas": true
+    },
+    {
+      "id": "75025",
+      "num": 25,
+      "name": "Nasus astro-groove",
+      "chromas": true
+    },
+    {
+      "id": "75035",
+      "num": 35,
+      "name": "Nasus titan blindé",
+      "chromas": true
+    },
+    {
+      "id": "75045",
+      "num": 45,
+      "name": "Nasus héraut de la nuit",
+      "chromas": true
+    },
+    {
+      "id": "75054",
+      "num": 54,
+      "name": "Nasus forgeur de destins",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Renekton",
+      "type": "champion",
+      "relation": "brother",
+      "note_fr": "Frère",
+      "note_en": "Brother"
     }
   ]
 }

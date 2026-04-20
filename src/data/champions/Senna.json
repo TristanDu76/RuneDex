@@ -3,103 +3,35 @@
   "key": "235",
   "name": "Senna",
   "title": "Rédemptrice",
-  "version": "15.23.1",
-  "lore": "Le voyage de Senna commença par une tragédie. Dès son enfance, elle fut marquée par la Brume Noire après avoir été en contact avec des débris d'une Harrowing. Cette brume fut irrésistiblement attirée par elle, comme un papillon de nuit vers une flamme, la forçant à vivre dans une peur constante.\n\n L'Apprentissage de la Lumière : Sauvée par le vétéran Urias, Senna rejoignit les Sentinelles de la Lumière. Elle apprit à canaliser son âme dans la pierre de relique pour combattre les spectres. Cependant, par peur de voir ses proches souffrir de sa malédiction, elle gardait tout le monde à distance.\n\n L'Amour et Lucian : Après la mort d'Urias, elle rencontra son fils, Lucian. Malgré ses barrières émotionnelles, l'entêtement et l'amour de Lucian finirent par la conquérir. Ils devinrent partenaires de combat et de vie. Mais Lucian devint obsédé par l'idée de guérir la malédiction de Senna, une quête qui les mena face au sadique Thresh.\n\n L'Emprisonnement dans la Lanterne : Pour sauver Lucian, Senna s'interposa et son âme fut capturée par la lanterne de Thresh. Mais au lieu de la fin, ce fut un nouveau départ. À l'intérieur de la prison spectrale, elle comprit que sa malédiction était en réalité une étincelle de vie pure qui avait attiré la Brume.\n\n La Libération : Pendant que Lucian cherchait désespérément à la venger, Senna apprenait à manipuler la Brume de l'intérieur. Elle libéra d'autres âmes de Sentinelles et acquit des connaissances sur les origines de la Ruination. Lorsque Lucian brisa la lanterne, Senna en sortit transformée : à la fois morte et vivante.\n\n Un Nouveau Destin : Armée d'un immense canon de pierre de relique forgé à partir des armes des Sentinelles tombées, Senna combat désormais l'ombre avec l'ombre. Elle ne fuit plus la Brume, elle l'absorbe pour libérer les âmes souffrantes. Son but ultime est désormais clair : trouver le Roi Déchu (Viego) et l'arrêter à tout prix.",
+  "version": "16.8.1",
+  "lore": "Condamnée à être poursuivie par la Brume noire dès l'enfance, Senna rejoignit l'ordre sacré des Sentinelles de la lumière. Elle combattit avec ferveur, mais elle fut tuée et son âme fut emprisonnée dans une lanterne par l'odieux spectre Thresh. Ne perdant pas espoir, Senna apprit à manier la brume dans sa prison. Quand elle revint à la vie, elle était à jamais changée. Manipulant désormais ténèbres et lumière, Senna désire détruire la Brume noire en la retournant contre elle-même. Chaque rayon de son arme en pierre-relique libère les âmes damnées de la brume.",
   "tags": [
     "Support",
     "Marksman"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Senna.png",
+    "sprite": "champion3.png",
+    "group": "champion",
     "x": 288,
     "y": 96,
-    "full": "Senna.png",
-    "group": "champion",
-    "sprite": "champion3.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "235000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "235001",
-      "num": 1,
-      "name": "True Damage Senna",
-      "chromas": true
-    },
-    {
-      "id": "235009",
-      "num": 9,
-      "name": "True Damage Senna prestige",
-      "chromas": false
-    },
-    {
-      "id": "235010",
-      "num": 10,
-      "name": "Senna de l'Ouest",
-      "chromas": true
-    },
-    {
-      "id": "235016",
-      "num": 16,
-      "name": "PROJET : Senna",
-      "chromas": true
-    },
-    {
-      "id": "235026",
-      "num": 26,
-      "name": "Senna de l'éclipse lunaire",
-      "chromas": true
-    },
-    {
-      "id": "235027",
-      "num": 27,
-      "name": "Senna de l'éclipse lunaire prestige",
-      "chromas": false
-    },
-    {
-      "id": "235036",
-      "num": 36,
-      "name": "Senna sorcière",
-      "chromas": true
-    },
-    {
-      "id": "235046",
-      "num": 46,
-      "name": "Senna gardienne des étoiles",
-      "chromas": true
-    },
-    {
-      "id": "235056",
-      "num": 56,
-      "name": "Senna élue de l'hiver",
-      "chromas": false
-    },
-    {
-      "id": "235063",
-      "num": 63,
-      "name": "Senna justice masquée",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "SennaQ",
       "name": "Ombre perforante",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SennaQ.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 96,
         "y": 0,
-        "full": "SennaQ.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -112,6 +44,12 @@
           "Soins",
           "Durée de ralentissement",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ baseheal }} -> {{ basehealNL }}",
+          "{{ slowduration }} -> {{ slowdurationNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -125,13 +63,13 @@
       "name": "Dernière étreinte",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SennaW.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 144,
         "y": 0,
-        "full": "SennaW.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -143,6 +81,11 @@
           "Dégâts",
           "Durée de l'immobilisation",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ rootduration }} -> {{ rootdurationNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -156,13 +99,13 @@
       "name": "Malédiction de la Brume noire",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SennaE.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 192,
         "y": 0,
-        "full": "SennaE.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -173,6 +116,10 @@
         "label": [
           "Durée",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ buffduration }} -> {{ buffdurationNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -186,13 +133,13 @@
       "name": "Ténèbres aveuglantes",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SennaR.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 240,
         "y": 0,
-        "full": "SennaR.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -204,6 +151,11 @@
           "Dégâts",
           "PV du bouclier",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ shield }} -> {{ shieldNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -216,39 +168,38 @@
   "passive": {
     "name": "Absolution",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Senna_Passive.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 288,
       "y": 96,
-      "full": "Senna_Passive.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Lorsque des unités meurent près de Senna, leurs âmes sont parfois prises au piège dans la Brume noire. Senna peut attaquer ces âmes pour les libérer et absorber la Brume qui les retenait. La Brume renforce son canon en pierre-relique en augmentant ses dégâts d'attaque, sa portée d'attaque et ses chances de coup critique. <br><br>Les attaques du canon en pierre-relique de Senna tirent plus lentement, infligent des dégâts supplémentaires et lui confèrent brièvement une partie de la vitesse de déplacement de sa cible."
   },
   "created_at": "2025-11-26T15:13:34.800791+00:00",
   "factions": [
-    "demacia",
-    "shadow-isles"
+    "demacia"
   ],
   "custom_tags": null,
   "gender": "Female",
   "species": "Undead",
   "title_en": "the Redeemer",
-  "lore_en": "Senna's journey began in darkness. Marked as a child by the Black Mist after encountering wreckage from a Harrowing, she became a beacon for the undead, haunted by shadows that pursued her relentlessly.\n\n Becoming a Sentinel: Rescued by the veteran Urias, Senna joined the Sentinels of Light. She mastered the relic-stone pistol and learned to channel her soul into light. To protect others from her curse, she built emotional walls, living a life on the run.\n\n Love and Lucian: Following Urias's death, she met his son, Lucian. His stubborn love and humor eventually broke through her defenses. They became inseparable partners, but Lucian's growing obsession with finding a cure for her curse led them into a fatal conflict with the sadistic wraith Thresh.\n\n The Lantern Prison: Senna sacrificed herself to save Lucian, and her soul was pulled into Thresh's lantern. Inside this spectral prison, she discovered the truth: her curse was actually an intense spark of life that the Mist refused to let go.\n\n The Rebirth: While Lucian spent years mourning and searching for her, Senna explored the lantern and learned to draw the Mist into herself to empower her spirit. When Lucian finally damaged the lantern, Senna escaped—not as a ghost, but as a being existing between life and death.\n\n A New Mission: Wielding a massive relic-stone cannon forged from fallen Sentinels' weapons, she now fights darkness with darkness. She frees the souls within the Mist by taking their suffering into herself. Having glimpsed the truth inside the lantern, her goal is now absolute: stop the Ruined King at any cost.",
+  "lore_en": "Cursed from childhood to be haunted by the supernatural Black Mist, Senna joined a sacred order known as the Sentinels of Light, and fiercely fought back—only to be killed, her soul imprisoned in a lantern by the cruel specter Thresh. But refusing to lose hope, within the lantern Senna learned to use the Mist, and reemerged to new life, forever changed. Now wielding darkness along with light, Senna seeks to end the Black Mist by turning it against itself—with every blast of her relic weapon, redeeming the souls lost within.",
   "spells_en": [
     {
       "id": "SennaQ",
       "name": "Piercing Darkness",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SennaQ.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 96,
         "y": 0,
-        "full": "SennaQ.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -261,6 +212,12 @@
           "Healing",
           "Slow Duration",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ baseheal }} -> {{ basehealNL }}",
+          "{{ slowduration }} -> {{ slowdurationNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -274,13 +231,13 @@
       "name": "Last Embrace",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SennaW.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 144,
         "y": 0,
-        "full": "SennaW.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -292,6 +249,11 @@
           "Damage",
           "Root Duration",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ rootduration }} -> {{ rootdurationNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -305,13 +267,13 @@
       "name": "Curse of the Black Mist",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SennaE.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 192,
         "y": 0,
-        "full": "SennaE.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -322,6 +284,10 @@
         "label": [
           "Duration",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ buffduration }} -> {{ buffdurationNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -335,13 +301,13 @@
       "name": "Dawning Shadow",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SennaR.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 240,
         "y": 0,
-        "full": "SennaR.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -353,6 +319,11 @@
           "Damage",
           "Shield Amount",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ shield }} -> {{ shieldNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -365,13 +336,13 @@
   "passive_en": {
     "name": "Absolution",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Senna_Passive.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 288,
       "y": 96,
-      "full": "Senna_Passive.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "When units die near Senna, their souls are periodically trapped by the Black Mist. Senna can attack these souls to free them, absorbing the Mist that held them in death. Mist fuels her Relic Cannon's power with increased Attack Damage, Attack Range, and Critical Strike Chance. <br><br>Attacks from Senna's Relic Cannon take longer to fire, deal bonus damage, and briefly grant her a portion of her target's Move Speed."
   },
@@ -445,6 +416,102 @@
       "num": 63,
       "name": "Masked Justice Senna",
       "chromas": false
+    },
+    {
+      "id": "235072",
+      "num": 72,
+      "name": "Warhound Senna",
+      "chromas": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "235000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "235001",
+      "num": 1,
+      "name": "True Damage Senna",
+      "chromas": true
+    },
+    {
+      "id": "235009",
+      "num": 9,
+      "name": "True Damage Senna prestige",
+      "chromas": false
+    },
+    {
+      "id": "235010",
+      "num": 10,
+      "name": "Senna de l'Ouest",
+      "chromas": true
+    },
+    {
+      "id": "235016",
+      "num": 16,
+      "name": "PROJET : Senna",
+      "chromas": true
+    },
+    {
+      "id": "235026",
+      "num": 26,
+      "name": "Senna de l'éclipse lunaire",
+      "chromas": true
+    },
+    {
+      "id": "235027",
+      "num": 27,
+      "name": "Senna de l'éclipse lunaire prestige",
+      "chromas": false
+    },
+    {
+      "id": "235036",
+      "num": 36,
+      "name": "Senna sorcière",
+      "chromas": true
+    },
+    {
+      "id": "235046",
+      "num": 46,
+      "name": "Senna gardienne des étoiles",
+      "chromas": true
+    },
+    {
+      "id": "235056",
+      "num": 56,
+      "name": "Senna élue de l'hiver",
+      "chromas": false
+    },
+    {
+      "id": "235063",
+      "num": 63,
+      "name": "Senna justice masquée",
+      "chromas": false
+    },
+    {
+      "id": "235072",
+      "num": 72,
+      "name": "Senna limier de guerre",
+      "chromas": false
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "isolde",
+      "type": "lore",
+      "relation": "host",
+      "note_fr": "Hôte d'un fragment",
+      "note_en": "Host of a fragment"
+    },
+    {
+      "id": "Lucian",
+      "type": "champion",
+      "relation": "lover",
+      "note_fr": "Mari",
+      "note_en": "Husband"
     }
   ]
 }

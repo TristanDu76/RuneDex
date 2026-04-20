@@ -3,85 +3,35 @@
   "key": "141",
   "name": "Kayn",
   "title": "Faucheur de l'ombre",
-  "version": "15.23.1",
-  "lore": "Shieda Kayn est Noxien de naissance, mais fut enrôlé comme enfant soldat par les commandants les plus cruels de l'empire de Boram Darkwill. Après la désastreuse bataille du Placidium de Navori, l'invasion de l'Ionia se transforma en une guerre d'usure, exploitant la compassion ionienne (qui hésiterait à frapper un innocent). La première bataille de Kayn fut une mission suicide.\n\nDébarquant dans la province de Bahrl, Kayn fut l'une des rares recrues à ne pas fuir ou être tuée immédiatement. Il laissa tomber son épée lourde pour saisir une faucille brisée et fit face aux défenseurs locaux. Le massacre qui s'ensuivit fut terrible.\n\nDeux jours plus tard, l'Ordre de l'Ombre arriva sur les lieux. Leur chef, Zed, reconnut que le massacre était un message de Noxus. Il remarqua Kayn, un enfant d'à peine dix ans, au milieu de la boue, brandissant sa faucille brisée contre le maître assassin. Les yeux du garçon brûlaient de la fureur d'un guerrier endurci. Zed vit dans ce survivant abandonné une arme à retourner contre Noxus. Il tendit la main et accueillit Kayn dans l'Ordre.\n\nKayn se révéla être un élève hors pair, maîtrisant toutes les armes rapidement (les considérant comme de simples outils). Il s'enveloppait d'ombres et utilisait la rapidité et la furtivité, jugeant l'armure trop encombrante. À mesure que sa légende grandissait, son arrogance faisait de même. Il était convaincu qu'il éclipserait un jour le pouvoir de Zed lui-même.\n\nSon orgueil le mena à son épreuve finale : récupérer une arme Darkin récemment déterrée par Noxus pour s'assurer qu'elle ne soit pas utilisée contre l'Ionia. Là où tout autre acolyte aurait détruit la faux vivante nommée Rhaast, Kayn la prit pour lui.\n\nLa corruption s'empara de lui dès que ses doigts touchèrent l'arme, les enfermant dans une lutte fatidique. Rhaast attend le parfait hôte pour rejoindre ses frères Darkin et dévaster le monde. Mais Kayn n'est pas facilement dominé. Il revient triomphalement en Ionia, persuadé que Zed le nommera nouveau chef de l'Ordre de l'Ombre, car il a réussi son test. Son destin est scellé : soit il pliera l'arme à sa volonté, soit la faux le consumera entièrement.",
+  "version": "16.8.1",
+  "lore": "Expert inégalé dans la pratique de la magie des ombres, Shieda Kayn combat pour accomplir sa véritable destinée : mener un jour l'Ordre de l'ombre vers une ère nouvelle où Ionia régnera en maître. Il manie Rhaast, une arme darkin douée de raison, sans jamais craindre la corruption de son corps et de son esprit. Il ne peut y avoir pour lui que deux fins possibles : soit Kayn pliera l'arme à sa volonté, soit la faux maléfique le consumera complètement, ouvrant la voie à la destruction de tout Runeterra.",
   "tags": [
     "Fighter",
     "Assassin"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Kayn.png",
+    "sprite": "champion2.png",
+    "group": "champion",
     "x": 96,
     "y": 0,
-    "full": "Kayn.png",
-    "group": "champion",
-    "sprite": "champion2.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "141000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "141001",
-      "num": 1,
-      "name": "Kayn chasseur d'âmes",
-      "chromas": false
-    },
-    {
-      "id": "141002",
-      "num": 2,
-      "name": "Kayn de l'Odyssée",
-      "chromas": true
-    },
-    {
-      "id": "141008",
-      "num": 8,
-      "name": "Kayn héraut de la nuit",
-      "chromas": true
-    },
-    {
-      "id": "141009",
-      "num": 9,
-      "name": "Kayn héraut de la nuit prestige",
-      "chromas": false
-    },
-    {
-      "id": "141015",
-      "num": 15,
-      "name": "Kayn lune de neige",
-      "chromas": true
-    },
-    {
-      "id": "141020",
-      "num": 20,
-      "name": "HEARTSTEEL Kayn",
-      "chromas": true
-    },
-    {
-      "id": "141026",
-      "num": 26,
-      "name": "Kayn de l'Académie du combat",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "KaynQ",
       "name": "Moisson cruelle",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KaynQ.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 288,
         "y": 96,
-        "full": "KaynQ.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -92,6 +42,10 @@
         "label": [
           "Délai de récupération",
           "Dégâts de base"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ e1 }} -> {{ e1NL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -105,13 +59,13 @@
       "name": "Entaille sombre",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KaynW.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 336,
         "y": 96,
-        "full": "KaynW.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -123,6 +77,11 @@
           "Dégâts",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -136,13 +95,13 @@
       "name": "Passe-muraille",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KaynE.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 384,
         "y": 96,
-        "full": "KaynE.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -154,6 +113,11 @@
           "Délai de récupération",
           "Durée",
           "Soins"
+        ],
+        "effect": [
+          "{{ f15 }} -> {{ f16 }}",
+          "{{ e2 }} -> {{ e2NL }}",
+          "{{ e7 }} -> {{ e7NL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -167,13 +131,13 @@
       "name": "Intrusion obscure",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KaynR.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 432,
         "y": 96,
-        "full": "KaynR.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -183,7 +147,13 @@
       "leveltip": {
         "label": [
           "Dégâts",
+          "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -196,13 +166,13 @@
   "passive": {
     "name": "Faux des Darkin",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Kayn_Passive_Primary.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 96,
       "y": 0,
-      "full": "Kayn_Passive_Primary.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Kayn manie une arme antique et combat Rhaast, le Darkin qu'elle renferme, pour en prendre le contrôle. Soit le <font color='#fe5c50'>Darkin</font> triomphera, soit Kayn maîtrisera Rhaast et deviendra l'<font color='#8484fb'>Assassin de l'ombre</font>.<br><br><font color='#fe5c50'>Darkin :</font> soin équivalent à un pourcentage des dégâts de compétence infligés aux champions.<br><br><font color='#8484fb'>Assassin de l'ombre :</font> inflige des dégâts supplémentaires pendant les premières secondes d'un combat contre des champions ennemis."
   },
@@ -218,20 +188,20 @@
   "gender": "Male",
   "species": "Human",
   "title_en": "the Shadow Reaper",
-  "lore_en": "Shieda Kayn is Noxian by birth but was conscripted as a child soldier, a cruel practice used by Boram Darkwill's devious commanders. Following the disastrous battle at the Placidium of Navori, the invasion of Ionia became a protracted war of attrition, exploiting Ionian compassion. Kayn’s first day in battle was intended to be his last.\n\nLanding at the Epool River, Kayn was one of the few conscripts who did not flee or die immediately. He dropped his heavy sword, snatched up a broken sickle, and faced the local defenders. The resulting carnage was staggering.\n\nTwo days later, the Order of Shadow came upon the grisly scene. Their leader, Zed, recognized the massacre as a message from Noxus. He noticed Kayn, barely ten years old, leveling his broken sickle at the master assassin. The boy’s eyes burned with the fury of a hardened warrior. Zed saw in this abandoned Noxian survivor a weapon to be turned against those who sent him to die. He held out his hand and welcomed Kayn into the Order.\n\nKayn proved to be an unmatched pupil, mastering every weapon (which he viewed as mere tools). He cloaked himself in shadows, relying on quickness and stealth, finding armor cumbersome. As Kayn’s legend grew, so did his arrogance. He truly believed that one day his power would eclipse even that of Zed himself.\n\nHis hubris led him to his final test: to seek out a Darkin weapon recently unearthed by Noxus, and prevent its use against Ionia. Where any other acolyte would have destroyed the living scythe named Rhaast, Kayn took it for himself.\n\nCorruption took hold the moment he grasped the weapon, locking them both in a fateful struggle. Rhaast awaits the perfect host to rejoin its Darkin brethren and lay waste to the world, but Kayn will not be easily dominated. He returns to Ionia in triumph, convinced that Zed will name him the new leader of the Order of Shadow. His destiny has only two possible endings: either Kayn will bend the weapon to his will, or the wicked scythe will consume him entirely.",
+  "lore_en": "A peerless practitioner of lethal shadow magic, Shieda Kayn battles to achieve his true destiny—to one day lead the Order of Shadow into a new era of Ionian supremacy. He wields the sentient darkin weapon Rhaast, undeterred by its creeping corruption of his body and mind. There are only two possible outcomes: either Kayn bends the weapon to his will... or the malevolent blade consumes him completely, paving the way for the destruction of all Runeterra.",
   "spells_en": [
     {
       "id": "KaynQ",
       "name": "Reaping Slash",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KaynQ.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 288,
         "y": 96,
-        "full": "KaynQ.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -242,6 +212,10 @@
         "label": [
           "Cooldown",
           "Base Damage"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ e1 }} -> {{ e1NL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -255,13 +229,13 @@
       "name": "Blade's Reach",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KaynW.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 336,
         "y": 96,
-        "full": "KaynW.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -273,6 +247,11 @@
           "Damage",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -286,13 +265,13 @@
       "name": "Shadow Step",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KaynE.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 384,
         "y": 96,
-        "full": "KaynE.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -304,6 +283,11 @@
           "Cooldown",
           "Duration",
           "Healing"
+        ],
+        "effect": [
+          "{{ f15 }} -> {{ f16 }}",
+          "{{ e2 }} -> {{ e2NL }}",
+          "{{ e7 }} -> {{ e7NL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -317,13 +301,13 @@
       "name": "Umbral Trespass",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KaynR.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 432,
         "y": 96,
-        "full": "KaynR.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -333,7 +317,13 @@
       "leveltip": {
         "label": [
           "Damage",
+          "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -346,13 +336,13 @@
   "passive_en": {
     "name": "The Darkin Scythe",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Kayn_Passive_Primary.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 96,
       "y": 0,
-      "full": "Kayn_Passive_Primary.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Kayn wields an ancient weapon and fights Rhaast, the darkin within it, for control. Either the <font color='#fe5c50'>Darkin</font> will triumph, or Kayn will master Rhaast and become the <font color='#8484fb'>Shadow Assassin</font>.<br><br><font color='#fe5c50'>Darkin:</font> Heal for a percentage of spell damage dealt to champions.<br><br><font color='#8484fb'>Shadow Assassin:</font> For the first few seconds in combat with enemy champions, deal bonus damage."
   },
@@ -408,6 +398,72 @@
       "num": 26,
       "name": "Battle Academia Kayn",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "141000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "141001",
+      "num": 1,
+      "name": "Kayn chasseur d'âmes",
+      "chromas": false
+    },
+    {
+      "id": "141002",
+      "num": 2,
+      "name": "Kayn de l'Odyssée",
+      "chromas": true
+    },
+    {
+      "id": "141008",
+      "num": 8,
+      "name": "Kayn héraut de la nuit",
+      "chromas": true
+    },
+    {
+      "id": "141009",
+      "num": 9,
+      "name": "Kayn héraut de la nuit prestige",
+      "chromas": false
+    },
+    {
+      "id": "141015",
+      "num": 15,
+      "name": "Kayn lune de neige",
+      "chromas": true
+    },
+    {
+      "id": "141020",
+      "num": 20,
+      "name": "HEARTSTEEL Kayn",
+      "chromas": true
+    },
+    {
+      "id": "141026",
+      "num": 26,
+      "name": "Kayn de l'Académie du combat",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Zed",
+      "type": "champion",
+      "relation": "student",
+      "note_fr": "Élève favori / Successeur",
+      "note_en": "Favorite student / Successor"
+    },
+    {
+      "id": "rhaast",
+      "type": "lore",
+      "relation": "host",
+      "note_fr": "Tente de contrôler Kayn.",
+      "note_en": "Attempts to control Kayn."
     }
   ]
 }

@@ -3,49 +3,35 @@
   "key": "901",
   "name": "Smolder",
   "title": "Dragonnet flamboyant",
-  "version": "15.23.1",
-  "lore": "L'histoire de Smolder remonte à l'ancien royaume de Camavor, où le premier roi jura l'ordre de Vol Visperi-Desinvein avec la matriarche dragonne \"Grand-mère Vipère\". Cette alliance lia leurs lignées pour des siècles, les dragons servant de protecteurs et de force de frappe à l'empire.\n\n La Ruine de Camavor : Lorsque le roi Viego sombra dans la folie, les dragons impériaux refusèrent de le suivre vers les Îles Bénies. Malgré cela, la Ruination dévasta leur foyer. La lignée s'affaiblit jusqu'à ce que, des siècles plus tard, un seul œuf éclose enfin.\n\n L'Enlèvement et le Naufrage : Des maîtres des bêtes noxiens volèrent le jeune dragonnet. Sa mère, folle de rage, détruisit leur navire en plein mer. Dans le chaos, le petit fut emporté par les courants jusqu'à une île proche des côtes de Noxus.\n\n L'Ami Humain : Seul et affamé, il fut trouvé par un enfant nommé Marinos, qui le baptisa Smolder. Ils devinrent amis en secret, Marinos craignant que Smolder ne soit capturé s'il était découvert. Mais avec le temps, Marinos devint adulte et délaissa leurs jeux pour ses responsabilités.\n\n Le Réveil des Flammes : Pour s'amuser, Smolder tenta d'imiter les dragons des histoires de Marinos. Son premier véritable souffle de feu déclencha accidentellement un immense incendie de forêt. C'est la fumée qui permit enfin à sa mère de le retrouver.\n\n Le Retour à l'Héritage : Sa mère l'emmena sur une falaise protégée. Elle lui enseigne désormais l'histoire de leur lignée et les responsabilités d'un dragon impérial. Smolder s'entraîne avec enthousiasme, rêvant du jour où ils retourneront ensemble à Camavor pour restaurer la gloire de leur foyer ancestral.",
+  "version": "16.8.1",
+  "lore": "Caché dans les falaises escarpées de la frontière noxienne et attentivement surveillé par sa mère, un jeune dragon apprend ce que signifie être l'héritier de la lignée impériale des dragons camavoriens. Joueur et impatient de grandir, Smolder est prêt à tout pour développer ses nouvelles compétences. Même s'il n'est encore qu'un dragonnet, ses compétences sont déjà impressionnantes : il met aisément le feu à tout ce qui peut brûler.",
   "tags": [
     "Marksman",
     "Mage"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Smolder.png",
+    "sprite": "champion4.png",
+    "group": "champion",
     "x": 288,
     "y": 0,
-    "full": "Smolder.png",
-    "group": "champion",
-    "sprite": "champion4.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "901000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "901001",
-      "num": 1,
-      "name": "Smolder écailles célestes",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "SmolderQ",
       "name": "Boule de feu draconique",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SmolderQ.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 96,
         "y": 0,
-        "full": "SmolderQ.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -56,6 +42,10 @@
         "label": [
           "Dégâts de base",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -69,13 +59,13 @@
       "name": "Atchoum !",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SmolderW.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 144,
         "y": 0,
-        "full": "SmolderW.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -88,6 +78,12 @@
           "Dégâts de l'explosion",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ explosionbasedamage }} -> {{ explosionbasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -101,13 +97,13 @@
       "name": "Flap, flap, flap !",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SmolderE.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 192,
         "y": 0,
-        "full": "SmolderE.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -118,6 +114,10 @@
         "label": [
           "Délai de récupération",
           "Dégâts de base"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -131,13 +131,13 @@
       "name": "MAMAAAN !",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SmolderR.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 240,
         "y": 0,
-        "full": "SmolderR.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -149,6 +149,11 @@
           "Dégâts",
           "Soins",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ momheal }} -> {{ momhealNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -161,13 +166,13 @@
   "passive": {
     "name": "Dragon en herbe",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Icons_Smolder_Passive.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 288,
       "y": 0,
-      "full": "Icons_Smolder_Passive.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Toucher des champions avec une compétence et éliminer des ennemis avec Boule de feu draconique octroie à Smolder un effet de Dragon en herbe. Les effets ainsi cumulés augmentent les dégâts des compétences de base de Smolder."
   },
@@ -181,20 +186,20 @@
   "gender": "Male",
   "species": "Dragon",
   "title_en": "the Fiery Fledgling",
-  "lore_en": "Smolder's story is rooted in the ancient kingdom of Camavor, where the first king swore the oath of Vol Visperi-Desinvein with the dragon matriarch \"Grandmother Viper.\" This pact bound their lineages, with dragons serving as the empire's ultimate protectors and symbols of power.\n\n The Fall of Camavor : When King Viego descended into madness, the imperial dragons refused to accompany him to the Blessed Isles. However, the Ruination still devastated their kingdom. The brood diminished until, centuries later, a single hatchling finally emerged.\n\n Abduction and Shipwreck : Noxian beastmasters stole the young dragon from his nest. His mother tracked them down and obliterated their ship with her fire. In the disaster, the hatchling was swept away to an island off the coast of Noxus.\n\n A Secret Friendship : A human boy named Marinos found the lonely dragonnet and named him Smolder. They grew up as secret friends, with Marinos hiding Smolder to protect him from being sold to the mainland. As Marinos grew into a man with duties, Smolder was left to entertain himself.\n\n The First Breath : Trying to breathe fire like the dragons in Marinos' stories, Smolder accidentally set the forest canopy ablaze. The rising smoke acted as a beacon, allowing his mother to find and rescue him at last.\n\n Embracing Destiny : Smolder now lives with his mother, who teaches him the history and responsibilities of their imperial kind. He is honing his fledgling abilities, preparing for the day they return to Camavor to usher in a new golden age.",
+  "lore_en": "Hidden amongst the craggy cliffs of the Noxian frontier, under the watchful eyes of his mother, a young dragon is learning what it means to be heir to the Camavoran imperial dragon lineage. Playful and eager to grow up, Smolder looks for any excuse to practice his burgeoning abilities. Though he's still a fledgling, his skills are nothing to sneeze at, easily setting fire to anything that burns.",
   "spells_en": [
     {
       "id": "SmolderQ",
       "name": "Super Scorcher Breath",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SmolderQ.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 96,
         "y": 0,
-        "full": "SmolderQ.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -205,6 +210,10 @@
         "label": [
           "Base Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -218,13 +227,13 @@
       "name": "Achooo!",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SmolderW.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 144,
         "y": 0,
-        "full": "SmolderW.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -237,6 +246,12 @@
           "Explosion Damage",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ explosionbasedamage }} -> {{ explosionbasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -250,13 +265,13 @@
       "name": "Flap, Flap, Flap",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SmolderE.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 192,
         "y": 0,
-        "full": "SmolderE.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -267,6 +282,10 @@
         "label": [
           "Cooldown",
           "Base Damage"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -280,13 +299,13 @@
       "name": "MMOOOMMMM!",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SmolderR.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 240,
         "y": 0,
-        "full": "SmolderR.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -298,6 +317,11 @@
           "Damage",
           "Heal",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ momheal }} -> {{ momhealNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -310,13 +334,13 @@
   "passive_en": {
     "name": "Dragon Practice",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Icons_Smolder_Passive.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 288,
       "y": 0,
-      "full": "Icons_Smolder_Passive.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Hitting champions with Abilities and killing enemies with Super Scorcher Breath grants a stack of Dragon Practice. Stacks increase the damage of Smolders basic Abilities."
   },
@@ -336,6 +360,33 @@
       "num": 1,
       "name": "Heavenscale Smolder",
       "chromas": true
+    },
+    {
+      "id": "901011",
+      "num": 11,
+      "name": "Reindeer Smolder",
+      "chromas": true
     }
-  ]
+  ],
+  "skins": [
+    {
+      "id": "901000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "901001",
+      "num": 1,
+      "name": "Smolder écailles célestes",
+      "chromas": true
+    },
+    {
+      "id": "901011",
+      "num": 11,
+      "name": "Smolder le renne",
+      "chromas": true
+    }
+  ],
+  "related_characters": []
 }

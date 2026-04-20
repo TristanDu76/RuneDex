@@ -3,121 +3,35 @@
   "key": "236",
   "name": "Lucian",
   "title": "Purificateur",
-  "version": "15.23.1",
-  "lore": "Lucian a grandi en Demacia, aspirant à rejoindre l'ordre ancien des Sentinelles de la Lumière, dont son père, Urias, était membre. Urias le tenait éloigné de ce destin dangereux. Bien que restant à Demacia, Lucian se distinguait de la culture locale en protégeant les mages bannis (que ses compatriotes voyaient comme des hors-la-loi), voyant en eux des personnes ayant besoin d'aide.\n\nSon destin bascula lorsqu'une femme, Senna, Sentinelle de la Lumière et apprentie d'Urias, vint à sa porte pour annoncer la mort de son père au combat contre les spectres de la Brume noire.\n\nLucian insista pour accompagner Senna pour la veillée des Sentinelles perdues. Au cours de leur voyage, ils firent le deuil ensemble. Lors de la veillée, ils furent attaqués par des spectres. Lucian, pour la première fois, tira avec le pistolet relique de son père, et le chagrin ardent dans son cœur se manifesta par un éclair de lumière. Senna lui révéla sa malédiction : la Brume noire la traquait partout où elle allait.\n\nLucian prouva son potentiel et Senna lui confia le pistolet de son père. Ils devinrent partenaires. Le charme et la chaleur de Lucian équilibraient la discipline et la résolution inébranlable de Senna. Leur dépendance mutuelle se transforma en amour. Cependant, chaque conflit durcissait Lucian, qui voyait le monde se scinder en lumière et ombre, obsédé par l'idée de guérir Senna de sa malédiction.\n\nAu cours d'une recherche désespérée d'un remède, ils furent attaqués par le spectre monstrueux, le Garde-Chaînes, Thresh. Alors que Thresh prenait l'avantage, Lucian refusa d'abandonner, se jetant aveuglément dans l'attaque. Senna se sacrifia en s'interposant, son âme étant aspirée par la lanterne mystique de Thresh.\n\nLa perte de Senna brisa Lucian. Pendant des années, il traqua Thresh, n'étant plus qu'une enveloppe vide d'homme, rempli de rage et d'amertume. Il maniait ses deux pistolets, cherchant à détruire la lanterne pour offrir l'oubli à sa bien-aimée.\n\nLe jour où il réussit à briser la lanterne, Senna réapparut.\n\nL'amour de Lucian et Senna était un lien que même la mort ne pouvait rompre. Senna était revenue, mais sous une forme altérée, portant en elle la Brume noire. Lucian est maintenant forcé de confronter une réalité déchirante : il doit revenir à son ancien moi chaleureux, tout en se débattant avec le fait que les forces obscures qu'il hait sont tout ce qui maintient Senna à ses côtés.\n\nAlors que Senna est revenue avec la connaissance d'une nouvelle mission, Lucian reste obsédé par la vengeance contre Thresh, certain que les machinations du Garde-Chaînes ne font que commencer.",
+  "version": "16.8.1",
+  "lore": "Lucian, Sentinelle de la lumière, est un funeste chasseur de spectres. Les pourchassant sans relâche, il les abat de ses pistolets jumeaux. Lorsque sa femme fut tuée par le spectre Thresh, Lucian fit tout pour se venger. Aujourd'hui, Senna est revenue à la vie, mais la rage de Lucian demeure inchangée. Sans pitié et obstiné, il ne reculera devant rien pour protéger les vivants des monstres de la Brume noire.",
   "tags": [
     "Marksman",
     "Assassin"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Lucian.png",
+    "sprite": "champion2.png",
+    "group": "champion",
     "x": 192,
     "y": 48,
-    "full": "Lucian.png",
-    "group": "champion",
-    "sprite": "champion2.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "236000",
-      "num": 0,
-      "name": "default",
-      "chromas": true
-    },
-    {
-      "id": "236001",
-      "num": 1,
-      "name": "Lucian tueur à gages",
-      "chromas": false
-    },
-    {
-      "id": "236002",
-      "num": 2,
-      "name": "Lucian buteur",
-      "chromas": false
-    },
-    {
-      "id": "236006",
-      "num": 6,
-      "name": "PROJET : Lucian",
-      "chromas": true
-    },
-    {
-      "id": "236007",
-      "num": 7,
-      "name": "Lucian cœur-de-cible",
-      "chromas": false
-    },
-    {
-      "id": "236008",
-      "num": 8,
-      "name": "Lucian de l'Ouest",
-      "chromas": true
-    },
-    {
-      "id": "236009",
-      "num": 9,
-      "name": "Lucian Demacia Vice",
-      "chromas": true
-    },
-    {
-      "id": "236018",
-      "num": 18,
-      "name": "Lucian Pulsefire",
-      "chromas": false
-    },
-    {
-      "id": "236019",
-      "num": 19,
-      "name": "Lucian Pulsefire prestige",
-      "chromas": false
-    },
-    {
-      "id": "236025",
-      "num": 25,
-      "name": "Lucian héros de guerre",
-      "chromas": true
-    },
-    {
-      "id": "236031",
-      "num": 31,
-      "name": "Lucian des arcanes",
-      "chromas": true
-    },
-    {
-      "id": "236040",
-      "num": 40,
-      "name": "Lucian paladin d'assaut",
-      "chromas": true
-    },
-    {
-      "id": "236052",
-      "num": 52,
-      "name": "Lucian élu de l'hiver",
-      "chromas": true
-    },
-    {
-      "id": "236062",
-      "num": 62,
-      "name": "Lucian justice masquée",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "LucianQ",
       "name": "Lumière perforante",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "LucianQ.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 192,
         "y": 144,
-        "full": "LucianQ.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -127,9 +41,13 @@
       "leveltip": {
         "label": [
           "Dégâts",
-          "Dégâts d'attaque",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -143,13 +61,13 @@
       "name": "Flamboiement",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "LucianW.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 240,
         "y": 144,
-        "full": "LucianW.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -161,6 +79,11 @@
           "Dégâts",
           "Vitesse de déplacement",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ e2 }} -> {{ e2NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -174,43 +97,47 @@
       "name": "Poursuite inlassable",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "LucianE.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 288,
         "y": 144,
-        "full": "LucianE.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
       "tooltip": "Lucian se rue dans une direction.<br /><br />Le délai de récupération est réduit de {{ e1 }} sec chaque fois que Lucian touche un ennemi avec <spellName>Pistolero</spellName> ({{ e2 }} sec pour les champions). {{ spellmodifierdescriptionappend }}",
-      "costBurn": "40/30/20/10/0",
+      "costBurn": "32/24/16/8/0",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
       "rangeBurn": "445",
       "datavalues": {},
       "description": "Lucian fonce sur une courte distance. Pistolero réduit le délai de récupération de Poursuite inlassable.",
-      "cooldownBurn": "18/17/16/15/14"
+      "cooldownBurn": "16/15.5/15/14.5/14"
     },
     {
       "id": "LucianR",
       "name": "Déluge de balles",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "LucianR.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 336,
         "y": 144,
-        "full": "LucianR.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -221,6 +148,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -233,39 +164,38 @@
   "passive": {
     "name": "Pistolero",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Lucian_Passive.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 192,
       "y": 48,
-      "full": "Lucian_Passive.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Quand Lucian utilise une compétence, sa prochaine attaque devient un double-tir. Quand Lucian est soigné par un allié, quand il reçoit un bouclier de la part d'un allié ou quand un champion ennemi proche est immobilisé, ses 2 prochaines attaques de base infligeront des dégâts magiques supplémentaires."
   },
   "created_at": "2025-11-26T15:13:33.959475+00:00",
   "factions": [
-    "demacia",
-    "shadow-isles"
+    "demacia"
   ],
   "custom_tags": null,
   "gender": "Male",
   "species": "Human",
   "title_en": "the Purifier",
-  "lore_en": "Lucian grew up in Demacia, yearning to join the ancient order of the Sentinels of Light, of which his father, Urias, was a member. Lucian found fulfillment in protecting banished mages (whom his countrymen saw as outlaws), seeing people in need of help, which increasingly put him at odds with Demacia’s culture.\n\nHis destiny changed when Senna, a Sentinel and Urias's apprentice, announced his father’s death in battle against the wraiths of the Black Mist.\n\nLucian insisted on accompanying Senna for the vigil. During their journey, they grieved together. At the vigil, they were attacked by wraiths. Lucian fired his father’s relic pistol for the first time, his blazing sorrow manifesting in a bolt of light. Senna revealed her curse: the Black Mist stalked her wherever she went.\n\nLucian proved his potential, and Senna entrusted him with his father’s pistol. They became partners. Lucian’s warmth and charm balanced Senna’s discipline and unbreakable resolve, and their reliance blossomed into love. However, Lucian became hardened, obsessed with healing Senna of her curse.\n\nDuring a desperate search for a cure, the two were attacked by the monstrous wraith, Thresh. Lucian refused to withdraw, throwing himself blindly into the attack. Senna sacrificed herself, stepping into Thresh's path, and her soul was claimed by his eldritch lantern.\n\nSenna's loss nearly broke Lucian. For years, he stalked Thresh, a bitter shell of a man, wielding both his and Senna's pistols, hoping to destroy the lantern and grant his captive love oblivion.\n\nOn the day he finally shattered the lantern, Senna reemerged.\n\nLucian and Senna’s love was a bond even death could not sever. Senna had returned, but in an altered form, carrying the Black Mist within her. Lucian is now forced to confront a heartbreaking reality: he must return to his former self, while grappling with the fact that the dark forces he hates are all that keep Senna with him.\n\nWhile Senna has returned with knowledge of a new mission, Lucian remains obsessed with exacting vengeance from Thresh, certain that the Chain Warden's machinations have only begun.",
+  "lore_en": "Lucian, a Sentinel of Light, is a grim hunter of wraiths and specters, pursuing them relentlessly and annihilating them with his twin relic pistols. After the specter Thresh slew his wife, Lucian embarked on the path of vengeance—but even with her return to life, his rage is undiminished. Merciless and single-minded, Lucian will stop at nothing to protect the living from the long-dead horrors of the Black Mist.",
   "spells_en": [
     {
       "id": "LucianQ",
       "name": "Piercing Light",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "LucianQ.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 192,
         "y": 144,
-        "full": "LucianQ.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -275,9 +205,13 @@
       "leveltip": {
         "label": [
           "Damage",
-          "Attack Damage",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -291,13 +225,13 @@
       "name": "Ardent Blaze",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "LucianW.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 240,
         "y": 144,
-        "full": "LucianW.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -309,6 +243,11 @@
           "Damage",
           "Move Speed",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ e2 }} -> {{ e2NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -322,43 +261,47 @@
       "name": "Relentless Pursuit",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "LucianE.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 288,
         "y": 144,
-        "full": "LucianE.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
       "tooltip": "Lucian dashes.<br /><br />Cooldown is reduced by {{ e1 }} second whenever Lucian hits an enemy with <spellName>Lightslinger</spellName> ({{ e2 }} seconds for champions). {{ spellmodifierdescriptionappend }}",
-      "costBurn": "40/30/20/10/0",
+      "costBurn": "32/24/16/8/0",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
       "rangeBurn": "445",
       "datavalues": {},
       "description": "Lucian quickly dashes a short distance. Lightslinger attacks reduce Relentless Pursuit's cooldown.",
-      "cooldownBurn": "18/17/16/15/14"
+      "cooldownBurn": "16/15.5/15/14.5/14"
     },
     {
       "id": "LucianR",
       "name": "The Culling",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "LucianR.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 336,
         "y": 144,
-        "full": "LucianR.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -369,6 +312,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -381,13 +328,13 @@
   "passive_en": {
     "name": "Lightslinger",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Lucian_Passive.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 192,
       "y": 48,
-      "full": "Lucian_Passive.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Whenever Lucian uses an ability, his next attack becomes a double-shot. When Lucian is healed or shielded by an ally, or when a nearby enemy Champion is immobilized, his next 2 basic attacks will deal bonus magic damage."
   },
@@ -479,6 +426,118 @@
       "num": 62,
       "name": "Masked Justice Lucian",
       "chromas": true
+    },
+    {
+      "id": "236072",
+      "num": 72,
+      "name": "Sunken Shadows Lucian",
+      "chromas": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "236000",
+      "num": 0,
+      "name": "default",
+      "chromas": true
+    },
+    {
+      "id": "236001",
+      "num": 1,
+      "name": "Lucian tueur à gages",
+      "chromas": false
+    },
+    {
+      "id": "236002",
+      "num": 2,
+      "name": "Lucian buteur",
+      "chromas": false
+    },
+    {
+      "id": "236006",
+      "num": 6,
+      "name": "PROJET : Lucian",
+      "chromas": true
+    },
+    {
+      "id": "236007",
+      "num": 7,
+      "name": "Lucian cœur-de-cible",
+      "chromas": false
+    },
+    {
+      "id": "236008",
+      "num": 8,
+      "name": "Lucian de l'Ouest",
+      "chromas": true
+    },
+    {
+      "id": "236009",
+      "num": 9,
+      "name": "Lucian Demacia Vice",
+      "chromas": true
+    },
+    {
+      "id": "236018",
+      "num": 18,
+      "name": "Lucian Pulsefire",
+      "chromas": false
+    },
+    {
+      "id": "236019",
+      "num": 19,
+      "name": "Lucian Pulsefire prestige",
+      "chromas": false
+    },
+    {
+      "id": "236025",
+      "num": 25,
+      "name": "Lucian héros de guerre",
+      "chromas": true
+    },
+    {
+      "id": "236031",
+      "num": 31,
+      "name": "Lucian des arcanes",
+      "chromas": true
+    },
+    {
+      "id": "236040",
+      "num": 40,
+      "name": "Lucian paladin d'assaut",
+      "chromas": true
+    },
+    {
+      "id": "236052",
+      "num": 52,
+      "name": "Lucian élu de l'hiver",
+      "chromas": true
+    },
+    {
+      "id": "236062",
+      "num": 62,
+      "name": "Lucian justice masquée",
+      "chromas": true
+    },
+    {
+      "id": "236072",
+      "num": 72,
+      "name": "Lucian des ombres englouties",
+      "chromas": false
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Thresh",
+      "type": "champion",
+      "relation": "nemesis"
+    },
+    {
+      "id": "Senna",
+      "type": "champion",
+      "relation": "lover",
+      "note_fr": "Mari",
+      "note_en": "Husband"
     }
   ]
 }

@@ -2,151 +2,35 @@
   "id": "Sivir",
   "key": "15",
   "name": "Sivir",
-  "title": "Vierge martiale",
-  "version": "15.23.1",
-  "lore": "Sivir a grandi dans la dureté du désert de Shurima, apprenant très tôt que la survie est un combat de chaque instant. Orpheline après le massacre de sa famille, elle survécut en pillant des ruines antiques, développant un instinct de traqueuse hors pair et une méfiance absolue envers autrui après avoir été trahie par ses proches.\n\n L'Éveil du Chalicar : Devenue une mercenaire respectée, Sivir fut engagée pour retrouver une relique perdue : le Chalicar, une lame cruciforme légendaire. Dès qu'elle s'en saisit, elle sentit une connexion inexplicable avec l'arme. Elle massacra ceux qui voulaient lui reprendre, faisant du Chalicar son outil de prédilection.\n\n La Trahison de Cassiopeia : Sa réputation attira Cassiopeia Du Couteau, une noble de Noxus. Ensemble, elles s'enfoncèrent dans les catacombes de la capitale perdue de Shurima. Devant la porte de la tombe des empereurs, Cassiopeia poignarda Sivir dans le dos. Le sang de Sivir, coulant sur le sable, déclencha sans le savoir le retour de forces millénaires.\n\n Le Sang des Rois : À l'article de la mort, Sivir fut sauvée par Azir, l'Empereur ressuscité. Son sang était la clé : elle portait en elle la lignée royale d'Azir. En la soignant dans l'Oasis de l'Aube, Azir acheva sa propre Ascension et fit s'élever la cité de Shurima de ses cendres.\n\n Une Destinée Subie : Bien qu'elle rejette l'idée de servir un empire mort, Sivir est désormais la cible de Xerath, le mage traître qui veut éteindre sa lignée. Avec l'aide de Nasus et de Taliyah, elle tente de naviguer dans ce nouveau monde où les dieux marchent à nouveau sur terre.\n\n Le Choix : Sivir se trouve à la croisée des chemins. Elle possède le pouvoir de restaurer la gloire de Shurima ou de continuer à tracer sa propre route en tant que mercenaire libre. Mais dans un désert qui change, le passé finit toujours par vous rattraper.",
+  "title": "Mercenaire du désert",
+  "version": "16.8.1",
+  "lore": "Sivir est une célèbre chasseuse de trésors et capitaine de mercenaires œuvrant dans le désert de Shurima. Armée de sa légendaire lame en croix, elle a triomphé d'innombrables batailles pour les clients prêts à honorer ses tarifs exorbitants. Connue pour sa détermination et son ambition démesurée, elle tire sa fierté des nombreux trésors qu'elle a déterrés dans les tombes les plus périlleuses de Shurima… et revendus au prix fort. Mais le jour où des forces ancestrales se sont éveillées au plus profond de Shurima, Sivir s'est retrouvée tiraillée entre deux destins conflictuels.",
   "tags": [
     "Marksman"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Sivir.png",
+    "sprite": "champion4.png",
+    "group": "champion",
     "x": 192,
     "y": 0,
-    "full": "Sivir.png",
-    "group": "champion",
-    "sprite": "champion4.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "15000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "15001",
-      "num": 1,
-      "name": "Sivir princesse guerrière",
-      "chromas": false
-    },
-    {
-      "id": "15002",
-      "num": 2,
-      "name": "Sivir spectaculaire",
-      "chromas": false
-    },
-    {
-      "id": "15003",
-      "num": 3,
-      "name": "Sivir chasseresse",
-      "chromas": false
-    },
-    {
-      "id": "15004",
-      "num": 4,
-      "name": "Sivir bandit",
-      "chromas": false
-    },
-    {
-      "id": "15005",
-      "num": 5,
-      "name": "Sivir PAX",
-      "chromas": false
-    },
-    {
-      "id": "15006",
-      "num": 6,
-      "name": "Sivir du blizzard",
-      "chromas": true
-    },
-    {
-      "id": "15007",
-      "num": 7,
-      "name": "Sivir purificatrice",
-      "chromas": false
-    },
-    {
-      "id": "15008",
-      "num": 8,
-      "name": "Sivir héroïne de guerre",
-      "chromas": false
-    },
-    {
-      "id": "15009",
-      "num": 9,
-      "name": "Néo Sivir PAX",
-      "chromas": false
-    },
-    {
-      "id": "15010",
-      "num": 10,
-      "name": "Sivir livreuse de pizza",
-      "chromas": true
-    },
-    {
-      "id": "15016",
-      "num": 16,
-      "name": "Sivir lune de sang",
-      "chromas": true
-    },
-    {
-      "id": "15025",
-      "num": 25,
-      "name": "Sivir de l'Odyssée",
-      "chromas": true
-    },
-    {
-      "id": "15034",
-      "num": 34,
-      "name": "Sivir Café Chouchous",
-      "chromas": true
-    },
-    {
-      "id": "15043",
-      "num": 43,
-      "name": "Sivir de l'éclipse solaire",
-      "chromas": true
-    },
-    {
-      "id": "15050",
-      "num": 50,
-      "name": "Sivir mythificatrice",
-      "chromas": true
-    },
-    {
-      "id": "15051",
-      "num": 51,
-      "name": "Sivir mythificatrice prestige",
-      "chromas": false
-    },
-    {
-      "id": "15061",
-      "num": 61,
-      "name": "Sivir embuscade férale",
-      "chromas": true
-    },
-    {
-      "id": "15070",
-      "num": 70,
-      "name": "Anni-Sivir-saire",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "SivirQ",
       "name": "Lame boomerang",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SivirQ.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 192,
         "y": 144,
-        "full": "SivirQ.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -158,6 +42,11 @@
           "Dégâts",
           "Délai de récupération",
           "Coût en mana"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -171,13 +60,13 @@
       "name": "Ricochet",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SivirW.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 240,
         "y": 144,
-        "full": "SivirW.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -188,6 +77,10 @@
         "label": [
           "Vitesse d'attaque",
           "Ratio de dégâts d'attaque totaux"
+        ],
+        "effect": [
+          "{{ ricochetattackspeed*100.000000 }}% -> {{ ricochetattackspeednl*100.000000 }}%",
+          "{{ bounceadratio*100.000000 }}% -> {{ bounceadrationl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -201,23 +94,27 @@
       "name": "Bouclier magique",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SivirE.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 288,
         "y": 144,
-        "full": "SivirE.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Sivir crée pendant {{ e1 }} sec une barrière magique capable de bloquer la prochaine compétence ennemie qui la cible. Si une compétence est bloquée, Sivir récupère <healing>{{ totalheal }} PV</healing> et déclenche Mille-pattes.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Sivir crée pendant {{ spellshieldduration }} sec une barrière magique capable de bloquer la prochaine compétence ennemie qui la cible. Si une compétence est bloquée, Sivir récupère <healing>{{ totalheal }} PV</healing> et déclenche Mille-pattes.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Ratio de dégâts d'attaque totaux",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ healratio*100.000000 }}% -> {{ healrationl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -231,17 +128,17 @@
       "name": "En chasse",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SivirR.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 336,
         "y": 144,
-        "full": "SivirR.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "Sivir mobilise ses alliés proches, leur octroyant <speed>+{{ maxms*100 }}% de vitesse de déplacement</speed> pendant {{ ultduration }} sec.<br /><br />Pendant En chasse, les attaques de Sivir contre des champions réduisent de 0.5 sec le délai de récupération de ses compétences de base.<br /><br />La mort d'ennemis récemment blessés actualise la durée de la chasse.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Sivir mobilise ses alliés à proximité, leur octroyant <speed>{{ maxms*100 }}% de vitesse de déplacement</speed> pendant {{ ultduration }} sec.<br /><br />Pendant En chasse, les attaques de Sivir contre des champions réduisent de {{ attackcooldownrefund }} sec le délai de récupération de ses compétences de base.<br /><br />L'élimination d'ennemis récemment blessés réinitialise la durée de la chasse.{{ spellmodifierdescriptionappend }}",
       "costBurn": "100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -249,6 +146,11 @@
           "Délai de récupération",
           "Vitesse de déplacement maximum",
           "Durée"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ maxms*100.000000 }}% -> {{ maxmsnl*100.000000 }}%",
+          "{{ ultduration }} -> {{ ultdurationNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -261,13 +163,13 @@
   "passive": {
     "name": "Mille-pattes",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Sivir_Passive.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 192,
       "y": 0,
-      "full": "Sivir_Passive.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Sivir gagne un bref bonus en vitesse de déplacement quand elle attaque un champion ennemi."
   },
@@ -282,20 +184,20 @@
   "gender": "Female",
   "species": "Human",
   "title_en": "the Battle Mistress",
-  "lore_en": "Sivir learned the harsh lessons of the Shuriman desert early. Orphaned by raiders, she survived by scavenging ancient ruins and thieving. Her life of hardship taught her that betrayal is common and survival is the only law, leading her to become one of the most feared mercenary leaders in the sands.\n\n The Chalicar: During a commission, Sivir unearthed a cross-shaped blade called the Chalicar. The weapon felt unnaturally perfect in her hand. Realizing its value, she killed her employers and kept the blade, which became her signature weapon and a symbol of her growing renown.\n\n Betrayal at the Tomb: Sivir was hired by Cassiopeia, a Noxian noble, to find Shurima's lost capital. At the entrance to the Tomb of the Emperors, Cassiopeia stabbed Sivir in the back. As Sivir lay dying, her blood soaked the sands—an accidental sacrifice that would change the world.\n\n The Royal Legacy: Unknown to Sivir, she carried the last trace of the ancient imperial bloodline. Her blood reawakened the spirit of Azir, who used the healing waters of the Oasis of the Dawn to save her life. This act completed Azir's Ascension, causing the ancient city of Shurima to rise from its grave.\n\n Hunted by Gods: Sivir, who values freedom above all, was thrust into a conflict between god-like beings. She is now pursued by Xerath, who seeks to end Azir's lineage forever. Alongside allies like Nasus and Taliyah, she must survive the wrath of Ascended beings.\n\n Fate or Freedom: Sivir remains a pragmatist. While she dreams of returning to her life as a sellsword, she holds the key to Shurima's future. She must now decide whether to embrace her destiny as the heir to an empire or fight to remain a master of her own fate.",
+  "lore_en": "Sivir is a renowned fortune hunter and mercenary captain who plies her trade in the deserts of Shurima. Armed with her legendary jeweled crossblade, she has fought and won countless battles for those who can afford her exorbitant price. Known for her fearless resolve and endless ambition, she prides herself on recovering buried treasures from the perilous tombs of Shurima—for a generous bounty. With ancient forces stirring the very bones of Shurima, Sivir finds herself torn between conflicting destinies.",
   "spells_en": [
     {
       "id": "SivirQ",
       "name": "Boomerang Blade",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SivirQ.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 192,
         "y": 144,
-        "full": "SivirQ.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -307,6 +209,11 @@
           "Damage",
           "Cooldown",
           "Mana Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -320,13 +227,13 @@
       "name": "Ricochet",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SivirW.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 240,
         "y": 144,
-        "full": "SivirW.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -337,6 +244,10 @@
         "label": [
           "Attack Speed",
           "Total AD Ratio"
+        ],
+        "effect": [
+          "{{ ricochetattackspeed*100.000000 }}% -> {{ ricochetattackspeednl*100.000000 }}%",
+          "{{ bounceadratio*100.000000 }}% -> {{ bounceadrationl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -350,23 +261,27 @@
       "name": "Spell Shield",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SivirE.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 288,
         "y": 144,
-        "full": "SivirE.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Sivir creates a magical barrier for {{ e1 }} seconds that blocks the next incoming enemy Ability. If an ability is blocked, Sivir restores <healing>{{ totalheal }} health</healing> and triggers Fleet of Foot.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Sivir creates a magical barrier for {{ spellshieldduration }} seconds that blocks the next incoming enemy Ability. If an ability is blocked, Sivir restores <healing>{{ totalheal }} health</healing> and triggers Fleet of Foot.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Total AD Ratio",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ healratio*100.000000 }}% -> {{ healrationl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -380,17 +295,17 @@
       "name": "On The Hunt",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SivirR.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 336,
         "y": 144,
-        "full": "SivirR.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "Sivir rallies her nearby allies, granting them <speed>{{ maxms*100 }}% Move Speed</speed> for {{ ultduration }} seconds.<br /><br />Sivir's attacks against champions while On The Hunt reduce the cooldown of her basic abilities by 0.5 seconds.<br /><br />Takedowns on recently damaged enemies refreshes the duration of the hunt.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Sivir rallies her nearby allies, granting them <speed>{{ maxms*100 }}% Move Speed</speed> for {{ ultduration }} seconds.<br /><br />Sivir's attacks against champions while On The Hunt reduce the cooldown of her basic abilities by {{ attackcooldownrefund }} seconds.<br /><br />Takedowns on recently damaged enemies refreshes the duration of the hunt.{{ spellmodifierdescriptionappend }}",
       "costBurn": "100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -398,6 +313,11 @@
           "Cooldown",
           "Max Move Speed",
           "Duration"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ maxms*100.000000 }}% -> {{ maxmsnl*100.000000 }}%",
+          "{{ ultduration }} -> {{ ultdurationNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -410,13 +330,13 @@
   "passive_en": {
     "name": "Fleet of Foot",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Sivir_Passive.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 192,
       "y": 0,
-      "full": "Sivir_Passive.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Sivir gains a short burst of Move Speed when she attacks an enemy champion."
   },
@@ -538,6 +458,143 @@
       "num": 70,
       "name": "Ann-Sivir-sary",
       "chromas": false
+    },
+    {
+      "id": "15072",
+      "num": 72,
+      "name": "PROJECT: Sivir",
+      "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "15000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "15001",
+      "num": 1,
+      "name": "Sivir princesse guerrière",
+      "chromas": false
+    },
+    {
+      "id": "15002",
+      "num": 2,
+      "name": "Sivir spectaculaire",
+      "chromas": false
+    },
+    {
+      "id": "15003",
+      "num": 3,
+      "name": "Sivir chasseresse",
+      "chromas": false
+    },
+    {
+      "id": "15004",
+      "num": 4,
+      "name": "Sivir bandit",
+      "chromas": false
+    },
+    {
+      "id": "15005",
+      "num": 5,
+      "name": "Sivir PAX",
+      "chromas": false
+    },
+    {
+      "id": "15006",
+      "num": 6,
+      "name": "Sivir du blizzard",
+      "chromas": true
+    },
+    {
+      "id": "15007",
+      "num": 7,
+      "name": "Sivir purificatrice",
+      "chromas": false
+    },
+    {
+      "id": "15008",
+      "num": 8,
+      "name": "Sivir héroïne de guerre",
+      "chromas": false
+    },
+    {
+      "id": "15009",
+      "num": 9,
+      "name": "Néo Sivir PAX",
+      "chromas": false
+    },
+    {
+      "id": "15010",
+      "num": 10,
+      "name": "Sivir livreuse de pizza",
+      "chromas": true
+    },
+    {
+      "id": "15016",
+      "num": 16,
+      "name": "Sivir lune de sang",
+      "chromas": true
+    },
+    {
+      "id": "15025",
+      "num": 25,
+      "name": "Sivir de l'Odyssée",
+      "chromas": true
+    },
+    {
+      "id": "15034",
+      "num": 34,
+      "name": "Sivir Café Chouchous",
+      "chromas": true
+    },
+    {
+      "id": "15043",
+      "num": 43,
+      "name": "Sivir de l'éclipse solaire",
+      "chromas": true
+    },
+    {
+      "id": "15050",
+      "num": 50,
+      "name": "Sivir mythificatrice",
+      "chromas": true
+    },
+    {
+      "id": "15051",
+      "num": 51,
+      "name": "Sivir mythificatrice prestige",
+      "chromas": false
+    },
+    {
+      "id": "15061",
+      "num": 61,
+      "name": "Sivir embuscade férale",
+      "chromas": true
+    },
+    {
+      "id": "15070",
+      "num": 70,
+      "name": "Anni-Sivir-saire",
+      "chromas": false
+    },
+    {
+      "id": "15072",
+      "num": 72,
+      "name": "PROJET : Sivir",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Azir",
+      "type": "champion",
+      "relation": "family",
+      "note_fr": "Ancêtre",
+      "note_en": "Ancestor"
     }
   ]
 }

@@ -41,7 +41,7 @@ export default async function QuizHubPage({ params }: QuizPageProps) {
     ];
 
     return (
-        <main className="min-h-screen bg-gray-900 text-white relative flex flex-col items-center justify-center p-4">
+        <main className="min-h-screen bg-transparent text-white relative flex flex-col items-center justify-center p-4">
             <div className="max-w-5xl w-full">
                 <div className="text-center mb-12">
                     <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-600 mb-4">

@@ -3,109 +3,35 @@
   "key": "126",
   "name": "Jayce",
   "title": "Protecteur du futur",
-  "version": "15.23.1",
-  "lore": "Jayce Talis, natif de Piltover, fut élevé selon les principes de l'Invention et de la Découverte. Prodige de la mécanique, il devint le plus jeune apprenti à recevoir le patronage du Clan Giopara. Jayce inventa d'ingénieux outils transformables pour les ouvriers (comme une clé qui se transformait en pied-de-biche), mais son talent exceptionnel le rendait arrogant, hautain et impatient envers ses contemporains.\n\nSeul l'inventeur zaunien Viktor parvint à égaler l'intelligence de Jayce sans se soucier de son attitude supérieure. Ils devinrent amis et collègues, se complétant : Jayce cherchait à améliorer l'humanité par la technologie polyvalente ; Viktor cherchait à résoudre les problèmes inhérents à l'humanité (décadence physique, préjugés).\n\nLeur partenariat prit fin lors de la conception d'une combinaison de construction : la version de Viktor incluait un implant chemtech qui, en plus d'augmenter la force de dix fois, empêcherait le porteur de se fatiguer, de paniquer ou de désobéir aux ordres. Jayce trouva cette indifférence au libre arbitre immorale. Leur dispute devint publique, et après l'alerte de Jayce, Viktor fut ostracisé par la communauté scientifique de Piltover.\n\nJayce travailla en solitaire, son arrogance le rendant encore plus insulaire. Pour le punir de son manque de tact, le Clan Giopara lui donna un fragment de cristal bleu shurimien découvert dans le désert, que tous les autres érudits avaient jugé sans valeur.\n\nCe cristal résista au génie de Jayce. Ce fut la première fois qu'il butait contre ses propres limites. Il réalisa à quel point il avait été injuste et méprisant envers ses pairs, ce qui lui inspira une nouvelle détermination et l'envie... d'essayer d'être plus gentil.\n\nJayce tailla un éclat du cristal et le soumit à une expérience invasive. L'éclat émit une note puissante et se mit à luire, confirmant son potentiel.\n\nLe lendemain, Viktor se présenta à sa porte, attiré par le pic d'énergie. Il proposa à Jayce de le rejoindre pour son Évolution Glorieuse secrète à Zaun, affirmant qu'elle pouvait éradiquer la maladie et la haine. Il ne lui manquait qu'une source d'énergie comme le cristal. Jayce refusa, accusant Viktor d'avoir perdu sa boussole morale. Viktor l'agressa, s'empara du cristal principal et assomma Jayce.\n\nÀ son réveil, Jayce comprit que Viktor était sur le point de terminer son projet. Il récupéra l'éclat de cristal (que Viktor n'avait pas jugé utile de prendre) et l'installa dans un énorme marteau transformable qu'il avait abandonné faute de batterie assez puissante. L'éclat le tira vers les profondeurs de Zaun, cherchant à se réunir au cristal d'origine.\n\nJayce arriva à un entrepôt et découvrit l'horreur : des dizaines de cadavres au crâne scié, leurs cerveaux transplantés dans une armée de soldats métalliques alimentée par le cristal principal. C'était la première étape de l'Évolution Glorieuse.\n\nAprès une tentative d'apologie inattendue de Jayce (pour s'être comporté comme un crétin), Viktor ordonna à ses automates de le tuer. Dépassé par la vague mécanique, Jayce prit une décision : arrêter de penser et commencer à détruire.\n\nUtilisant toute la force Hextech de son marteau, Jayce sprinta vers le cristal principal et le fracassa. Viktor hurla d'horreur. L'onde de choc les projeta tous deux en arrière, et les automates s'écrasèrent, inanimés.\n\nJayce s'échappa de justesse avant que le bâtiment ne s'effondre. Le corps de Viktor ne fut jamais retrouvé.\n\nDe retour à Piltover, Jayce révéla les plans de Viktor. Il fut salué comme le Défenseur de Demain. Il prit ce surnom à cœur, sachant que Viktor était toujours là, et que beaucoup de problèmes se dirigeaient vers Piltover. Jayce, ayant appris l'humilité et le sens du sacrifice, sera désormais en attente.",
+  "version": "16.8.1",
+  "lore": "Jayce Talis est un inventeur de génie qui, aux côtés de son ami Viktor, a fait les premières grandes découvertes dans le domaine de l'Hextech. Reconnu dans tout Piltover, il s'efforce d'être à la hauteur de sa réputation d'« Homme du progrès », mais les attentes qui lui sont imposées pèsent lourd sur ses épaules. Ce sont elles qui ont permis à Jayce de voir la façon dont son invention a contribué à accentuer la division entre Piltover et Zaun. Armé de son marteau Hextech, il est désormais prêt à défendre le futur.",
   "tags": [
     "Fighter",
     "Marksman"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Jayce.png",
+    "sprite": "champion1.png",
+    "group": "champion",
     "x": 96,
     "y": 96,
-    "full": "Jayce.png",
-    "group": "champion",
-    "sprite": "champion1.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "126000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "126001",
-      "num": 1,
-      "name": "Full Metal Jayce",
-      "chromas": false
-    },
-    {
-      "id": "126002",
-      "num": 2,
-      "name": "Jayce séducteur",
-      "chromas": false
-    },
-    {
-      "id": "126003",
-      "num": 3,
-      "name": "Jayce déchu",
-      "chromas": false
-    },
-    {
-      "id": "126004",
-      "num": 4,
-      "name": "Jayce marteau radieux",
-      "chromas": false
-    },
-    {
-      "id": "126005",
-      "num": 5,
-      "name": "Jayce de l'Académie du combat",
-      "chromas": true
-    },
-    {
-      "id": "126015",
-      "num": 15,
-      "name": "Jayce résistant",
-      "chromas": true
-    },
-    {
-      "id": "126024",
-      "num": 24,
-      "name": "Jayce inventeur d'Arcane",
-      "chromas": false
-    },
-    {
-      "id": "126025",
-      "num": 25,
-      "name": "Jayce des Jeux du zénith",
-      "chromas": true
-    },
-    {
-      "id": "126034",
-      "num": 34,
-      "name": "T1 Jayce",
-      "chromas": true
-    },
-    {
-      "id": "126035",
-      "num": 35,
-      "name": "Jayce survivant d'Arcane",
-      "chromas": false
-    },
-    {
-      "id": "126036",
-      "num": 36,
-      "name": "T1 Jayce prestige",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "JayceToTheSkies",
       "name": "Direction le ciel ! / Orbe électrique",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "JayceToTheSkies.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 288,
         "y": 96,
-        "full": "JayceToTheSkies.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 6,
@@ -117,6 +43,11 @@
           "Dégâts",
           "Délai de récupération",
           "Ralentissement"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ slow*-100.000000 }}% -> {{ slownl*-100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -130,13 +61,13 @@
       "name": "Champ électrique / Hypercharge",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "JayceStaticField.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 336,
         "y": 96,
-        "full": "JayceStaticField.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 6,
@@ -147,6 +78,10 @@
         "label": [
           "Dégâts",
           "Restauration du mana"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ managain }} -> {{ managainNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -160,13 +95,13 @@
       "name": "Coup foudroyant / Portail d'accélération",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "JayceThunderingBlow.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 384,
         "y": 96,
-        "full": "JayceThunderingBlow.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 6,
@@ -178,6 +113,11 @@
           "% des PV max",
           "Délai de récupération",
           "Dégâts max aux monstres"
+        ],
+        "effect": [
+          "{{ perchpdamage*100.000000 }}% -> {{ perchpdamagenl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ monstercap }} -> {{ monstercapNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -191,13 +131,13 @@
       "name": "Canon Mercury / Marteau Mercury",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "JayceStanceHtG.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 432,
         "y": 96,
-        "full": "JayceStanceHtG.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 1,
@@ -214,13 +154,13 @@
   "passive": {
     "name": "Capaciteur Hextech",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Jayce_Passive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 96,
       "y": 96,
-      "full": "Jayce_Passive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Quand Jayce change d'arme, il gagne un bonus en vitesse de déplacement pendant un court instant."
   },
@@ -235,20 +175,20 @@
   "gender": "Male",
   "species": "Human",
   "title_en": "the Defender of Tomorrow",
-  "lore_en": "Jayce Talis, a native of Piltover, was raised to believe in Invention and Discovery. A mechanical prodigy, he earned the honor of being the youngest apprentice to receive patronage from Clan Giopara. Jayce invented ingenious transformable multi-tools for the working class (like a wrench that turned into a prybar), but his exceptional talent made him arrogant, dismissive, and unwilling to slow down for his peers.\n\nOnly the Zaunite inventor Viktor managed to match Jayce's intelligence while maintaining an indifference to his superior attitude. They became friends and colleagues: Jayce sought to improve humanity via versatile technology; Viktor sought to solve inherent human problems (physical decay, prejudice).\n\nTheir partnership ended during the design of a construction suit: Viktor's version included a chemtech implant that would not only enhance strength tenfold but also prevent the wearer from getting tired, panicking, or disobeying instructions. Jayce found this indifference toward free will immoral. The argument became public, and after Jayce warned the academy, Viktor was stripped of his honors and ostracized from Piltover's scientific community.\n\nJayce worked in solitude, his arrogance making him more insular. As a punishment for his lack of tact, Clan Giopara gave him a fragment of a Shuriman blue crystal discovered in the desert, which all other scholars had unanimously deemed worthless.\n\nThis crystal resisted Jayce's genius. For the first time, he bumped against his own limitations. He realized how unfair and dismissive he had been toward his peers, inspiring him with new determination and the thought to try to be nicer.\n\nJayce chiseled off a shard of the crystal and conducted an invasive experiment. The shard emitted a powerful note and glowed brightly, confirming its potential.\n\nThe next day, Viktor appeared on his doorstep, alerted by the power spike. He proposed Jayce join him for his secret Glorious Evolution in Zaun, claiming it could eradicate disease and hatred. He only needed a power source like the crystal. Jayce refused, accusing Viktor of lacking a moral compass. Viktor assaulted him, grabbed the main crystal, and knocked Jayce unconscious.\n\nWhen Jayce awoke hours later, he realized Viktor was close to completion. He retrieved the smaller crystal shard (which Viktor had neglected) and installed it into a massive, transforming hammer he had abandoned years ago for lack of a powerful enough battery. The shard pulled him toward the depths of Zaun.\n\nJayce arrived at a warehouse and found the horror: dozens of corpses with hollowed-out skulls, their brains transplanted into an army of immobile metal soldiers powered by the main crystal. This was the first step of the Glorious Evolution.\n\nAfter an unexpected apology from Jayce (for acting like a jerk), Viktor sighed and gave a two-word response: \"Kill him.\"\n\nThe automatons rushed Jayce. Overwhelmed, Jayce made a decision: to stop thinking and just break stuff. Using all the Hextech-enhanced force his hammer could muster, Jayce sprinted toward the main crystal and crushed it. Viktor cried out in horror. The shockwave blasted them both back, and the automatons collapsed lifelessly.\n\nJayce barely managed to escape before the building toppled. Viktor's body was never found.\n\nUpon his return to Piltover, Jayce revealed Viktor's plans. He was hailed as the Defender of Tomorrow. Jayce took the nickname to heart, knowing Viktor was still out there, plotting his revenge. Having learned humility and sacrifice, Jayce now waits, ready to defend the future.",
+  "lore_en": "Jayce Talis is a brilliant inventor who, along with his friend Viktor, made the first great discoveries in the field of hextech. Celebrated across Piltover, he tries to live up to his reputation as \"the Man of Progress,\" but often struggles with the expectations placed upon him. Because of this, Jayce has begun to see the ways in which his invention has furthered the division between Piltover and Zaun—and armed with his hextech hammer, he stands ready to defend tomorrow.",
   "spells_en": [
     {
       "id": "JayceToTheSkies",
       "name": "To the Skies! / Shock Blast",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "JayceToTheSkies.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 288,
         "y": 96,
-        "full": "JayceToTheSkies.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 6,
@@ -260,6 +200,11 @@
           "Damage",
           "Cooldown",
           "Slow"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ slow*-100.000000 }}% -> {{ slownl*-100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -273,13 +218,13 @@
       "name": "Lightning Field / Hyper Charge",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "JayceStaticField.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 336,
         "y": 96,
-        "full": "JayceStaticField.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 6,
@@ -290,6 +235,10 @@
         "label": [
           "Damage",
           "Mana Restore"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ managain }} -> {{ managainNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -303,13 +252,13 @@
       "name": "Thundering Blow / Acceleration Gate",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "JayceThunderingBlow.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 384,
         "y": 96,
-        "full": "JayceThunderingBlow.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 6,
@@ -321,6 +270,11 @@
           "Max Health %",
           "Cooldown",
           "Monster Damage Cap"
+        ],
+        "effect": [
+          "{{ perchpdamage*100.000000 }}% -> {{ perchpdamagenl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ monstercap }} -> {{ monstercapNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -334,13 +288,13 @@
       "name": "Mercury Cannon / Mercury Hammer",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "JayceStanceHtG.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 432,
         "y": 96,
-        "full": "JayceStanceHtG.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 1,
@@ -357,13 +311,13 @@
   "passive_en": {
     "name": "Hextech Capacitor",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Jayce_Passive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 96,
       "y": 96,
-      "full": "Jayce_Passive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "When Jayce swaps weapons he gains Move Speed for a short duration."
   },
@@ -444,6 +398,101 @@
       "num": 36,
       "name": "Prestige T1 Jayce",
       "chromas": false
+    },
+    {
+      "id": "126038",
+      "num": 38,
+      "name": "Petals of Spring Jayce",
+      "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "126000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "126001",
+      "num": 1,
+      "name": "Full Metal Jayce",
+      "chromas": false
+    },
+    {
+      "id": "126002",
+      "num": 2,
+      "name": "Jayce séducteur",
+      "chromas": false
+    },
+    {
+      "id": "126003",
+      "num": 3,
+      "name": "Jayce déchu",
+      "chromas": false
+    },
+    {
+      "id": "126004",
+      "num": 4,
+      "name": "Jayce marteau radieux",
+      "chromas": false
+    },
+    {
+      "id": "126005",
+      "num": 5,
+      "name": "Jayce de l'Académie du combat",
+      "chromas": true
+    },
+    {
+      "id": "126015",
+      "num": 15,
+      "name": "Jayce résistant",
+      "chromas": true
+    },
+    {
+      "id": "126024",
+      "num": 24,
+      "name": "Jayce inventeur d'Arcane",
+      "chromas": false
+    },
+    {
+      "id": "126025",
+      "num": 25,
+      "name": "Jayce des Jeux du zénith",
+      "chromas": true
+    },
+    {
+      "id": "126034",
+      "num": 34,
+      "name": "T1 Jayce",
+      "chromas": true
+    },
+    {
+      "id": "126035",
+      "num": 35,
+      "name": "Jayce survivant d'Arcane",
+      "chromas": false
+    },
+    {
+      "id": "126036",
+      "num": 36,
+      "name": "T1 Jayce prestige",
+      "chromas": false
+    },
+    {
+      "id": "126038",
+      "num": 38,
+      "name": "Jayce pétales de printemps",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Viktor",
+      "type": "champion",
+      "relation": "rival",
+      "note_fr": "Ancien ami / Rival idéologique",
+      "note_en": "Former friend / Ideological rival"
     }
   ]
 }

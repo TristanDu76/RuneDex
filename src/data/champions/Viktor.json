@@ -3,90 +3,34 @@
   "key": "112",
   "name": "Viktor",
   "title": "Héraut de l'arcane",
-  "version": "15.23.1",
+  "version": "16.8.1",
   "lore": "Passant d'être humain maladif à un être entièrement biomécanique, Viktor a adopté sa glorieuse évolution et est devenu une sorte de messie pour ses adeptes. Il a sacrifié sa propre humanité, convaincu qu'éliminer ses émotions éliminerait ses souffrances. Il cherche désormais à apporter la révélation du cœur Hextech au reste du monde, et ce même si ce dernier se révèle incapable d'en comprendre les bénéfices. Après tout, pour ce maître de l'arcane, la violence n'est rien d'autre qu'une variable nécessaire pour équilibrer l'équation ultime.",
   "tags": [
     "Mage"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Viktor.png",
+    "sprite": "champion5.png",
+    "group": "champion",
     "x": 96,
     "y": 0,
-    "full": "Viktor.png",
-    "group": "champion",
-    "sprite": "champion5.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "112000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "112001",
-      "num": 1,
-      "name": "Viktor ex machina",
-      "chromas": false
-    },
-    {
-      "id": "112002",
-      "num": 2,
-      "name": "Viktor prototype",
-      "chromas": false
-    },
-    {
-      "id": "112003",
-      "num": 3,
-      "name": "Viktor créateur",
-      "chromas": false
-    },
-    {
-      "id": "112004",
-      "num": 4,
-      "name": "Viktor thanatophore",
-      "chromas": false
-    },
-    {
-      "id": "112005",
-      "num": 5,
-      "name": "Viktor psychoguerrier",
-      "chromas": true
-    },
-    {
-      "id": "112014",
-      "num": 14,
-      "name": "Viktor de l'Ouest",
-      "chromas": true
-    },
-    {
-      "id": "112024",
-      "num": 24,
-      "name": "Viktor sauveur d'Arcane",
-      "chromas": false
-    },
-    {
-      "id": "112025",
-      "num": 25,
-      "name": "Viktor héraut des machines",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "ViktorQ",
       "name": "Siphonnage",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ViktorQ.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 288,
         "y": 96,
-        "full": "ViktorQ.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -99,6 +43,12 @@
           "Coût en @AbilityResourceName@",
           "Dégâts du projectile",
           "Dégâts de l'attaque"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ missiledamage }} -> {{ missiledamageNL }}",
+          "{{ aabonusdamage }} -> {{ aabonusdamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -112,13 +62,13 @@
       "name": "Champ gravitationnel",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ViktorW.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 336,
         "y": 96,
-        "full": "ViktorW.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -129,6 +79,10 @@
         "label": [
           "Délai de récupération",
           "Ralentissement"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ slowpotency*-1.000000 }}% -> {{ slowpotencynl*-1.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -142,13 +96,13 @@
       "name": "Rayon Hextech",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ViktorE.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 384,
         "y": 96,
-        "full": "ViktorE.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -161,6 +115,12 @@
           "Dégâts (explosion)",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamagelaser }} -> {{ basedamagelaserNL }}",
+          "{{ basedamageaftershock }} -> {{ basedamageaftershockNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -174,13 +134,13 @@
       "name": "Tempête arcanique",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ViktorR.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 432,
         "y": 96,
-        "full": "ViktorR.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -192,6 +152,11 @@
           "Délai de récupération",
           "Dégâts initiaux",
           "Dégâts périodiques"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ initialburstbasedamage }} -> {{ initialburstbasedamageNL }}",
+          "{{ subsequentburstbasedamage }} -> {{ subsequentburstbasedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -204,13 +169,13 @@
   "passive": {
     "name": "Glorieuse évolution",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Viktor_Passive.ViktorVGU.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 96,
       "y": 0,
-      "full": "Viktor_Passive.ViktorVGU.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Viktor gagne des fragments Hextech chaque fois qu'il tue un ennemi. Tous les 100 fragments Hextech, Viktor améliore définitivement une de ses compétences actives. Après avoir amélioré toutes ses compétences de base, il peut récupérer 100 fragments Hextech pour améliorer sa compétence ultime."
   },
@@ -232,13 +197,13 @@
       "name": "Siphon Power",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ViktorQ.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 288,
         "y": 96,
-        "full": "ViktorQ.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -251,6 +216,12 @@
           "@AbilityResourceName@ Cost",
           "Damage (Missile)",
           "Damage (Attack)"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ missiledamage }} -> {{ missiledamageNL }}",
+          "{{ aabonusdamage }} -> {{ aabonusdamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -264,13 +235,13 @@
       "name": "Gravity Field",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ViktorW.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 336,
         "y": 96,
-        "full": "ViktorW.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -281,6 +252,10 @@
         "label": [
           "Cooldown",
           "Movement Slow"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ slowpotency*-1.000000 }}% -> {{ slowpotencynl*-1.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -294,13 +269,13 @@
       "name": "Hextech Ray",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ViktorE.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 384,
         "y": 96,
-        "full": "ViktorE.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -313,6 +288,12 @@
           "Damage (Aftershock)",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamagelaser }} -> {{ basedamagelaserNL }}",
+          "{{ basedamageaftershock }} -> {{ basedamageaftershockNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -326,13 +307,13 @@
       "name": "Arcane Storm",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ViktorR.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 432,
         "y": 96,
-        "full": "ViktorR.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -344,6 +325,11 @@
           "Cooldown",
           "Damage (Initial Burst)",
           "Damage (Periodic Ticks)"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ initialburstbasedamage }} -> {{ initialburstbasedamageNL }}",
+          "{{ subsequentburstbasedamage }} -> {{ subsequentburstbasedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -356,13 +342,13 @@
   "passive_en": {
     "name": "Glorious Evolution",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Viktor_Passive.ViktorVGU.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 96,
       "y": 0,
-      "full": "Viktor_Passive.ViktorVGU.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Viktor gains Hex Fragments whenever he kills an enemy. With every 100 Hex Fragments he obtains, Viktor permanently augments an active ability. After upgrading all of his basic abilities, he can gather 100 Hex Fragments to augment his ultimate ability."
   },
@@ -424,6 +410,71 @@
       "num": 25,
       "name": "Machine Herald Viktor",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "112000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "112001",
+      "num": 1,
+      "name": "Viktor ex machina",
+      "chromas": false
+    },
+    {
+      "id": "112002",
+      "num": 2,
+      "name": "Viktor prototype",
+      "chromas": false
+    },
+    {
+      "id": "112003",
+      "num": 3,
+      "name": "Viktor créateur",
+      "chromas": false
+    },
+    {
+      "id": "112004",
+      "num": 4,
+      "name": "Viktor thanatophore",
+      "chromas": false
+    },
+    {
+      "id": "112005",
+      "num": 5,
+      "name": "Viktor psychoguerrier",
+      "chromas": true
+    },
+    {
+      "id": "112014",
+      "num": 14,
+      "name": "Viktor de l'Ouest",
+      "chromas": true
+    },
+    {
+      "id": "112024",
+      "num": 24,
+      "name": "Viktor sauveur d'Arcane",
+      "chromas": false
+    },
+    {
+      "id": "112025",
+      "num": 25,
+      "name": "Viktor héraut des machines",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Jayce",
+      "type": "champion",
+      "relation": "rival",
+      "note_fr": "Ancien ami / Rival idéologique",
+      "note_en": "Former friend / Ideological rival"
     }
   ]
 }

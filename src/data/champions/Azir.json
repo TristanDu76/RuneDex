@@ -3,96 +3,53 @@
   "key": "268",
   "name": "Azir",
   "title": "Empereur des sables",
-  "version": "15.23.1",
-  "lore": "Azir était l'héritier le moins favorisé de l'ancien Empire de Shurima, une terre régnée par des empereurs ambitieux et protégée par de puissants guerriers appelés les Transfigurés (Ascended). Azir était un jeune homme studieux, plus intéressé par les textes que par la guerre, et il ne devait jamais devenir empereur. Il se lia d'amitié avec un jeune esclave, qu'il nomma Xerath (\"celui qui partage\"), le nommant son esclave personnel pour ne pas l'exposer publiquement.\r\n\r\nLors d'une attaque d'assassins, Xerath sauva la vie d'Azir en s'interposant. Devenu l'unique héritier, Azir monta sur le trône et fit de Xerath son unique confident et bras droit, le chargeant de rassembler des connaissances. Azir régnait avec une main juste et œuvrait secrètement à un plan pour abolir l'esclavage après des millénaires de tradition. Il ne pouvait pas faire de Xerath son frère, comme promis, avant d'avoir libéré tous les esclaves.\r\n\r\nCependant, Xerath, bien qu'il ait conseillé Azir pendant des années, nourrissait une haine croissante due à son esclavage et à la lenteur d'Azir à le libérer. Xerath convainquit l'empereur de la nécessité de devenir invincible et d'entreprendre le rituel de la Transfiguration (Ascension), une cérémonie normalement réservée aux héros en fin de vie.\r\n\r\nLe jour du rituel, l'arrogance d'Azir était à son comble. Juste avant que les prêtres ne commencent, Azir libéra Xerath, ainsi que tous les esclaves de Shurima, et le nomma son frère éternel. Cependant, il était trop tard. Xerath, qui avait secrètement étudié la magie noire, trahit Azir.\r\n\r\nAu lieu de permettre à Azir d'être Transfiguré, Xerath libéra ses propres pouvoirs et prit la place d'Azir sur l'estrade. La puissance céleste du rituel, détournée, explosa, détruisant Shurima instantanément et réduisant la cité et son peuple en cendres. Azir, frappé par le feu solaire, fut consumé par la douleur et sombra dans un oubli intemporel.\r\n\r\nDes millénaires plus tard, le sang de son dernier descendant mortel se répandit sur les ruines du temple, ressuscitant Azir. Il revint comme un être incomplet, fait de poussière animée. Il trouva le cadavre de la femme, sa lointaine descendante, et dans un acte désintéressé d'amour et de deuil, la porta jusqu'à l'Oasis de l'Aube.\r\n\r\nCet acte de pure abnégation compléta sa Transfiguration. Azir ressuscita sous sa forme magnifique de guerrier-faucon, gagnant le pouvoir de commander au sable. D'un simple geste, sa cité ensevelie ressurgit des sables. En reconstituant les derniers instants de la ville avec le sable, Azir vit l'horreur de la trahison de Xerath.\r\n\r\nAujourd'hui, Azir, à la tête d'une armée de guerriers de sable, a juré de retrouver Xerath, de récupérer ce qui lui a été volé et de rendre à Shurima sa gloire et sa puissance passées.",
+  "version": "16.8.1",
+  "lore": "Azir fut l'empereur mortel de Shurima en des temps très lointains, un homme fier dressé au bord de l'immortalité. Son orgueil lui valut d'être trahi et assassiné à l'heure de son triomphe ; mais des millénaires se sont écoulés et il revient sous la forme d'un être transfiguré à l'immense puissance. Sa cité ensevelie ayant ressurgi des sables, Azir cherche à rendre sa gloire passée à Shurima.",
   "tags": [
     "Mage",
     "Marksman"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Azir.png",
+    "sprite": "champion0.png",
+    "group": "champion",
     "x": 144,
     "y": 48,
-    "full": "Azir.png",
-    "group": "champion",
-    "sprite": "champion0.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "268000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "268001",
-      "num": 1,
-      "name": "Azir galactique",
-      "chromas": false
-    },
-    {
-      "id": "268002",
-      "num": 2,
-      "name": "Azir nécromancien",
-      "chromas": false
-    },
-    {
-      "id": "268003",
-      "num": 3,
-      "name": "SKT T1 Azir",
-      "chromas": false
-    },
-    {
-      "id": "268004",
-      "num": 4,
-      "name": "Azir du royaume en guerre",
-      "chromas": false
-    },
-    {
-      "id": "268005",
-      "num": 5,
-      "name": "Azir sylvestre",
-      "chromas": true
-    },
-    {
-      "id": "268014",
-      "num": 14,
-      "name": "Azir des Worlds 2022",
-      "chromas": true
-    },
-    {
-      "id": "268019",
-      "num": 19,
-      "name": "Azir avocat",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "AzirQWrapper",
       "name": "Sables conquérants",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AzirQWrapper.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 0,
         "y": 144,
-        "full": "AzirQWrapper.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Azir envoie tous ses <keywordMajor>soldats de sable</keywordMajor> dans une zone, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> aux ennemis qu'ils traversent et les <status>ralentissant</status> de {{ e2 }}% pendant 1 sec.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Azir envoie tous ses <keywordMajor>soldats de sable</keywordMajor> dans une zone, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> aux ennemis qu'ils traversent et les <status>ralentissant</status> de {{ slowamount*-100 }}% pendant 1 sec.{{ spellmodifierdescriptionappend }}",
       "costBurn": "70/80/90/100/110",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Dégâts",
+          "Ratio de puissance total",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ apratio*100.000000 }}% -> {{ aprationl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -106,13 +63,13 @@
       "name": "Dresse-toi !",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AzirW.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 48,
         "y": 144,
-        "full": "AzirW.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "2",
       "maxrank": 5,
@@ -125,6 +82,12 @@
           "Ratio de puissance total",
           "Délai de rechargement",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ apratio }} -> {{ apratioNL }}",
+          "{{ ammorechargetime }} -> {{ ammorechargetimeNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -138,13 +101,13 @@
       "name": "Sables mouvants",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AzirEWrapper.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 96,
         "y": 144,
-        "full": "AzirEWrapper.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -156,6 +119,11 @@
           "PV du bouclier",
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ baseshield }} -> {{ baseshieldNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -169,13 +137,13 @@
       "name": "Partition impériale",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AzirR.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 144,
         "y": 144,
-        "full": "AzirR.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -187,6 +155,11 @@
           "Dégâts",
           "Nombre de soldats",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ numberofsoldiers }} -> {{ numberofsoldiersNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -199,13 +172,13 @@
   "passive": {
     "name": "Héritage de Shurima",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Azir_Passive.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 144,
       "y": 48,
-      "full": "Azir_Passive.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Azir peut invoquer le Disque solaire depuis les ruines des tourelles ennemies ou alliées."
   },
@@ -220,31 +193,38 @@
   "gender": "Male",
   "species": "Ascended",
   "title_en": "the Emperor of the Sands",
-  "lore_en": "Azir was the least-favored son of the ancient Shuriman Empire, a land ruled by ambitious emperors and protected by powerful warriors known as the Ascended (Transfigured). Azir was a studious young man, more interested in texts than warfare, and was never meant to be emperor. He befriended a young slave whom he named Xerath (\"one who shares\"), appointing him his personal slave to avoid publicly endangering him.\r\n\r\nDuring an attack by assassins, Xerath saved Azir's life by intervening. Now the sole heir, Azir ascended the throne and made Xerath his only trusted confidant and right-hand man, tasking him with seeking out knowledge. Azir ruled with a harsh but just hand and secretly developed a plan to overturn slavery, a millennia-old tradition. He could not publicly name Xerath his brother, as he had promised, until all Shurima's slaves were free.\r\n\r\nHowever, Xerath, though he advised Azir for years, harbored a growing hatred stemming from his enslavement and Azir's slowness in freeing him. Xerath convinced the emperor of the necessity of becoming invincible and undertaking the Ascension ritual, a ceremony normally reserved for heroes near the end of their lives.\r\n\r\nOn the day of the ritual, Azir’s arrogance was at its height. Just before the priests began, Azir freed Xerath, along with all the slaves of Shurima, and named him his eternal brother. However, it was too late. Xerath, who had secretly studied dark sorcery, betrayed Azir.\r\n\r\nInstead of allowing Azir to Ascend, Xerath unleashed his own powers and blasted Azir from his place on the dais, taking his spot. The celestial power of the ritual, being diverted, exploded, devastating Shurima instantly and reducing the city and its people to ash. Azir, consumed by the sun fire, fell into a timeless oblivion.\r\n\r\nMillennia later, the blood of his last mortal descendant spilled onto the temple ruins, resurrecting Azir. He returned as an incomplete being, animated dust held together by sheer will. He found the corpse of the woman, his distant descendant, and in a selfless act of love and mourning, carried her to the Oasis of the Dawn.\r\n\r\nThis act of pure selflessness completed his Ascension. Azir was remade into his magnificent, hawk-armored form, gaining the power to command the sand itself. With a single command, his buried city shrugged off the dust of centuries to rise anew. By weaving the city's last moments using sand, Azir watched in horror as Xerath's treachery unfolded.\r\n\r\nToday, Azir, leading an army of sand warriors, has sworn to find Xerath, reclaim what was stolen from him, and restore Shurima to its former glory and power.",
+  "lore_en": "Azir was a mortal emperor of Shurima in a far distant age, a proud man who stood at the cusp of immortality. His hubris saw him betrayed and murdered at the moment of his greatest triumph, but now, millennia later, he has been reborn as an Ascended being of immense power. With his buried city risen from the sand, Azir seeks to restore Shurima to its former glory.",
   "spells_en": [
     {
       "id": "AzirQWrapper",
       "name": "Conquering Sands",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AzirQWrapper.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 0,
         "y": 144,
-        "full": "AzirQWrapper.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Azir orders all <keywordMajor>Sand Soldiers</keywordMajor> to an area, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> to enemies they pass through and <status>Slowing</status> them by {{ e2 }}% for 1 second.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Azir orders all <keywordMajor>Sand Soldiers</keywordMajor> to an area, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> to enemies they pass through and <status>Slowing</status> them by {{ slowamount*-100 }}% for 1 second.{{ spellmodifierdescriptionappend }}",
       "costBurn": "70/80/90/100/110",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Damage",
+          "Total AP Ratio",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ apratio*100.000000 }}% -> {{ aprationl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -258,13 +238,13 @@
       "name": "Arise!",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AzirW.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 48,
         "y": 144,
-        "full": "AzirW.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "2",
       "maxrank": 5,
@@ -277,6 +257,12 @@
           "Total AP Ratio",
           "Recharge Time",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ apratio }} -> {{ apratioNL }}",
+          "{{ ammorechargetime }} -> {{ ammorechargetimeNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -290,13 +276,13 @@
       "name": "Shifting Sands",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AzirEWrapper.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 96,
         "y": 144,
-        "full": "AzirEWrapper.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -308,6 +294,11 @@
           "Shield Amount",
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ baseshield }} -> {{ baseshieldNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -321,13 +312,13 @@
       "name": "Emperor's Divide",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AzirR.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 144,
         "y": 144,
-        "full": "AzirR.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -339,6 +330,11 @@
           "Damage",
           "Number of Soldiers",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ numberofsoldiers }} -> {{ numberofsoldiersNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -351,13 +347,13 @@
   "passive_en": {
     "name": "Shurima's Legacy",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Azir_Passive.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 144,
       "y": 48,
-      "full": "Azir_Passive.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Azir can summon the Disc of the Sun from the ruins of allied or enemy turrets."
   },
@@ -413,6 +409,79 @@
       "num": 19,
       "name": "Attorney Azir",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "268000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "268001",
+      "num": 1,
+      "name": "Azir galactique",
+      "chromas": false
+    },
+    {
+      "id": "268002",
+      "num": 2,
+      "name": "Azir nécromancien",
+      "chromas": false
+    },
+    {
+      "id": "268003",
+      "num": 3,
+      "name": "SKT T1 Azir",
+      "chromas": false
+    },
+    {
+      "id": "268004",
+      "num": 4,
+      "name": "Azir du royaume en guerre",
+      "chromas": false
+    },
+    {
+      "id": "268005",
+      "num": 5,
+      "name": "Azir sylvestre",
+      "chromas": true
+    },
+    {
+      "id": "268014",
+      "num": 14,
+      "name": "Azir des Worlds 2022",
+      "chromas": true
+    },
+    {
+      "id": "268019",
+      "num": 19,
+      "name": "Azir avocat",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Taliyah",
+      "type": "champion",
+      "relation": "enemy",
+      "note_fr": "Représente l'ancienne tyrannie de Shurima",
+      "note_en": "Represents ancient Shuriman tyranny"
+    },
+    {
+      "id": "Sivir",
+      "type": "champion",
+      "relation": "family",
+      "note_fr": "Ancêtre",
+      "note_en": "Ancestor"
+    },
+    {
+      "id": "Xerath",
+      "type": "champion",
+      "relation": "betrayer",
+      "note_fr": "Traître",
+      "note_en": "Traitor"
     }
   ]
 }

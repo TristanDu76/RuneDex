@@ -2,169 +2,35 @@
   "id": "Akali",
   "key": "84",
   "name": "Akali",
-  "title": "Assassin rebelle",
-  "version": "15.23.1",
-  "lore": "Akali est née au sein du Kinkou, l'Ordre qui se considère comme le gardien de l'équilibre sacré d'Ionia. Fille de Mayym, l'ancienne Poing de l'ombre, elle a été élevée sous la direction stricte de son maître, Shen (l'Œil du Crépuscule), et a été formée aux arts de l'assassinat par des figures comme Kennen (le Cœur de la Tempête). Akali était une enfant prodige, maîtrisant le kama (faucille) et le kunai (poignard de lancer), et succéda rapidement à sa mère comme Poing de l'ombre officielle.\r\n\r\nCependant, Akali a grandi en voyant les failles de la philosophie Kinkou. Les événements traumatisants comme le coup d'État sanglant de Zed et surtout l'invasion brutale de Noxus ont révélé l'inefficacité de l'approche de l'Ordre. Bien que le Kinkou prône l'Élagage de l'Arbre (l'élimination des menaces), Shen insistait sur la retenue et l'impartialité, préférant la médiation spirituelle à l'action physique.\r\n\r\nAkali devint de plus en plus frustrée par cette inaction. Elle voyait Ionia souffrir et saignait dans le royaume matériel, tandis que l'Ordre restait obsédé par un équilibre abstrait. Sa précocité se transforma en désobéissance. Elle commença à s'attaquer aux ennemis d'Ionia par elle-même, allant à l'encontre des ordres de Shen.\r\n\r\nFinalement, elle prit la décision radicale de rompre avec son héritage. Devant tout l'Ordre, elle déclara que les mantras et les méditations ne vaincraient pas les armées noxiennes. Elle affirma qu'elle avait été formée comme une assassin, et qu'elle allait agir comme tel dans le monde réel. Elle abandonna son titre et l'Ordre.\r\n\r\nShen la laissa partir sans combat, reconnaissant que c'était un chemin qu'elle devait parcourir seule. Aujourd'hui, Akali est l'assassin sans maître. Elle combat seule, utilisant les techniques qu'on lui a enseignées pour défendre Ionia, une cible après l'autre, prouvant par ses actions que la défense du monde matériel passe avant l'équilibre spirituel.",
+  "title": "Assassine rebelle",
+  "version": "16.8.1",
+  "lore": "Ayant abandonné l'Ordre Kinkou et le titre de Poing de l'ombre, Akali combat aujourd'hui seule, prête à devenir l'arme mortelle dont son peuple a besoin. Bien qu'elle n'oublie rien de tout ce que son maître Shen lui a enseigné, elle a juré de défendre Ionia contre ses ennemis, une élimination après l'autre. Akali tue sans faire de bruit, mais son message est fort et clair : craignez l'assassin sans maître.",
   "tags": [
     "Assassin"
   ],
   "partype": "Énergie",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Akali.png",
+    "sprite": "champion0.png",
+    "group": "champion",
     "x": 96,
     "y": 0,
-    "full": "Akali.png",
-    "group": "champion",
-    "sprite": "champion0.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "84000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "84001",
-      "num": 1,
-      "name": "Akali aiguillon",
-      "chromas": false
-    },
-    {
-      "id": "84002",
-      "num": 2,
-      "name": "Akali infernale",
-      "chromas": false
-    },
-    {
-      "id": "84003",
-      "num": 3,
-      "name": "Akali All-Star",
-      "chromas": false
-    },
-    {
-      "id": "84004",
-      "num": 4,
-      "name": "Akali infirmière",
-      "chromas": true
-    },
-    {
-      "id": "84005",
-      "num": 5,
-      "name": "Akali lune de sang",
-      "chromas": false
-    },
-    {
-      "id": "84006",
-      "num": 6,
-      "name": "Akali crocs d'argent",
-      "chromas": false
-    },
-    {
-      "id": "84007",
-      "num": 7,
-      "name": "Akali chasseuse de têtes",
-      "chromas": true
-    },
-    {
-      "id": "84008",
-      "num": 8,
-      "name": "Akali chef sushi",
-      "chromas": false
-    },
-    {
-      "id": "84009",
-      "num": 9,
-      "name": "K/DA Akali",
-      "chromas": false
-    },
-    {
-      "id": "84013",
-      "num": 13,
-      "name": "K/DA Akali prestige",
-      "chromas": false
-    },
-    {
-      "id": "84014",
-      "num": 14,
-      "name": "PROJET : Akali",
-      "chromas": true
-    },
-    {
-      "id": "84015",
-      "num": 15,
-      "name": "True Damage Akali",
-      "chromas": true
-    },
-    {
-      "id": "84032",
-      "num": 32,
-      "name": "K/DA ALL OUT Akali",
-      "chromas": true
-    },
-    {
-      "id": "84050",
-      "num": 50,
-      "name": "Akali cauchemar criminel",
-      "chromas": false
-    },
-    {
-      "id": "84060",
-      "num": 60,
-      "name": "K/DA Akali prestige (2022)",
-      "chromas": false
-    },
-    {
-      "id": "84061",
-      "num": 61,
-      "name": "Akali gardienne des étoiles",
-      "chromas": false
-    },
-    {
-      "id": "84068",
-      "num": 68,
-      "name": "DRX Akali",
-      "chromas": false
-    },
-    {
-      "id": "84070",
-      "num": 70,
-      "name": "Akali de l'assemblée",
-      "chromas": false
-    },
-    {
-      "id": "84071",
-      "num": 71,
-      "name": "Akali de l'assemblée prestige",
-      "chromas": true
-    },
-    {
-      "id": "84082",
-      "num": 82,
-      "name": "Akali empyréenne",
-      "chromas": false
-    },
-    {
-      "id": "84092",
-      "num": 92,
-      "name": "Akali fleur spirituelle",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "AkaliQ",
       "name": "Vague de kunais",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AkaliQ.png",
+        "sprite": "spell0.png",
+        "group": "spell",
         "x": 288,
         "y": 96,
-        "full": "AkaliQ.png",
-        "group": "spell",
-        "sprite": "spell0.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -175,6 +41,10 @@
         "label": [
           "Coût en @AbilityResourceName@",
           "Dégâts"
+        ],
+        "effect": [
+          "{{ cost }} -> {{ costNL }}",
+          "{{ basedamagenamed }} -> {{ basedamagenamedNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -188,13 +58,13 @@
       "name": "Linceul nébuleux",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AkaliW.png",
+        "sprite": "spell0.png",
+        "group": "spell",
         "x": 336,
         "y": 96,
-        "full": "AkaliW.png",
-        "group": "spell",
-        "sprite": "spell0.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -206,6 +76,11 @@
           "Vitesse de déplacement",
           "Durée",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ movementspeed }}% -> {{ movementspeedNL }}%",
+          "{{ baseduration }} -> {{ basedurationNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Rend {{ energyrestore }} pts d'énergie",
@@ -219,13 +94,13 @@
       "name": "Lancer acrobatique",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AkaliE.png",
+        "sprite": "spell0.png",
+        "group": "spell",
         "x": 384,
         "y": 96,
-        "full": "AkaliE.png",
-        "group": "spell",
-        "sprite": "spell0.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -236,6 +111,10 @@
         "label": [
           "Délai de récupération",
           "Dégâts de base"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -249,13 +128,13 @@
       "name": "Maîtrise absolue",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AkaliR.png",
+        "sprite": "spell0.png",
+        "group": "spell",
         "x": 432,
         "y": 96,
-        "full": "AkaliR.png",
-        "group": "spell",
-        "sprite": "spell0.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -268,6 +147,12 @@
           "Dégâts initiaux",
           "Dégâts minimum",
           "Dégâts maximum"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ r2basedamage }} -> {{ r2basedamageNL }}",
+          "{{ r2basedamage*3.000000 }} -> {{ r2basedamagenl*3.000000 }}"
         ]
       },
       "resource": "Pas de coût",
@@ -280,13 +165,13 @@
   "passive": {
     "name": "Marque d'assassin",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Akali_P.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 96,
       "y": 0,
-      "full": "Akali_P.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Blesser un champion avec une compétence crée un cercle d'énergie autour de lui. Quitter ce cercle renforce la prochaine attaque d'Akali en augmentant sa portée et ses dégâts."
   },
@@ -300,20 +185,20 @@
   "gender": "Female",
   "species": "Human",
   "title_en": "the Rogue Assassin",
-  "lore_en": "Akali was born into the Kinkou, the Order that considers itself the guardian of Ionia's sacred balance. The daughter of Mayym, the former Fist of Shadow, she was raised under the strict guidance of her master, Shen (the Eye of Twilight), and trained in the arts of assassination by figures like Kennen (the Heart of the Tempest). Akali was a prodigious child, mastering the kama (sickle) and kunai (throwing dagger), and quickly succeeded her mother as the official Fist of Shadow.\r\n\r\nHowever, Akali grew up seeing the flaws in the Kinkou philosophy. Traumatic events like the bloody coup by Zed and especially the brutal Noxian invasion exposed the ineffectiveness of the Order's approach. Although the Kinkou advocates Pruning the Tree (eliminating threats), Shen insisted on restraint and impartiality, preferring spiritual mediation over physical action.\r\n\r\nAkali grew increasingly frustrated by this inaction. She saw Ionia suffering and bleeding in the material realm while the Order remained obsessed with an abstract balance. Her precociousness turned into outright disobedience. She began to strike down Ionia's enemies by herself, going against Shen's orders.\r\n\r\nFinally, she made the radical decision to break with her heritage. Before the entire Order, she declared that mantras and meditations would not defeat the Noxian armies. She affirmed that she was trained as an assassin, and she would act as such in the real world. She abandoned her title and the Order.\r\n\r\nShen let her leave without a fight, acknowledging that this was a path she needed to walk alone. Today, Akali is the rogue assassin. She fights alone, using the techniques she was taught to defend Ionia, one target at a time, proving through her actions that the defense of the material world comes before spiritual balance.",
+  "lore_en": "Abandoning the Kinkou Order and her title of the Fist of Shadow, Akali now strikes alone, ready to be the deadly weapon her people need. Though she holds onto all she learned from her master Shen, she has pledged to defend Ionia from its enemies, one kill at a time. Akali may strike in silence, but her message will be heard loud and clear: fear the assassin with no master.",
   "spells_en": [
     {
       "id": "AkaliQ",
       "name": "Five Point Strike",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AkaliQ.png",
+        "sprite": "spell0.png",
+        "group": "spell",
         "x": 288,
         "y": 96,
-        "full": "AkaliQ.png",
-        "group": "spell",
-        "sprite": "spell0.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -324,6 +209,10 @@
         "label": [
           "@AbilityResourceName@ Cost",
           "Damage"
+        ],
+        "effect": [
+          "{{ cost }} -> {{ costNL }}",
+          "{{ basedamagenamed }} -> {{ basedamagenamedNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -337,13 +226,13 @@
       "name": "Twilight Shroud",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AkaliW.png",
+        "sprite": "spell0.png",
+        "group": "spell",
         "x": 336,
         "y": 96,
-        "full": "AkaliW.png",
-        "group": "spell",
-        "sprite": "spell0.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -355,6 +244,11 @@
           "Move Speed",
           "Duration",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ movementspeed }}% -> {{ movementspeedNL }}%",
+          "{{ baseduration }} -> {{ basedurationNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Restores {{ energyrestore }} Energy",
@@ -368,13 +262,13 @@
       "name": "Shuriken Flip",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AkaliE.png",
+        "sprite": "spell0.png",
+        "group": "spell",
         "x": 384,
         "y": 96,
-        "full": "AkaliE.png",
-        "group": "spell",
-        "sprite": "spell0.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -385,6 +279,10 @@
         "label": [
           "Cooldown",
           "Base Damage"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -398,13 +296,13 @@
       "name": "Perfect Execution",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AkaliR.png",
+        "sprite": "spell0.png",
+        "group": "spell",
         "x": 432,
         "y": 96,
-        "full": "AkaliR.png",
-        "group": "spell",
-        "sprite": "spell0.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -417,6 +315,12 @@
           "Initial Damage",
           "Minimum Damage",
           "Maximum Damage"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ r2basedamage }} -> {{ r2basedamageNL }}",
+          "{{ r2basedamage*3.000000 }} -> {{ r2basedamagenl*3.000000 }}"
         ]
       },
       "resource": "No Cost",
@@ -429,13 +333,13 @@
   "passive_en": {
     "name": "Assassin's Mark",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Akali_P.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 96,
       "y": 0,
-      "full": "Akali_P.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Dealing spell damage to a champion creates a ring of energy around them. Exiting that ring empowers Akali's next Attack with bonus range and damage."
   },
@@ -576,6 +480,149 @@
       "num": 92,
       "name": "Spirit Blossom Akali",
       "chromas": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "84000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "84001",
+      "num": 1,
+      "name": "Akali aiguillon",
+      "chromas": false
+    },
+    {
+      "id": "84002",
+      "num": 2,
+      "name": "Akali infernale",
+      "chromas": false
+    },
+    {
+      "id": "84003",
+      "num": 3,
+      "name": "Akali All-Star",
+      "chromas": false
+    },
+    {
+      "id": "84004",
+      "num": 4,
+      "name": "Akali infirmière",
+      "chromas": true
+    },
+    {
+      "id": "84005",
+      "num": 5,
+      "name": "Akali lune de sang",
+      "chromas": false
+    },
+    {
+      "id": "84006",
+      "num": 6,
+      "name": "Akali crocs d'argent",
+      "chromas": false
+    },
+    {
+      "id": "84007",
+      "num": 7,
+      "name": "Akali chasseuse de têtes",
+      "chromas": true
+    },
+    {
+      "id": "84008",
+      "num": 8,
+      "name": "Akali chef sushi",
+      "chromas": false
+    },
+    {
+      "id": "84009",
+      "num": 9,
+      "name": "K/DA Akali",
+      "chromas": false
+    },
+    {
+      "id": "84013",
+      "num": 13,
+      "name": "K/DA Akali prestige",
+      "chromas": false
+    },
+    {
+      "id": "84014",
+      "num": 14,
+      "name": "PROJET : Akali",
+      "chromas": true
+    },
+    {
+      "id": "84015",
+      "num": 15,
+      "name": "True Damage Akali",
+      "chromas": true
+    },
+    {
+      "id": "84032",
+      "num": 32,
+      "name": "K/DA ALL OUT Akali",
+      "chromas": true
+    },
+    {
+      "id": "84050",
+      "num": 50,
+      "name": "Akali cauchemar criminel",
+      "chromas": false
+    },
+    {
+      "id": "84060",
+      "num": 60,
+      "name": "K/DA Akali prestige (2022)",
+      "chromas": false
+    },
+    {
+      "id": "84061",
+      "num": 61,
+      "name": "Akali gardienne des étoiles",
+      "chromas": false
+    },
+    {
+      "id": "84068",
+      "num": 68,
+      "name": "DRX Akali",
+      "chromas": false
+    },
+    {
+      "id": "84070",
+      "num": 70,
+      "name": "Akali de l'assemblée",
+      "chromas": false
+    },
+    {
+      "id": "84071",
+      "num": 71,
+      "name": "Akali de l'assemblée prestige",
+      "chromas": true
+    },
+    {
+      "id": "84082",
+      "num": 82,
+      "name": "Akali empyréenne",
+      "chromas": false
+    },
+    {
+      "id": "84092",
+      "num": 92,
+      "name": "Akali fleur spirituelle",
+      "chromas": false
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "kusho",
+      "type": "lore",
+      "relation": "mentor",
+      "note_fr": "Ancien mentor",
+      "note_en": "Former Mentor"
     }
   ]
 }

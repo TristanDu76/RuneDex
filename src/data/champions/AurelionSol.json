@@ -3,72 +3,34 @@
   "key": "136",
   "name": "Aurelion Sol",
   "title": "Forgeur d'étoiles",
-  "version": "15.23.1",
-  "lore": "Aurelion Sol est un être cosmique d'une ancienneté et d'une puissance inimaginables, né au premier souffle de la création. Lui et les êtres de son espèce parcouraient le cosmos, remplissant le vide infini de merveilles scintillantes, dont des étoiles qu'il forgeait lui-même. Il considérait les Aspects de Targon comme des entités éternelles, mais désintéressées et égocentriques, loin de son génie créateur.\r\n\r\nUn jour, il découvrit Runeterra, un monde dont il n'était pas l'auteur, mais qui intéressait étrangement les Aspects. Flatté par la perspective d'un nouveau public pour sa majesté, Aurelion Sol descendit, prenant la forme d'un dragon stellaire.\r\n\r\nLes habitants de l'insignifiante terre de Targon le nommèrent en l'honneur du soleil qu'il leur avait offert. Les mortels, sur ordre des Aspects, lui présentèrent une couronne d'une splendeur exquise, gravée de motifs célestes. Cependant, au moment où la couronne toucha son front, Aurelion Sol comprit que ce n'était pas un cadeau : c'était une prison.\r\n\r\nL'artefact se serra sur sa tête avec une force inouïe, lui volant sa connaissance des étoiles et le forçant à retourner dans les cieux, incapable de se rapprocher du monde. Les Aspects, ces êtres fourbes, utilisèrent la couronne pour réduire Aurelion Sol en esclavage.\r\n\r\nDe son perchoir céleste, il fut forcé d'observer les Aspects canaliser son pouvoir cosmique via le Disque Solaire pour créer les guerriers immortels de Shurima (les Transfigurés), qu'ils préparaient pour un conflit inconnu. Enragé de voir les étoiles qu'il avait créées s'éteindre faute de soins, il ne pouvait que se débattre contre la couronne. Il fut contraint d'assister aux guerres, aux catastrophes et à la chute des civilisations de Runeterra, incapable d'intervenir ou de reprendre sa liberté.\r\n\r\nAujourd'hui, il réalise que la magie qui le lie s'affaiblit. Des fragments d'or commencent à tomber de sa couronne, traversant le ciel comme des comètes (un signe d'espoir et de destruction).\r\n\r\nPoussé par la perspective alléchante de la liberté et d'une vengeance cosmique, Aurelion Sol observe Runeterra avec une fureur bouillonnante et éternelle. Il est convaincu que c'est sur ce monde que l'équilibre cosmique basculera en sa faveur. Il est prêt à arracher les étoiles de leur ciel nocturne s'il le faut, car l'univers entier devra témoigner du sort de ceux qui ont osé voler le pouvoir du Forgeron Stellaire.",
+  "version": "16.8.1",
+  "lore": "Autrefois, Aurelion Sol façonnait des merveilles célestes dont il parsemait le vide infini du cosmos. À présent, il est forcé d'utiliser ses pouvoirs extraordinaires pour le compte d'un empire de l'espace qui s'est joué de lui et l'a réduit en esclavage. Prêt à tout pour redevenir le forgeron stellaire qu'il était, Aurelion Sol n'hésitera pas à arracher les étoiles de leur ciel nocturne si c'est là le prix à payer pour regagner sa liberté.",
   "tags": [
     "Mage"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "AurelionSol.png",
+    "sprite": "champion0.png",
+    "group": "champion",
     "x": 48,
     "y": 48,
-    "full": "AurelionSol.png",
-    "group": "champion",
-    "sprite": "champion0.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "136000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "136001",
-      "num": 1,
-      "name": "Aurelion Sol seigneur volcanique",
-      "chromas": false
-    },
-    {
-      "id": "136002",
-      "num": 2,
-      "name": "Mecha Aurelion Sol",
-      "chromas": true
-    },
-    {
-      "id": "136011",
-      "num": 11,
-      "name": "Aurelion Sol dragon des tempêtes",
-      "chromas": false
-    },
-    {
-      "id": "136021",
-      "num": 21,
-      "name": "Aurelion Sol esprit d'encre",
-      "chromas": false
-    },
-    {
-      "id": "136031",
-      "num": 31,
-      "name": "Aurelion Sol protecteur de porcelaine",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "AurelionSolQ",
       "name": "Souffle de lumière",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AurelionSolQ.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 96,
         "y": 96,
-        "full": "AurelionSolQ.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -81,6 +43,12 @@
           "Dégâts par seconde",
           "Dégâts instantanés",
           "Durée max de la canalisation"
+        ],
+        "effect": [
+          "{{ cost }} -> {{ costNL }}",
+          "{{ rankdamagepersecond }} -> {{ rankdamagepersecondNL }}",
+          "{{ rankburstdamage }} -> {{ rankburstdamageNL }}",
+          "{{ maxchannelduration }} -> {{ maxchanneldurationNL }}"
         ]
       },
       "resource": "{{ manacostpersecond }} pts de mana par sec",
@@ -94,13 +62,13 @@
       "name": "Vol astral",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AurelionSolW.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 144,
         "y": 96,
-        "full": "AurelionSolW.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -112,6 +80,11 @@
           "Pourcentage de dégâts magiques supplémentaires",
           "Coût en @AbilityResourceName@",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ truedamagebonus*100.000000 }}% -> {{ truedamagebonusnl*100.000000 }}%",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -125,13 +98,13 @@
       "name": "Trou noir",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AurelionSolE.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 192,
         "y": 96,
-        "full": "AurelionSolE.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -141,6 +114,9 @@
       "leveltip": {
         "label": [
           "Dégâts par seconde"
+        ],
+        "effect": [
+          "{{ basedamagepersecond }} -> {{ basedamagepersecondNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -154,13 +130,13 @@
       "name": "Étoile finale/Apocalypse",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AurelionSolR.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 240,
         "y": 96,
-        "full": "AurelionSolR.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -173,6 +149,12 @@
           "Dégâts",
           "Dégâts renforcés",
           "Dégâts de l'onde de choc"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ basedamage*1.250000 }} -> {{ basedamagenl*1.250000 }}",
+          "{{ basedamage*0.900000 }} -> {{ basedamagenl*0.900000 }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -185,13 +167,13 @@
   "passive": {
     "name": "Créateur cosmique",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "AurelionSolP.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 48,
       "y": 48,
-      "full": "AurelionSolP.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Les compétences d'Aurelion Sol qui blessent des ennemis lui octroient de la <font color='#3458eb'>poussière d'étoile</font>, laquelle améliore définitivement chacune de ses compétences. "
   },
@@ -207,20 +189,20 @@
   "gender": "Male",
   "species": "Celestial",
   "title_en": "The Star Forger",
-  "lore_en": "Aurelion Sol is an almighty cosmic being of unimaginable antiquity and power, born in the first breath of creation. He and those like him roamed the cosmos, filling the infinite void with twinkling marvels, including stars that he forged himself. He regarded the Targon Aspects as eternal yet dispassionate and self-centered entities, far beneath his creative genius.\r\n\r\nOne day, he discovered Runeterra, a world he had not created, which held an unusual interest for the Aspects. Flattered by the prospect of a new audience for his supreme majesty, Aurelion Sol descended, taking the form of a vast and terrible star dragon.\r\n\r\nThe tiny inhabitants of the insignificant land of Targon named him for the sun he had gifted them. The mortals, commanded by the Aspects, presented him with a splendid crown, etched with celestial patterns. However, the moment the crown touched his brow, Aurelion Sol knew it was no gift: it was a prison.\r\n\r\nThe accursed thing clamped onto his head with unimaginable force, stealing his knowledge of the stars and forcing him back into the heavens, unable to approach the world. The Aspects, those duplicitous beings, used the crown to enslave Aurelion Sol.\r\n\r\nFrom his celestial perch, he was forced to watch as the Aspects channeled his cosmic power via the Sun Disc to raise up Shurima's immortal warriors (the Ascended), whom they were preparing for some unknown conflict. Outraged to see the stars he had birthed fade for lack of care, he could only strain against the crown's control. He was forced to witness Runeterra's wars, catastrophes, and the fall of civilizations, unable to intervene or regain his freedom.\r\n\r\nToday, he realizes that the magic binding him is weakening. Flecks of gold are beginning to fall from his crown, blazing across the skies like comets (a sign of both hope and destruction).\r\n\r\nDriven by the tantalizing possibilities of freedom and cosmic revenge, Aurelion Sol regards Runeterra with simmering, eternal fury. He is convinced that it is upon this world that the cosmic balance will tip in his favor once more. He is prepared to tear the stars from their night sky if necessary, as the entire universe shall bear witness to the fate of those who dared steal the power of a Star Forger.",
+  "lore_en": "Aurelion Sol once graced the vast emptiness of the cosmos with celestial wonders of his own devising. Now, he is forced to wield his awesome power at the behest of a space-faring empire that tricked him into servitude. Desiring a return to his star-forging ways, Aurelion Sol will drag the very stars from the sky, if he must, in order to regain his freedom.",
   "spells_en": [
     {
       "id": "AurelionSolQ",
       "name": "Breath of Light",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AurelionSolQ.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 96,
         "y": 96,
-        "full": "AurelionSolQ.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -233,6 +215,12 @@
           "Damage Per Second",
           "Burst Damage",
           "Maximum Channel Duration"
+        ],
+        "effect": [
+          "{{ cost }} -> {{ costNL }}",
+          "{{ rankdamagepersecond }} -> {{ rankdamagepersecondNL }}",
+          "{{ rankburstdamage }} -> {{ rankburstdamageNL }}",
+          "{{ maxchannelduration }} -> {{ maxchanneldurationNL }}"
         ]
       },
       "resource": "{{ manacostpersecond }} Mana per second",
@@ -246,13 +234,13 @@
       "name": "Astral Flight",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AurelionSolW.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 144,
         "y": 96,
-        "full": "AurelionSolW.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -264,6 +252,11 @@
           "Percent Bonus Magic Damage",
           "@AbilityResourceName@ Cost",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ truedamagebonus*100.000000 }}% -> {{ truedamagebonusnl*100.000000 }}%",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -277,13 +270,13 @@
       "name": "Singularity",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AurelionSolE.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 192,
         "y": 96,
-        "full": "AurelionSolE.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -293,6 +286,9 @@
       "leveltip": {
         "label": [
           "Damage Per Second"
+        ],
+        "effect": [
+          "{{ basedamagepersecond }} -> {{ basedamagepersecondNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -306,13 +302,13 @@
       "name": "Falling Star / The Skies Descend",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AurelionSolR.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 240,
         "y": 96,
-        "full": "AurelionSolR.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -325,6 +321,12 @@
           "Damage",
           "Empowered Damage",
           "Shockwave Damage"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ basedamage*1.250000 }} -> {{ basedamagenl*1.250000 }}",
+          "{{ basedamage*0.900000 }} -> {{ basedamagenl*0.900000 }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -337,13 +339,13 @@
   "passive_en": {
     "name": "Cosmic Creator",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "AurelionSolP.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 48,
       "y": 48,
-      "full": "AurelionSolP.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Aurelion Sol's damaging Abilities break down enemies into stacks of <font color='#3458eb'>Stardust</font>, which permanently improves each of his abilities. "
   },
@@ -387,6 +389,72 @@
       "num": 31,
       "name": "Porcelain Protector Aurelion Sol",
       "chromas": false
+    },
+    {
+      "id": "136038",
+      "num": 38,
+      "name": "Divine Architect Porcelain Aurelion Sol",
+      "chromas": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "136000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "136001",
+      "num": 1,
+      "name": "Aurelion Sol seigneur volcanique",
+      "chromas": false
+    },
+    {
+      "id": "136002",
+      "num": 2,
+      "name": "Mecha Aurelion Sol",
+      "chromas": true
+    },
+    {
+      "id": "136011",
+      "num": 11,
+      "name": "Aurelion Sol dragon des tempêtes",
+      "chromas": false
+    },
+    {
+      "id": "136021",
+      "num": 21,
+      "name": "Aurelion Sol esprit d'encre",
+      "chromas": false
+    },
+    {
+      "id": "136031",
+      "num": 31,
+      "name": "Aurelion Sol protecteur de porcelaine",
+      "chromas": false
+    },
+    {
+      "id": "136038",
+      "num": 38,
+      "name": "Aurelion Sol de porcelaine architecte divin",
+      "chromas": false
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Zoe",
+      "type": "champion",
+      "relation": "nemesis",
+      "note_fr": "Ennuyeuse cosmique",
+      "note_en": "Cosmic annoyance"
+    },
+    {
+      "id": "Pantheon",
+      "type": "champion",
+      "relation": "nemesis",
+      "note_fr": "Hait les Aspects pour son asservissement",
+      "note_en": "hates the aspects for his enslavement"
     }
   ]
 }

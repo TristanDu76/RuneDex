@@ -1,11 +1,32 @@
 {
   "id": "mantaire",
   "name": "Mantaire",
-  "faction": null,
-  "gender": null,
-  "species": null,
-  "description": "Personnage du lore de League of Legends",
-  "image": null,
-  "created_at": "2026-01-26T13:41:34.759Z",
-  "description_en": "League of Legends lore character"
+  "origin_region": "zaun",
+  "region": "zaun",
+  "faction": [
+    "zaun"
+  ],
+  "universe": [
+    "runeterra-prime"
+  ],
+  "gender": "unknown",
+  "species": [
+    "human"
+  ],
+  "status": "unknown",
+  "power_source": "unknown",
+  "image": "https://wiki.leagueoflegends.com/en-us/images/Mantaire_Render.png?696fa",
+  "created_at": "2026-03-31T19:30:29.702853+00:00",
+  "description_en": "Mantaire was one of Silco's henchmen during his reign as leader of Zaun, known for having a somewhat crazed and bumbling nature. After Silco's death, he successfully escaped Caitlyn's strike team when they unleashed the Gray onto Zaun's streets. He was later punched by Vi while dancing in The Last Drop.",
+  "related_characters": [
+    "Caitlyn",
+    "Gustove Jowler",
+    "Jinx",
+    "Ran",
+    "Sevika",
+    "Silco",
+    "Thieram",
+    "Vi"
+  ],
+  "description_fr": "Mantaire était l'un des hommes de main de Silco pendant son règne en tant que chef de Zaun, connu pour sa nature quelque peu folle et maladroite. Après la mort de Silco, il a réussi à échapper à l'équipe d'attaque de Caitlyn lorsqu'ils ont libéré le Gris dans les rues de Zaun. Il a ensuite été frappé par Vi alors qu'il dansait dans The Last Drop."
 }

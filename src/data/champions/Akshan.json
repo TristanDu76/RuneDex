@@ -3,61 +3,35 @@
   "key": "166",
   "name": "Akshan",
   "title": "Sentinelle rebelle",
-  "version": "15.23.1",
-  "lore": "Akshan est un justicier originaire de Marwi, une ville de l'est de Shurima rongée par l'injustice où des chefs de guerre locaux imposaient leur loi. Très jeune, Akshan était incapable d'ignorer les mauvaises actions et s'interposait souvent, ce qui lui valut de puissants ennemis et faillit lui coûter la vie après un passage à tabac.\r\n\r\nIl fut sauvé par Shadya, une femme qui enfreignit la coutume locale en le recueillant. Shadya n'était pas une femme ordinaire ; elle était membre des Sentinelles de la Lumière, un ordre ancien dédié à la lutte contre les ravages de la Brume noire. Elle vit en Akshan un potentiel immense, combinant courage et conscience morale. En échange de sa protection, elle l'intégra à l'ordre, lui enseignant les techniques de survie d'une Sentinelle solitaire, et une relation mentor-élève très forte se noua entre eux.\r\n\r\nShadya révéla à Akshan qu'un Harrowing (Fléau des îles obscures) d'une ampleur inédite approchait et que leur seul espoir résidait dans d'anciennes armes de Sentinelles cachées dans les cryptes de Shurima. À sa grande consternation, les chefs de guerre locaux avaient déjà pillé ces artefacts, refusant de les céder pour la survie du monde.\r\n\r\nAlors qu'ils préparaient leur arsenal, Akshan découvrit une arme frappante : l'Absolveur. Shadya lui interdit formellement de l'utiliser, expliquant que cette arme légendaire était imprégnée d'un enchantement particulier : elle pouvait rendre la vie à la victime la plus récente d'un tueur en prenant la vie de ce dernier. Shadya insistait sur le fait que de telles questions de vie et de mort devaient être laissées au destin.\r\n\r\nCependant, Akshan, qui avait vu l'injustice régner toute sa vie, pensait que le destin avait besoin d'aide. Il insista pour en savoir plus sur l'Absolveur et fit une découverte choquante : Shadya l'avait utilisé sur lui des années auparavant, tuant le criminel qui l'avait laissé pour mort afin de le ramener à la vie. Il se demanda pourquoi il avait été le seul à mériter ce sort.\r\n\r\nAlors qu'Akshan remettait en question les règles archaïques de l'ordre, Shadya fut assassinée dans la rue, à l'endroit même où elle l'avait trouvé autrefois.\r\n\r\nDéterminé à ne pas laisser l'injustice triompher une fois de plus, Akshan s'empara de l'Absolveur interdit, y apporta quelques modifications clés (notamment son grappin) et se lança dans le désert, assoiffé de vengeance. Son plan était simple mais radical : il allait éliminer un par un les chefs de guerre qui avaient volé les armes jusqu'à ce que la bonne personne soit tuée et que l'Absolveur puisse ressusciter Shadya et corriger l'injustice.\r\n\r\nAkshan est désormais le justicier solitaire, combattant le mal avec un charisme insolent et une arme qui défie la mort, adhérant à sa seule règle d'or : « Ne sois pas crapuleux. »",
+  "version": "16.8.1",
+  "lore": "Se jouant du danger, Akshan combat le mal sans jamais se départir de son charisme (il ne faut jamais sous-estimer l'importance de la cape) et de sa droiture. Il est passé maître dans l'art du combat furtif, ce qui lui permet d'échapper au regard de ses ennemis et de réapparaître lorsqu'ils s'y attendent le moins. À l'aide de son sens aigu de la justice et d'une arme légendaire défiant la mort elle-même, il redresse les torts des nombreux vauriens de Runeterra. Sa règle d'or : « ne sois pas crapuleux. »",
   "tags": [
     "Marksman",
     "Assassin"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Akshan.png",
+    "sprite": "champion0.png",
+    "group": "champion",
     "x": 144,
     "y": 0,
-    "full": "Akshan.png",
-    "group": "champion",
-    "sprite": "champion0.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "166000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "166001",
-      "num": 1,
-      "name": "Akshan cyberpop",
-      "chromas": true
-    },
-    {
-      "id": "166010",
-      "num": 10,
-      "name": "Akshan rose de cristal",
-      "chromas": true
-    },
-    {
-      "id": "166020",
-      "num": 20,
-      "name": "Akshan des Trois Honneurs",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "AkshanQ",
       "name": "Vengerang",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AkshanQ.png",
+        "sprite": "spell0.png",
+        "group": "spell",
         "x": 0,
         "y": 144,
-        "full": "AkshanQ.png",
-        "group": "spell",
-        "sprite": "spell0.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -70,6 +44,12 @@
           "% de dégâts aux sbires",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ secondarytargetdamage*100.000000 }}% -> {{ secondarytargetdamagenl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -83,13 +63,13 @@
       "name": "Cavalier seul",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AkshanW.png",
+        "sprite": "spell0.png",
+        "group": "spell",
         "x": 48,
         "y": 144,
-        "full": "AkshanW.png",
-        "group": "spell",
-        "sprite": "spell0.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -101,6 +81,11 @@
           "Délai de récupération",
           "Coût en @AbilityResourceName@",
           "Vitesse de déplacement"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ msvalue }} -> {{ msvalueNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -114,23 +99,27 @@
       "name": "Envolée héroïque",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AkshanE.png",
+        "sprite": "spell0.png",
+        "group": "spell",
         "x": 96,
         "y": 144,
-        "full": "AkshanE.png",
-        "group": "spell",
-        "sprite": "spell0.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellActive>Première activation :</spellActive> Akshan tire un grappin et s'attache au premier élément de terrain touché.<br /><br /><spellActive>Deuxième activation :</spellActive> Akshan se balance autour de l'élément de terrain tout en tirant à répétition sur l'ennemi le plus proche en lui infligeant <physicalDamage>{{ asmoddamagetodeal }} pts de dégâts physiques</physicalDamage> par tir.<br /><br /><spellActive>Troisième activation :</spellActive> Akshan lâche la corde et effectue un dernier tir.<br /><br />Percuter un champion ennemi ou un élément de terrain met fin prématurément au balancement.<br /><br />Participer à l'élimination de champions met fin au délai de récupération de cette compétence.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellActive>Première activation :</spellActive> Akshan tire un grappin qui s'accroche au premier élément de terrain touché.<br /><br /><spellActive>Deuxième activation :</spellActive> Akshan tourne autour du terrain, tirant à plusieurs reprises sur l'ennemi le plus proche pour infliger <physicalDamage>{{ damagetodeal }} pts de dégâts physiques</physicalDamage> par tir.<br /><br /><spellActive>Troisième activation :</spellActive> Akshan plonge en lâchant la corde et tire un dernier coup.<br /><br />Entrer en contact avec un champion ennemi ou un élément du terrain met prématurément fin au balancement d'Akshan.<br /><br />Les éliminations de champions annulent le délai de récupération de cette compétence.{{ spellmodifierdescriptionappend }}",
       "costBurn": "70",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Délai de récupération",
           "Dégâts"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -144,13 +133,13 @@
       "name": "Bien mérité !",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AkshanR.png",
+        "sprite": "spell0.png",
+        "group": "spell",
         "x": 144,
         "y": 144,
-        "full": "AkshanR.png",
-        "group": "spell",
-        "sprite": "spell0.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -162,6 +151,11 @@
           "Délai de récupération",
           "Nombre max de balles",
           "Dégâts"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ numberofbullets }} -> {{ numberofbulletsNL }}",
+          "{{ bonusdamage }} -> {{ bonusdamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -174,13 +168,13 @@
   "passive": {
     "name": "Fourberie",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "akshan_p.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 144,
       "y": 0,
-      "full": "akshan_p.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Tous les trois coups venant de ses attaques ou de ses compétences, Akshan inflige des dégâts supplémentaires. Il gagne aussi un bouclier si la cible est un champion.<br><br>Quand Akshan attaque, il effectue une attaque supplémentaire qui inflige moins de dégâts. S'il annule l'attaque supplémentaire, il gagne à la place de la vitesse de déplacement."
   },
@@ -195,20 +189,20 @@
   "gender": "Male",
   "species": "Human",
   "title_en": "the Rogue Sentinel",
-  "lore_en": "Akshan is a righteous avenger hailing from Marwi, a city in eastern Shurima plagued by injustice where local warlords ruled unchecked. From a young age, Akshan was unable to ignore bad deeds and often intervened, which earned him powerful enemies and nearly cost him his life after a severe beating.\r\n\r\nHe was rescued by Shadya, an old woman who defied local custom by taking him in. Shadya was no ordinary woman; she was a member of the Sentinels of Light, an ancient order dedicated to fighting the rampages of the Black Mist. She saw immense potential in Akshan, combining guts and a moral conscience. In exchange for her protection, she brought him into the order, teaching him the survival techniques of a solo Sentinel, and a strong mentor-student bond quickly formed.\r\n\r\nShadya revealed to Akshan that a Harrowing (Black Mist invasion from the Shadow Isles) of unprecedented scale was approaching, and their only hope lay in ancient Sentinel weapons hidden in Shuriman crypts. To her dismay, local warlords had already plundered these artifacts, refusing to relinquish them for the sake of global survival.\r\n\r\nWhile preparing their arsenal, Akshan discovered a striking weapon: the Absolver. Shadya strictly forbade him from using it, explaining that this legendary weapon was imbued with a unique enchantment: it could restore the life of a killer's most recent victim by taking the killer's life. Shadya insisted that such matters of life and death must be left to fate.\r\n\r\nHowever, Akshan, who had seen injustice rule his whole life, believed that fate needed help. He insisted on learning more about the Absolver and made a shocking discovery: Shadya had used it on him years ago, killing the criminal who had left him for dead in order to bring him back to life. He questioned why he alone deserved to be revived by the gun.\r\n\r\nWhile Akshan questioned the antiquated rules of the order, Shadya was murdered in the street, almost exactly where she had found him years ago.\r\n\r\nDetermined not to let injustice triumph again, Akshan seized the forbidden Absolver, made some key modifications (notably his grappling hook), and set out into the desert, hungry for vengeance. His plan was simple but radical: he would pick off the warlords one by one until the right person was killed, and the Absolver could resurrect Shadya and correct the injustice.\r\n\r\nAkshan is now the lone avenger, fighting evil with insolent charisma and a death-defying weapon, adhering to his one golden rule: \"Don't be a scoundrel.\"",
+  "lore_en": "Raising an eyebrow in the face of danger, Akshan fights evil with dashing charisma, righteous vengeance, and a conspicuous lack of shirts. He is highly skilled in the art of stealth combat, able to evade the eyes of his enemies and reappear when they least expect him. With a keen sense of justice and a legendary death-reversing weapon, he rights the wrongs of Runeterra's many scoundrels while living by his own moral code: “Don't be an ass.”",
   "spells_en": [
     {
       "id": "AkshanQ",
       "name": "Avengerang",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AkshanQ.png",
+        "sprite": "spell0.png",
+        "group": "spell",
         "x": 0,
         "y": 144,
-        "full": "AkshanQ.png",
-        "group": "spell",
-        "sprite": "spell0.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -221,6 +215,12 @@
           "Minion Damage %",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ secondarytargetdamage*100.000000 }}% -> {{ secondarytargetdamagenl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -234,13 +234,13 @@
       "name": "Going Rogue",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AkshanW.png",
+        "sprite": "spell0.png",
+        "group": "spell",
         "x": 48,
         "y": 144,
-        "full": "AkshanW.png",
-        "group": "spell",
-        "sprite": "spell0.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -252,6 +252,11 @@
           "Cooldown",
           "@AbilityResourceName@ Cost",
           "Move Speed"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ msvalue }} -> {{ msvalueNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -265,23 +270,27 @@
       "name": "Heroic Swing",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AkshanE.png",
+        "sprite": "spell0.png",
+        "group": "spell",
         "x": 96,
         "y": 144,
-        "full": "AkshanE.png",
-        "group": "spell",
-        "sprite": "spell0.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellActive>First Cast:</spellActive> Akshan fires a grappling hook, attaching to the first terrain hit.<br /><br /><spellActive>Second Cast:</spellActive> Akshan swings around the terrain, repeatedly firing at the nearest enemy for <physicalDamage>{{ asmoddamagetodeal }} physical damage</physicalDamage> per shot.<br /><br /><spellActive>Third Cast:</spellActive> Akshan dives off the rope, firing a final shot.<br /><br />Colliding with an enemy Champion or terrain ends the swing early.<br /><br />Champion takedowns refresh this Ability's Cooldown.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellActive>First Cast:</spellActive> Akshan fires a grappling hook, attaching to the first terrain hit.<br /><br /><spellActive>Second Cast:</spellActive> Akshan swings around the terrain, repeatedly firing at the nearest enemy for <physicalDamage>{{ damagetodeal }} physical damage</physicalDamage> per shot.<br /><br /><spellActive>Third Cast:</spellActive> Akshan dives off the rope, firing a final shot.<br /><br />Colliding with an enemy Champion or terrain ends the swing early.<br /><br />Champion takedowns refresh this Ability's Cooldown.{{ spellmodifierdescriptionappend }}",
       "costBurn": "70",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Cooldown",
           "Damage"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -295,13 +304,13 @@
       "name": "Comeuppance",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AkshanR.png",
+        "sprite": "spell0.png",
+        "group": "spell",
         "x": 144,
         "y": 144,
-        "full": "AkshanR.png",
-        "group": "spell",
-        "sprite": "spell0.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -313,6 +322,11 @@
           "Cooldown",
           "Maximum Bullets",
           "Damage"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ numberofbullets }} -> {{ numberofbulletsNL }}",
+          "{{ bonusdamage }} -> {{ bonusdamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -325,13 +339,13 @@
   "passive_en": {
     "name": "Dirty Fighting",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "akshan_p.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 144,
       "y": 0,
-      "full": "akshan_p.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Every three hits from Akshan's Attacks and Abilities deals bonus damage and grants him a Shield if the target was a champion.<br><br>When Akshan Attacks, he fires an additional Attack for reduced damage. If he cancels the additional Attack, he instead gains Move Speed."
   },
@@ -363,6 +377,48 @@
       "num": 20,
       "name": "Three Honors Akshan",
       "chromas": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "166000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "166001",
+      "num": 1,
+      "name": "Akshan cyberpop",
+      "chromas": true
+    },
+    {
+      "id": "166010",
+      "num": 10,
+      "name": "Akshan rose de cristal",
+      "chromas": true
+    },
+    {
+      "id": "166020",
+      "num": 20,
+      "name": "Akshan des Trois Honneurs",
+      "chromas": false
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "shadya",
+      "type": "lore",
+      "relation": "student/family/adoptive-son",
+      "note_fr": "Élève/Fils adoptif",
+      "note_en": "Student/Adoptive son"
+    },
+    {
+      "id": "Viego",
+      "type": "champion",
+      "relation": "killer",
+      "note_fr": "A tué sa mentor",
+      "note_en": "Killed his mentor"
     }
   ]
 }

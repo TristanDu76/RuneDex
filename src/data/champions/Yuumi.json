@@ -3,7 +3,7 @@
   "key": "350",
   "name": "Yuumi",
   "title": "Gardienne du Grimoire",
-  "version": "15.23.1",
+  "version": "16.8.1",
   "lore": "Originaire de Bandle, Yuumi est un familier magique dont la maîtresse, une enchanteresse yordle du nom de Norra, a mystérieusement disparu. Yuumi est désormais la gardienne du Grimoire des Seuils que possédait Norra, un livre permettant de franchir des portails. Partie à la recherche de sa maîtresse, Yuumi s'est fait de nouveaux amis durant son périple, et elle les protège tous avec la même détermination. Même si Grimoire aimerait que Yuumi se concentre davantage sur sa mission, sa comparse aime prendre le temps de faire la sieste et de pêcher des poissons. Malgré cela, elle finit toujours par repartir en quête de sa maîtresse.",
   "tags": [
     "Support",
@@ -11,89 +11,27 @@
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Yuumi.png",
+    "sprite": "champion5.png",
+    "group": "champion",
     "x": 144,
     "y": 48,
-    "full": "Yuumi.png",
-    "group": "champion",
-    "sprite": "champion5.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "350000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "350001",
-      "num": 1,
-      "name": "Proviseur Yuumi de l'Académie",
-      "chromas": true
-    },
-    {
-      "id": "350011",
-      "num": 11,
-      "name": "Yuumi cœur-de-cible",
-      "chromas": true
-    },
-    {
-      "id": "350019",
-      "num": 19,
-      "name": "Yuumi abeille",
-      "chromas": true
-    },
-    {
-      "id": "350028",
-      "num": 28,
-      "name": "Yuumi sorcière",
-      "chromas": true
-    },
-    {
-      "id": "350037",
-      "num": 37,
-      "name": "EDG Yuumi",
-      "chromas": true
-    },
-    {
-      "id": "350039",
-      "num": 39,
-      "name": "Shiba Yuumi",
-      "chromas": true
-    },
-    {
-      "id": "350049",
-      "num": 49,
-      "name": "Yuumi cyber-chat",
-      "chromas": true
-    },
-    {
-      "id": "350050",
-      "num": 50,
-      "name": "Yuumi cyber-chat prestige",
-      "chromas": false
-    },
-    {
-      "id": "350061",
-      "num": 61,
-      "name": "Yuumi héraut de la nuit",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "YuumiQ",
       "name": "Tête chat-sseuse",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YuumiQ.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 0,
         "y": 144,
-        "full": "YuumiQ.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 6,
@@ -107,6 +45,13 @@
           "Ralentissement renforcé",
           "Dégâts à l'impact",
           "Coût en mana"
+        ],
+        "effect": [
+          "{{ missiledamage }} -> {{ missiledamageNL }}",
+          "{{ empoweredmissiledamage }} -> {{ empoweredmissiledamageNL }}",
+          "{{ empoweredslowamount }}% -> {{ empoweredslowamountNL }}%",
+          "{{ onhitbase }} -> {{ onhitbaseNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -120,13 +65,13 @@
       "name": "Félin pour l'autre !",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YuumiW.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 48,
         "y": 144,
-        "full": "YuumiW.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -137,6 +82,10 @@
         "label": [
           "Soins à l'impact",
           "Efficacité des soins et boucliers bonus"
+        ],
+        "effect": [
+          "{{ basehealthonhit }} -> {{ basehealthonhitNL }}",
+          "{{ healandshieldpower*100.000000 }}% -> {{ healandshieldpowernl*100.000000 }}%"
         ]
       },
       "resource": "Pas de coût",
@@ -150,13 +99,13 @@
       "name": "Zouuu !",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YuumiE.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 96,
         "y": 144,
-        "full": "YuumiE.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "0",
       "maxrank": 5,
@@ -169,6 +118,12 @@
           "Vitesse d'attaque",
           "Restauration du mana",
           "Coût en mana"
+        ],
+        "effect": [
+          "{{ baseshielding }} -> {{ baseshieldingNL }}",
+          "{{ attackspeedamount }}% -> {{ attackspeedamountNL }}%",
+          "{{ manarestore }} -> {{ manarestoreNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -182,13 +137,13 @@
       "name": "Chat-pitre final",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YuumiR.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 144,
         "y": 144,
-        "full": "YuumiR.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -200,6 +155,11 @@
           "Délai de récupération",
           "Dégâts de base par projectile",
           "Soins de base par vague"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basemissiledamage }} -> {{ basemissiledamageNL }}",
+          "{{ basehealperwave }} -> {{ basehealperwaveNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -212,13 +172,13 @@
   "passive": {
     "name": "Chat-maraderie",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "YuumiP2.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 144,
       "y": 48,
-      "full": "YuumiP2.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Périodiquement, quand Yuumi frappe un champion avec une attaque ou une compétence, elle récupère des PV et soigne le prochain allié auquel elle s'attache.<br><br>Lorsque Yuumi est attachée à un allié, elle génère un lien spécial avec lui. L'allié avec lequel son lien est le plus fort renforce les compétences de Yuumi quand elle est attachée à lui."
   },
@@ -239,13 +199,13 @@
       "name": "Prowling Projectile",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YuumiQ.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 0,
         "y": 144,
-        "full": "YuumiQ.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 6,
@@ -259,6 +219,13 @@
           "Empowered Slow Amount",
           "On-Hit Damage",
           "Mana Cost"
+        ],
+        "effect": [
+          "{{ missiledamage }} -> {{ missiledamageNL }}",
+          "{{ empoweredmissiledamage }} -> {{ empoweredmissiledamageNL }}",
+          "{{ empoweredslowamount }}% -> {{ empoweredslowamountNL }}%",
+          "{{ onhitbase }} -> {{ onhitbaseNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -272,13 +239,13 @@
       "name": "You and Me!",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YuumiW.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 48,
         "y": 144,
-        "full": "YuumiW.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -289,6 +256,10 @@
         "label": [
           "On-Hit Healing",
           "Bonus Heal & Shield Power"
+        ],
+        "effect": [
+          "{{ basehealthonhit }} -> {{ basehealthonhitNL }}",
+          "{{ healandshieldpower*100.000000 }}% -> {{ healandshieldpowernl*100.000000 }}%"
         ]
       },
       "resource": "No Cost",
@@ -302,13 +273,13 @@
       "name": "Zoomies",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YuumiE.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 96,
         "y": 144,
-        "full": "YuumiE.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "0",
       "maxrank": 5,
@@ -321,6 +292,12 @@
           "Attack Speed",
           "Mana Restore",
           "Mana Cost"
+        ],
+        "effect": [
+          "{{ baseshielding }} -> {{ baseshieldingNL }}",
+          "{{ attackspeedamount }}% -> {{ attackspeedamountNL }}%",
+          "{{ manarestore }} -> {{ manarestoreNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -334,13 +311,13 @@
       "name": "Final Chapter",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YuumiR.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 144,
         "y": 144,
-        "full": "YuumiR.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -352,6 +329,11 @@
           "Cooldown",
           "Base Damage Per Missile:",
           "Base Healing Per Wave"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basemissiledamage }} -> {{ basemissiledamageNL }}",
+          "{{ basehealperwave }} -> {{ basehealperwaveNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -364,13 +346,13 @@
   "passive_en": {
     "name": "Feline Friendship",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "YuumiP2.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 144,
       "y": 48,
-      "full": "YuumiP2.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Periodically, when Yuumi strikes a champion with an attack or ability, she restores health to herself and the next ally she Attaches to.<br><br>While Attached, Yuumi generates a special bond with her allies. The ally with the strongest bond enhances Yuumi's abilities while she is Attached to them."
   },
@@ -438,6 +420,89 @@
       "num": 61,
       "name": "Nightbringer Yuumi",
       "chromas": true
+    },
+    {
+      "id": "350070",
+      "num": 70,
+      "name": "Firecracker Yuumi",
+      "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "350000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "350001",
+      "num": 1,
+      "name": "Proviseur Yuumi de l'Académie",
+      "chromas": true
+    },
+    {
+      "id": "350011",
+      "num": 11,
+      "name": "Yuumi cœur-de-cible",
+      "chromas": true
+    },
+    {
+      "id": "350019",
+      "num": 19,
+      "name": "Yuumi abeille",
+      "chromas": true
+    },
+    {
+      "id": "350028",
+      "num": 28,
+      "name": "Yuumi sorcière",
+      "chromas": true
+    },
+    {
+      "id": "350037",
+      "num": 37,
+      "name": "EDG Yuumi",
+      "chromas": true
+    },
+    {
+      "id": "350039",
+      "num": 39,
+      "name": "Shiba Yuumi",
+      "chromas": true
+    },
+    {
+      "id": "350049",
+      "num": 49,
+      "name": "Yuumi cyber-chat",
+      "chromas": true
+    },
+    {
+      "id": "350050",
+      "num": 50,
+      "name": "Yuumi cyber-chat prestige",
+      "chromas": false
+    },
+    {
+      "id": "350061",
+      "num": 61,
+      "name": "Yuumi héraut de la nuit",
+      "chromas": true
+    },
+    {
+      "id": "350070",
+      "num": 70,
+      "name": "Yuumi pyrotechnicienne",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "norra",
+      "type": "lore",
+      "relation": "friend",
+      "note_fr": "Familière",
+      "note_en": "Familiar"
     }
   ]
 }

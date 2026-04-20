@@ -3,73 +3,35 @@
   "key": "888",
   "name": "Renata Glasc",
   "title": "Baronne de la chimie",
-  "version": "15.23.1",
-  "lore": "Renata Glasc est née à Zaun de parents alchimistes brillants et profondément humanistes. Ils offraient leurs soins aux plus pauvres, condamnant Renata à une enfance de faim et de ressentiment. Contrairement à eux, elle n'avait aucun don pour l'alchimie, mais un instinct infaillible pour les affaires et le profit.\n\n La Tragédie Fondatrice : Les parents de Renata mirent au point une formule chimique pour prolonger la vie, mais celle-ci rendait les patients extrêmement suggestifs ou violents. Inquiets pour leurs profits, les clans d'élite de Piltover payèrent des exécuteurs pour incendier leur maison. Renata perdit ses parents et son bras dans les flammes.\n\n L'Empire des Services : Jurant de ne jamais répéter l'erreur de l'altruisme gratuit, Renata utilisa les restes des recherches de ses parents pour bâtir son empire. Elle prêtait de l'argent, donnait du travail et soignait les malades, mais toujours avec un prix : si vous ne pouviez payer en pièces, elle exigeait votre loyauté absolue.\n\n L'Innovation par la Nécessité : Elle créa Glasc Industries en exploitant le génie des jeunes talents démunis de Zaun, leur offrant stabilité contre leur travail à perpétuité. Elle s'imposa rapidement comme une baronne de la chimie incontournable, rachetant ses concurrents ou les forçant à collaborer.\n\n La Conquête de Piltover : Profitant d'une catastrophe chimique à Zaun, elle offrit des purificateurs d'air à tous, s'achetant ainsi une image de sainte. Cette renommée ouvrit les portes de Piltover : ses produits de luxe sont désormais partout, et l'élite piltovienne s'arrache sa compagnie.\n\n Le Plan Final : Renata ne veut pas seulement être riche ; elle veut le contrôle. Elle vise le Canal de la Porte du Soleil pour contrôler le commerce mondial. Le secret terrifiant ? Chaque produit Glasc contient une dose de la formule de ses parents. À sa commande, elle peut libérer les toxines, transformant ses clients en marionnettes dociles ou en bêtes féroces.",
+  "version": "16.8.1",
+  "lore": "Renata Glasc s'extirpa des cendres de sa maison natale avec son nom et les recherches alchimiques de ses parents pour seules possessions. Au cours des décennies suivantes, elle devint la Baronne de la chimie la plus riche de Zaun et un génie des affaires capable de faire converger les intérêts de tous vers les siens. Travaillez avec elle et vous serez généreusement récompensé. Opposez-vous à elle et vous ne manquerez pas d'occasions de le regretter. Sachez seulement que tout le monde finit par se rallier à elle.",
   "tags": [
     "Support",
     "Mage"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Renata.png",
+    "sprite": "champion3.png",
+    "group": "champion",
     "x": 384,
     "y": 48,
-    "full": "Renata.png",
-    "group": "champion",
-    "sprite": "champion3.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "888000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "888001",
-      "num": 1,
-      "name": "Amirale Glasc",
-      "chromas": true
-    },
-    {
-      "id": "888010",
-      "num": 10,
-      "name": "Renata Glasc Nuit d'effroi",
-      "chromas": true
-    },
-    {
-      "id": "888020",
-      "num": 20,
-      "name": "Renata Glasc La Ilusión",
-      "chromas": true
-    },
-    {
-      "id": "888021",
-      "num": 21,
-      "name": "Renata Glasc La Ilusión prestige",
-      "chromas": false
-    },
-    {
-      "id": "888031",
-      "num": 31,
-      "name": "Renata Glasc bal masqué de la Rose noire",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "RenataQ",
       "name": "Poignée de main",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RenataQ.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 0,
         "y": 48,
-        "full": "RenataQ.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -79,6 +41,9 @@
       "leveltip": {
         "label": [
           "Dégâts"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -92,13 +57,13 @@
       "name": "Patronage",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RenataW.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 48,
         "y": 48,
-        "full": "RenataW.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -110,6 +75,11 @@
           "Vitesse d'attaque",
           "Vitesse de déplacement",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ bonusattackspeed }}% -> {{ bonusattackspeedNL }}%",
+          "{{ bonusmovespeed }}% -> {{ bonusmovespeedNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -123,13 +93,13 @@
       "name": "Programme de fidélité",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RenataE.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 96,
         "y": 48,
-        "full": "RenataE.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -142,6 +112,12 @@
           "Délai de récupération",
           "PV du bouclier",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ shieldvalue }} -> {{ shieldvalueNL }}",
+          "{{ basecost }} -> {{ basecostNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -155,13 +131,13 @@
       "name": "Prise de contrôle hostile",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RenataR.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 144,
         "y": 48,
-        "full": "RenataR.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -172,6 +148,10 @@
         "label": [
           "Délai de récupération",
           "Durée"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ berserkduration }} -> {{ berserkdurationNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -184,13 +164,13 @@
   "passive": {
     "name": "Pression",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Renata_P.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 384,
       "y": 48,
-      "full": "Renata_P.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Les attaques de Renata infligent des dégâts supplémentaires et marquent les ennemis. Les alliés de Renata peuvent infliger des dégâts supplémentaires aux ennemis marqués."
   },
@@ -205,20 +185,20 @@
   "gender": "Female",
   "species": "Human",
   "title_en": "the Chem-Baroness",
-  "lore_en": "Renata Glasc was born in Zaun to brilliant alchemists who dedicated their lives to healing the poor for free. Renata grew up hungry and resentful of her parents' selflessness. While she lacked their alchemical talent, she possessed a predatory instinct for business and power.\n\n The Foundational Tragedy: Her parents developed a life-extending formula that had dark side effects, making patients highly suggestible or violent. Threatened by this research, the elite clans of Piltover sent enforcers to burn the Glasc home. Renata lost her parents and her arm in the fire.\n\n The Empire of Debt: Swearing off \"thankless altruism,\" Renata began building an empire where nothing was free. She offered jobs, loans, and medicine, but the price for those who couldn't pay was their undying loyalty.\n\n Exploiting Genius: She established Glasc Industries by investing in destitute young innovators, trading family stability for their lifelong labor. She quietly became a Chem-baron, expanding from mining to refineries, making herself too profitable to be opposed.\n\n Benevolence as a Mask: Following a toxic gas accident in Zaun, she distributed free breathers and filters, earning the city's loyalty and rebranding herself as a savior. This reputation allowed her high-end products to flood the markets of Piltover, where she is now a corporate icon.\n\n The Master Plan: Renata aims for ultimate control by seizing the Sun Gate, the heart of global trade. Every Glasc product in Piltover and Zaun contains a hidden cache of her parents' formula. With a single command, she can release it, turning the populace into her personal, mind-controlled army.",
+  "lore_en": "Renata Glasc rose from the ashes of her childhood home with nothing but her name and her parents' alchemical research. In the decades since, she has become Zaun's wealthiest chem-baron, a business magnate who built her power by tying everyone's interests to her own. Work with her, and be rewarded beyond measure. Work against her, and live to regret it. But everyone comes to her side, eventually.",
   "spells_en": [
     {
       "id": "RenataQ",
       "name": "Handshake",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RenataQ.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 0,
         "y": 48,
-        "full": "RenataQ.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -228,6 +208,9 @@
       "leveltip": {
         "label": [
           "Damage"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -241,13 +224,13 @@
       "name": "Bailout",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RenataW.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 48,
         "y": 48,
-        "full": "RenataW.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -259,6 +242,11 @@
           "Attack Speed",
           "Move Speed",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ bonusattackspeed }}% -> {{ bonusattackspeedNL }}%",
+          "{{ bonusmovespeed }}% -> {{ bonusmovespeedNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -272,13 +260,13 @@
       "name": "Loyalty Program",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RenataE.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 96,
         "y": 48,
-        "full": "RenataE.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -291,6 +279,12 @@
           "Cooldown",
           "Shield Amount",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ shieldvalue }} -> {{ shieldvalueNL }}",
+          "{{ basecost }} -> {{ basecostNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -304,13 +298,13 @@
       "name": "Hostile Takeover",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RenataR.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 144,
         "y": 48,
-        "full": "RenataR.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -321,6 +315,10 @@
         "label": [
           "Cooldown",
           "Duration"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ berserkduration }} -> {{ berserkdurationNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -333,13 +331,13 @@
   "passive_en": {
     "name": "Leverage",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Renata_P.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 384,
       "y": 48,
-      "full": "Renata_P.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Renata's Attacks deal bonus damage and mark enemies. Renata's allies can damage marked enemies to deal bonus damage."
   },
@@ -384,5 +382,44 @@
       "name": "Masque of the Black Rose Renata Glasc",
       "chromas": false
     }
-  ]
+  ],
+  "skins": [
+    {
+      "id": "888000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "888001",
+      "num": 1,
+      "name": "Amirale Glasc",
+      "chromas": true
+    },
+    {
+      "id": "888010",
+      "num": 10,
+      "name": "Renata Glasc Nuit d'effroi",
+      "chromas": true
+    },
+    {
+      "id": "888020",
+      "num": 20,
+      "name": "Renata Glasc La Ilusión",
+      "chromas": true
+    },
+    {
+      "id": "888021",
+      "num": 21,
+      "name": "Renata Glasc La Ilusión prestige",
+      "chromas": false
+    },
+    {
+      "id": "888031",
+      "num": 31,
+      "name": "Renata Glasc bal masqué de la Rose noire",
+      "chromas": false
+    }
+  ],
+  "related_characters": []
 }

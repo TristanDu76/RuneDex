@@ -3,78 +3,34 @@
   "key": "429",
   "name": "Kalista",
   "title": "Lance de la vengeance",
-  "version": "15.23.1",
-  "lore": "Kalista était la générale la plus fière et loyale de son empire, nièce du Roi sans nom. Sa vigilance sauva le Roi d'un assassin, mais la lame empoisonnée blessa mortellement la Reine.\n\nLa Quête et la Trahison Secrète : Le Roi, accablé de chagrin, envoya Kalista chercher un remède sur les Îles Bénies (Blessed Isles), dont les maîtres connaissaient le secret de la vie éternelle à Helia. Pendant son absence, Hecarim, animé par sa soif de gloire, prit sa place à la droite du Roi. Kalista revint avec le secret (un talisman pour le passage), mais la Reine était déjà morte.\n\nLa Ruine Initiée par Hecarim : Le Roi, fou de chagrin, refusa la vérité et fut persuadé par Hecarim de se rendre sur les Îles pour y prendre le remède. Lorsque les maîtres d'Helia refusèrent de ressusciter la Reine (car cela briserait l'ordre naturel), le Roi ordonna le massacre. Kalista refusa. C'est à cet instant qu'Hecarim, trahissant sa cousine, planta sa lance dans le dos de Kalista en plein armure, incitant l'Ordre de Fer à la cribler de lances.\n\nLe Sacrifice de Ledros : Au milieu du massacre, le général Ledros, le plus fidèle et dévoué compagnon de Kalista, se jeta dans la mêlée pour la défendre contre Hecarim. Il fut massacré, tué en vainquant quelques traîtres. Kalista, mourant, jura vengeance contre les menteurs et les traîtres.\n\nLa Transformation Spectrale : La catastrophe (la Ruine) s'ensuivit, transformant les Îles Bénies en Îles Obscures (Shadow Isles). Kalista revint en tant que Spectre courroucé, l'incarnation de la vengeance, un cauchemar en armure qui pourchasse les âmes des traîtres qui font un pacte avec elle.\n\nL'Éternel Conflit : Kalista est désormais liée à la Nappe noire. Cependant, Ledros est l'un des rares spectres qui conserve une conscience, sa loyauté étant plus forte que la malédiction de la Brume. Il erre dans la non-vie, luttant pour retrouver Kalista et lui apporter la paix, brisant le cycle de vengeance qui consume l'esprit de sa bien-aimée.",
+  "version": "16.8.1",
+  "lore": "Spectre courroucé des Îles obscures, Kalista est l'esprit immortel de la vengeance, un cauchemar en armure que l'on invoque pour pourchasser les traîtres et les menteurs. Les victimes trahies peuvent réclamer vengeance, mais Kalista ne répond qu'à ceux dont elle estime la cause digne de ses talents. Malheur à ceux qui suscitent l'ire de Kalista, car tout pacte qu'elle scelle ne se finit que d'une seule façon : dans les flammes glacées de ses lances spirituelles.",
   "tags": [
     "Marksman"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Kalista.png",
+    "sprite": "champion1.png",
+    "group": "champion",
     "x": 288,
     "y": 96,
-    "full": "Kalista.png",
-    "group": "champion",
-    "sprite": "champion1.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "429000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "429001",
-      "num": 1,
-      "name": "Kalista lune de sang",
-      "chromas": false
-    },
-    {
-      "id": "429002",
-      "num": 2,
-      "name": "Kalista des Worlds 2015",
-      "chromas": true
-    },
-    {
-      "id": "429003",
-      "num": 3,
-      "name": "SKT T1 Kalista",
-      "chromas": false
-    },
-    {
-      "id": "429005",
-      "num": 5,
-      "name": "Kalista maraudeuse",
-      "chromas": true
-    },
-    {
-      "id": "429014",
-      "num": 14,
-      "name": "Kalista de la cour féérique",
-      "chromas": true
-    },
-    {
-      "id": "429024",
-      "num": 24,
-      "name": "Kalista héraut de l'aube",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "KalistaMysticShot",
       "name": "Perforation",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KalistaMysticShot.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 96,
         "y": 0,
-        "full": "KalistaMysticShot.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -85,6 +41,10 @@
         "label": [
           "Coût en @AbilityResourceName@",
           "Dégâts"
+        ],
+        "effect": [
+          "{{ cost }} -> {{ costNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -98,13 +58,13 @@
       "name": "Sentinelle",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KalistaW.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 144,
         "y": 0,
-        "full": "KalistaW.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "2",
       "maxrank": 5,
@@ -116,6 +76,11 @@
           "Pourcentage des PV max en dégâts",
           "Recharge des munitions",
           "Dégâts max aux monstres"
+        ],
+        "effect": [
+          "{{ maxhealthdamage*100.000000 }}% -> {{ maxhealthdamagenl*100.000000 }}%",
+          "{{ ammorechargetooltip }} -> {{ ammorechargetooltipNL }}",
+          "{{ maximummonsterdamage }} -> {{ maximummonsterdamageNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -129,13 +94,13 @@
       "name": "Extirpation",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KalistaExpungeWrapper.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 192,
         "y": 0,
-        "full": "KalistaExpungeWrapper.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -150,6 +115,14 @@
           "Réduction de la vitesse de déplacement",
           "Mana rendu",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ additionalbasedamage }} -> {{ additionalbasedamageNL }}",
+          "{{ additionaladratio*100.000000 }}% -> {{ additionaladrationl*100.000000 }}%",
+          "{{ slowamount*100.000000 }}% -> {{ slowamountnl*100.000000 }}%",
+          "{{ manarefund }} -> {{ manarefundNL }}",
+          "{{ fakedcooldown }} -> {{ fakedcooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -163,13 +136,13 @@
       "name": "Appel du destin",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KalistaRx.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 240,
         "y": 0,
-        "full": "KalistaRx.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -180,6 +153,10 @@
         "label": [
           "Délai de récupération",
           "Durée de la projection"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ e2 }} -> {{ e2NL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -192,13 +169,13 @@
   "passive": {
     "name": "Maintien martial",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Kalista_Passive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 288,
       "y": 96,
-      "full": "Kalista_Passive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Donnez un ordre de déplacement pendant l'animation de l'attaque de base ou de la Perforation de Kalista pour bondir sur une petite distance dans cette direction après avoir lancé l'attaque."
   },
@@ -213,20 +190,20 @@
   "gender": "Female",
   "species": "Undead",
   "title_en": "the Spear of Vengeance",
-  "lore_en": "Kalista was the proud and loyal general of her empire, niece to the unnamed King. Her vigilance saved the King from an assassin, but the poisoned blade mortally wounded the Queen.\n\nThe Quest and Hecarim's Rise: The King, overwhelmed by grief, sent Kalista to seek a cure on the Blessed Isles (Helia), whose masters knew the secret to eternal life. During her absence, Hecarim, driven by his hunger for glory, took her place at the King's side. Kalista returned with the secret but the Queen was already dead. The King believed she was a traitor, but Hecarim persuaded her to guide the King to the Isles.\n\nThe Ultimate Betrayal: When Helia’s masters refused to resurrect the Queen (to avoid breaking the natural order), the King ordered the slaughter. Kalista refused. In that moment, Hecarim, betraying his cousin, drove his spear through Kalista’s back, inciting the Iron Order to join him in the treachery.\n\nLedros's Sacrifice: Amidst the betrayal, General Ledros, Kalista's most devoted loyalist (and devoted companion), threw himself into the fight to defend her against Hecarim. He was massacred, dying while attempting to save her. Kalista died swearing vengeance against traitors.\n\nThe Ruination and Transformation: The ensuing cataclysm (the Ruination) transformed the Blessed Isles into the Shadow Isles. Kalista returned as a Wrathful Specter, the immortal spirit of Vengeance, a nightmare invoked to hunt down betrayers and oathbreakers.\n\nThe Eternal Conflict: Kalista is bound to the Black Mist. However, Ledros is one of the few specters to retain a sliver of consciousness, his devotion stronger than the curse of the Mist. He wanders in undeath, desperately seeking to find Kalista and bring her peace, breaking the cycle of vengeance that consumes her spirit.",
+  "lore_en": "A specter of wrath and retribution, Kalista is the undying spirit of vengeance, an armored nightmare summoned from the Shadow Isles to hunt deceivers and traitors. The betrayed may cry out in blood to be avenged, but Kalista only answers those willing to pay with their very souls. Those who become the focus of Kalista's wrath should make their final peace, for any pact sealed with this grim hunter can only end with the cold, piercing fire of her soul-spears.",
   "spells_en": [
     {
       "id": "KalistaMysticShot",
       "name": "Pierce",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KalistaMysticShot.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 96,
         "y": 0,
-        "full": "KalistaMysticShot.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -237,6 +214,10 @@
         "label": [
           "@AbilityResourceName@ Cost",
           "Damage"
+        ],
+        "effect": [
+          "{{ cost }} -> {{ costNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -250,13 +231,13 @@
       "name": "Sentinel",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KalistaW.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 144,
         "y": 0,
-        "full": "KalistaW.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "2",
       "maxrank": 5,
@@ -268,6 +249,11 @@
           "Maximum Health Damage",
           "Ammo Recharge",
           "Monster Damage Cap"
+        ],
+        "effect": [
+          "{{ maxhealthdamage*100.000000 }}% -> {{ maxhealthdamagenl*100.000000 }}%",
+          "{{ ammorechargetooltip }} -> {{ ammorechargetooltipNL }}",
+          "{{ maximummonsterdamage }} -> {{ maximummonsterdamageNL }}"
         ]
       },
       "resource": "No Cost",
@@ -281,13 +267,13 @@
       "name": "Rend",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KalistaExpungeWrapper.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 192,
         "y": 0,
-        "full": "KalistaExpungeWrapper.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -302,6 +288,14 @@
           "Move Speed Slow",
           "Mana Refund",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ additionalbasedamage }} -> {{ additionalbasedamageNL }}",
+          "{{ additionaladratio*100.000000 }}% -> {{ additionaladrationl*100.000000 }}%",
+          "{{ slowamount*100.000000 }}% -> {{ slowamountnl*100.000000 }}%",
+          "{{ manarefund }} -> {{ manarefundNL }}",
+          "{{ fakedcooldown }} -> {{ fakedcooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -315,13 +309,13 @@
       "name": "Fate's Call",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KalistaRx.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 240,
         "y": 0,
-        "full": "KalistaRx.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -332,6 +326,10 @@
         "label": [
           "Cooldown",
           "Knockup Duration"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ e2 }} -> {{ e2NL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -344,13 +342,13 @@
   "passive_en": {
     "name": "Martial Poise",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Kalista_Passive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 288,
       "y": 96,
-      "full": "Kalista_Passive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Enter a movement command while winding up Kalista's basic attack or Pierce to lunge a short distance when she launches her attack."
   },
@@ -400,6 +398,57 @@
       "num": 24,
       "name": "Dawnbringer Kalista",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "429000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "429001",
+      "num": 1,
+      "name": "Kalista lune de sang",
+      "chromas": false
+    },
+    {
+      "id": "429002",
+      "num": 2,
+      "name": "Kalista des Worlds 2015",
+      "chromas": true
+    },
+    {
+      "id": "429003",
+      "num": 3,
+      "name": "SKT T1 Kalista",
+      "chromas": false
+    },
+    {
+      "id": "429005",
+      "num": 5,
+      "name": "Kalista maraudeuse",
+      "chromas": true
+    },
+    {
+      "id": "429014",
+      "num": 14,
+      "name": "Kalista de la cour féérique",
+      "chromas": true
+    },
+    {
+      "id": "429024",
+      "num": 24,
+      "name": "Kalista héraut de l'aube",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "ledros",
+      "type": "lore",
+      "relation": "eternal-lover"
     }
   ]
 }

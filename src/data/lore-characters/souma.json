@@ -1,11 +1,27 @@
 {
   "id": "souma",
   "name": "Souma",
-  "faction": null,
-  "gender": null,
-  "species": null,
-  "description": "Personnage du lore de League of Legends",
-  "image": null,
-  "created_at": "2026-01-26T13:41:34.762Z",
-  "description_en": "League of Legends lore character"
+  "origin_region": "ionia",
+  "region": "ionia",
+  "faction": [
+    "ionia"
+  ],
+  "universe": [
+    "runeterra-prime"
+  ],
+  "gender": "unknown",
+  "species": [
+    "human"
+  ],
+  "status": "dead",
+  "power_source": "martial-prowess",
+  "image": "https://wiki.leagueoflegends.com/en-us/images/ElderSouma.png?4ddf2",
+  "created_at": "2026-03-31T19:32:31.865519+00:00",
+  "description_en": "Elder Souma was one of the Ionian elders and master of the Wind Technique. He was both Yasuo's and Yone's master. He was accidentally killed by a fragment of Riven's blade when he broke it apart.",
+  "related_characters": [
+    "Riven",
+    "Yasuo",
+    "Yone"
+  ],
+  "description_fr": "L'Ancien Souma était l'un des anciens Ioniens et maître de la Technique du Vent. Il était à la fois le maître de Yasuo et celui de Yone. Il a été accidentellement tué par un fragment de la lame de Riven lorsqu'il l'a brisé."
 }

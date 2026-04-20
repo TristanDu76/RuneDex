@@ -1,0 +1,2120 @@
+[
+  {
+    "id": "anivia",
+    "name": "Anivia",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Anivia.png",
+    "factionKey": "freljord",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "volibear",
+        "type": "champion",
+        "relation": "brother/opposed",
+        "auto_generated": false,
+        "note_fr": "Frère et opposée",
+        "note_en": "Brother and opposite"
+      },
+      {
+        "id": "ornn",
+        "type": "champion",
+        "relation": "sister/ally",
+        "auto_generated": false
+      },
+      {
+        "id": "layka",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "seal-sister",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "willump",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "ashe",
+    "name": "Ashe",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Ashe.png",
+    "factionKey": "freljord",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "braum",
+        "type": "champion",
+        "relation": "ally",
+        "auto_generated": false,
+        "note_fr": "Protecteur d'Avarosa",
+        "note_en": "Protector of Avarosa"
+      },
+      {
+        "id": "gragas",
+        "type": "champion",
+        "relation": "ally",
+        "auto_generated": false,
+        "note_fr": "Fournisseur d'hydromel (Allié)",
+        "note_en": "Mead supplier (Ally)"
+      },
+      {
+        "id": "avarosa",
+        "type": "lore",
+        "relation": "family",
+        "auto_generated": false,
+        "note_fr": "Héritière / Descendante",
+        "note_en": "Heir / Descendant"
+      },
+      {
+        "id": "tryndamere",
+        "type": "champion",
+        "relation": "lover",
+        "auto_generated": false,
+        "note_fr": "Mari (Lien du sang)",
+        "note_en": "Husband (Bloodsworn)"
+      },
+      {
+        "id": "sejuani",
+        "type": "champion",
+        "relation": "rival/ex-ally",
+        "auto_generated": false
+      },
+      {
+        "id": "lissandra",
+        "type": "champion",
+        "relation": "rival",
+        "auto_generated": false,
+        "note_fr": "Entrave à la réunification du Freljord",
+        "note_en": "Hindrance to Freljord reunification"
+      },
+      {
+        "id": "era",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "grena",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "helnr",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "ildhaurg",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kalkia",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "maalcrom",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "revna",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "serylda",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "urkath",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "yrael",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "aurora",
+    "name": "Aurora",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Aurora.png",
+    "factionKey": "freljord",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "haestryr",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "brand",
+    "name": "Brand",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Brand.png",
+    "factionKey": "freljord",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "ryze",
+        "type": "champion",
+        "relation": "student",
+        "auto_generated": false,
+        "note_fr": "Ancien élève (Kegan Rodhe)",
+        "note_en": "Former student (Kegan Rodhe)"
+      },
+      {
+        "id": "kobuko",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "nakotak",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "braum",
+    "name": "Braum",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Braum.png",
+    "factionKey": "freljord",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "ashe",
+        "type": "champion",
+        "relation": "ally",
+        "auto_generated": false,
+        "note_fr": "Protecteur d'Avarosa",
+        "note_en": "Protector of Avarosa"
+      },
+      {
+        "id": "era",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "malik",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "necrit",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rafen",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rhasa-the-sunderer",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "willump",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "gnar",
+    "name": "Gnar",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Gnar.png",
+    "factionKey": "freljord",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "ava",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "nakotak",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "willump",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "gragas",
+    "name": "Gragas",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Gragas.png",
+    "factionKey": "freljord",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "ashe",
+        "type": "champion",
+        "relation": "ally",
+        "auto_generated": false,
+        "note_fr": "Fournisseur d'hydromel (Allié)",
+        "note_en": "Mead supplier (Ally)"
+      }
+    ]
+  },
+  {
+    "id": "lissandra",
+    "name": "Lissandra",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Lissandra.png",
+    "factionKey": "freljord",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "trundle",
+        "type": "champion",
+        "relation": "servant",
+        "auto_generated": false,
+        "note_fr": "Roi des Trolls",
+        "note_en": "Troll King"
+      },
+      {
+        "id": "avarosa",
+        "type": "lore",
+        "relation": "sister/enemy",
+        "auto_generated": false
+      },
+      {
+        "id": "nunu",
+        "type": "champion",
+        "relation": "rival",
+        "auto_generated": false,
+        "note_fr": "S'oppose à la Longue Nuit",
+        "note_en": "Opposes the long night"
+      },
+      {
+        "id": "ashe",
+        "type": "champion",
+        "relation": "rival",
+        "auto_generated": false,
+        "note_fr": "Entrave à la réunification du Freljord",
+        "note_en": "Hindrance to Freljord reunification"
+      },
+      {
+        "id": "boadir",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "brokvar-ironfist",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kalkia",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "layka",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "maalcrom",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "revna",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "serylda",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "willump",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "nunu",
+    "name": "Nunu et Willump",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Nunu.png",
+    "factionKey": "freljord",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "lissandra",
+        "type": "champion",
+        "relation": "rival",
+        "auto_generated": false,
+        "note_fr": "S'oppose à la Longue Nuit",
+        "note_en": "Opposes the long night"
+      },
+      {
+        "id": "layka",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "willump",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "ymaruq",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "olaf",
+    "name": "Olaf",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Olaf.png",
+    "factionKey": "freljord",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "sejuani",
+        "type": "champion",
+        "relation": "ally",
+        "auto_generated": false,
+        "note_fr": "Guerrier de la Griffe Hivernale",
+        "note_en": "Winter's Claw Warrior"
+      },
+      {
+        "id": "rafen",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "urkath",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "ornn",
+    "name": "Ornn",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Ornn.png",
+    "factionKey": "freljord",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "volibear",
+        "type": "champion",
+        "relation": "brother/rival",
+        "auto_generated": false,
+        "note_fr": "Frère et rival",
+        "note_en": "Brother and rival"
+      },
+      {
+        "id": "anivia",
+        "type": "champion",
+        "relation": "sister/ally",
+        "auto_generated": false
+      },
+      {
+        "id": "doran",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "fiske",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "haestryr",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "hertha",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kindra",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "seal-sister",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "willump",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "sejuani",
+    "name": "Sejuani",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Sejuani.png",
+    "factionKey": "freljord",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "udyr",
+        "type": "champion",
+        "relation": "family",
+        "auto_generated": false,
+        "note_fr": "Père de substitution",
+        "note_en": "Surrogate father"
+      },
+      {
+        "id": "olaf",
+        "type": "champion",
+        "relation": "ally",
+        "auto_generated": false,
+        "note_fr": "Guerrier de la Griffe Hivernale",
+        "note_en": "Winter's Claw Warrior"
+      },
+      {
+        "id": "avarosa",
+        "type": "lore",
+        "relation": "sister/rival",
+        "auto_generated": false,
+        "note_fr": "Sœur et rivale",
+        "note_en": "Sister and rival"
+      },
+      {
+        "id": "ashe",
+        "type": "champion",
+        "relation": "rival/ex-ally",
+        "auto_generated": false
+      },
+      {
+        "id": "anaakca",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "bristle",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "brokvar-ironfist",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "chuluun",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "era",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "grena",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kalkia",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "revna",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "scarthane-steffen",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "serylda",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "urkath",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "vrynna",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "trundle",
+    "name": "Trundle",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Trundle.png",
+    "factionKey": "freljord",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "lissandra",
+        "type": "champion",
+        "relation": "servant",
+        "auto_generated": false,
+        "note_fr": "Sorcière des glaces (Maître)",
+        "note_en": "Ice Witch (Master)"
+      },
+      {
+        "id": "hgar",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tarkaz-the-tribeless",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "uzgar-the-ancient",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "tryndamere",
+    "name": "Tryndamere",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Tryndamere.png",
+    "factionKey": "freljord",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "ashe",
+        "type": "champion",
+        "relation": "lover",
+        "auto_generated": false,
+        "note_fr": "Mari (Lien du sang)",
+        "note_en": "Husband (Bloodsworn)"
+      },
+      {
+        "id": "era",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "ildhaurg",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "scarthane-steffen",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tarkaz-the-tribeless",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "udyr",
+    "name": "Udyr",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Udyr.png",
+    "factionKey": "freljord",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "sejuani",
+        "type": "champion",
+        "relation": "family",
+        "auto_generated": false,
+        "note_fr": "Père de substitution",
+        "note_en": "Surrogate father"
+      },
+      {
+        "id": "chuluun",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "elk-of-bones",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "hyara-allseer",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "ildhaurg",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kai",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kalkia",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "seal-sister",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "valmar",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "volibear",
+    "name": "Volibear",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Volibear.png",
+    "factionKey": "freljord",
+    "type": "champion",
+    "canon": true,
+    "version": "16.8.1",
+    "related_characters": [
+      {
+        "id": "ornn",
+        "type": "champion",
+        "relation": "brother/rival",
+        "auto_generated": false,
+        "note_fr": "Frère et rival",
+        "note_en": "Brother and rival"
+      },
+      {
+        "id": "anivia",
+        "type": "champion",
+        "relation": "brother/opposed",
+        "auto_generated": false,
+        "note_fr": "Frère et opposée",
+        "note_en": "Brother and opposite"
+      },
+      {
+        "id": "era",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "hyara-allseer",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rhond",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "seal-sister",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "urkath",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "willump",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "avarosa",
+    "name": "Avarosa",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Freljord_Statue_Of_Avarosa.jpg?c080a",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "ashe",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "lissandra",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "sejuani",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "bjerg",
+    "name": "Bjerg",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/01FR007-full.png?146ef",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "boadir",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "ingvar-the-younger",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "boadir",
+    "name": "Boadir",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/08FR030-full.png?2013a",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "bjerg",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "lissandra",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "breshi",
+    "name": "Breshi",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06DE006-full.png?9fd16",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "chaska",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "fireth",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jax",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "pesh",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "trisk",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "fireth-reaper-of-the-sands",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "bristle",
+    "name": "Bristle",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/02FR002T3-full.png?03c08",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "sejuani",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "brokvar-ironfist",
+    "name": "Brokvar Ironfist",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Sylas_The_Shackles_of_Belief.jpg?9e943",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "lissandra",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "sejuani",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "sylas",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vrynna",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "chuluun",
+    "name": "Chuluun",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05FR006-full.png?f3d58",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "hyara-allseer",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "ildhaurg",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "sejuani",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "udyr",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "elk-of-bones",
+    "name": "Elk of Bones",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "udyr",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "era",
+    "name": "Era",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/02FR006-full.png?87190",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "ashe",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "braum",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "sejuani",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "tryndamere",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "volibear",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "fiske",
+    "name": "Fiske",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06FR004-full.png?ab691",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "hertha",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kindra",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "ornn",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "grena",
+    "name": "Grena",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Grena_Image.png?037b7",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "ashe",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "helnr",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "maalcrom",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "sejuani",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "yrael",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kalkia",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "grinzo",
+    "name": "Grinzo",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/07BW039-full.png?bb55b",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "ingvar-the-younger",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "haestryr",
+    "name": "Haestryr",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Haestryr_TSoHH_Idle_Sprite.png?3203d",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "aurora",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "ornn",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "helnr",
+    "name": "Helnr",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Helnr_Image.png?7db3b",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "ashe",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "grena",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "maalcrom",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "yrael",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "hertha",
+    "name": "Hertha",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06FR012-full.png?10c78",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "fiske",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kindra",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "ornn",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "hgar",
+    "name": "Hgar",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03FR005-full.png?7de17",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "tarkaz-the-tribeless",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "trundle",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "uzgar-the-ancient",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "hyara-allseer",
+    "name": "Hyara Allseer",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05FR012-full.png?5f517",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "ildhaurg",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kindred",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "udyr",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "volibear",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "wolf",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "chuluun",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "ildhaurg",
+    "name": "Ildhaurg",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05FR014-full.png?4d8b0",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "ashe",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "hyara-allseer",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "tryndamere",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "udyr",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "chuluun",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "ingvar-the-younger",
+    "name": "Ingvar the Younger",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/07FR015-full.png?1827a",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "bjerg",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "grinzo",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "poro",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "kalkia",
+    "name": "Kalkia",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Kalkia_Render.png?28bee",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "ashe",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "grena",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "lissandra",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "sejuani",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "udyr",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "urkath",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "kindra",
+    "name": "Kindra",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06FR004-full.png?ab691",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "fiske",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "hertha",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "ornn",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "layka",
+    "name": "Layka",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Nunu_Frozen_Hearts_01.jpg?40963",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "anivia",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "lissandra",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "nunu",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "maalcrom",
+    "name": "Maalcrom",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Maalcrom_Render.png?502b4",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "ashe",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "grena",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "helnr",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "lissandra",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "yrael",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "revna",
+    "name": "Revna",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06FR028-full.png?73f0e",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "ashe",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "lissandra",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "protector",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "sejuani",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vrynna",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "rhond",
+    "name": "Rhond",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/08FR015-full.png?c4f86",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "volibear",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "scarthane-steffen",
+    "name": "Scarthane Steffen",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/01FR045-full.png?5e33d",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "sejuani",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "tryndamere",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vrynna",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "seal-sister",
+    "name": "Seal Sister",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "anivia",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "ornn",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "udyr",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "volibear",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "serylda",
+    "name": "Serylda",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "ashe",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "lissandra",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "sejuani",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "tarkaz-the-tribeless",
+    "name": "Tarkaz the Tribeless",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/01FR021-full.png?550d7",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "hgar",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "trundle",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "tryndamere",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "uzgar-the-ancient",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "urkath",
+    "name": "Urkath",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Urkath_Render.png?06624",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "ashe",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kalkia",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kindred",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "olaf",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "sejuani",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "volibear",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "wolf",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "uzgar-the-ancient",
+    "name": "Uzgar the Ancient",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03FR011-full.png?7cb13",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "hgar",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "tarkaz-the-tribeless",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "trundle",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "willump",
+    "name": "Willump",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Nunu_Render.png?e499b",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "anivia",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "braum",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "gnar",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "lissandra",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "nunu",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "ornn",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "volibear",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "ymaruq",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "ymaruq",
+    "name": "Ymaruq",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Ymaruq_Image.JPG?c185e",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "nunu",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "willump",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "yrael",
+    "name": "Yrael",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Yrael_Render.png?18158",
+    "factionKey": "freljord",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "ashe",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "grena",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "helnr",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "maalcrom",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  }
+]

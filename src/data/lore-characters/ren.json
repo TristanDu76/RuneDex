@@ -1,11 +1,28 @@
 {
   "id": "ren",
   "name": "Ren",
-  "faction": null,
-  "gender": null,
-  "species": null,
-  "description": "Personnage du lore de League of Legends",
-  "image": null,
-  "created_at": "2026-01-26T13:41:34.761Z",
-  "description_en": "League of Legends lore character"
+  "origin_region": "piltover",
+  "region": "piltover",
+  "faction": [
+    "piltover"
+  ],
+  "universe": [
+    "runeterra-prime"
+  ],
+  "gender": "unknown",
+  "species": [
+    "human"
+  ],
+  "status": "unknown",
+  "power_source": "unknown",
+  "image": "https://wiki.leagueoflegends.com/en-us/images/Ren_Arcane_Render.png?9ba3c",
+  "created_at": "2026-03-31T19:31:31.826710+00:00",
+  "description_en": "Ren is the young daughter of Marcus. Silco would subtly threaten her life as a way to coerce Marcus into working for him. Because Ren is so innocent, she is unaware that Silco is a threat to her.",
+  "related_characters": [
+    "Grayson",
+    "Mantaire",
+    "Ran",
+    "Silco"
+  ],
+  "description_fr": "Ren est la jeune fille de Marcus. Silco menacerait subtilement sa vie pour contraindre Marcus à travailler pour lui. Parce que Ren est si innocente, elle ignore que Silco est une menace pour elle."
 }

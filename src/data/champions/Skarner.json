@@ -3,84 +3,40 @@
   "key": "72",
   "name": "Skarner",
   "title": "Souverain originel",
-  "version": "15.23.1",
-  "lore": "Skarner est un Brackern, une créature ancestrale liée à la terre. Né au sein du clan Ọ̀pal-hin, il se distingua par sa curiosité et sa maîtrise des vibrations terrestres. Alors que son espèce restait discrète, Skarner fut fasciné par l'arrivée des humains à l'est : les Ixtali.\n\n Le Gardien des Fragiles : En observant les humains, Skarner fut frappé par leur fragilité mais aussi par leur ingéniosité. Après avoir sauvé un village d'un éboulement, il développa un instinct protecteur obsessionnel. Il aida à bâtir les arcologies d'Ixtal et devint l'un des membres fondateurs des Yun Tal, la caste dirigeante.\n\n La Désillusion Shurimienne : Skarner fut témoin de l'essor et de la chute de l'Empire de Shurima. Il vit la corruption des Transfigurés et l'horreur des Guerres Runiques. Ces événements ancrèrent en lui une haine et une méfiance absolue envers le monde extérieur, qu'il perçoit comme un désert de souffrance.\n\n L'Isolationnisme par la Peur : Skarner convainquit les Yun Tal de cacher Ixtal du reste du monde par la magie. Pour mieux surveiller les menaces, il s'installa dans une chambre souterraine sous la cité d'Ixaocan, capable d'amplifier les vibrations de tout le continent.\n\n La Paranoïa de l'Ancien : Avec les siècles, sa vigilance s'est transformée en paranoïa. Il ne quitte plus sa chambre et n'accorde sa confiance à personne. Pour les Ixtali, il est devenu un mythe, mais pour les Yun Tal, il est une autorité redoutable qu'ils consultent dans le secret.\n\n Le Conflit à Venir : Alors que certains membres des Yun Tal souhaitent rouvrir Ixtal au monde, Skarner perçoit ces murmures comme une trahison. Il est prêt à commettre l'irréparable pour garder les portes closes, convaincu que lui seul sait ce qui est bon pour son peuple.",
+  "version": "16.8.1",
+  "lore": "L'antique Brackern Skarner est vénéré à Ixtal comme l'un des membres fondateurs de la caste dirigeante, les Yun Tal. Il protège farouchement sa nation du reste du monde en écoutant les vibrations de la terre pour détecter de potentielles menaces depuis son antre sous Ixaocan. Alors que de plus en plus de membres des Yun Tal commencent à remettre en question leur isolement, Skarner se montre chaque jour un peu plus paranoïaque et prêt à tout pour assurer la sécurité d'Ixtal et de ses habitants, quel qu'en soit le prix.",
   "tags": [
     "Tank",
     "Fighter"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Skarner.png",
+    "sprite": "champion4.png",
+    "group": "champion",
     "x": 240,
     "y": 0,
-    "full": "Skarner.png",
-    "group": "champion",
-    "sprite": "champion4.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "72000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "72001",
-      "num": 1,
-      "name": "Skarner fléau des sables",
-      "chromas": false
-    },
-    {
-      "id": "72002",
-      "num": 2,
-      "name": "Skarner tellurique",
-      "chromas": false
-    },
-    {
-      "id": "72003",
-      "num": 3,
-      "name": "Proto Skarner Alpha",
-      "chromas": false
-    },
-    {
-      "id": "72004",
-      "num": 4,
-      "name": "Skarner gardien des sables",
-      "chromas": false
-    },
-    {
-      "id": "72005",
-      "num": 5,
-      "name": "Skarner dard cosmique",
-      "chromas": true
-    },
-    {
-      "id": "72014",
-      "num": 14,
-      "name": "Skarner du royaume des mechas",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "SkarnerQ",
       "name": "Terre brisée/Soulèvement",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SkarnerQ.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 384,
         "y": 144,
-        "full": "SkarnerQ.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
       "tooltip": "Skarner arrache un rocher du sol, gagnant <attackSpeed>+{{ attackspeed*100 }}% de vitesse d'attaque</attackSpeed> pour ses 3 prochaines attaques et infligeant <physicalDamage>{{ abilitydamage }} pts de dégâts physiques</physicalDamage> aux ennemis proches. Sa dernière attaque inflige des <physicalDamage>dégâts physiques bonus équivalents à {{ maxhppercent*100 }}% des PV max</physicalDamage> et <status>ralentit</status> les ennemis affectés de {{ slowpercent*100 }}% pendant {{ slowduration }} sec.<br /><br /><recast>Réactivation :</recast> Skarner met un terme à cette compétence et lance son rocher, infligeant des <physicalDamage>dégâts physiques équivalents à {{ spell.skarnerq:abilitydamage }} + {{ spell.skarnerq:maxhppercent*100 }}% des PV max</physicalDamage>. Le premier ennemi touché et les autres ennemis proches sont aussi <status>ralentis</status> de {{ spell.skarnerq:slowpercent*100 }}% pendant {{ spell.skarnerq:slowduration }} sec.{{ spellmodifierdescriptionappend }}",
-      "costBurn": "45",
+      "costBurn": "30",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
@@ -88,6 +44,12 @@
           "Vitesse d'attaque",
           "Limite contre les monstres",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ attackspeed*100.000000 }}% -> {{ attackspeednl*100.000000 }}%",
+          "{{ monsterdamagecap }} -> {{ monsterdamagecapNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -101,13 +63,13 @@
       "name": "Bastion sismique",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SkarnerW.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 432,
         "y": 144,
-        "full": "SkarnerW.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -119,6 +81,11 @@
           "Dégâts",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -132,13 +99,13 @@
       "name": "Impact d'Ixtal",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SkarnerE.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 0,
         "y": 0,
-        "full": "SkarnerE.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -150,6 +117,11 @@
           "Dégâts",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ pinbasedamage }} -> {{ pinbasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -163,13 +135,13 @@
       "name": "Empalement",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SkarnerR.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 48,
         "y": 0,
-        "full": "SkarnerR.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -180,6 +152,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -192,13 +168,13 @@
   "passive": {
     "name": "Échos des vibrations",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Skarner_Passive.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 240,
       "y": 0,
-      "full": "Skarner_Passive.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Les attaques de Skarner, Terre brisée, Soulèvement et Empalement appliquent Tectonique. Au maximum d'effets Tectonique cumulés, les ennemis subissent des dégâts magiques selon leurs PV max sur la durée."
   },
@@ -210,25 +186,25 @@
   "gender": "Male",
   "species": "Brackern",
   "title_en": "the Primordial Sovereign",
-  "lore_en": "Skarner is a Brackern, an ancient being born to shape the earth. Unlike his kin, he was fascinated by the arrival of settlers from the east: the Ixtali. His ability to read underground vibrational patterns allowed him to understand the world in ways no mortal could.\n\n The Great Architect: After saving an early settlement from a rockslide, Skarner became the patron of Ixtal. He helped build the cardinal arcologies of Ixaocan and merged Brackern collectivism with human science to found the Yun Tal ruling caste.\n\n Witness to Ruin: Skarner watched the rise of the Shuriman Empire and the subsequent horrors of the Icathian rebellion and the Rune Wars. These cataclysms shattered his faith in humanity outside of Ixtal, leading him to believe the world beyond their jungle was a wasteland of pain.\n\n The Hidden Nation: He convinced the Yun Tal to hide Ixtal behind a veil of magic and lies. To ensure their safety, Skarner retreated to a deep chamber beneath the city, where he monitors the world's vibrations, listening for any sign of encroaching danger.\n\n Festering Paranoia: Over millennia, his protectiveness turned into isolationism and paranoia. He grew secluded, becoming a myth to the common people while remaining a shadow-sovereign to the Yun Tal leaders who travel underground to confer with him.\n\n The Breaking Point: As a new generation of Yun Tal considers rejoining the world, Skarner's fear has reached a breaking point. He views any attempt at diplomacy as an invitation to death, and he is prepared to become the destroyer of his own people if it means \"protecting\" them from the outside.",
+  "lore_en": "The ancient, colossal brackern Skarner is revered in Ixtal as one of the founding members of its ruling caste, the Yun Tal. Devoted to keeping his nation safe from the rest of the world, Skarner dwells in a chamber beneath Ixaocan where he can hear the vibrations of the earth and detect potential threats. As more members of the Yun Tal begin questioning Ixtal's self-isolation, Skarner grows increasingly paranoid and will do anything to keep Ixtal and its people safe—no matter the cost.",
   "spells_en": [
     {
       "id": "SkarnerQ",
       "name": "Shattered Earth / Upheaval",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SkarnerQ.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 384,
         "y": 144,
-        "full": "SkarnerQ.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
       "tooltip": "Skarner rips a boulder from the ground, empowering his next 3 Attacks with <attackSpeed>{{ attackspeed*100 }}% Attack Speed</attackSpeed> and dealing <physicalDamage>{{ abilitydamage }} physical damage</physicalDamage> to surrounding enemies. His final Attack will deal an additional <physicalDamage>{{ maxhppercent*100 }}% max Health physical damage</physicalDamage> and <status>Slow</status> affected foes by {{ slowpercent*100 }}% for {{ slowduration }}s.<br /><br /><recast>Recast:</recast> Skarner ends this Ability and throws his boulder, dealing <physicalDamage>{{ spell.skarnerq:abilitydamage }} + {{ spell.skarnerq:maxhppercent*100 }}% max Health physical damage</physicalDamage>, and additionally <status>Slowing</status> the first enemy hit — and any other surrounding enemies — by {{ spell.skarnerq:slowpercent*100 }}% for {{ spell.skarnerq:slowduration }}s.{{ spellmodifierdescriptionappend }}",
-      "costBurn": "45",
+      "costBurn": "30",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
@@ -236,6 +212,12 @@
           "Attack Speed",
           "Monster Cap",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ attackspeed*100.000000 }}% -> {{ attackspeednl*100.000000 }}%",
+          "{{ monsterdamagecap }} -> {{ monsterdamagecapNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -249,13 +231,13 @@
       "name": "Seismic Bastion",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SkarnerW.png",
+        "sprite": "spell12.png",
+        "group": "spell",
         "x": 432,
         "y": 144,
-        "full": "SkarnerW.png",
-        "group": "spell",
-        "sprite": "spell12.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -267,6 +249,11 @@
           "Damage",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -280,13 +267,13 @@
       "name": "Ixtal's Impact",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SkarnerE.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 0,
         "y": 0,
-        "full": "SkarnerE.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -298,6 +285,11 @@
           "Damage",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ pinbasedamage }} -> {{ pinbasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -311,13 +303,13 @@
       "name": "Impale",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SkarnerR.png",
+        "sprite": "spell13.png",
+        "group": "spell",
         "x": 48,
         "y": 0,
-        "full": "SkarnerR.png",
-        "group": "spell",
-        "sprite": "spell13.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -328,6 +320,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -340,13 +336,13 @@
   "passive_en": {
     "name": "Threads of Vibration",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Skarner_Passive.png",
+      "sprite": "passive4.png",
+      "group": "passive",
       "x": 240,
       "y": 0,
-      "full": "Skarner_Passive.png",
-      "group": "passive",
-      "sprite": "passive4.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Skarner's Attacks, Shattered Earth, Upheaval, and Impale, apply Quaking. At max stacks of Quaking, enemies take max Health magic damage over its duration."
   },
@@ -396,6 +392,59 @@
       "num": 14,
       "name": "Mecha Kingdoms Skarner",
       "chromas": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "72000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "72001",
+      "num": 1,
+      "name": "Skarner fléau des sables",
+      "chromas": false
+    },
+    {
+      "id": "72002",
+      "num": 2,
+      "name": "Skarner tellurique",
+      "chromas": false
+    },
+    {
+      "id": "72003",
+      "num": 3,
+      "name": "Proto Skarner Alpha",
+      "chromas": false
+    },
+    {
+      "id": "72004",
+      "num": 4,
+      "name": "Skarner gardien des sables",
+      "chromas": false
+    },
+    {
+      "id": "72005",
+      "num": 5,
+      "name": "Skarner dard cosmique",
+      "chromas": true
+    },
+    {
+      "id": "72014",
+      "num": 14,
+      "name": "Skarner du royaume des mechas",
+      "chromas": false
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Seraphine",
+      "type": "champion",
+      "relation": "related",
+      "note_fr": "Entend son cristal (Hextech)",
+      "note_en": "Hears his crystal (Hextech)"
     }
   ]
 }

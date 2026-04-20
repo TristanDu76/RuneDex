@@ -3,109 +3,35 @@
   "key": "42",
   "name": "Corki",
   "title": "Artilleur téméraire",
-  "version": "15.23.1",
-  "lore": "Corki est un Yordle qui, avec d'autres collègues comme Heimerdinger, a migré vers Piltover et a rapidement contribué à la communauté techmaturgique de la ville. Les Yordles, bien que petits en stature, compensent par leur application et leur sens de l'industrie.\r\n\r\nCorki a obtenu son titre de Bombardier Audacieux en pilotant l'un de ces développements : la conception originale du Reconnaissance Operations Front-Line Copter (Hélicoptère de première ligne pour les opérations de reconnaissance), un véhicule d'assaut aérien qui est devenu l'épine dorsale de la Force expéditionnaire de la Cité de Bandle (BCEF).\r\n\r\nAvec son escadron, les Serpents volants (Screaming Yipsnakes), Corki parcourait le ciel de Valoran, effectuant des acrobaties aériennes et des missions de surveillance. Corki était le plus célèbre de son escadron, connu pour rester calme sous le feu et faire preuve d'une bravoure frisant la folie. Il se porta volontaire pour de nombreuses missions derrière les lignes ennemies, qu'il s'agisse de collecte de renseignements ou de livraison de messages dans des zones dangereuses.\r\n\r\nIl s'épanouissait dans le danger et n'aimait rien tant qu'un bon combat aérien le matin. Bien plus qu'un pilote d'as, Corki a également apporté de nombreuses modifications à son hélicoptère, l'équipant d'un arsenal d'armes dont certains spéculent qu'elles étaient plus pour le spectacle que pour la fonctionnalité.\r\n\r\nLorsque les hostilités ouvertes cessèrent, Corki fut contraint à une retraite qu'il ressentit comme une coupure des moteurs. Il tenta de se contenter de vols acrobatiques et de courses de canyon, mais ce n'était plus la même chose sans l'odeur rafraîchissante de la poudre à canon.\r\n\r\nAujourd'hui, même si le contexte de guerre a disparu, Corki patrouille toujours dans l'espace aérien de sa patrie d'adoption, Piltover, avec la conviction qu'aucun problème n'est trop grand pour ne pas être résolu par un bon gros missile, cherchant toujours, même dans la paix, l'excitation et les sensations fortes du vol et du combat.",
+  "version": "16.8.1",
+  "lore": "Il y a deux choses que Corki, le pilote yordle, aime plus que tout au monde : les sensations de vol et sa fantastique moustache... mais pas nécessairement dans cet ordre. Après avoir quitté Bandle, il s'installa à Piltover, où il tomba amoureux des merveilleuses machines qu'il y trouva. Il consacra tout son temps au développement d'engins volants, tout en menant une unité de défense aérienne composée de pilotes aguerris : les Serpents volants. Serein même sous le feu ennemi, Corki patrouille dans l'espace aérien de sa patrie d'adoption, et il ne rencontre jamais le moindre problème qu'un bon gros missile ne puisse résoudre.",
   "tags": [
     "Marksman",
     "Mage"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Corki.png",
+    "sprite": "champion0.png",
+    "group": "champion",
     "x": 192,
     "y": 96,
-    "full": "Corki.png",
-    "group": "champion",
-    "sprite": "champion0.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "42000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "42001",
-      "num": 1,
-      "name": "Corki OVNI",
-      "chromas": false
-    },
-    {
-      "id": "42002",
-      "num": 2,
-      "name": "Corki toboggan",
-      "chromas": false
-    },
-    {
-      "id": "42003",
-      "num": 3,
-      "name": "Corki le baron rouge",
-      "chromas": false
-    },
-    {
-      "id": "42004",
-      "num": 4,
-      "name": "Corki Hot Rod",
-      "chromas": false
-    },
-    {
-      "id": "42005",
-      "num": 5,
-      "name": "Corki Urfrider",
-      "chromas": false
-    },
-    {
-      "id": "42006",
-      "num": 6,
-      "name": "Corki ailes du dragon",
-      "chromas": true
-    },
-    {
-      "id": "42007",
-      "num": 7,
-      "name": "Fnatic Corki",
-      "chromas": false
-    },
-    {
-      "id": "42008",
-      "num": 8,
-      "name": "Corki arcade",
-      "chromas": true
-    },
-    {
-      "id": "42018",
-      "num": 18,
-      "name": "Corki corgi",
-      "chromas": true
-    },
-    {
-      "id": "42026",
-      "num": 26,
-      "name": "Corki astronaute",
-      "chromas": true
-    },
-    {
-      "id": "42036",
-      "num": 36,
-      "name": "Corki jouet",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "PhosphorusBomb",
       "name": "Bombe au phosphore",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PhosphorusBomb.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 192,
         "y": 144,
-        "full": "PhosphorusBomb.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -117,6 +43,11 @@
           "Dégâts",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -130,13 +61,13 @@
       "name": "Valkyrie",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "CarpetBomb.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 240,
         "y": 144,
-        "full": "CarpetBomb.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -148,6 +79,11 @@
           "Dégâts sur la durée",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -161,13 +97,13 @@
       "name": "Gatling",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GGun.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 288,
         "y": 144,
-        "full": "GGun.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -179,6 +115,11 @@
           "Dégâts",
           "Réduction des défenses",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ shredmax*-1.000000 }} -> {{ shredmaxnl*-1.000000 }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -192,13 +133,13 @@
       "name": "Barrage de projectiles",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MissileBarrage.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 336,
         "y": 144,
-        "full": "MissileBarrage.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "4",
       "maxrank": 3,
@@ -208,6 +149,9 @@
       "leveltip": {
         "label": [
           "Dégâts"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -220,13 +164,13 @@
   "passive": {
     "name": "Munitions Hextech",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Corki_RapidReload.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 192,
       "y": 96,
-      "full": "Corki_RapidReload.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Corki inflige des <trueDamage>dégâts bruts</trueDamage> bonus équivalents à un pourcentage des dégâts de ses attaques de base."
   },
@@ -240,20 +184,20 @@
   "gender": "Male",
   "species": "Yordle",
   "title_en": "the Daring Bombardier",
-  "lore_en": "Corki is a Yordle who, along with colleagues like Heimerdinger, migrated to Piltover and quickly made several groundbreaking contributions to the city's techmaturgical community. What Yordles lack in stature, they make up for with industriousness.\r\n\r\nCorki earned his title as the Daring Bombardier by test-piloting one of these developments: the original design for the Reconnaissance Operations Front-Line Copter, an aerial assault vehicle that became the backbone of the Bandle City Expeditionary Force (BCEF).\r\n\r\nTogether with his squadron—the Screaming Yipsnakes—Corki soared over Valoran, performing aerial acrobatics and surveillance missions. Corki was the most renowned of his squadron, known for remaining cool under fire and exhibiting bravery to the point of madness. He volunteered for many missions behind enemy lines, whether gathering intelligence or delivering messages through hot zones.\r\n\r\nHe thrived on danger and enjoyed nothing more than a good dogfight in the morning. More than just an ace pilot, Corki also made several modifications to his copter, outfitting it with an arsenal of weapons that some speculate were more for show than functionality.\r\n\r\nWhen open hostilities ceased, Corki was forced into a retirement that he felt \"cut the engines and clipped the wings.\" He tried to make do with stunt flying and canyon running, but it was never the same without the refreshing smell of gunpowder streaking through the air around him.\r\n\r\nToday, even though the context of war is gone, Corki still patrols the airspace of his adopted homeland, Piltover, with the conviction that no problem is too great to be solved by a good big missile, always seeking, even in peace, the excitement and thrill of flying and fighting.",
+  "lore_en": "The yordle pilot Corki loves two things above all others: flying, and his glamorous mustache... though not necessarily in that order. After leaving Bandle City, he settled in Piltover and fell in love with the wondrous machines he found there. He dedicated himself to the development of flying contraptions, leading an aerial defense force of seasoned veterans known as the Screaming Yipsnakes. Calm under fire, Corki patrols the skies around his adopted home, and has never encountered a problem that a good missile barrage couldn't solve.",
   "spells_en": [
     {
       "id": "PhosphorusBomb",
       "name": "Phosphorus Bomb",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PhosphorusBomb.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 192,
         "y": 144,
-        "full": "PhosphorusBomb.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -265,6 +209,11 @@
           "Damage",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -278,13 +227,13 @@
       "name": "Valkyrie",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "CarpetBomb.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 240,
         "y": 144,
-        "full": "CarpetBomb.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -296,6 +245,11 @@
           "Damage Over Time",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -309,13 +263,13 @@
       "name": "Gatling Gun",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "GGun.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 288,
         "y": 144,
-        "full": "GGun.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -327,6 +281,11 @@
           "Damage",
           "Defense Reduction",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ shredmax*-1.000000 }} -> {{ shredmaxnl*-1.000000 }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -340,13 +299,13 @@
       "name": "Missile Barrage",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "MissileBarrage.png",
+        "sprite": "spell2.png",
+        "group": "spell",
         "x": 336,
         "y": 144,
-        "full": "MissileBarrage.png",
-        "group": "spell",
-        "sprite": "spell2.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "4",
       "maxrank": 3,
@@ -356,6 +315,9 @@
       "leveltip": {
         "label": [
           "Damage"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -368,13 +330,13 @@
   "passive_en": {
     "name": "Hextech Munitions",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Corki_RapidReload.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 192,
       "y": 96,
-      "full": "Corki_RapidReload.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "A percentage of Corki's basic attack damage is dealt as bonus <trueDamage>true damage</trueDamage>."
   },
@@ -455,5 +417,80 @@
       "name": "Brick Toy Corki",
       "chromas": true
     }
-  ]
+  ],
+  "skins": [
+    {
+      "id": "42000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "42001",
+      "num": 1,
+      "name": "Corki OVNI",
+      "chromas": false
+    },
+    {
+      "id": "42002",
+      "num": 2,
+      "name": "Corki toboggan",
+      "chromas": false
+    },
+    {
+      "id": "42003",
+      "num": 3,
+      "name": "Corki le baron rouge",
+      "chromas": false
+    },
+    {
+      "id": "42004",
+      "num": 4,
+      "name": "Corki Hot Rod",
+      "chromas": false
+    },
+    {
+      "id": "42005",
+      "num": 5,
+      "name": "Corki Urfrider",
+      "chromas": false
+    },
+    {
+      "id": "42006",
+      "num": 6,
+      "name": "Corki ailes du dragon",
+      "chromas": true
+    },
+    {
+      "id": "42007",
+      "num": 7,
+      "name": "Fnatic Corki",
+      "chromas": false
+    },
+    {
+      "id": "42008",
+      "num": 8,
+      "name": "Corki arcade",
+      "chromas": true
+    },
+    {
+      "id": "42018",
+      "num": 18,
+      "name": "Corki corgi",
+      "chromas": true
+    },
+    {
+      "id": "42026",
+      "num": 26,
+      "name": "Corki astronaute",
+      "chromas": true
+    },
+    {
+      "id": "42036",
+      "num": 36,
+      "name": "Corki jouet",
+      "chromas": true
+    }
+  ],
+  "related_characters": []
 }

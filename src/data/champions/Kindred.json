@@ -3,90 +3,34 @@
   "key": "203",
   "name": "Kindred",
   "title": "Chasseurs éternels",
-  "version": "15.23.1",
-  "lore": "Kindred représente les deux essences jumelles de la mort : Agneau (Lamb) et Loup (Wolf). Ils sont séparés mais inséparables, formant ensemble la mort elle-même.\n\nAgneau offre une fin rapide et paisible (sa flèche d'argent) à ceux qui acceptent leur sort.\n\nLoup poursuit ceux qui fuient la mort et leur arrache brutalement la vie avec ses crocs lors d'une chasse joyeuse.\n\nKindred est l'étreinte blanche du néant et le grincement de dents dans l'obscurité. Ils sont à la fois le berger et le boucher, le poète et le primitif. Le moment où ils sont appelés est lorsque le pouls martèle à la gorge d'un être vivant pris au bord de la vie.\n\nKindred traque Valoran depuis que ses peuples connaissent la mort. Les interprétations de leur nature varient selon les régions :\n\nUn vrai Démacien est censé se tourner vers Agneau, acceptant sa flèche.\n\nDans les rues sombres de Noxus, c'est Loup qui mène la chasse.\n\nDans les neiges du Freljord, les guerriers « embrassent Loup » avant de se battre, jurant d'honorer sa chasse avec le sang de leurs ennemis.\n\nÀ Bilgewater, les survivants de la Ruine se rassemblent pour honorer ceux qui ont eu droit à une vraie mort par Agneau et Loup.\n\nNier Kindred, c'est nier l'ordre naturel des choses. Ceux qui parviennent à leur échapper (comme les morts-vivants des Îles Obscures) ne trouvent aucun sanctuaire, mais seulement un cauchemar éveillé. Kindred attend patiemment les âmes piégées dans la non-vie, car ils savent que tous finiront par tomber sous l'arc d'Agneau ou les dents de Loup.\n\nLa plus ancienne apparition documentée des chasseurs éternels se trouve sur des masques anciens, sculptés dans des sépultures oubliées. Agneau et Loup restent toujours ensemble, car ils sont toujours Kindred.",
+  "version": "16.8.1",
+  "lore": "Kindred représente les essences jumelles de la mort, distinctes mais indissociables. La flèche d'Agneau offre une fin rapide à ceux qui acceptent leur destin. Loup pourchasse ceux qui fuient leur dernier soupir et leur arrache brutalement la vie à coups de crocs. Bien que les interprétations de la nature de Kindred varient à travers tout Runeterra, chaque mortel doit choisir le vrai visage de sa mort.",
   "tags": [
     "Marksman"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Kindred.png",
+    "sprite": "champion2.png",
+    "group": "champion",
     "x": 240,
     "y": 0,
-    "full": "Kindred.png",
-    "group": "champion",
-    "sprite": "champion2.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "203000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "203001",
-      "num": 1,
-      "name": "Kindred feu des ombres",
-      "chromas": false
-    },
-    {
-      "id": "203002",
-      "num": 2,
-      "name": "Super Kindred intergalactique",
-      "chromas": false
-    },
-    {
-      "id": "203003",
-      "num": 3,
-      "name": "Kindred fleur spirituelle",
-      "chromas": true
-    },
-    {
-      "id": "203012",
-      "num": 12,
-      "name": "Kindred de porcelaine",
-      "chromas": true
-    },
-    {
-      "id": "203022",
-      "num": 22,
-      "name": "Kindred Toutou et Matou",
-      "chromas": true
-    },
-    {
-      "id": "203023",
-      "num": 23,
-      "name": "DRX Kindred",
-      "chromas": true
-    },
-    {
-      "id": "203033",
-      "num": 33,
-      "name": "Kindred de porcelaine prestige",
-      "chromas": false
-    },
-    {
-      "id": "203034",
-      "num": 34,
-      "name": "Kindred de la Chasse éternelle",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "KindredQ",
       "name": "Danse des flèches",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KindredQ.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 384,
         "y": 144,
-        "full": "KindredQ.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -97,6 +41,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération de Frénésie de Loup"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ e4 }} -> {{ e4NL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -110,13 +58,13 @@
       "name": "Frénésie de Loup",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KindredW.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 432,
         "y": 144,
-        "full": "KindredW.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -127,6 +75,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ e5 }} -> {{ e5NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -140,23 +92,27 @@
       "name": "Terreur mortelle",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KindredEWrapper.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 0,
         "y": 0,
-        "full": "KindredEWrapper.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Kindred affaiblit un ennemi, le <status>ralentissant</status> de {{ totalslow }}% pendant {{ slowduration }} sec.<br /><br />La troisième attaque de Kindred contre la cible en moins de {{ totalduration }} sec envoie Loup sur l'ennemi, infligeant <physicalDamage>{{ basebitedamage }}</physicalDamage> plus <physicalDamage>{{ percentbitedamage }} des PV manquants en dégâts physiques</physicalDamage>.<br /><br />Si la cible a moins de {{ healththreshold }} de ses PV, le bond de Loup est alors un coup critique qui inflige <physicalDamage>{{ basebitedamage }}</physicalDamage> plus <physicalDamage>{{ critdamage }} des PV manquants en dégâts physiques</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Kindred affaiblit un ennemi, le <status>ralentissant</status> de {{ totalslow }}% pendant {{ slowduration }} sec.<br /><br />La troisième attaque de Kindred contre la cible en moins de {{ totalduration }} sec envoie Loup sur l'ennemi, infligeant <physicalDamage>{{ basebitedamage }}</physicalDamage> plus <physicalDamage>{{ percentbitedamage }} des PV manquants en dégâts physiques</physicalDamage>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -170,13 +126,13 @@
       "name": "Repos d'Agneau",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KindredR.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 48,
         "y": 0,
-        "full": "KindredR.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -187,6 +143,10 @@
         "label": [
           "Soins",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -199,13 +159,13 @@
   "passive": {
     "name": "Marque de Kindred",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Kindred_Passive.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 240,
       "y": 0,
-      "full": "Kindred_Passive.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Kindred peut marquer des cibles à chasser. Chaque chasse fructueuse renforce définitivement les compétences de base de Kindred. Toutes les 4 chasses menées à bien, la portée des attaques de base de Kindred augmente également."
   },
@@ -220,20 +180,20 @@
   "gender": "Other",
   "species": "Spirit",
   "title_en": "The Eternal Hunters",
-  "lore_en": "Kindred represents the twin essences of death: Lamb and Wolf. They are separate but never parted, together forming death itself.\n\nLamb's bow offers a swift and peaceful release from the mortal realm for those who accept their fate.\n\nWolf hunts down those who run from their end, delivering violent finality within his crushing jaws during his merry chase.\n\nKindred is the white embrace of nothingness and the gnashing of teeth in the dark. They are both the shepherd and the butcher, the poet and the primitive. They are called to their hunt by the hammering pulse at one's throat when caught on the edge of life.\n\nKindred has stalked Valoran for as long as its people have known death. Interpretations of their nature vary across regions:\n\nA true Demacian is said to turn to Lamb, taking the arrow swiftly.\n\nThrough the shadowed streets of Noxus, Wolf leads the hunt.\n\nIn the snows of the Freljord, warbands \"kiss the Wolf\" before fighting, vowing to honor his chase with their enemies' blood.\n\nIn Bilgewater, survivors gather after the Harrowing to honor those granted a true death by Lamb and Wolf.\n\nDenying Kindred is denying the natural order of things. Those few who have eluded them (like the undead of the Shadow Isles) find no sanctuary, only a waking nightmare. Kindred waits for those locked in undeath, knowing all will eventually fall to Lamb's bow or Wolf's teeth.\n\nThe earliest dated appearance of the eternal hunters is from a pair of ancient masks, carved into the gravesites of long-forgotten people. Lamb and Wolf remain together, for they are always Kindred.",
+  "lore_en": "Separate, but never parted, Kindred represents the twin essences of death. Lamb's bow offers a swift release from the mortal realm for those who accept their fate. Wolf hunts down those who run from their end, delivering violent finality within his crushing jaws. Though interpretations of Kindred's nature vary across Runeterra, every mortal must choose the true face of their death.",
   "spells_en": [
     {
       "id": "KindredQ",
       "name": "Dance of Arrows",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KindredQ.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 384,
         "y": 144,
-        "full": "KindredQ.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -244,6 +204,10 @@
         "label": [
           "Damage",
           "Cooldown in Wolf's Frenzy"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ e4 }} -> {{ e4NL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -257,13 +221,13 @@
       "name": "Wolf's Frenzy",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KindredW.png",
+        "sprite": "spell6.png",
+        "group": "spell",
         "x": 432,
         "y": 144,
-        "full": "KindredW.png",
-        "group": "spell",
-        "sprite": "spell6.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -274,6 +238,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ e5 }} -> {{ e5NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -287,23 +255,27 @@
       "name": "Mounting Dread",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KindredEWrapper.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 0,
         "y": 0,
-        "full": "KindredEWrapper.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Kindred weakens an enemy, <status>Slowing</status> them by {{ totalslow }}% for {{ slowduration }} second.<br /><br />Kindred's third Attack against the target within {{ totalduration }} seconds of each other directs Wolf to pounce on the enemy, dealing <physicalDamage>{{ basebitedamage }}</physicalDamage> plus <physicalDamage>{{ percentbitedamage }} missing Health physical damage</physicalDamage>.<br /><br />Wolf's pounce critically strikes for <physicalDamage>{{ basebitedamage }}</physicalDamage> plus <physicalDamage>{{ critdamage }} missing Health physical damage</physicalDamage> instead if they are below {{ healththreshold }} Health.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Kindred weakens an enemy, <status>Slowing</status> them by {{ totalslow }}% for {{ slowduration }} second.<br /><br />Kindred's third Attack against the target within {{ totalduration }} seconds of each other directs Wolf to pounce on the enemy, dealing an additional <physicalDamage>{{ basebitedamage }}</physicalDamage> plus <physicalDamage>{{ percentbitedamage }} missing Health physical damage</physicalDamage>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -317,13 +289,13 @@
       "name": "Lamb's Respite",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "KindredR.png",
+        "sprite": "spell7.png",
+        "group": "spell",
         "x": 48,
         "y": 0,
-        "full": "KindredR.png",
-        "group": "spell",
-        "sprite": "spell7.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -334,6 +306,10 @@
         "label": [
           "Healing",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -346,13 +322,13 @@
   "passive_en": {
     "name": "Mark of the Kindred",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Kindred_Passive.png",
+      "sprite": "passive2.png",
+      "group": "passive",
       "x": 240,
       "y": 0,
-      "full": "Kindred_Passive.png",
-      "group": "passive",
-      "sprite": "passive2.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Kindred can mark targets to Hunt. Successfully completing a Hunt permanently empowers Kindred's basic abilities. Every 4 hunts completed also increases Kindred's basic attack range."
   },
@@ -414,6 +390,71 @@
       "num": 34,
       "name": "Chosen of the Wolf Kindred",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "203000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "203001",
+      "num": 1,
+      "name": "Kindred feu des ombres",
+      "chromas": false
+    },
+    {
+      "id": "203002",
+      "num": 2,
+      "name": "Super Kindred intergalactique",
+      "chromas": false
+    },
+    {
+      "id": "203003",
+      "num": 3,
+      "name": "Kindred fleur spirituelle",
+      "chromas": true
+    },
+    {
+      "id": "203012",
+      "num": 12,
+      "name": "Kindred de porcelaine",
+      "chromas": true
+    },
+    {
+      "id": "203022",
+      "num": 22,
+      "name": "Kindred Toutou et Matou",
+      "chromas": true
+    },
+    {
+      "id": "203023",
+      "num": 23,
+      "name": "DRX Kindred",
+      "chromas": true
+    },
+    {
+      "id": "203033",
+      "num": 33,
+      "name": "Kindred de porcelaine prestige",
+      "chromas": false
+    },
+    {
+      "id": "203034",
+      "num": 34,
+      "name": "Kindred de la Chasse éternelle",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Mordekaiser",
+      "type": "champion",
+      "relation": "rival",
+      "note_fr": "Triche la mort",
+      "note_en": "Cheats death"
     }
   ]
 }

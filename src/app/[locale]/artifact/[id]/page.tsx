@@ -30,7 +30,7 @@ export default async function ArtifactPage({ params }: ArtifactPageProps) {
     };
 
     return (
-        <main className="min-h-screen bg-gray-900 text-white pb-20 pt-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <main className="min-h-screen bg-transparent text-white pb-20 pt-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
             {/* Background Glow */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-yellow-500/10 blur-[120px] rounded-full pointer-events-none" />
 
@@ -91,7 +91,7 @@ export default async function ArtifactPage({ params }: ArtifactPageProps) {
                                     href={artifact.owner.link}
                                     className="group flex items-center gap-4 bg-gray-800/50 p-4 rounded-xl border border-gray-700 hover:border-yellow-500 transition-all hover:bg-gray-800"
                                 >
-                                    <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-gray-600 group-hover:border-yellow-500 transition-colors bg-gray-900">
+                                    <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-gray-600 group-hover:border-yellow-500 transition-colors bg-transparent">
                                         {artifact.owner.image ? (
                                             <Image
                                                 src={(artifact.owner.image as any) || ''}

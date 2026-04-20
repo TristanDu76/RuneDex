@@ -3,126 +3,34 @@
   "key": "13",
   "name": "Ryze",
   "title": "Mage runique",
-  "version": "15.23.1",
-  "lore": "Ryze était le jeune apprenti de Tyrus de Helia, un sorcier membre d'un ordre ancien dédié à la protection des artefacts les plus dangereux de Runeterra : les Runes Telluriques (World Runes). Ces fragments de pure création possèdent une puissance capable de façonner ou de détruire l'existence même.\n\n Le Témoin de l'Horreur : Ryze et son maître parcoururent le monde pour prôner la retenue, mais la paranoïa des nations déclencha les Guerres Runiques. À Khom, Ryze vit pour la première fois l'effet d'une Rune : en un instant, le sol s'effondra, le ciel sembla hurler et tout ce qu'il connaissait, y compris son village natal, fut rayé de la carte.\n\n La Corruption de Tyrus : Pendant que le monde s'entredéchirait, Ryze remarqua que son maître changeait. Tyrus, autrefois diplomate de la paix, finit par s'emparer de deux Runes, convaincu que les mortels étaient des enfants trop irresponsables pour les détenir. Ryze comprit avec horreur que même l'homme le plus intègre ne pouvait résister à la tentation des Runes.\n\n Le Sacrifice de l'Amitié : Pour sauver le monde, Ryze fut contraint de tuer son propre maître et ami. Devant le corps fumant de Tyrus, il réalisa la portée de sa mission : il devait devenir le gardien solitaire de ces artefacts, car nul autre ne pouvait être digne de cette confiance.\n\n Un Fardeau Éternel : Depuis des siècles, la magie des Runes prolonge anormalement la vie de Ryze. Il parcourt Runeterra pour retrouver les Runes restantes, refusant leur pouvoir pour les sceller dans des lieux secrets. Son dos est courbé sous le poids d'un immense parchemin contenant les secrets de ces Runes.\n\n L'Oubli des Hommes : Aujourd'hui, alors que les rumeurs sur les Runes resurgissent, Ryze s'inquiète : les peuples semblent avoir oublié le prix payé lors des Guerres Runiques. Il n'a pas le droit au repos, car tant qu'une seule Rune reste libre, Runeterra est condamnée.",
+  "version": "16.8.1",
+  "lore": "Largement considéré comme l'un des plus puissants sorciers de Runeterra, Ryze est un archimage endurci par les ans qui porte un fardeau incommensurable sur ses épaules. Armé d'une constitution à toute épreuve et d'un vaste arsenal de connaissances mystiques, il consacre sa vie à rassembler les Runes telluriques, les fragments de magie brute qui ont jadis servi à façonner le monde. Ryze doit récupérer ces reliques avant qu'elles ne tombent entre de mauvaises mains, car il sait quel genre d'horreurs elles pourraient déchaîner sur Runeterra.",
   "tags": [
     "Mage"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Ryze.png",
+    "sprite": "champion3.png",
+    "group": "champion",
     "x": 144,
     "y": 96,
-    "full": "Ryze.png",
-    "group": "champion",
-    "sprite": "champion3.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "13000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "13001",
-      "num": 1,
-      "name": "Ryze jeune",
-      "chromas": false
-    },
-    {
-      "id": "13002",
-      "num": 2,
-      "name": "Ryze tribal",
-      "chromas": false
-    },
-    {
-      "id": "13003",
-      "num": 3,
-      "name": "Oncle Ryze",
-      "chromas": false
-    },
-    {
-      "id": "13004",
-      "num": 4,
-      "name": "Ryze triomphant",
-      "chromas": false
-    },
-    {
-      "id": "13005",
-      "num": 5,
-      "name": "Ryze professeur",
-      "chromas": false
-    },
-    {
-      "id": "13006",
-      "num": 6,
-      "name": "Ryze zombie",
-      "chromas": false
-    },
-    {
-      "id": "13007",
-      "num": 7,
-      "name": "Ryze au cristal noir",
-      "chromas": false
-    },
-    {
-      "id": "13008",
-      "num": 8,
-      "name": "Ryze pirate",
-      "chromas": false
-    },
-    {
-      "id": "13009",
-      "num": 9,
-      "name": "Ryze barbe blanche",
-      "chromas": false
-    },
-    {
-      "id": "13010",
-      "num": 10,
-      "name": "SKT T1 Ryze",
-      "chromas": true
-    },
-    {
-      "id": "13011",
-      "num": 11,
-      "name": "Ryze des Worlds 2019",
-      "chromas": true
-    },
-    {
-      "id": "13013",
-      "num": 13,
-      "name": "Ryze gardien des sables",
-      "chromas": true
-    },
-    {
-      "id": "13020",
-      "num": 20,
-      "name": "Ryze des arcanes",
-      "chromas": true
-    },
-    {
-      "id": "13029",
-      "num": 29,
-      "name": "Ryze lune de sang",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "RyzeQWrapper",
       "name": "Court-circuit",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RyzeQWrapper.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 0,
         "y": 144,
-        "full": "RyzeQWrapper.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -134,6 +42,11 @@
           "Dégâts",
           "Vitesse de déplacement",
           "Coût en mana"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ movementspeedamount }}% -> {{ movementspeedamountNL }}%",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -147,13 +60,13 @@
       "name": "Prison runique",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RyzeW.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 48,
         "y": 144,
-        "full": "RyzeW.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -165,6 +78,11 @@
           "Dégâts",
           "Délai de récupération",
           "Coût en mana"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -178,13 +96,13 @@
       "name": "Flux envoûtant",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RyzeE.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 96,
         "y": 144,
-        "full": "RyzeE.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -196,6 +114,11 @@
           "Dégâts",
           "Délai de récupération",
           "Coût en mana"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -209,13 +132,13 @@
       "name": "Portail transdimensionnel",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RyzeR.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 144,
         "y": 144,
-        "full": "RyzeR.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -226,6 +149,10 @@
         "label": [
           "Délai de récupération",
           "Augmentation des dégâts de Court-circuit"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ overloaddamagebonus }}% -> {{ overloaddamagebonusNL }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -238,13 +165,13 @@
   "passive": {
     "name": "Maîtrise des arcanes",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Ryze_P.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 144,
       "y": 96,
-      "full": "Ryze_P.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "<mainText>Les compétences de Ryze infligent des dégâts supplémentaires en fonction de son mana supplémentaire, et son mana max est augmenté d'un pourcentage en fonction de sa puissance.</mainText>"
   },
@@ -258,20 +185,20 @@
   "gender": "Male",
   "species": "Human",
   "title_en": "the Rune Mage",
-  "lore_en": "Ryze was once the apprentice of Tyrus of Helia, a sorcerer belonging to an ancient order tasked with protecting the most dangerous artifacts in Runeterra: the World Runes. These fragments of pure creation hold the power to either shape or unmake existence.\n\n Witness to Cataclysm: Ryze and his master traveled the world urging restraint, but national paranoia sparked the Rune Wars. In the village of Khom, Ryze witnessed a Rune's power firsthand: in a heartbeat, the earth retched, the sky recoiled, and his home was replaced by a massive hole in the world.\n\n The Corruption of a Master: As the wars raged, Ryze noticed Tyrus growing distant. Tyrus eventually secretly obtained two World Runes, believing mortals were reckless children who needed to be stopped. Ryze realized with horror that even a man of Tyrus's integrity was susceptible to the Runes' allure.\n\n The Ultimate Choice: To prevent total destruction, Ryze was forced to unleash his magic and kill his own master and friend. Standing over Tyrus's smoldering corpse, he inherited a lonely burden: he could never trust another living soul with these artifacts.\n\n A Lonely Quest: For centuries, Ryze's life has been unnaturally prolonged by the magic he carries. He scours Runeterra for the remaining Runes, rejecting the promise of power within each one and binding them in secret locations far from greedy eyes. He carries a massive scroll on his back, a weight as heavy as his duty.\n\n A World That Forgets: As rumors of the World Runes emerge once more, Ryze fears that the people of Runeterra have forgotten the horrific price of wielding them. He cannot afford to rest, for as long as one World Rune remains unsecured, the world is doomed.",
+  "lore_en": "Widely considered one of the most adept sorcerers on Runeterra, Ryze is an ancient, hard-bitten archmage with an impossibly heavy burden to bear. Armed with immense arcane power and a boundless constitution, he tirelessly hunts for World Runes—fragments of the raw magic that once shaped the world from nothingness. He must retrieve these artifacts before they fall into the wrong hands, for Ryze understands the horrors they could unleash on Runeterra.",
   "spells_en": [
     {
       "id": "RyzeQWrapper",
       "name": "Overload",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RyzeQWrapper.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 0,
         "y": 144,
-        "full": "RyzeQWrapper.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -283,6 +210,11 @@
           "Damage",
           "Move Speed",
           "Mana Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ movementspeedamount }}% -> {{ movementspeedamountNL }}%",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -296,13 +228,13 @@
       "name": "Rune Prison",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RyzeW.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 48,
         "y": 144,
-        "full": "RyzeW.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -314,6 +246,11 @@
           "Damage",
           "Cooldown",
           "Mana Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -327,13 +264,13 @@
       "name": "Spell Flux",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RyzeE.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 96,
         "y": 144,
-        "full": "RyzeE.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -345,6 +282,11 @@
           "Damage",
           "Cooldown",
           "Mana Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -358,13 +300,13 @@
       "name": "Realm Warp",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RyzeR.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 144,
         "y": 144,
-        "full": "RyzeR.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -375,6 +317,10 @@
         "label": [
           "Cooldown",
           "Overload Damage Increase"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ overloaddamagebonus }}% -> {{ overloaddamagebonusNL }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -387,13 +333,13 @@
   "passive_en": {
     "name": "Arcane Mastery",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Ryze_P.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 144,
       "y": 96,
-      "full": "Ryze_P.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "<mainText>Ryze's spells deal extra damage based on his Bonus Mana, and he gains a percentage increase to his maximum Mana based on his Ability Power.</mainText>"
   },
@@ -492,6 +438,114 @@
       "num": 29,
       "name": "Blood Moon Ryze",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "13000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "13001",
+      "num": 1,
+      "name": "Ryze jeune",
+      "chromas": false
+    },
+    {
+      "id": "13002",
+      "num": 2,
+      "name": "Ryze tribal",
+      "chromas": false
+    },
+    {
+      "id": "13003",
+      "num": 3,
+      "name": "Oncle Ryze",
+      "chromas": false
+    },
+    {
+      "id": "13004",
+      "num": 4,
+      "name": "Ryze triomphant",
+      "chromas": false
+    },
+    {
+      "id": "13005",
+      "num": 5,
+      "name": "Ryze professeur",
+      "chromas": false
+    },
+    {
+      "id": "13006",
+      "num": 6,
+      "name": "Ryze zombie",
+      "chromas": false
+    },
+    {
+      "id": "13007",
+      "num": 7,
+      "name": "Ryze au cristal noir",
+      "chromas": false
+    },
+    {
+      "id": "13008",
+      "num": 8,
+      "name": "Ryze pirate",
+      "chromas": false
+    },
+    {
+      "id": "13009",
+      "num": 9,
+      "name": "Ryze barbe blanche",
+      "chromas": false
+    },
+    {
+      "id": "13010",
+      "num": 10,
+      "name": "SKT T1 Ryze",
+      "chromas": true
+    },
+    {
+      "id": "13011",
+      "num": 11,
+      "name": "Ryze des Worlds 2019",
+      "chromas": true
+    },
+    {
+      "id": "13013",
+      "num": 13,
+      "name": "Ryze gardien des sables",
+      "chromas": true
+    },
+    {
+      "id": "13020",
+      "num": 20,
+      "name": "Ryze des arcanes",
+      "chromas": true
+    },
+    {
+      "id": "13029",
+      "num": 29,
+      "name": "Ryze lune de sang",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Brand",
+      "type": "champion",
+      "relation": "student",
+      "note_fr": "Ancien élève (Kegan Rodhe)",
+      "note_en": "Former student (Kegan Rodhe)"
+    },
+    {
+      "id": "Aatrox",
+      "type": "champion",
+      "relation": "conflict",
+      "note_fr": "Ryze est intervenu.",
+      "note_en": "Ryze intervened."
     }
   ]
 }

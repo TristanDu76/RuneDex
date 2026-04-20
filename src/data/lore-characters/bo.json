@@ -1,11 +1,28 @@
 {
   "id": "bo",
   "name": "Bo",
-  "faction": null,
-  "gender": null,
-  "species": null,
-  "description": "Personnage du lore de League of Legends",
-  "image": null,
-  "created_at": "2026-01-26T13:41:34.754Z",
-  "description_en": "League of Legends lore character"
+  "origin_region": "zaun",
+  "region": "zaun",
+  "faction": [
+    "zaun"
+  ],
+  "universe": [
+    "runeterra-prime"
+  ],
+  "gender": "unknown",
+  "species": [
+    "chirean"
+  ],
+  "status": "unknown",
+  "power_source": "unknown",
+  "image": "https://wiki.leagueoflegends.com/en-us/images/04PZ005-full.png?ef2c2",
+  "created_at": "2026-03-31T19:40:56.727644+00:00",
+  "description_en": "Bo is a chirean sumpworker. He is a friend of Ekko, Shomi, Jamie, and Kay.",
+  "description_fr": "Bo est un ouvrier chirien. C'est un ami d'Ekko, Shomi, Jamie et Kay.",
+  "related_characters": [
+    "Ekko",
+    "Jamie",
+    "Kay",
+    "Shomi"
+  ]
 }

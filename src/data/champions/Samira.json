@@ -3,73 +3,35 @@
   "key": "360",
   "name": "Samira",
   "title": "Rose du désert",
-  "version": "15.23.1",
-  "lore": "Samira est née à Amakra, aux abords du Grand Sai (Shurima), où elle gagnait sa vie comme artiste de rue avec ses parents. Son destin bascula la veille de ses quatorze ans, lorsque des étrangers armés, invoquant un ancien mage, massacrèrent son village.\n\n Le Serment de Courage : Cachée pendant le massacre, Samira ne ressentit pas de la tristesse, mais une haine féroce envers elle-même pour avoir eu peur et être restée impuissante. Elle jura que plus jamais elle ne se laisserait paralyser par la crainte.\n\n L'Appel de Noxus : Réfugiée à Bel'zhun, une cité sous contrôle noxien, elle s'engagea dans l'armée. Si ses capacités physiques éblouissaient ses pairs, son manque de discipline exaspérait ses supérieurs, à l'exception du Capitaine Indari. Celle-ci recruta Samira dans son unité spéciale pour des missions jugées trop périlleuses pour les soldats ordinaires.\n\n La Tragédie des Plaines de Rokrund : Lors d'une mission pour écraser une rébellion, la forteresse ennemie explosa. Samira plongea dans le chaos pour sauver Indari. Elle y perdit son œil droit, tandis qu'Indari fut paralysée des jambes. L'unité fut dissoute, laissant Samira sans but.\n\n Le Partenariat Mercenaire : Incapable de retourner à une vie civile ennuyeuse, Samira retrouva Indari dans la capitale noxienne. Elle proposa un pacte : Indari utiliserait ses contacts pour lui trouver des contrats de mercenariat à haut risque, et Samira les exécuterait seule.\n\n La Légende du Style : Sa réputation de casse-cou se répandit dans tout Runeterra. Qu'il s'agisse de battre un baron de la chimie au corps à corps ou d'être la seule survivante d'un raid à Bilgewater, Samira accepte tout, tant que le danger est présent. Elle marque ses exploits inoubliables par des tatouages, vivant pour le frisson du risque qui la fait se sentir véritablement vivante.",
+  "version": "16.8.1",
+  "lore": "Toujours en quête de sensations fortes, Samira regarde la mort dans les yeux avec une confiance inébranlable. Après la destruction qui a frappé son foyer shurimien lorsqu'elle était enfant, Samira a trouvé sa véritable vocation à Noxus, où elle s'est forgé une réputation de tête brûlée extrêmement classe qui accepte les missions les plus dangereuses. Munie de deux pistolets à poudre noire et d'une épée personnalisée, Samira s'épanouit lorsque sa vie est en danger et élimine spectaculairement tous ceux qui se mettent en travers de sa route.",
   "tags": [
     "Marksman",
     "Assassin"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Samira.png",
+    "sprite": "champion3.png",
+    "group": "champion",
     "x": 192,
     "y": 96,
-    "full": "Samira.png",
-    "group": "champion",
-    "sprite": "champion3.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "360000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "360001",
-      "num": 1,
-      "name": "Samira psychoguerrière",
-      "chromas": true
-    },
-    {
-      "id": "360010",
-      "num": 10,
-      "name": "Samira astro-groove",
-      "chromas": true
-    },
-    {
-      "id": "360020",
-      "num": 20,
-      "name": "Samira de l'Ouest",
-      "chromas": true
-    },
-    {
-      "id": "360030",
-      "num": 30,
-      "name": "Samira combattante spirituelle",
-      "chromas": false
-    },
-    {
-      "id": "360033",
-      "num": 33,
-      "name": "Samira bal masqué de la Rose noire",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "SamiraQ",
       "name": "Panache",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SamiraQ.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 192,
         "y": 144,
-        "full": "SamiraQ.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -79,8 +41,11 @@
       "leveltip": {
         "label": [
           "Dégâts",
-          "Délai de récupération",
-          "Ratio de dégâts d'attaque totaux"
+          "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -94,13 +59,13 @@
       "name": "Tourbillon de lame",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SamiraW.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 240,
         "y": 144,
-        "full": "SamiraW.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -111,6 +76,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -124,13 +93,13 @@
       "name": "Charge sauvage",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SamiraE.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 288,
         "y": 144,
-        "full": "SamiraE.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -142,6 +111,11 @@
           "Dégâts",
           "Délai de récupération",
           "Vitesse d'attaque"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ bonusattackspeed*100.000000 }}% -> {{ bonusattackspeednl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -155,22 +129,25 @@
       "name": "Gâchette infernale",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SamiraR.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 336,
         "y": 144,
-        "full": "SamiraR.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "Samira ne peut utiliser cette compétence que si son <keywordMajor>style</keywordMajor> est au rang S. Utiliser cette compétence consomme tous les rangs de <keywordMajor>style</keywordMajor>.<br /><br />Samira tire une pluie de balles sur tous les ennemis qui l'entourent. Elle tire 10 balles en 2 sec, chaque balle infligeant <physicalDamage>{{ damagecalc }} pts de dégâts physiques</physicalDamage> et appliquant le vol de vie avec {{ lifestealmod*100 }}% d'efficacité. Chaque balle peut aussi infliger un coup critique.<br /><br />{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Samira ne peut utiliser cette compétence que si son <keywordMajor>style</keywordMajor> est au rang S. Utiliser cette compétence consomme tous les rangs de <keywordMajor>style</keywordMajor>.<br /><br />Samira tire une pluie de balles sur tous les ennemis qui l'entourent. Elle tire 10 balles en 2 sec, chaque balle infligeant <physicalDamage>{{ damagecalc }} pts de dégâts physiques</physicalDamage> et appliquant le vol de vie avec {{ lifestealmod*100 }}% d'efficacité. Chaque balle peut aussi infliger un coup critique.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Dégâts"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -183,13 +160,13 @@
   "passive": {
     "name": "Élan téméraire",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "SamiraP.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 192,
       "y": 96,
-      "full": "SamiraP.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Samira fait des combos en enchaînant des attaques ou compétences différentes de la précédente. En mêlée, les attaques de Samira infligent des dégâts magiques supplémentaires. Les attaques de Samira contre les ennemis affectés par des effets <status>immobilisants</status> la font se ruer à portée d'attaque. Si l'ennemi est <status>projeté dans les airs</status>, elle le maintient brièvement <status>dans les airs</status>."
   },
@@ -204,20 +181,20 @@
   "gender": "Female",
   "species": "Human",
   "title_en": "the Desert Rose",
-  "lore_en": "Samira was born in Amakra, near the Great Sai (Shurima), where she performed on the streets with her parents. Her life shattered on the eve of her fourteenth birthday when armed strangers, invoking an ancient magus, destroyed her village.\n\n The Vow of Fearlessness: Hiding during the attack, Samira felt a burning self-hatred for her own fear and helplessness. She vowed never to feel that way again, turning her trauma into a relentless drive for courage.\n\n The Noxian Gateway: After fleeing to the Noxian-held port of Bel'zhun, she joined a warband. Her raw athleticism was unmatched, but her recklessness frustrated her officers—except for Captain Indari, who placed Samira in a specialized unit for high-stakes, \"suicidal\" missions.\n\n The Rokrund Disaster: During an explosion at a rebel stronghold, Samira dove into the collapsing structure to save Indari. The incident cost Samira her right eye and left Indari paralyzed. Discouraged, Indari disbanded the unit upon their return.\n\n The Perfect Partnership: Bored by a quiet life, Samira returned to Noxus Prime to find Indari. She proposed a new deal: Indari would act as her handler, finding the most dangerous mercenary jobs, while Samira would execute them alone.\n\n Thrill-Seeker Extraordinaire: Samira's reputation grew as she completed missions meant for entire armies. From out-brawling chem-barons to surviving Bilgewater raids, she lives for the risk. Every tattoo on her body represents an unforgettable feat, proving that for Samira, turning danger into a thrill is the only way to truly live.",
+  "lore_en": "Samira stares death in the eye with unyielding confidence, seeking thrill wherever she goes. After her Shuriman home was destroyed as a child, Samira found her true calling in Noxus, where she built a reputation as a stylish daredevil taking on dangerous missions of the highest caliber. Wielding black-powder pistols and a custom-engineered blade, Samira thrives in life-or-death circumstances, eliminating any who stand in her way with flash and flair.",
   "spells_en": [
     {
       "id": "SamiraQ",
       "name": "Flair",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SamiraQ.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 192,
         "y": 144,
-        "full": "SamiraQ.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -227,8 +204,11 @@
       "leveltip": {
         "label": [
           "Damage",
-          "Cooldown",
-          "Total AD Ratio"
+          "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -242,13 +222,13 @@
       "name": "Blade Whirl",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SamiraW.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 240,
         "y": 144,
-        "full": "SamiraW.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -259,6 +239,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -272,13 +256,13 @@
       "name": "Wild Rush",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SamiraE.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 288,
         "y": 144,
-        "full": "SamiraE.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -290,6 +274,11 @@
           "Damage",
           "Cooldown",
           "Attack Speed"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ bonusattackspeed*100.000000 }}% -> {{ bonusattackspeednl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -303,22 +292,25 @@
       "name": "Inferno Trigger",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "SamiraR.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 336,
         "y": 144,
-        "full": "SamiraR.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "Samira can only use this Ability if her current <keywordMajor>Style</keywordMajor> rating is S. Using this Ability consumes all <keywordMajor>Style</keywordMajor> rating.<br /><br />Samira unleashes a torrent of shots from her weapons, wildly shooting all enemies surrounding her 10 times over 2 seconds, each shot dealing <physicalDamage>{{ damagecalc }} physical damage</physicalDamage> and applying Life Steal at {{ lifestealmod*100 }}% effectiveness. Each shot can also critically strike.<br /><br />{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Samira can only use this Ability if her current <keywordMajor>Style</keywordMajor> rating is S. Using this Ability consumes all <keywordMajor>Style</keywordMajor> rating.<br /><br />Samira unleashes a torrent of shots from her weapons, wildly shooting all enemies surrounding her 10 times over 2 seconds, each shot dealing <physicalDamage>{{ damagecalc }} physical damage</physicalDamage> and applying Life Steal at {{ lifestealmod*100 }}% effectiveness. Each shot can also critically strike.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Damage"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -331,13 +323,13 @@
   "passive_en": {
     "name": "Daredevil Impulse",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "SamiraP.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 192,
       "y": 96,
-      "full": "SamiraP.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Samira builds a combo by hitting attacks or abilities unique from the previous hit. Samira's attacks in melee range deal additional magic damage. Samira's attacks against enemies affected by <status>Immobilizing</status> effects will dash her to her attack range. If the enemy is <status>Knocked Up</status>, she also keeps them <status>Knocked Up</status> briefly."
   },
@@ -381,6 +373,65 @@
       "num": 33,
       "name": "Masque of the Black Rose Samira",
       "chromas": false
+    },
+    {
+      "id": "360035",
+      "num": 35,
+      "name": "Battle Professor Samira",
+      "chromas": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "360000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "360001",
+      "num": 1,
+      "name": "Samira psychoguerrière",
+      "chromas": true
+    },
+    {
+      "id": "360010",
+      "num": 10,
+      "name": "Samira astro-groove",
+      "chromas": true
+    },
+    {
+      "id": "360020",
+      "num": 20,
+      "name": "Samira de l'Ouest",
+      "chromas": true
+    },
+    {
+      "id": "360030",
+      "num": 30,
+      "name": "Samira combattante spirituelle",
+      "chromas": false
+    },
+    {
+      "id": "360033",
+      "num": 33,
+      "name": "Samira bal masqué de la Rose noire",
+      "chromas": false
+    },
+    {
+      "id": "360035",
+      "num": 35,
+      "name": "Professeure Samira de l'Académie",
+      "chromas": false
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Leblanc",
+      "type": "champion",
+      "relation": "nemesis",
+      "note_fr": "Leader de la Rose Noire",
+      "note_en": "leader of the black rose"
     }
   ]
 }

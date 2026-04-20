@@ -3,7 +3,7 @@
   "key": "777",
   "name": "Yone",
   "title": "Inoublié",
-  "version": "15.23.1",
+  "version": "16.8.1",
   "lore": "Au cours de sa vie, Yone fut le demi-frère de Yasuo et un disciple renommé de l'école d'armes de son village. Mais après avoir été tué par son propre frère, il se retrouva hanté par une entité malveillante dans le royaume spirituel. Il dut la tuer avec sa propre épée. Désormais maudit et forcé de porter le masque de l'azakana, Yone chasse inlassablement ces créatures démoniaques afin de comprendre ce qu'il est devenu.",
   "tags": [
     "Fighter",
@@ -11,101 +11,27 @@
   ],
   "partype": "Impulsion",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Yone.png",
+    "sprite": "champion5.png",
+    "group": "champion",
     "x": 0,
     "y": 48,
-    "full": "Yone.png",
-    "group": "champion",
-    "sprite": "champion5.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "777000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "777001",
-      "num": 1,
-      "name": "Yone fleur spirituelle",
-      "chromas": true
-    },
-    {
-      "id": "777010",
-      "num": 10,
-      "name": "Yone de l'Académie du combat",
-      "chromas": true
-    },
-    {
-      "id": "777019",
-      "num": 19,
-      "name": "Yone héraut de l'aube",
-      "chromas": true
-    },
-    {
-      "id": "777026",
-      "num": 26,
-      "name": "Yone du Chant de l'océan",
-      "chromas": true
-    },
-    {
-      "id": "777035",
-      "num": 35,
-      "name": "Yone guerrier d'encre",
-      "chromas": true
-    },
-    {
-      "id": "777045",
-      "num": 45,
-      "name": "HEARTSTEEL Yone",
-      "chromas": true
-    },
-    {
-      "id": "777046",
-      "num": 46,
-      "name": "HEARTSTEEL Yone prestige",
-      "chromas": false
-    },
-    {
-      "id": "777055",
-      "num": 55,
-      "name": "Yone de l'Ouest",
-      "chromas": true
-    },
-    {
-      "id": "777058",
-      "num": 58,
-      "name": "Yone de l'Ouest pacificateur",
-      "chromas": false
-    },
-    {
-      "id": "777065",
-      "num": 65,
-      "name": "Yone justice masquée",
-      "chromas": false
-    },
-    {
-      "id": "777074",
-      "num": 74,
-      "name": "T1 Yone",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "YoneQ",
       "name": "Acier mortel",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YoneQ.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 384,
         "y": 48,
-        "full": "YoneQ.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -115,6 +41,9 @@
       "leveltip": {
         "label": [
           "Dégâts de base"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -128,13 +57,13 @@
       "name": "Fendoir spirituel",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YoneW.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 432,
         "y": 48,
-        "full": "YoneW.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -145,6 +74,10 @@
         "label": [
           "Dégâts de base",
           "PV max en dégâts"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ maxhealthdamage*100.000000 }}% -> {{ maxhealthdamagenl*100.000000 }}%"
         ]
       },
       "resource": "Pas de coût",
@@ -158,13 +91,13 @@
       "name": "Libération spirituelle",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YoneE.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 0,
         "y": 96,
-        "full": "YoneE.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -175,6 +108,10 @@
         "label": [
           "Dégâts répétés",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ deathmarkpercent*100.000000 }}% -> {{ deathmarkpercentnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -188,13 +125,13 @@
       "name": "Destin scellé",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YoneR.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 48,
         "y": 96,
-        "full": "YoneR.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -205,6 +142,10 @@
         "label": [
           "Dégâts de base",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -217,13 +158,13 @@
   "passive": {
     "name": "Voie du chasseur",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "YonePassive.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 0,
       "y": 48,
-      "full": "YonePassive.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Une attaque de Yone sur deux inflige des dégâts magiques. De plus, ses chances de coup critique sont augmentées."
   },
@@ -245,13 +186,13 @@
       "name": "Mortal Steel",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YoneQ.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 384,
         "y": 48,
-        "full": "YoneQ.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -261,6 +202,9 @@
       "leveltip": {
         "label": [
           "Base Damage"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "No Cost",
@@ -274,13 +218,13 @@
       "name": "Spirit Cleave",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YoneW.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 432,
         "y": 48,
-        "full": "YoneW.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -291,6 +235,10 @@
         "label": [
           "Base Damage",
           "Total Max Health Damage"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ maxhealthdamage*100.000000 }}% -> {{ maxhealthdamagenl*100.000000 }}%"
         ]
       },
       "resource": "No Cost",
@@ -304,13 +252,13 @@
       "name": "Soul Unbound",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YoneE.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 0,
         "y": 96,
-        "full": "YoneE.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -321,6 +269,10 @@
         "label": [
           "Repeated Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ deathmarkpercent*100.000000 }}% -> {{ deathmarkpercentnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -334,13 +286,13 @@
       "name": "Fate Sealed",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "YoneR.png",
+        "sprite": "spell16.png",
+        "group": "spell",
         "x": 48,
         "y": 96,
-        "full": "YoneR.png",
-        "group": "spell",
-        "sprite": "spell16.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -351,6 +303,10 @@
         "label": [
           "Base Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -363,13 +319,13 @@
   "passive_en": {
     "name": "Way of the Hunter",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "YonePassive.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 0,
       "y": 48,
-      "full": "YonePassive.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Yone deals magic damage with every second Attack. In addition, his critical strike chance is increased."
   },
@@ -450,6 +406,89 @@
       "num": 74,
       "name": "T1 Yone",
       "chromas": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "777000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "777001",
+      "num": 1,
+      "name": "Yone fleur spirituelle",
+      "chromas": true
+    },
+    {
+      "id": "777010",
+      "num": 10,
+      "name": "Yone de l'Académie du combat",
+      "chromas": true
+    },
+    {
+      "id": "777019",
+      "num": 19,
+      "name": "Yone héraut de l'aube",
+      "chromas": true
+    },
+    {
+      "id": "777026",
+      "num": 26,
+      "name": "Yone du Chant de l'océan",
+      "chromas": true
+    },
+    {
+      "id": "777035",
+      "num": 35,
+      "name": "Yone guerrier d'encre",
+      "chromas": true
+    },
+    {
+      "id": "777045",
+      "num": 45,
+      "name": "HEARTSTEEL Yone",
+      "chromas": true
+    },
+    {
+      "id": "777046",
+      "num": 46,
+      "name": "HEARTSTEEL Yone prestige",
+      "chromas": false
+    },
+    {
+      "id": "777055",
+      "num": 55,
+      "name": "Yone de l'Ouest",
+      "chromas": true
+    },
+    {
+      "id": "777058",
+      "num": 58,
+      "name": "Yone de l'Ouest pacificateur",
+      "chromas": false
+    },
+    {
+      "id": "777065",
+      "num": 65,
+      "name": "Yone justice masquée",
+      "chromas": false
+    },
+    {
+      "id": "777074",
+      "num": 74,
+      "name": "T1 Yone",
+      "chromas": false
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Yasuo",
+      "type": "champion",
+      "relation": "half-brother",
+      "note_fr": "Demi-frère",
+      "note_en": "Half-brother"
     }
   ]
 }

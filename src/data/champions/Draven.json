@@ -3,120 +3,34 @@
   "key": "119",
   "name": "Draven",
   "title": "Glorieux exécuteur",
-  "version": "15.23.1",
-  "lore": "Draven et son frère Darius ont grandi orphelins dans les rues de Basilich. Draven était têtu et plein de bravade, se lançant constamment dans des bagarres, mais il ne devait sa survie qu'à son frère aîné, qui terminait toujours les combats qu'il avait commencés. Lorsque la ville fut conquise par Noxus, les deux frères furent enrôlés dans l'armée.\r\n\r\nSi Darius s'épanouissait dans la discipline, Draven s'ennuyait de plus en plus. Ses compétences martiales étaient incontestables, mais le labeur quotidien du soldat n'offrait pas assez de récompenses ou de gloire personnelle. Après avoir quitté (ou avoir été forcé de quitter) le commandement de son frère, il fut engagé comme champion et duelliste pour plusieurs campagnes, avant d'être attiré par les Fosses de la Revanche (Reckoning pits) de la capitale noxienne.\r\n\r\nCes jeux de gladiateurs, qui servaient à punir les criminels et à régler les différends, perdaient de leur attrait pour le public. Draven, obsédé par la richesse et l'adulation qu'il estimait mériter, sombra dans une période de stagnation.\r\n\r\nIl fut contacté par l'ancien général Jericho Swain, qui avait besoin de lui pour son plan de destituer le Grand Général Boram Darkwill. Draven joua un rôle clé dans le coup d'État, et pour la première fois depuis longtemps, il sourit en entendant les acclamations du peuple noxien le couvrir.\r\n\r\nDans les jours qui suivirent le coup d'État, les nobles réfractaires furent condamnés à mort dans l'arène. Un homme s'échappa, et par pur instinct, Draven sauta du balcon, lançant une paire de haches qui abattirent le fugitif. Le public, stupéfait, explosa de joie. Draven, savourant l'instant, récupéra ses haches et les fit tournoyer en l'air, jouant avec ses nouveaux fans.\r\n\r\nC'est ainsi que Draven devint l'Exécuteur Magnifique, transformant les combats de routine en grands spectacles. Un promoteur inventif approcha Draven avec une idée : combiner le drame des combats classiques avec le sens inné du spectacle de Draven.\r\n\r\nLes combattants de la Revanche devinrent des artistes autant que des combattants, avec des histoires personnelles et des styles flamboyants. Les combats étaient moins mortels mais remplis de rivalités mises en scène et d'intrigues, faisant de Draven la figure la plus discutée de l'empire. Il vécut une vie fastueuse, se réconcilia même avec son frère Darius, et mena occasionnellement des guerres.\r\n\r\nCependant, Draven recommence à s'ennuyer. Bien qu'il ait atteint tout ce qu'il pouvait imaginer, il rêve désormais du jour où le monde entier connaîtra son nom.",
+  "version": "16.8.1",
+  "lore": "À Noxus, de puissants guerriers, les « arénaires », s'affrontent dans des jeux mortels pour divertir le public. Le sang y coule à foison et leurs forces y sont éprouvées, mais aucun d'entre eux n'a jamais été aussi célèbre que Draven. Cet ancien soldat découvrit que le public appréciait particulièrement son sens du spectacle, sans parler de son habileté avec des haches tournoyantes. Épris de sa propre perfection, Draven terrasse tous ses adversaires pour s'assurer que son nom continue de résonner dans les arènes de l'empire.",
   "tags": [
     "Marksman"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Draven.png",
+    "sprite": "champion0.png",
+    "group": "champion",
     "x": 336,
     "y": 96,
-    "full": "Draven.png",
-    "group": "champion",
-    "sprite": "champion0.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "119000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "119001",
-      "num": 1,
-      "name": "Draven faucheur",
-      "chromas": false
-    },
-    {
-      "id": "119002",
-      "num": 2,
-      "name": "Draven gladiateur",
-      "chromas": false
-    },
-    {
-      "id": "119003",
-      "num": 3,
-      "name": "Draven prime time",
-      "chromas": true
-    },
-    {
-      "id": "119004",
-      "num": 4,
-      "name": "Draven glorieux nageur",
-      "chromas": false
-    },
-    {
-      "id": "119005",
-      "num": 5,
-      "name": "Draven chasseur de bêtes",
-      "chromas": false
-    },
-    {
-      "id": "119006",
-      "num": 6,
-      "name": "Draven Draven",
-      "chromas": false
-    },
-    {
-      "id": "119012",
-      "num": 12,
-      "name": "Père Draven",
-      "chromas": false
-    },
-    {
-      "id": "119013",
-      "num": 13,
-      "name": "Draven du royaume des mechas",
-      "chromas": true
-    },
-    {
-      "id": "119020",
-      "num": 20,
-      "name": "Draven déchu",
-      "chromas": true
-    },
-    {
-      "id": "119029",
-      "num": 29,
-      "name": "Draven séducteur",
-      "chromas": true
-    },
-    {
-      "id": "119039",
-      "num": 39,
-      "name": "Draven Nuit d'effroi",
-      "chromas": true
-    },
-    {
-      "id": "119048",
-      "num": 48,
-      "name": "Draven La Ilusión",
-      "chromas": true
-    },
-    {
-      "id": "119058",
-      "num": 58,
-      "name": "Draven arénaire",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "DravenSpinning",
       "name": "Hache tournoyante",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "DravenSpinning.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 288,
         "y": 0,
-        "full": "DravenSpinning.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -128,6 +42,11 @@
           "Dégâts",
           "Pourcentage des dégâts d'attaque supplémentaires",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ adscaling }}% -> {{ adscalingNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -141,13 +60,13 @@
       "name": "Pulsion sanguinaire",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "DravenFury.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 336,
         "y": 0,
-        "full": "DravenFury.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -156,9 +75,14 @@
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
+          "Vitesse de déplacement",
           "Vitesse d'attaque",
-          "Coût en @AbilityResourceName@",
-          "Vitesse de déplacement"
+          "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ movespeed*100.000000 }}% -> {{ movespeednl*100.000000 }}%",
+          "{{ attackspeed*100.000000 }}% -> {{ attackspeednl*100.000000 }}%",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -172,13 +96,13 @@
       "name": "Division",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "DravenDoubleShot.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 384,
         "y": 0,
-        "full": "DravenDoubleShot.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -190,6 +114,11 @@
           "Dégâts",
           "Ralentissement",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ e2 }}% -> {{ e2NL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -203,13 +132,13 @@
       "name": "Volée mortelle",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "DravenRCast.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 432,
         "y": 0,
-        "full": "DravenRCast.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -221,6 +150,11 @@
           "Dégâts",
           "Délai de récupération",
           "Ratio de dégâts d'attaque bonus"
+        ],
+        "effect": [
+          "{{ rbasedamage }} -> {{ rbasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ rcoefficient*100.000000 }}% -> {{ rcoefficientnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -233,13 +167,13 @@
   "passive": {
     "name": "League of Draven",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Draven_passive.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 336,
       "y": 96,
-      "full": "Draven_passive.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Draven obtient l'Adoration de ses fans quand il rattrape une Hache tournoyante, quand il tue un sbire ou un monstre et quand il détruit une tourelle. Quand il tue des champions ennemis, Draven gagne des PO supplémentaires en fonction de l'Adoration cumulée."
   },
@@ -253,20 +187,20 @@
   "gender": "Male",
   "species": "Human",
   "title_en": "the Glorious Executioner",
-  "lore_en": "Draven and his brother Darius grew up as orphans on the streets of Basilich. Draven was headstrong and full of bravado, frequently getting into vicious brawls, but he only survived childhood thanks to his older brother, who invariably finished the fights Draven started. When the city fell to Noxus, both brothers were enlisted in the military.\r\n\r\nWhile Darius thrived on discipline, Draven grew steadily more bored. His martial skill was beyond question, but the daily drudgery of soldiering offered too little reward and not enough personal glory. After leaving (or being forced out of) his brother's command, he fought as a champion and duelist in various campaigns before being lured to the Reckoning pits in the Noxian capital.\r\n\r\nThese gladiatorial games, used to punish criminals and settle disputes, were losing their appeal to the common citizen. Draven, obsessed with the riches and adoration he felt he deserved, fell into a slump.\r\n\r\nHe was found by the former General Jericho Swain, who needed him for his plan to depose Grand General Boram Darkwill. Draven proved integral to the coup, and for the first time in months, he smiled as the cheers of the Noxian people washed over him.\r\n\r\nIn the days following the coup, refractory nobles were sentenced to death in the arena. One condemned man escaped his handlers. Operating on pure instinct, Draven leapt from the high balcony, hurling a pair of axes that cut the fleeing man down in a heartbeat. The stunned crowd roared their approval. Draven retrieved his axes and spun them high in the air, playing to his new fans and savoring their rapturous applause.\r\n\r\nThus Draven became the Glorious Executioner, turning routine bouts into grand spectacles. An inventive promoter approached Draven with an idea: to combine the drama of classic pit fights with Draven's natural showmanship.\r\n\r\nThe Reckoners quickly became entertainers as much as combatants, with carefully constructed backstories and flamboyant styles. The fights were less often fatal but filled with staged rivalries and intrigue, making Draven the most talked-about figure in the empire. He lived the high life, even reconciling with his brother Darius, and occasionally marched out with the warhosts.\r\n\r\nHowever, Draven has started to grow restless once again. Though he has achieved everything he could have imagined, he now dreams of the day when the whole world knows his name.",
+  "lore_en": "In Noxus, warriors known as Reckoners face one another in arenas where blood is spilled and strength tested—but none has ever been as celebrated as Draven. A former soldier, he found that the crowds uniquely appreciated his flair for the dramatic, and his unparalleled skill with his spinning axes. Addicted to the spectacle of his own brash perfection, Draven has sworn to defeat whomever he must to ensure that his name is chanted throughout the empire forever more.",
   "spells_en": [
     {
       "id": "DravenSpinning",
       "name": "Spinning Axe",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "DravenSpinning.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 288,
         "y": 0,
-        "full": "DravenSpinning.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -278,6 +212,11 @@
           "Damage",
           "Bonus AD Percentage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ adscaling }}% -> {{ adscalingNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -291,13 +230,13 @@
       "name": "Blood Rush",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "DravenFury.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 336,
         "y": 0,
-        "full": "DravenFury.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -306,9 +245,14 @@
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
+          "Move Speed",
           "Attack Speed",
-          "@AbilityResourceName@ Cost",
-          "Move Speed"
+          "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ movespeed*100.000000 }}% -> {{ movespeednl*100.000000 }}%",
+          "{{ attackspeed*100.000000 }}% -> {{ attackspeednl*100.000000 }}%",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -322,13 +266,13 @@
       "name": "Stand Aside",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "DravenDoubleShot.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 384,
         "y": 0,
-        "full": "DravenDoubleShot.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -340,6 +284,11 @@
           "Damage",
           "Slow",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ e1 }} -> {{ e1NL }}",
+          "{{ e2 }}% -> {{ e2NL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -353,13 +302,13 @@
       "name": "Whirling Death",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "DravenRCast.png",
+        "sprite": "spell3.png",
+        "group": "spell",
         "x": 432,
         "y": 0,
-        "full": "DravenRCast.png",
-        "group": "spell",
-        "sprite": "spell3.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -371,6 +320,11 @@
           "Damage",
           "Cooldown",
           "Bonus AD Ratio"
+        ],
+        "effect": [
+          "{{ rbasedamage }} -> {{ rbasedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ rcoefficient*100.000000 }}% -> {{ rcoefficientnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -383,13 +337,13 @@
   "passive_en": {
     "name": "League of Draven",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Draven_passive.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 336,
       "y": 96,
-      "full": "Draven_passive.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Draven gains his fans' Adoration when he catches a Spinning Axe or kills a minion, monster, or tower. Killing enemy champions grants Draven bonus gold based on how much Adoration he has."
   },
@@ -481,6 +435,111 @@
       "num": 58,
       "name": "Grand Reckoning Draven",
       "chromas": true
+    },
+    {
+      "id": "119068",
+      "num": 68,
+      "name": "Victorious Draven",
+      "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "119000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "119001",
+      "num": 1,
+      "name": "Draven faucheur",
+      "chromas": false
+    },
+    {
+      "id": "119002",
+      "num": 2,
+      "name": "Draven gladiateur",
+      "chromas": false
+    },
+    {
+      "id": "119003",
+      "num": 3,
+      "name": "Draven prime time",
+      "chromas": true
+    },
+    {
+      "id": "119004",
+      "num": 4,
+      "name": "Draven glorieux nageur",
+      "chromas": false
+    },
+    {
+      "id": "119005",
+      "num": 5,
+      "name": "Draven chasseur de bêtes",
+      "chromas": false
+    },
+    {
+      "id": "119006",
+      "num": 6,
+      "name": "Draven Draven",
+      "chromas": false
+    },
+    {
+      "id": "119012",
+      "num": 12,
+      "name": "Père Draven",
+      "chromas": false
+    },
+    {
+      "id": "119013",
+      "num": 13,
+      "name": "Draven du royaume des mechas",
+      "chromas": true
+    },
+    {
+      "id": "119020",
+      "num": 20,
+      "name": "Draven déchu",
+      "chromas": true
+    },
+    {
+      "id": "119029",
+      "num": 29,
+      "name": "Draven séducteur",
+      "chromas": true
+    },
+    {
+      "id": "119039",
+      "num": 39,
+      "name": "Draven Nuit d'effroi",
+      "chromas": true
+    },
+    {
+      "id": "119048",
+      "num": 48,
+      "name": "Draven La Ilusión",
+      "chromas": true
+    },
+    {
+      "id": "119058",
+      "num": 58,
+      "name": "Draven arénaire",
+      "chromas": true
+    },
+    {
+      "id": "119068",
+      "num": 68,
+      "name": "Draven héros de guerre",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Darius",
+      "type": "champion",
+      "relation": "brother"
     }
   ]
 }

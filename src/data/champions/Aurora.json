@@ -3,55 +3,35 @@
   "key": "893",
   "name": "Aurora",
   "title": "Sorcière d'entre les mondes",
-  "version": "15.23.1",
-  "lore": "Aurora est une Vastaya originaire du village isolé d'Aamu, au Freljord. Depuis sa naissance, elle est l'une des rares mortelles à pouvoir percevoir simultanément le royaume spirituel et le royaume matériel. Pendant son enfance, elle jouait avec des créatures que personne d'autre ne voyait, ses parents croyant que ses \"amis\" étaient imaginaires. Seule sa grand-tante Havu encourageait sa passion.\r\n\r\nEn grandissant, Aurora réalisa que ses amis invisibles étaient en fait des esprits. Elle se dédia alors à l'étude méticuleuse de ce monde entremêlé, cherchant à aider les autres à comprendre les esprits d'Aamu. Au fil du temps, elle remarqua l'apparition d'esprits \"égarés\" (wayward), devenus sauvages et désorientés suite à une perturbation de l'équilibre des royaumes. Aurora découvrit qu'elle pouvait les aider à retrouver leur chemin en ciblant la source de leur douleur, trouvant ainsi un sens à sa vie.\r\n\r\nPour approfondir ses recherches, elle quitta Aamu. C'est lors de ses voyages qu'elle rencontra un esprit égaré prenant la forme d'un élan monstrueux et tordu aux bois ensanglantés. Sauvage et terrifié, il attaquait sans discernement. Aurora, touchée par son désespoir, réussit à gagner sa confiance, mais toutes ses tentatives pour l'aider échouèrent. Elle convainquit alors l'élan affligé de voyager avec elle, le dissimulant dans le royaume spirituel pendant qu'elle cherchait des réponses.\r\n\r\nAprès avoir consulté sans succès des marcheurs des esprits, Aurora fut dirigée vers Udyr, le marcheur des esprits le plus puissant de la toundra. Udyr identifia la puissance immense de l'esprit, mais le trouva trop perdu pour communier. Il suggéra à Aurora de chercher des réponses auprès des demi-dieux du Freljord.\r\n\r\nAurora se concentra sur le Grand Bélier, Ornn. Grâce à des recherches tenaces, elle localisa son foyer, la Forge des Cœurs (Hearth-Home). En utilisant sa capacité à ouvrir une porte entre les royaumes, elle entra dans le hall de la forge d'Ornn, intact dans le royaume spirituel. Ornn, qui valorisait la solitude comme elle, finit par lui faire confiance et révéla le nom de son compagnon : Haestryr (autrefois appelé Hestrelk). Ornn expliqua qu'avec le déclin du culte des Anciens Dieux, de nombreux demi-dieux avaient perdu leur identité et s'étaient transformés en ombres déformées de ce qu'ils étaient.\r\n\r\nCette révélation confirma la nature de son ami et l'encouragea à poursuivre sa quête. Ornn lui parla également de ses autres frères et sœurs, notamment Ysjarn (la Cryophénix, Anivia) et Valhir (l'Ours-Loup), le dieu de la tempête. Convaincue que ces demi-dieux détiennent la clé du rétablissement d'Haestryr, Aurora traverse désormais le Freljord, voyageant entre les deux réalités à la recherche de leur savoir.",
+  "version": "16.8.1",
+  "lore": "Depuis sa naissance, Aurora a toujours été capable de passer du royaume spirituel au royaume matériel. Déterminée à étudier les habitants du royaume spirituel, elle a quitté son foyer pour se consacrer à ses recherches. En chemin, elle est tombée sur un demi-dieu devenu fou. Touchée par son désespoir, Aurora se mit en tête de retrouver l'identité perdue de son ami sauvage. Son périple la mènera à voyager à travers tout Freljord.",
   "tags": [
     "Mage",
     "Assassin"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Aurora.png",
+    "sprite": "champion0.png",
+    "group": "champion",
     "x": 96,
     "y": 48,
-    "full": "Aurora.png",
-    "group": "champion",
-    "sprite": "champion0.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "893000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "893001",
-      "num": 1,
-      "name": "Aurora lapin de combat",
-      "chromas": true
-    },
-    {
-      "id": "893011",
-      "num": 11,
-      "name": "Aurora des arcanes",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "AuroraQ",
       "name": "Maléfice",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AuroraQ.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 288,
         "y": 96,
-        "full": "AuroraQ.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -62,6 +42,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -75,13 +59,13 @@
       "name": "Derrière le voile",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AuroraW.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 336,
         "y": 96,
-        "full": "AuroraW.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -93,6 +77,11 @@
           "Délai de récupération",
           "Durée",
           "Vitesse de déplacement"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ invisduration }} -> {{ invisdurationNL }}",
+          "{{ movespeedbonus }}% -> {{ movespeedbonusNL }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -106,13 +95,13 @@
       "name": "Sortilège",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AuroraE.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 384,
         "y": 96,
-        "full": "AuroraE.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -123,6 +112,10 @@
         "label": [
           "Délai de récupération",
           "Dégâts"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -136,13 +129,13 @@
       "name": "Entre les mondes",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AuroraR.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 432,
         "y": 96,
-        "full": "AuroraR.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -154,6 +147,11 @@
           "Délai de récupération",
           "Dégâts",
           "Durée"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ areaduration }} -> {{ areadurationNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -166,13 +164,13 @@
   "passive": {
     "name": "Abjuration spirituelle",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "AuroraPassive.Aurora.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 96,
       "y": 48,
-      "full": "AuroraPassive.Aurora.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Aurora exorcise les esprits des ennemis qu'elle blesse avec ses compétences et ses attaques. Les esprits exorcisés la suivent et la soignent."
   },
@@ -188,20 +186,20 @@
   "gender": "Female",
   "species": "Vastaya",
   "title_en": "the Witch Between Worlds",
-  "lore_en": "Aurora is a Vastaya from the secluded village of Aamu in the Freljord. Since birth, she has been one of the few mortals able to perceive both the spirit realm and the material realm simultaneously. During her youth, she played with creatures no one else could see, her parents believing her \"friends\" were merely imaginary. Only her great aunt Havu encouraged her passion.\r\n\r\nAs Aurora grew older, she realized her invisible friends were, in fact, spirits. She dedicated herself to meticulously documenting this intertwined world, hoping to help others understand the spirits of Aamu. Over time, she noticed the appearance of \"wayward\" spirits, who had become feral and disoriented after a disturbance in the balance of the realms. Aurora discovered she could help them return home by addressing the root of their pain, thus finding her life's purpose.\r\n\r\nTo further her research, she left Aamu. It was during her travels that she encountered a wayward spirit taking the form of a monstrous, twisted elk with bloodstained antlers. Feral and afraid, he lashed out indiscriminately. Aurora, moved by his despair, managed to earn his trust, but all her attempts to help him failed. She convinced the afflicted elk to travel with her, tucking him away in the spirit realm while she searched for answers.\r\n\r\nAfter unsuccessfully consulting spirit walkers, Aurora was directed to Udyr, the tundra's most powerful spirit walker. Udyr recognized the immense power of the spirit but found him too lost to commune with. He encouraged Aurora to seek answers from the Freljord's demigods.\r\n\r\nAurora focused on the Great Ram, Ornn. Through persistent research, she located his home, Hearth-Home. Using her ability to open a doorway between realms, she stepped inside Ornn's forge hall, which was intact in the spirit realm. Ornn, who valued solitude like her, eventually trusted her and revealed her companion's name: Haestryr (once commonly called Hestrelk). Ornn explained that with the waning worship of the Old Gods, many demigods had lost their identities and become distorted shadows of their former selves.\r\n\r\nThis revelation confirmed her friend's nature and encouraged her to continue her quest. Ornn also told her about his other siblings, notably Ysjarn (the Cryophoenix, Anivia) and Valhir (the Volibear), the storm god. Believing these demigods hold the key to Haestryr's recovery, Aurora now traverses the Freljord, traveling between the two realities in unwavering pursuit of their knowledge.",
+  "lore_en": "From the moment she was born, Aurora navigated life with a unique ability to move between the spirit and material realms. Determined to learn more about the spirit realm's inhabitants, she left her home to further her research and happened upon a wayward demigod who'd become twisted and lost to time. Witnessing his desperation, Aurora resolved to find a way to help her feral friend regain his forgotten identity—a journey that would take her to the farthest reaches of the Freljord.",
   "spells_en": [
     {
       "id": "AuroraQ",
       "name": "Twofold Hex",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AuroraQ.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 288,
         "y": 96,
-        "full": "AuroraQ.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -212,6 +210,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -225,13 +227,13 @@
       "name": "Across the Veil",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AuroraW.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 336,
         "y": 96,
-        "full": "AuroraW.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -243,6 +245,11 @@
           "Cooldown",
           "Duration",
           "Move Speed"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ invisduration }} -> {{ invisdurationNL }}",
+          "{{ movespeedbonus }}% -> {{ movespeedbonusNL }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -256,13 +263,13 @@
       "name": "The Weirding",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AuroraE.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 384,
         "y": 96,
-        "full": "AuroraE.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -273,6 +280,10 @@
         "label": [
           "Cooldown",
           "Damage"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -286,13 +297,13 @@
       "name": "Between Worlds",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "AuroraR.png",
+        "sprite": "spell1.png",
+        "group": "spell",
         "x": 432,
         "y": 96,
-        "full": "AuroraR.png",
-        "group": "spell",
-        "sprite": "spell1.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -304,6 +315,11 @@
           "Cooldown",
           "Damage",
           "Duration"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ areaduration }} -> {{ areadurationNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -316,13 +332,13 @@
   "passive_en": {
     "name": "Spirit Abjuration",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "AuroraPassive.Aurora.png",
+      "sprite": "passive0.png",
+      "group": "passive",
       "x": 96,
       "y": 48,
-      "full": "AuroraPassive.Aurora.png",
-      "group": "passive",
-      "sprite": "passive0.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Aurora's spells and attacks exorcise spirits from the enemies she damages. Exorcised spirits follow Aurora around and heal her."
   },
@@ -350,5 +366,26 @@
       "name": "Arcana Aurora",
       "chromas": true
     }
-  ]
+  ],
+  "skins": [
+    {
+      "id": "893000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "893001",
+      "num": 1,
+      "name": "Aurora lapin de combat",
+      "chromas": true
+    },
+    {
+      "id": "893011",
+      "num": 11,
+      "name": "Aurora des arcanes",
+      "chromas": true
+    }
+  ],
+  "related_characters": []
 }

@@ -3,115 +3,35 @@
   "key": "555",
   "name": "Pyke",
   "title": "Éventreur des abysses",
-  "version": "15.23.1",
-  "lore": "Pyke a commencé sa vie sur les quais d'égorgement de Bilgewater, dans le quartier de Bloodharbor, où le sang des créatures marines est si abondant que la marée ne suffit pas à l'effacer. Fatigué des maigres salaires, il devint harponneur sur des navires de chasse.\n\n Le Harponneur d'Élite : Pyke se forgea une réputation de meilleur harponneur de la ville. Il pratiquait la méthode traditionnelle des Îles du Serpent : sauter directement sur les monstres pour les harponner à mains nues. Il savait que les organes frais, comme les sacs de sapphilite des poissons-jaulls, valaient une fortune.\n\n La Trahison : Lors d'une chasse, Pyke sauta dans la gueule béante d'un énorme poisson-jaull. Paniqué par l'arrivée d'une meute de monstres, son capitaine coupa la corde de sécurité de Pyke, le laissant être avalé vivant sous les yeux horrifiés de son équipage.\n\n La Renaissance Abyssale : Dans les profondeurs écrasantes, Pyke ne mourut pas. Des lumières bleues et des échos anciens envahirent son esprit, lui montrant des visions de ceux qui s'engraissaient sur son dos. Il fut ramené à la vie, possédé par une faim nouvelle : la vengeance.\n\n La Liste des Morts : De retour à Bilgewater, Pyke commença à assassiner des capitaines de navires. Ses souvenirs, altérés par les abysses, le persuadent que chaque nom sur sa liste appartient à l'équipage du Terror, le navire qui l'a trahi. Cependant, sa liste ne finit jamais : elle s'allonge sans cesse, incluant désormais quiconque profite du commerce sanglant des quais.\n\n Le Prédateur de la Ville : Devenu une légende urbaine surnaturelle sous le nom de l'Éventreur de Bloodharbor, il frappe la peur dans le cœur des riches et des scélérats. Bilgewater, une cité qui se vante de chasser les monstres, est désormais chassée par l'un d'entre eux.",
+  "version": "16.8.1",
+  "lore": "Harponneur renommé des quais-abattoirs de Bilgewater, Pyke aurait dû trouver la mort dans le ventre d'une énorme créature marine… et pourtant, il est revenu. À présent, il écume les ruelles sombres de son ancien port d'attache, utilisant ses dons surnaturels pour assassiner brutalement les riches exploiteurs du peuple. Bilgewater, la ville des chasseurs de monstres, est devenue le terrain de chasse d'un monstre.",
   "tags": [
     "Support",
     "Assassin"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Pyke.png",
+    "sprite": "champion3.png",
+    "group": "champion",
     "x": 48,
     "y": 48,
-    "full": "Pyke.png",
-    "group": "champion",
-    "sprite": "champion3.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "555000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "555001",
-      "num": 1,
-      "name": "Pyke spectre des sables",
-      "chromas": true
-    },
-    {
-      "id": "555009",
-      "num": 9,
-      "name": "Pyke lune de sang",
-      "chromas": true
-    },
-    {
-      "id": "555016",
-      "num": 16,
-      "name": "PROJET : Pyke",
-      "chromas": true
-    },
-    {
-      "id": "555025",
-      "num": 25,
-      "name": "Pyke psychoguerrier",
-      "chromas": true
-    },
-    {
-      "id": "555034",
-      "num": 34,
-      "name": "Pyke Sentinelle",
-      "chromas": true
-    },
-    {
-      "id": "555044",
-      "num": 44,
-      "name": "Pyke chevalier de cendres",
-      "chromas": true
-    },
-    {
-      "id": "555045",
-      "num": 45,
-      "name": "Pyke empyréen",
-      "chromas": true
-    },
-    {
-      "id": "555053",
-      "num": 53,
-      "name": "Pyke combattant spirituel",
-      "chromas": true
-    },
-    {
-      "id": "555054",
-      "num": 54,
-      "name": "Pyke combattant spirituel prestige",
-      "chromas": false
-    },
-    {
-      "id": "555064",
-      "num": 64,
-      "name": "Pyke Nuit d'effroi",
-      "chromas": true
-    },
-    {
-      "id": "555074",
-      "num": 74,
-      "name": "Pyke guerrier d'encre",
-      "chromas": true
-    },
-    {
-      "id": "555075",
-      "num": 75,
-      "name": "T1 Pyke",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "PykeQ",
       "name": "Harponnage",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PykeQ.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 96,
         "y": 96,
-        "full": "PykeQ.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -123,6 +43,11 @@
           "Dégâts",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -136,13 +61,13 @@
       "name": "Plongée spectrale",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PykeW.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 144,
         "y": 96,
-        "full": "PykeW.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -152,6 +77,9 @@
       "leveltip": {
         "label": [
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -165,13 +93,13 @@
       "name": "Ressac fantôme",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PykeE.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 192,
         "y": 96,
-        "full": "PykeE.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -182,6 +110,10 @@
         "label": [
           "Dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -195,13 +127,13 @@
       "name": "Exécution abyssale",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PykeR.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 240,
         "y": 96,
-        "full": "PykeR.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -211,6 +143,9 @@
       "leveltip": {
         "label": [
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -223,13 +158,13 @@
   "passive": {
     "name": "Don des noyés",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "PykePassive.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 48,
       "y": 48,
-      "full": "PykePassive.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Quand Pyke n'est pas vu par les ennemis, il régénère les dégâts que les champions lui ont récemment infligés. Par ailleurs, Pyke ne peut pas augmenter ses PV max ; tous ses PV supplémentaires sont convertis en dégâts d'attaque."
   },
@@ -244,20 +179,20 @@
   "gender": "Male",
   "species": "Undead",
   "title_en": "the Bloodharbor Ripper",
-  "lore_en": "Pyke began his life on the slaughter docks of Bilgewater, in the district known as Bloodharbor, where the red slick of sea monster blood is constant. Hungry for more than meager wages, he talked his way onto a ship's crew as a harpooner.\n\n The Elite Harpooner: Pyke made a name for himself as the city's best harpooner. He practiced the traditional Serpent Isles method: leaping onto targets to secure hooks with his bare hands. He knew fresh organs, like the sapphilite sacs of the jaull-fish, were worth a fortune to sorcerers.\n\n The Betrayal: During a hunt, Pyke leapt into the maw of a massive jaull-fish. Panicked by an approaching pod of monsters, his captain cut Pyke's lifeline, leaving him to be swallowed alive while his crewmates watched in horror.\n\n Abyssal Rebirth: In the crushing depths, Pyke did not stay dead. Blue lights and ancient echoes filled his brain, showing him visions of those who grew fat while he suffered. He was brought back by a new hunger: vengeance.\n\n The Kill List: Back in Bilgewater, Pyke began murdering ship captains. His memories, twisted by the deep, convince him that every name on his list belongs to the crew of the Terror, the ship that betrayed him. However, the list never ends; it constantly updates to include anyone associated with the slaughter docks' bloody business.\n\n The City's Predator: Now a supernatural urban legend known as the Bloodharbor Ripper, he strikes fear into the hearts of businessmen and scoundrels alike. Bilgewater, a city that prides itself on hunting monsters, now finds a monster hunting them.",
+  "lore_en": "A renowned harpooner from the slaughter docks of Bilgewater, Pyke should have met his death in the belly of a gigantic jaull-fish… and yet, he returned. Now, stalking the dank alleys and backways of his former hometown, he uses his new supernatural gifts to bring a swift and gruesome end to those who make their fortune by exploiting others—and a city that prides itself on hunting monsters now finds a monster hunting them.",
   "spells_en": [
     {
       "id": "PykeQ",
       "name": "Bone Skewer",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PykeQ.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 96,
         "y": 96,
-        "full": "PykeQ.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -269,6 +204,11 @@
           "Damage",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -282,13 +222,13 @@
       "name": "Ghostwater Dive",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PykeW.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 144,
         "y": 96,
-        "full": "PykeW.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -298,6 +238,9 @@
       "leveltip": {
         "label": [
           "Cooldown"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -311,13 +254,13 @@
       "name": "Phantom Undertow",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PykeE.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 192,
         "y": 96,
-        "full": "PykeE.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -328,6 +271,10 @@
         "label": [
           "Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -341,13 +288,13 @@
       "name": "Death From Below",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "PykeR.png",
+        "sprite": "spell10.png",
+        "group": "spell",
         "x": 240,
         "y": 96,
-        "full": "PykeR.png",
-        "group": "spell",
-        "sprite": "spell10.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -357,6 +304,9 @@
       "leveltip": {
         "label": [
           "Cooldown"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -369,13 +319,13 @@
   "passive_en": {
     "name": "Gift of the Drowned Ones",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "PykePassive.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 48,
       "y": 48,
-      "full": "PykePassive.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "When Pyke is hidden from enemies, he regenerates damage that he has recently taken from champions. Pyke also cannot gain extra Maximum Health from any source, and instead gains Bonus AD."
   },
@@ -461,6 +411,95 @@
       "num": 75,
       "name": "T1 Pyke",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "555000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "555001",
+      "num": 1,
+      "name": "Pyke spectre des sables",
+      "chromas": true
+    },
+    {
+      "id": "555009",
+      "num": 9,
+      "name": "Pyke lune de sang",
+      "chromas": true
+    },
+    {
+      "id": "555016",
+      "num": 16,
+      "name": "PROJET : Pyke",
+      "chromas": true
+    },
+    {
+      "id": "555025",
+      "num": 25,
+      "name": "Pyke psychoguerrier",
+      "chromas": true
+    },
+    {
+      "id": "555034",
+      "num": 34,
+      "name": "Pyke Sentinelle",
+      "chromas": true
+    },
+    {
+      "id": "555044",
+      "num": 44,
+      "name": "Pyke chevalier de cendres",
+      "chromas": true
+    },
+    {
+      "id": "555045",
+      "num": 45,
+      "name": "Pyke empyréen",
+      "chromas": true
+    },
+    {
+      "id": "555053",
+      "num": 53,
+      "name": "Pyke combattant spirituel",
+      "chromas": true
+    },
+    {
+      "id": "555054",
+      "num": 54,
+      "name": "Pyke combattant spirituel prestige",
+      "chromas": false
+    },
+    {
+      "id": "555064",
+      "num": 64,
+      "name": "Pyke Nuit d'effroi",
+      "chromas": true
+    },
+    {
+      "id": "555074",
+      "num": 74,
+      "name": "Pyke guerrier d'encre",
+      "chromas": true
+    },
+    {
+      "id": "555075",
+      "num": 75,
+      "name": "T1 Pyke",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "TahmKench",
+      "type": "champion",
+      "relation": "related",
+      "note_fr": "Légendes des abysses",
+      "note_en": "Abyssal legends"
     }
   ]
 }

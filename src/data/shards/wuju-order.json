@@ -1,0 +1,38 @@
+[
+  {
+    "id": "doran",
+    "name": "Doran",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Doran_Master_Render.png?ec26c",
+    "factionKey": "wuju-order",
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "ornn",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "wukong",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "yi",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "lui",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  }
+]

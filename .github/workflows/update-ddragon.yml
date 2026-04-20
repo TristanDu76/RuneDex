@@ -1,0 +1,43 @@
+name: Auto-Update Data Dragon
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # S'exécute tous les jours à minuit UTC
+  workflow_dispatch: # Permet de lancer manuellement depuis l'interface GitHub
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Requis pour autoriser le bot à push des commits
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Assure la présence de fetch() natif
+          cache: 'npm'
+          
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run DDragon Update Script
+        run: npm run update-data
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "RuneDex Automaton"
+          git config --global user.email "bot@runedex.app"
+          git add src/data/
+          
+          # Vérifie s'il y a des fichiers modifiés
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git commit -m "chore(data): auto-update Data Dragon to latest patch"
+            git push
+            echo "✅ DDragon update successful and new patch pushed!"
+          else
+            echo "ℹ️ No Data Dragon updates found. Everything is already at the latest version."
+          fi

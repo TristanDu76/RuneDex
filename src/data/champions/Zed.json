@@ -3,126 +3,34 @@
   "key": "238",
   "name": "Zed",
   "title": "Maître des ombres",
-  "version": "15.23.1",
+  "version": "16.8.1",
   "lore": "L'impitoyable Zed est le maître de l'Ordre de l'ombre, une organisation qu'il a créée dans l'intention de militariser la tradition des arts martiaux d'Ionia et de chasser enfin les envahisseurs noxiens. Pendant la guerre, le désespoir le conduisit à déchaîner la Forme secrète de l'ombre, un puissant esprit maléfique aussi dangereux que corrompu. Si Zed maîtrise ces techniques interdites, c'est pour détruire tout ce qu'il considère comme une menace contre sa nation ou son ordre.",
   "tags": [
     "Assassin"
   ],
   "partype": "Énergie",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Zed.png",
+    "sprite": "champion5.png",
+    "group": "champion",
     "x": 288,
     "y": 48,
-    "full": "Zed.png",
-    "group": "champion",
-    "sprite": "champion5.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "238000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "238001",
-      "num": 1,
-      "name": "Zed électrolame",
-      "chromas": true
-    },
-    {
-      "id": "238002",
-      "num": 2,
-      "name": "SKT T1 Zed",
-      "chromas": true
-    },
-    {
-      "id": "238003",
-      "num": 3,
-      "name": "PROJET : Zed",
-      "chromas": true
-    },
-    {
-      "id": "238010",
-      "num": 10,
-      "name": "Zed des Worlds 2016",
-      "chromas": true
-    },
-    {
-      "id": "238011",
-      "num": 11,
-      "name": "Zed thanatophore",
-      "chromas": false
-    },
-    {
-      "id": "238013",
-      "num": 13,
-      "name": "Zed fléau galactique",
-      "chromas": true
-    },
-    {
-      "id": "238015",
-      "num": 15,
-      "name": "Zed psychoguerrier",
-      "chromas": true
-    },
-    {
-      "id": "238030",
-      "num": 30,
-      "name": "PROJET : Zed prestige",
-      "chromas": false
-    },
-    {
-      "id": "238031",
-      "num": 31,
-      "name": "Zed séducteur",
-      "chromas": true
-    },
-    {
-      "id": "238038",
-      "num": 38,
-      "name": "Zed empyréen",
-      "chromas": true
-    },
-    {
-      "id": "238049",
-      "num": 49,
-      "name": "Zed du Voyage immortel",
-      "chromas": true
-    },
-    {
-      "id": "238058",
-      "num": 58,
-      "name": "Zed lune de sang",
-      "chromas": true
-    },
-    {
-      "id": "238068",
-      "num": 68,
-      "name": "Zed fléau galactique quantique",
-      "chromas": false
-    },
-    {
-      "id": "238069",
-      "num": 69,
-      "name": "Zed fleur spirituelle prestige",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "ZedQ",
       "name": "Shuriken-rasoir",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZedQ.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 96,
         "y": 0,
-        "full": "ZedQ.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -133,6 +41,10 @@
         "label": [
           "Dégâts",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -146,13 +58,13 @@
       "name": "Ombre vivante",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZedW.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 144,
         "y": 0,
-        "full": "ZedW.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -164,6 +76,11 @@
           "Énergie récupérée",
           "Coût en @AbilityResourceName@",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ e3 }} -> {{ e3NL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -177,13 +94,13 @@
       "name": "Taillade des ombres",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZedE.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 192,
         "y": 0,
-        "full": "ZedE.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -195,6 +112,11 @@
           "Dégâts",
           "Ralentissement",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ movespeedmod*-100.000000 }}% -> {{ movespeedmodnl*-100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -208,13 +130,13 @@
       "name": "Marque de la mort",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZedR.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 240,
         "y": 0,
-        "full": "ZedR.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -225,6 +147,10 @@
         "label": [
           "Dégâts d'explosion de la marque",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ rdamageamp*100.000000 }}% -> {{ rdamageampnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -237,13 +163,13 @@
   "passive": {
     "name": "Mépris des faibles",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "ZedP.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 288,
       "y": 48,
-      "full": "ZedP.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Les attaques de base de Zed infligent des dégâts magiques supplémentaires aux cibles dont les PV sont faibles. Cet effet ne peut se déclencher sur un même champion ennemi qu'une fois toutes les quelques secondes."
   },
@@ -265,13 +191,13 @@
       "name": "Razor Shuriken",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZedQ.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 96,
         "y": 0,
-        "full": "ZedQ.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -282,6 +208,10 @@
         "label": [
           "Damage",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -295,13 +225,13 @@
       "name": "Living Shadow",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZedW.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 144,
         "y": 0,
-        "full": "ZedW.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -313,6 +243,11 @@
           "Energy Return",
           "@AbilityResourceName@ Cost",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ e3 }} -> {{ e3NL }}",
+          "{{ cost }} -> {{ costNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -326,13 +261,13 @@
       "name": "Shadow Slash",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZedE.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 192,
         "y": 0,
-        "full": "ZedE.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -344,6 +279,11 @@
           "Damage",
           "Slow",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ movespeedmod*-100.000000 }}% -> {{ movespeedmodnl*-100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -357,13 +297,13 @@
       "name": "Death Mark",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ZedR.png",
+        "sprite": "spell17.png",
+        "group": "spell",
         "x": 240,
         "y": 0,
-        "full": "ZedR.png",
-        "group": "spell",
-        "sprite": "spell17.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -374,6 +314,10 @@
         "label": [
           "Mark Detonation Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ rdamageamp*100.000000 }}% -> {{ rdamageampnl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -386,13 +330,13 @@
   "passive_en": {
     "name": "Contempt for the Weak",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "ZedP.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 288,
       "y": 48,
-      "full": "ZedP.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Zed's basic attacks against low health targets deals bonus Magic Damage. This effect can only occur once every few seconds against the same enemy champion."
   },
@@ -491,6 +435,126 @@
       "num": 69,
       "name": "Prestige Spirit Blossom Zed",
       "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "238000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "238001",
+      "num": 1,
+      "name": "Zed électrolame",
+      "chromas": true
+    },
+    {
+      "id": "238002",
+      "num": 2,
+      "name": "SKT T1 Zed",
+      "chromas": true
+    },
+    {
+      "id": "238003",
+      "num": 3,
+      "name": "PROJET : Zed",
+      "chromas": true
+    },
+    {
+      "id": "238010",
+      "num": 10,
+      "name": "Zed des Worlds 2016",
+      "chromas": true
+    },
+    {
+      "id": "238011",
+      "num": 11,
+      "name": "Zed thanatophore",
+      "chromas": false
+    },
+    {
+      "id": "238013",
+      "num": 13,
+      "name": "Zed fléau galactique",
+      "chromas": true
+    },
+    {
+      "id": "238015",
+      "num": 15,
+      "name": "Zed psychoguerrier",
+      "chromas": true
+    },
+    {
+      "id": "238030",
+      "num": 30,
+      "name": "PROJET : Zed prestige",
+      "chromas": false
+    },
+    {
+      "id": "238031",
+      "num": 31,
+      "name": "Zed séducteur",
+      "chromas": true
+    },
+    {
+      "id": "238038",
+      "num": 38,
+      "name": "Zed empyréen",
+      "chromas": true
+    },
+    {
+      "id": "238049",
+      "num": 49,
+      "name": "Zed du Voyage immortel",
+      "chromas": true
+    },
+    {
+      "id": "238058",
+      "num": 58,
+      "name": "Zed lune de sang",
+      "chromas": true
+    },
+    {
+      "id": "238068",
+      "num": 68,
+      "name": "Zed fléau galactique quantique",
+      "chromas": false
+    },
+    {
+      "id": "238069",
+      "num": 69,
+      "name": "Zed fleur spirituelle prestige",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "Xayah",
+      "type": "champion",
+      "relation": "rival",
+      "note_fr": "Son ordre menace les Vastaya",
+      "note_en": "his order threatens the vastaya"
+    },
+    {
+      "id": "Kayn",
+      "type": "champion",
+      "relation": "student",
+      "note_fr": "Élève favori / Successeur",
+      "note_en": "Favorite student / Successor"
+    },
+    {
+      "id": "kusho",
+      "type": "lore",
+      "relation": "student",
+      "note_fr": "Ancien élève",
+      "note_en": "Former Student"
+    },
+    {
+      "id": "Shen",
+      "type": "champion",
+      "relation": "rival/ex-brother"
     }
   ]
 }

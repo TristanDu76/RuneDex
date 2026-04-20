@@ -3,55 +3,35 @@
   "key": "910",
   "name": "Hwei",
   "title": "Visionnaire",
-  "version": "15.23.1",
-  "lore": "Lukai Hwei était le jeune héritier destiné à diriger le Temple de Koyehn, un conservatoire des arts renommé sur l'île sereine de Koyehn, au nord-ouest de l'Ionia. Enfant précoce et gentil, Hwei était intensément connecté aux « nuances du monde », percevant la vie elle-même comme de l'art. Ses yeux changeaient de teinte pour refléter son humeur et son esprit.\n\nIl pratiquait la magie de la peinture, un médium qui influence directement les émotions du public, nécessitant un contrôle et une discipline stricts. Jeune, Hwei a déjà frôlé la catastrophe lorsqu'il a laissé son imagination déborder lors d'une démonstration : il a recréé la mer, mais a submergé mentalement les maîtres, les laissant au bord de la noyade dans son émotion. Bien qu'il ait été horrifié, il était aussi fasciné par la profondeur de son pouvoir.\n\nDurant des années, Hwei a respecté les conventions le jour, mais la nuit, il explorait en secret ses limites, nourrissant l'intensité de son imagination jusqu'à pouvoir manifester une palette de peinture magique. Adulte, il se préparait à hériter de son droit de naissance, apprécié de ses pairs.\n\nTout changea avec l'arrivée de l'artiste invité : Khada Jhin.\n\nPendant un été, Hwei et Jhin échangèrent leurs perspectives créatives. La nuit précédant le départ de Jhin, celui-ci défia Hwei, sentant que son art public n'était qu'une façade forcée. Suppliant de la catharsis, Hwei se laissa aller. Il peignit une œuvre d'une brillante infinité, illuminant la nuit et accueillant le flot d'émotions harmonieuses et viscérales. Il réalisa le potentiel de son art : connexion, inspiration et création sans entraves.\n\nJhin fut témoin de tout. Le lendemain matin, Hwei et les artistes se réveillèrent au milieu d'une série de tragédies conçues comme des œuvres d'art :\n\nQuatre tableaux historiques détruits.\n\nUn arrangement macabre de quatre corps (les maîtres qu'Hwei avait presque tués dans sa jeunesse).\n\nL'éruption en feu des quatre étages inférieurs du temple.\n\nAu milieu des flammes, l'imagination d'Hwei déborda. C'était terrifiant, mais c'était aussi de l'art. Il fut saisi par le même mélange d'horreur et de fascination, comprenant le potentiel de son art pour la destruction et le tourment. Hwei fut le seul survivant de l'effondrement du temple.\n\nHanté par sa culpabilité et les visions de la catastrophe, il trouva sous les décombres le vestige d'un piège en forme de fleur de lotus, reconnaissant la signature de Jhin. Un torrent d'émotions (peur, trahison, tristesse, et surtout crainte respectueuse — Awe) le submergea.\n\nHwei quitta son île, déterminé à trouver la réponse à la question \"pourquoi?\". Il traque désormais les individus néfastes dans les coins sombres de l'Ionia. Il utilise son art pour leur infliger des scènes de souffrance, cherchant à comprendre sa propre source de douleur, tout en offrant de la tranquillité et de la réflexion aux victimes.\n\nEn s'enfonçant dans les ombres, Hwei donne forme à d'infinies possibilités. Le destin de Hwei est désormais de se confronter à l'artiste qui a déclenché ce conflit, risquant de sombrer dans le désespoir le plus complet.",
+  "version": "16.8.1",
+  "lore": "Hwei est un peintre dont les œuvres sont aussi flamboyantes que son humeur est morose. Il utilise son art pour faire face aux criminels d'Ionia et apporter du réconfort à leurs victimes. Sous sa mélancolie se débat un esprit déchiré et émotif, hanté à la fois par les splendides visions de son imagination et par les souvenirs horribles de son temple détruit. Hwei cherche à comprendre cette lumière et ces ténèbres, ce qui le met inévitablement sur la piste de l'artiste à l'origine de ce conflit. Avec son pinceau et sa palette, Hwei donne forme à d'infinies possibilités tandis qu'il s'approche d'une réponse à ses questions, ou du plus complet désespoir.",
   "tags": [
     "Mage",
     "Support"
   ],
   "partype": "Mana",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Hwei.png",
+    "sprite": "champion1.png",
+    "group": "champion",
     "x": 240,
     "y": 48,
-    "full": "Hwei.png",
-    "group": "champion",
-    "sprite": "champion1.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "910000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "910001",
-      "num": 1,
-      "name": "Hwei élu de l'hiver",
-      "chromas": true
-    },
-    {
-      "id": "910011",
-      "num": 11,
-      "name": "Hwei fleur spirituelle",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "HweiQ",
       "name": "Sujet : Désastres",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "HweiQ.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 384,
         "y": 144,
-        "full": "HweiQ.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -68,6 +48,16 @@
           "<spellName>Champ de lave</spellName> | Dégâts par seconde",
           "Délai de récupération",
           "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ tooltip_qqbasedamage }} -> {{ tooltip_qqbasedamageNL }}",
+          "{{ tooltip_qqbonusdamage }}% -> {{ tooltip_qqbonusdamageNL }}%",
+          "{{ tooltip_qwbasedamage }} -> {{ tooltip_qwbasedamageNL }}",
+          "{{ tooltip_qwbonusdamagemult*100.000000 }}% -> {{ tooltip_qwbonusdamagemultnl*100.000000 }}%",
+          "{{ tooltip_qebasedamage }} -> {{ tooltip_qebasedamageNL }}",
+          "{{ tooltip_qebasedps }} -> {{ tooltip_qebasedpsNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -81,13 +71,13 @@
       "name": "Sujet : Sérénités",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "HweiW.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 432,
         "y": 144,
-        "full": "HweiW.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -103,6 +93,15 @@
           "<spellName>Nuit étoilée</spellName> | Total du mana rendu",
           "Délai de récupération",
           "Coût en mana"
+        ],
+        "effect": [
+          "{{ tooltip_wqbasemovespeed }}% -> {{ tooltip_wqbasemovespeedNL }}%",
+          "{{ tooltip_wqareaduration }} -> {{ tooltip_wqareadurationNL }}",
+          "{{ tooltip_wwshieldamountbase }} -> {{ tooltip_wwshieldamountbaseNL }}",
+          "{{ tooltip_webaseonhitdamage }} -> {{ tooltip_webaseonhitdamageNL }}",
+          "{{ tooltip_weonhitmanarestore*3.000000 }} -> {{ tooltip_weonhitmanarestorenl*3.000000 }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -116,13 +115,13 @@
       "name": "Sujet : Tourments",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "HweiE.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 0,
         "y": 0,
-        "full": "HweiE.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -139,6 +138,16 @@
           "<spellName>Mâchoires chatoyantes</spellName> | Ralentissement",
           "Délai de récupération",
           "Coût en mana"
+        ],
+        "effect": [
+          "{{ tooltip_eqbasedamage }} -> {{ tooltip_eqbasedamageNL }}",
+          "{{ tooltip_eqfleeduration }} -> {{ tooltip_eqfleedurationNL }}",
+          "{{ tooltip_ewbasedamage }} -> {{ tooltip_ewbasedamageNL }}",
+          "{{ tooltip_ewrootduration }} -> {{ tooltip_ewrootdurationNL }}",
+          "{{ tooltip_eebasedamage }} -> {{ tooltip_eebasedamageNL }}",
+          "{{ tooltip_eeslowamount }}% -> {{ tooltip_eeslowamountNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -152,13 +161,13 @@
       "name": "Vision de désespoir",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "HweiR.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 48,
         "y": 0,
-        "full": "HweiR.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -170,25 +179,30 @@
           "Dégâts",
           "Dégâts par seconde",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ rbasedamage }} -> {{ rbasedamageNL }}",
+          "{{ basedamageovertime }} -> {{ basedamageovertimeNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
       "rangeBurn": "1300",
       "datavalues": {},
       "description": "Hwei peint une vision de pur désespoir. Le premier champion ennemi touché devient le centre d'une peinture grandissante, qui ralentit et blesse les ennemis proches. Cette vision explose lorsqu'elle atteint sa limite de taille, ou lorsque le champion affecté meurt.",
-      "cooldownBurn": "140/115/80"
+      "cooldownBurn": "120/100/80"
     }
   ],
   "passive": {
     "name": "Signature du Visionnaire",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "HweiPassive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 240,
       "y": 48,
-      "full": "HweiPassive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Hwei prépare les champions ennemis qu'il blesse à l'aide de ses compétences pour sa touche finale : sa signature.<br><br>Toucher un ennemi avec une deuxième compétence blessante termine sa signature, qui apparaît sous l'ennemi. La signature explose après un court délai, infligeant des dégâts magiques à tous les ennemis à portée."
   },
@@ -203,20 +217,20 @@
   "gender": "Male",
   "species": "Human",
   "title_en": "the Visionary",
-  "lore_en": "Lukai Hwei was the young heir destined to lead the Temple of Koyehn, a renowned conservatory for the arts on the serene island of Koyehn, northwest Ionia. A kind and precocious child, Hwei was intensely connected to the \"shades of the world,\" seeing life itself as art. His eye color shifted in hue to reflect his mind and mood.\n\nHe practiced paint magic, a medium that directly influenced the emotions of the audience, requiring strict control and discipline. Young Hwei already skirted disaster when he indulged his imagination during a demonstration: he recreated the sea but mentally submerged the masters, leaving them on the verge of drowning in his emotion. Though horrified, he was also fascinated by the depth of his power.\n\nFor years, Hwei upheld conventions by day, but alone at night, he secretly pushed his boundaries, focusing the intensity of his imagination until he could manifest a palette flowing with magical paint. As an adult, he prepared to inherit his birthright, respected by his peers.\n\nEverything changed with the arrival of the visiting artist: Khada Jhin.\n\nOver a gilded summer, Hwei and Jhin exchanged creative perspectives. The night before Jhin's departure, he challenged Hwei, sensing that his public art was a forced façade. Begging for catharsis, Hwei surrendered. He painted a work of brilliant infinity, lighting up the night and welcoming the harmonious and visceral flow of emotions. He realized the potential of his art: connection, inspiration, and unfettered creation.\n\nJhin witnessed it all. At dawn, Hwei and his fellow artists awoke to a series of tragedies designed as art pieces:\n\nFour historic paintings destroyed.\n\nAn arrangement of four bodies (the masters Hwei had almost killed in his youth).\n\nThe fiery eruption of the temple's four lowest floors.\n\nAmid the flames, Hwei's imagination overflowed. It was terrifying, yet it was art. He was seized by the same mix of horror and fascination, understanding his art's potential for destruction and torment. Hwei emerged as the temple's only survivor.\n\nHaunted by guilt and the visions of the disaster, he found the remnants of a lotus-petaled trap beneath the rubble, recognizing Jhin's signature. A cascade of emotions—fear, sorrow, betrayal, and most importantly, awe—engulfed him.\n\nHwei left his island, determined to find the answer to the question \"why?\" He now tracks nefarious individuals in Ionia's darkest corners. He uses his art to unleash scenes of suffering upon them, seeking to understand his own well of pain, while also creating shared tranquility and reflection for the victims.\n\nAs he spirals deeper into the shadows, Hwei gives shape to infinite possibilities. Hwei's destiny is now to confront the artist who initiated this conflict, risking either finding an answer or succumbing to utter despair.",
+  "lore_en": "Hwei is a brooding painter who creates brilliant art in order to confront Ionia's criminals and comfort their victims. Beneath his melancholy roils a torn, emotional mind—haunted by both the vibrant visions of his imagination and the gruesome memories of his temple's massacre. Hwei seeks to understand this light and dark, which drives him inevitably toward the artist who unraveled him. With paintbrush and palette, Hwei shapes endless possibilities as he draws ever closer to earning closure or embracing despair.",
   "spells_en": [
     {
       "id": "HweiQ",
       "name": "Subject: Disaster",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "HweiQ.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 384,
         "y": 144,
-        "full": "HweiQ.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -233,6 +247,16 @@
           "<spellName>Molten Fissure</spellName> | Damage Per Second",
           "Cooldown",
           "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ tooltip_qqbasedamage }} -> {{ tooltip_qqbasedamageNL }}",
+          "{{ tooltip_qqbonusdamage }}% -> {{ tooltip_qqbonusdamageNL }}%",
+          "{{ tooltip_qwbasedamage }} -> {{ tooltip_qwbasedamageNL }}",
+          "{{ tooltip_qwbonusdamagemult*100.000000 }}% -> {{ tooltip_qwbonusdamagemultnl*100.000000 }}%",
+          "{{ tooltip_qebasedamage }} -> {{ tooltip_qebasedamageNL }}",
+          "{{ tooltip_qebasedps }} -> {{ tooltip_qebasedpsNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -246,13 +270,13 @@
       "name": "Subject: Serenity",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "HweiW.png",
+        "sprite": "spell4.png",
+        "group": "spell",
         "x": 432,
         "y": 144,
-        "full": "HweiW.png",
-        "group": "spell",
-        "sprite": "spell4.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -268,6 +292,15 @@
           "<spellName>Stirring Lights</spellName> | Total Mana Restore",
           "Cooldown",
           "Mana Cost"
+        ],
+        "effect": [
+          "{{ tooltip_wqbasemovespeed }}% -> {{ tooltip_wqbasemovespeedNL }}%",
+          "{{ tooltip_wqareaduration }} -> {{ tooltip_wqareadurationNL }}",
+          "{{ tooltip_wwshieldamountbase }} -> {{ tooltip_wwshieldamountbaseNL }}",
+          "{{ tooltip_webaseonhitdamage }} -> {{ tooltip_webaseonhitdamageNL }}",
+          "{{ tooltip_weonhitmanarestore*3.000000 }} -> {{ tooltip_weonhitmanarestorenl*3.000000 }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -281,13 +314,13 @@
       "name": "Subject: Torment",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "HweiE.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 0,
         "y": 0,
-        "full": "HweiE.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -304,6 +337,16 @@
           "<spellName>Crushing Maw</spellName> | Slow Amount",
           "Cooldown",
           "Mana Cost"
+        ],
+        "effect": [
+          "{{ tooltip_eqbasedamage }} -> {{ tooltip_eqbasedamageNL }}",
+          "{{ tooltip_eqfleeduration }} -> {{ tooltip_eqfleedurationNL }}",
+          "{{ tooltip_ewbasedamage }} -> {{ tooltip_ewbasedamageNL }}",
+          "{{ tooltip_ewrootduration }} -> {{ tooltip_ewrootdurationNL }}",
+          "{{ tooltip_eebasedamage }} -> {{ tooltip_eebasedamageNL }}",
+          "{{ tooltip_eeslowamount }}% -> {{ tooltip_eeslowamountNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -317,13 +360,13 @@
       "name": "Spiraling Despair",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "HweiR.png",
+        "sprite": "spell5.png",
+        "group": "spell",
         "x": 48,
         "y": 0,
-        "full": "HweiR.png",
-        "group": "spell",
-        "sprite": "spell5.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -335,25 +378,30 @@
           "Damage",
           "Damage Per Second",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ rbasedamage }} -> {{ rbasedamageNL }}",
+          "{{ basedamageovertime }} -> {{ basedamageovertimeNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
       "rangeBurn": "1300",
       "datavalues": {},
       "description": "Hwei paints a vision of pure despair. The first enemy champion struck becomes the center of an expanding painting that slows and damages nearby enemies. The vision explodes after reaching its maximum size or when the champion dies.",
-      "cooldownBurn": "140/115/80"
+      "cooldownBurn": "120/100/80"
     }
   ],
   "passive_en": {
     "name": "Signature of the Visionary",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "HweiPassive.png",
+      "sprite": "passive1.png",
+      "group": "passive",
       "x": 240,
       "y": 48,
-      "full": "HweiPassive.png",
-      "group": "passive",
-      "sprite": "passive1.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Hwei primes enemy champions he damages with his abilities for his signature finishing touch.<br><br>Hitting an enemy with a second damaging spell completes his signature, leaving it beneath them. The signature detonates after a short delay, dealing magic damage to all enemies in range."
   },
@@ -380,5 +428,26 @@
       "name": "Spirit Blossom Hwei",
       "chromas": true
     }
-  ]
+  ],
+  "skins": [
+    {
+      "id": "910000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "910001",
+      "num": 1,
+      "name": "Hwei élu de l'hiver",
+      "chromas": true
+    },
+    {
+      "id": "910011",
+      "num": 11,
+      "name": "Hwei fleur spirituelle",
+      "chromas": true
+    }
+  ],
+  "related_characters": []
 }

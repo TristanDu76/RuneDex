@@ -3,73 +3,35 @@
   "key": "421",
   "name": "Rek'Sai",
   "title": "Traqueuse du Néant",
-  "version": "15.23.1",
-  "lore": "Rek'Sai est la plus grande et la plus féroce de son espèce, les Xer'Sai, des créatures issues du Néant qui ont élu domicile sous les sables de Shurima. Elle est une prédatrice sans merci qui utilise des tunnels souterrains pour traquer ses proies.\n\n Un Fléau pour l'Empire : Sa faim insatiable a causé la dévastation de régions entières qui faisaient autrefois la gloire de l'empire shurimien. Elle a transformé des routes commerciales prospères en déserts de mort, forçant les caravanes et les marchands à faire des détours de plusieurs centaines de kilomètres pour éviter son territoire.\n\n La Mort Venue d'en Bas : Rek'Sai ne voit pas avec ses yeux, mais perçoit les moindres vibrations à travers le sable. Une fois qu'elle détecte un mouvement, la cible est condamnée. Elle jaillit des profondeurs pour une embuscade brutale, laissant peu de chances de fuite.\n\n Un Danger Exploité : Malgré sa dangerosité, certains bandits rusés utilisent son territoire à leur avantage, attirant délibérément les voyageurs imprudents dans les \"terrains de chasse\" de Rek'Sai pour se débarrasser d'eux ou récupérer leurs restes.\n\n La Reine de la Ruche : Contrairement aux autres membres de son espèce, Rek'Sai est la génitrice, la reine. Elle domine son territoire et veille à ce que sa progéniture continue d'étendre son influence sous le désert.",
+  "version": "16.8.1",
+  "lore": "Rek'Sai est une créature prédatrice – la plus imposante et la plus féroce de son espèce – qui se déplace sous terre pour surprendre ses proies. Sa faim insatiable a ravagé des régions entières de Shurima à l'époque où cet empire était encore florissant. Les marchands et les caravanes armées faisaient des détours de plusieurs kilomètres pour rester loin de ses terres. Dès lors que Rek'Sai vous a repéré, votre sort est scellé. Nul ne peut lui échapper ; elle est la mort qui surgit du sable.",
   "tags": [
     "Fighter",
     "Tank"
   ],
   "partype": "Rage",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "RekSai.png",
+    "sprite": "champion3.png",
+    "group": "champion",
     "x": 288,
     "y": 48,
-    "full": "RekSai.png",
-    "group": "champion",
-    "sprite": "champion3.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "421000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "421001",
-      "num": 1,
-      "name": "Rek'Sai eternum",
-      "chromas": false
-    },
-    {
-      "id": "421002",
-      "num": 2,
-      "name": "Requ'Sai",
-      "chromas": true
-    },
-    {
-      "id": "421009",
-      "num": 9,
-      "name": "Rek'Sai des glaces noires",
-      "chromas": true
-    },
-    {
-      "id": "421017",
-      "num": 17,
-      "name": "Rek'Sai sylvestre",
-      "chromas": true
-    },
-    {
-      "id": "421026",
-      "num": 26,
-      "name": "Rek'Sai primordienne",
-      "chromas": true
-    }
-  ],
   "spells": [
     {
       "id": "RekSaiQ",
       "name": "Courroux de la reine/Sondeur explosif",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RekSaiQ.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 96,
         "y": 0,
-        "full": "RekSaiQ.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -81,6 +43,11 @@
           "Ratio de dégâts d'attaque de Courroux de la reine",
           "Délai de récupération de Courroux de la reine",
           "Dégâts de Sondeur explosif"
+        ],
+        "effect": [
+          "{{ unburrowedadratio*100.000000 }}% -> {{ unburrowedadrationl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ burrowedbasedamage }} -> {{ burrowedbasedamageNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -94,13 +61,13 @@
       "name": "Enfouissement/Jaillissement",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RekSaiW.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 144,
         "y": 0,
-        "full": "RekSaiW.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -112,6 +79,11 @@
           "Dégâts de Jaillissement",
           "Immunité à la projection",
           "Vitesse de déplacement enfouie"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ knockupimmunity }} -> {{ knockupimmunityNL }}",
+          "{{ burrowedmovespeed }} -> {{ burrowedmovespeedNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -125,13 +97,13 @@
       "name": "Morsure féroce/Tunnel",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RekSaiE.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 192,
         "y": 0,
-        "full": "RekSaiE.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -144,6 +116,12 @@
           "Dégâts renforcés",
           "Délai de récupération de l'incantation de Tunnel",
           "Délai de récupération de l'utilisation de Tunnel"
+        ],
+        "effect": [
+          "{{ empoweredbasedamage*0.800000 }} -> {{ empoweredbasedamagenl*0.800000 }}",
+          "{{ empoweredbasedamage }} -> {{ empoweredbasedamageNL }}",
+          "{{ dashcooldown }} -> {{ dashcooldownNL }}",
+          "{{ tunnelreusecooldown }} -> {{ tunnelreusecooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -157,13 +135,13 @@
       "name": "Rush du Néant",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RekSaiR.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 240,
         "y": 0,
-        "full": "RekSaiR.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -175,6 +153,11 @@
           "Dégâts",
           "% des PV en dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ rbasedamage }} -> {{ rbasedamageNL }}",
+          "{{ percenthealthdamage }}% -> {{ percenthealthdamageNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -187,13 +170,13 @@
   "passive": {
     "name": "Fureur des Xer'Sai",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "RekSai_Passive.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 288,
       "y": 48,
-      "full": "RekSai_Passive.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Rek'Sai génère de la Fureur avec ses attaques et quand elle frappe un ennemi avec une compétence de base. Quand elle est enfouie, elle consomme sa Fureur pour récupérer ses PV."
   },
@@ -208,20 +191,20 @@
   "gender": "Female",
   "species": "Voidborn",
   "title_en": "the Void Burrower",
-  "lore_en": "Rek'Sai is the largest and fiercest of her species, the Xer'Sai—creatures spawned from the Void that have claimed the sands of Shurima as their own. She is a merciless predator that utilizes complex tunnel networks to ambush and devour her prey.\n\n Scourge of the Empire: Her insatiable hunger has laid waste to entire regions of the once-great Shuriman empire. Prosperous trade routes have been abandoned, as merchants and armed caravans travel hundreds of miles out of their way to avoid her vast killing grounds.\n\n Death from Below: Rek'Sai does not rely on sight but senses the slightest vibrations through the earth. Once she detects movement, the prey's fate is sealed. She bursts from beneath the sand in a lethal ambush, offering no hope of escape.\n\n A Tool for Bandits: Though she is a global threat, cunning bandits have been known to lure unwary travelers into her territory, using the Void-beast as a natural—and inescapable—executioner.\n\n The Broodmother: She is the undisputed queen of her species. While other Xer'Sai hunt, she remains the apex predator, ensuring her dominance over the desert and the expansion of her terrifying tunnel systems.",
+  "lore_en": "An apex predator, Rek'Sai is a merciless Void-spawn that tunnels beneath the ground to ambush and devour unsuspecting prey. Her insatiable hunger has laid waste to entire regions of the once-great empire of Shurima—merchants, traders, even armed caravans, will go hundreds of miles out of their way to avoid her and her offspring's hunting grounds. All know that once Rek'Sai is seen on the horizon, death from below is all but guaranteed.",
   "spells_en": [
     {
       "id": "RekSaiQ",
       "name": "Queen's Wrath / Prey Seeker",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RekSaiQ.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 96,
         "y": 0,
-        "full": "RekSaiQ.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -233,6 +216,11 @@
           "Queen's Wrath AD Ratio",
           "Queen's Wrath Cooldown",
           "Prey Seeker Damage"
+        ],
+        "effect": [
+          "{{ unburrowedadratio*100.000000 }}% -> {{ unburrowedadrationl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ burrowedbasedamage }} -> {{ burrowedbasedamageNL }}"
         ]
       },
       "resource": "No Cost",
@@ -246,13 +234,13 @@
       "name": "Burrow / Un-burrow",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RekSaiW.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 144,
         "y": 0,
-        "full": "RekSaiW.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -264,6 +252,11 @@
           "Unburrow Damage",
           "Knock Up Immunity",
           "Burrowed Move Speed"
+        ],
+        "effect": [
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ knockupimmunity }} -> {{ knockupimmunityNL }}",
+          "{{ burrowedmovespeed }} -> {{ burrowedmovespeedNL }}"
         ]
       },
       "resource": "No Cost",
@@ -277,13 +270,13 @@
       "name": "Furious Bite / Tunnel",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RekSaiE.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 192,
         "y": 0,
-        "full": "RekSaiE.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -296,6 +289,12 @@
           "Empowered Damage",
           "Tunnel Cast Cooldown",
           "Tunnel Use Cooldown"
+        ],
+        "effect": [
+          "{{ empoweredbasedamage*0.800000 }} -> {{ empoweredbasedamagenl*0.800000 }}",
+          "{{ empoweredbasedamage }} -> {{ empoweredbasedamageNL }}",
+          "{{ dashcooldown }} -> {{ dashcooldownNL }}",
+          "{{ tunnelreusecooldown }} -> {{ tunnelreusecooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -309,13 +308,13 @@
       "name": "Void Rush",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "RekSaiR.png",
+        "sprite": "spell11.png",
+        "group": "spell",
         "x": 240,
         "y": 0,
-        "full": "RekSaiR.png",
-        "group": "spell",
-        "sprite": "spell11.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -327,6 +326,11 @@
           "Damage",
           "% Health damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ rbasedamage }} -> {{ rbasedamageNL }}",
+          "{{ percenthealthdamage }}% -> {{ percenthealthdamageNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -339,13 +343,13 @@
   "passive_en": {
     "name": "Fury of the Xer'Sai",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "RekSai_Passive.png",
+      "sprite": "passive3.png",
+      "group": "passive",
       "x": 288,
       "y": 48,
-      "full": "RekSai_Passive.png",
-      "group": "passive",
-      "sprite": "passive3.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Rek'Sai generates Fury by Attacking and hitting with basic Abilities. She consumes this Fury while Burrowed to restore health."
   },
@@ -390,5 +394,44 @@
       "name": "Primordian Rek'Sai",
       "chromas": true
     }
-  ]
+  ],
+  "skins": [
+    {
+      "id": "421000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "421001",
+      "num": 1,
+      "name": "Rek'Sai eternum",
+      "chromas": false
+    },
+    {
+      "id": "421002",
+      "num": 2,
+      "name": "Requ'Sai",
+      "chromas": true
+    },
+    {
+      "id": "421009",
+      "num": 9,
+      "name": "Rek'Sai des glaces noires",
+      "chromas": true
+    },
+    {
+      "id": "421017",
+      "num": 17,
+      "name": "Rek'Sai sylvestre",
+      "chromas": true
+    },
+    {
+      "id": "421026",
+      "num": 26,
+      "name": "Rek'Sai primordienne",
+      "chromas": true
+    }
+  ],
+  "related_characters": []
 }

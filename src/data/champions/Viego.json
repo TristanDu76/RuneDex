@@ -3,7 +3,7 @@
   "key": "234",
   "name": "Viego",
   "title": "Roi déchu",
-  "version": "15.23.1",
+  "version": "16.8.1",
   "lore": "Autrefois souverain d'un royaume perdu depuis longtemps, Viego mourut il y a plus de mille ans lorsqu'il tenta de ramener sa femme d'entre les morts. Cela causa la catastrophe magique connue sous le nom de la Ruine. Devenu un puissant spectre torturé par le désir obsessionnel de retrouver sa reine morte depuis des siècles, Viego est désormais le Roi déchu. Il contrôle la Nuit de l'horreur et parcourt Runeterra pour trouver un moyen de ramener sa bien-aimée, détruisant tout sur son passage avec la Brume noire qui se répand inlassablement depuis son cœur brisé et cruel.",
   "tags": [
     "Fighter",
@@ -11,71 +11,27 @@
   ],
   "partype": "Aucune",
   "image": {
-    "h": 48,
-    "w": 48,
+    "full": "Viego.png",
+    "sprite": "champion5.png",
+    "group": "champion",
     "x": 48,
     "y": 0,
-    "full": "Viego.png",
-    "group": "champion",
-    "sprite": "champion5.png"
+    "w": 48,
+    "h": 48
   },
-  "skins": [
-    {
-      "id": "234000",
-      "num": 0,
-      "name": "default",
-      "chromas": false
-    },
-    {
-      "id": "234001",
-      "num": 1,
-      "name": "Viego bête lunaire",
-      "chromas": true
-    },
-    {
-      "id": "234010",
-      "num": 10,
-      "name": "Viego Dissonance de Pentakill",
-      "chromas": false
-    },
-    {
-      "id": "234019",
-      "num": 19,
-      "name": "EDG Viego",
-      "chromas": false
-    },
-    {
-      "id": "234021",
-      "num": 21,
-      "name": "Roi Viego",
-      "chromas": false
-    },
-    {
-      "id": "234030",
-      "num": 30,
-      "name": "Viego combattant spirituel",
-      "chromas": false
-    },
-    {
-      "id": "234037",
-      "num": 37,
-      "name": "Viego des Worlds 2024",
-      "chromas": false
-    }
-  ],
   "spells": [
     {
       "id": "ViegoQ",
       "name": "Lame du roi déchu",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ViegoQ.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 96,
         "y": 96,
-        "full": "ViegoQ.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -88,6 +44,12 @@
           "% des PV actuels",
           "Dégâts minimum selon les PV actuels",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ percenthealthonhit }}% -> {{ percenthealthonhitNL }}%",
+          "{{ mindamageonhit }} -> {{ mindamageonhitNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -101,13 +63,13 @@
       "name": "Gueule spectrale",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ViegoW.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 144,
         "y": 96,
-        "full": "ViegoW.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -117,6 +79,9 @@
       "leveltip": {
         "label": [
           "Dégâts"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -130,13 +95,13 @@
       "name": "Chemin tourmenté",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ViegoE.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 192,
         "y": 96,
-        "full": "ViegoE.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -148,6 +113,11 @@
           "Vitesse de déplacement",
           "Vitesse d'attaque",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ movespeed*100.000000 }}% -> {{ movespeednl*100.000000 }}%",
+          "{{ attackspeed*100.000000 }}% -> {{ attackspeednl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -161,13 +131,13 @@
       "name": "Cœur brisé",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ViegoR.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 240,
         "y": 96,
-        "full": "ViegoR.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -178,6 +148,10 @@
         "label": [
           "Pourcentage des PV manquants en dégâts",
           "Délai de récupération"
+        ],
+        "effect": [
+          "{{ maxhealthdamage }}% -> {{ maxhealthdamageNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -190,13 +164,13 @@
   "passive": {
     "name": "Assujettissement",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Viego_Passive.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 48,
       "y": 0,
-      "full": "Viego_Passive.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Les ennemis qui meurent devant Viego deviennent des spectres. Quand il attaque un spectre, Viego prend temporairement le contrôle du corps de l'ennemi mort, récupérant un pourcentage des PV max de la cible et gagnant l'accès à ses compétences de base et à ses objets. Viego ne gagne pas l'accès à l'ultime de la cible, mais peut lancer son propre ultime gratuitement."
   },
@@ -218,13 +192,13 @@
       "name": "Blade of the Ruined King",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ViegoQ.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 96,
         "y": 96,
-        "full": "ViegoQ.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -237,6 +211,12 @@
           "Current Health %",
           "Minimum Current Health Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}",
+          "{{ percenthealthonhit }}% -> {{ percenthealthonhitNL }}%",
+          "{{ mindamageonhit }} -> {{ mindamageonhitNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -250,13 +230,13 @@
       "name": "Spectral Maw",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ViegoW.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 144,
         "y": 96,
-        "full": "ViegoW.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -266,6 +246,9 @@
       "leveltip": {
         "label": [
           "Damage"
+        ],
+        "effect": [
+          "{{ damage }} -> {{ damageNL }}"
         ]
       },
       "resource": "No Cost",
@@ -279,13 +262,13 @@
       "name": "Harrowed Path",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ViegoE.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 192,
         "y": 96,
-        "full": "ViegoE.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
@@ -297,6 +280,11 @@
           "Move Speed",
           "Attack Speed",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ movespeed*100.000000 }}% -> {{ movespeednl*100.000000 }}%",
+          "{{ attackspeed*100.000000 }}% -> {{ attackspeednl*100.000000 }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -310,13 +298,13 @@
       "name": "Heartbreaker",
       "vars": [],
       "image": {
-        "h": 48,
-        "w": 48,
+        "full": "ViegoR.png",
+        "sprite": "spell15.png",
+        "group": "spell",
         "x": 240,
         "y": 96,
-        "full": "ViegoR.png",
-        "group": "spell",
-        "sprite": "spell15.png"
+        "w": 48,
+        "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
@@ -327,6 +315,10 @@
         "label": [
           "Missing Health Damage",
           "Cooldown"
+        ],
+        "effect": [
+          "{{ maxhealthdamage }}% -> {{ maxhealthdamageNL }}%",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -339,13 +331,13 @@
   "passive_en": {
     "name": "Sovereign's Domination",
     "image": {
-      "h": 48,
-      "w": 48,
+      "full": "Viego_Passive.png",
+      "sprite": "passive5.png",
+      "group": "passive",
       "x": 48,
       "y": 0,
-      "full": "Viego_Passive.png",
-      "group": "passive",
-      "sprite": "passive5.png"
+      "w": 48,
+      "h": 48
     },
     "description": "Enemies who fall before Viego become wraiths. By attacking a wraith, Viego temporarily seizes control of the dead enemy's body, healing for a percentage of his target's max health and gaining access to their basic abilities and items. He replaces their Ultimate with a free cast of his own."
   },
@@ -395,6 +387,83 @@
       "num": 37,
       "name": "Worlds 2024 Viego",
       "chromas": false
+    },
+    {
+      "id": "234043",
+      "num": 43,
+      "name": "Revenant Reign Viego",
+      "chromas": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "234000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "234001",
+      "num": 1,
+      "name": "Viego bête lunaire",
+      "chromas": true
+    },
+    {
+      "id": "234010",
+      "num": 10,
+      "name": "Viego Dissonance de Pentakill",
+      "chromas": false
+    },
+    {
+      "id": "234019",
+      "num": 19,
+      "name": "EDG Viego",
+      "chromas": false
+    },
+    {
+      "id": "234021",
+      "num": 21,
+      "name": "Roi Viego",
+      "chromas": false
+    },
+    {
+      "id": "234030",
+      "num": 30,
+      "name": "Viego combattant spirituel",
+      "chromas": false
+    },
+    {
+      "id": "234037",
+      "num": 37,
+      "name": "Viego des Worlds 2024",
+      "chromas": false
+    },
+    {
+      "id": "234043",
+      "num": 43,
+      "name": "Viego roi revenant",
+      "chromas": false
+    }
+  ],
+  "related_characters": [
+    {
+      "id": "ledros",
+      "type": "lore",
+      "relation": "ally",
+      "note_fr": "Ancien Roi",
+      "note_en": "Former King"
+    },
+    {
+      "id": "isolde",
+      "type": "lore",
+      "relation": "wife"
+    },
+    {
+      "id": "Akshan",
+      "type": "champion",
+      "relation": "killer",
+      "note_fr": "A tué sa mentor",
+      "note_en": "Killed his mentor"
     }
   ]
 }

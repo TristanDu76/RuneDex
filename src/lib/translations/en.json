@@ -10,6 +10,9 @@
         "items": "Items",
         "runes": "Runes",
         "artifacts": "Artifacts",
+        "map": {
+            "title": "Map"
+        },
         "worldRunes": "World Runes",
         "legendaryArtifacts": "Legendary Artifacts"
     },
@@ -19,7 +22,8 @@
         "runes": "Runes",
         "arsenal": "Rift Arsenal",
         "previous": "Previous",
-        "next": "Next"
+        "next": "Next",
+        "map": "Map"
     },
     "items": {
         "title": "Items",
@@ -89,9 +93,12 @@
         "spellsTitle": "Abilities",
         "passive": "Passive",
         "relatedCharacters": "Related Characters",
+        "origin_region": "Origin Region",
         "region": "Region",
+        "faction": "Faction",
         "species": "Species",
         "gender": "Gender",
+        "status": "Status",
         "resource": "Resource",
         "artifacts": "Artifacts",
         "showMore": "Show more",
@@ -118,10 +125,21 @@
         "zaun": "Zaun",
         "void": "The Void",
         "runeterra": "Runeterra",
+        "runeterra-prime": "Runeterra Prime",
         "unaffiliated": "Unaffiliated",
         "darkin": "Darkin",
         "spirit-realm": "Spirit Realm",
-        "icathia": "Icathia"
+        "icathia": "Icathia",
+        "lunari": "Lunari",
+        "rakkors": "Rakkors",
+        "solari": "Solari",
+        "independent": "Independent",
+        "pre-arcane-runeterra": "Pre-Arcane Runeterra",
+        "black-rose": "Black Rose",
+        "sentinels-of-light": "Sentinels of Light",
+        "kinkou-order": "Kinkou Order",
+        "navori-brotherhood": "Navori Brotherhood",
+        "crimson-circle": "Crimson Circle"
     },
     "relationTypes": {
         "adoptive-brother": "Adoptive Brother",
@@ -198,6 +216,7 @@
         "predator": "Predator",
         "prey": "Prey",
         "related": "Related",
+        "related-lore": "Narrative link",
         "rival": "Rivalry",
         "rival/ally": "Rival and Ally",
         "rival/corruption": "Rival (Corruption)",
@@ -230,9 +249,8 @@
         "twin-brother": "Twin bond",
         "twin-sister": "Twin bond",
         "unrequited-love": "Unrequited Love",
-        "victim": "Victim of",
-        "wife": "Marriage",
-        "husband": "Marriage"
+        "victim": "Victime of",
+        "wife": "Marriage"
     },
     "species": {
         "Ascended": "Ascended",
@@ -249,22 +267,25 @@
         "Dragon": "Dragon",
         "Drakalops": "Drakalops",
         "God": "God",
+        "God-Warrior": "God-Warrior",
         "Golem": "Golem",
-        "Half-man": "Half-Man",
-        "Half-man/tree": "Half-Man/Tree",
+        "Half-Man": "Half-Man",
+        "Half-Man/Tree": "Half-Man/Tree",
         "Human": "Human",
         "Iceborn": "Iceborn",
         "Magically Altered": "Magically Altered",
         "Magically Altered Construct": "Magically Altered Construct",
         "Magically Altered Human": "Magically Altered Human",
+        "Marai": "Marai",
         "Minotaur": "Minotaur",
         "Plant": "Plant",
         "Rat": "Rat",
         "Revenant": "Revenant",
+        "Squirrel": "Squirrel",
         "Spirit": "Spirit",
         "Troll": "Troll",
         "Undead": "Undead",
-        "Undead Yordle": "Undead Yordle",
+        "Undead-Yordle": "Undead Yordle",
         "Unknown": "Unknown",
         "Vastaya": "Vastaya",
         "Voidborn": "Voidborn",
@@ -272,27 +293,47 @@
     },
     "resource": {
         "Mana": "Mana",
+        "mana": "Mana",
         "Énergie": "Energy",
+        "énergie": "Energy",
         "Fureur": "Fury",
+        "fureur": "Fury",
         "Rage": "Rage",
+        "rage": "Rage",
         "Chaleur": "Heat",
+        "chaleur": "Heat",
         "Courage": "Courage",
+        "courage": "Courage",
         "Bouclier": "Shield",
+        "bouclier": "Shield",
         "Aucune": "None",
+        "aucune": "None",
         "Férocité": "Ferocity",
+        "férocité": "Ferocity",
         "Puits de sang": "Blood Well",
+        "puits de sang": "Blood Well",
         "Afflux sanguin": "Blood Surge",
+        "afflux sanguin": "Blood Surge",
         "Impulsion": "Impulse",
+        "impulsion": "Impulse",
         "Vapeur": "Steam",
-        "Agressivité": "Aggression"
+        "vapeur": "Steam",
+        "Agressivité": "Aggression",
+        "agressivité": "Aggression"
     },
     "roles": {
         "Fighter": "Fighter",
+        "fighter": "Fighter",
         "Tank": "Tank",
+        "tank": "Tank",
         "Mage": "Mage",
+        "mage": "Mage",
         "Assassin": "Assassin",
+        "assassin": "Assassin",
         "Support": "Support",
-        "Marksman": "Marksman"
+        "support": "Support",
+        "Marksman": "Marksman",
+        "marksman": "Marksman"
     },
     "lanes": {
         "Top": "Top",
@@ -303,9 +344,19 @@
     },
     "gender": {
         "Male": "Male",
+        "male": "Male",
         "Female": "Female",
+        "female": "Female",
         "Other": "Other",
-        "Unknown": "Unknown"
+        "other": "Other",
+        "Unknown": "Unknown",
+        "unknown": "Unknown"
+    },
+    "status": {
+        "alive": "Alive",
+        "dead": "Dead",
+        "unknown": "Unknown",
+        "undead": "Undead"
     },
     "footer": {
         "description": "Complete encyclopedia of Runeterra lore and League of Legends universe",
@@ -315,5 +366,9 @@
         "allRightsReserved": "All rights reserved.",
         "createdBy": "Created by",
         "disclaimer": "RuneDex is not affiliated with Riot Games."
+    },
+    "characters": {
+        "title": "Characters",
+        "subtitle": "Choose your universe to explore"
     }
 }
