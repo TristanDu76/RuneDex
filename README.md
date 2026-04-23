@@ -1,5 +1,5 @@
 # 🌟 RuneDex
-
+[Link](https://runedex-nu.vercel.app/fr)
 > A comprehensive encyclopedia of Runeterra's lore, champions, and universe
 
 [![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red.svg)](./LICENSE)
