@@ -24,7 +24,7 @@ export async function GET() {
             updatedAt,
             hasUpdate: currentVersion !== latestVersion
         });
-    } catch (error) {
+    } catch {
         return NextResponse.json({ error: 'Failed to verify updates' }, { status: 500 });
     }
 }
