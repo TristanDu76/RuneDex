@@ -27,7 +27,6 @@ const LOG_PREFIX = {
 
 const VERBOSE_INTEGRITY = process.env.VERBOSE_INTEGRITY === '1';
 const MAX_FINAL_REPORT_ITEMS = Number(process.env.MAX_FINAL_REPORT_ITEMS || 15);
-const MAX_PHASE_LOG_ITEMS = Number(process.env.MAX_PHASE_LOG_ITEMS || 15);
 
 function log(type, msg) {
     const prefix = LOG_PREFIX[type] || '?';
@@ -35,6 +34,14 @@ function log(type, msg) {
 }
 
 const issues = { warnings: [], errors: [] };
+
+function getCharacterFactionKeys(character) {
+    const factionKeys = Array.isArray(character.factionKeys) && character.factionKeys.length > 0
+        ? character.factionKeys
+        : [character.factionKey];
+
+    return [...new Set(factionKeys.filter(key => typeof key === 'string' && key.length > 0))];
+}
 
 // LOAD MANIFEST
 log('check', 'Loading manifest...');
@@ -74,51 +81,62 @@ try {
 // LOAD SHARDS
 log('check', 'Checking shards directory...');
 const shardFiles = fs.readdirSync(SHARDS_DIR).filter(f => f.endsWith('.json'));
+const shardNames = new Set(shardFiles.map(file => file.replace(/\.json$/, '')));
 log('pass', `Found ${shardFiles.length} shard files`);
+
+const manifestEntries = Object.entries(manifest.characters || {});
+const expectedShardMembers = new Map();
+
+manifestEntries.forEach(([id, character]) => {
+    getCharacterFactionKeys(character).forEach(factionKey => {
+        if (!expectedShardMembers.has(factionKey)) {
+            expectedShardMembers.set(factionKey, new Set());
+        }
+        expectedShardMembers.get(factionKey).add(id);
+    });
+});
 
 // === VALIDATION PHASE 1: Regional Integrity ===
 log('info', '─────────────────────────────────────────────');
 log('info', 'PHASE 1: Regional Integrity');
 log('info', '─────────────────────────────────────────────');
 
-const factionKeysInManifest = new Set(
-    Object.values(manifest.characters || {})
-        .map(c => c.factionKey)
-        .filter(Boolean)
-);
+const factionKeysInManifest = new Set(expectedShardMembers.keys());
 
 regions.forEach(region => {
     if (!factionKeysInManifest.has(region)) {
         issues.errors.push(`Region "${region}" has no associated characters in manifest`);
         log('fail', `Region "${region}": NO DATA FOUND`);
     } else {
-        const regionChars = Object.values(manifest.characters || {})
-            .filter(c => c.factionKey === region);
-        log('pass', `Region "${region}": ${regionChars.length} characters`);
+        const regionCharacterCount = expectedShardMembers.get(region)?.size || 0;
+        log('pass', `Region "${region}": ${regionCharacterCount} characters`);
     }
 });
 
-// === VALIDATION PHASE 2: Orphan Detection ===
+// === VALIDATION PHASE 2: Shard Coverage ===
 log('info', '─────────────────────────────────────────────');
-log('info', 'PHASE 2: Orphan Detection');
+log('info', 'PHASE 2: Shard Coverage');
 log('info', '─────────────────────────────────────────────');
 
-const orphans = Array.from(factionKeysInManifest).filter(fk => !regions.includes(fk));
-if (orphans.length > 0) {
-    const shownOrphans = VERBOSE_INTEGRITY ? orphans : orphans.slice(0, MAX_PHASE_LOG_ITEMS);
-    shownOrphans.forEach(orphan => {
-        issues.warnings.push(`Faction "${orphan}" has no corresponding region in regions.ts`);
-        log('warn', `Orphan faction: "${orphan}" (not in regions.ts)`);
-    });
-    if (!VERBOSE_INTEGRITY && orphans.length > MAX_PHASE_LOG_ITEMS) {
-        const hidden = orphans.length - MAX_PHASE_LOG_ITEMS;
-        orphans.slice(MAX_PHASE_LOG_ITEMS).forEach(orphan => {
-            issues.warnings.push(`Faction "${orphan}" has no corresponding region in regions.ts`);
-        });
-        log('warn', `... and ${hidden} more orphan factions (set VERBOSE_INTEGRITY=1 to show all)`);
-    }
-} else {
-    log('pass', 'No orphan factions detected');
+const missingShardFiles = Array.from(factionKeysInManifest)
+    .filter(factionKey => !shardNames.has(factionKey));
+const staleShardFiles = Array.from(shardNames)
+    .filter(shardName => !factionKeysInManifest.has(shardName));
+
+missingShardFiles.forEach(factionKey => {
+    const message = `Missing shard file "${factionKey}.json" for manifest faction`;
+    issues.errors.push(message);
+    log('fail', message);
+});
+
+staleShardFiles.forEach(shardName => {
+    const message = `Stale shard file "${shardName}.json" has no manifest faction`;
+    issues.errors.push(message);
+    log('fail', message);
+});
+
+if (missingShardFiles.length === 0 && staleShardFiles.length === 0) {
+    log('pass', 'Shard files match manifest factions');
 }
 
 // === VALIDATION PHASE 3: Shard File Consistency ===
@@ -127,64 +145,89 @@ log('info', 'PHASE 3: Shard File Consistency');
 log('info', '─────────────────────────────────────────────');
 
 let validShardCount = 0;
-let shardWarnCount = 0;
+let invalidShardCount = 0;
 shardFiles.forEach(shardFile => {
     const shardName = shardFile.replace('.json', '');
     const shardPath = path.join(SHARDS_DIR, shardFile);
+    let shardHasErrors = false;
     
     try {
         const shardData = JSON.parse(fs.readFileSync(shardPath, 'utf8'));
-        
-        // Check if shard corresponds to a known region
-        if (!regions.includes(shardName)) {
-            issues.warnings.push(`Shard file "${shardFile}" doesn't correspond to any region`);
-            shardWarnCount++;
-            if (VERBOSE_INTEGRITY || shardWarnCount <= MAX_PHASE_LOG_ITEMS) {
-                log('warn', `Shard "${shardName}": not in regions.ts (orphan file)`);
-            }
-        }
-        
+
         // Validate shard data structure
         if (!Array.isArray(shardData)) {
             issues.errors.push(`Shard "${shardName}": not an array`);
             log('fail', `Shard "${shardName}": invalid structure (not array)`);
+            shardHasErrors = true;
         } else {
-            const count = shardData.length;
-            if (count === 0) {
-                issues.warnings.push(`Shard "${shardName}": empty`);
-                if (VERBOSE_INTEGRITY || shardWarnCount <= MAX_PHASE_LOG_ITEMS) {
-                    log('warn', `Shard "${shardName}": empty (0 entries)`);
+            const actualIds = [];
+            const duplicateIds = new Set();
+            const seenIds = new Set();
+
+            shardData.forEach((entry, index) => {
+                if (!entry || typeof entry.id !== 'string' || entry.id.length === 0) {
+                    const message = `Shard "${shardName}": entry ${index} has no valid id`;
+                    issues.errors.push(message);
+                    log('fail', message);
+                    shardHasErrors = true;
+                    return;
                 }
-            } else {
+
+                if (seenIds.has(entry.id)) duplicateIds.add(entry.id);
+                seenIds.add(entry.id);
+                actualIds.push(entry.id);
+            });
+
+            if (duplicateIds.size > 0) {
+                const message = `Shard "${shardName}": duplicate IDs ${Array.from(duplicateIds).join(', ')}`;
+                issues.errors.push(message);
+                log('fail', message);
+                shardHasErrors = true;
+            }
+
+            const expectedIds = expectedShardMembers.get(shardName) || new Set();
+            const actualIdSet = new Set(actualIds);
+            const missingIds = Array.from(expectedIds).filter(id => !actualIdSet.has(id));
+            const unexpectedIds = Array.from(actualIdSet).filter(id => !expectedIds.has(id));
+
+            if (missingIds.length > 0) {
+                const message = `Shard "${shardName}": missing ${missingIds.join(', ')}`;
+                issues.errors.push(message);
+                log('fail', message);
+                shardHasErrors = true;
+            }
+
+            if (unexpectedIds.length > 0) {
+                const message = `Shard "${shardName}": unexpected ${unexpectedIds.join(', ')}`;
+                issues.errors.push(message);
+                log('fail', message);
+                shardHasErrors = true;
+            }
+
+            if (!shardHasErrors) {
                 validShardCount++;
                 if (VERBOSE_INTEGRITY) {
-                    log('pass', `Shard "${shardName}": ${count} entries`);
+                    log('pass', `Shard "${shardName}": ${shardData.length} entries`);
                 }
             }
         }
     } catch (e) {
         issues.errors.push(`Shard "${shardFile}": parse error - ${e.message}`);
         log('fail', `Shard "${shardName}": ${e.message}`);
+        shardHasErrors = true;
     }
+
+    if (shardHasErrors) invalidShardCount++;
 });
 
 if (!VERBOSE_INTEGRITY) {
-    log('info', `Shard summary: ${validShardCount} valid, ${shardWarnCount} warnings`);
-    if (shardWarnCount > MAX_PHASE_LOG_ITEMS) {
-        log('warn', `... and ${shardWarnCount - MAX_PHASE_LOG_ITEMS} more shard warnings (set VERBOSE_INTEGRITY=1 to show all)`);
-    }
+    log('info', `Shard summary: ${validShardCount} valid, ${invalidShardCount} invalid`);
 }
 
 // === VALIDATION PHASE 4: Bilingual Enforcement ===
 log('info', '─────────────────────────────────────────────');
 log('info', 'PHASE 4: Bilingual Enforcement (Sample Check)');
 log('info', '─────────────────────────────────────────────');
-
-const champCount = Object.values(manifest.characters || {}).filter(c => c.type === 'champion').length;
-const relatedWithNotes = Object.values(manifest.characters || {})
-    .flatMap(c => c.related_characters || [])
-    .filter(r => r.note_fr || r.note_en)
-    .length;
 
 const incompleteBilingual = Object.values(manifest.characters || {})
     .flatMap(c => c.related_characters || [])
@@ -225,7 +268,6 @@ log('info', '──────────────────────�
 
 if (issues.errors.length === 0 && issues.warnings.length === 0) {
     log('pass', '✓ All integrity checks passed!');
-    process.exit(0);
 } else {
     if (issues.errors.length > 0) {
         log('fail', `${issues.errors.length} ERROR(S) found:`);
@@ -246,9 +288,8 @@ if (issues.errors.length === 0 && issues.warnings.length === 0) {
     
     if (issues.errors.length > 0) {
         log('fail', '⚠ Build has errors. Fix before deploying.');
-        process.exit(1);
+        process.exitCode = 1;
     } else {
         log('info', '⚠ Build has warnings. Review before deploying.');
-        process.exit(0);
     }
 }

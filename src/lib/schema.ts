@@ -13,7 +13,7 @@ const IdSchema = z.string()
     .regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, 'ID must be kebab-case (lowercase letters, numbers, hyphens only)');
 
 // Faction key: strict enum + fallback validation
-const FactionKeySchema = z.string()
+export const FactionKeySchema = z.string()
     .toLowerCase()
     .regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, 'Faction key must be kebab-case');
 

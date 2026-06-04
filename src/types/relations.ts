@@ -115,6 +115,8 @@ export const SYMMETRIC_RELATIONS = new Set<RelationType>([
     RelationType.TWIN_SISTER,
     RelationType.TWIN_BROTHER,
     RelationType.HALF_BROTHER,
+    RelationType.ADOPTIVE_BROTHER,
+    RelationType.FAMILY,
     RelationType.ALLY,
     RelationType.FRIEND,
     RelationType.ENEMY,
@@ -158,9 +160,10 @@ export const INVERSE_RELATIONS: Record<string, RelationType> = {
     [RelationType.STUDENT]: RelationType.MENTOR,
     [RelationType.STUDENT_ALLY]: RelationType.MENTOR, // Approximation
 
-    // Master/Slave
+    // Master/Slave/Servant
     [RelationType.MASTER]: RelationType.SLAVE,
     [RelationType.SLAVE]: RelationType.MASTER,
+    [RelationType.SERVANT]: RelationType.MASTER,
 
     // Family - Parent/Child
     [RelationType.MOTHER]: RelationType.DAUGHTER, // or SON, context-dependent

@@ -5,9 +5,7 @@
 import {
     Relation,
     RelationType,
-    EnrichedRelation,
-    getInverseRelationType,
-    isSymmetricRelation
+    getInverseRelationType
 } from '@/types/relations';
 
 // ============================================================================

@@ -19,7 +19,8 @@ export const REGION_TO_SHARD_MAP = {
     
     // Special cases (ID ≠ shard key)
     shadowisles: 'shadow-isles',
-    'shadow-isles': 'shadow-isles'
+    'shadow-isles': 'shadow-isles',
+    bandlecity: 'bandle-city'
 } as const;
 
 /**
@@ -71,7 +72,7 @@ export function slugify(text: string): string {
         .replace(/[^\w-]+/g, '')       // Remove all non-word chars (special chars, accents)
         .replace(/--+/g, '-')           // Replace multiple - with single -
         .replace(/^-+/, '')             // Trim - from start
-        .replace(/-+$/, '');            // Trim - from end
+        .replace(/-+$/, '') || 'unknown'; // Trim - from end
 }
 
 /**

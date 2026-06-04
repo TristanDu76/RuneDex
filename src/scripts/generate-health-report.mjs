@@ -16,7 +16,6 @@ import fs from 'fs';
 import path from 'path';
 
 const MANIFEST_PATH = path.join(process.cwd(), 'src/data/manifest.json');
-const SHARDS_DIR = path.join(process.cwd(), 'src/data/shards');
 
 function log(level, msg) {
     const prefix = { info: '✓', warn: '⚠', error: '✗', stat: '📊' }[level] || '•';
@@ -49,7 +48,7 @@ try {
 
     const regionStats = {};
 
-    Object.entries(characters).forEach(([id, char]) => {
+    Object.values(characters).forEach((char) => {
         const faction = char.factionKey || 'Unknown';
         if (!regionStats[faction]) {
             regionStats[faction] = { count: 0, canonical: 0, legacy: 0 };
@@ -78,7 +77,7 @@ try {
     // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
     const orphans = Object.entries(characters)
-        .filter(([id, char]) => !char.related_characters || char.related_characters.length === 0)
+        .filter(([, char]) => !char.related_characters || char.related_characters.length === 0)
         .map(([id, char]) => ({ id, name: char.name, faction: char.factionKey }));
 
     log('stat', `👻 ORPHAN CHARACTERS (no relations): ${orphans.length}`);

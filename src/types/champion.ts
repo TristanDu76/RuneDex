@@ -1,3 +1,21 @@
+export interface RelatedCharacterReference {
+    id: string;
+    type?: 'champion' | 'lore' | 'artifact' | 'rune';
+    relation?: string;
+    note_fr?: string;
+    note_en?: string;
+    auto_generated?: boolean;
+}
+
+export type RelatedCharacterEntry = string | RelatedCharacterReference;
+
+export interface RelatedCharacterDisplay {
+    champion: string;
+    type: string;
+    note?: string;
+    image?: string | ChampionImage;
+}
+
 export interface ChampionSkin {
     id: string;
     num: number;
@@ -20,13 +38,8 @@ export interface LoreCharacter {
     description_en?: string;
     lore_fr?: string;
     lore_en?: string;
-    related_champions?: {
-        champion: string;
-        type: string;
-        note?: string;
-        image?: string;
-    }[];
-    related_characters?: string[];
+    related_champions?: RelatedCharacterDisplay[];
+    related_characters?: RelatedCharacterEntry[];
 }
 
 export interface ChampionImage {
@@ -91,12 +104,8 @@ export interface ChampionData {
         slug: string;
         image?: string;
     }[];
-    related_champions?: {
-        champion: string;
-        type: string;
-        note?: string;
-        image?: string;
-    }[];
+    related_champions?: RelatedCharacterDisplay[];
+    related_characters?: RelatedCharacterEntry[];
     gender?: string; // Nouvelle colonne DB
     species?: string; // Nouvelle colonne DB
     lanes?: string[]; // Nouvelle colonne DB (Top, Jungle, Mid, Bot, Support)
@@ -114,6 +123,8 @@ export interface ChampionLight {
     id: string;
     key: string;
     name: string;
+    name_en?: string;
+    name_fr?: string;
     title: string;
     version: string;
     image: ChampionImage;
@@ -161,6 +172,8 @@ export interface ChampionGridData extends ChampionLight {
 export interface LoreCharacterLight {
     id: string;
     name: string;
+    name_en?: string;
+    name_fr?: string;
     image?: string | null;
     // Optionnel : présent dans le type complet, absent dans l'index light
     faction?: string | string[];

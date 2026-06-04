@@ -1,10 +1,31 @@
-import { ChampionData, LoreCharacter } from '@/types/champion';
+import {
+    ChampionData,
+    ChampionImage,
+    LoreCharacter,
+    RelatedCharacterDisplay
+} from '@/types/champion';
+
+interface RelationTarget {
+    name: string;
+    image?: string | ChampionImage;
+}
+
+interface EnrichedRelationInput {
+    type: string;
+    note_fr?: string;
+    note_en?: string;
+    target_champion?: RelationTarget | null;
+    target_lore?: RelationTarget | null;
+}
 
 /**
  * Formats the relations data for the frontend.
  */
-export const formatRelations = (relationsData: any[], locale: string) => {
-    return (relationsData || []).map((rel: any) => {
+export const formatRelations = (
+    relationsData: EnrichedRelationInput[],
+    locale: string
+): RelatedCharacterDisplay[] => {
+    return (relationsData || []).map((rel) => {
         const isChampion = !!rel.target_champion;
         const target = isChampion ? rel.target_champion : rel.target_lore;
 

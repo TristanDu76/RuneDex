@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { z } from 'zod';
+import { resolveRelationTarget } from './relation-resolution.mjs';
 
 const DATA_DIR = path.join(process.cwd(), 'src/data');
 const MANIFEST_PATH = path.join(DATA_DIR, 'manifest.json');
@@ -18,6 +19,8 @@ const stats = {
     reciprocityInjected: 0,
     bilingueWarnings: 0,
     orphanRelations: 0,
+    resolvedRelations: 0,
+    staleShardsRemoved: 0,
     suppressedInjectLogs: 0,
     suppressedOrphanLogs: 0
 };
@@ -83,13 +86,23 @@ function slugify(text) {
         .replace(/[^\w-]+/g, '')
         .replace(/--+/g, '-')
         .replace(/^-+/, '')
-        .replace(/-+$/, '');
+        .replace(/-+$/, '') || 'unknown';
 }
 
 function normalizeKey(text) {
     if (!text) return 'unknown';
     const base = text.split(',')[0].trim().replace(/\s*\([^)]*\)/g, '').trim();
     return slugify(base);
+}
+
+function normalizeFactionKeys(char) {
+    const factionValues = [
+        ...(Array.isArray(char.faction) ? char.faction : char.faction ? [char.faction] : []),
+        ...(char.factions || [])
+    ];
+    const factionKeys = factionValues.map(normalizeKey);
+
+    return factionKeys.length > 0 ? [...new Set(factionKeys)] : ['unknown'];
 }
 
 function normalizeRelatedCharacters(relatedCharacters, defaultType = 'lore') {
@@ -176,15 +189,15 @@ function processDirectory(dirName, type) {
                 thumbnail = 'https://wiki.leagueoflegends.com/en-us/images/Unknown_Character.png';
             }
 
-            const factionFromField = Array.isArray(char.faction) ? char.faction[0] : char.faction;
-            const factionRaw = factionFromField || (char.factions && char.factions[0]) || 'Unknown';
-            const factionKey = normalizeKey(factionRaw);
+            const factionKeys = normalizeFactionKeys(char);
+            const factionKey = factionKeys[0];
 
             manifest.characters[id] = {
                 id: id,
                 name: char.name,
                 thumbnail: thumbnail,
                 factionKey: factionKey,
+                factionKeys: factionKeys,
                 type: type,
                 canon: char.canon !== false,
                 version: char.version,
@@ -201,8 +214,10 @@ function processDirectory(dirName, type) {
             }
             relationMap.set(id, rels);
 
-            if (!shards[factionKey]) shards[factionKey] = [];
-            shards[factionKey].push(id);
+            factionKeys.forEach(key => {
+                if (!shards[key]) shards[key] = [];
+                shards[key].push(id);
+            });
 
         } catch (e) {
             stats.totalFailed++;
@@ -227,6 +242,19 @@ processDirectory('champions', 'champion');
 processDirectory('lore-characters', 'lore');
 
 log('info', `Scanned: ${stats.totalScanned} | Passed: ${stats.totalPassed} | Failed: ${stats.totalFailed}`);
+
+// Resolve only unambiguous aliases such as "Xin Zhao" -> "xinzhao".
+// Ambiguous or unknown targets deliberately remain visible as orphan warnings.
+for (const [id, character] of Object.entries(manifest.characters)) {
+    const resolvedRelations = character.related_characters.map((relation) => {
+        const targetId = resolveRelationTarget(relation.id, manifest.characters);
+        if (!targetId || targetId === relation.id) return relation;
+        stats.resolvedRelations++;
+        return { ...relation, id: targetId };
+    });
+    character.related_characters = resolvedRelations;
+    relationMap.set(id, new Set(resolvedRelations.map((relation) => relation.id)));
+}
 
 // ✓ PHASE 2: BIDIRECTIONAL RELATION INJECTION
 log('info', '═══════════════════════════════════════════');
@@ -307,17 +335,98 @@ log('info', `WIP: ${classifications.wip.length}`);
 
 manifest.meta.classifications = classifications;
 
+if (stats.totalFailed > 0) {
+    log('error', `Generation aborted: ${stats.totalFailed} source file(s) failed validation`);
+    process.exit(1);
+}
+
 // ✓ PHASE 3: WRITE MANIFEST & SHARDS
 log('info', '═══════════════════════════════════════════');
 log('info', 'PHASE 3: Write Manifest & Generate Shards');
 log('info', '═══════════════════════════════════════════');
 
 log('info', `Writing manifest and ${Object.keys(shards).length} shards...`);
-fs.writeFileSync(MANIFEST_PATH, JSON.stringify(manifest, null, 2));
+const stagingDir = fs.mkdtempSync(path.join(DATA_DIR, '.manifest-staging-'));
+const stagedManifestPath = path.join(stagingDir, 'manifest.json');
+const stagedShardsDir = path.join(stagingDir, 'shards');
+const backupDir = path.join(stagingDir, 'previous');
 
-for (const [key, ids] of Object.entries(shards)) {
-    const data = ids.map(id => manifest.characters[id]);
-    fs.writeFileSync(path.join(SHARDS_DIR, `${key}.json`), JSON.stringify(data, null, 2));
+try {
+    fs.mkdirSync(stagedShardsDir);
+    fs.mkdirSync(backupDir);
+    fs.writeFileSync(stagedManifestPath, JSON.stringify(manifest, null, 2));
+
+    for (const [key, ids] of Object.entries(shards)) {
+        const data = ids.map(id => manifest.characters[id]);
+        fs.writeFileSync(path.join(stagedShardsDir, `${key}.json`), JSON.stringify(data, null, 2));
+    }
+
+    JSON.parse(fs.readFileSync(stagedManifestPath, 'utf8'));
+    const expectedShardFiles = new Set(Object.keys(shards).map(key => `${key}.json`));
+    for (const file of expectedShardFiles) {
+        JSON.parse(fs.readFileSync(path.join(stagedShardsDir, file), 'utf8'));
+    }
+
+    const outputFiles = [
+        ...Array.from(expectedShardFiles).map(file => ({
+            stagedPath: path.join(stagedShardsDir, file),
+            outputPath: path.join(SHARDS_DIR, file),
+            backupPath: path.join(backupDir, `shard-${file}`)
+        })),
+        {
+            stagedPath: stagedManifestPath,
+            outputPath: MANIFEST_PATH,
+            backupPath: path.join(backupDir, 'manifest.json')
+        }
+    ];
+
+    for (const { outputPath } of outputFiles) {
+        if (fs.existsSync(outputPath) && !fs.lstatSync(outputPath).isFile()) {
+            throw new Error(`Cannot replace non-file output: ${outputPath}`);
+        }
+    }
+
+    const publishedFiles = [];
+    try {
+        for (const output of outputFiles) {
+            const hadPreviousOutput = fs.existsSync(output.outputPath);
+            if (hadPreviousOutput) {
+                fs.renameSync(output.outputPath, output.backupPath);
+            }
+
+            try {
+                fs.renameSync(output.stagedPath, output.outputPath);
+            } catch (error) {
+                if (hadPreviousOutput && fs.existsSync(output.backupPath)) {
+                    fs.renameSync(output.backupPath, output.outputPath);
+                }
+                throw error;
+            }
+
+            publishedFiles.push({ ...output, hadPreviousOutput });
+        }
+    } catch (error) {
+        for (const output of publishedFiles.reverse()) {
+            if (fs.existsSync(output.outputPath)) {
+                fs.unlinkSync(output.outputPath);
+            }
+            if (output.hadPreviousOutput && fs.existsSync(output.backupPath)) {
+                fs.renameSync(output.backupPath, output.outputPath);
+            }
+        }
+        throw error;
+    }
+
+    const staleShardFiles = fs.readdirSync(SHARDS_DIR)
+        .filter(file => file.endsWith('.json') && !expectedShardFiles.has(file));
+
+    staleShardFiles.forEach(file => {
+        fs.unlinkSync(path.join(SHARDS_DIR, file));
+        stats.staleShardsRemoved++;
+        log('info', `Removed stale shard: ${file}`);
+    });
+} finally {
+    fs.rmSync(stagingDir, { recursive: true, force: true });
 }
 
 log('info', '═══════════════════════════════════════════');
@@ -327,8 +436,10 @@ log('info', `Total Scanned: ${stats.totalScanned}`);
 log('info', `Passed: ${stats.totalPassed}`);
 log('info', `Failed: ${stats.totalFailed}`);
 log('info', `Reciprocity Injected: ${stats.reciprocityInjected}`);
+log('info', `Relation Aliases Resolved: ${stats.resolvedRelations}`);
 log('info', `Orphan Relations: ${stats.orphanRelations}`);
 log('info', `Bilingual Warnings: ${stats.bilingueWarnings}`);
+log('info', `Stale Shards Removed: ${stats.staleShardsRemoved}`);
 log('info', `Entries in Manifest: ${Object.keys(manifest.characters).length}`);
 log('info', `Shards Generated: ${Object.keys(shards).length}`);
 if (manifest.meta.integrity.warnings.length > 0) {
