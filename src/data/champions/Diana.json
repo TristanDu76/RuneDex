@@ -3,7 +3,7 @@
   "key": "131",
   "name": "Diana",
   "title": "Mépris de la lune",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Armée de son croissant de lune, Diana combat dans les rangs des Lunaris, une foi qui a presque disparu des terres qui entourent le Mont Targon. Portant une armure étincelante évoquant les reflets de la nuit sur un paysage de neige, elle incarne la puissance de la lune. L'essence d'une Manifestation venue d'au-delà des plus hauts sommets de Targon imprègne Diana : plus tout à fait humaine, elle lutte pour comprendre sa puissance et son rôle en ce monde.",
   "tags": [
     "Fighter",
@@ -28,8 +28,8 @@
         "full": "DianaQ.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 96,
-        "y": 0,
+        "x": 384,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -62,8 +62,8 @@
         "full": "DianaOrbs.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 144,
-        "y": 0,
+        "x": 432,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -100,8 +100,8 @@
         "full": "DianaTeleport.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 192,
-        "y": 0,
+        "x": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -136,8 +136,8 @@
         "full": "DianaR.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 240,
-        "y": 0,
+        "x": 48,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -198,8 +198,8 @@
         "full": "DianaQ.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 96,
-        "y": 0,
+        "x": 384,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -232,8 +232,8 @@
         "full": "DianaOrbs.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 144,
-        "y": 0,
+        "x": 432,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -270,8 +270,8 @@
         "full": "DianaTeleport.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 192,
-        "y": 0,
+        "x": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -306,8 +306,8 @@
         "full": "DianaR.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 240,
-        "y": 0,
+        "x": 48,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -443,6 +443,18 @@
       "num": 65,
       "name": "Prestige Dark Cosmic Diana",
       "chromas": false
+    },
+    {
+      "id": "131076",
+      "num": 76,
+      "name": "Eternal Aspect Diana",
+      "chromas": false
+    },
+    {
+      "id": "131077",
+      "num": 77,
+      "name": "Eclipse Eternal Aspect Diana",
+      "chromas": true
     }
   ],
   "skins": [
@@ -535,6 +547,18 @@
       "num": 65,
       "name": "Diana démiurge cosmique prestige",
       "chromas": false
+    },
+    {
+      "id": "131076",
+      "num": 76,
+      "name": "Diana manifestation éternelle",
+      "chromas": false
+    },
+    {
+      "id": "131077",
+      "num": 77,
+      "name": "Diana manifestation éternelle de l'éclipse",
+      "chromas": true
     }
   ],
   "related_characters": [

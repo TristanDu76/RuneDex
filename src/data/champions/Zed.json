@@ -3,7 +3,7 @@
   "key": "238",
   "name": "Zed",
   "title": "Maître des ombres",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "L'impitoyable Zed est le maître de l'Ordre de l'ombre, une organisation qu'il a créée dans l'intention de militariser la tradition des arts martiaux d'Ionia et de chasser enfin les envahisseurs noxiens. Pendant la guerre, le désespoir le conduisit à déchaîner la Forme secrète de l'ombre, un puissant esprit maléfique aussi dangereux que corrompu. Si Zed maîtrise ces techniques interdites, c'est pour détruire tout ce qu'il considère comme une menace contre sa nation ou son ordre.",
   "tags": [
     "Assassin"
@@ -13,7 +13,7 @@
     "full": "Zed.png",
     "sprite": "champion5.png",
     "group": "champion",
-    "x": 288,
+    "x": 336,
     "y": 48,
     "w": 48,
     "h": 48
@@ -28,7 +28,7 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 96,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -62,13 +62,13 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 144,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive :</spellPassive> Zed regagne <keywordMajor>{{ e3 }} pts d'énergie</keywordMajor> quand ses <keywordMajor>ombres</keywordMajor> et lui frappent un ennemi avec la même compétence.<br /><br /><spellActive>Active :</spellActive> l'<keywordMajor>ombre</keywordMajor> de Zed se rue vers l'avant, puis reste sur place pendant {{ e5 }} sec. <recast>Réactiver</recast> cette compétence permet à Zed de changer de position avec cette <keywordMajor>ombre</keywordMajor>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive :</spellPassive> Zed gagne <keywordMajor>{{ energyrestoredoublehit }} pts d'énergie</keywordMajor> quand ses <keywordMajor>ombres</keywordMajor> et lui frappent un ennemi avec la même compétence.<br /><br /><spellActive>Active :</spellActive> l'<keywordMajor>ombre</keywordMajor> de Zed fonce vers l'avant et reste sur place pendant {{ shadowdurationtooltip }} sec. <recast>Réactiver</recast> cette compétence permet à Zed de changer de position avec cette <keywordMajor>ombre</keywordMajor>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "40/35/30/25/20",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -78,7 +78,7 @@
           "Délai de récupération"
         ],
         "effect": [
-          "{{ e3 }} -> {{ e3NL }}",
+          "{{ energyrestoredoublehit }} -> {{ energyrestoredoublehitNL }}",
           "{{ cost }} -> {{ costNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
@@ -98,7 +98,7 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 192,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -134,7 +134,7 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 240,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -166,7 +166,7 @@
       "full": "ZedP.png",
       "sprite": "passive5.png",
       "group": "passive",
-      "x": 288,
+      "x": 336,
       "y": 48,
       "w": 48,
       "h": 48
@@ -195,7 +195,7 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 96,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -229,13 +229,13 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 144,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive:</spellPassive> Zed gains <keywordMajor>{{ e3 }} Energy</keywordMajor> whenever he and his <keywordMajor>Shadows</keywordMajor> strike an enemy with the same Ability.<br /><br /><spellActive>Active:</spellActive> Zed's <keywordMajor>Shadow</keywordMajor> dashes forward, remaining in place for {{ e5 }} seconds. <recast>Recasting</recast> this Ability will cause Zed to switch positions with this <keywordMajor>Shadow</keywordMajor>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive:</spellPassive> Zed gains <keywordMajor>{{ energyrestoredoublehit }} Energy</keywordMajor> whenever he and his <keywordMajor>Shadows</keywordMajor> strike an enemy with the same Ability.<br /><br /><spellActive>Active:</spellActive> Zed's <keywordMajor>Shadow</keywordMajor> dashes forward, remaining in place for {{ shadowdurationtooltip }} seconds. <recast>Recasting</recast> this Ability will cause Zed to switch positions with this <keywordMajor>Shadow</keywordMajor>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "40/35/30/25/20",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -245,7 +245,7 @@
           "Cooldown"
         ],
         "effect": [
-          "{{ e3 }} -> {{ e3NL }}",
+          "{{ energyrestoredoublehit }} -> {{ energyrestoredoublehitNL }}",
           "{{ cost }} -> {{ costNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
@@ -265,7 +265,7 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 192,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -301,7 +301,7 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 240,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -333,7 +333,7 @@
       "full": "ZedP.png",
       "sprite": "passive5.png",
       "group": "passive",
-      "x": 288,
+      "x": 336,
       "y": 48,
       "w": 48,
       "h": 48

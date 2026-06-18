@@ -3,7 +3,7 @@
   "key": "105",
   "name": "Fizz",
   "title": "Filou des mers",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Fizz est un yordle amphibie qui vit dans les récifs qui entourent Bilgewater. Il essaie souvent de récupérer et de rendre les tributs que lancent dans l'océan les capitaines superstitieux, mais même le plus dessalé des marins n'est pas assez arrogant pour essayer de le tromper. On raconte bien des histoires sur ceux qui ont sous-estimé son humeur changeante... Souvent confondu avec un esprit océanique capricieux, il semble capable de commander aux créatures des profondeurs et n'aime rien tant que confondre alliés comme ennemis.",
   "tags": [
     "Assassin",
@@ -26,10 +26,10 @@
       "vars": [],
       "image": {
         "full": "FizzQ.png",
-        "sprite": "spell3.png",
+        "sprite": "spell4.png",
         "group": "spell",
-        "x": 384,
-        "y": 144,
+        "x": 192,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -60,10 +60,10 @@
       "vars": [],
       "image": {
         "full": "FizzW.png",
-        "sprite": "spell3.png",
+        "sprite": "spell4.png",
         "group": "spell",
-        "x": 432,
-        "y": 144,
+        "x": 240,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -104,8 +104,8 @@
         "full": "FizzE.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 0,
-        "y": 0,
+        "x": 288,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -142,8 +142,8 @@
         "full": "FizzR.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 48,
-        "y": 0,
+        "x": 336,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -206,10 +206,10 @@
       "vars": [],
       "image": {
         "full": "FizzQ.png",
-        "sprite": "spell3.png",
+        "sprite": "spell4.png",
         "group": "spell",
-        "x": 384,
-        "y": 144,
+        "x": 192,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -240,10 +240,10 @@
       "vars": [],
       "image": {
         "full": "FizzW.png",
-        "sprite": "spell3.png",
+        "sprite": "spell4.png",
         "group": "spell",
-        "x": 432,
-        "y": 144,
+        "x": 240,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -284,8 +284,8 @@
         "full": "FizzE.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 0,
-        "y": 0,
+        "x": 288,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -322,8 +322,8 @@
         "full": "FizzR.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 48,
-        "y": 0,
+        "x": 336,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -542,5 +542,12 @@
       "chromas": true
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Gangplank",
+    "Illaoi",
+    "Nami",
+    "Nautilus",
+    "Pyke",
+    "Teemo"
+  ]
 }

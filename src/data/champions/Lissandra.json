@@ -3,7 +3,7 @@
   "key": "127",
   "name": "Lissandra",
   "title": "Sorcière de glace",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "La magie de Lissandra est capable de manipuler la pure puissance de la glace en quelque chose d'à la fois obscur et terrible. Avec la force de sa glace noire, elle fait bien plus que glacer... elle empale et écrase ceux qui osent s'opposer à elle. Les habitants du Nord, terrifiés, la connaissent sous le nom de « Sorcière de glace ». La vérité est bien plus sombre : Lissandra complote pour corrompre la Nature et ramener le monde à l'âge de glace.",
   "tags": [
     "Mage"
@@ -25,16 +25,16 @@
       "vars": [],
       "image": {
         "full": "LissandraQ.png",
-        "sprite": "spell7.png",
+        "sprite": "spell8.png",
         "group": "spell",
-        "x": 0,
-        "y": 144,
+        "x": 288,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Lissandra jette une lance de glace qui éclate au contact du premier ennemi touché, lui infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> et le <status>ralentissant</status> de {{ e3 }}% pendant {{ e2 }} sec. Les ennemis derrière la cible sont également blessés et ralentis.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Lissandra jette une lance de glace qui éclate au contact du premier ennemi touché, lui infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> et le <status>ralentissant</status> de {{ slowpercentage*-100 }}% pendant {{ slowduration }} sec. Les ennemis derrière la cible sont également blessés et ralentis.{{ spellmodifierdescriptionappend }}",
       "costBurn": "55/60/65/70/75",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -46,7 +46,7 @@
         ],
         "effect": [
           "{{ damage }} -> {{ damageNL }}",
-          "{{ effect3amount*-100.000000 }}% -> {{ effect3amountnl*-100.000000 }}%",
+          "{{ slowpercentage*-100.000000 }}% -> {{ slowpercentagenl*-100.000000 }}%",
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ cost }} -> {{ costNL }}"
         ]
@@ -63,16 +63,16 @@
       "vars": [],
       "image": {
         "full": "LissandraW.png",
-        "sprite": "spell7.png",
+        "sprite": "spell8.png",
         "group": "spell",
-        "x": 48,
-        "y": 144,
+        "x": 336,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Lissandra crée un champ de glace qui <status>immobilise</status> les ennemis proches pendant {{ e2 }} sec et leur inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Lissandra crée un champ de glace qui <status>immobilise</status> les ennemis proches pendant {{ snareduration }} sec et leur inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "40",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -82,8 +82,8 @@
           "Délai de récupération"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
-          "{{ e2 }} -> {{ e2NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ snareduration }} -> {{ snaredurationNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -99,10 +99,10 @@
       "vars": [],
       "image": {
         "full": "LissandraE.png",
-        "sprite": "spell7.png",
+        "sprite": "spell8.png",
         "group": "spell",
-        "x": 96,
-        "y": 144,
+        "x": 384,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -118,7 +118,7 @@
           "Coût en @AbilityResourceName@"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ cost }} -> {{ costNL }}"
         ]
@@ -135,10 +135,10 @@
       "vars": [],
       "image": {
         "full": "LissandraR.png",
-        "sprite": "spell7.png",
+        "sprite": "spell8.png",
         "group": "spell",
-        "x": 144,
-        "y": 144,
+        "x": 432,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -200,16 +200,16 @@
       "vars": [],
       "image": {
         "full": "LissandraQ.png",
-        "sprite": "spell7.png",
+        "sprite": "spell8.png",
         "group": "spell",
-        "x": 0,
-        "y": 144,
+        "x": 288,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Lissandra throws a spear of ice that shatters on the first enemy hit, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>, <status>Slowing</status> them by {{ e3 }}% for {{ e2 }} seconds, and also damaging and slowing the enemies behind them.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Lissandra throws a spear of ice that shatters on the first enemy hit, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>, <status>Slowing</status> them by {{ slowpercentage*-100 }}% for {{ slowduration }} seconds, and also damaging and slowing the enemies behind them.{{ spellmodifierdescriptionappend }}",
       "costBurn": "55/60/65/70/75",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -221,7 +221,7 @@
         ],
         "effect": [
           "{{ damage }} -> {{ damageNL }}",
-          "{{ effect3amount*-100.000000 }}% -> {{ effect3amountnl*-100.000000 }}%",
+          "{{ slowpercentage*-100.000000 }}% -> {{ slowpercentagenl*-100.000000 }}%",
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ cost }} -> {{ costNL }}"
         ]
@@ -238,16 +238,16 @@
       "vars": [],
       "image": {
         "full": "LissandraW.png",
-        "sprite": "spell7.png",
+        "sprite": "spell8.png",
         "group": "spell",
-        "x": 48,
-        "y": 144,
+        "x": 336,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Lissandra creates an ice field, <status>Rooting</status> nearby enemies for {{ e2 }} seconds and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Lissandra creates an ice field, <status>Rooting</status> nearby enemies for {{ snareduration }} seconds and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "40",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -257,8 +257,8 @@
           "Cooldown"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
-          "{{ e2 }} -> {{ e2NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ snareduration }} -> {{ snaredurationNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -274,10 +274,10 @@
       "vars": [],
       "image": {
         "full": "LissandraE.png",
-        "sprite": "spell7.png",
+        "sprite": "spell8.png",
         "group": "spell",
-        "x": 96,
-        "y": 144,
+        "x": 384,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -293,7 +293,7 @@
           "@AbilityResourceName@ Cost"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ cost }} -> {{ costNL }}"
         ]
@@ -310,10 +310,10 @@
       "vars": [],
       "image": {
         "full": "LissandraR.png",
-        "sprite": "spell7.png",
+        "sprite": "spell8.png",
         "group": "spell",
-        "x": 144,
-        "y": 144,
+        "x": 432,
+        "y": 0,
         "w": 48,
         "h": 48
       },

@@ -3,7 +3,7 @@
   "key": "200",
   "name": "Bel'Veth",
   "title": "Impératrice du Néant",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Bel'Veth, impératrice cauchemardesque née d'une cité dévorée, représente la fin de Runeterra... et le début d'une monstrueuse réalité de sa propre conception. Mue par des siècles d'histoire, de connaissances et de souvenirs absorbés dans le monde du dessus, elle assouvit son appétit croissant pour les expériences et les émotions nouvelles, consumant tout sur son passage. Néanmoins, un seul monde ne suffira jamais à satisfaire tous ses désirs, aussi tourne-t-elle son regard avide vers les anciens maîtres du Néant...",
   "tags": [
     "Fighter"
@@ -25,10 +25,10 @@
       "vars": [],
       "image": {
         "full": "BelvethQ.png",
-        "sprite": "spell1.png",
+        "sprite": "spell2.png",
         "group": "spell",
-        "x": 384,
-        "y": 144,
+        "x": 192,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -41,21 +41,19 @@
         "label": [
           "Dégâts",
           "Délai de récupération par direction",
-          "Dégâts aux monstres",
-          "Dégâts aux sbires"
+          "Délai de récupération"
         ],
         "effect": [
           "{{ damage }} -> {{ damageNL }}",
           "{{ persidecooldown }} -> {{ persidecooldownNL }}",
-          "{{ monstermod }} -> {{ monstermodNL }}",
-          "{{ minonmod*100.000000 }}% -> {{ minonmodnl*100.000000 }}%"
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
       "rangeBurn": "450",
       "datavalues": {},
       "description": "Bel'Veth se rue dans la direction choisie et blesse tous les ennemis qu'elle traverse.",
-      "cooldownBurn": "1"
+      "cooldownBurn": "4/3.25/2.5/1.75/1"
     },
     {
       "id": "BelvethW",
@@ -63,10 +61,10 @@
       "vars": [],
       "image": {
         "full": "BelvethW.png",
-        "sprite": "spell1.png",
+        "sprite": "spell2.png",
         "group": "spell",
-        "x": 432,
-        "y": 144,
+        "x": 240,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -78,12 +76,12 @@
       "leveltip": {
         "label": [
           "Dégâts",
-          "Durée de ralentissement",
+          "Durée de la projection",
           "Délai de récupération"
         ],
         "effect": [
           "{{ basedamage }} -> {{ basedamageNL }}",
-          "{{ slowduration }} -> {{ slowdurationNL }}",
+          "{{ duration }} -> {{ durationNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -101,8 +99,8 @@
         "full": "BelvethE.png",
         "sprite": "spell2.png",
         "group": "spell",
-        "x": 0,
-        "y": 0,
+        "x": 288,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -115,11 +113,13 @@
         "label": [
           "Dégâts",
           "Réduction des dégâts",
+          "Vol de vie",
           "Délai de récupération"
         ],
         "effect": [
           "{{ damageperhit }} -> {{ damageperhitNL }}",
           "{{ drpercent*100.000000 }}% -> {{ drpercentnl*100.000000 }}%",
+          "{{ bonuslifesteal*100.000000 }}% -> {{ bonuslifestealnl*100.000000 }}%",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -127,7 +127,7 @@
       "rangeBurn": "500",
       "datavalues": {},
       "description": "Bel'Veth s'immobilise et canalise une tempête de coups autour d'elle qui cible l'ennemi ayant le moins de PV. De plus, elle gagne du vol de vie et de la réduction des dégâts.",
-      "cooldownBurn": "20/19/18/17/16"
+      "cooldownBurn": "24/21/18/15/12"
     },
     {
       "id": "BelvethR",
@@ -137,14 +137,14 @@
         "full": "BelvethR.png",
         "sprite": "spell2.png",
         "group": "spell",
-        "x": 48,
-        "y": 0,
+        "x": 336,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "<spellPassive>Passive :</spellPassive> toutes les deux attaques contre une même cible, Bel'Veth inflige <trueDamage>{{ finalonhitdamage }} pts de dégâts bruts</trueDamage> supplémentaires (cumulable à l'infini). Participer à l'élimination de champions et de monstres épiques génère des coraux du Néant.<br /><br /><spellActive>Active :</spellActive> consommer un corail du Néant octroie <keywordMajor>{{ passivestacksondevour }} effet Lavande</keywordMajor> et active la véritable forme de Bel'Veth pendant {{ steroidduration }} sec. Les coraux du Néant générés par des monstres épiques du Néant augmentent la durée à {{ voidduration }} sec et transforment en rémoras du Néant les sbires tués à proximité. Pendant l'incantation, Bel'Veth <status>ralentit</status> les ennemis proches avant d'exploser, infligeant des <trueDamage>dégâts bruts équivalents à {{ totalexplosiondamage }} + {{ missinghealthdamage*100 }}% des PV manquants de la cible</trueDamage>.<br /><br />Dans sa véritable forme, Bel'Veth gagne <healing>+{{ maxhealthondevour }} PV max</healing>, <speed>+{{ oocms }} vitesse de déplacement</speed> en dehors des combats, +{{ bonusaarange }} portée d'attaque et <attackSpeed>+{{ totalasmod*100 }}% de vitesse d'attaque totale</attackSpeed>, et <spellName>Charge du Néant</spellName> peut traverser les murs.<br /><br /><br />{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive :</spellPassive> les attaques infligent <trueDamage>{{ finalonhitdamage }} pts de dégâts bruts</trueDamage> bonus, cumulables à l'infini. Participer à l'élimination de champions et de monstres épiques génère des coraux du Néant.<br /><br /><spellActive>Active :</spellActive> Bel'Veth consomme du corail du Néant pour gagner <keywordMajor>{{ passivestacksondevour }} effet Lavande</keywordMajor> et activer sa forme véritable. Les coraux du Néant générés par des monstres épiques du Néant transforment en rémoras du Néant les sbires tués à proximité. Pendant l'incantation, Bel'Veth <status>ralentit</status> les ennemis proches avant d'exploser, infligeant des dégâts bruts équivalents à <trueDamage>{{ totalexplosiondamage }} + {{ missinghealthdamage*100 }}% des PV manquants</trueDamage>.<br /><br />Dans sa véritable forme, Bel'Veth gagne <healing>{{ maxhealthondevour }} PV max</healing>, {{ bonusaarange }} portée d'attaque, <attackSpeed>{{ totalasmod*100 }}% de vitesse d'attaque totale</attackSpeed>, et <spellName>Charge du Néant</spellName> peut traverser les murs.<br /><br /><rules>La forme véritable dure {{ steroidduration }} sec, augmenté à {{ steroiddurationupgrade }} sec avec <keywordMajor>{{ stackthresholdforupgrade }} effets Lavande</keywordMajor>. À <keywordMajor>{{ stackthresholdforpermanent }} effets Lavande</keywordMajor>, la forme véritable dure jusqu'à la mort.</rules><br /><br /><br />{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": "Pas de coût",
       "leveltip": {
@@ -152,23 +152,23 @@
           "Dégâts à l'impact",
           "Dégâts de l'explosion",
           "PV supplémentaires",
-          "Vitesse de déplacement",
           "Vitesse d'attaque",
+          "Portée",
           "PV des rémoras du Néant"
         ],
         "effect": [
           "{{ onhitdamage }} -> {{ onhitdamageNL }}",
           "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ basemaxhealth }} -> {{ basemaxhealthNL }}",
-          "{{ oocms }} -> {{ oocmsNL }}",
           "{{ totalasmod*100.000000 }}% -> {{ totalasmodnl*100.000000 }}%",
+          "{{ bonusaarange }} -> {{ bonusaarangeNL }}",
           "{{ voidlinghpscale*100.000000 }}% -> {{ voidlinghpscalenl*100.000000 }}%"
         ]
       },
       "resource": "Pas de coût",
       "rangeBurn": "450",
       "datavalues": {},
-      "description": "Bel'Veth consomme du corail du Néant ; elle prend alors sa véritable forme, ce qui augmente ses PV max, sa portée d'attaque, sa vitesse d'attaque et sa vitesse de déplacement en dehors des combats. Consommer du corail du Néant généré par un monstre épique du Néant prolonge la durée de son ultime et lui donne le pouvoir d'invoquer des rémoras du Néant.",
+      "description": "Bel'Veth consomme du corail du Néant. Elle prend alors sa véritable forme, ce qui augmente ses PV max, sa portée d'attaque et sa vitesse d'attaque. Consommer du corail du Néant généré par un monstre épique du Néant lui donne le pouvoir d'invoquer des rémoras du Néant.",
       "cooldownBurn": "1"
     }
   ],
@@ -203,10 +203,10 @@
       "vars": [],
       "image": {
         "full": "BelvethQ.png",
-        "sprite": "spell1.png",
+        "sprite": "spell2.png",
         "group": "spell",
-        "x": 384,
-        "y": 144,
+        "x": 192,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -219,21 +219,19 @@
         "label": [
           "Damage",
           "Cooldown Per Direction",
-          "Monster Damage",
-          "Minion Damage"
+          "Cooldown"
         ],
         "effect": [
           "{{ damage }} -> {{ damageNL }}",
           "{{ persidecooldown }} -> {{ persidecooldownNL }}",
-          "{{ monstermod }} -> {{ monstermodNL }}",
-          "{{ minonmod*100.000000 }}% -> {{ minonmodnl*100.000000 }}%"
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
       "rangeBurn": "450",
       "datavalues": {},
       "description": "Bel'Veth dashes in a chosen direction and damages all enemies she passes through.",
-      "cooldownBurn": "1"
+      "cooldownBurn": "4/3.25/2.5/1.75/1"
     },
     {
       "id": "BelvethW",
@@ -241,10 +239,10 @@
       "vars": [],
       "image": {
         "full": "BelvethW.png",
-        "sprite": "spell1.png",
+        "sprite": "spell2.png",
         "group": "spell",
-        "x": 432,
-        "y": 144,
+        "x": 240,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -256,12 +254,12 @@
       "leveltip": {
         "label": [
           "Damage",
-          "Slow Duration",
+          "Knockup Duration",
           "Cooldown"
         ],
         "effect": [
           "{{ basedamage }} -> {{ basedamageNL }}",
-          "{{ slowduration }} -> {{ slowdurationNL }}",
+          "{{ duration }} -> {{ durationNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -279,8 +277,8 @@
         "full": "BelvethE.png",
         "sprite": "spell2.png",
         "group": "spell",
-        "x": 0,
-        "y": 0,
+        "x": 288,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -293,11 +291,13 @@
         "label": [
           "Damage",
           "Damage Reduction",
+          "Life Steal",
           "Cooldown"
         ],
         "effect": [
           "{{ damageperhit }} -> {{ damageperhitNL }}",
           "{{ drpercent*100.000000 }}% -> {{ drpercentnl*100.000000 }}%",
+          "{{ bonuslifesteal*100.000000 }}% -> {{ bonuslifestealnl*100.000000 }}%",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -305,7 +305,7 @@
       "rangeBurn": "500",
       "datavalues": {},
       "description": "Bel'Veth roots herself in place, channeling a storm of slashes around her that targets the lowest-health enemy and grants her lifesteal and damage reduction.",
-      "cooldownBurn": "20/19/18/17/16"
+      "cooldownBurn": "24/21/18/15/12"
     },
     {
       "id": "BelvethR",
@@ -315,14 +315,14 @@
         "full": "BelvethR.png",
         "sprite": "spell2.png",
         "group": "spell",
-        "x": 48,
-        "y": 0,
+        "x": 336,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "<spellPassive>Passive:</spellPassive> Every second Attack against the same target deals an additional <trueDamage>{{ finalonhitdamage }} true damage</trueDamage>, stacking infinitely. Takedowns against champions and epic monsters leave behind a piece of Void Coral.<br /><br /><spellActive>Active:</spellActive> Consuming Void Coral grants <keywordMajor>{{ passivestacksondevour }} Lavender</keywordMajor> stack and activates Bel'Veth's true form for {{ steroidduration }} seconds. Void Coral from Void epic monsters increases the duration to {{ voidduration }} seconds and causes minions that die nearby to become Void Remora. While casting, Bel'Veth <status>Slows</status> nearby enemies before exploding, dealing <trueDamage>{{ totalexplosiondamage }} + {{ missinghealthdamage*100 }}% missing-Health true damage</trueDamage>.<br /><br />In her true form, Bel'Veth gains <healing>{{ maxhealthondevour }} max Health</healing>, <speed>{{ oocms }} Move Speed</speed> out of combat, {{ bonusaarange }} Attack range, <attackSpeed>{{ totalasmod*100 }}% Total Attack Speed</attackSpeed>, and <spellName>Void Surge</spellName> can pass through walls.<br /><br /><br />{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive:</spellPassive> Attacks deal an additional <trueDamage>{{ finalonhitdamage }} true damage</trueDamage>, stacking infinitely. Takedowns against champions and epic monsters leave behind a piece of Void Coral.<br /><br /><spellActive>Active:</spellActive> Bel'Veth consumes a Void Coral, gaining <keywordMajor>{{ passivestacksondevour }} Lavender</keywordMajor> stack and activating her true form. Void Coral from void epic monsters causes minions that die nearby to become Void Remora. While casting, Bel'Veth <status>Slows</status> nearby enemies before exploding, dealing <trueDamage>{{ totalexplosiondamage }} + {{ missinghealthdamage*100 }}% missing-Health true damage</trueDamage>.<br /><br />In her true form, Bel'Veth gains <healing>{{ maxhealthondevour }} max Health</healing>, {{ bonusaarange }} Attack range, <attackSpeed>{{ totalasmod*100 }}% Total Attack Speed</attackSpeed>, and <spellName>Void Surge</spellName> can pass through walls.<br /><br /><rules>True form lasts {{ steroidduration }} seconds, increased to {{ steroiddurationupgrade }} seconds at <keywordMajor>{{ stackthresholdforupgrade }} Lavender</keywordMajor> stacks. At <keywordMajor>{{ stackthresholdforpermanent }} Lavender</keywordMajor> stacks, true form lasts until death.</rules><br /><br /><br />{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": "No Cost",
       "leveltip": {
@@ -330,23 +330,23 @@
           "On-Hit Damage",
           "Explosion Damage",
           "Bonus Health",
-          "Move Speed",
           "Attack Speed",
+          "Range",
           "Void Remora Health"
         ],
         "effect": [
           "{{ onhitdamage }} -> {{ onhitdamageNL }}",
           "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ basemaxhealth }} -> {{ basemaxhealthNL }}",
-          "{{ oocms }} -> {{ oocmsNL }}",
           "{{ totalasmod*100.000000 }}% -> {{ totalasmodnl*100.000000 }}%",
+          "{{ bonusaarange }} -> {{ bonusaarangeNL }}",
           "{{ voidlinghpscale*100.000000 }}% -> {{ voidlinghpscalenl*100.000000 }}%"
         ]
       },
       "resource": "No Cost",
       "rangeBurn": "450",
       "datavalues": {},
-      "description": "Bel'Veth consumes Void coral remnants, transforming into her true form and increasing her max health, attack range, attack speed, and out-of-combat move speed. Consuming the Void coral remnants of a Void epic monster will grant her a longer ultimate duration, as well as the power to summon Void remora.",
+      "description": "Bel'Veth consumes Void coral remnants, transforming into her true form and increasing her max health, attack range, and attack speed. Consuming the Void coral remnants of a Void epic monster will grant her the power to summon Void remora.",
       "cooldownBurn": "1"
     }
   ],
@@ -391,6 +391,12 @@
       "num": 19,
       "name": "Primordian Bel'Veth",
       "chromas": true
+    },
+    {
+      "id": "200029",
+      "num": 29,
+      "name": "Faerie Court Bel'Veth",
+      "chromas": true
     }
   ],
   "skins": [
@@ -417,7 +423,22 @@
       "num": 19,
       "name": "Bel'Veth primordienne",
       "chromas": true
+    },
+    {
+      "id": "200029",
+      "num": 29,
+      "name": "Bel'Veth de la cour féérique",
+      "chromas": true
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Jax",
+    "Kai'Sa",
+    "Kassadin",
+    "Lissandra",
+    "Malzahar",
+    "Rek'Sai",
+    "Taliyah",
+    "Vel'Koz"
+  ]
 }

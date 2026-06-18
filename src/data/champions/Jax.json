@@ -3,7 +3,7 @@
   "key": "24",
   "name": "Jax",
   "title": "Maître d'armes",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Jax, dont nul ne peut égaler l'art du sarcasme et des armements inhabituels, est connu comme le dernier maître d'armes d'Icathia. Après la chute de sa terre natale, ravagée par le Néant qu'elle avait eu l'orgueil de déchaîner, Jax et ses compagnons jurèrent de protéger le peu qu'il en restait. La magie montant de nouveau dans le monde, la menace se fait plus pressante et Jax parcourt Valoran, porteur des dernières lumières d'Icathia. Il éprouve les qualités de tous les guerriers qu'il rencontre pour voir s'ils sont assez puissants pour combattre à ses côtés...",
   "tags": [
     "Fighter"
@@ -27,15 +27,15 @@
         "full": "JaxQ.png",
         "sprite": "spell5.png",
         "group": "spell",
-        "x": 96,
-        "y": 96,
+        "x": 384,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
       "tooltip": "Jax bondit sur une unité ou une balise alliée ou ennemie, infligeant <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> s'il s'agit d'un ennemi.{{ spellmodifierdescriptionappend }}",
-      "costBurn": "65",
+      "costBurn": "50",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
@@ -61,8 +61,8 @@
         "full": "JaxW.png",
         "sprite": "spell5.png",
         "group": "spell",
-        "x": 144,
-        "y": 96,
+        "x": 432,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -93,10 +93,10 @@
       "vars": [],
       "image": {
         "full": "JaxE.png",
-        "sprite": "spell5.png",
+        "sprite": "spell6.png",
         "group": "spell",
-        "x": 192,
-        "y": 96,
+        "x": 0,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -129,10 +129,10 @@
       "vars": [],
       "image": {
         "full": "JaxR.png",
-        "sprite": "spell5.png",
+        "sprite": "spell6.png",
         "group": "spell",
-        "x": 240,
-        "y": 96,
+        "x": 48,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -201,15 +201,15 @@
         "full": "JaxQ.png",
         "sprite": "spell5.png",
         "group": "spell",
-        "x": 96,
-        "y": 96,
+        "x": 384,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
       "tooltip": "Jax leaps to a friendly or enemy unit or ward, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> if it is an enemy.{{ spellmodifierdescriptionappend }}",
-      "costBurn": "65",
+      "costBurn": "50",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
@@ -235,8 +235,8 @@
         "full": "JaxW.png",
         "sprite": "spell5.png",
         "group": "spell",
-        "x": 144,
-        "y": 96,
+        "x": 432,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -267,10 +267,10 @@
       "vars": [],
       "image": {
         "full": "JaxE.png",
-        "sprite": "spell5.png",
+        "sprite": "spell6.png",
         "group": "spell",
-        "x": 192,
-        "y": 96,
+        "x": 0,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -303,10 +303,10 @@
       "vars": [],
       "image": {
         "full": "JaxR.png",
-        "sprite": "spell5.png",
+        "sprite": "spell6.png",
         "group": "spell",
-        "x": 240,
-        "y": 96,
+        "x": 48,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -462,6 +462,12 @@
       "num": 33,
       "name": "PROJECT: Jax",
       "chromas": true
+    },
+    {
+      "id": "24042",
+      "num": 42,
+      "name": "Prestige Magma Chamber Jax",
+      "chromas": true
     }
   ],
   "skins": [
@@ -566,7 +572,20 @@
       "num": 33,
       "name": "PROJET : Jax",
       "chromas": true
+    },
+    {
+      "id": "24042",
+      "num": 42,
+      "name": "Jax chambre magmatique prestige",
+      "chromas": true
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Bel'Veth",
+    "Fiora",
+    "Gragas",
+    "Nasus",
+    "Renekton",
+    "Zilean"
+  ]
 }

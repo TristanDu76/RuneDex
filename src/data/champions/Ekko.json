@@ -3,7 +3,7 @@
   "key": "245",
   "name": "Ekko",
   "title": "Fractureur du temps",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Jeune prodige des rues mal famées de Zaun, Ekko est capable de manipuler le temps pour renverser toute situation dangereuse à son avantage. Il utilise sa propre invention, la clepsydre-zéro, pour explorer les différents possibles de la réalité, sculptant ainsi des moments parfaits qui donnent l'impression qu'il réussit l'impossible du premier coup, à chaque fois. Bien qu'Ekko aime sa liberté, lorsque ses proches sont menacés, lui et les Feux volants sont prêts à tout pour les défendre.",
   "tags": [
     "Assassin",
@@ -28,14 +28,14 @@
         "full": "EkkoQ.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 192,
-        "y": 48,
+        "x": 0,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Ekko lance un appareil qui inflige <magicDamage>{{ initialdamage }} pts de dégâts magiques</magicDamage>. Quand il touche un champion ou atteint sa portée max, l'appareil s'élargit pour créer un champ de force qui <status>ralentit</status> les ennemis de {{ e2 }}%. Après l'élargissement, Ekko fait revenir l'appareil vers lui, infligeant <magicDamage>{{ recalldamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Ekko lance un appareil qui inflige <magicDamage>{{ initialdamage }} pts de dégâts magiques</magicDamage>. Quand il touche un champion ou atteint sa portée max, l'appareil s'élargit pour créer un champ de force qui <status>ralentit</status> les ennemis de {{ slowpercent*-100 }}%. Après l'élargissement, Ekko fait revenir l'appareil vers lui, infligeant <magicDamage>{{ recalldamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "50/60/70/80/90",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -50,7 +50,7 @@
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ cost }} -> {{ costNL }}",
           "{{ outgoingdamage }} -> {{ outgoingdamageNL }}",
-          "{{ effect2amount*-100.000000 }}% -> {{ effect2amountnl*-100.000000 }}%",
+          "{{ slowpercent*-100.000000 }}% -> {{ slowpercentnl*-100.000000 }}%",
           "{{ returndamage }} -> {{ returndamageNL }}"
         ]
       },
@@ -68,14 +68,14 @@
         "full": "EkkoW.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 240,
-        "y": 48,
+        "x": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive :</spellPassive> les attaques d'Ekko contre les ennemis qui ont moins de 30% de leurs PV infligent <magicDamage>{{ missinghealthpercent }} des PV manquants en dégâts magiques</magicDamage>.<br /><br /><spellActive>Active :</spellActive> Ekko lance une chronosphère qui dure 1.5 sec après un délai et qui <status>ralentit</status> les ennemis de {{ e0 }}%. Si Ekko entre dans la sphère, il la fait exploser, <status>étourdissant</status> les ennemis pendant {{ e2 }} sec et gagnant un <shield>bouclier de {{ totalshield }} PV</shield>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive :</spellPassive> les attaques d'Ekko contre les ennemis qui ont moins de {{ belowhealththreshold*100 }}% de leurs PV infligent <magicDamage>{{ missinghealthpercent }} pts de dégâts magiques en fonction des PV manquants</magicDamage>.<br /><br /><spellActive>Active :</spellActive> Ekko lance une chronosphère qui dure {{ slowzoneduration }} sec après un délai et qui <status>ralentit</status> les ennemis de {{ slowpercent }}%. Si Ekko entre dans la sphère, il la fait exploser, <status>étourdissant</status> les ennemis pendant {{ stunduration }} sec et gagnant un <shield>bouclier de {{ totalshield }} PV</shield>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "30/35/40/45/50",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -85,7 +85,7 @@
           "Coût en @AbilityResourceName@"
         ],
         "effect": [
-          "{{ e4 }} -> {{ e4NL }}",
+          "{{ shieldbase }} -> {{ shieldbaseNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ cost }} -> {{ costNL }}"
         ]
@@ -104,8 +104,8 @@
         "full": "EkkoE.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 288,
-        "y": 48,
+        "x": 96,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -121,7 +121,7 @@
           "Coût en @AbilityResourceName@"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ cost }} -> {{ costNL }}"
         ]
@@ -140,8 +140,8 @@
         "full": "EkkoR.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 336,
-        "y": 48,
+        "x": 144,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -203,14 +203,14 @@
         "full": "EkkoQ.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 192,
-        "y": 48,
+        "x": 0,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Ekko throws a device dealing <magicDamage>{{ initialdamage }} magic damage</magicDamage>. On hitting a champion or reaching the end of its range, it expands into a field that <status>Slows</status> enemies inside by {{ e2 }}%. After it expands, Ekko recalls it, dealing <magicDamage>{{ recalldamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Ekko throws a device dealing <magicDamage>{{ initialdamage }} magic damage</magicDamage>. On hitting a champion or reaching the end of its range, it expands into a field that <status>Slows</status> enemies inside by {{ slowpercent*-100 }}%. After it expands, Ekko recalls it, dealing <magicDamage>{{ recalldamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "50/60/70/80/90",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -225,7 +225,7 @@
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ cost }} -> {{ costNL }}",
           "{{ outgoingdamage }} -> {{ outgoingdamageNL }}",
-          "{{ effect2amount*-100.000000 }}% -> {{ effect2amountnl*-100.000000 }}%",
+          "{{ slowpercent*-100.000000 }}% -> {{ slowpercentnl*-100.000000 }}%",
           "{{ returndamage }} -> {{ returndamageNL }}"
         ]
       },
@@ -243,14 +243,14 @@
         "full": "EkkoW.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 240,
-        "y": 48,
+        "x": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive:</spellPassive> Ekko's Attacks against enemies below 30% Health deal <magicDamage>{{ missinghealthpercent }} missing Health magic damage</magicDamage>.<br /><br /><spellActive>Active:</spellActive> Ekko launches a chronosphere lasting 1.5 seconds after a delay that <status>Slows</status> enemies inside by {{ e0 }}%. If Ekko enters the sphere, he detonates it, <status>Stunning</status> for {{ e2 }} seconds and gaining <shield>{{ totalshield }} Shield</shield>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive:</spellPassive> Ekko's Attacks against enemies below {{ belowhealththreshold*100 }}% Health deal <magicDamage>{{ missinghealthpercent }} missing Health magic damage</magicDamage>.<br /><br /><spellActive>Active:</spellActive> Ekko launches a chronosphere lasting {{ slowzoneduration }} seconds after a delay that <status>Slows</status> enemies inside by {{ slowpercent }}%. If Ekko enters the sphere, he detonates it, <status>Stunning</status> for {{ stunduration }} seconds and gaining <shield>{{ totalshield }} Shield</shield>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "30/35/40/45/50",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -260,7 +260,7 @@
           "@AbilityResourceName@ Cost"
         ],
         "effect": [
-          "{{ e4 }} -> {{ e4NL }}",
+          "{{ shieldbase }} -> {{ shieldbaseNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ cost }} -> {{ costNL }}"
         ]
@@ -279,8 +279,8 @@
         "full": "EkkoE.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 288,
-        "y": 48,
+        "x": 96,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -296,7 +296,7 @@
           "@AbilityResourceName@ Cost"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ cost }} -> {{ costNL }}"
         ]
@@ -315,8 +315,8 @@
         "full": "EkkoR.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 336,
-        "y": 48,
+        "x": 144,
+        "y": 144,
         "w": 48,
         "h": 48
       },

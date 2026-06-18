@@ -3,7 +3,7 @@
   "key": "96",
   "name": "Kog'Maw",
   "title": "Gueule des abysses",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Émanant d'une brèche ouverte vers le Néant, c'est dans les ruines hantées d'Icathia que Kog'Maw, la putride créature à la gueule béante, et son insatiable curiosité firent leur apparition. Cette étrange bête du Néant doit mâchouiller tout ce qui se trouve à portée pour en comprendre la nature. Bien qu'il ne soit pas fondamentalement mauvais, Kog'Maw est dangereux par sa candeur, d'autant qu'elle précède généralement une frénésie insatiable, mue par sa curiosité sans fond.",
   "tags": [
     "Marksman",
@@ -28,8 +28,8 @@
         "full": "KogMawQ.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 288,
-        "y": 0,
+        "x": 96,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -64,14 +64,14 @@
         "full": "KogMawBioArcaneBarrage.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 336,
-        "y": 0,
+        "x": 144,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Kog'Maw gagne +{{ range }} portée d'attaque et ses attaques infligent <magicDamage>{{ totalhealthdamage }} des PV max en dégâts magiques</magicDamage> bonus pendant {{ duration }} sec.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Kog'Maw gagne {{ range }} de portée d'attaque et ses attaques infligent <magicDamage>{{ totalhealthdamage }} des PV max en dégâts magiques</magicDamage> %i:OnHit% <OnHit>à l'impact</OnHit> pendant {{ duration }} sec.{{ spellmodifierdescriptionappend }}",
       "costBurn": "40",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -87,7 +87,7 @@
       "resource": "{{ cost }} {{ abilityresourcename }}",
       "rangeBurn": "530",
       "datavalues": {},
-      "description": "Kog'Maw dispose d'une portée d'attaque augmentée et ses attaques infligent des dégâts magiques équivalents à un pourcentage des PV max de la cible.",
+      "description": "Kog'Maw dispose d'une portée d'attaque augmentée et ses attaques infligent des dégâts magiques %i:OnHit% <OnHit>à l'impact</OnHit> équivalents à un pourcentage des PV max de la cible.",
       "cooldownBurn": "17"
     },
     {
@@ -98,8 +98,8 @@
         "full": "KogMawVoidOoze.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 384,
-        "y": 0,
+        "x": 192,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -134,8 +134,8 @@
         "full": "KogMawLivingArtillery.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 432,
-        "y": 0,
+        "x": 240,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -196,8 +196,8 @@
         "full": "KogMawQ.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 288,
-        "y": 0,
+        "x": 96,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -232,14 +232,14 @@
         "full": "KogMawBioArcaneBarrage.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 336,
-        "y": 0,
+        "x": 144,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Kog'Maw gains {{ range }} Attack Range and his Attacks deal an additional <magicDamage>{{ totalhealthdamage }} max Health magic damage</magicDamage> for {{ duration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Kog'Maw gains {{ range }} Attack Range and his Attacks deal an additional <magicDamage>{{ totalhealthdamage }} max Health magic damage</magicDamage> %i:OnHit% <OnHit>On-Hit</OnHit> for {{ duration }} seconds.{{ spellmodifierdescriptionappend }}",
       "costBurn": "40",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -255,7 +255,7 @@
       "resource": "{{ cost }} {{ abilityresourcename }}",
       "rangeBurn": "530",
       "datavalues": {},
-      "description": "Kog'Maw's attacks gain range and deal a percent of the target's maximum health as magic damage.",
+      "description": "Kog'Maw's attacks gain range and deal a percent of the target's maximum health as magic damage %i:OnHit% <OnHit>On-Hit</OnHit>.",
       "cooldownBurn": "17"
     },
     {
@@ -266,8 +266,8 @@
         "full": "KogMawVoidOoze.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 384,
-        "y": 0,
+        "x": 192,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -302,8 +302,8 @@
         "full": "KogMawLivingArtillery.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 432,
-        "y": 0,
+        "x": 240,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -546,5 +546,11 @@
       "chromas": true
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Bel'Veth",
+    "Cho'Gath",
+    "Kha'Zix",
+    "Malzahar",
+    "Vel'Koz"
+  ]
 }

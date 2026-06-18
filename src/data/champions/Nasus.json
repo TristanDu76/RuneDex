@@ -3,7 +3,7 @@
   "key": "75",
   "name": "Nasus",
   "title": "Gardien des sables",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Nasus est un imposant Transfiguré à tête de chacal, une figure héroïque que les peuples du désert considéraient comme un demi-dieu aux temps anciens de Shurima. Il était très intelligent ; son savoir encyclopédique et son extraordinaire sens stratégique guidèrent l'antique empire de Shurima vers la grandeur pendant des siècles. Après la chute de l'empire, il s'imposa un exil et devint peu à peu une légende. Maintenant que l'ancienne cité de Shurima renaît de ses cendres, il est de retour, déterminé à empêcher qu'elle ne chute de nouveau.",
   "tags": [
     "Fighter",
@@ -12,10 +12,10 @@
   "partype": "Mana",
   "image": {
     "full": "Nasus.png",
-    "sprite": "champion2.png",
+    "sprite": "champion3.png",
     "group": "champion",
-    "x": 432,
-    "y": 96,
+    "x": 0,
+    "y": 0,
     "w": 48,
     "h": 48
   },
@@ -29,7 +29,7 @@
         "sprite": "spell9.png",
         "group": "spell",
         "x": 192,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -63,7 +63,7 @@
         "sprite": "spell9.png",
         "group": "spell",
         "x": 240,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -97,13 +97,13 @@
         "sprite": "spell9.png",
         "group": "spell",
         "x": 288,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Nasus crée une zone de feu spirituel qui inflige <magicDamage>{{ initialdamage }} pts de dégâts magiques</magicDamage>. Les ennemis dans la zone perdent <scaleArmor>{{ e2 }}% d'armure</scaleArmor> et subissent <magicDamage>{{ totaldotdamage }} pts de dégâts magiques</magicDamage> en {{ e3 }} sec.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Nasus crée une zone de feu spirituel qui inflige <magicDamage>{{ initialdamage }} pts de dégâts magiques</magicDamage>. Les ennemis dans la zone perdent <scaleArmor>{{ armorshredpercent*-100 }}% d'armure</scaleArmor> et subissent <magicDamage>{{ totaldotdamage }} pts de dégâts magiques</magicDamage> en {{ duration }} sec.{{ spellmodifierdescriptionappend }}",
       "costBurn": "60/70/80/90/100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -114,9 +114,9 @@
           "Coût en @AbilityResourceName@"
         ],
         "effect": [
-          "{{ e4 }} -> {{ e4NL }}",
-          "{{ e1 }} -> {{ e1NL }}",
-          "{{ effect2amount*-100.000000 }}% -> {{ effect2amountnl*-100.000000 }}%",
+          "{{ initialhitdamage }} -> {{ initialhitdamageNL }}",
+          "{{ damagepertick }} -> {{ damagepertickNL }}",
+          "{{ armorshredpercent*-100.000000 }}% -> {{ armorshredpercentnl*-100.000000 }}%",
           "{{ cost }} -> {{ costNL }}"
         ]
       },
@@ -135,7 +135,7 @@
         "sprite": "spell9.png",
         "group": "spell",
         "x": 336,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -169,10 +169,10 @@
     "name": "Mangeur d'âmes",
     "image": {
       "full": "Nasus_Passive.png",
-      "sprite": "passive2.png",
+      "sprite": "passive3.png",
       "group": "passive",
-      "x": 432,
-      "y": 96,
+      "x": 0,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -200,7 +200,7 @@
         "sprite": "spell9.png",
         "group": "spell",
         "x": 192,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -234,7 +234,7 @@
         "sprite": "spell9.png",
         "group": "spell",
         "x": 240,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -268,13 +268,13 @@
         "sprite": "spell9.png",
         "group": "spell",
         "x": 288,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Nasus ignites a spirit flame, dealing <magicDamage>{{ initialdamage }} magic damage</magicDamage>. Enemies in the area lose <scaleArmor>{{ e2 }}% Armor</scaleArmor> and take <magicDamage>{{ totaldotdamage }} magic damage</magicDamage> over {{ e3 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Nasus ignites a spirit flame, dealing <magicDamage>{{ initialdamage }} magic damage</magicDamage>. Enemies in the area lose <scaleArmor>{{ armorshredpercent*-100 }}% Armor</scaleArmor> and take <magicDamage>{{ totaldotdamage }} magic damage</magicDamage> over {{ duration }} seconds.{{ spellmodifierdescriptionappend }}",
       "costBurn": "60/70/80/90/100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -285,9 +285,9 @@
           "@AbilityResourceName@ Cost"
         ],
         "effect": [
-          "{{ e4 }} -> {{ e4NL }}",
-          "{{ e1 }} -> {{ e1NL }}",
-          "{{ effect2amount*-100.000000 }}% -> {{ effect2amountnl*-100.000000 }}%",
+          "{{ initialhitdamage }} -> {{ initialhitdamageNL }}",
+          "{{ damagepertick }} -> {{ damagepertickNL }}",
+          "{{ armorshredpercent*-100.000000 }}% -> {{ armorshredpercentnl*-100.000000 }}%",
           "{{ cost }} -> {{ costNL }}"
         ]
       },
@@ -306,7 +306,7 @@
         "sprite": "spell9.png",
         "group": "spell",
         "x": 336,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -340,10 +340,10 @@
     "name": "Soul Eater",
     "image": {
       "full": "Nasus_Passive.png",
-      "sprite": "passive2.png",
+      "sprite": "passive3.png",
       "group": "passive",
-      "x": 432,
-      "y": 96,
+      "x": 0,
+      "y": 0,
       "w": 48,
       "h": 48
     },

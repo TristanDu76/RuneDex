@@ -1,14 +1,93 @@
 [
   {
-    "id": "iula",
-    "name": "Iula",
-    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/thumb/Pantheon_In_Battle%2C_Broken.jpg/1200px-Pantheon_In_Battle%2C_Broken.jpg?bed30",
-    "factionKey": "rakkor",
+    "id": "alune",
+    "name": "Alune",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Alune_You_Are_the_Weapon.jpg?afd42",
+    "factionKey": "lunari",
+    "factionKeys": [
+      "lunari",
+      "rakkor"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
       {
-        "id": "camphor",
+        "id": "aphelios",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "diana",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "leona",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "soraka",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "yuumi",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "cygnus-the-moonstalker",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "lyra",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rahvun-daylights-spear",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "the-silver-sister",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "iula",
+    "name": "Iula",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/thumb/Pantheon_In_Battle%2C_Broken.jpg/1200px-Pantheon_In_Battle%2C_Broken.jpg?bed30",
+    "factionKey": "rakkor",
+    "factionKeys": [
+      "rakkor"
+    ],
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "camphor-the-doubt",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -38,15 +117,78 @@
         "auto_generated": false
       },
       {
-        "id": "camphor-the-doubt",
+        "id": "pylas",
         "type": "lore",
         "relation": "related",
         "auto_generated": true,
         "note_fr": "Lien réciproque automatique",
         "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "mihira",
+    "name": "Mihira",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/thumb/08MT005-full.png/1200px-08MT005-full.png?c807e",
+    "factionKey": "ancient",
+    "factionKeys": [
+      "ancient",
+      "mount-targon",
+      "rakkor"
+    ],
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "aatrox",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
       },
       {
-        "id": "pylas",
+        "id": "kayle",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kayn",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "morgana",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "rhaast",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "sky-young",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "varus",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "xolaani",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kilam",
         "type": "lore",
         "relation": "related",
         "auto_generated": true,
@@ -60,6 +202,9 @@
     "name": "Tyari",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/thumb/03MT071-full.png/1200px-03MT071-full.png?fada1",
     "factionKey": "rakkor",
+    "factionKeys": [
+      "rakkor"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -82,7 +227,7 @@
         "auto_generated": false
       },
       {
-        "id": "protector",
+        "id": "taric",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false

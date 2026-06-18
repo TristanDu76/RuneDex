@@ -3,7 +3,7 @@
   "key": "82",
   "name": "Mordekaiser",
   "title": "Revenant de fer",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Deux fois abattu et trois fois né, Mordekaiser est un chef de guerre brutal venu d'un lointain passé. Il utilise ses pouvoirs nécromantiques pour lier les âmes à une éternité de servitude. Il n'y a plus guère de gens pour se souvenir de ses anciennes conquêtes ou pour connaître l'étendue de ses vrais pouvoirs. Pourtant, certaines âmes antiques en ont gardé la mémoire et craignent le jour où il prétendra de nouveau régner sur les vivants et les morts.",
   "tags": [
     "Fighter",
@@ -14,7 +14,7 @@
     "full": "Mordekaiser.png",
     "sprite": "champion2.png",
     "group": "champion",
-    "x": 240,
+    "x": 288,
     "y": 96,
     "w": 48,
     "h": 48
@@ -26,10 +26,10 @@
       "vars": [],
       "image": {
         "full": "MordekaiserQ.png",
-        "sprite": "spell8.png",
+        "sprite": "spell9.png",
         "group": "spell",
         "x": 384,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -62,10 +62,10 @@
       "vars": [],
       "image": {
         "full": "MordekaiserW.png",
-        "sprite": "spell8.png",
+        "sprite": "spell9.png",
         "group": "spell",
         "x": 432,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -99,13 +99,13 @@
         "sprite": "spell9.png",
         "group": "spell",
         "x": 0,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive :</spellPassive> Mordekaiser gagne +{{ magicpen*100 }}% de pénétration magique.<br /><br /><spellActive>Active :</spellActive> Mordekaiser attire les ennemis vers lui, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passif :</spellPassive> Mordekaiser gagne <magicPen>{{ magicpen*100 }}% de pénétration magique</magicPen>.<br /><br /><spellActive>Active :</spellActive> attire les ennemis dans sa direction, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques.</magicDamage>{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": "Pas de coût",
       "leveltip": {
@@ -124,7 +124,7 @@
       "rangeBurn": "700",
       "datavalues": {},
       "description": "Mordekaiser attire tous les ennemis qui se trouvent dans une zone.",
-      "cooldownBurn": "18/16/14/12/10"
+      "cooldownBurn": "16/14/12/10/8"
     },
     {
       "id": "MordekaiserR",
@@ -135,7 +135,7 @@
         "sprite": "spell9.png",
         "group": "spell",
         "x": 48,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -165,7 +165,7 @@
       "full": "MordekaiserPassive.png",
       "sprite": "passive2.png",
       "group": "passive",
-      "x": 240,
+      "x": 288,
       "y": 96,
       "w": 48,
       "h": 48
@@ -192,10 +192,10 @@
       "vars": [],
       "image": {
         "full": "MordekaiserQ.png",
-        "sprite": "spell8.png",
+        "sprite": "spell9.png",
         "group": "spell",
         "x": 384,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -228,10 +228,10 @@
       "vars": [],
       "image": {
         "full": "MordekaiserW.png",
-        "sprite": "spell8.png",
+        "sprite": "spell9.png",
         "group": "spell",
         "x": 432,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -265,13 +265,13 @@
         "sprite": "spell9.png",
         "group": "spell",
         "x": 0,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive:</spellPassive> Mordekaiser gains {{ magicpen*100 }}% Magic Penetration.<br /><br /><spellActive>Active:</spellActive> Mordekaiser pulls enemies in his direction, dealing <magicDamage>{{ totaldamage }} magic damage.</magicDamage>{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive:</spellPassive> Mordekaiser gains <magicPen>{{ magicpen*100 }}% Magic Penetration</magicPen>.<br /><br /><spellActive>Active:</spellActive> Pulls enemies in his direction, dealing <magicDamage>{{ totaldamage }} magic damage.</magicDamage>{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": "No Cost",
       "leveltip": {
@@ -290,7 +290,7 @@
       "rangeBurn": "700",
       "datavalues": {},
       "description": "Mordekaiser pulls all enemies in an area.",
-      "cooldownBurn": "18/16/14/12/10"
+      "cooldownBurn": "16/14/12/10/8"
     },
     {
       "id": "MordekaiserR",
@@ -301,7 +301,7 @@
         "sprite": "spell9.png",
         "group": "spell",
         "x": 48,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -331,7 +331,7 @@
       "full": "MordekaiserPassive.png",
       "sprite": "passive2.png",
       "group": "passive",
-      "x": 240,
+      "x": 288,
       "y": 96,
       "w": 48,
       "h": 48

@@ -3,7 +3,7 @@
   "key": "86",
   "name": "Garen",
   "title": "Force de Demacia",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Garen est un guerrier fier et noble qui fait partie du Détachement hardi. Héritier des Crownguard, la famille chargée de défendre Demacia et ses idéaux, il est apprécié par ses compatriotes et respecté par ses ennemis. Équipé d'une armure résistante à la magie et d'une épée large, Garen affronte sans faillir les mages et les sorciers dans un véritable tourbillon d'acier.",
   "tags": [
     "Fighter",
@@ -28,8 +28,8 @@
         "full": "GarenQ.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 0,
-        "y": 48,
+        "x": 288,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -62,8 +62,8 @@
         "full": "GarenW.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 48,
-        "y": 48,
+        "x": 336,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -98,8 +98,8 @@
         "full": "GarenE.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 96,
-        "y": 48,
+        "x": 384,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -134,8 +134,8 @@
         "full": "GarenR.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 144,
-        "y": 48,
+        "x": 432,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -197,8 +197,8 @@
         "full": "GarenQ.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 0,
-        "y": 48,
+        "x": 288,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -231,8 +231,8 @@
         "full": "GarenW.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 48,
-        "y": 48,
+        "x": 336,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -267,8 +267,8 @@
         "full": "GarenE.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 96,
-        "y": 48,
+        "x": 384,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -303,8 +303,8 @@
         "full": "GarenR.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 144,
-        "y": 48,
+        "x": 432,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -441,12 +441,6 @@
       "chromas": true
     },
     {
-      "id": "86043",
-      "num": 43,
-      "name": "Pengu Garen",
-      "chromas": false
-    },
-    {
       "id": "86044",
       "num": 44,
       "name": "Fallen God-King Garen",
@@ -456,7 +450,7 @@
       "id": "86046",
       "num": 46,
       "name": "Visions of the Fallen Garen",
-      "chromas": true
+      "chromas": false
     }
   ],
   "skins": [
@@ -551,12 +545,6 @@
       "chromas": true
     },
     {
-      "id": "86043",
-      "num": 43,
-      "name": "Garen Pengu",
-      "chromas": false
-    },
-    {
       "id": "86044",
       "num": 44,
       "name": "Dieu-roi Garen détrôné",
@@ -566,7 +554,7 @@
       "id": "86046",
       "num": 46,
       "name": "Garen Darkin",
-      "chromas": true
+      "chromas": false
     }
   ],
   "related_characters": [
@@ -578,14 +566,14 @@
       "note_en": "Subordinate"
     },
     {
-      "id": "tiana_crownguard",
+      "id": "Tianna",
       "type": "lore",
       "relation": "family",
       "note_fr": "Neveu",
       "note_en": "Nephew"
     },
     {
-      "id": "arcturus_j_durand",
+      "id": "Arcturus J Durand",
       "type": "lore",
       "relation": "ally",
       "note_fr": "Client",

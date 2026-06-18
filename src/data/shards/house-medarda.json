@@ -4,6 +4,9 @@
     "name": "Elora",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Elora_Arcane_2_Render.png?6a78b",
     "factionKey": "house-medarda",
+    "factionKeys": [
+      "house-medarda"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -106,6 +109,9 @@
     "name": "Lest",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Lest_Render.jpg?c2c25",
     "factionKey": "house-medarda",
+    "factionKeys": [
+      "house-medarda"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -158,6 +164,10 @@
     "name": "Maddie",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Maddie_Render_2.png?b4016",
     "factionKey": "house-medarda",
+    "factionKeys": [
+      "house-medarda",
+      "piltover-enforcers"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -266,6 +276,14 @@
         "note_en": "Auto-generated reciprocal link"
       },
       {
+        "id": "loris",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
         "id": "steb-the-silent-guardian",
         "type": "lore",
         "relation": "related",
@@ -296,6 +314,10 @@
     "name": "Rictus",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Rictus_Arcane_Render.png?952a6",
     "factionKey": "house-medarda",
+    "factionKeys": [
+      "house-medarda",
+      "reckoners"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -390,7 +412,7 @@
         "auto_generated": false
       },
       {
-        "id": "protector",
+        "id": "taric",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -450,7 +472,7 @@
         "auto_generated": false
       },
       {
-        "id": "wolf",
+        "id": "kindred",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false

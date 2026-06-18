@@ -3,7 +3,7 @@
   "key": "150",
   "name": "Gnar",
   "title": "Chaînon manquant",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Gnar est un yordle primitif dont les manières joyeuses peuvent soudain faire place à une colère irrationnelle. Il se transforme alors en une bête colossale portée à la destruction. Gelé dans de la glace pure pendant des millénaires, la curieuse créature s'est libérée de sa prison. Aujourd'hui, il parcourt avec enthousiasme un monde qu'il trouve exotique et merveilleux. Enchanté par le danger, Gnar lance à ses ennemis tout ce qu'il trouve, qu'il s'agisse de son boomerang en croc ou d'un bâtiment proche.",
   "tags": [
     "Fighter",
@@ -28,8 +28,8 @@
         "full": "GnarQ.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 192,
-        "y": 48,
+        "x": 0,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -68,8 +68,8 @@
         "full": "GnarW.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 240,
-        "y": 48,
+        "x": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -104,8 +104,8 @@
         "full": "GnarE.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 288,
-        "y": 48,
+        "x": 96,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -142,8 +142,8 @@
         "full": "GnarR.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 336,
-        "y": 48,
+        "x": 144,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -206,8 +206,8 @@
         "full": "GnarQ.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 192,
-        "y": 48,
+        "x": 0,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -246,8 +246,8 @@
         "full": "GnarW.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 240,
-        "y": 48,
+        "x": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -282,8 +282,8 @@
         "full": "GnarE.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 288,
-        "y": 48,
+        "x": 96,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -320,8 +320,8 @@
         "full": "GnarR.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 336,
-        "y": 48,
+        "x": 144,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -504,5 +504,8 @@
       "chromas": true
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Teemo",
+    "Yuumi"
+  ]
 }

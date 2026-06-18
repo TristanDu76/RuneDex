@@ -2,11 +2,14 @@
   {
     "id": "ahri",
     "name": "Ahri",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Ahri.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Ahri.png",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "monkeyking",
@@ -15,6 +18,22 @@
         "auto_generated": false,
         "note_fr": "Ami Vastaya",
         "note_en": "Vastaya friend"
+      },
+      {
+        "id": "lillia",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "maokai",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "ava",
@@ -85,11 +104,14 @@
   {
     "id": "akali",
     "name": "Akali",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Akali.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Akali.png",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "kusho",
@@ -98,6 +120,22 @@
         "auto_generated": false,
         "note_fr": "Ancien mentor",
         "note_en": "Former Mentor"
+      },
+      {
+        "id": "kennen",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "yunara",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "faey",
@@ -120,24 +158,49 @@
   {
     "id": "hwei",
     "name": "Hwei",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Hwei.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Hwei.png",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
-    "related_characters": []
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "jhin",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "shen",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "zed",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
   },
   {
     "id": "irelia",
     "name": "Irelia",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Irelia.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Irelia.png",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
-        "id": "elder_souma",
+        "id": "souma",
         "type": "lore",
         "relation": "student",
         "auto_generated": false,
@@ -157,6 +220,30 @@
         "type": "champion",
         "relation": "nemesis/war",
         "auto_generated": false
+      },
+      {
+        "id": "kennen",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "riven",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "syndra",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "aurok-glinthorn",
@@ -187,12 +274,41 @@
   {
     "id": "ivern",
     "name": "Ivern",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Ivern.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Ivern.png",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
+      {
+        "id": "lillia",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "lissandra",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "volibear",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "zyra",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
       {
         "id": "daisy",
         "type": "lore",
@@ -222,11 +338,14 @@
   {
     "id": "jhin",
     "name": "Jhin",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Jhin.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Jhin.png",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "shen",
@@ -243,6 +362,14 @@
         "auto_generated": false
       },
       {
+        "id": "hwei",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
         "id": "broadmane",
         "type": "lore",
         "relation": "related",
@@ -255,11 +382,14 @@
   {
     "id": "karma",
     "name": "Karma",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Karma.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Karma.png",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "irelia",
@@ -268,6 +398,38 @@
         "auto_generated": false,
         "note_fr": "Désaccord politique",
         "note_en": "Political disagreement"
+      },
+      {
+        "id": "kennen",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "leesin",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "syndra",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "yunara",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "boram-darkwill",
@@ -288,14 +450,197 @@
     ]
   },
   {
-    "id": "kennen",
-    "name": "Kennen",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Kennen.png",
-    "factionKey": "ionia",
+    "id": "kayn",
+    "name": "Kayn",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Kayn.png",
+    "factionKey": "noxus",
+    "factionKeys": [
+      "noxus",
+      "ionia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
+      {
+        "id": "zed",
+        "type": "champion",
+        "relation": "student",
+        "auto_generated": false,
+        "note_fr": "Élève favori / Successeur",
+        "note_en": "Favorite student / Successor"
+      },
+      {
+        "id": "rhaast",
+        "type": "lore",
+        "relation": "host",
+        "auto_generated": false,
+        "note_fr": "Tente de contrôler Kayn.",
+        "note_en": "Attempts to control Kayn."
+      },
+      {
+        "id": "jun",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kusho",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "lui",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "mihira",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "ren-shadowblade",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "royce",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "shi",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "ting",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "xolaani",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "ysdra",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "yusari",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "kennen",
+    "name": "Kennen",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Kennen.png",
+    "factionKey": "ionia",
+    "factionKeys": [
+      "ionia",
+      "bandle-city"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "akali",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "irelia",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "karma",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "shen",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "sion",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "xinzhao",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "yasuo",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "yunara",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "zaahen",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "zed",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
       {
         "id": "ava",
         "type": "lore",
@@ -357,22 +702,119 @@
   {
     "id": "leesin",
     "name": "Lee Sin",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/LeeSin.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/LeeSin.png",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
-    "related_characters": []
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "karma",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "rakan",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "udyr",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "xayah",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "hui-ning",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kaiyan",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "ying-yue",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
   },
   {
     "id": "lillia",
     "name": "Lillia",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Lillia.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Lillia.png",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
+      {
+        "id": "ahri",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "fiddlesticks",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "ivern",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "lux",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vex",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "yasuo",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "yone",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
       {
         "id": "aisha",
         "type": "lore",
@@ -386,11 +828,14 @@
   {
     "id": "masteryi",
     "name": "Maître Yi",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/MasterYi.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/MasterYi.png",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "monkeyking",
@@ -399,17 +844,76 @@
         "auto_generated": false,
         "note_fr": "Maître Wuju",
         "note_en": "Wuju Master"
+      },
+      {
+        "id": "commander-emystan",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "doran",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "jun",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "lui",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rhaast",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "ting",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "xolaani",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       }
     ]
   },
   {
     "id": "monkeyking",
     "name": "Wukong",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/MonkeyKing.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/MonkeyKing.png",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "masteryi",
@@ -426,17 +930,36 @@
         "auto_generated": false,
         "note_fr": "Ami Vastaya",
         "note_en": "Vastaya friend"
+      },
+      {
+        "id": "doran",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "ting",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       }
     ]
   },
   {
     "id": "rakan",
     "name": "Rakan",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Rakan.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Rakan.png",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "xayah",
@@ -445,27 +968,281 @@
         "auto_generated": false,
         "note_fr": "Amant",
         "note_en": "Lover"
+      },
+      {
+        "id": "leesin",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "riven",
+    "name": "Riven",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Riven.png",
+    "factionKey": "noxus",
+    "factionKeys": [
+      "noxus",
+      "ionia"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "akshan",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "darius",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "diana",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "draven",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "graves",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "gwen",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "irelia",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "leblanc",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "lucian",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "olaf",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "pyke",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "rengar",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "senna",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "singed",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vayne",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "viego",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "yasuo",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "ambessa",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "arrel-the-tracker",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "asa-konte",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "beryn",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "boram-darkwill",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "commander-emystan",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "erath",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "marit",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "shava-konte",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "souma",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "teneff",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "thea",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tifalenji",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       }
     ]
   },
   {
     "id": "sett",
     "name": "Sett",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Sett.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Sett.png",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
-    "related_characters": []
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "alistar",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "draven",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "samira",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
   },
   {
     "id": "shen",
     "name": "Shen",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Shen.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Shen.png",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "jhin",
@@ -490,6 +1267,38 @@
         "auto_generated": false
       },
       {
+        "id": "hwei",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kennen",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "xinzhao",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "yunara",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
         "id": "faey",
         "type": "lore",
         "relation": "related",
@@ -508,14 +1317,344 @@
     ]
   },
   {
-    "id": "syndra",
-    "name": "Syndra",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Syndra.png",
-    "factionKey": "ionia",
+    "id": "singed",
+    "name": "Singed",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Singed.png",
+    "factionKey": "zaun",
+    "factionKeys": [
+      "zaun",
+      "noxus",
+      "ionia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
+      {
+        "id": "silco",
+        "type": "lore",
+        "relation": "ally",
+        "auto_generated": false,
+        "note_fr": "Collaborateur",
+        "note_en": "Collaborator"
+      },
+      {
+        "id": "ambessa",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "riven",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "arrel-the-tracker",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "boram-darkwill",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "commander-emystan",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "cyrus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "deckard",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "erath",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "huck",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "isha",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "marit",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rictus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "sevika",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "teneff",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "vander",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "soraka",
+    "name": "Soraka",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Soraka.png",
+    "factionKey": "targon",
+    "factionKeys": [
+      "targon",
+      "ionia"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "aphelios",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "aurelionsol",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "bard",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "diana",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kalista",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "leona",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "pantheon",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "syndra",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "taric",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "karthus",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "alune",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "hakan",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "illi",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kalan",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "lidari",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rumul",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "the-golden-sister",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "the-silver-sister",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tyari",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "vin",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "syndra",
+    "name": "Syndra",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Syndra.png",
+    "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "irelia",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "karma",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "leblanc",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "soraka",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
       {
         "id": "kalan",
         "type": "lore",
@@ -545,11 +1684,15 @@
   {
     "id": "varus",
     "name": "Varus",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Varus.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Varus.png",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia",
+      "shurima"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "aatrox",
@@ -558,6 +1701,22 @@
         "auto_generated": false,
         "note_fr": "Trouve Varus faible.",
         "note_en": "Finds Varus weak."
+      },
+      {
+        "id": "yunara",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "zaahen",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "bhinan",
@@ -620,11 +1779,14 @@
   {
     "id": "xayah",
     "name": "Xayah",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Xayah.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Xayah.png",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "zed",
@@ -641,17 +1803,28 @@
         "auto_generated": false,
         "note_fr": "Amant",
         "note_en": "Lover"
+      },
+      {
+        "id": "leesin",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       }
     ]
   },
   {
     "id": "yasuo",
     "name": "Yasuo",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Yasuo.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Yasuo.png",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "taliyah",
@@ -662,7 +1835,7 @@
         "note_en": "Temporary mentor"
       },
       {
-        "id": "elder_souma",
+        "id": "souma",
         "type": "lore",
         "relation": "student",
         "auto_generated": false,
@@ -676,6 +1849,38 @@
         "auto_generated": false,
         "note_fr": "Demi-frère",
         "note_en": "Half-brother"
+      },
+      {
+        "id": "kennen",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "lillia",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "maokai",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "riven",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "malik",
@@ -708,25 +1913,20 @@
         "auto_generated": true,
         "note_fr": "Lien réciproque automatique",
         "note_en": "Auto-generated reciprocal link"
-      },
-      {
-        "id": "souma",
-        "type": "lore",
-        "relation": "related",
-        "auto_generated": true,
-        "note_fr": "Lien réciproque automatique",
-        "note_en": "Auto-generated reciprocal link"
       }
     ]
   },
   {
     "id": "yone",
     "name": "Yone",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Yone.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Yone.png",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "yasuo",
@@ -735,6 +1935,14 @@
         "auto_generated": false,
         "note_fr": "Demi-frère",
         "note_en": "Half-brother"
+      },
+      {
+        "id": "lillia",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "souma",
@@ -749,12 +1957,81 @@
   {
     "id": "yunara",
     "name": "Yunara",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Yunara.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Yunara.png",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
+      {
+        "id": "akali",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jarvaniv",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "karma",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kennen",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "leblanc",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "lux",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "shen",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "sona",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "varus",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "xinzhao",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "zaahen",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
       {
         "id": "bhinan",
         "type": "lore",
@@ -816,11 +2093,14 @@
   {
     "id": "zed",
     "name": "Zed",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Zed.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Zed.png",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "xayah",
@@ -851,6 +2131,30 @@
         "type": "champion",
         "relation": "rival/ex-brother",
         "auto_generated": false
+      },
+      {
+        "id": "hwei",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kennen",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "nocturne",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "faey",
@@ -931,6 +2235,9 @@
     "name": "Adnere",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/08IO019-full.png?114b9",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": []
@@ -940,6 +2247,9 @@
     "name": "Aisha",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/09IO046-full.png?a49b5",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -956,6 +2266,9 @@
     "name": "Asa Konte",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -972,6 +2285,9 @@
     "name": "Bingwen",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/07IO014-full.png?9cd57",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1000,6 +2316,9 @@
     "name": "Bo Yang",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Bo_Yang_Render.png?fa3a9",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1016,7 +2335,7 @@
         "auto_generated": false
       },
       {
-        "id": "xin-zhao",
+        "id": "xinzhao",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -1028,6 +2347,9 @@
     "name": "Bri",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03IO010-full.png?26084",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1062,6 +2384,9 @@
     "name": "Caprian",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1102,6 +2427,9 @@
     "name": "Daisy",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Ivern_Concept_16.jpg?7f45f",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1118,6 +2446,9 @@
     "name": "Faey",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Ionia_The_Bow%2C_and_the_Kunai.jpg?33ec4",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1164,6 +2495,9 @@
     "name": "Gai'sh",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05IO006T1-full.png?62d28",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1192,6 +2526,9 @@
     "name": "Heisho",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/08IO014-full.png?6cf59",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": []
@@ -1201,6 +2538,9 @@
     "name": "Himon'she",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05IO003-full.png?38866",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1235,6 +2575,9 @@
     "name": "Hui Ning",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/02IO003-full.png?fa3c7",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1245,7 +2588,7 @@
         "auto_generated": false
       },
       {
-        "id": "lee-sin",
+        "id": "leesin",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -1263,6 +2606,9 @@
     "name": "Jakgri",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1279,6 +2625,9 @@
     "name": "Jun",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06IO011-full.png?7271c",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1307,7 +2656,7 @@
         "auto_generated": false
       },
       {
-        "id": "yi",
+        "id": "masteryi",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -1319,6 +2668,9 @@
     "name": "Kai",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Varus_HL_pr01.jpg?1667e",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1347,6 +2699,9 @@
     "name": "Kaiyan",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/02IO004-full.png?24c4e",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1357,7 +2712,7 @@
         "auto_generated": false
       },
       {
-        "id": "lee-sin",
+        "id": "leesin",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -1375,6 +2730,9 @@
     "name": "Kalan",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Syndra_The_Dreaming_Pool.jpg?32959",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1415,6 +2773,9 @@
     "name": "Kolo the Killer",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/07IO013-full.png?67850",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1483,6 +2844,9 @@
     "name": "Lise",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/07IO009-full.png?d6e01",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1525,6 +2889,9 @@
     "name": "Lui",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06IO001-full.png?3ea3a",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1559,7 +2926,7 @@
         "auto_generated": false
       },
       {
-        "id": "yi",
+        "id": "masteryi",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -1571,6 +2938,9 @@
     "name": "Masa",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05BC046-full.png?227b7",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1593,6 +2963,9 @@
     "name": "Mayym Jhomen Tethi",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1639,6 +3012,9 @@
     "name": "Meg",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/07IO019-full.png?e0ada",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1679,6 +3055,9 @@
     "name": "Minah Swiftfoot",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/01IO033-full.png?e9733",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": []
@@ -1688,6 +3067,9 @@
     "name": "Lady Mion of Binan",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Mion_Render.png?54ce6",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1736,6 +3118,9 @@
     "name": "Ren Shadowblade",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06IO025-full.png?c3b2c",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1782,6 +3167,9 @@
     "name": "Rissu",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05BC127-full.png?f23ed",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1812,6 +3200,9 @@
     "name": "Royce",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06NX019-full.png?71620",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1876,6 +3267,9 @@
     "name": "Sai'nen Thousand-Tailed",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05IO007-full.png?1a027",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1910,6 +3304,9 @@
     "name": "Sett's mother",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Sett_Concept_06.jpg?9033b",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2008,6 +3405,9 @@
     "name": "Shadowmaster Lao",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2042,6 +3442,9 @@
     "name": "Shava Konte",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2058,6 +3461,9 @@
     "name": "Shi",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/01IO027-full.png?82258",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2068,7 +3474,7 @@
         "auto_generated": false
       },
       {
-        "id": "shadow-assassin",
+        "id": "kayn",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -2086,6 +3492,9 @@
     "name": "Sirik",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Syndra_The_Dreaming_Pool.jpg?32959",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2114,6 +3523,9 @@
     "name": "Smeek",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/07IO012-full.png?7b8a3",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2160,6 +3572,9 @@
     "name": "Souma",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/ElderSouma.png?4ddf2",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2180,6 +3595,14 @@
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
+      },
+      {
+        "id": "irelia",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       }
     ]
   },
@@ -2188,6 +3611,9 @@
     "name": "Ting",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06IO014-full.png?67647",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2216,7 +3642,7 @@
         "auto_generated": false
       },
       {
-        "id": "wukong",
+        "id": "monkeyking",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -2228,7 +3654,7 @@
         "auto_generated": false
       },
       {
-        "id": "yi",
+        "id": "masteryi",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -2240,6 +3666,9 @@
     "name": "Trisk",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06NX023-full.png?e3670",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2256,7 +3685,7 @@
         "auto_generated": false
       },
       {
-        "id": "fireth",
+        "id": "fireth-reaper-of-the-sands",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -2272,14 +3701,6 @@
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
-      },
-      {
-        "id": "fireth-reaper-of-the-sands",
-        "type": "lore",
-        "relation": "related",
-        "auto_generated": true,
-        "note_fr": "Lien réciproque automatique",
-        "note_en": "Auto-generated reciprocal link"
       }
     ]
   },
@@ -2288,6 +3709,9 @@
     "name": "Valmar",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Varus_HL_pr01.jpg?1667e",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2316,6 +3740,9 @@
     "name": "Ying Yue",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/02IO001-full.png?5afe1",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2332,7 +3759,7 @@
         "auto_generated": false
       },
       {
-        "id": "lee-sin",
+        "id": "leesin",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -2344,6 +3771,9 @@
     "name": "Ysdra",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06SI006-full.png?a8efc",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2390,6 +3820,9 @@
     "name": "Yusari",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/01IO048-full.png?59581",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2412,6 +3845,9 @@
     "name": "Zinneia",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/04IO002-full.png?2c856",
     "factionKey": "ionia",
+    "factionKeys": [
+      "ionia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [

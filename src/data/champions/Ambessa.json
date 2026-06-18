@@ -3,7 +3,7 @@
   "key": "799",
   "name": "Ambessa",
   "title": "Matriarche de guerre",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Tous ceux qui connaissent le nom de Medarda savent qu'il faut craindre et respecter sa matriarche, Ambessa. En tant que générale noxienne, elle incarne la force impitoyable et la détermination sans peur. Son rôle de matriarche n'est pas bien différent. Elle se doit de faire preuve d'une grande ruse tout en ne laissant aucune place à l'échec ou à la compassion. Dédiée à la voie du Loup, Ambessa fera tout ce qui est en son pouvoir pour protéger l'héritage de sa famille, même si cela doit lui coûter l'amour de ses enfants.",
   "tags": [
     "Fighter",
@@ -26,10 +26,10 @@
       "vars": [],
       "image": {
         "full": "AmbessaQ.png",
-        "sprite": "spell0.png",
+        "sprite": "spell1.png",
         "group": "spell",
-        "x": 384,
-        "y": 144,
+        "x": 192,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -40,16 +40,16 @@
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
+          "Délai de récupération",
           "Frappe fourbe | Dégâts",
           "Frappe fourbe | PV max en dégâts",
-          "Délai de récupération",
           "Frappe fracassante | Dégâts",
           "Frappe fracassante | PV max en dégâts"
         ],
         "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ damage_1_base }} -> {{ damage_1_baseNL }}",
           "{{ damage_1_percent*100.000000 }}% -> {{ damage_1_percentnl*100.000000 }}%",
-          "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ damage_2_base }} -> {{ damage_2_baseNL }}",
           "{{ damage_1_percent*100.000000 }}% -> {{ damage_1_percentnl*100.000000 }}%"
         ]
@@ -66,10 +66,10 @@
       "vars": [],
       "image": {
         "full": "AmbessaW.png",
-        "sprite": "spell0.png",
+        "sprite": "spell1.png",
         "group": "spell",
-        "x": 432,
-        "y": 144,
+        "x": 240,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -102,8 +102,8 @@
         "full": "AmbessaE.png",
         "sprite": "spell1.png",
         "group": "spell",
-        "x": 0,
-        "y": 0,
+        "x": 288,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -136,8 +136,8 @@
         "full": "AmbessaR.png",
         "sprite": "spell1.png",
         "group": "spell",
-        "x": 48,
-        "y": 0,
+        "x": 336,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -170,7 +170,7 @@
   "passive": {
     "name": "Ruée des chiens-dragons",
     "image": {
-      "full": "Icon_Ambessa_Passive.Domina.png",
+      "full": "Icon_Ambessa_Passive.png",
       "sprite": "passive0.png",
       "group": "passive",
       "x": 240,
@@ -200,10 +200,10 @@
       "vars": [],
       "image": {
         "full": "AmbessaQ.png",
-        "sprite": "spell0.png",
+        "sprite": "spell1.png",
         "group": "spell",
-        "x": 384,
-        "y": 144,
+        "x": 192,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -214,16 +214,16 @@
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
+          "Cooldown",
           "Cunning Sweep | Damage",
           "Cunning Sweep | Max Health Damage",
-          "Cooldown",
           "Sundering Slam | Damage",
           "Sundering Slam | Max Health Damage"
         ],
         "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ damage_1_base }} -> {{ damage_1_baseNL }}",
           "{{ damage_1_percent*100.000000 }}% -> {{ damage_1_percentnl*100.000000 }}%",
-          "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ damage_2_base }} -> {{ damage_2_baseNL }}",
           "{{ damage_1_percent*100.000000 }}% -> {{ damage_1_percentnl*100.000000 }}%"
         ]
@@ -240,10 +240,10 @@
       "vars": [],
       "image": {
         "full": "AmbessaW.png",
-        "sprite": "spell0.png",
+        "sprite": "spell1.png",
         "group": "spell",
-        "x": 432,
-        "y": 144,
+        "x": 240,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -276,8 +276,8 @@
         "full": "AmbessaE.png",
         "sprite": "spell1.png",
         "group": "spell",
-        "x": 0,
-        "y": 0,
+        "x": 288,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -310,8 +310,8 @@
         "full": "AmbessaR.png",
         "sprite": "spell1.png",
         "group": "spell",
-        "x": 48,
-        "y": 0,
+        "x": 336,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -344,7 +344,7 @@
   "passive_en": {
     "name": "Drakehound's Step",
     "image": {
-      "full": "Icon_Ambessa_Passive.Domina.png",
+      "full": "Icon_Ambessa_Passive.png",
       "sprite": "passive0.png",
       "group": "passive",
       "x": 240,
@@ -371,6 +371,12 @@
       "num": 1,
       "name": "Chosen of the Wolf Ambessa",
       "chromas": true
+    },
+    {
+      "id": "799008",
+      "num": 8,
+      "name": "T1 Ambessa",
+      "chromas": true
     }
   ],
   "skins": [
@@ -385,7 +391,33 @@
       "num": 1,
       "name": "Ambessa de la Chasse éternelle",
       "chromas": true
+    },
+    {
+      "id": "799008",
+      "num": 8,
+      "name": "T1 Ambessa",
+      "chromas": true
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Alistar",
+    "Caitlyn",
+    "Darius",
+    "Draven",
+    "Jayce",
+    "Jinx",
+    "Kindred",
+    "LeBlanc",
+    "Mel",
+    "Orianna",
+    "Rell",
+    "Riven",
+    "Samira",
+    "Singed",
+    "Swain",
+    "Vi",
+    "Viktor",
+    "Warwick",
+    "Wolf"
+  ]
 }

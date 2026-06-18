@@ -2,11 +2,14 @@
   {
     "id": "blitzcrank",
     "name": "Blitzcrank",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Blitzcrank.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Blitzcrank.png",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "orianna",
@@ -15,17 +18,28 @@
         "auto_generated": false,
         "note_fr": "Automates conscients",
         "note_en": "Sentient automatons"
+      },
+      {
+        "id": "zeri",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       }
     ]
   },
   {
     "id": "drmundo",
     "name": "Dr. Mundo",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/DrMundo.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/DrMundo.png",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "ekko",
@@ -40,11 +54,14 @@
   {
     "id": "ekko",
     "name": "Ekko",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Ekko.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Ekko.png",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "jinx",
@@ -61,6 +78,30 @@
         "auto_generated": false,
         "note_fr": "Patient (Dans sa tête)",
         "note_en": "Patient (In his head)"
+      },
+      {
+        "id": "janna",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "renata",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "zeri",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "ajuna-lem",
@@ -275,12 +316,65 @@
   {
     "id": "janna",
     "name": "Janna",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Janna.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Janna.png",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
+      {
+        "id": "ekko",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jinx",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "nilah",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "tahmkench",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "urgot",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vi",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "volibear",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "zeri",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
       {
         "id": "iascylla",
         "type": "lore",
@@ -318,11 +412,14 @@
   {
     "id": "jinx",
     "name": "Jinx",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Jinx.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Jinx.png",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "silco",
@@ -349,6 +446,30 @@
         "auto_generated": false,
         "note_fr": "Amour d'enfance (Passé)",
         "note_en": "Childhood crush (Past)"
+      },
+      {
+        "id": "ambessa",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "janna",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "mel",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "amy",
@@ -480,6 +601,14 @@
       },
       {
         "id": "loris-the-shield-of-piltover",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "loris",
         "type": "lore",
         "relation": "related",
         "auto_generated": true,
@@ -651,21 +780,78 @@
   {
     "id": "renata",
     "name": "Renata Glasc",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Renata.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Renata.png",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
-    "related_characters": []
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "camille",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "ekko",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "samira",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "zeri",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "inna",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "wencher-spindlow",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "wyeth",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
   },
   {
     "id": "singed",
     "name": "Singed",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Singed.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Singed.png",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun",
+      "noxus",
+      "ionia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "silco",
@@ -674,6 +860,22 @@
         "auto_generated": false,
         "note_fr": "Collaborateur",
         "note_en": "Collaborator"
+      },
+      {
+        "id": "ambessa",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "riven",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "arrel-the-tracker",
@@ -784,11 +986,14 @@
   {
     "id": "twitch",
     "name": "Twitch",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Twitch.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Twitch.png",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "zac",
@@ -803,11 +1008,14 @@
   {
     "id": "urgot",
     "name": "Urgot",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Urgot.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Urgot.png",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "swain",
@@ -824,6 +1032,22 @@
         "auto_generated": false,
         "note_fr": "Représente la loi qu'il déteste",
         "note_en": "Represents the law he hates."
+      },
+      {
+        "id": "janna",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "zeri",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "boram-darkwill",
@@ -852,13 +1076,420 @@
     ]
   },
   {
-    "id": "viktor",
-    "name": "Viktor",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Viktor.png",
-    "factionKey": "zaun",
+    "id": "vi",
+    "name": "Vi",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Vi.png",
+    "factionKey": "piltover",
+    "factionKeys": [
+      "piltover",
+      "zaun"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "camille",
+        "type": "champion",
+        "relation": "rival",
+        "auto_generated": false,
+        "note_fr": "Obstacle à l'ordre",
+        "note_en": "Obstacle to order"
+      },
+      {
+        "id": "silco",
+        "type": "lore",
+        "relation": "rival/corruption",
+        "auto_generated": false,
+        "note_fr": "Responsable de la corruption de Jinx et Vander",
+        "note_en": "Responsible for Jinx and Vander's corruption"
+      },
+      {
+        "id": "urgot",
+        "type": "champion",
+        "relation": "rival",
+        "auto_generated": false,
+        "note_fr": "Représente la loi qu'il déteste",
+        "note_en": "Represents the law he hates."
+      },
+      {
+        "id": "jinx",
+        "type": "champion",
+        "relation": "sister",
+        "auto_generated": false
+      },
+      {
+        "id": "caitlyn",
+        "type": "champion",
+        "relation": "lover",
+        "auto_generated": false,
+        "note_fr": "Partenaire",
+        "note_en": "Partner"
+      },
+      {
+        "id": "vander",
+        "type": "lore",
+        "relation": "adoptive-daughter",
+        "auto_generated": false
+      },
+      {
+        "id": "ambessa",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "janna",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "mel",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "zeri",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "babette",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "bolbok",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "cassandra",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "chross",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "claggor",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "deckard",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "eve",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "gert",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "gustove-jowler",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "heenot",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "huck",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "isha",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "j-s-harknor",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "jericho",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kepple",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "loris-the-shield-of-piltover",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "loris",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "maddie",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "mantaire",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "marcus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "margot",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "mir",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "mylo",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "pim",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "renni",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rennis-son",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rictus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "salo",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "scar-the-blazing-firelight",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "scar",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "sevika",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "smeech",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "steb-the-silent-guardian",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "steb",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "thieram",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tobias",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tommy",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "warden-of-stillwater",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "zevi",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "viktor",
+    "name": "Viktor",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Viktor.png",
+    "factionKey": "zaun",
+    "factionKeys": [
+      "zaun",
+      "piltover"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "jayce",
@@ -867,6 +1498,22 @@
         "auto_generated": false,
         "note_fr": "Ancien ami / Rival idéologique",
         "note_en": "Former friend / Ideological rival"
+      },
+      {
+        "id": "ambessa",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "mel",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "bolbok",
@@ -993,11 +1640,14 @@
   {
     "id": "warwick",
     "name": "Warwick",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Warwick.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Warwick.png",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "vander",
@@ -1014,6 +1664,14 @@
         "auto_generated": false,
         "note_fr": "Créé pour son règne, devenu incontrôlable",
         "note_en": "created for his reign, uncontrollable now"
+      },
+      {
+        "id": "ambessa",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "claggor",
@@ -1084,11 +1742,14 @@
   {
     "id": "zac",
     "name": "Zac",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Zac.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Zac.png",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "twitch",
@@ -1111,12 +1772,51 @@
   {
     "id": "zeri",
     "name": "Zeri",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Zeri.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Zeri.png",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
+      {
+        "id": "blitzcrank",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "ekko",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "janna",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "renata",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "urgot",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vi",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
       {
         "id": "inna",
         "type": "lore",
@@ -1146,11 +1846,14 @@
   {
     "id": "ziggs",
     "name": "Ziggs",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Ziggs.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Ziggs.png",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "heimerdinger",
@@ -1207,6 +1910,9 @@
     "name": "Acorn",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06PZ020-full.png?de069",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1229,6 +1935,9 @@
     "name": "Ajuna Lem",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/01PZ034-full.png?68c79",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1245,6 +1954,9 @@
     "name": "Amy",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/01PZ051-full.png?edf33",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1261,6 +1973,9 @@
     "name": "Babette",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Babette_Arcane.png?509a8",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1333,6 +2048,9 @@
     "name": "Benzo",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Benzo_Arcane.png?82889",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1413,6 +2131,9 @@
     "name": "Bo",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/04PZ005-full.png?ef2c2",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1447,6 +2168,9 @@
     "name": "Claggor",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Claggor_Arcane_Render.png?f5fd4",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1529,6 +2253,9 @@
     "name": "Connol",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Connol_Arcane_Render.png?e4216",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1557,6 +2284,9 @@
     "name": "Corina Veraza",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/01PZ048-hd-full.jpg?55d58",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1599,6 +2329,9 @@
     "name": "Crimson",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1615,6 +2348,9 @@
     "name": "Deckard",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Deckard-1.png?a86a7",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1689,6 +2425,9 @@
     "name": "Eramis",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/99PZ116-full.png?c0589",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1711,6 +2450,9 @@
     "name": "Eve",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Eve_Arcane_Render.png?9f522",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1745,6 +2487,9 @@
     "name": "Evil Kay",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06PZ042-full.png?08679",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1767,6 +2512,9 @@
     "name": "Felicia",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Felicia_Arcane_Render.png?ab5db",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1803,6 +2551,9 @@
     "name": "Fieram",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Orianna_Fieram.jpg?a4db3",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1825,6 +2576,9 @@
     "name": "Gert",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Gert_Arcane.png?c4f1d",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1865,6 +2619,9 @@
     "name": "Gustove Jowler",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Gustove_Arcane_Render.png?93716",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1935,6 +2692,9 @@
     "name": "Heenot",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Heenot_Render.png?e5de5",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1993,6 +2753,9 @@
     "name": "Inna",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Ekko%27s_parents_CV.png?1d6ec",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2009,7 +2772,7 @@
         "auto_generated": false
       },
       {
-        "id": "renata-glasc",
+        "id": "renata",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -2041,6 +2804,9 @@
     "name": "Ishaea Tinthrum",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/99PZ102-full.png?01aae",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": []
@@ -2050,6 +2816,9 @@
     "name": "Jamie",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/04PZ001-full.png?c1bd4",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2086,6 +2855,9 @@
     "name": "Jericho",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Jericho_Arcane.png?81032",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2156,6 +2928,9 @@
     "name": "Karvyq the Silverhanded",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": []
@@ -2165,6 +2940,9 @@
     "name": "Kay",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/04PZ012-full.png?3a1ec",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2207,6 +2985,9 @@
     "name": "Mantaire",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Mantaire_Render.png?696fa",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2273,6 +3054,9 @@
     "name": "Marko Volkage",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Zaun_Baron_Marko_Volkage.jpg?9efa4",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2289,6 +3073,9 @@
     "name": "Maryam",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/08PZ008-full.png?cde16",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2305,6 +3092,9 @@
     "name": "Millie",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06PZ014-full.png?33d50",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2327,6 +3117,9 @@
     "name": "Mylo",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Mylo_Arcane_Render.png?bd0f9",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2409,6 +3202,9 @@
     "name": "Petrok Grime",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Zaun_Baron_Petrok_Grime.jpg?e5566",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2431,6 +3227,9 @@
     "name": "Pim",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Pim_Arcane_Render.png?51130",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2459,6 +3258,9 @@
     "name": "Professor Andrej von Yipp",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/To_Herd_A_Cat.jpg?ad8dc",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2481,6 +3283,9 @@
     "name": "Ran",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Ran_Arcane_Render.png?fde6e",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2603,6 +3408,9 @@
     "name": "Renni's son",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Renni%27s_son_Arcane.png?00092",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2643,6 +3451,9 @@
     "name": "Saito Takeda",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Zaun_Baron_Saito_Takeda.jpg?d218c",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2659,6 +3470,9 @@
     "name": "Scar, The Blazing Firelight",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Scar_Arcane_Render.png?e074a",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2717,6 +3531,9 @@
     "name": "Scratch",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06PZ036-full.png?f38d6",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2745,6 +3562,9 @@
     "name": "Seraphine's Father",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06PZ010-full.png?22940",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2773,6 +3593,9 @@
     "name": "Shomi",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/04PZ004-full.png?3653c",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2809,6 +3632,9 @@
     "name": "Sky Young",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Sky_Arcane_Render.png?a4328",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2863,6 +3689,9 @@
     "name": "Thieram",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Thieram_Arcane_Render.png?8cd68",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2933,6 +3762,9 @@
     "name": "Tommy",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Tommy_Arcane_Render.png?8faf7",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2955,6 +3787,9 @@
     "name": "Vander",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Warwick_Render.png?dc8d8",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -3161,6 +3996,9 @@
     "name": "Voss",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -3183,6 +4021,9 @@
     "name": "Wencher Spindlow",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Zeri_The_Unexpected_Spark.jpg?73775",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -3199,7 +4040,7 @@
         "auto_generated": false
       },
       {
-        "id": "renata-glasc",
+        "id": "renata",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -3223,6 +4064,9 @@
     "name": "Wyeth",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Ekko%27s_parents_CV.png?1d6ec",
     "factionKey": "zaun",
+    "factionKeys": [
+      "zaun"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -3245,7 +4089,7 @@
         "auto_generated": false
       },
       {
-        "id": "renata-glasc",
+        "id": "renata",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false

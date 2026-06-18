@@ -3,7 +3,7 @@
   "key": "102",
   "name": "Shyvana",
   "title": "Demi-dragon",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Shyvana est une redoutable guerrière demi-dragon. Bien qu'elle prenne souvent une apparence humanoïde, elle règne également sur les cieux en tant que dragon, réduisant ses ennemis en cendres grâce à son souffle ardent. Depuis qu'elle a sauvé la vie du prince héritier Jarvan IV, Shyvana sert au sein de sa garde royale, et s'efforce de se faire accepter malgré la méfiance des Demaciens.",
   "tags": [
     "Fighter",
@@ -14,7 +14,7 @@
     "full": "Shyvana.png",
     "sprite": "champion4.png",
     "group": "champion",
-    "x": 48,
+    "x": 96,
     "y": 0,
     "w": 48,
     "h": 48
@@ -26,10 +26,10 @@
       "vars": [],
       "image": {
         "full": "ShyvanaQ.png",
-        "sprite": "spell12.png",
+        "sprite": "spell13.png",
         "group": "spell",
         "x": 96,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -60,16 +60,16 @@
       "vars": [],
       "image": {
         "full": "ShyvanaW.png",
-        "sprite": "spell12.png",
+        "sprite": "spell13.png",
         "group": "spell",
         "x": 144,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Shyvana s'enveloppe de flammes pendant {{ duration }} sec, gagnant un <shield>bouclier de {{ calc_shield }}</shield>, augmenté de <shield>{{ calc_shield_per_nearby_champion }}</shield> PV par champion ennemi à proximité et <speed>{{ movespeed }} de vitesse de déplacement</speed>, augmentée à <speed>{{ movespeedtowardsenemies }}</speed> lorsqu'elle se dirige vers des champions ennemis.<br /><br />Lorsque l'effet prend fin, que le <shield>bouclier</shield> se brise ou lorsqu'elle <recast>réactive</recast> la compétence, la zone autour d'elle explose, infligeant <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage>.<br /><br /><keywordMajor>Forme de dragon</keywordMajor> : si la détonation touche un champion ennemi, Shyvana <healing>récupère entre {{ calc_heal_min }} et {{ calc_heal_max }} PV</healing> en fonction de ses PV manquants.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Shyvana s'enveloppe de flammes pendant {{ duration }} sec, gagnant un <shield>bouclier de {{ calc_shield }}</shield> PV, augmenté de <shield>{{ calc_shield_per_nearby_champion }}</shield> PV par champion ennemi à proximité et <speed>{{ movespeed }} de vitesse de déplacement</speed>, augmentée à <speed>{{ movespeedtowardsenemies }}</speed> lorsqu'elle se dirige vers des champions ennemis.<br /><br />Lorsque l'effet prend fin, que le <shield>bouclier</shield> se brise ou lorsqu'elle <recast>réactive</recast> la compétence, la zone autour d'elle explose, infligeant <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage>.<br /><br /><keywordMajor>Forme de dragon</keywordMajor> : si la détonation touche un champion ennemi, Shyvana récupère <healing> {{ calc_base_heal }} + {{ calc_missing_health_heal }} PV manquants</healing>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": "Pas de coût",
       "leveltip": {
@@ -88,7 +88,7 @@
       "rangeBurn": "350",
       "datavalues": {},
       "description": "Shyvana gagne un bouclier, de la vitesse de déplacement et, après un court délai, la zone autour d'elle explose.  Lorsqu'elle est en forme de dragon, l'explosion lui octroie des soins si elle touche un champion ennemi.",
-      "cooldownBurn": "14/13.5/13/12.5/12"
+      "cooldownBurn": "13/12.25/11.5/10.75/10"
     },
     {
       "id": "ShyvanaE",
@@ -96,35 +96,35 @@
       "vars": [],
       "image": {
         "full": "ShyvanaE.png",
-        "sprite": "spell12.png",
+        "sprite": "spell13.png",
         "group": "spell",
         "x": 192,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Shyvana lance une boule de feu vers l'endroit ciblé, infligeant <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage> et <status>ralentissant les ennemis de {{ calc_slow }} pendant {{ slowduration }} sec</status>. La boule de feu explose au contact d'un ennemi ou lorsqu'elle atteint sa distance maximum.<br /><br /><keywordMajor>Forme de dragon :</keywordMajor> la boule de feu de Shyvana est plus grande et transperce les ennemis. Lorsque la boule de feu touche un champion, un grand monstre ou qu'elle atteint sa distance maximum, elle déclenche une impulsion de feu qui inflige <magicDamage>{{ calc_dragon_damage }} pts de dégâts magiques</magicDamage> et <status>ralentit les ennemis de {{ calc_slow_dragon }} pendant {{ slowduration }} sec</status>. La boule de feu laisse une traînée derrière elle pendant {{ groundlingerduration }} sec, infligeant <magicDamage>{{ damagepersecond }} pts de dégâts magiques par seconde</magicDamage>. {{ spellmodifierdescriptionappend }}",
+      "tooltip": "Shyvana lance une boule de feu vers l'endroit ciblé, infligeant <magicDamage>{{ damage }} + {{ calc_max_health_damage }} des PV max en dégâts magiques</magicDamage> et <status>ralentissant les ennemis de {{ calc_slow }} pendant {{ slowduration }} sec</status>. La boule de feu explose au contact d'un ennemi ou lorsqu'elle atteint sa distance maximum.<br /><br /><keywordMajor>Forme de dragon :</keywordMajor> la boule de feu de Shyvana est plus grande et transperce les ennemis. Lorsque la boule de feu touche un champion, un grand monstre ou qu'elle atteint sa distance maximum, elle déclenche une impulsion de feu qui inflige <magicDamage>{{ calc_dragon_damage }} + {{ calc_max_health_dragon_damage }} des PV max en dégâts magiques</magicDamage> et <status>ralentit les ennemis de {{ calc_slow_dragon }} pendant {{ slowduration }} sec</status>. La boule de feu laisse une traînée derrière elle pendant {{ groundlingerduration }} sec, infligeant <magicDamage>{{ damagepersecond }} pts de dégâts magiques par seconde</magicDamage>. {{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": "Pas de coût",
       "leveltip": {
         "label": [
           "Délai de récupération",
           "Dégâts",
-          "Ralentissement"
+          "Ratio de puissance total"
         ],
         "effect": [
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ basedamage }} -> {{ basedamageNL }}",
-          "{{ slowamount*100.000000 }}% -> {{ slowamountnl*100.000000 }}%"
+          "{{ damageapratio*100.000000 }}% -> {{ damageaprationl*100.000000 }}%"
         ]
       },
       "resource": "Pas de coût",
       "rangeBurn": "800",
       "datavalues": {},
       "description": "Shyvana lance une boule de feu qui explose en touchant un grand ennemi et le ralentit. En forme de dragon, la boule de feu traverse et explose au contact des grands ennemis, laissant derrière elle une traînée de feu.",
-      "cooldownBurn": "12/11.5/11/10.5/10"
+      "cooldownBurn": "12/11/10/9/8"
     },
     {
       "id": "ShyvanaR",
@@ -132,10 +132,10 @@
       "vars": [],
       "image": {
         "full": "ShyvanaR.png",
-        "sprite": "spell12.png",
+        "sprite": "spell13.png",
         "group": "spell",
         "x": 240,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -170,10 +170,10 @@
   "passive": {
     "name": "Armure d'écailles",
     "image": {
-      "full": "Shyvana_Passive.Shyvana_Rework.png",
+      "full": "Shyvana_Passive.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 48,
+      "x": 96,
       "y": 0,
       "w": 48,
       "h": 48
@@ -198,10 +198,10 @@
       "vars": [],
       "image": {
         "full": "ShyvanaQ.png",
-        "sprite": "spell12.png",
+        "sprite": "spell13.png",
         "group": "spell",
         "x": 96,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -232,16 +232,16 @@
       "vars": [],
       "image": {
         "full": "ShyvanaW.png",
-        "sprite": "spell12.png",
+        "sprite": "spell13.png",
         "group": "spell",
         "x": 144,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Shyvana wraps herself in flames for {{ duration }} seconds, gaining <shield>{{ calc_shield }} Shield</shield>, increased by <shield>{{ calc_shield_per_nearby_champion }}</shield> per nearby enemy champion and <speed>{{ movespeed }} Move Speed</speed>, increased to <speed>{{ movespeedtowardsenemies }}</speed> when moving towards enemy champions.<br /><br />When the effect ends, the <shield>Shield</shield> is broken, or upon <recast>Recast</recast> the area around her detonates, dealing <magicDamage>{{ damage }} magic damage</magicDamage>.<br /><br /><keywordMajor>Dragon Form:</keywordMajor> If the detonation hits an enemy champion Shyvana <healing>restores from {{ calc_heal_min }} to {{ calc_heal_max }} Health</healing> based on her missing Health.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Shyvana wraps herself in flames for {{ duration }} seconds, gaining <shield>{{ calc_shield }} Shield</shield>, increased by <shield>{{ calc_shield_per_nearby_champion }}</shield> per nearby enemy champion and <speed>{{ movespeed }} Move Speed</speed>, increased to <speed>{{ movespeedtowardsenemies }}</speed> when moving towards enemy champions.<br /><br />When the effect ends, the <shield>Shield</shield> is broken, or upon <recast>Recast</recast> the area around her detonates, dealing <magicDamage>{{ damage }} magic damage</magicDamage>.<br /><br /><keywordMajor>Dragon Form:</keywordMajor> If the detonation hits an enemy champion Shyvana heals for <healing> {{ calc_base_heal }} + {{ calc_missing_health_heal }} Missing Health</healing>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": "No Cost",
       "leveltip": {
@@ -260,7 +260,7 @@
       "rangeBurn": "350",
       "datavalues": {},
       "description": "Shyvana gains a shield, movement speed, and after a short delay, the area around her detonates.  While in Dragon Form, the explosion will heal her if it strikes an enemy champion.",
-      "cooldownBurn": "14/13.5/13/12.5/12"
+      "cooldownBurn": "13/12.25/11.5/10.75/10"
     },
     {
       "id": "ShyvanaE",
@@ -268,35 +268,35 @@
       "vars": [],
       "image": {
         "full": "ShyvanaE.png",
-        "sprite": "spell12.png",
+        "sprite": "spell13.png",
         "group": "spell",
         "x": 192,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Shyvana launches a fireball at the target location dealing <magicDamage>{{ damage }} magic damage</magicDamage> and <status>Slowing by {{ calc_slow }} for {{ slowduration }} seconds</status>. It explodes upon striking an enemy or reaching its terminus.<br /><br /><keywordMajor>Dragon Form:</keywordMajor> Shyvana's fireball is larger and pierces through enemies. Upon striking a champion, large monster, or reaching its terminus it triggers a pulse of fire that deals <magicDamage>{{ calc_dragon_damage }} magic damage</magicDamage> and <status>Slows by {{ calc_slow_dragon }} for {{ slowduration }} seconds</status>. The fireball leaves behind a trail for {{ groundlingerduration }} seconds that deals <magicDamage>{{ damagepersecond }} magic damage per second</magicDamage>. {{ spellmodifierdescriptionappend }}",
+      "tooltip": "Shyvana launches a fireball at the target location dealing <magicDamage>{{ damage }} + {{ calc_max_health_damage }} Max health magic damage</magicDamage> and <status>Slowing by {{ calc_slow }} for {{ slowduration }} seconds</status>. It explodes upon striking an enemy or reaching its terminus.<br /><br /><keywordMajor>Dragon Form:</keywordMajor> Shyvana's fireball is larger and pierces through enemies. Upon striking a champion, large monster, or reaching its terminus it triggers a pulse of fire that deals <magicDamage>{{ calc_dragon_damage }}  + {{ calc_max_health_dragon_damage }} Max Health magic damage</magicDamage> and <status>Slows by {{ calc_slow_dragon }} for {{ slowduration }} seconds</status>. The fireball leaves behind a trail for {{ groundlingerduration }} seconds that deals <magicDamage>{{ damagepersecond }} magic damage per second</magicDamage>. {{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": "No Cost",
       "leveltip": {
         "label": [
           "Cooldown",
           "Damage",
-          "Slow"
+          "Total AP Ratio"
         ],
         "effect": [
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ basedamage }} -> {{ basedamageNL }}",
-          "{{ slowamount*100.000000 }}% -> {{ slowamountnl*100.000000 }}%"
+          "{{ damageapratio*100.000000 }}% -> {{ damageaprationl*100.000000 }}%"
         ]
       },
       "resource": "No Cost",
       "rangeBurn": "800",
       "datavalues": {},
       "description": "Shyvana launches a fireball that explodes upon striking a large target and slows them. In Dragon Form, it passes through and explodes upon striking large enemies, leaving behind a trail of fire.",
-      "cooldownBurn": "12/11.5/11/10.5/10"
+      "cooldownBurn": "12/11/10/9/8"
     },
     {
       "id": "ShyvanaR",
@@ -304,10 +304,10 @@
       "vars": [],
       "image": {
         "full": "ShyvanaR.png",
-        "sprite": "spell12.png",
+        "sprite": "spell13.png",
         "group": "spell",
         "x": 240,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -342,10 +342,10 @@
   "passive_en": {
     "name": "Scalemail",
     "image": {
-      "full": "Shyvana_Passive.Shyvana_Rework.png",
+      "full": "Shyvana_Passive.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 48,
+      "x": 96,
       "y": 0,
       "w": 48,
       "h": 48

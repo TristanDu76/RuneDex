@@ -3,7 +3,7 @@
   "key": "904",
   "name": "Zaahen",
   "title": "Incorruptible",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Dieu déchu maniant à la fois le divin et l'impie, Zaahen traque ses frères et sœurs Darkin tout en résistant à la corruption qui menace de le consumer. Autrefois scellé volontairement dans son glaive pour ne pas succomber à la folie, il est désormais libre, guidé par la noblesse de son cœur et la violence de ses actes. Zaahen mène une lutte sans fin au plus profond de lui, mais tant qu'il résistera, il s'élèvera face à tous ceux qui cherchent à réduire Runeterra en cendres.",
   "tags": [
     "Fighter",
@@ -14,7 +14,7 @@
     "full": "Zaahen.png",
     "sprite": "champion5.png",
     "group": "champion",
-    "x": 192,
+    "x": 240,
     "y": 48,
     "w": 48,
     "h": 48
@@ -26,10 +26,10 @@
       "vars": [],
       "image": {
         "full": "ZaahenQ.png",
-        "sprite": "spell16.png",
+        "sprite": "spell17.png",
         "group": "spell",
         "x": 192,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -66,10 +66,10 @@
       "vars": [],
       "image": {
         "full": "ZaahenW.png",
-        "sprite": "spell16.png",
+        "sprite": "spell17.png",
         "group": "spell",
         "x": 240,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -94,7 +94,7 @@
       "rangeBurn": "850",
       "datavalues": {},
       "description": "Zaahen donne un coup d'estoc dans une direction, infligeant des dégâts aux ennemis touchés et les attirant vers lui.",
-      "cooldownBurn": "16/15/14/13/12"
+      "cooldownBurn": "14/13.5/13/12.5/12"
     },
     {
       "id": "ZaahenE",
@@ -102,10 +102,10 @@
       "vars": [],
       "image": {
         "full": "ZaahenE.png",
-        "sprite": "spell16.png",
+        "sprite": "spell17.png",
         "group": "spell",
         "x": 288,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -140,10 +140,10 @@
       "vars": [],
       "image": {
         "full": "ZaahenR.png",
-        "sprite": "spell16.png",
+        "sprite": "spell17.png",
         "group": "spell",
         "x": 336,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -174,10 +174,10 @@
   "passive": {
     "name": "Guerrier immortel",
     "image": {
-      "full": "ZaahenP.Zaahen.png",
+      "full": "ZaahenP.png",
       "sprite": "passive5.png",
       "group": "passive",
-      "x": 192,
+      "x": 240,
       "y": 48,
       "w": 48,
       "h": 48
@@ -204,10 +204,10 @@
       "vars": [],
       "image": {
         "full": "ZaahenQ.png",
-        "sprite": "spell16.png",
+        "sprite": "spell17.png",
         "group": "spell",
         "x": 192,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -244,10 +244,10 @@
       "vars": [],
       "image": {
         "full": "ZaahenW.png",
-        "sprite": "spell16.png",
+        "sprite": "spell17.png",
         "group": "spell",
         "x": 240,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -272,7 +272,7 @@
       "rangeBurn": "850",
       "datavalues": {},
       "description": "Zaahen stabs in a direction, damaging enemies hit, then pulls them toward him.",
-      "cooldownBurn": "16/15/14/13/12"
+      "cooldownBurn": "14/13.5/13/12.5/12"
     },
     {
       "id": "ZaahenE",
@@ -280,10 +280,10 @@
       "vars": [],
       "image": {
         "full": "ZaahenE.png",
-        "sprite": "spell16.png",
+        "sprite": "spell17.png",
         "group": "spell",
         "x": 288,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -318,10 +318,10 @@
       "vars": [],
       "image": {
         "full": "ZaahenR.png",
-        "sprite": "spell16.png",
+        "sprite": "spell17.png",
         "group": "spell",
         "x": 336,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -352,10 +352,10 @@
   "passive_en": {
     "name": "Cultivation of War",
     "image": {
-      "full": "ZaahenP.Zaahen.png",
+      "full": "ZaahenP.png",
       "sprite": "passive5.png",
       "group": "passive",
-      "x": 192,
+      "x": 240,
       "y": 48,
       "w": 48,
       "h": 48
@@ -394,5 +394,14 @@
       "chromas": true
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Aatrox",
+    "Jarvan IV",
+    "Kennen",
+    "LeBlanc",
+    "Naafiri",
+    "Varus",
+    "Xin Zhao",
+    "Yunara"
+  ]
 }

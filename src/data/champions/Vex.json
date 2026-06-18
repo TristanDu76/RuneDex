@@ -3,7 +3,7 @@
   "key": "711",
   "name": "Vex",
   "title": "Ombre du désespoir",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Au cœur des terribles Îles obscures et de leur brume spectrale, une yordle solitaire se complaît dans son malheur. Vex se protège de la gaieté, de l'excitation et des gens « normaux » dont le monde extérieur regorge grâce à une dose inépuisable d'apitoiement et à une ombre puissante. Même si l'ambition lui fait défaut, on peut compter sur elle pour ternir le bonheur des autres et éloigner tous ceux qui voudraient l'approcher avec sa morosité magique.",
   "tags": [
     "Mage"
@@ -11,10 +11,10 @@
   "partype": "Mana",
   "image": {
     "full": "Vex.png",
-    "sprite": "champion4.png",
+    "sprite": "champion5.png",
     "group": "champion",
-    "x": 432,
-    "y": 96,
+    "x": 0,
+    "y": 0,
     "w": 48,
     "h": 48
   },
@@ -28,7 +28,7 @@
         "sprite": "spell15.png",
         "group": "spell",
         "x": 192,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -64,7 +64,7 @@
         "sprite": "spell15.png",
         "group": "spell",
         "x": 240,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -100,7 +100,7 @@
         "sprite": "spell15.png",
         "group": "spell",
         "x": 288,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -125,7 +125,7 @@
       "rangeBurn": "800",
       "datavalues": {},
       "description": "Vex invoque une zone qui blesse et ralentit les ennemis en plus d'appliquer Désespoir sur eux.",
-      "cooldownBurn": "13"
+      "cooldownBurn": "12"
     },
     {
       "id": "VexR",
@@ -136,7 +136,7 @@
         "sprite": "spell15.png",
         "group": "spell",
         "x": 336,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -170,10 +170,10 @@
     "name": "Malheur et Désespoir",
     "image": {
       "full": "Icons_Vex_Passive.png",
-      "sprite": "passive4.png",
+      "sprite": "passive5.png",
       "group": "passive",
-      "x": 432,
-      "y": 96,
+      "x": 0,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -200,7 +200,7 @@
         "sprite": "spell15.png",
         "group": "spell",
         "x": 192,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -236,7 +236,7 @@
         "sprite": "spell15.png",
         "group": "spell",
         "x": 240,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -272,7 +272,7 @@
         "sprite": "spell15.png",
         "group": "spell",
         "x": 288,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -297,7 +297,7 @@
       "rangeBurn": "800",
       "datavalues": {},
       "description": "Summon a damaging and slowing zone that applies Gloom to enemies.",
-      "cooldownBurn": "13"
+      "cooldownBurn": "12"
     },
     {
       "id": "VexR",
@@ -308,7 +308,7 @@
         "sprite": "spell15.png",
         "group": "spell",
         "x": 336,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -342,10 +342,10 @@
     "name": "Doom 'n Gloom",
     "image": {
       "full": "Icons_Vex_Passive.png",
-      "sprite": "passive4.png",
+      "sprite": "passive5.png",
       "group": "passive",
-      "x": 432,
-      "y": 96,
+      "x": 0,
+      "y": 0,
       "w": 48,
       "h": 48
     },

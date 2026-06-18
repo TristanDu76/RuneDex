@@ -3,7 +3,7 @@
   "key": "14",
   "name": "Sion",
   "title": "Colosse mort-vivant",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Guerrier sanguinaire d'une époque révolue, Sion était célébré comme un héros à Noxus, pour avoir étouffé un roi de Demacia de ses mains nues. Il était l'objet d'une telle dévotion qu'on lui refusa le repos éternel, en le ramenant à la vie pour continuer à servir son empire. Il massacre sans distinction alliés comme ennemis sur son chemin, prouvant à cette occasion qu'il n'a plus rien d'humain. Son armure rivetée à même la chair, Sion charge sans relâche au combat, luttant entre deux coups de sa puissante hache pour tenter de se remémorer qui il était.",
   "tags": [
     "Tank",
@@ -14,7 +14,7 @@
     "full": "Sion.png",
     "sprite": "champion4.png",
     "group": "champion",
-    "x": 144,
+    "x": 192,
     "y": 0,
     "w": 48,
     "h": 48
@@ -26,10 +26,10 @@
       "vars": [],
       "image": {
         "full": "SionQ.png",
-        "sprite": "spell12.png",
+        "sprite": "spell13.png",
         "group": "spell",
         "x": 0,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -66,17 +66,17 @@
       "vars": [],
       "image": {
         "full": "SionW.png",
-        "sprite": "spell12.png",
+        "sprite": "spell13.png",
         "group": "spell",
         "x": 48,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive</spellPassive> : Sion gagne <scaleHealth>{{ hpperkill }} PV max</scaleHealth> chaque fois qu'il tue une unité, ou <scaleHealth>{{ hpperchampkill }}</scaleHealth> chaque fois qu'il participe à l'élimination d'un champion, d'un grand sbire ou d'un grand monstre.<br /><br /><spellActive>Active</spellActive> : Sion s'octroie un <shield>bouclier de {{ totalshield }} PV</shield> pendant 6 sec. Après {{ e7 }} sec, si le bouclier est toujours actif, Sion peut <recast>réactiver</recast> cette compétence pour faire exploser le bouclier et infliger <magicDamage>{{ totaldamage }} plus {{ e4 }}% des PV max en dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
-      "costBurn": "65/70/75/80/85",
+      "tooltip": "<spellPassive>Passive</spellPassive> : Sion gagne <scaleHealth>{{ hpperkill }} PV max</scaleHealth> chaque fois qu'il tue une unité, ou <scaleHealth>{{ hpperchampkill }}</scaleHealth> chaque fois qu'il participe à l'élimination d'un champion, d'un grand sbire ou d'un grand monstre.<br /><br /><spellActive>Active</spellActive> : Sion s'octroie un <shield>bouclier de {{ totalshield }} PV</shield> pendant 6 sec. Après {{ detonaterecastcooldown }} sec, si le bouclier est toujours actif, Sion peut <recast>réactiver</recast> cette compétence pour faire exploser le bouclier et infliger des dégâts magiques équivalents à <magicDamage>{{ totaldamage }} plus {{ maxhpdamageratio }}% des PV max</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "75/80/85/90/95",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
@@ -87,8 +87,8 @@
           "Délai de récupération"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
-          "{{ e2 }} -> {{ e2NL }}",
+          "{{ baseshield }} -> {{ baseshieldNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ shieldpercenthealthtooltip*100.000000 }}% -> {{ shieldpercenthealthtooltipnl*100.000000 }}%",
           "{{ cost }} -> {{ costNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
@@ -106,10 +106,10 @@
       "vars": [],
       "image": {
         "full": "SionE.png",
-        "sprite": "spell12.png",
+        "sprite": "spell13.png",
         "group": "spell",
         "x": 96,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -126,7 +126,7 @@
           "Coût en @AbilityResourceName@"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ slowamount }}% -> {{ slowamountNL }}%",
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ cost }} -> {{ costNL }}"
@@ -144,10 +144,10 @@
       "vars": [],
       "image": {
         "full": "SionR.png",
-        "sprite": "spell12.png",
+        "sprite": "spell13.png",
         "group": "spell",
         "x": 144,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -183,7 +183,7 @@
       "full": "Sion_Passive1.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 144,
+      "x": 192,
       "y": 0,
       "w": 48,
       "h": 48
@@ -209,10 +209,10 @@
       "vars": [],
       "image": {
         "full": "SionQ.png",
-        "sprite": "spell12.png",
+        "sprite": "spell13.png",
         "group": "spell",
         "x": 0,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -249,17 +249,17 @@
       "vars": [],
       "image": {
         "full": "SionW.png",
-        "sprite": "spell12.png",
+        "sprite": "spell13.png",
         "group": "spell",
         "x": 48,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive</spellPassive>: Sion gains <scaleHealth>{{ hpperkill }} max Health</scaleHealth> when he kills a unit, or <scaleHealth>{{ hpperchampkill }}</scaleHealth> for champion takedowns, large minions and large monsters.<br /><br /><spellActive>Active</spellActive>: Sion gains <shield>{{ totalshield }} Shield</shield> for 6 seconds. After {{ e7 }} seconds if the shield still holds, Sion can <recast>Recast</recast> to detonate the shield to deal <magicDamage>{{ totaldamage }} plus {{ e4 }}% max Health magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
-      "costBurn": "65/70/75/80/85",
+      "tooltip": "<spellPassive>Passive</spellPassive>: Sion gains <scaleHealth>{{ hpperkill }} max Health</scaleHealth> when he kills a unit, or <scaleHealth>{{ hpperchampkill }}</scaleHealth> for champion takedowns, large minions and large monsters.<br /><br /><spellActive>Active</spellActive>: Sion gains <shield>{{ totalshield }} Shield</shield> for 6 seconds. After {{ detonaterecastcooldown }} seconds if the shield still holds, Sion can <recast>Recast</recast> to detonate the shield to deal <magicDamage>{{ totaldamage }} plus {{ maxhpdamageratio }}% max Health magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "75/80/85/90/95",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
@@ -270,8 +270,8 @@
           "Cooldown"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
-          "{{ e2 }} -> {{ e2NL }}",
+          "{{ baseshield }} -> {{ baseshieldNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ shieldpercenthealthtooltip*100.000000 }}% -> {{ shieldpercenthealthtooltipnl*100.000000 }}%",
           "{{ cost }} -> {{ costNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
@@ -289,10 +289,10 @@
       "vars": [],
       "image": {
         "full": "SionE.png",
-        "sprite": "spell12.png",
+        "sprite": "spell13.png",
         "group": "spell",
         "x": 96,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -309,7 +309,7 @@
           "@AbilityResourceName@ Cost"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ slowamount }}% -> {{ slowamountNL }}%",
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ cost }} -> {{ costNL }}"
@@ -327,10 +327,10 @@
       "vars": [],
       "image": {
         "full": "SionR.png",
-        "sprite": "spell12.png",
+        "sprite": "spell13.png",
         "group": "spell",
         "x": 144,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -366,7 +366,7 @@
       "full": "Sion_Passive1.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 144,
+      "x": 192,
       "y": 0,
       "w": 48,
       "h": 48
@@ -443,6 +443,12 @@
       "num": 49,
       "name": "Grand Reckoning Sion",
       "chromas": false
+    },
+    {
+      "id": "14050",
+      "num": 50,
+      "name": "Pizza Chef Sion",
+      "chromas": true
     }
   ],
   "skins": [
@@ -511,6 +517,12 @@
       "num": 49,
       "name": "Sion arénaire",
       "chromas": false
+    },
+    {
+      "id": "14050",
+      "num": 50,
+      "name": "Sion pizzaiolo",
+      "chromas": true
     }
   ],
   "related_characters": [

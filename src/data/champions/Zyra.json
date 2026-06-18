@@ -3,7 +3,7 @@
   "key": "143",
   "name": "Zyra",
   "title": "Dame aux ronces",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Née au cours d'une ancienne catastrophe magique, Zyra est la colère de la nature incarnée : mélange de plante et d'humain, faisant émerger de nouvelles pousses à chaque pas. Elle considère les nombreux mortels de Valoran comme de simples proies pour sa progéniture végétale, et les éliminer avec ses gerbes d'épines ne lui pose aucun problème. Bien que nul ne connaisse ses vrais objectifs, Zyra erre de par le monde, suivant son instinct qui est de coloniser toujours plus de terres et d'en exterminer toutes les autres formes de vie.",
   "tags": [
     "Mage",
@@ -14,7 +14,7 @@
     "full": "Zyra.png",
     "sprite": "champion5.png",
     "group": "champion",
-    "x": 48,
+    "x": 96,
     "y": 96,
     "w": 48,
     "h": 48
@@ -26,10 +26,10 @@
       "vars": [],
       "image": {
         "full": "ZyraQ.png",
-        "sprite": "spell17.png",
+        "sprite": "spell18.png",
         "group": "spell",
         "x": 96,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -45,7 +45,7 @@
         ],
         "effect": [
           "{{ cooldown }} -> {{ cooldownNL }}",
-          "{{ e1 }} -> {{ e1NL }}"
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -60,16 +60,16 @@
       "vars": [],
       "image": {
         "full": "ZyraW.png",
-        "sprite": "spell17.png",
+        "sprite": "spell18.png",
         "group": "spell",
         "x": 144,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "2",
       "maxrank": 5,
-      "tooltip": "Zyra plante une <keywordMajor>graine</keywordMajor> qui dure {{ e6 }} sec. Quand un champion ennemi marche sur une <keywordMajor>graine</keywordMajor>, celle-ci est détruite et octroie pendant {{ e3 }} sec une <keywordStealth>vision pure</keywordStealth> de ce champion.<br /><br />Cette compétence a 2 charges et un délai de rechargement de {{ ammorechargetime }} sec. Tuer un sbire ennemi ou un monstre réduit le délai de rechargement de {{ e1 }}%. Participer à l'élimination d'un champion réduit le délai de rechargement de {{ e2 }}% à la place.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Zyra plante une <keywordMajor>graine</keywordMajor> qui dure {{ seedduration }} sec. Quand un champion ennemi marche sur une <keywordMajor>graine</keywordMajor>, celle-ci est détruite et octroie pendant {{ visiongranted }} sec une <keywordStealth>vision pure</keywordStealth> de ce champion.<br /><br />Cette compétence a 2 charges avec un temps de recharge de {{ ammorechargetime }} sec. Tuer un sbire ennemi ou un monstre réduit le délai de rechargement de {{ killammorefundminion*100 }}%. Participer à l'élimination d'un champion réduit le délai de rechargement de {{ killammorefundchamp*100 }}% à la place.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": "1 graine",
       "leveltip": {
@@ -92,16 +92,16 @@
       "vars": [],
       "image": {
         "full": "ZyraE.png",
-        "sprite": "spell17.png",
+        "sprite": "spell18.png",
         "group": "spell",
         "x": 192,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Zyra lance des racines qui <status>immobilisent</status> les ennemis pendant {{ e5 }} sec et leur infligent <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. <br /><br />Si cette compétence passe près d'une <keywordMajor>graine</keywordMajor>, cette <keywordMajor>graine</keywordMajor> se transforme en Plante flagellante qui inflige <magicDamage>{{ spell.zyrap:plantdamage }} pts de dégâts magiques</magicDamage> et dure {{ spell.zyrap:plantduration }} sec. Les Plantes flagellantes ont une portée de 400 unités de distance et leurs attaques <status>ralentissent</status> les ennemis de {{ e2 }}% pendant {{ e3 }} sec. Les <status>ralentissements</status> de multiples Plantes flagellantes se cumulent jusqu'à {{ maxslowstacks }} fois.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Zyra lance des racines qui <status>immobilisent</status> les ennemis pendant {{ rootduration }} sec et leur infligent <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. <br /><br />Si cette compétence passe près d'une <keywordMajor>graine</keywordMajor>, cette <keywordMajor>graine</keywordMajor> se transforme en Plante flagellante qui inflige <magicDamage>{{ spell.zyrap:plantdamage }} pts de dégâts magiques</magicDamage> et dure {{ spell.zyrap:plantduration }} sec. Les Plantes flagellantes ont une portée de 400 unités de distance et leurs attaques <status>ralentissent</status> les ennemis de {{ slowamountplantattack }}% pendant {{ slowdurationplantattack }} sec. Les <status>ralentissements</status> de multiples Plantes flagellantes se cumulent jusqu'à {{ maxslowstacks }} fois.{{ spellmodifierdescriptionappend }}",
       "costBurn": "70/75/80/85/90",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -128,16 +128,16 @@
       "vars": [],
       "image": {
         "full": "ZyraR.png",
-        "sprite": "spell17.png",
+        "sprite": "spell18.png",
         "group": "spell",
         "x": 240,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "Zyra invoque la fureur de la nature, créant des ronces malfaisantes qui infligent <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. Au bout de 2 sec, les ronces <status>projettent dans les airs</status> pendant {{ e1 }} sec.<br /><br />Les plantes de Zyra dans les ronces deviennent enragées, ce qui réinitialise leur durée, leur octroie <healing>+{{ e2 }}% de PV</healing> et permet à leurs attaques d'infliger {{ plantdamagebonus }}% de dégâts supplémentaires.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Zyra invoque la fureur de la nature, créant des ronces malfaisantes qui infligent <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. Après 2 sec, les ronces jaillissent vers le haut, <status>projetant dans les airs</status> les ennemis pendant {{ knockupduration }} sec.<br /><br />Les plantes de Zyra dans les ronces deviennent enragées, ce qui réinitialise leur durée, leur octroie <healing>{{ enragedbonushealthpercent*100 }}% de PV</healing> et permet à leurs attaques d'infliger {{ plantdamagebonus }}% de dégâts bonus.{{ spellmodifierdescriptionappend }}",
       "costBurn": "100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -147,7 +147,7 @@
         ],
         "effect": [
           "{{ cooldown }} -> {{ cooldownNL }}",
-          "{{ e3 }} -> {{ e3NL }}"
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -163,7 +163,7 @@
       "full": "ZyraP.png",
       "sprite": "passive5.png",
       "group": "passive",
-      "x": 48,
+      "x": 96,
       "y": 96,
       "w": 48,
       "h": 48
@@ -188,10 +188,10 @@
       "vars": [],
       "image": {
         "full": "ZyraQ.png",
-        "sprite": "spell17.png",
+        "sprite": "spell18.png",
         "group": "spell",
         "x": 96,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -207,7 +207,7 @@
         ],
         "effect": [
           "{{ cooldown }} -> {{ cooldownNL }}",
-          "{{ e1 }} -> {{ e1NL }}"
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -222,16 +222,16 @@
       "vars": [],
       "image": {
         "full": "ZyraW.png",
-        "sprite": "spell17.png",
+        "sprite": "spell18.png",
         "group": "spell",
         "x": 144,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "2",
       "maxrank": 5,
-      "tooltip": "Zyra plants a <keywordMajor>Seed</keywordMajor> that lasts {{ e6 }} seconds. These <keywordMajor>Seeds</keywordMajor> grant <keywordStealth>True Sight</keywordStealth> of enemy champions that step on them for {{ e3 }} seconds, but are still destroyed.<br /><br />This Ability has 2 charges with a {{ ammorechargetime }} second recharge time. Killing an enemy minion or monster reduces the recharge time by {{ e1 }}%. Champion takedowns reduce the recharge time by {{ e2 }}% instead.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Zyra plants a <keywordMajor>Seed</keywordMajor> that lasts {{ seedduration }} seconds. These <keywordMajor>Seeds</keywordMajor> grant <keywordStealth>True Sight</keywordStealth> of enemy champions that step on them for {{ visiongranted }} seconds, but are still destroyed.<br /><br />This Ability has 2 charges with a {{ ammorechargetime }} second recharge time. Killing an enemy minion or monster reduces the recharge time by {{ killammorefundminion*100 }}%. Champion takedowns reduce the recharge time by {{ killammorefundchamp*100 }}% instead.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": "1 Seed",
       "leveltip": {
@@ -254,16 +254,16 @@
       "vars": [],
       "image": {
         "full": "ZyraE.png",
-        "sprite": "spell17.png",
+        "sprite": "spell18.png",
         "group": "spell",
         "x": 192,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Zyra sends vines forward, <status>Rooting</status> for {{ e5 }} second(s) and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>. <br /><br />If this Ability passes near a <keywordMajor>Seed</keywordMajor>, the <keywordMajor>Seed</keywordMajor> grows into a Vine Lasher that deals <magicDamage>{{ spell.zyrap:plantdamage }} magic damage</magicDamage> and lasts {{ spell.zyrap:plantduration }} seconds. Vine Lashers have 400 range, and their Attacks <status>Slow</status> by {{ e2 }}% for {{ e3 }} seconds. The <status>Slow</status> from multiple Vine Lashers stacks up to {{ maxslowstacks }} times.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Zyra sends vines forward, <status>Rooting</status> for {{ rootduration }} second(s) and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>. <br /><br />If this Ability passes near a <keywordMajor>Seed</keywordMajor>, the <keywordMajor>Seed</keywordMajor> grows into a Vine Lasher that deals <magicDamage>{{ spell.zyrap:plantdamage }} magic damage</magicDamage> and lasts {{ spell.zyrap:plantduration }} seconds. Vine Lashers have 400 range, and their Attacks <status>Slow</status> by {{ slowamountplantattack }}% for {{ slowdurationplantattack }} seconds. The <status>Slow</status> from multiple Vine Lashers stacks up to {{ maxslowstacks }} times.{{ spellmodifierdescriptionappend }}",
       "costBurn": "70/75/80/85/90",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -290,16 +290,16 @@
       "vars": [],
       "image": {
         "full": "ZyraR.png",
-        "sprite": "spell17.png",
+        "sprite": "spell18.png",
         "group": "spell",
         "x": 240,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "Zyra summons the fury of nature, growing a twisted thicket that deals <magicDamage>{{ totaldamage }} magic damage</magicDamage>. After 2 seconds, the vines snap upwards, <status>Knocking Up</status> for {{ e1 }} second.<br /><br />Zyra's plants within the thicket become enraged, resetting their duration, gaining <healing>{{ e2 }}% Health</healing> and Attacking for {{ plantdamagebonus }}% bonus damage.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Zyra summons the fury of nature, growing a twisted thicket that deals <magicDamage>{{ totaldamage }} magic damage</magicDamage>. After 2 seconds, the vines snap upwards, <status>Knocking Up</status> for {{ knockupduration }} second.<br /><br />Zyra's plants within the thicket become enraged, resetting their duration, gaining <healing>{{ enragedbonushealthpercent*100 }}% Health</healing> and Attacking for {{ plantdamagebonus }}% bonus damage.{{ spellmodifierdescriptionappend }}",
       "costBurn": "100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -309,7 +309,7 @@
         ],
         "effect": [
           "{{ cooldown }} -> {{ cooldownNL }}",
-          "{{ e3 }} -> {{ e3NL }}"
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -325,7 +325,7 @@
       "full": "ZyraP.png",
       "sprite": "passive5.png",
       "group": "passive",
-      "x": 48,
+      "x": 96,
       "y": 96,
       "w": 48,
       "h": 48
@@ -496,5 +496,9 @@
       "chromas": true
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Ivern",
+    "Nidalee",
+    "Qiyana"
+  ]
 }

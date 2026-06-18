@@ -3,7 +3,7 @@
   "key": "134",
   "name": "Syndra",
   "title": "Souveraine obscure",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Syndra est une effrayante magicienne originaire d'Ionia, aux pouvoirs impressionnants. Enfant, elle perturba les anciens de son village avec sa magie sauvage et incontrôlée. Elle fut confiée à un maître dans l'espoir qu'elle apprendrait à se contrôler, mais elle finit par découvrir que son prétendu mentor limitait ses capacités. Créant des sphères d'énergie noire avec ses sentiments de douleur et de trahison, Syndra jura de détruire quiconque tenterait de la contrôler.",
   "tags": [
     "Mage"
@@ -13,7 +13,7 @@
     "full": "Syndra.png",
     "sprite": "champion4.png",
     "group": "champion",
-    "x": 48,
+    "x": 96,
     "y": 48,
     "w": 48,
     "h": 48
@@ -25,10 +25,10 @@
       "vars": [],
       "image": {
         "full": "SyndraQ.png",
-        "sprite": "spell13.png",
+        "sprite": "spell14.png",
         "group": "spell",
         "x": 96,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -59,10 +59,10 @@
       "vars": [],
       "image": {
         "full": "SyndraW.png",
-        "sprite": "spell13.png",
+        "sprite": "spell14.png",
         "group": "spell",
         "x": 144,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -95,10 +95,10 @@
       "vars": [],
       "image": {
         "full": "SyndraE.png",
-        "sprite": "spell13.png",
+        "sprite": "spell14.png",
         "group": "spell",
         "x": 192,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -127,10 +127,10 @@
       "vars": [],
       "image": {
         "full": "SyndraR.png",
-        "sprite": "spell13.png",
+        "sprite": "spell14.png",
         "group": "spell",
         "x": 240,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -164,7 +164,7 @@
       "full": "SyndraPassive.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 48,
+      "x": 96,
       "y": 48,
       "w": 48,
       "h": 48
@@ -189,10 +189,10 @@
       "vars": [],
       "image": {
         "full": "SyndraQ.png",
-        "sprite": "spell13.png",
+        "sprite": "spell14.png",
         "group": "spell",
         "x": 96,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -223,10 +223,10 @@
       "vars": [],
       "image": {
         "full": "SyndraW.png",
-        "sprite": "spell13.png",
+        "sprite": "spell14.png",
         "group": "spell",
         "x": 144,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -259,10 +259,10 @@
       "vars": [],
       "image": {
         "full": "SyndraE.png",
-        "sprite": "spell13.png",
+        "sprite": "spell14.png",
         "group": "spell",
         "x": 192,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -291,10 +291,10 @@
       "vars": [],
       "image": {
         "full": "SyndraR.png",
-        "sprite": "spell13.png",
+        "sprite": "spell14.png",
         "group": "spell",
         "x": 240,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -328,7 +328,7 @@
       "full": "SyndraPassive.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 48,
+      "x": 96,
       "y": 48,
       "w": 48,
       "h": 48
@@ -511,5 +511,9 @@
       "chromas": true
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Irelia",
+    "Karma",
+    "LeBlanc"
+  ]
 }

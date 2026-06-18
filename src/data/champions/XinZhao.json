@@ -3,7 +3,7 @@
   "key": "5",
   "name": "Xin Zhao",
   "title": "Sénéchal de Demacia",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Xin Zhao est un guerrier résolu qui sert fidèlement la dynastie régnante des Lightshield. Naguère condamné à se battre dans les arènes de combat de Noxus, il survécut à d'innombrables rencontres de gladiateurs. Mais après avoir été libéré par les forces de Demacia, il jura allégeance à ses braves libérateurs. Armé de sa lance à trois pointes, Xin Zhao combat désormais pour son royaume, défiant ses ennemis avec audace, quelles que soient ses chances de succès.",
   "tags": [
     "Fighter",
@@ -14,7 +14,7 @@
     "full": "XinZhao.png",
     "sprite": "champion5.png",
     "group": "champion",
-    "x": 384,
+    "x": 432,
     "y": 0,
     "w": 48,
     "h": 48
@@ -29,22 +29,22 @@
         "sprite": "spell16.png",
         "group": "spell",
         "x": 0,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Les 3 prochaines attaques de Xin Zhao infligent <physicalDamage>{{ bonusdamage }} pts de dégâts physiques</physicalDamage> supplémentaires et réduisent de 1 sec le délai de récupération de ses autres compétences. La troisième attaque <status>projette dans les airs</status> pendant {{ e2 }} sec.<br />{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Les 3 prochaines attaques de Xin Zhao infligent <physicalDamage>{{ bonusdamage }} pts de dégâts physiques</physicalDamage> bonus et réduisent de 1 sec le délai de récupération de ses autres compétences. La troisième attaque <status>projette dans les airs</status> pendant {{ knockupduration }} sec.<br />{{ spellmodifierdescriptionappend }}",
       "costBurn": "30",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
-          "Dégâts bonus :",
+          "Dégâts bonus",
           "Délai de récupération"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -63,26 +63,24 @@
         "sprite": "spell16.png",
         "group": "spell",
         "x": 48,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Xin Zhao donne un coup de taille qui inflige <physicalDamage>{{ slashdamage }} pts de dégâts physiques</physicalDamage>, puis un coup d'estoc qui inflige <physicalDamage>{{ thrustdamage }}</physicalDamage> pts de dégâts physiques. Les ennemis touchés par le coup d'estoc sont <status>ralentis</status> de {{ e6 }}% pendant {{ e7 }} sec.<br /><br />Les champions et les grands monstres touchés par le coup d'estoc sont marqués comme <keywordMajor>défiés</keywordMajor> pendant {{ markduration }} sec et sont révélés (sauf s'ils sont <keywordStealth>furtifs</keywordStealth>).{{ spellmodifierdescriptionappend }}",
-      "costBurn": "60/55/50/45/40",
+      "tooltip": "Xin Zhao donne un coup de taille qui inflige <physicalDamage>{{ slashdamage }} pts de dégâts physiques</physicalDamage>, puis un coup d'estoc qui inflige <physicalDamage>{{ thrustdamage }}</physicalDamage> pts de dégâts physiques. Les ennemis touchés par le coup d'estoc sont <status>ralentis</status> de {{ e6 }}% pendant {{ totalslowduration }} sec.<br /><br />Les champions et les grands monstres touchés par le coup d'estoc sont marqués comme <keywordMajor>défiés</keywordMajor> pendant {{ markduration }} sec et sont révélés (sauf s'ils sont <keywordStealth>furtifs</keywordStealth>).{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Dégâts de taille",
           "Dégâts d'estoc",
-          "Coût en @AbilityResourceName@",
           "Délai de récupération"
         ],
         "effect": [
           "{{ slashbasedamage }} -> {{ slashbasedamageNL }}",
           "{{ thrustbasedamage }} -> {{ thrustbasedamageNL }}",
-          "{{ cost }} -> {{ costNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -101,14 +99,14 @@
         "sprite": "spell16.png",
         "group": "spell",
         "x": 96,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Xin Zhao charge un ennemi, infligeant <magicDamage>{{ chargedamage }} pts de dégâts magiques</magicDamage> aux ennemis proches et les <status>ralentissant</status> de {{ baseslowamount }}% pendant {{ e6 }} sec.<br /><br />Xin Zhao gagne également <attackSpeed>+{{ e3 }}% de vitesse d'attaque</attackSpeed> pendant {{ e4 }} sec.<br /><br />La portée de cette compétence est augmentée contre les ennemis <keywordMajor>défiés</keywordMajor>. <br />{{ spellmodifierdescriptionappend }}",
-      "costBurn": "50",
+      "tooltip": "Xin Zhao charge un ennemi, infligeant <magicDamage>{{ chargedamage }} pts de dégâts magiques</magicDamage> aux ennemis proches et les <status>ralentissant</status> de {{ slowamount }}% pendant {{ slowduration }} sec.<br /><br />Xin Zhao gagne <attackSpeed>{{ f1 }}% de vitesse d'attaque</attackSpeed> (%i:scaleAS%%i:scaleAP%) pendant {{ asduration }} sec.<br /><br />La portée de cette compétence est augmentée contre les ennemis <keywordMajor>défiés</keywordMajor>.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
@@ -116,8 +114,8 @@
           "Vitesse d'attaque"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
-          "{{ effect3amount*100.000000 }}% -> {{ effect3amountnl*100.000000 }}%"
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ asmod*100.000000 }}% -> {{ asmodnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -135,7 +133,7 @@
         "sprite": "spell16.png",
         "group": "spell",
         "x": 144,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -164,10 +162,10 @@
   "passive": {
     "name": "Détermination",
     "image": {
-      "full": "XinZhaoReworkP.XinZhaoRework.png",
+      "full": "XinZhaoReworkP.png",
       "sprite": "passive5.png",
       "group": "passive",
-      "x": 384,
+      "x": 432,
       "y": 0,
       "w": 48,
       "h": 48
@@ -196,22 +194,22 @@
         "sprite": "spell16.png",
         "group": "spell",
         "x": 0,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Xin Zhao's next 3 Attacks deal an additional <physicalDamage>{{ bonusdamage }} physical damage</physicalDamage> and reduces his other Ability's Cooldowns by 1 second. The third Attack also <status>Knocks Up</status> for {{ e2 }} seconds.<br />{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Xin Zhao's next 3 Attacks deal an additional <physicalDamage>{{ bonusdamage }} physical damage</physicalDamage> and reduces his other Ability's Cooldowns by 1 second. The third Attack also <status>Knocks Up</status> for {{ knockupduration }} seconds.<br />{{ spellmodifierdescriptionappend }}",
       "costBurn": "30",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
-          "Bonus Damage:",
+          "Bonus Damage",
           "Cooldown"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -230,26 +228,24 @@
         "sprite": "spell16.png",
         "group": "spell",
         "x": 48,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Xin Zhao slashes, dealing <physicalDamage>{{ slashdamage }} physical damage</physicalDamage>, then thrusts, dealing <physicalDamage>{{ thrustdamage }}</physicalDamage>. Enemies hit by the thrust are <status>Slowed</status> by {{ e6 }}% for {{ e7 }} seconds. <br /><br />Champions and Large Monsters hit by the thrust are marked as <keywordMajor>Challenged</keywordMajor> for {{ markduration }} seconds and revealed unless <keywordStealth>Stealthed</keywordStealth>.{{ spellmodifierdescriptionappend }}",
-      "costBurn": "60/55/50/45/40",
+      "tooltip": "Xin Zhao slashes, dealing <physicalDamage>{{ slashdamage }} physical damage</physicalDamage>, then thrusts, dealing <physicalDamage>{{ thrustdamage }}</physicalDamage>. Enemies hit by the thrust are <status>Slowed</status> by {{ e6 }}% for {{ totalslowduration }} seconds. <br /><br />Champions and Large Monsters hit by the thrust are marked as <keywordMajor>Challenged</keywordMajor> for {{ markduration }} seconds and revealed unless <keywordStealth>Stealthed</keywordStealth>.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Slash Damage",
           "Thrust Damage",
-          "@AbilityResourceName@ Cost",
           "Cooldown"
         ],
         "effect": [
           "{{ slashbasedamage }} -> {{ slashbasedamageNL }}",
           "{{ thrustbasedamage }} -> {{ thrustbasedamageNL }}",
-          "{{ cost }} -> {{ costNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -268,14 +264,14 @@
         "sprite": "spell16.png",
         "group": "spell",
         "x": 96,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Xin Zhao charges an enemy, dealing <magicDamage>{{ chargedamage }} magic damage</magicDamage> to nearby enemies and <status>Slowing</status> them by {{ baseslowamount }}% for {{ e6 }} seconds.<br /><br />Xin Zhao also grants himself <attackSpeed>{{ e3 }}% Attack Speed</attackSpeed> for {{ e4 }} seconds.<br /><br />This Ability's range is increased on enemies that are <keywordMajor>Challenged</keywordMajor>. <br />{{ spellmodifierdescriptionappend }}",
-      "costBurn": "50",
+      "tooltip": "Xin Zhao charges an enemy, dealing <magicDamage>{{ chargedamage }} magic damage</magicDamage> to nearby enemies and <status>Slowing</status> them by {{ slowamount }}% for {{ slowduration }} seconds.<br /><br />Xin Zhao grants himself <attackSpeed>{{ f1 }}% (%i:scaleAS%%i:scaleAP%) Attack Speed</attackSpeed> for {{ asduration }} seconds.<br /><br />This Ability's range is increased on enemies that are <keywordMajor>Challenged</keywordMajor>.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "60",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
@@ -283,8 +279,8 @@
           "Attack Speed"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
-          "{{ effect3amount*100.000000 }}% -> {{ effect3amountnl*100.000000 }}%"
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ asmod*100.000000 }}% -> {{ asmodnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -302,7 +298,7 @@
         "sprite": "spell16.png",
         "group": "spell",
         "x": 144,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -331,10 +327,10 @@
   "passive_en": {
     "name": "Determination",
     "image": {
-      "full": "XinZhaoReworkP.XinZhaoRework.png",
+      "full": "XinZhaoReworkP.png",
       "sprite": "passive5.png",
       "group": "passive",
-      "x": 384,
+      "x": 432,
       "y": 0,
       "w": 48,
       "h": 48
@@ -417,6 +413,12 @@
       "num": 47,
       "name": "Trials of Twilight Xin Zhao",
       "chromas": false
+    },
+    {
+      "id": "5053",
+      "num": 53,
+      "name": "T1 Xin Zhao",
+      "chromas": false
     }
   ],
   "skins": [
@@ -491,7 +493,25 @@
       "num": 47,
       "name": "Xin Zhao des Épreuves du crépuscule",
       "chromas": false
+    },
+    {
+      "id": "5053",
+      "num": 53,
+      "name": "T1 Xin Zhao",
+      "chromas": false
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Alistar",
+    "Garen",
+    "Jarvan IV",
+    "Kennen",
+    "LeBlanc",
+    "Lux",
+    "Shen",
+    "Sona",
+    "Talon",
+    "Yunara",
+    "Zaahen"
+  ]
 }

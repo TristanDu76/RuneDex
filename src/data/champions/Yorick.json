@@ -3,7 +3,7 @@
   "key": "83",
   "name": "Yorick",
   "title": "Berger des âmes",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Yorick est le dernier survivant d'un ordre religieux disparu depuis longtemps et son pouvoir sur les morts est à la fois une bénédiction et une malédiction. Prisonnier des Îles obscures, il n'a pour compagnons que les cadavres pourrissants et les spectres hurlants qu'il rassemble. Les actes monstrueux de Yorick trahissent son noble objectif : libérer sa terre natale de la malédiction de la Ruine.",
   "tags": [
     "Fighter",
@@ -14,7 +14,7 @@
     "full": "Yorick.png",
     "sprite": "champion5.png",
     "group": "champion",
-    "x": 48,
+    "x": 96,
     "y": 48,
     "w": 48,
     "h": 48
@@ -26,10 +26,10 @@
       "vars": [],
       "image": {
         "full": "YorickQ.png",
-        "sprite": "spell16.png",
+        "sprite": "spell17.png",
         "group": "spell",
         "x": 96,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -40,7 +40,7 @@
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
-          "Dégâts bonus :",
+          "Dégâts bonus",
           "Soins",
           "Délai de récupération"
         ],
@@ -62,10 +62,10 @@
       "vars": [],
       "image": {
         "full": "YorickW.png",
-        "sprite": "spell16.png",
+        "sprite": "spell17.png",
         "group": "spell",
         "x": 144,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -96,10 +96,10 @@
       "vars": [],
       "image": {
         "full": "YorickE.png",
-        "sprite": "spell16.png",
+        "sprite": "spell17.png",
         "group": "spell",
         "x": 192,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -136,10 +136,10 @@
       "vars": [],
       "image": {
         "full": "YorickR.png",
-        "sprite": "spell16.png",
+        "sprite": "spell17.png",
         "group": "spell",
         "x": 240,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -175,7 +175,7 @@
       "full": "Yorick_P.png",
       "sprite": "passive5.png",
       "group": "passive",
-      "x": 48,
+      "x": 96,
       "y": 48,
       "w": 48,
       "h": 48
@@ -201,10 +201,10 @@
       "vars": [],
       "image": {
         "full": "YorickQ.png",
-        "sprite": "spell16.png",
+        "sprite": "spell17.png",
         "group": "spell",
         "x": 96,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -215,7 +215,7 @@
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
-          "Bonus Damage:",
+          "Bonus Damage",
           "Healing",
           "Cooldown"
         ],
@@ -237,10 +237,10 @@
       "vars": [],
       "image": {
         "full": "YorickW.png",
-        "sprite": "spell16.png",
+        "sprite": "spell17.png",
         "group": "spell",
         "x": 144,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -271,10 +271,10 @@
       "vars": [],
       "image": {
         "full": "YorickE.png",
-        "sprite": "spell16.png",
+        "sprite": "spell17.png",
         "group": "spell",
         "x": 192,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -311,10 +311,10 @@
       "vars": [],
       "image": {
         "full": "YorickR.png",
-        "sprite": "spell16.png",
+        "sprite": "spell17.png",
         "group": "spell",
         "x": 240,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -350,7 +350,7 @@
       "full": "Yorick_P.png",
       "sprite": "passive5.png",
       "group": "passive",
-      "x": 48,
+      "x": 96,
       "y": 48,
       "w": 48,
       "h": 48

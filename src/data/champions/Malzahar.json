@@ -3,7 +3,7 @@
   "key": "90",
   "name": "Malzahar",
   "title": "Prophète du Néant",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Voyant fanatique ayant dédié son existence à l'unification de toute forme de vie, Malzahar croit fermement que le Néant est la voie du salut de Runeterra. Dans les étendues désertiques de Shurima, il suivit les voix qui murmuraient dans son esprit jusqu'à l'antique cité d'Icathia. Au plus profond des ruines, il plongea le regard dans le cœur noir du Néant et reçut de nouveaux pouvoirs, un nouveau but. Malzahar se considère désormais comme un berger : sa tâche est d'unir ses semblables… ou de libérer les créatures du Néant qui vivent sous terre.",
   "tags": [
     "Mage"
@@ -13,7 +13,7 @@
     "full": "Malzahar.png",
     "sprite": "champion2.png",
     "group": "champion",
-    "x": 384,
+    "x": 432,
     "y": 48,
     "w": 48,
     "h": 48
@@ -28,7 +28,7 @@
         "sprite": "spell8.png",
         "group": "spell",
         "x": 0,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -44,8 +44,8 @@
           "Coût en @AbilityResourceName@"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
-          "{{ e2 }} -> {{ e2NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ silenceduration }} -> {{ silencedurationNL }}",
           "{{ cost }} -> {{ costNL }}"
         ]
       },
@@ -64,7 +64,7 @@
         "sprite": "spell8.png",
         "group": "spell",
         "x": 48,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -100,7 +100,7 @@
         "sprite": "spell8.png",
         "group": "spell",
         "x": 96,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -136,7 +136,7 @@
         "sprite": "spell8.png",
         "group": "spell",
         "x": 144,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -170,7 +170,7 @@
       "full": "Malzahar_Passive.png",
       "sprite": "passive2.png",
       "group": "passive",
-      "x": 384,
+      "x": 432,
       "y": 48,
       "w": 48,
       "h": 48
@@ -199,7 +199,7 @@
         "sprite": "spell8.png",
         "group": "spell",
         "x": 0,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -215,8 +215,8 @@
           "@AbilityResourceName@ Cost"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
-          "{{ e2 }} -> {{ e2NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ silenceduration }} -> {{ silencedurationNL }}",
           "{{ cost }} -> {{ costNL }}"
         ]
       },
@@ -235,7 +235,7 @@
         "sprite": "spell8.png",
         "group": "spell",
         "x": 48,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -271,7 +271,7 @@
         "sprite": "spell8.png",
         "group": "spell",
         "x": 96,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -307,7 +307,7 @@
         "sprite": "spell8.png",
         "group": "spell",
         "x": 144,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -341,7 +341,7 @@
       "full": "Malzahar_Passive.png",
       "sprite": "passive2.png",
       "group": "passive",
-      "x": 384,
+      "x": 432,
       "y": 48,
       "w": 48,
       "h": 48

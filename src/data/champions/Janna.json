@@ -3,7 +3,7 @@
   "key": "40",
   "name": "Janna",
   "title": "Avatar de l'air",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Armée de la puissance des grands vents de Runeterra, Janna est un mystérieux esprit élémentaire qui protège les parias de Zaun. Certains croient que la vie lui a été donnée par les suppliques des marins de Runeterra cherchant les bons vents des mers calmes, affrontant les courants traîtres ou bravant les typhons. Depuis, on implore sa protection jusque dans les profondeurs de Zaun, où Janna est devenue un fanal d'espoir pour ceux qui sont dans le besoin. Nul ne sait quand et où elle apparaîtra, mais ceux qui espèrent son aide sont rarement déçus.",
   "tags": [
     "Support",
@@ -28,8 +28,8 @@
         "full": "HowlingGale.png",
         "sprite": "spell5.png",
         "group": "spell",
-        "x": 192,
-        "y": 48,
+        "x": 0,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -64,8 +64,8 @@
         "full": "SowTheWind.png",
         "sprite": "spell5.png",
         "group": "spell",
-        "x": 240,
-        "y": 48,
+        "x": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -104,8 +104,8 @@
         "full": "EyeOfTheStorm.png",
         "sprite": "spell5.png",
         "group": "spell",
-        "x": 288,
-        "y": 48,
+        "x": 96,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -142,14 +142,14 @@
         "full": "ReapTheWhirlwind.png",
         "sprite": "spell5.png",
         "group": "spell",
-        "x": 336,
-        "y": 48,
+        "x": 144,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "Janna invoque une mousson magique, <status>repoussant</status> les ennemis proches, puis rendant <healing>{{ totalheal }} PV</healing> en {{ e3 }} sec à tous les alliés. Vous déplacer ou utiliser une compétence met fin prématurément à la mousson.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Janna invoque une moisson magique, <status>repoussant</status> les ennemis proches, puis rendant <healing>{{ totalheal }} PV</healing> en {{ duration }} sec à tous les alliés. Vous déplacer ou utiliser une compétence met fin prématurément à la moisson.{{ spellmodifierdescriptionappend }}",
       "costBurn": "100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -200,8 +200,8 @@
         "full": "HowlingGale.png",
         "sprite": "spell5.png",
         "group": "spell",
-        "x": 192,
-        "y": 48,
+        "x": 0,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -236,8 +236,8 @@
         "full": "SowTheWind.png",
         "sprite": "spell5.png",
         "group": "spell",
-        "x": 240,
-        "y": 48,
+        "x": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -276,8 +276,8 @@
         "full": "EyeOfTheStorm.png",
         "sprite": "spell5.png",
         "group": "spell",
-        "x": 288,
-        "y": 48,
+        "x": 96,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -314,14 +314,14 @@
         "full": "ReapTheWhirlwind.png",
         "sprite": "spell5.png",
         "group": "spell",
-        "x": 336,
-        "y": 48,
+        "x": 144,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "Janna summons a magical monsoon, <status>Knocking Back</status> nearby enemies then healing nearby allies for <healing>{{ totalheal }} Health</healing> over {{ e3 }} seconds. Moving or using an Ability ends the monsoon early.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Janna summons a magical monsoon, <status>Knocking Back</status> nearby enemies then healing nearby allies for <healing>{{ totalheal }} Health</healing> over {{ duration }} seconds. Moving or using an Ability ends the monsoon early.{{ spellmodifierdescriptionappend }}",
       "costBurn": "100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -566,5 +566,13 @@
       "chromas": false
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Ekko",
+    "Jinx",
+    "Nilah",
+    "Tahm Kench",
+    "Urgot",
+    "Vi",
+    "Volibear"
+  ]
 }

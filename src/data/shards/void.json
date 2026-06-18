@@ -2,12 +2,71 @@
   {
     "id": "belveth",
     "name": "Bel'Veth",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Belveth.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Belveth.png",
     "factionKey": "void",
+    "factionKeys": [
+      "void"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
+      {
+        "id": "jax",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kaisa",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kassadin",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "lissandra",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "malzahar",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "reksai",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "taliyah",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "velkoz",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kogmaw",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
       {
         "id": "koyemi",
         "type": "lore",
@@ -29,21 +88,47 @@
   {
     "id": "chogath",
     "name": "Cho'Gath",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Chogath.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Chogath.png",
     "factionKey": "void",
+    "factionKeys": [
+      "void"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
-    "related_characters": []
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "khazix",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kogmaw",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "velkoz",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
   },
   {
     "id": "kaisa",
     "name": "Kai'Sa",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Kaisa.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Kaisa.png",
     "factionKey": "void",
+    "factionKeys": [
+      "void",
+      "shurima"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "malzahar",
@@ -60,6 +145,22 @@
         "auto_generated": false,
         "note_fr": "Fille perdue",
         "note_en": "Lost daughter"
+      },
+      {
+        "id": "belveth",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "reksai",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "kadira",
@@ -106,11 +207,15 @@
   {
     "id": "kassadin",
     "name": "Kassadin",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Kassadin.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Kassadin.png",
     "factionKey": "void",
+    "factionKeys": [
+      "void",
+      "shurima"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "malzahar",
@@ -127,17 +232,36 @@
         "auto_generated": false,
         "note_fr": "Fille perdue",
         "note_en": "Lost daughter"
+      },
+      {
+        "id": "belveth",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "malphite",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       }
     ]
   },
   {
     "id": "khazix",
     "name": "Kha'Zix",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Khazix.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Khazix.png",
     "factionKey": "void",
+    "factionKeys": [
+      "void"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "rengar",
@@ -146,27 +270,89 @@
         "auto_generated": false,
         "note_fr": "La proie ultime",
         "note_en": "The ultimate prey"
+      },
+      {
+        "id": "chogath",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kogmaw",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "velkoz",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       }
     ]
   },
   {
     "id": "kogmaw",
     "name": "Kog'Maw",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/KogMaw.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/KogMaw.png",
     "factionKey": "void",
+    "factionKeys": [
+      "void"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
-    "related_characters": []
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "belveth",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "chogath",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "khazix",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "malzahar",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "velkoz",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
   },
   {
     "id": "malzahar",
     "name": "Malzahar",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Malzahar.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Malzahar.png",
     "factionKey": "void",
+    "factionKeys": [
+      "void",
+      "shurima"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "kaisa",
@@ -183,6 +369,22 @@
         "auto_generated": false,
         "note_fr": "Obstacle majeur du Néant",
         "note_en": "major void obstacle"
+      },
+      {
+        "id": "belveth",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kogmaw",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "koyemi",
@@ -205,12 +407,56 @@
   {
     "id": "reksai",
     "name": "Rek'Sai",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/RekSai.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/RekSai.png",
     "factionKey": "void",
+    "factionKeys": [
+      "void",
+      "shurima"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
+      {
+        "id": "kaisa",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "skarner",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "taliyah",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "yuumi",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "belveth",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "velkoz",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
       {
         "id": "kadira",
         "type": "lore",
@@ -248,11 +494,119 @@
   {
     "id": "velkoz",
     "name": "Vel'Koz",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Velkoz.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Velkoz.png",
     "factionKey": "void",
+    "factionKeys": [
+      "void"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
-    "related_characters": []
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "belveth",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "chogath",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "khazix",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kogmaw",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "reksai",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "zilean",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "zilean",
+    "name": "Zilean",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Zilean.png",
+    "factionKey": "runeterra",
+    "factionKeys": [
+      "runeterra",
+      "shurima",
+      "void"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "aatrox",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jax",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "velkoz",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kahiri",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tai",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "xetsa",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "zinsa",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
   }
 ]

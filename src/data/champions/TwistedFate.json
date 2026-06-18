@@ -3,7 +3,7 @@
   "key": "4",
   "name": "Twisted Fate",
   "title": "Maître des cartes",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Twisted Fate est un virtuose des cartes à la réputation ambiguë qui a parcouru le monde entier pour l'éblouir de son charme et de ses talents, s'attirant l'admiration et la haine des riches comme des pigeons. Il prend rarement les choses au sérieux, salue chaque nouveau jour avec un sourire moqueur et insouciant. Twisted a toujours un atout dans sa manche, au propre comme au figuré.",
   "tags": [
     "Mage",
@@ -14,7 +14,7 @@
     "full": "TwistedFate.png",
     "sprite": "champion4.png",
     "group": "champion",
-    "x": 48,
+    "x": 96,
     "y": 96,
     "w": 48,
     "h": 48
@@ -26,10 +26,10 @@
       "vars": [],
       "image": {
         "full": "WildCards.png",
-        "sprite": "spell14.png",
+        "sprite": "spell15.png",
         "group": "spell",
         "x": 96,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -62,10 +62,10 @@
       "vars": [],
       "image": {
         "full": "PickACard.png",
-        "sprite": "spell14.png",
+        "sprite": "spell15.png",
         "group": "spell",
         "x": 144,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -106,10 +106,10 @@
       "vars": [],
       "image": {
         "full": "CardmasterStack.png",
-        "sprite": "spell14.png",
+        "sprite": "spell15.png",
         "group": "spell",
         "x": 192,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -120,7 +120,7 @@
       "costType": "Compétence passive",
       "leveltip": {
         "label": [
-          "Dégâts bonus :",
+          "Dégâts bonus",
           "Vitesse d'attaque"
         ],
         "effect": [
@@ -140,10 +140,10 @@
       "vars": [],
       "image": {
         "full": "Destiny.png",
-        "sprite": "spell14.png",
+        "sprite": "spell15.png",
         "group": "spell",
         "x": 240,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -175,7 +175,7 @@
       "full": "Cardmaster_SealFate.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 48,
+      "x": 96,
       "y": 96,
       "w": 48,
       "h": 48
@@ -201,10 +201,10 @@
       "vars": [],
       "image": {
         "full": "WildCards.png",
-        "sprite": "spell14.png",
+        "sprite": "spell15.png",
         "group": "spell",
         "x": 96,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -237,10 +237,10 @@
       "vars": [],
       "image": {
         "full": "PickACard.png",
-        "sprite": "spell14.png",
+        "sprite": "spell15.png",
         "group": "spell",
         "x": 144,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -281,10 +281,10 @@
       "vars": [],
       "image": {
         "full": "CardmasterStack.png",
-        "sprite": "spell14.png",
+        "sprite": "spell15.png",
         "group": "spell",
         "x": 192,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -295,7 +295,7 @@
       "costType": "Passive",
       "leveltip": {
         "label": [
-          "Bonus Damage:",
+          "Bonus Damage",
           "Attack Speed"
         ],
         "effect": [
@@ -315,10 +315,10 @@
       "vars": [],
       "image": {
         "full": "Destiny.png",
-        "sprite": "spell14.png",
+        "sprite": "spell15.png",
         "group": "spell",
         "x": 240,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -350,7 +350,7 @@
       "full": "Cardmaster_SealFate.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 48,
+      "x": 96,
       "y": 96,
       "w": 48,
       "h": 48

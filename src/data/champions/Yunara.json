@@ -3,7 +3,7 @@
   "key": "804",
   "name": "Yunara",
   "title": "Foi inébranlable",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Par son dévouement inébranlable envers Ionia, Yunara a passé des siècles retirée dans le royaume spirituel pour perfectionner sa maîtrise des Aion Er'na, une relique légendaire du Kinkou. Malgré tous les sacrifices qu'elle a accomplis, Yunara a su garder la foi et conserver son objectif : purger le monde de la discorde et du conflit. Mais le monde qui l'attend désormais, assombri par le retour d'une ancienne menace, va mettre sa détermination à rude épreuve.",
   "tags": [
     "Marksman"
@@ -13,7 +13,7 @@
     "full": "Yunara.png",
     "sprite": "champion5.png",
     "group": "champion",
-    "x": 96,
+    "x": 144,
     "y": 48,
     "w": 48,
     "h": 48
@@ -25,10 +25,10 @@
       "vars": [],
       "image": {
         "full": "YunaraQ.png",
-        "sprite": "spell16.png",
+        "sprite": "spell17.png",
         "group": "spell",
         "x": 288,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -61,10 +61,10 @@
       "vars": [],
       "image": {
         "full": "YunaraW.png",
-        "sprite": "spell16.png",
+        "sprite": "spell17.png",
         "group": "spell",
         "x": 336,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -95,10 +95,10 @@
       "vars": [],
       "image": {
         "full": "YunaraE.png",
-        "sprite": "spell16.png",
+        "sprite": "spell17.png",
         "group": "spell",
         "x": 384,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -129,10 +129,10 @@
       "vars": [],
       "image": {
         "full": "YunaraR.png",
-        "sprite": "spell16.png",
+        "sprite": "spell17.png",
         "group": "spell",
         "x": 432,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -163,10 +163,10 @@
   "passive": {
     "name": "Serment aux Terres premières",
     "image": {
-      "full": "Yunara_Passive.Yunara.png",
+      "full": "Yunara_Passive.png",
       "sprite": "passive5.png",
       "group": "passive",
-      "x": 96,
+      "x": 144,
       "y": 48,
       "w": 48,
       "h": 48
@@ -193,10 +193,10 @@
       "vars": [],
       "image": {
         "full": "YunaraQ.png",
-        "sprite": "spell16.png",
+        "sprite": "spell17.png",
         "group": "spell",
         "x": 288,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -229,10 +229,10 @@
       "vars": [],
       "image": {
         "full": "YunaraW.png",
-        "sprite": "spell16.png",
+        "sprite": "spell17.png",
         "group": "spell",
         "x": 336,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -263,10 +263,10 @@
       "vars": [],
       "image": {
         "full": "YunaraE.png",
-        "sprite": "spell16.png",
+        "sprite": "spell17.png",
         "group": "spell",
         "x": 384,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -297,10 +297,10 @@
       "vars": [],
       "image": {
         "full": "YunaraR.png",
-        "sprite": "spell16.png",
+        "sprite": "spell17.png",
         "group": "spell",
         "x": 432,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -331,10 +331,10 @@
   "passive_en": {
     "name": "Vow of the First Lands",
     "image": {
-      "full": "Yunara_Passive.Yunara.png",
+      "full": "Yunara_Passive.png",
       "sprite": "passive5.png",
       "group": "passive",
-      "x": 96,
+      "x": 144,
       "y": 48,
       "w": 48,
       "h": 48
@@ -357,6 +357,12 @@
       "num": 1,
       "name": "Spirit Blossom Springs Yunara",
       "chromas": true
+    },
+    {
+      "id": "804010",
+      "num": 10,
+      "name": "T1 Yunara",
+      "chromas": true
     }
   ],
   "skins": [
@@ -371,7 +377,25 @@
       "num": 1,
       "name": "Yunara fleur spirituelle onsen",
       "chromas": true
+    },
+    {
+      "id": "804010",
+      "num": 10,
+      "name": "T1 Yunara",
+      "chromas": true
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Akali",
+    "Jarvan IV",
+    "Karma",
+    "Kennen",
+    "LeBlanc",
+    "Lux",
+    "Shen",
+    "Sona",
+    "Varus",
+    "Xin Zhao",
+    "Zaahen"
+  ]
 }

@@ -3,7 +3,7 @@
   "key": "26",
   "name": "Zilean",
   "title": "Gardien du Temps",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Naguère puissant mage d'Icathia, Zilean devint obsédé par le passage du temps après avoir assisté à la destruction de sa terre natale par le Néant. Refusant de perdre une minute à pleurer sur les décombres, il fit appel à une antique force magique capable de prédire tous les avenirs possibles. Devenu techniquement immortel, Zilean erre désormais entre passé, présent et futur, distordant autour de lui le flux du temps, toujours à la recherche du moment exact qui lui permettra de changer le passé et d'empêcher la destruction d'Icathia.",
   "tags": [
     "Support",
@@ -14,8 +14,8 @@
     "full": "Zilean.png",
     "sprite": "champion5.png",
     "group": "champion",
-    "x": 432,
-    "y": 48,
+    "x": 0,
+    "y": 96,
     "w": 48,
     "h": 48
   },
@@ -29,13 +29,13 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 192,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Zilean lance une bombe à retardement qui se colle à la première unité ennemie qui entre dans sa zone. La bombe explose au bout de {{ e2 }} sec, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.<br /><br />Poser une bombe sur une unité qui en porte déjà une fait exploser la première bombe immédiatement, <status>étourdissant</status> pendant {{ e4 }} sec les ennemis pris dans l'explosion.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Zilean lance une bombe à retardement qui se colle à la première unité qui entre dans sa zone. Elle explose au bout de {{ fuseduration }} sec, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.<br /><br />Poser une bombe sur une unité qui en porte déjà une fait exploser la première bombe immédiatement, <status>étourdissant</status> pendant {{ stunduration }} sec les ennemis pris dans l'explosion.{{ spellmodifierdescriptionappend }}",
       "costBurn": "60/65/70/75/80",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -67,15 +67,15 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 240,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Zilean manipule le temps, réduisant de {{ e2 }} sec le délai de récupération de ses autres compétences de base.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Zilean manipule le temps, réduisant de {{ cooldownreduction }} sec le délai de récupération de ses autres compétences de base.{{ spellmodifierdescriptionappend }}",
       "costBurn": "35",
-      "costType": " pts de mana",
+      "costType": " Mana",
       "leveltip": {
         "label": [
           "Délai de récupération"
@@ -84,7 +84,7 @@
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
-      "resource": "{{ e3 }} pts de mana",
+      "resource": "{{ manacost }} Mana",
       "rangeBurn": "600",
       "datavalues": {},
       "description": "Zilean se prépare à de futures confrontations, réduisant le délai de récupération de ses autres compétences.",
@@ -99,13 +99,13 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 288,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Zilean <status>ralentit</status> un champion ennemi de {{ e2 }}% ou octroie à un champion allié <speed>+{{ e2 }}% de vitesse de déplacement</speed> pendant {{ e1 }} sec.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Zilean <status>ralentit</status> un champion ennemi de {{ speedamount }}% ou octroie à un champion allié <speed>{{ speedamount }}% de vitesse de déplacement</speed> pendant {{ duration }} sec.{{ spellmodifierdescriptionappend }}",
       "costBurn": "50",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -114,8 +114,8 @@
           "Vitesse de déplacement"
         ],
         "effect": [
-          "{{ e2 }}% -> {{ e2NL }}%",
-          "{{ e2 }}% -> {{ e2NL }}%"
+          "{{ speedamount }}% -> {{ speedamountNL }}%",
+          "{{ speedamount }}% -> {{ speedamountNL }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -133,7 +133,7 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 336,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -167,8 +167,8 @@
       "full": "Zilean_Passive.png",
       "sprite": "passive5.png",
       "group": "passive",
-      "x": 432,
-      "y": 48,
+      "x": 0,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -197,13 +197,13 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 192,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Zilean tosses a time-delayed bomb that sticks to the first unit which comes within a small area around it. After {{ e2 }} seconds it detonates, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>.<br /><br />Placing a second bomb on a unit that already has one detonates the first bomb immediately and <status>Stuns</status> enemies in the blast for {{ e4 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Zilean tosses a time-delayed bomb that sticks to the first unit which comes within a small area around it. After {{ fuseduration }} seconds it detonates, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>.<br /><br />Placing a second bomb on a unit that already has one detonates the first bomb immediately and <status>Stuns</status> enemies in the blast for {{ stunduration }} seconds.{{ spellmodifierdescriptionappend }}",
       "costBurn": "60/65/70/75/80",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -235,13 +235,13 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 240,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Zilean turns time, reducing his other basic Ability Cooldowns by {{ e2 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Zilean turns time, reducing his other basic Ability Cooldowns by {{ cooldownreduction }} seconds.{{ spellmodifierdescriptionappend }}",
       "costBurn": "35",
       "costType": " Mana",
       "leveltip": {
@@ -252,7 +252,7 @@
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
-      "resource": "{{ e3 }} Mana",
+      "resource": "{{ manacost }} Mana",
       "rangeBurn": "600",
       "datavalues": {},
       "description": "Zilean can prepare himself for future confrontations, reducing the cooldowns of his other basic abilities.",
@@ -267,13 +267,13 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 288,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Zilean <status>Slows</status> an enemy champion by {{ e2 }}% or grants an allied champion <speed>{{ e2 }}% Move Speed</speed> for {{ e1 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Zilean <status>Slows</status> an enemy champion by {{ speedamount }}% or grants an allied champion <speed>{{ speedamount }}% Move Speed</speed> for {{ duration }} seconds.{{ spellmodifierdescriptionappend }}",
       "costBurn": "50",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -282,8 +282,8 @@
           "Move Speed"
         ],
         "effect": [
-          "{{ e2 }}% -> {{ e2NL }}%",
-          "{{ e2 }}% -> {{ e2NL }}%"
+          "{{ speedamount }}% -> {{ speedamountNL }}%",
+          "{{ speedamount }}% -> {{ speedamountNL }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -301,7 +301,7 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 336,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -335,8 +335,8 @@
       "full": "Zilean_Passive.png",
       "sprite": "passive5.png",
       "group": "passive",
-      "x": 432,
-      "y": 48,
+      "x": 0,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -458,5 +458,9 @@
       "chromas": true
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Aatrox",
+    "Jax",
+    "Vel'Koz"
+  ]
 }

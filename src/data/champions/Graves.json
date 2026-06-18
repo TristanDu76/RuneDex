@@ -3,7 +3,7 @@
   "key": "104",
   "name": "Graves",
   "title": "Hors-la-loi",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Malcolm Graves est un mercenaire, un parieur et un voleur recherché dans toutes les cités et tous les empires par lesquels il est passé. Malgré son tempérament explosif, il a un sens de l'honneur indéniable qu'il applique souvent avec son fusil à double canon, Destinée. Ces dernières années, il s'est réconcilié avec Twisted Fate. Leur partenariat rétabli, ils prospèrent à nouveau dans les allées sombres de Bilgewater.",
   "tags": [
     "Marksman"
@@ -27,8 +27,8 @@
         "full": "GravesQLineSpell.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 96,
-        "y": 96,
+        "x": 384,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -65,14 +65,14 @@
         "full": "GravesSmokeGrenade.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 144,
-        "y": 96,
+        "x": 432,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Graves crée un nuage de fumée noire pendant 4 sec, <status>ralentissant</status> de {{ e2 }}% les ennemis qui s'y trouvent et bloquant leur vision en dehors de la zone. L'impact initial inflige <magicDamage>{{ impactdamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Graves crée un nuage de fumée noire pendant 4 sec, <status>ralentissant</status> de {{ slowamount }}% les ennemis qui s'y trouvent et bloquant leur vision en dehors de la zone. L'impact initial inflige <magicDamage>{{ impactdamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "70/75/80/85/90",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -82,7 +82,7 @@
           "Délai de récupération"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ cost }} -> {{ costNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
@@ -99,10 +99,10 @@
       "vars": [],
       "image": {
         "full": "GravesMove.png",
-        "sprite": "spell4.png",
+        "sprite": "spell5.png",
         "group": "spell",
-        "x": 192,
-        "y": 96,
+        "x": 0,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -135,10 +135,10 @@
       "vars": [],
       "image": {
         "full": "GravesChargeShot.png",
-        "sprite": "spell4.png",
+        "sprite": "spell5.png",
         "group": "spell",
-        "x": 240,
-        "y": 96,
+        "x": 48,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -200,8 +200,8 @@
         "full": "GravesQLineSpell.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 96,
-        "y": 96,
+        "x": 384,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -238,14 +238,14 @@
         "full": "GravesSmokeGrenade.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 144,
-        "y": 96,
+        "x": 432,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Graves creates a cloud of black smoke for 4 seconds, <status>Slowing</status> enemies inside by {{ e2 }}% and blocking their vision outside the area. The initial impact deals <magicDamage>{{ impactdamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Graves creates a cloud of black smoke for 4 seconds, <status>Slowing</status> enemies inside by {{ slowamount }}% and blocking their vision outside the area. The initial impact deals <magicDamage>{{ impactdamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "70/75/80/85/90",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -255,7 +255,7 @@
           "Cooldown"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ cost }} -> {{ costNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
@@ -272,10 +272,10 @@
       "vars": [],
       "image": {
         "full": "GravesMove.png",
-        "sprite": "spell4.png",
+        "sprite": "spell5.png",
         "group": "spell",
-        "x": 192,
-        "y": 96,
+        "x": 0,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -308,10 +308,10 @@
       "vars": [],
       "image": {
         "full": "GravesChargeShot.png",
-        "sprite": "spell4.png",
+        "sprite": "spell5.png",
         "group": "spell",
-        "x": 240,
-        "y": 96,
+        "x": 48,
+        "y": 0,
         "w": 48,
         "h": 48
       },

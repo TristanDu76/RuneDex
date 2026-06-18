@@ -3,7 +3,7 @@
   "key": "876",
   "name": "Lillia",
   "title": "Fleur timide",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Profondément timide, Lillia, le faon féérique, parcourt nerveusement les forêts d'Ionia. Échappant toujours au regard des mortels dont la nature a longtemps captivé et intimidé la jeune créature, Lillia espère découvrir la raison pour laquelle les rêves des mortels n'atteignent plus l'Arbre des rêves. Elle sillonne désormais Ionia, sa branche magique en main, afin de retrouver les rêves inassouvis des hommes. Ce n'est qu'alors que Lillia pourra s'épanouir et aider les autres à démêler leurs peurs et trouver l'étincelle qui se cache au fond d'eux. Hii !",
   "tags": [
     "Fighter",
@@ -26,10 +26,10 @@
       "vars": [],
       "image": {
         "full": "LilliaQ.png",
-        "sprite": "spell7.png",
+        "sprite": "spell8.png",
         "group": "spell",
-        "x": 288,
-        "y": 96,
+        "x": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -64,10 +64,10 @@
       "vars": [],
       "image": {
         "full": "LilliaW.png",
-        "sprite": "spell7.png",
+        "sprite": "spell8.png",
         "group": "spell",
-        "x": 336,
-        "y": 96,
+        "x": 144,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -98,10 +98,10 @@
       "vars": [],
       "image": {
         "full": "LilliaE.png",
-        "sprite": "spell7.png",
+        "sprite": "spell8.png",
         "group": "spell",
-        "x": 384,
-        "y": 96,
+        "x": 192,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -132,10 +132,10 @@
       "vars": [],
       "image": {
         "full": "LilliaR.png",
-        "sprite": "spell7.png",
+        "sprite": "spell8.png",
         "group": "spell",
-        "x": 432,
-        "y": 96,
+        "x": 240,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -193,10 +193,10 @@
       "vars": [],
       "image": {
         "full": "LilliaQ.png",
-        "sprite": "spell7.png",
+        "sprite": "spell8.png",
         "group": "spell",
-        "x": 288,
-        "y": 96,
+        "x": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -231,10 +231,10 @@
       "vars": [],
       "image": {
         "full": "LilliaW.png",
-        "sprite": "spell7.png",
+        "sprite": "spell8.png",
         "group": "spell",
-        "x": 336,
-        "y": 96,
+        "x": 144,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -265,10 +265,10 @@
       "vars": [],
       "image": {
         "full": "LilliaE.png",
-        "sprite": "spell7.png",
+        "sprite": "spell8.png",
         "group": "spell",
-        "x": 384,
-        "y": 96,
+        "x": 192,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -299,10 +299,10 @@
       "vars": [],
       "image": {
         "full": "LilliaR.png",
-        "sprite": "spell7.png",
+        "sprite": "spell8.png",
         "group": "spell",
-        "x": 432,
-        "y": 96,
+        "x": 240,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -433,5 +433,13 @@
       "chromas": true
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Ahri",
+    "Fiddlesticks",
+    "Ivern",
+    "Lux",
+    "Vex",
+    "Yasuo",
+    "Yone"
+  ]
 }

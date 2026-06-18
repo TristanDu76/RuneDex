@@ -3,7 +3,7 @@
   "key": "166",
   "name": "Akshan",
   "title": "Sentinelle rebelle",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Se jouant du danger, Akshan combat le mal sans jamais se départir de son charisme (il ne faut jamais sous-estimer l'importance de la cape) et de sa droiture. Il est passé maître dans l'art du combat furtif, ce qui lui permet d'échapper au regard de ses ennemis et de réapparaître lorsqu'ils s'y attendent le moins. À l'aide de son sens aigu de la justice et d'une arme légendaire défiant la mort elle-même, il redresse les torts des nombreux vauriens de Runeterra. Sa règle d'or : « ne sois pas crapuleux. »",
   "tags": [
     "Marksman",
@@ -26,10 +26,10 @@
       "vars": [],
       "image": {
         "full": "AkshanQ.png",
-        "sprite": "spell0.png",
+        "sprite": "spell1.png",
         "group": "spell",
-        "x": 0,
-        "y": 144,
+        "x": 288,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -64,10 +64,10 @@
       "vars": [],
       "image": {
         "full": "AkshanW.png",
-        "sprite": "spell0.png",
+        "sprite": "spell1.png",
         "group": "spell",
-        "x": 48,
-        "y": 144,
+        "x": 336,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -100,10 +100,10 @@
       "vars": [],
       "image": {
         "full": "AkshanE.png",
-        "sprite": "spell0.png",
+        "sprite": "spell1.png",
         "group": "spell",
-        "x": 96,
-        "y": 144,
+        "x": 384,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -134,10 +134,10 @@
       "vars": [],
       "image": {
         "full": "AkshanR.png",
-        "sprite": "spell0.png",
+        "sprite": "spell1.png",
         "group": "spell",
-        "x": 144,
-        "y": 144,
+        "x": 432,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -197,10 +197,10 @@
       "vars": [],
       "image": {
         "full": "AkshanQ.png",
-        "sprite": "spell0.png",
+        "sprite": "spell1.png",
         "group": "spell",
-        "x": 0,
-        "y": 144,
+        "x": 288,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -235,10 +235,10 @@
       "vars": [],
       "image": {
         "full": "AkshanW.png",
-        "sprite": "spell0.png",
+        "sprite": "spell1.png",
         "group": "spell",
-        "x": 48,
-        "y": 144,
+        "x": 336,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -271,10 +271,10 @@
       "vars": [],
       "image": {
         "full": "AkshanE.png",
-        "sprite": "spell0.png",
+        "sprite": "spell1.png",
         "group": "spell",
-        "x": 96,
-        "y": 144,
+        "x": 384,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -305,10 +305,10 @@
       "vars": [],
       "image": {
         "full": "AkshanR.png",
-        "sprite": "spell0.png",
+        "sprite": "spell1.png",
         "group": "spell",
-        "x": 144,
-        "y": 144,
+        "x": 432,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -377,6 +377,12 @@
       "num": 20,
       "name": "Three Honors Akshan",
       "chromas": false
+    },
+    {
+      "id": "166021",
+      "num": 21,
+      "name": "High Noon Akshan",
+      "chromas": true
     }
   ],
   "skins": [
@@ -403,6 +409,12 @@
       "num": 20,
       "name": "Akshan des Trois Honneurs",
       "chromas": false
+    },
+    {
+      "id": "166021",
+      "num": 21,
+      "name": "Akshan de l'Ouest",
+      "chromas": true
     }
   ],
   "related_characters": [

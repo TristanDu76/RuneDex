@@ -3,7 +3,7 @@
   "key": "119",
   "name": "Draven",
   "title": "Glorieux exécuteur",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "À Noxus, de puissants guerriers, les « arénaires », s'affrontent dans des jeux mortels pour divertir le public. Le sang y coule à foison et leurs forces y sont éprouvées, mais aucun d'entre eux n'a jamais été aussi célèbre que Draven. Cet ancien soldat découvrit que le public appréciait particulièrement son sens du spectacle, sans parler de son habileté avec des haches tournoyantes. Épris de sa propre perfection, Draven terrasse tous ses adversaires pour s'assurer que son nom continue de résonner dans les arènes de l'empire.",
   "tags": [
     "Marksman"
@@ -27,8 +27,8 @@
         "full": "DravenSpinning.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 288,
-        "y": 0,
+        "x": 96,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -63,14 +63,14 @@
         "full": "DravenFury.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 336,
-        "y": 0,
+        "x": 144,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Draven devient fantomatique et gagne <speed>+{{ e2 }}% de vitesse de déplacement</speed> (ce bonus diminue en {{ e3 }} sec) et <attackSpeed>+{{ e4 }}% de vitesse d'attaque</attackSpeed> pendant {{ e5 }} sec.<br /><br />Quand Draven rattrape une <keywordMajor>Hache tournoyante</keywordMajor>, le délai de récupération de la compétence est annulé.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Draven devient fantomatique et gagne <speed>{{ temp_msmod }}% de vitesse de déplacement</speed> (ce bonus diminue en {{ temp_msduration }} sec) et <attackSpeed>{{ temp_as }}% de vitesse d'attaque</attackSpeed> pendant {{ temp_asduration }} sec.<br /><br />Quand Draven rattrape une <keywordMajor>Hache tournoyante</keywordMajor>, le délai de récupération de la compétence est annulé.{{ spellmodifierdescriptionappend }}",
       "costBurn": "40/35/30/25/20",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -99,14 +99,14 @@
         "full": "DravenDoubleShot.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 384,
-        "y": 0,
+        "x": 192,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Draven lance horizontalement une hache qui inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage>, <status>repousse</status> et <status>ralentit</status> de {{ e2 }}% pendant {{ e3 }} sec.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Draven lance horizontalement une hache qui inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage>, <status>repousse</status> et <status>ralentit</status> de {{ slowamount }}% pendant {{ slowduration }} sec.{{ spellmodifierdescriptionappend }}",
       "costBurn": "70",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -116,8 +116,8 @@
           "Délai de récupération"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
-          "{{ e2 }}% -> {{ e2NL }}%",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ slowamount }}% -> {{ slowamountNL }}%",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -125,7 +125,7 @@
       "rangeBurn": "1050",
       "datavalues": {},
       "description": "Draven lance ses haches, infligeant des dégâts physiques aux cibles touchées et les repoussant sur le côté. Les cibles touchées sont ralenties.",
-      "cooldownBurn": "18/17/16/15/14"
+      "cooldownBurn": "16/15/14/13/12"
     },
     {
       "id": "DravenRCast",
@@ -135,8 +135,8 @@
         "full": "DravenRCast.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 432,
-        "y": 0,
+        "x": 240,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -197,8 +197,8 @@
         "full": "DravenSpinning.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 288,
-        "y": 0,
+        "x": 96,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -233,14 +233,14 @@
         "full": "DravenFury.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 336,
-        "y": 0,
+        "x": 144,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Draven becomes Ghosted, gains <speed>{{ e2 }}% Move Speed</speed> decaying over {{ e3 }} seconds and <attackSpeed>{{ e4 }}% Attack Speed</attackSpeed> for {{ e5 }} seconds.<br /><br />When Draven catches a <keywordMajor>Spinning Axe</keywordMajor>, this Ability's Cooldown is refreshed.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Draven becomes Ghosted, gains <speed>{{ temp_msmod }}% Move Speed</speed> decaying over {{ temp_msduration }} seconds and <attackSpeed>{{ temp_as }}% Attack Speed</attackSpeed> for {{ temp_asduration }} seconds.<br /><br />When Draven catches a <keywordMajor>Spinning Axe</keywordMajor>, this Ability's Cooldown is refreshed.{{ spellmodifierdescriptionappend }}",
       "costBurn": "40/35/30/25/20",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -269,14 +269,14 @@
         "full": "DravenDoubleShot.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 384,
-        "y": 0,
+        "x": 192,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Draven chucks a sideways axe that deals <physicalDamage>{{ totaldamage }} physical damage</physicalDamage>, <status>Knocks Back</status>, and <status>Slows</status> by {{ e2 }}% for {{ e3 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Draven chucks a sideways axe that deals <physicalDamage>{{ totaldamage }} physical damage</physicalDamage>, <status>Knocks Back</status>, and <status>Slows</status> by {{ slowamount }}% for {{ slowduration }} seconds.{{ spellmodifierdescriptionappend }}",
       "costBurn": "70",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -286,8 +286,8 @@
           "Cooldown"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
-          "{{ e2 }}% -> {{ e2NL }}%",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ slowamount }}% -> {{ slowamountNL }}%",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -295,7 +295,7 @@
       "rangeBurn": "1050",
       "datavalues": {},
       "description": "Draven throws his axes, dealing physical damage to targets hit and knocking them aside. Targets hit are slowed.",
-      "cooldownBurn": "18/17/16/15/14"
+      "cooldownBurn": "16/15/14/13/12"
     },
     {
       "id": "DravenRCast",
@@ -305,8 +305,8 @@
         "full": "DravenRCast.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 432,
-        "y": 0,
+        "x": 240,
+        "y": 96,
         "w": 48,
         "h": 48
       },

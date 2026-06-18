@@ -3,7 +3,7 @@
   "key": "89",
   "name": "Leona",
   "title": "Aube radieuse",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Imprégnée de l'énergie du soleil, Leona est une guerrière sainte des Solaris qui défend le Mont Targon ; elle combat avec sa Lame du zénith et son Bouclier de l'aube. Sa peau brûle d'éclats ardents et ses yeux crépitent au rythme de la Manifestation céleste qui l'habite. Équipée d'une armure d'or et affligée par le terrible fardeau de connaissances antiques, Leona apporte à certains l'illumination, à d'autres la mort.",
   "tags": [
     "Tank",
@@ -28,14 +28,14 @@
         "full": "LeonaShieldOfDaybreak.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 96,
-        "y": 96,
+        "x": 384,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "La prochaine attaque de Leona <status>étourdira</status> sa cible pendant {{ e1 }} sec et infligera <magicDamage>{{ totaldamagetooltip }}</magicDamage> pts de dégâts magiques supplémentaires.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "La prochaine attaque de Leona <status>étourdira</status> sa cible pendant {{ stunduration }} sec et infligera <magicDamage>{{ totaldamagetooltip }}</magicDamage> pts de dégâts magiques bonus.{{ spellmodifierdescriptionappend }}",
       "costBurn": "30/35/40/45/50",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -44,7 +44,7 @@
           "Coût en @AbilityResourceName@"
         ],
         "effect": [
-          "{{ e2 }} -> {{ e2NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ cost }} -> {{ costNL }}"
         ]
       },
@@ -62,14 +62,14 @@
         "full": "LeonaSolarBarrier.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 144,
-        "y": 96,
+        "x": 432,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Leona lève son bouclier, ce qui réduit les dégâts qu'elle subit de {{ flatdamagereduction }} et lui octroie <scaleArmor>+{{ bonusarmortooltip }} armure</scaleArmor> et <scaleMR>+{{ bonusmrtooltip }} résistance magique</scaleMR> pendant {{ e3 }} sec. Après un court délai, son bouclier explose et inflige <magicDamage>{{ totaldamagetooltip }} pts de dégâts magiques</magicDamage> aux ennemis proches. Si l'explosion touche au moins un ennemi, Leona conserve les bonus d'<scaleArmor>armure</scaleArmor> et de <scaleMR>résistance magique</scaleMR> pendant {{ e3 }} sec supplémentaires.<br />{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Leona lève son bouclier, ce qui réduit les dégâts qu'elle subit de {{ flatdamagereduction }} et lui octroie <scaleArmor>{{ bonusarmortooltip }} armure</scaleArmor> et <scaleMR>{{ bonusmrtooltip }} résistance magique</scaleMR> pendant {{ armormrduration }} sec. Après un court délai, son bouclier explose et inflige <magicDamage>{{ totaldamagetooltip }} pts de dégâts magiques</magicDamage> aux ennemis proches. Si l'explosion touche au moins un ennemi, Leona conserve les bonus d'<scaleArmor>armure</scaleArmor> et de <scaleMR>résistance magique</scaleMR> pendant {{ armormrduration }} sec supplémentaires.<br />{{ spellmodifierdescriptionappend }}",
       "costBurn": "60",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -80,8 +80,8 @@
           "Délai de récupération"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
-          "{{ e4 }} -> {{ e4NL }}",
+          "{{ explosionbasedamage }} -> {{ explosionbasedamageNL }}",
+          "{{ armorbasebonus }} -> {{ armorbasebonusNL }}",
           "{{ flatdamagereduction }} -> {{ flatdamagereductionNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
@@ -98,16 +98,16 @@
       "vars": [],
       "image": {
         "full": "LeonaZenithBlade.png",
-        "sprite": "spell7.png",
+        "sprite": "spell8.png",
         "group": "spell",
-        "x": 192,
-        "y": 96,
+        "x": 0,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Leona donne un coup d'estoc avec une épée de lumière, infligeant <magicDamage>{{ totaldamagetooltip }} pts de dégâts magiques</magicDamage>. Le dernier champion touché est <status>immobilisé</status> pendant {{ e2 }} sec et Leona se rue vers lui.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Leona donne un coup d'estoc avec une épée de lumière, infligeant <magicDamage>{{ totaldamagetooltip }} pts de dégâts magiques</magicDamage>. Le dernier champion touché est <status>immobilisé</status> pendant {{ rootduration }} sec et Leona se rue vers lui.{{ spellmodifierdescriptionappend }}",
       "costBurn": "40/45/50/55/60",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -117,7 +117,7 @@
           "Coût en @AbilityResourceName@"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ cost }} -> {{ costNL }}"
         ]
@@ -134,10 +134,10 @@
       "vars": [],
       "image": {
         "full": "LeonaSolarFlare.png",
-        "sprite": "spell7.png",
+        "sprite": "spell8.png",
         "group": "spell",
-        "x": 240,
-        "y": 96,
+        "x": 48,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -196,14 +196,14 @@
         "full": "LeonaShieldOfDaybreak.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 96,
-        "y": 96,
+        "x": 384,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Leona's next Attack <status>Stuns</status> for {{ e1 }} seconds and deals an additional <magicDamage>{{ totaldamagetooltip }}</magicDamage> magic damage.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Leona's next Attack <status>Stuns</status> for {{ stunduration }} seconds and deals an additional <magicDamage>{{ totaldamagetooltip }}</magicDamage> magic damage.{{ spellmodifierdescriptionappend }}",
       "costBurn": "30/35/40/45/50",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -212,7 +212,7 @@
           "@AbilityResourceName@ Cost"
         ],
         "effect": [
-          "{{ e2 }} -> {{ e2NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ cost }} -> {{ costNL }}"
         ]
       },
@@ -230,14 +230,14 @@
         "full": "LeonaSolarBarrier.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 144,
-        "y": 96,
+        "x": 432,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Leona raises her shield, reducing incoming damage by {{ flatdamagereduction }} and gaining <scaleArmor>{{ bonusarmortooltip }} Armor</scaleArmor> and <scaleMR>{{ bonusmrtooltip }} Magic Resist</scaleMR> for {{ e3 }} seconds. Afterwards, her shield detonates, dealing <magicDamage>{{ totaldamagetooltip }} magic damage</magicDamage> to nearby enemies. If she hits at least one, she retains the <scaleArmor>Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR> bonuses for an additional {{ e3 }} seconds.<br />{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Leona raises her shield, reducing incoming damage by {{ flatdamagereduction }} and gaining <scaleArmor>{{ bonusarmortooltip }} Armor</scaleArmor> and <scaleMR>{{ bonusmrtooltip }} Magic Resist</scaleMR> for {{ armormrduration }} seconds. Afterwards, her shield detonates, dealing <magicDamage>{{ totaldamagetooltip }} magic damage</magicDamage> to nearby enemies. If she hits at least one, she retains the <scaleArmor>Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR> bonuses for an additional {{ armormrduration }} seconds.<br />{{ spellmodifierdescriptionappend }}",
       "costBurn": "60",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -248,8 +248,8 @@
           "Cooldown"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
-          "{{ e4 }} -> {{ e4NL }}",
+          "{{ explosionbasedamage }} -> {{ explosionbasedamageNL }}",
+          "{{ armorbasebonus }} -> {{ armorbasebonusNL }}",
           "{{ flatdamagereduction }} -> {{ flatdamagereductionNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
@@ -266,16 +266,16 @@
       "vars": [],
       "image": {
         "full": "LeonaZenithBlade.png",
-        "sprite": "spell7.png",
+        "sprite": "spell8.png",
         "group": "spell",
-        "x": 192,
-        "y": 96,
+        "x": 0,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Leona thrusts with a sword of light, dealing <magicDamage>{{ totaldamagetooltip }} magic damage</magicDamage>. The last champion struck will be <status>Rooted</status> for {{ e2 }} seconds and Leona will dash to them.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Leona thrusts with a sword of light, dealing <magicDamage>{{ totaldamagetooltip }} magic damage</magicDamage>. The last champion struck will be <status>Rooted</status> for {{ rootduration }} seconds and Leona will dash to them.{{ spellmodifierdescriptionappend }}",
       "costBurn": "40/45/50/55/60",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -285,7 +285,7 @@
           "@AbilityResourceName@ Cost"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ cost }} -> {{ costNL }}"
         ]
@@ -302,10 +302,10 @@
       "vars": [],
       "image": {
         "full": "LeonaSolarFlare.png",
-        "sprite": "spell7.png",
+        "sprite": "spell8.png",
         "group": "spell",
-        "x": 240,
-        "y": 96,
+        "x": 48,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -456,6 +456,12 @@
       "num": 53,
       "name": "Prestige Battle Lion Leona",
       "chromas": false
+    },
+    {
+      "id": "89064",
+      "num": 64,
+      "name": "Eternal Aspect Leona",
+      "chromas": true
     }
   ],
   "skins": [
@@ -566,6 +572,12 @@
       "num": 53,
       "name": "Leona lion de combat prestige",
       "chromas": false
+    },
+    {
+      "id": "89064",
+      "num": 64,
+      "name": "Leona manifestation éternelle",
+      "chromas": true
     }
   ],
   "related_characters": [

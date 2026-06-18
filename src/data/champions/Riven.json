@@ -3,7 +3,7 @@
   "key": "92",
   "name": "Riven",
   "title": "Exilée brisée",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Autrefois soldat d'un régiment de Noxus, Riven est désormais expatriée dans un pays qu'elle avait elle-même tenté d'envahir. Elle s'est naguère élevée dans la hiérarchie grâce à sa force de conviction et à son efficacité brutale : sa récompense fut de commander ses propres troupes, armée d'une épée runique légendaire. Cependant, sur le front ionien, la foi de Riven en sa terre natale a vacillé avant de rompre. Ayant tranché tous ses liens avec l'empire, elle cherche désormais sa place dans un monde blessé, alors même que, d'après les rumeurs, Noxus a retrouvé sa vigueur d'antan…",
   "tags": [
     "Fighter",
@@ -14,7 +14,7 @@
     "full": "Riven.png",
     "sprite": "champion3.png",
     "group": "champion",
-    "x": 48,
+    "x": 96,
     "y": 96,
     "w": 48,
     "h": 48
@@ -26,10 +26,10 @@
       "vars": [],
       "image": {
         "full": "RivenTriCleave.png",
-        "sprite": "spell11.png",
+        "sprite": "spell12.png",
         "group": "spell",
         "x": 96,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -60,16 +60,16 @@
       "vars": [],
       "image": {
         "full": "RivenMartyr.png",
-        "sprite": "spell11.png",
+        "sprite": "spell12.png",
         "group": "spell",
         "x": 144,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Riven lance une décharge d'énergie runique qui inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> et <status>étourdit</status> les ennemis pendant {{ e5 }} sec.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Riven lance une décharge d'énergie runique qui inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> et <status>étourdit</status> les ennemis pendant {{ stunduration }} sec.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": "Pas de coût",
       "leveltip": {
@@ -78,7 +78,7 @@
           "Délai de récupération"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -94,10 +94,10 @@
       "vars": [],
       "image": {
         "full": "RivenFeint.png",
-        "sprite": "spell11.png",
+        "sprite": "spell12.png",
         "group": "spell",
         "x": 192,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -112,7 +112,7 @@
           "Délai de récupération"
         ],
         "effect": [
-          "{{ e2 }} -> {{ e2NL }}",
+          "{{ shieldamount }} -> {{ shieldamountNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -128,10 +128,10 @@
       "vars": [],
       "image": {
         "full": "RivenFengShuiEngine.png",
-        "sprite": "spell11.png",
+        "sprite": "spell12.png",
         "group": "spell",
         "x": 240,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -165,7 +165,7 @@
       "full": "RivenRunicBlades.png",
       "sprite": "passive3.png",
       "group": "passive",
-      "x": 48,
+      "x": 96,
       "y": 96,
       "w": 48,
       "h": 48
@@ -189,10 +189,10 @@
       "vars": [],
       "image": {
         "full": "RivenTriCleave.png",
-        "sprite": "spell11.png",
+        "sprite": "spell12.png",
         "group": "spell",
         "x": 96,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -223,16 +223,16 @@
       "vars": [],
       "image": {
         "full": "RivenMartyr.png",
-        "sprite": "spell11.png",
+        "sprite": "spell12.png",
         "group": "spell",
         "x": 144,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Riven's sword emits a burst of runic energy, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> and <status>Stunning</status> for {{ e5 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Riven's sword emits a burst of runic energy, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> and <status>Stunning</status> for {{ stunduration }} seconds.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": "No Cost",
       "leveltip": {
@@ -241,7 +241,7 @@
           "Cooldown"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -257,10 +257,10 @@
       "vars": [],
       "image": {
         "full": "RivenFeint.png",
-        "sprite": "spell11.png",
+        "sprite": "spell12.png",
         "group": "spell",
         "x": 192,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -275,7 +275,7 @@
           "Cooldown"
         ],
         "effect": [
-          "{{ e2 }} -> {{ e2NL }}",
+          "{{ shieldamount }} -> {{ shieldamountNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -291,10 +291,10 @@
       "vars": [],
       "image": {
         "full": "RivenFengShuiEngine.png",
-        "sprite": "spell11.png",
+        "sprite": "spell12.png",
         "group": "spell",
         "x": 240,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -328,7 +328,7 @@
       "full": "RivenRunicBlades.png",
       "sprite": "passive3.png",
       "group": "passive",
-      "x": 48,
+      "x": 96,
       "y": 96,
       "w": 48,
       "h": 48
@@ -559,5 +559,23 @@
       "chromas": true
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Akshan",
+    "Darius",
+    "Diana",
+    "Draven",
+    "Graves",
+    "Gwen",
+    "Irelia",
+    "LeBlanc",
+    "Lucian",
+    "Olaf",
+    "Pyke",
+    "Rengar",
+    "Senna",
+    "Singed",
+    "Vayne",
+    "Viego",
+    "Yasuo"
+  ]
 }

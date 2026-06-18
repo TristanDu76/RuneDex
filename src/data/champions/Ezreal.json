@@ -3,7 +3,7 @@
   "key": "81",
   "name": "Ezreal",
   "title": "Explorateur prodigue",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Aventurier audacieux, doué sans le savoir pour les arts magiques, Ezreal poursuit ses expéditions dans les catacombes oubliées, se bat avec d'antiques malédictions et contourne avec aisance les obstacles les plus impossibles. Son courage et son panache sont sans borne, et il préfère improviser son salut dans les situations critiques, avec pour armes principales sa vivacité d'esprit et son gantelet mystique shurimien, qu'il utilise pour déchaîner de puissants projectiles arcaniques. Une chose est sûre : quand Ezreal est dans les parages, les problèmes ne sont pas loin. Et ils sont partout. Absolument partout.",
   "tags": [
     "Marksman",
@@ -26,10 +26,10 @@
       "vars": [],
       "image": {
         "full": "EzrealQ.png",
-        "sprite": "spell3.png",
+        "sprite": "spell4.png",
         "group": "spell",
-        "x": 288,
-        "y": 96,
+        "x": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -62,10 +62,10 @@
       "vars": [],
       "image": {
         "full": "EzrealW.png",
-        "sprite": "spell3.png",
+        "sprite": "spell4.png",
         "group": "spell",
-        "x": 336,
-        "y": 96,
+        "x": 144,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -76,12 +76,10 @@
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
-          "Dégâts",
-          "Ratio de puissance total"
+          "Dégâts"
         ],
         "effect": [
-          "{{ basedamage }} -> {{ basedamageNL }}",
-          "{{ apratio*100.000000 }}% -> {{ aprationl*100.000000 }}%"
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -96,10 +94,10 @@
       "vars": [],
       "image": {
         "full": "EzrealE.png",
-        "sprite": "spell3.png",
+        "sprite": "spell4.png",
         "group": "spell",
-        "x": 384,
-        "y": 96,
+        "x": 192,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -130,25 +128,27 @@
       "vars": [],
       "image": {
         "full": "EzrealR.png",
-        "sprite": "spell3.png",
+        "sprite": "spell4.png",
         "group": "spell",
-        "x": 432,
-        "y": 96,
+        "x": 240,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "Ezreal tire une énorme vague d'énergie qui inflige <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage>. La vague inflige {{ damagereductionwaveclear.0*100 }}% de dégâts aux sbires et aux monstres non épiques de la jungle.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Ezreal tire une énorme vague d'énergie qui inflige <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage>. Les dégâts infligés aux sbires et aux monstres non épiques sont réduits à <magicDamage>{{ damageminionmonster }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Dégâts",
+          "Dégâts aux non-champions",
           "Délai de récupération"
         ],
         "effect": [
           "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ basedamageminionmonster }} -> {{ basedamageminionmonsterNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -188,10 +188,10 @@
       "vars": [],
       "image": {
         "full": "EzrealQ.png",
-        "sprite": "spell3.png",
+        "sprite": "spell4.png",
         "group": "spell",
-        "x": 288,
-        "y": 96,
+        "x": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -224,10 +224,10 @@
       "vars": [],
       "image": {
         "full": "EzrealW.png",
-        "sprite": "spell3.png",
+        "sprite": "spell4.png",
         "group": "spell",
-        "x": 336,
-        "y": 96,
+        "x": 144,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -238,12 +238,10 @@
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
-          "Damage",
-          "Total AP Ratio"
+          "Damage"
         ],
         "effect": [
-          "{{ basedamage }} -> {{ basedamageNL }}",
-          "{{ apratio*100.000000 }}% -> {{ aprationl*100.000000 }}%"
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -258,10 +256,10 @@
       "vars": [],
       "image": {
         "full": "EzrealE.png",
-        "sprite": "spell3.png",
+        "sprite": "spell4.png",
         "group": "spell",
-        "x": 384,
-        "y": 96,
+        "x": 192,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -292,25 +290,27 @@
       "vars": [],
       "image": {
         "full": "EzrealR.png",
-        "sprite": "spell3.png",
+        "sprite": "spell4.png",
         "group": "spell",
-        "x": 432,
-        "y": 96,
+        "x": 240,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "Ezreal fires a massive energy arc that deals <magicDamage>{{ damage }} magic damage</magicDamage>. The arc deals {{ damagereductionwaveclear.0*100 }}% damage to minions and non-epic jungle monsters.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Ezreal fires a massive energy arc that deals <magicDamage>{{ damage }} magic damage</magicDamage>. Damage to minions and non-epic jungle monsters is reduced to <magicDamage>{{ damageminionmonster }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Damage",
+          "Non Champion Damage",
           "Cooldown"
         ],
         "effect": [
           "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ basedamageminionmonster }} -> {{ basedamageminionmonsterNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },

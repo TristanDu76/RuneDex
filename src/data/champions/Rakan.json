@@ -3,7 +3,7 @@
   "key": "497",
   "name": "Rakan",
   "title": "Charmeur",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Aussi lunatique qu'il est charmeur, Rakan est un trublion vastaya tristement célèbre, et le plus grand danseur guerrier de l'histoire de la tribu Lhotla. Pour les humains qui vivent dans les hautes terres d'Ionia, son nom est depuis longtemps synonyme de festivals endiablés, de fêtes déraisonnables et de musique anarchique. Peu de gens savent cependant que cet histrion ambulant est également le partenaire de Xayah, la rebelle, dont il défend avec ferveur la cause.",
   "tags": [
     "Support"
@@ -13,7 +13,7 @@
     "full": "Rakan.png",
     "sprite": "champion3.png",
     "group": "champion",
-    "x": 192,
+    "x": 240,
     "y": 48,
     "w": 48,
     "h": 48
@@ -25,10 +25,10 @@
       "vars": [],
       "image": {
         "full": "RakanQ.png",
-        "sprite": "spell10.png",
+        "sprite": "spell11.png",
         "group": "spell",
         "x": 192,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -59,10 +59,10 @@
       "vars": [],
       "image": {
         "full": "RakanW.png",
-        "sprite": "spell10.png",
+        "sprite": "spell11.png",
         "group": "spell",
         "x": 240,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -95,16 +95,16 @@
       "vars": [],
       "image": {
         "full": "RakanE.png",
-        "sprite": "spell10.png",
+        "sprite": "spell11.png",
         "group": "spell",
         "x": 288,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Rakan se rue sur un champion allié et lui octroie un <shield>bouclier de {{ totalshield }} PV</shield> pendant {{ e3 }} sec.<br /><br />Rakan peut <recast>réactiver</recast> une fois cette compétence dans les {{ e2 }} sec qui suivent la première activation.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Rakan se rue sur un champion allié et lui octroie un <shield>bouclier de {{ totalshield }} PV</shield> pendant {{ duration }} sec.<br /><br />Rakan peut <recast>réactiver</recast> une fois cette compétence dans les {{ recastwindow }} sec qui suivent la première activation.{{ spellmodifierdescriptionappend }}",
       "costBurn": "40/45/50/55/60",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -115,8 +115,8 @@
         ],
         "effect": [
           "{{ baseshield }} -> {{ baseshieldNL }}",
-          "{{ e4 }} -> {{ e4NL }}",
-          "{{ e5 }} -> {{ e5NL }}"
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -131,16 +131,16 @@
       "vars": [],
       "image": {
         "full": "RakanR.png",
-        "sprite": "spell10.png",
+        "sprite": "spell11.png",
         "group": "spell",
         "x": 336,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "Rakan gagne <speed>+{{ e5 }}% de vitesse de déplacement</speed> pendant {{ e2 }} sec. Rakan inflige <magicDamage>{{ totaldamagetooltip }} pts de dégâts magiques</magicDamage> et <status>charme</status> les ennemis pendant {{ e3 }} sec la première fois qu'il les touche. Le premier champion touché octroie à Rakan <speed>+{{ e6 }}% de vitesse de déplacement</speed>, et ce bonus diminue progressivement.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Rakan gagne <speed>{{ initialcastspeed }}% de vitesse de déplacement</speed> pendant {{ duration }} sec. Rakan inflige <magicDamage>{{ totaldamagetooltip }} pts de dégâts magiques</magicDamage> et <status>charme</status> les ennemis pendant {{ charmduration }} sec la première fois qu'il les touche. Le premier champion touché octroie à Rakan <speed>{{ touchspeed }}% de vitesse de déplacement</speed>, et ce bonus diminue progressivement.{{ spellmodifierdescriptionappend }}",
       "costBurn": "100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -150,8 +150,8 @@
           "Délai de récupération"
         ],
         "effect": [
-          "{{ e3 }} -> {{ e3NL }}",
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ charmduration }} -> {{ charmdurationNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -168,7 +168,7 @@
       "full": "Rakan_P.png",
       "sprite": "passive3.png",
       "group": "passive",
-      "x": 192,
+      "x": 240,
       "y": 48,
       "w": 48,
       "h": 48
@@ -193,10 +193,10 @@
       "vars": [],
       "image": {
         "full": "RakanQ.png",
-        "sprite": "spell10.png",
+        "sprite": "spell11.png",
         "group": "spell",
         "x": 192,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -227,10 +227,10 @@
       "vars": [],
       "image": {
         "full": "RakanW.png",
-        "sprite": "spell10.png",
+        "sprite": "spell11.png",
         "group": "spell",
         "x": 240,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -263,16 +263,16 @@
       "vars": [],
       "image": {
         "full": "RakanE.png",
-        "sprite": "spell10.png",
+        "sprite": "spell11.png",
         "group": "spell",
         "x": 288,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Rakan dashes to an allied champion, granting them <shield>{{ totalshield }} Shield</shield> for {{ e3 }} seconds.<br /><br />Rakan can <recast>Recast</recast> this Ability once within {{ e2 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Rakan dashes to an allied champion, granting them <shield>{{ totalshield }} Shield</shield> for {{ duration }} seconds.<br /><br />Rakan can <recast>Recast</recast> this Ability once within {{ recastwindow }} seconds.{{ spellmodifierdescriptionappend }}",
       "costBurn": "40/45/50/55/60",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -283,8 +283,8 @@
         ],
         "effect": [
           "{{ baseshield }} -> {{ baseshieldNL }}",
-          "{{ e4 }} -> {{ e4NL }}",
-          "{{ e5 }} -> {{ e5NL }}"
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cost }} -> {{ costNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -299,16 +299,16 @@
       "vars": [],
       "image": {
         "full": "RakanR.png",
-        "sprite": "spell10.png",
+        "sprite": "spell11.png",
         "group": "spell",
         "x": 336,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "Rakan gains <speed>{{ e5 }}% Move Speed</speed> for {{ e2 }} seconds. Rakan deals <magicDamage>{{ totaldamagetooltip }} magic damage</magicDamage> and <status>Charms</status> enemies for {{ e3 }} second(s) the first time he touches them. The first champion touched grants Rakan <speed>{{ e6 }}% decaying Move Speed</speed>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Rakan gains <speed>{{ initialcastspeed }}% Move Speed</speed> for {{ duration }} seconds. Rakan deals <magicDamage>{{ totaldamagetooltip }} magic damage</magicDamage> and <status>Charms</status> enemies for {{ charmduration }} second(s) the first time he touches them. The first champion touched grants Rakan <speed>{{ touchspeed }}% decaying Move Speed</speed>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -318,8 +318,8 @@
           "Cooldown"
         ],
         "effect": [
-          "{{ e3 }} -> {{ e3NL }}",
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ charmduration }} -> {{ charmdurationNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -336,7 +336,7 @@
       "full": "Rakan_P.png",
       "sprite": "passive3.png",
       "group": "passive",
-      "x": 192,
+      "x": 240,
       "y": 48,
       "w": 48,
       "h": 48

@@ -3,7 +3,7 @@
   "key": "887",
   "name": "Gwen",
   "title": "Couturière sacrée",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Ancienne poupée à qui la magie a conféré la vie, Gwen est armée des outils qui l'ont créée. Elle emporte à chaque pas l'amour de sa créatrice et ne tient jamais rien pour acquis. Elle commande à la Brume sacrée, une ancienne magie de protection qui a béni ses ciseaux, ses aiguilles et son fil à coudre. Tout est nouveau pour Gwen, mais elle reste déterminée à combattre dans la joie pour préserver le bien qui survit dans un monde en déréliction.",
   "tags": [
     "Fighter"
@@ -25,10 +25,10 @@
       "vars": [],
       "image": {
         "full": "GwenQ.png",
-        "sprite": "spell4.png",
+        "sprite": "spell5.png",
         "group": "spell",
-        "x": 288,
-        "y": 96,
+        "x": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -40,10 +40,12 @@
       "leveltip": {
         "label": [
           "Délai de récupération",
+          "Dégâts initiaux",
           "Dégâts du dernier coup"
         ],
         "effect": [
           "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ miniswipebasedamage }} -> {{ miniswipebasedamageNL }}",
           "{{ swipedamagebase }} -> {{ swipedamagebaseNL }}"
         ]
       },
@@ -59,10 +61,10 @@
       "vars": [],
       "image": {
         "full": "GwenW.png",
-        "sprite": "spell4.png",
+        "sprite": "spell5.png",
         "group": "spell",
-        "x": 336,
-        "y": 96,
+        "x": 144,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -93,10 +95,10 @@
       "vars": [],
       "image": {
         "full": "GwenE.png",
-        "sprite": "spell4.png",
+        "sprite": "spell5.png",
         "group": "spell",
-        "x": 384,
-        "y": 96,
+        "x": 192,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -129,10 +131,10 @@
       "vars": [],
       "image": {
         "full": "GwenR.png",
-        "sprite": "spell4.png",
+        "sprite": "spell5.png",
         "group": "spell",
-        "x": 432,
-        "y": 96,
+        "x": 240,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -192,10 +194,10 @@
       "vars": [],
       "image": {
         "full": "GwenQ.png",
-        "sprite": "spell4.png",
+        "sprite": "spell5.png",
         "group": "spell",
-        "x": 288,
-        "y": 96,
+        "x": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -207,10 +209,12 @@
       "leveltip": {
         "label": [
           "Cooldown",
+          "Initial Damage",
           "Final Strike Damage"
         ],
         "effect": [
           "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ miniswipebasedamage }} -> {{ miniswipebasedamageNL }}",
           "{{ swipedamagebase }} -> {{ swipedamagebaseNL }}"
         ]
       },
@@ -226,10 +230,10 @@
       "vars": [],
       "image": {
         "full": "GwenW.png",
-        "sprite": "spell4.png",
+        "sprite": "spell5.png",
         "group": "spell",
-        "x": 336,
-        "y": 96,
+        "x": 144,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -260,10 +264,10 @@
       "vars": [],
       "image": {
         "full": "GwenE.png",
-        "sprite": "spell4.png",
+        "sprite": "spell5.png",
         "group": "spell",
-        "x": 384,
-        "y": 96,
+        "x": 192,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -296,10 +300,10 @@
       "vars": [],
       "image": {
         "full": "GwenR.png",
-        "sprite": "spell4.png",
+        "sprite": "spell5.png",
         "group": "spell",
-        "x": 432,
-        "y": 96,
+        "x": 240,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -381,6 +385,12 @@
       "num": 39,
       "name": "Rain Shepherd Gwen",
       "chromas": true
+    },
+    {
+      "id": "887048",
+      "num": 48,
+      "name": "Faerie Court Gwen",
+      "chromas": true
     }
   ],
   "skins": [
@@ -418,6 +428,12 @@
       "id": "887039",
       "num": 39,
       "name": "Gwen bergère de la pluie",
+      "chromas": true
+    },
+    {
+      "id": "887048",
+      "num": 48,
+      "name": "Gwen de la cour féérique",
       "chromas": true
     }
   ],

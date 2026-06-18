@@ -3,7 +3,7 @@
   "key": "98",
   "name": "Shen",
   "title": "Œil du crépuscule",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Shen, l'Œil du crépuscule, est le chef d'un groupe secret de guerriers ioniens connu sous le nom de Kinkou. Désireux d'échapper aux méfaits des émotions, des préjugés et de l'ego, il porte un regard désintéressé sur les choses en arpentant le chemin invisible entre le royaume des esprits et le monde physique. Ayant pour mission d'assurer leur équilibre, Shen emploie ses lames d'acier et son énergie arcanique contre ceux qui voudraient le menacer.",
   "tags": [
     "Tank"
@@ -13,7 +13,7 @@
     "full": "Shen.png",
     "sprite": "champion4.png",
     "group": "champion",
-    "x": 0,
+    "x": 48,
     "y": 0,
     "w": 48,
     "h": 48
@@ -28,13 +28,13 @@
         "sprite": "spell12.png",
         "group": "spell",
         "x": 384,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Shen rappelle sa <keywordMajor>lame spirituelle</keywordMajor>. Les ennemis touchés par la lame sont <status>ralentis</status> de {{ e4 }}% pendant {{ e5 }} sec quand ils s'éloignent de Shen.<br /><br />De plus, les {{ e3 }} prochaines attaques de Shen infligent <magicDamage>{{ baseflatdamage }}</magicDamage> plus <magicDamage>{{ basepercenthealth }} des PV max en dégâts magiques</magicDamage> supplémentaires. Si Shen touche un champion ennemi avec la <keywordMajor>lame spirituelle</keywordMajor>, les dégâts sont augmentés à <magicDamage>{{ baseflatdamage }}</magicDamage> plus <magicDamage>{{ emppercenthealth }} des PV max en dégâts magiques</magicDamage> et il gagne <attackSpeed>+{{ e9 }}% de vitesse d'attaque</attackSpeed> pour ces attaques.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Shen rappelle sa <keywordMajor>lame spirituelle</keywordMajor>. Les ennemis touchés par la lame sont <status>ralentis</status> de {{ slowpercent }}% pendant {{ slowduration }} sec quand ils s'éloignent de Shen.<br /><br />De plus, les {{ numenhancedattacks }} prochaines attaques de Shen infligent <magicDamage>{{ baseflatdamage }}</magicDamage> plus <magicDamage>{{ basepercenthealth }} des PV max en dégâts magiques bonus</magicDamage>. Si Shen touche un champion ennemi avec la <keywordMajor>lame spirituelle</keywordMajor>, les dégâts sont augmentés à <magicDamage>{{ baseflatdamage }}</magicDamage> plus <magicDamage>{{ emppercenthealth }} des PV max en dégâts magiques</magicDamage> et il gagne <attackSpeed>{{ steroidas }}% de vitesse d'attaque</attackSpeed> pour ces attaques.{{ spellmodifierdescriptionappend }}",
       "costBurn": "140/130/120/110/100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -47,11 +47,11 @@
           "Délai de récupération"
         ],
         "effect": [
-          "{{ e2 }}% -> {{ e2NL }}%",
-          "{{ e6 }}% -> {{ e6NL }}%",
-          "{{ e4 }}% -> {{ e4NL }}%",
+          "{{ basepercentdamage }}% -> {{ basepercentdamageNL }}%",
+          "{{ enhancedpercentdamage }}% -> {{ enhancedpercentdamageNL }}%",
+          "{{ slowpercent }}% -> {{ slowpercentNL }}%",
           "{{ cost }} -> {{ costNL }}",
-          "{{ e7 }} -> {{ e7NL }}",
+          "{{ miniondamagecap }} -> {{ miniondamagecapNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -70,13 +70,13 @@
         "sprite": "spell12.png",
         "group": "spell",
         "x": 432,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Shen crée une zone défensive à l'emplacement de sa <keywordMajor>lame spirituelle</keywordMajor> pendant {{ e1 }} sec. Les attaques contre les champions alliés à l'intérieur de cette zone sont bloquées. <br /><br />Si elle n'a aucun champion à protéger au début de son effet, la zone temporise pendant un maximum de {{ e2 }} sec.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Shen crée une zone défensive à l'emplacement de sa <keywordMajor>lame spirituelle</keywordMajor> pendant {{ zoneduration }} sec. Les attaques contre les champions alliés à l'intérieur de cette zone sont bloquées. <br /><br />Si elle n'a aucun champion à protéger au début de son effet, la zone temporise pendant un maximum de {{ zonedelay }} sec.{{ spellmodifierdescriptionappend }}",
       "costBurn": "40",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -99,10 +99,10 @@
       "vars": [],
       "image": {
         "full": "ShenE.png",
-        "sprite": "spell12.png",
+        "sprite": "spell13.png",
         "group": "spell",
         "x": 0,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -133,10 +133,10 @@
       "vars": [],
       "image": {
         "full": "ShenR.png",
-        "sprite": "spell12.png",
+        "sprite": "spell13.png",
         "group": "spell",
         "x": 48,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -170,7 +170,7 @@
       "full": "Shen_Passive.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 0,
+      "x": 48,
       "y": 0,
       "w": 48,
       "h": 48
@@ -199,13 +199,13 @@
         "sprite": "spell12.png",
         "group": "spell",
         "x": 384,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Shen recalls his <keywordMajor>Spirit Blade</keywordMajor>. Enemies hit by the pull are <status>Slowed</status> by {{ e4 }}% while moving away from Shen for the next {{ e5 }} seconds.<br /><br />Additionally, Shen's next {{ e3 }} Attacks deal an additional <magicDamage>{{ baseflatdamage }}</magicDamage> plus <magicDamage>{{ basepercenthealth }} max Health magic damage</magicDamage>. If Shen hit an enemy champion with the <keywordMajor>Spirit Blade</keywordMajor>, the damage is increased to <magicDamage>{{ baseflatdamage }}</magicDamage> plus <magicDamage>{{ emppercenthealth }} max Health magic damage</magicDamage> and he gains <attackSpeed>{{ e9 }}% Attack Speed</attackSpeed> for those Attacks.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Shen recalls his <keywordMajor>Spirit Blade</keywordMajor>. Enemies hit by the pull are <status>Slowed</status> by {{ slowpercent }}% while moving away from Shen for the next {{ slowduration }} seconds.<br /><br />Additionally, Shen's next {{ numenhancedattacks }} Attacks deal an additional <magicDamage>{{ baseflatdamage }}</magicDamage> plus <magicDamage>{{ basepercenthealth }} max Health magic damage</magicDamage>. If Shen hit an enemy champion with the <keywordMajor>Spirit Blade</keywordMajor>, the damage is increased to <magicDamage>{{ baseflatdamage }}</magicDamage> plus <magicDamage>{{ emppercenthealth }} max Health magic damage</magicDamage> and he gains <attackSpeed>{{ steroidas }}% Attack Speed</attackSpeed> for those Attacks.{{ spellmodifierdescriptionappend }}",
       "costBurn": "140/130/120/110/100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -218,11 +218,11 @@
           "Cooldown"
         ],
         "effect": [
-          "{{ e2 }}% -> {{ e2NL }}%",
-          "{{ e6 }}% -> {{ e6NL }}%",
-          "{{ e4 }}% -> {{ e4NL }}%",
+          "{{ basepercentdamage }}% -> {{ basepercentdamageNL }}%",
+          "{{ enhancedpercentdamage }}% -> {{ enhancedpercentdamageNL }}%",
+          "{{ slowpercent }}% -> {{ slowpercentNL }}%",
           "{{ cost }} -> {{ costNL }}",
-          "{{ e7 }} -> {{ e7NL }}",
+          "{{ miniondamagecap }} -> {{ miniondamagecapNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -241,13 +241,13 @@
         "sprite": "spell12.png",
         "group": "spell",
         "x": 432,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Shen creates a defensive zone at his <keywordMajor>Spirit Blade</keywordMajor> for {{ e1 }} seconds. Attacks against allied champions in the zone are blocked. <br /><br />If there are no champions to protect in the zone when it starts, it will wait for up to {{ e2 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Shen creates a defensive zone at his <keywordMajor>Spirit Blade</keywordMajor> for {{ zoneduration }} seconds. Attacks against allied champions in the zone are blocked. <br /><br />If there are no champions to protect in the zone when it starts, it will wait for up to {{ zonedelay }} seconds.{{ spellmodifierdescriptionappend }}",
       "costBurn": "40",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -270,10 +270,10 @@
       "vars": [],
       "image": {
         "full": "ShenE.png",
-        "sprite": "spell12.png",
+        "sprite": "spell13.png",
         "group": "spell",
         "x": 0,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -304,10 +304,10 @@
       "vars": [],
       "image": {
         "full": "ShenR.png",
-        "sprite": "spell12.png",
+        "sprite": "spell13.png",
         "group": "spell",
         "x": 48,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -341,7 +341,7 @@
       "full": "Shen_Passive.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 0,
+      "x": 48,
       "y": 0,
       "w": 48,
       "h": 48
@@ -430,6 +430,12 @@
       "num": 51,
       "name": "Three Honors Shen",
       "chromas": false
+    },
+    {
+      "id": "98054",
+      "num": 54,
+      "name": "Broken Covenant Shen",
+      "chromas": false
     }
   ],
   "skins": [
@@ -509,6 +515,12 @@
       "id": "98051",
       "num": 51,
       "name": "Shen des Trois Honneurs",
+      "chromas": false
+    },
+    {
+      "id": "98054",
+      "num": 54,
+      "name": "Shen de l'Alliance brisée",
       "chromas": false
     }
   ],

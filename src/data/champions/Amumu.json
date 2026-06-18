@@ -3,7 +3,7 @@
   "key": "32",
   "name": "Amumu",
   "title": "Momie mélancolique",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "La légende veut qu'Amumu soit une âme solitaire et mélancolique de la Shurima antique et qu'il parcoure le monde à la recherche d'un ami. Condamné par une malédiction à rester seul à jamais, il provoque la mort et la ruine à chaque geste d'affection. Ceux qui prétendent l'avoir vu le décrivent comme un cadavre vivant, petit de taille, enveloppé dans d'effrayants bandages. Il a inspiré bien des mythes, des chansons et des légendes, transmis de génération en génération pendant si longtemps qu'il est désormais impossible de démêler le vrai du faux.",
   "tags": [
     "Tank",
@@ -28,14 +28,14 @@
         "full": "BandageToss.png",
         "sprite": "spell1.png",
         "group": "spell",
-        "x": 96,
-        "y": 0,
+        "x": 384,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "2",
       "maxrank": 5,
-      "tooltip": "Amumu lance une bandelette dans une direction, se tractant jusqu'au premier ennemi touché, l'<status>étourdissant</status> pendant {{ e2 }} sec et lui infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.<br /><br />Cette compétence a 2 charges.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Amumu lance une bandelette dans une direction, se tractant jusqu'au premier ennemi touché, l'<status>étourdissant</status> pendant {{ stunduration }} sec et lui infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.<br /><br />Cette compétence a 2 charges.{{ spellmodifierdescriptionappend }}",
       "costBurn": "50",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -44,7 +44,7 @@
           "Délai de rechargement"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ ammorechargetime }} -> {{ ammorechargetimeNL }}"
         ]
       },
@@ -62,8 +62,8 @@
         "full": "AuraofDespair.png",
         "sprite": "spell1.png",
         "group": "spell",
-        "x": 144,
-        "y": 0,
+        "x": 432,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -94,14 +94,14 @@
         "full": "Tantrum.png",
         "sprite": "spell1.png",
         "group": "spell",
-        "x": 192,
-        "y": 0,
+        "x": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive :</spellPassive> Amumu subit des dégâts physiques réduits de {{ damagereduction }}. De plus, quand Amumu est touché par une attaque, le délai de récupération de cette compétence est réduit de {{ e3 }} sec.<br /><br /><spellActive>Active :</spellActive> Amumu pique une colère, infligeant <magicDamage>{{ tantrumdamage }} pts de dégâts magiques</magicDamage> aux ennemis proches.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive :</spellPassive> Amumu subit des dégâts physiques réduits de {{ damagereduction }}. De plus, quand Amumu est touché par une attaque, le délai de récupération de cette compétence est réduit de {{ cdronhit }} sec.<br /><br /><spellActive>Active :</spellActive> Amumu pique une colère, infligeant <magicDamage>{{ tantrumdamage }} pts de dégâts magiques</magicDamage> aux ennemis proches.{{ spellmodifierdescriptionappend }}",
       "costBurn": "35",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -111,9 +111,9 @@
           "Dégâts"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ basedamagereduction }} -> {{ basedamagereductionNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}",
-          "{{ e2 }} -> {{ e2NL }}"
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -130,8 +130,8 @@
         "full": "CurseoftheSadMummy.png",
         "sprite": "spell1.png",
         "group": "spell",
-        "x": 240,
-        "y": 0,
+        "x": 48,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -193,14 +193,14 @@
         "full": "BandageToss.png",
         "sprite": "spell1.png",
         "group": "spell",
-        "x": 96,
-        "y": 0,
+        "x": 384,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "2",
       "maxrank": 5,
-      "tooltip": "Amumu launches a bandage, pulling himself to the first enemy hit, <status>Stunning</status> them for {{ e2 }} second, and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>.<br /><br />This Ability has 2 charges.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Amumu launches a bandage, pulling himself to the first enemy hit, <status>Stunning</status> them for {{ stunduration }} second, and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>.<br /><br />This Ability has 2 charges.{{ spellmodifierdescriptionappend }}",
       "costBurn": "50",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -209,7 +209,7 @@
           "Recharge Time"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ ammorechargetime }} -> {{ ammorechargetimeNL }}"
         ]
       },
@@ -227,8 +227,8 @@
         "full": "AuraofDespair.png",
         "sprite": "spell1.png",
         "group": "spell",
-        "x": 144,
-        "y": 0,
+        "x": 432,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -259,14 +259,14 @@
         "full": "Tantrum.png",
         "sprite": "spell1.png",
         "group": "spell",
-        "x": 192,
-        "y": 0,
+        "x": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive:</spellPassive> Amumu takes {{ damagereduction }} reduced physical damage. Additionally, when Amumu is hit by an Attack, this Ability's Cooldown is reduced by {{ e3 }} seconds.<br /><br /><spellActive>Active:</spellActive> Amumu throws a tantrum, dealing <magicDamage>{{ tantrumdamage }} magic damage</magicDamage> to nearby enemies.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive:</spellPassive> Amumu takes {{ damagereduction }} reduced physical damage. Additionally, when Amumu is hit by an Attack, this Ability's Cooldown is reduced by {{ cdronhit }} seconds.<br /><br /><spellActive>Active:</spellActive> Amumu throws a tantrum, dealing <magicDamage>{{ tantrumdamage }} magic damage</magicDamage> to nearby enemies.{{ spellmodifierdescriptionappend }}",
       "costBurn": "35",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -276,9 +276,9 @@
           "Damage"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ basedamagereduction }} -> {{ basedamagereductionNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}",
-          "{{ e2 }} -> {{ e2NL }}"
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -295,8 +295,8 @@
         "full": "CurseoftheSadMummy.png",
         "sprite": "spell1.png",
         "group": "spell",
-        "x": 240,
-        "y": 0,
+        "x": 48,
+        "y": 96,
         "w": 48,
         "h": 48
       },

@@ -3,7 +3,7 @@
   "key": "106",
   "name": "Volibear",
   "title": "Tempête impitoyable",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Pour ceux qui le vénèrent encore, Volibear est l'incarnation de la tempête. Destructeur, sauvage et déterminé, il existait bien avant que les mortels n'arpentent la toundra de Freljord ; désormais, il défend férocement les terres qu'il a créées avec sa famille de demi-dieux. Habité d'une haine profonde envers la civilisation et la faiblesse qu'elle a engendrée, il se bat à coups de crocs et de griffes pour restaurer les traditions d'autrefois, celles du temps où la terre était sauvage et où le sang coulait librement.",
   "tags": [
     "Fighter",
@@ -14,7 +14,7 @@
     "full": "Volibear.png",
     "sprite": "champion5.png",
     "group": "champion",
-    "x": 192,
+    "x": 240,
     "y": 0,
     "w": 48,
     "h": 48
@@ -26,10 +26,10 @@
       "vars": [],
       "image": {
         "full": "VolibearQ.png",
-        "sprite": "spell15.png",
+        "sprite": "spell16.png",
         "group": "spell",
         "x": 192,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -54,7 +54,7 @@
       "rangeBurn": "300",
       "datavalues": {},
       "description": "Volibear gagne de la vitesse en direction des ennemis, <status>étourdissant</status> et blessant le premier qu'il attaque.",
-      "cooldownBurn": "14/13/12/11/10"
+      "cooldownBurn": "12/11.5/11/10.5/10"
     },
     {
       "id": "VolibearW",
@@ -62,10 +62,10 @@
       "vars": [],
       "image": {
         "full": "VolibearW.png",
-        "sprite": "spell15.png",
+        "sprite": "spell16.png",
         "group": "spell",
         "x": 240,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -100,10 +100,10 @@
       "vars": [],
       "image": {
         "full": "VolibearE.png",
-        "sprite": "spell15.png",
+        "sprite": "spell16.png",
         "group": "spell",
         "x": 288,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -136,10 +136,10 @@
       "vars": [],
       "image": {
         "full": "VolibearR.png",
-        "sprite": "spell15.png",
+        "sprite": "spell16.png",
         "group": "spell",
         "x": 336,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -175,7 +175,7 @@
       "full": "Volibear_Icon_P.png",
       "sprite": "passive5.png",
       "group": "passive",
-      "x": 192,
+      "x": 240,
       "y": 0,
       "w": 48,
       "h": 48
@@ -201,10 +201,10 @@
       "vars": [],
       "image": {
         "full": "VolibearQ.png",
-        "sprite": "spell15.png",
+        "sprite": "spell16.png",
         "group": "spell",
         "x": 192,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -229,7 +229,7 @@
       "rangeBurn": "300",
       "datavalues": {},
       "description": "Volibear gains speed towards enemies, <status>Stunning</status> and damaging the first one he Attacks.",
-      "cooldownBurn": "14/13/12/11/10"
+      "cooldownBurn": "12/11.5/11/10.5/10"
     },
     {
       "id": "VolibearW",
@@ -237,10 +237,10 @@
       "vars": [],
       "image": {
         "full": "VolibearW.png",
-        "sprite": "spell15.png",
+        "sprite": "spell16.png",
         "group": "spell",
         "x": 240,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -275,10 +275,10 @@
       "vars": [],
       "image": {
         "full": "VolibearE.png",
-        "sprite": "spell15.png",
+        "sprite": "spell16.png",
         "group": "spell",
         "x": 288,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -311,10 +311,10 @@
       "vars": [],
       "image": {
         "full": "VolibearR.png",
-        "sprite": "spell15.png",
+        "sprite": "spell16.png",
         "group": "spell",
         "x": 336,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -350,7 +350,7 @@
       "full": "Volibear_Icon_P.png",
       "sprite": "passive5.png",
       "group": "passive",
-      "x": 192,
+      "x": 240,
       "y": 0,
       "w": 48,
       "h": 48

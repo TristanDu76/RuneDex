@@ -3,7 +3,7 @@
   "key": "412",
   "name": "Thresh",
   "title": "Garde aux chaînes",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Sadique mais rusé, Thresh est un ambitieux spectre des Îles obscures. Autrefois le gardien d'innombrables secrets des arcanes, il fut terrassé par un pouvoir plus grand que la vie ou la mort, et il s'alimente maintenant des souffrances et des tourments qu'il inflige à d'autres avec une inventivité cruelle. Les souffrances de ses victimes ne se limitent pas à leur enveloppe mortelle, car Thresh fait agoniser leurs âmes, les emprisonnant pour l'éternité dans sa lanterne impie.",
   "tags": [
     "Support",
@@ -14,7 +14,7 @@
     "full": "Thresh.png",
     "sprite": "champion4.png",
     "group": "champion",
-    "x": 336,
+    "x": 384,
     "y": 48,
     "w": 48,
     "h": 48
@@ -29,7 +29,7 @@
         "sprite": "spell14.png",
         "group": "spell",
         "x": 288,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -63,7 +63,7 @@
         "sprite": "spell14.png",
         "group": "spell",
         "x": 336,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -99,13 +99,13 @@
         "sprite": "spell14.png",
         "group": "spell",
         "x": 384,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive :</spellPassive> les attaques de Thresh infligent des dégâts supplémentaires selon le temps passé depuis la précédente attaque. Elles infligent de <magicDamage>{{ pattackdamagemin }}</magicDamage> à <magicDamage>{{ pattackdamagemax }} pts de dégâts magiques</magicDamage>.<br /><br /><spellActive>Active :</spellActive> Thresh donne un coup de chaînes, <status>attirant</status> ou <status>repoussant</status> les ennemis dans la direction du coup. Les ennemis touchés sont également <status>ralentis</status> de {{ e2 }}% pendant {{ e4 }} sec et subissent <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive :</spellPassive> les attaques de Thresh infligent des dégâts bonus selon le temps passé depuis la précédente attaque. Elles infligent entre <magicDamage>{{ pattackdamagemin }}</magicDamage> et <magicDamage>{{ pattackdamagemax }} pts de dégâts magiques</magicDamage>.<br /><br /><spellActive>Active :</spellActive> Thresh donne un coup de chaînes, <status>attirant</status> ou <status>repoussant</status> les ennemis dans la direction du coup. Les ennemis touchés sont également <status>ralentis</status> de {{ activeslowpercentage }}% pendant {{ slowduration }} sec et subissent <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "60/65/70/75/80",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -118,8 +118,8 @@
         ],
         "effect": [
           "{{ passiveadratio }}% -> {{ passiveadratioNL }}%",
-          "{{ e1 }} -> {{ e1NL }}",
-          "{{ e2 }}% -> {{ e2NL }}%",
+          "{{ activebasedamage }} -> {{ activebasedamageNL }}",
+          "{{ activeslowpercentage }}% -> {{ activeslowpercentageNL }}%",
           "{{ cost }} -> {{ costNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
@@ -139,13 +139,13 @@
         "sprite": "spell14.png",
         "group": "spell",
         "x": 432,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "Thresh crée des murs spectraux, <status>ralentissant</status> les champions de {{ e3 }}% pendant {{ e2 }} sec et infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. Les murs se brisent en cas de collision, et dès qu'un mur est brisé, les murs restants n'infligent plus de dégâts et leur <status>ralentissement</status> dure moitié moins longtemps.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Thresh crée des murs spectraux, <status>ralentissant</status> les champions de {{ slowamount }}% pendant {{ slowduration }} sec et infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. Les murs se brisent en cas de collision, et dès qu'un mur est brisé, les murs restants n'infligent plus de dégâts et leur <status>ralentissement</status> dure moitié moins longtemps.{{ spellmodifierdescriptionappend }}",
       "costBurn": "100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -154,7 +154,7 @@
           "Délai de récupération"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ damage }} -> {{ damageNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -171,7 +171,7 @@
       "full": "Thresh_Passive.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 336,
+      "x": 384,
       "y": 48,
       "w": 48,
       "h": 48
@@ -200,7 +200,7 @@
         "sprite": "spell14.png",
         "group": "spell",
         "x": 288,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -234,7 +234,7 @@
         "sprite": "spell14.png",
         "group": "spell",
         "x": 336,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -270,13 +270,13 @@
         "sprite": "spell14.png",
         "group": "spell",
         "x": 384,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive:</spellPassive> Thresh's Attacks deal additional damage based on how long since he last Attacked. They deal between <magicDamage>{{ pattackdamagemin }}</magicDamage> and <magicDamage>{{ pattackdamagemax }} magic damage</magicDamage>.<br /><br /><spellActive>Active:</spellActive> Thresh whips his chains, <status>Pulling</status> or <status>Pushing</status> enemies in the direction of the swing. Enemies hit are also <status>Slowed</status> by {{ e2 }}% for {{ e4 }} second and take <magicDamage>{{ totaldamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive:</spellPassive> Thresh's Attacks deal additional damage based on how long since he last Attacked. They deal between <magicDamage>{{ pattackdamagemin }}</magicDamage> and <magicDamage>{{ pattackdamagemax }} magic damage</magicDamage>.<br /><br /><spellActive>Active:</spellActive> Thresh whips his chains, <status>Pulling</status> or <status>Pushing</status> enemies in the direction of the swing. Enemies hit are also <status>Slowed</status> by {{ activeslowpercentage }}% for {{ slowduration }} second and take <magicDamage>{{ totaldamage }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "60/65/70/75/80",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -289,8 +289,8 @@
         ],
         "effect": [
           "{{ passiveadratio }}% -> {{ passiveadratioNL }}%",
-          "{{ e1 }} -> {{ e1NL }}",
-          "{{ e2 }}% -> {{ e2NL }}%",
+          "{{ activebasedamage }} -> {{ activebasedamageNL }}",
+          "{{ activeslowpercentage }}% -> {{ activeslowpercentageNL }}%",
           "{{ cost }} -> {{ costNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
@@ -310,13 +310,13 @@
         "sprite": "spell14.png",
         "group": "spell",
         "x": 432,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "Thresh creates a prison of spectral walls, <status>Slowing</status> champions by {{ e3 }}% for {{ e2 }} seconds and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>. Walls break after one collision, and after one is broken, the rest deal no damage and <status>Slow</status> for half duration.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Thresh creates a prison of spectral walls, <status>Slowing</status> champions by {{ slowamount }}% for {{ slowduration }} seconds and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>. Walls break after one collision, and after one is broken, the rest deal no damage and <status>Slow</status> for half duration.{{ spellmodifierdescriptionappend }}",
       "costBurn": "100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -325,7 +325,7 @@
           "Cooldown"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ damage }} -> {{ damageNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -342,7 +342,7 @@
       "full": "Thresh_Passive.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 336,
+      "x": 384,
       "y": 48,
       "w": 48,
       "h": 48

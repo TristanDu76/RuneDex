@@ -3,7 +3,7 @@
   "key": "236",
   "name": "Lucian",
   "title": "Purificateur",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Lucian, Sentinelle de la lumière, est un funeste chasseur de spectres. Les pourchassant sans relâche, il les abat de ses pistolets jumeaux. Lorsque sa femme fut tuée par le spectre Thresh, Lucian fit tout pour se venger. Aujourd'hui, Senna est revenue à la vie, mais la rage de Lucian demeure inchangée. Sans pitié et obstiné, il ne reculera devant rien pour protéger les vivants des monstres de la Brume noire.",
   "tags": [
     "Marksman",
@@ -14,7 +14,7 @@
     "full": "Lucian.png",
     "sprite": "champion2.png",
     "group": "champion",
-    "x": 192,
+    "x": 240,
     "y": 48,
     "w": 48,
     "h": 48
@@ -26,10 +26,10 @@
       "vars": [],
       "image": {
         "full": "LucianQ.png",
-        "sprite": "spell7.png",
+        "sprite": "spell8.png",
         "group": "spell",
         "x": 192,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -62,16 +62,16 @@
       "vars": [],
       "image": {
         "full": "LucianW.png",
-        "sprite": "spell7.png",
+        "sprite": "spell8.png",
         "group": "spell",
         "x": 240,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Lucian tire un projectile qui explose au bout de sa course ou contre le premier ennemi touché, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>, révélant brièvement les ennemis et les marquant pendant 6 sec.<br /><br />Quand Lucian ou un allié blesse un ennemi marqué, Lucian gagne <speed>+{{ e2 }} vitesse de déplacement</speed> pendant 1 sec. Quand des alliés déclenchent cet effet, Lucian obtient également <attention>Vigilance</attention>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Lucian tire un projectile qui explose au bout de sa course ou contre le premier ennemi touché, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>, révélant brièvement les ennemis et les marquant pendant 6 sec.<br /><br />Quand Lucian ou un allié blesse un ennemi marqué, Lucian gagne <speed>{{ movespeedamount }} vitesse de déplacement</speed> pendant 1 sec. Quand des alliés déclenchent cet effet, Lucian obtient également <attention>Vigilance</attention>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "60",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -82,7 +82,7 @@
         ],
         "effect": [
           "{{ basedamage }} -> {{ basedamageNL }}",
-          "{{ e2 }} -> {{ e2NL }}",
+          "{{ movespeedamount }} -> {{ movespeedamountNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -98,16 +98,16 @@
       "vars": [],
       "image": {
         "full": "LucianE.png",
-        "sprite": "spell7.png",
+        "sprite": "spell8.png",
         "group": "spell",
         "x": 288,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Lucian se rue dans une direction.<br /><br />Le délai de récupération est réduit de {{ e1 }} sec chaque fois que Lucian touche un ennemi avec <spellName>Pistolero</spellName> ({{ e2 }} sec pour les champions). {{ spellmodifierdescriptionappend }}",
+      "tooltip": "Lucian se rue dans une direction.<br /><br />Le délai de récupération est réduit de {{ cdrefundbase }} sec chaque fois que Lucian touche un ennemi avec <spellName>Pistolero</spellName> ({{ cdrefundchampion }} sec pour les champions). {{ spellmodifierdescriptionappend }}",
       "costBurn": "32/24/16/8/0",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -132,10 +132,10 @@
       "vars": [],
       "image": {
         "full": "LucianR.png",
-        "sprite": "spell7.png",
+        "sprite": "spell8.png",
         "group": "spell",
         "x": 336,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -167,7 +167,7 @@
       "full": "Lucian_Passive.png",
       "sprite": "passive2.png",
       "group": "passive",
-      "x": 192,
+      "x": 240,
       "y": 48,
       "w": 48,
       "h": 48
@@ -190,10 +190,10 @@
       "vars": [],
       "image": {
         "full": "LucianQ.png",
-        "sprite": "spell7.png",
+        "sprite": "spell8.png",
         "group": "spell",
         "x": 192,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -226,16 +226,16 @@
       "vars": [],
       "image": {
         "full": "LucianW.png",
-        "sprite": "spell7.png",
+        "sprite": "spell8.png",
         "group": "spell",
         "x": 240,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Lucian fires a shot that explodes at the end of its range or on the first enemy hit, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>, briefly revealing enemies and marking them for 6 seconds.<br /><br />When Lucian or an ally damages a marked enemy, Lucian gains <speed>{{ e2 }} Move Speed</speed> for 1 second. Allies triggering this effect will also grant Lucian <attention>Vigilance</attention>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Lucian fires a shot that explodes at the end of its range or on the first enemy hit, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>, briefly revealing enemies and marking them for 6 seconds.<br /><br />When Lucian or an ally damages a marked enemy, Lucian gains <speed>{{ movespeedamount }} Move Speed</speed> for 1 second. Allies triggering this effect will also grant Lucian <attention>Vigilance</attention>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "60",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -246,7 +246,7 @@
         ],
         "effect": [
           "{{ basedamage }} -> {{ basedamageNL }}",
-          "{{ e2 }} -> {{ e2NL }}",
+          "{{ movespeedamount }} -> {{ movespeedamountNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -262,16 +262,16 @@
       "vars": [],
       "image": {
         "full": "LucianE.png",
-        "sprite": "spell7.png",
+        "sprite": "spell8.png",
         "group": "spell",
         "x": 288,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Lucian dashes.<br /><br />Cooldown is reduced by {{ e1 }} second whenever Lucian hits an enemy with <spellName>Lightslinger</spellName> ({{ e2 }} seconds for champions). {{ spellmodifierdescriptionappend }}",
+      "tooltip": "Lucian dashes.<br /><br />Cooldown is reduced by {{ cdrefundbase }} second whenever Lucian hits an enemy with <spellName>Lightslinger</spellName> ({{ cdrefundchampion }} seconds for champions). {{ spellmodifierdescriptionappend }}",
       "costBurn": "32/24/16/8/0",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -296,10 +296,10 @@
       "vars": [],
       "image": {
         "full": "LucianR.png",
-        "sprite": "spell7.png",
+        "sprite": "spell8.png",
         "group": "spell",
         "x": 336,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -331,7 +331,7 @@
       "full": "Lucian_Passive.png",
       "sprite": "passive2.png",
       "group": "passive",
-      "x": 192,
+      "x": 240,
       "y": 48,
       "w": 48,
       "h": 48

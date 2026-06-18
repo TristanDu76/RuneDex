@@ -2,11 +2,15 @@
   {
     "id": "elise",
     "name": "Elise",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Elise.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Elise.png",
     "factionKey": "shadow-isles",
+    "factionKeys": [
+      "shadow-isles",
+      "noxus"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "leblanc",
@@ -59,28 +63,50 @@
   {
     "id": "gwen",
     "name": "Gwen",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Gwen.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Gwen.png",
     "factionKey": "shadow-isles",
+    "factionKeys": [
+      "shadow-isles"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "isolde",
         "type": "lore",
         "relation": "creator",
         "auto_generated": false
+      },
+      {
+        "id": "nilah",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "riven",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       }
     ]
   },
   {
     "id": "hecarim",
     "name": "Hecarim",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Hecarim.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Hecarim.png",
     "factionKey": "shadow-isles",
+    "factionKeys": [
+      "shadow-isles"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "ledros",
@@ -117,17 +143,28 @@
   {
     "id": "kalista",
     "name": "Kalista",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Kalista.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Kalista.png",
     "factionKey": "shadow-isles",
+    "factionKeys": [
+      "shadow-isles"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "ledros",
         "type": "lore",
         "relation": "eternal-lover",
         "auto_generated": false
+      },
+      {
+        "id": "soraka",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "isolde",
@@ -172,23 +209,210 @@
     ]
   },
   {
-    "id": "maokai",
-    "name": "Maokai",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Maokai.png",
-    "factionKey": "shadow-isles",
+    "id": "karthus",
+    "name": "Karthus",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Karthus.png",
+    "factionKey": "noxus",
+    "factionKeys": [
+      "noxus",
+      "shadow-isles"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
-    "related_characters": []
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "kindred",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "mordekaiser",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "soraka",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "thresh",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "yorick",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "maokai",
+    "name": "Maokai",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Maokai.png",
+    "factionKey": "shadow-isles",
+    "factionKeys": [
+      "shadow-isles"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "ahri",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "braum",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "illaoi",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "missfortune",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "pyke",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "yasuo",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "yorick",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "zyra",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "mordekaiser",
+    "name": "Mordekaiser",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Mordekaiser.png",
+    "factionKey": "noxus",
+    "factionKeys": [
+      "noxus",
+      "shadow-isles"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "rell",
+        "type": "champion",
+        "relation": "enemy/shared",
+        "auto_generated": false,
+        "note_fr": "Créée pour le détruire",
+        "note_en": "Created to destroy him"
+      },
+      {
+        "id": "kindred",
+        "type": "champion",
+        "relation": "rival",
+        "auto_generated": false,
+        "note_fr": "Triche la mort",
+        "note_en": "Cheats death"
+      },
+      {
+        "id": "karthus",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "nilah",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "amoline-kiosar-hastur",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "januk",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "mallat",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "telsi",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "vikrash-the-exuberant",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
   },
   {
     "id": "thresh",
     "name": "Thresh",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Thresh.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Thresh.png",
     "factionKey": "shadow-isles",
+    "factionKeys": [
+      "shadow-isles"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "lucian",
@@ -203,6 +427,14 @@
         "auto_generated": false,
         "note_fr": "Âme torturée et liée à la Lance de Vengeance",
         "note_en": "Tortured soul bound to the spear of vengeance"
+      },
+      {
+        "id": "karthus",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "isolde",
@@ -233,11 +465,14 @@
   {
     "id": "vex",
     "name": "Vex",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Vex.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Vex.png",
     "factionKey": "shadow-isles",
+    "factionKeys": [
+      "shadow-isles"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "norra",
@@ -246,17 +481,36 @@
         "auto_generated": false,
         "note_fr": "Rencontrée dans les ombres",
         "note_en": "Met in the shadows"
+      },
+      {
+        "id": "fiddlesticks",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "lillia",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       }
     ]
   },
   {
     "id": "viego",
     "name": "Viego",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Viego.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Viego.png",
     "factionKey": "shadow-isles",
+    "factionKeys": [
+      "shadow-isles"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "ledros",
@@ -279,6 +533,30 @@
         "auto_generated": false,
         "note_fr": "A tué sa mentor",
         "note_en": "Killed his mentor"
+      },
+      {
+        "id": "nilah",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "riven",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "smolder",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "ada",
@@ -405,11 +683,14 @@
   {
     "id": "yorick",
     "name": "Yorick",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Yorick.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Yorick.png",
     "factionKey": "shadow-isles",
+    "factionKeys": [
+      "shadow-isles"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "isolde",
@@ -418,6 +699,22 @@
         "auto_generated": false,
         "note_fr": "Protecteur de la Vierge",
         "note_en": "Protector of the Maiden"
+      },
+      {
+        "id": "karthus",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "maokai",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "maiden-of-the-mist",
@@ -434,6 +731,9 @@
     "name": "Erastin, the Disgraced",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/08SI040-full.png?77953",
     "factionKey": "shadow-isles",
+    "factionKeys": [
+      "shadow-isles"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -456,6 +756,9 @@
     "name": "Isolde",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Isolde_Render.png?788f6",
     "factionKey": "shadow-isles",
+    "factionKeys": [
+      "shadow-isles"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -532,6 +835,9 @@
     "name": "Kharox",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/09SI017-full.png?6f5b0",
     "factionKey": "shadow-isles",
+    "factionKeys": [
+      "shadow-isles"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -548,6 +854,9 @@
     "name": "Ledros",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/thumb/01SI033-full.png/1200px-01SI033-full.png?b1aad",
     "factionKey": "shadow-isles",
+    "factionKeys": [
+      "shadow-isles"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -582,6 +891,9 @@
     "name": "Maiden of the Mist",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Yorick_Eulogy_of_the_Isles_Render.png?abba2",
     "factionKey": "shadow-isles",
+    "factionKeys": [
+      "shadow-isles"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -604,6 +916,9 @@
     "name": "Necrit",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/thumb/Necrit_RuinedKing_Portrait_01.jpg/1200px-Necrit_RuinedKing_Portrait_01.jpg?c8f8c",
     "factionKey": "shadow-isles",
+    "factionKeys": [
+      "shadow-isles"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -644,7 +959,7 @@
         "auto_generated": false
       },
       {
-        "id": "miss-fortune",
+        "id": "missfortune",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -680,6 +995,9 @@
     "name": "Rhasa the Sunderer",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/01SI035-full.png?f0a64",
     "factionKey": "shadow-isles",
+    "factionKeys": [
+      "shadow-isles"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -702,7 +1020,7 @@
         "auto_generated": false
       },
       {
-        "id": "miss-fortune",
+        "id": "missfortune",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -732,6 +1050,9 @@
     "name": "Tyrus of Helia",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/RKO_Model_WR_Tyrus_Neutral.png?c33fc",
     "factionKey": "shadow-isles",
+    "factionKeys": [
+      "shadow-isles"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -784,6 +1105,9 @@
     "name": "Vex's Shadow",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/09BC018-full.png?4d05c",
     "factionKey": "shadow-isles",
+    "factionKeys": [
+      "shadow-isles"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [

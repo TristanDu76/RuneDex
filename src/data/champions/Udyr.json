@@ -3,7 +3,7 @@
   "key": "77",
   "name": "Udyr",
   "title": "Gardien des esprits",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Udyr est le plus puissant des Gardiens des esprits, il communie avec l'ensemble des esprits qui habitent Freljord. Il comprend leurs besoins avec empathie et il est capable de canaliser et de transformer leur énergie éthérée pour alimenter son propre style de combat primitif. Il cherche l'équilibre intérieur pour que son esprit ne se perde pas parmi les autres, mais il cherche également l'équilibre à l'extérieur, car le paysage mystique de Freljord ne peut prospérer qu'avec la croissance engendrée par le conflit et la lutte. Udyr sait qu'il faut faire des sacrifices pour tenir à distance la stagnation des temps de paix.",
   "tags": [
     "Fighter",
@@ -14,7 +14,7 @@
     "full": "Udyr.png",
     "sprite": "champion4.png",
     "group": "champion",
-    "x": 144,
+    "x": 192,
     "y": 96,
     "w": 48,
     "h": 48
@@ -26,10 +26,10 @@
       "vars": [],
       "image": {
         "full": "UdyrQ.png",
-        "sprite": "spell14.png",
+        "sprite": "spell15.png",
         "group": "spell",
         "x": 0,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -42,12 +42,14 @@
         "label": [
           "Vitesse d'attaque",
           "% des PV max en dégâts",
-          "Dégâts à l'impact"
+          "Dégâts à l'impact",
+          "Ratio de PV bonus des dégâts à l'impact"
         ],
         "effect": [
           "{{ attackspeedbase*100.000000 }}% -> {{ attackspeedbasenl*100.000000 }}%",
           "{{ maxhponhitbase*100.000000 }}% -> {{ maxhponhitbasenl*100.000000 }}%",
-          "{{ basedamage }} -> {{ basedamageNL }}"
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ onhitbonushpratio*100.000000 }}% -> {{ onhitbonushprationl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -62,10 +64,10 @@
       "vars": [],
       "image": {
         "full": "UdyrW.png",
-        "sprite": "spell14.png",
+        "sprite": "spell15.png",
         "group": "spell",
         "x": 48,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -98,16 +100,16 @@
       "vars": [],
       "image": {
         "full": "UdyrE.png",
-        "sprite": "spell14.png",
+        "sprite": "spell15.png",
         "group": "spell",
         "x": 96,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 6,
-      "tooltip": "<spellActive>Posture du piétinement :</spellActive> Udyr gagne <speed>+{{ movespeed*100 }}% de vitesse de déplacement</speed> (ce bonus diminue en {{ movespeedduration }} sec). De plus, les attaques d'Udyr lui permettent de se ruer sur sa cible et de l'<status>étourdir</status> pendant {{ stunduration }} sec ({{ icd }} sec de récupération par cible).<br /><br /><keywordMajor>Éveil :</keywordMajor> Udyr devient immunisé contre les effets <status>immobilisants</status> et <status>entravants</status> et gagne un supplément de <speed>+{{ movespeedbonus }} vitesse de déplacement</speed> pendant {{ unstoppableduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellActive>Posture du piétinement :</spellActive> Udyr gagne <speed>{{ movespeed }} vitesse de déplacement</speed> (ce bonus diminue en {{ movespeedduration }} sec). De plus, les attaques d'Udyr lui permettent de se ruer sur sa cible et de l'<status>étourdir</status> pendant {{ stunduration }} sec ({{ icd }} sec de récupération par cible).<br /><br /><keywordMajor>Éveil :</keywordMajor> Udyr devient immunisé contre les effets <status>immobilisants</status> et <status>entravants</status> et gagne un bonus de <speed>{{ movespeedbonus }} vitesse de déplacement</speed> pendant {{ unstoppableduration }} sec.{{ spellmodifierdescriptionappend }}",
       "costBurn": "40",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -116,7 +118,7 @@
           "Délai de récupération par unité"
         ],
         "effect": [
-          "{{ movespeed*100.000000 }}% -> {{ movespeednl*100.000000 }}%",
+          "{{ basemovespeed*100.000000 }}% -> {{ basemovespeednl*100.000000 }}%",
           "{{ icd }} -> {{ icdNL }}"
         ]
       },
@@ -132,10 +134,10 @@
       "vars": [],
       "image": {
         "full": "UdyrR.png",
-        "sprite": "spell14.png",
+        "sprite": "spell15.png",
         "group": "spell",
         "x": 144,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -167,7 +169,7 @@
       "full": "Udyr_P.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 144,
+      "x": 192,
       "y": 96,
       "w": 48,
       "h": 48
@@ -193,10 +195,10 @@
       "vars": [],
       "image": {
         "full": "UdyrQ.png",
-        "sprite": "spell14.png",
+        "sprite": "spell15.png",
         "group": "spell",
         "x": 0,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -209,12 +211,14 @@
         "label": [
           "Attack Speed",
           "% Max Health Damage",
-          "On-Hit Damage"
+          "On-Hit Damage",
+          "On-Hit Damage Bonus HP Ratio"
         ],
         "effect": [
           "{{ attackspeedbase*100.000000 }}% -> {{ attackspeedbasenl*100.000000 }}%",
           "{{ maxhponhitbase*100.000000 }}% -> {{ maxhponhitbasenl*100.000000 }}%",
-          "{{ basedamage }} -> {{ basedamageNL }}"
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ onhitbonushpratio*100.000000 }}% -> {{ onhitbonushprationl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -229,10 +233,10 @@
       "vars": [],
       "image": {
         "full": "UdyrW.png",
-        "sprite": "spell14.png",
+        "sprite": "spell15.png",
         "group": "spell",
         "x": 48,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -265,16 +269,16 @@
       "vars": [],
       "image": {
         "full": "UdyrE.png",
-        "sprite": "spell14.png",
+        "sprite": "spell15.png",
         "group": "spell",
         "x": 96,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 6,
-      "tooltip": "<spellActive>Stampede Stance:</spellActive> Udyr gains <speed>{{ movespeed*100 }}% Move Speed</speed>, decaying over {{ movespeedduration }} seconds. Additionally, Udyr's Attacks dash him to the target and <status>Stun</status> for {{ stunduration }} seconds ({{ icd }} second Cooldown per target).<br /><br /><keywordMajor>Awaken:</keywordMajor> Grants immunity to <status>Immobilizing</status> and <status>Disabling</status> effects and an additional <speed>{{ movespeedbonus }} Move Speed</speed> for {{ unstoppableduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellActive>Stampede Stance:</spellActive> Udyr gains <speed>{{ movespeed }} Move Speed</speed>, decaying over {{ movespeedduration }} seconds. Additionally, Udyr's Attacks dash him to the target and <status>Stun</status> for {{ stunduration }} seconds ({{ icd }} second Cooldown per target).<br /><br /><keywordMajor>Awaken:</keywordMajor> Grants immunity to <status>Immobilizing</status> and <status>Disabling</status> effects and an additional <speed>{{ movespeedbonus }} Move Speed</speed> for {{ unstoppableduration }} seconds.{{ spellmodifierdescriptionappend }}",
       "costBurn": "40",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -283,7 +287,7 @@
           "Per Unit Cooldown"
         ],
         "effect": [
-          "{{ movespeed*100.000000 }}% -> {{ movespeednl*100.000000 }}%",
+          "{{ basemovespeed*100.000000 }}% -> {{ basemovespeednl*100.000000 }}%",
           "{{ icd }} -> {{ icdNL }}"
         ]
       },
@@ -299,10 +303,10 @@
       "vars": [],
       "image": {
         "full": "UdyrR.png",
-        "sprite": "spell14.png",
+        "sprite": "spell15.png",
         "group": "spell",
         "x": 144,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -334,7 +338,7 @@
       "full": "Udyr_P.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 144,
+      "x": 192,
       "y": 96,
       "w": 48,
       "h": 48

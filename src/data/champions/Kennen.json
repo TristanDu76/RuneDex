@@ -3,7 +3,7 @@
   "key": "85",
   "name": "Kennen",
   "title": "Cœur de la tempête",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Vif comme l'éclair, Kennen est plus que le simple protecteur de l'équilibre ionien, c'est aussi le seul yordle membre du Kinkou. En dépit de son allure de boule de poils, il est prêt à affronter n'importe quelle menace dans un tourbillon de shurikens et d'enthousiasme. Aux côtés de son maître, Shen, Kennen patrouille dans le domaine des esprits, utilisant sa dévastatrice énergie électrique pour abattre ses ennemis.",
   "tags": [
     "Mage"
@@ -25,10 +25,10 @@
       "vars": [],
       "image": {
         "full": "KennenShurikenHurlMissile1.png",
-        "sprite": "spell6.png",
+        "sprite": "spell7.png",
         "group": "spell",
-        "x": 0,
-        "y": 144,
+        "x": 288,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -46,7 +46,7 @@
         "effect": [
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ cost }} -> {{ costNL }}",
-          "{{ e1 }} -> {{ e1NL }}"
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -61,16 +61,16 @@
       "vars": [],
       "image": {
         "full": "KennenBringTheLight.png",
-        "sprite": "spell6.png",
+        "sprite": "spell7.png",
         "group": "spell",
-        "x": 48,
-        "y": 144,
+        "x": 336,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive :</spellPassive> toutes les 5 attaques, Kennen inflige <magicDamage>{{ totaldamagepassive }} pts de dégâts magiques</magicDamage> supplémentaires.<br /><br /><spellActive>Active :</spellActive> Kennen tire un jet d'électricité, infligeant <magicDamage>{{ totaldamageactive }} pts de dégâts magiques</magicDamage> aux ennemis proches affectés par <spellName>Marque de tempête</spellName>.<br />{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive :</spellPassive> toutes les 5 attaques, Kennen inflige <magicDamage>{{ totaldamagepassive }} pts de dégâts magiques</magicDamage> %i:OnHit% <OnHit>à l'impact</OnHit>.<br /><br /><spellActive>Active :</spellActive> Kennen tire un jet d'électricité, infligeant <magicDamage>{{ totaldamageactive }} pts de dégâts magiques</magicDamage> aux ennemis proches affectés par <spellName>Marque de tempête</spellName>.<br />{{ spellmodifierdescriptionappend }}",
       "costBurn": "40",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -99,16 +99,16 @@
       "vars": [],
       "image": {
         "full": "KennenLightningRush.png",
-        "sprite": "spell6.png",
+        "sprite": "spell7.png",
         "group": "spell",
-        "x": 96,
-        "y": 144,
+        "x": 384,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Kennen se transforme en boule d'électricité pendant {{ durationasball }} sec, gagnant <speed>{{ movementspeed*100 }}+% de vitesse de déplacement</speed>, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> aux ennemis qu'il traverse et devenant fantomatique. Si Kennen blesse au moins un ennemi, il récupère {{ energyrefund }} pts d'énergie. <br /><br />À la fin de cette compétence, Kennen gagne <attackSpeed>{{ attackspeed*100 }}+% de vitesse d'attaque</attackSpeed> pendant {{ durationafterball }} sec. Kennen peut <recast>réactiver</recast> cette compétence pour y mettre un terme prématurément.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Kennen se transforme en boule d'électricité pendant {{ durationasball }} sec, gagnant <speed>{{ movementspeed*100 }}% de vitesse de déplacement</speed>, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> aux ennemis qu'il traverse et devenant fantomatique. Si Kennen blesse au moins un ennemi, il récupère {{ energyrefund }} pts d'énergie. <br /><br />À la fin de cette compétence, Kennen gagne <attackSpeed>{{ totalas*100 }}% de vitesse d'attaque</attackSpeed> pendant {{ durationafterball }} sec. Les coups critiques prolongent la durée de {{ critdurationbonus }} sec. Kennen peut <recast>réactiver</recast> cette compétence pour y mettre un terme prématurément.{{ spellmodifierdescriptionappend }}",
       "costBurn": "80",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -120,7 +120,7 @@
         "effect": [
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ basedamage }} -> {{ basedamageNL }}",
-          "{{ attackspeed*100.000000 }}% -> {{ attackspeednl*100.000000 }}%"
+          "{{ totalas*100.000000 }}% -> {{ totalasnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -135,10 +135,10 @@
       "vars": [],
       "image": {
         "full": "KennenShurikenStorm.png",
-        "sprite": "spell6.png",
+        "sprite": "spell7.png",
         "group": "spell",
-        "x": 144,
-        "y": 144,
+        "x": 432,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -198,10 +198,10 @@
       "vars": [],
       "image": {
         "full": "KennenShurikenHurlMissile1.png",
-        "sprite": "spell6.png",
+        "sprite": "spell7.png",
         "group": "spell",
-        "x": 0,
-        "y": 144,
+        "x": 288,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -219,7 +219,7 @@
         "effect": [
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ cost }} -> {{ costNL }}",
-          "{{ e1 }} -> {{ e1NL }}"
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -234,16 +234,16 @@
       "vars": [],
       "image": {
         "full": "KennenBringTheLight.png",
-        "sprite": "spell6.png",
+        "sprite": "spell7.png",
         "group": "spell",
-        "x": 48,
-        "y": 144,
+        "x": 336,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive:</spellPassive> Every 5th Attack deals an additional <magicDamage>{{ totaldamagepassive }} magic damage</magicDamage>.<br /><br /><spellActive>Active:</spellActive> Kennen sends out a blast of electricity, dealing <magicDamage>{{ totaldamageactive }} magic damage</magicDamage> to nearby enemies affected by <spellName>Mark of the Storm</spellName>.<br />{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive:</spellPassive> Every 5th Attack deals an additional <magicDamage>{{ totaldamagepassive }} magic damage</magicDamage> %i:OnHit% <OnHit>On-Hit</OnHit>.<br /><br /><spellActive>Active:</spellActive> Kennen sends out a blast of electricity, dealing <magicDamage>{{ totaldamageactive }} magic damage</magicDamage> to nearby enemies affected by <spellName>Mark of the Storm</spellName>.<br />{{ spellmodifierdescriptionappend }}",
       "costBurn": "40",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -272,16 +272,16 @@
       "vars": [],
       "image": {
         "full": "KennenLightningRush.png",
-        "sprite": "spell6.png",
+        "sprite": "spell7.png",
         "group": "spell",
-        "x": 96,
-        "y": 144,
+        "x": 384,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Kennen turns into a ball of lightning, gaining <speed>{{ movementspeed*100 }}% Move Speed</speed>, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> to enemies he passes through, and becoming Ghosted for {{ durationasball }} seconds. If Kennen damages at least one enemy, he gains {{ energyrefund }} Energy. <br /><br />After this ability ends, Kennen gains <attackSpeed>{{ attackspeed*100 }}% Attack Speed</attackSpeed> for {{ durationafterball }} seconds. Kennen can <recast>Recast</recast> to end this Ability early.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Kennen turns into a ball of lightning, gaining <speed>{{ movementspeed*100 }}% Move Speed</speed>, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> to enemies he passes through, and becoming Ghosted for {{ durationasball }} seconds. If Kennen damages at least one enemy, he gains {{ energyrefund }} Energy. <br /><br />After this ability ends, Kennen gains <attackSpeed>{{ totalas*100 }}% Attack Speed</attackSpeed> for {{ durationafterball }} seconds. Critical Strikes extend this duration by {{ critdurationbonus }} second(s). Kennen can <recast>Recast</recast> to end this Ability early.{{ spellmodifierdescriptionappend }}",
       "costBurn": "80",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -293,7 +293,7 @@
         "effect": [
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ basedamage }} -> {{ basedamageNL }}",
-          "{{ attackspeed*100.000000 }}% -> {{ attackspeednl*100.000000 }}%"
+          "{{ totalas*100.000000 }}% -> {{ totalasnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -308,10 +308,10 @@
       "vars": [],
       "image": {
         "full": "KennenShurikenStorm.png",
-        "sprite": "spell6.png",
+        "sprite": "spell7.png",
         "group": "spell",
-        "x": 144,
-        "y": 144,
+        "x": 432,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -493,5 +493,16 @@
       "chromas": true
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Akali",
+    "Irelia",
+    "Karma",
+    "Shen",
+    "Sion",
+    "Xin Zhao",
+    "Yasuo",
+    "Yunara",
+    "Zaahen",
+    "Zed"
+  ]
 }

@@ -2,21 +2,439 @@
   {
     "id": "corki",
     "name": "Corki",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Corki.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Corki.png",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
-    "related_characters": []
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "graves",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "lulu",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "teemo",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "tristana",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "twistedfate",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "fizz",
+    "name": "Fizz",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Fizz.png",
+    "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater",
+      "bandle-city"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "gangplank",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "illaoi",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "nami",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "nautilus",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "pyke",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "teemo",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "admiwal-shelly",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "bubba",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "zap",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "heimerdinger",
+    "name": "Heimerdinger",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Heimerdinger.png",
+    "factionKey": "piltover",
+    "factionKeys": [
+      "piltover",
+      "bandle-city"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "ziggs",
+        "type": "champion",
+        "relation": "friend",
+        "auto_generated": false,
+        "note_fr": "Partenaire explosif",
+        "note_en": "Explosive partner"
+      },
+      {
+        "id": "mel",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "bolbok",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "cassandra",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "elora",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "giselle",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "grayson",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "harold",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "hoskel",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "marcus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rictus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "salo",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "scar-the-blazing-firelight",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "scar",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "shoola",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "stanwick-pididly",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tobias",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "torman-hoskel",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "wilfred",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "ximena-talis",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "kennen",
+    "name": "Kennen",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Kennen.png",
+    "factionKey": "ionia",
+    "factionKeys": [
+      "ionia",
+      "bandle-city"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "akali",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "irelia",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "karma",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "shen",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "sion",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "xinzhao",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "yasuo",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "yunara",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "zaahen",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "zed",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "ava",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "bhinan",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "faey",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "masa",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "mayym-jhomen-tethi",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rissu",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "shadowmaster-lao",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
   },
   {
     "id": "lulu",
     "name": "Lulu",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Lulu.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Lulu.png",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "veigar",
@@ -25,6 +443,22 @@
         "auto_generated": false,
         "note_fr": "Seule amie tolérée",
         "note_en": "Only tolerated friend"
+      },
+      {
+        "id": "corki",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "poppy",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "bri",
@@ -77,13 +511,85 @@
     ]
   },
   {
-    "id": "rumble",
-    "name": "Rumble",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Rumble.png",
-    "factionKey": "bandle-city",
+    "id": "poppy",
+    "name": "Poppy",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Poppy.png",
+    "factionKey": "demacia",
+    "factionKeys": [
+      "demacia",
+      "bandle-city"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "galio",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "lulu",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "shyvana",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "tristana",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vayne",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "orlon",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "peppy",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "pip",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "rumble",
+    "name": "Rumble",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Rumble.png",
+    "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "tristana",
@@ -104,11 +610,14 @@
   {
     "id": "teemo",
     "name": "Teemo",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Teemo.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Teemo.png",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "tristana",
@@ -117,6 +626,30 @@
         "auto_generated": false,
         "note_fr": "Meilleurs amis",
         "note_en": "Best friends"
+      },
+      {
+        "id": "corki",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "fizz",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "gnar",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "ava",
@@ -147,11 +680,14 @@
   {
     "id": "tristana",
     "name": "Tristana",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Tristana.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Tristana.png",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "teemo",
@@ -166,6 +702,22 @@
         "type": "champion",
         "relation": "love/crush",
         "auto_generated": false
+      },
+      {
+        "id": "corki",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "poppy",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "earl",
@@ -204,11 +756,14 @@
   {
     "id": "veigar",
     "name": "Veigar",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Veigar.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Veigar.png",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "lulu",
@@ -239,11 +794,14 @@
   {
     "id": "yuumi",
     "name": "Yuumi",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Yuumi.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Yuumi.png",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "norra",
@@ -252,6 +810,22 @@
         "auto_generated": false,
         "note_fr": "Familière",
         "note_en": "Familiar"
+      },
+      {
+        "id": "gnar",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "reksai",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "alune",
@@ -292,6 +866,9 @@
     "name": "Allay",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/09BC004-full.png?4f832",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -320,6 +897,9 @@
     "name": "Arnie",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05BC006-full.png?632d1",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -354,6 +934,9 @@
     "name": "Ashane",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06BC019-full.png?96394",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -376,6 +959,9 @@
     "name": "Ava",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05BC070-full.png?1d12a",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -454,6 +1040,9 @@
     "name": "Book of Thresholds",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Yuumi_Book_of_Thresholds.png?f1ec1",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -492,6 +1081,9 @@
     "name": "Byrd",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06BC026-full.png?5f498",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -508,6 +1100,9 @@
     "name": "Earl",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05BC039-full.png?9bcfb",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -530,6 +1125,9 @@
     "name": "Elle",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05BC152-full.png?1141a",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -552,6 +1150,9 @@
     "name": "Gaspar",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06BC024-full.png?f2052",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -580,6 +1181,9 @@
     "name": "Gene",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/07BC015-full.png?5b7be",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -622,6 +1226,9 @@
     "name": "Giselle",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05BC073-full.png?b04cc",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -662,6 +1269,9 @@
     "name": "Grimm",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/09SI014-full.png?e145f",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -690,6 +1300,9 @@
     "name": "Jelly",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05BC020-full.png?8e669",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -718,6 +1331,9 @@
     "name": "Karl",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05BC129-full.png?99d85",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -758,6 +1374,9 @@
     "name": "Kobuko",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/thumb/Kobuko_Render.png/1200px-Kobuko_Render.png?5ca23",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -774,6 +1393,9 @@
     "name": "Maduli",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06BC031-full.png?c1e5c",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -790,6 +1412,9 @@
     "name": "Marv",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06BC021-full.png?d4763",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -806,6 +1431,9 @@
     "name": "Milty",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Vex_The_Meaning_in_Misery.jpg?4bbe6",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -838,6 +1466,9 @@
     "name": "Mister Thrift",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/07BC020-full.png?58dd9",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": []
@@ -847,6 +1478,9 @@
     "name": "Nakotak",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05BC162-full.png?e2842",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -869,6 +1503,9 @@
     "name": "Nanners",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06BC051-full.png?487ba",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": []
@@ -878,6 +1515,9 @@
     "name": "Norra",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Norra_Render.png?e7a47",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -940,6 +1580,9 @@
     "name": "Otto",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05BC130-full.png?d8406",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -974,6 +1617,9 @@
     "name": "Paparo",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06BC036-full.png?0aaa4",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -990,6 +1636,9 @@
     "name": "Peppy",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05BC145-full.png?3eb48",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1012,6 +1661,9 @@
     "name": "Pip",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05BC179-full.png?11b8e",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1034,6 +1686,9 @@
     "name": "Pix",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03IO017-full.png?86f4b",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1072,6 +1727,9 @@
     "name": "Portia the Peculiar",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/08BC004-full.png?0c166",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1088,6 +1746,9 @@
     "name": "Sallow",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03IO003-full.png?6ab50",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1122,6 +1783,9 @@
     "name": "Skip",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/08BC002-full.png?af458",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": []
@@ -1131,6 +1795,9 @@
     "name": "Trevor Snoozebottom",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03IO007-full.png?45847",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1159,11 +1826,14 @@
     "name": "Trixie",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05BC151-full.png?789ca",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
       {
-        "id": "twisted-fate",
+        "id": "twistedfate",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -1181,6 +1851,9 @@
     "name": "Wilfred",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05BC212-full.png?7c17a",
     "factionKey": "bandle-city",
+    "factionKeys": [
+      "bandle-city"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [

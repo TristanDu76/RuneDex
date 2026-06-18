@@ -3,7 +3,7 @@
   "key": "901",
   "name": "Smolder",
   "title": "Dragonnet flamboyant",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Caché dans les falaises escarpées de la frontière noxienne et attentivement surveillé par sa mère, un jeune dragon apprend ce que signifie être l'héritier de la lignée impériale des dragons camavoriens. Joueur et impatient de grandir, Smolder est prêt à tout pour développer ses nouvelles compétences. Même s'il n'est encore qu'un dragonnet, ses compétences sont déjà impressionnantes : il met aisément le feu à tout ce qui peut brûler.",
   "tags": [
     "Marksman",
@@ -14,7 +14,7 @@
     "full": "Smolder.png",
     "sprite": "champion4.png",
     "group": "champion",
-    "x": 288,
+    "x": 336,
     "y": 0,
     "w": 48,
     "h": 48
@@ -29,7 +29,7 @@
         "sprite": "spell13.png",
         "group": "spell",
         "x": 96,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -63,7 +63,7 @@
         "sprite": "spell13.png",
         "group": "spell",
         "x": 144,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -101,7 +101,7 @@
         "sprite": "spell13.png",
         "group": "spell",
         "x": 192,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -135,7 +135,7 @@
         "sprite": "spell13.png",
         "group": "spell",
         "x": 240,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -169,7 +169,7 @@
       "full": "Icons_Smolder_Passive.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 288,
+      "x": 336,
       "y": 0,
       "w": 48,
       "h": 48
@@ -197,7 +197,7 @@
         "sprite": "spell13.png",
         "group": "spell",
         "x": 96,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -231,7 +231,7 @@
         "sprite": "spell13.png",
         "group": "spell",
         "x": 144,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -269,7 +269,7 @@
         "sprite": "spell13.png",
         "group": "spell",
         "x": 192,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -303,7 +303,7 @@
         "sprite": "spell13.png",
         "group": "spell",
         "x": 240,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -337,7 +337,7 @@
       "full": "Icons_Smolder_Passive.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 288,
+      "x": 336,
       "y": 0,
       "w": 48,
       "h": 48
@@ -388,5 +388,9 @@
       "chromas": true
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Aurelion Sol",
+    "Shyvana",
+    "Viego"
+  ]
 }

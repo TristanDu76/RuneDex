@@ -2,11 +2,15 @@
   {
     "id": "aatrox",
     "name": "Aatrox",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Aatrox.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Aatrox.png",
     "factionKey": "runeterra",
+    "factionKeys": [
+      "runeterra",
+      "shurima"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "anaakca",
@@ -25,7 +29,7 @@
         "note_en": "Rallied Horazi."
       },
       {
-        "id": "naganeka",
+        "id": "naganeka-of-zuretta",
         "type": "lore",
         "relation": "ally",
         "auto_generated": false,
@@ -81,7 +85,7 @@
         "note_en": "Finds Aatrox stubborn."
       },
       {
-        "id": "cinquieme_darkin",
+        "id": "xolaani",
         "type": "lore",
         "relation": "ally",
         "auto_generated": false,
@@ -121,10 +125,26 @@
         "note_en": "General of the Ascended Army"
       },
       {
-        "id": "praa",
+        "id": "praa-the-breachwalker",
         "type": "lore",
         "relation": "ally",
         "auto_generated": false
+      },
+      {
+        "id": "zaahen",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "zilean",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "ibaaros",
@@ -136,22 +156,6 @@
       },
       {
         "id": "mihira",
-        "type": "lore",
-        "relation": "related",
-        "auto_generated": true,
-        "note_fr": "Lien réciproque automatique",
-        "note_en": "Auto-generated reciprocal link"
-      },
-      {
-        "id": "naganeka-of-zuretta",
-        "type": "lore",
-        "relation": "related",
-        "auto_generated": true,
-        "note_fr": "Lien réciproque automatique",
-        "note_en": "Auto-generated reciprocal link"
-      },
-      {
-        "id": "praa-the-breachwalker",
         "type": "lore",
         "relation": "related",
         "auto_generated": true,
@@ -179,12 +183,46 @@
   {
     "id": "alistar",
     "name": "Alistar",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Alistar.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Alistar.png",
     "factionKey": "runeterra",
+    "factionKeys": [
+      "runeterra",
+      "noxus"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
+      {
+        "id": "ambessa",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "mel",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "sett",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "swain",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "xinzhao",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
       {
         "id": "boram-darkwill",
         "type": "lore",
@@ -196,14 +234,121 @@
     ]
   },
   {
-    "id": "bard",
-    "name": "Bard",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Bard.png",
-    "factionKey": "runeterra",
+    "id": "aurelionsol",
+    "name": "Aurelion Sol",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/AurelionSol.png",
+    "factionKey": "targon",
+    "factionKeys": [
+      "targon",
+      "runeterra"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
+      {
+        "id": "zoe",
+        "type": "champion",
+        "relation": "nemesis",
+        "auto_generated": false,
+        "note_fr": "Ennuyeuse cosmique",
+        "note_en": "Cosmic annoyance"
+      },
+      {
+        "id": "pantheon",
+        "type": "champion",
+        "relation": "nemesis",
+        "auto_generated": false,
+        "note_fr": "Hait les Aspects pour son asservissement",
+        "note_en": "hates the aspects for his enslavement"
+      },
+      {
+        "id": "bard",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "smolder",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "soraka",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "inviolus-vox",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "the-golden-sister",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "the-silver-sister",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "bard",
+    "name": "Bard",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Bard.png",
+    "factionKey": "runeterra",
+    "factionKeys": [
+      "runeterra",
+      "targon"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "aurelionsol",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "brand",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "ryze",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "soraka",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
       {
         "id": "byrd",
         "type": "lore",
@@ -263,13 +408,63 @@
     ]
   },
   {
-    "id": "evelynn",
-    "name": "Evelynn",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Evelynn.png",
-    "factionKey": "runeterra",
+    "id": "brand",
+    "name": "Brand",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Brand.png",
+    "factionKey": "freljord",
+    "factionKeys": [
+      "freljord",
+      "runeterra"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "ryze",
+        "type": "champion",
+        "relation": "student",
+        "auto_generated": false,
+        "note_fr": "Ancien élève (Kegan Rodhe)",
+        "note_en": "Former student (Kegan Rodhe)"
+      },
+      {
+        "id": "bard",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kobuko",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "nakotak",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "evelynn",
+    "name": "Evelynn",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Evelynn.png",
+    "factionKey": "runeterra",
+    "factionKeys": [
+      "runeterra"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "vayne",
@@ -278,6 +473,30 @@
         "auto_generated": false,
         "note_fr": "A tué ses parents",
         "note_en": "Killed her parents"
+      },
+      {
+        "id": "fiddlesticks",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "locke",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "nocturne",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "airis",
@@ -340,12 +559,83 @@
   {
     "id": "fiddlesticks",
     "name": "Fiddlesticks",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Fiddlesticks.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Fiddlesticks.png",
     "factionKey": "runeterra",
+    "factionKeys": [
+      "runeterra"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
+      {
+        "id": "evelynn",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "lillia",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "lux",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "nocturne",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "shaco",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "swain",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "tahmkench",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vayne",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vex",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "zoe",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "nilah",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
       {
         "id": "ashlesh",
         "type": "lore",
@@ -367,11 +657,14 @@
   {
     "id": "kindred",
     "name": "Kindred",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Kindred.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Kindred.png",
     "factionKey": "runeterra",
+    "factionKeys": [
+      "runeterra"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "mordekaiser",
@@ -380,6 +673,30 @@
         "auto_generated": false,
         "note_fr": "Triche la mort",
         "note_en": "Cheats death"
+      },
+      {
+        "id": "ambessa",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "karthus",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "azizi-medarda",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "fieram",
@@ -414,6 +731,14 @@
         "note_en": "Auto-generated reciprocal link"
       },
       {
+        "id": "rictus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
         "id": "urkath",
         "type": "lore",
         "relation": "related",
@@ -426,12 +751,67 @@
   {
     "id": "nocturne",
     "name": "Nocturne",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Nocturne.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Nocturne.png",
     "factionKey": "runeterra",
+    "factionKeys": [
+      "runeterra"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
+      {
+        "id": "evelynn",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "garen",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "lux",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "sylas",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "tahmkench",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "zed",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "fiddlesticks",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "shaco",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
       {
         "id": "fossian-crownguard",
         "type": "lore",
@@ -453,11 +833,14 @@
   {
     "id": "ryze",
     "name": "Ryze",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Ryze.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Ryze.png",
     "factionKey": "runeterra",
+    "factionKeys": [
+      "runeterra"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "brand",
@@ -474,6 +857,22 @@
         "auto_generated": false,
         "note_fr": "Ryze est intervenu.",
         "note_en": "Ryze intervened."
+      },
+      {
+        "id": "bard",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "sona",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "rudo",
@@ -504,22 +903,190 @@
   {
     "id": "shaco",
     "name": "Shaco",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Shaco.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Shaco.png",
     "factionKey": "runeterra",
+    "factionKeys": [
+      "runeterra"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
-    "related_characters": []
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "fiddlesticks",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "nocturne",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vayne",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "tahmkench",
+    "name": "Tahm Kench",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/TahmKench.png",
+    "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater",
+      "runeterra"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "pyke",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": false,
+        "note_fr": "Légendes des abysses",
+        "note_en": "Abyssal legends"
+      },
+      {
+        "id": "fiddlesticks",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "janna",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "nautilus",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "nocturne",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "five-punch-pablo",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "jack",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "leonard",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "ol-babs",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "slim",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
   },
   {
     "id": "zaahen",
     "name": "Zaahen",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Zaahen.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Zaahen.png",
     "factionKey": "runeterra",
+    "factionKeys": [
+      "runeterra"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
+      {
+        "id": "aatrox",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jarvaniv",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kennen",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "leblanc",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "naafiri",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "varus",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "xinzhao",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "yunara",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
       {
         "id": "bhinan",
         "type": "lore",
@@ -565,12 +1132,35 @@
   {
     "id": "zilean",
     "name": "Zilean",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Zilean.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Zilean.png",
     "factionKey": "runeterra",
+    "factionKeys": [
+      "runeterra",
+      "shurima",
+      "void"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
+      {
+        "id": "aatrox",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jax",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "velkoz",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
       {
         "id": "kahiri",
         "type": "lore",

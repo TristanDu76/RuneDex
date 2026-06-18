@@ -3,7 +3,7 @@
   "key": "268",
   "name": "Azir",
   "title": "Empereur des sables",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Azir fut l'empereur mortel de Shurima en des temps très lointains, un homme fier dressé au bord de l'immortalité. Son orgueil lui valut d'être trahi et assassiné à l'heure de son triomphe ; mais des millénaires se sont écoulés et il revient sous la forme d'un être transfiguré à l'immense puissance. Sa cité ensevelie ayant ressurgi des sables, Azir cherche à rendre sa gloire passée à Shurima.",
   "tags": [
     "Mage",
@@ -26,10 +26,10 @@
       "vars": [],
       "image": {
         "full": "AzirQWrapper.png",
-        "sprite": "spell1.png",
+        "sprite": "spell2.png",
         "group": "spell",
-        "x": 0,
-        "y": 144,
+        "x": 288,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -64,16 +64,16 @@
       "vars": [],
       "image": {
         "full": "AzirW.png",
-        "sprite": "spell1.png",
+        "sprite": "spell2.png",
         "group": "spell",
-        "x": 48,
-        "y": 144,
+        "x": 336,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "2",
       "maxrank": 5,
-      "tooltip": "Azir invoque un <keywordMajor>soldat de sable</keywordMajor> pendant {{ e1 }} sec. Quand Azir attaque un ennemi proche d'un <keywordMajor>soldat de sable</keywordMajor>, il ordonne à la place à ce soldat de donner un coup de lance vers cet ennemi, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>.<br /><br />Cette compétence a {{ maxammo }} charges.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Azir invoque un <keywordMajor>soldat de sable</keywordMajor> pendant {{ soldierduration }} sec. Quand Azir attaque un ennemi proche d'un <keywordMajor>soldat de sable</keywordMajor>, il ordonne à la place à ce soldat de donner un coup de lance vers cet ennemi, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> dans sa direction.<br /><br />Cette compétence a {{ maxammo }} charges.{{ spellmodifierdescriptionappend }}",
       "costBurn": "40/35/30/25/20",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -102,16 +102,16 @@
       "vars": [],
       "image": {
         "full": "AzirEWrapper.png",
-        "sprite": "spell1.png",
+        "sprite": "spell2.png",
         "group": "spell",
-        "x": 96,
-        "y": 144,
+        "x": 384,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Azir s'octroie un <shield>bouclier de {{ totalshield }} PV</shield> pendant {{ e6 }} sec et se rue vers l'un de ses <keywordMajor>soldats de sable</keywordMajor>, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> aux ennemis qu'il traverse.<br /><br />Si Azir touche un champion ennemi, il s'arrête et gagne une charge de <keywordMajor>soldat de sable</keywordMajor>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Azir s'octroie un <shield>bouclier de {{ totalshield }} PV</shield> pendant {{ shieldduration }} sec et se rue vers l'un de ses <keywordMajor>soldats de sable</keywordMajor>, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> aux ennemis qu'il traverse.<br /><br />Si Azir touche un champion ennemi, il s'arrête et gagne une charge de <keywordMajor>Soldat de sable</keywordMajor>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "60",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -138,16 +138,16 @@
       "vars": [],
       "image": {
         "full": "AzirR.png",
-        "sprite": "spell1.png",
+        "sprite": "spell2.png",
         "group": "spell",
-        "x": 144,
-        "y": 144,
+        "x": 432,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "Azir invoque un mur de soldats dotés de boucliers qui chargent vers l'avant, <status>repoussant</status> les ennemis et infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. Les soldats conservent ensuite leur formation en mur pendant {{ e4 }} sec et empêchent les ennemis de passer.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Azir invoque un mur de soldats dotés de boucliers qui chargent vers l'avant, <status>repoussant</status> les ennemis et infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. Les soldats conservent ensuite leur formation en mur pendant {{ wallduration }} sec et empêchent les ennemis de passer.{{ spellmodifierdescriptionappend }}",
       "costBurn": "100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -201,10 +201,10 @@
       "vars": [],
       "image": {
         "full": "AzirQWrapper.png",
-        "sprite": "spell1.png",
+        "sprite": "spell2.png",
         "group": "spell",
-        "x": 0,
-        "y": 144,
+        "x": 288,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -239,16 +239,16 @@
       "vars": [],
       "image": {
         "full": "AzirW.png",
-        "sprite": "spell1.png",
+        "sprite": "spell2.png",
         "group": "spell",
-        "x": 48,
-        "y": 144,
+        "x": 336,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "2",
       "maxrank": 5,
-      "tooltip": "Azir summons a <keywordMajor>Sand Soldier</keywordMajor> for {{ e1 }} seconds. When Azir Attacks an enemy near a <keywordMajor>Sand Soldier</keywordMajor>, he instead orders the soldiers to stab, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> in their direction.<br /><br />This Ability has {{ maxammo }} charges.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Azir summons a <keywordMajor>Sand Soldier</keywordMajor> for {{ soldierduration }} seconds. When Azir Attacks an enemy near a <keywordMajor>Sand Soldier</keywordMajor>, he instead orders the soldiers to stab, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> in their direction.<br /><br />This Ability has {{ maxammo }} charges.{{ spellmodifierdescriptionappend }}",
       "costBurn": "40/35/30/25/20",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -277,16 +277,16 @@
       "vars": [],
       "image": {
         "full": "AzirEWrapper.png",
-        "sprite": "spell1.png",
+        "sprite": "spell2.png",
         "group": "spell",
-        "x": 96,
-        "y": 144,
+        "x": 384,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Azir grants himself <shield>{{ totalshield }} Shield</shield> for {{ e6 }} seconds and dashes to one of his <keywordMajor>Sand Soldiers</keywordMajor>, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> to enemies he passes through.<br /><br />If Azir hits an enemy champion, he stops and gains a <keywordMajor>Sand Soldier</keywordMajor> charge.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Azir grants himself <shield>{{ totalshield }} Shield</shield> for {{ shieldduration }} seconds and dashes to one of his <keywordMajor>Sand Soldiers</keywordMajor>, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> to enemies he passes through.<br /><br />If Azir hits an enemy champion, he stops and gains a <keywordMajor>Sand Soldier</keywordMajor> charge.{{ spellmodifierdescriptionappend }}",
       "costBurn": "60",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -313,16 +313,16 @@
       "vars": [],
       "image": {
         "full": "AzirR.png",
-        "sprite": "spell1.png",
+        "sprite": "spell2.png",
         "group": "spell",
-        "x": 144,
-        "y": 144,
+        "x": 432,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "Azir summons a wall of armored soldiers that charges forward, <status>Knocking Back</status> enemies and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>. The soldiers remain, blocking enemy paths for {{ e4 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Azir summons a wall of armored soldiers that charges forward, <status>Knocking Back</status> enemies and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>. The soldiers remain, blocking enemy paths for {{ wallduration }} seconds.{{ spellmodifierdescriptionappend }}",
       "costBurn": "100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {

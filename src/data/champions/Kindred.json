@@ -3,7 +3,7 @@
   "key": "203",
   "name": "Kindred",
   "title": "Chasseurs éternels",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Kindred représente les essences jumelles de la mort, distinctes mais indissociables. La flèche d'Agneau offre une fin rapide à ceux qui acceptent leur destin. Loup pourchasse ceux qui fuient leur dernier soupir et leur arrache brutalement la vie à coups de crocs. Bien que les interprétations de la nature de Kindred varient à travers tout Runeterra, chaque mortel doit choisir le vrai visage de sa mort.",
   "tags": [
     "Marksman"
@@ -25,16 +25,16 @@
       "vars": [],
       "image": {
         "full": "KindredQ.png",
-        "sprite": "spell6.png",
+        "sprite": "spell7.png",
         "group": "spell",
-        "x": 384,
-        "y": 144,
+        "x": 192,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Kindred fait une cabriole et tire sur un maximum de 3 ennemis, infligeant <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> et gagnant <attackSpeed>+{{ totalqattackspeed }} vitesse d'attaque</attackSpeed> pendant {{ e8 }} sec.<br /><br />À l'intérieur de <spellName>Frénésie de Loup</spellName>, le délai de récupération de cette compétence est réduit à {{ e4 }} sec.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Kindred fait une cabriole et tire sur un maximum de 3 ennemis, infligeant <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> et gagnant <attackSpeed>{{ totalqattackspeed }} vitesse d'attaque</attackSpeed> pendant {{ baseasduration }} sec.<br /><br />À l'intérieur de <spellName>Frénésie de Loup</spellName>, le délai de récupération de cette compétence est réduit à {{ cdnewvalue }} sec.{{ spellmodifierdescriptionappend }}",
       "costBurn": "35",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -43,8 +43,8 @@
           "Délai de récupération de Frénésie de Loup"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
-          "{{ e4 }} -> {{ e4NL }}"
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cdnewvalue }} -> {{ cdnewvalueNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -59,10 +59,10 @@
       "vars": [],
       "image": {
         "full": "KindredW.png",
-        "sprite": "spell6.png",
+        "sprite": "spell7.png",
         "group": "spell",
-        "x": 432,
-        "y": 144,
+        "x": 240,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -77,7 +77,7 @@
           "Délai de récupération"
         ],
         "effect": [
-          "{{ e5 }} -> {{ e5NL }}",
+          "{{ clonedamageflat }} -> {{ clonedamageflatNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -95,8 +95,8 @@
         "full": "KindredEWrapper.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 0,
-        "y": 0,
+        "x": 288,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -129,14 +129,14 @@
         "full": "KindredR.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 48,
-        "y": 0,
+        "x": 336,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "Kindred bénit le sol pendant {{ e2 }} sec, créant une zone dans laquelle aucune unité, alliée, ennemie ou neutre, ne peut mourir. Une fois à 10% de leurs PV max, les unités ne peuvent pas être blessées ou soignées lorsqu'elles sont dans la zone.<br /><br />Quand la bénédiction se termine, toutes les unités dans la zone récupèrent <healing>{{ e1 }} PV</healing>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Kindred bénit le sol pendant {{ buffduration }} sec, créant une zone dans laquelle aucune unité, alliée, ennemie ou neutre, ne peut mourir. Une fois à 10% de leurs PV max, les unités ne peuvent pas être blessées ou soignées lorsqu'elles sont dans la zone.<br /><br />Quand la bénédiction se termine, toutes les unités dans la zone récupèrent <healing>{{ healflat }} PV</healing>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -145,7 +145,7 @@
           "Délai de récupération"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ healflat }} -> {{ healflatNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -188,16 +188,16 @@
       "vars": [],
       "image": {
         "full": "KindredQ.png",
-        "sprite": "spell6.png",
+        "sprite": "spell7.png",
         "group": "spell",
-        "x": 384,
-        "y": 144,
+        "x": 192,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Kindred vaults, firing an arrow at up to 3 enemies, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> and gaining <attackSpeed>{{ totalqattackspeed }} Attack Speed</attackSpeed> for {{ e8 }} seconds.<br /><br />While inside of <spellName>Wolf's Frenzy</spellName>, this Ability's Cooldown is reduced to {{ e4 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Kindred vaults, firing an arrow at up to 3 enemies, dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> and gaining <attackSpeed>{{ totalqattackspeed }} Attack Speed</attackSpeed> for {{ baseasduration }} seconds.<br /><br />While inside of <spellName>Wolf's Frenzy</spellName>, this Ability's Cooldown is reduced to {{ cdnewvalue }} seconds.{{ spellmodifierdescriptionappend }}",
       "costBurn": "35",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -206,8 +206,8 @@
           "Cooldown in Wolf's Frenzy"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
-          "{{ e4 }} -> {{ e4NL }}"
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ cdnewvalue }} -> {{ cdnewvalueNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -222,10 +222,10 @@
       "vars": [],
       "image": {
         "full": "KindredW.png",
-        "sprite": "spell6.png",
+        "sprite": "spell7.png",
         "group": "spell",
-        "x": 432,
-        "y": 144,
+        "x": 240,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -240,7 +240,7 @@
           "Cooldown"
         ],
         "effect": [
-          "{{ e5 }} -> {{ e5NL }}",
+          "{{ clonedamageflat }} -> {{ clonedamageflatNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -258,8 +258,8 @@
         "full": "KindredEWrapper.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 0,
-        "y": 0,
+        "x": 288,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -292,14 +292,14 @@
         "full": "KindredR.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 48,
-        "y": 0,
+        "x": 336,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "Kindred blesses the ground for {{ e2 }} seconds, allowing no unit, ally, enemy, or neutral to die while inside. Upon reaching 10% Health, units can't be damaged or healed while still inside the zone.<br /><br />When the blessing ends, all units inside heal for <healing>{{ e1 }} Health</healing>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Kindred blesses the ground for {{ buffduration }} seconds, allowing no unit, ally, enemy, or neutral to die while inside. Upon reaching 10% Health, units can't be damaged or healed while still inside the zone.<br /><br />When the blessing ends, all units inside heal for <healing>{{ healflat }} Health</healing>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -308,7 +308,7 @@
           "Cooldown"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ healflat }} -> {{ healflatNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -390,6 +390,12 @@
       "num": 34,
       "name": "Chosen of the Wolf Kindred",
       "chromas": true
+    },
+    {
+      "id": "203045",
+      "num": 45,
+      "name": "Pandemonium Kindred",
+      "chromas": false
     }
   ],
   "skins": [
@@ -446,6 +452,12 @@
       "num": 34,
       "name": "Kindred de la Chasse éternelle",
       "chromas": true
+    },
+    {
+      "id": "203045",
+      "num": 45,
+      "name": "Kindred du Pandémonium",
+      "chromas": false
     }
   ],
   "related_characters": [

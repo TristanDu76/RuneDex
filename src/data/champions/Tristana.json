@@ -3,7 +3,7 @@
   "key": "18",
   "name": "Tristana",
   "title": "Canonnière yordle",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Si bon nombre d'autres yordles utilisent leur énergie débordante pour explorer, découvrir, inventer ou plus simplement jouer de mauvais tours, Tristana a toujours puisé son inspiration dans les récits des grands guerriers. Elle avait beaucoup entendu parler de Runeterra, de ses factions et de ses guerres, et elle pensait que les yordles aussi avaient l'étoffe des légendes. Dès son arrivée dans ce monde, elle s'équipa de son fidèle canon Boomer pour se jeter au combat avec un courage et un optimisme sans bornes.",
   "tags": [
     "Marksman",
@@ -14,7 +14,7 @@
     "full": "Tristana.png",
     "sprite": "champion4.png",
     "group": "champion",
-    "x": 384,
+    "x": 432,
     "y": 48,
     "w": 48,
     "h": 48
@@ -29,14 +29,14 @@
         "sprite": "spell14.png",
         "group": "spell",
         "x": 0,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
       "tooltip": "Tristana passe en mode de tir automatique, gagnant <attackSpeed>+{{ attackspeedmod*100 }}% de vitesse d'attaque</attackSpeed> pendant {{ buffduration }} sec.{{ spellmodifierdescriptionappend }}",
-      "costBurn": "30/35/40/45/50",
+      "costBurn": "15/20/25/30/35",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
@@ -65,7 +65,7 @@
         "sprite": "spell14.png",
         "group": "spell",
         "x": 48,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -101,7 +101,7 @@
         "sprite": "spell14.png",
         "group": "spell",
         "x": 96,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -139,7 +139,7 @@
         "sprite": "spell14.png",
         "group": "spell",
         "x": 144,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -173,7 +173,7 @@
       "full": "Tristana_Passive.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 384,
+      "x": 432,
       "y": 48,
       "w": 48,
       "h": 48
@@ -201,14 +201,14 @@
         "sprite": "spell14.png",
         "group": "spell",
         "x": 0,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
       "tooltip": "Tristana goes full-auto, gaining <attackSpeed>{{ attackspeedmod*100 }}% Attack Speed</attackSpeed> for {{ buffduration }} seconds.{{ spellmodifierdescriptionappend }}",
-      "costBurn": "30/35/40/45/50",
+      "costBurn": "15/20/25/30/35",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
@@ -237,7 +237,7 @@
         "sprite": "spell14.png",
         "group": "spell",
         "x": 48,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -273,7 +273,7 @@
         "sprite": "spell14.png",
         "group": "spell",
         "x": 96,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -311,7 +311,7 @@
         "sprite": "spell14.png",
         "group": "spell",
         "x": 144,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -345,7 +345,7 @@
       "full": "Tristana_Passive.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 384,
+      "x": 432,
       "y": 48,
       "w": 48,
       "h": 48

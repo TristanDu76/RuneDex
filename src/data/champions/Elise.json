@@ -3,7 +3,7 @@
   "key": "60",
   "name": "Elise",
   "title": "Reine araignée",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Elise est un prédateur mortel qui vit dans un palais reclus et obscur, au plus profond de la plus vieille ville de Noxus. C'était autrefois une simple femme, maîtresse d'une Maison toute-puissante, mais la morsure d'un maléfique demi-dieu la transforma en un être aussi magnifique qu'inhumain : une créature arachnéenne qui tisse sa toile pour piéger ses proies. Pour maintenir sa jeunesse éternelle, Elise se repaît des innocents et peu sont ceux qui peuvent résister à sa séduction.",
   "tags": [
     "Assassin",
@@ -28,8 +28,8 @@
         "full": "EliseHumanQ.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 384,
-        "y": 48,
+        "x": 192,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -66,8 +66,8 @@
         "full": "EliseHumanW.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 432,
-        "y": 48,
+        "x": 240,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -100,14 +100,14 @@
         "full": "EliseHumanE.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 0,
-        "y": 96,
+        "x": 288,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<keywordMajor>Forme humaine</keywordMajor> : Elise tire un cocon, <status>étourdissant</status> et révélant le premier ennemi touché pendant {{ stunduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<keywordMajor>Forme humaine</keywordMajor> : Elise tire un cocon, <status>étourdissant</status> et révélant le premier ennemi touché pendant {{ totalstunduration }} sec.{{ spellmodifierdescriptionappend }}",
       "costBurn": "50",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -118,10 +118,10 @@
           "Dégâts et soins augmentés"
         ],
         "effect": [
-          "{{ e5 }} -> {{ e5NL }}",
+          "{{ basestunduration }} -> {{ basestundurationNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}",
-          "{{ e3 }} -> {{ e3NL }}",
-          "{{ e6 }}% -> {{ e6NL }}%"
+          "{{ rappelcooldown }} -> {{ rappelcooldownNL }}",
+          "{{ rappeldamageamp }}% -> {{ rappeldamageampNL }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -138,8 +138,8 @@
         "full": "EliseR.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 48,
-        "y": 96,
+        "x": 336,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -159,9 +159,9 @@
         "effect": [
           "{{ passivebonusdamage }} -> {{ passivebonusdamageNL }}",
           "{{ spiderlingbasedamage }} -> {{ spiderlingbasedamageNL }}",
-          "{{ spiderlingsstored }} -> {{ spiderlingsstoredNL }}",
-          "{{ e6 }} -> {{ e6NL }}",
-          "{{ e7 }} -> {{ e7NL }}"
+          "{{ basespiderlingsstored }} -> {{ basespiderlingsstoredNL }}",
+          "{{ spiderlingarmor }} -> {{ spiderlingarmorNL }}",
+          "{{ spiderlingmagicresist }} -> {{ spiderlingmagicresistNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -205,8 +205,8 @@
         "full": "EliseHumanQ.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 384,
-        "y": 48,
+        "x": 192,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -243,8 +243,8 @@
         "full": "EliseHumanW.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 432,
-        "y": 48,
+        "x": 240,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -277,14 +277,14 @@
         "full": "EliseHumanE.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 0,
-        "y": 96,
+        "x": 288,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<keywordMajor>Human Form</keywordMajor>: Elise fires a cocoon, <status>Stunning</status> and revealing the first enemy hit for {{ stunduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<keywordMajor>Human Form</keywordMajor>: Elise fires a cocoon, <status>Stunning</status> and revealing the first enemy hit for {{ totalstunduration }} seconds.{{ spellmodifierdescriptionappend }}",
       "costBurn": "50",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -295,10 +295,10 @@
           "Damage and Healing Increase"
         ],
         "effect": [
-          "{{ e5 }} -> {{ e5NL }}",
+          "{{ basestunduration }} -> {{ basestundurationNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}",
-          "{{ e3 }} -> {{ e3NL }}",
-          "{{ e6 }}% -> {{ e6NL }}%"
+          "{{ rappelcooldown }} -> {{ rappelcooldownNL }}",
+          "{{ rappeldamageamp }}% -> {{ rappeldamageampNL }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -315,8 +315,8 @@
         "full": "EliseR.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 48,
-        "y": 96,
+        "x": 336,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -336,9 +336,9 @@
         "effect": [
           "{{ passivebonusdamage }} -> {{ passivebonusdamageNL }}",
           "{{ spiderlingbasedamage }} -> {{ spiderlingbasedamageNL }}",
-          "{{ spiderlingsstored }} -> {{ spiderlingsstoredNL }}",
-          "{{ e6 }} -> {{ e6NL }}",
-          "{{ e7 }} -> {{ e7NL }}"
+          "{{ basespiderlingsstored }} -> {{ basespiderlingsstoredNL }}",
+          "{{ spiderlingarmor }} -> {{ spiderlingarmorNL }}",
+          "{{ spiderlingmagicresist }} -> {{ spiderlingmagicresistNL }}"
         ]
       },
       "resource": "No Cost",

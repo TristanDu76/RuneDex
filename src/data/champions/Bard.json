@@ -3,7 +3,7 @@
   "key": "432",
   "name": "Bard",
   "title": "Gardien errant",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Voyageur d'au-delà des étoiles, Bard est un messager des bons augures qui combat pour maintenir l'équilibre dont la vie a besoin pour prospérer dans l'indifférence du chaos. Dans tout Runeterra, sa mystérieuse nature inspire des chants qui ne sont d'accord que sur un point : le vagabond cosmique est attiré par les reliques dotées d'un grand pouvoir magique. Accompagné par un chœur joyeux de Meeps, des esprits qui lui sont dévoués, il n'a d'actions que bénéfiques, même s'il a sa propre manière, un peu étrange, de servir le bien.",
   "tags": [
     "Support",
@@ -26,10 +26,10 @@
       "vars": [],
       "image": {
         "full": "BardQ.png",
-        "sprite": "spell1.png",
+        "sprite": "spell2.png",
         "group": "spell",
-        "x": 192,
-        "y": 144,
+        "x": 0,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -64,10 +64,10 @@
       "vars": [],
       "image": {
         "full": "BardW.png",
-        "sprite": "spell1.png",
+        "sprite": "spell2.png",
         "group": "spell",
-        "x": 240,
-        "y": 144,
+        "x": 48,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -100,16 +100,16 @@
       "vars": [],
       "image": {
         "full": "BardE.png",
-        "sprite": "spell1.png",
+        "sprite": "spell2.png",
         "group": "spell",
-        "x": 288,
-        "y": 144,
+        "x": 96,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Bard ouvre un portail à sens unique à travers un obstacle pendant {{ e1 }} sec. Tous les champions peuvent emprunter le portail en cliquant sur l'entrée lorsqu'ils sont à portée.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Bard ouvre un portail à sens unique à travers un obstacle pendant {{ doorduration }} sec. Tous les champions peuvent emprunter le portail en cliquant sur l'entrée lorsqu'ils sont à portée.{{ spellmodifierdescriptionappend }}",
       "costBurn": "30",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -132,10 +132,10 @@
       "vars": [],
       "image": {
         "full": "BardR.png",
-        "sprite": "spell1.png",
+        "sprite": "spell2.png",
         "group": "spell",
-        "x": 336,
-        "y": 144,
+        "x": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -192,10 +192,10 @@
       "vars": [],
       "image": {
         "full": "BardQ.png",
-        "sprite": "spell1.png",
+        "sprite": "spell2.png",
         "group": "spell",
-        "x": 192,
-        "y": 144,
+        "x": 0,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -230,10 +230,10 @@
       "vars": [],
       "image": {
         "full": "BardW.png",
-        "sprite": "spell1.png",
+        "sprite": "spell2.png",
         "group": "spell",
-        "x": 240,
-        "y": 144,
+        "x": 48,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -266,16 +266,16 @@
       "vars": [],
       "image": {
         "full": "BardE.png",
-        "sprite": "spell1.png",
+        "sprite": "spell2.png",
         "group": "spell",
-        "x": 288,
-        "y": 144,
+        "x": 96,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Bard opens a one-way portal through Terrain for {{ e1 }} seconds. Any champion can enter the portal by moving onto it while near the entrance.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Bard opens a one-way portal through Terrain for {{ doorduration }} seconds. Any champion can enter the portal by moving onto it while near the entrance.{{ spellmodifierdescriptionappend }}",
       "costBurn": "30",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -298,10 +298,10 @@
       "vars": [],
       "image": {
         "full": "BardR.png",
-        "sprite": "spell1.png",
+        "sprite": "spell2.png",
         "group": "spell",
-        "x": 336,
-        "y": 144,
+        "x": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -454,5 +454,10 @@
       "chromas": true
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Aurelion Sol",
+    "Brand",
+    "Ryze",
+    "Soraka"
+  ]
 }

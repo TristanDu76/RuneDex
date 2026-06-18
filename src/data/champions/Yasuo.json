@@ -3,7 +3,7 @@
   "key": "157",
   "name": "Yasuo",
   "title": "Disgracié",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "L'Ionien Yasuo est un épéiste agile et résolu, capable de déchaîner contre ses ennemis la puissance de l'air. Alors qu'il était encore un jeune homme fier, il fut accusé à tort d'avoir assassiné son maître. Incapable de prouver son innocence, il dut fuir et fut finalement contraint de tuer son frère pour se défendre. Même après la découverte du véritable meurtrier de son maître, Yasuo ne parvint pas à faire la paix avec sa conscience. Il erre désormais dans son pays natal, et seul le vent guide sa lame.",
   "tags": [
     "Fighter",
@@ -14,8 +14,8 @@
     "full": "Yasuo.png",
     "sprite": "champion5.png",
     "group": "champion",
-    "x": 432,
-    "y": 0,
+    "x": 0,
+    "y": 48,
     "w": 48,
     "h": 48
   },
@@ -29,7 +29,7 @@
         "sprite": "spell16.png",
         "group": "spell",
         "x": 192,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -61,7 +61,7 @@
         "sprite": "spell16.png",
         "group": "spell",
         "x": 240,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -76,7 +76,7 @@
           "Délai de récupération"
         ],
         "effect": [
-          "{{ e5 }} -> {{ e5NL }}",
+          "{{ width }} -> {{ widthNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -95,13 +95,13 @@
         "sprite": "spell16.png",
         "group": "spell",
         "x": 288,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Yasuo se rue à travers une cible, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. Chaque utilisation de cette compétence augmente les dégâts de la prochaine utilisation de <magicDamage>{{ bonusdamageperstack }}</magicDamage> pendant {{ stackduration }} sec, jusqu'à {{ maxstacks }} fois.<br /><br />Cette compétence a un délai de récupération de {{ e2 }} sec par cible.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Yasuo se rue à travers une cible, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. Chaque utilisation de cette compétence ajoute <magicDamage>{{ bonusdamageperstack }}</magicDamage> pts de dégâts bonus aux prochaines utilisations pendant {{ stackduration }} sec, jusqu'à {{ maxstacks }} fois.<br /><br />Cette compétence a un délai de récupération de {{ pertargetcooldown }} sec par cible.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": "Pas de coût",
       "leveltip": {
@@ -112,8 +112,8 @@
         ],
         "effect": [
           "{{ basedamage }} -> {{ basedamageNL }}",
-          "{{ e2 }} -> {{ e2NL }}",
-          "{{ e3 }} -> {{ e3NL }}"
+          "{{ pertargetcooldown }} -> {{ pertargetcooldownNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -131,7 +131,7 @@
         "sprite": "spell16.png",
         "group": "spell",
         "x": 336,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -163,8 +163,8 @@
       "full": "Yasuo_Passive.png",
       "sprite": "passive5.png",
       "group": "passive",
-      "x": 432,
-      "y": 0,
+      "x": 0,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -192,7 +192,7 @@
         "sprite": "spell16.png",
         "group": "spell",
         "x": 192,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -224,7 +224,7 @@
         "sprite": "spell16.png",
         "group": "spell",
         "x": 240,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -239,7 +239,7 @@
           "Cooldown"
         ],
         "effect": [
-          "{{ e5 }} -> {{ e5NL }}",
+          "{{ width }} -> {{ widthNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -258,13 +258,13 @@
         "sprite": "spell16.png",
         "group": "spell",
         "x": 288,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Yasuo dashes through a target, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>. Each use of this Ability grants <magicDamage>{{ bonusdamageperstack }}</magicDamage> bonus damage to subsequent uses for {{ stackduration }} seconds, stacking up to {{ maxstacks }} times.<br /><br />This Ability has a {{ e2 }} second per-target Cooldown.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Yasuo dashes through a target, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>. Each use of this Ability grants <magicDamage>{{ bonusdamageperstack }}</magicDamage> bonus damage to subsequent uses for {{ stackduration }} seconds, stacking up to {{ maxstacks }} times.<br /><br />This Ability has a {{ pertargetcooldown }} second per-target Cooldown.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": "No Cost",
       "leveltip": {
@@ -275,8 +275,8 @@
         ],
         "effect": [
           "{{ basedamage }} -> {{ basedamageNL }}",
-          "{{ e2 }} -> {{ e2NL }}",
-          "{{ e3 }} -> {{ e3NL }}"
+          "{{ pertargetcooldown }} -> {{ pertargetcooldownNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "No Cost",
@@ -294,7 +294,7 @@
         "sprite": "spell16.png",
         "group": "spell",
         "x": 336,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -326,8 +326,8 @@
       "full": "Yasuo_Passive.png",
       "sprite": "passive5.png",
       "group": "passive",
-      "x": 432,
-      "y": 0,
+      "x": 0,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -578,7 +578,7 @@
       "note_en": "Temporary mentor"
     },
     {
-      "id": "elder_souma",
+      "id": "Souma",
       "type": "lore",
       "relation": "student",
       "note_fr": "Élève",

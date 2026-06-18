@@ -3,7 +3,7 @@
   "key": "6",
   "name": "Urgot",
   "title": "Broyeur",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Autrefois, Urgot était un puissant bourreau noxien. Il fut trahi par l'empire pour lequel il avait tant tué. Ceint de chaînes de fer, il fut contraint d'apprendre le vrai sens de la force dans les Oubliettes, une mine de forçats située dans les profondeurs de Zaun. Il put émerger à l'occasion d'un désastre qui jeta toute la ville dans le chaos. À présent, son ombre imposante s'étend dans son empire criminel souterrain. Levant sur ses victimes les chaînes qui le maintenaient naguère en esclavage, il veut purger son nouveau foyer, nouvelle croisée des douleurs, de tous ceux qu'il en estime indignes.",
   "tags": [
     "Fighter",
@@ -14,7 +14,7 @@
     "full": "Urgot.png",
     "sprite": "champion4.png",
     "group": "champion",
-    "x": 192,
+    "x": 240,
     "y": 96,
     "w": 48,
     "h": 48
@@ -26,10 +26,10 @@
       "vars": [],
       "image": {
         "full": "UrgotQ.png",
-        "sprite": "spell14.png",
+        "sprite": "spell15.png",
         "group": "spell",
         "x": 192,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -62,16 +62,16 @@
       "vars": [],
       "image": {
         "full": "UrgotW.png",
-        "sprite": "spell14.png",
+        "sprite": "spell15.png",
         "group": "spell",
         "x": 240,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive :</spellPassive> les autres compétences d'Urgot marquent le dernier champion touché pendant 5 sec.<br /><br /><spellActive>Active :</spellActive> Urgot commence à tirer avec sa mitrailleuse sur l'ennemi le plus proche (en priorité les ennemis marqués). Il les attaque {{ e8 }} fois par seconde, infligeant <physicalDamage>{{ damagepershot }} pts de dégâts physiques</physicalDamage> par tir. Urgot peut se déplacer en tirant et a {{ e2 }}% de résistance aux <status>ralentissements</status>, mais sa vitesse de déplacement est réduite de <speed>{{ e5 }}</speed>.<br /><br />Au rang max, cette compétence dure indéfiniment et devient <toggle>activable/désactivable</toggle> à volonté.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive :</spellPassive> les autres compétences d'Urgot marquent le dernier champion touché pendant 5 sec.<br /><br /><spellActive>Active :</spellActive> Urgot commence à tirer avec sa mitrailleuse sur l'ennemi le plus proche (en priorité les ennemis marqués). Il les attaque {{ wattackspersecond }} fois par seconde, infligeant <physicalDamage>{{ damagepershot }} pts de dégâts physiques</physicalDamage> par tir. Urgot peut se déplacer en tirant et a {{ slowresistance }}% de résistance aux <status>ralentissements</status>, mais sa <speed>vitesse de déplacement est réduite de {{ movespeedmod }}</speed>.<br /><br />Au rang max, cette compétence dure indéfiniment et devient <toggle>activable/désactivable</toggle> à volonté.{{ spellmodifierdescriptionappend }}",
       "costBurn": "40/30/20/10/0",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -82,7 +82,7 @@
         ],
         "effect": [
           "{{ cooldown }} -> {{ cooldownNL }}",
-          "{{ e7 }}% -> {{ e7NL }}%",
+          "{{ adratiott }}% -> {{ adratiottNL }}%",
           "{{ cost }} -> {{ costNL }}"
         ]
       },
@@ -98,10 +98,10 @@
       "vars": [],
       "image": {
         "full": "UrgotE.png",
-        "sprite": "spell14.png",
+        "sprite": "spell15.png",
         "group": "spell",
         "x": 288,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -136,10 +136,10 @@
       "vars": [],
       "image": {
         "full": "UrgotR.png",
-        "sprite": "spell14.png",
+        "sprite": "spell15.png",
         "group": "spell",
         "x": 336,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -171,7 +171,7 @@
       "full": "Urgot_Passive.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 192,
+      "x": 240,
       "y": 96,
       "w": 48,
       "h": 48
@@ -196,10 +196,10 @@
       "vars": [],
       "image": {
         "full": "UrgotQ.png",
-        "sprite": "spell14.png",
+        "sprite": "spell15.png",
         "group": "spell",
         "x": 192,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -232,16 +232,16 @@
       "vars": [],
       "image": {
         "full": "UrgotW.png",
-        "sprite": "spell14.png",
+        "sprite": "spell15.png",
         "group": "spell",
         "x": 240,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive:</spellPassive> Urgot's other Abilities mark the last champion hit for 5 seconds.<br /><br /><spellActive>Active:</spellActive> Urgot begins firing his chain gun at the closest enemy, prioritizing marked enemies. He Attacks them {{ e8 }} times a second dealing <physicalDamage>{{ damagepershot }} physical damage</physicalDamage> per shot. Urgot can move while firing and has {{ e2 }}% <status>Slow</status> resistance, but loses <speed>{{ e5 }} Move Speed</speed>.<br /><br />At max rank, this Ability lasts indefinitely and can be <toggle>Toggled</toggle> on and off.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive:</spellPassive> Urgot's other Abilities mark the last champion hit for 5 seconds.<br /><br /><spellActive>Active:</spellActive> Urgot begins firing his chain gun at the closest enemy, prioritizing marked enemies. He Attacks them {{ wattackspersecond }} times a second dealing <physicalDamage>{{ damagepershot }} physical damage</physicalDamage> per shot. Urgot can move while firing and has {{ slowresistance }}% <status>Slow</status> resistance, but loses <speed>{{ movespeedmod }} Move Speed</speed>.<br /><br />At max rank, this Ability lasts indefinitely and can be <toggle>Toggled</toggle> on and off.{{ spellmodifierdescriptionappend }}",
       "costBurn": "40/30/20/10/0",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -252,7 +252,7 @@
         ],
         "effect": [
           "{{ cooldown }} -> {{ cooldownNL }}",
-          "{{ e7 }}% -> {{ e7NL }}%",
+          "{{ adratiott }}% -> {{ adratiottNL }}%",
           "{{ cost }} -> {{ costNL }}"
         ]
       },
@@ -268,10 +268,10 @@
       "vars": [],
       "image": {
         "full": "UrgotE.png",
-        "sprite": "spell14.png",
+        "sprite": "spell15.png",
         "group": "spell",
         "x": 288,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -306,10 +306,10 @@
       "vars": [],
       "image": {
         "full": "UrgotR.png",
-        "sprite": "spell14.png",
+        "sprite": "spell15.png",
         "group": "spell",
         "x": 336,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -341,7 +341,7 @@
       "full": "Urgot_Passive.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 192,
+      "x": 240,
       "y": 96,
       "w": 48,
       "h": 48

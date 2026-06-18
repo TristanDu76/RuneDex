@@ -3,7 +3,7 @@
   "key": "110",
   "name": "Varus",
   "title": "Flèche de la vengeance",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Membre de la race antique des Darkin, Varus était en son temps un assassin cruel qui aimait torturer ses ennemis, les conduisant jusqu'aux portes de la folie avant de les achever d'une flèche. À la fin de la Guerre des Darkin, il fut emprisonné. Des siècles plus tard, il s'évada en utilisant la chair recomposée de deux chasseurs d'Ionia : l'ayant relâché par imprudence, ils furent condamnés à porter l'arc lié à l'essence de Varus. Varus traque désormais ceux qui l'ont enfermé pour se venger, mais les âmes des mortels à l'intérieur de lui s'opposent à ses desseins de toutes leurs forces.",
   "tags": [
     "Marksman",
@@ -14,7 +14,7 @@
     "full": "Varus.png",
     "sprite": "champion4.png",
     "group": "champion",
-    "x": 240,
+    "x": 288,
     "y": 96,
     "w": 48,
     "h": 48
@@ -26,16 +26,16 @@
       "vars": [],
       "image": {
         "full": "VarusQ.png",
-        "sprite": "spell14.png",
+        "sprite": "spell15.png",
         "group": "spell",
         "x": 384,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<attention>Début de la charge :</attention> Varus prépare sa prochaine flèche, ce qui le <status>ralentit</status> de {{ e7 }}%. Après {{ e5 }} sec, si Varus n'a pas tiré, il annule cette compétence et récupère {{ e4 }}% du coût en mana.<br /><br /><attention>Relâchement :</attention> Varus relâche la flèche, infligeant <physicalDamage>{{ totaldamagemintooltip }} pts de dégâts physiques</physicalDamage>, et ces dégâts sont réduits de {{ e3 }}% par ennemi touché (minimum : {{ e9 }}%). Les dégâts de la flèche et du déclenchement des effets <keywordMajor>Meurtrissure</keywordMajor> sont augmentés d'un maximum de {{ maxchargeamp*100 }}% avec le temps de charge (max : <physicalDamage>{{ totaldamagemax }}</physicalDamage>).{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<attention>Début de la charge :</attention> Varus prépare sa prochaine flèche, ce qui le <status>ralentit</status> de {{ movespeedmod*-100 }}%. Après {{ maxchannelduration }} sec, si Varus n'a pas tiré, il annule cette compétence et récupère {{ manarefund*100 }}% du coût en mana.<br /><br /><attention>Relâchement :</attention> Varus relâche la flèche, infligeant entre <physicalDamage>{{ totaldamagemintooltip }} pts de dégâts physiques</physicalDamage>, réduits de {{ falloffpercent*100 }}% par ennemi touché (minimum {{ mindamagepercent*100 }}%). Les dégâts de la flèche et du déclenchement des effets <keywordMajor>Meurtrissure</keywordMajor> sont augmentés d'un maximum de {{ maxchargeamp*100 }}% avec le temps de charge (max : <physicalDamage>{{ totaldamagemax }}</physicalDamage>).{{ spellmodifierdescriptionappend }}",
       "costBurn": "50/55/60/65/70",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -62,16 +62,16 @@
       "vars": [],
       "image": {
         "full": "VarusW.png",
-        "sprite": "spell14.png",
+        "sprite": "spell15.png",
         "group": "spell",
         "x": 432,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive : </spellPassive>les attaques de Varus infligent <magicDamage>{{ onhitdamage }} pts de dégâts magiques supplémentaires</magicDamage> et appliquent un effet de <keywordMajor>Meurtrissure</keywordMajor> pendant {{ e3 }} sec ({{ e4 }} effets max).<br /><br />Les autres compétences de Varus déclenchent les effets <keywordMajor>Meurtrissure</keywordMajor>, infligeant <magicDamage>{{ percenthpperstack }} des PV max en dégâts magiques</magicDamage> par effet cumulé (max : <magicDamage>{{ maxpercenthpperstack }} des PV max en dégâts</magicDamage>). Contre les champions et les monstres épiques, déclencher des effets <keywordMajor>Meurtrissure</keywordMajor> réduit également les délais de récupération des compétences de base de Varus de {{ cdrperblightstack*100 }}% de leur maximum par effet cumulé.<br /><br /><spellActive>Active :</spellActive> la prochaine <spellName>Flèche perforante</spellName> de Varus inflige <magicDamage>{{ qempowerpercenthp }} des PV manquants en dégâts magiques</magicDamage> bonus, et ces dégâts sont augmentés jusqu'à <magicDamage>{{ maxqempowerpercenthp }} des PV manquants</magicDamage> avec le temps de charge.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive :</spellPassive> les attaques de Varus infligent <magicDamage>{{ onhitdamage }} pts de dégâts magiques bonus</magicDamage> et appliquent un effet de <keywordMajor>Meurtrissure</keywordMajor> pendant {{ debuffduration }} sec ({{ maxstacks }} effets max).<br /><br />Les autres compétences de Varus déclenchent les effets <keywordMajor>Meurtrissure</keywordMajor>, infligeant <magicDamage>{{ percenthpperstack }} des PV max en dégâts magiques</magicDamage> par effet cumulé (max : <magicDamage>{{ maxpercenthpperstack }} des PV max en dégâts</magicDamage>). Contre les champions et les monstres épiques, déclencher des effets <keywordMajor>Meurtrissure</keywordMajor> réduit également les délais de récupération des compétences de base de Varus de {{ cdrperblightstack*100 }}% de leur maximum par effet cumulé.<br /><br /><spellActive>Active :</spellActive> la prochaine <spellName>Flèche perforante</spellName> de Varus inflige <magicDamage>{{ qempowerpercenthp }} des PV manquants en dégâts magiques</magicDamage> bonus, et ces dégâts sont augmentés jusqu'à <magicDamage>{{ maxqempowerpercenthp }} des PV manquants</magicDamage> avec le temps de charge.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": "Pas de coût",
       "leveltip": {
@@ -101,13 +101,13 @@
         "sprite": "spell15.png",
         "group": "spell",
         "x": 0,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Varus tire une pluie de flèches qui inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> et souille le sol pendant {{ e3 }} sec, <status>ralentissant</status> les ennemis de {{ slowpercent*-100 }}% et infligeant {{ grievousamount*100 }}% d'Hémorragie.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Varus tire une pluie de flèches qui inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> et souille le sol pendant {{ groundduration }} sec, <status>ralentissant</status> les ennemis de {{ slowpercent*-100 }}% et infligeant {{ grievousamount*100 }}% d'Hémorragie.{{ spellmodifierdescriptionappend }}",
       "costBurn": "90",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -137,13 +137,13 @@
         "sprite": "spell15.png",
         "group": "spell",
         "x": 48,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "Varus lance une vrille de corruption, <status>immobilisant</status> le premier champion touché pendant {{ e2 }} sec et infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. Les ennemis <status>immobilisés</status> reçoivent {{ e4 }} effets <keywordMajor>Meurtrissure</keywordMajor> sur la durée.<br /><br />La corruption se propage ensuite vers les champions ennemis non infectés. Si elle les atteint, elle leur inflige les mêmes dégâts et les <status>immobilise</status>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Varus lance une vrille de corruption, <status>immobilisant</status> le premier champion touché pendant {{ rootduration }} sec et infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. Les ennemis <status>immobilisés</status> reçoivent {{ passivestacks }} effets <keywordMajor>Meurtrissure</keywordMajor> sur la durée.<br /><br />La corruption se propage ensuite vers les champions ennemis non infectés. Si elle les atteint, elle leur inflige les mêmes dégâts et les <status>immobilise</status>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -152,7 +152,7 @@
           "Délai de récupération"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -169,7 +169,7 @@
       "full": "VarusPassive.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 240,
+      "x": 288,
       "y": 96,
       "w": 48,
       "h": 48
@@ -196,16 +196,16 @@
       "vars": [],
       "image": {
         "full": "VarusQ.png",
-        "sprite": "spell14.png",
+        "sprite": "spell15.png",
         "group": "spell",
         "x": 384,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<attention>Begin Charging:</attention> Varus draws back his next shot, <status>Slowing</status> himself by {{ e7 }}%. After {{ e5 }} seconds, if not fired, Varus will cancel the Ability and refund {{ e4 }}% of its Mana cost.<br /><br /><attention>Release:</attention> Varus releases the arrow, dealing <physicalDamage>{{ totaldamagemintooltip }} physical damage</physicalDamage>, reduced by {{ e3 }}% per enemy hit (minimum {{ e9 }}%). Damage and <keywordMajor>Blight</keywordMajor> detonation effects are increased by up to {{ maxchargeamp*100 }}% based on charge time (maximum <physicalDamage>{{ totaldamagemax }}</physicalDamage>) .{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<attention>Begin Charging:</attention> Varus draws back his next shot, <status>Slowing</status> himself by {{ movespeedmod*-100 }}%. After {{ maxchannelduration }} seconds, if not fired, Varus will cancel the Ability and refund {{ manarefund*100 }}% of its Mana cost.<br /><br /><attention>Release:</attention> Varus releases the arrow, dealing <physicalDamage>{{ totaldamagemintooltip }} physical damage</physicalDamage>, reduced by {{ falloffpercent*100 }}% per enemy hit (minimum {{ mindamagepercent*100 }}%). Damage and <keywordMajor>Blight</keywordMajor> detonation effects are increased by up to {{ maxchargeamp*100 }}% based on charge time (maximum <physicalDamage>{{ totaldamagemax }}</physicalDamage>) .{{ spellmodifierdescriptionappend }}",
       "costBurn": "50/55/60/65/70",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -232,16 +232,16 @@
       "vars": [],
       "image": {
         "full": "VarusW.png",
-        "sprite": "spell14.png",
+        "sprite": "spell15.png",
         "group": "spell",
         "x": 432,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive: </spellPassive>Varus' Attacks deal an additional <magicDamage>{{ onhitdamage }} magic damage</magicDamage> and apply a <keywordMajor>Blight</keywordMajor> stack for {{ e3 }} seconds (max {{ e4 }} stacks).<br /><br />Varus' other Abilities detonate <keywordMajor>Blight</keywordMajor> stacks dealing <magicDamage>{{ percenthpperstack }} max Health magic damage</magicDamage> per stack (max <magicDamage>{{ maxpercenthpperstack }} max Health damage</magicDamage>). Detonating <keywordMajor>Blight</keywordMajor> on champions and epic monsters also reduces his basic Abilities' Cooldowns by {{ cdrperblightstack*100 }}% of their Maximum per stack.<br /><br /><spellActive>Active:</spellActive> Varus' next <spellName>Piercing Arrow</spellName> deals an additional <magicDamage>{{ qempowerpercenthp }} missing Health magic damage</magicDamage>, increased up to <magicDamage>{{ maxqempowerpercenthp }} missing Health damage</magicDamage> based on charge time.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive: </spellPassive>Varus' Attacks deal an additional <magicDamage>{{ onhitdamage }} magic damage</magicDamage> and apply a <keywordMajor>Blight</keywordMajor> stack for {{ debuffduration }} seconds (max {{ maxstacks }} stacks).<br /><br />Varus' other Abilities detonate <keywordMajor>Blight</keywordMajor> stacks dealing <magicDamage>{{ percenthpperstack }} max Health magic damage</magicDamage> per stack (max <magicDamage>{{ maxpercenthpperstack }} max Health damage</magicDamage>). Detonating <keywordMajor>Blight</keywordMajor> on champions and epic monsters also reduces his basic Abilities' Cooldowns by {{ cdrperblightstack*100 }}% of their Maximum per stack.<br /><br /><spellActive>Active:</spellActive> Varus' next <spellName>Piercing Arrow</spellName> deals an additional <magicDamage>{{ qempowerpercenthp }} missing Health magic damage</magicDamage>, increased up to <magicDamage>{{ maxqempowerpercenthp }} missing Health damage</magicDamage> based on charge time.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": "No Cost",
       "leveltip": {
@@ -271,13 +271,13 @@
         "sprite": "spell15.png",
         "group": "spell",
         "x": 0,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Varus fires a hail of arrows that deals <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> and desecrates the ground for {{ e3 }} seconds, <status>Slowing</status> enemies by {{ slowpercent*-100 }}% and applying {{ grievousamount*100 }}% Grievous Wounds.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Varus fires a hail of arrows that deals <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> and desecrates the ground for {{ groundduration }} seconds, <status>Slowing</status> enemies by {{ slowpercent*-100 }}% and applying {{ grievousamount*100 }}% Grievous Wounds.{{ spellmodifierdescriptionappend }}",
       "costBurn": "90",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -307,13 +307,13 @@
         "sprite": "spell15.png",
         "group": "spell",
         "x": 48,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "Varus flings out a tendril of corruption, <status>Rooting</status> the first champion hit for {{ e2 }} seconds and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>. <status>Rooted</status> enemies gain {{ e4 }} <keywordMajor>Blight</keywordMajor> stacks over the duration.<br /><br />The corruption spreads from its target to uninfected enemy champions. If it reaches them, they take the same damage and <status>Root</status>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Varus flings out a tendril of corruption, <status>Rooting</status> the first champion hit for {{ rootduration }} seconds and dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>. <status>Rooted</status> enemies gain {{ passivestacks }} <keywordMajor>Blight</keywordMajor> stacks over the duration.<br /><br />The corruption spreads from its target to uninfected enemy champions. If it reaches them, they take the same damage and <status>Root</status>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -322,7 +322,7 @@
           "Cooldown"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -339,7 +339,7 @@
       "full": "VarusPassive.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 240,
+      "x": 288,
       "y": 96,
       "w": 48,
       "h": 48

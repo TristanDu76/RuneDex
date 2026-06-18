@@ -3,7 +3,7 @@
   "key": "141",
   "name": "Kayn",
   "title": "Faucheur de l'ombre",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Expert inégalé dans la pratique de la magie des ombres, Shieda Kayn combat pour accomplir sa véritable destinée : mener un jour l'Ordre de l'ombre vers une ère nouvelle où Ionia régnera en maître. Il manie Rhaast, une arme darkin douée de raison, sans jamais craindre la corruption de son corps et de son esprit. Il ne peut y avoir pour lui que deux fins possibles : soit Kayn pliera l'arme à sa volonté, soit la faux maléfique le consumera complètement, ouvrant la voie à la destruction de tout Runeterra.",
   "tags": [
     "Fighter",
@@ -26,10 +26,10 @@
       "vars": [],
       "image": {
         "full": "KaynQ.png",
-        "sprite": "spell6.png",
+        "sprite": "spell7.png",
         "group": "spell",
-        "x": 288,
-        "y": 96,
+        "x": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -45,7 +45,7 @@
         ],
         "effect": [
           "{{ cooldown }} -> {{ cooldownNL }}",
-          "{{ e1 }} -> {{ e1NL }}"
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -60,10 +60,10 @@
       "vars": [],
       "image": {
         "full": "KaynW.png",
-        "sprite": "spell6.png",
+        "sprite": "spell7.png",
         "group": "spell",
-        "x": 336,
-        "y": 96,
+        "x": 144,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -79,7 +79,7 @@
           "Coût en @AbilityResourceName@"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ cost }} -> {{ costNL }}"
         ]
@@ -96,10 +96,10 @@
       "vars": [],
       "image": {
         "full": "KaynE.png",
-        "sprite": "spell6.png",
+        "sprite": "spell7.png",
         "group": "spell",
-        "x": 384,
-        "y": 96,
+        "x": 192,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -116,8 +116,8 @@
         ],
         "effect": [
           "{{ f15 }} -> {{ f16 }}",
-          "{{ e2 }} -> {{ e2NL }}",
-          "{{ e7 }} -> {{ e7NL }}"
+          "{{ wallwalkduration }} -> {{ wallwalkdurationNL }}",
+          "{{ healamount }} -> {{ healamountNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -132,10 +132,10 @@
       "vars": [],
       "image": {
         "full": "KaynR.png",
-        "sprite": "spell6.png",
+        "sprite": "spell7.png",
         "group": "spell",
-        "x": 432,
-        "y": 96,
+        "x": 240,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -196,10 +196,10 @@
       "vars": [],
       "image": {
         "full": "KaynQ.png",
-        "sprite": "spell6.png",
+        "sprite": "spell7.png",
         "group": "spell",
-        "x": 288,
-        "y": 96,
+        "x": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -215,7 +215,7 @@
         ],
         "effect": [
           "{{ cooldown }} -> {{ cooldownNL }}",
-          "{{ e1 }} -> {{ e1NL }}"
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -230,10 +230,10 @@
       "vars": [],
       "image": {
         "full": "KaynW.png",
-        "sprite": "spell6.png",
+        "sprite": "spell7.png",
         "group": "spell",
-        "x": 336,
-        "y": 96,
+        "x": 144,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -249,7 +249,7 @@
           "@AbilityResourceName@ Cost"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ cost }} -> {{ costNL }}"
         ]
@@ -266,10 +266,10 @@
       "vars": [],
       "image": {
         "full": "KaynE.png",
-        "sprite": "spell6.png",
+        "sprite": "spell7.png",
         "group": "spell",
-        "x": 384,
-        "y": 96,
+        "x": 192,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -286,8 +286,8 @@
         ],
         "effect": [
           "{{ f15 }} -> {{ f16 }}",
-          "{{ e2 }} -> {{ e2NL }}",
-          "{{ e7 }} -> {{ e7NL }}"
+          "{{ wallwalkduration }} -> {{ wallwalkdurationNL }}",
+          "{{ healamount }} -> {{ healamountNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -302,10 +302,10 @@
       "vars": [],
       "image": {
         "full": "KaynR.png",
-        "sprite": "spell6.png",
+        "sprite": "spell7.png",
         "group": "spell",
-        "x": 432,
-        "y": 96,
+        "x": 240,
+        "y": 0,
         "w": 48,
         "h": 48
       },

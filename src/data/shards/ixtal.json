@@ -2,12 +2,53 @@
   {
     "id": "malphite",
     "name": "Malphite",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Malphite.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Malphite.png",
     "factionKey": "ixtal",
+    "factionKeys": [
+      "ixtal"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
+      {
+        "id": "ezreal",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kassadin",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "qiyana",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "skarner",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "taliyah",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "milio",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
       {
         "id": "chip",
         "type": "lore",
@@ -45,12 +86,45 @@
   {
     "id": "milio",
     "name": "Milio",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Milio.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Milio.png",
     "factionKey": "ixtal",
+    "factionKeys": [
+      "ixtal"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
+      {
+        "id": "malphite",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "neeko",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "nidalee",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "qiyana",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "zyra",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
       {
         "id": "lune",
         "type": "lore",
@@ -72,11 +146,14 @@
   {
     "id": "neeko",
     "name": "Neeko",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Neeko.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Neeko.png",
     "factionKey": "ixtal",
+    "factionKeys": [
+      "ixtal"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "nidalee",
@@ -85,6 +162,14 @@
         "auto_generated": false,
         "note_fr": "Amie proche",
         "note_en": "Close friend"
+      },
+      {
+        "id": "milio",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "anura",
@@ -115,11 +200,15 @@
   {
     "id": "nidalee",
     "name": "Nidalee",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Nidalee.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Nidalee.png",
     "factionKey": "ixtal",
+    "factionKeys": [
+      "ixtal",
+      "shurima"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "neeko",
@@ -128,6 +217,22 @@
         "auto_generated": false,
         "note_fr": "Amie proche",
         "note_en": "Close friend"
+      },
+      {
+        "id": "milio",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "zyra",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "anura",
@@ -166,12 +271,45 @@
   {
     "id": "qiyana",
     "name": "Qiyana",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Qiyana.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Qiyana.png",
     "factionKey": "ixtal",
+    "factionKeys": [
+      "ixtal"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
+      {
+        "id": "malphite",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "milio",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "rengar",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "skarner",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "zyra",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
       {
         "id": "aliay-qunlan",
         "type": "lore",
@@ -201,11 +339,15 @@
   {
     "id": "rengar",
     "name": "Rengar",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Rengar.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Rengar.png",
     "factionKey": "ixtal",
+    "factionKeys": [
+      "ixtal",
+      "shurima"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "khazix",
@@ -214,17 +356,36 @@
         "auto_generated": false,
         "note_fr": "La proie ultime",
         "note_en": "The ultimate prey"
+      },
+      {
+        "id": "qiyana",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "riven",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       }
     ]
   },
   {
     "id": "skarner",
     "name": "Skarner",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Skarner.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Skarner.png",
     "factionKey": "ixtal",
+    "factionKeys": [
+      "ixtal"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "seraphine",
@@ -233,24 +394,89 @@
         "auto_generated": false,
         "note_fr": "Entend son cristal (Hextech)",
         "note_en": "Hears his crystal (Hextech)"
+      },
+      {
+        "id": "malphite",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "qiyana",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "reksai",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       }
     ]
   },
   {
     "id": "zyra",
     "name": "Zyra",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Zyra.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Zyra.png",
     "factionKey": "ixtal",
+    "factionKeys": [
+      "ixtal"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
-    "related_characters": []
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "ivern",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "nidalee",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "qiyana",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "maokai",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "milio",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
   },
   {
     "id": "aliay-qunlan",
     "name": "Aliay Qunlan",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Ixtal_The_Axiomata_01.jpg?42701",
     "factionKey": "ixtal",
+    "factionKeys": [
+      "ixtal"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -267,6 +493,9 @@
     "name": "Brock",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Brock_TFT_Splash_Concept_01.jpg?f204c",
     "factionKey": "ixtal",
+    "factionKeys": [
+      "ixtal"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": []
@@ -276,6 +505,9 @@
     "name": "Chip",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/04MT005-full.png?c3ab4",
     "factionKey": "ixtal",
+    "factionKeys": [
+      "ixtal"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -314,6 +546,9 @@
     "name": "Inessa Yunalai",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "ixtal",
+    "factionKeys": [
+      "ixtal"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -330,6 +565,9 @@
     "name": "Kuulcan",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/07SH009-full.png?578ad",
     "factionKey": "ixtal",
+    "factionKeys": [
+      "ixtal"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -346,6 +584,9 @@
     "name": "Luné",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "ixtal",
+    "factionKeys": [
+      "ixtal"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -362,6 +603,9 @@
     "name": "Lupé",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "ixtal",
+    "factionKeys": [
+      "ixtal"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -378,6 +622,9 @@
     "name": "Mara Yunalai",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "ixtal",
+    "factionKeys": [
+      "ixtal"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [

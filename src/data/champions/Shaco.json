@@ -3,7 +3,7 @@
   "key": "35",
   "name": "Shaco",
   "title": "Bouffon des ténèbres",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Fabriqué il y a longtemps pour servir de jouet à un prince qui se sentait seul, Shaco est une marionnette enchantée qui se repaît désormais de meurtres et de chaos. Corrompu par la magie noire et la perte de sa chère mission, le pantin autrefois gentil ne se réjouit plus que du malheur des âmes qu'il tourmente. Il utilise ses jouets et ses mauvais tours pour répandre la mort et le sang, ce qui le fait follement rire. Tous ceux qui, la nuit venue, entendent un odieux ricanement savent qu'ils sont la prochaine cible du Bouffon des ténèbres.",
   "tags": [
     "Assassin"
@@ -11,10 +11,10 @@
   "partype": "Mana",
   "image": {
     "full": "Shaco.png",
-    "sprite": "champion3.png",
+    "sprite": "champion4.png",
     "group": "champion",
-    "x": 432,
-    "y": 96,
+    "x": 0,
+    "y": 0,
     "w": 48,
     "h": 48
   },
@@ -28,7 +28,7 @@
         "sprite": "spell12.png",
         "group": "spell",
         "x": 192,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -64,13 +64,13 @@
         "sprite": "spell12.png",
         "group": "spell",
         "x": 240,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Shaco crée un piège qui devient furtif au bout de {{ e5 }} sec et qui dure {{ trapduration }} sec. Il s'active quand un ennemi approche ou quand il est révélé, <status>effrayant</status> les champions ennemis proches pendant {{ fearduration }} sec, ou pendant {{ minionfearduration }} sec pour les sbires et les monstres de la jungle.<br /><br />Une fois activé, le piège tire sur les ennemis proches pendant 5 sec, infligeant <magicDamage>{{ aoedamage }} pts de dégâts magiques</magicDamage>, ou <magicDamage>{{ stdamage }} pts de dégâts</magicDamage> s'il se concentre sur une seule cible.<br /><br />Les attaques de Boîte surprise infligent <magicDamage>{{ monsterbonusdamage }}</magicDamage> pts de dégâts supplémentaires aux monstres.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Shaco crée un piège qui devient furtif au bout de {{ armtime }} sec et qui dure {{ trapduration }} sec. Il s'active quand un ennemi approche ou quand il est révélé, <status>effrayant</status> les champions ennemis proches pendant {{ fearduration }} sec, ou pendant {{ minionfearduration }} sec pour les sbires et les monstres de la jungle.<br /><br />Une fois activé, le piège tire sur les ennemis proches pendant 5 sec, infligeant <magicDamage>{{ aoedamage }} pts de dégâts magiques</magicDamage>, ou <magicDamage>{{ stdamage }} pts de dégâts</magicDamage> s'il se concentre sur une seule cible.<br /><br />Les attaques de la Boîte surprise infligent <magicDamage>{{ monsterbonusdamage }}</magicDamage> pts de dégâts bonus aux monstres.{{ spellmodifierdescriptionappend }}",
       "costBurn": "70/65/60/55/50",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -102,7 +102,7 @@
         "sprite": "spell12.png",
         "group": "spell",
         "x": 288,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -136,7 +136,7 @@
         "sprite": "spell12.png",
         "group": "spell",
         "x": 336,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -168,10 +168,10 @@
     "name": "Traîtrise",
     "image": {
       "full": "Jester_CarefulStrikes.png",
-      "sprite": "passive3.png",
+      "sprite": "passive4.png",
       "group": "passive",
-      "x": 432,
-      "y": 96,
+      "x": 0,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -196,7 +196,7 @@
         "sprite": "spell12.png",
         "group": "spell",
         "x": 192,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -232,13 +232,13 @@
         "sprite": "spell12.png",
         "group": "spell",
         "x": 240,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Shaco creates a trap that stealths itself after {{ e5 }} seconds and lasts for {{ trapduration }} seconds. It activates when an enemy comes near or when revealed, <status>Fearing</status> nearby enemy Champions for {{ fearduration }} seconds, or {{ minionfearduration }} seconds for minions and jungle monsters.<br /><br />Once activated, the trap fires at all nearby enemies for 5 seconds, dealing <magicDamage>{{ aoedamage }} magic damage</magicDamage>, or <magicDamage>{{ stdamage }} damage</magicDamage> if focused on a single target.<br /><br />Jack in the Box's attacks deal an additional <magicDamage>{{ monsterbonusdamage }}</magicDamage> damage to monsters.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Shaco creates a trap that stealths itself after {{ armtime }} seconds and lasts for {{ trapduration }} seconds. It activates when an enemy comes near or when revealed, <status>Fearing</status> nearby enemy Champions for {{ fearduration }} seconds, or {{ minionfearduration }} seconds for minions and jungle monsters.<br /><br />Once activated, the trap fires at all nearby enemies for 5 seconds, dealing <magicDamage>{{ aoedamage }} magic damage</magicDamage>, or <magicDamage>{{ stdamage }} damage</magicDamage> if focused on a single target.<br /><br />Jack in the Box's attacks deal an additional <magicDamage>{{ monsterbonusdamage }}</magicDamage> damage to monsters.{{ spellmodifierdescriptionappend }}",
       "costBurn": "70/65/60/55/50",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -270,7 +270,7 @@
         "sprite": "spell12.png",
         "group": "spell",
         "x": 288,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -304,7 +304,7 @@
         "sprite": "spell12.png",
         "group": "spell",
         "x": 336,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -336,10 +336,10 @@
     "name": "Backstab",
     "image": {
       "full": "Jester_CarefulStrikes.png",
-      "sprite": "passive3.png",
+      "sprite": "passive4.png",
       "group": "passive",
-      "x": 432,
-      "y": 96,
+      "x": 0,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -446,6 +446,12 @@
       "num": 64,
       "name": "Cat-in-the-Box Shaco",
       "chromas": true
+    },
+    {
+      "id": "35071",
+      "num": 71,
+      "name": "Prestige Pandemonium Shaco",
+      "chromas": true
     }
   ],
   "skins": [
@@ -544,7 +550,17 @@
       "num": 64,
       "name": "Chatco",
       "chromas": true
+    },
+    {
+      "id": "35071",
+      "num": 71,
+      "name": "Shaco du Pandémonium prestige",
+      "chromas": true
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Fiddlesticks",
+    "Nocturne",
+    "Vayne"
+  ]
 }

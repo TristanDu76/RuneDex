@@ -3,7 +3,7 @@
   "key": "64",
   "name": "Lee Sin",
   "title": "Moine aveugle",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Maître des antiques arts martiaux d'Ionia, Lee Sin est un combattant dévoué à de nobles principes qui canalise l'esprit du dragon pour affronter tous les défis. Bien qu'il ait perdu la vue il y a bien des années, le moine-guerrier a dédié sa vie à la protection de sa terre natale contre tous ceux qui voudraient en déstabiliser l'équilibre spirituel. Les ennemis qui sous-estiment son apparence méditative auront peu de temps pour le regretter, face à ses poings de feu et à ses coups de pied flamboyants.",
   "tags": [
     "Fighter",
@@ -28,8 +28,8 @@
         "full": "LeeSinQOne.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 384,
-        "y": 48,
+        "x": 192,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -66,14 +66,14 @@
         "full": "LeeSinWOne.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 432,
-        "y": 48,
+        "x": 240,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Lee Sin se rue sur un allié ou une balise. Si la cible est un champion, Lee Sin et la cible gagnent chacun un <shield>bouclier de {{ shieldamount }} PV</shield> pendant {{ shieldduration }} sec et le délai de récupération de cette compétence est réduit de {{ w1cooldownrecovered*100 }}%. Lee Sin peut <recast>réactiver</recast> cette compétence dans les {{ w1reactivatetime }} sec qui suivent.<br /><br /><recast>Réactivation</recast> : Lee Sin gagne {{ lifestealandspellvamp }}% d'omnivampirisme pendant {{ lifestealandspellvamptime }} sec.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Lee Sin se rue sur un allié ou une balise. Si la cible est un champion, Lee Sin et la cible gagnent chacun un <shield>bouclier de {{ shieldamount }} PV</shield> pendant {{ shieldduration }} sec. Lee Sin peut <recast>réactiver</recast> cette compétence dans les {{ w1reactivatetime }} sec qui suivent.<br /><br /><recast>Réactivation :</recast> Lee Sin gagne {{ lifestealandspellvamp }}% d'omnivampirisme pendant {{ lifestealandspellvamptime }} sec.{{ spellmodifierdescriptionappend }}",
       "costBurn": "50",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -90,7 +90,7 @@
       "rangeBurn": "700",
       "datavalues": {},
       "description": "Rempart : Lee Sin fonce vers un allié, se protégeant contre les dégâts. Si l'allié est un champion, il est également protégé. Après avoir lancé Rempart, Lee Sin peut lancer Force d'âme.<br>Force d'âme : l'entraînement intense de Lee Sin lui permet de décupler ses forces pendant un combat. Lee Sin gagne de l'omnivampirisme.",
-      "cooldownBurn": "12"
+      "cooldownBurn": "7"
     },
     {
       "id": "LeeSinEOne",
@@ -100,8 +100,8 @@
         "full": "LeeSinEOne.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 0,
-        "y": 96,
+        "x": 288,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -134,8 +134,8 @@
         "full": "LeeSinR.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 48,
-        "y": 96,
+        "x": 336,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -197,8 +197,8 @@
         "full": "LeeSinQOne.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 384,
-        "y": 48,
+        "x": 192,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -235,14 +235,14 @@
         "full": "LeeSinWOne.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 432,
-        "y": 48,
+        "x": 240,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Lee Sin dashes to an ally or ward. If the target is a champion, Lee Sin grants them and himself <shield>{{ shieldamount }} Shield</shield> for {{ shieldduration }} seconds and reduces this Ability's Cooldown by {{ w1cooldownrecovered*100 }}%. Lee Sin may <recast>Recast</recast> for the next {{ w1reactivatetime }} seconds.<br /><br /><recast>Recast:</recast> Lee Sin gains {{ lifestealandspellvamp }}% Omnivamp for {{ lifestealandspellvamptime }} seconds.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Lee Sin dashes to an ally or ward. If the target is a champion, Lee Sin grants them and himself <shield>{{ shieldamount }} Shield</shield> for {{ shieldduration }} seconds. Lee Sin may <recast>Recast</recast> for the next {{ w1reactivatetime }} seconds.<br /><br /><recast>Recast:</recast> Lee Sin gains {{ lifestealandspellvamp }}% Omnivamp for {{ lifestealandspellvamptime }} seconds.{{ spellmodifierdescriptionappend }}",
       "costBurn": "50",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -259,7 +259,7 @@
       "rangeBurn": "700",
       "datavalues": {},
       "description": "Safeguard: Lee Sin rushes to target ally, shielding himself from damage. If the ally is a champion, they are also shielded. After using Safeguard, Lee Sin can cast Iron Will.<br>Iron Will: Lee Sin's intense training allows him to thrive in battle. Lee Sin gains Omnivamp.",
-      "cooldownBurn": "12"
+      "cooldownBurn": "7"
     },
     {
       "id": "LeeSinEOne",
@@ -269,8 +269,8 @@
         "full": "LeeSinEOne.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 0,
-        "y": 96,
+        "x": 288,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -303,8 +303,8 @@
         "full": "LeeSinR.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 48,
-        "y": 96,
+        "x": 336,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -593,5 +593,10 @@
       "chromas": false
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Karma",
+    "Rakan",
+    "Udyr",
+    "Xayah"
+  ]
 }

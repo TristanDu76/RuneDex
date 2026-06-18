@@ -3,7 +3,7 @@
   "key": "7",
   "name": "LeBlanc",
   "title": "Manipulatrice",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Mystérieuse, même aux yeux des autres membres de la Rose noire, LeBlanc n'est que l'un des nombreux noms de la femme pâle qui manipule le destin de Noxus depuis ses premiers jours. Utilisant sa magie pour se cloner, elle peut être partout, devant tout le monde, et même à plusieurs endroits en même temps. Les objectifs que poursuit LeBlanc, de même que sa véritable identité, sont à l'image de ses complots : totalement insaisissables.",
   "tags": [
     "Assassin",
@@ -28,8 +28,8 @@
         "full": "LeblancQ.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 192,
-        "y": 48,
+        "x": 0,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -62,8 +62,8 @@
         "full": "LeblancW.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 240,
-        "y": 48,
+        "x": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -98,8 +98,8 @@
         "full": "LeblancE.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 288,
-        "y": 48,
+        "x": 96,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -134,8 +134,8 @@
         "full": "LeblancR.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 336,
-        "y": 48,
+        "x": 144,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -168,7 +168,7 @@
   "passive": {
     "name": "Image miroir",
     "image": {
-      "full": "LeblancP.Leblanc_Rework.png",
+      "full": "LeblancP.png",
       "sprite": "passive2.png",
       "group": "passive",
       "x": 432,
@@ -199,8 +199,8 @@
         "full": "LeblancQ.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 192,
-        "y": 48,
+        "x": 0,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -233,8 +233,8 @@
         "full": "LeblancW.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 240,
-        "y": 48,
+        "x": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -269,8 +269,8 @@
         "full": "LeblancE.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 288,
-        "y": 48,
+        "x": 96,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -305,8 +305,8 @@
         "full": "LeblancR.png",
         "sprite": "spell7.png",
         "group": "spell",
-        "x": 336,
-        "y": 48,
+        "x": 144,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -339,7 +339,7 @@
   "passive_en": {
     "name": "Mirror Image",
     "image": {
-      "full": "LeblancP.Leblanc_Rework.png",
+      "full": "LeblancP.png",
       "sprite": "passive2.png",
       "group": "passive",
       "x": 432,
@@ -438,6 +438,12 @@
       "num": 55,
       "name": "Risen Legend LeBlanc",
       "chromas": true
+    },
+    {
+      "id": "7059",
+      "num": 59,
+      "name": "Prestige Sinful Shores LeBlanc",
+      "chromas": true
     }
   ],
   "skins": [
@@ -523,6 +529,12 @@
       "id": "7055",
       "num": 55,
       "name": "LeBlanc légende transcendée",
+      "chromas": true
+    },
+    {
+      "id": "7059",
+      "num": 59,
+      "name": "LeBlanc des rivages impies prestige",
       "chromas": true
     }
   ],

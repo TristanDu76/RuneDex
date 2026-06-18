@@ -3,7 +3,7 @@
   "key": "154",
   "name": "Zac",
   "title": "Arme secrète",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Zac est le produit d'une fuite toxique qui, dégoulinant par une veine techno-chimique, se transforma en bassin dans une profonde caverne du Puisard de Zaun. En dépit de ses humbles origines, Zac a évolué pour passer du stade de dépôt primordial à celui d'être pensant qui se faufile dans les canalisations de la ville. De temps en temps, il émerge pour aider ceux qui ne s'en sortent pas seuls ou pour reconstruire les infrastructures en mauvais état de Zaun.",
   "tags": [
     "Tank",
@@ -14,7 +14,7 @@
     "full": "Zac.png",
     "sprite": "champion5.png",
     "group": "champion",
-    "x": 240,
+    "x": 288,
     "y": 48,
     "w": 48,
     "h": 48
@@ -26,10 +26,10 @@
       "vars": [],
       "image": {
         "full": "ZacQ.png",
-        "sprite": "spell16.png",
+        "sprite": "spell17.png",
         "group": "spell",
         "x": 384,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -37,7 +37,7 @@
       "maxrank": 5,
       "tooltip": "Zac étend un bras et saisit le premier ennemi touché, lui infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> et le <status>ralentissant</status> brièvement. La prochaine attaque de Zac a une portée augmentée et inflige les mêmes dégâts et <status>ralentissement</status>. <br /><br />Si Zac frappe un ennemi <i>différent</i> avec cette attaque, il envoie les deux ennemis l'un contre l'autre en les <status>projetant dans les airs</status>. S'ils se percutent, ces ennemis et les ennemis proches subissent <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> et sont brièvement <status>ralentis</status>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
-      "costType": "% des PV actuels ({{ healthcosttooltip }})",
+      "costType": "% des PV actuels ({{ healthcosttooltip }}).",
       "leveltip": {
         "label": [
           "Dégâts",
@@ -48,7 +48,7 @@
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
-      "resource": "Coûte {{ e2 }}% des PV actuels ({{ healthcosttooltip }})",
+      "resource": "Coûte {{ hpcost*100 }}% des PV actuels ({{ healthcosttooltip }}).",
       "rangeBurn": "800",
       "datavalues": {},
       "description": "Zac étend un bras et attrape un ennemi. S'il attaque ensuite un ennemi différent, il envoie les deux cibles l'une contre l'autre.",
@@ -60,10 +60,10 @@
       "vars": [],
       "image": {
         "full": "ZacW.png",
-        "sprite": "spell16.png",
+        "sprite": "spell17.png",
         "group": "spell",
         "x": 432,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -71,7 +71,7 @@
       "maxrank": 5,
       "tooltip": "Le corps de Zac éclate, infligeant <magicDamage>{{ basedamage }} + {{ displaypercentdamage }} des PV max en dégâts magiques</magicDamage> aux ennemis proches.<br /><br />Absorber de la <keywordMajor>matière gluante</keywordMajor> réduit de 1 sec le délai de récupération de cette compétence.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
-      "costType": "% des PV actuels ({{ tooltiphealthcost }})",
+      "costType": "% des PV actuels ({{ tooltiphealthcost }}).",
       "leveltip": {
         "label": [
           "Dégâts fixes",
@@ -82,7 +82,7 @@
           "{{ basemaxhealthdamage*100.000000 }}% -> {{ basemaxhealthdamagenl*100.000000 }}%"
         ]
       },
-      "resource": "Coûte {{ e2 }}% des PV actuels ({{ tooltiphealthcost }})",
+      "resource": "Coûte {{ hpcost*100 }}% des PV actuels ({{ tooltiphealthcost }}).",
       "rangeBurn": "350",
       "datavalues": {},
       "description": "Zac explose en direction des ennemis proches, leur infligeant des dégâts magiques équivalents à un pourcentage de leurs PV max.",
@@ -97,15 +97,15 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 0,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<charge>Début de la charge :</charge> Zac se tend pour charger une ruée en {{ e4 }} sec.<br /><br /><release>Relâchement :</release> Zac se propulse vers la zone ciblée, <status>projetant dans les airs</status> les ennemis à l'atterrissage pendant un maximum de {{ maxstun }} sec (selon la durée de la charge) et infligeant <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage>. Zac perd un bout de <keywordMajor>matière gluante</keywordMajor> supplémentaire pour chaque champion ennemi qu'il touche.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<charge>Début de la charge :</charge> Zac se tend pour charger une ruée en {{ channeltime }} sec.<br /><br /><release>Relâchement :</release> Zac se propulse vers la zone ciblée, <status>projetant dans les airs</status> les ennemis à l'atterrissage pendant un maximum de {{ maxstun }} sec (selon la durée de la charge) et infligeant <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage>. Zac perd un bout de <keywordMajor>matière gluante</keywordMajor> supplémentaire pour chaque champion ennemi qu'il touche.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
-      "costType": "% des PV actuels ({{ healthcosttooltip }})",
+      "costType": "% des PV actuels ({{ healthcosttooltip }}).",
       "leveltip": {
         "label": [
           "Dégâts",
@@ -113,16 +113,16 @@
           "Délai de récupération"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
-          "{{ e3 }} -> {{ e3NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ maxrange }} -> {{ maxrangeNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
-      "resource": "Coûte {{ e2 }}% des PV actuels ({{ healthcosttooltip }})",
+      "resource": "Coûte {{ hpcost*100 }}% des PV actuels ({{ healthcosttooltip }}).",
       "rangeBurn": "300",
       "datavalues": {},
       "description": "Zac fixe ses bras au sol et prend de l'élan pour se projeter vers l'avant.",
-      "cooldownBurn": "22/19/16/13/10"
+      "cooldownBurn": "21/18/15/12/9"
     },
     {
       "id": "ZacR",
@@ -133,7 +133,7 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 48,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -165,7 +165,7 @@
       "full": "ZacPassive.png",
       "sprite": "passive5.png",
       "group": "passive",
-      "x": 240,
+      "x": 288,
       "y": 48,
       "w": 48,
       "h": 48
@@ -190,10 +190,10 @@
       "vars": [],
       "image": {
         "full": "ZacQ.png",
-        "sprite": "spell16.png",
+        "sprite": "spell17.png",
         "group": "spell",
         "x": 384,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -212,7 +212,7 @@
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
-      "resource": "{{ e2 }}% of current Health ({{ healthcosttooltip }})",
+      "resource": "{{ hpcost*100 }}% of current Health ({{ healthcosttooltip }})",
       "rangeBurn": "800",
       "datavalues": {},
       "description": "Zac stretches an arm, grabbing an enemy. Attacking a different enemy will cause him to throw both targets towards each other.",
@@ -224,10 +224,10 @@
       "vars": [],
       "image": {
         "full": "ZacW.png",
-        "sprite": "spell16.png",
+        "sprite": "spell17.png",
         "group": "spell",
         "x": 432,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -246,7 +246,7 @@
           "{{ basemaxhealthdamage*100.000000 }}% -> {{ basemaxhealthdamagenl*100.000000 }}%"
         ]
       },
-      "resource": "{{ e2 }}% of current Health ({{ tooltiphealthcost }})",
+      "resource": "{{ hpcost*100 }}% of current Health ({{ tooltiphealthcost }})",
       "rangeBurn": "350",
       "datavalues": {},
       "description": "Zac explodes outward towards nearby enemies, dealing a percentage of their maximum health as magic damage.",
@@ -261,13 +261,13 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 0,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<charge>Begin Charging:</charge> Zac pulls himself taut, charging up a dash over {{ e4 }} seconds.<br /><br /><release>Release:</release> Zac launches himself and <status>Knocks Up</status> enemies where he lands for up to {{ maxstun }} second (based on charge time), dealing them <magicDamage>{{ damage }} magic damage</magicDamage>. Zac spawns an extra chunk of <keywordMajor>Goo</keywordMajor> for each enemy champion hit.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<charge>Begin Charging:</charge> Zac pulls himself taut, charging up a dash over {{ channeltime }} seconds.<br /><br /><release>Release:</release> Zac launches himself and <status>Knocks Up</status> enemies where he lands for up to {{ maxstun }} second (based on charge time), dealing them <magicDamage>{{ damage }} magic damage</magicDamage>. Zac spawns an extra chunk of <keywordMajor>Goo</keywordMajor> for each enemy champion hit.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": "% of current Health ({{ healthcosttooltip }})",
       "leveltip": {
@@ -277,16 +277,16 @@
           "Cooldown"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
-          "{{ e3 }} -> {{ e3NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ maxrange }} -> {{ maxrangeNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
-      "resource": "{{ e2 }}% of current Health ({{ healthcosttooltip }})",
+      "resource": "{{ hpcost*100 }}% of current Health ({{ healthcosttooltip }})",
       "rangeBurn": "300",
       "datavalues": {},
       "description": "Zac attaches his arms to the ground and stretches back, launching himself forward.",
-      "cooldownBurn": "22/19/16/13/10"
+      "cooldownBurn": "21/18/15/12/9"
     },
     {
       "id": "ZacR",
@@ -297,7 +297,7 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 48,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -329,7 +329,7 @@
       "full": "ZacPassive.png",
       "sprite": "passive5.png",
       "group": "passive",
-      "x": 240,
+      "x": 288,
       "y": 48,
       "w": 48,
       "h": 48

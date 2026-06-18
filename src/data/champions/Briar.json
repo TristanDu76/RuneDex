@@ -3,7 +3,7 @@
   "key": "233",
   "name": "Briar",
   "title": "Faim insatiable",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Née d'une expérience ratée menée par la Rose noire, Briar a besoin d'un pilori spécial pour contrôler son irrépressible soif de sang. Après des années d'enfermement, cette arme vivante s'est aujourd'hui défaite de ses entraves et parcourt le monde librement. Plus personne ne la contrôle. Elle assouvit sa soif de connaissance et de sang au gré de ses envies, et savoure chaque occasion de se déchaîner, même si mettre fin à sa frénésie sanguinaire n'est jamais facile.",
   "tags": [
     "Fighter",
@@ -28,8 +28,8 @@
         "full": "BriarQ.png",
         "sprite": "spell2.png",
         "group": "spell",
-        "x": 192,
-        "y": 48,
+        "x": 0,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -64,8 +64,8 @@
         "full": "BriarW.png",
         "sprite": "spell2.png",
         "group": "spell",
-        "x": 240,
-        "y": 48,
+        "x": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -106,8 +106,8 @@
         "full": "BriarE.png",
         "sprite": "spell2.png",
         "group": "spell",
-        "x": 288,
-        "y": 48,
+        "x": 96,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -142,8 +142,8 @@
         "full": "BriarR.png",
         "sprite": "spell2.png",
         "group": "spell",
-        "x": 336,
-        "y": 48,
+        "x": 144,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -207,8 +207,8 @@
         "full": "BriarQ.png",
         "sprite": "spell2.png",
         "group": "spell",
-        "x": 192,
-        "y": 48,
+        "x": 0,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -243,8 +243,8 @@
         "full": "BriarW.png",
         "sprite": "spell2.png",
         "group": "spell",
-        "x": 240,
-        "y": 48,
+        "x": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -285,8 +285,8 @@
         "full": "BriarE.png",
         "sprite": "spell2.png",
         "group": "spell",
-        "x": 288,
-        "y": 48,
+        "x": 96,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -321,8 +321,8 @@
         "full": "BriarR.png",
         "sprite": "spell2.png",
         "group": "spell",
-        "x": 336,
-        "y": 48,
+        "x": 144,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -421,5 +421,10 @@
       "chromas": true
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Sion",
+    "Swain",
+    "Talon",
+    "Vladimir"
+  ]
 }

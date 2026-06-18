@@ -3,7 +3,7 @@
   "key": "800",
   "name": "Mel",
   "title": "Reflet de l'âme",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Mel Medarda est l'héritière présumée de la famille Medarda, autrefois l'une des plus puissantes familles de Noxus. Aristocrate gracieuse en apparence, elle est en réalité une politicienne chevronnée, soucieuse de connaître les moindres détails de tous ceux qu'elle rencontre. Après sa rencontre avec la mystérieuse Rose noire, Mel découvre l'importance de la supercherie de sa mère et se retrouve confrontée à une situation qui échappe à son contrôle. Dotée de pouvoirs magiques fraîchement révélés, elle rentre chez elle à la recherche de réponses. Bien que beaucoup cherchent encore à tempérer la lumière qui l'habite, l'âme de Mel reste à jamais insoumise.",
   "tags": [
     "Mage",
@@ -14,7 +14,7 @@
     "full": "Mel.png",
     "sprite": "champion2.png",
     "group": "champion",
-    "x": 48,
+    "x": 96,
     "y": 96,
     "w": 48,
     "h": 48
@@ -26,10 +26,10 @@
       "vars": [],
       "image": {
         "full": "MelQ.png",
-        "sprite": "spell8.png",
+        "sprite": "spell9.png",
         "group": "spell",
         "x": 96,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -66,10 +66,10 @@
       "vars": [],
       "image": {
         "full": "MelW.png",
-        "sprite": "spell8.png",
+        "sprite": "spell9.png",
         "group": "spell",
         "x": 144,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -104,10 +104,10 @@
       "vars": [],
       "image": {
         "full": "MelE.png",
-        "sprite": "spell8.png",
+        "sprite": "spell9.png",
         "group": "spell",
         "x": 192,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -142,10 +142,10 @@
       "vars": [],
       "image": {
         "full": "MelR.png",
-        "sprite": "spell8.png",
+        "sprite": "spell9.png",
         "group": "spell",
         "x": 240,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -183,7 +183,7 @@
       "full": "Mel_Passive.png",
       "sprite": "passive2.png",
       "group": "passive",
-      "x": 48,
+      "x": 96,
       "y": 96,
       "w": 48,
       "h": 48
@@ -210,10 +210,10 @@
       "vars": [],
       "image": {
         "full": "MelQ.png",
-        "sprite": "spell8.png",
+        "sprite": "spell9.png",
         "group": "spell",
         "x": 96,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -250,10 +250,10 @@
       "vars": [],
       "image": {
         "full": "MelW.png",
-        "sprite": "spell8.png",
+        "sprite": "spell9.png",
         "group": "spell",
         "x": 144,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -288,10 +288,10 @@
       "vars": [],
       "image": {
         "full": "MelE.png",
-        "sprite": "spell8.png",
+        "sprite": "spell9.png",
         "group": "spell",
         "x": 192,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -326,10 +326,10 @@
       "vars": [],
       "image": {
         "full": "MelR.png",
-        "sprite": "spell8.png",
+        "sprite": "spell9.png",
         "group": "spell",
         "x": 240,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -367,7 +367,7 @@
       "full": "Mel_Passive.png",
       "sprite": "passive2.png",
       "group": "passive",
-      "x": 48,
+      "x": 96,
       "y": 96,
       "w": 48,
       "h": 48
@@ -419,5 +419,18 @@
       "chromas": true
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Alistar",
+    "Ambessa",
+    "Caitlyn",
+    "Heimerdinger",
+    "Jayce",
+    "Jinx",
+    "LeBlanc",
+    "Swain",
+    "Vi",
+    "Viktor",
+    "Vladimir",
+    "Wolf"
+  ]
 }

@@ -3,7 +3,7 @@
   "key": "122",
   "name": "Darius",
   "title": "Main de Noxus",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Il n'est pas de plus grand symbole de la puissance de Noxus que Darius, le commandant le plus craint et le plus endurci de la nation. D'origine modeste, celui qui s'est élevé jusqu'à devenir la Main de Noxus pourfend aujourd'hui les ennemis de l'empire, dont certains sont eux-mêmes des Noxiens. Il ne doute jamais de la justesse de sa cause et ne montre pas la moindre hésitation lorsque sa hache est levée. Ceux qui s'opposent au chef de la Légion Trifarian ne doivent s'attendre à aucune pitié.",
   "tags": [
     "Fighter",
@@ -26,16 +26,16 @@
       "vars": [],
       "image": {
         "full": "DariusCleave.png",
-        "sprite": "spell2.png",
+        "sprite": "spell3.png",
         "group": "spell",
-        "x": 384,
-        "y": 144,
+        "x": 192,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Darius donne un coup de hache circulaire, infligeant <physicalDamage>{{ bladedamage }} pts de dégâts physiques</physicalDamage> avec la lame et <physicalDamage>{{ handledamage }} pts de dégâts</physicalDamage> avec la hampe. Les ennemis touchés par la hampe ne reçoivent pas d'effet <keywordMajor>Plaie béante</keywordMajor>.<br /><br />Darius récupère <healing>{{ e5 }}% de ses PV manquants</healing> par champion ennemi ou grand monstre de la jungle touché par la lame, jusqu'à un maximum de <healing>{{ e7 }}%</healing>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Darius donne un coup de hache circulaire, infligeant <physicalDamage>{{ bladedamage }} pts de dégâts physiques</physicalDamage> avec la lame et <physicalDamage>{{ handledamage }} pts de dégâts</physicalDamage> avec la hampe. Les ennemis touchés par la hampe ne reçoivent pas d'effet <keywordMajor>Plaie béante</keywordMajor>.<br /><br />Darius récupère <healing>{{ missinghealthheal }}% de ses PV manquants</healing> par champion ennemi ou grand monstre touché par la lame, jusqu'à un maximum de <healing>{{ missinghealpercent }}%</healing>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "25/30/35/40/45",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -46,8 +46,8 @@
           "Coût en @AbilityResourceName@"
         ],
         "effect": [
-          "{{ e2 }} -> {{ e2NL }}",
-          "{{ e1 }}% -> {{ e1NL }}%",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ totaladratio }}% -> {{ totaladratioNL }}%",
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ cost }} -> {{ costNL }}"
         ]
@@ -64,16 +64,16 @@
       "vars": [],
       "image": {
         "full": "DariusNoxianTacticsONH.png",
-        "sprite": "spell2.png",
+        "sprite": "spell3.png",
         "group": "spell",
-        "x": 432,
-        "y": 144,
+        "x": 240,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "La prochaine attaque de Darius inflige <physicalDamage>{{ empoweredattackdamage }} pts de dégâts physiques</physicalDamage> et <status>ralentit</status> de {{ e2 }}% pendant {{ e5 }} sec.<br /><br />Si cette compétence tue sa cible, son coût en mana est annulé et son délai de récupération est réduit de {{ e3 }}%.<br /><br /><rules>Cette compétence déclenche les effets de sort quand elle inflige des dégâts.</rules>{{ spellmodifierdescriptionappend }}",
+      "tooltip": "La prochaine attaque de Darius inflige <physicalDamage>{{ empoweredattackdamage }} pts de dégâts physiques</physicalDamage> et <status>ralentit</status> de {{ slowpercent }}% pendant {{ slowduration }} sec.<br /><br />Si cette compétence tue sa cible, son coût en mana est annulé et son délai de récupération est réduit de {{ percentcdrefund }}%.<br /><br /><rules>Cette compétence déclenche les effets de sort quand elle inflige des dégâts.</rules>{{ spellmodifierdescriptionappend }}",
       "costBurn": "40",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -81,7 +81,7 @@
           "Ratio de dégâts d'attaque totaux"
         ],
         "effect": [
-          "{{ effect4amount*100.000000 }} -> {{ effect4amountnl*100.000000 }}"
+          "{{ adratio*100.000000 }} -> {{ adrationl*100.000000 }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -98,14 +98,14 @@
         "full": "DariusAxeGrabCone.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 0,
-        "y": 0,
+        "x": 288,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive :</spellPassive> Darius gagne +{{ e1 }}% de pénétration d'armure.<br /><br /><spellActive>Active :</spellActive> Darius se sert de sa hache pour <status>attirer</status> un ennemi, le <status>projeter dans les airs</status> et le <status>ralentir</status> de {{ e2 }}% pendant {{ e3 }} sec.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive :</spellPassive> Darius gagne {{ passivepercentarmorpen }}% de pénétration d'armure.<br /><br /><spellActive>Active :</spellActive> Darius se sert de sa hache pour <status>attirer</status> un ennemi, le <status>projeter dans les airs</status> et le <status>ralentir</status> de {{ slowpercent }}% pendant {{ slowduration }} sec.{{ spellmodifierdescriptionappend }}",
       "costBurn": "70/60/50/40/30",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -115,7 +115,7 @@
           "Délai de récupération"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ passivepercentarmorpen }} -> {{ passivepercentarmorpenNL }}",
           "{{ cost }} -> {{ costNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
@@ -134,8 +134,8 @@
         "full": "DariusExecute.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 48,
-        "y": 0,
+        "x": 336,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -193,16 +193,16 @@
       "vars": [],
       "image": {
         "full": "DariusCleave.png",
-        "sprite": "spell2.png",
+        "sprite": "spell3.png",
         "group": "spell",
-        "x": 384,
-        "y": 144,
+        "x": 192,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Darius hefts his axe then swings it around, dealing <physicalDamage>{{ bladedamage }} physical damage</physicalDamage> with the edge and <physicalDamage>{{ handledamage }} damage</physicalDamage> with the handle. Enemies hit with the handle do not take a <keywordMajor>Hemorrhage</keywordMajor> stack.<br /><br />Darius restores <healing>{{ e5 }}% missing Health</healing> per enemy champion and large jungle monster hit with the edge, up to a max of <healing>{{ e7 }}%</healing>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Darius hefts his axe then swings it around, dealing <physicalDamage>{{ bladedamage }} physical damage</physicalDamage> with the edge and <physicalDamage>{{ handledamage }} damage</physicalDamage> with the handle. Enemies hit with the handle do not take a <keywordMajor>Hemorrhage</keywordMajor> stack.<br /><br />Darius restores <healing>{{ missinghealthheal }}% missing Health</healing> per enemy champion and large jungle monster hit with the edge, up to a max of <healing>{{ missinghealpercent }}%</healing>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "25/30/35/40/45",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -213,8 +213,8 @@
           "@AbilityResourceName@ Cost"
         ],
         "effect": [
-          "{{ e2 }} -> {{ e2NL }}",
-          "{{ e1 }}% -> {{ e1NL }}%",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ totaladratio }}% -> {{ totaladratioNL }}%",
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ cost }} -> {{ costNL }}"
         ]
@@ -231,16 +231,16 @@
       "vars": [],
       "image": {
         "full": "DariusNoxianTacticsONH.png",
-        "sprite": "spell2.png",
+        "sprite": "spell3.png",
         "group": "spell",
-        "x": 432,
-        "y": 144,
+        "x": 240,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Darius' next Attack deals <physicalDamage>{{ empoweredattackdamage }} physical damage</physicalDamage> and <status>Slows</status> by {{ e2 }}% for {{ e5 }} second.<br /><br />This Ability refunds its Mana cost and reduces its Cooldown by {{ e3 }}% if it kills the target.<br /><br /><rules>This Ability triggers spell effects upon dealing damage.</rules>{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Darius' next Attack deals <physicalDamage>{{ empoweredattackdamage }} physical damage</physicalDamage> and <status>Slows</status> by {{ slowpercent }}% for {{ slowduration }} second.<br /><br />This Ability refunds its Mana cost and reduces its Cooldown by {{ percentcdrefund }}% if it kills the target.<br /><br /><rules>This Ability triggers spell effects upon dealing damage.</rules>{{ spellmodifierdescriptionappend }}",
       "costBurn": "40",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -248,7 +248,7 @@
           "Total AD Ratio"
         ],
         "effect": [
-          "{{ effect4amount*100.000000 }} -> {{ effect4amountnl*100.000000 }}"
+          "{{ adratio*100.000000 }} -> {{ adrationl*100.000000 }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -265,14 +265,14 @@
         "full": "DariusAxeGrabCone.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 0,
-        "y": 0,
+        "x": 288,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive:</spellPassive> Darius gains {{ e1 }}% Armor Penetration.<br /><br /><spellActive>Active:</spellActive> Darius hooks with his axe, <status>Pulling</status>, and <status>Knocking Up</status> and <status>Slowing</status> by {{ e2 }}% for {{ e3 }} second.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive:</spellPassive> Darius gains {{ passivepercentarmorpen }}% Armor Penetration.<br /><br /><spellActive>Active:</spellActive> Darius hooks with his axe, <status>Pulling</status>, and <status>Knocking Up</status> and <status>Slowing</status> by {{ slowpercent }}% for {{ slowduration }} second.{{ spellmodifierdescriptionappend }}",
       "costBurn": "70/60/50/40/30",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -282,7 +282,7 @@
           "Cooldown"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ passivepercentarmorpen }} -> {{ passivepercentarmorpenNL }}",
           "{{ cost }} -> {{ costNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
@@ -301,8 +301,8 @@
         "full": "DariusExecute.png",
         "sprite": "spell3.png",
         "group": "spell",
-        "x": 48,
-        "y": 0,
+        "x": 336,
+        "y": 48,
         "w": 48,
         "h": 48
       },

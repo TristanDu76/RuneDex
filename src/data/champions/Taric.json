@@ -3,7 +3,7 @@
   "key": "44",
   "name": "Taric",
   "title": "Bouclier de Valoran",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Taric est la Manifestation du Protecteur, doté d'un incroyable pouvoir en tant que gardien de la vie, de l'amour et de la beauté sur Runeterra. Couvert d'opprobre pour avoir abandonné son devoir et exilé de sa terre natale de Demacia, Taric a entrepris l'ascension du Mont Targon en quête de rédemption et s'est découvert une mission supérieure au sein des étoiles. Imprégné de la force antique de Targon, le Bouclier de Valoran monte désormais constamment la garde contre la corruption insidieuse du Néant.",
   "tags": [
     "Support",
@@ -14,7 +14,7 @@
     "full": "Taric.png",
     "sprite": "champion4.png",
     "group": "champion",
-    "x": 240,
+    "x": 288,
     "y": 48,
     "w": 48,
     "h": 48
@@ -26,16 +26,16 @@
       "vars": [],
       "image": {
         "full": "TaricQ.png",
-        "sprite": "spell13.png",
+        "sprite": "spell14.png",
         "group": "spell",
         "x": 384,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive :</spellPassive> Taric gagne un effet (max : {{ e6 }}) toutes les {{ stackcooldown }} sec et quand il touche un ennemi avec une attaque renforcée par <spellName>Plastronneur</spellName>.<br /><br /><spellActive>Active :</spellActive> Taric consomme tous les effets cumulés pour rendre <healing>{{ healingperstack }} PV</healing> par effet aux champions alliés proches (<healing>{{ maxstackhealing }} PV</healing> à {{ e6 }} effets).{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive :</spellPassive> Taric gagne un effet cumulé (max {{ maxcharges }}) toutes les {{ stackcooldown }} sec et en touchant avec une attaque de <spellName>Plastronneur</spellName>.<br /><br /><spellActive>Active :</spellActive> Taric consomme tous les effets cumulés pour rendre <healing>{{ healingperstack }} PV</healing> par effet cumulé aux champions alliés à proximité (<healing>{{ maxstackhealing }}</healing> à {{ maxcharges }} effets cumulés).{{ spellmodifierdescriptionappend }}",
       "costBurn": "60",
       "costType": " pts de mana, toutes les charges",
       "leveltip": {
@@ -44,8 +44,8 @@
           "Soins max"
         ],
         "effect": [
-          "{{ e6 }} -> {{ e6NL }}",
-          "{{ e5 }} -> {{ e5NL }}"
+          "{{ maxcharges }} -> {{ maxchargesNL }}",
+          "{{ basehealmax }} -> {{ basehealmaxNL }}"
         ]
       },
       "resource": "{{ cost }} pts de mana, toutes les charges",
@@ -60,16 +60,16 @@
       "vars": [],
       "image": {
         "full": "TaricW.png",
-        "sprite": "spell13.png",
+        "sprite": "spell14.png",
         "group": "spell",
         "x": 432,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive :</spellPassive> Taric gagne <scaleArmor>+{{ bonusarmor }} armure</scaleArmor> et crée un lien entre lui et l'allié auquel il s'est lié avec cette compétence. Tant qu'ils sont proches l'un de l'autre, l'allié gagne <scaleArmor>+{{ bonusarmor }} armure</scaleArmor> et toutes les compétences de Taric partent de lui et de son allié lié.<br /><br /><spellPassive>Active : </spellPassive>Taric se lie à un champion allié, octroyant un <shield>bouclier équivalent à {{ e2 }}% des PV max</shield> pendant {{ e3 }} sec.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive :</spellPassive> Taric gagne <scaleArmor>{{ bonusarmor }} armure</scaleArmor> et crée un lien entre lui et l'allié auquel il s'est lié avec cette compétence. Tant qu'ils sont proches l'un de l'autre, l'allié gagne <scaleArmor>{{ bonusarmor }} armure</scaleArmor> et toutes les compétences de Taric partent de lui et de son allié lié.<br /><br /><spellPassive>Active : </spellPassive>Taric se lie à un champion allié, conférant un <shield>bouclier de {{ shieldhpratio }}% des PV max</shield> pendant {{ shieldduration }} sec.{{ spellmodifierdescriptionappend }}",
       "costBurn": "60",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -79,7 +79,7 @@
         ],
         "effect": [
           "{{ armorbonuspercentage*100.000000 }}% -> {{ armorbonuspercentagenl*100.000000 }}%",
-          "{{ e2 }}% -> {{ e2NL }}%"
+          "{{ shieldhpratio }}% -> {{ shieldhpratioNL }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -97,13 +97,13 @@
         "sprite": "spell14.png",
         "group": "spell",
         "x": 0,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Taric projette un rayon de lumière stellaire qui explose au bout de {{ e3 }} sec pour infliger <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> et <status>étourdir</status> les ennemis pendant {{ e2 }} sec.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Taric projette un rayon de lumière stellaire qui explose au bout de {{ chargeduration }} sec pour infliger <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> et <status>étourdir</status> les ennemis pendant {{ stunduration }} sec.{{ spellmodifierdescriptionappend }}",
       "costBurn": "40",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -112,7 +112,7 @@
           "Délai de récupération"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -131,7 +131,7 @@
         "sprite": "spell14.png",
         "group": "spell",
         "x": 48,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -161,7 +161,7 @@
       "full": "Taric_Passive.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 240,
+      "x": 288,
       "y": 48,
       "w": 48,
       "h": 48
@@ -187,16 +187,16 @@
       "vars": [],
       "image": {
         "full": "TaricQ.png",
-        "sprite": "spell13.png",
+        "sprite": "spell14.png",
         "group": "spell",
         "x": 384,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive:</spellPassive> Gain a stack (max {{ e6 }}) every {{ stackcooldown }} seconds and when hitting a <spellName>Bravado</spellName> Attack.<br /><br /><spellActive>Active:</spellActive> Consume all stacks to restore <healing>{{ healingperstack }} Health</healing> per stack to nearby ally champions (<healing>{{ maxstackhealing }}</healing> at {{ e6 }} stacks).{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive:</spellPassive> Gain a stack (max {{ maxcharges }}) every {{ stackcooldown }} seconds and when hitting a <spellName>Bravado</spellName> Attack.<br /><br /><spellActive>Active:</spellActive> Consume all stacks to restore <healing>{{ healingperstack }} Health</healing> per stack to nearby ally champions (<healing>{{ maxstackhealing }}</healing> at {{ maxcharges }} stacks).{{ spellmodifierdescriptionappend }}",
       "costBurn": "60",
       "costType": " Mana, all Charges",
       "leveltip": {
@@ -205,8 +205,8 @@
           "Max Healing"
         ],
         "effect": [
-          "{{ e6 }} -> {{ e6NL }}",
-          "{{ e5 }} -> {{ e5NL }}"
+          "{{ maxcharges }} -> {{ maxchargesNL }}",
+          "{{ basehealmax }} -> {{ basehealmaxNL }}"
         ]
       },
       "resource": "{{ cost }} Mana, all Charges",
@@ -221,16 +221,16 @@
       "vars": [],
       "image": {
         "full": "TaricW.png",
-        "sprite": "spell13.png",
+        "sprite": "spell14.png",
         "group": "spell",
         "x": 432,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive: </spellPassive>Taric gains <scaleArmor>{{ bonusarmor }} Armor</scaleArmor> and forms a tether between him and the ally bound by this Ability. As long as they are near each other, the ally gains <scaleArmor>{{ bonusarmor }} Armor</scaleArmor> and Taric casts all his Abilities from both himself and his linked ally.<br /><br /><spellPassive>Active: </spellPassive>Taric binds to an ally champion, granting a <shield>{{ e2 }}% max Health Shield</shield> for {{ e3 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive: </spellPassive>Taric gains <scaleArmor>{{ bonusarmor }} Armor</scaleArmor> and forms a tether between him and the ally bound by this Ability. As long as they are near each other, the ally gains <scaleArmor>{{ bonusarmor }} Armor</scaleArmor> and Taric casts all his Abilities from both himself and his linked ally.<br /><br /><spellPassive>Active: </spellPassive>Taric binds to an ally champion, granting a <shield>{{ shieldhpratio }}% max Health Shield</shield> for {{ shieldduration }} seconds.{{ spellmodifierdescriptionappend }}",
       "costBurn": "60",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -240,7 +240,7 @@
         ],
         "effect": [
           "{{ armorbonuspercentage*100.000000 }}% -> {{ armorbonuspercentagenl*100.000000 }}%",
-          "{{ e2 }}% -> {{ e2NL }}%"
+          "{{ shieldhpratio }}% -> {{ shieldhpratioNL }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -258,13 +258,13 @@
         "sprite": "spell14.png",
         "group": "spell",
         "x": 0,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Taric projects a beam of starlight, bursting after {{ e3 }} second to deal <magicDamage>{{ totaldamage }} magic damage</magicDamage> and <status>Stun</status> enemies for {{ e2 }} seconds.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Taric projects a beam of starlight, bursting after {{ chargeduration }} second to deal <magicDamage>{{ totaldamage }} magic damage</magicDamage> and <status>Stun</status> enemies for {{ stunduration }} seconds.{{ spellmodifierdescriptionappend }}",
       "costBurn": "40",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -273,7 +273,7 @@
           "Cooldown"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -292,7 +292,7 @@
         "sprite": "spell14.png",
         "group": "spell",
         "x": 48,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -322,7 +322,7 @@
       "full": "Taric_Passive.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 240,
+      "x": 288,
       "y": 48,
       "w": 48,
       "h": 48

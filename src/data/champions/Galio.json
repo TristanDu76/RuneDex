@@ -3,7 +3,7 @@
   "key": "3",
   "name": "Galio",
   "title": "Colosse",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Près de la cité étincelante de Demacia, le colosse de pierre Galio monte une garde attentive. Érigé comme un rempart contre les mages ennemis, il reste souvent immobile pendant des décennies, jusqu'à ce que l'apparition de puissants flux magiques le ramène à la vie. Une fois éveillé, Galio profite de chaque seconde d'existence ; il s'enivre des frissons du combat et de l'honneur trop rare de défendre ses compatriotes. Mais ses triomphes ont toujours un arrière-goût amer, car la magie qu'il éradique est également la sève qui le fait vivre, et chaque victoire le renvoie au sommeil.",
   "tags": [
     "Tank",
@@ -28,15 +28,15 @@
         "full": "GalioQ.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 96,
-        "y": 0,
+        "x": 384,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
       "tooltip": "Galio tire deux rafales qui infligent <magicDamage>{{ qmissiledamage }} pts de dégâts magiques</magicDamage> chacune. Quand les rafales se croisent, elles créent une tornade géante qui inflige <magicDamage>{{ percentsuperqdamagett }}% des PV max en dégâts magiques</magicDamage> en {{ superqduration }} sec.{{ spellmodifierdescriptionappend }}",
-      "costBurn": "70/75/80/85/90",
+      "costBurn": "60/65/70/75/80",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
@@ -64,14 +64,14 @@
         "full": "GalioW.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 144,
-        "y": 0,
+        "x": 432,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive :</spellPassive> s'il ne subit pas de dégâts pendant {{ passiveshieldooctimer }} sec, Galio gagne un <shield>bouclier pouvant absorber {{ totalpassiveshield }} pts de dégâts magiques</shield>.<br /><br /><charge>Début de la charge :</charge> Galio réduit les dégâts magiques qu'il subit de {{ magicdamagereduction }} et les dégâts physiques qu'il subit de {{ physicaldamagereduction }}, et il se <status>ralentit</status> lui-même de {{ e3 }}%.<br /><br /><release>Relâchement :</release> Galio <status>provoque</status> les champions ennemis pendant {{ e4 }} à {{ e7 }} sec, inflige de <magicDamage>{{ mintotaldamage }}</magicDamage> à <magicDamage>{{ maxtotaldamage }} pts de dégâts magiques</magicDamage> et relance la réduction des dégâts pendant {{ e8 }} sec. La durée, les dégâts et le rayon de la provocation augmentent avec la durée de la charge.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive :</spellPassive> Galio obtient un <shield>bouclier magique de {{ totalpassiveshield }} PV</shield> après ne pas avoir subi de dégâts pendant {{ passiveshieldooctimer }} sec.<br /><br /><charge>Début de la charge :</charge> Galio réduit les dégâts magiques subis de {{ magicdamagereduction }} et les dégâts physiques subis de {{ physicaldamagereduction }} et se <status>ralentit</status> de {{ selfslowpercent }}%.<br /><br /><release>Activation :</release> Galio <status>provoque</status> les champions ennemis pendant {{ ccdurationmin }} à {{ ccdurationmax }} sec, inflige entre <magicDamage>{{ mintotaldamage }}</magicDamage> et <magicDamage>{{ maxtotaldamage }} pts de dégâts magiques</magicDamage>, et renouvelle la réduction des dégâts pendant {{ drlingerduration }} sec. La durée, les dégâts et le rayon de la provocation augmentent avec la durée de la charge.{{ spellmodifierdescriptionappend }}",
       "costBurn": "50",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -84,8 +84,8 @@
         ],
         "effect": [
           "{{ passiveshieldhealthratio*100.000000 }}% -> {{ passiveshieldhealthrationl*100.000000 }}%",
-          "{{ e1 }}% -> {{ e1NL }}%",
-          "{{ effect1amount*0.500000 }}% -> {{ effect1amountnl*0.500000 }}%",
+          "{{ damagereductionbase*100.000000 }}% -> {{ damagereductionbasenl*100.000000 }}%",
+          "{{ damagereductionbase*50.000000 }}% -> {{ damagereductionbasenl*50.000000 }}%",
           "{{ maximumwbasedamage }} -> {{ maximumwbasedamageNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
@@ -104,8 +104,8 @@
         "full": "GalioE.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 192,
-        "y": 0,
+        "x": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -138,8 +138,8 @@
         "full": "GalioR.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 240,
-        "y": 0,
+        "x": 48,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -201,15 +201,15 @@
         "full": "GalioQ.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 96,
-        "y": 0,
+        "x": 384,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
       "tooltip": "Galio fires two windblasts that deal <magicDamage>{{ qmissiledamage }} magic damage</magicDamage> each. When the windblasts meet, they combine into a tornado that deals <magicDamage>{{ percentsuperqdamagett }}% max Health magic damage</magicDamage> over {{ superqduration }} seconds.{{ spellmodifierdescriptionappend }}",
-      "costBurn": "70/75/80/85/90",
+      "costBurn": "60/65/70/75/80",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
@@ -237,14 +237,14 @@
         "full": "GalioW.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 144,
-        "y": 0,
+        "x": 432,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive:</spellPassive> Galio gains a <shield>{{ totalpassiveshield }} Magic Shield</shield> after not taking damage for {{ passiveshieldooctimer }} seconds.<br /><br /><charge>Begin Charging:</charge> Galio reduces incoming magic damage by {{ magicdamagereduction }} and incoming physical damage by {{ physicaldamagereduction }} and <status>Slows</status> himself by {{ e3 }}%.<br /><br /><release>Release:</release> Galio <status>Taunts</status> enemy champions for between {{ e4 }} to {{ e7 }} seconds, deals between <magicDamage>{{ mintotaldamage }}</magicDamage> and <magicDamage>{{ maxtotaldamage }} magic damage</magicDamage>, and refreshes the damage reduction for {{ e8 }} seconds. Taunt duration, damage, and range increase with charge time.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive:</spellPassive> Galio gains a <shield>{{ totalpassiveshield }} Magic Shield</shield> after not taking damage for {{ passiveshieldooctimer }} seconds.<br /><br /><charge>Begin Charging:</charge> Galio reduces incoming magic damage by {{ magicdamagereduction }} and incoming physical damage by {{ physicaldamagereduction }} and <status>Slows</status> himself by {{ selfslowpercent }}%.<br /><br /><release>Release:</release> Galio <status>Taunts</status> enemy champions for between {{ ccdurationmin }} to {{ ccdurationmax }} seconds, deals between <magicDamage>{{ mintotaldamage }}</magicDamage> and <magicDamage>{{ maxtotaldamage }} magic damage</magicDamage>, and refreshes the damage reduction for {{ drlingerduration }} seconds. Taunt duration, damage, and range increase with charge time.{{ spellmodifierdescriptionappend }}",
       "costBurn": "50",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -257,8 +257,8 @@
         ],
         "effect": [
           "{{ passiveshieldhealthratio*100.000000 }}% -> {{ passiveshieldhealthrationl*100.000000 }}%",
-          "{{ e1 }}% -> {{ e1NL }}%",
-          "{{ effect1amount*0.500000 }}% -> {{ effect1amountnl*0.500000 }}%",
+          "{{ damagereductionbase*100.000000 }}% -> {{ damagereductionbasenl*100.000000 }}%",
+          "{{ damagereductionbase*50.000000 }}% -> {{ damagereductionbasenl*50.000000 }}%",
           "{{ maximumwbasedamage }} -> {{ maximumwbasedamageNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
@@ -277,8 +277,8 @@
         "full": "GalioE.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 192,
-        "y": 0,
+        "x": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -311,8 +311,8 @@
         "full": "GalioR.png",
         "sprite": "spell4.png",
         "group": "spell",
-        "x": 240,
-        "y": 0,
+        "x": 48,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -424,6 +424,12 @@
       "num": 40,
       "name": "Aegis Frame Galio",
       "chromas": true
+    },
+    {
+      "id": "3047",
+      "num": 47,
+      "name": "T1 Galio",
+      "chromas": true
     }
   ],
   "skins": [
@@ -492,11 +498,17 @@
       "num": 40,
       "name": "Galio Aegis Frame",
       "chromas": true
+    },
+    {
+      "id": "3047",
+      "num": 47,
+      "name": "T1 Galio",
+      "chromas": true
     }
   ],
   "related_characters": [
     {
-      "id": "arcturus_j_durand",
+      "id": "Arcturus J Durand",
       "type": "lore",
       "relation": "creation"
     }

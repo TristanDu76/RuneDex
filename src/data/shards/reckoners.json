@@ -1,187 +1,219 @@
 [
   {
-    "id": "isolde",
-    "name": "Isolde",
-    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Isolde_Render.png?788f6",
-    "factionKey": "camavor",
+    "id": "rictus",
+    "name": "Rictus",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Rictus_Arcane_Render.png?952a6",
+    "factionKey": "house-medarda",
+    "factionKeys": [
+      "house-medarda",
+      "reckoners"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
       {
-        "id": "akshan",
+        "id": "amara",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
       },
       {
-        "id": "gwen",
+        "id": "ambessa",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
       },
       {
-        "id": "hecarim",
+        "id": "azizi-medarda",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
       },
       {
-        "id": "kalista",
+        "id": "boram-darkwill",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
       },
       {
-        "id": "lucian",
+        "id": "caitlyn",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
       },
       {
-        "id": "maiden-of-the-mist",
+        "id": "heimerdinger",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
       },
       {
-        "id": "necrit",
+        "id": "huck",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
       },
       {
-        "id": "senna",
+        "id": "isha",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
       },
       {
-        "id": "thresh",
+        "id": "jago",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
       },
       {
-        "id": "viego",
+        "id": "jayce",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
       },
       {
-        "id": "yorick",
-        "type": "lore",
-        "relation": "mentioned",
-        "auto_generated": false
-      }
-    ]
-  },
-  {
-    "id": "ledros",
-    "name": "Ledros",
-    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/thumb/01SI033-full.png/1200px-01SI033-full.png?b1aad",
-    "factionKey": "camavor",
-    "type": "lore",
-    "canon": true,
-    "related_characters": [
-      {
-        "id": "hecarim",
+        "id": "jinx",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
       },
       {
-        "id": "kalista",
+        "id": "kino-medarda",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
       },
       {
-        "id": "thresh",
+        "id": "leblanc",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
       },
       {
-        "id": "viego",
-        "type": "lore",
-        "relation": "mentioned",
-        "auto_generated": false
-      }
-    ]
-  },
-  {
-    "id": "necrit",
-    "name": "Necrit",
-    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/thumb/Necrit_RuinedKing_Portrait_01.jpg/1200px-Necrit_RuinedKing_Portrait_01.jpg?c8f8c",
-    "factionKey": "camavor",
-    "type": "lore",
-    "canon": true,
-    "related_characters": [
-      {
-        "id": "ahri",
+        "id": "mel",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
       },
       {
-        "id": "braum",
+        "id": "mion-of-binan",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
       },
       {
-        "id": "hecarim",
+        "id": "taric",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
       },
       {
-        "id": "illaoi",
+        "id": "rell",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
       },
       {
-        "id": "isolde",
+        "id": "rudo",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
       },
       {
-        "id": "kalista",
+        "id": "salo",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
       },
       {
-        "id": "miss-fortune",
+        "id": "sevika",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
       },
       {
-        "id": "pyke",
+        "id": "singed",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
       },
       {
-        "id": "thresh",
+        "id": "vander",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
       },
       {
-        "id": "viego",
+        "id": "vi",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
       },
       {
-        "id": "yasuo",
+        "id": "viktor",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
+      },
+      {
+        "id": "warwick",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kindred",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "caprian",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "elora",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "gorgeous-man",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "renni",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tora",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "valif",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       }
     ]
   }

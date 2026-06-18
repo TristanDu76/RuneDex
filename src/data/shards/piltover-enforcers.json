@@ -1,9 +1,162 @@
 [
   {
+    "id": "maddie",
+    "name": "Maddie",
+    "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Maddie_Render_2.png?b4016",
+    "factionKey": "house-medarda",
+    "factionKeys": [
+      "house-medarda",
+      "piltover-enforcers"
+    ],
+    "type": "lore",
+    "canon": true,
+    "related_characters": [
+      {
+        "id": "ambessa",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "bolbok",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "caitlyn",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "chross",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "heenot",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "hoskel",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jayce",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jinx",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "margot",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "mel",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "salo",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "shoola",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "silco",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "smeech",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vi",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "viktor",
+        "type": "lore",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "loris-the-shield-of-piltover",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "loris",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "steb-the-silent-guardian",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "steb",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tobias",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
     "id": "marcus",
     "name": "Marcus",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Marcus_Arcane_2_Render.png?15453",
     "factionKey": "piltover-enforcers",
+    "factionKeys": [
+      "piltover-enforcers"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -144,6 +297,30 @@
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
+      },
+      {
+        "id": "cassiopeia",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "katarina",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "talon",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       }
     ]
   }

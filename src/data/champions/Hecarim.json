@@ -3,7 +3,7 @@
   "key": "120",
   "name": "Hecarim",
   "title": "Ombre de la guerre",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Fusion spectrale de l'homme et de la bête, Hecarim est condamné à pourchasser les âmes des vivants pour l'éternité. Lorsque les ombres ont envahi les Îles bénies, ce fier chevalier et sa horde de cavaliers ont été anéantis par les énergies destructrices de la Ruine. À présent, quand la Brume noire s'étend sur Runeterra, il mène la charge et se plaît à massacrer et écraser ses ennemis sous ses lourds sabots.",
   "tags": [
     "Fighter",
@@ -26,16 +26,16 @@
       "vars": [],
       "image": {
         "full": "HecarimRapidSlash.png",
-        "sprite": "spell4.png",
+        "sprite": "spell5.png",
         "group": "spell",
-        "x": 0,
-        "y": 144,
+        "x": 288,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Hecarim frappe les ennemis proches et leur inflige <physicalDamage>{{ damage }} pts de dégâts physiques</physicalDamage>. Si cette compétence touche un ennemi, il gagne un effet qui réduit le délai de récupération de cette compétence de {{ rampagecooldownreduction }} sec et qui augmente les dégâts de cette compétence de {{ rampagebonusdamageperc }}% pendant {{ e6 }} sec. Cumulable {{ e2 }} fois.<br />{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Hecarim frappe les ennemis proches et leur inflige <physicalDamage>{{ damage }} pts de dégâts physiques</physicalDamage>. Si cette compétence touche un ennemi, il gagne un effet qui réduit le délai de récupération de cette compétence de {{ rampagecooldownreduction }} sec et qui augmente les dégâts de cette compétence de {{ rampagebonusdamageperc }}% pendant {{ buffduration }} sec. Cumulable {{ maxstacks }} fois.<br />{{ spellmodifierdescriptionappend }}",
       "costBurn": "28/26/24/22/20",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -60,10 +60,10 @@
       "vars": [],
       "image": {
         "full": "HecarimW.png",
-        "sprite": "spell4.png",
+        "sprite": "spell5.png",
         "group": "spell",
-        "x": 48,
-        "y": 144,
+        "x": 336,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -98,16 +98,16 @@
       "vars": [],
       "image": {
         "full": "HecarimRamp.png",
-        "sprite": "spell4.png",
+        "sprite": "spell5.png",
         "group": "spell",
-        "x": 96,
-        "y": 144,
+        "x": 384,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Hecarim devient fantomatique et gagne <speed>+{{ minmovespeed*100 }}% de vitesse de déplacement</speed>, et ce bonus augmente à <speed>+{{ maxmovespeed*100 }}%</speed> en {{ e5 }} sec. Sa prochaine attaque <status>repousse</status> et inflige de <physicalDamage>{{ mindamage }}</physicalDamage> à <physicalDamage>{{ maxdamage }} pts de dégâts physiques</physicalDamage>. La distance du <status>repoussement</status> et les dégâts augmentent avec la distance parcourue durant cette compétence.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Hecarim devient fantomatique et gagne <speed>{{ minmovespeed*100 }}% de vitesse de déplacement</speed>, et ce bonus augmente à <speed>{{ maxmovespeed*100 }}%</speed> en {{ duration }} sec. Sa prochaine attaque <status>repousse</status> et inflige de <physicalDamage>{{ mindamage }}</physicalDamage> à <physicalDamage>{{ maxdamage }} pts de dégâts physiques</physicalDamage>. La distance du <status>repoussement</status> et les dégâts augmentent avec la distance parcourue durant cette compétence.{{ spellmodifierdescriptionappend }}",
       "costBurn": "60",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -134,10 +134,10 @@
       "vars": [],
       "image": {
         "full": "HecarimUlt.png",
-        "sprite": "spell4.png",
+        "sprite": "spell5.png",
         "group": "spell",
-        "x": 144,
-        "y": 144,
+        "x": 432,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -195,16 +195,16 @@
       "vars": [],
       "image": {
         "full": "HecarimRapidSlash.png",
-        "sprite": "spell4.png",
+        "sprite": "spell5.png",
         "group": "spell",
-        "x": 0,
-        "y": 144,
+        "x": 288,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Hecarim cleaves nearby enemies for <physicalDamage>{{ damage }} physical damage</physicalDamage>. If this Ability hits, he gains a stack that decreases its Cooldown by {{ rampagecooldownreduction }} seconds and increases its damage by {{ rampagebonusdamageperc }}% for {{ e6 }} seconds. Stacks up to {{ e2 }} times.<br />{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Hecarim cleaves nearby enemies for <physicalDamage>{{ damage }} physical damage</physicalDamage>. If this Ability hits, he gains a stack that decreases its Cooldown by {{ rampagecooldownreduction }} seconds and increases its damage by {{ rampagebonusdamageperc }}% for {{ buffduration }} seconds. Stacks up to {{ maxstacks }} times.<br />{{ spellmodifierdescriptionappend }}",
       "costBurn": "28/26/24/22/20",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -229,10 +229,10 @@
       "vars": [],
       "image": {
         "full": "HecarimW.png",
-        "sprite": "spell4.png",
+        "sprite": "spell5.png",
         "group": "spell",
-        "x": 48,
-        "y": 144,
+        "x": 336,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -267,16 +267,16 @@
       "vars": [],
       "image": {
         "full": "HecarimRamp.png",
-        "sprite": "spell4.png",
+        "sprite": "spell5.png",
         "group": "spell",
-        "x": 96,
-        "y": 144,
+        "x": 384,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Hecarim becomes Ghosted and gains <speed>{{ minmovespeed*100 }}% Move Speed</speed> increasing to <speed>{{ maxmovespeed*100 }}%</speed> over {{ e5 }} seconds. His next Attack <status>Knocks Back</status> and deals between <physicalDamage>{{ mindamage }}</physicalDamage> and <physicalDamage>{{ maxdamage }} physical damage</physicalDamage>. <status>Knock Back</status> distance and damage scales with distance travelled during this Ability.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Hecarim becomes Ghosted and gains <speed>{{ minmovespeed*100 }}% Move Speed</speed> increasing to <speed>{{ maxmovespeed*100 }}%</speed> over {{ duration }} seconds. His next Attack <status>Knocks Back</status> and deals between <physicalDamage>{{ mindamage }}</physicalDamage> and <physicalDamage>{{ maxdamage }} physical damage</physicalDamage>. <status>Knock Back</status> distance and damage scales with distance travelled during this Ability.{{ spellmodifierdescriptionappend }}",
       "costBurn": "60",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -303,10 +303,10 @@
       "vars": [],
       "image": {
         "full": "HecarimUlt.png",
-        "sprite": "spell4.png",
+        "sprite": "spell5.png",
         "group": "spell",
-        "x": 144,
-        "y": 144,
+        "x": 432,
+        "y": 0,
         "w": 48,
         "h": 48
       },

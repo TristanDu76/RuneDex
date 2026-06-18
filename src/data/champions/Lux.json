@@ -3,7 +3,7 @@
   "key": "99",
   "name": "Lux",
   "title": "Dame de lumière",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Luxanna Crownguard est originaire de Demacia, un royaume isolationniste où la magie inspire la peur et la méfiance. Capable de plier la lumière à sa volonté, elle a grandi dans la crainte d'être un jour exilée et a été contrainte de dissimuler son pouvoir pour préserver l'honneur de sa famille. Cependant, l'optimisme et la ténacité de Lux l'ont conduite à accepter ses talents uniques, et elle les emploie désormais secrètement pour le bénéfice de sa patrie.",
   "tags": [
     "Mage",
@@ -14,7 +14,7 @@
     "full": "Lux.png",
     "sprite": "champion2.png",
     "group": "champion",
-    "x": 288,
+    "x": 336,
     "y": 48,
     "w": 48,
     "h": 48
@@ -29,13 +29,13 @@
         "sprite": "spell8.png",
         "group": "spell",
         "x": 96,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Lux projette une sphère de lumière, <status>immobilisant</status> les deux premiers ennemis touchés pendant {{ e3 }} sec et leur infligeant <magicDamage>{{ totaldamagett }} pts de dégâts magiques</magicDamage> à chacun.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Lux projette une sphère de lumière, <status>immobilisant</status> les deux premiers ennemis touchés pendant {{ rootduration }} sec et leur infligeant <magicDamage>{{ totaldamagett }} pts de dégâts magiques</magicDamage> à chacun.{{ spellmodifierdescriptionappend }}",
       "costBurn": "50",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -61,13 +61,13 @@
         "sprite": "spell8.png",
         "group": "spell",
         "x": 144,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Lux lance son bâton, octroyant un <shield>bouclier de {{ totalshieldtt }} PV</shield> pendant {{ e3 }} sec aux alliés touchés. Puis le bâton revient, octroyant le même <shield>bouclier</shield> au retour.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Lux lance son bâton, octroyant un <shield>bouclier de {{ totalshieldtt }} PV</shield> pendant {{ shieldduration }} sec aux alliés touchés. Puis le bâton revient, octroyant le même <shield>bouclier</shield> au retour.{{ spellmodifierdescriptionappend }}",
       "costBurn": "60/65/70/75/80",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -97,13 +97,13 @@
         "sprite": "spell8.png",
         "group": "spell",
         "x": 192,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Lux crée une zone de lumière qui <status>ralentit</status> de {{ e1 }}% et révèle la zone. Après {{ e3 }} sec ou en cas de <recast>réactivation</recast> de cette compétence, la zone explose, infligeant <magicDamage>{{ totaldamagett }} pts de dégâts magiques</magicDamage> et <status>ralentissant</status> pendant {{ slowlingerduration }} sec de plus.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Lux crée une zone de lumière qui <status>ralentit</status> de {{ slowpercent }}% et révèle la zone. Après {{ slowzoneduration }} sec ou en cas de <recast>réactivation</recast> de cette compétence, la zone explose, infligeant <magicDamage>{{ totaldamagett }} pts de dégâts magiques</magicDamage> et <status>ralentissant</status> pendant {{ slowlingerduration }} sec de plus.{{ spellmodifierdescriptionappend }}",
       "costBurn": "70/80/90/100/110",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -114,7 +114,7 @@
           "Délai de récupération"
         ],
         "effect": [
-          "{{ e2 }} -> {{ e2NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ slowpercent }}% -> {{ slowpercentNL }}%",
           "{{ cost }} -> {{ costNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
@@ -135,7 +135,7 @@
         "sprite": "spell8.png",
         "group": "spell",
         "x": 240,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -167,7 +167,7 @@
       "full": "LuxIlluminatingFraulein.png",
       "sprite": "passive2.png",
       "group": "passive",
-      "x": 288,
+      "x": 336,
       "y": 48,
       "w": 48,
       "h": 48
@@ -195,13 +195,13 @@
         "sprite": "spell8.png",
         "group": "spell",
         "x": 96,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Lux fires a ball of light, <status>Rooting</status> the first two enemies for {{ e3 }} seconds and dealing <magicDamage>{{ totaldamagett }} magic damage</magicDamage> to each.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Lux fires a ball of light, <status>Rooting</status> the first two enemies for {{ rootduration }} seconds and dealing <magicDamage>{{ totaldamagett }} magic damage</magicDamage> to each.{{ spellmodifierdescriptionappend }}",
       "costBurn": "50",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -227,13 +227,13 @@
         "sprite": "spell8.png",
         "group": "spell",
         "x": 144,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Lux throws her wand, granting <shield>{{ totalshieldtt }} Shield</shield> for {{ e3 }} seconds to allies it passes through. Then it returns, granting the same <shield>Shield</shield> on its return.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Lux throws her wand, granting <shield>{{ totalshieldtt }} Shield</shield> for {{ shieldduration }} seconds to allies it passes through. Then it returns, granting the same <shield>Shield</shield> on its return.{{ spellmodifierdescriptionappend }}",
       "costBurn": "60/65/70/75/80",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -263,13 +263,13 @@
         "sprite": "spell8.png",
         "group": "spell",
         "x": 192,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Lux creates a light zone that <status>Slows</status> by {{ e1 }}% and reveals the area. After {{ e3 }} seconds or on <recast>Recasting</recast> this Ability, it detonates, dealing <magicDamage>{{ totaldamagett }} magic damage</magicDamage> and <status>Slowing</status> for an additional {{ slowlingerduration }} second.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Lux creates a light zone that <status>Slows</status> by {{ slowpercent }}% and reveals the area. After {{ slowzoneduration }} seconds or on <recast>Recasting</recast> this Ability, it detonates, dealing <magicDamage>{{ totaldamagett }} magic damage</magicDamage> and <status>Slowing</status> for an additional {{ slowlingerduration }} second.{{ spellmodifierdescriptionappend }}",
       "costBurn": "70/80/90/100/110",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -280,7 +280,7 @@
           "Cooldown"
         ],
         "effect": [
-          "{{ e2 }} -> {{ e2NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ slowpercent }}% -> {{ slowpercentNL }}%",
           "{{ cost }} -> {{ costNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
@@ -301,7 +301,7 @@
         "sprite": "spell8.png",
         "group": "spell",
         "x": 240,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -333,7 +333,7 @@
       "full": "LuxIlluminatingFraulein.png",
       "sprite": "passive2.png",
       "group": "passive",
-      "x": 288,
+      "x": 336,
       "y": 48,
       "w": 48,
       "h": 48
@@ -627,7 +627,7 @@
   ],
   "related_characters": [
     {
-      "id": "tiana_crownguard",
+      "id": "Tianna",
       "type": "lore",
       "relation": "family",
       "note_fr": "Nièce",

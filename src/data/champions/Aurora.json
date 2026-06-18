@@ -3,7 +3,7 @@
   "key": "893",
   "name": "Aurora",
   "title": "Sorcière d'entre les mondes",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Depuis sa naissance, Aurora a toujours été capable de passer du royaume spirituel au royaume matériel. Déterminée à étudier les habitants du royaume spirituel, elle a quitté son foyer pour se consacrer à ses recherches. En chemin, elle est tombée sur un demi-dieu devenu fou. Touchée par son désespoir, Aurora se mit en tête de retrouver l'identité perdue de son ami sauvage. Son périple la mènera à voyager à travers tout Freljord.",
   "tags": [
     "Mage",
@@ -26,10 +26,10 @@
       "vars": [],
       "image": {
         "full": "AuroraQ.png",
-        "sprite": "spell1.png",
+        "sprite": "spell2.png",
         "group": "spell",
-        "x": 288,
-        "y": 96,
+        "x": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -60,10 +60,10 @@
       "vars": [],
       "image": {
         "full": "AuroraW.png",
-        "sprite": "spell1.png",
+        "sprite": "spell2.png",
         "group": "spell",
-        "x": 336,
-        "y": 96,
+        "x": 144,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -96,10 +96,10 @@
       "vars": [],
       "image": {
         "full": "AuroraE.png",
-        "sprite": "spell1.png",
+        "sprite": "spell2.png",
         "group": "spell",
-        "x": 384,
-        "y": 96,
+        "x": 192,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -130,10 +130,10 @@
       "vars": [],
       "image": {
         "full": "AuroraR.png",
-        "sprite": "spell1.png",
+        "sprite": "spell2.png",
         "group": "spell",
-        "x": 432,
-        "y": 96,
+        "x": 240,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -164,7 +164,7 @@
   "passive": {
     "name": "Abjuration spirituelle",
     "image": {
-      "full": "AuroraPassive.Aurora.png",
+      "full": "AuroraPassive.png",
       "sprite": "passive0.png",
       "group": "passive",
       "x": 96,
@@ -194,10 +194,10 @@
       "vars": [],
       "image": {
         "full": "AuroraQ.png",
-        "sprite": "spell1.png",
+        "sprite": "spell2.png",
         "group": "spell",
-        "x": 288,
-        "y": 96,
+        "x": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -228,10 +228,10 @@
       "vars": [],
       "image": {
         "full": "AuroraW.png",
-        "sprite": "spell1.png",
+        "sprite": "spell2.png",
         "group": "spell",
-        "x": 336,
-        "y": 96,
+        "x": 144,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -264,10 +264,10 @@
       "vars": [],
       "image": {
         "full": "AuroraE.png",
-        "sprite": "spell1.png",
+        "sprite": "spell2.png",
         "group": "spell",
-        "x": 384,
-        "y": 96,
+        "x": 192,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -298,10 +298,10 @@
       "vars": [],
       "image": {
         "full": "AuroraR.png",
-        "sprite": "spell1.png",
+        "sprite": "spell2.png",
         "group": "spell",
-        "x": 432,
-        "y": 96,
+        "x": 240,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -332,7 +332,7 @@
   "passive_en": {
     "name": "Spirit Abjuration",
     "image": {
-      "full": "AuroraPassive.Aurora.png",
+      "full": "AuroraPassive.png",
       "sprite": "passive0.png",
       "group": "passive",
       "x": 96,
@@ -365,6 +365,12 @@
       "num": 11,
       "name": "Arcana Aurora",
       "chromas": true
+    },
+    {
+      "id": "893020",
+      "num": 20,
+      "name": "Broken Covenant Aurora",
+      "chromas": true
     }
   ],
   "skins": [
@@ -385,7 +391,18 @@
       "num": 11,
       "name": "Aurora des arcanes",
       "chromas": true
+    },
+    {
+      "id": "893020",
+      "num": 20,
+      "name": "Aurora de l'Alliance brisée",
+      "chromas": true
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Anivia",
+    "Ornn",
+    "Udyr",
+    "Volibear"
+  ]
 }

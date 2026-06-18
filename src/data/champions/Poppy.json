@@ -3,7 +3,7 @@
   "key": "78",
   "name": "Poppy",
   "title": "Gardienne du marteau",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Runeterra ne manque pas de braves champions, mais peu peuvent se targuer d'être aussi tenaces que Poppy. Armée du légendaire marteau d'Orlon, faisant deux fois sa taille, cette yordle déterminée cherche depuis d'innombrables années le « héros de Demacia », qui serait le dépositaire légitime de cette arme. En attendant, elle part inlassablement au combat, repoussant les ennemis du royaume à grands coups de marteau.",
   "tags": [
     "Tank",
@@ -14,7 +14,7 @@
     "full": "Poppy.png",
     "sprite": "champion3.png",
     "group": "champion",
-    "x": 0,
+    "x": 48,
     "y": 48,
     "w": 48,
     "h": 48
@@ -29,29 +29,31 @@
         "sprite": "spell10.png",
         "group": "spell",
         "x": 384,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Poppy frappe le sol, infligeant <physicalDamage>{{ basedamage }}</physicalDamage> plus <physicalDamage>{{ healthdamagepercent }}% des PV max en dégâts physiques</physicalDamage> et créant une zone instable. <br /><br />La zone instable <status>ralentit</status> les ennemis de {{ slow_ }}% et explose au bout de {{ delaybetweentwohits }} sec, infligeant à nouveau <physicalDamage>{{ basedamage }}</physicalDamage> plus <physicalDamage>{{ healthdamagepercent }}% des PV max en dégâts physiques</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Poppy frappe le sol, infligeant <physicalDamage>{{ basedamage }}</physicalDamage> plus <physicalDamage>{{ healthdamagepercent }}% des PV max en dégâts physiques</physicalDamage> et créant une zone instable. <br /><br />La zone instable <status>ralentit</status> les ennemis de {{ movespeedmod }}% et explose au bout de {{ delaybetweentwohits }} sec, infligeant à nouveau <physicalDamage>{{ basedamage }}</physicalDamage> plus <physicalDamage>{{ healthdamagepercent }}% des PV max en dégâts physiques</physicalDamage>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "35/40/45/50/55",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Dégâts",
+          "Pourcentage des PV max",
           "Ralentissement",
           "Délai de récupération",
           "Coût en @AbilityResourceName@",
           "Limite contre les monstres"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
-          "{{ e3 }}% -> {{ e3NL }}%",
+          "{{ basedamagevalue }} -> {{ basedamagevalueNL }}",
+          "{{ healthdamagepercent }}% -> {{ healthdamagepercentNL }}%",
+          "{{ basemovespeedmod*100.000000 }}% -> {{ basemovespeedmodnl*100.000000 }}%",
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ cost }} -> {{ costNL }}",
-          "{{ e6 }} -> {{ e6NL }}"
+          "{{ maxhealthdamagetononheroes }} -> {{ maxhealthdamagetononheroesNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -69,7 +71,7 @@
         "sprite": "spell10.png",
         "group": "spell",
         "x": 432,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -85,7 +87,7 @@
         ],
         "effect": [
           "{{ cooldown }} -> {{ cooldownNL }}",
-          "{{ e5 }} -> {{ e5NL }}"
+          "{{ damagevalue }} -> {{ damagevalueNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -100,10 +102,10 @@
       "vars": [],
       "image": {
         "full": "PoppyE.png",
-        "sprite": "spell10.png",
+        "sprite": "spell11.png",
         "group": "spell",
         "x": 0,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -120,9 +122,9 @@
           "Délai de récupération"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
-          "{{ e2 }} -> {{ e2NL }}",
-          "{{ e3 }} -> {{ e3NL }}",
+          "{{ basedamagevalue }} -> {{ basedamagevalueNL }}",
+          "{{ walldamage }} -> {{ walldamageNL }}",
+          "{{ stunduration }} -> {{ stundurationNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -138,10 +140,10 @@
       "vars": [],
       "image": {
         "full": "PoppyR.png",
-        "sprite": "spell10.png",
+        "sprite": "spell11.png",
         "group": "spell",
         "x": 48,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -173,7 +175,7 @@
       "full": "Poppy_Passive.png",
       "sprite": "passive3.png",
       "group": "passive",
-      "x": 0,
+      "x": 48,
       "y": 48,
       "w": 48,
       "h": 48
@@ -202,29 +204,31 @@
         "sprite": "spell10.png",
         "group": "spell",
         "x": 384,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Poppy smashes the ground, dealing <physicalDamage>{{ basedamage }}</physicalDamage> plus <physicalDamage>{{ healthdamagepercent }}% max Health physical damage</physicalDamage> and making the ground unstable. <br /><br />The unstable area <status>Slows</status> enemies by {{ slow_ }}% and erupts after {{ delaybetweentwohits }} second, dealing <physicalDamage>{{ basedamage }}</physicalDamage> plus <physicalDamage>{{ healthdamagepercent }}% max Health physical damage</physicalDamage> again.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Poppy smashes the ground, dealing <physicalDamage>{{ basedamage }}</physicalDamage> plus <physicalDamage>{{ healthdamagepercent }}% max Health physical damage</physicalDamage> and making the ground unstable. <br /><br />The unstable area <status>Slows</status> enemies by {{ movespeedmod }}% and erupts after {{ delaybetweentwohits }} second, dealing <physicalDamage>{{ basedamage }}</physicalDamage> plus <physicalDamage>{{ healthdamagepercent }}% max Health physical damage</physicalDamage> again.{{ spellmodifierdescriptionappend }}",
       "costBurn": "35/40/45/50/55",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Damage",
+          "% Max Health",
           "Slow",
           "Cooldown",
           "@AbilityResourceName@ Cost",
           "Monster Cap"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
-          "{{ e3 }}% -> {{ e3NL }}%",
+          "{{ basedamagevalue }} -> {{ basedamagevalueNL }}",
+          "{{ healthdamagepercent }}% -> {{ healthdamagepercentNL }}%",
+          "{{ basemovespeedmod*100.000000 }}% -> {{ basemovespeedmodnl*100.000000 }}%",
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ cost }} -> {{ costNL }}",
-          "{{ e6 }} -> {{ e6NL }}"
+          "{{ maxhealthdamagetononheroes }} -> {{ maxhealthdamagetononheroesNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -242,7 +246,7 @@
         "sprite": "spell10.png",
         "group": "spell",
         "x": 432,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -258,7 +262,7 @@
         ],
         "effect": [
           "{{ cooldown }} -> {{ cooldownNL }}",
-          "{{ e5 }} -> {{ e5NL }}"
+          "{{ damagevalue }} -> {{ damagevalueNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -273,10 +277,10 @@
       "vars": [],
       "image": {
         "full": "PoppyE.png",
-        "sprite": "spell10.png",
+        "sprite": "spell11.png",
         "group": "spell",
         "x": 0,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -293,9 +297,9 @@
           "Cooldown"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
-          "{{ e2 }} -> {{ e2NL }}",
-          "{{ e3 }} -> {{ e3NL }}",
+          "{{ basedamagevalue }} -> {{ basedamagevalueNL }}",
+          "{{ walldamage }} -> {{ walldamageNL }}",
+          "{{ stunduration }} -> {{ stundurationNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -311,10 +315,10 @@
       "vars": [],
       "image": {
         "full": "PoppyR.png",
-        "sprite": "spell10.png",
+        "sprite": "spell11.png",
         "group": "spell",
         "x": 48,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -346,7 +350,7 @@
       "full": "Poppy_Passive.png",
       "sprite": "passive3.png",
       "group": "passive",
-      "x": 0,
+      "x": 48,
       "y": 48,
       "w": 48,
       "h": 48
@@ -530,5 +534,11 @@
       "chromas": true
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Galio",
+    "Lulu",
+    "Shyvana",
+    "Tristana",
+    "Vayne"
+  ]
 }

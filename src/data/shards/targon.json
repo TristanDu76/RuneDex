@@ -2,17 +2,28 @@
   {
     "id": "aphelios",
     "name": "Aphelios",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Aphelios.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Aphelios.png",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "alune",
         "type": "lore",
         "relation": "twin-sister",
         "auto_generated": false
+      },
+      {
+        "id": "soraka",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "cygnus-the-moonstalker",
@@ -43,11 +54,15 @@
   {
     "id": "aurelionsol",
     "name": "Aurelion Sol",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/AurelionSol.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/AurelionSol.png",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon",
+      "runeterra"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "zoe",
@@ -64,17 +79,163 @@
         "auto_generated": false,
         "note_fr": "Hait les Aspects pour son asservissement",
         "note_en": "hates the aspects for his enslavement"
+      },
+      {
+        "id": "bard",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "smolder",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "soraka",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "inviolus-vox",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "the-golden-sister",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "the-silver-sister",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "bard",
+    "name": "Bard",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Bard.png",
+    "factionKey": "runeterra",
+    "factionKeys": [
+      "runeterra",
+      "targon"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "aurelionsol",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "brand",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "ryze",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "soraka",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "byrd",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "esmus-breath-of-the-world",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "gaspar",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "maduli",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "norra",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "the-golden-sister",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "the-silver-sister",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       }
     ]
   },
   {
     "id": "diana",
     "name": "Diana",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Diana.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Diana.png",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "alune",
@@ -91,6 +252,30 @@
         "auto_generated": false,
         "note_fr": "Amante et Rivale",
         "note_en": "Lover and Rival"
+      },
+      {
+        "id": "nami",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "riven",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "soraka",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "cygnus-the-moonstalker",
@@ -135,13 +320,77 @@
     ]
   },
   {
-    "id": "leona",
-    "name": "Leona",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Leona.png",
-    "factionKey": "targon",
+    "id": "kayle",
+    "name": "Kayle",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Kayle.png",
+    "factionKey": "demacia",
+    "factionKeys": [
+      "demacia",
+      "targon"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "morgana",
+        "type": "champion",
+        "relation": "sister",
+        "auto_generated": false
+      },
+      {
+        "id": "naganeka-of-zuretta",
+        "type": "lore",
+        "relation": "conflict",
+        "auto_generated": false,
+        "note_fr": "Vainc Naganeka.",
+        "note_en": "Defeated Naganeka."
+      },
+      {
+        "id": "anaakca",
+        "type": "lore",
+        "relation": "conflict",
+        "auto_generated": false,
+        "note_fr": "A combattu Kayle.",
+        "note_en": "Fought Kayle."
+      },
+      {
+        "id": "kilam",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "mihira",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "xolaani",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "leona",
+    "name": "Leona",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Leona.png",
+    "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "diana",
@@ -150,6 +399,14 @@
         "auto_generated": false,
         "note_fr": "Amante et Rivale",
         "note_en": "Lover and Rival"
+      },
+      {
+        "id": "soraka",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "alune",
@@ -202,14 +459,113 @@
     ]
   },
   {
-    "id": "nami",
-    "name": "Nami",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Nami.png",
-    "factionKey": "targon",
+    "id": "morgana",
+    "name": "Morgana",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Morgana.png",
+    "factionKey": "demacia",
+    "factionKeys": [
+      "demacia",
+      "targon"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
+      {
+        "id": "kayle",
+        "type": "champion",
+        "relation": "sister",
+        "auto_generated": false
+      },
+      {
+        "id": "locke",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "nilah",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kilam",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "klaus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "lisa",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "mihira",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "yops",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "nami",
+    "name": "Nami",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Nami.png",
+    "factionKey": "targon",
+    "factionKeys": [
+      "targon",
+      "bilgewater"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "diana",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "fizz",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "nautilus",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
       {
         "id": "admiwal-shelly",
         "type": "lore",
@@ -263,11 +619,14 @@
   {
     "id": "pantheon",
     "name": "Pantheon",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Pantheon.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Pantheon.png",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "aatrox",
@@ -284,6 +643,14 @@
         "auto_generated": false,
         "note_fr": "Hait les Aspects pour son asservissement",
         "note_en": "hates the aspects for his enslavement"
+      },
+      {
+        "id": "soraka",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "camphor-the-doubt",
@@ -314,12 +681,78 @@
   {
     "id": "soraka",
     "name": "Soraka",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Soraka.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Soraka.png",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon",
+      "ionia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
+      {
+        "id": "aphelios",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "aurelionsol",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "bard",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "diana",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kalista",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "leona",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "pantheon",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "syndra",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "taric",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "karthus",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
       {
         "id": "alune",
         "type": "lore",
@@ -405,11 +838,15 @@
   {
     "id": "taric",
     "name": "Taric",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Taric.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Taric.png",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon",
+      "demacia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "garen",
@@ -420,7 +857,39 @@
         "note_en": "Former brother in arms"
       },
       {
+        "id": "sona",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "soraka",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
         "id": "anua",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "horazi",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "jarvan-iii",
         "type": "lore",
         "relation": "related",
         "auto_generated": true,
@@ -436,7 +905,39 @@
         "note_en": "Auto-generated reciprocal link"
       },
       {
+        "id": "revna",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rictus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tianna",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
         "id": "tyari",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "xolaani",
         "type": "lore",
         "relation": "related",
         "auto_generated": true,
@@ -448,11 +949,14 @@
   {
     "id": "zoe",
     "name": "Zoé",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Zoe.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Zoe.png",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "ezreal",
@@ -467,6 +971,14 @@
         "auto_generated": false,
         "note_fr": "Ennuyeuse cosmique",
         "note_en": "Cosmic annoyance"
+      },
+      {
+        "id": "fiddlesticks",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "celeste",
@@ -499,6 +1011,9 @@
     "name": "Anua",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03MT048-full.png?39edf",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -515,7 +1030,7 @@
         "auto_generated": false
       },
       {
-        "id": "protector",
+        "id": "taric",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -545,6 +1060,9 @@
     "name": "Celeste",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03MT086-full.png?57a61",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -569,6 +1087,9 @@
     "name": "Chaska",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06MT004-full.png?d77f4",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -579,7 +1100,7 @@
         "auto_generated": false
       },
       {
-        "id": "fireth",
+        "id": "fireth-reaper-of-the-sands",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -607,14 +1128,6 @@
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
-      },
-      {
-        "id": "fireth-reaper-of-the-sands",
-        "type": "lore",
-        "relation": "related",
-        "auto_generated": true,
-        "note_fr": "Lien réciproque automatique",
-        "note_en": "Auto-generated reciprocal link"
       }
     ]
   },
@@ -623,6 +1136,9 @@
     "name": "Cliff",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/04MT003-full.png?ccc41",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -651,6 +1167,9 @@
     "name": "Cygnus the Moonstalker",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03MT047-full.png?80c51",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -685,18 +1204,10 @@
         "auto_generated": false
       },
       {
-        "id": "rahvun",
+        "id": "rahvun-daylights-spear",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
-      },
-      {
-        "id": "rahvun-daylights-spear",
-        "type": "lore",
-        "relation": "related",
-        "auto_generated": true,
-        "note_fr": "Lien réciproque automatique",
-        "note_en": "Auto-generated reciprocal link"
       }
     ]
   },
@@ -705,6 +1216,9 @@
     "name": "Emir",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03MT081-full.png?301ca",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -743,11 +1257,14 @@
     "name": "Eshiyme",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05MT010-full.png?aa844",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
       {
-        "id": "camphor",
+        "id": "camphor-the-doubt",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -763,14 +1280,6 @@
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
-      },
-      {
-        "id": "camphor-the-doubt",
-        "type": "lore",
-        "relation": "related",
-        "auto_generated": true,
-        "note_fr": "Lien réciproque automatique",
-        "note_en": "Auto-generated reciprocal link"
       }
     ]
   },
@@ -779,6 +1288,9 @@
     "name": "Esmus, Breath of the World",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06MT029-full.png?14377",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -795,6 +1307,9 @@
     "name": "Hakan",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03MT080-full.png?4d93d",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -829,6 +1344,9 @@
     "name": "Haley",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03MT081-full.png?301ca",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -867,6 +1385,9 @@
     "name": "Illi",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03MT029-full.png?d37b9",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -919,11 +1440,14 @@
     "name": "Inviolus Vox",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03MT006-full.png?d734a",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
       {
-        "id": "aurelion-sol",
+        "id": "aurelionsol",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -941,6 +1465,9 @@
     "name": "Leo",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03MT079-full.png?3f47e",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -963,6 +1490,9 @@
     "name": "Lidari",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03MT030-full.png?77a13",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1009,6 +1539,9 @@
     "name": "Lyra",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03MT094-full.png?b4aee",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1049,6 +1582,9 @@
     "name": "Pylas",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1065,6 +1601,9 @@
     "name": "Raduak",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03MT076-full.png?9814d",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1105,6 +1644,9 @@
     "name": "Rahvun, Daylight's Spear",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03MT026-full.png?dc75f",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1145,6 +1687,9 @@
     "name": "Rudo",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1205,6 +1750,9 @@
     "name": "Rumul",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03MT033-full.png?c5935",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1245,6 +1793,9 @@
     "name": "Spike",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/04MT002-full.png?e02d2",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1273,11 +1824,14 @@
     "name": "The Golden Sister",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03MT059-full.png?1ff23",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
       {
-        "id": "aurelion-sol",
+        "id": "aurelionsol",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -1321,6 +1875,9 @@
     "name": "The Silver Sister",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03MT059-full.png?1ff23",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1331,7 +1888,7 @@
         "auto_generated": false
       },
       {
-        "id": "aurelion-sol",
+        "id": "aurelionsol",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -1375,6 +1932,9 @@
     "name": "The Warrior",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03MT050-full.png?c48bc",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1429,11 +1989,14 @@
     "name": "Tor",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05MT005-full.png?3796e",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
       {
-        "id": "camphor",
+        "id": "camphor-the-doubt",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -1449,14 +2012,6 @@
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
-      },
-      {
-        "id": "camphor-the-doubt",
-        "type": "lore",
-        "relation": "related",
-        "auto_generated": true,
-        "note_fr": "Lien réciproque automatique",
-        "note_en": "Auto-generated reciprocal link"
       }
     ]
   },
@@ -1465,6 +2020,9 @@
     "name": "Vin",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03MT060-full.png?16843",
     "factionKey": "targon",
+    "factionKeys": [
+      "targon"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [

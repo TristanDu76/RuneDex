@@ -3,7 +3,7 @@
   "key": "21",
   "name": "Miss Fortune",
   "title": "Chasseuse de primes",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Capitaine de Bilgewater réputée pour sa beauté et crainte pour sa cruauté, Sarah Fortune est une personnalité qui détonne au milieu des criminels endurcis qui arpentent la cité portuaire. Enfant, elle assista au massacre de sa famille par Gangplank, le roi des pillards, et elle prit sa revanche des années plus tard, faisant exploser son navire alors qu'il se trouvait à bord. Ceux qui la sous-estiment découvrent un adversaire imprévisible et séduisant... avant de prendre une ou deux balles dans les entrailles.",
   "tags": [
     "Marksman",
@@ -14,7 +14,7 @@
     "full": "MissFortune.png",
     "sprite": "champion2.png",
     "group": "champion",
-    "x": 144,
+    "x": 192,
     "y": 96,
     "w": 48,
     "h": 48
@@ -26,10 +26,10 @@
       "vars": [],
       "image": {
         "full": "MissFortuneRicochetShot.png",
-        "sprite": "spell8.png",
+        "sprite": "spell9.png",
         "group": "spell",
         "x": 0,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -60,10 +60,10 @@
       "vars": [],
       "image": {
         "full": "MissFortuneViciousStrikes.png",
-        "sprite": "spell8.png",
+        "sprite": "spell9.png",
         "group": "spell",
         "x": 48,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -96,10 +96,10 @@
       "vars": [],
       "image": {
         "full": "MissFortuneScattershot.png",
-        "sprite": "spell8.png",
+        "sprite": "spell9.png",
         "group": "spell",
         "x": 96,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -130,10 +130,10 @@
       "vars": [],
       "image": {
         "full": "MissFortuneBulletTime.png",
-        "sprite": "spell8.png",
+        "sprite": "spell9.png",
         "group": "spell",
         "x": 144,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -165,7 +165,7 @@
       "full": "MissFortune_W.png",
       "sprite": "passive2.png",
       "group": "passive",
-      "x": 144,
+      "x": 192,
       "y": 96,
       "w": 48,
       "h": 48
@@ -191,10 +191,10 @@
       "vars": [],
       "image": {
         "full": "MissFortuneRicochetShot.png",
-        "sprite": "spell8.png",
+        "sprite": "spell9.png",
         "group": "spell",
         "x": 0,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -225,10 +225,10 @@
       "vars": [],
       "image": {
         "full": "MissFortuneViciousStrikes.png",
-        "sprite": "spell8.png",
+        "sprite": "spell9.png",
         "group": "spell",
         "x": 48,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -261,10 +261,10 @@
       "vars": [],
       "image": {
         "full": "MissFortuneScattershot.png",
-        "sprite": "spell8.png",
+        "sprite": "spell9.png",
         "group": "spell",
         "x": 96,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -295,10 +295,10 @@
       "vars": [],
       "image": {
         "full": "MissFortuneBulletTime.png",
-        "sprite": "spell8.png",
+        "sprite": "spell9.png",
         "group": "spell",
         "x": 144,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -330,7 +330,7 @@
       "full": "MissFortune_W.png",
       "sprite": "passive2.png",
       "group": "passive",
-      "x": 144,
+      "x": 192,
       "y": 96,
       "w": 48,
       "h": 48
@@ -479,6 +479,12 @@
       "num": 60,
       "name": "Battle Queen Miss Fortune",
       "chromas": true
+    },
+    {
+      "id": "21069",
+      "num": 69,
+      "name": "MVP T1 Miss Fortune",
+      "chromas": true
     }
   ],
   "skins": [
@@ -618,6 +624,12 @@
       "id": "21060",
       "num": 60,
       "name": "Miss Fortune reine du combat",
+      "chromas": true
+    },
+    {
+      "id": "21069",
+      "num": 69,
+      "name": "MVP T1 Miss Fortune",
       "chromas": true
     }
   ],

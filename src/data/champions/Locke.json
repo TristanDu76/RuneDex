@@ -1,0 +1,384 @@
+{
+  "id": "Locke",
+  "key": "805",
+  "name": "Locke",
+  "title": "Exorciste cendré",
+  "version": "16.16.1",
+  "lore": "Exorciste maniant les clous et versé dans les rites interdits, Corvin Locke est le descendant d'occultistes demaciens. Né dans le mensonge et l'hypocrisie, il a compris très tôt que les démons ne sont pas la cause de la noirceur de l'humanité, mais sa conséquence. À présent, Locke transperce chaque âme, révélant ses ténèbres, déterminé à rendre le monde plus juste... un exorcisme à la fois.",
+  "tags": [
+    "Assassin",
+    "Mage"
+  ],
+  "partype": "Mana",
+  "image": {
+    "full": "Locke.png",
+    "sprite": "champion2.png",
+    "group": "champion",
+    "x": 192,
+    "y": 48,
+    "w": 48,
+    "h": 48
+  },
+  "spells": [
+    {
+      "id": "LockeQ",
+      "name": "Clous rituels",
+      "vars": [],
+      "image": {
+        "full": "LockeQ.png",
+        "sprite": "spell8.png",
+        "group": "spell",
+        "x": 0,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Locke lance des <keywordMajor>clous spirituels</keywordMajor>, infligeant <magicDamage>{{ missiledamage }} pts de dégâts magiques</magicDamage> et marquant les ennemis touchés. Les clous appliquent {{ slowamount1*100 }}/{{ slowamount2*100 }}/{{ slowamount3*100 }}% de <status>ralentissement</status> pendant {{ slowduration1 }}/{{ slowduration2 }}/{{ slowduration3 }} sec, cumulable selon le nombre de clous qui touchent.<br /><br />Attaquer l'ennemi consomme les <keywordMajor>clous spirituels</keywordMajor>, infligeant <magicDamage>{{ naildamage }} pts de dégâts magiques</magicDamage> par effet cumulé, augmentés de {{ twomarkbonuspercent }}% et {{ threemarkbonuspercent }}% pour deux et trois clous respectivement.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Dégâts",
+          "Délai de récupération",
+          "Dégâts par effet cumulé"
+        ],
+        "effect": [
+          "{{ basemissiledamage }} -> {{ basemissiledamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ markdamage }} -> {{ markdamageNL }}"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "950",
+      "datavalues": {},
+      "description": "Locke lance des clous spirituels vers l'avant, infligeant des dégâts et marquant les ennemis touchés. Locke peut consommer ces marques pour infliger des dégâts bonus avec ses attaques.",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "LockeW",
+      "name": "Brûlure d'âme",
+      "vars": [],
+      "image": {
+        "full": "LockeW.png",
+        "sprite": "spell8.png",
+        "group": "spell",
+        "x": 48,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Locke embrase son âme. Il gagne <attackSpeed>{{ attackspeed }} de vitesse d'attaque</attackSpeed> et <speed>{{ movespeed }} de vitesse de déplacement</speed>. Ce bonus diminue en {{ decaytimehelper }} sec.<br /><br />Pendant {{ baseduration }} sec, il subit <trueDamage>{{ healthcost*100 }}% de ses PV actuels en dégâts bruts</trueDamage> par seconde, mais <healing>se soigne</healing> des <healing>{{ damagerestoreamount }}</healing> derniers dégâts subis, ainsi qu'un montant supplémentaire de <healing>{{ additionalheal }} PV</healing> en fonction de ses PV manquants et du temps écoulé, jusqu'à un maximum de <healing>{{ maxhealingthreshold }} de ses PV restants</healing>.<br /><br />Peut être <recast>relancé</recast> pour l'arrêter plus tôt.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " pts de mana et {{ healthcost*100 }}% des PV actuels par seconde",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts restitués",
+          "Coût en @AbilityResourceName@"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamagerestoreamount }} -> {{ basedamagerestoreamountNL }}",
+          "{{ cost }} -> {{ costNL }}"
+        ]
+      },
+      "resource": "{{ cost }} pts de mana et {{ healthcost*100 }}% des PV actuels par seconde",
+      "rangeBurn": "250",
+      "datavalues": {},
+      "description": "Locke embrase son âme. Il gagne en vitesse d'attaque et en vitesse de déplacement, mais s'inflige des dégâts. À la fin de la durée, Locke se soigne d'une portion des dégâts subis pendant l'effet.",
+      "cooldownBurn": "18/17/16/15/14"
+    },
+    {
+      "id": "LockeE",
+      "name": "Traque cendrée",
+      "vars": [],
+      "image": {
+        "full": "LockeE.png",
+        "sprite": "spell8.png",
+        "group": "spell",
+        "x": 96,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Locke se téléporte à l'emplacement ciblé, infligeant <magicDamage>{{ onhitdamage }} pts de dégâts magiques</magicDamage> aux ennemis proches. <br /><br />Sa prochaine attaque le fait se ruer vers sa cible, infligeant <magicDamage>{{ dashdamage }} pts de dégâts magiques</magicDamage> à tous les ennemis sur son passage. Chaque coup consomme les <keywordMajor>clous spirituels</keywordMajor>.<br /><br />Si Locke réussit une élimination, le délai de récupération de cette compétence est réinitialisé.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30/40/50/60/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Coût en @AbilityResourceName@",
+          "Dégâts de la téléportation",
+          "Dégâts de ruée"
+        ],
+        "effect": [
+          "{{ cost }} -> {{ costNL }}",
+          "{{ baseonhitdamage }} -> {{ baseonhitdamageNL }}",
+          "{{ basedashdamage }} -> {{ basedashdamageNL }}"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "425",
+      "datavalues": {},
+      "description": "Locke se téléporte à un emplacement avant d'effectuer une ruée pour attaquer sa prochaine cible, infligeant des dégâts aux ennemis traversés.",
+      "cooldownBurn": "10"
+    },
+    {
+      "id": "LockeR",
+      "name": "Purgatoire",
+      "vars": [],
+      "image": {
+        "full": "LockeR.png",
+        "sprite": "spell8.png",
+        "group": "spell",
+        "x": 144,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Locke lance son artefact à un emplacement, infligeant <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage> et <status>ralentissant</status> les ennemis dans la zone de {{ slowamount*100 }}%, cet effet diminuant en {{ slowduration }} sec. L'artefact marque les ennemis touchés pendant {{ duration }} sec, scellant les champions ennemis marqués dont les PV passent sous <spellName>{{ executetooltipcalc }}</spellName> et réinitialisant la durée du marquage sur tout autre champion affecté.<br /><br />À la fin de la durée, si au moins un champion a été scellé, l'artefact tombe au sol. Si Locke ramasse l'artefact, pour chaque champion scellé, il augmente définitivement son seuil d'exécution de {{ executethresholdperstack*100 }}% et récupère {{ cooldownreduction }}% du délai de récupération total.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Délai de récupération",
+          "Dégâts",
+          "Seuil d'exécution"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ executionthreshold*100.000000 }}% -> {{ executionthresholdnl*100.000000 }}%"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Locke lance un artefact qui inflige des dégâts et peut exécuter les ennemis touchés. Locke gagne de la puissance supplémentaire en scellant des champions ennemis.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive": {
+    "name": "Pieu argenté",
+    "image": {
+      "full": "Locke_Passive.png",
+      "sprite": "passive2.png",
+      "group": "passive",
+      "x": 192,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "description": "Les attaques de Locke infligent des dégâts magiques bonus à l'impact, augmentés en fonction des PV manquants de l'ennemi."
+  },
+  "created_at": "2026-08-20T11:26:15.881Z",
+  "factions": [
+    "demacia"
+  ],
+  "custom_tags": null,
+  "gender": "He/Him",
+  "species": "human",
+  "title_en": "the Ashen Exorcist",
+  "lore_en": "A nail-slinging exorcist versed in forbidden rites, Corvin Locke is the progeny of Demacian occultists. Born into lies and hypocrisy, he learned young that demons aren't the cause of humanity's darkness, but the consequence. Now, Locke tears through every soul, exposing its darkness, intent on making the world a more honest place… one exorcism at a time.",
+  "spells_en": [
+    {
+      "id": "LockeQ",
+      "name": "Ritual Nails",
+      "vars": [],
+      "image": {
+        "full": "LockeQ.png",
+        "sprite": "spell8.png",
+        "group": "spell",
+        "x": 0,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Locke readies a set of <keywordMajor>Soul Nails</keywordMajor> to throw, dealing <magicDamage>{{ missiledamage }} magic damage</magicDamage> and marking enemies hit. Nails apply a {{ slowamount1*100 }}/{{ slowamount2*100 }}/{{ slowamount3*100 }}% <status>Slow</status> for {{ slowduration1 }}/{{ slowduration2 }}/{{ slowduration3 }} seconds, stacking with the amount of nails hit.<br /><br />Attacking the enemy consumes the <keywordMajor>Soul Nails</keywordMajor>, dealing <magicDamage>{{ naildamage }} magic damage</magicDamage> per stack, increased by {{ twomarkbonuspercent }}% and {{ threemarkbonuspercent }}% for two and three nails respectively.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Damage",
+          "Cooldown",
+          "Damage per Stack"
+        ],
+        "effect": [
+          "{{ basemissiledamage }} -> {{ basemissiledamageNL }}",
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ markdamage }} -> {{ markdamageNL }}"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "950",
+      "datavalues": {},
+      "description": "Locke readies a set of Soul Nails to throw, dealing damage to and marking enemies hit. Locke can consume the marks to deal bonus damage with his attacks.",
+      "cooldownBurn": "10/9/8/7/6"
+    },
+    {
+      "id": "LockeW",
+      "name": "Soul Ignition",
+      "vars": [],
+      "image": {
+        "full": "LockeW.png",
+        "sprite": "spell8.png",
+        "group": "spell",
+        "x": 48,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Locke ignites his own soul, gaining <attackSpeed>{{ attackspeed }} Attack Speed</attackSpeed> and <speed>{{ movespeed }} Move Speed</speed> that decays over {{ decaytimehelper }} seconds.<br /><br />For {{ baseduration }} seconds, he suffers <trueDamage>{{ healthcost*100 }}% current Health true damage</trueDamage> per second but <healing>Heals</healing> back the last <healing>{{ damagerestoreamount }}</healing> damage taken, and an additional <healing>{{ additionalheal }} Health</healing> based on missing Health and time passed, up to a maximum of <healing>{{ maxhealingthreshold }} Health remaining</healing>.<br /><br />Can be <recast>Recast</recast> to end early.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "50/55/60/65/70",
+      "costType": " Mana and {{ healthcost*100 }}% Current Health Per Second",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage Restored",
+          "@AbilityResourceName@ Cost"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamagerestoreamount }} -> {{ basedamagerestoreamountNL }}",
+          "{{ cost }} -> {{ costNL }}"
+        ]
+      },
+      "resource": "{{ cost }} Mana and {{ healthcost*100 }}% Current Health Per Second",
+      "rangeBurn": "250",
+      "datavalues": {},
+      "description": "Locke ignites his soul, gaining Attack Speed and Move Speed, and dealing damage to himself. At the end of the duration, Locke will heal back a portion of the damage he takes during the effect.",
+      "cooldownBurn": "18/17/16/15/14"
+    },
+    {
+      "id": "LockeE",
+      "name": "Ashen Pursuit",
+      "vars": [],
+      "image": {
+        "full": "LockeE.png",
+        "sprite": "spell8.png",
+        "group": "spell",
+        "x": 96,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "maxammo": "-1",
+      "maxrank": 5,
+      "tooltip": "Locke teleports to a location, dealing <magicDamage>{{ onhitdamage }} magic damage</magicDamage> to nearby enemies on arrival. <br /><br />On his next Attack, he dashes to his target, dealing <magicDamage>{{ dashdamage }} magic damage</magicDamage> to all enemies in his path. Each hit consumes <keywordMajor>Soul Nails</keywordMajor>.<br /><br />If Locke scores a takedown, the Cooldown of this Ability is reset.{{ spellmodifierdescriptionappend }}",
+      "costBurn": "30/40/50/60/70",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "@AbilityResourceName@ Cost",
+          "Teleport Damage",
+          "Dash Damage"
+        ],
+        "effect": [
+          "{{ cost }} -> {{ costNL }}",
+          "{{ baseonhitdamage }} -> {{ baseonhitdamageNL }}",
+          "{{ basedashdamage }} -> {{ basedashdamageNL }}"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "425",
+      "datavalues": {},
+      "description": "Locke teleports to a location before dashing to attack his next target, dealing damage to enemies passed through.",
+      "cooldownBurn": "10"
+    },
+    {
+      "id": "LockeR",
+      "name": "Purgatory",
+      "vars": [],
+      "image": {
+        "full": "LockeR.png",
+        "sprite": "spell8.png",
+        "group": "spell",
+        "x": 144,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "maxammo": "-1",
+      "maxrank": 3,
+      "tooltip": "Locke throws a binding artifact to a location, dealing <magicDamage>{{ damage }} magic damage</magicDamage> and <status>Slowing</status> enemies in the area by {{ slowamount*100 }}%, decaying over {{ slowduration }} seconds. The artifact marks enemies hit for {{ duration }} seconds, sealing away marked enemy champions brought below <spellName>{{ executetooltipcalc }}</spellName>, and resetting the duration of the mark on other affected champions.<br /><br />After the duration ends, if at least one champion was sealed, the artifact lands on the ground. Locke can pick up the artifact to permanently increase its execution threshold by {{ executethresholdperstack*100 }}%, and refund {{ cooldownreduction }}% of his total Cooldown, for each champion sealed.<br />{{ spellmodifierdescriptionappend }}",
+      "costBurn": "100",
+      "costType": " {{ abilityresourcename }}",
+      "leveltip": {
+        "label": [
+          "Cooldown",
+          "Damage",
+          "Execute Threshold"
+        ],
+        "effect": [
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ executionthreshold*100.000000 }}% -> {{ executionthresholdnl*100.000000 }}%"
+        ]
+      },
+      "resource": "{{ cost }} {{ abilityresourcename }}",
+      "rangeBurn": "1000",
+      "datavalues": {},
+      "description": "Locke throws a binding artifact that deals damage and potentially executes enemies hit. Locke gains additional power for sealing away enemy champions.",
+      "cooldownBurn": "120/100/80"
+    }
+  ],
+  "passive_en": {
+    "name": "Silver Stake",
+    "image": {
+      "full": "Locke_Passive.png",
+      "sprite": "passive2.png",
+      "group": "passive",
+      "x": 192,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "description": "Locke's attacks deal additional magic damage On-Hit, increased based on enemy missing Health."
+  },
+  "partype_en": "Mana",
+  "lanes": [],
+  "skins_en": [
+    {
+      "id": "805000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "805001",
+      "num": 1,
+      "name": "High Noon Locke",
+      "chromas": true
+    }
+  ],
+  "skins": [
+    {
+      "id": "805000",
+      "num": 0,
+      "name": "default",
+      "chromas": false
+    },
+    {
+      "id": "805001",
+      "num": 1,
+      "name": "Locke de l'Ouest",
+      "chromas": true
+    }
+  ],
+  "related_characters": [
+    "Evelynn",
+    "Morgana",
+    "Vayne"
+  ]
+}

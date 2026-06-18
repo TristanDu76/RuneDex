@@ -3,7 +3,7 @@
   "key": "161",
   "name": "Vel'Koz",
   "title": "Œil du Néant",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "On ne sait pas trop si Vel'Koz fut le premier monstre du Néant à émerger à Runeterra, mais il est certain qu'aucun autre n'a jamais égalé la froideur calculatrice de sa cruauté. Alors que ses semblables dévorent ou profanent tout ce qui les entoure, il cherche à étudier le royaume physique et les étranges êtres belliqueux qui l'habitent. Selon lui, c'est ainsi que le Néant trouvera comment exploiter leurs faiblesses. Mais Vel'Koz n'est pas qu'un observateur passif. Il répond à toute menace avec des éruptions mortelles de plasma ou en déchirant le tissu même du monde.",
   "tags": [
     "Mage",
@@ -14,7 +14,7 @@
     "full": "Velkoz.png",
     "sprite": "champion4.png",
     "group": "champion",
-    "x": 384,
+    "x": 432,
     "y": 96,
     "w": 48,
     "h": 48
@@ -29,7 +29,7 @@
         "sprite": "spell15.png",
         "group": "spell",
         "x": 0,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -65,7 +65,7 @@
         "sprite": "spell15.png",
         "group": "spell",
         "x": 48,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -103,7 +103,7 @@
         "sprite": "spell15.png",
         "group": "spell",
         "x": 96,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -139,7 +139,7 @@
         "sprite": "spell15.png",
         "group": "spell",
         "x": 144,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -171,7 +171,7 @@
       "full": "VelKoz_Passive.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 384,
+      "x": 432,
       "y": 96,
       "w": 48,
       "h": 48
@@ -199,7 +199,7 @@
         "sprite": "spell15.png",
         "group": "spell",
         "x": 0,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -235,7 +235,7 @@
         "sprite": "spell15.png",
         "group": "spell",
         "x": 48,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -273,7 +273,7 @@
         "sprite": "spell15.png",
         "group": "spell",
         "x": 96,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -309,7 +309,7 @@
         "sprite": "spell15.png",
         "group": "spell",
         "x": 144,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -341,7 +341,7 @@
       "full": "VelKoz_Passive.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 384,
+      "x": 432,
       "y": 96,
       "w": 48,
       "h": 48
@@ -395,6 +395,12 @@
       "num": 20,
       "name": "Bee'Koz",
       "chromas": true
+    },
+    {
+      "id": "161029",
+      "num": 29,
+      "name": "Spaghetti alla Vel'Koz",
+      "chromas": true
     }
   ],
   "skins": [
@@ -439,7 +445,19 @@
       "num": 20,
       "name": "Vel'Koz abeille",
       "chromas": true
+    },
+    {
+      "id": "161029",
+      "num": 29,
+      "name": "Vel'Koz spaghetti",
+      "chromas": true
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Bel'Veth",
+    "Cho'Gath",
+    "Kha'Zix",
+    "Kog'Maw",
+    "Rek'Sai"
+  ]
 }

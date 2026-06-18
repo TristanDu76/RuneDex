@@ -3,7 +3,7 @@
   "key": "516",
   "name": "Ornn",
   "title": "Dieu de la forge volcanique",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Ornn est le demi-dieu de la forge et de l'artisanat à Freljord. Avec comme seule compagne la solitude, il travaille dans sa forge enfouie au plus profond des cavernes de lave de l'Âtre-foyer. C'est là qu'il fond et purifie les métaux nécessaires à la création d'objets de qualité inimitable. Tandis que d'autres divinités – Volibear avant tout – s'immiscent dans les affaires des mortels, Ornn ne sort de son antre que pour remettre ces déités à leur place, avec son fidèle marteau ou les pouvoirs du volcan lui-même.",
   "tags": [
     "Tank"
@@ -13,7 +13,7 @@
     "full": "Ornn.png",
     "sprite": "champion3.png",
     "group": "champion",
-    "x": 384,
+    "x": 432,
     "y": 0,
     "w": 48,
     "h": 48
@@ -28,13 +28,13 @@
         "sprite": "spell10.png",
         "group": "spell",
         "x": 0,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Ornn frappe le sol, créant une fissure qui inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> et qui <status>ralentit</status> les ennemis de {{ e5 }}% pendant {{ e6 }} sec. Une colonne de roche se forme au bout de la fissure pendant {{ e3 }} sec. {{ spellmodifierdescriptionappend }}",
+      "tooltip": "Ornn frappe le sol, créant une fissure qui inflige <physicalDamage>{{ totaldamage }} pts de dégâts physiques</physicalDamage> et qui <status>ralentit</status> les ennemis de {{ slowamount }}% pendant {{ slowduration }} sec. Une colonne de roche se forme au bout de la fissure pendant {{ pillarduration }} sec. {{ spellmodifierdescriptionappend }}",
       "costBurn": "45",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -62,7 +62,7 @@
         "sprite": "spell10.png",
         "group": "spell",
         "x": 48,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -102,7 +102,7 @@
         "sprite": "spell10.png",
         "group": "spell",
         "x": 96,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -138,7 +138,7 @@
         "sprite": "spell10.png",
         "group": "spell",
         "x": 144,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -172,7 +172,7 @@
       "full": "OrnnP.png",
       "sprite": "passive3.png",
       "group": "passive",
-      "x": 384,
+      "x": 432,
       "y": 0,
       "w": 48,
       "h": 48
@@ -201,13 +201,13 @@
         "sprite": "spell10.png",
         "group": "spell",
         "x": 0,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Ornn slams the ground, creating a fissure dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> and <status>Slowing</status> by {{ e5 }}% for {{ e6 }} seconds. A pillar of rock forms at the fissure's end for {{ e3 }} seconds. {{ spellmodifierdescriptionappend }}",
+      "tooltip": "Ornn slams the ground, creating a fissure dealing <physicalDamage>{{ totaldamage }} physical damage</physicalDamage> and <status>Slowing</status> by {{ slowamount }}% for {{ slowduration }} seconds. A pillar of rock forms at the fissure's end for {{ pillarduration }} seconds. {{ spellmodifierdescriptionappend }}",
       "costBurn": "45",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -235,7 +235,7 @@
         "sprite": "spell10.png",
         "group": "spell",
         "x": 48,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -275,7 +275,7 @@
         "sprite": "spell10.png",
         "group": "spell",
         "x": 96,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -311,7 +311,7 @@
         "sprite": "spell10.png",
         "group": "spell",
         "x": 144,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -345,7 +345,7 @@
       "full": "OrnnP.png",
       "sprite": "passive3.png",
       "group": "passive",
-      "x": 384,
+      "x": 432,
       "y": 0,
       "w": 48,
       "h": 48

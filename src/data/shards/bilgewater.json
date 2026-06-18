@@ -2,12 +2,52 @@
   {
     "id": "fizz",
     "name": "Fizz",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Fizz.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Fizz.png",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater",
+      "bandle-city"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
+      {
+        "id": "gangplank",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "illaoi",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "nami",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "nautilus",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "pyke",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "teemo",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
       {
         "id": "admiwal-shelly",
         "type": "lore",
@@ -37,11 +77,14 @@
   {
     "id": "gangplank",
     "name": "Gangplank",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Gangplank.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Gangplank.png",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "missfortune",
@@ -58,6 +101,22 @@
         "auto_generated": false,
         "note_fr": "Premier amour",
         "note_en": "First love"
+      },
+      {
+        "id": "fizz",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "nautilus",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "malik",
@@ -104,11 +163,14 @@
   {
     "id": "graves",
     "name": "Graves",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Graves.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Graves.png",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "twistedfate",
@@ -117,17 +179,44 @@
         "auto_generated": false,
         "note_fr": "Partenaire",
         "note_en": "Partner"
+      },
+      {
+        "id": "corki",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "nilah",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "riven",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       }
     ]
   },
   {
     "id": "illaoi",
     "name": "Illaoi",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Illaoi.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Illaoi.png",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "gangplank",
@@ -136,6 +225,38 @@
         "auto_generated": false,
         "note_fr": "Premier amour",
         "note_en": "First love"
+      },
+      {
+        "id": "fizz",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "maokai",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "nautilus",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "nilah",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "malik",
@@ -190,11 +311,14 @@
   {
     "id": "missfortune",
     "name": "Miss Fortune",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/MissFortune.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/MissFortune.png",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "gangplank",
@@ -203,18 +327,224 @@
         "auto_generated": false,
         "note_fr": "A tué ses parents",
         "note_en": "Killed her parents"
+      },
+      {
+        "id": "maokai",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "nautilus",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "malik",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "necrit",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "petyr-harker",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rafen",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rhasa-the-sunderer",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "riptide-rex",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "sheriff-lariette-rose",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "thorne",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "nami",
+    "name": "Nami",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Nami.png",
+    "factionKey": "targon",
+    "factionKeys": [
+      "targon",
+      "bilgewater"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "diana",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "fizz",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "nautilus",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "admiwal-shelly",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "aila",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "bubba",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "leolei",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "loto",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tama",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       }
     ]
   },
   {
     "id": "nautilus",
     "name": "Nautilus",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Nautilus.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Nautilus.png",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
+      {
+        "id": "fizz",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "gangplank",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "illaoi",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "missfortune",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "nami",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "pyke",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "tahmkench",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
       {
         "id": "admiwal-shelly",
         "type": "lore",
@@ -252,12 +582,75 @@
   {
     "id": "nilah",
     "name": "Nilah",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Nilah.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Nilah.png",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
+      {
+        "id": "fiddlesticks",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "graves",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "gwen",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "illaoi",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "janna",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "mordekaiser",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "morgana",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "senna",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "viego",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "volibear",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
       {
         "id": "ashlesh",
         "type": "lore",
@@ -295,11 +688,14 @@
   {
     "id": "pyke",
     "name": "Pyke",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Pyke.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Pyke.png",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "tahmkench",
@@ -308,6 +704,38 @@
         "auto_generated": false,
         "note_fr": "Légendes des abysses",
         "note_en": "Abyssal legends"
+      },
+      {
+        "id": "fizz",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "maokai",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "nautilus",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "riven",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "nagakabouros",
@@ -346,11 +774,15 @@
   {
     "id": "tahmkench",
     "name": "Tahm Kench",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/TahmKench.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/TahmKench.png",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater",
+      "runeterra"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "pyke",
@@ -359,17 +791,92 @@
         "auto_generated": false,
         "note_fr": "Légendes des abysses",
         "note_en": "Abyssal legends"
+      },
+      {
+        "id": "fiddlesticks",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "janna",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "nautilus",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "nocturne",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "five-punch-pablo",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "jack",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "leonard",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "ol-babs",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "slim",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       }
     ]
   },
   {
     "id": "twistedfate",
     "name": "Twisted Fate",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/TwistedFate.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/TwistedFate.png",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "graves",
@@ -378,6 +885,30 @@
         "auto_generated": false,
         "note_fr": "Partenaire",
         "note_en": "Partner"
+      },
+      {
+        "id": "corki",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rafen",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "trixie",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       }
     ]
   },
@@ -386,6 +917,9 @@
     "name": "Admiwal Shelly",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05BW011-full.png?9adcd",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -426,6 +960,9 @@
     "name": "Ai'la",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05BW001-full.png?388a3",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -466,6 +1003,9 @@
     "name": "Angel",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/07BW013-full.png?eb616",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -500,6 +1040,9 @@
     "name": "Bibi",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06BW047-full.png?df2ff",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -516,6 +1059,9 @@
     "name": "Bubba",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/02BW019-full.png?79765",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -558,6 +1104,9 @@
     "name": "Bull",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/07BW040T2-full.png?a6156",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -618,6 +1167,9 @@
     "name": "Five-Punch Pablo",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/07BW014-full.png?81b00",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -652,7 +1204,7 @@
         "auto_generated": false
       },
       {
-        "id": "tahm-kench",
+        "id": "tahmkench",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -664,6 +1216,9 @@
     "name": "Graves' Mother",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -682,6 +1237,9 @@
     "name": "Iascylla",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/08PZ006-full.png?487d9",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -716,6 +1274,9 @@
     "name": "Jack",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/thumb/07BW002-full.png/1200px-07BW002-full.png?b816b",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -762,7 +1323,7 @@
         "auto_generated": false
       },
       {
-        "id": "tahm-kench",
+        "id": "tahmkench",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -822,6 +1383,9 @@
     "name": "Jules",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Jules_Arcane_Render.png?3466c",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -850,6 +1414,9 @@
     "name": "Layne",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/07BW001-full.png?8c309",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -892,6 +1459,9 @@
     "name": "Leo'lei",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05BW004-full.png?8c4e8",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -914,11 +1484,14 @@
     "name": "Leonard",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03BW002-full.png?395f8",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
       {
-        "id": "tahm-kench",
+        "id": "tahmkench",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -930,6 +1503,9 @@
     "name": "Loto",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05BW008-full.png?9d3da",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -960,6 +1536,9 @@
     "name": "Mako",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/07BW040T1-full.png?3581f",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1020,6 +1599,9 @@
     "name": "Malik",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Malik_RK_Portrait.png?195a7",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1048,7 +1630,7 @@
         "auto_generated": false
       },
       {
-        "id": "miss-fortune",
+        "id": "missfortune",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -1066,6 +1648,9 @@
     "name": "Marvolio",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/02BW006-full.png?27658",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1082,6 +1667,9 @@
     "name": "Nagakabouros",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Bilgewater_Nagakabouros.jpg?7e50e",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1110,6 +1698,9 @@
     "name": "Nukkle",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/07BW040-full.png?9202a",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1172,6 +1763,9 @@
     "name": "Ol' Babs",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/07BW018-full.png?4442e",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1188,7 +1782,7 @@
         "auto_generated": false
       },
       {
-        "id": "tahm-kench",
+        "id": "tahmkench",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -1200,11 +1794,14 @@
     "name": "Petyr Harker",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
       {
-        "id": "miss-fortune",
+        "id": "missfortune",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -1222,6 +1819,9 @@
     "name": "Poe Buckler",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/98BW002-full.png?e450a",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": []
@@ -1231,6 +1831,9 @@
     "name": "Riptide Rex",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/02BW028-full.png?6ea24",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1241,7 +1844,7 @@
         "auto_generated": false
       },
       {
-        "id": "miss-fortune",
+        "id": "missfortune",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -1253,6 +1856,9 @@
     "name": "Sefirsa",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/08BW031-full.png?031c9",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": []
@@ -1262,6 +1868,9 @@
     "name": "Sheriff Lariette Rose",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/02BW035-full.png?25509",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1272,7 +1881,7 @@
         "auto_generated": false
       },
       {
-        "id": "miss-fortune",
+        "id": "missfortune",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -1284,6 +1893,9 @@
     "name": "Slim",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03BW003-full.png?5fe37",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1294,7 +1906,7 @@
         "auto_generated": false
       },
       {
-        "id": "tahm-kench",
+        "id": "tahmkench",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -1306,6 +1918,9 @@
     "name": "Tama",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05BW013-full.png?a14d2",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1336,6 +1951,9 @@
     "name": "Tauulo",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06BW009-full.png?50c99",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1352,11 +1970,14 @@
     "name": "Thorne",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Captain_Thorne_RK_Portrait.png?b8c94",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
       {
-        "id": "miss-fortune",
+        "id": "missfortune",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -1380,6 +2001,9 @@
     "name": "Verne",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Verne_Arcane_Render.png?37b50",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1408,6 +2032,9 @@
     "name": "Zap",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/02BW038-full.png?9c1d1",
     "factionKey": "bilgewater",
+    "factionKeys": [
+      "bilgewater"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [

@@ -3,7 +3,7 @@
   "key": "113",
   "name": "Sejuani",
   "title": "Fureur du nord",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Sejuani est l'impitoyable chef de guerre sublimée de la Griffe hivernale, l'une des tribus les plus redoutées de Freljord. La survie de son peuple est une lutte constante et désespérée contre les éléments. Pour résister aux rigueurs de l'hiver, il doit lancer des assauts contre les Noxiens, les Demaciens et les Avarosans. Sejuani mène elle-même la charge des plus dangereux de ces assauts en chevauchant son sanglier drüvask, Bristle, et en agitant son fléau de glace pure pour congeler et réduire en miettes ses ennemis.",
   "tags": [
     "Tank"
@@ -13,7 +13,7 @@
     "full": "Sejuani.png",
     "sprite": "champion3.png",
     "group": "champion",
-    "x": 240,
+    "x": 288,
     "y": 96,
     "w": 48,
     "h": 48
@@ -25,16 +25,16 @@
       "vars": [],
       "image": {
         "full": "SejuaniQ.png",
-        "sprite": "spell11.png",
+        "sprite": "spell12.png",
         "group": "spell",
         "x": 384,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Sejuani se rue dans une direction, infligeant <magicDamage>{{ totaldamagetooltip }} pts de dégâts magiques</magicDamage> aux ennemis et les <status>projetant dans les airs</status> pendant {{ e4 }} sec. La ruée s'arrête si elle touche un champion ennemi.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Sejuani se rue dans une direction, infligeant <magicDamage>{{ totaldamagetooltip }} pts de dégâts magiques</magicDamage> aux ennemis et les <status>projetant dans les airs</status> pendant {{ knockupdurationtooltiponly }} sec. La ruée s'arrête si elle touche un champion ennemi.{{ spellmodifierdescriptionappend }}",
       "costBurn": "60/65/70/75/80",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -61,10 +61,10 @@
       "vars": [],
       "image": {
         "full": "SejuaniW.png",
-        "sprite": "spell11.png",
+        "sprite": "spell12.png",
         "group": "spell",
         "x": 432,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -100,13 +100,13 @@
         "sprite": "spell12.png",
         "group": "spell",
         "x": 0,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive :</spellPassive> les attaques des champions de mêlée alliés proches appliquent un effet sur les champions et les monstres.<br /><br /><spellPassive>Active :</spellPassive> Sejuani inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> à l'ennemi ciblé portant 4 effets cumulés et l'<status>étourdit</status> pendant {{ e1 }} sec. {{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive :</spellPassive> les attaques des champions de mêlée alliés proches appliquent un effet sur les champions et les monstres.<br /><br /><spellPassive>Active :</spellPassive> Sejuani inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> à l'ennemi ciblé portant 4 effets cumulés et l'<status>étourdit</status> pendant {{ ccduration }} sec. {{ spellmodifierdescriptionappend }}",
       "costBurn": "20",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -132,13 +132,13 @@
         "sprite": "spell12.png",
         "group": "spell",
         "x": 48,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "Sejuani projette ses bolas de glace pure, <status>étourdissant</status> et révélant pendant {{ e2 }} sec le premier champion ennemi touché en plus de lui infliger <magicDamage>{{ minordamagetooltip }} pts de dégâts magiques</magicDamage>.<br /><br />Si les bolas parcourent au moins 25% de leur portée max, ils <status>étourdissent</status> et révèlent l'ennemi pendant {{ e6 }} sec. Ils créent également une tempête de glace qui <status>ralentit</status> les ennemis proches de {{ e4 }}% pendant {{ e3 }} sec. Tous les ennemis affectés subissent <magicDamage>{{ totaldamagetooltip }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Sejuani projette ses bolas de glace pure, <status>étourdissant</status> et révélant pendant {{ basestunduration }} sec le premier champion ennemi touché en plus de lui infliger <magicDamage>{{ minordamagetooltip }} pts de dégâts magiques</magicDamage>.<br /><br />Si les bolas parcourent au moins 25% de leur portée max, ils <status>étourdissent</status> et révèlent l'ennemi pendant {{ empoweredstunduration }} sec. Ils créent également une tempête de glace qui <status>ralentit</status> les ennemis proches de {{ explosionslowamount }}% pendant {{ zoneduration }} sec. Tous les ennemis affectés subissent <magicDamage>{{ totaldamagetooltip }} pts de dégâts magiques</magicDamage>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -148,8 +148,8 @@
           "Délai de récupération"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
-          "{{ e7 }} -> {{ e7NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ empoweredbasedamage }} -> {{ empoweredbasedamageNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -166,7 +166,7 @@
       "full": "Sejuani_passive.png",
       "sprite": "passive3.png",
       "group": "passive",
-      "x": 240,
+      "x": 288,
       "y": 96,
       "w": 48,
       "h": 48
@@ -192,16 +192,16 @@
       "vars": [],
       "image": {
         "full": "SejuaniQ.png",
-        "sprite": "spell11.png",
+        "sprite": "spell12.png",
         "group": "spell",
         "x": 384,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Sejuani charges, dealing <magicDamage>{{ totaldamagetooltip }} magic damage</magicDamage> to enemies and <status>Knocking</status> them <status>Up</status> for {{ e4 }} seconds. The charge ends after hitting an enemy champion.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Sejuani charges, dealing <magicDamage>{{ totaldamagetooltip }} magic damage</magicDamage> to enemies and <status>Knocking</status> them <status>Up</status> for {{ knockupdurationtooltiponly }} seconds. The charge ends after hitting an enemy champion.{{ spellmodifierdescriptionappend }}",
       "costBurn": "60/65/70/75/80",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -228,10 +228,10 @@
       "vars": [],
       "image": {
         "full": "SejuaniW.png",
-        "sprite": "spell11.png",
+        "sprite": "spell12.png",
         "group": "spell",
         "x": 432,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -267,13 +267,13 @@
         "sprite": "spell12.png",
         "group": "spell",
         "x": 0,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive:</spellPassive> Nearby melee allied champions' Attacks apply a stack to champions and jungle monsters.<br /><br /><spellPassive>Active:</spellPassive> Sejuani deals <magicDamage>{{ totaldamage }} magic damage</magicDamage> to target enemy with 4 stacks and <status>Stuns</status> them for {{ e1 }} second. {{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive:</spellPassive> Nearby melee allied champions' Attacks apply a stack to champions and jungle monsters.<br /><br /><spellPassive>Active:</spellPassive> Sejuani deals <magicDamage>{{ totaldamage }} magic damage</magicDamage> to target enemy with 4 stacks and <status>Stuns</status> them for {{ ccduration }} second. {{ spellmodifierdescriptionappend }}",
       "costBurn": "20",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -299,13 +299,13 @@
         "sprite": "spell12.png",
         "group": "spell",
         "x": 48,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "Sejuani throws her True Ice bola, <status>Stunning</status> and revealing the first enemy champion hit for {{ e2 }} second and dealing <magicDamage>{{ minordamagetooltip }} magic damage</magicDamage>.<br /><br />If the bola travels at least 25% of its range, it <status>Stuns</status> and reveals for {{ e6 }} seconds instead. It then also creates an ice storm that <status>Slows</status> surrounding enemies by {{ e4 }}% for {{ e3 }} seconds. All affected enemies take <magicDamage>{{ totaldamagetooltip }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Sejuani throws her True Ice bola, <status>Stunning</status> and revealing the first enemy champion hit for {{ basestunduration }} second and dealing <magicDamage>{{ minordamagetooltip }} magic damage</magicDamage>.<br /><br />If the bola travels at least 25% of its range, it <status>Stuns</status> and reveals for {{ empoweredstunduration }} seconds instead. It then also creates an ice storm that <status>Slows</status> surrounding enemies by {{ explosionslowamount }}% for {{ zoneduration }} seconds. All affected enemies take <magicDamage>{{ totaldamagetooltip }} magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -315,8 +315,8 @@
           "Cooldown"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
-          "{{ e7 }} -> {{ e7NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ empoweredbasedamage }} -> {{ empoweredbasedamageNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -333,7 +333,7 @@
       "full": "Sejuani_passive.png",
       "sprite": "passive3.png",
       "group": "passive",
-      "x": 240,
+      "x": 288,
       "y": 96,
       "w": 48,
       "h": 48

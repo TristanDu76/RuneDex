@@ -2,12 +2,39 @@
   {
     "id": "fiora",
     "name": "Fiora",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Fiora.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Fiora.png",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
+      {
+        "id": "garen",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jarvaniv",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jax",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "lux",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
       {
         "id": "antoine-laurent",
         "type": "lore",
@@ -53,21 +80,24 @@
   {
     "id": "galio",
     "name": "Galio",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Galio.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Galio.png",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
-        "id": "arcturus_j_durand",
+        "id": "arcturus-j-durand",
         "type": "lore",
         "relation": "creation",
         "auto_generated": false
       },
       {
-        "id": "arcturus-j-durand",
-        "type": "lore",
+        "id": "poppy",
+        "type": "champion",
         "relation": "related",
         "auto_generated": true,
         "note_fr": "Lien réciproque automatique",
@@ -134,11 +164,14 @@
   {
     "id": "garen",
     "name": "Garen",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Garen.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Garen.png",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "cithria",
@@ -149,7 +182,7 @@
         "note_en": "Subordinate"
       },
       {
-        "id": "tiana_crownguard",
+        "id": "tianna",
         "type": "lore",
         "relation": "family",
         "auto_generated": false,
@@ -157,7 +190,7 @@
         "note_en": "Nephew"
       },
       {
-        "id": "arcturus_j_durand",
+        "id": "arcturus-j-durand",
         "type": "lore",
         "relation": "ally",
         "auto_generated": false,
@@ -185,6 +218,38 @@
         "auto_generated": false,
         "note_fr": "Ancien frère d'armes",
         "note_en": "Former brother in arms"
+      },
+      {
+        "id": "fiora",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "nocturne",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "quinn",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "xinzhao",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "arrika",
@@ -267,14 +332,6 @@
         "note_en": "Auto-generated reciprocal link"
       },
       {
-        "id": "tianna",
-        "type": "lore",
-        "relation": "related",
-        "auto_generated": true,
-        "note_fr": "Lien réciproque automatique",
-        "note_en": "Auto-generated reciprocal link"
-      },
-      {
         "id": "wisteria",
         "type": "lore",
         "relation": "related",
@@ -287,11 +344,14 @@
   {
     "id": "jarvaniv",
     "name": "Jarvan IV",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/JarvanIV.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/JarvanIV.png",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "cithria",
@@ -308,17 +368,141 @@
         "auto_generated": false,
         "note_fr": "Son protecteur et sa seule ancre",
         "note_en": "Her protector and only anchor"
+      },
+      {
+        "id": "fiora",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "quinn",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "sona",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "xinzhao",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "yunara",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "zaahen",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "augatha-crownguard",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "barrett-buvelle",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "eldred",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "jarvan-iii",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "orlon",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "purcivell-bronz",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tianna",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "wisteria",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "yvva",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       }
     ]
   },
   {
     "id": "kayle",
     "name": "Kayle",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Kayle.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Kayle.png",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia",
+      "targon"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "morgana",
@@ -327,7 +511,7 @@
         "auto_generated": false
       },
       {
-        "id": "naganeka",
+        "id": "naganeka-of-zuretta",
         "type": "lore",
         "relation": "conflict",
         "auto_generated": false,
@@ -359,14 +543,6 @@
         "note_en": "Auto-generated reciprocal link"
       },
       {
-        "id": "naganeka-of-zuretta",
-        "type": "lore",
-        "relation": "related",
-        "auto_generated": true,
-        "note_fr": "Lien réciproque automatique",
-        "note_en": "Auto-generated reciprocal link"
-      },
-      {
         "id": "xolaani",
         "type": "lore",
         "relation": "related",
@@ -377,13 +553,48 @@
     ]
   },
   {
-    "id": "lucian",
-    "name": "Lucian",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Lucian.png",
+    "id": "locke",
+    "name": "Locke",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Locke.png",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "evelynn",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "morgana",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vayne",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      }
+    ]
+  },
+  {
+    "id": "lucian",
+    "name": "Lucian",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Lucian.png",
+    "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "thresh",
@@ -398,6 +609,14 @@
         "auto_generated": false,
         "note_fr": "Mari",
         "note_en": "Husband"
+      },
+      {
+        "id": "riven",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "isolde",
@@ -428,14 +647,17 @@
   {
     "id": "lux",
     "name": "Lux",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Lux.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Lux.png",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
-        "id": "tiana_crownguard",
+        "id": "tianna",
         "type": "lore",
         "relation": "family",
         "auto_generated": false,
@@ -461,6 +683,62 @@
         "type": "champion",
         "relation": "sister",
         "auto_generated": false
+      },
+      {
+        "id": "fiddlesticks",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "fiora",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "lillia",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "nocturne",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "sona",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "xinzhao",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "yunara",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "aidan",
@@ -543,14 +821,6 @@
         "note_en": "Auto-generated reciprocal link"
       },
       {
-        "id": "tianna",
-        "type": "lore",
-        "relation": "related",
-        "auto_generated": true,
-        "note_fr": "Lien réciproque automatique",
-        "note_en": "Auto-generated reciprocal link"
-      },
-      {
         "id": "wisteria",
         "type": "lore",
         "relation": "related",
@@ -563,17 +833,37 @@
   {
     "id": "morgana",
     "name": "Morgana",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Morgana.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Morgana.png",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia",
+      "targon"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "kayle",
         "type": "champion",
         "relation": "sister",
         "auto_generated": false
+      },
+      {
+        "id": "locke",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "nilah",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "kilam",
@@ -620,12 +910,46 @@
   {
     "id": "poppy",
     "name": "Poppy",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Poppy.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Poppy.png",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia",
+      "bandle-city"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
+      {
+        "id": "galio",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "lulu",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "shyvana",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "tristana",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "vayne",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
       {
         "id": "orlon",
         "type": "lore",
@@ -655,12 +979,45 @@
   {
     "id": "quinn",
     "name": "Quinn",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Quinn.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Quinn.png",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
+      {
+        "id": "garen",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jarvaniv",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "shyvana",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "sona",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "sylas",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
       {
         "id": "barrett-buvelle",
         "type": "lore",
@@ -778,11 +1135,14 @@
   {
     "id": "senna",
     "name": "Senna",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Senna.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Senna.png",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "isolde",
@@ -799,6 +1159,22 @@
         "auto_generated": false,
         "note_fr": "Mari",
         "note_en": "Husband"
+      },
+      {
+        "id": "nilah",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "riven",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "ada",
@@ -853,11 +1229,14 @@
   {
     "id": "shyvana",
     "name": "Shyvana",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Shyvana.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Shyvana.png",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "jarvaniv",
@@ -866,6 +1245,30 @@
         "auto_generated": false,
         "note_fr": "Son protecteur et sa seule ancre",
         "note_en": "Her protector and only anchor"
+      },
+      {
+        "id": "poppy",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "quinn",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "smolder",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "anden-mayne",
@@ -944,12 +1347,59 @@
   {
     "id": "sona",
     "name": "Sona",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Sona.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Sona.png",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
+      {
+        "id": "jarvaniv",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "lux",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "ryze",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "taric",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "xinzhao",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "yunara",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "quinn",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
       {
         "id": "barrett-buvelle",
         "type": "lore",
@@ -995,11 +1445,15 @@
   {
     "id": "sylas",
     "name": "Sylas",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Sylas.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Sylas.png",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia",
+      "freljord"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "lux",
@@ -1016,6 +1470,22 @@
         "auto_generated": false,
         "note_fr": "Symbole de la tyrannie Démacienne",
         "note_en": "Symbol of demacian tyranny"
+      },
+      {
+        "id": "nocturne",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "quinn",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "aidan",
@@ -1172,13 +1642,127 @@
     ]
   },
   {
-    "id": "vayne",
-    "name": "Vayne",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Vayne.png",
-    "factionKey": "demacia",
+    "id": "taric",
+    "name": "Taric",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Taric.png",
+    "factionKey": "targon",
+    "factionKeys": [
+      "targon",
+      "demacia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "garen",
+        "type": "champion",
+        "relation": "friend",
+        "auto_generated": false,
+        "note_fr": "Ancien frère d'armes",
+        "note_en": "Former brother in arms"
+      },
+      {
+        "id": "sona",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "soraka",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "anua",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "horazi",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "jarvan-iii",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "raduak",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "revna",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rictus",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tianna",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tyari",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "xolaani",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "vayne",
+    "name": "Vayne",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Vayne.png",
+    "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "evelynn",
@@ -1187,6 +1771,46 @@
         "auto_generated": false,
         "note_fr": "A tué ses parents",
         "note_en": "Killed her parents"
+      },
+      {
+        "id": "fiddlesticks",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "locke",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "poppy",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "riven",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "shaco",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "janan",
@@ -1225,18 +1849,123 @@
   {
     "id": "xinzhao",
     "name": "Xin Zhao",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/XinZhao.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/XinZhao.png",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
-    "related_characters": []
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "alistar",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "garen",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jarvaniv",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kennen",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "leblanc",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "lux",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "shen",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "sona",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "talon",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "yunara",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "zaahen",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "bo-yang",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "boram-darkwill",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "jarvan-iii",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tianna",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
   },
   {
     "id": "aidan",
     "name": "Aidan",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Aidan_MS_Neutral_Portrait.png?b06a1",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1307,6 +2036,9 @@
     "name": "Alatis the Gallant",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/08DE026-full.png?0fae0",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1317,18 +2049,10 @@
         "auto_generated": false
       },
       {
-        "id": "volix",
+        "id": "volix-dragon-allegiant",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
-      },
-      {
-        "id": "volix-dragon-allegiant",
-        "type": "lore",
-        "relation": "related",
-        "auto_generated": true,
-        "note_fr": "Lien réciproque automatique",
-        "note_en": "Auto-generated reciprocal link"
       }
     ]
   },
@@ -1337,6 +2061,9 @@
     "name": "Alina",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/09DE045-full.png?f7e62",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1353,6 +2080,9 @@
     "name": "Anden Mayne",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03DE005-full.png?7acb3",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1401,6 +2131,9 @@
     "name": "Antoine Laurent",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/01DE053-full.png?9cd9b",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1417,6 +2150,9 @@
     "name": "Arcturus J. Durand",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1431,6 +2167,14 @@
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
+      },
+      {
+        "id": "garen",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       }
     ]
   },
@@ -1439,6 +2183,9 @@
     "name": "Captain Arrika",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03DE004-full.png?7b022",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1479,6 +2226,9 @@
     "name": "Augatha Crownguard",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1501,7 +2251,7 @@
         "auto_generated": false
       },
       {
-        "id": "jarvan-iv",
+        "id": "jarvaniv",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -1525,6 +2275,9 @@
     "name": "Balen the Benevolent",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/07DE016-full.png?3fc48",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1559,6 +2312,9 @@
     "name": "Barrett Buvelle",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/04DE001-full.png?07261",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1569,7 +2325,7 @@
         "auto_generated": false
       },
       {
-        "id": "jarvan-iv",
+        "id": "jarvaniv",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -1633,6 +2389,9 @@
     "name": "Bertrand",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/02DE003-full.png?a1952",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1673,6 +2432,9 @@
     "name": "Caleb of Uwendale",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1713,6 +2475,9 @@
     "name": "Dalin",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/02DE004-full.png?ce9a7",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1747,6 +2512,9 @@
     "name": "Dominick Durand",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05DE019-full.png?18eec",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1787,6 +2555,9 @@
     "name": "F. Falden",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/07DE011-full.png?b5636",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1809,6 +2580,9 @@
     "name": "Fossian Crownguard",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1843,6 +2617,9 @@
     "name": "Genevieve Elmheart",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/02DE010-hd-full.jpg?417f0",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1895,6 +2672,9 @@
     "name": "Gideon",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Gideon_MS_Neutral_Portrait.png?1bf73",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1965,6 +2745,9 @@
     "name": "Gregem",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/04DE020-full.png?e31c7",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2007,6 +2790,9 @@
     "name": "Hargold Crownguard",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2053,6 +2839,9 @@
     "name": "Hesbeth",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Hesbeth_MS_Neutral_Portrait.png?889e0",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2145,6 +2934,9 @@
     "name": "Janan",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06DE019-full.png?c9c6d",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2179,6 +2971,9 @@
     "name": "Kadregrin the Infernal",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03DE007-full.png?ae760",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2231,6 +3026,9 @@
     "name": "Kara Durand",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Kara_MS_Neutral_Portrait.png?30330",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2319,6 +3117,9 @@
     "name": "Kian",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06DE025-full.png?b9b0a",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2353,6 +3154,9 @@
     "name": "Kilam",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2381,6 +3185,9 @@
     "name": "Killan",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Killan_MS_Neutral_Portrait.png?43ae3",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2415,6 +3222,9 @@
     "name": "Klaus",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/08DE017-full.png?5c49a",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2437,6 +3247,9 @@
     "name": "Leilani",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Leilani_MS_Neutral_Portrait.png?4d2c2",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2507,6 +3320,9 @@
     "name": "Lestara Buvelle",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2553,6 +3369,9 @@
     "name": "Lieutenant Jerik",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03DE008-full.png?fcabc",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2593,6 +3412,9 @@
     "name": "Lisa",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/08MT015-full.png?958d9",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2615,6 +3437,9 @@
     "name": "Mona",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06DE028-full.png?44231",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2649,11 +3474,14 @@
     "name": "Orlon",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
       {
-        "id": "jarvan-iv",
+        "id": "jarvaniv",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -2671,6 +3499,9 @@
     "name": "Pieter Crownguard, The Hero",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2711,6 +3542,9 @@
     "name": "Purcivell Bronz",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2727,7 +3561,7 @@
         "auto_generated": false
       },
       {
-        "id": "jarvan-iv",
+        "id": "jarvaniv",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -2751,6 +3585,9 @@
     "name": "Rayn",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Rayn_MS_Neutral_Portrait.png?63bb0",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2801,6 +3638,9 @@
     "name": "Rukko",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Rukko_MS_Neutral_Portrait.png?f467a",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2871,6 +3711,9 @@
     "name": "Sebastien Laurent",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2899,6 +3742,9 @@
     "name": "Severos",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03DE006-full.png?55f2c",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2933,6 +3779,9 @@
     "name": "Shield-Sergeant Merrek",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Demacia_The_Weight_of_Expectations_01.jpg?bf87a",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -2985,6 +3834,9 @@
     "name": "Shireen Durand",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05DE014-full.png?c6507",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -3025,6 +3877,9 @@
     "name": "Sirius Rowill",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06DE027-full.png?6cf2d",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -3059,6 +3914,9 @@
     "name": "Tedric",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -3081,6 +3939,9 @@
     "name": "Valor",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/02DE006T1-full.png?a4b57",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -3161,6 +4022,9 @@
     "name": "Volix, Dragon Allegiant",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/08DE013-full.png?45401",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -3183,6 +4047,9 @@
     "name": "Wisteria",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Wisteria_MS_Neutral_Portrait.png?b8d12",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -3205,7 +4072,7 @@
         "auto_generated": false
       },
       {
-        "id": "jarvan-iv",
+        "id": "jarvaniv",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -3295,6 +4162,9 @@
     "name": "Yessenia",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/03DE003-full.png?1c401",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -3337,6 +4207,9 @@
     "name": "Yops",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Yops_MS_Neutral_Portrait.png?a7c5f",
     "factionKey": "demacia",
+    "factionKeys": [
+      "demacia"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [

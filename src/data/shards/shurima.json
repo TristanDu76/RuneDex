@@ -1,12 +1,196 @@
 [
   {
-    "id": "akshan",
-    "name": "Akshan",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Akshan.png",
-    "factionKey": "shurima",
+    "id": "aatrox",
+    "name": "Aatrox",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Aatrox.png",
+    "factionKey": "runeterra",
+    "factionKeys": [
+      "runeterra",
+      "shurima"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "anaakca",
+        "type": "lore",
+        "relation": "ally",
+        "auto_generated": false,
+        "note_fr": "Rallie son ancienne amie.",
+        "note_en": "Rallied his old friend."
+      },
+      {
+        "id": "horazi",
+        "type": "lore",
+        "relation": "ally",
+        "auto_generated": false,
+        "note_fr": "Rallie Horazi.",
+        "note_en": "Rallied Horazi."
+      },
+      {
+        "id": "naganeka-of-zuretta",
+        "type": "lore",
+        "relation": "ally",
+        "auto_generated": false,
+        "note_fr": "Rallie Naganeka.",
+        "note_en": "Rallied Naganeka."
+      },
+      {
+        "id": "styraatu",
+        "type": "lore",
+        "relation": "ally",
+        "auto_generated": false,
+        "note_fr": "Styraatu rallie Aatrox.",
+        "note_en": "Styraatu rallied Aatrox."
+      },
+      {
+        "id": "baalkux",
+        "type": "lore",
+        "relation": "ally",
+        "auto_generated": false,
+        "note_fr": "Veut rejoindre son général.",
+        "note_en": "Wishes to rejoin general."
+      },
+      {
+        "id": "pantheon",
+        "type": "champion",
+        "relation": "nemesis",
+        "auto_generated": false,
+        "note_fr": "Menace la survie de Runeterra",
+        "note_en": "Threatens runeterra's survival"
+      },
+      {
+        "id": "varus",
+        "type": "champion",
+        "relation": "family/rival",
+        "auto_generated": false,
+        "note_fr": "Trouve Varus faible.",
+        "note_en": "Finds Varus weak."
+      },
+      {
+        "id": "rhaast",
+        "type": "lore",
+        "relation": "family/ally",
+        "auto_generated": false,
+        "note_fr": "Frère Darkin.",
+        "note_en": "Darkin brother."
+      },
+      {
+        "id": "naafiri",
+        "type": "champion",
+        "relation": "rival/ally",
+        "auto_generated": false,
+        "note_fr": "Trouve Aatrox têtu.",
+        "note_en": "Finds Aatrox stubborn."
+      },
+      {
+        "id": "xolaani",
+        "type": "lore",
+        "relation": "ally",
+        "auto_generated": false,
+        "note_fr": "Un des cinq Darkin.",
+        "note_en": "One of the five Darkin."
+      },
+      {
+        "id": "xolaani",
+        "type": "lore",
+        "relation": "nemesis",
+        "auto_generated": false,
+        "note_fr": "A affronté Aatrox.",
+        "note_en": "Confronted Aatrox."
+      },
+      {
+        "id": "ryze",
+        "type": "champion",
+        "relation": "conflict",
+        "auto_generated": false,
+        "note_fr": "Ryze est intervenu.",
+        "note_en": "Ryze intervened."
+      },
+      {
+        "id": "joraal",
+        "type": "lore",
+        "relation": "ally",
+        "auto_generated": false,
+        "note_fr": "Capitaine de l'armée des Transfigurés",
+        "note_en": "Captain of the Ascended army\n"
+      },
+      {
+        "id": "taarosh",
+        "type": "lore",
+        "relation": "ally",
+        "auto_generated": false,
+        "note_fr": "Général de l'armée des Transfigurés",
+        "note_en": "General of the Ascended Army"
+      },
+      {
+        "id": "praa-the-breachwalker",
+        "type": "lore",
+        "relation": "ally",
+        "auto_generated": false
+      },
+      {
+        "id": "zaahen",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "zilean",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "ibaaros",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "mihira",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "setaka",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "the-warrior",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "akshan",
+    "name": "Akshan",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Akshan.png",
+    "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "shadya",
@@ -23,6 +207,14 @@
         "auto_generated": false,
         "note_fr": "A tué sa mentor",
         "note_en": "Killed his mentor"
+      },
+      {
+        "id": "riven",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "isolde",
@@ -53,11 +245,14 @@
   {
     "id": "amumu",
     "name": "Amumu",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Amumu.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Amumu.png",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "annie",
@@ -72,11 +267,14 @@
   {
     "id": "azir",
     "name": "Azir",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Azir.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Azir.png",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "taliyah",
@@ -145,13 +343,59 @@
     ]
   },
   {
-    "id": "ksante",
-    "name": "K'Santé",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/KSante.png",
-    "factionKey": "shurima",
+    "id": "cassiopeia",
+    "name": "Cassiopeia",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Cassiopeia.png",
+    "factionKey": "noxus",
+    "factionKeys": [
+      "noxus",
+      "shurima"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "marcus",
+        "type": "lore",
+        "relation": "parent",
+        "auto_generated": false
+      },
+      {
+        "id": "katarina",
+        "type": "champion",
+        "relation": "sister",
+        "auto_generated": false
+      },
+      {
+        "id": "marcus-du-couteau",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "soreana-du-couteau",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "ksante",
+    "name": "K'Santé",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/KSante.png",
+    "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "tope",
@@ -164,13 +408,213 @@
     ]
   },
   {
-    "id": "naafiri",
-    "name": "Naafiri",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Naafiri.png",
-    "factionKey": "shurima",
+    "id": "kaisa",
+    "name": "Kai'Sa",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Kaisa.png",
+    "factionKey": "void",
+    "factionKeys": [
+      "void",
+      "shurima"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "malzahar",
+        "type": "champion",
+        "relation": "nemesis",
+        "auto_generated": false,
+        "note_fr": "Chef de la corruption du Néant",
+        "note_en": "leader of the void's corruption"
+      },
+      {
+        "id": "kassadin",
+        "type": "champion",
+        "relation": "daughter",
+        "auto_generated": false,
+        "note_fr": "Fille perdue",
+        "note_en": "Lost daughter"
+      },
+      {
+        "id": "belveth",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "reksai",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kadira",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "koyemi",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "samir",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "shalatai",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "zaifa",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "kassadin",
+    "name": "Kassadin",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Kassadin.png",
+    "factionKey": "void",
+    "factionKeys": [
+      "void",
+      "shurima"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "malzahar",
+        "type": "champion",
+        "relation": "nemesis/ex-friend",
+        "auto_generated": false,
+        "note_fr": "Obstacle majeur du Néant",
+        "note_en": "major void obstacle"
+      },
+      {
+        "id": "kaisa",
+        "type": "champion",
+        "relation": "daughter",
+        "auto_generated": false,
+        "note_fr": "Fille perdue",
+        "note_en": "Lost daughter"
+      },
+      {
+        "id": "belveth",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "malphite",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "malzahar",
+    "name": "Malzahar",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Malzahar.png",
+    "factionKey": "void",
+    "factionKeys": [
+      "void",
+      "shurima"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "kaisa",
+        "type": "champion",
+        "relation": "nemesis",
+        "auto_generated": false,
+        "note_fr": "Chef de la corruption du Néant",
+        "note_en": "leader of the void's corruption"
+      },
+      {
+        "id": "kassadin",
+        "type": "champion",
+        "relation": "nemesis/ex-friend",
+        "auto_generated": false,
+        "note_fr": "Obstacle majeur du Néant",
+        "note_en": "major void obstacle"
+      },
+      {
+        "id": "belveth",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kogmaw",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "koyemi",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "shalatai",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "naafiri",
+    "name": "Naafiri",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Naafiri.png",
+    "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "aatrox",
@@ -179,6 +623,14 @@
         "auto_generated": false,
         "note_fr": "Trouve Aatrox têtu.",
         "note_en": "Finds Aatrox stubborn."
+      },
+      {
+        "id": "zaahen",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "rhaast",
@@ -201,11 +653,14 @@
   {
     "id": "nasus",
     "name": "Nasus",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Nasus.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Nasus.png",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "renekton",
@@ -214,6 +669,14 @@
         "auto_generated": false,
         "note_fr": "Frère",
         "note_en": "Brother"
+      },
+      {
+        "id": "jax",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "rhaast",
@@ -234,13 +697,87 @@
     ]
   },
   {
-    "id": "rammus",
-    "name": "Rammus",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Rammus.png",
-    "factionKey": "shurima",
+    "id": "nidalee",
+    "name": "Nidalee",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Nidalee.png",
+    "factionKey": "ixtal",
+    "factionKeys": [
+      "ixtal",
+      "shurima"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "neeko",
+        "type": "champion",
+        "relation": "friend",
+        "auto_generated": false,
+        "note_fr": "Amie proche",
+        "note_en": "Close friend"
+      },
+      {
+        "id": "milio",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "zyra",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "anura",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "cornelius",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kuulcan",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rowain",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "rammus",
+    "name": "Rammus",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Rammus.png",
+    "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "no-face-nyam",
@@ -261,13 +798,103 @@
     ]
   },
   {
-    "id": "renekton",
-    "name": "Renekton",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Renekton.png",
-    "factionKey": "shurima",
+    "id": "reksai",
+    "name": "Rek'Sai",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/RekSai.png",
+    "factionKey": "void",
+    "factionKeys": [
+      "void",
+      "shurima"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "kaisa",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "skarner",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "taliyah",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "yuumi",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "belveth",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "velkoz",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kadira",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "samir",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "xerxareth-the-undertitan",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "zaifa",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "renekton",
+    "name": "Renekton",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Renekton.png",
+    "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "nasus",
@@ -276,6 +903,14 @@
         "auto_generated": false,
         "note_fr": "Frère",
         "note_en": "Brother"
+      },
+      {
+        "id": "jax",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "raz-bloodmane",
@@ -304,13 +939,158 @@
     ]
   },
   {
-    "id": "sivir",
-    "name": "Sivir",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Sivir.png",
-    "factionKey": "shurima",
+    "id": "rengar",
+    "name": "Rengar",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Rengar.png",
+    "factionKey": "ixtal",
+    "factionKeys": [
+      "ixtal",
+      "shurima"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "khazix",
+        "type": "champion",
+        "relation": "rival",
+        "auto_generated": false,
+        "note_fr": "La proie ultime",
+        "note_en": "The ultimate prey"
+      },
+      {
+        "id": "qiyana",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "riven",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "samira",
+    "name": "Samira",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Samira.png",
+    "factionKey": "noxus",
+    "factionKeys": [
+      "noxus",
+      "shurima"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "leblanc",
+        "type": "champion",
+        "relation": "nemesis",
+        "auto_generated": false,
+        "note_fr": "Leader de la Rose Noire",
+        "note_en": "leader of the black rose"
+      },
+      {
+        "id": "ambessa",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "renata",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "sett",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "dame-the-despoiler",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "indari",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "inferna",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "jack",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "lani",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "miel",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "smeek",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "sivir",
+    "name": "Sivir",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Sivir.png",
+    "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "azir",
@@ -341,11 +1121,14 @@
   {
     "id": "taliyah",
     "name": "Taliyah",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Taliyah.png",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Taliyah.png",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "yasuo",
@@ -362,6 +1145,30 @@
         "auto_generated": false,
         "note_fr": "Représente l'ancienne tyrannie de Shurima",
         "note_en": "Represents ancient Shuriman tyranny"
+      },
+      {
+        "id": "belveth",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "malphite",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "reksai",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
       },
       {
         "id": "chip",
@@ -414,13 +1221,111 @@
     ]
   },
   {
-    "id": "xerath",
-    "name": "Xerath",
-    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Xerath.png",
-    "factionKey": "shurima",
+    "id": "varus",
+    "name": "Varus",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Varus.png",
+    "factionKey": "ionia",
+    "factionKeys": [
+      "ionia",
+      "shurima"
+    ],
     "type": "champion",
     "canon": true,
-    "version": "16.8.1",
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "aatrox",
+        "type": "champion",
+        "relation": "family/rival",
+        "auto_generated": false,
+        "note_fr": "Trouve Varus faible.",
+        "note_en": "Finds Varus weak."
+      },
+      {
+        "id": "yunara",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "zaahen",
+        "type": "champion",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "bhinan",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "kai",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "mihira",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "rhaast",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "setaka",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "valmar",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "xolaani",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
+    "id": "xerath",
+    "name": "Xerath",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Xerath.png",
+    "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
     "related_characters": [
       {
         "id": "azir",
@@ -449,10 +1354,79 @@
     ]
   },
   {
+    "id": "zilean",
+    "name": "Zilean",
+    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Zilean.png",
+    "factionKey": "runeterra",
+    "factionKeys": [
+      "runeterra",
+      "shurima",
+      "void"
+    ],
+    "type": "champion",
+    "canon": true,
+    "version": "16.16.1",
+    "related_characters": [
+      {
+        "id": "aatrox",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "jax",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "velkoz",
+        "type": "champion",
+        "relation": "mentioned",
+        "auto_generated": false
+      },
+      {
+        "id": "kahiri",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "tai",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "xetsa",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      },
+      {
+        "id": "zinsa",
+        "type": "lore",
+        "relation": "related",
+        "auto_generated": true,
+        "note_fr": "Lien réciproque automatique",
+        "note_en": "Auto-generated reciprocal link"
+      }
+    ]
+  },
+  {
     "id": "adanna",
     "name": "Adanna",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/04SH057-full.png?2ebe2",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -469,6 +1443,9 @@
     "name": "Anaakca",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06FR018T1-full.png?2dae2",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -503,6 +1480,9 @@
     "name": "Baalkux",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06BC029T1-full.png?2f151",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -519,6 +1499,9 @@
     "name": "Dami'yin the Unbound",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/05SH012T1-full.png?ac6e3",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -535,6 +1518,9 @@
     "name": "Fireth, Reaper of the Sands",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06SI003-full.png?52322",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -575,6 +1561,9 @@
     "name": "Horazi",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06MT006T2-full.png?20763",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -585,7 +1574,7 @@
         "auto_generated": false
       },
       {
-        "id": "protector",
+        "id": "taric",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -603,6 +1592,9 @@
     "name": "Ibaaros",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06BW014T1-full.png?65c6d",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -625,6 +1617,9 @@
     "name": "Joraal",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06DE011T1-full.png?0283e",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -647,6 +1642,9 @@
     "name": "Kadira",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/04SH089-full.png?cf818",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -693,6 +1691,9 @@
     "name": "Kahiri",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/04SH021-full.png?178ad",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -709,6 +1710,9 @@
     "name": "Karima",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/04SH056-full.png?558e4",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -725,6 +1729,9 @@
     "name": "Koyemi",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06SH010-full.png?c8e64",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -759,6 +1766,9 @@
     "name": "Naganeka of Zuretta",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06NX020T1-full.png?c3e57",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -787,6 +1797,9 @@
     "name": "Najah",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/04SH128-full.png?4be41",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -809,6 +1822,9 @@
     "name": "No-Face Nyam",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Noxus_The_Shuttered_Manse.jpg?0a629",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -849,6 +1865,9 @@
     "name": "Padjuman",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/04SH012-full.png?479d0",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -865,6 +1884,9 @@
     "name": "Praa the Breachwalker",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06IO023T1-full.png?d3735",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -901,6 +1923,9 @@
     "name": "Raz Bloodmane",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/04SH015-full.png?22c26",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -917,6 +1942,9 @@
     "name": "Sadira",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06SH051-full.png?419fd",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -951,6 +1979,9 @@
     "name": "Samir",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/04SH038-full.png?8a44e",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -985,7 +2016,7 @@
         "auto_generated": false
       },
       {
-        "id": "xerxareth",
+        "id": "xerxareth-the-undertitan",
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
@@ -995,14 +2026,6 @@
         "type": "lore",
         "relation": "mentioned",
         "auto_generated": false
-      },
-      {
-        "id": "xerxareth-the-undertitan",
-        "type": "lore",
-        "relation": "related",
-        "auto_generated": true,
-        "note_fr": "Lien réciproque automatique",
-        "note_en": "Auto-generated reciprocal link"
       }
     ]
   },
@@ -1011,6 +2034,9 @@
     "name": "Setaka",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1075,6 +2101,9 @@
     "name": "Shadya",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1091,6 +2120,9 @@
     "name": "Shalatai",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06SH008-full.png?a656d",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1125,6 +2157,9 @@
     "name": "Styraatu",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06PZ008T2-full.png?789d3",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1141,6 +2176,9 @@
     "name": "Taarosh",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/06SI007T1-full.png?19642",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1169,6 +2207,9 @@
     "name": "Tai",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/04SH001-full.png?f05de",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1197,6 +2238,9 @@
     "name": "Tena",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/04SH125-full.png?79880",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1219,6 +2263,9 @@
     "name": "Tope",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/K%27Sante_Everything_We_Should_Have_Said.jpg?a4011",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1241,6 +2288,9 @@
     "name": "Valif",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/Default_minor_character_image.png?08d2f",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1293,6 +2343,9 @@
     "name": "Xerxa'Reth, The Undertitan",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/04SH065-full.png?1047c",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1321,6 +2374,9 @@
     "name": "Xetsa",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/04SH011-full.png?76b59",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1349,6 +2405,9 @@
     "name": "Zaifa",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/04SH041-full.png?ea965",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [
@@ -1395,6 +2454,9 @@
     "name": "Zinsa",
     "thumbnail": "https://wiki.leagueoflegends.com/en-us/images/04SH011-full.png?76b59",
     "factionKey": "shurima",
+    "factionKeys": [
+      "shurima"
+    ],
     "type": "lore",
     "canon": true,
     "related_characters": [

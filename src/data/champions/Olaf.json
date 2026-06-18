@@ -3,7 +3,7 @@
   "key": "2",
   "name": "Olaf",
   "title": "Berzerker",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Olaf, avec sa hache et son extraordinaire force de destruction, ne souhaite que mourir au combat. Venu de l'âpre péninsule freljordienne de Lokfar, il a été choqué par une prophétie qui lui prédisait une mort paisible : dans l'esprit de son peuple, une ignoble fin de lâche. Cherchant la mort et animé par la rage, il ravage une région après l'autre, éliminant des hordes de grands guerriers et de bêtes légendaires dans sa recherche d'un ennemi capable de l'arrêter. Aujourd'hui un brutal combattant de la Griffe hivernale, il espère mourir glorieusement dans les grandes guerres à venir.",
   "tags": [
     "Fighter",
@@ -14,7 +14,7 @@
     "full": "Olaf.png",
     "sprite": "champion3.png",
     "group": "champion",
-    "x": 288,
+    "x": 336,
     "y": 0,
     "w": 48,
     "h": 48
@@ -29,7 +29,7 @@
         "sprite": "spell10.png",
         "group": "spell",
         "x": 96,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -67,7 +67,7 @@
         "sprite": "spell10.png",
         "group": "spell",
         "x": 144,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -103,7 +103,7 @@
         "sprite": "spell10.png",
         "group": "spell",
         "x": 192,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -111,7 +111,7 @@
       "maxrank": 5,
       "tooltip": "Olaf frappe violemment avec ses haches, infligeant <trueDamage>{{ totaldamage }} pts de dégâts bruts</trueDamage>. Si l'ennemi meurt, Olaf récupère le coût de cette compétence.<br /><br />Les attaques réduisent de 1 sec le délai de récupération de cette compétence (2 sec contre les monstres).{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
-      "costType": "Coûte  PV",
+      "costType": " PV.",
       "leveltip": {
         "label": [
           "Dégâts",
@@ -122,7 +122,7 @@
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
-      "resource": "Coûte  PV",
+      "resource": "Coûte {{ healthcostcalc }} PV.",
       "rangeBurn": "325",
       "datavalues": {},
       "description": "Olaf attaque avec tant de force qu'il inflige des dégâts physiques bruts non seulement à sa cible, mais aussi à lui-même. Il récupère le coût en PV s'il tue sa cible.",
@@ -137,7 +137,7 @@
         "sprite": "spell10.png",
         "group": "spell",
         "x": 240,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -173,7 +173,7 @@
       "full": "Olaf_Passive.png",
       "sprite": "passive3.png",
       "group": "passive",
-      "x": 288,
+      "x": 336,
       "y": 0,
       "w": 48,
       "h": 48
@@ -201,7 +201,7 @@
         "sprite": "spell10.png",
         "group": "spell",
         "x": 96,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -239,7 +239,7 @@
         "sprite": "spell10.png",
         "group": "spell",
         "x": 144,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -275,7 +275,7 @@
         "sprite": "spell10.png",
         "group": "spell",
         "x": 192,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -283,7 +283,7 @@
       "maxrank": 5,
       "tooltip": "Olaf ferociously swings his axes, dealing <trueDamage>{{ totaldamage }} true damage</trueDamage>. If the enemy dies, the cost is refunded.<br /><br />Attacks lower the Cooldown of this Ability by 1 second, increased to 2 seconds when attacking monsters.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
-      "costType": "Health",
+      "costType": " Health",
       "leveltip": {
         "label": [
           "Damage",
@@ -294,7 +294,7 @@
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
-      "resource": "Health",
+      "resource": "{{ healthcostcalc }} Health",
       "rangeBurn": "325",
       "datavalues": {},
       "description": "Olaf attacks with such force that it deals true damage to his target and himself, refunding the Health cost if he destroys the target.",
@@ -309,7 +309,7 @@
         "sprite": "spell10.png",
         "group": "spell",
         "x": 240,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -345,7 +345,7 @@
       "full": "Olaf_Passive.png",
       "sprite": "passive3.png",
       "group": "passive",
-      "x": 288,
+      "x": 336,
       "y": 0,
       "w": 48,
       "h": 48

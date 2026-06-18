@@ -3,7 +3,7 @@
   "key": "42",
   "name": "Corki",
   "title": "Artilleur téméraire",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Il y a deux choses que Corki, le pilote yordle, aime plus que tout au monde : les sensations de vol et sa fantastique moustache... mais pas nécessairement dans cet ordre. Après avoir quitté Bandle, il s'installa à Piltover, où il tomba amoureux des merveilleuses machines qu'il y trouva. Il consacra tout son temps au développement d'engins volants, tout en menant une unité de défense aérienne composée de pilotes aguerris : les Serpents volants. Serein même sous le feu ennemi, Corki patrouille dans l'espace aérien de sa patrie d'adoption, et il ne rencontre jamais le moindre problème qu'un bon gros missile ne puisse résoudre.",
   "tags": [
     "Marksman",
@@ -26,10 +26,10 @@
       "vars": [],
       "image": {
         "full": "PhosphorusBomb.png",
-        "sprite": "spell2.png",
+        "sprite": "spell3.png",
         "group": "spell",
-        "x": 192,
-        "y": 144,
+        "x": 0,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -62,10 +62,10 @@
       "vars": [],
       "image": {
         "full": "CarpetBomb.png",
-        "sprite": "spell2.png",
+        "sprite": "spell3.png",
         "group": "spell",
-        "x": 240,
-        "y": 144,
+        "x": 48,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -98,10 +98,10 @@
       "vars": [],
       "image": {
         "full": "GGun.png",
-        "sprite": "spell2.png",
+        "sprite": "spell3.png",
         "group": "spell",
-        "x": 288,
-        "y": 144,
+        "x": 96,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -134,10 +134,10 @@
       "vars": [],
       "image": {
         "full": "MissileBarrage.png",
-        "sprite": "spell2.png",
+        "sprite": "spell3.png",
         "group": "spell",
-        "x": 336,
-        "y": 144,
+        "x": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -192,10 +192,10 @@
       "vars": [],
       "image": {
         "full": "PhosphorusBomb.png",
-        "sprite": "spell2.png",
+        "sprite": "spell3.png",
         "group": "spell",
-        "x": 192,
-        "y": 144,
+        "x": 0,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -228,10 +228,10 @@
       "vars": [],
       "image": {
         "full": "CarpetBomb.png",
-        "sprite": "spell2.png",
+        "sprite": "spell3.png",
         "group": "spell",
-        "x": 240,
-        "y": 144,
+        "x": 48,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -264,10 +264,10 @@
       "vars": [],
       "image": {
         "full": "GGun.png",
-        "sprite": "spell2.png",
+        "sprite": "spell3.png",
         "group": "spell",
-        "x": 288,
-        "y": 144,
+        "x": 96,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -300,10 +300,10 @@
       "vars": [],
       "image": {
         "full": "MissileBarrage.png",
-        "sprite": "spell2.png",
+        "sprite": "spell3.png",
         "group": "spell",
-        "x": 336,
-        "y": 144,
+        "x": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -492,5 +492,11 @@
       "chromas": true
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Graves",
+    "Lulu",
+    "Teemo",
+    "Tristana",
+    "Twisted Fate"
+  ]
 }

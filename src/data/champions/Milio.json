@@ -3,7 +3,7 @@
   "key": "902",
   "name": "Milio",
   "title": "Douce flamme",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Milio est un garçon d'Ixtal chaleureux qui, malgré son jeune âge, maîtrise l'Axiome du feu et a découvert le feu guérisseur. Grâce à cette puissance nouvelle, il espère intégrer les Yun Tal, comme sa grand-mère avant lui, et annuler le jugement qui contraint sa famille à l'exil. Après avoir traversé les jungles d'Ixtal pour rejoindre Ixaocan, la capitale, il se prépare à affronter le Vidalion, ignorant tout des épreuves et des dangers qui l'attendent.",
   "tags": [
     "Support",
@@ -14,7 +14,7 @@
     "full": "Milio.png",
     "sprite": "champion2.png",
     "group": "champion",
-    "x": 96,
+    "x": 144,
     "y": 96,
     "w": 48,
     "h": 48
@@ -26,10 +26,10 @@
       "vars": [],
       "image": {
         "full": "MilioQ.png",
-        "sprite": "spell8.png",
+        "sprite": "spell9.png",
         "group": "spell",
         "x": 288,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -62,10 +62,10 @@
       "vars": [],
       "image": {
         "full": "MilioW.png",
-        "sprite": "spell8.png",
+        "sprite": "spell9.png",
         "group": "spell",
         "x": 336,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -100,10 +100,10 @@
       "vars": [],
       "image": {
         "full": "MilioE.png",
-        "sprite": "spell8.png",
+        "sprite": "spell9.png",
         "group": "spell",
         "x": 384,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -138,10 +138,10 @@
       "vars": [],
       "image": {
         "full": "MilioR.png",
-        "sprite": "spell8.png",
+        "sprite": "spell9.png",
         "group": "spell",
         "x": 432,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -173,7 +173,7 @@
       "full": "Milio_P.png",
       "sprite": "passive2.png",
       "group": "passive",
-      "x": 96,
+      "x": 144,
       "y": 96,
       "w": 48,
       "h": 48
@@ -199,10 +199,10 @@
       "vars": [],
       "image": {
         "full": "MilioQ.png",
-        "sprite": "spell8.png",
+        "sprite": "spell9.png",
         "group": "spell",
         "x": 288,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -235,10 +235,10 @@
       "vars": [],
       "image": {
         "full": "MilioW.png",
-        "sprite": "spell8.png",
+        "sprite": "spell9.png",
         "group": "spell",
         "x": 336,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -273,10 +273,10 @@
       "vars": [],
       "image": {
         "full": "MilioE.png",
-        "sprite": "spell8.png",
+        "sprite": "spell9.png",
         "group": "spell",
         "x": 384,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -311,10 +311,10 @@
       "vars": [],
       "image": {
         "full": "MilioR.png",
-        "sprite": "spell8.png",
+        "sprite": "spell9.png",
         "group": "spell",
         "x": 432,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -346,7 +346,7 @@
       "full": "Milio_P.png",
       "sprite": "passive2.png",
       "group": "passive",
-      "x": 96,
+      "x": 144,
       "y": 96,
       "w": 48,
       "h": 48
@@ -409,5 +409,11 @@
       "chromas": true
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Malphite",
+    "Neeko",
+    "Nidalee",
+    "Qiyana",
+    "Zyra"
+  ]
 }

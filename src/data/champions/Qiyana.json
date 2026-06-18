@@ -3,7 +3,7 @@
   "key": "246",
   "name": "Qiyana",
   "title": "Impératrice des éléments",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Dans la ville d'Ixaocan, perdue dans la jungle, Qiyana complote pour obtenir au prix du sang le siège révéré des Yun Tal. Dernière dans l'ordre de la succession, elle affronte ceux qui sont sur son chemin avec une absolue confiance en elle et une maîtrise exceptionnelle de la magie élémentaire. La terre elle-même obéit à ses ordres et Qiyana se considère comme la plus grande élémentaliste de l'histoire d'Ixaocan. À ce titre, elle pense mériter, non une ville, mais un empire.",
   "tags": [
     "Assassin"
@@ -13,7 +13,7 @@
     "full": "Qiyana.png",
     "sprite": "champion3.png",
     "group": "champion",
-    "x": 96,
+    "x": 144,
     "y": 48,
     "w": 48,
     "h": 48
@@ -25,10 +25,10 @@
       "vars": [],
       "image": {
         "full": "QiyanaQ.png",
-        "sprite": "spell10.png",
+        "sprite": "spell11.png",
         "group": "spell",
         "x": 288,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -57,10 +57,10 @@
       "vars": [],
       "image": {
         "full": "QiyanaW.png",
-        "sprite": "spell10.png",
+        "sprite": "spell11.png",
         "group": "spell",
         "x": 336,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -95,10 +95,10 @@
       "vars": [],
       "image": {
         "full": "QiyanaE.png",
-        "sprite": "spell10.png",
+        "sprite": "spell11.png",
         "group": "spell",
         "x": 384,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -131,10 +131,10 @@
       "vars": [],
       "image": {
         "full": "QiyanaR.png",
-        "sprite": "spell10.png",
+        "sprite": "spell11.png",
         "group": "spell",
         "x": 432,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -166,7 +166,7 @@
       "full": "Qiyana_Passive.png",
       "sprite": "passive3.png",
       "group": "passive",
-      "x": 96,
+      "x": 144,
       "y": 48,
       "w": 48,
       "h": 48
@@ -192,10 +192,10 @@
       "vars": [],
       "image": {
         "full": "QiyanaQ.png",
-        "sprite": "spell10.png",
+        "sprite": "spell11.png",
         "group": "spell",
         "x": 288,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -224,10 +224,10 @@
       "vars": [],
       "image": {
         "full": "QiyanaW.png",
-        "sprite": "spell10.png",
+        "sprite": "spell11.png",
         "group": "spell",
         "x": 336,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -262,10 +262,10 @@
       "vars": [],
       "image": {
         "full": "QiyanaE.png",
-        "sprite": "spell10.png",
+        "sprite": "spell11.png",
         "group": "spell",
         "x": 384,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -298,10 +298,10 @@
       "vars": [],
       "image": {
         "full": "QiyanaR.png",
-        "sprite": "spell10.png",
+        "sprite": "spell11.png",
         "group": "spell",
         "x": 432,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -333,7 +333,7 @@
       "full": "Qiyana_Passive.png",
       "sprite": "passive3.png",
       "group": "passive",
-      "x": 96,
+      "x": 144,
       "y": 48,
       "w": 48,
       "h": 48
@@ -469,5 +469,11 @@
       "chromas": false
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Malphite",
+    "Milio",
+    "Rengar",
+    "Skarner",
+    "Zyra"
+  ]
 }

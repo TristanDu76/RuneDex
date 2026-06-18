@@ -3,7 +3,7 @@
   "key": "63",
   "name": "Brand",
   "title": "Vengeur flamboyant",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Autrefois membre d'une tribu de Freljord, Kegan Rodhe est devenu l'être que l'on connaît sous le nom de Brand à force de convoiter des pouvoirs toujours plus grands. Alors qu'il recherchait l'une des légendaires Runes telluriques, Kegan trahit ses compagnons et s'en empara ; en un instant, son âme fut consumée par un brasier qui le changea à jamais. Désormais animé d'un feu inextinguible, Brand parcourt Valoran en quête d'autres runes, jurant vengeance pour des trahisons qu'aucun mortel n'aurait pu subir au cours d'une dizaine de vies.",
   "tags": [
     "Mage",
@@ -28,8 +28,8 @@
         "full": "BrandQ.png",
         "sprite": "spell2.png",
         "group": "spell",
-        "x": 288,
-        "y": 0,
+        "x": 96,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -44,7 +44,7 @@
           "Délai de récupération"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ spellbasedamage }} -> {{ spellbasedamageNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -62,8 +62,8 @@
         "full": "BrandW.png",
         "sprite": "spell2.png",
         "group": "spell",
-        "x": 336,
-        "y": 0,
+        "x": 144,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -98,26 +98,24 @@
         "full": "BrandE.png",
         "sprite": "spell2.png",
         "group": "spell",
-        "x": 384,
-        "y": 0,
+        "x": 192,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
       "tooltip": "Brand provoque une puissante explosion sur sa cible, infligeant <magicDamage>{{ edamagecalc }} pts de dégâts magiques</magicDamage> aux unités proches.<br /><br />Si la cible est <keywordMajor>en flammes</keywordMajor>, la portée de la dispersion est doublée.{{ spellmodifierdescriptionappend }}",
-      "costBurn": "70/75/80/85/90",
+      "costBurn": "90",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Dégâts",
-          "Délai de récupération",
-          "Coût en @AbilityResourceName@"
+          "Délai de récupération"
         ],
         "effect": [
           "{{ basedamage }} -> {{ basedamageNL }}",
-          "{{ cooldown }} -> {{ cooldownNL }}",
-          "{{ cost }} -> {{ costNL }}"
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -134,8 +132,8 @@
         "full": "BrandR.png",
         "sprite": "spell2.png",
         "group": "spell",
-        "x": 432,
-        "y": 0,
+        "x": 240,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -197,8 +195,8 @@
         "full": "BrandQ.png",
         "sprite": "spell2.png",
         "group": "spell",
-        "x": 288,
-        "y": 0,
+        "x": 96,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -213,7 +211,7 @@
           "Cooldown"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
+          "{{ spellbasedamage }} -> {{ spellbasedamageNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -231,8 +229,8 @@
         "full": "BrandW.png",
         "sprite": "spell2.png",
         "group": "spell",
-        "x": 336,
-        "y": 0,
+        "x": 144,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -267,26 +265,24 @@
         "full": "BrandE.png",
         "sprite": "spell2.png",
         "group": "spell",
-        "x": 384,
-        "y": 0,
+        "x": 192,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
       "tooltip": "Brand conjures a powerful blast at his target, dealing <magicDamage>{{ edamagecalc }} magic damage</magicDamage> to surrounding units.<br /><br />If the target is <keywordMajor>Ablaze</keywordMajor>, the spread range is doubled.{{ spellmodifierdescriptionappend }}",
-      "costBurn": "70/75/80/85/90",
+      "costBurn": "90",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Damage",
-          "Cooldown",
-          "@AbilityResourceName@ Cost"
+          "Cooldown"
         ],
         "effect": [
           "{{ basedamage }} -> {{ basedamageNL }}",
-          "{{ cooldown }} -> {{ cooldownNL }}",
-          "{{ cost }} -> {{ costNL }}"
+          "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
@@ -303,8 +299,8 @@
         "full": "BrandR.png",
         "sprite": "spell2.png",
         "group": "spell",
-        "x": 432,
-        "y": 0,
+        "x": 240,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -428,6 +424,12 @@
       "num": 42,
       "name": "Empyrean Brand",
       "chromas": true
+    },
+    {
+      "id": "63053",
+      "num": 53,
+      "name": "Sinful Shores Brand",
+      "chromas": false
     }
   ],
   "skins": [
@@ -508,6 +510,12 @@
       "num": 42,
       "name": "Brand empyréen",
       "chromas": true
+    },
+    {
+      "id": "63053",
+      "num": 53,
+      "name": "Brand des rivages impies",
+      "chromas": false
     }
   ],
   "related_characters": [

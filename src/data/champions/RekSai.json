@@ -3,7 +3,7 @@
   "key": "421",
   "name": "Rek'Sai",
   "title": "Traqueuse du Néant",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Rek'Sai est une créature prédatrice – la plus imposante et la plus féroce de son espèce – qui se déplace sous terre pour surprendre ses proies. Sa faim insatiable a ravagé des régions entières de Shurima à l'époque où cet empire était encore florissant. Les marchands et les caravanes armées faisaient des détours de plusieurs kilomètres pour rester loin de ses terres. Dès lors que Rek'Sai vous a repéré, votre sort est scellé. Nul ne peut lui échapper ; elle est la mort qui surgit du sable.",
   "tags": [
     "Fighter",
@@ -14,7 +14,7 @@
     "full": "RekSai.png",
     "sprite": "champion3.png",
     "group": "champion",
-    "x": 288,
+    "x": 336,
     "y": 48,
     "w": 48,
     "h": 48
@@ -29,7 +29,7 @@
         "sprite": "spell11.png",
         "group": "spell",
         "x": 96,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -65,7 +65,7 @@
         "sprite": "spell11.png",
         "group": "spell",
         "x": 144,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -101,13 +101,13 @@
         "sprite": "spell11.png",
         "group": "spell",
         "x": 192,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<keywordMajor>En surface :</keywordMajor> Rek'Sai mord une cible et lui inflige <physicalDamage>{{ spell.reksaie:basedamage }} pts de dégâts physiques</physicalDamage>. Au maximum de <keywordMajor>Fureur</keywordMajor>, cette morsure inflige à la place <trueDamage>{{ spell.reksaie:empowereddamage }} pts de dégâts bruts</trueDamage>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<keywordMajor>En surface</keywordMajor> : Rek'Sai mord une cible et lui inflige <physicalDamage>{{ spell.reksaie:basedamagecalculation }} pts de dégâts physiques</physicalDamage>. Au maximum de <keywordMajor>Fureur</keywordMajor>, cette morsure inflige à la place <trueDamage>{{ spell.reksaie:empowereddamagecalculation }} pts de dégâts bruts</trueDamage>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": "Pas de coût",
       "leveltip": {
@@ -118,8 +118,8 @@
           "Délai de récupération de l'utilisation de Tunnel"
         ],
         "effect": [
-          "{{ empoweredbasedamage*0.800000 }} -> {{ empoweredbasedamagenl*0.800000 }}",
-          "{{ empoweredbasedamage }} -> {{ empoweredbasedamageNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ basedamage*1.200000 }} -> {{ basedamagenl*1.200000 }}",
           "{{ dashcooldown }} -> {{ dashcooldownNL }}",
           "{{ tunnelreusecooldown }} -> {{ tunnelreusecooldownNL }}"
         ]
@@ -139,7 +139,7 @@
         "sprite": "spell11.png",
         "group": "spell",
         "x": 240,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -173,7 +173,7 @@
       "full": "RekSai_Passive.png",
       "sprite": "passive3.png",
       "group": "passive",
-      "x": 288,
+      "x": 336,
       "y": 48,
       "w": 48,
       "h": 48
@@ -202,7 +202,7 @@
         "sprite": "spell11.png",
         "group": "spell",
         "x": 96,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -238,7 +238,7 @@
         "sprite": "spell11.png",
         "group": "spell",
         "x": 144,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -274,13 +274,13 @@
         "sprite": "spell11.png",
         "group": "spell",
         "x": 192,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<keywordMajor>Unburrowed:</keywordMajor> Rek'Sai bites a target, dealing <physicalDamage>{{ spell.reksaie:basedamage }} physical damage</physicalDamage>. At max <keywordMajor>Fury</keywordMajor>, the bite deals <trueDamage>{{ spell.reksaie:empowereddamage }} true damage</trueDamage> instead.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<keywordMajor>Unburrowed:</keywordMajor> Rek'Sai bites a target, dealing <physicalDamage>{{ spell.reksaie:basedamagecalculation }} physical damage</physicalDamage>. At max <keywordMajor>Fury</keywordMajor>, the bite deals <trueDamage>{{ spell.reksaie:empowereddamagecalculation }} true damage</trueDamage> instead.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": "No Cost",
       "leveltip": {
@@ -291,8 +291,8 @@
           "Tunnel Use Cooldown"
         ],
         "effect": [
-          "{{ empoweredbasedamage*0.800000 }} -> {{ empoweredbasedamagenl*0.800000 }}",
-          "{{ empoweredbasedamage }} -> {{ empoweredbasedamageNL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ basedamage*1.200000 }} -> {{ basedamagenl*1.200000 }}",
           "{{ dashcooldown }} -> {{ dashcooldownNL }}",
           "{{ tunnelreusecooldown }} -> {{ tunnelreusecooldownNL }}"
         ]
@@ -312,7 +312,7 @@
         "sprite": "spell11.png",
         "group": "spell",
         "x": 240,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -346,7 +346,7 @@
       "full": "RekSai_Passive.png",
       "sprite": "passive3.png",
       "group": "passive",
-      "x": 288,
+      "x": 336,
       "y": 48,
       "w": 48,
       "h": 48
@@ -433,5 +433,10 @@
       "chromas": true
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Kai'Sa",
+    "Skarner",
+    "Taliyah",
+    "Yuumi"
+  ]
 }

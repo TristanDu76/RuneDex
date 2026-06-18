@@ -3,7 +3,7 @@
   "key": "221",
   "name": "Zeri",
   "title": "Étincelle de Zaun",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Zeri est une jeune femme vive et téméraire originaire des quartiers défavorisés de Zaun. Elle canalise son électricité intérieure afin de la charger dans un fusil conçu spécialement pour elle. Son pouvoir magique est le reflet de ses émotions, et ses étincelles sont aussi fulgurantes que son caractère. Résolument tournée vers les autres, Zeri se sert de son amour pour sa famille et son quartier durant chaque combat. Malgré toute sa bonne volonté, cependant, les événements ne se passent pas toujours comme prévu. Cela dit, Zeri est sûre d'une chose : si vous vous battez pour votre communauté, elle se battra avec vous.",
   "tags": [
     "Marksman"
@@ -13,7 +13,7 @@
     "full": "Zeri.png",
     "sprite": "champion5.png",
     "group": "champion",
-    "x": 336,
+    "x": 384,
     "y": 48,
     "w": 48,
     "h": 48
@@ -28,7 +28,7 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 288,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -62,7 +62,7 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 336,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -100,13 +100,13 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 384,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Zeri effectue une courte ruée et bondit par-dessus les obstacles qu'elle touche, ce qui augmente considérablement la distance parcourue. Pendant les {{ buffduration }} prochaines secondes, ses activations de <spellName>Rafale</spellName> sont perforantes et infligent {{ pendamagepercent*100 }}% de dégâts aux ennemis au-delà du premier. Elles infligent également <magicDamage>{{ bonusdamagetotal }} pts de dégâts magiques</magicDamage> supplémentaires à l'impact à la première cible touchée. <br /><br />Toucher un champion ennemi avec une attaque ou une compétence réduit de {{ cdreductionperhit }} sec le délai de récupération de cette compétence. Les coups critiques réduisent de {{ critcdreductionperhit }} sec le délai de récupération.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Zeri effectue une courte ruée et bondit par-dessus les obstacles qu'elle touche, ce qui augmente considérablement la distance parcourue. Pendant les {{ buffduration }} prochaines secondes, ses tirs de <spellName>Rafale</spellName> sont perforants et infligent {{ pendamagepercent*100 }}% de dégâts aux ennemis au-delà du premier. Ils infligent également <magicDamage>{{ bonusdamagetotal }} pts de dégâts magiques</magicDamage> bonus à l'impact à la première cible touchée. <br /><br />Toucher un ennemi avec une attaque réduit de {{ cdreductionperhit }} sec le délai de récupération de cette compétence. Les coups critiques réduisent de {{ critcdreductionperhit }} sec le délai de récupération.{{ spellmodifierdescriptionappend }}",
       "costBurn": "90/85/80/75/70",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -126,8 +126,8 @@
       "resource": "{{ cost }} {{ abilityresourcename }}",
       "rangeBurn": "25000",
       "datavalues": {},
-      "description": "Zeri effectue une courte ruée et renforce ses 3 prochaines Rafales, qui deviennent perforantes. Elle bondit par-dessus tous les obstacles qu'elle touche.",
-      "cooldownBurn": "22/21/20/19/18"
+      "description": "Zeri effectue une courte ruée et renforce Rafale, qui devient perforante. Elle bondit par-dessus tous les obstacles qu'elle touche.",
+      "cooldownBurn": "24/22.5/21/19.5/18"
     },
     {
       "id": "ZeriR",
@@ -138,7 +138,7 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 432,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -150,10 +150,12 @@
       "leveltip": {
         "label": [
           "Dégâts",
+          "Vitesse de déplacement",
           "Délai de récupération"
         ],
         "effect": [
           "{{ activedamage }} -> {{ activedamageNL }}",
+          "{{ mspercent*100.000000 }}% -> {{ mspercentnl*100.000000 }}%",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -170,7 +172,7 @@
       "full": "ZeriP.png",
       "sprite": "passive5.png",
       "group": "passive",
-      "x": 336,
+      "x": 384,
       "y": 48,
       "w": 48,
       "h": 48
@@ -196,7 +198,7 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 288,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -230,7 +232,7 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 336,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -268,13 +270,13 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 384,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Zeri dashes a short distance and vaults over any terrain she touches, greatly extending the dash range. For the next {{ buffduration }} seconds, her shots of <spellName>Burst Fire</spellName> pierce dealing {{ pendamagepercent*100 }}% damage to enemies after the first and an additional <magicDamage>{{ bonusdamagetotal }} magic damage</magicDamage> On-Hit to the first target struck. <br /><br />Hitting an enemy champion with an Attack or Ability reduces this Ability's cooldown by {{ cdreductionperhit }} seconds. Critical strikes reduce the cooldown by {{ critcdreductionperhit }} seconds instead.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Zeri dashes a short distance and vaults over any terrain she touches, greatly extending the dash range. For the next {{ buffduration }} seconds, her shots of <spellName>Burst Fire</spellName> pierce dealing {{ pendamagepercent*100 }}% damage to enemies after the first and an additional <magicDamage>{{ bonusdamagetotal }} magic damage</magicDamage> On-Hit to the first target struck. <br /><br />Hitting an enemy with an Attack reduces this Ability's cooldown by {{ cdreductionperhit }} seconds. Critical strikes reduce the cooldown by {{ critcdreductionperhit }} seconds instead.{{ spellmodifierdescriptionappend }}",
       "costBurn": "90/85/80/75/70",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -294,8 +296,8 @@
       "resource": "{{ cost }} {{ abilityresourcename }}",
       "rangeBurn": "25000",
       "datavalues": {},
-      "description": "Zeri dashes a short distance and energizes her next 3 shots of Burst Fire, causing them to pierce through enemies. She will vault and grind over any terrain she touches.",
-      "cooldownBurn": "22/21/20/19/18"
+      "description": "Zeri dashes a short distance and energizes Burst Fire to pierce through enemies. She will vault and grind over any terrain she touches.",
+      "cooldownBurn": "24/22.5/21/19.5/18"
     },
     {
       "id": "ZeriR",
@@ -306,7 +308,7 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 432,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -318,10 +320,12 @@
       "leveltip": {
         "label": [
           "Damage",
+          "Move Speed",
           "Cooldown"
         ],
         "effect": [
           "{{ activedamage }} -> {{ activedamageNL }}",
+          "{{ mspercent*100.000000 }}% -> {{ mspercentnl*100.000000 }}%",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -338,7 +342,7 @@
       "full": "ZeriP.png",
       "sprite": "passive5.png",
       "group": "passive",
-      "x": 336,
+      "x": 384,
       "y": 48,
       "w": 48,
       "h": 48
@@ -437,5 +441,12 @@
       "chromas": true
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Blitzcrank",
+    "Ekko",
+    "Janna",
+    "Renata Glasc",
+    "Urgot",
+    "Vi"
+  ]
 }

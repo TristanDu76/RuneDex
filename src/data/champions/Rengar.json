@@ -3,7 +3,7 @@
   "key": "107",
   "name": "Rengar",
   "title": "Fier traqueur",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Rengar est un féroce Vastaya chasseur de trophées qui ne vit que pour le frisson de la traque et de l'élimination des proies les plus dangereuses. Il parcourt le monde à la recherche des bêtes les plus féroces, et surtout de Kha'Zix, la créature du Néant qui lui a fait perdre un œil. Rengar ne piste ses proies ni pour la nourriture ni pour la gloire, mais pour la beauté de la poursuite en elle-même.",
   "tags": [
     "Assassin",
@@ -14,7 +14,7 @@
     "full": "Rengar.png",
     "sprite": "champion3.png",
     "group": "champion",
-    "x": 0,
+    "x": 48,
     "y": 96,
     "w": 48,
     "h": 48
@@ -29,7 +29,7 @@
         "sprite": "spell11.png",
         "group": "spell",
         "x": 384,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -63,7 +63,7 @@
         "sprite": "spell11.png",
         "group": "spell",
         "x": 432,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -94,10 +94,10 @@
       "vars": [],
       "image": {
         "full": "RengarE.png",
-        "sprite": "spell11.png",
+        "sprite": "spell12.png",
         "group": "spell",
         "x": 0,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -128,10 +128,10 @@
       "vars": [],
       "image": {
         "full": "RengarR.png",
-        "sprite": "spell11.png",
+        "sprite": "spell12.png",
         "group": "spell",
         "x": 48,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -169,7 +169,7 @@
       "full": "Rengar_P.png",
       "sprite": "passive3.png",
       "group": "passive",
-      "x": 0,
+      "x": 48,
       "y": 96,
       "w": 48,
       "h": 48
@@ -198,7 +198,7 @@
         "sprite": "spell11.png",
         "group": "spell",
         "x": 384,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -232,7 +232,7 @@
         "sprite": "spell11.png",
         "group": "spell",
         "x": 432,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -263,10 +263,10 @@
       "vars": [],
       "image": {
         "full": "RengarE.png",
-        "sprite": "spell11.png",
+        "sprite": "spell12.png",
         "group": "spell",
         "x": 0,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -297,10 +297,10 @@
       "vars": [],
       "image": {
         "full": "RengarR.png",
-        "sprite": "spell11.png",
+        "sprite": "spell12.png",
         "group": "spell",
         "x": 48,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -338,7 +338,7 @@
       "full": "Rengar_P.png",
       "sprite": "passive3.png",
       "group": "passive",
-      "x": 0,
+      "x": 48,
       "y": 96,
       "w": 48,
       "h": 48
@@ -403,6 +403,12 @@
       "num": 40,
       "name": "Street Demons Rengar",
       "chromas": true
+    },
+    {
+      "id": "107049",
+      "num": 49,
+      "name": "Victorious Rengar",
+      "chromas": true
     }
   ],
   "skins": [
@@ -458,6 +464,12 @@
       "id": "107040",
       "num": 40,
       "name": "Rengar ville démoniaque",
+      "chromas": true
+    },
+    {
+      "id": "107049",
+      "num": 49,
+      "name": "Rengar héros de guerre",
       "chromas": true
     }
   ],

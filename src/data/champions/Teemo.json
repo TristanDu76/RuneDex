@@ -3,7 +3,7 @@
   "key": "17",
   "name": "Teemo",
   "title": "Éclaireur de Bandle",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "N'ayant pas peur de braver les obstacles les plus dangereux, Teemo explore le monde avec un enthousiasme débordant et une bonne humeur contagieuse. Yordle au sens moral inflexible, il suit fièrement les préceptes du Code des éclaireurs de Bandle, parfois avec tant d'empressement qu'il en oublie les conséquences néfastes de ses actions. Pour certains, l'existence même des éclaireurs est à remettre en cause. Mais ce qu'il ne faut surtout pas remettre en cause, ce sont les convictions de Teemo !",
   "tags": [
     "Marksman",
@@ -14,7 +14,7 @@
     "full": "Teemo.png",
     "sprite": "champion4.png",
     "group": "champion",
-    "x": 288,
+    "x": 336,
     "y": 48,
     "w": 48,
     "h": 48
@@ -29,7 +29,7 @@
         "sprite": "spell14.png",
         "group": "spell",
         "x": 96,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -65,7 +65,7 @@
         "sprite": "spell14.png",
         "group": "spell",
         "x": 144,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -99,13 +99,13 @@
         "sprite": "spell14.png",
         "group": "spell",
         "x": 192,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive :</spellPassive> les attaques de Teemo empoisonnent sa cible, infligeant <magicDamage>{{ impactcalculateddamage }} pts de dégâts magiques</magicDamage> supplémentaires plus <magicDamage>{{ totaldotdamage }} pts de dégâts magiques</magicDamage> en {{ poisonduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive :</spellPassive> les attaques de Teemo empoisonnent sa cible %i:OnHit% <OnHit>à l'impact</OnHit>, infligeant <magicDamage>{{ impactcalculateddamage }} pts de dégâts magiques</magicDamage> bonus plus <magicDamage>{{ totaldotdamage }} pts de dégâts magiques</magicDamage> en {{ poisonduration }} sec.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": "Compétence passive",
       "leveltip": {
@@ -121,7 +121,7 @@
       "resource": "Compétence passive",
       "rangeBurn": "680",
       "datavalues": {},
-      "description": "Toutes les attaques de Teemo empoisonnent la cible, infligeant des dégâts à l'impact puis chaque seconde pendant 4 sec.",
+      "description": "Toutes les attaques de Teemo empoisonnent la cible, infligeant des dégâts %i:OnHit% <OnHit>à l'impact</OnHit> puis chaque seconde pendant 4 sec.",
       "cooldownBurn": "0"
     },
     {
@@ -133,13 +133,13 @@
         "sprite": "spell14.png",
         "group": "spell",
         "x": 240,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "3",
       "maxrank": 3,
-      "tooltip": "Teemo lance un champignon qui explose quand un ennemi marche dessus. Les pièges appliquent un <status>ralentissement</status> de {{ slowamount }}% et infligent <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> en {{ debuffduration }} sec. Les ennemis sont révélés pendant la même durée.<br /><br />Les pièges durent {{ mushroomduration }} min et sont furtifs. Un champignon lancé sur un autre champignon rebondit avant de se planter dans le sol. Cette compétence a {{ maxammo }} charges ({{ ammorechargetime }} sec de rechargement).<br />{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Teemo lance un champignon qui explose quand un ennemi marche dessus. Les pièges appliquent un <status>ralentissement</status> de {{ slowamount }}% et infligent <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> en {{ debuffduration }} sec. Les ennemis sont révélés pendant la même durée.<br /><br />Les pièges durent {{ mushroomduration }} minutes et sont camouflés. Un champignon lancé sur un autre champignon rebondit avant de se planter dans le sol. Cette compétence a {{ maxammo }} charges ({{ ammorechargetime }} sec de rechargement).<br />{{ spellmodifierdescriptionappend }}",
       "costBurn": "75/55/35",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -170,10 +170,10 @@
   "passive": {
     "name": "Guérilla",
     "image": {
-      "full": "TeemoPassive.ASU_Teemo.png",
+      "full": "TeemoPassive.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 288,
+      "x": 336,
       "y": 48,
       "w": 48,
       "h": 48
@@ -201,7 +201,7 @@
         "sprite": "spell14.png",
         "group": "spell",
         "x": 96,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -237,7 +237,7 @@
         "sprite": "spell14.png",
         "group": "spell",
         "x": 144,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -271,13 +271,13 @@
         "sprite": "spell14.png",
         "group": "spell",
         "x": 192,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive:</spellPassive> Teemo's Attacks apply poison, dealing an additional <magicDamage>{{ impactcalculateddamage }} magic damage</magicDamage> plus <magicDamage>{{ totaldotdamage }} magic damage</magicDamage> over {{ poisonduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive:</spellPassive> Teemo's Attacks apply poison %i:OnHit% <OnHit>On-Hit</OnHit>, dealing an additional <magicDamage>{{ impactcalculateddamage }} magic damage</magicDamage> plus <magicDamage>{{ totaldotdamage }} magic damage</magicDamage> over {{ poisonduration }} seconds.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": "Passive",
       "leveltip": {
@@ -293,7 +293,7 @@
       "resource": "Passive",
       "rangeBurn": "680",
       "datavalues": {},
-      "description": "Each of Teemo's attacks will poison the target, dealing damage on impact and each second after for 4 seconds.",
+      "description": "Each of Teemo's attacks will poison the target %i:OnHit% <OnHit>On-Hit</OnHit>, dealing damage on impact and each second after for 4 seconds.",
       "cooldownBurn": "0"
     },
     {
@@ -305,7 +305,7 @@
         "sprite": "spell14.png",
         "group": "spell",
         "x": 240,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -342,10 +342,10 @@
   "passive_en": {
     "name": "Guerrilla Warfare",
     "image": {
-      "full": "TeemoPassive.ASU_Teemo.png",
+      "full": "TeemoPassive.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 288,
+      "x": 336,
       "y": 48,
       "w": 48,
       "h": 48

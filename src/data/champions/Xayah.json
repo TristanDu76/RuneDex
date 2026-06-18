@@ -3,7 +3,7 @@
   "key": "498",
   "name": "Xayah",
   "title": "Rebelle",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Précise et meurtrière, Xayah est une révolutionnaire vastaya menant une guerre personnelle dans le but de sauver son peuple. Elle se sert de sa célérité, de sa ruse et de ses plumes tranchantes comme des rasoirs pour terrasser tous ceux qui se dressent sur sa route. Xayah se bat aux côtés de son partenaire et amant, Rakan, pour défendre leur tribu dépérissante et rendre à leur race ce qu'elle considère être sa gloire d'antan.",
   "tags": [
     "Marksman"
@@ -13,7 +13,7 @@
     "full": "Xayah.png",
     "sprite": "champion5.png",
     "group": "champion",
-    "x": 288,
+    "x": 336,
     "y": 0,
     "w": 48,
     "h": 48
@@ -28,7 +28,7 @@
         "sprite": "spell16.png",
         "group": "spell",
         "x": 96,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -62,13 +62,13 @@
         "sprite": "spell16.png",
         "group": "spell",
         "x": 144,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Xayah crée une tempête de lames pendant {{ e2 }} sec, ce qui lui octroie <attackSpeed>+{{ e1 }}% de vitesse d'attaque</attackSpeed> et permet à ses attaques de tirer une lame secondaire qui inflige {{ bonusdamagepercent }}% de dégâts.<br /><br />Quand la lame secondaire touche un champion, Xayah gagne <speed>+{{ e3 }}% de vitesse de déplacement</speed> pendant {{ e4 }} sec.<br /><br />Si Rakan est proche, il profite lui aussi des effets de cette compétence, mais il gagne le bonus en <speed>vitesse de déplacement</speed> uniquement quand <i>Xayah</i> frappe une cible.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Xayah crée une tempête de lames pendant {{ wattackspeedduration }} sec, ce qui lui octroie <attackSpeed>{{ wattackspeedamount }}% de vitesse d'attaque</attackSpeed> et permet à ses attaques de tirer une lame secondaire qui inflige {{ bonusdamagepercent }}% de dégâts.<br /><br />Quand la lame secondaire touche un champion, Xayah gagne <speed>{{ wmovespeedamount }}% de vitesse de déplacement</speed> pendant {{ wmovespeedduration }} sec.<br /><br />Si Rakan est proche, il profite lui aussi des effets de cette compétence, mais il gagne le bonus en <speed>vitesse de déplacement</speed> uniquement quand <i>Xayah</i> frappe une cible.{{ spellmodifierdescriptionappend }}",
       "costBurn": "60/55/50/45/40",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -78,7 +78,7 @@
           "Coût en @AbilityResourceName@"
         ],
         "effect": [
-          "{{ e1 }}% -> {{ e1NL }}%",
+          "{{ wattackspeedamount }}% -> {{ wattackspeedamountNL }}%",
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ cost }} -> {{ costNL }}"
         ]
@@ -98,7 +98,7 @@
         "sprite": "spell16.png",
         "group": "spell",
         "x": 192,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -132,7 +132,7 @@
         "sprite": "spell16.png",
         "group": "spell",
         "x": 240,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -164,7 +164,7 @@
       "full": "XayahPassive.png",
       "sprite": "passive5.png",
       "group": "passive",
-      "x": 288,
+      "x": 336,
       "y": 0,
       "w": 48,
       "h": 48
@@ -192,7 +192,7 @@
         "sprite": "spell16.png",
         "group": "spell",
         "x": 96,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -226,13 +226,13 @@
         "sprite": "spell16.png",
         "group": "spell",
         "x": 144,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Xayah creates a storm of blades for {{ e2 }} seconds that grants her <attackSpeed>{{ e1 }}% Attack Speed</attackSpeed> and cause her Attacks to fire a secondary blade that deals {{ bonusdamagepercent }}% damage.<br /><br />When the secondary blade hits a champion, she grants herself <speed>{{ e3 }}% Move Speed</speed> for {{ e4 }} seconds.<br /><br />If Rakan is nearby he will also gain the effects of this Ability, except he gains <speed>Move Speed</speed> when <i>Xayah</i> strikes a target.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Xayah creates a storm of blades for {{ wattackspeedduration }} seconds that grants her <attackSpeed>{{ wattackspeedamount }}% Attack Speed</attackSpeed> and cause her Attacks to fire a secondary blade that deals {{ bonusdamagepercent }}% damage.<br /><br />When the secondary blade hits a champion, she grants herself <speed>{{ wmovespeedamount }}% Move Speed</speed> for {{ wmovespeedduration }} seconds.<br /><br />If Rakan is nearby he will also gain the effects of this Ability, except he gains <speed>Move Speed</speed> when <i>Xayah</i> strikes a target.{{ spellmodifierdescriptionappend }}",
       "costBurn": "60/55/50/45/40",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -242,7 +242,7 @@
           "@AbilityResourceName@ Cost"
         ],
         "effect": [
-          "{{ e1 }}% -> {{ e1NL }}%",
+          "{{ wattackspeedamount }}% -> {{ wattackspeedamountNL }}%",
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ cost }} -> {{ costNL }}"
         ]
@@ -262,7 +262,7 @@
         "sprite": "spell16.png",
         "group": "spell",
         "x": 192,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -296,7 +296,7 @@
         "sprite": "spell16.png",
         "group": "spell",
         "x": 240,
-        "y": 0,
+        "y": 96,
         "w": 48,
         "h": 48
       },
@@ -328,7 +328,7 @@
       "full": "XayahPassive.png",
       "sprite": "passive5.png",
       "group": "passive",
-      "x": 288,
+      "x": 336,
       "y": 0,
       "w": 48,
       "h": 48

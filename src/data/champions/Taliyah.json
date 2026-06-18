@@ -3,7 +3,7 @@
   "key": "163",
   "name": "Taliyah",
   "title": "Tisseuse de pierres",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Taliyah est une mage issue des tribus nomades de Shurima, déchirée entre l'émerveillement de la jeunesse et les responsabilités des adultes. Elle a déjà traversé pratiquement tout Valoran pour découvrir la véritable nature de ses pouvoirs toujours plus puissants, avant d'être récemment retournée dans sa tribu pour la protéger. Certains se méprennent sur sa compassion et paient leur erreur au prix fort : sous son attitude joviale, Taliyah dissimule une volonté de fer capable de déplacer les montagnes et un esprit assez féroce pour faire trembler la terre.",
   "tags": [
     "Mage",
@@ -14,7 +14,7 @@
     "full": "Taliyah.png",
     "sprite": "champion4.png",
     "group": "champion",
-    "x": 144,
+    "x": 192,
     "y": 48,
     "w": 48,
     "h": 48
@@ -26,16 +26,16 @@
       "vars": [],
       "image": {
         "full": "TaliyahQ.png",
-        "sprite": "spell13.png",
+        "sprite": "spell14.png",
         "group": "spell",
         "x": 0,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Taliyah lance 5 pierres, chacune infligeant <magicDamage>{{ rockdamage }} pts de dégâts magiques</magicDamage> dans une zone autour du premier ennemi touché et créant un sol ouvragé dans cette même zone. Les coups subséquents contre un même ennemi infligent {{ extramissilereduceddamagepercent }}% de dégâts en moins.<br /><br />Si elle est utilisée sur un sol ouvragé, cette compétence coûte {{ e7 }} pts de mana, a un délai de récupération réduit de {{ workedgroundcdr*100 }}%, dissipe le sol ouvragé et lance un rocher qui <status>ralentit</status> les ennemis touchés de {{ slowpercent*100 }}% pendant {{ slowduration }} sec et qui inflige <magicDamage>{{ bigrockdamage }} pts de dégâts magiques</magicDamage> à la cible principale. Les monstres touchés par le rocher sont <status>étourdis</status> pendant {{ monsterstunduration }} sec.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Taliyah lance 5 pierres, chacune infligeant <magicDamage>{{ rockdamage }} pts de dégâts magiques</magicDamage> dans une zone autour du premier ennemi touché et créant un sol ouvragé dans cette même zone. Les coups suivants contre la même cible infligent {{ extramissilereduceddamagepercent }}% de dégâts en moins.<br /><br />Si elle est utilisée sur un sol ouvragé, cette compétence coûte {{ bigrockmanacost }} pts de mana, a un délai de récupération réduit de {{ workedgroundcdr*100 }}%, dissipe le sol ouvragé et lance un rocher qui <status>ralentit</status> les ennemis touchés de {{ slowpercent*100 }}% pendant {{ slowduration }} sec et qui inflige <magicDamage>{{ bigrockdamage }} pts de dégâts magiques</magicDamage> à la cible principale. Les monstres touchés par le rocher sont <status>étourdis</status> pendant {{ monsterstunduration }} sec.{{ spellmodifierdescriptionappend }}",
       "costBurn": "55/60/65/70/75",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -66,10 +66,10 @@
       "vars": [],
       "image": {
         "full": "TaliyahWVC.png",
-        "sprite": "spell13.png",
+        "sprite": "spell14.png",
         "group": "spell",
         "x": 48,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -100,10 +100,10 @@
       "vars": [],
       "image": {
         "full": "TaliyahE.png",
-        "sprite": "spell13.png",
+        "sprite": "spell14.png",
         "group": "spell",
         "x": 96,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -134,16 +134,16 @@
       "vars": [],
       "image": {
         "full": "TaliyahR.png",
-        "sprite": "spell13.png",
+        "sprite": "spell14.png",
         "group": "spell",
         "x": 144,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "Taliyah crée un très long mur de terre pendant {{ e1 }} sec. Si elle <recast>réactive</recast> immédiatement cette compétence, elle peut surfer sur le mur pendant qu'il s'étend. Si elle se déplace ou si elle est immobilisée, le surf prend fin.<br /><br />Cette compétence ne peut pas être utilisée si des champions ou des bâtiments ont blessé Taliyah il y a moins de {{ damagelockouttime }} sec.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Taliyah crée un très long mur de terre pendant {{ wallduration }} sec. Si elle <recast>réactive</recast> immédiatement cette compétence, elle peut surfer sur le mur pendant qu'il s'étend. Si elle se déplace ou si elle est immobilisée, le surf prend fin.<br /><br />Cette compétence ne peut pas être utilisée si des champions ou des bâtiments ont blessé Taliyah il y a moins de {{ damagelockouttime }} sec.{{ spellmodifierdescriptionappend }}",
       "costBurn": "100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -169,7 +169,7 @@
       "full": "Taliyah_Passive.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 144,
+      "x": 192,
       "y": 48,
       "w": 48,
       "h": 48
@@ -194,16 +194,16 @@
       "vars": [],
       "image": {
         "full": "TaliyahQ.png",
-        "sprite": "spell13.png",
+        "sprite": "spell14.png",
         "group": "spell",
         "x": 0,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Taliyah hurls 5 rocks, each dealing <magicDamage>{{ rockdamage }} magic damage</magicDamage> in an area around the first enemy hit while creating Worked Ground at that area. Subsequent hits against the same enemy deal {{ extramissilereduceddamagepercent }}% less damage.<br /><br />Casts on worked ground cost {{ e7 }} Mana and have {{ workedgroundcdr*100 }}% less Cooldown, consume the Worked Ground, and hurl a boulder that <status>Slows</status> enemies it hits by {{ slowpercent*100 }}% for {{ slowduration }} seconds, dealing <magicDamage>{{ bigrockdamage }} magic damage</magicDamage> to the primary target. Monsters hit by the boulder are <status>Stunned</status> for {{ monsterstunduration }} seconds.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Taliyah hurls 5 rocks, each dealing <magicDamage>{{ rockdamage }} magic damage</magicDamage> in an area around the first enemy hit while creating Worked Ground at that area. Subsequent hits against the same enemy deal {{ extramissilereduceddamagepercent }}% less damage.<br /><br />Casts on worked ground cost {{ bigrockmanacost }} Mana and have {{ workedgroundcdr*100 }}% less Cooldown, consume the Worked Ground, and hurl a boulder that <status>Slows</status> enemies it hits by {{ slowpercent*100 }}% for {{ slowduration }} seconds, dealing <magicDamage>{{ bigrockdamage }} magic damage</magicDamage> to the primary target. Monsters hit by the boulder are <status>Stunned</status> for {{ monsterstunduration }} seconds.{{ spellmodifierdescriptionappend }}",
       "costBurn": "55/60/65/70/75",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -234,10 +234,10 @@
       "vars": [],
       "image": {
         "full": "TaliyahWVC.png",
-        "sprite": "spell13.png",
+        "sprite": "spell14.png",
         "group": "spell",
         "x": 48,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -268,10 +268,10 @@
       "vars": [],
       "image": {
         "full": "TaliyahE.png",
-        "sprite": "spell13.png",
+        "sprite": "spell14.png",
         "group": "spell",
         "x": 96,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -302,16 +302,16 @@
       "vars": [],
       "image": {
         "full": "TaliyahR.png",
-        "sprite": "spell13.png",
+        "sprite": "spell14.png",
         "group": "spell",
         "x": 144,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "Taliyah creates a massive earthen wall for {{ e1 }} seconds. If she immediately <recast>Recasts</recast>, she will ride along the wall as it unravels. Moving or being immobilized will end the ride.<br /><br />This ability cannot be cast if Taliyah has taken damage from Champions or structures within the last {{ damagelockouttime }} seconds.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Taliyah creates a massive earthen wall for {{ wallduration }} seconds. If she immediately <recast>Recasts</recast>, she will ride along the wall as it unravels. Moving or being immobilized will end the ride.<br /><br />This ability cannot be cast if Taliyah has taken damage from Champions or structures within the last {{ damagelockouttime }} seconds.{{ spellmodifierdescriptionappend }}",
       "costBurn": "100",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -337,7 +337,7 @@
       "full": "Taliyah_Passive.png",
       "sprite": "passive4.png",
       "group": "passive",
-      "x": 144,
+      "x": 192,
       "y": 48,
       "w": 48,
       "h": 48

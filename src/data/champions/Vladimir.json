@@ -3,7 +3,7 @@
   "key": "8",
   "name": "Vladimir",
   "title": "Saigneur pourpre",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Assoiffé de sang humain, Vladimir influe sur la politique de Noxus depuis les premiers jours de l'empire. En plus d'allonger surnaturellement sa vie, sa maîtrise de l'hémomancie lui permet de contrôler les esprits et les corps des autres aussi aisément que les siens. Dans les flamboyants salons de l'aristocratie noxienne, cela lui a permis de créer autour de lui un culte de la personnalité. Cependant, dans les bas-fonds, il saigne littéralement ses ennemis à blanc.",
   "tags": [
     "Mage",
@@ -14,7 +14,7 @@
     "full": "Vladimir.png",
     "sprite": "champion5.png",
     "group": "champion",
-    "x": 144,
+    "x": 192,
     "y": 0,
     "w": 48,
     "h": 48
@@ -26,16 +26,16 @@
       "vars": [],
       "image": {
         "full": "VladimirQ.png",
-        "sprite": "spell15.png",
+        "sprite": "spell16.png",
         "group": "spell",
         "x": 0,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Vladimir draine l'essence vitale de sa cible, lui infligeant <magicDamage>{{ basedamagetooltip }} pts de dégâts magiques</magicDamage> et récupérant <healing>{{ basehealtooltip }} PV</healing>. Après avoir utilisé cette compétence deux fois, Vladimir gagne <speed>+{{ movementspeedonq2 }}% de vitesse de déplacement</speed> pendant 0.5 sec et renforce la prochaine utilisation de cette compétence pendant {{ e8 }} sec.<br /><br />La version renforcée inflige à la place <magicDamage>{{ empowereddamagetooltip }} pts de dégâts magiques</magicDamage> et rend <healing>{{ empoweredhealtooltip }} PV supplémentaires plus {{ empoweredhealpercenttooltip }} des PV manquants</healing>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Vladimir draine l'essence vitale de sa cible, lui infligeant <magicDamage>{{ basedamagetooltip }} pts de dégâts magiques</magicDamage> et récupérant <healing>{{ basehealtooltip }} PV</healing>. Après avoir utilisé cette compétence deux fois, Vladimir gagne <speed>{{ movementspeedonq2 }}% de vitesse de déplacement</speed> pendant 0.5 sec et renforce la prochaine utilisation de cette compétence pendant {{ frenzyduration }} sec.<br /><br />La version renforcée de cette compétence inflige <magicDamage>{{ empowereddamagetooltip }} pts de dégâts magiques</magicDamage> à la place et restaure en plus <healing>{{ empoweredhealtooltip }} plus {{ empoweredhealpercenttooltip }} des PV manquants</healing>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": "Pas de coût",
       "leveltip": {
@@ -45,8 +45,8 @@
           "Délai de récupération"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
-          "{{ e2 }} -> {{ e2NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ baseheal }} -> {{ basehealNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -62,10 +62,10 @@
       "vars": [],
       "image": {
         "full": "VladimirSanguinePool.png",
-        "sprite": "spell15.png",
+        "sprite": "spell16.png",
         "group": "spell",
         "x": 48,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -96,10 +96,10 @@
       "vars": [],
       "image": {
         "full": "VladimirE.png",
-        "sprite": "spell15.png",
+        "sprite": "spell16.png",
         "group": "spell",
         "x": 96,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -116,13 +116,13 @@
           "Délai de récupération"
         ],
         "effect": [
-          "{{ e3 }} -> {{ e3NL }}",
-          "{{ e0 }} -> {{ e0NL }}",
-          "{{ e9 }}% -> {{ e9NL }}%",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ basemaxdamage }} -> {{ basemaxdamageNL }}",
+          "{{ slowpercent }}% -> {{ slowpercentNL }}%",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
-      "resource": "Coût de canalisation : {{ e2 }}% des PV max ({{ chargehealthtooltip }})",
+      "resource": "Coût de canalisation : {{ maxhealthcost }}% des PV max ({{ chargehealthtooltip }})",
       "rangeBurn": "600",
       "datavalues": {},
       "description": "Vladimir dépense ses propres PV pour charger un orbe de sang qui, une fois lâché, infligera des dégâts de zone autour de lui. Les Vagues de sang peuvent être bloquées par les unités ennemies.",
@@ -134,16 +134,16 @@
       "vars": [],
       "image": {
         "full": "VladimirHemoplague.png",
-        "sprite": "spell15.png",
+        "sprite": "spell16.png",
         "group": "spell",
         "x": 144,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "Vladimir crée une peste virulente. Les ennemis infectés subissent {{ e2 }}% de dégâts supplémentaires (toutes sources confondues) pendant {{ e4 }} sec. Lorsque l'effet expire, Vladimir inflige <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage> à toutes les cibles infectées. Vladimir récupère <healing>{{ damage }} PV</healing> s'il touche un champion, et <healing>{{ secondaryhealingtooltip }} PV</healing> de plus pour chaque champion touché au-delà du premier.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Vladimir crée une peste virulente. Les ennemis infectés subissent {{ damageamp }}% de dégâts bonus (toutes sources confondues) pendant {{ duration }} sec. Lorsque l'effet expire, Vladimir inflige <magicDamage>{{ damage }} pts de dégâts magiques</magicDamage> à toutes les cibles infectées. Vladimir récupère <healing>{{ damage }} PV</healing> s'il touche un champion, et <healing>{{ secondaryhealingtooltip }} PV</healing> de plus pour chaque champion touché au-delà du premier.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": "Pas de coût",
       "leveltip": {
@@ -151,7 +151,7 @@
           "Dégâts"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}"
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "Pas de coût",
@@ -167,7 +167,7 @@
       "full": "VladimirP.png",
       "sprite": "passive5.png",
       "group": "passive",
-      "x": 144,
+      "x": 192,
       "y": 0,
       "w": 48,
       "h": 48
@@ -192,16 +192,16 @@
       "vars": [],
       "image": {
         "full": "VladimirQ.png",
-        "sprite": "spell15.png",
+        "sprite": "spell16.png",
         "group": "spell",
         "x": 0,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Vladimir drains his target's lifeforce, dealing <magicDamage>{{ basedamagetooltip }} magic damage</magicDamage> and restoring <healing>{{ basehealtooltip }} Health</healing>. After using this Ability twice, Vladimir gains <speed>{{ movementspeedonq2 }}% Move Speed</speed> for 0.5 seconds and empowers the next use of this Ability for {{ e8 }} seconds.<br /><br />The empowered version of this Ability deals <magicDamage>{{ empowereddamagetooltip }} magic damage</magicDamage> instead and restores an additional <healing>{{ empoweredhealtooltip }} plus {{ empoweredhealpercenttooltip }} missing Health</healing>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Vladimir drains his target's lifeforce, dealing <magicDamage>{{ basedamagetooltip }} magic damage</magicDamage> and restoring <healing>{{ basehealtooltip }} Health</healing>. After using this Ability twice, Vladimir gains <speed>{{ movementspeedonq2 }}% Move Speed</speed> for 0.5 seconds and empowers the next use of this Ability for {{ frenzyduration }} seconds.<br /><br />The empowered version of this Ability deals <magicDamage>{{ empowereddamagetooltip }} magic damage</magicDamage> instead and restores an additional <healing>{{ empoweredhealtooltip }} plus {{ empoweredhealpercenttooltip }} missing Health</healing>.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": "No Cost",
       "leveltip": {
@@ -211,8 +211,8 @@
           "Cooldown"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}",
-          "{{ e2 }} -> {{ e2NL }}",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ baseheal }} -> {{ basehealNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -228,10 +228,10 @@
       "vars": [],
       "image": {
         "full": "VladimirSanguinePool.png",
-        "sprite": "spell15.png",
+        "sprite": "spell16.png",
         "group": "spell",
         "x": 48,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -262,10 +262,10 @@
       "vars": [],
       "image": {
         "full": "VladimirE.png",
-        "sprite": "spell15.png",
+        "sprite": "spell16.png",
         "group": "spell",
         "x": 96,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -282,13 +282,13 @@
           "Cooldown"
         ],
         "effect": [
-          "{{ e3 }} -> {{ e3NL }}",
-          "{{ e0 }} -> {{ e0NL }}",
-          "{{ e9 }}% -> {{ e9NL }}%",
+          "{{ basedamage }} -> {{ basedamageNL }}",
+          "{{ basemaxdamage }} -> {{ basemaxdamageNL }}",
+          "{{ slowpercent }}% -> {{ slowpercentNL }}%",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
-      "resource": "Channeling Cost {{ e2 }}% of max Health ({{ chargehealthtooltip }})",
+      "resource": "Channeling Cost {{ maxhealthcost }}% of max Health ({{ chargehealthtooltip }})",
       "rangeBurn": "600",
       "datavalues": {},
       "description": "Vladimir pays his own health to charge up a reservoir of blood which, when released, deals damage in the area around him but can be blocked by enemy units.",
@@ -300,16 +300,16 @@
       "vars": [],
       "image": {
         "full": "VladimirHemoplague.png",
-        "sprite": "spell15.png",
+        "sprite": "spell16.png",
         "group": "spell",
         "x": 144,
-        "y": 144,
+        "y": 48,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 3,
-      "tooltip": "Vladimir creates a virulent plague, causing its victims to take {{ e2 }}% increased damage from all sources for {{ e4 }} seconds. After it expires, Vladimir deals <magicDamage>{{ damage }} magic damage</magicDamage> to all infected targets. Vladimir restores <healing>{{ damage }} Health</healing> if he hits a champion, and restores an additional <healing>{{ secondaryhealingtooltip }} Health</healing> for each champion beyond the first.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Vladimir creates a virulent plague, causing its victims to take {{ damageamp }}% increased damage from all sources for {{ duration }} seconds. After it expires, Vladimir deals <magicDamage>{{ damage }} magic damage</magicDamage> to all infected targets. Vladimir restores <healing>{{ damage }} Health</healing> if he hits a champion, and restores an additional <healing>{{ secondaryhealingtooltip }} Health</healing> for each champion beyond the first.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": "No Cost",
       "leveltip": {
@@ -317,7 +317,7 @@
           "Damage"
         ],
         "effect": [
-          "{{ e1 }} -> {{ e1NL }}"
+          "{{ basedamage }} -> {{ basedamageNL }}"
         ]
       },
       "resource": "No Cost",
@@ -333,7 +333,7 @@
       "full": "VladimirP.png",
       "sprite": "passive5.png",
       "group": "passive",
-      "x": 144,
+      "x": 192,
       "y": 0,
       "w": 48,
       "h": 48

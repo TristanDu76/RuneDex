@@ -3,7 +3,7 @@
   "key": "57",
   "name": "Maokai",
   "title": "Tréant torturé",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Maokai est un immense tréant possédé par la colère, qui combat les horreurs impies des Îles obscures. Il est devenu l'incarnation de la vengeance après la destruction de ses terres par un cataclysme magique, n'échappant lui-même à l'état de mort-vivant que grâce à l'eau de la vie qui l'irrigue. Autrefois, Maokai était un paisible esprit de la nature ; aujourd'hui, il combat avec fureur le fléau mort-vivant qui accable les Îles obscures pour rendre à l'archipel son ancienne beauté.",
   "tags": [
     "Tank",
@@ -14,8 +14,8 @@
     "full": "Maokai.png",
     "sprite": "champion2.png",
     "group": "champion",
-    "x": 432,
-    "y": 48,
+    "x": 0,
+    "y": 96,
     "w": 48,
     "h": 48
   },
@@ -29,7 +29,7 @@
         "sprite": "spell8.png",
         "group": "spell",
         "x": 192,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -67,13 +67,13 @@
         "sprite": "spell8.png",
         "group": "spell",
         "x": 240,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Maokai se transforme en une masse de racines mouvantes, devient impossible à cibler et se rue sur un ennemi. À l'arrivée, il <status>immobilise</status> l'ennemi pendant {{ e2 }} sec et inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. {{ spellmodifierdescriptionappend }}",
+      "tooltip": "Maokai se transforme en une masse de racines mouvantes, devient impossible à cibler et se rue sur un ennemi. À l'arrivée, il <status>immobilise</status> l'ennemi pendant {{ rootduration }} sec et inflige <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage>. {{ spellmodifierdescriptionappend }}",
       "costBurn": "60",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -84,7 +84,7 @@
         ],
         "effect": [
           "{{ basedamage }} -> {{ basedamageNL }}",
-          "{{ e2 }} -> {{ e2NL }}",
+          "{{ rootduration }} -> {{ rootdurationNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -103,7 +103,7 @@
         "sprite": "spell8.png",
         "group": "spell",
         "x": 288,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -141,7 +141,7 @@
         "sprite": "spell8.png",
         "group": "spell",
         "x": 336,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -175,8 +175,8 @@
       "full": "Maokai_Passive.png",
       "sprite": "passive2.png",
       "group": "passive",
-      "x": 432,
-      "y": 48,
+      "x": 0,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -204,7 +204,7 @@
         "sprite": "spell8.png",
         "group": "spell",
         "x": 192,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -242,13 +242,13 @@
         "sprite": "spell8.png",
         "group": "spell",
         "x": 240,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Maokai transforms into a moving mass of roots, becoming Untargetable and dashing to an enemy. Upon arrival, he <status>Roots</status> the enemy for {{ e2 }} second(s) and deals <magicDamage>{{ totaldamage }} magic damage</magicDamage>. {{ spellmodifierdescriptionappend }}",
+      "tooltip": "Maokai transforms into a moving mass of roots, becoming Untargetable and dashing to an enemy. Upon arrival, he <status>Roots</status> the enemy for {{ rootduration }} second(s) and deals <magicDamage>{{ totaldamage }} magic damage</magicDamage>. {{ spellmodifierdescriptionappend }}",
       "costBurn": "60",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -259,7 +259,7 @@
         ],
         "effect": [
           "{{ basedamage }} -> {{ basedamageNL }}",
-          "{{ e2 }} -> {{ e2NL }}",
+          "{{ rootduration }} -> {{ rootdurationNL }}",
           "{{ cooldown }} -> {{ cooldownNL }}"
         ]
       },
@@ -278,7 +278,7 @@
         "sprite": "spell8.png",
         "group": "spell",
         "x": 288,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -316,7 +316,7 @@
         "sprite": "spell8.png",
         "group": "spell",
         "x": 336,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -350,8 +350,8 @@
       "full": "Maokai_Passive.png",
       "sprite": "passive2.png",
       "group": "passive",
-      "x": 432,
-      "y": 48,
+      "x": 0,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -509,5 +509,14 @@
       "chromas": false
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Ahri",
+    "Braum",
+    "Illaoi",
+    "Miss Fortune",
+    "Pyke",
+    "Yasuo",
+    "Yorick",
+    "Zyra"
+  ]
 }

@@ -3,7 +3,7 @@
   "key": "910",
   "name": "Hwei",
   "title": "Visionnaire",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Hwei est un peintre dont les œuvres sont aussi flamboyantes que son humeur est morose. Il utilise son art pour faire face aux criminels d'Ionia et apporter du réconfort à leurs victimes. Sous sa mélancolie se débat un esprit déchiré et émotif, hanté à la fois par les splendides visions de son imagination et par les souvenirs horribles de son temple détruit. Hwei cherche à comprendre cette lumière et ces ténèbres, ce qui le met inévitablement sur la piste de l'artiste à l'origine de ce conflit. Avec son pinceau et sa palette, Hwei donne forme à d'infinies possibilités tandis qu'il s'approche d'une réponse à ses questions, ou du plus complet désespoir.",
   "tags": [
     "Mage",
@@ -26,10 +26,10 @@
       "vars": [],
       "image": {
         "full": "HweiQ.png",
-        "sprite": "spell4.png",
+        "sprite": "spell5.png",
         "group": "spell",
-        "x": 384,
-        "y": 144,
+        "x": 192,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -72,10 +72,10 @@
       "vars": [],
       "image": {
         "full": "HweiW.png",
-        "sprite": "spell4.png",
+        "sprite": "spell5.png",
         "group": "spell",
-        "x": 432,
-        "y": 144,
+        "x": 240,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -118,8 +118,8 @@
         "full": "HweiE.png",
         "sprite": "spell5.png",
         "group": "spell",
-        "x": 0,
-        "y": 0,
+        "x": 288,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -154,7 +154,7 @@
       "rangeBurn": "0",
       "datavalues": {},
       "description": "Hwei imagine une série de tourments, ce qui lui permet de peindre des visages manipulateurs.<br><br>Tourments remplace les compétences de Hwei par des contrôles de foule : Visage effroyable, Œil des abysses et Mâchoires chatoyantes.",
-      "cooldownBurn": "13/12.5/12/11.5/11"
+      "cooldownBurn": "12/11.5/11/10.5/10"
     },
     {
       "id": "HweiR",
@@ -164,8 +164,8 @@
         "full": "HweiR.png",
         "sprite": "spell5.png",
         "group": "spell",
-        "x": 48,
-        "y": 0,
+        "x": 336,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -225,10 +225,10 @@
       "vars": [],
       "image": {
         "full": "HweiQ.png",
-        "sprite": "spell4.png",
+        "sprite": "spell5.png",
         "group": "spell",
-        "x": 384,
-        "y": 144,
+        "x": 192,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -271,10 +271,10 @@
       "vars": [],
       "image": {
         "full": "HweiW.png",
-        "sprite": "spell4.png",
+        "sprite": "spell5.png",
         "group": "spell",
-        "x": 432,
-        "y": 144,
+        "x": 240,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -317,8 +317,8 @@
         "full": "HweiE.png",
         "sprite": "spell5.png",
         "group": "spell",
-        "x": 0,
-        "y": 0,
+        "x": 288,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -353,7 +353,7 @@
       "rangeBurn": "0",
       "datavalues": {},
       "description": "Hwei envisions a series of torments, allowing him to paint controlling visages.<br><br>This ability replaces Hwei's abilities with crowd control abilities: Grim Visage, Gaze of the Abyss, and Crushing Maw.",
-      "cooldownBurn": "13/12.5/12/11.5/11"
+      "cooldownBurn": "12/11.5/11/10.5/10"
     },
     {
       "id": "HweiR",
@@ -363,8 +363,8 @@
         "full": "HweiR.png",
         "sprite": "spell5.png",
         "group": "spell",
-        "x": 48,
-        "y": 0,
+        "x": 336,
+        "y": 48,
         "w": 48,
         "h": 48
       },
@@ -427,6 +427,12 @@
       "num": 11,
       "name": "Spirit Blossom Hwei",
       "chromas": true
+    },
+    {
+      "id": "910021",
+      "num": 21,
+      "name": "Sinful Shores Hwei",
+      "chromas": false
     }
   ],
   "skins": [
@@ -447,7 +453,17 @@
       "num": 11,
       "name": "Hwei fleur spirituelle",
       "chromas": true
+    },
+    {
+      "id": "910021",
+      "num": 21,
+      "name": "Hwei des rivages impies",
+      "chromas": false
     }
   ],
-  "related_characters": []
+  "related_characters": [
+    "Jhin",
+    "Shen",
+    "Zed"
+  ]
 }

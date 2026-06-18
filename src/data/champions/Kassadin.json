@@ -3,7 +3,7 @@
   "key": "38",
   "name": "Kassadin",
   "title": "Chasseur du Néant",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Kassadin se fraye un chemin brûlant dans les lieux les plus sombres du monde ; il sait que ses jours sont comptés. Guide et aventurier shurimien accompli, il avait choisi de fonder une famille parmi les tribus pacifiques du sud, jusqu'au jour où son village fut ravagé par le Néant. Il jura de se venger et s'arma de reliques arcaniques qu'il combina à l'aide de technologies interdites. Enfin, Kassadin se dirigea vers les ruines d'Icathia à la recherche du prophète autoproclamé, Malzahar, prêt à affronter les monstres du Néant.",
   "tags": [
     "Assassin",
@@ -28,8 +28,8 @@
         "full": "NullLance.png",
         "sprite": "spell6.png",
         "group": "spell",
-        "x": 192,
-        "y": 48,
+        "x": 0,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -56,7 +56,7 @@
       "rangeBurn": "650",
       "datavalues": {},
       "description": "Kassadin tire un orbe d'énergie du Néant sur sa cible, infligeant des dégâts et interrompant les canalisations. Le surplus d'énergie lui confère un bouclier temporaire qui absorbe les dégâts magiques.",
-      "cooldownBurn": "10/9.5/9/8.5/8"
+      "cooldownBurn": "9/8.5/8/7.5/7"
     },
     {
       "id": "NetherBlade",
@@ -66,8 +66,8 @@
         "full": "NetherBlade.png",
         "sprite": "spell6.png",
         "group": "spell",
-        "x": 240,
-        "y": 48,
+        "x": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -102,14 +102,14 @@
         "full": "ForcePulse.png",
         "sprite": "spell6.png",
         "group": "spell",
-        "x": 288,
-        "y": 48,
+        "x": 96,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive :</spellPassive> le délai de récupération de <spellName>Pulsation</spellName> est réduit de {{ reductionperspellcast }} sec chaque fois qu'une compétence est activée près de Kassadin.<br /><br /><spellActive>Active :</spellActive> Kassadin provoque une pulsation d'énergie du Néant, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> et <status>ralentissant</status> les ennemis de {{ e2 }}% pendant {{ e3 }} sec.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive :</spellPassive> le délai de récupération de <spellName>Pulsation</spellName> est réduit de {{ reductionperspellcast }} sec chaque fois qu'une compétence est activée près de Kassadin.<br /><br /><spellActive>Active :</spellActive> Kassadin provoque une pulsation d'énergie du Néant, infligeant <magicDamage>{{ totaldamage }} pts de dégâts magiques</magicDamage> et <status>ralentissant</status> les ennemis de {{ slowamount }}% pendant {{ slowduration }} sec.{{ spellmodifierdescriptionappend }}",
       "costBurn": "60/65/70/75/80",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -121,7 +121,7 @@
         ],
         "effect": [
           "{{ basedamage }} -> {{ basedamageNL }}",
-          "{{ e2 }}% -> {{ e2NL }}%",
+          "{{ slowamount }}% -> {{ slowamountNL }}%",
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ cost }} -> {{ costNL }}"
         ]
@@ -140,8 +140,8 @@
         "full": "RiftWalk.png",
         "sprite": "spell6.png",
         "group": "spell",
-        "x": 336,
-        "y": 48,
+        "x": 144,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -201,8 +201,8 @@
         "full": "NullLance.png",
         "sprite": "spell6.png",
         "group": "spell",
-        "x": 192,
-        "y": 48,
+        "x": 0,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -229,7 +229,7 @@
       "rangeBurn": "650",
       "datavalues": {},
       "description": "Kassadin fires an orb of void energy at a target, dealing damage and interrupting channels. The excess energy forms around himself, granting a temporary shield that absorbs magic damage.",
-      "cooldownBurn": "10/9.5/9/8.5/8"
+      "cooldownBurn": "9/8.5/8/7.5/7"
     },
     {
       "id": "NetherBlade",
@@ -239,8 +239,8 @@
         "full": "NetherBlade.png",
         "sprite": "spell6.png",
         "group": "spell",
-        "x": 240,
-        "y": 48,
+        "x": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -275,14 +275,14 @@
         "full": "ForcePulse.png",
         "sprite": "spell6.png",
         "group": "spell",
-        "x": 288,
-        "y": 48,
+        "x": 96,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive:</spellPassive> <spellName>Force Pulse's</spellName> Cooldown is reduced by {{ reductionperspellcast }} second whenever any Ability is used near Kassadin.<br /><br /><spellActive>Active:</spellActive> Kassadin unleashes a void pulse, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> and <status>Slowing</status> by {{ e2 }}% for {{ e3 }} second.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive:</spellPassive> <spellName>Force Pulse's</spellName> Cooldown is reduced by {{ reductionperspellcast }} second whenever any Ability is used near Kassadin.<br /><br /><spellActive>Active:</spellActive> Kassadin unleashes a void pulse, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage> and <status>Slowing</status> by {{ slowamount }}% for {{ slowduration }} second.{{ spellmodifierdescriptionappend }}",
       "costBurn": "60/65/70/75/80",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
@@ -294,7 +294,7 @@
         ],
         "effect": [
           "{{ basedamage }} -> {{ basedamageNL }}",
-          "{{ e2 }}% -> {{ e2NL }}%",
+          "{{ slowamount }}% -> {{ slowamountNL }}%",
           "{{ cooldown }} -> {{ cooldownNL }}",
           "{{ cost }} -> {{ costNL }}"
         ]
@@ -313,8 +313,8 @@
         "full": "RiftWalk.png",
         "sprite": "spell6.png",
         "group": "spell",
-        "x": 336,
-        "y": 48,
+        "x": 144,
+        "y": 144,
         "w": 48,
         "h": 48
       },

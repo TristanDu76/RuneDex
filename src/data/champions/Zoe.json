@@ -3,7 +3,7 @@
   "key": "142",
   "name": "Zoé",
   "title": "Manifestation du Crépuscule",
-  "version": "16.8.1",
+  "version": "16.16.1",
   "lore": "Incarnation de l'espièglerie, de l'imagination et de l'inconstance, Zoé est une messagère cosmique de Targon, annonciatrice des grands événements qui chamboulent les mondes. Sa simple présence distord les règles mathématiques qui gouvernent dans l'ombre les réalités et, sans pour autant le vouloir, peut même provoquer des cataclysmes. Cela explique peut-être la nonchalance désinvolte avec laquelle Zoé traite ses tâches, préférant consacrer le plus clair de son temps à s'amuser, à jouer des tours aux mortels, bref, à faire tout ce qui lui plaît. Une rencontre avec Zoé peut se révéler joyeuse et porteuse d'optimisme, mais ce n'est souvent qu'une apparence, cachant une vérité extrêmement dangereuse.",
   "tags": [
     "Mage"
@@ -13,7 +13,7 @@
     "full": "Zoe.png",
     "sprite": "champion5.png",
     "group": "champion",
-    "x": 0,
+    "x": 48,
     "y": 96,
     "w": 48,
     "h": 48
@@ -28,7 +28,7 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 384,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -64,13 +64,13 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 432,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive :</spellPassive> les ennemis lâchent des fragments de sort lorsqu'ils utilisent un sort d'invocateur ou la propriété active d'un objet. Certains sbires lâchent également des fragments de sort quand ils sont tués par Zoé ou par un de ses alliés proches. Zoé peut ramasser un fragment pour lancer une fois le sort ou la propriété active associés.<br /><br /><spellPassive>Passive :</spellPassive> lorsque Zoé utilise cette compétence ou un sort d'invocateur, elle gagne <speed>+{{ e9 }}% de vitesse de déplacement</speed> pendant {{ e0 }} sec et tire 3 projectiles sur la dernière cible qu'elle a attaquée. Ces projectiles infligent <magicDamage>{{ missiledamagetooltip }} pts de dégâts magiques</magicDamage> chacun.<br /><br /><spellActive>Active :</spellActive> Zoé utilise le sort ou la propriété active associés au fragment de sort qu'elle a ramassé.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive :</spellPassive> les ennemis lâchent des fragments de sort lorsqu'ils utilisent un sort d'invocateur ou la propriété active d'un objet. Certains sbires lâchent également des fragments de sort quand ils sont tués par Zoé ou par un de ses alliés proches. Zoé peut ramasser un fragment pour lancer cette compétence une fois.<br /><br /><spellPassive>Passive :</spellPassive> lorsque Zoé utilise cette compétence ou un sort d'invocateur, elle gagne <speed>{{ movementspeed*100 }}% de vitesse de déplacement</speed> pendant {{ msduration }} sec et tire 3 projectiles sur la dernière cible qu'elle a attaquée. Ces projectiles infligent chacun <magicDamage>{{ missiledamagetooltip }} pts de dégâts magiques</magicDamage>.<br /><br /><spellActive>Active :</spellActive> Zoé utilise le sort ou la propriété active associés au fragment de sort qu'elle a ramassé.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": "Pas de coût",
       "leveltip": {
@@ -97,35 +97,37 @@
       "vars": [],
       "image": {
         "full": "ZoeE.png",
-        "sprite": "spell17.png",
+        "sprite": "spell18.png",
         "group": "spell",
         "x": 0,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Zoé lance une bulle qui inflige <magicDamage>{{ totaldamagetooltip }} pts de dégâts magiques</magicDamage> et qui se change en piège si elle ne touche rien. La portée de la bulle est augmentée si elle passe par-dessus un élément de décor.<br /><br />Après un délai, la cible <status>s'endort</status> et sa <scaleMR>résistance magique</scaleMR> est réduite de {{ percentpen*100 }}% pendant 2 sec. Les attaques et les compétences réveillent la cible, mais lui infligent deux fois plus de dégâts, jusqu'à un maximum de <trueDamage>{{ breakdamagetooltip }} pts de dégâts bruts</trueDamage>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Zoé lance une bulle qui inflige <magicDamage>{{ totaldamagetooltip }} pts de dégâts magiques</magicDamage> et qui se change en piège si elle ne touche rien. La portée de la bulle est augmentée si elle passe par-dessus un élément de décor.<br /><br />Si la bulle ou le piège touche un champion ennemi, {{ cooldownrefresh*100 }}% du délai de récupération lui est restitué.<br /><br />Après un délai, la cible <status>s'endort</status> et sa <scaleMR>résistance magique</scaleMR> est réduite de {{ percentpen*100 }}% pendant 2 sec. Les attaques et les compétences réveillent la cible, mais lui infligent deux fois plus de dégâts, jusqu'à un maximum de <trueDamage>{{ breakdamagetooltip }} pts de dégâts bruts</trueDamage>.<br /><br />{{ spellmodifierdescriptionappend }}",
       "costBurn": "80",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Dégâts",
           "Dégâts supplémentaires max",
-          "Délai de récupération"
+          "Délai de récupération",
+          "Réinitialisation du délai de récupération"
         ],
         "effect": [
           "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ basedamage }} -> {{ basedamageNL }}",
-          "{{ cooldown }} -> {{ cooldownNL }}"
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cooldownrefresh*100.000000 }}% -> {{ cooldownrefreshnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
       "rangeBurn": "800",
       "datavalues": {},
       "description": "La cible devient somnolente, puis s'endort. Tant que la cible dort, sa résistance magique est réduite. Les dégâts qui réveillent la cible sont doublés, jusqu'à un montant max.",
-      "cooldownBurn": "16/15/14/13/12"
+      "cooldownBurn": "18/17/16/15/14"
     },
     {
       "id": "ZoeR",
@@ -133,10 +135,10 @@
       "vars": [],
       "image": {
         "full": "ZoeR.png",
-        "sprite": "spell17.png",
+        "sprite": "spell18.png",
         "group": "spell",
         "x": 48,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -166,7 +168,7 @@
       "full": "Zoe_P.png",
       "sprite": "passive5.png",
       "group": "passive",
-      "x": 0,
+      "x": 48,
       "y": 96,
       "w": 48,
       "h": 48
@@ -196,7 +198,7 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 384,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
@@ -232,13 +234,13 @@
         "sprite": "spell17.png",
         "group": "spell",
         "x": 432,
-        "y": 48,
+        "y": 144,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "<spellPassive>Passive:</spellPassive> Enemies drop spell shards when casting a Summoner Spell or using an Active Item. Specific minions also drop a spell shard when Zoe or a nearby ally kills them. Zoe can pick up this shard to cast that ability once.<br /><br /><spellPassive>Passive:</spellPassive> When Zoe casts this Ability or any Summoner Spell, she gains <speed>{{ e9 }}% Move Speed</speed> for {{ e0 }} seconds and tosses 3 missiles at the target she Attacked most recently. These missiles deal <magicDamage>{{ missiledamagetooltip }} magic damage</magicDamage> each.<br /><br /><spellActive>Active:</spellActive> Cast the Ability from a spell shard Zoe has picked up.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "<spellPassive>Passive:</spellPassive> Enemies drop spell shards when casting a Summoner Spell or using an Active Item. Specific minions also drop a spell shard when Zoe or a nearby ally kills them. Zoe can pick up this shard to cast that ability once.<br /><br /><spellPassive>Passive:</spellPassive> When Zoe casts this Ability or any Summoner Spell, she gains <speed>{{ movementspeed*100 }}% Move Speed</speed> for {{ msduration }} seconds and tosses 3 missiles at the target she Attacked most recently. These missiles deal <magicDamage>{{ missiledamagetooltip }} magic damage</magicDamage> each.<br /><br /><spellActive>Active:</spellActive> Cast the Ability from a spell shard Zoe has picked up.{{ spellmodifierdescriptionappend }}",
       "costBurn": "0",
       "costType": "No Cost",
       "leveltip": {
@@ -265,35 +267,37 @@
       "vars": [],
       "image": {
         "full": "ZoeE.png",
-        "sprite": "spell17.png",
+        "sprite": "spell18.png",
         "group": "spell",
         "x": 0,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
       "maxammo": "-1",
       "maxrank": 5,
-      "tooltip": "Zoe dropkicks a bubble that deals <magicDamage>{{ totaldamagetooltip }} magic damage</magicDamage>, lingering as a trap if it hits nothing. The bubble's range is extended when flying over terrain.<br /><br />After a delay, the victim falls <status>Asleep</status> and have their <scaleMR>Magic Resist</scaleMR> reduced by {{ percentpen*100 }}% for 2 seconds. Attacks and Ability hits wake them up but deal double damage, up to <trueDamage>{{ breakdamagetooltip }} true damage</trueDamage>.{{ spellmodifierdescriptionappend }}",
+      "tooltip": "Zoe dropkicks a bubble that deals <magicDamage>{{ totaldamagetooltip }} magic damage</magicDamage>, lingering as a trap if it hits nothing. The bubble's range is extended when flying over terrain.<br /><br />If either the bubble or trap hits an enemy champion she refreshes {{ cooldownrefresh*100 }}% of her cooldown.<br /><br />After a delay, the victim falls <status>Asleep</status> and have their <scaleMR>Magic Resist</scaleMR> reduced by {{ percentpen*100 }}% for 2 seconds. Attacks and Ability hits wake them up but deal double damage, up to <trueDamage>{{ breakdamagetooltip }} true damage</trueDamage>.<br /><br />{{ spellmodifierdescriptionappend }}",
       "costBurn": "80",
       "costType": " {{ abilityresourcename }}",
       "leveltip": {
         "label": [
           "Damage",
           "Bonus Damage Cap",
-          "Cooldown"
+          "Cooldown",
+          "Cooldown Refresh"
         ],
         "effect": [
           "{{ basedamage }} -> {{ basedamageNL }}",
           "{{ basedamage }} -> {{ basedamageNL }}",
-          "{{ cooldown }} -> {{ cooldownNL }}"
+          "{{ cooldown }} -> {{ cooldownNL }}",
+          "{{ cooldownrefresh*100.000000 }}% -> {{ cooldownrefreshnl*100.000000 }}%"
         ]
       },
       "resource": "{{ cost }} {{ abilityresourcename }}",
       "rangeBurn": "800",
       "datavalues": {},
       "description": "Causes the target to become drowsy, then fall asleep. While asleep, the target's Magic Resist is reduced. The first source of damage that breaks the sleep is doubled, up to a cap.",
-      "cooldownBurn": "16/15/14/13/12"
+      "cooldownBurn": "18/17/16/15/14"
     },
     {
       "id": "ZoeR",
@@ -301,10 +305,10 @@
       "vars": [],
       "image": {
         "full": "ZoeR.png",
-        "sprite": "spell17.png",
+        "sprite": "spell18.png",
         "group": "spell",
         "x": 48,
-        "y": 96,
+        "y": 0,
         "w": 48,
         "h": 48
       },
@@ -334,7 +338,7 @@
       "full": "Zoe_P.png",
       "sprite": "passive5.png",
       "group": "passive",
-      "x": 0,
+      "x": 48,
       "y": 96,
       "w": 48,
       "h": 48
