@@ -1,129 +1,119 @@
-"use client"
+'use client';
 
-import { useState } from 'react';
+import { Link } from '@/i18n/routing';
+import type { RegionShardEntry } from '@/types/map';
 import Image from 'next/image';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { useState } from 'react';
 
 interface RegionClientProps {
-    locale: string;
-    champions: any[];
-    lore: any[];
+    champions: RegionShardEntry[];
+    lore: RegionShardEntry[];
 }
 
-export default function RegionClient({ locale, champions, lore }: RegionClientProps) {
+export default function RegionClient({ champions, lore }: RegionClientProps) {
+    const t = useTranslations('regionDetail');
     const [activeTab, setActiveTab] = useState<'champions' | 'lore' | 'events'>('champions');
 
     return (
-        <div className="max-w-7xl mx-auto px-6 py-12 relative z-30">
-            {/* Tab Navigation */}
-            <div className="flex items-center justify-center gap-8 mb-16 border-b border-white/10 pb-4">
+        <div className="relative z-30 mx-auto max-w-7xl px-6 py-12">
+            <div className="mb-16 flex items-center justify-center gap-8 border-b border-white/10 pb-4">
                 <button
                     onClick={() => setActiveTab('champions')}
-                    className={`text-2xl font-bold transition-all ${activeTab === 'champions'
-                        ? 'text-white border-b-2 border-yellow-500 pb-2'
-                        : 'text-gray-500 hover:text-gray-300 pb-2 border-b-2 border-transparent'
+                    className={`border-b-2 pb-2 text-2xl font-bold transition-all ${activeTab === 'champions'
+                        ? 'border-yellow-500 text-white'
+                        : 'border-transparent text-gray-500 hover:text-gray-300'
                         }`}
                 >
-                    Champions ({champions.length})
+                    {t('champions')} ({champions.length})
                 </button>
                 <button
                     onClick={() => setActiveTab('lore')}
-                    className={`text-2xl font-bold transition-all ${activeTab === 'lore'
-                        ? 'text-white border-b-2 border-yellow-500 pb-2'
-                        : 'text-gray-500 hover:text-gray-300 pb-2 border-b-2 border-transparent'
+                    className={`border-b-2 pb-2 text-2xl font-bold transition-all ${activeTab === 'lore'
+                        ? 'border-yellow-500 text-white'
+                        : 'border-transparent text-gray-500 hover:text-gray-300'
                         }`}
                 >
-                    Lore ({lore.length})
+                    {t('lore')} ({lore.length})
                 </button>
                 <button
                     onClick={() => setActiveTab('events')}
-                    className={`text-2xl font-bold transition-all ${activeTab === 'events'
-                        ? 'text-white border-b-2 border-yellow-500 pb-2'
-                        : 'text-gray-500 hover:text-gray-300 pb-2 border-b-2 border-transparent'
+                    className={`border-b-2 pb-2 text-2xl font-bold transition-all ${activeTab === 'events'
+                        ? 'border-yellow-500 text-white'
+                        : 'border-transparent text-gray-500 hover:text-gray-300'
                         }`}
                 >
-                    Événements
+                    {t('events')}
                 </button>
             </div>
 
-            {/* TAB: CHAMPIONS */}
             {activeTab === 'champions' && (
-                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
-                    {champions.map(champ => (
+                <div className="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+                    {champions.map((champion) => (
                         <Link
-                            key={`champ-${champ.id}`}
-                            href={`/${locale}/champion/${champ.id}`}
-                            className="group relative overflow-hidden rounded-xl border border-gray-800 bg-gray-800/50 hover:bg-gray-800 transition-all hover:scale-105 hover:border-yellow-500/50"
+                            key={`champ-${champion.id}`}
+                            href={`/champion/${champion.id}`}
+                            className="group relative overflow-hidden rounded-xl border border-gray-800 bg-gray-800/50 transition-all hover:scale-105 hover:border-yellow-500/50 hover:bg-gray-800"
                         >
-                            <div className="aspect-square relative overflow-hidden">
+                            <div className="relative aspect-square overflow-hidden">
                                 <Image
-                                    src={`https://ddragon.leagueoflegends.com/cdn/${champ.version || '15.23.1'}/img/champion/${champ.image?.full || champ.id + '.png'}`}
-                                    alt={champ.name}
+                                    src={champion.thumbnail}
+                                    alt={champion.name}
                                     fill
                                     sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 20vw"
-                                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                                    className="object-cover transition-transform duration-500 group-hover:scale-110"
                                 />
                             </div>
                             <div className="p-4 text-center">
-                                <h3 className="font-bold text-lg text-yellow-500">{champ.name}</h3>
-                                <p className="text-sm text-gray-400 capitalize">{champ.tags?.[0] || 'Inconnu'}</p>
+                                <h3 className="text-lg font-bold text-yellow-500">{champion.name}</h3>
                             </div>
                         </Link>
                     ))}
 
                     {champions.length === 0 && (
-                        <div className="col-span-full text-center py-24 text-gray-500 text-lg">
-                            Aucun champion connu trouvé pour cette région.
+                        <div className="col-span-full py-24 text-center text-lg text-gray-500">
+                            {t('noChampions')}
                         </div>
                     )}
                 </div>
             )}
 
-            {/* TAB: LORE */}
             {activeTab === 'lore' && (
-                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
-                    {lore.map(personage => (
+                <div className="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+                    {lore.map((character) => (
                         <Link
-                            key={`lore-${personage.id || personage.name}`}
-                            href={`/${locale}/lore/${personage.id || encodeURIComponent(personage.name)}`}
-                            className="group relative overflow-hidden rounded-xl border border-gray-800 bg-gray-800/50 hover:bg-gray-800 transition-all hover:scale-105 hover:border-blue-500/50"
+                            key={`lore-${character.id}`}
+                            href={`/lore/${character.id}`}
+                            className="group relative overflow-hidden rounded-xl border border-gray-800 bg-gray-800/50 transition-all hover:scale-105 hover:border-blue-500/50 hover:bg-gray-800"
                         >
-                            <div className="aspect-square relative overflow-hidden bg-transparent flex items-center justify-center">
-                                {personage.image ? (
-                                    <Image
-                                        src={personage.image.url || personage.image}
-                                        alt={personage.name}
-                                        fill
-                                        sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 20vw"
-                                        className="object-cover group-hover:scale-110 transition-transform duration-500"
-                                    />
-                                ) : (
-                                    <div className="text-gray-600 text-4xl">?</div>
-                                )}
+                            <div className="relative flex aspect-square items-center justify-center overflow-hidden bg-transparent">
+                                <Image
+                                    src={character.thumbnail}
+                                    alt={character.name}
+                                    fill
+                                    sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 20vw"
+                                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                />
                             </div>
                             <div className="p-4 text-center">
-                                <h3 className="font-bold text-lg text-blue-400">{personage.name}</h3>
-                                {personage.status && (
-                                    <p className="text-sm text-gray-400 capitalize">{personage.status}</p>
-                                )}
+                                <h3 className="text-lg font-bold text-blue-400">{character.name}</h3>
                             </div>
                         </Link>
                     ))}
 
                     {lore.length === 0 && (
-                        <div className="col-span-full text-center py-24 text-gray-500 text-lg">
-                            Aucun personnage du Lore connu trouvé pour cette région.
+                        <div className="col-span-full py-24 text-center text-lg text-gray-500">
+                            {t('noLore')}
                         </div>
                     )}
                 </div>
             )}
 
-            {/* TAB: EVENTS */}
             {activeTab === 'events' && (
-                <div className="flex flex-col items-center justify-center py-24 text-gray-400 border border-dashed border-gray-700 rounded-2xl bg-gray-800/30">
-                    <span className="text-6xl mb-4">⏳</span>
-                    <h2 className="text-2xl font-bold text-white mb-2">En construction</h2>
-                    <p>La frise chronologique des événements de la région arrivera bientôt.</p>
+                <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-gray-700 bg-gray-800/30 py-24 text-gray-400">
+                    <span className="mb-4 text-6xl">⏳</span>
+                    <h2 className="mb-2 text-2xl font-bold text-white">{t('underConstruction')}</h2>
+                    <p>{t('eventsComingSoon')}</p>
                 </div>
             )}
         </div>

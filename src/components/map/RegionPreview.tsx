@@ -1,17 +1,11 @@
 'use client';
 
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { useTranslations } from 'next-intl';
 import { useRouter } from '@/i18n/routing';
 import { useGetRegionShardQuery } from '@/store/api';
-
-interface Character {
-    id: string;
-    name: string;
-    thumbnail: string;
-    type: string;
-}
+import { useState } from 'react';
 
 interface RegionPreviewProps {
     regionId: string;
@@ -19,21 +13,14 @@ interface RegionPreviewProps {
     description: string;
     icon: string;
     onClose: () => void;
-    locale: string;
 }
 
-export default function RegionPreview({ regionId, name, description, icon, onClose, locale }: RegionPreviewProps) {
+export default function RegionPreview({ regionId, name, description, icon, onClose }: RegionPreviewProps) {
     const router = useRouter();
-    const [characters, setCharacters] = useState<Character[]>([]);
+    const t = useTranslations('regionDetail');
     const { data: shardData, isLoading: loading } = useGetRegionShardQuery(regionId, { skip: !regionId });
-
-    useEffect(() => {
-        if (shardData) {
-            const validCharacters = shardData.filter((c: any) => c.thumbnail);
-            const shuffled = [...validCharacters].sort(() => Math.random() - 0.5);
-            setCharacters(shuffled);
-        }
-    }, [shardData]);
+    const characters = shardData?.filter((character) => character.thumbnail) ?? [];
+    const [isClosing, setIsClosing] = useState(false);
 
     const handleGoToPage = () => {
         router.push(`/region/${regionId}`);
@@ -42,8 +29,11 @@ export default function RegionPreview({ regionId, name, description, icon, onClo
     return (
         <motion.div
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 20, scale: 0.95 }}
+            animate={isClosing ? { opacity: 0, y: 20, scale: 0.95 } : { opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.18 }}
+            onAnimationComplete={() => {
+                if (isClosing) onClose();
+            }}
             className="absolute bottom-8 left-1/2 -translate-x-1/2 z-[2000] w-[90%] max-w-lg hex-panel rounded-2xl p-6 overflow-hidden border-2"
         >
             {/* Background Decoration */}
@@ -61,7 +51,7 @@ export default function RegionPreview({ regionId, name, description, icon, onClo
                         <p className="text-white/60 text-sm line-clamp-2">{description}</p>
                     </div>
                     <button
-                        onClick={onClose}
+                        onClick={() => setIsClosing(true)}
                         className="ml-auto p-2 text-white/40 hover:text-white transition-colors"
                     >
                         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -84,7 +74,7 @@ export default function RegionPreview({ regionId, name, description, icon, onClo
                                 }}
                             >
                                 {characters.map((char) => (
-                                    <div key={char.id} className="w-12 h-12 relative flex-shrink-0 rounded-full overflow-hidden border-2 border-hextech-gold/50 hover:border-hextech-cyan shadow-[0_0_10px_rgba(212,175,55,0.3)] transition-colors cursor-help group/icon">
+                                    <div key={char.id} className="w-12 h-12 relative flex-shrink-0 rounded-full overflow-hidden border-2 border-hextech-gold/50 hover:border-hextech-cyan shadow-[0_0_10px_rgba(56,189,248,0.3)] transition-colors cursor-help group/icon">
                                         <Image
                                             src={char.thumbnail}
                                             alt={char.name}
@@ -112,11 +102,11 @@ export default function RegionPreview({ regionId, name, description, icon, onClo
                     ) : loading ? (
                         <div className="w-full h-full flex items-center justify-center gap-2">
                             <div className="w-4 h-4 border-2 border-white/20 border-t-white rounded-full animate-spin" />
-                            <span className="text-white/40 text-xs uppercase tracking-tighter">Chargement...</span>
+                            <span className="text-white/40 text-xs uppercase tracking-tighter">{t('loading')}</span>
                         </div>
                     ) : (
                         <div className="w-full text-center text-white/20 text-xs uppercase tracking-widest font-medium">
-                            Aucun personnage repertorié
+                            {t('noCharacters')}
                         </div>
                     )}
 
@@ -127,9 +117,9 @@ export default function RegionPreview({ regionId, name, description, icon, onClo
 
                 <button
                     onClick={handleGoToPage}
-                    className="w-full py-3 bg-hextech-bg text-hextech-gold border border-hextech-gold/40 shadow-[inset_0_0_15px_rgba(212,175,55,0.2)] font-bold rounded-xl hover:bg-hextech-cyan/20 hover:text-white hover:border-hextech-cyan transition-all duration-300 flex items-center justify-center gap-2 group tracking-wider uppercase"
+                    className="w-full py-3 bg-hextech-bg text-hextech-gold border border-hextech-gold/40 shadow-[inset_0_0_15px_rgba(56,189,248,0.2)] font-bold rounded-xl hover:bg-hextech-cyan/20 hover:text-white hover:border-hextech-cyan transition-all duration-300 flex items-center justify-center gap-2 group tracking-wider uppercase"
                 >
-                    Explorer la région
+                    {t('explore')}
                     <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>

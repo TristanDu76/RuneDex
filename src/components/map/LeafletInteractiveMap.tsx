@@ -1,22 +1,25 @@
 'use client';
 
-import { useEffect, useState, useCallback } from 'react';
-import { MapContainer, TileLayer, Polygon, Circle, Marker, useMap, FeatureGroup } from 'react-leaflet';
+import { memo, useCallback, useEffect, useMemo, useState } from 'react';
+import { MapContainer, TileLayer, Polygon, Polyline, Circle, Marker, FeatureGroup, ZoomControl, useMap, useMapEvents } from 'react-leaflet';
+import dynamic from 'next/dynamic';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { useRouter } from '@/i18n/routing';
-import RegionPreview from './RegionPreview';
-import { AnimatePresence } from 'framer-motion';
-import { useAppDispatch, useAppSelector } from '@/store/hooks';
-import { setHoveredRegion as setHoveredAction, setSelectedRegionId as setSelectedAction } from '@/store/slices/mapSlice';
+import { regions } from '@/data/regions';
+import type { Region } from '@/types/map';
+
+const RegionPreview = dynamic(() => import('./RegionPreview'), { ssr: false });
 
 // Dimensions originales de ton image
 const IMAGE_WIDTH = 9181;
 const IMAGE_HEIGHT = 5880;
 
+type MapPoint = [number, number];
+
 // Conversion de la coordonnée SVG (x,y) en coordonnée Leaflet [lat, lng] -> [-y, x]
-function parseSvgPolygon(svgString: string): [number, number][] {
-    const coords: [number, number][] = [];
+function parseSvgPolygon(svgString: string): MapPoint[] {
+    const coords: MapPoint[] = [];
     const points = svgString.trim().split(/[\s,]+/);
     for (let i = 0; i < points.length; i += 2) {
         const x = parseFloat(points[i]);
@@ -29,7 +32,7 @@ function parseSvgPolygon(svgString: string): [number, number][] {
 }
 
 // Calcule le centre d'une région pour placer son icône
-function getRegionCenter(region: any): [number, number] | null {
+function getRegionCenter(region: Region): [number, number] | null {
     if (region.circles && region.circles.length > 0) {
         const [cx, cy] = region.circles[0].split(',').map(Number);
         return [-cy, cx];
@@ -51,7 +54,7 @@ function getRegionCenter(region: any): [number, number] | null {
 }
 
 // Les données de tes régions avec conversion dynamique
-const regionsData = [
+const legacyRegionsData: Region[] = [
     {
         id: 'demacia',
         name: 'Demacia',
@@ -179,11 +182,252 @@ const regionsData = [
     },
 ];
 
+const regionsData = regions.map((region) => {
+    const legacyRegion = legacyRegionsData.find((candidate) => candidate.id === region.id);
+
+    return {
+        ...legacyRegion,
+        ...region,
+        polygons: region.polygons?.length ? region.polygons : legacyRegion?.polygons,
+        circles: region.circles?.length ? region.circles : legacyRegion?.circles,
+    };
+});
+
+interface PreparedRegion {
+    region: Region;
+    center: MapPoint | null;
+    polygons: MapPoint[][];
+    circles: Array<{ center: MapPoint; radius: number }>;
+}
+
+const preparedRegions: PreparedRegion[] = regionsData.map((region) => ({
+    region,
+    center: getRegionCenter(region),
+    polygons: region.polygons?.map(parseSvgPolygon) ?? [],
+    circles: region.circles?.map((circle) => {
+        const [x, y, radius] = circle.split(',').map(Number);
+        return { center: [-y, x], radius };
+    }) ?? [],
+}));
+
+const regionIcons = new Map<string, { default: L.Icon; hovered: L.Icon }>();
+
+function getRegionIcon(region: Region, isHovered: boolean): L.Icon {
+    const existing = regionIcons.get(region.id);
+    if (existing) return existing[isHovered ? 'hovered' : 'default'];
+
+    const icons = {
+        default: L.icon({
+            iconUrl: region.icon as string,
+            iconSize: [60, 60],
+            iconAnchor: [30, 30],
+            className: 'transition-all duration-300 pointer-events-none'
+        }),
+        hovered: L.icon({
+            iconUrl: region.icon as string,
+            iconSize: [80, 80],
+            iconAnchor: [40, 40],
+            className: 'transition-all duration-300 pointer-events-none'
+        })
+    };
+    regionIcons.set(region.id, icons);
+    return icons[isHovered ? 'hovered' : 'default'];
+}
+
+interface RegionLayerProps {
+    preparedRegion: PreparedRegion;
+    isHovered: boolean;
+    onHover: (region: string | null) => void;
+    onSelect: (region: string | null) => void;
+    onNavigate: (region: string) => void;
+}
+
+const RegionLayer = memo(function RegionLayer({
+    preparedRegion: { region, center, polygons, circles },
+    isHovered,
+    onHover,
+    onSelect,
+    onNavigate,
+}: RegionLayerProps) {
+    const isDemaciaContourPreview = region.id === 'demacia';
+    const isPiltoverZaunCity = region.id === 'piltover' || region.id === 'zaun';
+
+    return (
+        <FeatureGroup>
+            {polygons.map((leafletCoords, index) => (
+                <Polygon
+                    key={`${region.id}-poly-${index}`}
+                    positions={leafletCoords}
+                    pathOptions={{
+                        color: region.color,
+                        weight: isDemaciaContourPreview ? 3 : 1,
+                        fillOpacity: isHovered ? 0.5 : isDemaciaContourPreview ? 0.16 : 0.0,
+                        stroke: true,
+                        opacity: isHovered ? 1 : isDemaciaContourPreview ? 0.9 : 0.2,
+                    }}
+                    eventHandlers={{
+                        mouseover: () => onHover(region.id),
+                        mouseout: () => onHover(null),
+                        click: () => onSelect(region.id),
+                    }}
+                />
+            ))}
+            {!isPiltoverZaunCity && circles.map(({ center: circleCenter, radius }, index) => (
+                <Circle
+                    key={`${region.id}-circ-${index}`}
+                    center={circleCenter}
+                    radius={radius}
+                    pathOptions={{
+                        color: region.color,
+                        weight: 2,
+                        fillOpacity: isHovered ? 0.5 : 0.2,
+                        stroke: true,
+                        opacity: isHovered ? 1 : 0.5,
+                    }}
+                    eventHandlers={{
+                        mouseover: () => onHover(region.id),
+                        mouseout: () => onHover(null),
+                        click: () => onNavigate(region.id),
+                    }}
+                />
+            ))}
+            {!isPiltoverZaunCity && region.icon && center && (
+                <Marker
+                    position={center}
+                    icon={getRegionIcon(region, isHovered)}
+                    interactive={false}
+                />
+            )}
+        </FeatureGroup>
+    );
+});
+
 // Création d'un CRS sur-mesure pour matcher les tuiles générées (Zoom Native 6)
 // 2^6 = 64
 const mapCRS = L.extend({}, L.CRS.Simple, {
     transformation: new L.Transformation(1 / 64, 0, -1 / 64, 0)
 });
+
+const piltoverZaunSelectorCenter: MapPoint = [4565, 3028];
+const piltoverZaunChoices = [
+    { id: 'piltover', icon: '/images/Piltover.png', position: [4565, 2988] as MapPoint },
+    { id: 'zaun', icon: '/images/Zaun.png', position: [4565, 3068] as MapPoint },
+] as const;
+const piltoverZaunIcons = new Map(piltoverZaunChoices.map((choice) => [
+    choice.id,
+    L.icon({
+        iconUrl: choice.icon,
+        iconSize: [60, 60],
+        iconAnchor: [30, 30],
+        className: 'piltover-zaun-city-icon',
+    })
+]));
+const piltoverZaunLabelIcon = L.divIcon({
+    className: 'piltover-zaun-label',
+    html: '<span>Piltover et Zaun</span>',
+    iconSize: [250, 36],
+    iconAnchor: [-42, 18],
+});
+const editorCursor = "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25'%3E%3Cpath d='M12.5 1v7M12.5 17v7M1 12.5h7M17 12.5h7' stroke='%2338bdf8' stroke-width='2'/%3E%3Ccircle cx='12.5' cy='12.5' r='3.5' fill='%23020b18' stroke='%23e0f2fe' stroke-width='1.5'/%3E%3C/svg%3E\") 12 12, crosshair";
+
+function formatEditorCoordinates(points: MapPoint[]): string {
+    return points.map(([x, y]) => `${x},${y}`).join(' ');
+}
+
+function parseEditorCoordinates(value: string): MapPoint[] | null {
+    const pairs = value.trim().split(/\s+/).filter(Boolean);
+    const points: MapPoint[] = [];
+
+    for (const pair of pairs) {
+        const match = pair.match(/^(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)$/);
+        if (!match) return null;
+        points.push([Math.round(Number(match[1])), Math.round(Number(match[2]))]);
+    }
+
+    return points;
+}
+
+function getExistingPolygonPoints(region: Region | undefined, polygonIndex: number): MapPoint[] {
+    if (polygonIndex < 0) return [];
+    return parseEditorCoordinates(region?.polygons?.[polygonIndex] ?? '') ?? [];
+}
+
+function RegionContourEditor({
+    points,
+    onAddPoint,
+    onMovePoint,
+    onDeletePoint,
+}: {
+    points: MapPoint[];
+    onAddPoint: (point: MapPoint) => void;
+    onMovePoint: (index: number, point: MapPoint) => void;
+    onDeletePoint: (index: number) => void;
+}) {
+    const map = useMap();
+
+    useEffect(() => {
+        const container = map.getContainer();
+        const panes = Object.values(map.getPanes());
+        const previousMaxZoom = map.getMaxZoom();
+        const previousCursors = [container, ...panes].map((element) => element.style.cursor);
+
+        map.setMaxZoom(8);
+        container.classList.add('is-region-editing');
+        [container, ...panes].forEach((element) => {
+            element.style.cursor = editorCursor;
+        });
+
+        return () => {
+            map.setMaxZoom(previousMaxZoom);
+            container.classList.remove('is-region-editing');
+            [container, ...panes].forEach((element, index) => {
+                element.style.cursor = previousCursors[index];
+            });
+        };
+    }, [map]);
+
+    useMapEvents({
+        click(event) {
+            onAddPoint([
+                Math.round(event.latlng.lng),
+                Math.round(-event.latlng.lat),
+            ]);
+        },
+    });
+
+    const leafletPoints = points.map(([x, y]) => [-y, x] as MapPoint);
+    const vertexIcon = useMemo(() => L.divIcon({
+        className: 'region-editor-vertex',
+        iconSize: [10, 10],
+        iconAnchor: [5, 5],
+    }), []);
+
+    return (
+        <>
+            {leafletPoints.length > 1 && (
+                <Polyline positions={leafletPoints} pathOptions={{ color: '#38bdf8', weight: 3, dashArray: '7 5' }} />
+            )}
+            {leafletPoints.map((point, index) => (
+                <Marker
+                    key={`${point[0]}-${point[1]}-${index}`}
+                    position={point}
+                    icon={vertexIcon}
+                    draggable
+                    eventHandlers={{
+                        dragend: (event) => {
+                            const position = event.target.getLatLng();
+                            onMovePoint(index, [Math.round(position.lng), Math.round(-position.lat)]);
+                        },
+                        contextmenu: (event) => {
+                            event.originalEvent.preventDefault();
+                            onDeletePoint(index);
+                        },
+                    }}
+                />
+            ))}
+        </>
+    );
+}
 
 interface LeafletInteractiveMapProps {
     locale: string;
@@ -191,13 +435,34 @@ interface LeafletInteractiveMapProps {
 
 export default function LeafletInteractiveMap({ locale }: LeafletInteractiveMapProps) {
     const router = useRouter();
-    const dispatch = useAppDispatch();
-    const { hoveredRegion, selectedRegionId } = useAppSelector(state => state.map);
+    const [hoveredRegion, setHoveredRegion] = useState<string | null>(null);
+    const [selectedRegionId, setSelectedRegionId] = useState<string | null>(null);
+    const [isRegionEditing, setIsRegionEditing] = useState(false);
+    const [editingRegionId, setEditingRegionId] = useState('demacia');
+    const [editingPolygonIndex, setEditingPolygonIndex] = useState(0);
+    const [draftRegionPoints, setDraftRegionPoints] = useState<Record<string, MapPoint[]>>({});
+    const [draftRegionText, setDraftRegionText] = useState<Record<string, string>>({});
 
-    const setHoveredRegion = (region: string | null) => dispatch(setHoveredAction(region));
-    const setSelectedRegionId = (id: string | null) => dispatch(setSelectedAction(id));
+    const navigateToRegion = useCallback((id: string) => router.push(`/region/${id}`), [router]);
 
     const selectedRegion = selectedRegionId ? regionsData.find(r => r.id === selectedRegionId) : null;
+    const editingRegion = regionsData.find((region) => region.id === editingRegionId);
+    const editingDraftKey = `${editingRegionId}:${editingPolygonIndex}`;
+    const editingPoints = draftRegionPoints[editingDraftKey] ?? getExistingPolygonPoints(editingRegion, editingPolygonIndex);
+    const draftRegionPolygon = draftRegionText[editingDraftKey] ?? formatEditorCoordinates(editingPoints);
+
+    const updateEditingPoints = (points: MapPoint[]) => {
+        setDraftRegionPoints((drafts) => ({ ...drafts, [editingDraftKey]: points }));
+        setDraftRegionText((drafts) => ({ ...drafts, [editingDraftKey]: formatEditorCoordinates(points) }));
+    };
+
+    const loadEditingDraft = (regionId: string, polygonIndex: number) => {
+        const region = regionsData.find((candidate) => candidate.id === regionId);
+        const draftKey = `${regionId}:${polygonIndex}`;
+        const points = getExistingPolygonPoints(region, polygonIndex);
+        setDraftRegionPoints((drafts) => drafts[draftKey] ? drafts : { ...drafts, [draftKey]: points });
+        setDraftRegionText((drafts) => drafts[draftKey] !== undefined ? drafts : { ...drafts, [draftKey]: formatEditorCoordinates(points) });
+    };
 
     const bounds: L.LatLngBoundsExpression = [
         [-IMAGE_HEIGHT, 0],
@@ -209,15 +474,18 @@ export default function LeafletInteractiveMap({ locale }: LeafletInteractiveMapP
 
             <MapContainer
                 crs={mapCRS}
+                preferCanvas
                 zoom={3.5}
                 minZoom={3.5}
-                maxZoom={6.45}
+                maxZoom={isRegionEditing ? 8 : 6.45}
                 zoomSnap={0.1}
                 zoomDelta={0.3}
                 wheelPxPerZoomLevel={120}
                 center={[-IMAGE_HEIGHT / 2, IMAGE_WIDTH / 2]}
                 maxBounds={bounds}
                 maxBoundsViscosity={0.8}
+                zoomControl={false}
+                className={isRegionEditing ? 'is-region-editing' : undefined}
                 style={{
                     height: '100%',
                     width: '100%',
@@ -226,113 +494,165 @@ export default function LeafletInteractiveMap({ locale }: LeafletInteractiveMapP
                 attributionControl={false}
             >
                 <TileLayer
-                    url="/map-tiles/{z}/{y}/{x}.png"
+                    url={isRegionEditing ? "/map-tiles/{z}/{y}/{x}.png" : "/map-tiles-webp/{z}/{y}/{x}.webp"}
                     noWrap={true}
                     bounds={bounds}
+                    maxNativeZoom={8}
+                    keepBuffer={0}
                     eventHandlers={{
-                        click: () => setSelectedRegionId(null)
+                        click: () => {
+                            setSelectedRegionId(null);
+                        }
                     }}
                 />
 
-                {/* Polygones et Cercles des Régions */}
-                {regionsData.map((region) => {
-                    const center = getRegionCenter(region);
-                    return (
-                        <FeatureGroup key={region.id}>
-                            {region.polygons?.map((polygonStr, index) => {
-                                const leafletCoords = parseSvgPolygon(polygonStr);
-                                return (
-                                    <Polygon
-                                        key={`${region.id}-poly-${index}`}
-                                        positions={leafletCoords}
-                                        pathOptions={{
-                                            color: region.color,
-                                            weight: 1,
-                                            fillOpacity: hoveredRegion === region.id ? 0.5 : 0.0,
-                                            stroke: true,
-                                            opacity: hoveredRegion === region.id ? 1 : 0.2
-                                        }}
-                                        eventHandlers={{
-                                            mouseover: () => setHoveredRegion(region.id),
-                                            mouseout: () => setHoveredRegion(null),
-                                            click: () => setSelectedRegionId(region.id)
-                                        }}
-                                    />
-                                );
-                            })}
-                            {region.circles?.map((circleStr, index) => {
-                                const [cx, cy, r] = circleStr.split(',').map(Number);
-                                return (
-                                    <Circle
-                                        key={`${region.id}-circ-${index}`}
-                                        center={[-cy, cx]}
-                                        radius={r}
-                                        pathOptions={{
-                                            color: region.color,
-                                            weight: 2,
-                                            fillOpacity: hoveredRegion === region.id ? 0.5 : 0.2,
-                                            stroke: true,
-                                            opacity: hoveredRegion === region.id ? 1 : 0.5
-                                        }}
-                                        eventHandlers={{
-                                            mouseover: () => setHoveredRegion(region.id),
-                                            mouseout: () => setHoveredRegion(null),
-                                            click: () => router.push(`/region/${region.id}`)
-                                        }}
-                                    />
-                                )
-                            })}
+                {isRegionEditing && (
+                    <>
+                        <ZoomControl position="topleft" />
+                        <RegionContourEditor
+                            points={editingPoints}
+                            onAddPoint={(point) => updateEditingPoints([...editingPoints, point])}
+                            onMovePoint={(index, point) => updateEditingPoints(editingPoints.map((currentPoint, currentIndex) => currentIndex === index ? point : currentPoint))}
+                            onDeletePoint={(index) => updateEditingPoints(editingPoints.filter((_, currentIndex) => currentIndex !== index))}
+                        />
+                    </>
+                )}
 
-                            {/* Icône de la région */}
-                            {region.icon && center && (
-                                <Marker
-                                    position={center}
-                                    icon={L.icon({
-                                        iconUrl: region.icon,
-                                        iconSize: hoveredRegion === region.id ? [80, 80] : [60, 60],
-                                        iconAnchor: hoveredRegion === region.id ? [40, 40] : [30, 30],
-                                        className: 'transition-all duration-300 pointer-events-none'
-                                    })}
-                                    interactive={false}
-                                />
-                            )}
-                        </FeatureGroup>
-                    );
-                })}
+                {!isRegionEditing && (
+                    <>
+                        {piltoverZaunChoices.map((choice) => (
+                            <Marker
+                                key={choice.id}
+                                position={[-choice.position[1], choice.position[0]]}
+                                icon={piltoverZaunIcons.get(choice.id)!}
+                                title={`Ouvrir ${choice.id}`}
+                                eventHandlers={{
+                                    click: () => navigateToRegion(choice.id),
+                                    mouseover: () => setHoveredRegion(choice.id),
+                                    mouseout: () => setHoveredRegion(null),
+                                }}
+                            />
+                        ))}
+                        <Marker
+                            position={[-piltoverZaunSelectorCenter[1], piltoverZaunSelectorCenter[0]]}
+                            icon={piltoverZaunLabelIcon}
+                            interactive={false}
+                        />
+                    </>
+                )}
+
+                {/* Polygones et Cercles des Régions */}
+                {!isRegionEditing && preparedRegions.map((preparedRegion) => (
+                    <RegionLayer
+                        key={preparedRegion.region.id}
+                        preparedRegion={preparedRegion}
+                        isHovered={hoveredRegion === preparedRegion.region.id}
+                        onHover={setHoveredRegion}
+                        onSelect={setSelectedRegionId}
+                        onNavigate={navigateToRegion}
+                    />
+                ))}
             </MapContainer>
+
+            {process.env.NODE_ENV === 'development' && (
+                <div className="absolute bottom-4 left-4 z-[1001] w-64 border border-sky-400/70 bg-[#020b18]/95 p-3 text-xs text-sky-100 shadow-xl">
+                    <button
+                        type="button"
+                        className="w-full border border-sky-400 bg-sky-400/15 px-3 py-2 font-semibold uppercase tracking-wide text-sky-100 hover:bg-sky-400/25"
+                        onClick={() => {
+                            const nextIsEditing = !isRegionEditing;
+                            setIsRegionEditing(nextIsEditing);
+                            setHoveredRegion(null);
+                            setSelectedRegionId(null);
+                            if (nextIsEditing) loadEditingDraft(editingRegionId, editingPolygonIndex);
+                        }}
+                    >
+                        {isRegionEditing ? 'Terminer le tracé' : 'Éditer une région'}
+                    </button>
+                    {isRegionEditing && (
+                        <>
+                            <label className="mt-2 block text-sky-200" htmlFor="region-editor-select">Région à modifier</label>
+                            <select
+                                id="region-editor-select"
+                                className="mt-1 w-full border border-sky-700 bg-[#061323] px-2 py-1 text-sky-100"
+                                value={editingRegionId}
+                                onChange={(event) => {
+                                    const regionId = event.target.value;
+                                    setEditingRegionId(regionId);
+                                    setEditingPolygonIndex(0);
+                                    loadEditingDraft(regionId, 0);
+                                }}
+                            >
+                                {regionsData.filter((region) => !region.virtual).map((region) => (
+                                    <option key={region.id} value={region.id}>{locale.startsWith('en') ? region.nameEn : region.name}</option>
+                                ))}
+                            </select>
+                            <label className="mt-2 block text-sky-200" htmlFor="region-editor-polygon-select">Contour</label>
+                            <select
+                                id="region-editor-polygon-select"
+                                className="mt-1 w-full border border-sky-700 bg-[#061323] px-2 py-1 text-sky-100"
+                                value={editingPolygonIndex}
+                                onChange={(event) => {
+                                    const polygonIndex = Number(event.target.value);
+                                    setEditingPolygonIndex(polygonIndex);
+                                    loadEditingDraft(editingRegionId, polygonIndex);
+                                }}
+                            >
+                                {editingRegion?.polygons?.map((_, index) => (
+                                    <option key={index} value={index}>Contour existant {index + 1}</option>
+                                ))}
+                                <option value={-1}>Nouveau contour</option>
+                            </select>
+                            <p className="mt-2 text-sky-200">Déplace les points ou colle des coordonnées pour remodeler ce contour. {editingPoints.length} point{editingPoints.length > 1 ? 's' : ''}.</p>
+                            <div className="mt-2 flex gap-2">
+                                <button type="button" className="border border-sky-700 px-2 py-1 hover:bg-sky-950" onClick={() => updateEditingPoints(editingPoints.slice(0, -1))}>Annuler</button>
+                                <button type="button" className="border border-sky-700 px-2 py-1 hover:bg-sky-950" onClick={() => updateEditingPoints([])}>Effacer</button>
+                            </div>
+                            <textarea
+                                className="mt-2 h-20 w-full resize-none bg-[#061323] p-2 font-mono text-[10px] text-sky-100"
+                                value={draftRegionPolygon}
+                                onChange={(event) => {
+                                    const value = event.target.value;
+                                    setDraftRegionText((drafts) => ({ ...drafts, [editingDraftKey]: value }));
+                                    const points = parseEditorCoordinates(value);
+                                    if (points) setDraftRegionPoints((drafts) => ({ ...drafts, [editingDraftKey]: points }));
+                                }}
+                                aria-label="Coordonnées du tracé de région"
+                            />
+                        </>
+                    )}
+                </div>
+            )}
 
             {/* Label au survol de région */}
             {hoveredRegion && !selectedRegionId && (
                 <div className="absolute top-4 left-1/2 -translate-x-1/2 z-[1000] pointer-events-none"
                     style={{
-                        background: 'linear-gradient(135deg, rgba(13,11,8,0.92) 0%, rgba(20,15,8,0.88) 100%)',
-                        border: '1px solid #5c5b57',
-                        borderTop: '1px solid #c8aa6e',
+                        background: 'linear-gradient(135deg, rgba(4,15,30,0.94) 0%, rgba(7,25,48,0.90) 100%)',
+                        border: '1px solid #1e4f78',
+                        borderTop: '1px solid #38bdf8',
                         borderBottom: '2px solid #000',
                         padding: '8px 24px',
                         borderRadius: '2px',
-                        boxShadow: '0 0 20px rgba(0,0,0,0.7), inset 0 0 10px rgba(200,170,110,0.05)'
+                        boxShadow: '0 0 20px rgba(0,0,0,0.7), inset 0 0 10px rgba(56,189,248,0.12)'
                     }}>
-                    <p className="text-[#c8aa6e] font-bold text-lg uppercase tracking-widest"
-                        style={{ fontFamily: 'var(--font-marcellus), serif', textShadow: '0 0 8px rgba(200,170,110,0.4)' }}>
+                    <p className="text-[#7dd3fc] font-bold text-lg uppercase tracking-widest"
+                        style={{ fontFamily: 'var(--font-marcellus), serif', textShadow: '0 0 8px rgba(56,189,248,0.45)' }}>
                         {regionsData.find(r => r.id === hoveredRegion)?.[locale.startsWith('en') ? 'nameEn' : 'name'] ?? hoveredRegion}
                     </p>
                 </div>
             )}
 
             {/* Preview de la région sélectionnée */}
-            <AnimatePresence>
-                {selectedRegion && (
-                    <RegionPreview
-                        regionId={selectedRegion.id}
-                        name={locale.startsWith('en') ? selectedRegion.nameEn : selectedRegion.name}
-                        description={locale.startsWith('en') ? selectedRegion.descriptionEn : selectedRegion.description}
-                        icon={selectedRegion.icon}
-                        onClose={() => setSelectedRegionId(null)}
-                        locale={locale}
-                    />
-                )}
-            </AnimatePresence>
+            {selectedRegion && (
+                <RegionPreview
+                    regionId={selectedRegion.id}
+                    name={locale.startsWith('en') ? selectedRegion.nameEn : selectedRegion.name}
+                    description={locale.startsWith('en') ? selectedRegion.descriptionEn : selectedRegion.description}
+                    icon={selectedRegion.icon || '/LogoRuneDex.png'}
+                    onClose={() => setSelectedRegionId(null)}
+                />
+            )}
         </div>
     );
 }

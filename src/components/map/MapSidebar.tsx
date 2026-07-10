@@ -5,20 +5,11 @@ import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { setExpandedSidebarItem as setExpandedAction, setSidebarSearchQuery as setSearchAction } from '@/store/slices/mapSlice';
 import Image from 'next/image';
 
-interface SidebarItem {
-    id: string;
-    icon: string;
-    label: string;
-    href?: string;
-    content?: React.ReactNode;
-}
-
 interface MapSidebarProps {
     locale: string;
-    onSearch?: (query: string) => void;
 }
 
-export default function MapSidebar({ locale, onSearch }: MapSidebarProps) {
+export default function MapSidebar({ locale }: MapSidebarProps) {
     const router = useRouter();
     const dispatch = useAppDispatch();
     const { expandedSidebarItem: expandedItem, sidebarSearchQuery: searchQuery } = useAppSelector(state => state.map);
@@ -132,7 +123,7 @@ export default function MapSidebar({ locale, onSearch }: MapSidebarProps) {
                                 ? 'bg-hextech-cyan/20 border-hextech-cyan scale-105 shadow-[0_0_15px_rgba(0,229,255,0.2)]'
                                 : 'bg-hextech-panel/80 border-hextech-gold/40 hover:border-hextech-cyan/80'
                             }`}
-                        onClick={() => item.href && router.push(item.href as any)}
+                        onClick={() => item.href && router.push(item.href)}
                         title={item.label}
                     >
                         <span className="text-lg">{item.icon}</span>
@@ -141,7 +132,7 @@ export default function MapSidebar({ locale, onSearch }: MapSidebarProps) {
                     {/* Expanded label */}
                     <div
                         className={`overflow-hidden transition-all duration-300 ease-in-out cursor-pointer ${expandedItem === item.id ? 'max-w-[200px] opacity-100' : 'max-w-0 opacity-0'}`}
-                        onClick={() => item.href && router.push(item.href as any)}
+                        onClick={() => item.href && router.push(item.href)}
                     >
                         <div className="bg-hextech-panel border border-hextech-cyan/60 rounded-xl px-4 py-2 whitespace-nowrap shadow-[0_0_10px_rgba(0,229,255,0.1)]">
                             <span className="text-hextech-cyan font-bold text-sm tracking-wider uppercase">{item.label}</span>
