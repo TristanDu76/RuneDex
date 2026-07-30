@@ -1,44 +1,46 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import GlobalSearch from './GlobalSearch';
 import { Link, usePathname } from '@/i18n/routing';
-import { useLocale, useTranslations } from 'next-intl';
-
-import { ChampionLight, LoreCharacterLight } from '@/types/champion';
-
 interface NavbarProps {
-    champions: ChampionLight[];
-    loreCharacters: LoreCharacterLight[];
+    locale: string;
 }
 
-export default function Navbar({ champions, loreCharacters }: NavbarProps) {
+const MOBILE_NAV_ITEMS = [
+    { href: '/', label: 'Carte', icon: '🗺️' },
+    { href: '/characters', label: 'Personnages', icon: '👥' },
+    { href: '/rune', label: 'Runes', icon: '🔮' },
+    { href: '/artifact', label: 'Objets', icon: '🗡️' },
+    { href: '/quiz', label: 'Quiz', icon: '🎮' },
+];
+
+export default function Navbar({ locale }: NavbarProps) {
     const pathname = usePathname();
-    const locale = useLocale();
-    const t = useTranslations();
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     // Hide navbar logic removed - always show now
 
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 bg-hextech-bg/90 backdrop-blur-lg border-b border-hextech-gold/30 shadow-[0_4px_30px_rgba(0,0,0,0.5)] h-16 transition-all duration-300">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between">
+            <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-3 sm:px-6 lg:px-8">
 
                 {/* Left: Logo */}
-                <div className="flex-shrink-0 flex items-center gap-6">
+                <div className="flex flex-shrink-0 items-center gap-2 sm:gap-6">
                     <Link
                         href="/"
-                        className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+                        className="flex items-center gap-2 transition-opacity hover:opacity-80 sm:gap-3"
                     >
                         <Image
                             src="/LogoRuneDex.png"
                             alt="RuneDex Logo"
                             width={50}
                             height={50}
-                            className="h-10 w-auto object-contain"
+                            className="h-8 w-auto object-contain sm:h-10"
                         />
                         <span
-                            className="text-2xl hex-title tracking-[0.2em] relative"
+                            className="relative text-lg hex-title tracking-[0.12em] sm:text-2xl sm:tracking-[0.2em]"
                         >
                             RuneDex
                             <span className="absolute -inset-1 blur-sm bg-hextech-cyan/20 z-[-1] rounded-full"></span>
@@ -46,32 +48,20 @@ export default function Navbar({ champions, loreCharacters }: NavbarProps) {
                     </Link>
 
                     {/* Search Bar */}
-                    <GlobalSearch champions={champions} loreCharacters={loreCharacters} />
+                    <GlobalSearch locale={locale} />
 
 
 
                 </div>
 
-                {/* Right: Language Switcher & Mobile Map */}
-                <div className="flex items-center gap-4">
-                    {/* Mobile Map Icon */}
-                    <Link
-                        href="/map"
-                        className={`md:hidden p-2 rounded-lg transition-all border ${pathname === '/map'
-                            ? 'bg-hextech-cyan/20 border-hextech-cyan text-hextech-cyan shadow-[0_0_10px_rgba(0,229,255,0.3)]'
-                            : 'border-transparent text-gray-400 hover:text-white hover:bg-hextech-panel hover:border-hextech-gold/30'
-                            }`}
-                    >
-                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A2 2 0 013 15.382V6.618a2 2 0 011.553-1.894L9 2l6 3 5.447-2.724A2 2 0 0122 4.172v8.711a2 2 0 01-1.553 1.894L15 18l-6 2z" />
-                        </svg>
-                    </Link>
+                {/* Right: Language Switcher & Mobile Navigation */}
+                <div className="flex items-center gap-1.5 sm:gap-4">
 
                     <div className="flex items-center bg-hextech-panel rounded-lg p-1 border border-hextech-gold/30 shadow-[inset_0_0_5px_rgba(0,0,0,0.5)]">
                         <Link
                             href={pathname}
                             locale="fr"
-                            className={`px-3 py-1 rounded-md text-sm font-semibold transition-all uppercase tracking-wider ${locale === 'fr'
+                            className={`px-2 py-1 text-sm font-semibold uppercase tracking-wider transition-all sm:px-3 ${locale === 'fr'
                                 ? 'bg-hextech-cyan/20 text-hextech-cyan shadow-[0_0_10px_rgba(0,229,255,0.2)]'
                                 : 'text-gray-400 hover:text-hextech-gold'
                                 }`}
@@ -81,7 +71,7 @@ export default function Navbar({ champions, loreCharacters }: NavbarProps) {
                         <Link
                             href={pathname}
                             locale="en"
-                            className={`px-3 py-1 rounded-md text-sm font-semibold transition-all uppercase tracking-wider ${locale === 'en'
+                            className={`px-2 py-1 text-sm font-semibold uppercase tracking-wider transition-all sm:px-3 ${locale === 'en'
                                 ? 'bg-hextech-cyan/20 text-hextech-cyan shadow-[0_0_10px_rgba(0,229,255,0.2)]'
                                 : 'text-gray-400 hover:text-hextech-gold'
                                 }`}
@@ -89,8 +79,39 @@ export default function Navbar({ champions, loreCharacters }: NavbarProps) {
                             EN
                         </Link>
                     </div>
+                    <button
+                        type="button"
+                        className="inline-flex h-10 w-10 items-center justify-center border border-hextech-gold/30 text-hextech-gold transition-colors hover:bg-hextech-panel md:hidden"
+                        onClick={() => setIsMobileMenuOpen((open) => !open)}
+                        aria-expanded={isMobileMenuOpen}
+                        aria-controls="mobile-site-navigation"
+                        aria-label="Ouvrir la navigation"
+                    >
+                        <span className="text-xl" aria-hidden="true">☰</span>
+                    </button>
                 </div>
             </div>
+
+            {isMobileMenuOpen && (
+                <div id="mobile-site-navigation" className="fixed inset-x-0 top-16 z-[60] border-b border-hextech-gold/30 bg-hextech-bg/98 p-4 shadow-2xl backdrop-blur md:hidden">
+                    <div className="mx-auto grid max-w-md gap-2">
+                        {MOBILE_NAV_ITEMS.map((item) => (
+                            <Link
+                                key={item.href}
+                                href={item.href}
+                                onClick={() => setIsMobileMenuOpen(false)}
+                                className={`flex min-h-12 items-center gap-3 border px-4 text-sm font-semibold uppercase tracking-wider transition-colors ${pathname === item.href
+                                    ? 'border-hextech-cyan bg-hextech-cyan/15 text-hextech-cyan'
+                                    : 'border-hextech-gold/25 bg-hextech-panel text-hextech-gold'
+                                    }`}
+                            >
+                                <span aria-hidden="true">{item.icon}</span>
+                                {item.label}
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+            )}
         </nav>
     );
 }

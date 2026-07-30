@@ -1,41 +1,26 @@
 'use client';
 
 import React from 'react';
-import { ChampionData, ChampionLight, LoreCharacterLight } from '@/types/champion';
-import { getTypeStyle } from '@/utils/colors';
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import type { RelationCardData } from '@/lib/relation-cards';
 
 interface ChampionRelationsProps {
-    championName: string;
-    championDetails: ChampionData;
-    allChampions: ChampionLight[];
-    loreCharacters: LoreCharacterLight[];
+    relations: RelationCardData[];
     locale: string;
-    latestVersion: string;
 }
 
 /* ─── Portrait Card ─────────────────────────────────────────── */
-const RelationCard = ({ rel, allChampions, loreCharacters, t, locale, latestVersion }: any) => {
-    const relChamp = allChampions.find((c: any) => c.name === rel.champion);
-    const style = getTypeStyle(rel.type);
+interface RelationCardProps {
+    rel: RelationCardData;
+    t: ReturnType<typeof useTranslations>;
+    locale: string;
+}
+
+const RelationCard = ({ rel, t, locale }: RelationCardProps) => {
     const note = rel.note
-        ? (typeof rel.note === 'object' ? (rel.note as any)[locale === 'fr' ? 'fr' : 'en'] ?? (rel.note as any)['en'] : rel.note)
+        ? (typeof rel.note === 'object' ? rel.note[locale === 'fr' ? 'fr' : 'en'] ?? rel.note.en : rel.note)
         : null;
-
-    /* ── Image sources ── */
-    let bgImage = '';
-    let href = '#';
-    let isLore = false;
-
-    if (relChamp) {
-        bgImage = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${relChamp.id}_0.jpg`;
-        href = `/${locale}/champion/${relChamp.id}`;
-    } else {
-        const loreChar = loreCharacters.find((c: any) => c.name === rel.champion);
-        bgImage = loreChar?.image || '';
-        href = `/${locale}/lore/${encodeURIComponent(rel.champion)}`;
-        isLore = true;
-    }
 
     /* ── Badge color per relation type ── */
     const badgeColors: Record<string, { bg: string; text: string }> = {
@@ -54,7 +39,7 @@ const RelationCard = ({ rel, allChampions, loreCharacters, t, locale, latestVers
         son: { bg: '#2a1a3a', text: '#c080e0' },
         daughter: { bg: '#2a1a3a', text: '#c080e0' },
         lover: { bg: '#3a1a2a', text: '#e080a0' },
-        'faction-member': { bg: '#2a2010', text: '#c8aa6e' },
+        'faction-member': { bg: '#0b2138', text: '#7dd3fc' },
         'related-lore': { bg: '#1a1a2a', text: '#8090c0' },
     };
 
@@ -63,7 +48,7 @@ const RelationCard = ({ rel, allChampions, loreCharacters, t, locale, latestVers
 
     return (
         <a
-            href={href}
+            href={rel.href}
             className="group"
             style={{
                 display: 'block',
@@ -93,13 +78,17 @@ const RelationCard = ({ rel, allChampions, loreCharacters, t, locale, latestVers
             }}
         >
             {/* Artwork background */}
-            {bgImage ? (
-                <img
-                    src={bgImage}
+            {rel.image ? (
+                <Image
+                    src={rel.image}
                     alt={rel.champion}
+                    width={160}
+                    height={213}
                     style={{
-                        position: 'absolute', inset: 0,
-                        width: '100%', height: '100%',
+                        position: 'absolute',
+                        inset: 0,
+                        width: '100%',
+                        height: '100%',
                         objectFit: 'cover',
                         objectPosition: 'top center',
                         transition: 'transform 0.4s ease',
@@ -114,7 +103,7 @@ const RelationCard = ({ rel, allChampions, loreCharacters, t, locale, latestVers
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
                     fontSize: '2.5rem', color: '#3d2e18',
                 }}>
-                    {isLore ? '📜' : '⚔'}
+                    {rel.isLore ? '📜' : '⚔'}
                 </div>
             )}
 
@@ -172,7 +161,7 @@ const RelationCard = ({ rel, allChampions, loreCharacters, t, locale, latestVers
 
                 {/* Champion name */}
                 <p style={{
-                    color: '#f0e6d2',
+                    color: '#e0f2fe',
                     fontFamily: 'var(--font-marcellus), serif',
                     fontSize: '0.82rem',
                     letterSpacing: '0.04em',
@@ -191,73 +180,11 @@ const RelationCard = ({ rel, allChampions, loreCharacters, t, locale, latestVers
 
 /* ─── Main Component ────────────────────────────────────────── */
 export default function ChampionRelations({
-    championName,
-    championDetails,
-    allChampions,
-    loreCharacters,
+    relations,
     locale,
-    latestVersion,
 }: ChampionRelationsProps) {
     const t = useTranslations();
-    const relations = championDetails.related_champions || [];
-    const apiRelated = (championDetails.relatedChampions || []) as { name: string; slug: string; image?: string }[];
-
-    let displayRelations: { champion: string; type: string; note?: string }[] = [];
-
-    if (relations.length > 0) {
-        displayRelations = [...relations];
-    } else if (apiRelated.length > 0) {
-        displayRelations = apiRelated.map(rel => ({ champion: rel.name, type: 'related' }));
-    }
-
-    /* Faction expansion */
-    const factionRelations = displayRelations.filter(r => r.type === 'faction');
-    factionRelations.forEach(rel => {
-        const targetFaction = rel.champion.toLowerCase();
-        allChampions
-            .filter(c => (c as any).factions?.includes(targetFaction) && c.name !== championName)
-            .forEach(member => {
-                if (!displayRelations.some(r => r.champion === member.name))
-                    displayRelations.push({ champion: member.name, type: 'faction-member' });
-            });
-        loreCharacters
-            .filter(lc => {
-                const factions = Array.isArray(lc.faction) ? lc.faction : (lc as any).factions || [];
-                return factions.some((f: string) => f.toLowerCase() === targetFaction);
-            })
-            .forEach(member => {
-                if (!displayRelations.some(r => r.champion === member.name))
-                    displayRelations.push({ champion: member.name, type: 'faction-member' });
-            });
-    });
-
-    /* Lore back-links */
-    loreCharacters.forEach(lc => {
-        const linked = lc.related_characters?.some((n: string) =>
-            n.toLowerCase() === championName.toLowerCase() ||
-            n.toLowerCase() === championDetails.id.toLowerCase()
-        );
-        if (linked && !displayRelations.some(r => r.champion === lc.name))
-            displayRelations.push({ champion: lc.name, type: 'related-lore' });
-    });
-
-    displayRelations = displayRelations.filter(r => r.type !== 'faction');
-    if (displayRelations.length === 0) return null;
-
-    const priorityOrder = [
-        'family', 'brother', 'sister', 'father', 'mother', 'son', 'daughter',
-        'ally', 'friend', 'mentor', 'student', 'lover',
-        'rival', 'enemy', 'nemesis',
-        'related-lore', 'faction-member', 'related',
-    ];
-
-    const sortedRelations = [...displayRelations].sort((a, b) => {
-        const ia = priorityOrder.indexOf(a.type), ib = priorityOrder.indexOf(b.type);
-        if (ia !== -1 && ib !== -1) return ia - ib;
-        if (ia !== -1) return -1;
-        if (ib !== -1) return 1;
-        return a.type.localeCompare(b.type);
-    });
+    if (relations.length === 0) return null;
 
     return (
         <div className="hex-panel p-8 mt-8">
@@ -265,7 +192,7 @@ export default function ChampionRelations({
             <h2 style={{
                 fontFamily: 'var(--font-marcellus), serif',
                 fontSize: '1.3rem',
-                color: '#c8aa6e',
+                color: '#7dd3fc',
                 textTransform: 'uppercase',
                 letterSpacing: '0.12em',
                 marginBottom: '2rem',
@@ -286,19 +213,15 @@ export default function ChampionRelations({
                 flexWrap: 'wrap',
                 gap: '12px',
             }}>
-                {sortedRelations.map(rel => (
+                {relations.map(rel => (
                     <RelationCard
                         key={`${rel.champion}-${rel.type}`}
                         rel={rel}
-                        allChampions={allChampions}
-                        loreCharacters={loreCharacters}
                         t={t}
                         locale={locale}
-                        latestVersion={latestVersion}
                     />
                 ))}
             </div>
         </div>
     );
 }
-

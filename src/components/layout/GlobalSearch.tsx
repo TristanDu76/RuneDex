@@ -1,56 +1,62 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
+import Image from 'next/image';
 import { createPortal } from 'react-dom';
 import { useRouter } from '@/i18n/routing';
 import { ChampionLight, LoreCharacterLight } from '@/types/champion';
 import { useTranslations } from 'next-intl';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { setQuery, setResults, setIsOpen, setIsMobileOpen, setSelectedIndex, closeSearch } from '@/store/slices/searchSlice';
+import type { SearchResult } from '@/lib/search-catalog';
+
 interface GlobalSearchProps {
-    champions: ChampionLight[];
-    loreCharacters: LoreCharacterLight[];
+    locale: string;
 }
 
-type SearchResult =
-    | { type: 'champion'; data: ChampionLight }
-    | { type: 'lore'; data: LoreCharacterLight };
+const SEARCH_DEBOUNCE_MS = 200;
 
-export default function GlobalSearch({ champions, loreCharacters }: GlobalSearchProps) {
+export default function GlobalSearch({ locale }: GlobalSearchProps) {
     const dispatch = useAppDispatch();
     const { query, results, isOpen, isMobileOpen, selectedIndex } = useAppSelector(state => state.search);
-    const [mounted, setMounted] = useState(false);
     const wrapperRef = useRef<HTMLDivElement>(null);
 
     const router = useRouter();
     const t = useTranslations();
 
     useEffect(() => {
-        setMounted(true);
-    }, []);
-
-    useEffect(() => {
-        if (query.length > 0) {
-            const lowerQuery = query.toLowerCase();
-
-            const filteredChampions = champions
-                .filter(c => c.name.toLowerCase().startsWith(lowerQuery))
-                .map(c => ({ type: 'champion' as const, data: c }));
-
-            const filteredLore = loreCharacters
-                .filter(c => c.name.toLowerCase().startsWith(lowerQuery))
-                .map(c => ({ type: 'lore' as const, data: c }));
-
-            // Combine and limit
-            const combined = [...filteredChampions, ...filteredLore].slice(0, 8);
-
-            dispatch(setResults(combined));
-            dispatch(setIsOpen(true));
-            dispatch(setSelectedIndex(-1)); // Reset selection
-        } else {
+        if (!query) {
             dispatch(setResults([]));
             dispatch(setIsOpen(false));
             dispatch(setSelectedIndex(-1));
+            return;
         }
-    }, [query, champions, loreCharacters, dispatch]);
+
+        const controller = new AbortController();
+        const timeout = window.setTimeout(() => {
+            void loadResults().catch((error: unknown) => {
+                if (!(error instanceof DOMException && error.name === 'AbortError')) {
+                    dispatch(setResults([]));
+                }
+            });
+        }, SEARCH_DEBOUNCE_MS);
+
+        async function loadResults() {
+            const params = new URLSearchParams({ q: query, locale });
+            const response = await fetch(`/api/catalog?${params}`, { signal: controller.signal });
+            if (!response.ok) return;
+
+            const payload = await response.json() as { results?: SearchResult[] };
+            if (controller.signal.aborted || !Array.isArray(payload.results)) return;
+
+            dispatch(setResults(payload.results));
+            dispatch(setIsOpen(true));
+            dispatch(setSelectedIndex(-1));
+        }
+
+        return () => {
+            window.clearTimeout(timeout);
+            controller.abort();
+        };
+    }, [query, locale, dispatch]);
 
     // Close dropdown when clicking outside
     useEffect(() => {
@@ -63,7 +69,7 @@ export default function GlobalSearch({ champions, loreCharacters }: GlobalSearch
         return () => {
             document.removeEventListener("mousedown", handleClickOutside);
         };
-    }, [wrapperRef]);
+    }, [dispatch]);
 
     const handleSelect = (result: SearchResult) => {
         let url = '';
@@ -123,30 +129,36 @@ export default function GlobalSearch({ champions, loreCharacters }: GlobalSearch
                             {results.map((result, index) => (
                                 <li
                                     key={`${result.type}-${result.data.id}`}
-                                    onClick={() => handleSelect(result)}
-                                    onMouseEnter={() => dispatch(setSelectedIndex(index))}
-                                    className={`cursor-pointer px-4 py-3 text-gray-200 flex items-center gap-3 transition-all border-b border-hextech-gold/10 last:border-0 ${index === selectedIndex ? 'bg-hextech-cyan/20 border-l-2 border-l-hextech-cyan text-white' : 'hover:bg-hextech-cyan/10 hover:pr-2'
-                                        }`}
                                 >
-                                    {result.type === 'champion' ? (
-                                        <img
+                                    <button
+                                        type="button"
+                                        onClick={() => handleSelect(result)}
+                                        onMouseEnter={() => dispatch(setSelectedIndex(index))}
+                                        className={`w-full cursor-pointer px-4 py-3 text-left text-gray-200 flex items-center gap-3 transition-all border-b border-hextech-gold/10 last:border-0 ${index === selectedIndex ? 'bg-hextech-cyan/20 border-l-2 border-l-hextech-cyan text-white' : 'hover:bg-hextech-cyan/10 hover:pr-2'
+                                            }`}
+                                    >
+                                        {result.type === 'champion' ? (
+                                        <Image
                                             src={`https://ddragon.leagueoflegends.com/cdn/${(result.data as ChampionLight).version}/img/champion/${(result.data as ChampionLight).image.full}`}
                                             alt={result.data.name}
-                                            className="w-8 h-8 rounded-full border border-hextech-gold/50 shadow-[0_0_10px_rgba(212,175,55,0.3)]"
+                                            width={32}
+                                            height={32}
+                                            className="w-8 h-8 rounded-full border border-hextech-gold/50 shadow-[0_0_10px_rgba(56,189,248,0.3)]"
                                         />
                                     ) : (
-                                        <div className="w-8 h-8 rounded-full border border-hextech-gold/50 bg-hextech-panel flex items-center justify-center overflow-hidden shadow-[0_0_10px_rgba(212,175,55,0.3)]">
+                                        <div className="w-8 h-8 rounded-full border border-hextech-gold/50 bg-hextech-panel flex items-center justify-center overflow-hidden shadow-[0_0_10px_rgba(56,189,248,0.3)]">
                                             {(result.data as LoreCharacterLight).image ? (
-                                                <img src={(result.data as LoreCharacterLight).image!} alt={result.data.name} className="w-full h-full object-cover" />
+                                                <Image src={(result.data as LoreCharacterLight).image!} alt={result.data.name} fill sizes="32px" className="object-cover" />
                                             ) : (
                                                 <span className="text-xs font-bold text-hextech-gold">?</span>
                                             )}
                                         </div>
                                     )}
-                                    <div className="flex flex-col">
-                                        <span className={`font-medium ${index === selectedIndex ? 'text-hextech-cyan drop-shadow-[0_0_8px_rgba(0,229,255,0.8)]' : ''}`}>{result.data.name}</span>
-                                        <span className="text-[10px] text-hextech-gold/70 tracking-widest uppercase">{result.type === 'champion' ? 'Champion' : 'Lore'}</span>
-                                    </div>
+                                        <div className="flex flex-col">
+                                            <span className={`font-medium ${index === selectedIndex ? 'text-hextech-cyan drop-shadow-[0_0_8px_rgba(0,229,255,0.8)]' : ''}`}>{result.data.name}</span>
+                                            <span className="text-[10px] text-hextech-gold/70 tracking-widest uppercase">{result.type === 'champion' ? 'Champion' : 'Lore'}</span>
+                                        </div>
+                                    </button>
                                 </li>
                             ))}
                         </ul>
@@ -156,8 +168,10 @@ export default function GlobalSearch({ champions, loreCharacters }: GlobalSearch
 
             {/* Mobile Search Trigger */}
             <button
+                type="button"
                 className="sm:hidden p-2 text-gray-400 hover:text-white transition-colors"
                 onClick={() => dispatch(setIsMobileOpen(true))}
+                aria-label={locale.startsWith('en') ? 'Open search' : 'Ouvrir la recherche'}
             >
                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -165,7 +179,7 @@ export default function GlobalSearch({ champions, loreCharacters }: GlobalSearch
             </button>
 
             {/* Mobile Search Overlay (Portal) */}
-            {isMobileOpen && mounted && createPortal(
+            {isMobileOpen && typeof document !== 'undefined' && createPortal(
                 <div className="fixed inset-0 z-[9999] bg-hextech-bg/95 backdrop-blur-md flex flex-col p-4">
                     <div className="flex items-center gap-4 mb-4">
                         <div className="relative flex-grow">
@@ -197,22 +211,28 @@ export default function GlobalSearch({ champions, loreCharacters }: GlobalSearch
                         <div className="flex-grow overflow-y-auto hex-panel border border-hextech-gold/30 shadow-2xl">
                             <ul>
                                 {results.map((result, index) => (
-                                    <li
-                                        key={`${result.type}-${result.data.id}`}
+                                <li
+                                    key={`${result.type}-${result.data.id}`}
+                                >
+                                    <button
+                                        type="button"
                                         onClick={() => handleSelect(result)}
-                                        className={`cursor-pointer px-4 py-4 text-gray-200 flex items-center gap-4 border-b border-hextech-gold/20 last:border-0 transition-colors ${index === selectedIndex ? 'bg-hextech-cyan/20 border-l-2 border-l-hextech-cyan' : 'hover:bg-hextech-cyan/10'
+                                        onMouseEnter={() => dispatch(setSelectedIndex(index))}
+                                        className={`w-full cursor-pointer px-4 py-4 text-left text-gray-200 flex items-center gap-4 border-b border-hextech-gold/20 last:border-0 transition-colors ${index === selectedIndex ? 'bg-hextech-cyan/20 border-l-2 border-l-hextech-cyan' : 'hover:bg-hextech-cyan/10'
                                             }`}
                                     >
                                         {result.type === 'champion' ? (
-                                            <img
-                                                src={`https://ddragon.leagueoflegends.com/cdn/${(result.data as ChampionLight).version}/img/champion/${(result.data as ChampionLight).image.full}`}
-                                                alt={result.data.name}
-                                                className="w-12 h-12 rounded-full border-2 border-hextech-gold"
+                                        <Image
+                                            src={`https://ddragon.leagueoflegends.com/cdn/${(result.data as ChampionLight).version}/img/champion/${(result.data as ChampionLight).image.full}`}
+                                            alt={result.data.name}
+                                            width={48}
+                                            height={48}
+                                            className="w-12 h-12 rounded-full border-2 border-hextech-gold"
                                             />
                                         ) : (
                                             <div className="w-12 h-12 rounded-full border border-gray-600 bg-gray-700 flex items-center justify-center overflow-hidden">
                                                 {(result.data as LoreCharacterLight).image ? (
-                                                    <img src={(result.data as LoreCharacterLight).image!} alt={result.data.name} className="w-full h-full object-cover" />
+                                                    <Image src={(result.data as LoreCharacterLight).image!} alt={result.data.name} fill sizes="48px" className="object-cover" />
                                                 ) : (
                                                     <span className="text-xs font-bold text-gray-500">?</span>
                                                 )}
@@ -222,7 +242,8 @@ export default function GlobalSearch({ champions, loreCharacters }: GlobalSearch
                                             <span className="text-lg font-semibold">{result.data.name}</span>
                                             <span className="text-sm text-gray-500 uppercase">{result.type === 'champion' ? 'Champion' : 'Lore'}</span>
                                         </div>
-                                    </li>
+                                    </button>
+                                </li>
                                 ))}
                             </ul>
                         </div>

@@ -1,16 +1,19 @@
 // src/app/[locale]/champion/[championId]/page.tsx
 import React from 'react';
+import Image from 'next/image';
 import { fetchChampionDetails, fetchAllChampionsLight, fetchLoreCharactersLight, fetchChampionArtifacts, fetchChampionRunes } from "@/lib/data";
+import type { ChampionArtifact, ChampionRune } from '@/types/items';
 import SkinCarousel from '@/components/champions/SkinCarousel';
 import SpellList from '@/components/champions/SpellList';
 import ChampionNavigation from '@/components/champions/ChampionNavigation';
 import { getTranslations } from 'next-intl/server';
+import { notFound } from 'next/navigation';
 import ChampionRelations from '@/components/champions/ChampionRelations';
-import ChampionArtifacts from '@/components/champions/ChampionArtifacts';
 import LoreDisplay from '@/components/champions/LoreDisplay';
 import ChampionSwipeNavigation from '@/components/champions/ChampionSwipeNavigation';
 import championsIndex from '@/data/champions/index.json';
 import { routing } from '@/i18n/routing';
+import { buildRelationCards } from '@/lib/relation-cards';
 
 // Interface pour les props de la page
 interface ChampionPageProps {
@@ -73,13 +76,29 @@ export default async function ChampionPage({ params }: ChampionPageProps) {
   const championDetails = await fetchChampionDetails(championId, locale);
   const championArtifacts = await fetchChampionArtifacts(championId, locale);
   const championRunes = await fetchChampionRunes(championId, locale);
+  const championItems: Array<
+    | (ChampionArtifact & { itemType: 'artifact' })
+    | (ChampionRune & { itemType: 'rune' })
+  > = [
+    ...championArtifacts.map((artifact) => ({ ...artifact, itemType: 'artifact' as const })),
+    ...championRunes.map((rune) => ({ ...rune, itemType: 'rune' as const })),
+  ];
 
   if (!championDetails) {
-    return <main className="text-white p-8">Champion non trouvé ou erreur de données.</main>;
+    notFound();
   }
 
   // 2. Preparing data for display
   const { name, title, lore, skins, spells, passive, partype, gender, species, tags } = championDetails;
+  const relationCards = buildRelationCards({
+    championName: championDetails.name,
+    championId: championDetails.id,
+    locale,
+    relations: championDetails.related_champions,
+    legacyRelations: championDetails.relatedChampions,
+    allChampions,
+    loreCharacters,
+  });
 
 
   return (
@@ -95,19 +114,31 @@ export default async function ChampionPage({ params }: ChampionPageProps) {
 
       <div className="max-w-6xl mx-auto p-4 sm:p-6 lg:p-8 space-y-12">
         {/* Header Section */}
-        <div className="text-center">
+        <div id="overview" className="scroll-mt-24 text-center">
           <h1 className="text-6xl mb-2 hex-title">{name}</h1>
           <p className="text-2xl text-hextech-gold font-light uppercase tracking-widest">{title}</p>
         </div>
+
+        <nav
+          className="sticky top-16 z-30 -mx-4 overflow-x-auto border-y border-hextech-gold/20 bg-hextech-bg/95 px-4 py-3 backdrop-blur sm:mx-0 sm:justify-center sm:border sm:px-3"
+          aria-label="Sections du champion"
+        >
+          <div className="flex min-w-max gap-2 sm:justify-center">
+            <a href="#overview" className="border border-hextech-gold/30 px-3 py-2 text-xs font-semibold uppercase tracking-wider text-hextech-gold transition-colors hover:bg-hextech-gold/15">Aperçu</a>
+            {spells && passive && <a href="#abilities" className="border border-hextech-gold/30 px-3 py-2 text-xs font-semibold uppercase tracking-wider text-hextech-gold transition-colors hover:bg-hextech-gold/15">Compétences</a>}
+            <a href="#lore" className="border border-hextech-gold/30 px-3 py-2 text-xs font-semibold uppercase tracking-wider text-hextech-gold transition-colors hover:bg-hextech-gold/15">Histoire</a>
+            <a href="#relations" className="border border-hextech-gold/30 px-3 py-2 text-xs font-semibold uppercase tracking-wider text-hextech-gold transition-colors hover:bg-hextech-gold/15">Relations</a>
+          </div>
+        </nav>
 
         {/* Visuals Section: Artifacts - Skins - Runes */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
 
           {/* Left Column */}
           <div className="lg:col-span-2 hidden lg:flex flex-col gap-4 pt-12">
-            {[...(championArtifacts || []).map((a: any) => ({ ...a, itemType: 'artifact' })), ...(championRunes || []).map((r: any) => ({ ...r, itemType: 'rune' }))]
+            {championItems
               .filter((_, i) => i % 2 === 0)
-              .map((item: any) => (
+              .map((item) => (
                 <div key={`${item.itemType}-${item.id}`} className="flex flex-col items-center gap-2">
                   <span className="text-xs font-bold text-hextech-cyan uppercase tracking-wider text-center">{item.name}</span>
                   <a
@@ -116,7 +147,7 @@ export default async function ChampionPage({ params }: ChampionPageProps) {
                     title={item.name}
                   >
                     {item.image_url ? (
-                      <img src={item.image_url} alt={item.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform" />
+                      <Image src={item.image_url} alt={item.name} fill sizes="192px" className="object-cover group-hover:scale-110 transition-transform" />
                     ) : (
                       <div className="w-full h-full flex items-center justify-center text-xs text-gray-500">?</div>
                     )}
@@ -131,14 +162,14 @@ export default async function ChampionPage({ params }: ChampionPageProps) {
 
             {/* Mobile Artifacts/Runes (visible only on small screens) */}
             <div className="lg:hidden flex justify-center gap-4 mt-4 flex-wrap">
-              {championArtifacts?.map((a: any) => (
-                <a key={a.id} href={`/${locale}/artifact/${a.id}`} className="w-12 h-12 rounded border border-gray-600 overflow-hidden">
-                  <img src={a.image_url} alt={a.name} className="w-full h-full object-cover" />
+              {championArtifacts.map((artifact) => (
+                <a key={artifact.id} href={`/${locale}/artifact/${artifact.id}`} className="relative w-12 h-12 rounded border border-gray-600 overflow-hidden">
+                  <Image src={artifact.image_url} alt={artifact.name} fill sizes="48px" className="object-cover" />
                 </a>
               ))}
-              {championRunes?.map((r: any) => (
-                <a key={r.id} href={`/${locale}/rune/${r.id}`} className="w-12 h-12 rounded-full border border-gray-600 overflow-hidden">
-                  <img src={r.image_url} alt={r.name} className="w-full h-full object-cover" />
+              {championRunes.map((rune) => (
+                <a key={rune.id} href={`/${locale}/rune/${rune.id}`} className="relative w-12 h-12 rounded-full border border-gray-600 overflow-hidden">
+                  <Image src={rune.image_url} alt={rune.name} fill sizes="48px" className="object-cover" />
                 </a>
               ))}
             </div>
@@ -146,9 +177,9 @@ export default async function ChampionPage({ params }: ChampionPageProps) {
 
           {/* Right Column */}
           <div className="lg:col-span-2 hidden lg:flex flex-col gap-4 pt-12">
-            {[...(championArtifacts || []).map((a: any) => ({ ...a, itemType: 'artifact' })), ...(championRunes || []).map((r: any) => ({ ...r, itemType: 'rune' }))]
+            {championItems
               .filter((_, i) => i % 2 !== 0)
-              .map((item: any) => (
+              .map((item) => (
                 <div key={`${item.itemType}-${item.id}`} className="flex flex-col items-center gap-2">
                   <span className="text-xs font-bold text-hextech-cyan uppercase tracking-wider text-center">{item.name}</span>
                   <a
@@ -157,7 +188,7 @@ export default async function ChampionPage({ params }: ChampionPageProps) {
                     title={item.name}
                   >
                     {item.image_url ? (
-                      <img src={item.image_url} alt={item.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform" />
+                      <Image src={item.image_url} alt={item.name} fill sizes="192px" className="object-cover group-hover:scale-110 transition-transform" />
                     ) : (
                       <div className="w-full h-full flex items-center justify-center text-xs text-gray-500">?</div>
                     )}
@@ -171,7 +202,7 @@ export default async function ChampionPage({ params }: ChampionPageProps) {
         <div className="flex flex-wrap justify-center gap-4">
           {/* Roles */}
           {tags && tags.length > 0 && (
-            <div className="flex items-center gap-2 hex-panel border border-hextech-gold/30 px-4 py-2 rounded-full shadow-[inset_0_0_10px_rgba(212,175,55,0.1)]">
+            <div className="flex items-center gap-2 hex-panel border border-hextech-gold/30 px-4 py-2 rounded-full shadow-[inset_0_0_10px_rgba(56,189,248,0.1)]">
               <span className="text-hextech-cyan text-sm uppercase tracking-wider font-semibold">{t('filters.role')}</span>
               <div className="flex gap-2">
                 {tags.map(tag => (
@@ -194,7 +225,7 @@ export default async function ChampionPage({ params }: ChampionPageProps) {
               <>
                 {/* Régions */}
                 {charRegions.length > 0 && (
-                  <div className="flex items-center gap-2 hex-panel border border-hextech-gold/30 px-4 py-2 rounded-full shadow-[inset_0_0_10px_rgba(212,175,55,0.1)]">
+                  <div className="flex items-center gap-2 hex-panel border border-hextech-gold/30 px-4 py-2 rounded-full shadow-[inset_0_0_10px_rgba(56,189,248,0.1)]">
                     <span className="text-hextech-cyan text-sm uppercase tracking-wider font-semibold">{t('champion.region')}</span>
                     <div className="flex gap-2">
                       {charRegions.map(region => (
@@ -207,7 +238,7 @@ export default async function ChampionPage({ params }: ChampionPageProps) {
                 )}
                 {/* Factions */}
                 {charFactions.length > 0 && (
-                  <div className="flex items-center gap-2 hex-panel border border-hextech-gold/30 px-4 py-2 rounded-full shadow-[inset_0_0_10px_rgba(212,175,55,0.1)]">
+                  <div className="flex items-center gap-2 hex-panel border border-hextech-gold/30 px-4 py-2 rounded-full shadow-[inset_0_0_10px_rgba(56,189,248,0.1)]">
                     <span className="text-hextech-cyan text-sm uppercase tracking-wider font-semibold">{t('champion.faction')}</span>
                     <div className="flex gap-2">
                       {charFactions.map(faction => (
@@ -224,7 +255,7 @@ export default async function ChampionPage({ params }: ChampionPageProps) {
 
           {/* Species */}
           {species && (
-            <div className="flex items-center gap-2 hex-panel border border-hextech-gold/30 px-4 py-2 rounded-full shadow-[inset_0_0_10px_rgba(212,175,55,0.1)]">
+            <div className="flex items-center gap-2 hex-panel border border-hextech-gold/30 px-4 py-2 rounded-full shadow-[inset_0_0_10px_rgba(56,189,248,0.1)]">
               <span className="text-hextech-cyan text-sm uppercase tracking-wider font-semibold">{t('champion.species')}</span>
               <span className={`font-medium ${getSpeciesColor(species)}`}>
                 {translateFallback(`species.${species.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join(' ')}`, species)}
@@ -234,7 +265,7 @@ export default async function ChampionPage({ params }: ChampionPageProps) {
 
           {/* Gender */}
           {gender && (
-            <div className="flex items-center gap-2 hex-panel border border-hextech-gold/30 px-4 py-2 rounded-full shadow-[inset_0_0_10px_rgba(212,175,55,0.1)]">
+            <div className="flex items-center gap-2 hex-panel border border-hextech-gold/30 px-4 py-2 rounded-full shadow-[inset_0_0_10px_rgba(56,189,248,0.1)]">
               <span className="text-hextech-cyan text-sm uppercase tracking-wider font-semibold">{t('champion.gender')}</span>
               <span className={`font-medium ${getGenderColor(gender)}`}>
                 {translateFallback([`gender.${gender}`, `gender.${gender.toLowerCase()}`], gender)}
@@ -244,7 +275,7 @@ export default async function ChampionPage({ params }: ChampionPageProps) {
 
           {/* Resource */}
           {partype && (
-            <div className="flex items-center gap-2 hex-panel border border-hextech-gold/30 px-4 py-2 rounded-full shadow-[inset_0_0_10px_rgba(212,175,55,0.1)]">
+            <div className="flex items-center gap-2 hex-panel border border-hextech-gold/30 px-4 py-2 rounded-full shadow-[inset_0_0_10px_rgba(56,189,248,0.1)]">
               <span className="text-hextech-cyan text-sm uppercase tracking-wider font-semibold">{t('champion.resource')}</span>
               <span className={`font-medium ${getResourceColor(partype)}`}>
                 {translateFallback([
@@ -260,13 +291,13 @@ export default async function ChampionPage({ params }: ChampionPageProps) {
 
         {/* Spells Section */}
         {spells && passive && (
-          <div className="w-full">
+          <div id="abilities" className="w-full scroll-mt-28">
             <SpellList spells={spells} passive={passive} version={latestVersion} partype={partype} />
           </div>
         )}
 
         {/* Lore Section */}
-        <div className="hex-panel p-8">
+        <div id="lore" className="hex-panel scroll-mt-28 p-8">
           <h2 className="text-2xl font-bold text-hextech-gold mb-6 border-b border-hextech-gold/20 pb-4 flex justify-between items-center tracking-widest uppercase">
             <span>{t('champion.loreTitle')}</span>
           </h2>
@@ -274,14 +305,10 @@ export default async function ChampionPage({ params }: ChampionPageProps) {
         </div>
 
         {/* Relations Section */}
-        <div className="w-full">
+        <div id="relations" className="w-full scroll-mt-28">
           <ChampionRelations
-            championName={name}
-            championDetails={championDetails}
-            allChampions={allChampions}
-            loreCharacters={loreCharacters}
+            relations={relationCards}
             locale={locale}
-            latestVersion={latestVersion}
           />
         </div>
 

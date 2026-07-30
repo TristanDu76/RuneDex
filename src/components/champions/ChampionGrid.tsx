@@ -1,10 +1,13 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
-import { ChampionData, ChampionGridData } from '@/types/champion';
+import { ChampionGridData } from '@/types/champion';
 import ChampionCard from './ChampionCard';
 import FilterBar, { ActiveFilters, FilterOption } from '../ui/FilterBar';
 import { useTranslations } from 'next-intl';
+import { matchesSearch } from '@/lib/search-utils';
+
+const INITIAL_CHAMPION_COUNT = 48;
 
 interface ChampionGridProps {
     champions: ChampionGridData[];
@@ -12,6 +15,7 @@ interface ChampionGridProps {
 
 export default function ChampionGrid({ champions }: ChampionGridProps) {
     const [query, setQuery] = useState('');
+    const [visibleCount, setVisibleCount] = useState(INITIAL_CHAMPION_COUNT);
     const [activeFilters, setActiveFilters] = useState<ActiveFilters>({
         regions: [],
         races: [],
@@ -162,16 +166,27 @@ export default function ChampionGrid({ champions }: ChampionGridProps) {
         }
 
         // Apply search query
-        const lowerQuery = query.toLowerCase();
-        if (lowerQuery) {
+        if (query) {
             result = result.filter((champion) => {
-                // Search only by name (starts with)
-                return champion.name.toLowerCase().startsWith(lowerQuery);
+                return matchesSearch(champion, query);
             });
         }
 
         return result;
     }, [query, champions, activeFilters]);
+
+    const visibleChampions = filteredChampions.slice(0, visibleCount);
+    const remainingChampionCount = filteredChampions.length - visibleChampions.length;
+
+    const handleQueryChange = (value: string) => {
+        setQuery(value);
+        setVisibleCount(INITIAL_CHAMPION_COUNT);
+    };
+
+    const handleFiltersChange = (filters: ActiveFilters) => {
+        setActiveFilters(filters);
+        setVisibleCount(INITIAL_CHAMPION_COUNT);
+    };
 
     return (
         <div className="w-full">{/* Removed max-w-7xl mx-auto - handled by parent */}
@@ -200,7 +215,7 @@ export default function ChampionGrid({ champions }: ChampionGridProps) {
                             className="block w-full pl-11 pr-4 py-3 border border-gray-700 rounded-lg leading-5 bg-gray-800 text-gray-300 placeholder-gray-500 focus:outline-none focus:bg-gray-700 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/50 sm:text-sm transition-all shadow-lg"
                             placeholder={t('home.searchPlaceholder')}
                             value={query}
-                            onChange={(e) => setQuery(e.target.value)}
+                            onChange={(e) => handleQueryChange(e.target.value)}
                         />
                     </div>
 
@@ -208,7 +223,7 @@ export default function ChampionGrid({ champions }: ChampionGridProps) {
                     <div className="flex-shrink-0">
                         <FilterBar
                             activeFilters={activeFilters}
-                            onFiltersChange={setActiveFilters}
+                            onFiltersChange={handleFiltersChange}
                             filterOptions={filterOptions}
                         />
                     </div>
@@ -269,7 +284,7 @@ export default function ChampionGrid({ champions }: ChampionGridProps) {
             gap-6 place-items-center mx-auto
           "
                 >
-                    {filteredChampions.map((champion) => (
+                    {visibleChampions.map((champion) => (
                         <ChampionCard
                             key={champion.id}
                             champion={champion}
@@ -279,6 +294,20 @@ export default function ChampionGrid({ champions }: ChampionGridProps) {
             ) : (
                 <div className="text-center text-gray-500 mt-12">
                     <p className="text-xl">{t('home.noResults', { query })}</p>
+                </div>
+            )}
+
+            {remainingChampionCount > 0 && (
+                <div className="mt-8 flex justify-center">
+                    <button
+                        type="button"
+                        onClick={() => setVisibleCount((count) => count + INITIAL_CHAMPION_COUNT)}
+                        className="rounded-lg border border-blue-400/50 bg-blue-500/10 px-5 py-3 text-sm font-semibold text-blue-100 transition-colors hover:bg-blue-500/20 focus:outline-none focus:ring-2 focus:ring-blue-300/80"
+                    >
+                        {t('championsGrid.loadMore', {
+                            count: Math.min(INITIAL_CHAMPION_COUNT, remainingChampionCount),
+                        })}
+                    </button>
                 </div>
             )}
         </div>
