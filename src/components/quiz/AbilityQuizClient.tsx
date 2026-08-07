@@ -1,21 +1,19 @@
 'use client';
 
-import { useState, useEffect, useMemo, useRef } from 'react';
+import { useId, useState, useMemo, useRef } from 'react';
 import Image from 'next/image';
-import { ChampionData, ChampionSpell, ChampionPassive } from '@/types/champion';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { RefreshCw, Zap } from 'lucide-react';
+import { RefreshCw } from 'lucide-react';
+import { createAbilityRound, createSeededRandom, type AbilityQuizChampion, type AbilityQuizPassive, type AbilityQuizSpell, type SpellType } from '@/lib/quiz-rounds';
 
 interface AbilityQuizClientProps {
-    champions: ChampionData[];
+    champions: AbilityQuizChampion[];
 }
 
-type SpellType = 'P' | 'Q' | 'W' | 'E' | 'R';
-
 interface GameState {
-    champion: ChampionData | null;
-    spell: ChampionSpell | ChampionPassive | null;
+    champion: AbilityQuizChampion | null;
+    spell: AbilityQuizSpell | AbilityQuizPassive | null;
     spellType: SpellType | null;
     phase: 'guess_champion' | 'guess_spell' | 'result';
     score: number;
@@ -34,17 +32,27 @@ export default function AbilityQuizClient({ champions }: AbilityQuizClientProps)
         rotate: true
     });
 
+    // Filter champions for valid spells
+    const validChampions = useMemo(() => {
+        return champions.filter(c => c.spells && c.spells.length >= 4 && c.passive);
+    }, [champions]);
+    const initialRoundSeed = useId();
+
     // Game State
-    const [gameState, setGameState] = useState<GameState>({
-        champion: null,
-        spell: null,
-        spellType: null,
-        phase: 'guess_champion',
-        score: 0,
-        streak: 0,
-        attempts: 0,
-        wrongGuesses: [],
-        rotation: 0
+    const [gameState, setGameState] = useState<GameState>(() => {
+        const round = createAbilityRound(validChampions, true, createSeededRandom(initialRoundSeed));
+
+        return {
+            champion: round?.champion ?? null,
+            spell: round?.spell ?? null,
+            spellType: round?.spellType ?? null,
+            phase: 'guess_champion',
+            score: 0,
+            streak: 0,
+            attempts: 0,
+            wrongGuesses: [],
+            rotation: round?.rotation ?? 0,
+        };
     });
 
     const [input, setInput] = useState('');
@@ -53,43 +61,19 @@ export default function AbilityQuizClient({ champions }: AbilityQuizClientProps)
 
     const inputRef = useRef<HTMLInputElement>(null);
 
-    // Filter champions for valid spells
-    const validChampions = useMemo(() => {
-        return champions.filter(c => c.spells && c.spells.length > 0 && c.passive);
-    }, [champions]);
-
     // Start New Round
     const startRound = () => {
         if (validChampions.length === 0) return;
 
-        const randomChamp = validChampions[Math.floor(Math.random() * validChampions.length)];
-
-        // Pick random spell (0-3 for QWER, 4 for Passive)
-        const spellIndex = Math.floor(Math.random() * 5);
-        let targetSpell: ChampionSpell | ChampionPassive;
-        let type: SpellType;
-
-        if (spellIndex === 4) {
-            targetSpell = randomChamp.passive!;
-            type = 'P';
-        } else {
-            targetSpell = randomChamp.spells![spellIndex];
-            const types: SpellType[] = ['Q', 'W', 'E', 'R'];
-            type = types[spellIndex];
-        }
-
-        // Random rotation if enabled (0, 90, 180, 270)
-        const rotation = settings.rotate ? Math.floor(Math.random() * 4) * 90 : 0;
+        const round = createAbilityRound(validChampions, settings.rotate);
+        if (!round) return;
 
         setGameState(prev => ({
             ...prev,
-            champion: randomChamp,
-            spell: targetSpell,
-            spellType: type,
+            ...round,
             phase: 'guess_champion',
             attempts: 0,
             wrongGuesses: [],
-            rotation
         }));
 
         setInput('');
@@ -98,11 +82,6 @@ export default function AbilityQuizClient({ champions }: AbilityQuizClientProps)
         // Focus input
         setTimeout(() => inputRef.current?.focus(), 100);
     };
-
-    // Initial Start
-    useEffect(() => {
-        startRound();
-    }, []); // Settings apply to next round only
 
     // Suggestions Logic
     const filteredChampions = useMemo(() => {
@@ -114,7 +93,7 @@ export default function AbilityQuizClient({ champions }: AbilityQuizClientProps)
             .slice(0, 5);
     }, [input, champions, gameState.wrongGuesses]);
 
-    const handleChampionGuess = (guess: ChampionData) => {
+    const handleChampionGuess = (guess: AbilityQuizChampion) => {
         if (gameState.phase !== 'guess_champion' || !gameState.champion) return;
 
         if (guess.id === gameState.champion.id) {
@@ -175,7 +154,7 @@ export default function AbilityQuizClient({ champions }: AbilityQuizClientProps)
     };
 
     // Image URL
-    const getSpellImageUrl = (champion: ChampionData, spell: ChampionSpell | ChampionPassive, type: SpellType) => {
+    const getSpellImageUrl = (champion: AbilityQuizChampion, spell: AbilityQuizSpell | AbilityQuizPassive, type: SpellType) => {
         if (type === 'P') {
             return `https://ddragon.leagueoflegends.com/cdn/${champion.version}/img/passive/${spell.image.full}`;
         } else {

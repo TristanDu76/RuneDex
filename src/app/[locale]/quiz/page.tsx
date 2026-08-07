@@ -1,6 +1,6 @@
 import { getTranslations } from 'next-intl/server';
-import Link from 'next/link';
-import { Brain, Image as ImageIcon, Zap, Lock } from 'lucide-react';
+import { Link } from '@/i18n/routing';
+import { Brain, Image as ImageIcon, Zap } from 'lucide-react';
 
 interface QuizPageProps {
     params: Promise<{ locale: string }>;
@@ -16,7 +16,7 @@ export default async function QuizHubPage({ params }: QuizPageProps) {
             title: t('classicTitle'),
             description: t('classicDesc'),
             icon: Brain,
-            href: `/${locale}/quiz/classic`,
+            href: '/quiz/classic',
             color: 'from-blue-500 to-cyan-500',
             active: true
         },
@@ -25,7 +25,7 @@ export default async function QuizHubPage({ params }: QuizPageProps) {
             title: t('skinTitle'),
             description: t('skinDesc'),
             icon: ImageIcon,
-            href: `/${locale}/quiz/skin`,
+            href: '/quiz/skin',
             color: 'from-purple-500 to-pink-500',
             active: true
         },
@@ -34,20 +34,21 @@ export default async function QuizHubPage({ params }: QuizPageProps) {
             title: t('abilityTitle'),
             description: t('abilityDesc'),
             icon: Zap,
-            href: `/${locale}/quiz/ability`,
+            href: '/quiz/ability',
             color: 'from-yellow-500 to-orange-500',
             active: true
         }
     ];
 
     return (
-        <main className="min-h-screen bg-transparent text-white relative flex flex-col items-center justify-center p-4">
+        <main className="relative min-h-screen bg-transparent px-4 pb-16 pt-28 text-white sm:px-6">
             <div className="max-w-5xl w-full">
-                <div className="text-center mb-12">
-                    <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-600 mb-4">
+                <div className="mb-10 text-center sm:mb-12">
+                    <p className="mb-3 text-xs uppercase tracking-[0.28em] text-hextech-cyan">Atlas vivant</p>
+                    <h1 className="hex-title mb-4 text-4xl font-bold sm:text-5xl">
                         {t('hubTitle')}
                     </h1>
-                    <p className="text-xl text-gray-400">
+                    <p className="mx-auto max-w-2xl text-base text-gray-400 sm:text-xl">
                         {t('hubSubtitle')}
                     </p>
                 </div>
@@ -57,14 +58,14 @@ export default async function QuizHubPage({ params }: QuizPageProps) {
                         <Link
                             key={quiz.id}
                             href={quiz.active ? quiz.href : '#'}
-                            className={`relative group rounded-2xl p-1 overflow-hidden transition-all duration-300 ${quiz.active ? 'hover:scale-105 cursor-pointer' : 'opacity-75 cursor-not-allowed'}`}
+                            className={`group relative overflow-hidden rounded-sm p-1 transition-all duration-300 ${quiz.active ? 'cursor-pointer hover:-translate-y-1' : 'cursor-not-allowed opacity-75'}`}
                         >
                             {/* Gradient Border */}
                             <div className={`absolute inset-0 bg-gradient-to-br ${quiz.color} opacity-20 group-hover:opacity-100 transition-opacity duration-300`} />
 
                             {/* Card Content */}
-                            <div className="relative h-full bg-gray-800 rounded-xl p-6 flex flex-col items-center text-center border border-gray-700 group-hover:border-transparent transition-colors">
-                                <div className={`w-16 h-16 rounded-full bg-gradient-to-br ${quiz.color} flex items-center justify-center mb-4 shadow-lg`}>
+                            <div className="relative flex h-full flex-col items-center border border-hextech-gold/25 bg-hextech-panel p-6 text-center transition-colors group-hover:border-hextech-gold/70">
+                                <div className={`mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br ${quiz.color} shadow-lg`}>
                                     <quiz.icon size={32} className="text-white" />
                                 </div>
 
@@ -76,14 +77,8 @@ export default async function QuizHubPage({ params }: QuizPageProps) {
                                     {quiz.description}
                                 </p>
 
-                                {!quiz.active && (
-                                    <div className="absolute top-4 right-4 text-gray-500">
-                                        <Lock size={20} />
-                                    </div>
-                                )}
-
                                 {quiz.active ? (
-                                    <span className={`px-6 py-2 rounded-full bg-gradient-to-r ${quiz.color} text-white font-bold text-sm shadow-lg opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all`}>
+                                    <span className={`rounded-sm bg-gradient-to-r px-6 py-2 text-sm font-bold text-white shadow-lg ${quiz.color}`}>
                                         {t('playQuiz')}
                                     </span>
                                 ) : (

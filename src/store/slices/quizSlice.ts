@@ -1,10 +1,10 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { ChampionData } from '@/types/champion';
+import type { ClassicQuizChampion } from '@/lib/quiz-rounds';
 
 export type Category = 'gender' | 'species' | 'resource' | 'region' | 'lane' | 'role';
 
 export interface GuessResult {
-    champion: ChampionData;
+    champion: ClassicQuizChampion;
     gender: 'correct' | 'incorrect';
     species: 'correct' | 'incorrect' | 'partial';
     resource: 'correct' | 'incorrect';
@@ -14,7 +14,7 @@ export interface GuessResult {
 }
 
 interface QuizState {
-    targetChampion: ChampionData | null;
+    targetChampion: ClassicQuizChampion | null;
     guesses: GuessResult[];
     input: string;
     isWon: boolean;
@@ -39,7 +39,7 @@ const quizSlice = createSlice({
     name: 'quiz',
     initialState,
     reducers: {
-        setTargetChampion(state, action: PayloadAction<ChampionData>) {
+        setTargetChampion(state, action: PayloadAction<ClassicQuizChampion>) {
             state.targetChampion = action.payload;
         },
         addGuess(state, action: PayloadAction<GuessResult>) {

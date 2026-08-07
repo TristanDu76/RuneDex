@@ -1,4 +1,4 @@
-import { fetchAllChampions } from "@/lib/data";
+import { fetchClassicQuizChampions } from "@/lib/data";
 import QuizClient from "@/components/quiz/QuizClient";
 import { getTranslations } from 'next-intl/server';
 
@@ -10,7 +10,7 @@ export default async function ClassicQuizPage({ params }: QuizPageProps) {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: 'quiz' });
 
-    const champions = await fetchAllChampions(locale);
+    const champions = await fetchClassicQuizChampions(locale);
 
     return (
         <main className="min-h-screen bg-transparent text-white relative flex flex-col">

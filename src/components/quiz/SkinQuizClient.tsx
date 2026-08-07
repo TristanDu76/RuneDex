@@ -1,21 +1,21 @@
 'use client';
 
-import { useState, useEffect, useMemo, useRef } from 'react';
+import { useId, useState, useMemo, useRef } from 'react';
 import Image from 'next/image';
-import { ChampionData, ChampionSkin } from '@/types/champion';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { RefreshCw, Eye, Wand2 } from 'lucide-react';
+import { createSeededRandom, createSkinOptions, createSkinRound, type SkinQuizChampion, type SkinQuizSkin } from '@/lib/quiz-rounds';
 
 interface SkinQuizClientProps {
-    champions: ChampionData[];
+    champions: SkinQuizChampion[];
 }
 
 type QuizMode = 'blur_gray' | 'zoom';
 
 interface GameState {
-    champion: ChampionData | null;
-    skin: ChampionSkin | null;
+    champion: SkinQuizChampion | null;
+    skin: SkinQuizSkin | null;
     mode: QuizMode;
     phase: 'guess_champion' | 'guess_skin' | 'result';
     score: number;
@@ -29,58 +29,49 @@ export default function SkinQuizClient({ champions }: SkinQuizClientProps) {
     const t = useTranslations('quiz');
     const tChampion = useTranslations('champion');
 
+    // Filter champions for valid skins (must have skins array)
+    const validChampions = useMemo(() => {
+        return champions.filter(c => c.skins && c.skins.length > 0);
+    }, [champions]);
+    const initialRoundSeed = useId();
+
     // Game State
-    const [gameState, setGameState] = useState<GameState>({
-        champion: null,
-        skin: null,
-        mode: 'blur_gray',
-        phase: 'guess_champion',
-        score: 0,
-        streak: 0,
-        zoomOrigin: { x: 50, y: 50 },
-        attempts: 0,
-        wrongGuesses: []
+    const [gameState, setGameState] = useState<GameState>(() => {
+        const round = createSkinRound(validChampions, createSeededRandom(initialRoundSeed));
+
+        return {
+            champion: round?.champion ?? null,
+            skin: round?.skin ?? null,
+            mode: round?.mode ?? 'blur_gray',
+            phase: 'guess_champion',
+            score: 0,
+            streak: 0,
+            zoomOrigin: round?.zoomOrigin ?? { x: 50, y: 50 },
+            attempts: 0,
+            wrongGuesses: [],
+        };
     });
 
     const [input, setInput] = useState('');
     const [showSuggestions, setShowSuggestions] = useState(false);
     const [selectedIndex, setSelectedIndex] = useState(0);
-    const [skinOptions, setSkinOptions] = useState<ChampionSkin[]>([]);
+    const [skinOptions, setSkinOptions] = useState<SkinQuizSkin[]>([]);
 
     const inputRef = useRef<HTMLInputElement>(null);
-
-    // Filter champions for valid skins (must have skins array)
-    const validChampions = useMemo(() => {
-        return champions.filter(c => c.skins && c.skins.length > 0);
-    }, [champions]);
 
     // Start New Round
     const startRound = () => {
         if (validChampions.length === 0) return;
 
-        const randomChamp = validChampions[Math.floor(Math.random() * validChampions.length)];
-        // Prefer non-base skins (num > 0), but fallback to base if only 1 skin
-        const skins = randomChamp.skins || [];
-        const nonBaseSkins = skins.filter(s => s.num > 0);
-        const targetSkin = nonBaseSkins.length > 0
-            ? nonBaseSkins[Math.floor(Math.random() * nonBaseSkins.length)]
-            : skins[0];
-
-        const modes: QuizMode[] = ['blur_gray', 'zoom'];
-        const randomMode = modes[Math.floor(Math.random() * modes.length)];
+        const round = createSkinRound(validChampions);
+        if (!round) return;
 
         setGameState(prev => ({
             ...prev,
-            champion: randomChamp,
-            skin: targetSkin,
-            mode: randomMode,
+            ...round,
             phase: 'guess_champion',
-            zoomOrigin: {
-                x: Math.floor(Math.random() * 80) + 10, // 10% to 90%
-                y: Math.floor(Math.random() * 80) + 10
-            },
             attempts: 0,
-            wrongGuesses: []
+            wrongGuesses: [],
         }));
 
         setInput('');
@@ -91,28 +82,6 @@ export default function SkinQuizClient({ champions }: SkinQuizClientProps) {
         setTimeout(() => inputRef.current?.focus(), 100);
     };
 
-    // Initial Start
-    useEffect(() => {
-        startRound();
-    }, []);
-
-    // Prepare Skin Options when entering guess_skin phase
-    useEffect(() => {
-        if (gameState.phase === 'guess_skin' && gameState.champion && gameState.skin) {
-            const allSkins = gameState.champion.skins || [];
-            const correctSkin = gameState.skin;
-
-            // Get 3 random wrong skins
-            const wrongSkins = allSkins
-                .filter(s => s.id !== correctSkin.id)
-                .sort(() => 0.5 - Math.random())
-                .slice(0, 3);
-
-            const options = [correctSkin, ...wrongSkins].sort(() => 0.5 - Math.random());
-            setSkinOptions(options);
-        }
-    }, [gameState.phase, gameState.champion, gameState.skin]);
-
     // Suggestions Logic
     const filteredChampions = useMemo(() => {
         if (!input) return [];
@@ -122,11 +91,12 @@ export default function SkinQuizClient({ champions }: SkinQuizClientProps) {
             .slice(0, 5);
     }, [input, champions, gameState.wrongGuesses]);
 
-    const handleChampionGuess = (guess: ChampionData) => {
-        if (gameState.phase !== 'guess_champion' || !gameState.champion) return;
+    const handleChampionGuess = (guess: SkinQuizChampion) => {
+        if (gameState.phase !== 'guess_champion' || !gameState.champion || !gameState.skin) return;
 
         if (guess.id === gameState.champion.id) {
             // Correct Champion
+            setSkinOptions(createSkinOptions(gameState.champion, gameState.skin));
             setGameState(prev => ({ ...prev, phase: 'guess_skin' }));
             setInput('');
         } else {
@@ -143,7 +113,7 @@ export default function SkinQuizClient({ champions }: SkinQuizClientProps) {
         setShowSuggestions(false);
     };
 
-    const handleSkinGuess = (skin: ChampionSkin) => {
+    const handleSkinGuess = (skin: SkinQuizSkin) => {
         if (gameState.phase !== 'guess_skin' || !gameState.skin) return;
 
         if (skin.id === gameState.skin.id) {
@@ -180,7 +150,7 @@ export default function SkinQuizClient({ champions }: SkinQuizClientProps) {
     };
 
     // Image URL
-    const getSkinImageUrl = (champion: ChampionData, skin: ChampionSkin) => {
+    const getSkinImageUrl = (champion: SkinQuizChampion, skin: SkinQuizSkin) => {
         return `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.id}_${skin.num}.jpg`;
     };
 

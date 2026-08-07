@@ -1,4 +1,4 @@
-import { fetchAllChampions } from "@/lib/data";
+import { fetchSkinQuizChampions } from "@/lib/data";
 import SkinQuizClient from "../../../../components/quiz/SkinQuizClient";
 import { getTranslations } from 'next-intl/server';
 
@@ -10,8 +10,7 @@ export default async function SkinQuizPage({ params }: QuizPageProps) {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: 'quiz' });
 
-    // Fetch champions with skins (skins field added to fetchAllChampions)
-    const champions = await fetchAllChampions(locale);
+    const champions = await fetchSkinQuizChampions(locale);
 
     return (
         <main className="min-h-screen bg-transparent text-white relative flex flex-col">

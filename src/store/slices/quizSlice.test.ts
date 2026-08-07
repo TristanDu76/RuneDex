@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import quizReducer, {
     setInput,
     setTargetChampion,
@@ -21,7 +21,6 @@ describe('quizSlice', () => {
         image: { full: 'Aatrox.png', sprite: '', group: '', x: 0, y: 0, w: 0, h: 0 },
         tags: ['Fighter', 'Tank'],
         partype: 'Blood Well',
-        stats: {} as any,
         factions: ['runeterra'],
         faction: 'runeterra',
         gender: 'Male',

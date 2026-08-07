@@ -1,4 +1,4 @@
-import { fetchAllChampions } from "@/lib/data";
+import { fetchAbilityQuizChampions } from "@/lib/data";
 import AbilityQuizClient from "@/components/quiz/AbilityQuizClient";
 import { getTranslations } from 'next-intl/server';
 
@@ -10,7 +10,7 @@ export default async function AbilityQuizPage({ params }: QuizPageProps) {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: 'quiz' });
 
-    const champions = await fetchAllChampions(locale);
+    const champions = await fetchAbilityQuizChampions(locale);
 
     return (
         <main className="min-h-screen bg-transparent text-white relative flex flex-col">

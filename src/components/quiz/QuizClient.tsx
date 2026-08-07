@@ -2,10 +2,11 @@
 
 import { useState, useEffect, useMemo, useRef } from 'react';
 import Image from 'next/image';
-import { ChampionData } from '@/types/champion';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { ChevronLeft, ChevronRight, HelpCircle, X, Lightbulb } from 'lucide-react';
+import { isClassicQuizEligible, type ClassicQuizChampion } from '@/lib/quiz-rounds';
+import { getSearchRank } from '@/lib/search-utils';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import {
     setTargetChampion as setTargetAction,
@@ -23,14 +24,14 @@ import {
 } from '@/store/slices/quizSlice';
 
 interface QuizClientProps {
-    champions: ChampionData[];
+    champions: ClassicQuizChampion[];
 }
 
 export default function QuizClient({ champions }: QuizClientProps) {
     const dispatch = useAppDispatch();
     const { targetChampion, guesses, input, isWon, showSuggestions, selectedIndex, showHelper, unlockedHints } = useAppSelector(state => state.quiz);
 
-    const setTargetChampion = (c: ChampionData | null) => c && dispatch(setTargetAction(c));
+    const setTargetChampion = (c: ClassicQuizChampion | null) => c && dispatch(setTargetAction(c));
     const setInput = (v: string) => dispatch(setInputAction(v));
     const setIsWon = (v: boolean) => dispatch(setIsWonAction(v));
     const setShowSuggestions = (v: boolean) => dispatch(setShowSuggestionsAction(v));
@@ -44,24 +45,25 @@ export default function QuizClient({ champions }: QuizClientProps) {
     const suggestionsRef = useRef<HTMLDivElement>(null);
 
     const t = useTranslations();
+    const eligibleChampions = useMemo(() => champions.filter(isClassicQuizEligible), [champions]);
 
     // Initialize random champion
     useEffect(() => {
-        if (champions.length > 0) {
-            const random = champions[Math.floor(Math.random() * champions.length)];
+        if (eligibleChampions.length > 0) {
+            const random = eligibleChampions[Math.floor(Math.random() * eligibleChampions.length)];
             setTargetChampion(random);
             // console.log('Target:', random.name);
         }
-    }, [champions]);
+    }, [eligibleChampions]);
 
     const filteredChampions = useMemo(() => {
         if (!input) return [];
         const guessedIds = new Set(guesses.map(g => g.champion.id));
-        return champions
-            .filter(c => !guessedIds.has(c.id) && c.name.toLowerCase().startsWith(input.toLowerCase()))
-            .sort((a, b) => a.name.localeCompare(b.name))
+        return eligibleChampions
+            .filter(c => !guessedIds.has(c.id) && getSearchRank(c, input) >= 0)
+            .sort((a, b) => getSearchRank(a, input) - getSearchRank(b, input) || a.name.localeCompare(b.name))
             .slice(0, 5);
-    }, [input, champions, guesses]);
+    }, [input, eligibleChampions, guesses]);
 
     // Reset selected index when input changes
     useEffect(() => {
@@ -95,7 +97,7 @@ export default function QuizClient({ champions }: QuizClientProps) {
         return 'incorrect';
     };
 
-    const handleGuess = (champion: ChampionData) => {
+    const handleGuess = (champion: ClassicQuizChampion) => {
         if (!targetChampion || isWon) return;
 
         const newGuess: GuessResult = {
@@ -285,7 +287,7 @@ export default function QuizClient({ champions }: QuizClientProps) {
     const clues = getClues();
     const attemptsUntilHint = 5 - (guesses.length % 5);
 
-    if (champions.length === 0) return <div className="text-white text-center mt-10">{t('quiz.noChampions')}</div>;
+    if (eligibleChampions.length === 0) return <div className="text-white text-center mt-10">{t('quiz.noChampions')}</div>;
     if (!targetChampion) return <div className="text-white text-center mt-10">{t('quiz.loading')}</div>;
 
     return (
@@ -385,7 +387,9 @@ export default function QuizClient({ champions }: QuizClientProps) {
 
             {/* Helper Toggle Button */}
             <button
+                type="button"
                 onClick={() => setShowHelper(!showHelper)}
+                aria-label={t('quiz.help')}
                 className={`fixed left-4 top-24 z-30 p-2 rounded-full shadow-lg transition-all hidden lg:flex items-center justify-center ${showHelper ? 'opacity-0 pointer-events-none' : 'bg-gray-800 text-yellow-500 border border-yellow-500/30 hover:bg-gray-700'}`}
             >
                 <span className="text-xl">?</span>
@@ -514,6 +518,7 @@ export default function QuizClient({ champions }: QuizClientProps) {
 
                 {/* Guesses Grid */}
                 <div className="w-full overflow-x-auto pb-4">
+                    <p className="mb-2 text-center text-xs text-gray-500 sm:hidden">{t('quiz.scrollHint')}</p>
                     <div className="min-w-[800px] flex flex-col gap-2 mx-auto">
                         {/* Header */}
                         <div className="grid grid-cols-7 gap-2 text-center text-gray-500 font-bold text-xs uppercase tracking-wider mb-1">
