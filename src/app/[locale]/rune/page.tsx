@@ -1,6 +1,5 @@
 import { fetchRunes } from "@/lib/data";
 import RunePillar from "@/components/runes/RunePillar";
-import GalleryNav from "@/components/layout/GalleryNav";
 import { getTranslations } from 'next-intl/server';
 
 interface RunesPageProps {
@@ -24,7 +23,7 @@ export default async function RunesPage({ params }: RunesPageProps) {
                 {/* <GalleryNav /> */}
 
                 <div className="flex flex-col md:flex-row justify-center items-stretch w-full max-w-6xl mx-auto overflow-hidden rounded-3xl border border-white/5 shadow-2xl bg-black/40 backdrop-blur-md h-auto md:h-[600px]">
-                    {runes.map((rune: any) => (
+                    {runes.map((rune) => (
                         <div
                             key={rune.id}
                             className="flex-1 min-w-[60px] md:min-w-[100px] border-r border-white/5 last:border-r-0 transition-[flex-grow] duration-500 ease-in-out hover:flex-[2]"

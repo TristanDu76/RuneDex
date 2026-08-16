@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { fetchRuneById, fetchRuneNeighbors } from '@/lib/data';
+import { getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Link } from '@/i18n/routing';
 import RuneNavigation from '@/components/runes/RuneNavigation';
@@ -14,8 +15,11 @@ interface RunePageProps {
 
 export default async function RunePage({ params }: RunePageProps) {
     const { id, locale } = await params;
-    const rune = await fetchRuneById(id, locale);
-    const { prev, next } = await fetchRuneNeighbors(id, locale);
+    const [rune, { prev, next }, t] = await Promise.all([
+        fetchRuneById(id, locale),
+        fetchRuneNeighbors(id, locale),
+        getTranslations({ locale, namespace: 'ownership' }),
+    ]);
 
     if (!rune) {
         notFound();
@@ -75,10 +79,46 @@ export default async function RunePage({ params }: RunePageProps) {
                         </div>
 
                         {/* Owner Section */}
-                        {rune.name.includes('Inspiration') ? (
+                        {rune.owner ? (
                             <div className="mt-12 pt-8 border-t border-gray-800">
                                 <h3 className="text-lg font-bold text-gray-400 mb-4 uppercase tracking-widest text-sm">
-                                    Statut actuel
+                                    {rune.owner.type === 'guardian' ? t('guardian') :
+                                        rune.owner.type === 'creator' ? t('creator') :
+                                            t('linked')}
+                                </h3>
+                                <Link
+                                    href={rune.owner.link}
+                                    className="group flex items-center gap-4 bg-gray-800/50 p-4 rounded-xl border border-gray-700 hover:border-blue-500 transition-all hover:bg-gray-800"
+                                >
+                                    <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-gray-600 group-hover:border-blue-500 transition-colors bg-transparent">
+                                        {rune.owner.image ? (
+                                            <Image
+                                                src={rune.owner.image}
+                                                alt={rune.owner.name}
+                                                fill
+                                                sizes="64px"
+                                                className="object-cover transform group-hover:scale-110 transition-transform"
+                                            />
+                                        ) : (
+                                            <div className="w-full h-full flex items-center justify-center text-2xl">👤</div>
+                                        )}
+                                    </div>
+                                    <div>
+                                        <div className="font-bold text-white group-hover:text-blue-400 transition-colors">
+                                            {rune.owner.name}
+                                        </div>
+                                        {rune.owner.title ? (
+                                            <div className="text-sm text-gray-500 capitalize">
+                                                {rune.owner.title}
+                                            </div>
+                                        ) : null}
+                                    </div>
+                                </Link>
+                            </div>
+                        ) : (
+                            <div className="mt-12 pt-8 border-t border-gray-800">
+                                <h3 className="text-lg font-bold text-gray-400 mb-4 uppercase tracking-widest text-sm">
+                                    {t('currentStatus')}
                                 </h3>
                                 <div className="flex items-center gap-4 bg-gray-800/30 p-4 rounded-xl border border-gray-700/50 border-dashed">
                                     <div className="w-16 h-16 rounded-full flex items-center justify-center bg-transparent text-2xl border-2 border-gray-700 text-gray-500">
@@ -86,40 +126,13 @@ export default async function RunePage({ params }: RunePageProps) {
                                     </div>
                                     <div>
                                         <div className="font-bold text-gray-300">
-                                            Localisation Inconnue
+                                            {t('unknownLocation')}
                                         </div>
                                         <div className="text-sm text-gray-500">
-                                            Recherchée par Ryze
+                                            {t('unassigned')}
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        ) : (
-                            <div className="mt-12 pt-8 border-t border-gray-800">
-                                <h3 className="text-lg font-bold text-gray-400 mb-4 uppercase tracking-widest text-sm">
-                                    Gardée par
-                                </h3>
-                                <Link
-                                    href="/champion/Ryze"
-                                    className="group flex items-center gap-4 bg-gray-800/50 p-4 rounded-xl border border-gray-700 hover:border-blue-500 transition-all hover:bg-gray-800"
-                                >
-                                    <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-gray-600 group-hover:border-blue-500 transition-colors bg-transparent">
-                                        <Image
-                                            src="https://ddragon.leagueoflegends.com/cdn/13.24.1/img/champion/Ryze.png"
-                                            alt="Ryze"
-                                            fill
-                                            className="object-cover transform group-hover:scale-110 transition-transform"
-                                        />
-                                    </div>
-                                    <div>
-                                        <div className="font-bold text-white group-hover:text-blue-400 transition-colors">
-                                            Ryze
-                                        </div>
-                                        <div className="text-sm text-gray-500 capitalize">
-                                            Rune Mage
-                                        </div>
-                                    </div>
-                                </Link>
                             </div>
                         )}
 

@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useState, useEffect, useRef } from 'react';
+import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import { ChampionSkin } from '@/types/champion';
 import { useTranslations } from 'next-intl';
 
@@ -40,6 +40,10 @@ export default function SkinCarousel({ skins, championId }: SkinCarouselProps) {
     const [page, setPage] = useState([0, 0]);
     const [currentIndex, direction] = page;
     const [isPaused, setIsPaused] = useState(false);
+    const [isDocumentVisible, setIsDocumentVisible] = useState(true);
+    const [isInViewport, setIsInViewport] = useState(false);
+    const carouselRef = useRef<HTMLDivElement>(null);
+    const prefersReducedMotion = useReducedMotion();
 
     // Calculate the actual skin index based on the infinite page count
     const skinIndex = ((currentIndex % skins.length) + skins.length) % skins.length;
@@ -50,19 +54,40 @@ export default function SkinCarousel({ skins, championId }: SkinCarouselProps) {
         setPage([currentIndex + newDirection, newDirection]);
     };
 
+    useEffect(() => {
+        const handleVisibilityChange = () => setIsDocumentVisible(!document.hidden);
+
+        document.addEventListener('visibilitychange', handleVisibilityChange);
+        return () => document.removeEventListener('visibilitychange', handleVisibilityChange);
+    }, []);
+
+    useEffect(() => {
+        const carousel = carouselRef.current;
+        if (!carousel || !('IntersectionObserver' in window)) return;
+
+        const observer = new IntersectionObserver(
+            ([entry]) => setIsInViewport(entry.isIntersecting),
+            { threshold: 0.15 },
+        );
+
+        observer.observe(carousel);
+        return () => observer.disconnect();
+    }, []);
+
     // Auto-play effect
     useEffect(() => {
-        if (isPaused) return;
+        if (isPaused || !isDocumentVisible || !isInViewport || prefersReducedMotion) return;
 
         const timer = setInterval(() => {
-            paginate(1);
+            setPage(([index]) => [index + 1, 1]);
         }, 3000);
 
         return () => clearInterval(timer);
-    }, [currentIndex, isPaused]); // Re-run when index changes or pause state changes
+    }, [isPaused, isDocumentVisible, isInViewport, prefersReducedMotion]);
 
     return (
         <div
+            ref={carouselRef}
             className="relative w-full aspect-video mx-auto overflow-hidden rounded-2xl shadow-2xl bg-gray-900 group border border-gray-800"
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}

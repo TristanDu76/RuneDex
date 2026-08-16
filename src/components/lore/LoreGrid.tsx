@@ -6,6 +6,7 @@ import LoreCard from './LoreCard';
 import { useTranslations } from 'next-intl';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { setQuery, loadMore, PAGE_SIZE } from '@/store/slices/loreGridSlice';
+import { matchesSearch } from '@/lib/search-utils';
 
 interface LoreGridProps {
     characters: LoreCharacterLight[];
@@ -22,10 +23,7 @@ export default function LoreGrid({ characters }: LoreGridProps) {
 
     const filteredCharacters = useMemo(() => {
         if (!query) return characters;
-        const lowerQuery = query.toLowerCase();
-        return characters.filter((char) =>
-            char.name.toLowerCase().startsWith(lowerQuery)
-        );
+        return characters.filter((char) => matchesSearch(char, query));
     }, [query, characters]);
 
     // Personnages visibles à l'écran

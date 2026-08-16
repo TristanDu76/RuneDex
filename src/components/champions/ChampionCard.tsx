@@ -23,6 +23,7 @@ export default function ChampionCard({ champion }: ChampionCardProps) {
     <Link
       href={href}
       className="group relative w-40 h-40 overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-[1.03] border border-gray-700 hover:border-yellow-500 block"
+      style={{ contentVisibility: 'auto', containIntrinsicSize: '160px 160px' }}
     >
       {/* Skeleton shimmer — visible tant que l'image n'est pas chargée */}
       <div

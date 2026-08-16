@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { ChampionSpell, ChampionPassive } from '@/types/champion';
 import { useTranslations } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
+import { toPlainText } from '@/lib/html';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface SpellListProps {
@@ -112,10 +113,9 @@ export default function SpellList({ spells, passive, version, partype }: SpellLi
                         </div>
 
 
-                        <div
-                            className="text-gray-300 leading-relaxed text-sm"
-                            dangerouslySetInnerHTML={{ __html: currentAbility.description }}
-                        />
+                        <p className="whitespace-pre-line text-sm leading-relaxed text-gray-300">
+                            {toPlainText(currentAbility.description)}
+                        </p>
                     </motion.div>
                 </AnimatePresence>
             </div>

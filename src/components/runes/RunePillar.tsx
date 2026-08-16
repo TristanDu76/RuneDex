@@ -1,9 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
 import { Link } from '@/i18n/routing';
+import type { RuneListItem } from '@/types/items';
 
 interface RunePillarProps {
-    rune: any;
+    rune: RuneListItem;
 }
 
 // Mapping des couleurs et styles par Rune

@@ -16,6 +16,9 @@
         "worldRunes": "Runes Telluriques",
         "legendaryArtifacts": "Artefacts Légendaires"
     },
+    "championsGrid": {
+        "loadMore": "Afficher {count, plural, one {le champion suivant} other {les # champions suivants}}"
+    },
     "navigation": {
         "champions": "Champions",
         "items": "Objets",
@@ -34,6 +37,19 @@
     "map": {
         "title": "Carte de Runeterra",
         "subtitle": "Explorez les régions de Runeterra et découvrez leurs champions"
+    },
+    "regionDetail": {
+        "champions": "Champions",
+        "lore": "Lore",
+        "events": "Événements",
+        "noChampions": "Aucun champion connu trouvé pour cette région.",
+        "noLore": "Aucun personnage du lore connu trouvé pour cette région.",
+        "underConstruction": "En construction",
+        "eventsComingSoon": "La frise chronologique des événements de la région arrivera bientôt.",
+        "unknownRegion": "Région inconnue",
+        "loading": "Chargement...",
+        "noCharacters": "Aucun personnage répertorié",
+        "explore": "Explorer la région"
     },
     "quiz": {
         "victory": "Victoire !",
@@ -63,6 +79,8 @@
         "streak": "Série",
         "attempts": "Essais",
         "nextHint": "Prochain indice dans :",
+        "help": "Afficher les indices",
+        "scrollHint": "Faites défiler horizontalement pour voir tous les attributs.",
         "hintUnlocked": "Indice débloqué !",
         "unlockedHints": "Indices révélés",
         "playQuiz": "Jouer au Quiz",
@@ -367,6 +385,14 @@
         "allRightsReserved": "Tous droits réservés.",
         "createdBy": "Créé par",
         "disclaimer": "RuneDex n'est pas affilié à Riot Games."
+    },
+    "ownership": {
+        "guardian": "Gardé par",
+        "creator": "Créé par",
+        "linked": "Lié à",
+        "currentStatus": "Statut actuel",
+        "unknownLocation": "Localisation inconnue",
+        "unassigned": "Aucun gardien répertorié"
     },
     "characters": {
         "title": "Personnages",

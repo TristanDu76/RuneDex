@@ -2,11 +2,12 @@
 import React from 'react';
 import Image from 'next/image';
 import { Link } from '@/i18n/routing';
+import type { ChampionArtifact, ChampionRune } from '@/types/items';
 
 interface ChampionArtifactsProps {
-    artifacts: any[];
-    runes: any[];
-    t: any;
+    artifacts: ChampionArtifact[];
+    runes: ChampionRune[];
+    t: (key: string) => string;
 }
 
 export default function ChampionArtifacts({ artifacts, runes, t }: ChampionArtifactsProps) {

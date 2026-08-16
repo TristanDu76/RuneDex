@@ -16,6 +16,9 @@
         "worldRunes": "World Runes",
         "legendaryArtifacts": "Legendary Artifacts"
     },
+    "championsGrid": {
+        "loadMore": "Show {count, plural, one {the next champion} other {the next # champions}}"
+    },
     "navigation": {
         "champions": "Champions",
         "items": "Items",
@@ -34,6 +37,19 @@
     "map": {
         "title": "Map of Runeterra",
         "subtitle": "Explore the regions of Runeterra and discover their champions"
+    },
+    "regionDetail": {
+        "champions": "Champions",
+        "lore": "Lore",
+        "events": "Events",
+        "noChampions": "No known champion found for this region.",
+        "noLore": "No known lore character found for this region.",
+        "underConstruction": "Under construction",
+        "eventsComingSoon": "The region event timeline is coming soon.",
+        "unknownRegion": "Unknown region",
+        "loading": "Loading...",
+        "noCharacters": "No listed characters",
+        "explore": "Explore the region"
     },
     "quiz": {
         "victory": "Victory!",
@@ -63,6 +79,8 @@
         "streak": "Streak",
         "attempts": "Attempts",
         "nextHint": "Next hint in:",
+        "help": "Show hints",
+        "scrollHint": "Scroll horizontally to view every attribute.",
         "hintUnlocked": "Hint unlocked!",
         "unlockedHints": "Unlocked Hints",
         "playQuiz": "Play Quiz",
@@ -366,6 +384,14 @@
         "allRightsReserved": "All rights reserved.",
         "createdBy": "Created by",
         "disclaimer": "RuneDex is not affiliated with Riot Games."
+    },
+    "ownership": {
+        "guardian": "Guarded by",
+        "creator": "Created by",
+        "linked": "Linked to",
+        "currentStatus": "Current status",
+        "unknownLocation": "Unknown location",
+        "unassigned": "No known guardian"
     },
     "characters": {
         "title": "Characters",

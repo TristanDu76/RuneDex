@@ -61,7 +61,7 @@ export default async function CharactersPage({ params }: CharactersPageProps) {
                         {/* Subtle gold line at top on hover */}
                         <div style={{
                             position: 'absolute', top: 0, left: '10%', right: '10%', height: 1,
-                            background: 'linear-gradient(90deg, transparent, #c8aa6e, transparent)',
+                            background: 'linear-gradient(90deg, transparent, #38bdf8, transparent)',
                             opacity: 0,
                         }} className="group-hover:opacity-100 transition-opacity duration-200" />
 
@@ -69,7 +69,7 @@ export default async function CharactersPage({ params }: CharactersPageProps) {
                         <h2 style={{
                             fontFamily: 'var(--font-marcellus), serif',
                             fontSize: '1.4rem',
-                            color: '#c8aa6e',
+                            color: '#7dd3fc',
                             textTransform: 'uppercase',
                             letterSpacing: '0.1em',
                             marginBottom: 8,
@@ -84,15 +84,15 @@ export default async function CharactersPage({ params }: CharactersPageProps) {
                         <div style={{
                             marginTop: 24,
                             padding: '8px 20px',
-                            border: '1px solid #c8aa6e',
+                            border: '1px solid #38bdf8',
                             borderRadius: 2,
                             display: 'inline-block',
-                            color: '#c8aa6e',
+                            color: '#7dd3fc',
                             fontSize: '0.7rem',
                             letterSpacing: '0.1em',
                             textTransform: 'uppercase' as const,
                             fontFamily: 'var(--font-marcellus), serif',
-                        }} className="group-hover:bg-[#c8aa6e]/10 transition-colors duration-200">
+                        }} className="group-hover:bg-[#38bdf8]/10 transition-colors duration-200">
                             {isEn ? 'Explore →' : 'Explorer →'}
                         </div>
                     </div>

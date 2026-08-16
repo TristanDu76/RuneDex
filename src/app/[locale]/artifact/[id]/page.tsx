@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { fetchArtifactById } from '@/lib/data';
+import { getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Link } from '@/i18n/routing';
 
@@ -13,9 +14,10 @@ interface ArtifactPageProps {
 
 export default async function ArtifactPage({ params }: ArtifactPageProps) {
     const { id, locale } = await params;
-    console.log('Loading artifact page for:', id, locale);
-    const artifact = await fetchArtifactById(id, locale);
-    console.log('Artifact data:', artifact);
+    const [artifact, t] = await Promise.all([
+        fetchArtifactById(id, locale),
+        getTranslations({ locale, namespace: 'ownership' }),
+    ]);
 
     if (!artifact) {
         notFound();
@@ -80,12 +82,12 @@ export default async function ArtifactPage({ params }: ArtifactPageProps) {
                         </div>
 
                         {/* Owner Section */}
-                        {artifact.owner && (
+                        {artifact.owner ? (
                             <div className="mt-12 pt-8 border-t border-gray-800">
                                 <h3 className="text-lg font-bold text-gray-400 mb-4 uppercase tracking-widest text-sm">
-                                    {artifact.owner.type === 'guardian' ? 'Gardé par' :
-                                        artifact.owner.type === 'creator' ? 'Créé par' :
-                                            'Lié à'}
+                                    {artifact.owner.type === 'guardian' ? t('guardian') :
+                                        artifact.owner.type === 'creator' ? t('creator') :
+                                            t('linked')}
                                 </h3>
                                 <Link
                                     href={artifact.owner.link}
@@ -94,9 +96,10 @@ export default async function ArtifactPage({ params }: ArtifactPageProps) {
                                     <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-gray-600 group-hover:border-yellow-500 transition-colors bg-transparent">
                                         {artifact.owner.image ? (
                                             <Image
-                                                src={(artifact.owner.image as any) || ''}
-                                                alt={artifact.owner.name || ''}
+                                                src={artifact.owner.image}
+                                                alt={artifact.owner.name}
                                                 fill
+                                                sizes="64px"
                                                 className="object-cover"
                                             />
                                         ) : (
@@ -115,7 +118,7 @@ export default async function ArtifactPage({ params }: ArtifactPageProps) {
                                     </div>
                                 </Link>
                             </div>
-                        )}
+                        ) : null}
                     </div>
                 </div>
             </div>

@@ -1,20 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
 import { Link } from '@/i18n/routing';
+import type { ArtifactListItem } from '@/types/items';
 
 interface ArtifactCardProps {
-    artifact: any;
+    artifact: ArtifactListItem;
 }
 
 export default function ArtifactCard({ artifact }: ArtifactCardProps) {
-    // Nettoyage de la description HTML
-    const cleanDescription = (desc: string) => {
-        if (!desc) return '';
-        let cleaned = desc.replace(/<br>/g, '\n');
-        cleaned = cleaned.replace(/<[^>]*>/g, '');
-        return cleaned;
-    };
-
     const linkHref = artifact.type === 'home.worldRunes'
         ? `/rune/${artifact.id}`
         : `/artifact/${artifact.id}`;

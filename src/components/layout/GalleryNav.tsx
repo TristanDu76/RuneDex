@@ -23,7 +23,7 @@ export default function GalleryNav() {
                     return (
                         <Link
                             key={item.id}
-                            href={item.href as any}
+                            href={item.href}
                             className={`px-8 py-2.5 rounded-full text-sm font-bold transition-all duration-300 ${isActive
                                     ? 'bg-yellow-500 text-gray-900 shadow-[0_0_20px_rgba(234,179,8,0.3)] scale-105'
                                     : 'text-gray-400 hover:text-white hover:bg-white/5'
@@ -37,7 +37,7 @@ export default function GalleryNav() {
                 <div className="w-px h-6 bg-white/10 mx-2 self-center hidden sm:block" />
 
                 <Link
-                    href="/map"
+                    href="/"
                     className="px-8 py-2.5 rounded-full text-sm font-bold text-yellow-500 hover:bg-yellow-500/10 transition-all flex items-center gap-2 border border-yellow-500/20 group"
                 >
                     <svg className="w-4 h-4 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

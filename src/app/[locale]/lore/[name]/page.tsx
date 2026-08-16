@@ -1,10 +1,12 @@
 import React from 'react';
+import Image from 'next/image';
 import { fetchLoreCharacter, fetchAllChampionsLight, fetchLoreCharactersLight } from "@/lib/data";
 import { getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import ChampionRelations from '@/components/champions/ChampionRelations';
 import { ChampionData } from '@/types/champion';
 import LoreNavigation from '@/components/lore/LoreNavigation';
+import { buildRelationCards } from '@/lib/relation-cards';
 
 interface LorePageProps {
     params: Promise<{
@@ -91,6 +93,14 @@ export default async function LorePage({ params }: LorePageProps) {
         related_champions: character.related_champions,
         factions: allFactions,
     };
+    const relationCards = buildRelationCards({
+        championName: character.name,
+        championId: character.id,
+        locale,
+        relations: championDetailsAdapter.related_champions,
+        allChampions,
+        loreCharacters,
+    });
 
 
     return (
@@ -104,11 +114,13 @@ export default async function LorePage({ params }: LorePageProps) {
 
                 {/* Header */}
                 <div className="text-center mb-12">
-                    <div className="relative w-[600px] h-[320px] max-w-full mx-auto mb-8 rounded-3xl overflow-hidden border-2 border-hextech-gold shadow-[0_0_30px_rgba(212,175,55,0.4)] group hover:shadow-[0_0_50px_rgba(0,229,255,0.4)] hover:border-hextech-cyan transition-all duration-500">
+                    <div className="relative w-[600px] h-[320px] max-w-full mx-auto mb-8 rounded-3xl overflow-hidden border-2 border-hextech-gold shadow-[0_0_30px_rgba(56,189,248,0.4)] group hover:shadow-[0_0_50px_rgba(0,229,255,0.4)] hover:border-hextech-cyan transition-all duration-500">
                         {character.image ? (
-                            <img
+                            <Image
                                 src={character.image}
                                 alt={character.name}
+                                width={600}
+                                height={320}
                                 className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"
                             />
                         ) : (
@@ -154,7 +166,7 @@ export default async function LorePage({ params }: LorePageProps) {
                             <>
                                 {/* Région d'origine */}
                                 {displayOrigin && (
-                                    <div className="flex items-center gap-2 hex-panel border border-hextech-gold/30 px-4 py-2 rounded-full shadow-[inset_0_0_10px_rgba(212,175,55,0.1)]">
+                                    <div className="flex items-center gap-2 hex-panel border border-hextech-gold/30 px-4 py-2 rounded-full shadow-[inset_0_0_10px_rgba(56,189,248,0.1)]">
                                         <span className="text-hextech-cyan text-sm uppercase tracking-wider font-semibold">{t('champion.origin_region')}</span>
                                         <span className={`text-sm font-bold px-2 py-0.5 rounded ${regionColors[displayOrigin.toLowerCase()] || 'text-gray-300'}`}>
                                             {translateFallback(`factions.${displayOrigin.toLowerCase().replace(/\s+/g, '-')}`, displayOrigin)}
@@ -164,7 +176,7 @@ export default async function LorePage({ params }: LorePageProps) {
 
                                 {/* Région Actuelle */}
                                 {displayRegion.length > 0 && (
-                                    <div className="flex items-center gap-2 hex-panel border border-hextech-gold/30 px-4 py-2 rounded-full shadow-[inset_0_0_10px_rgba(212,175,55,0.1)]">
+                                    <div className="flex items-center gap-2 hex-panel border border-hextech-gold/30 px-4 py-2 rounded-full shadow-[inset_0_0_10px_rgba(56,189,248,0.1)]">
                                         <span className="text-hextech-cyan text-sm uppercase tracking-wider font-semibold">{t('champion.region')}</span>
                                         <div className="flex gap-2">
                                             {displayRegion.map(region => (
@@ -178,7 +190,7 @@ export default async function LorePage({ params }: LorePageProps) {
 
                                 {/* Factions */}
                                 {displayFactions.length > 0 && (
-                                    <div className="flex items-center gap-2 hex-panel border border-hextech-gold/30 px-4 py-2 rounded-full shadow-[inset_0_0_10px_rgba(212,175,55,0.1)]">
+                                    <div className="flex items-center gap-2 hex-panel border border-hextech-gold/30 px-4 py-2 rounded-full shadow-[inset_0_0_10px_rgba(56,189,248,0.1)]">
                                         <span className="text-hextech-cyan text-sm uppercase tracking-wider font-semibold">{t('champion.faction')}</span>
                                         <div className="flex gap-2">
                                             {displayFactions.map(faction => (
@@ -195,7 +207,7 @@ export default async function LorePage({ params }: LorePageProps) {
 
                     {/* Species */}
                     {speciesValue && (
-                        <div className="flex items-center gap-2 hex-panel border border-hextech-gold/30 px-4 py-2 rounded-full shadow-[inset_0_0_10px_rgba(212,175,55,0.1)]">
+                        <div className="flex items-center gap-2 hex-panel border border-hextech-gold/30 px-4 py-2 rounded-full shadow-[inset_0_0_10px_rgba(56,189,248,0.1)]">
                             <span className="text-hextech-cyan text-sm uppercase tracking-wider font-semibold">{t('champion.species')}</span>
                             <span className={`font-medium ${getSpeciesColor(speciesValue)}`}>
                                 {translateFallback(`species.${speciesI18nKey}`, speciesValue)}
@@ -205,7 +217,7 @@ export default async function LorePage({ params }: LorePageProps) {
 
                     {/* Gender */}
                     {genderValue && (
-                        <div className="flex items-center gap-2 hex-panel border border-hextech-gold/30 px-4 py-2 rounded-full shadow-[inset_0_0_10px_rgba(212,175,55,0.1)]">
+                        <div className="flex items-center gap-2 hex-panel border border-hextech-gold/30 px-4 py-2 rounded-full shadow-[inset_0_0_10px_rgba(56,189,248,0.1)]">
                             <span className="text-hextech-cyan text-sm uppercase tracking-wider font-semibold">{t('champion.gender')}</span>
                             <span className={`font-medium ${getGenderColor(genderValue)}`}>
                                 {translateFallback([`gender.${genderI18nKey}`, `gender.${genderValue}`], genderValue)}
@@ -215,7 +227,7 @@ export default async function LorePage({ params }: LorePageProps) {
 
                     {/* Status */}
                     {statusValue && (
-                        <div className="flex items-center gap-2 hex-panel border border-hextech-gold/30 px-4 py-2 rounded-full shadow-[inset_0_0_10px_rgba(212,175,55,0.1)]">
+                        <div className="flex items-center gap-2 hex-panel border border-hextech-gold/30 px-4 py-2 rounded-full shadow-[inset_0_0_10px_rgba(56,189,248,0.1)]">
                             <span className="text-hextech-cyan text-sm uppercase tracking-wider font-semibold">{t('champion.status')}</span>
                             <span className={`font-bold ${getStatusColor(statusValue)}`}>
                                 {translateFallback(`status.${statusValue}`, statusValue)}
@@ -244,12 +256,8 @@ export default async function LorePage({ params }: LorePageProps) {
 
                 {/* Relations */}
                 <ChampionRelations
-                    championName={character.name}
-                    championDetails={championDetailsAdapter}
-                    allChampions={allChampions}
-                    loreCharacters={loreCharacters}
+                    relations={relationCards}
                     locale={locale}
-                    latestVersion={latestVersion}
                 />
 
             </div>
