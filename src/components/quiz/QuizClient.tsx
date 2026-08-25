@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { HelpCircle, X, Lightbulb } from 'lucide-react';
+import { HelpCircle, X, Lightbulb, Trophy } from 'lucide-react';
 import { isClassicQuizEligible, selectClassicQuizTarget, type ClassicQuizChampion } from '@/lib/quiz-rounds';
 import { getSearchRank } from '@/lib/search-utils';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
@@ -18,6 +18,7 @@ import {
     setShowHelper as setShowHelperAction,
     addUnlockedHint,
     setUnlockedHints as setUnlockedHintsAction,
+    resetQuiz,
     Category,
     GuessResult
 } from '@/store/slices/quizSlice';
@@ -463,56 +464,58 @@ export default function QuizClient({ champions }: QuizClientProps) {
                     )}
                 </div>
 
-                {/* Search Input */}
-                <div className="relative w-full max-w-lg z-50">
-                    <input
-                        ref={inputRef}
-                        type="text"
-                        value={input}
-                        onChange={(e) => {
-                            setInput(e.target.value);
-                            setShowSuggestions(true);
-                        }}
-                        onKeyDown={handleKeyDown}
-                        placeholder={t('quiz.typePlaceholder')}
-                        className="w-full py-3 px-5 bg-gray-800 text-white border border-gray-700 rounded-full focus:outline-none focus:border-yellow-500 shadow-lg text-sm transition-all focus:ring-2 focus:ring-yellow-500/20"
-                        disabled={isWon}
-                    />
+                {!isWon && (
+                    <div className="relative w-full max-w-lg z-50">
+                        <input
+                            ref={inputRef}
+                            type="text"
+                            value={input}
+                            onChange={(e) => {
+                                setInput(e.target.value);
+                                setShowSuggestions(true);
+                            }}
+                            onKeyDown={handleKeyDown}
+                            placeholder={t('quiz.typePlaceholder')}
+                            className="w-full py-3 px-5 bg-gray-800 text-white border border-gray-700 rounded-full focus:outline-none focus:border-yellow-500 shadow-lg text-sm transition-all focus:ring-2 focus:ring-yellow-500/20"
+                        />
 
-                    {/* Suggestions */}
-                    {showSuggestions && input && (
-                        <div ref={suggestionsRef} className="absolute top-full left-0 w-full bg-gray-800 border border-gray-700 rounded-xl mt-2 shadow-xl overflow-hidden max-h-60 overflow-y-auto">
-                            {filteredChampions.map((c, idx) => (
-                                <button
-                                    key={c.id}
-                                    onClick={() => handleGuess(c)}
-                                    className={`w-full flex items-center gap-3 p-2 hover:bg-gray-700 transition-colors text-left ${idx === selectedIndex ? 'bg-gray-700 border-l-4 border-yellow-500' : ''}`}
-                                >
-                                    <Image
-                                        src={`https://ddragon.leagueoflegends.com/cdn/${c.version}/img/champion/${c.image.full}`}
-                                        alt={c.name}
-                                        width={32}
-                                        height={32}
-                                        className="rounded-full"
-                                    />
-                                    <span className="text-white font-medium text-sm">{c.name}</span>
-                                </button>
-                            ))}
-                        </div>
-                    )}
-                </div>
+                        {/* Suggestions */}
+                        {showSuggestions && input && (
+                            <div ref={suggestionsRef} className="absolute top-full left-0 w-full bg-gray-800 border border-gray-700 rounded-xl mt-2 shadow-xl overflow-hidden max-h-60 overflow-y-auto">
+                                {filteredChampions.map((c, idx) => (
+                                    <button
+                                        key={c.id}
+                                        onClick={() => handleGuess(c)}
+                                        className={`w-full flex items-center gap-3 p-2 hover:bg-gray-700 transition-colors text-left ${idx === selectedIndex ? 'bg-gray-700 border-l-4 border-yellow-500' : ''}`}
+                                    >
+                                        <Image
+                                            src={`https://ddragon.leagueoflegends.com/cdn/${c.version}/img/champion/${c.image.full}`}
+                                            alt={c.name}
+                                            width={32}
+                                            height={32}
+                                            className="rounded-full"
+                                        />
+                                        <span className="text-white font-medium text-sm">{c.name}</span>
+                                    </button>
+                                ))}
+                            </div>
+                        )}
+                    </div>
+                )}
 
                 {/* Win Message */}
                 {isWon && (
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-center p-6 bg-green-900/50 border border-green-500 rounded-xl backdrop-blur-sm w-full max-w-lg"
+                        className="text-center p-7 bg-gradient-to-br from-emerald-950/95 via-green-900/80 to-cyan-950/90 border border-emerald-400 rounded-2xl backdrop-blur-sm w-full max-w-lg shadow-[0_0_48px_rgba(52,211,153,0.25)]"
                     >
-                        <h2 className="text-3xl font-bold text-green-400 mb-2">{t('quiz.victory')}</h2>
+                        <Trophy className="mx-auto mb-3 text-yellow-300 drop-shadow-[0_0_14px_rgba(253,224,71,0.8)]" size={42} aria-hidden="true" />
+                        <h2 className="text-3xl font-bold text-green-300 mb-2">{t('quiz.victory')}</h2>
                         <p className="text-lg text-gray-200">{t('quiz.championWas', { champion: localizedTargetChampion.name })}</p>
+                        <p className="mt-2 text-sm font-medium uppercase tracking-wider text-emerald-200">{t('quiz.foundIn', { count: guesses.length })}</p>
                         <button
-                            onClick={() => window.location.reload()}
+                            onClick={() => dispatch(resetQuiz())}
                             className="mt-4 px-6 py-2 bg-green-600 hover:bg-green-500 text-white rounded-full transition-colors font-bold shadow-lg hover:shadow-green-500/20"
                         >
                             {t('quiz.playAgain')}

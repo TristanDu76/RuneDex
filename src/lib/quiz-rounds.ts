@@ -38,6 +38,16 @@ export type ClassicQuizMetadata = Pick<ChampionData, 'id' | 'gender' | 'species'
 export type ClassicQuizChampion = QuizChampionIdentity & Omit<ClassicQuizMetadata, 'id'>;
 export type SpellType = 'P' | 'Q' | 'W' | 'E' | 'R';
 
+export function getAbilitySpellTypeForKey(key: string): SpellType | null {
+    const bindings: Record<string, SpellType> = { a: 'Q', z: 'W', e: 'E', r: 'R' };
+    return bindings[key.toLowerCase()] ?? null;
+}
+
+export function moveQuizOptionIndex(current: number, direction: -1 | 1, optionCount: number): number {
+    if (optionCount <= 0) return 0;
+    return Math.max(0, Math.min(optionCount - 1, current + direction));
+}
+
 export interface AbilityRound<TChampion extends AbilityQuizChampion> {
     champion: TChampion;
     spell: AbilityQuizSpell | AbilityQuizPassive;

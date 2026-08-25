@@ -1,11 +1,11 @@
 'use client';
 
-import { useEffect, useId, useState, useMemo, useRef } from 'react';
+import { useCallback, useEffect, useId, useState, useMemo, useRef } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { RefreshCw, Eye, Wand2 } from 'lucide-react';
-import { createSeededRandom, createSkinOptions, createSkinRound, type SkinQuizChampion, type SkinQuizSkin } from '@/lib/quiz-rounds';
+import { createSeededRandom, createSkinOptions, createSkinRound, moveQuizOptionIndex, type SkinQuizChampion, type SkinQuizSkin } from '@/lib/quiz-rounds';
 
 interface SkinQuizClientProps {
     champions: SkinQuizChampion[];
@@ -23,6 +23,8 @@ interface GameState {
     zoomOrigin: { x: number, y: number };
     attempts: number;
     wrongGuesses: string[];
+    skinOptions: SkinQuizSkin[];
+    lastAnswerCorrect: boolean | null;
 }
 
 export default function SkinQuizClient({ champions }: SkinQuizClientProps) {
@@ -49,6 +51,8 @@ export default function SkinQuizClient({ champions }: SkinQuizClientProps) {
             zoomOrigin: round?.zoomOrigin ?? { x: 50, y: 50 },
             attempts: 0,
             wrongGuesses: [],
+            skinOptions: [],
+            lastAnswerCorrect: null,
         };
     });
     const sessionReady = useRef(false);
@@ -56,12 +60,25 @@ export default function SkinQuizClient({ champions }: SkinQuizClientProps) {
         const saved = window.sessionStorage.getItem('runedex:quiz:skin:state');
         const timer = window.setTimeout(() => {
             if (saved) {
-                try { setGameState(JSON.parse(saved) as GameState); } catch { window.sessionStorage.removeItem('runedex:quiz:skin:state'); }
+                try {
+                    const previousState = JSON.parse(saved) as GameState;
+                    const champion = validChampions.find((candidate) => candidate.id === previousState.champion?.id) ?? previousState.champion;
+                    const findSkin = (skin: SkinQuizSkin | null) => champion?.skins?.find((candidate) => candidate.id === skin?.id) ?? skin;
+
+                    setGameState({
+                        ...previousState,
+                        champion,
+                        skin: findSkin(previousState.skin),
+                        skinOptions: (previousState.skinOptions ?? []).map((skin) => findSkin(skin)).filter((skin): skin is SkinQuizSkin => skin !== null),
+                    });
+                } catch {
+                    window.sessionStorage.removeItem('runedex:quiz:skin:state');
+                }
             }
             sessionReady.current = true;
         }, 0);
         return () => window.clearTimeout(timer);
-    }, []);
+    }, [validChampions]);
     useEffect(() => {
         if (sessionReady.current) window.sessionStorage.setItem('runedex:quiz:skin:state', JSON.stringify(gameState));
     }, [gameState]);
@@ -69,12 +86,12 @@ export default function SkinQuizClient({ champions }: SkinQuizClientProps) {
     const [input, setInput] = useState('');
     const [showSuggestions, setShowSuggestions] = useState(false);
     const [selectedIndex, setSelectedIndex] = useState(0);
-    const [skinOptions, setSkinOptions] = useState<SkinQuizSkin[]>([]);
+    const [selectedSkinIndex, setSelectedSkinIndex] = useState(0);
 
     const inputRef = useRef<HTMLInputElement>(null);
 
     // Start New Round
-    const startRound = () => {
+    const startRound = useCallback(() => {
         if (validChampions.length === 0) return;
 
         const round = createSkinRound(validChampions);
@@ -86,15 +103,17 @@ export default function SkinQuizClient({ champions }: SkinQuizClientProps) {
             phase: 'guess_champion',
             attempts: 0,
             wrongGuesses: [],
+            skinOptions: [],
+            lastAnswerCorrect: null,
         }));
 
         setInput('');
-        setSkinOptions([]);
+        setSelectedSkinIndex(0);
         setShowSuggestions(false);
 
         // Focus input
         setTimeout(() => inputRef.current?.focus(), 100);
-    };
+    }, [validChampions]);
 
     // Suggestions Logic
     const filteredChampions = useMemo(() => {
@@ -110,8 +129,9 @@ export default function SkinQuizClient({ champions }: SkinQuizClientProps) {
 
         if (guess.id === gameState.champion.id) {
             // Correct Champion
-            setSkinOptions(createSkinOptions(gameState.champion, gameState.skin));
-            setGameState(prev => ({ ...prev, phase: 'guess_skin' }));
+            const options = createSkinOptions(gameState.champion, gameState.skin);
+            setSelectedSkinIndex(0);
+            setGameState(prev => ({ ...prev, phase: 'guess_skin', skinOptions: options }));
             setInput('');
         } else {
             // Wrong Champion
@@ -127,7 +147,7 @@ export default function SkinQuizClient({ champions }: SkinQuizClientProps) {
         setShowSuggestions(false);
     };
 
-    const handleSkinGuess = (skin: SkinQuizSkin) => {
+    const handleSkinGuess = useCallback((skin: SkinQuizSkin) => {
         if (gameState.phase !== 'guess_skin' || !gameState.skin) return;
 
         if (skin.id === gameState.skin.id) {
@@ -136,17 +156,19 @@ export default function SkinQuizClient({ champions }: SkinQuizClientProps) {
                 ...prev,
                 phase: 'result',
                 score: prev.score + Math.max(1, 10 - prev.attempts) + (prev.streak * 2),
-                streak: prev.streak + 1
+                streak: prev.streak + 1,
+                lastAnswerCorrect: true,
             }));
         } else {
             // Wrong Skin
             setGameState(prev => ({
                 ...prev,
                 phase: 'result',
-                streak: 0
+                streak: 0,
+                lastAnswerCorrect: false,
             }));
         }
-    };
+    }, [gameState.phase, gameState.skin]);
 
     const handleKeyDown = (e: React.KeyboardEvent) => {
         if (e.key === 'ArrowDown') {
@@ -162,6 +184,30 @@ export default function SkinQuizClient({ champions }: SkinQuizClientProps) {
             }
         }
     };
+
+    useEffect(() => {
+        const handleRoundKey = (event: KeyboardEvent) => {
+            if (gameState.phase === 'result' && (event.key === 'Enter' || event.key === ' ')) {
+                event.preventDefault();
+                startRound();
+                return;
+            }
+            if (gameState.phase !== 'guess_skin') return;
+
+            const moveUp = event.key === 'ArrowUp' || event.key.toLowerCase() === 'z';
+            const moveDown = event.key === 'ArrowDown' || event.key.toLowerCase() === 's';
+            if (moveUp || moveDown) {
+                event.preventDefault();
+                setSelectedSkinIndex((index) => moveQuizOptionIndex(index, moveUp ? -1 : 1, gameState.skinOptions.length));
+            } else if (event.key === 'Enter' && gameState.skinOptions[selectedSkinIndex]) {
+                event.preventDefault();
+                handleSkinGuess(gameState.skinOptions[selectedSkinIndex]);
+            }
+        };
+
+        window.addEventListener('keydown', handleRoundKey);
+        return () => window.removeEventListener('keydown', handleRoundKey);
+    }, [gameState.phase, gameState.skinOptions, selectedSkinIndex, handleSkinGuess, startRound]);
 
     // Image URL
     const getSkinImageUrl = (champion: SkinQuizChampion, skin: SkinQuizSkin) => {
@@ -254,6 +300,9 @@ export default function SkinQuizClient({ champions }: SkinQuizClientProps) {
                             initial={{ y: 20, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                         >
+                            <p className={`mb-3 text-2xl font-bold ${gameState.lastAnswerCorrect ? 'text-green-400' : 'text-red-400'}`}>
+                                {gameState.lastAnswerCorrect ? `✓ ${t('correct')}` : `✕ ${t('wrong')}`}
+                            </p>
                             <h2 className="text-4xl font-bold text-white mb-2">{gameState.champion.name}</h2>
                             <p className="text-xl text-yellow-400 mb-6">{gameState.skin.name === 'default' ? tChampion('baseSkin') : gameState.skin.name}</p>
                             <button
@@ -315,11 +364,11 @@ export default function SkinQuizClient({ champions }: SkinQuizClientProps) {
                     <div className="w-full">
                         <h3 className="text-center text-lg font-medium text-gray-300 mb-4">{t('guessSkin')}</h3>
                         <div className="grid grid-cols-1 gap-3">
-                            {skinOptions.map((skin) => (
+                            {gameState.skinOptions.map((skin, index) => (
                                 <button
                                     key={skin.id}
                                     onClick={() => handleSkinGuess(skin)}
-                                    className="w-full py-3 px-4 bg-gray-800 hover:bg-gray-700 border border-gray-600 rounded-xl text-white font-medium transition-all hover:scale-[1.02] active:scale-95 text-left flex justify-between items-center"
+                                    className={`w-full py-3 px-4 bg-gray-800 hover:bg-gray-700 border rounded-xl text-white font-medium transition-all hover:scale-[1.02] active:scale-95 text-left flex justify-between items-center ${index === selectedSkinIndex ? 'border-purple-400 ring-1 ring-purple-400/50' : 'border-gray-600'}`}
                                 >
                                     <span>{skin.name === 'default' ? tChampion('baseSkin') : skin.name}</span>
                                 </button>

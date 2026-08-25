@@ -106,4 +106,16 @@ describe('quiz catalogs', () => {
     expect(skinChampions[0]).not.toHaveProperty('lore');
     expect(skinChampions[0]).not.toHaveProperty('stats');
   });
+
+  it('uses English skin labels for the English skin quiz catalogue', async () => {
+    const [frenchChampions, englishChampions] = await Promise.all([
+      fetchSkinQuizChampions('fr'),
+      fetchSkinQuizChampions('en'),
+    ]);
+    const frenchAatrox = frenchChampions.find((champion) => champion.id === 'Aatrox');
+    const englishAatrox = englishChampions.find((champion) => champion.id === 'Aatrox');
+
+    expect(frenchAatrox?.skins?.find((skin) => skin.id === '266001')?.name).toBe('Aatrox justicier');
+    expect(englishAatrox?.skins?.find((skin) => skin.id === '266001')?.name).toBe('Justicar Aatrox');
+  });
 });

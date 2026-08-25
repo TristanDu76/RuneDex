@@ -6,6 +6,8 @@ import {
     createSkinOptions,
     createSkinRound,
     createSeededRandom,
+    getAbilitySpellTypeForKey,
+    moveQuizOptionIndex,
     selectClassicQuizTarget,
     toAbilityQuizChampion,
     toClassicQuizChampion,
@@ -74,6 +76,17 @@ describe('quiz round helpers', () => {
         const right = createSeededRandom('ability-round');
 
         expect([left(), left(), left()]).toEqual([right(), right(), right()]);
+    });
+
+    it('maps French AZER keys and clamps keyboard option navigation', () => {
+        expect(getAbilitySpellTypeForKey('a')).toBe('Q');
+        expect(getAbilitySpellTypeForKey('Z')).toBe('W');
+        expect(getAbilitySpellTypeForKey('e')).toBe('E');
+        expect(getAbilitySpellTypeForKey('r')).toBe('R');
+        expect(getAbilitySpellTypeForKey('p')).toBeNull();
+        expect(moveQuizOptionIndex(0, -1, 4)).toBe(0);
+        expect(moveQuizOptionIndex(3, 1, 4)).toBe(3);
+        expect(moveQuizOptionIndex(1, 1, 4)).toBe(2);
     });
 
     it('projects each quiz payload to the fields it actually needs', () => {

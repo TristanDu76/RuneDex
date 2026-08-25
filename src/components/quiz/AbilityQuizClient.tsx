@@ -1,11 +1,13 @@
 'use client';
 
-import { useEffect, useId, useState, useMemo, useRef } from 'react';
+import { useCallback, useEffect, useId, useState, useMemo, useRef } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { RefreshCw } from 'lucide-react';
-import { createAbilityRound, createSeededRandom, type AbilityQuizChampion, type AbilityQuizPassive, type AbilityQuizSpell, type SpellType } from '@/lib/quiz-rounds';
+import { createAbilityRound, createSeededRandom, getAbilitySpellTypeForKey, moveQuizOptionIndex, type AbilityQuizChampion, type AbilityQuizPassive, type AbilityQuizSpell, type SpellType } from '@/lib/quiz-rounds';
+
+const SPELL_TYPES: SpellType[] = ['P', 'Q', 'W', 'E', 'R'];
 
 interface AbilityQuizClientProps {
     champions: AbilityQuizChampion[];
@@ -72,11 +74,12 @@ export default function AbilityQuizClient({ champions }: AbilityQuizClientProps)
     const [input, setInput] = useState('');
     const [showSuggestions, setShowSuggestions] = useState(false);
     const [selectedIndex, setSelectedIndex] = useState(0);
+    const [selectedSpellIndex, setSelectedSpellIndex] = useState(0);
 
     const inputRef = useRef<HTMLInputElement>(null);
 
     // Start New Round
-    const startRound = () => {
+    const startRound = useCallback(() => {
         if (validChampions.length === 0) return;
 
         const round = createAbilityRound(validChampions, settings.rotate);
@@ -95,7 +98,7 @@ export default function AbilityQuizClient({ champions }: AbilityQuizClientProps)
 
         // Focus input
         setTimeout(() => inputRef.current?.focus(), 100);
-    };
+    }, [settings.rotate, validChampions]);
 
     // Suggestions Logic
     const filteredChampions = useMemo(() => {
@@ -116,6 +119,7 @@ export default function AbilityQuizClient({ champions }: AbilityQuizClientProps)
                 ...prev,
                 phase: 'guess_spell'
             }));
+            setSelectedSpellIndex(0);
             setInput('');
         } else {
             // Wrong Champion
@@ -130,7 +134,7 @@ export default function AbilityQuizClient({ champions }: AbilityQuizClientProps)
         setShowSuggestions(false);
     };
 
-    const handleSpellGuess = (guessedType: SpellType) => {
+    const handleSpellGuess = useCallback((guessedType: SpellType) => {
         if (gameState.phase !== 'guess_spell' || !gameState.spellType) return;
 
         if (guessedType === gameState.spellType) {
@@ -150,7 +154,7 @@ export default function AbilityQuizClient({ champions }: AbilityQuizClientProps)
                 streak: 0
             }));
         }
-    };
+    }, [gameState.phase, gameState.spellType]);
 
     const handleKeyDown = (e: React.KeyboardEvent) => {
         if (e.key === 'ArrowDown') {
@@ -166,6 +170,35 @@ export default function AbilityQuizClient({ champions }: AbilityQuizClientProps)
             }
         }
     };
+
+    useEffect(() => {
+        const handleRoundKey = (event: KeyboardEvent) => {
+            if (gameState.phase === 'result' && (event.key === 'Enter' || event.key === ' ')) {
+                event.preventDefault();
+                startRound();
+                return;
+            }
+
+            if (gameState.phase !== 'guess_spell') return;
+            const spellType = getAbilitySpellTypeForKey(event.key);
+            if (spellType) {
+                event.preventDefault();
+                setSelectedSpellIndex(SPELL_TYPES.indexOf(spellType));
+            } else if (event.key === 'ArrowLeft') {
+                event.preventDefault();
+                setSelectedSpellIndex((index) => moveQuizOptionIndex(index, -1, SPELL_TYPES.length));
+            } else if (event.key === 'ArrowRight') {
+                event.preventDefault();
+                setSelectedSpellIndex((index) => moveQuizOptionIndex(index, 1, SPELL_TYPES.length));
+            } else if (event.key === 'Enter') {
+                event.preventDefault();
+                handleSpellGuess(SPELL_TYPES[selectedSpellIndex]);
+            }
+        };
+
+        window.addEventListener('keydown', handleRoundKey);
+        return () => window.removeEventListener('keydown', handleRoundKey);
+    }, [gameState.phase, gameState.spellType, handleSpellGuess, selectedSpellIndex, startRound]);
 
     // Image URL
     const getSpellImageUrl = (champion: AbilityQuizChampion, spell: AbilityQuizSpell | AbilityQuizPassive, type: SpellType) => {
@@ -327,11 +360,11 @@ export default function AbilityQuizClient({ champions }: AbilityQuizClientProps)
                     <div className="w-full">
                         <h3 className="text-center text-lg font-medium text-gray-300 mb-4">{t('guessSpell')}</h3>
                         <div className="grid grid-cols-5 gap-2">
-                            {(['P', 'Q', 'W', 'E', 'R'] as SpellType[]).map((type) => (
+                            {SPELL_TYPES.map((type, index) => (
                                 <button
                                     key={type}
                                     onClick={() => handleSpellGuess(type)}
-                                    className="aspect-square rounded-lg bg-gray-800 hover:bg-gray-700 border border-gray-600 text-white font-bold text-xl transition-all hover:scale-105 active:scale-95 flex items-center justify-center shadow-lg"
+                                    className={`aspect-square rounded-lg bg-gray-800 hover:bg-gray-700 border text-white font-bold text-xl transition-all hover:scale-105 active:scale-95 flex items-center justify-center shadow-lg ${index === selectedSpellIndex ? 'border-blue-400 ring-1 ring-blue-400/50' : 'border-gray-600'}`}
                                 >
                                     {type}
                                 </button>
