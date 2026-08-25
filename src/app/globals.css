@@ -205,6 +205,24 @@ nextjs-portal,
     color: #d4b86a !important;
   }
 
+  .war-room__faction-trigger--desktop {
+    display: inline-flex;
+    position: absolute;
+    z-index: 20;
+    right: 18px;
+    bottom: 18px;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 12px;
+    border: 1px solid #38bdf8;
+    background: rgba(4, 15, 30, 0.94);
+    color: #bae6fd;
+    cursor: pointer;
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
   @media (max-width: 767px) {
     .war-room__header {
       min-height: 60px;
@@ -268,6 +286,13 @@ nextjs-portal,
       letter-spacing: 0.09em;
       text-transform: uppercase;
       white-space: nowrap;
+    }
+
+    .war-room__faction-trigger--desktop {
+      left: 50%;
+      right: auto;
+      bottom: 18px;
+      transform: translateX(-50%);
     }
 
     .war-room__mobile-navigation {

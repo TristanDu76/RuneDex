@@ -66,4 +66,13 @@ describe('regions configuration', () => {
             fs.statSync(path.join(process.cwd(), 'public', icon)).size < 20 * 1024,
         )).toBe(true);
     });
+
+    it('keeps Ionia distinct from Zaun in the map preview data', () => {
+        const ionia = regions.find((region) => region.id === 'ionia');
+        const zaun = regions.find((region) => region.id === 'zaun');
+
+        expect(ionia?.description).not.toBe(zaun?.description);
+        expect(ionia?.descriptionEn).not.toBe(zaun?.descriptionEn);
+        expect(ionia?.description).toContain('Terres spirituelles');
+    });
 });

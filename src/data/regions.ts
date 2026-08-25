@@ -122,8 +122,8 @@ export const regions: Region[] = [
         id: 'ionia',
         name: 'Ionia',
         nameEn: 'Ionia',
-        description: 'Ville Basse Industrielle Polluée',
-        descriptionEn: 'Polluted Industrial Undercity',
+        description: 'Terres spirituelles où règnent harmonie, magie et traditions anciennes',
+        descriptionEn: 'Spiritual lands shaped by harmony, magic, and ancient traditions',
         icon: '/images/Ionia.png',
         color: '#a82feeff',
         polygons: [

@@ -219,18 +219,22 @@ export default function LeafletMapWrapper({ locale }: MapWrapperProps) {
                     </div>
                     <button
                         type="button"
-                        className="war-room__faction-trigger"
+                    className="war-room__faction-trigger war-room__faction-trigger--desktop"
                         aria-expanded={isFactionsOpen}
                         aria-controls="map-factions"
                         onClick={() => setIsFactionsOpen((open) => !open)}
                     >
-                        {isEn ? 'Explore factions' : 'Explorer les factions'}
+                        {isEn ? 'Legend & factions' : 'Légende et factions'}
                         <span aria-hidden="true">{isFactionsOpen ? '↓' : '↑'}</span>
                     </button>
                 </div>
 
                 {/* ── Right legend ── */}
-                <aside className="war-room__desktop-factions" style={{ flexShrink: 0, width: 110, display: 'flex', flexDirection: 'column', padding: '8px 0', gap: 4 }} aria-label={isEn ? 'Factions' : 'Factions'}>
+                <aside
+                    className="war-room__desktop-factions"
+                    style={{ flexShrink: 0, width: isFactionsOpen ? 148 : 0, display: isFactionsOpen ? 'flex' : 'none', flexDirection: 'column', padding: '8px 0', gap: 4 }}
+                    aria-label={isEn ? 'Factions' : 'Factions'}
+                >
                     <p style={{ margin: '0 0 6px', fontFamily: 'var(--font-marcellus),serif', fontSize: '0.6rem', color: '#7aa6c2', textTransform: 'uppercase', letterSpacing: '0.12em', borderBottom: '1px solid #123b5b', paddingBottom: 5 }}>
                         {isEn ? 'Factions' : 'Factions'}
                     </p>
