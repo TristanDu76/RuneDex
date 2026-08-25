@@ -42,7 +42,7 @@ export default async function QuizHubPage({ params }: QuizPageProps) {
 
     return (
         <main className="relative min-h-screen bg-transparent px-4 pb-16 pt-28 text-white sm:px-6">
-            <div className="max-w-5xl w-full">
+            <div className="max-w-5xl w-full mx-auto">
                 <div className="mb-10 text-center sm:mb-12">
                     <p className="mb-3 text-xs uppercase tracking-[0.28em] text-hextech-cyan">Atlas vivant</p>
                     <h1 className="hex-title mb-4 text-4xl font-bold sm:text-5xl">

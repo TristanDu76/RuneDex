@@ -17,9 +17,9 @@ export default async function ClassicQuizPage({ params }: QuizPageProps) {
             {/* Header */}
             <div className="w-full p-4 flex justify-center items-center max-w-7xl mx-auto relative">
                 <a href={`/${locale}/quiz`} className="absolute left-4 text-gray-400 hover:text-white transition-colors">
-                    ← Back to Hub
+                    {t('backToHub')}
                 </a>
-                <h1 className="text-2xl font-bold text-yellow-500">Classic Quiz</h1>
+                <h1 className="text-2xl font-bold text-yellow-500">{t('classicTitle')}</h1>
             </div>
 
             {/* Content */}

@@ -1,11 +1,11 @@
 'use client';
 
-import { useState, useEffect, useMemo, useRef } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { ChevronLeft, ChevronRight, HelpCircle, X, Lightbulb } from 'lucide-react';
-import { isClassicQuizEligible, type ClassicQuizChampion } from '@/lib/quiz-rounds';
+import { HelpCircle, X, Lightbulb } from 'lucide-react';
+import { isClassicQuizEligible, selectClassicQuizTarget, type ClassicQuizChampion } from '@/lib/quiz-rounds';
 import { getSearchRank } from '@/lib/search-utils';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import {
@@ -18,7 +18,6 @@ import {
     setShowHelper as setShowHelperAction,
     addUnlockedHint,
     setUnlockedHints as setUnlockedHintsAction,
-    resetQuiz,
     Category,
     GuessResult
 } from '@/store/slices/quizSlice';
@@ -47,14 +46,18 @@ export default function QuizClient({ champions }: QuizClientProps) {
     const t = useTranslations();
     const eligibleChampions = useMemo(() => champions.filter(isClassicQuizEligible), [champions]);
 
-    // Initialize random champion
+    const localizedTargetChampion = useMemo(
+        () => selectClassicQuizTarget(targetChampion, eligibleChampions),
+        [eligibleChampions, targetChampion],
+    );
+
+    // A locale switch replaces the catalogue, not the current round.
     useEffect(() => {
-        if (eligibleChampions.length > 0) {
-            const random = eligibleChampions[Math.floor(Math.random() * eligibleChampions.length)];
-            setTargetChampion(random);
-            // console.log('Target:', random.name);
+        if (!targetChampion) {
+            const target = selectClassicQuizTarget(null, eligibleChampions);
+            if (target) setTargetChampion(target);
         }
-    }, [eligibleChampions]);
+    }, [eligibleChampions, targetChampion]);
 
     const filteredChampions = useMemo(() => {
         if (!input) return [];
@@ -98,16 +101,17 @@ export default function QuizClient({ champions }: QuizClientProps) {
     };
 
     const handleGuess = (champion: ClassicQuizChampion) => {
-        if (!targetChampion || isWon) return;
+        const activeTarget = localizedTargetChampion;
+        if (!activeTarget || isWon) return;
 
         const newGuess: GuessResult = {
             champion,
-            gender: checkMatch(targetChampion.gender, champion.gender) as 'correct' | 'incorrect',
-            species: checkMatch(targetChampion.species, champion.species),
-            resource: checkMatch(targetChampion.partype, champion.partype) as 'correct' | 'incorrect',
-            region: checkMatch(targetChampion.factions, champion.factions),
-            lane: checkMatch(targetChampion.lanes, champion.lanes),
-            role: checkMatch(targetChampion.tags, champion.tags),
+            gender: checkMatch(activeTarget.gender, champion.gender) as 'correct' | 'incorrect',
+            species: checkMatch(activeTarget.species, champion.species),
+            resource: checkMatch(activeTarget.partype, champion.partype) as 'correct' | 'incorrect',
+            region: checkMatch(activeTarget.factions, champion.factions),
+            lane: checkMatch(activeTarget.lanes, champion.lanes),
+            role: checkMatch(activeTarget.tags, champion.tags),
         };
 
         const newGuesses = [newGuess, ...guesses];
@@ -121,7 +125,7 @@ export default function QuizClient({ champions }: QuizClientProps) {
             unlockRandomHint(newGuesses);
         }
 
-        if (champion.id === targetChampion.id) {
+        if (champion.id === activeTarget.id) {
             setIsWon(true);
         }
 
@@ -288,7 +292,7 @@ export default function QuizClient({ champions }: QuizClientProps) {
     const attemptsUntilHint = 5 - (guesses.length % 5);
 
     if (eligibleChampions.length === 0) return <div className="text-white text-center mt-10">{t('quiz.noChampions')}</div>;
-    if (!targetChampion) return <div className="text-white text-center mt-10">{t('quiz.loading')}</div>;
+    if (!localizedTargetChampion) return <div className="text-white text-center mt-10">{t('quiz.loading')}</div>;
 
     return (
         <div className="w-full max-w-7xl mx-auto p-4 flex gap-4 relative">
@@ -506,7 +510,7 @@ export default function QuizClient({ champions }: QuizClientProps) {
                         className="text-center p-6 bg-green-900/50 border border-green-500 rounded-xl backdrop-blur-sm w-full max-w-lg"
                     >
                         <h2 className="text-3xl font-bold text-green-400 mb-2">{t('quiz.victory')}</h2>
-                        <p className="text-lg text-gray-200">The champion was <span className="font-bold text-yellow-400">{targetChampion.name}</span></p>
+                        <p className="text-lg text-gray-200">{t('quiz.championWas', { champion: localizedTargetChampion.name })}</p>
                         <button
                             onClick={() => window.location.reload()}
                             className="mt-4 px-6 py-2 bg-green-600 hover:bg-green-500 text-white rounded-full transition-colors font-bold shadow-lg hover:shadow-green-500/20"

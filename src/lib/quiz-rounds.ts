@@ -121,6 +121,19 @@ export function isClassicQuizEligible(champion: ClassicQuizMetadata): boolean {
         && hasKnownList(champion.tags);
 }
 
+/** Keeps a round stable when the localized catalogue is replaced. */
+export function selectClassicQuizTarget<TChampion extends ClassicQuizChampion>(
+    currentTarget: TChampion | null,
+    champions: TChampion[],
+    random: () => number = Math.random,
+): TChampion | null {
+    if (currentTarget) {
+        return champions.find((champion) => champion.id === currentTarget.id) ?? currentTarget;
+    }
+
+    return champions.length > 0 ? champions[Math.floor(random() * champions.length)] ?? null : null;
+}
+
 export function createAbilityRound<TChampion extends AbilityQuizChampion>(
     champions: TChampion[],
     rotate: boolean,

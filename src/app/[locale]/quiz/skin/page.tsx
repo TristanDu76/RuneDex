@@ -17,7 +17,7 @@ export default async function SkinQuizPage({ params }: QuizPageProps) {
             {/* Header */}
             <div className="w-full p-4 flex justify-center items-center max-w-7xl mx-auto relative">
                 <a href={`/${locale}/quiz`} className="absolute left-4 text-gray-400 hover:text-white transition-colors">
-                    ← Back to Hub
+                    {t('backToHub')}
                 </a>
                 <h1 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
                     {t('skinTitle')}

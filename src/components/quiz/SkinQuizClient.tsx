@@ -1,6 +1,6 @@
 'use client';
 
-import { useId, useState, useMemo, useRef } from 'react';
+import { useEffect, useId, useState, useMemo, useRef } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
@@ -51,6 +51,20 @@ export default function SkinQuizClient({ champions }: SkinQuizClientProps) {
             wrongGuesses: [],
         };
     });
+    const sessionReady = useRef(false);
+    useEffect(() => {
+        const saved = window.sessionStorage.getItem('runedex:quiz:skin:state');
+        const timer = window.setTimeout(() => {
+            if (saved) {
+                try { setGameState(JSON.parse(saved) as GameState); } catch { window.sessionStorage.removeItem('runedex:quiz:skin:state'); }
+            }
+            sessionReady.current = true;
+        }, 0);
+        return () => window.clearTimeout(timer);
+    }, []);
+    useEffect(() => {
+        if (sessionReady.current) window.sessionStorage.setItem('runedex:quiz:skin:state', JSON.stringify(gameState));
+    }, [gameState]);
 
     const [input, setInput] = useState('');
     const [showSuggestions, setShowSuggestions] = useState(false);

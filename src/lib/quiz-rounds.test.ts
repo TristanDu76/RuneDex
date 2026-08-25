@@ -6,6 +6,7 @@ import {
     createSkinOptions,
     createSkinRound,
     createSeededRandom,
+    selectClassicQuizTarget,
     toAbilityQuizChampion,
     toClassicQuizChampion,
     toSkinQuizChampion,
@@ -132,6 +133,14 @@ describe('quiz round helpers', () => {
             lanes: ['mid'],
             tags: ['Mage'],
         })).toBe(true);
+    });
+
+    it('keeps the same classic target when a localized catalogue is replaced', () => {
+        const english = { ...abilityChampion, gender: 'Male', species: 'Human', partype: 'Mana', factions: ['ionia'], lanes: ['jungle'], tags: ['Assassin'] };
+        const french = { ...english, name: 'Maître Yi' };
+
+        expect(selectClassicQuizTarget(english, [french])).toEqual(french);
+        expect(selectClassicQuizTarget(null, [french], () => 0)).toEqual(french);
     });
 
     it('returns no ability round when no champion has a full spell set', () => {
