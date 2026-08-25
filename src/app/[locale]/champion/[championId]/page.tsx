@@ -13,6 +13,8 @@ import LoreDisplay from '@/components/champions/LoreDisplay';
 import ChampionSwipeNavigation from '@/components/champions/ChampionSwipeNavigation';
 import championsIndex from '@/data/champions/index.json';
 import { routing } from '@/i18n/routing';
+import { Link } from '@/i18n/routing';
+import { regions } from '@/data/regions';
 import { buildRelationCards } from '@/lib/relation-cards';
 
 // Interface pour les props de la page
@@ -216,10 +218,10 @@ export default async function ChampionPage({ params }: ChampionPageProps) {
 
           {/* Régions & Factions */}
           {(() => {
-            const KNOWN_REGIONS = ['demacia', 'noxus', 'ionia', 'freljord', 'shurima', 'piltover', 'zaun', 'bilgewater', 'targon', 'ixtal', 'shadow-isles', 'bandle-city', 'void', 'runeterra', 'icathia', 'camavor', 'independent'];
+            const KNOWN_REGIONS = new Set(regions.map((region) => region.id));
             const allFactions = championDetails.factions || [];
-            const charRegions = allFactions.filter(f => KNOWN_REGIONS.includes(f.toLowerCase()));
-            const charFactions = allFactions.filter(f => !KNOWN_REGIONS.includes(f.toLowerCase()));
+            const charRegions = allFactions.filter(f => KNOWN_REGIONS.has(f.toLowerCase()));
+            const charFactions = allFactions.filter(f => !KNOWN_REGIONS.has(f.toLowerCase()));
 
             return (
               <>
@@ -229,9 +231,9 @@ export default async function ChampionPage({ params }: ChampionPageProps) {
                     <span className="text-hextech-cyan text-sm uppercase tracking-wider font-semibold">{t('champion.region')}</span>
                     <div className="flex gap-2">
                       {charRegions.map(region => (
-                        <span key={region} className={`text-sm font-bold px-2 py-0.5 rounded ${regionColors[region.toLowerCase()] || 'text-gray-300'}`}>
+                        <Link href={`/region/${region.toLowerCase().replace(/\s+/g, '-')}`} key={region} className={`text-sm font-bold px-2 py-0.5 rounded underline-offset-4 hover:underline ${regionColors[region.toLowerCase()] || 'text-gray-300'}`}>
                           {translateFallback(`factions.${region.toLowerCase().replace(/\s+/g, '-')}`, region)}
-                        </span>
+                        </Link>
                       ))}
                     </div>
                   </div>

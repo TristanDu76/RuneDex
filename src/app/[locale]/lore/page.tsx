@@ -1,6 +1,5 @@
-import { fetchLoreCharactersLight } from "@/lib/data";
+import { fetchLoreCharacters } from "@/lib/data";
 import LoreGrid from "@/components/lore/LoreGrid";
-import GalleryNav from "@/components/layout/GalleryNav";
 import { getTranslations } from 'next-intl/server';
 
 interface LorePageProps {
@@ -8,12 +7,14 @@ interface LorePageProps {
 }
 
 export default async function LorePage({ params }: LorePageProps) {
-    const { locale } = await params;
+    await params;
     const t = await getTranslations('home');
 
     // Data fetching
-    const loreCharacters = await fetchLoreCharactersLight();
-    const sortedLoreCharacters = loreCharacters.sort((a, b) => a.name.localeCompare(b.name));
+    const loreCharacters = await fetchLoreCharacters();
+    const sortedLoreCharacters = loreCharacters
+        .map(({ id, name, image, faction, species, gender, status }) => ({ id, name, image, faction, species, gender, status }))
+        .sort((a, b) => a.name.localeCompare(b.name));
 
     return (
         <main className="min-h-screen bg-transparent p-8 relative pt-24">

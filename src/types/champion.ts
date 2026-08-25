@@ -179,5 +179,7 @@ export interface LoreCharacterLight {
     faction?: string | string[];
     factions?: string[];
     species?: string | string[];
+    gender?: string | string[];
+    status?: string;
     related_characters?: string[];
 }

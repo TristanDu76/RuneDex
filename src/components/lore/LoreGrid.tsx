@@ -1,9 +1,9 @@
 'use client';
 
-import React, { useState, useMemo, useRef, useEffect, useCallback } from 'react';
+import React, { useMemo, useRef, useEffect, useCallback, useState } from 'react';
 import { LoreCharacterLight } from '@/types/champion';
 import LoreCard from './LoreCard';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { setQuery, loadMore, PAGE_SIZE } from '@/store/slices/loreGridSlice';
 import { matchesSearch } from '@/lib/search-utils';
@@ -17,14 +17,41 @@ export default function LoreGrid({ characters }: LoreGridProps) {
     const { query, visibleCount } = useAppSelector((state) => state.loreGrid);
     const sentinelRef = useRef<HTMLDivElement>(null);
     const t = useTranslations();
+    const locale = useLocale();
+    const isEn = locale.startsWith('en');
+    const [faction, setFaction] = useState('');
+    const [species, setSpecies] = useState('');
+    const [gender, setGender] = useState('');
+    const [status, setStatus] = useState('');
+
+    const valuesFor = useCallback((field: 'faction' | 'species' | 'gender' | 'status') => {
+        const values = characters.flatMap((character) => {
+            const value = character[field];
+            return Array.isArray(value) ? value : value ? [value] : [];
+        });
+        return [...new Set(values)].sort((left, right) => left.localeCompare(right));
+    }, [characters]);
+
+    const factionOptions = useMemo(() => valuesFor('faction'), [valuesFor]);
+    const speciesOptions = useMemo(() => valuesFor('species'), [valuesFor]);
+    const genderOptions = useMemo(() => valuesFor('gender'), [valuesFor]);
+    const statusOptions = useMemo(() => valuesFor('status'), [valuesFor]);
 
     // Réinitialise le compteur si la recherche change
     // La logique de reset est dans le reducer setQuery de RTK
 
     const filteredCharacters = useMemo(() => {
-        if (!query) return characters;
-        return characters.filter((char) => matchesSearch(char, query));
-    }, [query, characters]);
+        return characters.filter((character) => {
+            const matchesValue = (value: string | string[] | undefined, expected: string) =>
+                !expected || (Array.isArray(value) ? value : [value]).includes(expected);
+
+            return (!query || matchesSearch(character, query))
+                && matchesValue(character.faction ?? character.factions, faction)
+                && matchesValue(character.species, species)
+                && matchesValue(character.gender, gender)
+                && matchesValue(character.status, status);
+        });
+    }, [query, characters, faction, species, gender, status]);
 
     // Personnages visibles à l'écran
     const visibleCharacters = useMemo(
@@ -59,7 +86,7 @@ export default function LoreGrid({ characters }: LoreGridProps) {
     return (
         <div className="w-full">
             {/* Barre de recherche */}
-            <div className="mb-8 flex justify-center">
+            <div className="mb-5 flex justify-center">
                 <div className="relative w-full lg:w-96">
                     <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                         <svg
@@ -84,6 +111,27 @@ export default function LoreGrid({ characters }: LoreGridProps) {
                         onChange={(e) => dispatch(setQuery(e.target.value))}
                     />
                 </div>
+            </div>
+
+            <div className="mb-8 grid grid-cols-2 gap-3 md:grid-cols-4">
+                {[
+                    [isEn ? 'Region' : 'Région', faction, setFaction, factionOptions],
+                    [isEn ? 'Species' : 'Race', species, setSpecies, speciesOptions],
+                    [isEn ? 'Gender' : 'Genre', gender, setGender, genderOptions],
+                    [isEn ? 'Status' : 'Statut', status, setStatus, statusOptions],
+                ].map(([label, value, setValue, options]) => (
+                    <label key={label as string} className="text-xs uppercase tracking-wider text-gray-400">
+                        {label as string}
+                        <select
+                            className="mt-1 block w-full rounded border border-gray-700 bg-gray-900 px-3 py-2 text-sm normal-case tracking-normal text-gray-200 focus:border-hextech-cyan focus:outline-none"
+                            value={value as string}
+                            onChange={(event) => (setValue as (value: string) => void)(event.target.value)}
+                        >
+                            <option value="">{isEn ? 'All' : 'Tous'}</option>
+                            {(options as string[]).map((option) => <option key={option} value={option}>{option}</option>)}
+                        </select>
+                    </label>
+                ))}
             </div>
 
             {/* Compteur résultats */}
