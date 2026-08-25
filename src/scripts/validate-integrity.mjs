@@ -12,7 +12,9 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const PROJECT_ROOT = path.join(__dirname, '../..');
+const PROJECT_ROOT = process.env.RUNEDEX_PROJECT_ROOT
+    ? path.resolve(process.env.RUNEDEX_PROJECT_ROOT)
+    : path.join(__dirname, '../..');
 const MANIFEST_PATH = path.join(PROJECT_ROOT, 'src/data/manifest.json');
 const REGIONS_PATH = path.join(PROJECT_ROOT, 'src/data/regions.ts');
 const SHARDS_DIR = path.join(PROJECT_ROOT, 'src/data/shards');

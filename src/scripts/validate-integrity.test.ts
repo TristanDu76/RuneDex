@@ -1,6 +1,5 @@
 import { afterEach, describe, expect, it } from 'vitest';
 import {
-  copyFileSync,
   mkdtempSync,
   mkdirSync,
   rmSync,
@@ -8,10 +7,9 @@ import {
 } from 'node:fs';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
-import { spawnSync } from 'node:child_process';
+import { pathToFileURL } from 'node:url';
 
-const VALIDATOR_PATH = fileURLToPath(new URL('./validate-integrity.mjs', import.meta.url));
+const VALIDATOR_PATH = new URL('./validate-integrity.mjs', import.meta.url);
 const temporaryProjects: string[] = [];
 
 function createProject() {
@@ -19,8 +17,6 @@ function createProject() {
   temporaryProjects.push(projectRoot);
 
   mkdirSync(path.join(projectRoot, 'src/data/shards'), { recursive: true });
-  mkdirSync(path.join(projectRoot, 'src/scripts'), { recursive: true });
-  copyFileSync(VALIDATOR_PATH, path.join(projectRoot, 'src/scripts/validate-integrity.mjs'));
   writeFileSync(
     path.join(projectRoot, 'src/data/regions.ts'),
     "export const regions: Region[] = [{ id: 'demacia' }];\n"
@@ -36,12 +32,25 @@ function writeJson(projectRoot: string, relativePath: string, value: unknown) {
   );
 }
 
-function runValidator(projectRoot: string) {
-  return spawnSync(
-    process.execPath,
-    [path.join(projectRoot, 'src/scripts/validate-integrity.mjs')],
-    { cwd: projectRoot, encoding: 'utf8' }
-  );
+async function runValidator(projectRoot: string) {
+  const logs: string[] = [];
+  const previousRoot = process.env.RUNEDEX_PROJECT_ROOT;
+  const previousExitCode = process.exitCode;
+  const originalLog = console.log;
+
+  process.env.RUNEDEX_PROJECT_ROOT = projectRoot;
+  process.exitCode = undefined;
+  console.log = (...args: unknown[]) => logs.push(args.join(' '));
+
+  try {
+    await import(`${pathToFileURL(VALIDATOR_PATH.pathname).href}?test=${Date.now()}`);
+    return { exitCode: process.exitCode ?? 0, output: logs.join('\n') };
+  } finally {
+    console.log = originalLog;
+    process.exitCode = previousExitCode;
+    if (previousRoot === undefined) delete process.env.RUNEDEX_PROJECT_ROOT;
+    else process.env.RUNEDEX_PROJECT_ROOT = previousRoot;
+  }
 }
 
 function createCharacter() {
@@ -62,7 +71,7 @@ afterEach(() => {
 });
 
 describe('validate-integrity', () => {
-  it('validates shard membership independently from the region list', () => {
+  it('validates shard membership independently from the region list', async () => {
     const projectRoot = createProject();
     const character = createCharacter();
     writeJson(projectRoot, 'manifest.json', {
@@ -72,10 +81,10 @@ describe('validate-integrity', () => {
     writeJson(projectRoot, 'shards/house-test.json', [character]);
     writeJson(projectRoot, 'shards/stale.json', [character]);
 
-    const result = runValidator(projectRoot);
-    const output = result.stdout + result.stderr;
+    const result = await runValidator(projectRoot);
+    const output = result.output;
 
-    expect(result.status, output).toBe(1);
+    expect(result.exitCode, output).toBe(1);
     expect(output).toContain('Missing shard file "missing-faction.json"');
     expect(output).toContain('Stale shard file "stale.json"');
     expect(output).toContain('Shard "demacia": missing test-character');
