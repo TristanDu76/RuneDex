@@ -536,6 +536,134 @@ nextjs-portal,
   }
 }
 
+/* ── Home navigation: the map keeps the surface clear while every section
+   remains one click away from the header. ── */
+@layer components {
+  .war-room__header-search {
+    margin-left: 18px;
+  }
+
+  .war-room__locale-switcher {
+    display: flex;
+    margin-left: auto;
+    overflow: hidden;
+    border: 1px solid #123b5b;
+    border-radius: 4px;
+    background: #061323;
+  }
+
+  .war-room__locale-switcher a {
+    padding: 7px 10px;
+    color: #8bb9d8;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+  }
+
+  .war-room__locale-switcher a.is-active {
+    background: rgba(56, 189, 248, 0.2);
+    color: #7dd3fc;
+  }
+
+  .war-room__menu-trigger {
+    display: inline-flex;
+    width: 38px;
+    height: 38px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #123b5b;
+    background: #061323;
+    color: #7dd3fc;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+
+  .war-room__mobile-navigation {
+    position: fixed;
+    z-index: 3000;
+    top: 58px;
+    right: 18px;
+    width: min(320px, calc(100vw - 36px));
+    padding: 16px;
+    border: 1px solid #123b5b;
+    background: rgba(2, 11, 24, 0.98);
+    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.6);
+  }
+
+  .war-room__mobile-navigation.is-open {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .war-room__mobile-navigation > button,
+  .war-room__characters-menu > button {
+    display: flex;
+    width: 100%;
+    min-height: 46px;
+    align-items: center;
+    gap: 10px;
+    padding: 0 12px;
+    border: 1px solid #123b5b;
+    background: #061323;
+    color: #bae6fd;
+    cursor: pointer;
+    font-size: 0.76rem;
+    letter-spacing: 0.08em;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .war-room__submenu-chevron {
+    margin-left: auto;
+    color: #7dd3fc;
+  }
+
+  .war-room__characters-submenu {
+    display: grid;
+    gap: 6px;
+    padding: 6px 0 2px 22px;
+  }
+
+  .war-room__characters-submenu button {
+    min-height: 38px;
+    border-left: 2px solid #38bdf8;
+    color: #bae6fd;
+    cursor: pointer;
+    font-size: 0.73rem;
+    text-align: left;
+  }
+
+  @media (max-width: 767px) {
+    .war-room__header-search {
+      display: none;
+    }
+
+    .war-room__locale-switcher {
+      margin-left: auto;
+    }
+
+    .war-room__mobile-navigation {
+      inset: 60px 0 0;
+      width: auto;
+      padding: 24px 20px;
+      border: 0;
+      transform: translateX(100%);
+      transition: transform 0.24s ease;
+    }
+
+    .war-room__mobile-navigation.is-open {
+      transform: translateX(0);
+      gap: 10px;
+    }
+
+    .war-room__characters-menu > button {
+      min-height: 52px;
+      padding: 0 16px;
+    }
+  }
+}
+
 /* ─────────────────────────────────────────
    Hextech Utilities (Classic LoL Client Style)
    ───────────────────────────────────────── */

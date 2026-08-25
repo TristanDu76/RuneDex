@@ -3,7 +3,8 @@
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import { useState } from 'react';
-import { useRouter } from '@/i18n/routing';
+import GlobalSearch from '@/components/layout/GlobalSearch';
+import { Link, useRouter } from '@/i18n/routing';
 
 const LeafletInteractiveMap = dynamic(
     () => import('./LeafletInteractiveMap'),
@@ -25,7 +26,6 @@ interface MapWrapperProps {
 }
 
 const NAV_ITEMS = [
-    { id: 'characters', emoji: '👥', labelFr: 'Personnages', labelEn: 'Characters', href: '/characters' },
     { id: 'runes', emoji: '🔮', labelFr: 'Runes', labelEn: 'Runes', href: '/rune' },
     { id: 'artifacts', emoji: '🗡', labelFr: 'Objets', labelEn: 'Items', href: '/artifact' },
     { id: 'quiz', emoji: '🎮', labelFr: 'Quiz', labelEn: 'Quiz', href: '/quiz' },
@@ -46,40 +46,16 @@ const FACTIONS = [
     { id: 'void', name: 'Void', color: '#8860c8' },
 ];
 
-/* ---------- Shared inline style helpers ---------- */
-const PANEL_STYLE: React.CSSProperties = {
-    background: 'linear-gradient(135deg,#0b2138 0%,#061323 100%)',
-    border: '1px solid #123b5b',
-    borderTop: '1px solid #1e5f8f',
-    borderBottom: '2px solid #000',
-    borderRadius: 2,
-};
-
-const BTN_BASE: React.CSSProperties = {
-    ...PANEL_STYLE,
-    display: 'flex',
-    alignItems: 'center',
-    gap: 10,
-    padding: '9px 12px',
-    color: '#8bb9d8',
-    cursor: 'pointer',
-    textAlign: 'left' as const,
-    fontFamily: 'var(--font-marcellus),serif',
-    fontSize: '0.72rem',
-    letterSpacing: '0.08em',
-    textTransform: 'uppercase' as const,
-    transition: 'all 0.18s ease',
-    width: '100%',
-};
-
 export default function LeafletMapWrapper({ locale }: MapWrapperProps) {
     const router = useRouter();
     const isEn = locale.startsWith('en');
     const [isNavigationOpen, setIsNavigationOpen] = useState(false);
+    const [isCharactersOpen, setIsCharactersOpen] = useState(false);
     const [isFactionsOpen, setIsFactionsOpen] = useState(false);
 
     const navigate = (href: string) => {
         setIsNavigationOpen(false);
+        setIsCharactersOpen(false);
         setIsFactionsOpen(false);
         router.push(href);
     };
@@ -119,6 +95,15 @@ export default function LeafletMapWrapper({ locale }: MapWrapperProps) {
                     {isEn ? 'RuneDex' : 'RuneDex'}
                 </h1>
 
+                <div className="war-room__header-search">
+                    <GlobalSearch locale={locale} />
+                </div>
+
+                <div className="war-room__locale-switcher" aria-label={isEn ? 'Language' : 'Langue'}>
+                    <Link href="/" locale="fr" className={locale === 'fr' ? 'is-active' : ''}>FR</Link>
+                    <Link href="/" locale="en" className={locale === 'en' ? 'is-active' : ''}>EN</Link>
+                </div>
+
                 <button
                     type="button"
                     className="war-room__menu-trigger"
@@ -134,33 +119,6 @@ export default function LeafletMapWrapper({ locale }: MapWrapperProps) {
 
             {/* ── Body ── */}
             <div className="war-room__body" style={{ flex: 1, display: 'flex', gap: 14, padding: '12px 16px', minHeight: 0 }}>
-
-                {/* ── Left nav ── */}
-                <nav className="war-room__side-nav" style={{ flexShrink: 0, width: 128, display: 'flex', flexDirection: 'column', gap: 6, padding: '8px 0' }} aria-label={isEn ? 'Explore RuneDex' : 'Explorer RuneDex'}>
-                    {NAV_ITEMS.map((item) => (
-                        <button
-                            key={item.id}
-                            style={BTN_BASE}
-                            onMouseEnter={e => {
-                                const el = e.currentTarget;
-                                el.style.borderColor = '#38bdf8';
-                                el.style.color = '#7dd3fc';
-                                el.style.boxShadow = '0 0 10px rgba(56,189,248,0.18)';
-                            }}
-                            onMouseLeave={e => {
-                                const el = e.currentTarget;
-                                el.style.borderColor = '#123b5b';
-                                el.style.color = '#8bb9d8';
-                                el.style.boxShadow = 'none';
-                            }}
-                            onClick={() => navigate(item.href)}
-                            title={isEn ? item.labelEn : item.labelFr}
-                        >
-                            <span style={{ fontSize: '1rem' }}>{item.emoji}</span>
-                            <span style={{ overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>{isEn ? item.labelEn : item.labelFr}</span>
-                        </button>
-                    ))}
-                </nav>
 
                 {/* ── Map (framed) ── */}
                 <div className="war-room__map-shell" style={{ flex: 1, display: 'flex', minWidth: 0 }}>
@@ -251,6 +209,19 @@ export default function LeafletMapWrapper({ locale }: MapWrapperProps) {
                 <div className="war-room__sheet-heading">
                     <p>{isEn ? 'Explore RuneDex' : 'Explorer RuneDex'}</p>
                     <button type="button" onClick={() => setIsNavigationOpen(false)} aria-label={isEn ? 'Close navigation' : 'Fermer la navigation'}>×</button>
+                </div>
+                <div className="war-room__characters-menu">
+                    <button type="button" onClick={() => setIsCharactersOpen((open) => !open)} aria-expanded={isCharactersOpen}>
+                        <span aria-hidden="true">👥</span>
+                        {isEn ? 'Characters' : 'Personnages'}
+                        <span className="war-room__submenu-chevron" aria-hidden="true">{isCharactersOpen ? '−' : '+'}</span>
+                    </button>
+                    {isCharactersOpen && (
+                        <div className="war-room__characters-submenu">
+                            <button type="button" onClick={() => navigate('/champions')}>{isEn ? 'Champions' : 'Champions'}</button>
+                            <button type="button" onClick={() => navigate('/lore')}>{isEn ? 'Lore characters' : 'Personnages du lore'}</button>
+                        </div>
+                    )}
                 </div>
                 {NAV_ITEMS.map((item) => (
                     <button key={item.id} type="button" onClick={() => navigate(item.href)}>

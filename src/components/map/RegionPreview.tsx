@@ -1,11 +1,11 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { useRouter } from '@/i18n/routing';
 import { useGetRegionShardQuery } from '@/store/api';
-import { useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 interface RegionPreviewProps {
     regionId: string;
@@ -21,6 +21,23 @@ export default function RegionPreview({ regionId, name, description, icon, onClo
     const { data: shardData, isLoading: loading } = useGetRegionShardQuery(regionId, { skip: !regionId });
     const characters = shardData?.filter((character) => character.thumbnail) ?? [];
     const [isClosing, setIsClosing] = useState(false);
+    const carouselControls = useAnimation();
+    const getCharacterHref = (character: (typeof characters)[number]) => character.type === 'lore'
+        ? `/lore/${character.id}`
+        : `/champion/${character.id}`;
+
+    const startCarousel = useCallback(() => {
+        if (characters.length === 0) return;
+        void carouselControls.start({
+            x: -(characters.length * 60),
+            transition: { duration: characters.length * 0.5, repeat: Infinity, ease: 'linear' },
+        });
+    }, [carouselControls, characters.length]);
+
+    useEffect(() => {
+        startCarousel();
+        return () => carouselControls.stop();
+    }, [carouselControls, startCarousel]);
 
     const handleGoToPage = () => {
         router.push(`/region/${regionId}`);
@@ -61,20 +78,15 @@ export default function RegionPreview({ regionId, name, description, icon, onClo
                 </div>
 
                 {/* Fast Scrolling Icons */}
-                <div className="relative h-16 overflow-hidden bg-hextech-cyan/5 rounded-xl flex items-center group/scroll border border-hextech-gold/10 shadow-[inset_0_0_10px_rgba(0,0,0,0.5)]">
+                <div className="relative h-16 overflow-hidden bg-hextech-cyan/5 rounded-xl flex items-center group/scroll border border-hextech-gold/10 shadow-[inset_0_0_10px_rgba(0,0,0,0.5)]" onMouseEnter={() => carouselControls.stop()} onMouseLeave={startCarousel}>
                     {!loading && characters.length > 0 ? (
                         <div className="flex whitespace-nowrap">
                             <motion.div
                                 className="flex gap-3 px-3"
-                                animate={{ x: [0, -(characters.length * 52)] }}
-                                transition={{
-                                    duration: characters.length * 0.5,
-                                    repeat: Infinity,
-                                    ease: "linear"
-                                }}
+                                animate={carouselControls}
                             >
                                 {characters.map((char) => (
-                                    <div key={char.id} className="w-12 h-12 relative flex-shrink-0 rounded-full overflow-hidden border-2 border-hextech-gold/50 hover:border-hextech-cyan shadow-[0_0_10px_rgba(56,189,248,0.3)] transition-colors cursor-help group/icon">
+                                    <button key={char.id} type="button" onClick={() => router.push(getCharacterHref(char))} className="w-12 h-12 relative flex-shrink-0 rounded-full overflow-hidden border-2 border-hextech-gold/50 hover:border-hextech-cyan shadow-[0_0_10px_rgba(56,189,248,0.3)] transition-colors cursor-pointer group/icon">
                                         <Image
                                             src={char.thumbnail}
                                             alt={char.name}
@@ -83,11 +95,11 @@ export default function RegionPreview({ regionId, name, description, icon, onClo
                                             sizes="48px"
                                         />
                                         <div className="absolute inset-0 bg-black opacity-0 group-hover/icon:opacity-20 transition-opacity" />
-                                    </div>
+                                    </button>
                                 ))}
                                 {/* Duplicate for continuity */}
                                 {characters.map((char) => (
-                                    <div key={`${char.id}-dup`} className="w-12 h-12 relative flex-shrink-0 rounded-full overflow-hidden border-2 border-white/10 shadow-lg">
+                                    <div key={`${char.id}-dup`} aria-hidden="true" className="w-12 h-12 relative flex-shrink-0 rounded-full overflow-hidden border-2 border-white/10 shadow-lg">
                                         <Image
                                             src={char.thumbnail}
                                             alt={char.name}

@@ -10,7 +10,6 @@ interface NavbarProps {
 
 const MOBILE_NAV_ITEMS = [
     { href: '/', label: 'Carte', icon: '🗺️' },
-    { href: '/characters', label: 'Personnages', icon: '👥' },
     { href: '/rune', label: 'Runes', icon: '🔮' },
     { href: '/artifact', label: 'Objets', icon: '🗡️' },
     { href: '/quiz', label: 'Quiz', icon: '🎮' },
@@ -19,6 +18,7 @@ const MOBILE_NAV_ITEMS = [
 export default function Navbar({ locale }: NavbarProps) {
     const pathname = usePathname();
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isCharactersOpen, setIsCharactersOpen] = useState(false);
 
     // Hide navbar logic removed - always show now
 
@@ -109,6 +109,28 @@ export default function Navbar({ locale }: NavbarProps) {
                                 {item.label}
                             </Link>
                         ))}
+                        <div className="border border-hextech-gold/25 bg-hextech-panel">
+                            <button
+                                type="button"
+                                onClick={() => setIsCharactersOpen((open) => !open)}
+                                aria-expanded={isCharactersOpen}
+                                className="flex min-h-12 w-full items-center gap-3 px-4 text-left text-sm font-semibold uppercase tracking-wider text-hextech-gold"
+                            >
+                                <span aria-hidden="true">👥</span>
+                                {locale === 'en' ? 'Characters' : 'Personnages'}
+                                <span className="ml-auto text-hextech-cyan" aria-hidden="true">{isCharactersOpen ? '−' : '+'}</span>
+                            </button>
+                            {isCharactersOpen && (
+                                <div className="grid gap-1 border-t border-hextech-gold/20 p-2 pl-8">
+                                    <Link href="/champions" onClick={() => setIsMobileMenuOpen(false)} className="py-2 text-sm text-hextech-cyan">
+                                        {locale === 'en' ? 'Champions' : 'Champions'}
+                                    </Link>
+                                    <Link href="/lore" onClick={() => setIsMobileMenuOpen(false)} className="py-2 text-sm text-hextech-cyan">
+                                        {locale === 'en' ? 'Lore characters' : 'Personnages du lore'}
+                                    </Link>
+                                </div>
+                            )}
+                        </div>
                     </div>
                 </div>
             )}

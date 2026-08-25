@@ -3,7 +3,7 @@
 import { Link } from '@/i18n/routing';
 import type { RegionShardEntry } from '@/types/map';
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { useState } from 'react';
 
 interface RegionClientProps {
@@ -13,7 +13,11 @@ interface RegionClientProps {
 
 export default function RegionClient({ champions, lore }: RegionClientProps) {
     const t = useTranslations('regionDetail');
+    const locale = useLocale();
     const [activeTab, setActiveTab] = useState<'champions' | 'lore' | 'events'>('champions');
+    const [view, setView] = useState<'grid' | 'list'>('grid');
+    const isEn = locale.startsWith('en');
+    const entries = activeTab === 'champions' ? champions : lore;
 
     return (
         <div className="relative z-30 mx-auto max-w-7xl px-6 py-12">
@@ -47,15 +51,22 @@ export default function RegionClient({ champions, lore }: RegionClientProps) {
                 </button>
             </div>
 
+            {(activeTab === 'champions' || activeTab === 'lore') && entries.length > 0 && (
+                <div className="mb-6 flex justify-end gap-2" aria-label={isEn ? 'Display mode' : 'Mode d’affichage'}>
+                    <button type="button" onClick={() => setView('grid')} className={`rounded border px-3 py-2 text-xs font-semibold uppercase tracking-wider ${view === 'grid' ? 'border-hextech-cyan bg-hextech-cyan/15 text-hextech-cyan' : 'border-gray-700 text-gray-400 hover:text-white'}`}>▦ {isEn ? 'Grid' : 'Grille'}</button>
+                    <button type="button" onClick={() => setView('list')} className={`rounded border px-3 py-2 text-xs font-semibold uppercase tracking-wider ${view === 'list' ? 'border-hextech-cyan bg-hextech-cyan/15 text-hextech-cyan' : 'border-gray-700 text-gray-400 hover:text-white'}`}>☷ {isEn ? 'List' : 'Liste'}</button>
+                </div>
+            )}
+
             {activeTab === 'champions' && (
-                <div className="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+                <div className={view === 'grid' ? 'grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6' : 'grid grid-cols-1 gap-3 md:grid-cols-2'}>
                     {champions.map((champion) => (
                         <Link
                             key={`champ-${champion.id}`}
                             href={`/champion/${champion.id}`}
-                            className="group relative overflow-hidden rounded-xl border border-gray-800 bg-gray-800/50 transition-all hover:scale-105 hover:border-yellow-500/50 hover:bg-gray-800"
+                            className={`group relative overflow-hidden rounded-xl border border-gray-800 bg-gray-800/50 transition-all hover:border-yellow-500/50 hover:bg-gray-800 ${view === 'grid' ? 'hover:scale-105' : 'flex items-center gap-4 p-2'}`}
                         >
-                            <div className="relative aspect-square overflow-hidden">
+                            <div className={`relative overflow-hidden ${view === 'grid' ? 'aspect-square' : 'h-16 w-16 shrink-0 rounded-lg'}`}>
                                 <Image
                                     src={champion.thumbnail}
                                     alt={champion.name}
@@ -64,7 +75,7 @@ export default function RegionClient({ champions, lore }: RegionClientProps) {
                                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                                 />
                             </div>
-                            <div className="p-4 text-center">
+                            <div className={`p-4 ${view === 'grid' ? 'text-center' : 'p-1 text-left'}`}>
                                 <h3 className="text-lg font-bold text-yellow-500">{champion.name}</h3>
                             </div>
                         </Link>
@@ -79,14 +90,14 @@ export default function RegionClient({ champions, lore }: RegionClientProps) {
             )}
 
             {activeTab === 'lore' && (
-                <div className="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+                <div className={view === 'grid' ? 'grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6' : 'grid grid-cols-1 gap-3 md:grid-cols-2'}>
                     {lore.map((character) => (
                         <Link
                             key={`lore-${character.id}`}
                             href={`/lore/${character.id}`}
-                            className="group relative overflow-hidden rounded-xl border border-gray-800 bg-gray-800/50 transition-all hover:scale-105 hover:border-blue-500/50 hover:bg-gray-800"
+                            className={`group relative overflow-hidden rounded-xl border border-gray-800 bg-gray-800/50 transition-all hover:border-blue-500/50 hover:bg-gray-800 ${view === 'grid' ? 'hover:scale-105' : 'flex items-center gap-4 p-2'}`}
                         >
-                            <div className="relative flex aspect-square items-center justify-center overflow-hidden bg-transparent">
+                            <div className={`relative flex items-center justify-center overflow-hidden bg-transparent ${view === 'grid' ? 'aspect-square' : 'h-16 w-16 shrink-0 rounded-lg'}`}>
                                 <Image
                                     src={character.thumbnail}
                                     alt={character.name}
@@ -95,7 +106,7 @@ export default function RegionClient({ champions, lore }: RegionClientProps) {
                                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                                 />
                             </div>
-                            <div className="p-4 text-center">
+                            <div className={`p-4 ${view === 'grid' ? 'text-center' : 'p-1 text-left'}`}>
                                 <h3 className="text-lg font-bold text-blue-400">{character.name}</h3>
                             </div>
                         </Link>

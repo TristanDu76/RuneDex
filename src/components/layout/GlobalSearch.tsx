@@ -146,7 +146,7 @@ export default function GlobalSearch({ locale }: GlobalSearchProps) {
                                             className="w-8 h-8 rounded-full border border-hextech-gold/50 shadow-[0_0_10px_rgba(56,189,248,0.3)]"
                                         />
                                     ) : (
-                                        <div className="w-8 h-8 rounded-full border border-hextech-gold/50 bg-hextech-panel flex items-center justify-center overflow-hidden shadow-[0_0_10px_rgba(56,189,248,0.3)]">
+                                        <div className="relative w-8 h-8 shrink-0 rounded-full border border-hextech-gold/50 bg-hextech-panel flex items-center justify-center overflow-hidden shadow-[0_0_10px_rgba(56,189,248,0.3)]">
                                             {(result.data as LoreCharacterLight).image ? (
                                                 <Image src={(result.data as LoreCharacterLight).image!} alt={result.data.name} fill sizes="32px" className="object-cover" />
                                             ) : (
@@ -230,7 +230,7 @@ export default function GlobalSearch({ locale }: GlobalSearchProps) {
                                             className="w-12 h-12 rounded-full border-2 border-hextech-gold"
                                             />
                                         ) : (
-                                            <div className="w-12 h-12 rounded-full border border-gray-600 bg-gray-700 flex items-center justify-center overflow-hidden">
+                                            <div className="relative w-12 h-12 shrink-0 rounded-full border border-gray-600 bg-gray-700 flex items-center justify-center overflow-hidden">
                                                 {(result.data as LoreCharacterLight).image ? (
                                                     <Image src={(result.data as LoreCharacterLight).image!} alt={result.data.name} fill sizes="48px" className="object-cover" />
                                                 ) : (
