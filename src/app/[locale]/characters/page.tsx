@@ -21,18 +21,21 @@ export default async function CharactersPage({ params }: CharactersPageProps) {
     const isEn = locale.startsWith('en');
 
     return (
-        <main className="min-h-screen bg-transparent flex flex-col items-center justify-center p-8 pt-24 relative">
+        <main className="min-h-screen bg-transparent flex flex-col items-center justify-center px-6 py-20 pt-28 relative">
 
             {/* Title */}
-            <div className="text-center mb-16">
+            <div className="text-center mb-10 max-w-2xl">
                 <h1 className="hex-title text-5xl mb-4">{t('title')}</h1>
                 <p style={{ color: '#7a6a4e', fontSize: '0.85rem', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
                     {t('subtitle')}
                 </p>
+                <p className="mt-5 text-sm leading-6 text-slate-400">
+                    {isEn ? 'Follow the playable champions, or uncover the extended cast that shapes the history of Runeterra.' : 'Suivez les champions jouables, ou découvrez les figures qui façonnent l’histoire de Runeterra.'}
+                </p>
             </div>
 
             {/* Two big choice buttons */}
-            <div className="flex flex-col sm:flex-row gap-8 w-full max-w-3xl" style={{ alignItems: 'stretch' }}>
+            <div className="flex flex-col sm:flex-row gap-6 w-full max-w-4xl" style={{ alignItems: 'stretch' }}>
 
                 {/* Champions — Jouables */}
                 <Link
@@ -52,7 +55,8 @@ export default async function CharactersPage({ params }: CharactersPageProps) {
                         borderTop: '1px solid #5c5b57',
                         borderBottom: '2px solid #000',
                         borderRadius: 2,
-                        padding: '40px 32px',
+                        minHeight: 330,
+                        padding: '44px 32px',
                         textAlign: 'center',
                         cursor: 'pointer',
                         transition: 'all 0.2s ease',
@@ -78,7 +82,7 @@ export default async function CharactersPage({ params }: CharactersPageProps) {
                             {isEn ? 'Champions' : 'Champions'}
                         </h2>
                         <p style={{ color: '#5c5b57', fontSize: '0.8rem', letterSpacing: '0.06em' }}>
-                            {isEn ? 'Playable — 169 characters' : 'Jouables — 169 personnages'}
+                            {isEn ? 'Playable — explore League champions' : 'Jouables — explorez les champions de League'}
                         </p>
 
                         <div style={{
@@ -95,6 +99,7 @@ export default async function CharactersPage({ params }: CharactersPageProps) {
                         }} className="group-hover:bg-[#38bdf8]/10 transition-colors duration-200">
                             {isEn ? 'Explore →' : 'Explorer →'}
                         </div>
+                        <p className="mt-5 text-xs text-slate-500">{isEn ? 'Profiles, abilities, skins and relationships' : 'Fiches, compétences, skins et relations'}</p>
                     </div>
                 </Link>
 
@@ -116,7 +121,8 @@ export default async function CharactersPage({ params }: CharactersPageProps) {
                         borderTop: '1px solid #3d3550',
                         borderBottom: '2px solid #000',
                         borderRadius: 2,
-                        padding: '40px 32px',
+                        minHeight: 330,
+                        padding: '44px 32px',
                         textAlign: 'center',
                         cursor: 'pointer',
                         transition: 'all 0.2s ease',
@@ -158,6 +164,7 @@ export default async function CharactersPage({ params }: CharactersPageProps) {
                         }} className="group-hover:bg-[#8060c8]/10 transition-colors duration-200">
                             {isEn ? 'Explore →' : 'Explorer →'}
                         </div>
+                        <p className="mt-5 text-xs text-slate-500">{isEn ? 'Filter by region, species, gender and status' : 'Filtrez par région, race, genre et statut'}</p>
                     </div>
                 </Link>
             </div>
