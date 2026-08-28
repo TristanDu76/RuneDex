@@ -37,6 +37,7 @@ const swipePower = (offset: number, velocity: number) => {
 
 export default function SkinCarousel({ skins, championId }: SkinCarouselProps) {
     const t = useTranslations('champion');
+    const tNavigation = useTranslations('navigation');
     const [page, setPage] = useState([0, 0]);
     const [currentIndex, direction] = page;
     const [isPaused, setIsPaused] = useState(false);
@@ -117,7 +118,7 @@ export default function SkinCarousel({ skins, championId }: SkinCarouselProps) {
                             paginate(-1);
                         }
                     }}
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover pointer-events-none md:pointer-events-auto"
                     alt={currentSkin.name}
                 />
             </AnimatePresence>
@@ -128,16 +129,18 @@ export default function SkinCarousel({ skins, championId }: SkinCarouselProps) {
             {/* Controls */}
             <button
                 onClick={() => paginate(-1)}
-                className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-yellow-500/80 text-white p-3 rounded-full backdrop-blur-md transition-all opacity-100 lg:opacity-0 lg:group-hover:opacity-100 z-20 border border-white/10"
+                aria-label={tNavigation('previous')}
+                className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-yellow-500/80 text-white p-2 md:p-3 rounded-full backdrop-blur-md transition-all opacity-100 lg:opacity-0 lg:group-hover:opacity-100 z-20 border border-white/10"
             >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" className="size-5 md:size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6" /></svg>
             </button>
 
             <button
                 onClick={() => paginate(1)}
-                className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-yellow-500/80 text-white p-3 rounded-full backdrop-blur-md transition-all opacity-100 lg:opacity-0 lg:group-hover:opacity-100 z-20 border border-white/10"
+                aria-label={tNavigation('next')}
+                className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-yellow-500/80 text-white p-2 md:p-3 rounded-full backdrop-blur-md transition-all opacity-100 lg:opacity-0 lg:group-hover:opacity-100 z-20 border border-white/10"
             >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" className="size-5 md:size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
             </button>
 
             {/* Skin Info */}
