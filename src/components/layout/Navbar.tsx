@@ -9,10 +9,10 @@ interface NavbarProps {
 }
 
 const MOBILE_NAV_ITEMS = [
-    { href: '/', label: 'Carte', icon: '🗺️' },
-    { href: '/rune', label: 'Runes', icon: '🔮' },
-    { href: '/artifact', label: 'Objets', icon: '🗡️' },
-    { href: '/quiz', label: 'Quiz', icon: '🎮' },
+    { href: '/', labelFr: 'Carte', labelEn: 'Map', icon: '🗺️' },
+    { href: '/rune', labelFr: 'Runes', labelEn: 'Runes', icon: '🔮' },
+    { href: '/artifact', labelFr: 'Objets', labelEn: 'Items', icon: '🗡️' },
+    { href: '/quiz', labelFr: 'Quiz', labelEn: 'Quiz', icon: '🎮' },
 ];
 
 export default function Navbar({ locale }: NavbarProps) {
@@ -81,11 +81,13 @@ export default function Navbar({ locale }: NavbarProps) {
                     </div>
                     <button
                         type="button"
-                        className="inline-flex h-10 w-10 items-center justify-center border border-hextech-gold/30 text-hextech-gold transition-colors hover:bg-hextech-panel md:hidden"
+                        className="inline-flex h-10 w-10 items-center justify-center border border-hextech-gold/30 text-hextech-gold transition-colors hover:bg-hextech-panel"
                         onClick={() => setIsMobileMenuOpen((open) => !open)}
                         aria-expanded={isMobileMenuOpen}
                         aria-controls="mobile-site-navigation"
-                        aria-label="Ouvrir la navigation"
+                        aria-label={isMobileMenuOpen
+                            ? (locale === 'en' ? 'Close navigation' : 'Fermer la navigation')
+                            : (locale === 'en' ? 'Open navigation' : 'Ouvrir la navigation')}
                     >
                         <span className="text-xl" aria-hidden="true">☰</span>
                     </button>
@@ -93,7 +95,7 @@ export default function Navbar({ locale }: NavbarProps) {
             </div>
 
             {isMobileMenuOpen && (
-                <div id="mobile-site-navigation" className="fixed inset-x-0 top-16 z-[60] border-b border-hextech-gold/30 bg-hextech-bg/98 p-4 shadow-2xl backdrop-blur md:hidden">
+                <div id="mobile-site-navigation" className="fixed inset-x-0 top-16 z-[60] border-b border-hextech-gold/30 bg-hextech-bg/98 p-4 shadow-2xl backdrop-blur md:absolute md:inset-x-auto md:right-4 md:w-80 md:border md:border-hextech-gold/30">
                     <div className="mx-auto grid max-w-md gap-2">
                         {MOBILE_NAV_ITEMS.map((item) => (
                             <Link
@@ -103,10 +105,10 @@ export default function Navbar({ locale }: NavbarProps) {
                                 className={`flex min-h-12 items-center gap-3 border px-4 text-sm font-semibold uppercase tracking-wider transition-colors ${pathname === item.href
                                     ? 'border-hextech-cyan bg-hextech-cyan/15 text-hextech-cyan'
                                     : 'border-hextech-gold/25 bg-hextech-panel text-hextech-gold'
-                                    }`}
+                                }`}
                             >
                                 <span aria-hidden="true">{item.icon}</span>
-                                {item.label}
+                                {locale === 'en' ? item.labelEn : item.labelFr}
                             </Link>
                         ))}
                         <div className="border border-hextech-gold/25 bg-hextech-panel">
