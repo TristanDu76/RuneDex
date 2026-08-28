@@ -1,11 +1,12 @@
 'use client';
 
-import { useCallback, useEffect, useId, useState, useMemo, useRef } from 'react';
+import { useCallback, useEffect, useState, useMemo, useRef } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { RefreshCw, Eye, Wand2 } from 'lucide-react';
-import { createSeededRandom, createSkinOptions, createSkinRound, moveQuizOptionIndex, type SkinQuizChampion, type SkinQuizSkin } from '@/lib/quiz-rounds';
+import { createSkinOptions, createSkinRound, moveQuizOptionIndex, type SkinQuizChampion, type SkinQuizSkin } from '@/lib/quiz-rounds';
+import { getSearchRank } from '@/lib/search-utils';
 
 interface SkinQuizClientProps {
     champions: SkinQuizChampion[];
@@ -27,6 +28,22 @@ interface GameState {
     lastAnswerCorrect: boolean | null;
 }
 
+let cachedSkinGameState: GameState | null = null;
+
+const EMPTY_GAME_STATE: GameState = {
+    champion: null,
+    skin: null,
+    mode: 'blur_gray',
+    phase: 'guess_champion',
+    score: 0,
+    streak: 0,
+    zoomOrigin: { x: 50, y: 50 },
+    attempts: 0,
+    wrongGuesses: [],
+    skinOptions: [],
+    lastAnswerCorrect: null,
+};
+
 export default function SkinQuizClient({ champions }: SkinQuizClientProps) {
     const t = useTranslations('quiz');
     const tChampion = useTranslations('champion');
@@ -35,53 +52,38 @@ export default function SkinQuizClient({ champions }: SkinQuizClientProps) {
     const validChampions = useMemo(() => {
         return champions.filter(c => c.skins && c.skins.length > 0);
     }, [champions]);
-    const initialRoundSeed = useId();
+    const [gameState, setGameState] = useState<GameState>(EMPTY_GAME_STATE);
+    const [isRoundReady, setIsRoundReady] = useState(false);
 
-    // Game State
-    const [gameState, setGameState] = useState<GameState>(() => {
-        const round = createSkinRound(validChampions, createSeededRandom(initialRoundSeed));
-
-        return {
-            champion: round?.champion ?? null,
-            skin: round?.skin ?? null,
-            mode: round?.mode ?? 'blur_gray',
-            phase: 'guess_champion',
-            score: 0,
-            streak: 0,
-            zoomOrigin: round?.zoomOrigin ?? { x: 50, y: 50 },
-            attempts: 0,
-            wrongGuesses: [],
-            skinOptions: [],
-            lastAnswerCorrect: null,
-        };
-    });
-    const sessionReady = useRef(false);
     useEffect(() => {
-        const saved = window.sessionStorage.getItem('runedex:quiz:skin:state');
-        const timer = window.setTimeout(() => {
-            if (saved) {
-                try {
-                    const previousState = JSON.parse(saved) as GameState;
-                    const champion = validChampions.find((candidate) => candidate.id === previousState.champion?.id) ?? previousState.champion;
-                    const findSkin = (skin: SkinQuizSkin | null) => champion?.skins?.find((candidate) => candidate.id === skin?.id) ?? skin;
+        const previousState = cachedSkinGameState;
+        const champion = validChampions.find((candidate) => candidate.id === previousState?.champion?.id) ?? previousState?.champion ?? null;
+        const findSkin = (skin: SkinQuizSkin | null | undefined) => champion?.skins?.find((candidate) => candidate.id === skin?.id) ?? skin ?? null;
+        const freshRound = createSkinRound(validChampions);
 
-                    setGameState({
-                        ...previousState,
-                        champion,
-                        skin: findSkin(previousState.skin),
-                        skinOptions: (previousState.skinOptions ?? []).map((skin) => findSkin(skin)).filter((skin): skin is SkinQuizSkin => skin !== null),
-                    });
-                } catch {
-                    window.sessionStorage.removeItem('runedex:quiz:skin:state');
-                }
+        const nextState = previousState
+            ? {
+                ...previousState,
+                champion,
+                skin: findSkin(previousState.skin),
+                skinOptions: previousState.skinOptions.map((skin) => findSkin(skin)).filter((skin): skin is SkinQuizSkin => skin !== null),
             }
-            sessionReady.current = true;
+            : {
+                ...EMPTY_GAME_STATE,
+                ...freshRound,
+                champion: freshRound?.champion ?? null,
+                skin: freshRound?.skin ?? null,
+                zoomOrigin: freshRound?.zoomOrigin ?? EMPTY_GAME_STATE.zoomOrigin,
+            };
+        const timer = window.setTimeout(() => {
+            setGameState(nextState);
+            setIsRoundReady(true);
         }, 0);
         return () => window.clearTimeout(timer);
     }, [validChampions]);
     useEffect(() => {
-        if (sessionReady.current) window.sessionStorage.setItem('runedex:quiz:skin:state', JSON.stringify(gameState));
-    }, [gameState]);
+        if (isRoundReady) cachedSkinGameState = gameState;
+    }, [gameState, isRoundReady]);
 
     const [input, setInput] = useState('');
     const [showSuggestions, setShowSuggestions] = useState(false);
@@ -120,7 +122,8 @@ export default function SkinQuizClient({ champions }: SkinQuizClientProps) {
         if (!input) return [];
         const wrongIds = new Set(gameState.wrongGuesses);
         return champions
-            .filter(c => !wrongIds.has(c.id) && c.name.toLowerCase().includes(input.toLowerCase()))
+            .filter(c => !wrongIds.has(c.id) && getSearchRank(c, input) >= 0)
+            .sort((a, b) => getSearchRank(a, input) - getSearchRank(b, input) || a.name.localeCompare(b.name))
             .slice(0, 5);
     }, [input, champions, gameState.wrongGuesses]);
 
@@ -179,6 +182,7 @@ export default function SkinQuizClient({ champions }: SkinQuizClientProps) {
             setSelectedIndex(prev => Math.max(prev - 1, 0));
         } else if (e.key === 'Enter') {
             e.preventDefault();
+            e.stopPropagation();
             if (filteredChampions.length > 0) {
                 handleChampionGuess(filteredChampions[selectedIndex]);
             }
@@ -187,6 +191,11 @@ export default function SkinQuizClient({ champions }: SkinQuizClientProps) {
 
     useEffect(() => {
         const handleRoundKey = (event: KeyboardEvent) => {
+            const target = event.target instanceof HTMLElement ? event.target : null;
+            const isInteractiveTarget = target?.isContentEditable
+                || Boolean(target?.closest('input, textarea, select, button, a, [role="button"]'));
+            if (event.repeat || isInteractiveTarget) return;
+
             if (gameState.phase === 'result' && (event.key === 'Enter' || event.key === ' ')) {
                 event.preventDefault();
                 startRound();

@@ -1,11 +1,12 @@
 'use client';
 
-import { useCallback, useEffect, useId, useState, useMemo, useRef } from 'react';
+import { useCallback, useEffect, useState, useMemo, useRef } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { RefreshCw } from 'lucide-react';
-import { createAbilityRound, createSeededRandom, getAbilitySpellTypeForKey, moveQuizOptionIndex, type AbilityQuizChampion, type AbilityQuizPassive, type AbilityQuizSpell, type SpellType } from '@/lib/quiz-rounds';
+import { createAbilityRound, getAbilitySpellTypeForKey, moveQuizOptionIndex, type AbilityQuizChampion, type AbilityQuizPassive, type AbilityQuizSpell, type SpellType } from '@/lib/quiz-rounds';
+import { getSearchRank } from '@/lib/search-utils';
 
 const SPELL_TYPES: SpellType[] = ['P', 'Q', 'W', 'E', 'R'];
 
@@ -25,6 +26,20 @@ interface GameState {
     rotation: number;
 }
 
+let cachedAbilityGameState: GameState | null = null;
+
+const EMPTY_GAME_STATE: GameState = {
+    champion: null,
+    spell: null,
+    spellType: null,
+    phase: 'guess_champion',
+    score: 0,
+    streak: 0,
+    attempts: 0,
+    wrongGuesses: [],
+    rotation: 0,
+};
+
 export default function AbilityQuizClient({ champions }: AbilityQuizClientProps) {
     const t = useTranslations('quiz');
 
@@ -38,38 +53,38 @@ export default function AbilityQuizClient({ champions }: AbilityQuizClientProps)
     const validChampions = useMemo(() => {
         return champions.filter(c => c.spells && c.spells.length >= 4 && c.passive);
     }, [champions]);
-    const initialRoundSeed = useId();
+    const [gameState, setGameState] = useState<GameState>(EMPTY_GAME_STATE);
+    const [isRoundReady, setIsRoundReady] = useState(false);
 
-    // Game State
-    const [gameState, setGameState] = useState<GameState>(() => {
-        const round = createAbilityRound(validChampions, true, createSeededRandom(initialRoundSeed));
-
-        return {
-            champion: round?.champion ?? null,
-            spell: round?.spell ?? null,
-            spellType: round?.spellType ?? null,
-            phase: 'guess_champion',
-            score: 0,
-            streak: 0,
-            attempts: 0,
-            wrongGuesses: [],
-            rotation: round?.rotation ?? 0,
-        };
-    });
-    const sessionReady = useRef(false);
     useEffect(() => {
-        const saved = window.sessionStorage.getItem('runedex:quiz:ability:state');
+        const previousState = cachedAbilityGameState;
+        const champion = validChampions.find((candidate) => candidate.id === previousState?.champion?.id) ?? previousState?.champion ?? null;
+        const spell = champion && previousState?.spell
+            ? (previousState.spellType === 'P'
+                ? champion.passive ?? previousState.spell
+                : champion.spells?.find((candidate) => candidate.image.full === previousState.spell?.image.full) ?? previousState.spell)
+            : previousState?.spell ?? null;
+        const freshRound = createAbilityRound(validChampions, true);
+
+        const nextState = previousState
+            ? { ...previousState, champion, spell }
+            : {
+                ...EMPTY_GAME_STATE,
+                ...freshRound,
+                champion: freshRound?.champion ?? null,
+                spell: freshRound?.spell ?? null,
+                spellType: freshRound?.spellType ?? null,
+                rotation: freshRound?.rotation ?? 0,
+            };
         const timer = window.setTimeout(() => {
-            if (saved) {
-                try { setGameState(JSON.parse(saved) as GameState); } catch { window.sessionStorage.removeItem('runedex:quiz:ability:state'); }
-            }
-            sessionReady.current = true;
+            setGameState(nextState);
+            setIsRoundReady(true);
         }, 0);
         return () => window.clearTimeout(timer);
-    }, []);
+    }, [validChampions]);
     useEffect(() => {
-        if (sessionReady.current) window.sessionStorage.setItem('runedex:quiz:ability:state', JSON.stringify(gameState));
-    }, [gameState]);
+        if (isRoundReady) cachedAbilityGameState = gameState;
+    }, [gameState, isRoundReady]);
 
     const [input, setInput] = useState('');
     const [showSuggestions, setShowSuggestions] = useState(false);
@@ -105,8 +120,8 @@ export default function AbilityQuizClient({ champions }: AbilityQuizClientProps)
         if (!input) return [];
         const wrongIds = new Set(gameState.wrongGuesses);
         return champions
-            .filter(c => !wrongIds.has(c.id) && c.name.toLowerCase().startsWith(input.toLowerCase()))
-            .sort((a, b) => a.name.localeCompare(b.name))
+            .filter(c => !wrongIds.has(c.id) && getSearchRank(c, input) >= 0)
+            .sort((a, b) => getSearchRank(a, input) - getSearchRank(b, input) || a.name.localeCompare(b.name))
             .slice(0, 5);
     }, [input, champions, gameState.wrongGuesses]);
 
@@ -165,6 +180,7 @@ export default function AbilityQuizClient({ champions }: AbilityQuizClientProps)
             setSelectedIndex(prev => Math.max(prev - 1, 0));
         } else if (e.key === 'Enter') {
             e.preventDefault();
+            e.stopPropagation();
             if (filteredChampions.length > 0) {
                 handleChampionGuess(filteredChampions[selectedIndex]);
             }
@@ -173,6 +189,11 @@ export default function AbilityQuizClient({ champions }: AbilityQuizClientProps)
 
     useEffect(() => {
         const handleRoundKey = (event: KeyboardEvent) => {
+            const target = event.target instanceof HTMLElement ? event.target : null;
+            const isInteractiveTarget = target?.isContentEditable
+                || Boolean(target?.closest('input, textarea, select, button, a, [role="button"]'));
+            if (event.repeat || isInteractiveTarget) return;
+
             if (gameState.phase === 'result' && (event.key === 'Enter' || event.key === ' ')) {
                 event.preventDefault();
                 startRound();
