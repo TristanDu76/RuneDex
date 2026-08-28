@@ -636,7 +636,7 @@ nextjs-portal,
 
   @media (max-width: 767px) {
     .war-room__header-search {
-      display: none;
+      margin-left: 0;
     }
 
     .war-room__locale-switcher {
@@ -734,6 +734,8 @@ nextjs-portal,
 
   /* ── Header bar ── */
   .war-room__header {
+    position: relative;
+    z-index: 2000;
     flex-shrink: 0;
     padding: 10px 24px;
     display: flex;

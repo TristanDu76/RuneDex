@@ -20,7 +20,7 @@ export default async function Home({ params }: HomeProps) {
   const { locale } = await params;
 
   return (
-    <main className="w-screen h-screen overflow-hidden bg-[#0c0905]">
+    <main className="h-dvh w-screen overflow-hidden bg-[#0c0905]">
       <LeafletMapWrapper locale={locale} />
     </main>
   );
